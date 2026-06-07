@@ -1,0 +1,512 @@
+{
+  "id": 38,
+  "shortName": "thebutcher",
+  "hyperlinkId": "TheButcher",
+  "attributeId": "Butc",
+  "cHeroId": "Butcher",
+  "cUnitId": "HeroButcher",
+  "name": "The Butcher",
+  "icon": "thebutcher.png",
+  "role": "Assassin",
+  "expandedRole": "Melee Assassin",
+  "type": "Melee",
+  "description": "An Assassin who starts slow, but deals extreme damage after collecting enough Meat.",
+  "title": "Flesh Carver",
+  "info": "An unrelenting hacking echoed off the walls of the Cathedral and as Prince Aidan made his way through its depths, the sound only grew louder. There were no screams; just that dreadful sound... over and over.",
+  "releaseDate": "2015-06-30",
+  "releasePatch": "1.12.0.36144",
+  "tags": [
+    "EnergyImportant",
+    "Ganker",
+    "MercKiller",
+    "Overconfident",
+    "RoleAutoAttacker",
+    "SoloLaner"
+  ],
+  "stats": {
+    "hp": 2154,
+    "hpRegen": 4.4882,
+    "hpScale": 0.045,
+    "hpRegenScale": 0.045,
+    "resource": 500,
+    "resourceType": "Mana",
+    "resourceRegen": 3,
+    "attackDamage": 130,
+    "attackDamageScale": 0.04,
+    "attackRange": 1.5,
+    "attackSpeed": 1.1111,
+    "radius": 0.9375
+  },
+  "unitIds": [
+    "ButcherLambToTheSlaughterPost"
+  ],
+  "abilities": {
+    "TheButcher": [
+      {
+        "uid": "eff167",
+        "name": "Hamstring",
+        "description": "Deal 110 (+4% per level) damage and Slow enemies by 50%, decaying over 2 seconds. The Butcher's next Basic Attack will strike immediately.",
+        "hotkey": "Q",
+        "abilityId": "TheButcher|Q1",
+        "tooltipId": "ButcherHamstring",
+        "cooldown": 4,
+        "manaCost": 40,
+        "icon": "storm_ui_icon_butcher_hamstring.png",
+        "type": "basic"
+      },
+      {
+        "uid": "945d96",
+        "name": "Butcher's Brand",
+        "description": "Deal 37 (+4% per level) damage to an enemy and Brand them for 4 seconds. The Butcher's Basic Attacks against the Branded target heal him for 75% of the damage done.  Basic Attacks against Branded Heroes heal for double and extend the duration of the Brand by 0.5 seconds.",
+        "hotkey": "W",
+        "abilityId": "TheButcher|W1",
+        "tooltipId": "ButcherButchersBrand",
+        "cooldown": 14,
+        "manaCost": 60,
+        "icon": "storm_ui_icon_butcher_tenderize.png",
+        "type": "basic"
+      },
+      {
+        "uid": "821300",
+        "name": "Ruthless Onslaught",
+        "description": "Charge at an enemy, becoming Unstoppable and gaining Movement Speed. If The Butcher reaches the target, they are stunned for 1 second and take 119 (+4% per level) damage.",
+        "hotkey": "E",
+        "abilityId": "TheButcher|E1",
+        "tooltipId": "ButcherRuthlessOnslaught",
+        "cooldown": 15,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_butcher_fullboar.png",
+        "type": "basic"
+      },
+      {
+        "uid": "b22bfe",
+        "name": "Furnace Blast",
+        "description": "After a 3 second delay, fire explodes around The Butcher dealing 500 (+4% per level) damage to enemies.  Can be cast while using Ruthless Onslaught.",
+        "hotkey": "R",
+        "abilityId": "TheButcher|R1",
+        "tooltipId": "ButcherFurnaceBlast",
+        "cooldown": 60,
+        "manaCost": 75,
+        "icon": "storm_ui_icon_butcher_furnaceblast.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "a1d875",
+        "name": "Lamb to the Slaughter",
+        "description": "Throw a hitching post that attaches to the nearest enemy Hero after a 1 second delay. This deals 171 (+4% per level) damage and causes the enemy to be chained to the post and Silenced for 3 seconds.",
+        "hotkey": "R",
+        "abilityId": "TheButcher|R2",
+        "tooltipId": "ButcherLambToTheSlaughter",
+        "cooldown": 90,
+        "manaCost": 75,
+        "icon": "storm_ui_icon_butcher_lambtotheslaughter.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "168e6b",
+        "name": "Fresh Meat",
+        "description": "Upon dying, nearby enemy Minions drop 1 Fresh Meat and enemy Heroes drop 20 Fresh Meat. Fresh Meat can be picked up to gain 0.5 Attack Damage per Meat. The Butcher loses 15 Fresh Meat upon dying.  Quest: Collect 200 Fresh Meat.  Reward: Gain an additional 125 Attack Damage and 25% increased Attack Speed. Heroes continue to drop 10 Fresh Meat, Minions no longer drop Fresh Meat, and Fresh Meat is no longer lost on death.",
+        "trait": true,
+        "abilityId": "TheButcher|D1",
+        "tooltipId": "ButcherFreshMeat",
+        "icon": "storm_ui_icon_butcher_freshmeat.png",
+        "type": "trait"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "ButcherHamstringInvigorationTalent",
+        "talentTreeId": "ButcherMasteryHamstringInvigoration",
+        "name": "Invigoration",
+        "description": "If Hamstring hits a Hero, half of the Mana cost is refunded and the cooldown is reduced by 1 second.",
+        "icon": "storm_ui_icon_butcher_hamstring.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "TheButcher|Q1",
+        "abilityLinks": [
+          "TheButcher|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherHamstring"
+        ]
+      },
+      {
+        "tooltipId": "ButcherHamstringChopMeatTalent",
+        "talentTreeId": "ButcherMasteryHamstringChopMeat",
+        "name": "Chop Meat",
+        "description": "Increases Hamstring damage by 100% to Minions, Mercenaries, and Monsters.",
+        "icon": "storm_ui_icon_butcher_hamstring_var1.png",
+        "type": "Q",
+        "sort": 2,
+        "abilityId": "TheButcher|Q1",
+        "abilityLinks": [
+          "TheButcher|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherHamstring"
+        ]
+      },
+      {
+        "tooltipId": "GenericBlockTalent",
+        "talentTreeId": "GenericTalentBlock",
+        "name": "Block",
+        "description": "Every 5 seconds, gain 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.  Stores up to 2 charges.",
+        "icon": "storm_ui_icon_talent_block.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "TheButcher|Passive"
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "ButcherHamstringFlailAxeTalent",
+        "talentTreeId": "ButcherMasteryHamstringFlailAxe",
+        "name": "Flail Axe",
+        "description": "Increases the length of Hamstring by 40%.",
+        "icon": "storm_ui_icon_butcher_hamstring.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "TheButcher|Q1",
+        "abilityLinks": [
+          "TheButcher|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherHamstring"
+        ]
+      },
+      {
+        "tooltipId": "ButcherHamstringCheapShotTalent",
+        "talentTreeId": "ButcherMasteryHamstringCheapShot",
+        "name": "Cheap Shot",
+        "description": "Hamstring does 100% more damage to targets affected by a Slow, Root, or Stun.",
+        "icon": "storm_ui_icon_butcher_hamstring_var1.png",
+        "type": "Q",
+        "sort": 2,
+        "abilityId": "TheButcher|Q1",
+        "abilityLinks": [
+          "TheButcher|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherHamstring"
+        ]
+      },
+      {
+        "tooltipId": "ButcherRuthlessOnslaughtUnrelentingPursuitTalent",
+        "talentTreeId": "ButcherMasteryRuthlessOnslaughtUnrelentingPursuit",
+        "name": "Unrelenting Pursuit",
+        "description": "Reduces the cooldown of Ruthless Onslaught by 33% upon impact.",
+        "icon": "storm_ui_icon_butcher_fullboar.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "TheButcher|E1",
+        "abilityLinks": [
+          "TheButcher|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherRuthlessOnslaught"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "ButcherButchersBrandInsatiableBladeTalent",
+        "talentTreeId": "ButcherMasteryButchersBrandInsatiableBlade",
+        "name": "Insatiable Blade",
+        "description": "While facing a branded enemy, The Butcher's Movement Speed is increased by 25%.",
+        "icon": "storm_ui_icon_butcher_tenderize.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "TheButcher|W1",
+        "abilityLinks": [
+          "TheButcher|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherButchersBrand"
+        ]
+      },
+      {
+        "tooltipId": "ButcherMeatShield",
+        "talentTreeId": "ButcherMeatShield",
+        "name": "Meat Shield",
+        "description": "When Ruthless Onslaught impacts an enemy Hero, The Butcher gains 50 Spell Armor for 2.5 seconds, reducing Ability Damage taken by 50%.",
+        "icon": "storm_ui_icon_butcher_fullboar.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "TheButcher|E1",
+        "abilityLinks": [
+          "TheButcher|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherRuthlessOnslaught"
+        ]
+      },
+      {
+        "tooltipId": "ButcherFreshMeatVictualsTalent",
+        "talentTreeId": "ButcherMasteryFreshMeatVictuals",
+        "name": "Victuals",
+        "description": "Every time a nearby enemy minion dies, The Butcher heals 5% of his maximum health.",
+        "icon": "storm_ui_icon_butcher_freshmeat.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "TheButcher|D1",
+        "abilityLinks": [
+          "TheButcher|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherFreshMeatDummy"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "ButcherFurnaceBlast",
+        "talentTreeId": "ButcherHeroicAbilityButcherFurnaceBlast",
+        "name": "Furnace Blast",
+        "description": "After a 3 second delay, fire explodes around The Butcher dealing 500 (+4% per level) damage to enemies.  Can be cast while using Ruthless Onslaught.",
+        "icon": "storm_ui_icon_butcher_furnaceblast.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 60,
+        "abilityId": "TheButcher|R1",
+        "abilityLinks": [
+          "TheButcher|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherFurnaceBlast"
+        ]
+      },
+      {
+        "tooltipId": "ButcherLambToTheSlaughter",
+        "talentTreeId": "ButcherHeroicAbilityLambToTheSlaughter",
+        "name": "Lamb to the Slaughter",
+        "description": "Throw a hitching post that attaches to the nearest enemy Hero after a 1 second delay. This deals 171 (+4% per level) damage and causes the enemy to be chained to the post and Silenced for 3 seconds.",
+        "icon": "storm_ui_icon_butcher_lambtotheslaughter.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 90,
+        "abilityId": "TheButcher|R2",
+        "abilityLinks": [
+          "TheButcher|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherLambToTheSlaughter"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "ButcherHamstringBrutalStrikeTalent",
+        "talentTreeId": "ButcherMasteryHamstringBrutalStrike",
+        "name": "Brutal Strike",
+        "description": "After using Hamstring, The Butcher's next 3 Basic Attacks within 5 seconds deal an additional 15% damage.",
+        "icon": "storm_ui_icon_butcher_hamstring.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "TheButcher|Q1",
+        "abilityLinks": [
+          "TheButcher|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherHamstring"
+        ]
+      },
+      {
+        "tooltipId": "ButcherRuthlessOnslaughtSavageChargeTalent",
+        "talentTreeId": "ButcherMasteryRuthlessOnslaughtSavageCharge",
+        "name": "Savage Charge",
+        "description": "Ruthless Onslaught deals bonus damage to Heroes equal to 10% of their maximum Health.",
+        "icon": "storm_ui_icon_butcher_fullboar.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "TheButcher|E1",
+        "abilityLinks": [
+          "TheButcher|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherRuthlessOnslaught"
+        ]
+      },
+      {
+        "tooltipId": "ButcherCleaver",
+        "talentTreeId": "ButcherCleaver",
+        "name": "Cleaver",
+        "description": "Basic Attacks deal 35% of The Butcher's Basic Attack Damage in an area around the target.",
+        "icon": "storm_ui_icon_talent_autoattack_aoe.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "TheButcher|Passive",
+        "abilityLinks": [
+          "TheButcher|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherFreshMeatDummy"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "ButcherHamstringCripplingSlamTalent",
+        "talentTreeId": "ButcherMasteryHamstringCripplingSlam",
+        "name": "Crippling Slam",
+        "description": "Hamstring's Slow no longer decays, and its duration is increased by 30%.",
+        "icon": "storm_ui_icon_butcher_hamstring.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "TheButcher|Q1",
+        "abilityLinks": [
+          "TheButcher|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherHamstring"
+        ]
+      },
+      {
+        "tooltipId": "ButcherEnragedTalent",
+        "talentTreeId": "ButcherTalentEnraged",
+        "name": "Enraged",
+        "description": "While below 50% of his maximum Health, taking damage causes The Butcher to become Enraged for 10 seconds, gaining 40% Attack Speed and 25 Armor, reducing damage taken by 25%.  This effect has a 25 second cooldown.",
+        "icon": "storm_ui_icon_butcher_enraged.png",
+        "type": "Passive",
+        "sort": 2,
+        "abilityId": "TheButcher|Passive"
+      },
+      {
+        "tooltipId": "ButcherFreshBloodFrenzyMeatTalent",
+        "talentTreeId": "ButcherMasteryFreshMeatBloodFrenzy",
+        "name": "Blood Frenzy",
+        "description": "Basic Attacks against enemy Heroes grant 5% increased Attack and Movement Speed for 3 seconds, up to 25%.",
+        "icon": "storm_ui_icon_talent_autoattack_speed.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "TheButcher|Passive",
+        "abilityLinks": [
+          "TheButcher|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherFreshMeatDummy"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "ButcherFurnaceBlastFiresofHellTalent",
+        "talentTreeId": "ButcherMasteryFiresofHell",
+        "name": "Fires of Hell",
+        "description": "Furnace Blast explodes a second time 3 seconds after the initial explosion.",
+        "icon": "storm_ui_icon_butcher_furnaceblast.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "TheButcher|R1",
+        "abilityLinks": [
+          "TheButcher|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherFurnaceBlast"
+        ],
+        "prerequisiteTalentIds": [
+          "ButcherHeroicAbilityButcherFurnaceBlast"
+        ]
+      },
+      {
+        "tooltipId": "ButcherLambToTheSlaughterSlaughterhouseTalent",
+        "talentTreeId": "ButcherMasterySlaughterhouse",
+        "name": "Slaughterhouse",
+        "description": "Lamb to the Slaughter now chains all enemy Heroes in range.",
+        "icon": "storm_ui_icon_butcher_lambtotheslaughter.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "TheButcher|R2",
+        "abilityLinks": [
+          "TheButcher|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherLambToTheSlaughter"
+        ],
+        "prerequisiteTalentIds": [
+          "ButcherHeroicAbilityLambToTheSlaughter"
+        ]
+      },
+      {
+        "tooltipId": "NexusBladesTalent",
+        "talentTreeId": "GenericTalentNexusBlades",
+        "name": "Nexus Blades",
+        "description": "Basic Attacks deal 20% more damage and Slow enemy Movement Speed by 20% for 1 second.",
+        "icon": "storm_ui_icon_talent_autoattack_slow.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "TheButcher|Passive"
+      },
+      {
+        "tooltipId": "GenericBoltoftheStormTalent",
+        "talentTreeId": "GenericTalentFlashoftheStorms",
+        "name": "Bolt of the Storm",
+        "description": "Activate to teleport to a nearby location.",
+        "icon": "storm_ui_icon_talent_boltofthestorm.png",
+        "type": "Active",
+        "sort": 4,
+        "cooldown": 70,
+        "abilityId": "TheButcher|Active"
+      }
+    ]
+  },
+  "tooltipMarkup": {
+    "ButcherButchersBrand": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButchersBrandDamage,Amount\"/></c> damage to an enemy and Brand them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButchersBrand,Duration\" player=\"0\"/></c> seconds. The Butcher's Basic Attacks against the Branded target heal him for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherHeroWeaponDamage,LeechFraction[Life]*100\" player=\"0\"/>%</c> of the damage done.<n/><n/>Basic Attacks against Branded Heroes heal for double and extend the duration of the Brand by <c val=\"#TooltipNumbers\">0.5</c> seconds.",
+    "ButcherButchersBrandInsatiableBladeTalent": "While facing a branded enemy, The Butcher's Movement Speed is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ButcherButchersBrandInsatiableBladeTalentBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c>.",
+    "ButcherCleaver": "Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*(1+Effect,ButcherHeroWeaponCleaverTalentDamage,MultiplicativeModifierArray[Cleaver].Modifier)\"/>%</c> of The Butcher's Basic Attack Damage in an area around the target.",
+    "ButcherEnragedTalent": "While below <c val=\"#TooltipNumbers\">50%</c> of his maximum Health, taking damage causes The Butcher to become Enraged for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,EnragedActive,Duration\" player=\"0\"/></c> seconds, gaining <c val=\"#TooltipNumbers\"><d ref=\"Behavior,EnragedActive,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> Attack Speed and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherEnragedArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherEnragedArmorIncrease,ArmorModification.AllArmorBonus\"/>%</c>.<n/><n/>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherEnragedModifyDummyCooldown,Cost.Cooldown.TimeUse\"/></c> second cooldown.",
+    "ButcherFreshBloodFrenzyMeatTalent": "Basic Attacks against enemy Heroes grant <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ButcherBloodFrenzyStack,Modification.AdditiveAttackSpeedFactor\"/>%</c> increased Attack and Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherBloodFrenzyStack,Duration\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherBloodFrenzyStack,MaxStackCount*Behavior,ButcherBloodFrenzyStack,Modification.AdditiveAttackSpeedFactor*100\"/>%</c>.",
+    "ButcherFreshMeat": "Upon dying, nearby enemy Minions drop <c val=\"#TooltipNumbers\">1</c> Fresh Meat and enemy Heroes drop <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherFreshMeat20StackAdd,Value\"player=\"0\"/></c> Fresh Meat. Fresh Meat can be picked up to gain <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ButcherFreshMeatAccumulator,Scale\"precision=\"2\"/></c> Attack Damage per Meat. The Butcher loses <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ButcherFreshMeatDeathRemoveStacks,Value\"/></c> Fresh Meat upon dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Collect <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherFreshMeatTokenCounter,ConditionalEvents[0].CompareValue\"/></c> Fresh Meat.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Gain an additional <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherFreshMeatQuestCompletionCarry,Modification.DamageDealtScaled[Basic]\"/></c> Attack Damage and <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ButcherFreshMeatQuestCompletionCarry,Modification.AdditiveAttackSpeedFactor\"/>%</c> increased Attack Speed. Heroes continue to drop <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherFreshMeat10StackAdd,Value\"/></c> Fresh Meat, Minions no longer drop Fresh Meat, and Fresh Meat is no longer lost on death.",
+    "ButcherFreshMeatVictualsTalent": "Every time a nearby enemy minion dies, The Butcher heals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherFreshMeatVictualsCreateHealer,RechargeVitalFraction*100\"/>%</c> of his maximum health.",
+    "ButcherFurnaceBlast": "After a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherFurnaceBlast,Duration\" player=\"0\"/></c> second delay, fire explodes around The Butcher dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherFurnaceBlastDamage,Amount\"/></c> damage to enemies.<n/><n/>Can be cast while using Ruthless Onslaught.",
+    "ButcherFurnaceBlastFiresofHellTalent": "Furnace Blast explodes a second time <c val=\"#TooltipNumbers\">3</c> seconds after the initial explosion.",
+    "ButcherHamstring": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,HamstringDamage,Amount\"/></c> damage and Slow enemies by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ButcherHamstringSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c>, decaying over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherHamstringSlow,Duration\" player=\"0\" /></c> seconds. The Butcher's next Basic Attack will strike immediately.",
+    "ButcherHamstringBrutalStrikeTalent": "After using Hamstring, The Butcher's next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherHamstringBrutalStrikeTalentStack,MaxStackCount\"/></c> Basic Attacks within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherHamstringBrutalStrikeTalentStack,Duration\" player=\"0\"/></c> seconds deal an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherHeroWeaponDamage,MultiplicativeModifierArray[BrutalStrike].Modifier*100\"/>%</c> damage.",
+    "ButcherHamstringCheapShotTalent": "Hamstring does <c val=\"#TooltipNumbers\"><d ref=\"Effect,HamstringDamage,MultiplicativeModifierArray[ButcherHamstringCheapShot].Modifier*100\" precision=\"2\"/>%</c> more damage to targets affected by a Slow, Root, or Stun.",
+    "ButcherHamstringChopMeatTalent": "Increases Hamstring damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,HamstringDamage,MultiplicativeModifierArray[ButcherHamstringChopMeat].Modifier*100\"/>%</c> to Minions, Mercenaries, and Monsters.",
+    "ButcherHamstringCripplingSlamTalent": "Hamstring's Slow no longer decays, and its duration is increased by <c val=\"#TooltipNumbers\"><d ref=\"(100*Effect,ButcherCripplingSlamCatalogReference,XP)\"player=\"0\"/>%</c>.",
+    "ButcherHamstringFlailAxeTalent": "Increases the length of Hamstring by <c val=\"#TooltipNumbers\">40%</c>.",
+    "ButcherHamstringInvigorationTalent": "If Hamstring hits a Hero, half of the Mana cost is refunded and the cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherHamstringInvigorationRefundCooldown,Cost[0].CooldownTimeUse*(-1)\"/></c> second.",
+    "ButcherLambToTheSlaughter": "Throw a hitching post that attaches to the nearest enemy Hero after a <c val=\"#TooltipNumbers\">1</c> second delay. This deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherLambToTheSlaughterTargetDamage,Amount\"/></c> damage and causes the enemy to be chained to the post and Silenced for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherLambToTheSlaughterPostHookedTarget,Duration\" player=\"0\"/></c> seconds.",
+    "ButcherLambToTheSlaughterSlaughterhouseTalent": "Lamb to the Slaughter now chains all enemy Heroes in range.",
+    "ButcherMeatShield": "When Ruthless Onslaught impacts an enemy Hero, The Butcher gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherRuthlessOnslaughtApplyMeatShieldTalentBuff,Duration\"precision=\"1\"/></c> seconds, reducing Ability Damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.",
+    "ButcherRuthlessOnslaught": "Charge at an enemy, becoming Unstoppable and gaining Movement Speed. If The Butcher reaches the target, they are stunned for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RuthlessOnslaughtStun,Duration\" player=\"0\" precision=\"2\"/></c> second and take <c val=\"#TooltipNumbers\"><d ref=\"Effect,RuthlessOnslaughtImpactDamage,Amount\"/></c> damage.",
+    "ButcherRuthlessOnslaughtSavageChargeTalent": "Ruthless Onslaught deals bonus damage to Heroes equal to <c val=\"#TooltipNumbers\">10%</c> of their maximum Health.",
+    "ButcherRuthlessOnslaughtUnrelentingPursuitTalent": "Reduces the cooldown of Ruthless Onslaught by <c val=\"#TooltipNumbers\"><d ref=\"(Effect,RuthlessOnslaughtUnrelentingPursuitModifyUnit,Cost[0].CooldownTimeUse/Abil,ButcherRuthlessOnslaught,Cost[0].Cooldown.TimeUse)*(-100)\"/>%</c> upon impact.",
+    "GenericBlockTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockCharged,DamageResponse.Cost.Charge.TimeUse\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockCharged,DamageResponse.Cost.Charge.CountMax\"/></c> charges.",
+    "GenericBoltoftheStormTalent": "Activate to teleport to a nearby location.",
+    "NexusBladesTalent": "Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NexusBladesCarryBehavior,Modification.DamageDealtFraction[Basic]\"/>%</c> more damage and Slow enemy Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NexusBladesSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusBladesSlow,Duration\" player=\"0\"/></c> second."
+  },
+  "tooltipSimple": {
+    "ButcherButchersBrand": "Brand an enemy, granting Life Steal against them",
+    "ButcherButchersBrandInsatiableBladeTalent": "Increases Move Speed while enemies are branded",
+    "ButcherCleaver": "Basic Attacks deal area damage",
+    "ButcherEnragedTalent": "Gain Attack Speed and Armor at low Health",
+    "ButcherFreshBloodFrenzyMeatTalent": "Basic Attacks grant Attack and Move Speed",
+    "ButcherFreshMeat": "Gather strength by killing enemies and collecting their meat",
+    "ButcherFreshMeatVictualsTalent": "Nearby Minion deaths heal",
+    "ButcherFurnaceBlast": "Deal damage around The Butcher after a delay",
+    "ButcherFurnaceBlastFiresofHellTalent": "Furnace Blast explodes twice",
+    "ButcherHamstring": "Deals damage in an area and slows enemies",
+    "ButcherHamstringBrutalStrikeTalent": "Hamstring empowers Basic Attacks",
+    "ButcherHamstringCheapShotTalent": "Increase Hamstring damage to disabled targets",
+    "ButcherHamstringChopMeatTalent": "Increases Hamstring damage to non-Heroes",
+    "ButcherHamstringCripplingSlamTalent": "Hamstring slow no longer fades and lasts longer",
+    "ButcherHamstringFlailAxeTalent": "Increases Hamstring length",
+    "ButcherHamstringInvigorationTalent": "Reduces Hamstring Mana cost, cooldown",
+    "ButcherLambToTheSlaughter": "Chain an enemy Hero to a post",
+    "ButcherLambToTheSlaughterSlaughterhouseTalent": "Lamb to the Slaughter chains all enemy Heroes",
+    "ButcherMeatShield": "Ruthless Onslaught grants Spell Armor",
+    "ButcherRuthlessOnslaught": "Charges at an enemy, stunning and dealing damage",
+    "ButcherRuthlessOnslaughtSavageChargeTalent": "Ruthless Onslaught deals extra damage",
+    "ButcherRuthlessOnslaughtUnrelentingPursuitTalent": "Reduces Ruthless Onslaught cooldown on impact",
+    "GenericBlockTalent": "Periodically gain Physical Armor",
+    "GenericBoltoftheStormTalent": "Activate to teleport a short distance",
+    "NexusBladesTalent": "Basic Attacks deal more damage and Slow"
+  },
+  "tooltipColors": {
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}

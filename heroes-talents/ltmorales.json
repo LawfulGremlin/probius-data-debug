@@ -1,0 +1,551 @@
+{
+  "id": 42,
+  "shortName": "ltmorales",
+  "hyperlinkId": "LtMorales",
+  "attributeId": "Medi",
+  "cHeroId": "Medic",
+  "cUnitId": "HeroMedic",
+  "name": "Lt. Morales",
+  "icon": "ltmorales.png",
+  "role": "Support",
+  "expandedRole": "Healer",
+  "type": "Ranged",
+  "description": "A strong, sustained Healer who's unbeatable if left alone by her enemies.",
+  "title": "Combat Medic",
+  "info": "To good marines, the only thing more important than the rifle in their hand is the medic at their back. As one of the first officers deployed during the United Earth Directorate's invasion, Lt. Rosa Morales is the best of the best.",
+  "releaseDate": "2015-10-06",
+  "releasePatch": "1.14.0.38236",
+  "tags": [
+    "AllyHealer",
+    "Helper",
+    "RoleSupport"
+  ],
+  "stats": {
+    "hp": 1560,
+    "hpRegen": 3.25,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 100,
+    "resourceType": "Energy",
+    "resourceRegen": 0,
+    "attackDamage": 83,
+    "attackDamageScale": 0.04,
+    "attackRange": 5.5,
+    "attackSpeed": 1,
+    "radius": 0.75
+  },
+  "unitIds": [
+    "MedicMedivacDropship",
+    "MedicMedivacDropshipDropoffLocationUnit"
+  ],
+  "abilities": {
+    "LtMorales": [
+      {
+        "uid": "cd68c0",
+        "name": "Healing Beam",
+        "description": "Heal target allied Hero or Minion for 172 (+4% per level) Health per second as long as they are in range. After not channeling Healing Beam for 2 seconds, regenerate 6 Energy per second.  Reactivate to switch targets, or self-cast to cancel channeling.",
+        "hotkey": "Q",
+        "abilityId": "LtMorales|Q1",
+        "tooltipId": "MedicHealingBeam",
+        "cooldown": 0.5,
+        "manaCost": 6,
+        "manaPerSecond": true,
+        "icon": "storm_ui_icon_medic_healingbeam.png",
+        "type": "basic"
+      },
+      {
+        "uid": "ed0253",
+        "name": "Safeguard",
+        "description": "Grant target ally Hero 35 Armor for 3 seconds.",
+        "hotkey": "W",
+        "abilityId": "LtMorales|W1",
+        "tooltipId": "MedicSafeguard",
+        "cooldown": 11,
+        "icon": "storm_ui_icon_medic_deployshield.png",
+        "type": "basic"
+      },
+      {
+        "uid": "d95f16",
+        "name": "Displacement Grenade",
+        "description": "Fire a grenade that can be manually detonated, dealing 208 (+4% per level) to nearby enemies and knocking them away.",
+        "hotkey": "E",
+        "abilityId": "LtMorales|E1",
+        "tooltipId": "MedicDisplacementGrenade",
+        "cooldown": 12,
+        "icon": "storm_ui_icon_medic_displacementgrenade.png",
+        "type": "basic"
+      },
+      {
+        "uid": "85f242",
+        "name": "Stim Drone",
+        "description": "Grant an allied Hero 75% Attack Speed and 25% Movement Speed for 10 seconds.",
+        "hotkey": "R",
+        "abilityId": "LtMorales|R1",
+        "tooltipId": "MedicStimDrone",
+        "cooldown": 70,
+        "icon": "storm_ui_icon_medic_stim.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "7ecd6d",
+        "name": "Medivac Dropship",
+        "description": "Target a location for a Medivac transport. For up to 10 seconds before takeoff, allies can right-click to enter the Medivac.",
+        "hotkey": "R",
+        "abilityId": "LtMorales|R2",
+        "tooltipId": "MedicMedivacDropship",
+        "cooldown": 45,
+        "icon": "storm_ui_icon_medic_medivacdropship.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "a1038e",
+        "name": "Caduceus Reactor",
+        "description": "While channeling Healing Beam, Lt. Morales regenerates 2% of her maximum Health per second.",
+        "trait": true,
+        "abilityId": "LtMorales|D1",
+        "tooltipId": "MedicCaduceusReactor",
+        "icon": "storm_ui_icon_medic_caduceusreactor.png",
+        "type": "trait"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "MedicCaduceusFeedbackTalent",
+        "talentTreeId": "MedicCaduceusFeedback",
+        "name": "Caduceus Feedback",
+        "description": "Increases Attack Range by 1.1 and Basic Attacks against Heroes generate 4 Energy.",
+        "icon": "storm_ui_icon_talent_autoattack_mana.png",
+        "type": "Passive",
+        "sort": 1,
+        "abilityId": "LtMorales|Passive"
+      },
+      {
+        "tooltipId": "MedicLifeSupport",
+        "talentTreeId": "MedicLifeSupport",
+        "name": "Life Support",
+        "description": "During the first 2 seconds of Energy regeneration, Healing Beam regenerates 100% more Energy.  Passive: Increase your maximum Energy by 10.",
+        "icon": "storm_ui_icon_medic_healingbeam.png",
+        "type": "Q",
+        "sort": 2,
+        "abilityId": "LtMorales|Q1",
+        "abilityLinks": [
+          "LtMorales|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicHealingBeam"
+        ]
+      },
+      {
+        "tooltipId": "MedicClearTalent",
+        "talentTreeId": "MedicClear",
+        "name": "Clear!",
+        "description": "Quest: Each enemy Hero hit with Displacement Grenade restores 3 Energy.  Reward: After hitting 15 Heroes, reduce the cooldown of Displacement Grenade from 12 seconds to 9 seconds.  Reward: After hitting 30 Heroes, increase the detonation area of Displacement Grenade by 25%.",
+        "icon": "storm_ui_icon_medic_displacementgrenade.png",
+        "type": "E",
+        "sort": 3,
+        "isQuest": true,
+        "abilityId": "LtMorales|E1",
+        "abilityLinks": [
+          "LtMorales|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicDetonateDisplacementGrenade",
+          "MedicDisplacementGrenade"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "MedicCellularReactorTalent",
+        "talentTreeId": "MedicCellularReactor",
+        "name": "Cellular Reactor",
+        "description": "Consume 30 Energy to heal Lt. Morales for 30% of her maximum Health over 3 seconds. Caduceus Reactor is disabled while this is active.  Passive: Generate 2 Energy each time Safeguard reduces damage, up to a maximum of 10 Energy per use.",
+        "icon": "storm_temp_btn-upgrade-terran-mobiusreactor.png",
+        "type": "Active",
+        "sort": 1,
+        "cooldown": 20,
+        "abilityId": "LtMorales|Active",
+        "abilityLinks": [
+          "LtMorales|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicSafeguard"
+        ]
+      },
+      {
+        "tooltipId": "MedicTraumaTriggerTalent",
+        "talentTreeId": "MedicTraumaTrigger",
+        "name": "Trauma Trigger",
+        "description": "Taking damage while below 40% Health grants 40 Armor for 3 seconds. This effect has a 30 second cooldown.  Passive: Increase the healing provided by Caduceus Reactor from 2% to 4% of Lt. Morales's maximum Health per second.",
+        "icon": "storm_ui_icon_medic_advancedblock.png",
+        "type": "Passive",
+        "sort": 2,
+        "abilityId": "LtMorales|Passive",
+        "abilityLinks": [
+          "LtMorales|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicCaduceusReactor"
+        ]
+      },
+      {
+        "tooltipId": "MedicBlastShield",
+        "talentTreeId": "MedicBlastShield",
+        "name": "Blast Shield",
+        "description": "Enemy Heroes hit by Displacement Grenade are Slowed by 50% for 1 second after being knocked away and grant Lt. Morales a Shield equal to 6% of her maximum Health. This shield stacks up to 5 times.",
+        "icon": "storm_ui_icon_medic_displacementgrenade.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "LtMorales|E1",
+        "abilityLinks": [
+          "LtMorales|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicDisplacementGrenade"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "MedicPhysicalTherapy",
+        "talentTreeId": "MedicPhysicalTherapy",
+        "name": "Physical Therapy",
+        "description": "Safeguard removes all Slows from its target and its cooldown is reduced by 3 seconds.",
+        "icon": "storm_ui_icon_medic_deployshield.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "LtMorales|W1",
+        "abilityLinks": [
+          "LtMorales|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicSafeguard"
+        ]
+      },
+      {
+        "tooltipId": "MedicVanadiumPlating",
+        "talentTreeId": "MedicVanadiumPlating",
+        "name": "Vanadium Plating",
+        "description": "While an ally affected by Safeguard is Stunned or Rooted, Safeguard grants an additional 20 Armor.  Passive: Increase the duration of Safeguard by 1 second.",
+        "icon": "storm_ui_icon_medic_deployshield_c.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "LtMorales|W1",
+        "abilityLinks": [
+          "LtMorales|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicSafeguard"
+        ]
+      },
+      {
+        "tooltipId": "MedicMediDrone",
+        "talentTreeId": "MedicMediDrone",
+        "name": "Medi-Drone",
+        "description": "Allies with Safeguard receive 75% of the healing done by Healing Beam on another ally.",
+        "icon": "storm_ui_icon_medic_deployshield_b.png",
+        "type": "W",
+        "sort": 3,
+        "abilityId": "LtMorales|W1",
+        "abilityLinks": [
+          "LtMorales|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicSafeguard"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "MedicStimDrone",
+        "talentTreeId": "MedicHeroicAbilityStimDrone",
+        "name": "Stim Drone",
+        "description": "Grant an allied Hero 75% Attack Speed and 25% Movement Speed for 10 seconds.",
+        "icon": "storm_ui_icon_medic_stim.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 70,
+        "abilityId": "LtMorales|R1",
+        "abilityLinks": [
+          "LtMorales|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicStimDrone"
+        ]
+      },
+      {
+        "tooltipId": "MedicMedivacDropshipsTalentFace",
+        "talentTreeId": "MedicHeroicAbilityMedivacDropship",
+        "name": "Medivac Dropships",
+        "description": "Unlock the Medivac Dropship and Reinforcements abilities. These abilities share a cooldown.  Medivac Dropship Target a location for a Medivac transport. For up to 10 seconds before takeoff, allies can right-click to enter the Medivac.  Reinforcements Call down a Medivac Dropship at your Hall of Storms for your allies. After 10 seconds, or when the Ability is activated again, the Medivac will travel to the original cast location to unload its passengers.",
+        "icon": "storm_ui_icon_medic_medivacdropship.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 45,
+        "abilityId": "LtMorales|R2",
+        "abilityLinks": [
+          "LtMorales|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicMedivacDropship"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "MedicEMPGrenadeTalent",
+        "talentTreeId": "MedicEMPGrenade",
+        "name": "EMP Grenade",
+        "description": "Displacement Grenade deals an additional 96 (+4% per level) damage over 2 seconds, and up to 400 (+4% per level) bonus damage to Heroes' Shields.",
+        "icon": "storm_ui_icon_medic_displacementgrenade.png",
+        "type": "E",
+        "sort": 1,
+        "abilityId": "LtMorales|E1",
+        "abilityLinks": [
+          "LtMorales|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicDisplacementGrenade"
+        ]
+      },
+      {
+        "tooltipId": "MedicSystemShockTalent",
+        "talentTreeId": "MedicSystemShock",
+        "name": "System Shock",
+        "description": "Heroes hit by Displacement Grenade deal 30% less damage for 3 seconds.",
+        "icon": "storm_ui_icon_medic_displacementgrenade_b.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "LtMorales|E1",
+        "abilityLinks": [
+          "LtMorales|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicDetonateDisplacementGrenade",
+          "MedicDisplacementGrenade"
+        ]
+      },
+      {
+        "tooltipId": "MedicBedsideManner",
+        "talentTreeId": "MedicBedsideManner",
+        "name": "Bedside Manner",
+        "description": "Basic Attacks against enemy Heroes deal bonus damage equal to 1% of their maximum Health. Hitting an enemy Hero with Displacement Grenade increases the next instance of this damage against them to 6% for 6 seconds.",
+        "icon": "storm_ui_icon_medic_displacementgrenade_c.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "LtMorales|E1",
+        "abilityLinks": [
+          "LtMorales|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicDisplacementGrenade"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "MedicExtendedCare",
+        "talentTreeId": "MedicExtendedCare",
+        "name": "Extended Care",
+        "description": "Channeling Healing Beam on a Hero for at least 3 seconds causes them to be healed for 258 (+4% per level) over 3 seconds when Healing Beam ends.  Passive: Increase the range of Healing Beam by 30%.",
+        "icon": "storm_ui_icon_medic_healingbeam.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "LtMorales|Q1",
+        "abilityLinks": [
+          "LtMorales|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicRedirectHealingBeam",
+          "MedicHealingBeam"
+        ]
+      },
+      {
+        "tooltipId": "MedicFirstResponder",
+        "talentTreeId": "MedicFirstResponder",
+        "name": "First Responder",
+        "description": "While above 60 Energy, Healing Beam's healing is increased by 20% and both Lt. Morales and her Healing Beam target gain 15% Movement Speed.",
+        "icon": "storm_ui_icon_medic_healingbeam_c.png",
+        "type": "Q",
+        "sort": 2,
+        "abilityId": "LtMorales|Q1",
+        "abilityLinks": [
+          "LtMorales|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicRedirectHealingBeam",
+          "MedicHealingBeam"
+        ]
+      },
+      {
+        "tooltipId": "MedicShieldSequencerTalent",
+        "talentTreeId": "MedicShieldSequencer",
+        "name": "Shield Sequencer",
+        "description": "Safeguard gains a second charge and its range is increased by 60%.",
+        "icon": "storm_ui_icon_medic_deployshield.png",
+        "type": "W",
+        "sort": 3,
+        "abilityId": "LtMorales|W1",
+        "abilityLinks": [
+          "LtMorales|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicSafeguard"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "MedicHyperactivity",
+        "talentTreeId": "MedicHyperactivity",
+        "name": "Hyperactivity",
+        "description": "Reduce the cooldown of Stim Drone from 70 seconds to 35 seconds, and increase the Movement Speed bonus from 25% to 50%.",
+        "icon": "storm_ui_icon_medic_stim.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "LtMorales|R1",
+        "abilityLinks": [
+          "LtMorales|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicStimDrone"
+        ],
+        "prerequisiteTalentIds": [
+          "MedicHeroicAbilityStimDrone"
+        ]
+      },
+      {
+        "tooltipId": "MedicSafeZoneTalent",
+        "talentTreeId": "MedicSafeZone",
+        "name": "Safe Zone",
+        "description": "After exiting the Medivac, allies are Protected from all damage for 3 seconds.  Passive: Reduce the cooldown of Medivac Dropship abilities by 15 seconds.",
+        "icon": "storm_ui_icon_medic_medivacdropship.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "LtMorales|R2",
+        "abilityLinks": [
+          "LtMorales|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicMedivacDropship"
+        ],
+        "prerequisiteTalentIds": [
+          "MedicHeroicAbilityMedivacDropship"
+        ]
+      },
+      {
+        "tooltipId": "MedicHospiceCare",
+        "talentTreeId": "MedicHospiceCare",
+        "name": "Hospice Care",
+        "description": "Safeguard grants its target Unkillable for 1 second. If the target is under 50% maximum Health when the Unkillable effect ends, they are healed for 8% of their maximum Health.",
+        "icon": "storm_ui_icon_medic_deployshield.png",
+        "type": "W",
+        "sort": 3,
+        "abilityId": "LtMorales|W1",
+        "abilityLinks": [
+          "LtMorales|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicSafeguard"
+        ]
+      },
+      {
+        "tooltipId": "MedicSecondOpinion",
+        "talentTreeId": "MedicSecondOpinion",
+        "name": "Second Opinion",
+        "description": "Hitting 2 or more Heroes with Displacement Grenade reduces its cooldown to 2 seconds.",
+        "icon": "storm_ui_icon_medic_displacementgrenade.png",
+        "type": "E",
+        "sort": 4,
+        "abilityId": "LtMorales|E1",
+        "abilityLinks": [
+          "LtMorales|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "MedicDisplacementGrenade"
+        ]
+      }
+    ]
+  },
+  "summonUnits": [
+    {
+      "unitId": "MedicMedivacDropship",
+      "name": "Medivac Dropship",
+      "icon": "storm_ui_icon_medic_medivacdropship.png",
+      "stats": {
+        "hp": 955.8,
+        "hpRegen": 0,
+        "hpScale": 0.04,
+        "hpRegenScale": 0,
+        "radius": 0.5,
+        "speed": 28,
+        "sight": 8
+      },
+      "abilities": [],
+      "sourceAbilityTooltipId": "MedicMedivacDropship"
+    }
+  ],
+  "tooltipMarkup": {
+    "MedicBedsideManner": "Basic Attacks against enemy Heroes deal bonus damage equal to <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicHeroWeaponBedsideMannerTalentDamage,VitalFractionMax[Life] * 100\" precision=\"1\"/>%</c> of their maximum Health. Hitting an enemy Hero with Displacement Grenade increases the next instance of this damage against them to <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicDisplacementGrenadeBedsideMannerTalentProcDamage,VitalFractionMax[Life] * 100\" precision=\"1\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicDisplacementGrenadeBedsideMannerTalentMarker,Duration\"/></c> seconds.",
+    "MedicBlastShield": "Enemy Heroes hit by Displacement Grenade are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,MedicDisplacementGrenadeBlastShieldTalentSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicDisplacementGrenadeBlastShieldTalentSlow,Duration\"/></c> second after being knocked away and grant Lt. Morales a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MedicDisplacementGrenadeBlastShieldTalentShield,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]\"/>%</c> of her maximum Health. This shield stacks up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicDisplacementGrenadeBlastShieldTalentShield,MaxStackCount\"/></c> times.",
+    "MedicCaduceusFeedbackTalent": "Increases Attack Range by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicCaduceusFeedbackCarryBehavior,Modification.WeaponRange\"precision=\"1\"/></c> and Basic Attacks against Heroes generate <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicHeroWeaponCaduceusFeedbackTalentHeroModifyMana,RechargeVitalRate\"/></c> Energy.",
+    "MedicCaduceusReactor": "While channeling Healing Beam, Lt. Morales regenerates <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MedicCaduceusReactorCreateHealer,RechargeVitalFraction\"player=\"0\"/>%</c> of her maximum Health per second.",
+    "MedicCellularReactorTalent": "Consume <c val=\"#TooltipNumbers\"><d ref=\"Abil,MedicCellularReactor,Cost.Vital[Energy]\"/></c> Energy to heal Lt. Morales for <c val=\"#TooltipNumbers\"><d ref=\"100*(Effect,MedicCellularReactorCreateHealer,RechargeVitalFraction)*(Behavior,MedicCellularReactorActive,PeriodCount)\"/>%</c> of her maximum Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicCellularReactorActive,Duration\"/></c> seconds. Caduceus Reactor is disabled while this is active.<n/><n/><c val=\"#AbilityPassive\">Passive: </c>Generate <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicSafeguardCellularReactorTalentModifyMana,RechargeVitalRate\"/></c> Energy each time Safeguard reduces damage, up to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicSafeguardCellularReactorTalentModifyMana,RechargeVitalRate*Behavior,MedicSafeguardTraumaTriggerTalentCharges,DamageResponse.Cost.Charge.CountMax\"/></c> Energy per use.",
+    "MedicClearTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Each enemy Hero hit with Displacement Grenade restores <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicDisplacementGrenadeClearTalentModifyMana,RechargeVitalRate\"/></c> Energy.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicClearTokenCounter,ConditionalEvents[0].CompareValue\"/></c> Heroes, reduce the cooldown of Displacement Grenade from <c val=\"#TooltipNumbers\"><d ref=\"Abil,MedicDisplacementGrenade,Cost.Cooldown.TimeUse\"player=\"0\"/></c> seconds to <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicDisplacementGrenadeClearTalent1stQuestCompletionModifyPlayer,EffectArray[0].Value\"/></c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicClearTokenCounter,Max\"/></c> Heroes, increase the detonation area of Displacement Grenade by <c val=\"#TooltipNumbers\"><d ref=\"((100*Effect,MedicDisplacementGrenadeClearTalent2ndQuestCompletionModifyPlayer,EffectArray[1].Value)-100)\"/>%</c>.",
+    "MedicDisplacementGrenade": "Fire a grenade that can be manually detonated, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicDisplacementGrenadeDamage,Amount\"/></c> to nearby enemies and knocking them away.",
+    "MedicEMPGrenadeTalent": "Displacement Grenade deals an additional <c val=\"#TooltipNumbers\"><d ref=\"(Effect,MedicDisplacementGrenadeEMPGrenadeTalentDamage,Amount)*((1/Behavior,MedicDisplacementGrenadeEMPGrenadeTalentDoTDebuff,Period)*Behavior,MedicDisplacementGrenadeEMPGrenadeTalentDoTDebuff,Duration)\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicDisplacementGrenadeEMPGrenadeTalentDoTDebuff,Duration\"/></c> seconds, and up to <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicDisplacementGrenadeEMPGrenadeTalentShieldDamage,Amount\"/></c> bonus damage to Heroes' Shields.",
+    "MedicExtendedCare": "Channeling Healing Beam on a Hero for at least <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicHealingBeamExtendedCareTalentHoTCoolup,Duration\"precision=\"1\"/></c> seconds causes them to be healed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicHealingBeamExtendedCareTalentCreateHealer,RechargeVitalRate*Behavior,MedicHealingBeamExtendedCareTalentHoT,PeriodCount\"/></c> over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicHealingBeamExtendedCareTalentHoT,Duration\"player=\"0\"precision=\"1\"/></c> seconds when Healing Beam ends. <n/><n/><c val=\"#AbilityPassive\">Passive: </c>Increase the range of Healing Beam by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,MedicExtendedCare,AbilityModificationArray[0].Modifications[0].Value/Abil,MedicHealingBeam,Range\"precision=\"1\"player=\"0\"/>%</c>.",
+    "MedicFirstResponder": "While above <c val=\"#TooltipNumbers\"><d ref=\"Validator,MedicFirstResponderTalentVital,Value\"player=\"0\"/></c> Energy, Healing Beam's healing is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MedicHealingBeamCreateHealer,MultiplicativeModifierArray[FirstResponder].Modifier\"/>%</c> and both Lt. Morales and her Healing Beam target gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MedicHealingBeamFirstResponderTalentMoveSpeed,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed.",
+    "MedicHealingBeam": "Heal target allied Hero or Minion for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicHealingBeamCreateHealer,RechargeVitalRate*2\"/></c> Health per second as long as they are in range. After not channeling Healing Beam for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicHealingBeamCooldown,Duration\"/></c> seconds, regenerate <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicCaduceusReactorCreateEnergyHealer,RechargeVitalRate*2\"/></c> Energy per second.<n/><n/>Reactivate to switch targets, or self-cast to cancel channeling.",
+    "MedicHospiceCare": "Safeguard grants its target Unkillable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicSafeguardHospiceCareTalentUnkillable,Duration\"/></c> second. If the target is under <c val=\"#TooltipNumbers\">50%</c> maximum Health when the Unkillable effect ends, they are healed for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MedicSafeguardHospiceCareTalentProcHeal,RechargeVitalFraction\"/>%</c> of their maximum Health.",
+    "MedicHyperactivity": "Reduce the cooldown of Stim Drone from <c val=\"#TooltipNumbers\"><d ref=\"Abil,MedicStimDrone,Cost.Cooldown.TimeUse\"player=\"0\"/></c> seconds to <c val=\"#TooltipNumbers\"><d ref=\"Abil,MedicStimDrone,Cost.Cooldown.TimeUse+Talent,MedicHyperactivity,AbilityModificationArray[0].Modifications[0].Value\"player=\"0\"/></c> seconds, and increase the Movement Speed bonus from <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MedicStimDroneMovementSpeedBuff,Modification.UnifiedMoveSpeedFactor\"player=\"0\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,MedicStimDroneMovementSpeedBuff,Modification.UnifiedMoveSpeedFactor+Talent,MedicHyperactivity,AbilityModificationArray[0].Modifications[1].Value)\"player=\"0\"/>%</c>.",
+    "MedicLifeSupport": "During the first <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicHealingBeamLifeSupportActive,Duration\"/></c> seconds of Energy regeneration, Healing Beam regenerates <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MedicHealingBeamLifeSupportTalentEnergyAccumulator,MaxAccumulation/Effect,MedicCaduceusReactorCreateEnergyHealer,RechargeVitalRate\"/>%</c> more Energy.<n/><n/><c val=\"#AbilityPassive\">Passive: </c>Increase your maximum Energy by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicHealingBeamLifeSupportTalentCarry,Modification.VitalMaxArray[Energy]\"/></c>.",
+    "MedicMediDrone": "Allies with Safeguard receive <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MedicHealingBeamMediDroneTalentCreateHealer,RechargeVitalRate/Effect,MedicHealingBeamCreateHealer,RechargeVitalRate\"/>%</c> of the healing done by Healing Beam on another ally.",
+    "MedicMedivacDropship": "Target a location for a Medivac transport. For up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicMedivacDropshipDepartureDelay,Duration+1\"/></c> seconds before takeoff, allies can right-click to enter the Medivac.",
+    "MedicMedivacDropshipsTalentFace": "Unlock the Medivac Dropship and Reinforcements abilities. These abilities share a cooldown.<n/><n/><s val=\"StandardTooltipHeader\">Medivac Dropship</s><n/>Target a location for a Medivac transport. For up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicMedivacDropshipDepartureDelay,Duration+1\"/></c> seconds before takeoff, allies can right-click to enter the Medivac.<n/><n/><s val=\"StandardTooltipHeader\">Reinforcements</s><n/>Call down a Medivac Dropship at your Hall of Storms for your allies. After <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicMedivacDropshipAcceptingPassengers,Duration\"/></c> seconds, or when the Ability is activated again, the Medivac will travel to the original cast location to unload its passengers.",
+    "MedicPhysicalTherapy": "Safeguard removes all Slows from its target and its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,MedicPhysicalTherapy,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
+    "MedicSafeZoneTalent": "After exiting the Medivac, allies are Protected from all damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicMedivacDropshipSafeZoneTalentProtectedBuff,Duration\"precision=\"1\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive: </c>Reduce the cooldown of Medivac Dropship abilities by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,MedicSafeZone,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds.",
+    "MedicSafeguard": "Grant target ally Hero <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicSafeguardBuff,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicSafeguardBuff,Duration\" player=\"0\"/></c> seconds.",
+    "MedicSecondOpinion": "Hitting <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicDisplacementGrenadeSecondOpinionTalentSearch,MinCount\"/></c> or more Heroes with Displacement Grenade reduces its cooldown to <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicDisplacementGrenadeSecondOpinionTalentModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "MedicShieldSequencerTalent": "Safeguard gains a second charge and its range is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,MedicShieldSequencer,AbilityModificationArray[0].Modifications[2].Value/Abil,MedicSafeguard,Range\"player=\"0\"/>%</c>.",
+    "MedicStimDrone": "Grant an allied Hero <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MedicStimDroneAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor\"player=\"0\"/>%</c> Attack Speed and <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MedicStimDroneMovementSpeedBuff,Modification.UnifiedMoveSpeedFactor\"player=\"0\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicStimDroneAttackSpeedBuff,Duration\" player=\"0\"/></c> seconds.",
+    "MedicSystemShockTalent": "Heroes hit by Displacement Grenade deal <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,MedicDisplacementGrenadeSystemShockTalentDebuff,Modification.DamageDealtFraction[Ability]\"/>%</c> less damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicDisplacementGrenadeSystemShockTalentDebuff,Duration\"/></c> seconds.",
+    "MedicTraumaTriggerTalent": "Taking damage while below <c val=\"#TooltipNumbers\">40%</c> Health grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicTraumaTrigger,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicTraumaTrigger,Duration\"/></c> seconds. This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Abil,MedicTraumaTriggerAbility,Cost[0].Cooldown.TimeUse\" player=\"0\"/></c> second cooldown.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increase the healing provided by Caduceus Reactor from <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MedicCaduceusReactorCreateHealer,RechargeVitalFraction\"player=\"0\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"100*(Effect,MedicCaduceusReactorCreateHealer,RechargeVitalFraction+Talent,MedicTraumaTrigger,AbilityModificationArray[0].Modifications[0].Value)\"player=\"0\"/>%</c> of Lt. Morales's maximum Health per second.",
+    "MedicVanadiumPlating": "While an ally affected by Safeguard is Stunned or Rooted, Safeguard grants an additional <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,MedicSafeguardVanadiumPlatingTalentBuff,ArmorModification.AllArmorBonus)-(Behavior,MedicSafeguardBuff,ArmorModification.AllArmorBonus)\"/></c> Armor.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increase the duration of Safeguard by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MedicVanadiumPlating,AbilityModificationArray[0].Modifications[0].Value\"/></c> second."
+  },
+  "tooltipSimple": {
+    "MedicBedsideManner": "Displacement Grenade empowers Basic Attacks",
+    "MedicBlastShield": "Displacement Grenade Slows, grants Shields",
+    "MedicCaduceusFeedbackTalent": "Basic Attacks generate Energy",
+    "MedicCaduceusReactor": "Restore Health while channeling Healing Beam",
+    "MedicCellularReactorTalent": "Consume Energy to heal, Safeguard restores Energy",
+    "MedicClearTalent": "Increased area, bigger knockback",
+    "MedicDisplacementGrenade": "Damages and knocks enemies away",
+    "MedicEMPGrenadeTalent": "Displacement Grenade deals more damage to Shields",
+    "MedicExtendedCare": "Healing Beam heals over time, increased range",
+    "MedicFirstResponder": "Healing Beam empowered at high Energy",
+    "MedicHealingBeam": "Heals allies over time",
+    "MedicHospiceCare": "Safeguard grants Unkillable, can heal",
+    "MedicHyperactivity": "Lower cooldown, increase Movement Speed",
+    "MedicLifeSupport": "Increase maximum Energy, recharge rate",
+    "MedicMediDrone": "Healing Beam heals Safeguard targets",
+    "MedicMedivacDropship": "Transport allies across long distances",
+    "MedicMedivacDropshipsTalentFace": "Unlock Medivac transports",
+    "MedicPhysicalTherapy": "Safeguard removes Slows",
+    "MedicSafeZoneTalent": "Exiting Medivac grants Protected, reduced cooldown",
+    "MedicSafeguard": "Grants Armor to the target",
+    "MedicSecondOpinion": "Reduce Displacement Grenade cooldown",
+    "MedicShieldSequencerTalent": "Safeguard gains a second charge, increased range",
+    "MedicStimDrone": "Grant massive Attack and Movement Speed",
+    "MedicSystemShockTalent": "Displacement Grenade reduces damage dealt",
+    "MedicTraumaTriggerTalent": "Gain Armor at low Health, increase Caduceus Reactor healing",
+    "MedicVanadiumPlating": "Stuns, Roots increase Safeguard Armor, increased duration"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}

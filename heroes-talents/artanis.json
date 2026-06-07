@@ -1,0 +1,554 @@
+{
+  "id": 43,
+  "shortName": "artanis",
+  "hyperlinkId": "Artanis",
+  "attributeId": "Arts",
+  "cHeroId": "Artanis",
+  "cUnitId": "HeroArtanis",
+  "name": "Artanis",
+  "icon": "artanis.png",
+  "role": "Warrior",
+  "expandedRole": "Bruiser",
+  "type": "Melee",
+  "description": "A tough Bruiser that deals high damage if the enemy team is unable to shut him down.",
+  "title": "Hierarch of the Daelaam",
+  "info": "Despite his relative youth, Artanis was named Hierarch of the Daelaam after the fall of Aiur. Driven by the promise of a brighter future, he hopes to reclaim the protoss' fallen home world and rebuild their once glorious civilization.<n/><n/>Artanis is FREE to purchasers of StarCraft® II: Legacy of the Void™",
+  "releaseDate": "2015-10-27",
+  "releasePatch": "1.14.2.38593",
+  "tags": [
+    "BodyBlocker",
+    "EnergyImportant",
+    "Ganker",
+    "Overconfident",
+    "RoleAutoAttacker",
+    "RoleTank"
+  ],
+  "stats": {
+    "hp": 2490,
+    "hpRegen": 5.1875,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 500,
+    "resourceType": "Mana",
+    "resourceRegen": 3,
+    "attackDamage": 111,
+    "attackDamageScale": 0.04,
+    "attackRange": 1.25,
+    "attackSpeed": 1,
+    "radius": 0.8125
+  },
+  "abilities": {
+    "Artanis": [
+      {
+        "uid": "0923a7",
+        "name": "Blade Dash",
+        "description": "Dash forward and deal 63 (+4% per level) damage to enemies, then return and deal 171 (+4% per level) damage. Every enemy hit reduces the cooldown on Shield Overload by 1 second, and Heroes by 2 seconds.",
+        "hotkey": "Q",
+        "abilityId": "Artanis|Q1",
+        "tooltipId": "ArtanisBladeDash",
+        "cooldown": 10,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_artanis_powerstrikes.png",
+        "type": "basic"
+      },
+      {
+        "uid": "5a69cf",
+        "name": "Twin Blades",
+        "description": "Artanis's next Basic Attack immediately causes him to charge a short distance and strike the enemy 2 times.",
+        "hotkey": "W",
+        "abilityId": "Artanis|W1",
+        "tooltipId": "ArtanisTwinBlades",
+        "cooldown": 4,
+        "manaCost": 20,
+        "icon": "storm_ui_icon_artanis_doubleslash_on.png",
+        "type": "basic"
+      },
+      {
+        "uid": "5c46cf",
+        "name": "Phase Prism",
+        "description": "Fire a Phase Prism that deals 66 (+4% per level) damage to the first Hero hit and swaps Artanis's position with theirs. Hitting a Hero also grants Artanis Unstoppable for 1.5 seconds. Can be used during Blade Dash.",
+        "hotkey": "E",
+        "abilityId": "Artanis|E1",
+        "tooltipId": "ArtanisPhasePrism",
+        "cooldown": 12,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_artanis_repositionmatrix.png",
+        "type": "basic"
+      },
+      {
+        "uid": "e3d8fb",
+        "name": "Purifier Beam",
+        "description": "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 (+4% per level) damage per second for 8 seconds. The beam will chase the target as they move. Unlimited range.",
+        "hotkey": "R",
+        "abilityId": "Artanis|R1",
+        "tooltipId": "ArtanisSpearofAdunPurifierBeam",
+        "cooldown": 70,
+        "manaCost": 65,
+        "icon": "storm_ui_icon_artanis_purifierbeam.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "c01f63",
+        "name": "Suppression Pulse",
+        "description": "Fire a large area pulse from the Spear of Adun, dealing 114 (+4% per level) damage and Blinding enemies for 4 seconds. Unlimited range.",
+        "hotkey": "R",
+        "abilityId": "Artanis|R2",
+        "tooltipId": "ArtanisSpearofAdunSuppressionPulse",
+        "cooldown": 50,
+        "manaCost": 40,
+        "icon": "storm_ui_icon_artanis_disruptionweb.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "0c414a",
+        "name": "Shield Overload",
+        "description": "After taking damage while below 75% Health, Artanis gains a 365 (+4% per level) Shield for 5 seconds. Basic Attacks lower the cooldown of Shield Overload by 4 seconds.",
+        "trait": true,
+        "abilityId": "Artanis|D1",
+        "tooltipId": "ArtanisShieldOverloadTrait",
+        "cooldown": 24,
+        "icon": "storm_ui_icon_artanis_shieldoverload.png",
+        "type": "trait"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "ArtanisTwinBladesReactiveParryTalent",
+        "talentTreeId": "ArtanisTwinBladesReactiveParry",
+        "name": "Reactive Parry",
+        "description": "Damaging enemy Heroes with Twin Blades or Blade Dash grants Artanis 50 Physical Armor against the next enemy Hero Basic Attack, reducing its damage by 50%.  Stores up to 2 charges.",
+        "icon": "storm_ui_icon_artanis_doubleslash_on.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Artanis|Q1",
+        "abilityLinks": [
+          "Artanis|Q1",
+          "Artanis|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisBladeDash",
+          "ArtanisTwinBladesPrimed",
+          "ArtanisTwinBlades"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisTwinBladesAmateurOpponentTalent",
+        "talentTreeId": "ArtanisTwinBladesAmateurOpponent",
+        "name": "Amateur Opponent",
+        "description": "Twin Blades attacks deal 150% bonus damage to non-Heroes.",
+        "icon": "storm_ui_icon_artanis_doubleslash_var1.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Artanis|W1",
+        "abilityLinks": [
+          "Artanis|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisTwinBladesPrimed",
+          "ArtanisTwinBlades"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisProtectorOfAiurTalent",
+        "talentTreeId": "ArtanisProtectorOfAiur",
+        "name": "Protector Of Aiur",
+        "description": "Quest: Basic Attacks against enemy Heroes increase Artanis's Attack damage by 0.1%. Takedowns grant 1% bonus damage.",
+        "icon": "storm_ui_icon_talent_autoattack_damage.png",
+        "type": "Passive",
+        "sort": 3,
+        "isQuest": true,
+        "abilityId": "Artanis|Passive",
+        "abilityLinks": [
+          "Artanis|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisShieldOverloadDummy"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "ArtanisPhasePrismPsionicSynergyTalent",
+        "talentTreeId": "ArtanisPhasePrismPsionicSynergy",
+        "name": "Psionic Synergy",
+        "description": "Hitting an enemy Hero with Phase Prism grants 30 Armor for 5 seconds.",
+        "icon": "storm_ui_icon_artanis_repositionmatrix.png",
+        "type": "E",
+        "sort": 1,
+        "abilityId": "Artanis|E1",
+        "abilityLinks": [
+          "Artanis|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisPhasePrism"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisShieldOverloadShieldBatteryTalent",
+        "talentTreeId": "ArtanisShieldOverloadShieldBattery",
+        "name": "Shield Battery",
+        "description": "Shield Overload's cooldown recharges 125% faster while its Shield is active.  Passive: Reduce Shield Overload's cooldown by 4 seconds.",
+        "icon": "storm_ui_icon_artanis_shieldoverload.png",
+        "type": "Trait",
+        "sort": 2,
+        "abilityId": "Artanis|D1",
+        "abilityLinks": [
+          "Artanis|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisShieldOverloadDummy"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisShieldOverloadShieldSurgeTalentNew",
+        "talentTreeId": "ArtanisShieldOverloadShieldSurge",
+        "name": "Shield Surge",
+        "description": "Increases Shield Overload's Shields by 80% while below 25% Health.",
+        "icon": "storm_ui_icon_artanis_shieldoverload_a.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Artanis|D1",
+        "abilityLinks": [
+          "Artanis|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisShieldOverloadDummy"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "ArtanisBladeDashSolariteReaperTalent",
+        "talentTreeId": "ArtanisBladeDashSolariteReaper",
+        "name": "Solarite Reaper",
+        "description": "Increases the damage of the first dash of Blade Dash by 175%.",
+        "icon": "storm_ui_icon_artanis_powerstrikes.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Artanis|Q1",
+        "abilityLinks": [
+          "Artanis|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisBladeDash"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisPhasePrismChronoSurgeTalent",
+        "talentTreeId": "ArtanisPhasePrismChronoSurge",
+        "name": "Chrono Surge",
+        "description": "Hitting an enemy Hero with Phase Prism grants 40% bonus Attack Speed for 5 seconds and Slows the enemy's Movement Speed by 30% for 4 seconds.",
+        "icon": "storm_ui_icon_artanis_repositionmatrix.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Artanis|E1",
+        "abilityLinks": [
+          "Artanis|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisPhasePrism"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisFinalCut",
+        "talentTreeId": "ArtanisFinalCut",
+        "name": "Final Cut",
+        "description": "After using an Ability, your next Basic Attack within 6 seconds deals 40% additional damage. While under 25% Health, this damage bonus is increased to 60%.",
+        "icon": "storm_ui_icon_talent_autoattack_damage.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Artanis|Passive"
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "ArtanisSpearofAdunSuppressionPulse",
+        "talentTreeId": "ArtanisHeroicAbilitySpearofAdunSuppressionPulse",
+        "name": "Suppression Pulse",
+        "description": "Fire a large area pulse from the Spear of Adun, dealing 114 (+4% per level) damage and Blinding enemies for 4 seconds. Unlimited range.",
+        "icon": "storm_ui_icon_artanis_disruptionweb.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 50,
+        "abilityId": "Artanis|R2",
+        "abilityLinks": [
+          "Artanis|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisSpearofAdunSuppressionPulse"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisSpearofAdunPurifierBeam",
+        "talentTreeId": "ArtanisHeroicAbilitySpearofAdunPurifierBeam",
+        "name": "Purifier Beam",
+        "description": "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing 184 (+4% per level) damage per second for 8 seconds. The beam will chase the target as they move. Unlimited range.",
+        "icon": "storm_ui_icon_artanis_purifierbeam.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 70,
+        "abilityId": "Artanis|R1",
+        "abilityLinks": [
+          "Artanis|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisSpearofAdunPurifierBeam"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "ArtanisBladeDashTemplarsZealTalent",
+        "talentTreeId": "ArtanisBladeDashTemplarsZeal",
+        "name": "Templar's Zeal",
+        "description": "Reduce the Mana cost of Blade Dash from 50 to 25. Each time that Shield Overload activates, reduce the cooldown of Blade Dash by 6 seconds.",
+        "icon": "storm_ui_icon_artanis_powerstrikes.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Artanis|Q1",
+        "abilityLinks": [
+          "Artanis|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisBladeDash"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisTwinBladesTripleStrikeTalent",
+        "talentTreeId": "ArtanisTwinBladesTripleStrike",
+        "name": "Triple Strike",
+        "description": "Increases Twin Blades's number of Basic Attacks to 3, but increase its cooldown by 1 second.",
+        "icon": "storm_ui_icon_artanis_doubleslash_on.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Artanis|W1",
+        "abilityLinks": [
+          "Artanis|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisTwinBladesPrimed",
+          "ArtanisTwinBlades"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisPhasePrismGravitonVortexTalent",
+        "talentTreeId": "ArtanisPhasePrismGravitonVortex",
+        "name": "Graviton Vortex",
+        "description": "Reduce the Mana cost of Phase Prism from 50 to 25. Hitting an enemy Hero with Basic Attacks or Blade Dash reduces the cooldown of Phase Prism by 2 seconds.",
+        "icon": "storm_ui_icon_artanis_repositionmatrix.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "Artanis|E1",
+        "abilityLinks": [
+          "Artanis|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisPhasePrism"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisShieldOverloadPhaseBulwarkTalent",
+        "talentTreeId": "ArtanisShieldOverloadPhaseBulwark",
+        "name": "Phase Bulwark",
+        "description": "Shield Overload grants 50 Spell Armor while active and for 2 seconds after it expires.",
+        "icon": "storm_ui_icon_artanis_shieldoverload.png",
+        "type": "Trait",
+        "sort": 4,
+        "abilityId": "Artanis|D1",
+        "abilityLinks": [
+          "Artanis|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisShieldOverloadDummy"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "ArtanisTwinBladesTitanKillerTalent",
+        "talentTreeId": "ArtanisTwinBladesTitanKiller",
+        "name": "Titan Killer",
+        "description": "Basic Attacks against Heroes deal bonus damage equal to 0.5% of the target's maximum Health in damage, increased to 1.5% when empowered by Twin Blades.",
+        "icon": "storm_ui_icon_artanis_doubleslash_on.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Artanis|W1",
+        "abilityLinks": [
+          "Artanis|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisTwinBladesPrimed",
+          "ArtanisTwinBlades"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisShieldOverloadForceofWillTalent",
+        "talentTreeId": "ArtanisShieldOverloadForceofWill",
+        "name": "Force of Will",
+        "description": "Casting Basic Abilities reduces the cooldown of Shield Overload by 5 seconds.",
+        "icon": "storm_ui_icon_artanis_shieldoverload.png",
+        "type": "Trait",
+        "sort": 2,
+        "abilityId": "Artanis|D1",
+        "abilityLinks": [
+          "Artanis|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisShieldOverloadDummy"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisTwinBladesBladesofaTemplar",
+        "talentTreeId": "ArtanisTwinBladesBladesofaTemplar",
+        "name": "Blades of a Templar",
+        "description": "Increase Attack Speed by 20%. Basic Attacks Slow by 20% for 1.25 seconds.",
+        "icon": "storm_ui_icon_talent_autoattack_slow.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Artanis|Passive",
+        "abilityLinks": [
+          "Artanis|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisShieldOverloadDummy"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "ArtanisSpearofAdunSuppressionPulseOrbitalBombardmentTalent",
+        "talentTreeId": "ArtanisSpearofAdunSuppressionPulseOrbitalBombardment",
+        "name": "Orbital Bombardment",
+        "description": "Suppression Pulse gains an additional charge.  There is a 10 second cooldown between uses.",
+        "icon": "storm_ui_icon_artanis_disruptionweb.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "Artanis|R2",
+        "abilityLinks": [
+          "Artanis|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisSpearofAdunSuppressionPulse"
+        ],
+        "prerequisiteTalentIds": [
+          "ArtanisHeroicAbilitySpearofAdunSuppressionPulse"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisSpearofAdunPurifierBeamTargetPurifiedTalent",
+        "talentTreeId": "ArtanisSpearofAdunPurifierBeamTargetPurified",
+        "name": "Target Purified",
+        "description": "Increase the speed of Purifier Beam by 15%. If the target of Purifier Beam dies, it automatically recasts on the nearest visible enemy Hero.",
+        "icon": "storm_ui_icon_artanis_purifierbeam.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "Artanis|R1",
+        "abilityLinks": [
+          "Artanis|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisSpearofAdunPurifierBeam"
+        ],
+        "prerequisiteTalentIds": [
+          "ArtanisHeroicAbilitySpearofAdunPurifierBeam"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisTwinBladesZealotChargeTalent",
+        "talentTreeId": "ArtanisTwinBladesZealotCharge",
+        "name": "Zealot Charge",
+        "description": "Increase Twin Blades' charge distance by 75%.",
+        "icon": "storm_ui_icon_artanis_doubleslash_on.png",
+        "type": "W",
+        "sort": 3,
+        "abilityId": "Artanis|W1",
+        "abilityLinks": [
+          "Artanis|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisTwinBladesPrimed",
+          "ArtanisTwinBlades"
+        ]
+      },
+      {
+        "tooltipId": "ArtanisPlasmaBurn",
+        "talentTreeId": "ArtanisPlasmaBurn",
+        "name": "Plasma Burn",
+        "description": "While Shield Overload is active, deal 70 (+4% per level) damage per second to nearby enemies.",
+        "icon": "storm_ui_icon_artanis_shieldoverload.png",
+        "type": "Trait",
+        "sort": 4,
+        "abilityId": "Artanis|D1",
+        "abilityLinks": [
+          "Artanis|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ArtanisShieldOverloadDummy"
+        ]
+      }
+    ]
+  },
+  "tooltipMarkup": {
+    "ArtanisBladeDash": "Dash forward and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArtanisBladeDashFirstDamage,Amount\"/></c> damage to enemies, then return and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArtanisBladeDashSecondDamage,Amount\"/></c> damage. Every enemy hit reduces the cooldown on Shield Overload by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ArtanisBladeDashNonHeroModifyCooldown,Cost[0].CooldownTimeUse\"/></c> second, and Heroes by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ArtanisBladeDashHeroModifyCooldown,Cost[0].CooldownTimeUse\" player=\"0\"/></c> seconds.",
+    "ArtanisBladeDashSolariteReaperTalent": "Increases the damage of the first dash of Blade Dash by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ArtanisBladeDashSolariteReaper,AbilityModificationArray[0].Modifications[0].Value*(100)\"/>%</c>.",
+    "ArtanisBladeDashTemplarsZealTalent": "Reduce the Mana cost of Blade Dash from <c val=\"#TooltipNumbers\"><d ref=\"Abil,ArtanisBladeDash,Cost.Vital[Energy]\"Player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Abil,ArtanisBladeDash,Cost.Vital[Energy]+Talent,ArtanisBladeDashTemplarsZeal,AbilityModificationArray[0].Modifications[1].Value\"Player=\"0\"/></c>. Each time that Shield Overload activates, reduce the cooldown of Blade Dash by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ArtanisBladeDashTemplarsZealModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "ArtanisFinalCut": "After using an Ability, your next Basic Attack within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisFinalCutBuff,Duration\"/></c> seconds deals <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ArtanisFinalCutBuff,Modification.DamageDealtFraction[Basic]\"player=\"0\"/>%</c> additional damage. While under <c val=\"#TooltipNumbers\">25%</c> Health, this damage bonus is increased to <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,ArtanisFinalCutBuff,Modification.DamageDealtFraction[Basic]+Effect,ArtanisFinalCutModifyPlayer,EffectArray[0].Value)\"player=\"0\"/>%</c>.",
+    "ArtanisPhasePrism": "Fire a Phase Prism that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArtanisPhasePrismDamage,Amount\"/></c> damage to the first Hero hit and swaps Artanis's position with theirs. Hitting a Hero also grants Artanis Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisPhasePrism,Duration\"precision=\"2\"/> </c>seconds. Can be used during Blade Dash.",
+    "ArtanisPhasePrismChronoSurgeTalent": "Hitting an enemy Hero with Phase Prism grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisPhasePrismChronoSurge,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> bonus Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisPhasePrismChronoSurge,Duration\"/></c> seconds and Slows the enemy's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ArtanisPhasePrismChronoSurgeSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisPhasePrismChronoSurgeSlow,Duration\"/></c> seconds.",
+    "ArtanisPhasePrismGravitonVortexTalent": "Reduce the Mana cost of Phase Prism from <c val=\"#TooltipNumbers\"><d ref=\"Abil,ArtanisPhasePrism,Cost.Vital[Energy]\"Player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Abil,ArtanisPhasePrism,Cost.Vital[Energy]+Talent,ArtanisPhasePrismGravitonVortex,AbilityModificationArray[0].Modifications[2].Value\"Player=\"0\"/></c>. Hitting an enemy Hero with Basic Attacks or Blade Dash reduces the cooldown of Phase Prism by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ArtanisPhasePrismGravitonVortexModifyCooldownBasicAttacks,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds.",
+    "ArtanisPhasePrismPsionicSynergyTalent": "Hitting an enemy Hero with Phase Prism grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisPhasePrismArmorBehaviorPsionicSynergy,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisPhasePrismArmorBehaviorPsionicSynergy,Duration\"/></c> seconds.",
+    "ArtanisPlasmaBurn": "While Shield Overload is active, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArtanisShieldOverloadPlasmaBurnTalentDamage,Amount\"/></c> damage per second to nearby enemies.",
+    "ArtanisProtectorOfAiurTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Basic Attacks against enemy Heroes increase Artanis's Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ArtanisProtectorOfAiurDamageAccumulator,Scale\"Precision=\"2\"/>%</c>. Takedowns grant <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ArtanisProtectorOfAiurAddTakedownsTokenCount,Value*Accumulator,ArtanisProtectorOfAiurDamageAccumulator,Scale\"Precision=\"2\"/>%</c> bonus damage.",
+    "ArtanisShieldOverloadForceofWillTalent": "Casting Basic Abilities reduces the cooldown of Shield Overload by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ArtanisShieldOverloadForceofWillSubtractCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "ArtanisShieldOverloadPhaseBulwarkTalent": "Shield Overload grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisShieldOverloadActiveSpellArmorPhaseBulwark,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor while active and for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisShieldOverloadTemporarySpellArmorPhaseBulwark,Duration\"/></c> seconds after it expires.",
+    "ArtanisShieldOverloadShieldBatteryTalent": "Shield Overload's cooldown recharges <c val=\"#TooltipNumbers\"><d ref=\"(-Effect,ArtanisShieldOverloadShieldBatteryModifyCooldownCDR,Cost[0].CooldownTimeUse)/(Behavior,ArtanisShieldOverloadShieldBattery,Period)*100\"/>%</c> faster while its Shield is active. <n/><n/><c val=\"#AbilityPassive\">Passive:</c> Reduce Shield Overload's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,ArtanisShieldOverloadShieldBattery,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
+    "ArtanisShieldOverloadShieldSurgeTalentNew": "Increases Shield Overload's Shields by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArtanisShieldSurgeCatalogReference,XP*100\"/>%</c> while below <c val=\"#TooltipNumbers\">25%</c> Health.",
+    "ArtanisShieldOverloadTrait": "After taking damage while below <c val=\"#TooltipNumbers\">75%</c> Health, Artanis gains a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisShieldOverload,DamageResponse.ModifyLimit\"/></c> Shield for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisShieldOverload,Duration\" precision=\"2\" player=\"0\"/></c> seconds. Basic Attacks lower the cooldown of Shield Overload by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ArtanisShieldOverloadSubtractCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "ArtanisSpearofAdunPurifierBeam": "Target an enemy Hero with an orbital beam from the Spear of Adun, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArtanisSpearofAdunPurifierBeamDamage,Amount*4\"/></c> damage per second for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisSpearofAdunPurifierBeamTimedLife,Duration\" player=\"0\"/></c> seconds. The beam will chase the target as they move. Unlimited range.",
+    "ArtanisSpearofAdunPurifierBeamTargetPurifiedTalent": "Increase the speed of Purifier Beam by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,ArtanisSpearofAdunPurifierBeamTargetPurified,AbilityModificationArray[0].Modifications[2].Value/Unit,ArtanisSpearofAdunPurifierBeamInvisibleTrackingUnit,Speed\"Player=\"0\"/>%</c>. If the target of Purifier Beam dies, it automatically recasts on the nearest visible enemy Hero.",
+    "ArtanisSpearofAdunSuppressionPulse": "Fire a large area pulse from the Spear of Adun, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArtanisSpearofAdunSuppressionPulseDamage,Amount\"/></c> damage and Blinding enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisSpearofAdunSuppressionPulseBlind,Duration\"/></c> seconds. Unlimited range.",
+    "ArtanisSpearofAdunSuppressionPulseOrbitalBombardmentTalent": "Suppression Pulse gains an additional charge.  There is a <c val=\"#TooltipNumbers\"><d ref=\"Abil,ArtanisSpearofAdunSuppressionPulse,Cost[0].Cooldown.TimeUse\"/></c> second cooldown between uses.",
+    "ArtanisTwinBlades": "Artanis's next Basic Attack immediately causes him to charge a short distance and strike the enemy <c val=\"#TooltipNumbers\">2</c> times.",
+    "ArtanisTwinBladesAmateurOpponentTalent": "Twin Blades attacks deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArtanisTwinBladesAmateurOpponentDamage,MultiplicativeModifierArray[ArtanisTwinBladesAmateurOpponent].Modifier*100\" precision=\"1\"/>%</c> bonus damage to non-Heroes.",
+    "ArtanisTwinBladesBladesofaTemplar": "Increase Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ArtanisAttackSpeedBuffBladesofaTemplar,Modification.AdditiveAttackSpeedFactor\"/>%</c>. Basic Attacks Slow by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ArtanisMovementSpeedSlowBladesofaTemplar,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisMovementSpeedSlowBladesofaTemplar,Duration\"Precision=\"2\"/></c> seconds.",
+    "ArtanisTwinBladesReactiveParryTalent": "Damaging enemy Heroes with Twin Blades or Blade Dash grants Artanis <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisReactiveParryBlock,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next enemy Hero Basic Attack, reducing its damage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArtanisReactiveParryBlock,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.<n/><n/>Stores up to <c val=\"#TooltipNumbers\">2</c> charges.",
+    "ArtanisTwinBladesTitanKillerTalent": "Basic Attacks against Heroes deal bonus damage equal to<c val=\"#TooltipNumbers\"> <d ref=\"100*Effect,ArtanisTwinBladesTitanKillerWeaponDamage,VitalFractionMax[Life]\"Precision=\"2\"/>%</c> of the target's maximum Health in damage, increased to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ArtanisTwinBladesTitanKillerTwinBladesDamage,VitalFractionMax[Life]\"Precision=\"2\"/>%</c> when empowered by Twin Blades.",
+    "ArtanisTwinBladesTripleStrikeTalent": "Increases Twin Blades's number of Basic Attacks to <c val=\"#TooltipNumbers\">3</c>, but increase its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ArtanisTwinBladesTripleStrike,AbilityModificationArray[0].Modifications[2].Value\"/></c> second.",
+    "ArtanisTwinBladesZealotChargeTalent": "Increase Twin Blades' charge distance by <c val=\"#TooltipNumbers\">75%</c>."
+  },
+  "tooltipSimple": {
+    "ArtanisBladeDash": "Dash forward then back again, damaging enemies along the way",
+    "ArtanisBladeDashSolariteReaperTalent": "Increases Blade Dash damage",
+    "ArtanisBladeDashTemplarsZealTalent": "Reduce the cooldown of Blade Dash",
+    "ArtanisFinalCut": "Abilities increase Basic Attack damage",
+    "ArtanisPhasePrism": "Swap positions with an enemy Hero",
+    "ArtanisPhasePrismChronoSurgeTalent": "Phase Prism grants Attack Speed, Slows",
+    "ArtanisPhasePrismGravitonVortexTalent": "Attacks reduce Phase Prism cooldown",
+    "ArtanisPhasePrismPsionicSynergyTalent": "Phase Prism grants Armor",
+    "ArtanisPlasmaBurn": "Shield Overload burns nearby enemies",
+    "ArtanisProtectorOfAiurTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Attacks against Heroes increase damage",
+    "ArtanisShieldOverloadForceofWillTalent": "Abilities reduce Shield Overload cooldown",
+    "ArtanisShieldOverloadPhaseBulwarkTalent": "Shield Overload grants Spell Armor",
+    "ArtanisShieldOverloadShieldBatteryTalent": "Shield Overload recharges faster while active",
+    "ArtanisShieldOverloadShieldSurgeTalentNew": "Increase Shield Overload shield at low Health",
+    "ArtanisShieldOverloadTrait": "Gain a Shield when attacked at low Health",
+    "ArtanisSpearofAdunPurifierBeam": "Chase an enemy with an orbital beam",
+    "ArtanisSpearofAdunPurifierBeamTargetPurifiedTalent": "Purifier Beam is faster, recasts if target dies",
+    "ArtanisSpearofAdunSuppressionPulse": "Damage and Blind enemies in a large area",
+    "ArtanisSpearofAdunSuppressionPulseOrbitalBombardmentTalent": "Suppression Pulse gains an additional charge",
+    "ArtanisTwinBlades": "Charge and Basic Attack twice",
+    "ArtanisTwinBladesAmateurOpponentTalent": "Increases Twin Blades damage to non-Heroes",
+    "ArtanisTwinBladesBladesofaTemplar": "Gain Attack Speed, Slow enemies",
+    "ArtanisTwinBladesReactiveParryTalent": "Twin Blades, Blade Dash gives Physical Armor",
+    "ArtanisTwinBladesTitanKillerTalent": "Basic Attacks deal percent damage",
+    "ArtanisTwinBladesTripleStrikeTalent": "Twin Blades strikes 3 times",
+    "ArtanisTwinBladesZealotChargeTalent": "Increase Twin Blades charge distance"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}

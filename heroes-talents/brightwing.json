@@ -1,0 +1,538 @@
+{
+  "id": 25,
+  "shortName": "brightwing",
+  "hyperlinkId": "Brightwing",
+  "attributeId": "Faer",
+  "cHeroId": "FaerieDragon",
+  "cUnitId": "HeroFaerieDragon",
+  "name": "Brightwing",
+  "icon": "brightwing.png",
+  "role": "Support",
+  "expandedRole": "Healer",
+  "type": "Ranged",
+  "description": "A Healer who can teleport to allies, excelling on large battlegrounds.",
+  "title": "Faerie Dragon",
+  "info": "Like many faerie dragons, Brightwing is happiest darting around the forests of Ashenvale, healing friends, and then grabbing a light snack. By the way, did you know a human head only weighs ten pounds? Talk about light!",
+  "releaseDate": "2014-04-15",
+  "releasePatch": "0.2.5.29775",
+  "tags": [
+    "AllyHealer",
+    "EnergyImportant",
+    "Escaper",
+    "Helper",
+    "RoleSupport",
+    "SelfHealer",
+    "SoloLaner"
+  ],
+  "stats": {
+    "hp": 1425,
+    "hpRegen": 2.9687,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 500,
+    "resourceType": "Mana",
+    "resourceRegen": 3,
+    "attackDamage": 81,
+    "attackDamageScale": 0.04,
+    "attackRange": 5.5,
+    "attackSpeed": 1.1111,
+    "radius": 0.6875
+  },
+  "abilities": {
+    "Brightwing": [
+      {
+        "uid": "bac60a",
+        "name": "Arcane Flare",
+        "description": "Shoot a flare dealing 75 (+4% per level) damage to enemies hit, and an additional 105 (+4% per level) damage to enemies in the center. If a Hero is hit by the center, Soothing Mist's passive healing instantly activates.",
+        "hotkey": "Q",
+        "abilityId": "Brightwing|Q1",
+        "tooltipId": "BrightwingArcaneFlare",
+        "cooldown": 6,
+        "manaCost": 35,
+        "icon": "storm_ui_icon_brightwing_arcaneflare.png",
+        "type": "basic"
+      },
+      {
+        "uid": "1bb0a2",
+        "name": "Polymorph",
+        "description": "Polymorph a target for 1.5 seconds, Slowing their Movement Speed by 30% and Silencing them. Targets are not able to attack while Polymorphed.",
+        "hotkey": "W",
+        "abilityId": "Brightwing|W1",
+        "tooltipId": "BrightwingPolymorph",
+        "cooldown": 12,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_brightwing_polymorph.png",
+        "type": "basic"
+      },
+      {
+        "uid": "5c9c7a",
+        "name": "Pixie Dust",
+        "description": "Increase target Hero's Movement Speed by 20%, and grant them 30 Spell Armor for 3 seconds, reducing Spell damage taken by 30%.",
+        "hotkey": "E",
+        "abilityId": "Brightwing|E1",
+        "tooltipId": "BrightwingPixieDust",
+        "cooldown": 10,
+        "manaCost": 60,
+        "icon": "storm_ui_icon_brightwing_pixiedust.png",
+        "type": "basic"
+      },
+      {
+        "uid": "28d179",
+        "name": "Blink Heal",
+        "description": "Teleport to a nearby ally. When teleporting to a Hero, heal them for 200 (+4% per level).  Stores up to 2 charges.",
+        "hotkey": "R",
+        "abilityId": "Brightwing|R1",
+        "tooltipId": "BrightwingBlinkHealAllyDash",
+        "cooldown": 9,
+        "manaCost": 40,
+        "icon": "storm_ui_icon_brightwing_blinkheal.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "f38ffa",
+        "name": "Emerald Wind",
+        "description": "After 0.5 seconds, create an expanding nova of wind, dealing 225 (+4% per level) damage and pushing enemies away.",
+        "hotkey": "R",
+        "abilityId": "Brightwing|R2",
+        "tooltipId": "BrightwingEmeraldWind",
+        "cooldown": 50,
+        "manaCost": 90,
+        "icon": "storm_ui_icon_brightwing_emeraldwind.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "83eccc",
+        "name": "Soothing Mist",
+        "description": "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes.  Passive: Brightwing heals nearby allied Heroes for 110 (+4% per level) every 4 seconds",
+        "hotkey": "D",
+        "trait": true,
+        "abilityId": "Brightwing|D1",
+        "tooltipId": "BrightwingSoothingMistCalmingMist",
+        "cooldown": 75,
+        "icon": "storm_ui_icon_brightwing_soothingmist.png",
+        "type": "trait"
+      },
+      {
+        "uid": "76b872",
+        "name": "Phase Shift",
+        "description": "After 2 seconds, teleport to an allied Hero and heal them for 25% of their maximum Health.",
+        "hotkey": "Z",
+        "abilityId": "Brightwing|Z1",
+        "tooltipId": "BrightwingPhaseShift",
+        "cooldown": 40,
+        "icon": "storm_ui_icon_brightwing_mount.png",
+        "type": "mount"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "BrightwingGreaterPolymorphTalent",
+        "talentTreeId": "BrightwingGreaterPolymorphPolymorph",
+        "name": "Greater Polymorph",
+        "description": "Passive: Increase Polymorph's range by 30%.  If Brightwing hits an enemy Hero with Arcane Flare's center within 2 seconds of being Polymorphed, then reduce Polymorph's cooldown by 7 seconds and gain 50 Mana.",
+        "icon": "storm_ui_icon_brightwing_polymorph.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Brightwing|W1",
+        "abilityLinks": [
+          "Brightwing|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonPolymorph"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingPhaseShiftHyperShift",
+        "talentTreeId": "BrightwingPhaseShiftHyperShift",
+        "name": "Hyper Shift",
+        "description": "Increase Phase Shift's healing by an additional 4% of the target's maximum Health. Nearby enemy Minion deaths reduce Phase Shift's cooldown by 0.5 second.",
+        "icon": "storm_ui_icon_brightwing_hypershift.png",
+        "type": "Z",
+        "sort": 2,
+        "abilityId": "Brightwing|Z1",
+        "abilityLinks": [
+          "Brightwing|Z1"
+        ],
+        "abilityTalentLinkIds": [
+          "BrightwingPhaseShift"
+        ]
+      },
+      {
+        "tooltipId": "FaerieDragonPixieCharmTalent",
+        "talentTreeId": "BrightwingPixieCharm",
+        "name": "Pixie Charm",
+        "description": "Activate to consume 20 stacks of Bribe to instantly defeat an uncaptured non-Elite Mercenary.  Passive: Gain 1 stack of Bribe when a nearby enemy Minion dies, and 5 stacks when hitting an enemy Hero with Arcane Flare's center. Maximum 80 stacks.",
+        "icon": "storm_ui_icon_talent_bribe.png",
+        "type": "Active",
+        "sort": 3,
+        "abilityId": "Brightwing|Active"
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "BrightwingDreamShotTalent",
+        "talentTreeId": "BrightwingDreamShotArcaneFlare",
+        "name": "Dream Shot",
+        "description": "Increase Arcane Flare's range by 60%. Hitting a Hero with Arcane Flare's center reduces its cooldown to 2 seconds.",
+        "icon": "storm_ui_icon_brightwing_arcaneflare.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Brightwing|Q1",
+        "abilityLinks": [
+          "Brightwing|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonArcaneFlare"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingUnstableAnomalyTalent",
+        "talentTreeId": "BrightwingUnstableAnomalyPolymorph",
+        "name": "Unstable Anomaly",
+        "description": "Increase Polymorph's Slow by 15%. Upon expiration, Polymorph deals damage to nearby enemy Heroes equal to 2% of their maximum Health.",
+        "icon": "storm_ui_icon_brightwing_polymorph.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Brightwing|W1",
+        "abilityLinks": [
+          "Brightwing|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonPolymorph"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingMagicSpit",
+        "talentTreeId": "BrightwingMagicSpit",
+        "name": "Magic Spit",
+        "description": "Increase Basic Attack range by 1.1. Basic Attacks against Heroes reduce the cooldown of Soothing Mist by 4 seconds.",
+        "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Brightwing|Passive",
+        "abilityLinks": [
+          "Brightwing|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "BrightwingCalmingMist"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "BrightwingArcaneFlareStickyFlareTalent",
+        "talentTreeId": "BrightwingArcaneFlareStickyFlare",
+        "name": "Sticky Flare",
+        "description": "Enemy Heroes hit by Arcane Flare have their Movement Speed Slowed by 20% for 3 seconds. Increase the Slow to 40% if they are hit by the center portion.",
+        "icon": "storm_ui_icon_brightwing_arcaneflare.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Brightwing|Q1",
+        "abilityLinks": [
+          "Brightwing|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonArcaneFlare"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingPhaseShiftPeekaboo",
+        "talentTreeId": "BrightwingPhaseShiftPeekaboo",
+        "name": "Peekaboo!",
+        "description": "Phase Shifting to an ally grants both Brightwing and her target a 335 (+4% per level) Shield for 4 seconds and reveals a large area around them for 5 seconds.",
+        "icon": "storm_ui_icon_brightwing_hypershift.png",
+        "type": "Z",
+        "sort": 2,
+        "abilityId": "Brightwing|Z1",
+        "abilityLinks": [
+          "Brightwing|Z1"
+        ],
+        "abilityTalentLinkIds": [
+          "BrightwingPhaseShift"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingCalmingMistCriticalMist",
+        "talentTreeId": "BrightwingCriticalMistCalmingMist",
+        "name": "Critical Mist",
+        "description": "Soothing Mist heals allied Heroes for 165 (+4% per level). Increase this healing by 140% if Soothing Mist removed a disabling effect from that ally.",
+        "icon": "storm_ui_icon_brightwing_soothingmist.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Brightwing|D1",
+        "abilityLinks": [
+          "Brightwing|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "BrightwingCalmingMist"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "BrightwingBlinkHealAllyDash",
+        "talentTreeId": "FaerieDragonHeroicAbilityBlinkHeal",
+        "name": "Blink Heal",
+        "description": "Teleport to a nearby ally. When teleporting to a Hero, heal them for 200 (+4% per level).  Stores up to 2 charges.",
+        "icon": "storm_ui_icon_brightwing_blinkheal.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 9,
+        "abilityId": "Brightwing|R1",
+        "abilityLinks": [
+          "Brightwing|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonBlinkHealDash"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingEmeraldWind",
+        "talentTreeId": "FaerieDragonHeroicAbilityEmeraldWind",
+        "name": "Emerald Wind",
+        "description": "After 0.5 seconds, create an expanding nova of wind, dealing 225 (+4% per level) damage and pushing enemies away.",
+        "icon": "storm_ui_icon_brightwing_emeraldwind.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 50,
+        "abilityId": "Brightwing|R2",
+        "abilityLinks": [
+          "Brightwing|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonEmeraldWind"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "BrightwingPixieBoostTalent",
+        "talentTreeId": "BrightwingPixieBoostPixieDust",
+        "name": "Pixie Boost",
+        "description": "Increase Pixie Dust's Movement Speed bonus to 50%, decaying to 20% over 3 seconds.",
+        "icon": "storm_ui_icon_brightwing_pixiedust.png",
+        "type": "E",
+        "sort": 1,
+        "abilityId": "Brightwing|E1",
+        "abilityLinks": [
+          "Brightwing|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonPixieDust"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingPixieDustSafetyDust",
+        "talentTreeId": "BrightwingPixieDustSafetyDust",
+        "name": "Safety Dust",
+        "description": "Increase Pixie Dust's duration by 1 second. Soothing Mist and Blink Heal heal allies with an active Pixie Dust for 75% more.",
+        "icon": "storm_ui_icon_brightwing_pixiedust_a.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Brightwing|E1",
+        "abilityLinks": [
+          "Brightwing|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonPixieDust"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingPixieDustPixiePower",
+        "talentTreeId": "BrightwingPixieDustPixiePower",
+        "name": "Pixie Power",
+        "description": "Reduce the cooldown of Pixie Dust by 3 seconds and increase the Spell Armor granted by 25.",
+        "icon": "storm_ui_icon_brightwing_pixiedust_b.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "Brightwing|E1",
+        "abilityLinks": [
+          "Brightwing|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonPixieDust"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "BrightwingArcaneFlareHush!",
+        "talentTreeId": "BrightwingArcaneFlareHush!",
+        "name": "Hush!",
+        "description": "Enemy Heroes hit by the center of Arcane Flare are Silenced for 1 second and deal 25% less damage for 3 seconds.",
+        "icon": "storm_ui_icon_brightwing_arcaneflare.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Brightwing|Q1",
+        "abilityLinks": [
+          "Brightwing|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonArcaneFlare"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingPolymorphCritterizeTalent",
+        "talentTreeId": "FaerieDragonMasteryCritterize",
+        "name": "Critterize",
+        "description": "While Polymorphed, the target's Armor is reduced by 25, increasing the damage they take by 25%.",
+        "icon": "storm_ui_icon_brightwing_polymorph.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Brightwing|W1",
+        "abilityLinks": [
+          "Brightwing|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonPolymorph"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingPhaseOut",
+        "talentTreeId": "BrightwingPhaseOut",
+        "name": "Phase Out",
+        "description": "Activate to place Brightwing in Stasis for 0.75 seconds.",
+        "icon": "storm_ui_icon_brightwing_stasis.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 20,
+        "abilityId": "Brightwing|Active"
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "BrightwingInvisibleFriends",
+        "talentTreeId": "BrightwingInvisibleFriends",
+        "name": "Invisible Friends",
+        "description": "Blink Heal grants Stealth to Brightwing and her Heroic targets for 9 seconds, and they are Unrevealable for the first 0.5 seconds. While Stealthed by Invisible Friends, Heroes heal for 25 (+4% per level) health per second.  Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
+        "icon": "storm_ui_icon_brightwing_blinkheal.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "Brightwing|R1",
+        "abilityLinks": [
+          "Brightwing|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonBlinkHealDash"
+        ],
+        "prerequisiteTalentIds": [
+          "FaerieDragonHeroicAbilityBlinkHeal"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingEmeraldWindIntensiveWinds",
+        "talentTreeId": "BrightwingIntensiveWinds",
+        "name": "Intensive Winds",
+        "description": "Permanently reduce Emerald Wind's cooldown to 5 seconds.",
+        "icon": "storm_ui_icon_brightwing_emeraldwind.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "Brightwing|R2",
+        "abilityLinks": [
+          "Brightwing|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonEmeraldWind"
+        ],
+        "prerequisiteTalentIds": [
+          "FaerieDragonHeroicAbilityEmeraldWind"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingSpeedyDragon",
+        "talentTreeId": "BrightwingSpeedyDragon",
+        "name": "Speedy Dragon",
+        "description": "Permanently gain 20% Movement Speed. Reduce Phase Shift's cast time by 1 second.",
+        "icon": "storm_ui_icon_brightwing_hypershift.png",
+        "type": "Z",
+        "sort": 3,
+        "abilityId": "Brightwing|Z1",
+        "abilityLinks": [
+          "Brightwing|Z1"
+        ],
+        "abilityTalentLinkIds": [
+          "BrightwingPhaseShift"
+        ]
+      },
+      {
+        "tooltipId": "BrightwingFaerieProtector",
+        "talentTreeId": "BrightwingFaerieProtector",
+        "name": "Faerie Protector",
+        "description": "Activate to apply Pixie Dust to all nearby Heroes.  Passive: Pixie Dust always bounces back and applies to Brightwing.",
+        "icon": "storm_ui_icon_brightwing_pixiedust.png",
+        "type": "Active",
+        "sort": 4,
+        "cooldown": 45,
+        "abilityId": "Brightwing|Active",
+        "abilityLinks": [
+          "Brightwing|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "FaerieDragonPixieDust"
+        ]
+      }
+    ]
+  },
+  "tooltipMarkup": {
+    "BrightwingArcaneFlare": "Shoot a flare dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArcaneFlareOuterDamage,Amount\"/></c> damage to enemies hit, and an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArcaneFlareInnerDamage,Amount\"/></c> damage to enemies in the center. If a Hero is hit by the center, Soothing Mist's passive healing instantly activates.",
+    "BrightwingArcaneFlareHush!": "Enemy Heroes hit by the center of Arcane Flare are Silenced for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingArcaneFlareHushSilence,Duration\"/></c> second and deal <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,BrightwingArcaneFlareHushDamageReduction,Modification.DamageDealtFraction[Basic]\"/>%</c> less damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingArcaneFlareHushDamageReduction,Duration\"/></c> seconds.",
+    "BrightwingArcaneFlareStickyFlareTalent": "Enemy Heroes hit by Arcane Flare have their Movement Speed Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,BrightwingStickyFlareOuterSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingStickyFlareOuterSlow,Duration\"/></c> seconds. Increase the Slow to <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,BrightwingStickyFlareInnerSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> if they are hit by the center portion.",
+    "BrightwingBlinkHealAllyDash": "Teleport to a nearby ally. When teleporting to a Hero, heal them for <c val=\"#TooltipNumbers\"><d ref=\"Effect,BlinkHealInitialHeal,RechargeVitalRate\"/></c>.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,FaerieDragonBlinkHealDash,Cost[0].Charge.CountMax\"/></c> charges.",
+    "BrightwingCalmingMistCriticalMist": "Soothing Mist heals allied Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Effect,BrightwingCalmingMistCriticalMistCreateHealer,RechargeVitalRate\"/></c>. Increase this healing by <c val=\"#TooltipNumbers\"><d ref=\"Effect,BrightwingCalmingMistCriticalMistCreateHealer,MultiplicativeModifierArray[TargetCC].Modifier*100\"/>%</c> if Soothing Mist removed a disabling effect from that ally.",
+    "BrightwingDreamShotTalent": "Increase Arcane Flare's range by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,BrightwingDreamShotArcaneFlare,AbilityModificationArray[0].Modifications[1].Value/Abil,FaerieDragonArcaneFlare,Range\"player=\"0\"precision=\"0\"/>%</c>. Hitting a Hero with Arcane Flare's center reduces its cooldown to <c val=\"#TooltipNumbers\"><d ref=\"Effect,BrightwingArcaneFlareDreamShotInner,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "BrightwingEmeraldWind": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,FaerieDragonEmeraldWind,CastIntroTime\" precision=\"1\"/></c> seconds, create an expanding nova of wind, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,EmeraldWindDamage,Amount[0]\"/> </c>damage and pushing enemies away.",
+    "BrightwingEmeraldWindIntensiveWinds": "Permanently reduce Emerald Wind's cooldown to <c val=\"#TooltipNumbers\"><d ref=\"Abil,FaerieDragonEmeraldWind,Cost.Cooldown.TimeUse+Talent,BrightwingIntensiveWinds,AbilityModificationArray[0].Modifications[0].Value\"player=\"0\"/></c> seconds.",
+    "BrightwingFaerieProtector": "Activate to apply Pixie Dust to all nearby Heroes.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Pixie Dust always bounces back and applies to Brightwing.",
+    "BrightwingGreaterPolymorphTalent": "<c val=\"#AbilityPassive\">Passive:</c> Increase Polymorph's range by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,BrightwingGreaterPolymorphPolymorph,AbilityModificationArray[0].Modifications[1].Value/Abil,FaerieDragonPolymorph,Range\"player=\"0\"precision=\"0\"/>%</c>. <n/><n/>If Brightwing hits an enemy Hero with Arcane Flare's center within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPolymorphGreaterPolymorphTalentMarker,Duration\"/></c> seconds of being Polymorphed, then reduce Polymorph's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,BrightwingPolymorphGreaterPolymorphRefundCooldown,Cost[0].CooldownTimeUse\"/></c> seconds and gain <c val=\"#TooltipNumbers\"><d ref=\"Effect,BrightwingPolymorphGreaterPolymorphCreateManaHealer,RechargeVitalRate\"/></c> Mana.",
+    "BrightwingInvisibleFriends": "Blink Heal grants Stealth to Brightwing and her Heroic targets for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingInvisibleFriendsCloak,Duration\"/></c> seconds, and they are Unrevealable for the first <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingInvisibleFriendsUnrevealableCloak,Duration\"precision=\"2\"/></c> seconds. While Stealthed by Invisible Friends, Heroes heal for <c val=\"#TooltipNumbers\"><d ref=\"Effect,BrightwingBlinkHealInvisibleFriendsCreateHealer,RechargeVitalRate\"/></c> health per second.<n/><n/>Remaining stationary for at least <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericStationaryExtraStealthCountdown,Duration\" precision=\"1\"/></c> seconds while Stealthed grants Invisible.",
+    "BrightwingMagicSpit": "Increase Basic Attack range by <c val=\"#TooltipNumbers\"><d ref=\"Talent,BrightwingMagicSpit,AbilityModificationArray[0].Modifications[0].Value\" precision=\"1\"/></c>. Basic Attacks against Heroes reduce the cooldown of Soothing Mist by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,BrightwingCalmingMistMagicSpitModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "BrightwingPhaseOut": "Activate to place Brightwing in Stasis for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPhaseOutStasis,Duration\" precision=\"2\" player=\"0\"/></c> seconds.",
+    "BrightwingPhaseShift": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,BrightwingPhaseShift,CastIntroTime\" player=\"0\"/></c> seconds, teleport to an allied Hero and heal them for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,BrightwingPhaseShiftCreateHealer,RechargeVitalFraction\"player=\"0\"/>%</c> of their maximum Health.",
+    "BrightwingPhaseShiftHyperShift": "Increase Phase Shift's healing by an additional <c val=\"#TooltipNumbers\"><d ref=\"100*(Talent,BrightwingPhaseShiftHyperShift,AbilityModificationArray[0].Modifications[0].Value)\" precision=\"2\"player=\"0\"/>%</c> of the target's maximum Health. Nearby enemy Minion deaths reduce Phase Shift's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,BrightwingPhaseShiftHyperShiftModifyUnit,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> second.",
+    "BrightwingPhaseShiftPeekaboo": "Phase Shifting to an ally grants both Brightwing and her target a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPhaseShiftPhaseShieldBuff,DamageResponse.ModifyLimit\"/></c> Shield for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPhaseShiftPhaseShieldBuff,Duration\"/></c> seconds and reveals a large area around them for <c val=\"#TooltipNumbers\"><d ref=\"Effect,BrightwingPhaseShiftPeekabooCreatePersistent,PeriodCount*Effect,BrightwingPhaseShiftPeekabooCreatePersistent,PeriodicPeriodArray[0]\"/></c> seconds.",
+    "BrightwingPixieBoostTalent": "Increase Pixie Dust's Movement Speed bonus to <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,BrightwingPixieDustMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor+Talent,BrightwingPixieBoostPixieDust,AbilityModificationArray[0].Modifications[0].Value)*100\" player=\"0\"/>%</c>, decaying to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPixieDustMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c> over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPixieDustMoveSpeedBuff,Duration\" player=\"0\"/></c> seconds.",
+    "BrightwingPixieDust": "Increase target Hero's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,BrightwingPixieDustMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor\"player=\"0\"/>%</c>, and grant them <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPixieDustSpellArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"player=\"0\"/></c> Spell Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPixieDustSpellArmorBehavior,Duration\" player=\"0\"/></c> seconds, reducing Spell damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPixieDustSpellArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"player=\"0\"/>%</c>.",
+    "BrightwingPixieDustPixiePower": "Reduce the cooldown of Pixie Dust by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,BrightwingPixieDustPixiePower,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds and increase the Spell Armor granted by <c val=\"#TooltipNumbers\"><d ref=\"Talent,BrightwingPixieDustPixiePower,AbilityModificationArray[0].Modifications[1].Value\"player=\"0\"/></c>.",
+    "BrightwingPixieDustSafetyDust": "Increase Pixie Dust's duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,BrightwingPixieDustSafetyDust,AbilityModificationArray[0].Modifications[0].Value\"/></c> second. Soothing Mist and Blink Heal heal allies with an active Pixie Dust for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,BrightwingSoothingMistCreateHealer,MultiplicativeModifierArray[SafetyDust].Modifier\"/>%</c> more.",
+    "BrightwingPolymorph": "Polymorph a target for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPolymorph,Duration\" player=\"0\" precision=\"2\"/></c> seconds, Slowing their Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPolymorphSlow,Modification.UnifiedMoveSpeedFactor*(-100)\"player=\"0\"/>%</c> and Silencing them. Targets are not able to attack while Polymorphed.",
+    "BrightwingPolymorphCritterizeTalent": "While Polymorphed, the target's Armor is reduced by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPolymorphCritterizeArmorDecrease,ArmorModification.AllArmorBonus*(-1)\"/></c>, increasing the damage they take by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPolymorphCritterizeArmorDecrease,ArmorModification.AllArmorBonus*(-1)\"/>%</c>.",
+    "BrightwingSoothingMistCalmingMist": "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Brightwing heals nearby allied Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Effect,BrightwingSoothingMistCreateHealer,RechargeVitalRate\"/></c> every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingSoothingMistCooldown,Duration\" player=\"0\"/></c> seconds",
+    "BrightwingSpeedyDragon": "Permanently gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,BrightwingSpeedyDragonMoveSpeedBehavior,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed. Reduce Phase Shift's cast time by <c val=\"#TooltipNumbers\"><d ref=\"-1*Talent,BrightwingSpeedyDragon,AbilityModificationArray[0].Modifications[0].Value\"/></c> second.",
+    "BrightwingUnstableAnomalyTalent": "Increase Polymorph's Slow by <c val=\"#TooltipNumbers\"><d ref=\"-100*(Talent,BrightwingUnstableAnomalyPolymorph,AbilityModificationArray[0].Modifications[0].Value)\"player=\"0\"/>%</c>. Upon expiration, Polymorph deals damage to nearby enemy Heroes equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,BrightwingPolymorphUnstableAnomalyDamage,VitalFractionMax[Life]\"/>%</c> of their maximum Health.",
+    "FaerieDragonPixieCharmTalent": "Activate to consume <c val=\"#TooltipNumbers\"><d ref=\"Effect,FaerieDragonPixieCharmSubtractTokenCount,Value*(-1)\"/></c> stacks of Bribe to instantly defeat an uncaptured non-Elite Mercenary.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Gain <c val=\"#TooltipNumbers\">1</c> stack of Bribe when a nearby enemy Minion dies, and <c val=\"#TooltipNumbers\"><d ref=\"Effect,BrightwingPixieCharmAddHeroTokenCount,Value\"/></c> stacks when hitting an enemy Hero with Arcane Flare's center. Maximum <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FaerieDragonPixieCharm,Max\"/></c> stacks."
+  },
+  "tooltipSimple": {
+    "BrightwingArcaneFlare": "Fire a damaging flare",
+    "BrightwingArcaneFlareHush!": "Arcane Flare center Silences, reduces damage",
+    "BrightwingArcaneFlareStickyFlareTalent": "Arcane Flare Slows enemies",
+    "BrightwingBlinkHealAllyDash": "Teleport to allies and heal them",
+    "BrightwingCalmingMistCriticalMist": "Activating Soothing Mist heals",
+    "BrightwingDreamShotTalent": "Arcane Flare center hits reduce cooldown",
+    "BrightwingEmeraldWind": "Damages and pushes enemies in area",
+    "BrightwingEmeraldWindIntensiveWinds": "Massively reduce Emerald Wind's cooldown",
+    "BrightwingFaerieProtector": "Grant nearby allies Pixie Dust",
+    "BrightwingGreaterPolymorphTalent": "Increase Polymorph range, reduce cooldown",
+    "BrightwingInvisibleFriends": "Blink Heal grants Stealth",
+    "BrightwingMagicSpit": "Basic Attacks reduce Soothing Mist cooldown",
+    "BrightwingPhaseOut": "Activate to gain Stasis",
+    "BrightwingPhaseShift": "Teleport to an allied Hero and heal them",
+    "BrightwingPhaseShiftHyperShift": "Increase Phase Shift healing",
+    "BrightwingPhaseShiftPeekaboo": "Phase Shift grants a Shield, reveals an area",
+    "BrightwingPixieBoostTalent": "Pixie Dust grants an additional burst of speed",
+    "BrightwingPixieDust": "Increase a Hero's Movement Speed and grant Spell Armor",
+    "BrightwingPixieDustPixiePower": "Reduce Pixie Dust cooldown, increase Spell Armor",
+    "BrightwingPixieDustSafetyDust": "Pixie Dust increases healing",
+    "BrightwingPolymorph": "Disable an enemy",
+    "BrightwingPolymorphCritterizeTalent": "Polymorph lowers enemy's Armor",
+    "BrightwingSoothingMistCalmingMist": "Remove disabling effects from allies",
+    "BrightwingSpeedyDragon": "Permanently gain Movement Speed",
+    "BrightwingUnstableAnomalyTalent": "Polymorph Slows more, target explodes",
+    "FaerieDragonPixieCharmTalent": "Activate to instantly defeat a Mercenary"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD"
+  }
+}

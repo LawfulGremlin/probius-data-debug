@@ -1,0 +1,602 @@
+{
+  "id": 23,
+  "shortName": "tychus",
+  "hyperlinkId": "Tychus",
+  "attributeId": "Tych",
+  "cHeroId": "Tychus",
+  "cUnitId": "HeroTychus",
+  "name": "Tychus",
+  "icon": "tychus.png",
+  "role": "Assassin",
+  "expandedRole": "Ranged Assassin",
+  "type": "Ranged",
+  "description": "An Assassin who shreds High Health enemies.",
+  "title": "Notorious Outlaw",
+  "info": "Tychus Findlay is a big man with a big ego and a bigger gun. Fortunately, his loyalty is easily won. Buy him a drink or three and promise him enough credits, and there's no job in the whole universe too dangerous for this outlaw.",
+  "releaseDate": "2014-03-18",
+  "releasePatch": "0.1.1.00000",
+  "tags": [
+    "EnergyImportant",
+    "Ganker",
+    "RoleAutoAttacker",
+    "WaveClearer"
+  ],
+  "stats": {
+    "hp": 1925,
+    "hpRegen": 4.0117,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 500,
+    "resourceType": "Mana",
+    "resourceRegen": 3,
+    "attackDamage": 50,
+    "attackDamageScale": 0.04,
+    "attackRange": 4.5,
+    "attackSpeed": 4,
+    "radius": 0.8125
+  },
+  "unitIds": [
+    "TychusLaserDrill",
+    "TychusOverkillTargetDummy"
+  ],
+  "abilities": {
+    "Tychus": [
+      {
+        "uid": "96407f",
+        "name": "Overkill",
+        "description": "Deal 552 (+4% per level) damage to the target and 276 (+4% per level) damage to nearby targets over 4 seconds. Reactivate to select a new target or direction. Can move and use Abilities while Channeling.",
+        "hotkey": "Q",
+        "abilityId": "Tychus|Q1",
+        "tooltipId": "TychusOverkill",
+        "cooldown": 12,
+        "manaCost": 60,
+        "icon": "storm_ui_icon_tychus_overkill.png",
+        "type": "basic"
+      },
+      {
+        "uid": "4c628c",
+        "name": "Frag Grenade",
+        "description": "Lob a grenade that deals 256 (+4% per level) damage, knocking enemies away.",
+        "hotkey": "W",
+        "abilityId": "Tychus|W1",
+        "tooltipId": "TychusFragGrenade",
+        "cooldown": 10,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_tychus_fraggrenade.png",
+        "type": "basic"
+      },
+      {
+        "uid": "2c51d2",
+        "name": "Run and Gun",
+        "description": "Dash a short distance.",
+        "hotkey": "E",
+        "abilityId": "Tychus|E1",
+        "tooltipId": "TychusRunandGun",
+        "cooldown": 10,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_tychus_runandgun.png",
+        "type": "basic"
+      },
+      {
+        "uid": "b9ac21",
+        "name": "Drakken Laser Drill",
+        "description": "Call down a Laser Drill to attack nearby enemies, dealing 142 (+4% per level) damage every second. Reactivate to assign a new target. Lasts 22 seconds.",
+        "hotkey": "R",
+        "abilityId": "Tychus|R1",
+        "tooltipId": "TychusDrakkenLaserDrill",
+        "cooldown": 100,
+        "manaCost": 100,
+        "icon": "storm_ui_icon_tychus_drakkinlaserdrill.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "5ceb13",
+        "name": "Commandeer Odin",
+        "description": "Call down an Odin to pilot. The Odin deals increased Damage, has 100% increased Basic Attack range, and uses different Abilities. The Odin has 25 Armor and lasts 23 seconds.",
+        "hotkey": "R",
+        "abilityId": "Tychus|R2",
+        "tooltipId": "TychusCommandeerOdin",
+        "cooldown": 100,
+        "manaCost": 100,
+        "icon": "storm_ui_icon_tychus_commandeerodin.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "084071",
+        "name": "Minigun",
+        "description": "Activate to have Basic Attacks against Heroes deal bonus damage equal to 2.5% of their maximum Health. Lasts 3 seconds.",
+        "hotkey": "D",
+        "trait": true,
+        "abilityId": "Tychus|D1",
+        "tooltipId": "TychusMinigun",
+        "cooldown": 12,
+        "icon": "storm_ui_icon_tychus_minigun.png",
+        "type": "trait"
+      }
+    ],
+    "TychusOdinNoHealth": [
+      {
+        "uid": "0e7619",
+        "name": "Annihilate",
+        "description": "Fire the Odin's cannons in a straight line, dealing 196 (+4% per level) damage to everything in the path.",
+        "hotkey": "Q",
+        "abilityId": "Tychus|Q2",
+        "tooltipId": "TychusCommandeerOdinAnnihilate",
+        "cooldown": 7,
+        "icon": "storm_ui_icon_tychus_annihilate.png",
+        "type": "basic"
+      },
+      {
+        "uid": "bdd102",
+        "name": "Ragnarok Missiles",
+        "description": "Launches a volley of missiles at target area, dealing 132 (+4% per level) damage and slowing enemy Movement Speed by 30% for 2 seconds.",
+        "hotkey": "W",
+        "abilityId": "Tychus|W2",
+        "tooltipId": "TychusCommandeerOdinRagnarokMissilesTargeted",
+        "cooldown": 7,
+        "icon": "storm_ui_icon_tychus_ragnarokmissiles.png",
+        "type": "basic"
+      },
+      {
+        "uid": "78f782",
+        "name": "Thrusters",
+        "description": "Dash in target direction.",
+        "hotkey": "E",
+        "abilityId": "Tychus|E2",
+        "tooltipId": "TychusOdinThrusters",
+        "cooldown": 8,
+        "icon": "storm_ui_icon_tychus_thrusters.png",
+        "type": "basic"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "TychusFragGrenadeQuarterbackTalent",
+        "talentTreeId": "TychusMasteryQuarterback",
+        "name": "Quarterback",
+        "description": "Increases Frag Grenade's damage by 10% and its range by 45%.",
+        "icon": "storm_ui_icon_tychus_fraggrenade.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Tychus|W1",
+        "abilityLinks": [
+          "Tychus|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusGrenade"
+        ]
+      },
+      {
+        "tooltipId": "TychusRunandGunDashTalent",
+        "talentTreeId": "TychusMasteryRunandGunDash",
+        "name": "Dash",
+        "description": "Increase the range of Run and Gun by 50%. When cast, increase Tychus's Movement Speed by 20% for 2.5 seconds.",
+        "icon": "storm_ui_icon_tychus_runandgun.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Tychus|E1",
+        "abilityLinks": [
+          "Tychus|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusRunAndGunOverkill",
+          "TychusRunAndGun"
+        ]
+      },
+      {
+        "tooltipId": "TychusPressTheAdvantage",
+        "talentTreeId": "TychusPressTheAdvantage",
+        "name": "Press the Advantage",
+        "description": "Increase Tychus's Basic Attack range by 1.",
+        "icon": "storm_ui_icon_talent_autoattack_range.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Tychus|Passive",
+        "abilityLinks": [
+          "Tychus|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusMinigun",
+          "TychusMinigunActive"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "TychusIntheRhythmTalent",
+        "talentTreeId": "TychusInTheRhythm",
+        "name": "In the Rhythm",
+        "description": "Quest: While Minigun is active, Basic Attacks against Heroes permanently increase future Minigun durations by 0.03 seconds.",
+        "icon": "storm_ui_icon_tychus_minigun.png",
+        "type": "Trait",
+        "sort": 1,
+        "isQuest": true,
+        "abilityId": "Tychus|D1",
+        "abilityLinks": [
+          "Tychus|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusMinigun",
+          "TychusMinigunActive"
+        ]
+      },
+      {
+        "tooltipId": "TychusTheBiggerTheyAre",
+        "talentTreeId": "TychusTheBiggerTheyAre",
+        "name": "The Bigger They Are...",
+        "description": "Increase the damage bonus to 4% while enemy Heroes are above 30% Health, but Minigun no longer has any effect on targets below 30%.",
+        "icon": "storm_ui_icon_tychus_minigun_a.png",
+        "type": "Trait",
+        "sort": 2,
+        "abilityId": "Tychus|D1",
+        "abilityLinks": [
+          "Tychus|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusMinigun",
+          "TychusMinigunActive"
+        ]
+      },
+      {
+        "tooltipId": "TychusMasterAssassinTalent",
+        "talentTreeId": "TychusMasterAssassin",
+        "name": "Master Assassin",
+        "description": "Passive: Increase Tychus's Attack Speed by 10%.  Reward: After getting 15 Takedowns, Tychus's Attack Speed is increased by an additional 15%.",
+        "icon": "storm_ui_icon_talent_autoattack_speed.png",
+        "type": "Passive",
+        "sort": 3,
+        "isQuest": true,
+        "abilityId": "Tychus|Passive",
+        "abilityLinks": [
+          "Tychus|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusMinigun",
+          "TychusMinigunActive"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "TychusMeltingPoint",
+        "talentTreeId": "TychusMeltingPoint",
+        "name": "Melting Point",
+        "description": "Enemies hit by Frag Grenade take an additional 75 (+4% per level) damage over 3 seconds. This damage is increased by 100% against Minions, Mercenaries, and Monsters.",
+        "icon": "storm_ui_icon_tychus_fraggrenade.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Tychus|W1",
+        "abilityLinks": [
+          "Tychus|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusGrenade"
+        ]
+      },
+      {
+        "tooltipId": "TychusCombatTactician",
+        "talentTreeId": "TychusCombatTactician",
+        "name": "Combat Tactician",
+        "description": "Reduce the cooldown of Minigun by 4 seconds. Reduce the cooldown of Minigun by an additional 4 seconds after using Run and Gun.",
+        "icon": "storm_ui_icon_tychus_minigun.png",
+        "type": "Trait",
+        "sort": 2,
+        "abilityId": "Tychus|D1",
+        "abilityLinks": [
+          "Tychus|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusMinigun",
+          "TychusMinigunActive"
+        ]
+      },
+      {
+        "tooltipId": "TychusRelentlessSoldierTalent",
+        "talentTreeId": "TychusRelentlessSoldier",
+        "name": "Relentless Soldier",
+        "description": "Being Stunned or Rooted grants 30 Armor for 3 seconds, reducing damage taken by 30%.",
+        "icon": "storm_ui_icon_talent_relentless.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Tychus|Passive"
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "TychusCommandeerOdin",
+        "talentTreeId": "TychusHeroicAbilityCommandeerOdin",
+        "name": "Commandeer Odin",
+        "description": "Call down an Odin to pilot. The Odin deals increased Damage, has 100% increased Basic Attack range, and uses different Abilities. The Odin has 25 Armor and lasts 23 seconds.",
+        "icon": "storm_ui_icon_tychus_commandeerodin.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 100,
+        "abilityId": "Tychus|R2",
+        "abilityLinks": [
+          "Tychus|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusOdinNoHealth"
+        ]
+      },
+      {
+        "tooltipId": "TychusDrakkenLaserDrill",
+        "talentTreeId": "TychusHeroicAbilityDrakkenLaserDrill",
+        "name": "Drakken Laser Drill",
+        "description": "Call down a Laser Drill to attack nearby enemies, dealing 142 (+4% per level) damage every second. Reactivate to assign a new target. Lasts 22 seconds.",
+        "icon": "storm_ui_icon_tychus_drakkinlaserdrill.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 100,
+        "abilityId": "Tychus|R1",
+        "abilityLinks": [
+          "Tychus|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusDrakkenLaserDrill"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "TychusOverkillSprayNPrayTalent",
+        "talentTreeId": "TychusMasterySprayNPray",
+        "name": "Spray 'n' Pray",
+        "description": "Overkill Slows enemy Movement Speed by 25% and its range is increased by 25%.",
+        "icon": "storm_ui_icon_tychus_overkill.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Tychus|Q1",
+        "abilityLinks": [
+          "Tychus|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusOverkillTargeted"
+        ]
+      },
+      {
+        "tooltipId": "TychusThatsTheStuff",
+        "talentTreeId": "TychusThatsTheStuff",
+        "name": "That's the Stuff!",
+        "description": "Minigun heals Tychus for 100% of the bonus damage dealt after it expires.",
+        "icon": "storm_ui_icon_tychus_minigun.png",
+        "type": "Trait",
+        "sort": 2,
+        "abilityId": "Tychus|D1",
+        "abilityLinks": [
+          "Tychus|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusMinigun",
+          "TychusMinigunActive"
+        ]
+      },
+      {
+        "tooltipId": "TychusNeosteelCoatingTalent",
+        "talentTreeId": "TychusNeosteelCoating",
+        "name": "Neosteel Coating",
+        "description": "Activate to gain 75 Spell Armor for 4 seconds, reducing Ability Damage taken by 75%.",
+        "icon": "storm_temp_btn-upgrade-terran-neosteelframe.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 30,
+        "abilityId": "Tychus|Active"
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "TychusOverkillArmorPiercingRoundsTalent",
+        "talentTreeId": "TychusMasteryOverkillArmorPiercingRounds",
+        "name": "Armor Piercing Rounds",
+        "description": "Each time Overkill hits an enemy, its damage against them is increased by 15%, stacking up to 60% bonus damage.",
+        "icon": "storm_ui_icon_tychus_overkill.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Tychus|Q1",
+        "abilityLinks": [
+          "Tychus|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusOverkillTargeted"
+        ]
+      },
+      {
+        "tooltipId": "TychusFragGrenadeTitanGrenadeTalent",
+        "talentTreeId": "TychusMasteryFragGrenadeTitanGrenade",
+        "name": "Titan Grenade",
+        "description": "Frag Grenade deals bonus damage to Heroes equal to 5% of their maximum Health. Each enemy Hero hit by Frag Grenade reduces its cooldown by 1 second.",
+        "icon": "storm_ui_icon_tychus_fraggrenade.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Tychus|W1",
+        "abilityLinks": [
+          "Tychus|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusGrenade"
+        ]
+      },
+      {
+        "tooltipId": "TychusSizzlinAttacks",
+        "talentTreeId": "TychusSizzlinAttacks",
+        "name": "Sizzlin' Attacks",
+        "description": "Basic Attacks deal bonus damage to Heroes equal to 1% of their maximum Health. Stacks with Minigun.",
+        "icon": "storm_ui_icon_talent_autoattack_searing.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Tychus|D1",
+        "abilityLinks": [
+          "Tychus|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusMinigun",
+          "TychusMinigunActive"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "TychusCommandeerOdinBigRedButtonTalent",
+        "talentTreeId": "TychusMasteryOdinBigRedButton",
+        "name": "Big Red Button",
+        "description": "Odin lasts 50% longer and Ragnarok Missiles also launches a Nuclear Missile which lands 2.5 seconds later, dealing 319 (+4% per level) damage in its area.",
+        "icon": "storm_ui_icon_tychus_commandeerodin.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "Tychus|R2",
+        "abilityLinks": [
+          "Tychus|R2",
+          "Tychus|W2"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusOdinNoHealth",
+          "TychusOdinRagnarokMissilesTargeted"
+        ],
+        "prerequisiteTalentIds": [
+          "TychusHeroicAbilityCommandeerOdin"
+        ]
+      },
+      {
+        "tooltipId": "TychusDrakkenLaserFocusingDiodesTalent",
+        "talentTreeId": "TychusMasteryDrakkenLaserFocusingDiodes",
+        "name": "Focusing Diodes",
+        "description": "Increases the range of the Drakken Laser Drill by 50%. Deals increasing damage the longer it remains on a single target, up to 100% additional damage.",
+        "icon": "storm_ui_icon_tychus_drakkinlaserdrill.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "Tychus|R1",
+        "abilityLinks": [
+          "Tychus|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusDrakkenLaserDrill"
+        ],
+        "prerequisiteTalentIds": [
+          "TychusHeroicAbilityDrakkenLaserDrill"
+        ]
+      },
+      {
+        "tooltipId": "TychusOverkillCanDoThisAllDayTalent",
+        "talentTreeId": "TychusCanDoThisAllDayOverkillTalent",
+        "name": "Can Do This All Day",
+        "description": "Reduce Overkill's cooldown by 5 seconds. While Channeling Overkill, Tychus gains 40 Armor.",
+        "icon": "storm_ui_icon_tychus_overkill.png",
+        "type": "Q",
+        "sort": 3,
+        "abilityId": "Tychus|Q1",
+        "abilityLinks": [
+          "Tychus|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusOverkillTargeted"
+        ]
+      },
+      {
+        "tooltipId": "TychusRunAndGunBobAndWeaveTalent",
+        "talentTreeId": "TychusRunAndGunBobAndWeave",
+        "name": "Bob and Weave",
+        "description": "Run and Gun and Odin's Thrusters gain 2 additional charges and reduces Run and Gun's Mana cost from 50 to 25. After using Run and Gun, increase Tychus's Basic Attack range by 1.5 for 4 seconds.",
+        "icon": "storm_ui_icon_tychus_runandgun.png",
+        "type": "E",
+        "sort": 4,
+        "abilityId": "Tychus|E1",
+        "abilityLinks": [
+          "Tychus|E1",
+          "Tychus|E2"
+        ],
+        "abilityTalentLinkIds": [
+          "TychusRunAndGunOverkill",
+          "TychusRunAndGun",
+          "TychusOdinThrusters"
+        ]
+      }
+    ]
+  },
+  "summonUnits": [
+    {
+      "unitId": "TychusLaserDrill",
+      "name": "Drakken Laser Drill",
+      "icon": "storm_ui_icon_tychus_drakkinlaserdrill.png",
+      "stats": {
+        "hp": 1255,
+        "hpRegen": 0,
+        "hpScale": 0.04,
+        "hpRegenScale": 0,
+        "attackDamage": 71,
+        "attackDamageScale": 0.04,
+        "attackRange": 10,
+        "attackSpeed": 0.9412,
+        "radius": 0.5,
+        "sight": 9.25
+      },
+      "abilities": [],
+      "sourceAbilityTooltipId": "TychusDrakkenLaserDrill"
+    }
+  ],
+  "tooltipMarkup": {
+    "TychusCombatTactician": "Reduce the cooldown of Minigun by <c val=\"#TooltipNumbers\"><d ref=\"-1*Talent,TychusCombatTactician,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds. Reduce the cooldown of Minigun by an additional <c val=\"#TooltipNumbers\"><d ref=\"-Effect,TychusRunAndGunCombatTacticianTalentModifyUnit,Cost[0].CooldownTimeUse\"/></c> seconds after using Run and Gun.",
+    "TychusCommandeerOdin": "Call down an Odin to pilot. The Odin deals increased Damage, has <c val=\"#TooltipNumbers\"><d ref=\"(Weapon,TychusOdin,Range/Weapon,TychusMiniGunRampingSpeedWeapon,Range-1)*100\" player=\"0\" precision=\"1\"/>%</c> increased Basic Attack range, and uses different Abilities. The Odin has <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusOdin,ArmorModification.AllArmorBonus\"/></c> Armor and lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusOdin,Duration\" player=\"0\"/></c> seconds.",
+    "TychusCommandeerOdinAnnihilate": "Fire the Odin's cannons in a straight line, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusOdinAnnihilateDamage,Amount\"/></c> damage to everything in the path.",
+    "TychusCommandeerOdinBigRedButtonTalent": "Odin lasts <c val=\"#TooltipNumbers\"><d ref=\"(Talent,TychusMasteryOdinBigRedButton,AbilityModificationArray[0].Modifications[0].Value* 100)-100\"/>%</c> longer and Ragnarok Missiles also launches a Nuclear Missile which lands <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusOdinRagnarokMissilesNuclearBlastCreatePersistent,PeriodicPeriodArray[0]\" precision=\"1\"/></c> seconds later, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusOdinNuclearBlastDamage,Amount\"/></c> damage in its area.",
+    "TychusCommandeerOdinRagnarokMissilesTargeted": "Launches a volley of missiles at target area, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusOdinRagnarokMissilesTargetedDamage,Amount\"/></c> damage and slowing enemy Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusOdinRagnarokMissilesTargetedSlow,Modification.UnifiedMoveSpeedFactor*(-100)\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusOdinRagnarokMissilesTargetedSlow,Duration\" player=\"0\"/></c> seconds.",
+    "TychusDrakkenLaserDrill": "Call down a Laser Drill to attack nearby enemies, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,LaserDrillWeaponDamage,Amount/Effect,LaserDrillWeaponCreatePersistent,ExpireDelay\"/></c> damage every second. Reactivate to assign a new target. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LaserDrillTimedLife,Duration\" player=\"0\"/></c> seconds.",
+    "TychusDrakkenLaserFocusingDiodesTalent": "Increases the range of the Drakken Laser Drill by <c val=\"#TooltipNumbers\"><d ref=\"(Talent,TychusMasteryDrakkenLaserFocusingDiodes,AbilityModificationArray[0].Modifications[0].Value / Weapon,TychusLaserDrillWeapon,Range)*100\" player=\"0\"/>%</c>. Deals increasing damage the longer it remains on a single target, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TychusLaserDrillFocusingDiodesAccumulator,MaxAccumulation*100\" player=\"0\"/>%</c> additional damage.",
+    "TychusFragGrenade": "Lob a grenade that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusGrenadeDamage,Amount\"/> </c>damage, knocking enemies away.",
+    "TychusFragGrenadeQuarterbackTalent": "Increases Frag Grenade's damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,TychusGrenadeDamage,MultiplicativeModifierArray[QuartebackDamage].Modifier\"/>%</c> and its range by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,TychusMasteryQuarterback,AbilityModificationArray[0].Modifications[0].Value/Abil,TychusGrenade,Range\"player=\"0\"precision=\"0\"/>%</c>.",
+    "TychusFragGrenadeTitanGrenadeTalent": "Frag Grenade deals bonus damage to Heroes equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,TychusGrenadeTitanGrenadeDamage,VitalFractionMax[Life]\"/>%</c> of their maximum Health. Each enemy Hero hit by Frag Grenade reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,TychusFragGrenadeTitanGrenadeModifyCooldown,Cost[0].CooldownTimeUse\"/></c> second.",
+    "TychusIntheRhythmTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> While Minigun is active, Basic Attacks against Heroes permanently increase future Minigun durations by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TychusInTheRhythmDurationAccumulator,Scale\" precision=\"2\" player=\"0\"/></c> seconds.",
+    "TychusMasterAssassinTalent": "<c val=\"#AbilityPassive\">Passive:</c> Increase Tychus's Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,TychusMasterAssassinAttackSpeed,Modification.AdditiveAttackSpeedFactor\" precision=\"2\"Player=\"0\"/>%</c>. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After getting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusMasterAssassinQuestToken,Max\"/></c> Takedowns, Tychus's Attack Speed is increased by an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,TychusMasterAssassinQuestCompleteModifyPlayer,EffectArray[0].Value\"/>%</c>.",
+    "TychusMeltingPoint": "Enemies hit by Frag Grenade take an additional <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,TychusMeltingPointDebuff,Duration*Behavior,TychusMeltingPointDebuff,Period)*Effect,TychusMeltingPointDamage,Amount\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusMeltingPointDebuff,Duration\"/></c> seconds. This damage is increased by <C val=\"#TooltipNumbers\"><d ref=\"100*Effect,TychusMeltingPointDamage,MultiplicativeModifierArray[BonusDamage].Modifier\"/>%</c> against Minions, Mercenaries, and Monsters.",
+    "TychusMinigun": "Activate to have Basic Attacks against Heroes deal bonus damage equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,TychusMinigunDamage,VitalFractionMax[Life]\"precision=\"2\"/>%</c> of their maximum Health. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusMinigunActiveBuff,Duration\"player=\"0\"/></c> seconds.",
+    "TychusNeosteelCoatingTalent": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusNeosteelCoatingSpellShield,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusNeosteelCoatingSpellShield,Duration\"/></c> seconds, reducing Ability Damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusNeosteelCoatingSpellShield,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.",
+    "TychusOdinThrusters": "Dash in target direction.",
+    "TychusOverkill": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusOverkillPrimaryTargetDamage,Amount*12\"/></c> damage to the target and <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusOverkillSecondaryTargetDamage,Amount*12\"/></c> damage to nearby targets over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusOverkillActive,Duration\" player=\"0\"/></c> seconds. Reactivate to select a new target or direction. Can move and use Abilities while Channeling.",
+    "TychusOverkillArmorPiercingRoundsTalent": "Each time Overkill hits an enemy, its damage against them is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,TychusOverkillArmorPiercingRoundsDamageAccumulator,Scale\"/>%</c>, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,TychusOverkillArmorPiercingRoundsDamageAccumulator,MaxAccumulation\"/>%</c> bonus damage.",
+    "TychusOverkillCanDoThisAllDayTalent": "Reduce Overkill's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,TychusCanDoThisAllDayOverkillTalent,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds. While Channeling Overkill, Tychus gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusOverkillCanDoThisAllDayArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor.",
+    "TychusOverkillSprayNPrayTalent": "Overkill Slows enemy Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TychusOverkillSprayNPraySlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> and its range is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,TychusMasterySprayNPray,AbilityModificationArray[0].Modifications[1].Value/Abil,TychusOverkillTargeted,Range\"player=\"0\"precision=\"0\"/>%</c>.",
+    "TychusPressTheAdvantage": "Increase Tychus's Basic Attack range by <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusPressTheAdvantageAttackRangeModify,EffectArray[1].Value\"/></c>.",
+    "TychusRelentlessSoldierTalent": "Being Stunned or Rooted grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusRelentlessSoldierArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusRelentlessSoldierArmorIncrease,Duration\"/></c> seconds, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusRelentlessSoldierArmorIncrease,ArmorModification.AllArmorBonus\"/>%</c>.",
+    "TychusRunAndGunBobAndWeaveTalent": "Run and Gun and Odin's Thrusters gain <c val=\"#TooltipNumbers\">2</c> additional charges and reduces Run and Gun's Mana cost from <c val=\"#TooltipNumbers\"><d ref=\"Abil,TychusRunAndGun,Cost[0].Vital[Energy]\" player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Abil,TychusRunAndGun,Cost[0].Vital[Energy]+Talent,TychusRunAndGunBobAndWeave,AbilityModificationArray[0].Modifications[6].Value\" player=\"0\"/></c>. After using Run and Gun, increase Tychus's Basic Attack range by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusBobAndWeaveAttackRangeBuff,Modification.WeaponRange\"Precision=\"2\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusBobAndWeaveAttackRangeBuff,Duration\"/></c> seconds.",
+    "TychusRunandGun": "Dash a short distance.",
+    "TychusRunandGunDashTalent": "Increase the range of Run and Gun by <c val=\"#TooltipNumbers\">50%</c>. When cast, increase Tychus's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,TychusRunAndGunDashMovementSpeedBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusRunAndGunDashMovementSpeedBuff,Duration\"Precision=\"2\"/></c> seconds.",
+    "TychusSizzlinAttacks": "Basic Attacks deal bonus damage to Heroes equal to <c val=\"#TooltipNumbers\">1%</c> of their maximum Health. Stacks with Minigun.",
+    "TychusThatsTheStuff": "Minigun heals Tychus for <c val=\"#TooltipNumbers\">100%</c> of the bonus damage dealt after it expires.",
+    "TychusTheBiggerTheyAre": "Increase the damage bonus to <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusMinigunTheBiggerTheyAreDamage,VitalFractionMax[Life]*100\"/>%</c> while enemy Heroes are above <c val=\"#TooltipNumbers\">30%</c> Health, but Minigun no longer has any effect on targets below <c val=\"#TooltipNumbers\">30%</c>."
+  },
+  "tooltipSimple": {
+    "TychusCombatTactician": "Run and Gun reduces Minigun cooldown",
+    "TychusCommandeerOdin": "Call down an Odin to pilot",
+    "TychusCommandeerOdinAnnihilate": "Deals damage in a line",
+    "TychusCommandeerOdinBigRedButtonTalent": "Increases Odin duration and fires Nukes",
+    "TychusCommandeerOdinRagnarokMissilesTargeted": "Launch a volley of missiles",
+    "TychusDrakkenLaserDrill": "Call down a Laser to attack nearby enemies",
+    "TychusDrakkenLaserFocusingDiodesTalent": "Increase Laser Drill range and damage",
+    "TychusFragGrenade": "Throw a grenade, damaging and knocking back enemies",
+    "TychusFragGrenadeQuarterbackTalent": "Increased Frag Grenade damage, range",
+    "TychusFragGrenadeTitanGrenadeTalent": "Increases Frag Grenade damage to Heroes",
+    "TychusIntheRhythmTalent": "<c val=\"#TooltipQuest\">Quest:</c> Basic Attacks increase Minigun duration",
+    "TychusMasterAssassinTalent": "<c val=\"#TooltipQuest\">Quest:</c> Takedowns increase Attack Speed",
+    "TychusMeltingPoint": "Frag Grenade deals additional damage over time",
+    "TychusMinigun": "Activate to increase Basic Attack damage to Heroes",
+    "TychusNeosteelCoatingTalent": "Activate to gain Spell Armor",
+    "TychusOverkill": "Attack one target while moving, damaging nearby enemies as well",
+    "TychusOverkillArmorPiercingRoundsTalent": "Consecutive Overkill hits increase damage",
+    "TychusOverkillCanDoThisAllDayTalent": "Reduce Overkill cooldown, gain Armor",
+    "TychusOverkillSprayNPrayTalent": "Overkill Slows, has increased range",
+    "TychusPressTheAdvantage": "Increase Tychus's Basic Attack range",
+    "TychusRelentlessSoldierTalent": "Stuns and Roots grant Armor",
+    "TychusRunAndGunBobAndWeaveTalent": "Adds Run and Gun charges and reduces Mana cost",
+    "TychusRunandGun": "Dash a short distance",
+    "TychusRunandGunDashTalent": "Increase Run and Gun Range, Movement Speed",
+    "TychusSizzlinAttacks": "Basic Attacks deal more damage to Heroes",
+    "TychusThatsTheStuff": "Minigun damage heals Tychus",
+    "TychusTheBiggerTheyAre": "Increase damage of Minigun"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}

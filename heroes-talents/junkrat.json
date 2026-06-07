@@ -1,0 +1,570 @@
+{
+  "id": 73,
+  "shortName": "junkrat",
+  "hyperlinkId": "Junkrat",
+  "attributeId": "Junk",
+  "cHeroId": "Junkrat",
+  "cUnitId": "HeroJunkrat",
+  "name": "Junkrat",
+  "icon": "junkrat.png",
+  "role": "Assassin",
+  "expandedRole": "Ranged Assassin",
+  "type": "Ranged",
+  "description": "A mobile Assassin that bombards the enemy from afar, and sows chaos with traps and mines.",
+  "title": "Junker Demolitionist",
+  "info": "The destruction of the Australian omnium left the area an irradiated waste and survivors like Jamison Fawkes were greatly affected by radiation. Now as the explosive-obsessed criminal Junkrat, he is renowned for leaving havoc and bedlam in his wake.",
+  "releaseDate": "2017-10-17",
+  "releasePatch": "2.28.3.58623",
+  "tags": [
+    "RoleSpecialist",
+    "TowerPusher",
+    "WaveClearer"
+  ],
+  "stats": {
+    "hp": 1425,
+    "hpRegen": 2.9687,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 4,
+    "resourceType": "Ammo",
+    "resourceRegen": 0,
+    "attackDamage": 120,
+    "attackDamageScale": 0.04,
+    "attackRange": 5.5,
+    "attackSpeed": 1,
+    "radius": 0.6875
+  },
+  "unitIds": [
+    "JunkratConcussionMine",
+    "JunkratRIPTire",
+    "JunkratRocketRideTrackerUnit",
+    "JunkratSteelTrap"
+  ],
+  "abilities": {
+    "Junkrat": [
+      {
+        "uid": "52b38e",
+        "name": "Frag Launcher",
+        "description": "Launch a grenade that explodes at the end of its path or upon hitting an enemy, dealing 124 (+4% per level) damage to nearby enemies. Grenades can ricochet off of terrain. Deals 50% less damage to Structures.  Stores up to 4 charges. Frag Launcher's cooldown replenishes all charges at the same time.",
+        "hotkey": "Q",
+        "abilityId": "Junkrat|Q1",
+        "tooltipId": "JunkratFragLauncher",
+        "cooldown": 12,
+        "icon": "storm_ui_icon_junkrat_frag_launcher.png",
+        "type": "basic"
+      },
+      {
+        "uid": "2d29c5",
+        "name": "Concussion Mine",
+        "description": "Place a mine on the ground. Junkrat's Trait can be activated to detonate the mine, dealing 180 (+4% per level) damage to nearby enemies and knocking them back. Junkrat can also be affected by Concussion Mine, but takes no damage.  Limit 1 active mine.",
+        "hotkey": "W",
+        "abilityId": "Junkrat|W1",
+        "tooltipId": "JunkratConcussionMine",
+        "cooldown": 16,
+        "icon": "storm_ui_icon_junkrat_concussion_mine.png",
+        "type": "basic"
+      },
+      {
+        "uid": "9403d8",
+        "name": "Steel Trap",
+        "description": "Place a trap on the ground that arms after 2 seconds. Deals 130 (+4% per level) damage to the first enemy that walks over it and Roots them for 2 seconds.  Limit 1 active trap.",
+        "hotkey": "E",
+        "abilityId": "Junkrat|E1",
+        "tooltipId": "JunkratSteelTrap",
+        "cooldown": 15,
+        "icon": "storm_ui_icon_junkrat_steel_trap.png",
+        "type": "basic"
+      },
+      {
+        "uid": "340033",
+        "name": "RIP-Tire",
+        "description": "Create a motorized bomb with 530 (+4% per level) Health that lasts 15 seconds. While active, Junkrat is immobile but gains control of RIP-Tire's movement.  RIP-Tire can be reactivated to detonate immediately, knocking nearby enemies back and dealing 720 (+4% per level) damage to enemies near the center gradually reduced to 445 (+4% per level) to enemies on the edge.",
+        "hotkey": "R",
+        "abilityId": "Junkrat|R1",
+        "tooltipId": "JunkratRIPTire",
+        "cooldown": 75,
+        "icon": "storm_ui_icon_junkrat_rip_tire.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "6dc8b5",
+        "name": "Rocket Ride",
+        "description": "After 1.25 seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving.  After 3.75 seconds, Junkrat lands, dealing 935 (+4% per level) damage to nearby enemies and activating Total Mayhem. 5 seconds after landing, Junkrat reappears at the Hall of Storms and gains 150% additional Movement Speed until dismounted.",
+        "hotkey": "R",
+        "abilityId": "Junkrat|R2",
+        "tooltipId": "JunkratRocketRide",
+        "cooldown": 75,
+        "icon": "storm_ui_icon_junkrat_rocket_ride.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "e8888f",
+        "name": "Total Mayhem",
+        "description": "Upon dying, drop 5 grenades that explode after 0.75 seconds, each dealing 250 (+4% per level) damage to nearby enemies. Deals 75% less damage to Structures.  Detonate Mine  Detonate an active Concussion Mine.",
+        "trait": true,
+        "abilityId": "Junkrat|D1",
+        "tooltipId": "JunkratTotalMayhem",
+        "icon": "storm_ui_icon_junkrat_bomb_pack.png",
+        "type": "trait"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "JunkratTrickyShufflesFragLauncherTalent",
+        "talentTreeId": "JunkratFragLauncherTrickyShuffles",
+        "name": "Tricky Shuffles",
+        "description": "While Frag Launcher has no charges left, Junkrat gains 10% Movement Speed and his Basic Attacks deal 15% bonus damage.",
+        "icon": "storm_ui_icon_junkrat_frag_launcher.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Junkrat|Q1",
+        "abilityLinks": [
+          "Junkrat|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratFragLauncher"
+        ]
+      },
+      {
+        "tooltipId": "JunkratExtraWoundTimersFragLauncherTalent",
+        "talentTreeId": "JunkratFragLauncherExtraWoundTimers",
+        "name": "Extra-Wound Timers",
+        "description": "The final grenade launched from Frag Launcher deals 100% bonus damage, and Frag Launcher grenades last an additional 2 seconds before automatically detonating.",
+        "icon": "storm_ui_icon_junkrat_frag_launcher_b.png",
+        "type": "Q",
+        "sort": 2,
+        "abilityId": "Junkrat|Q1",
+        "abilityLinks": [
+          "Junkrat|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratFragLauncher"
+        ]
+      },
+      {
+        "tooltipId": "JunkratBlowEmUpConcussionMineTalent",
+        "talentTreeId": "JunkratConcussionMineBlowEmUp",
+        "name": "Blow 'Em Up!",
+        "description": "Hitting an enemy Hero with Concussion Mine or Steel Trap causes Junkrat to deal 25% more damage with Basic Attacks and Basic Abilities for 6 seconds.",
+        "icon": "storm_ui_icon_junkrat_trap_mine.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Junkrat|Passive",
+        "abilityLinks": [
+          "Junkrat|E1",
+          "Junkrat|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratConcussionMine",
+          "JunkratSteelTrap"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "JunkratTasteForExplosionsFragLauncherTalent",
+        "talentTreeId": "JunkratFragLauncherTasteForExplosions",
+        "name": "Taste For Explosions",
+        "description": "Quest: Hitting a Hero with Frag Launcher increases its damage by 0.2%, up to 40%.",
+        "icon": "storm_ui_icon_junkrat_frag_launcher.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": true,
+        "abilityId": "Junkrat|Q1",
+        "abilityLinks": [
+          "Junkrat|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratFragLauncher"
+        ]
+      },
+      {
+        "tooltipId": "JunkratBOOMPOWConcussionMineTalent",
+        "talentTreeId": "JunkratConcussionMineBOOMPOW",
+        "name": "BOOM POW",
+        "description": "Hitting an enemy Hero with Concussion Mine reduces its cooldown by 10 seconds.",
+        "icon": "storm_ui_icon_junkrat_concussion_mine.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Junkrat|W1",
+        "abilityLinks": [
+          "Junkrat|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratConcussionMine",
+          "JunkratDetonateMine"
+        ]
+      },
+      {
+        "tooltipId": "JunkratChatteringTeethSteelTrapTalent",
+        "talentTreeId": "JunkratSteelTrapChatteringTeeth",
+        "name": "Chattering Teeth",
+        "description": "Steel Traps will slowly chase nearby enemy Heroes.",
+        "icon": "storm_ui_icon_junkrat_steel_trap.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "Junkrat|E1",
+        "abilityLinks": [
+          "Junkrat|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratSteelTrap"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "JunkratBoggedDownConcussionMineTalent",
+        "talentTreeId": "JunkratConcussionMineBoggedDown",
+        "name": "Bogged Down",
+        "description": "Enemies launched by Concussion Mine are Slowed by 40% for 2.5 seconds upon landing.",
+        "icon": "storm_ui_icon_junkrat_concussion_mine.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Junkrat|W1",
+        "abilityLinks": [
+          "Junkrat|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratConcussionMine",
+          "JunkratDetonateMine"
+        ]
+      },
+      {
+        "tooltipId": "JunkratStickyWicketSteelTrapTalent",
+        "talentTreeId": "JunkratSteelTrapStickyWicket",
+        "name": "Sticky Wicket",
+        "description": "Enemy Heroes who are hit by Steel Trap are Silenced for 2 seconds.",
+        "icon": "storm_ui_icon_junkrat_steel_trap.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Junkrat|E1",
+        "abilityLinks": [
+          "Junkrat|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratSteelTrap"
+        ]
+      },
+      {
+        "tooltipId": "JunkratDirtyTrickster",
+        "talentTreeId": "JunkratTotalMayhemDirtyTricksterTalent",
+        "name": "Dirty Trickster",
+        "description": "Increase the explosion radius of Total Mayhem by 20%. When Junkrat is Stunned, Rooted, or damaged by an enemy Hero while below 50% Health, he uses Total Mayhem, dropping 5 grenades at his feet that explode.  This effect has a 20 second cooldown.",
+        "icon": "storm_ui_icon_junkrat_bomb_pack.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Junkrat|D1",
+        "abilityLinks": [
+          "Junkrat|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratTotalMayhem"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "JunkratRIPTire",
+        "talentTreeId": "JunkratRIPTire",
+        "name": "RIP-Tire",
+        "description": "Create a motorized bomb with 530 (+4% per level) Health that lasts 15 seconds. While active, Junkrat is immobile but gains control of RIP-Tire's movement.  RIP-Tire can be reactivated to detonate immediately, knocking nearby enemies back and dealing 720 (+4% per level) damage to enemies near the center gradually reduced to 445 (+4% per level) to enemies on the edge.",
+        "icon": "storm_ui_icon_junkrat_rip_tire.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 75,
+        "abilityId": "Junkrat|R1",
+        "abilityLinks": [
+          "Junkrat|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratRIPTire"
+        ]
+      },
+      {
+        "tooltipId": "JunkratRocketRide",
+        "talentTreeId": "JunkratRocketRide",
+        "name": "Rocket Ride",
+        "description": "After 1.25 seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving.  After 3.75 seconds, Junkrat lands, dealing 935 (+4% per level) damage to nearby enemies and activating Total Mayhem. 5 seconds after landing, Junkrat reappears at the Hall of Storms and gains 150% additional Movement Speed until dismounted.",
+        "icon": "storm_ui_icon_junkrat_rocket_ride.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 75,
+        "abilityId": "Junkrat|R2",
+        "abilityLinks": [
+          "Junkrat|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratRocketRide"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "JunkratBombsAwayFragLauncherTalent",
+        "talentTreeId": "JunkratFragLauncherBombsAwayTalent",
+        "name": "Bombs Away",
+        "description": "Increase Junkrat's Basic Attack range by 1. Frag Launcher grenades fired within 0.5 seconds of using a Basic Attack deal 30% bonus damage.",
+        "icon": "storm_ui_icon_junkrat_frag_launcher.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Junkrat|Q1",
+        "abilityLinks": [
+          "Junkrat|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratFragLauncher"
+        ]
+      },
+      {
+        "tooltipId": "JunkratRipperAirConcussionMineTalent",
+        "talentTreeId": "JunkratConcussionMineRipperAir",
+        "name": "Ripper Air",
+        "description": "Junkrat is knocked back 50% farther by Concussion Mine. Additionally, Concussion Mine's cooldown is reduced by 12 seconds if only Junkrat is hit.",
+        "icon": "storm_ui_icon_junkrat_concussion_mine.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Junkrat|W1",
+        "abilityLinks": [
+          "Junkrat|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratConcussionMine",
+          "JunkratDetonateMine"
+        ]
+      },
+      {
+        "tooltipId": "JunkratGottaTrapEmAllSteelTrapTalent",
+        "talentTreeId": "JunkratSteelTrapGottaTrapEmAll",
+        "name": "Gotta Trap 'Em All!",
+        "description": "Reduce Steel Trap's cooldown by 5 seconds and increase the maximum number of active traps to 2.",
+        "icon": "storm_ui_icon_junkrat_steel_trap.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "Junkrat|E1",
+        "abilityLinks": [
+          "Junkrat|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratSteelTrap"
+        ]
+      },
+      {
+        "tooltipId": "JunkratBigAsSteelTrapTalent",
+        "talentTreeId": "JunkratSteelTrapBigAs",
+        "name": "Big As",
+        "description": "Steel Trap now only hits Heroes, and Heroes hit have their Armor reduced by 15 for 3 seconds. Increases Steel Trap's radius and damage by 50%.",
+        "icon": "storm_ui_icon_junkrat_steel_trap_a.png",
+        "type": "E",
+        "sort": 4,
+        "abilityId": "Junkrat|E1",
+        "abilityLinks": [
+          "Junkrat|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratSteelTrap"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "JunkratBurstFireFragLauncherTalent",
+        "talentTreeId": "JunkratFragLauncherBurstFire",
+        "name": "Burst Fire",
+        "description": "Frag Launcher fires all of its charges in a continuous burst, its cooldown is reduced by 6 seconds, but it loses 1 maximum charge.",
+        "icon": "storm_ui_icon_junkrat_frag_launcher_f.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Junkrat|Q1",
+        "abilityLinks": [
+          "Junkrat|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratFragLauncher"
+        ]
+      },
+      {
+        "tooltipId": "JunkratEndlessNadesFragLauncherTalent",
+        "talentTreeId": "JunkratFragLauncherEndlessNades",
+        "name": "Endless Nades",
+        "description": "Hitting an enemy Hero with Frag Launcher reduces its cooldown by 1.5 seconds.",
+        "icon": "storm_ui_icon_junkrat_frag_launcher_e.png",
+        "type": "Q",
+        "sort": 2,
+        "abilityId": "Junkrat|Q1",
+        "abilityLinks": [
+          "Junkrat|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratFragLauncher"
+        ]
+      },
+      {
+        "tooltipId": "JunkratSpreadVolleyFragLauncherTalent",
+        "talentTreeId": "JunkratFragLauncherSpreadVolley",
+        "name": "Spread Volley",
+        "description": "Activate to make Frag Launcher fire 2 additional grenades in a spread. Works for up to 4 total charges, or until Frag Launcher runs out of charges.",
+        "icon": "storm_ui_icon_junkrat_frag_launcher_d.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 30,
+        "abilityId": "Junkrat|Active"
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "JunkratExtraOomphRIPTireTalent",
+        "talentTreeId": "JunkratRIPTireExtraOomph",
+        "name": "Extra Oomph",
+        "description": "Increase RIP-Tire's knockback distance by 80%, and its cooldown is reduced by 25 seconds for each enemy Hero hit.",
+        "icon": "storm_ui_icon_junkrat_rip_tire.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "Junkrat|R1",
+        "abilityLinks": [
+          "Junkrat|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratRIPTire"
+        ],
+        "prerequisiteTalentIds": [
+          "JunkratRIPTire"
+        ]
+      },
+      {
+        "tooltipId": "JunkratPuckishScampRocketRideTalent",
+        "talentTreeId": "JunkratRocketRidePuckishScamp",
+        "name": "Puckish Scamp",
+        "description": "Junkrat also gains the Ability RIP-Tire. Each time he uses his Heroic, it swaps to the alternate ability.  Passive: Reduce both Heroic cooldowns by 20 seconds.",
+        "icon": "storm_ui_icon_junkrat_rocket_ride.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "Junkrat|R1",
+        "abilityLinks": [
+          "Junkrat|R1",
+          "Junkrat|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratRIPTire",
+          "JunkratRocketRide"
+        ],
+        "prerequisiteTalentIds": [
+          "JunkratRocketRide"
+        ]
+      },
+      {
+        "tooltipId": "JunkratCannonballFragLauncherTalent",
+        "talentTreeId": "JunkratFragLauncherCannonball",
+        "name": "Cannonball!",
+        "description": "Increase the radius and explosion radius of grenades from Basic Attacks and Frag Launcher by 50%.",
+        "icon": "storm_ui_icon_junkrat_frag_launcher_g.png",
+        "type": "Q",
+        "sort": 3,
+        "abilityId": "Junkrat|Q1",
+        "abilityLinks": [
+          "Junkrat|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratFragLauncher"
+        ]
+      },
+      {
+        "tooltipId": "JunkratIHateWaiting",
+        "talentTreeId": "JunkratIHateWaitingTalent",
+        "name": "I Hate Waiting!",
+        "description": "Junkrat always rides his Rocket Ride Mount, which grants 150% increased Movement Speed, but his Mount cooldown is increased to 8 seconds.",
+        "icon": "storm_ui_icon_junkrat_mount_rocket.png",
+        "type": "Z",
+        "sort": 4,
+        "abilityId": "Junkrat|D1",
+        "abilityLinks": [
+          "Junkrat|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "JunkratTotalMayhem"
+        ]
+      }
+    ]
+  },
+  "summonUnits": [
+    {
+      "unitId": "JunkratRIPTire",
+      "name": "RIP-Tire",
+      "icon": "storm_ui_icon_junkrat_rip_tire.png",
+      "stats": {
+        "hp": 530,
+        "hpRegen": 0,
+        "hpScale": 0.04,
+        "hpRegenScale": 0,
+        "radius": 0.75,
+        "speed": 6.5,
+        "sight": 8
+      },
+      "abilities": [],
+      "sourceAbilityTooltipId": "JunkratRIPTire"
+    }
+  ],
+  "tooltipMarkup": {
+    "JunkratBOOMPOWConcussionMineTalent": "Hitting an enemy Hero with Concussion Mine reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,JunkratConcussionMineBOOMPOWHitEnemyCooldownRedution,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "JunkratBigAsSteelTrapTalent": "Steel Trap now only hits Heroes, and Heroes hit have their Armor reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,JunkratSteelTrapBigAsArmorDebuff,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratSteelTrapBigAsArmorDebuff,Duration\"Precision=\"2\"/></c> seconds. Increases Steel Trap's radius and damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,JunkratSteelTrapDamage,MultiplicativeModifierArray[0].Modifier*100\"/>%</c>.",
+    "JunkratBlowEmUpConcussionMineTalent": "Hitting an enemy Hero with Concussion Mine or Steel Trap causes Junkrat to deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,JunkratConcussionMineDamage,MultiplicativeModifierArray[BlowEmUp].Modifier\"/>%</c> more damage with Basic Attacks and Basic Abilities for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratConcussionMineBlowEmUpBonusDamageBehavior,Duration\"/></c> seconds.",
+    "JunkratBoggedDownConcussionMineTalent": "Enemies launched by Concussion Mine are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratConcussionMineBoggedDownSlow,Modification.UnifiedMoveSpeedFactor*(-100)\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratConcussionMineBoggedDownSlow,Duration\"Precision=\"2\"/></c> seconds upon landing.",
+    "JunkratBombsAwayFragLauncherTalent": "Increase Junkrat's Basic Attack range by <c val=\"#TooltipNumbers\"><d ref=\"Talent,JunkratFragLauncherBombsAwayTalent,AbilityModificationArray[0].Modifications[0].Value\"/></c>. Frag Launcher grenades fired within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratFragLauncherBombsAwayBonusDamageBehavior,Duration\"Precision=\"2\"/></c> seconds of using a Basic Attack deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,JunkratFragLauncherExplosionDamage,MultiplicativeModifierArray[BombsAwayBonusDamage].Modifier\"/>%</c> bonus damage.",
+    "JunkratBurstFireFragLauncherTalent": "Frag Launcher fires all of its charges in a continuous burst, its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,JunkratFragLauncherBurstFire,AbilityModificationArray[0].Modifications[2].Value\"/></c> seconds, but it loses <c val=\"#TooltipNumbers\">1</c> maximum charge.",
+    "JunkratCannonballFragLauncherTalent": "Increase the radius and explosion radius of grenades from Basic Attacks and Frag Launcher by <c val=\"#TooltipNumbers\"><d ref=\"Talent,JunkratFragLauncherCannonball,AbilityModificationArray[0].Modifications[0].Value-1*100\"/>%</c>.",
+    "JunkratChatteringTeethSteelTrapTalent": "Steel Traps will slowly chase nearby enemy Heroes.",
+    "JunkratConcussionMine": "Place a mine on the ground. Junkrat's Trait can be activated to detonate the mine, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,JunkratConcussionMineDamage,Amount\"/></c> damage to nearby enemies and knocking them back. Junkrat can also be affected by Concussion Mine, but takes no damage.<n/><n/>Limit <c val=\"#TooltipNumbers\">1</c> active mine.",
+    "JunkratDirtyTrickster": "Increase the explosion radius of Total Mayhem by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,JunkratTotalMayhemDirtyTricksterTalent,AbilityModificationArray[0].Modifications[1].Value\"Player=\"0\"/>%</c>. When Junkrat is Stunned, Rooted, or damaged by an enemy Hero while below <c val=\"#TooltipNumbers\">50%</c> Health, he uses Total Mayhem, dropping <c val=\"#TooltipNumbers\"><d ref=\"Effect,JunkratTotalMayhemCreateUnitPersistent,PeriodCount\"/></c> grenades at his feet that explode. <n/><n/>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Abil,JunkratTotalMayhemDirtyTrickster,Cost[0].Cooldown.TimeUse\"/></c> second cooldown.",
+    "JunkratEndlessNadesFragLauncherTalent": "Hitting an enemy Hero with Frag Launcher reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,JunkratFragLauncherEndlessNadesReduceCooldown,Cost[0].ChargeTimeUse\" precision=\"2\"/></c> seconds.",
+    "JunkratExtraOomphRIPTireTalent": "Increase RIP-Tire's knockback distance by <c val=\"#TooltipNumbers\">80%</c>, and its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,JunkratRIPTireExtraOomphReduceCooldown,Cost[0].CooldownTimeUse\"/></c> seconds for each enemy Hero hit.",
+    "JunkratExtraWoundTimersFragLauncherTalent": "The final grenade launched from Frag Launcher deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,JunkratFragLauncherExplosionDamage,MultiplicativeModifierArray[ExtraWoundTimersBonusDamage].Modifier\"/>%</c> bonus damage, and Frag Launcher grenades last an additional <c val=\"#TooltipNumbers\"><d ref=\"Talent,JunkratFragLauncherExtraWoundTimers,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds before automatically detonating.",
+    "JunkratFragLauncher": "Launch a grenade that explodes at the end of its path or upon hitting an enemy, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,JunkratFragLauncherExplosionDamage,Amount\"/></c> damage to nearby enemies. Grenades can ricochet off of terrain. Deals <c val=\"#TooltipNumbers\"><d ref=\"-Effect,JunkratFragLauncherExplosionDamage,AttributeFactor[Structure] * 100\"/>%</c> less damage to Structures.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,JunkratFragLauncher,Cost.Charge.CountMax\" player=\"0\"/></c> charges. Frag Launcher's cooldown replenishes all charges at the same time.",
+    "JunkratGottaTrapEmAllSteelTrapTalent": "Reduce Steel Trap's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"*-Talent,JunkratSteelTrapGottaTrapEmAll,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds and increase the maximum number of active traps to <c val=\"#TooltipNumbers\">2</c>.",
+    "JunkratIHateWaiting": "Junkrat always rides his Rocket Ride Mount, which grants <c val=\"#TooltipNumbers\">150%</c> increased Movement Speed, but his Mount cooldown is increased to <c val=\"#TooltipNumbers\"><d ref=\"Abil,JunkratIHateWaitingSummonMount,Cost.Cooldown.TimeUse\"Player=\"0\"/></c> seconds.",
+    "JunkratPuckishScampRocketRideTalent": "Junkrat also gains the Ability RIP-Tire. Each time he uses his Heroic, it swaps to the alternate ability.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Reduce both Heroic cooldowns by <c val=\"#TooltipNumbers\"><d ref=\"-1*Talent,JunkratRocketRidePuckishScamp,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
+    "JunkratRIPTire": "Create a motorized bomb with <c val=\"#TooltipNumbers\"><d ref=\"Unit,JunkratRIPTire,LifeMax\"/></c> Health that lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratRIPTireTimedLife,Duration\"/></c> seconds. While active, Junkrat is immobile but gains control of RIP-Tire's movement.<n/><n/>RIP-Tire can be reactivated to detonate immediately, knocking nearby enemies back and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,JunkratRIPTireDamage,Amount\"/></c> damage to enemies near the center gradually reduced to <c val=\"#TooltipNumbers\"><d ref=\"Effect,JunkratRIPTireDamage,Amount+Accumulator,JunkratRIPTireDistanceAccumulator,MinAccumulation)\"/></c> to enemies on the edge.",
+    "JunkratRipperAirConcussionMineTalent": "Junkrat is knocked back <c val=\"#TooltipNumbers\">50%</c> farther by Concussion Mine. Additionally, Concussion Mine's cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,JunkratConcussionMineRipperAirHitJunkratCooldownReduction,Cost[0].CooldownTimeUse\"/></c> seconds if only Junkrat is hit.",
+    "JunkratRocketRide": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,JunkratRocketRide,CastIntroTime\" precision=\"2\"/></c> seconds, Junkrat launches into the air. While in the air, he can steer the landing location by moving.<n/><n/>After <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratRocketRideCaster,Duration+0.0625\" precision=\"2\"/></c> seconds, Junkrat lands, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,JunkratRocketRideExplosionDamage,Amount\"/></c> damage to nearby enemies and activating Total Mayhem. <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratRocketRidePostRideBehavior,Duration\" player=\"0\"/></c> seconds after landing, Junkrat reappears at the Hall of Storms and gains <c val=\"#TooltipNumbers\">150%</c> additional Movement Speed until dismounted.",
+    "JunkratSpreadVolleyFragLauncherTalent": "Activate to make Frag Launcher fire <c val=\"#TooltipNumbers\">2</c> additional grenades in a spread. Works for up to <c val=\"#TooltipNumbers\">4</c> total charges, or until Frag Launcher runs out of charges.",
+    "JunkratSteelTrap": "Place a trap on the ground that arms after <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratSteelTrapArming,Duration\" precision=\"2\"/></c> seconds. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,JunkratSteelTrapDamage,Amount\"/></c> damage to the first enemy that walks over it and Roots them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratSteelTrapRoot,Duration\"/></c> seconds.<n/><n/>Limit <c val=\"#TooltipNumbers\">1</c> active trap.",
+    "JunkratStickyWicketSteelTrapTalent": "Enemy Heroes who are hit by Steel Trap are Silenced for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratSteelTrapStickyWicketSilence,Duration\"Precision=\"2\"/></c> seconds.",
+    "JunkratTasteForExplosionsFragLauncherTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hitting a Hero with Frag Launcher increases its damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,JunkatFragLauncherTasteForExplosions,Scale\" precision=\"2\"/>%</c>, up to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,JunkratFragLauncherTasteForExplosionsTokenCounter,Max*Accumulator,JunkatFragLauncherTasteForExplosions,Scale\"/>%</c>.",
+    "JunkratTotalMayhem": "Upon dying, drop <c val=\"#TooltipNumbers\"><d ref=\"Effect,JunkratTotalMayhemCreateUnitPersistent,PeriodCount\"/></c> grenades that explode after <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratTotalMayhemGrenadeTimedLife,Duration\" precision=\"2\"/></c> seconds, each dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,JunkratTotalMayhemDamage,Amount\"/></c> damage to nearby enemies. Deals <c val=\"#TooltipNumbers\"><d ref=\"-100*Effect,JunkratTotalMayhemDamage,AttributeFactor[Structure]\"Precision=\"2\"/>%</c> less damage to Structures.<n/><n/><s val=\"StandardTooltipHeader\">Detonate Mine</s><n/><n/>Detonate an active Concussion Mine.",
+    "JunkratTrickyShufflesFragLauncherTalent": "While Frag Launcher has no charges left, Junkrat gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JunkratFragLauncherTrickyShufflesMovementSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> Movement Speed and his Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,JunkratHeroWeaponRangedExplosionDamage,MultiplicativeModifierArray[TrickyShuffles].Modifier\"/>%</c> bonus damage."
+  },
+  "tooltipSimple": {
+    "JunkratBOOMPOWConcussionMineTalent": "Hitting Heroes reduces Concussion Mine cooldown",
+    "JunkratBigAsSteelTrapTalent": "Steel Traps focus Heroes",
+    "JunkratBlowEmUpConcussionMineTalent": "Concussion Mine and Steel Trap increase damage",
+    "JunkratBoggedDownConcussionMineTalent": "Concussion Mine Slows",
+    "JunkratBombsAwayFragLauncherTalent": "Gain Basic Attack range, damage",
+    "JunkratBurstFireFragLauncherTalent": "Frag Launcher burst fires",
+    "JunkratCannonballFragLauncherTalent": "Bigger Basic Attack, Frag Launcher explosions",
+    "JunkratChatteringTeethSteelTrapTalent": "Steel Traps chase Heroes",
+    "JunkratConcussionMine": "Place a mine that can be detonated",
+    "JunkratDirtyTrickster": "Trigger Total Mayhem more often",
+    "JunkratEndlessNadesFragLauncherTalent": "Hitting Heroes reduces Frag Launcher cooldown",
+    "JunkratExtraOomphRIPTireTalent": "Increase RIP-Tire knockback, reduce cooldown",
+    "JunkratExtraWoundTimersFragLauncherTalent": "Frag Launcher grenades deal bonus damage",
+    "JunkratFragLauncher": "Launch a bouncing grenade",
+    "JunkratGottaTrapEmAllSteelTrapTalent": "Increase Steel Trap count",
+    "JunkratIHateWaiting": "Ride Junkrat's Rocket!",
+    "JunkratPuckishScampRocketRideTalent": "Also gain RIP-Tire",
+    "JunkratRIPTire": "Create a motorized bomb that explodes",
+    "JunkratRipperAirConcussionMineTalent": "Concussion Mine knocks Junkrat farther",
+    "JunkratRocketRide": "Launch into the air, damaging enemies upon landing",
+    "JunkratSpreadVolleyFragLauncherTalent": "Activate to make Frag Launcher spread",
+    "JunkratSteelTrap": "Place a trap that Roots enemies",
+    "JunkratStickyWicketSteelTrapTalent": "Steel Trap Silences Heroes",
+    "JunkratTasteForExplosionsFragLauncherTalent": "<c val=\"#TooltipQuest\">Quest:</c> Increase Frag Launcher damage",
+    "JunkratTotalMayhem": "Drop grenades upon death",
+    "JunkratTrickyShufflesFragLauncherTalent": "Gain Move Speed while Frag Launcher replenishes"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}

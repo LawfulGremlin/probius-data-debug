@@ -1,0 +1,509 @@
+{
+  "id": 45,
+  "shortName": "chogall",
+  "hyperlinkId": "Chogall",
+  "attributeId": "CCho",
+  "cHeroId": "Cho",
+  "cUnitId": "HeroCho",
+  "name": "Cho",
+  "icon": "chogall.png",
+  "role": "Warrior",
+  "expandedRole": "Tank",
+  "type": "Melee",
+  "description": "Head 1 of a 2 Headed Hero, Cho controls the body of Cho'gall.",
+  "title": "Twilight's Hammer Chieftain",
+  "info": "Cho’gall is one of the most powerful, intelligent, and insane ogre-magi to have ever lived. As the leader of the Twilight's Hammer the two brothers seek to bring about an age of destruction... whenever they aren’t bickering that is.",
+  "releaseDate": "2015-11-17",
+  "releasePatch": "1.15.0.39153",
+  "tags": [
+    "BodyBlocker",
+    "Escaper",
+    "Ganker",
+    "MercKiller",
+    "Overconfident",
+    "RoleTank",
+    "SoloLaner"
+  ],
+  "stats": {
+    "hp": 2950,
+    "hpRegen": 6.1445,
+    "hpScale": 0.045,
+    "hpRegenScale": 0.045,
+    "attackDamage": 130,
+    "attackDamageScale": 0.045,
+    "attackRange": 1,
+    "attackSpeed": 0.9091,
+    "radius": 1.1875
+  },
+  "abilities": {
+    "Chogall": [
+      {
+        "uid": "050806",
+        "name": "Surging Fist",
+        "description": "Activate to begin charging Surging Fist. Activate again to dash forward, knocking aside enemies and dealing 46 (+4% per level) damage. The dash range increases by up to 250%, depending on how long it is charged.",
+        "hotkey": "Q",
+        "abilityId": "Chogall|Q1",
+        "tooltipId": "ChoSurgingFist",
+        "cooldown": 12,
+        "icon": "storm_ui_icon_cho_moltensurge_a.png",
+        "type": "basic"
+      },
+      {
+        "uid": "514f9f",
+        "name": "Consuming Blaze",
+        "description": "Ignite nearby enemies, dealing 150 (+4% per level) damage over 5 seconds. Basic Attacking burning enemies re-Ignites them. Cho is healed for 40 (+4% per level) when an enemy is Ignited.",
+        "hotkey": "W",
+        "abilityId": "Chogall|W1",
+        "tooltipId": "ChoConsumingBlaze",
+        "cooldown": 12,
+        "icon": "storm_ui_icon_cho_consumingflame.png",
+        "type": "basic"
+      },
+      {
+        "uid": "120901",
+        "name": "Rune Bomb",
+        "description": "Roll a bomb dealing 91 (+4% per level) damage to enemies in its path. Gall can use Runic Blast to detonate it to deal 210 (+4% per level) damage in an area.",
+        "hotkey": "E",
+        "abilityId": "Chogall|E1",
+        "tooltipId": "ChoRuneBomb",
+        "cooldown": 8,
+        "icon": "storm_ui_icon_cho_runebomb.png",
+        "type": "basic"
+      },
+      {
+        "uid": "f59acd",
+        "name": "Upheaval",
+        "description": "After 1 second, pull enemies towards Cho'gall, Slowing them by 25% for 3 seconds and dealing 175 (+4% per level) damage.",
+        "hotkey": "R",
+        "abilityId": "Chogall|R1",
+        "tooltipId": "ChoUpheaval",
+        "cooldown": 40,
+        "icon": "storm_ui_icon_cho_upheaval.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "410c9f",
+        "name": "Hammer of Twilight",
+        "description": "Activate to swing the Hammer of Twilight, dealing 150 (+4.5% per level) damage, pushing enemies away, and Stunning them for 0.75 seconds.  Passive: Cho's Basic Attacks deal 25% increased damage.",
+        "hotkey": "R",
+        "abilityId": "Chogall|R2",
+        "tooltipId": "ChoHammerOfTwilight",
+        "cooldown": 15,
+        "icon": "storm_ui_icon_cho_hammeroftwilight.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "097ddc",
+        "name": "Ogre Hide",
+        "description": "Activate to gain 25 Armor, but reduce Gall's damage by 25%.",
+        "hotkey": "D",
+        "trait": true,
+        "abilityId": "Chogall|D1",
+        "tooltipId": "ChoOgreHideActivated",
+        "cooldown": 5,
+        "icon": "storm_ui_icon_cho_ogrehide.png",
+        "type": "trait"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "ChoConsumingFire",
+        "talentTreeId": "ChoConsumingFire",
+        "name": "Consuming Fire",
+        "description": "Consuming Blaze heals for 150% more when a Hero is Ignited.",
+        "icon": "storm_ui_icon_cho_consumingflame.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Chogall|W1",
+        "abilityLinks": [
+          "Chogall|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoConsumingBlaze"
+        ]
+      },
+      {
+        "tooltipId": "ChoCallousedHide",
+        "talentTreeId": "ChoCallousedHide",
+        "name": "Calloused Hide",
+        "description": "While under 60% maximum Health, Cho gains 15% increased Movement Speed and healing received.",
+        "icon": "storm_ui_icon_cho_ogrehide.png",
+        "type": "Trait",
+        "sort": 2,
+        "abilityId": "Chogall|D1",
+        "abilityLinks": [
+          "Chogall|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoOgreHidePassive",
+          "ChoOgreHide"
+        ]
+      },
+      {
+        "tooltipId": "ChoTheWillofCho",
+        "talentTreeId": "ChoTheWillofCho",
+        "name": "The Will of Cho",
+        "description": "Quest: Killing enemy Minions grants 1 stack of The Will of Cho, and Hero takedowns grant 10 stacks. Gain 1 Armor for every 30 stacks of The Will of Cho, up to a maximum of 10 Armor.  This Armor bonus stacks with Ogre Hide.",
+        "icon": "storm_ui_icon_cho_ogrehide_var1.png",
+        "type": "Trait",
+        "sort": 3,
+        "isQuest": true,
+        "abilityId": "Chogall|D1",
+        "abilityLinks": [
+          "Chogall|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoOgreHidePassive",
+          "ChoOgreHide"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "ChoUppercut",
+        "talentTreeId": "ChoUppercut",
+        "name": "Uppercut",
+        "description": "Hitting an enemy Hero with Surging Fist deals additional damage to Heroes equal to 5% of their max Health and reduces the cooldown of Surging Fist by 5 seconds.",
+        "icon": "storm_ui_icon_cho_moltensurge_a.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Chogall|Q1",
+        "abilityLinks": [
+          "Chogall|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoSurgingFistTrigger",
+          "ChoSurgingFistCast"
+        ]
+      },
+      {
+        "tooltipId": "ChoRollbackTalent",
+        "talentTreeId": "ChoRollback",
+        "name": "Rollback",
+        "description": "Rune Bomb rolls back to Cho, damaging enemies in its path.",
+        "icon": "storm_ui_icon_cho_runebomb.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Chogall|E1",
+        "abilityLinks": [
+          "Chogall|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoRuneBomb"
+        ]
+      },
+      {
+        "tooltipId": "ChoSearedFleshTalent",
+        "talentTreeId": "ChoSearedFlesh",
+        "name": "Seared Flesh",
+        "description": "Each consecutive Basic Attack to enemy Heroes deals 20% more damage, to a maximum of 60% damage. This bonus lasts 5 seconds or until a non-Heroic enemy is attacked.",
+        "icon": "storm_ui_icon_talent_autoattack_damage.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Chogall|Passive"
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "ChoPowerSurgeTalent",
+        "talentTreeId": "ChoPowerSurge",
+        "name": "Power Surge",
+        "description": "Enemy Heroes who are hit by Surging Fist are Slowed by 30% for 2.5 seconds. Gain 15% Movement Speed while charging Surging Fist and for 2.5 seconds after casting the Ability.",
+        "icon": "storm_ui_icon_cho_moltensurge_a.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Chogall|Q1",
+        "abilityLinks": [
+          "Chogall|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoSurgingFistTrigger",
+          "ChoSurgingFistCast"
+        ]
+      },
+      {
+        "tooltipId": "ChoFirestarter",
+        "talentTreeId": "ChoFirestarter",
+        "name": "Firestarter",
+        "description": "Basic Attacks against ignited Heroes decreases the cooldown of Consuming Blaze by 1 second.  Passive: Reduce the cooldown of Consuming Blaze by 3 seconds.",
+        "icon": "storm_ui_icon_cho_consumingflame.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Chogall|W1",
+        "abilityLinks": [
+          "Chogall|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoConsumingBlaze"
+        ]
+      },
+      {
+        "tooltipId": "ChoEnragedRegeneration",
+        "talentTreeId": "ChoEnragedRegeneration",
+        "name": "Enraged Regeneration",
+        "description": "Each time Cho hits an enemy Hero with an Ability or Basic Attack, he heals for 60 (+4% per level) over 3 seconds. Enemy Heroes hit by Gall's Dread Orb receive 35% less healing for 2 seconds.",
+        "icon": "storm_ui_icon_cho_ogrehide.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Chogall|D1",
+        "abilityLinks": [
+          "Chogall|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoOgreHidePassive",
+          "ChoOgreHide"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "ChoHammerOfTwilight",
+        "talentTreeId": "ChoHeroicAbilityHammerOfTwilight",
+        "name": "Hammer of Twilight",
+        "description": "Activate to swing the Hammer of Twilight, dealing 150 (+4.5% per level) damage, pushing enemies away, and Stunning them for 0.75 seconds.  Passive: Cho's Basic Attacks deal 25% increased damage.",
+        "icon": "storm_ui_icon_cho_hammeroftwilight.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 15,
+        "abilityId": "Chogall|R2",
+        "abilityLinks": [
+          "Chogall|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoHammerOfTwilight"
+        ]
+      },
+      {
+        "tooltipId": "ChoUpheaval",
+        "talentTreeId": "ChoHeroicAbilityUpheaval",
+        "name": "Upheaval",
+        "description": "After 1 second, pull enemies towards Cho'gall, Slowing them by 25% for 3 seconds and dealing 175 (+4% per level) damage.",
+        "icon": "storm_ui_icon_cho_upheaval.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 40,
+        "abilityId": "Chogall|R1",
+        "abilityLinks": [
+          "Chogall|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoUpheaval"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "ChoSurgingDashTalent",
+        "talentTreeId": "ChoSurgingDash",
+        "name": "Surging Dash",
+        "description": "While Channeling Surging Fist, Cho heals for 150 (+4% per level) Health per second.",
+        "icon": "storm_ui_icon_cho_moltensurge_a.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Chogall|Q1",
+        "abilityLinks": [
+          "Chogall|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoSurgingFistTrigger",
+          "ChoSurgingFistCast"
+        ]
+      },
+      {
+        "tooltipId": "ChoTwilightVeilTalent",
+        "talentTreeId": "ChoTwilightVeil",
+        "name": "Twilight Veil",
+        "description": "Activate to increase the Armor bonus of Ogre Hide to 75 for 4 seconds. If cast while Ogre Rage is active, it instantly swaps to Ogre Hide.",
+        "icon": "storm_ui_icon_talent_hardenedshield.png",
+        "type": "Active",
+        "sort": 2,
+        "cooldown": 30,
+        "abilityId": "Chogall|Active"
+      },
+      {
+        "tooltipId": "ChoTalentMoltenBlock",
+        "talentTreeId": "ChoTalentMoltenBlock",
+        "name": "Molten Block",
+        "description": "Activate to enter Stasis and gain Invulnerability for 3 seconds, damaging nearby enemies for 92 (+4% per level) damage per second.",
+        "icon": "storm_ui_icon_cho_moltenblock.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 60,
+        "abilityId": "Chogall|Active"
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "ChoFrenziedFistsTalent",
+        "talentTreeId": "ChoFrenziedFists",
+        "name": "Frenzied Fists",
+        "description": "Gain 75% Attack Speed for 5 seconds after using Surging Fist.",
+        "icon": "storm_ui_icon_cho_moltensurge_a.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Chogall|Q1",
+        "abilityLinks": [
+          "Chogall|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoSurgingFistTrigger",
+          "ChoSurgingFistCast"
+        ]
+      },
+      {
+        "tooltipId": "ChoRunicFeedbackTalent",
+        "talentTreeId": "ChoRunicFeedback",
+        "name": "Runic Feedback",
+        "description": "Gall's Runic Blast reduces Cho's Rune Bomb cooldown by 1 second per enemy hit, and 2 seconds for each Hero hit.",
+        "icon": "storm_ui_icon_cho_runebomb.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Chogall|E1",
+        "abilityLinks": [
+          "Chogall|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoRuneBomb"
+        ]
+      },
+      {
+        "tooltipId": "ChoRunedGauntletTalent",
+        "talentTreeId": "ChoRunedGauntlet",
+        "name": "Runed Gauntlet",
+        "description": "Basic Attacks reduce the cooldown of Cho and Gall's Heroic Abilities by 6%.",
+        "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Chogall|Passive"
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "ChoCthunsGiftTalent",
+        "talentTreeId": "ChoCthunsGift",
+        "name": "C'Thun's Gift",
+        "description": "Cho's Basic Attack becomes ranged and Slows targets by 20% for 2 seconds.",
+        "icon": "storm_ui_icon_cho_hammeroftwilight.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "Chogall|R2",
+        "abilityLinks": [
+          "Chogall|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoHammerOfTwilight"
+        ],
+        "prerequisiteTalentIds": [
+          "ChoHeroicAbilityHammerOfTwilight"
+        ]
+      },
+      {
+        "tooltipId": "ChoFavorOfTheOldGodsTalent",
+        "talentTreeId": "ChoFavorOfTheOldGods",
+        "name": "Favor of the Old Gods",
+        "description": "Upheaval Roots enemy Heroes for 2 seconds.",
+        "icon": "storm_ui_icon_cho_upheaval.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "Chogall|R1",
+        "abilityLinks": [
+          "Chogall|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoUpheaval"
+        ],
+        "prerequisiteTalentIds": [
+          "ChoHeroicAbilityUpheaval"
+        ]
+      },
+      {
+        "tooltipId": "ChoFuelForTheFlameTalent",
+        "talentTreeId": "ChoFuelForTheFlame",
+        "name": "Fuel for the Flame",
+        "description": "Basic Attacks against enemies cause them to explode, dealing 21 (+4% per level) damage to them and 45 (+4% per level) damage to nearby enemies. This damage is doubled against enemy Heroes.",
+        "icon": "storm_ui_icon_talent_autoattack_aoe.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Chogall|Passive",
+        "abilityLinks": [
+          "Chogall|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChoOgreHidePassive",
+          "ChoOgreHide"
+        ]
+      },
+      {
+        "tooltipId": "ChoHourofTwilight",
+        "talentTreeId": "ChoHourofTwilight",
+        "name": "Hour of Twilight",
+        "description": "Decreases Cho'gall's death timer by 50%.",
+        "icon": "storm_ui_icon_gall_psychoticbreak.png",
+        "type": "Passive",
+        "sort": 4,
+        "abilityId": "Chogall|Passive"
+      }
+    ]
+  },
+  "tooltipMarkup": {
+    "ChoCallousedHide": "While under <c val=\"#TooltipNumbers\">60%</c> maximum Health, Cho gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChoOgreHideCallousedHideTalentMoveSpeedCarry,Modification.UnifiedMoveSpeedFactor\"/>%</c> increased Movement Speed and healing received.",
+    "ChoConsumingBlaze": "Ignite nearby enemies, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoConsumingBlazeDamage,Amount*2*Behavior,ChoConsumingBlazeDoT,Duration\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoConsumingBlazeDoT,Duration\" player=\"0\"/></c> seconds. Basic Attacking burning enemies re-Ignites them. Cho is healed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoConsumingBlazeCasterHeal,RechargeVitalRate\"/></c> when an enemy is Ignited.",
+    "ChoConsumingFire": "Consuming Blaze heals for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChoConsumingBlazeCasterHeal,MultiplicativeModifierArray[0].Modifier\"precision=\"2\"/>%</c> more when a Hero is Ignited.",
+    "ChoCthunsGiftTalent": "Cho's Basic Attack becomes ranged and Slows targets by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChoCthunsGiftSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoCthunsGiftSlow,Duration\"/></c> seconds.",
+    "ChoEnragedRegeneration": "Each time Cho hits an enemy Hero with an Ability or Basic Attack, he heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoEnragedRegenerationCreateHealer,RechargeVitalRate*Behavior,ChoEnragedRegenerationHoT,PeriodCount\"/></c> over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoEnragedRegenerationHoT,Duration\"/></c> seconds. Enemy Heroes hit by Gall's Dread Orb receive <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,GallDreadOrbEnragedRegenerationTalentDebuff,Modification.HealTakenAdditiveMultiplier[Life]\"/>%</c> less healing for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallDreadOrbEnragedRegenerationTalentDebuff,Duration\"/></c> seconds.",
+    "ChoFavorOfTheOldGodsTalent": "Upheaval Roots enemy Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoUpheavalFavoroftheOldGodsTalentRoot,Duration\"precision=\"2\"/></c> seconds.",
+    "ChoFirestarter": "Basic Attacks against ignited Heroes decreases the cooldown of Consuming Blaze by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChoConsumingBlazeFirestarterTalentModifyCooldown,Cost[0].CooldownTimeUse\"/></c> second.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Reduce the cooldown of Consuming Blaze by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,ChoFirestarter,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
+    "ChoFrenziedFistsTalent": "Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChoSurgingFistMasteryFrenziedFistsBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoSurgingFistMasteryFrenziedFistsBuff,Duration\"/></c> seconds after using Surging Fist.",
+    "ChoFuelForTheFlameTalent": "Basic Attacks against enemies cause them to explode, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoFuelForTheFlameDamage,Amount\"/></c> damage to them and <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoFuelForTheFlameExplosionDamage,Amount\"/></c> damage to nearby enemies. This damage is doubled against enemy Heroes.",
+    "ChoHammerOfTwilight": "Activate to swing the Hammer of Twilight, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoGallTwilightHammerDamage,Amount\"/></c> damage, pushing enemies away, and Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoHammerOfTwilightKnockbackBehaviorStun,Duration\" precision=\"2\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Cho's Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChoHeroWeaponDamage,MultiplicativeModifierArray[1].Modifier\"/>%</c> increased damage.",
+    "ChoHourofTwilight": "Decreases Cho'gall's death timer by <c val=\"#TooltipNumbers\">50%</c>.",
+    "ChoOgreHideActivated": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoOgreHide,ArmorModification.AllArmorBonus\"player=\"0\"/></c> Armor, but reduce Gall's damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChoOgreRage,Modification.DamageDealtFraction[Ability]\"player=\"0\"/>%</c>.",
+    "ChoPowerSurgeTalent": "Enemy Heroes who are hit by Surging Fist are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChoSurgingFistPowerSurgeSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoSurgingFistPowerSurgeSlow,Duration\"Precision=\"2\"/></c> seconds. Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChoSurgingFirstPowerSurgePostCastMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed while charging Surging Fist and for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoSurgingFirstPowerSurgePostCastMoveSpeedBuff,Duration\"Precision=\"2\"/></c> seconds after casting the Ability.",
+    "ChoRollbackTalent": "Rune Bomb rolls back to Cho, damaging enemies in its path.",
+    "ChoRuneBomb": "Roll a bomb dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoRuneBombDamage,Amount\"/></c> damage to enemies in its path. Gall can use Runic Blast to detonate it to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,GallRunicBlastImpactDamage,Amount\"/></c> damage in an area.",
+    "ChoRunedGauntletTalent": "Basic Attacks reduce the cooldown of Cho and Gall's Heroic Abilities by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChoRuneBombRunedGauntletTalentModifyChoCooldowns,Cost[0].Fraction.Cooldown*100\"/>%</c>.",
+    "ChoRunicFeedbackTalent": "Gall's Runic Blast reduces Cho's Rune Bomb cooldown by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoRuneBombRunicFeedbackTalentModifyCooldown,Cost[0].CooldownTimeUse*(-1)\"Precision=\"2\"/></c> second per enemy hit, and <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoRuneBombRunicFeedbackTalentModifyCooldownHeroTarget,Cost[0].CooldownTimeUse*(-1)\"Precision=\"2\"/></c> seconds for each Hero hit.",
+    "ChoSearedFleshTalent": "Each consecutive Basic Attack to enemy Heroes deals <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ChoSearedFleshDamageAccumulator,Scale\"/>%</c> more damage, to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ChoSearedFleshDamageAccumulator,MaxAccumulation\"/>%</c> damage. This bonus lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoSearedFleshSelfMarker,Duration\"/></c> seconds or until a non-Heroic enemy is attacked.",
+    "ChoSurgingDashTalent": "While Channeling Surging Fist, Cho heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoSurgingFistSurgingDashTalentCreateHealer,RechargeVitalRate*2\"/></c> Health per second.",
+    "ChoSurgingFist": "Activate to begin charging Surging Fist. Activate again to dash forward, knocking aside enemies and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoSurgingFistImpactedDamage,Amount\"/></c> damage. The dash range increases by up to <c val=\"#TooltipNumbers\">250%</c>, depending on how long it is charged.",
+    "ChoTalentMoltenBlock": "Activate to enter Stasis and gain Invulnerability for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoTalentMoltenBlock,Duration\"/></c> seconds, damaging nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoMoltenBlockImpactDamage,Amount*2\"/></c> damage per second.",
+    "ChoTheWillofCho": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Killing enemy Minions grants <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoWillofChoModifyToken,Value\"/></c> stack of The Will of Cho, and Hero takedowns grant <c val=\"#TooltipNumbers\"><d ref=\"10*Effect,ChoWillofChoModifyToken,Value\"/></c> stacks. Gain <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoWillofChoModifyPlayer,EffectArray[1].Value\"/></c> Armor for every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoWillofChoTokenCounter,ConditionalEvents[0].CompareValue\"/></c> stacks of The Will of Cho, up to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoWillofChoTokenCounter,Max/Behavior,ChoWillofChoTokenCounter,ConditionalEvents[0].CompareValue\"/></c> Armor.<n/><n/>This Armor bonus stacks with Ogre Hide.",
+    "ChoTwilightVeilTalent": "Activate to increase the Armor bonus of Ogre Hide to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoOgreHideTwilightVeilTalentArmorBuff,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoOgreHideTwilightVeilTalentArmorBuff,Duration\"/></c> seconds. If cast while Ogre Rage is active, it instantly swaps to Ogre Hide.",
+    "ChoUpheaval": "After <c val=\"#TooltipNumbers\">1</c> second, pull enemies towards Cho'gall, Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChoUpheavalSlowBehavior,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoUpheavalSlowBehavior,Duration\"/></c> seconds and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoUpheavalDamage,Amount\"/></c> damage.",
+    "ChoUppercut": "Hitting an enemy Hero with Surging Fist deals additional damage to Heroes equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChoSurgingFistUppercutTalentDamage,VitalFractionMax[Life]\"/>%</c> of their max Health and reduces the cooldown of Surging Fist by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChoSurgingFistUppercutTalentModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds."
+  },
+  "tooltipSimple": {
+    "ChoCallousedHide": "Low health increases healing, Move Speed",
+    "ChoConsumingBlaze": "Damage nearby enemies and heal Cho",
+    "ChoConsumingFire": "Increased healing against Heroes",
+    "ChoCthunsGiftTalent": "Basic Attacks are now ranged, Slow targets",
+    "ChoEnragedRegeneration": "Cho heals from Hero damage, Gall reduces enemy healing",
+    "ChoFavorOfTheOldGodsTalent": "Upheaval Roots Heroes",
+    "ChoFirestarter": "Reduced Consuming Blaze cooldown",
+    "ChoFrenziedFistsTalent": "Surging Fist increases Attack Speed",
+    "ChoFuelForTheFlameTalent": "Basic Attacks explode for damage",
+    "ChoHammerOfTwilight": "Activate to knockback and Stun enemies",
+    "ChoHourofTwilight": "Reduced death timer",
+    "ChoOgreHideActivated": "Activate to increase Armor",
+    "ChoPowerSurgeTalent": "Surging Fist Slows enemy Heroes",
+    "ChoRollbackTalent": "Rune Bomb returns",
+    "ChoRuneBomb": "Throw a Rune Bomb down a line. Gall can detonate it to do area damage",
+    "ChoRunedGauntletTalent": "Basic Attacks reduce Heroic cooldowns",
+    "ChoRunicFeedbackTalent": "Runic Blast reduces Rune Bomb cooldown",
+    "ChoSearedFleshTalent": "Consecutive Basic Attacks deal bonus damage",
+    "ChoSurgingDashTalent": "Heal while Channeling Surging Fist",
+    "ChoSurgingFist": "Dash a direction knocking aside enemies",
+    "ChoTalentMoltenBlock": "Activate to become Invulnerable",
+    "ChoTheWillofCho": "Killing Minions and Takedowns grant Armor",
+    "ChoTwilightVeilTalent": "Activate to increase Ogre Hide Armor",
+    "ChoUpheaval": "Pull enemies in a large area",
+    "ChoUppercut": "Increases Surging Fist damage"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}

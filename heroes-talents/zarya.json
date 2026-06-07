@@ -1,0 +1,575 @@
+{
+  "id": 57,
+  "shortName": "zarya",
+  "hyperlinkId": "Zarya",
+  "attributeId": "Zary",
+  "cHeroId": "Zarya",
+  "cUnitId": "HeroZarya",
+  "name": "Zarya",
+  "icon": "zarya.png",
+  "role": "Warrior",
+  "expandedRole": "Support",
+  "type": "Ranged",
+  "description": "A Support that can enable deadly allies and is good at preventing burst damage.",
+  "title": "Defender of Russia",
+  "info": "Aleksandra Zaryanova is one of the world's strongest women and was a promising athlete, but all that changed when the Siberian omnium reawakened. As a soldier in the Russian Defense Force, she now proudly uses her strength to protect the ones she loves.",
+  "releaseDate": "2016-09-27",
+  "releasePatch": "1.20.2.46690",
+  "tags": [
+    "ChanneledAutoAttacker",
+    "Helper",
+    "Overconfident",
+    "RoleTank"
+  ],
+  "stats": {
+    "hp": 2292,
+    "hpRegen": 4.7734,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 100,
+    "resourceType": "Energy",
+    "resourceRegen": 0,
+    "attackDamage": 20,
+    "attackDamageScale": 0.04,
+    "attackRange": 4.5,
+    "attackSpeed": 4,
+    "radius": 0.8125
+  },
+  "abilities": {
+    "Zarya": [
+      {
+        "uid": "0458c3",
+        "name": "Particle Grenade",
+        "description": "Launch a particle grenade that deals 80 (+4% per level) damage to enemies within the area. Deals 50% damage to Structures.  Stores up to 4 charges.",
+        "hotkey": "Q",
+        "abilityId": "Zarya|Q1",
+        "tooltipId": "ZaryaParticleGrenade",
+        "cooldown": 8,
+        "icon": "storm_ui_icon_zarya_particlegrenade.png",
+        "type": "basic"
+      },
+      {
+        "uid": "7b0a5e",
+        "name": "Personal Barrier",
+        "description": "Gain a Shield that absorbs 560 (+4% per level) damage for 3 seconds.",
+        "hotkey": "W",
+        "abilityId": "Zarya|W1",
+        "tooltipId": "ZaryaPersonalBarrier",
+        "cooldown": 10,
+        "icon": "storm_ui_icon_zarya_personalbarrier.png",
+        "type": "basic"
+      },
+      {
+        "uid": "f5b6eb",
+        "name": "Shield Ally",
+        "description": "Grants an allied Hero a Shield that absorbs 420 (+4% per level) damage for 3 seconds.",
+        "hotkey": "E",
+        "abilityId": "Zarya|E1",
+        "tooltipId": "ZaryaShieldAlly",
+        "cooldown": 12,
+        "icon": "storm_ui_icon_zarya_shieldally.png",
+        "type": "basic"
+      },
+      {
+        "uid": "85436d",
+        "name": "Graviton Surge",
+        "description": "Launch a gravity bomb that detonates after 1 second and draws enemy Heroes toward the center for 2.5 seconds. Affected Heroes take 30 (+4% per level) damage a second.",
+        "hotkey": "R",
+        "abilityId": "Zarya|R1",
+        "tooltipId": "ZaryaGravitonSurge",
+        "cooldown": 60,
+        "icon": "storm_ui_icon_zarya_gravitonsurge.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "899d83",
+        "name": "Expulsion Zone",
+        "description": "Launch a gravity bomb that deals 124 (+4% per level) damage and creates an expulsion zone for 3.5 seconds. Enemies who enter the affected area are knocked back and have their Movement Speed reduced by 50% for 1 second.",
+        "hotkey": "R",
+        "abilityId": "Zarya|R2",
+        "tooltipId": "ZaryaExpulsionZone",
+        "cooldown": 45,
+        "icon": "storm_ui_icon_zarya_expulsionzone.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "34afa1",
+        "name": "Energy",
+        "description": "Each time Zarya's Personal Barrier or Shield Ally absorbs 9 (+4% per level) damage, her Energy is increased by 1. Each point of Energy increases Zarya's damage by 2%. After 0.5 seconds, Energy decays by 3 per second.",
+        "trait": true,
+        "abilityId": "Zarya|D1",
+        "tooltipId": "ZaryaEnergy",
+        "icon": "storm_ui_icon_zarya_energy.png",
+        "type": "trait"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "ZaryaParticleGrenadeDemolitionsExpertTalent",
+        "talentTreeId": "ZaryaParticleGrenadeDemolitionsExpertQuest",
+        "name": "Demolitions Expert",
+        "description": "Quest: For every 5 enemy Heroes hit by Particle Grenade, its recharge rate lowers by 0.4375 seconds, up to 3.5 seconds.  Reward: Once Particle Grenade has hit 40 enemy Heroes, its radius is increased by 15%.",
+        "icon": "storm_ui_icon_zarya_particlegrenade.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": true,
+        "abilityId": "Zarya|Q1",
+        "abilityLinks": [
+          "Zarya|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaParticleGrenade"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaShieldAllyTogetherWeAreStrongTalent",
+        "talentTreeId": "ZaryaShieldAllyTogetherWeAreStrong",
+        "name": "Together We Are Strong",
+        "description": "For 3 seconds after gaining Shield Ally, every 5.35 (+4% per level) damage done by the bearer contributes 1 Energy to Zarya, up to 40 Energy per Shield.",
+        "icon": "storm_ui_icon_zarya_shieldally.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Zarya|E1",
+        "abilityLinks": [
+          "Zarya|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaShieldAlly"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaWeaponFeelTheHeatTalent",
+        "talentTreeId": "ZaryaWeaponFeelTheHeat",
+        "name": "Feel the Heat",
+        "description": "Zarya's Basic Attack deals 50% additional damage to enemies in melee range. While above 40 Energy, Zarya's Basic Attack size is increased by 35%.",
+        "icon": "storm_ui_icon_talent_autoattack_damage.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Zarya|D1",
+        "abilityLinks": [
+          "Zarya|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaEnergy"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaEnergyMaximumChargeTalent",
+        "talentTreeId": "ZaryaEnergyMaximumChargeQuest",
+        "name": "Maximum Charge",
+        "description": "Regen Globes now instantly grant 20 Energy.  Quest: Spend 150 seconds at or above 50 Energy.  Reward: Gain an additional 20 maximum Energy.",
+        "icon": "storm_ui_icon_zarya_energy.png",
+        "type": "Trait",
+        "sort": 4,
+        "isQuest": true,
+        "abilityId": "Zarya|D1",
+        "abilityLinks": [
+          "Zarya|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaEnergy"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "ZaryaPersonalBarrierIAmTheStrongestTalent",
+        "talentTreeId": "ZaryaPersonalBarrierIAmTheStrongest",
+        "name": "I Am the Strongest",
+        "description": "Personal Barrier absorbs an additional 140 (+4% per level) damage.  Passive: Damage absorbed by Zarya's Shields contributes 20% more Energy.",
+        "icon": "storm_ui_icon_zarya_personalbarrier.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Zarya|W1",
+        "abilityLinks": [
+          "Zarya|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaPersonalBarrier"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaShieldAllyGiveMeTwentyTalent",
+        "talentTreeId": "ZaryaShieldAllyGiveMeTwentyQuest",
+        "name": "Give Me Twenty",
+        "description": "Quest: Regeneration Globes increase Shield Ally absorb amount by 15, up to 300 permanently.  Reward: After collecting 20 Regen Globes, permanently reduce the cooldown of Shield Ally by 2 seconds.",
+        "icon": "storm_ui_icon_zarya_shieldally.png",
+        "type": "E",
+        "sort": 2,
+        "isQuest": true,
+        "abilityId": "Zarya|E1",
+        "abilityLinks": [
+          "Zarya|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaShieldAlly"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaShieldAllySpeedBarrierTalent",
+        "talentTreeId": "ZaryaShieldAllySpeedBarrier",
+        "name": "Speed Barrier",
+        "description": "Shield Ally increases the allied Hero's Movement Speed by 50% for the duration.",
+        "icon": "storm_ui_icon_zarya_shieldally_a.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "Zarya|E1",
+        "abilityLinks": [
+          "Zarya|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaShieldAlly"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaDefensiveShieldingTalent",
+        "talentTreeId": "ZaryaDefensiveShielding",
+        "name": "Defensive Shielding",
+        "description": "Upon expiration or breaking, Personal Barrier and Shield Ally grant 75 Physical Armor against the next 2 Hero Basic Attacks for 6 seconds, reducing the damage taken by 75%.",
+        "icon": "storm_ui_icon_zarya_pumped.png",
+        "type": "Passive",
+        "sort": 4,
+        "abilityId": "Zarya|Passive",
+        "abilityLinks": [
+          "Zarya|E1",
+          "Zarya|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaPersonalBarrier",
+          "ZaryaShieldAlly"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "ZaryaParticleGrenadePinpointAccuracyTalent",
+        "talentTreeId": "ZaryaParticleGrenadePinpointAccuracy",
+        "name": "Pinpoint Accuracy",
+        "description": "Particle Grenade deals 25 (+4% per level) more damage and Slows Movement Speed by 25% for 2 seconds to enemies hit by the center of the blast.",
+        "icon": "storm_ui_icon_zarya_particlegrenade.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Zarya|Q1",
+        "abilityLinks": [
+          "Zarya|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaParticleGrenade"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaDeepBurn",
+        "talentTreeId": "ZaryaDeepBurn",
+        "name": "Deep Burn",
+        "description": "Hitting a Hero with Particle Grenade causes Basic Attacks against them to generate 2 Energy. Lasts 4 seconds.",
+        "icon": "storm_ui_icon_zarya_particlegrenade_a.png",
+        "type": "Q",
+        "sort": 2,
+        "abilityId": "Zarya|Q1",
+        "abilityLinks": [
+          "Zarya|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaParticleGrenade"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaPersonalBarrierExplosiveBarrierTalent",
+        "talentTreeId": "ZaryaPersonalBarrierExplosiveBarrier",
+        "name": "Explosive Barrier",
+        "description": "Upon expiration or breaking, Personal Barrier explodes, dealing 110 (+4% per level) damage to nearby enemies.",
+        "icon": "storm_ui_icon_zarya_personalbarrier.png",
+        "type": "W",
+        "sort": 3,
+        "abilityId": "Zarya|W1",
+        "abilityLinks": [
+          "Zarya|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaPersonalBarrier"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "ZaryaGravitonSurge",
+        "talentTreeId": "ZaryaHeroicAbilityGravitonSurge",
+        "name": "Graviton Surge",
+        "description": "Launch a gravity bomb that detonates after 1 second and draws enemy Heroes toward the center for 2.5 seconds. Affected Heroes take 30 (+4% per level) damage a second.",
+        "icon": "storm_ui_icon_zarya_gravitonsurge.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 60,
+        "abilityId": "Zarya|R1",
+        "abilityLinks": [
+          "Zarya|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaGravitonSurge"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaExpulsionZone",
+        "talentTreeId": "ZaryaHeroicAbilityExpulsionZone",
+        "name": "Expulsion Zone",
+        "description": "Launch a gravity bomb that deals 124 (+4% per level) damage and creates an expulsion zone for 3.5 seconds. Enemies who enter the affected area are knocked back and have their Movement Speed reduced by 50% for 1 second.",
+        "icon": "storm_ui_icon_zarya_expulsionzone.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 45,
+        "abilityId": "Zarya|R2",
+        "abilityLinks": [
+          "Zarya|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaExpulsionZone"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "ZaryaPersonalBarrierUnstoppableCompetitorTalent",
+        "talentTreeId": "ZaryaPersonalBarrierUnstoppableCompetitor",
+        "name": "Unstoppable Competitor",
+        "description": "Personal Barrier makes Zarya Unstoppable for up to 2 seconds.",
+        "icon": "storm_ui_icon_zarya_personalbarrier.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Zarya|W1",
+        "abilityLinks": [
+          "Zarya|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaPersonalBarrier"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaPersonalBarrierSpellBarrierTalent",
+        "talentTreeId": "ZaryaPersonalBarrierSpellBarrier",
+        "name": "Spell Barrier",
+        "description": "Upon expiration or breaking, Personal Barrier grants Zarya 75 Spell Armor for 3 seconds, reducing the damage taken from Abilities by 75%.",
+        "icon": "storm_ui_icon_zarya_personalbarrier_a.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Zarya|W1",
+        "abilityLinks": [
+          "Zarya|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaPersonalBarrier"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaEnergyEnduranceTrainingTalent",
+        "talentTreeId": "ZaryaEnergyEnduranceTraining",
+        "name": "Endurance Training",
+        "description": "While at or above 75 Energy, Zarya gains 20 Armor, reducing all damage taken by 20%.",
+        "icon": "storm_ui_icon_zarya_energy.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Zarya|D1",
+        "abilityLinks": [
+          "Zarya|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaEnergy"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaPainIsTemporaryTalent",
+        "talentTreeId": "ZaryaPainIsTemporary",
+        "name": "Pain is Temporary",
+        "description": "Activate to consume all Energy and gain a Shield that absorbs 0.8% of Zarya's maximum Health per Energy consumed and lasts for 3 seconds. Zarya may only have one personal Shield active on herself at a time.",
+        "icon": "storm_ui_icon_zarya_painistemporary.png",
+        "type": "Active",
+        "sort": 4,
+        "cooldown": 30,
+        "abilityId": "Zarya|Active"
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "ZaryaShieldAllyCleansingShieldTalent",
+        "talentTreeId": "ZaryaShieldAllyCleansingShield",
+        "name": "Cleansing Shield",
+        "description": "Causes Shield Ally to remove all disabling effects and reduces its cooldown by 3 seconds.",
+        "icon": "storm_ui_icon_zarya_shieldally.png",
+        "type": "E",
+        "sort": 1,
+        "abilityId": "Zarya|E1",
+        "abilityLinks": [
+          "Zarya|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaShieldAlly"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaShieldAllyGainTrainTalent",
+        "talentTreeId": "ZaryaShieldAllyGainTrain",
+        "name": "Gain Train",
+        "description": "Shield Ally now grants an untalented Shield to a nearby ally upon impact.",
+        "icon": "storm_ui_icon_zarya_shieldally_a.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Zarya|E1",
+        "abilityLinks": [
+          "Zarya|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaShieldAlly"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaEnergyBornInBattleTalent",
+        "talentTreeId": "ZaryaEnergyBornInBattle",
+        "name": "Born in Battle",
+        "description": "While at or above 75 Energy, Zarya's cooldowns regenerate 25% faster.",
+        "icon": "storm_ui_icon_zarya_energy.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Zarya|D1",
+        "abilityLinks": [
+          "Zarya|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaEnergy"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "ZaryaGravitonSurgeGravityKillsTalent",
+        "talentTreeId": "ZaryaGravitonSurgeGravityKills",
+        "name": "Gravity Kills",
+        "description": "Increases Graviton Surge's duration by 1 second and it Silences Heroes caught in its area.",
+        "icon": "storm_ui_icon_zarya_gravitonsurge.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "Zarya|R1",
+        "abilityLinks": [
+          "Zarya|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaGravitonSurge"
+        ],
+        "prerequisiteTalentIds": [
+          "ZaryaHeroicAbilityGravitonSurge"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaExpulsionZoneClearOutTalent",
+        "talentTreeId": "ZaryaExpulsionZoneClearOut",
+        "name": "Clear Out",
+        "description": "Reduce Expulsion Zone's cooldown by 25 seconds and increase its duration by 1.5 seconds.",
+        "icon": "storm_ui_icon_zarya_expulsionzone.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "Zarya|R2",
+        "abilityLinks": [
+          "Zarya|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaExpulsionZone"
+        ],
+        "prerequisiteTalentIds": [
+          "ZaryaHeroicAbilityExpulsionZone"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaParticleGrenadeGrenadierTalent",
+        "talentTreeId": "ZaryaParticleGrenadeGrenadier",
+        "name": "Grenadier",
+        "description": "All Particle Grenade charges are returned at once.",
+        "icon": "storm_ui_icon_zarya_particlegrenade.png",
+        "type": "Q",
+        "sort": 3,
+        "abilityId": "Zarya|Q1",
+        "abilityLinks": [
+          "Zarya|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ZaryaParticleGrenade"
+        ]
+      },
+      {
+        "tooltipId": "ZaryaUnyieldingDefenderTalent",
+        "talentTreeId": "ZaryaUnyieldingDefender",
+        "name": "Unyielding Defender",
+        "description": "Activate to reset the cooldown of Personal Barrier and Shield Ally.",
+        "icon": "storm_ui_icon_zarya_unyieldingdefender.png",
+        "type": "Active",
+        "sort": 4,
+        "cooldown": 60,
+        "abilityId": "Zarya|Active"
+      }
+    ]
+  },
+  "tooltipMarkup": {
+    "ZaryaDeepBurn": "Hitting a Hero with Particle Grenade causes Basic Attacks against them to generate <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZaryaDeepBurnImpactUpdateCatalog,CatalogModifications[0].Value\"/></c> Energy. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaParticleGrenadeDeepBurnTalentMarker,Duration\"/></c> seconds.",
+    "ZaryaDefensiveShieldingTalent": "Upon expiration or breaking, Personal Barrier and Shield Ally grant <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlock,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZaryaDefensiveShieldingApplyBehavior,Count\"/></c> Hero Basic Attacks for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZaryaDefensiveShieldingApplyBehavior,Duration\"/></c> seconds, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlock,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.",
+    "ZaryaEnergy": "Each time Zarya's Personal Barrier or Shield Ally absorbs <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaEnergyBoostDecay,Period\" precision=\"0\"/></c> damage, her Energy is increased by <c val=\"#TooltipNumbers\">1</c>. Each point of Energy increases Zarya's damage by <c val=\"#TooltipNumbers\">2%</c>. After <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaEnergyDecayCountdown,Duration\" precision=\"2\"/></c> seconds, Energy decays by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaEnergyBoostDecay,Modification.VitalRegenArray[Energy]*(-1)\" precision=\"1\" player=\"0\"/></c> per second.",
+    "ZaryaEnergyBornInBattleTalent": "While at or above <c val=\"#TooltipNumbers\"><d ref=\"Validator,ZaryaEnergyGT74,Value+1\"/></c> Energy, Zarya's cooldowns regenerate <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaEnergyBornInBattle,Modification.RateMultiplierArray[Cooldown]-1*100\"/>%</c> faster.",
+    "ZaryaEnergyEnduranceTrainingTalent": "While at or above <c val=\"#TooltipNumbers\"><d ref=\"Validator,ZaryaEnergyGT74,Value+1\"/></c> Energy, Zarya gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaEnergyEnduranceTraining,ArmorModification.AllArmorBonus\"/></c> Armor, reducing all damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaEnergyEnduranceTraining,ArmorModification.AllArmorBonus\"/>%</c>.",
+    "ZaryaEnergyMaximumChargeTalent": "Regen Globes now instantly grant <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZaryaEnergyMaximumChargeCreateHealer,RechargeVitalRate\"/></c> Energy.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Spend <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaEnergyMaximumChargeQuestToken,Max\"player=\"0\"/></c> seconds at or above <c val=\"#TooltipNumbers\"><d ref=\"Validator,ZaryaEnergyGT49,Value+1\"player=\"0\"/></c> Energy.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Gain an additional <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaEnergyMaximumChargeComplete,Modification.VitalMaxArray\"player=\"0\"/></c> maximum Energy.",
+    "ZaryaExpulsionZone": "Launch a gravity bomb that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZaryaExpulsionZoneDamage,Amount\"/></c> damage and creates an expulsion zone for <c val=\"#TooltipNumbers\"><d ref=\"(Effect,ZaryaExpulsionZoneMissileImpactCreatePersistent,PeriodCount+1)*Effect,ZaryaExpulsionZoneMissileImpactCreatePersistent,PeriodicPeriodArray[0]\" precision=\"1\"player=\"0\"/></c> seconds. Enemies who enter the affected area are knocked back and have their Movement Speed reduced by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaExpulsionZoneSlow,Modification.UnifiedMoveSpeedFactor*(-100)\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaExpulsionZoneSlow,Duration\" precision=\"2\"player=\"0\"/></c> second.",
+    "ZaryaExpulsionZoneClearOutTalent": "Reduce Expulsion Zone's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,ZaryaExpulsionZoneClearOut,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds and increase its duration by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZaryaExpulsionZoneMissileImpactCreatePersistent,PeriodicPeriodArray[0]*(Talent,ZaryaExpulsionZoneClearOut,AbilityModificationArray[0].Modifications[1].Value)\"precision=\"2\"/></c> seconds.",
+    "ZaryaGravitonSurge": "Launch a gravity bomb that detonates after <c val=\"#TooltipNumbers\">1</c> second and draws enemy Heroes toward the center for <c val=\"#TooltipNumbers\">2.5</c> seconds. Affected Heroes take <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZaryaGravitonSurgeDamage,Amount*2\"/></c> damage a second.",
+    "ZaryaGravitonSurgeGravityKillsTalent": "Increases Graviton Surge's duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ZaryaGravitonSurgeGravityKills,AbilityModificationArray[0].Modifications[1].Value\"/></c> second and it Silences Heroes caught in its area.",
+    "ZaryaPainIsTemporaryTalent": "Activate to consume all Energy and gain a Shield that absorbs <c val=\"#TooltipNumbers\">0.8%</c> of Zarya's maximum Health per Energy consumed and lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaPainIsTemporary,Duration\" precision=\"2\"/></c> seconds. Zarya may only have one personal Shield active on herself at a time.",
+    "ZaryaParticleGrenade": "Launch a particle grenade that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZaryaParticleGrenadeDamage,Amount\"/></c> damage to enemies within the area. Deals <c val=\"#TooltipNumbers\">50%</c> damage to Structures.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,ZaryaParticleGrenade,Cost.Charge.CountMax\"/></c> charges.",
+    "ZaryaParticleGrenadeDemolitionsExpertTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> For every <c val=\"#TooltipNumbers\">5</c> enemy Heroes hit by Particle Grenade, its recharge rate lowers by <c val=\"#TooltipNumbers\"><d ref=\"-Accumulator,ZaryaParticleGrenadeDemolitionsExpertAccumulator,Scale\" precision=\"4\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"-Accumulator,ZaryaParticleGrenadeDemolitionsExpertAccumulator,MinAccumulation\" precision=\"4\"/></c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Once Particle Grenade has hit <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaParticleGrenadeDemolitionsExpertQuestToken,Max\"/></c> enemy Heroes, its radius is increased by <c val=\"#TooltipNumbers\">15%</c>.",
+    "ZaryaParticleGrenadeGrenadierTalent": "All Particle Grenade charges are returned at once.",
+    "ZaryaParticleGrenadePinpointAccuracyTalent": "Particle Grenade deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZaryaParticleGrenadePinpointAccuracyDamage,Amount - Effect,ZaryaParticleGrenadeDamage,Amount\"/></c> more damage and Slows Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaParticleGrenadePinpointAccuracySlow,Modification.UnifiedMoveSpeedFactor*(-100)\"player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaParticleGrenadePinpointAccuracySlow,Duration\" precision=\"1\"/></c> seconds to enemies hit by the center of the blast.",
+    "ZaryaPersonalBarrier": "Gain a Shield that absorbs <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaPersonalBarrier,DamageResponse.ModifyLimit\"/></c> damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaPersonalBarrier,Duration\" precision=\"1\"/></c> seconds.",
+    "ZaryaPersonalBarrierExplosiveBarrierTalent": "Upon expiration or breaking, Personal Barrier explodes, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZaryaPersonalBarrierExplosiveBarrierDamage,Amount\"/></c> damage to nearby enemies.",
+    "ZaryaPersonalBarrierIAmTheStrongestTalent": "Personal Barrier absorbs an additional <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaPersonalBarrierIAmTheStrongest,DamageResponse.ModifyLimit-Behavior,ZaryaPersonalBarrier,DamageResponse.ModifyLimit\"/></c> damage. <n/><n/><c val=\"#AbilityPassive\">Passive: </c>Damage absorbed by Zarya's Shields contributes <c val=\"#TooltipNumbers\">20%</c> more Energy.",
+    "ZaryaPersonalBarrierSpellBarrierTalent": "Upon expiration or breaking, Personal Barrier grants Zarya <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaPersonalBarrierSpellBarrier,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaPersonalBarrierSpellBarrier,Duration\"/></c> seconds, reducing the damage taken from Abilities by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaPersonalBarrierSpellBarrier,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.",
+    "ZaryaPersonalBarrierUnstoppableCompetitorTalent": "Personal Barrier makes Zarya Unstoppable for up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaPersonalBarrierUnstoppableCompetitor,Duration\" precision=\"1\"/></c> seconds.",
+    "ZaryaShieldAlly": "Grants an allied Hero a Shield that absorbs <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaShieldAlly,DamageResponse.ModifyLimit\"/></c> damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaShieldAlly,Duration\" precision=\"1\"/></c> seconds.",
+    "ZaryaShieldAllyCleansingShieldTalent": "Causes Shield Ally to remove all disabling effects and reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,ZaryaShieldAllyCleansingShield,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds.",
+    "ZaryaShieldAllyGainTrainTalent": "Shield Ally now grants an untalented Shield to a nearby ally upon impact.",
+    "ZaryaShieldAllyGiveMeTwentyTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Regeneration Globes increase Shield Ally absorb amount by <c val=\"#TooltipNumbers\">15</c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Validator,ZaryaHasLT20ShieldAllyGiveMeTwentyStacks,Value*15\"/></c> permanently. </n></n><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After collecting <c val=\"#TooltipNumbers\">20</c> Regen Globes, permanently reduce the cooldown of Shield Ally by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ZaryaShieldAllyGiveMeTwentyCompleteModifyPlayer,EffectArray[0].Value\"/></c> seconds.",
+    "ZaryaShieldAllySpeedBarrierTalent": "Shield Ally increases the allied Hero's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ZaryaShieldAllySpeedBarrier,AbilityModificationArray[0].Modifications[0].Value*100\" precision=\"2\"player=\"0\"/>%</c> for the duration.",
+    "ZaryaShieldAllyTogetherWeAreStrongTalent": "For <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaShieldAllyTogetherWeAreStrongTalentBuff,Duration\"/></c> seconds after gaining Shield Ally, every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZaryaEnergyBoostDecay,Period/1.75\"precision=\"2\"/></c> damage done by the bearer contributes <c val=\"#TooltipNumbers\">1</c> Energy to Zarya, up to <c val=\"#TooltipNumbers\">40</c> Energy per Shield.",
+    "ZaryaUnyieldingDefenderTalent": "Activate to reset the cooldown of Personal Barrier and Shield Ally.",
+    "ZaryaWeaponFeelTheHeatTalent": "Zarya's Basic Attack deals <c val=\"#TooltipNumbers\"><d ref=\"(Effect,ZaryaWeaponFeelTheHeatDamage,Amount/Effect,ZaryaWeaponDamage,Amount)-1*10)\" />0%</c> additional damage to enemies in melee range. While above <c val=\"#TooltipNumbers\">40</c> Energy, Zarya's Basic Attack size is increased by <c val=\"#TooltipNumbers\"><d ref=\"(Effect,ZaryaWeaponToTheLimitSearch,AreaArray[0].RectangleWidth)-(Effect,ZaryaWeaponSplashTargetSearch,AreaArray[0].RectangleWidth)*100\"/>%</c>."
+  },
+  "tooltipSimple": {
+    "ZaryaDeepBurn": "Particle Grenade can generate Energy",
+    "ZaryaDefensiveShieldingTalent": "Personal Barrier, Shield Ally grant Physical Armor",
+    "ZaryaEnergy": "Damage absorbed by Zarya's Shields increase her damage.",
+    "ZaryaEnergyBornInBattleTalent": "Reduces cooldowns at high Energy",
+    "ZaryaEnergyEnduranceTrainingTalent": "Gain Armor at high Energy",
+    "ZaryaEnergyMaximumChargeTalent": "Regen Globes grant Energy<n/><c val=\"#TooltipQuest\">Quest</c>: Increases maximum Energy",
+    "ZaryaExpulsionZone": "Launch a bomb that continually pushes enemies",
+    "ZaryaExpulsionZoneClearOutTalent": "Reduce Expulsion Zone cooldown, increase duration",
+    "ZaryaGravitonSurge": "Launch a gravity bomb that draws in enemies",
+    "ZaryaGravitonSurgeGravityKillsTalent": "Graviton Surge has increased duration and Silences",
+    "ZaryaPainIsTemporaryTalent": "Consume Energy to gain a Shield",
+    "ZaryaParticleGrenade": "Deals damage to enemies in a small area",
+    "ZaryaParticleGrenadeDemolitionsExpertTalent": "<c val=\"#TooltipQuest\">Quest</c>: Increases Particle Grenade radius and reduces cooldown",
+    "ZaryaParticleGrenadeGrenadierTalent": "Particle Grenade charges are returned at once",
+    "ZaryaParticleGrenadePinpointAccuracyTalent": "Particle Grenade center deals more damage, Slows",
+    "ZaryaPersonalBarrier": "Gain a Shield that absorbs damage",
+    "ZaryaPersonalBarrierExplosiveBarrierTalent": "Personal Barrier deals area damage",
+    "ZaryaPersonalBarrierIAmTheStrongestTalent": "Increases Personal Barrier Shield amount, Energy received",
+    "ZaryaPersonalBarrierSpellBarrierTalent": "Personal Barrier grants Spell Armor",
+    "ZaryaPersonalBarrierUnstoppableCompetitorTalent": "Personal Barrier grants Unstoppable",
+    "ZaryaShieldAlly": "Grant an ally a Shield that absorbs damage",
+    "ZaryaShieldAllyCleansingShieldTalent": "Shield Ally removes all disabling effects",
+    "ZaryaShieldAllyGainTrainTalent": "Shield Ally now affects a second ally",
+    "ZaryaShieldAllyGiveMeTwentyTalent": "<c val=\"#TooltipQuest\">Quest</c>: Increases Shield Ally absorb amount and reduces cooldown",
+    "ZaryaShieldAllySpeedBarrierTalent": "Shield Ally grants Movement Speed",
+    "ZaryaShieldAllyTogetherWeAreStrongTalent": "Allied damage dealt with Shield Ally contributes to Energy",
+    "ZaryaUnyieldingDefenderTalent": "Activate to reset Shield cooldowns",
+    "ZaryaWeaponFeelTheHeatTalent": "Basic Attack deals more damage to close enemies, increased size"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}

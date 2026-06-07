@@ -1,0 +1,664 @@
+{
+  "id": 29,
+  "shortName": "chen",
+  "hyperlinkId": "Chen",
+  "attributeId": "Chen",
+  "cHeroId": "Chen",
+  "cUnitId": "HeroChen",
+  "name": "Chen",
+  "icon": "chen.png",
+  "role": "Warrior",
+  "expandedRole": "Bruiser",
+  "type": "Melee",
+  "description": "A potent Bruiser that wears downs enemies and is resistant to burst damage.",
+  "title": "Legendary Brewmaster",
+  "info": "To be a brewmaster is to be an explorer, a lover of nature, and when the need arises; a powerful fighter. For years Chen Stormstout has wandered the world of Azeroth in search of rare ingredients, stirring stories, and of course, good brew.",
+  "releaseDate": "2014-09-09",
+  "releasePatch": "0.5.0.32120",
+  "tags": [
+    "BodyBlocker",
+    "Escaper",
+    "Ganker",
+    "Overconfident",
+    "RoleTank",
+    "SoloLaner"
+  ],
+  "stats": {
+    "hp": 2473,
+    "hpRegen": 5.1523,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 100,
+    "resourceType": "Brew",
+    "resourceRegen": 0,
+    "attackDamage": 90,
+    "attackDamageScale": 0.04,
+    "attackRange": 2,
+    "attackSpeed": 1.1111,
+    "radius": 0.9375
+  },
+  "heroUnits": {
+    "ChenStorm": {
+      "stats": {
+        "hp": 1731,
+        "hpRegen": 0,
+        "hpScale": 0.04,
+        "hpRegenScale": 0,
+        "resource": 500,
+        "resourceRegen": 3,
+        "attackDamage": 59,
+        "attackDamageScale": 0.04,
+        "attackRange": 9.75,
+        "attackSpeed": 1.25,
+        "radius": 0.625
+      },
+      "portrait": "storm_ui_ingame_targetinfopanel_unit_chen_storm.png"
+    },
+    "ChenEarth": {
+      "stats": {
+        "hp": 1731,
+        "hpRegen": 0,
+        "hpScale": 0.04,
+        "hpRegenScale": 0,
+        "resource": 500,
+        "resourceRegen": 3,
+        "attackDamage": 37,
+        "attackDamageScale": 0.04,
+        "attackRange": 1,
+        "attackSpeed": 0.6667,
+        "radius": 0.8125
+      },
+      "portrait": "storm_ui_ingame_targetinfopanel_unit_chen_earth.png"
+    },
+    "ChenFire": {
+      "stats": {
+        "hp": 1731,
+        "hpRegen": 0,
+        "hpScale": 0.04,
+        "hpRegenScale": 0,
+        "resource": 500,
+        "resourceRegen": 3,
+        "attackDamage": 17,
+        "attackDamageScale": 0.04,
+        "attackRange": 1,
+        "attackSpeed": 1.6667,
+        "radius": 0.625
+      },
+      "portrait": "storm_ui_ingame_targetinfopanel_unit_chen_fire.png"
+    }
+  },
+  "abilities": {
+    "Chen": [
+      {
+        "uid": "db26bd",
+        "name": "Flying Kick",
+        "description": "Kick through target enemy, dealing 120 (+4% per level) damage.",
+        "hotkey": "Q",
+        "abilityId": "Chen|Q1",
+        "tooltipId": "ChenFlyingKick",
+        "cooldown": 5,
+        "manaCost": 10,
+        "icon": "storm_ui_icon_chen_flyingkick.png",
+        "type": "basic"
+      },
+      {
+        "uid": "a671f5",
+        "name": "Keg Smash",
+        "description": "Deal 50 (+4% per level) damage and soak enemies in Brew for 3 seconds, Slowing them by 10%. After 1.25 seconds, the Slow is increased to 40%.  After being used, this Ability becomes Breath of Fire.  Breath of Fire Deal damage and Ignite Brew-soaked enemies.",
+        "hotkey": "W",
+        "abilityId": "Chen|W1",
+        "tooltipId": "ChenKegSmash",
+        "cooldown": 5,
+        "manaCost": 40,
+        "icon": "storm_ui_icon_chen_kegsmash.png",
+        "type": "basic"
+      },
+      {
+        "uid": "7a7f80",
+        "name": "Stagger",
+        "description": "Damage taken over the next 3 seconds is prevented.  Once this effect ends, Chen receives 75% of the damage taken over 5 seconds. This damage cannot be modified.",
+        "hotkey": "E",
+        "abilityId": "Chen|E1",
+        "tooltipId": "ChenStagger",
+        "cooldown": 18,
+        "icon": "storm_ui_icon_chen_stagger.png",
+        "type": "basic"
+      },
+      {
+        "uid": "e0a3b8",
+        "name": "Storm, Earth, Fire",
+        "description": "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well.  Storm can grant the spirits a Shield.  Earth can leap to an area and Slow enemies.  Fire can grant the spirits Attack Speed, damage.",
+        "hotkey": "R",
+        "abilityId": "Chen|R1",
+        "tooltipId": "ChenStormEarthFire",
+        "cooldown": 120,
+        "icon": "storm_ui_icon_chen_stormearthfire.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "3d7575",
+        "name": "Wandering Keg",
+        "description": "Roll around inside an Unstoppable barrel with 70% increased Movement Speed and 25 Armor, dealing 59 (+4% per level) damage to enemies in the way and knocking them back. Lasts for 5 seconds.",
+        "hotkey": "R",
+        "abilityId": "Chen|R2",
+        "tooltipId": "ChenWanderingKeg",
+        "cooldown": 60,
+        "icon": "storm_ui_icon_chen_wanderingkeg.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "c98538",
+        "name": "Fortifying Brew",
+        "description": "Chen drinks from his keg, gaining 50 Brew and 180 (+4% per level) temporary Shields per second, up to a maximum of 540 (+4% per level) while drinking. Shields persist for 4 seconds after he stops drinking.",
+        "hotkey": "D",
+        "trait": true,
+        "abilityId": "Chen|D1",
+        "tooltipId": "ChenFortifyingBrew",
+        "cooldown": 7,
+        "icon": "storm_ui_icon_chen_fortifyingbrew.png",
+        "type": "trait"
+      },
+      {
+        "uid": "727df0",
+        "name": "Breath of Fire",
+        "description": "Breathe a cone of flames, dealing 40 (+4% per level) damage. Enemies that are soaked in Brew are Ignited, dealing 342 (+4% per level) additional damage over 6 seconds and adding 1.5 seconds to the duration of the Slow from Keg Smash.  After being used or after 6 seconds, this ability becomes Keg Smash.  Keg Smash Damage and Slow enemies.",
+        "hotkey": "W",
+        "abilityId": "Chen|W3",
+        "tooltipId": "ChenBreathOfFire",
+        "icon": "storm_ui_icon_chen_breathoffire.png",
+        "type": "basic"
+      }
+    ],
+    "ChenStormEarthFire": [
+      {
+        "uid": "eee284",
+        "name": "Storm",
+        "description": "The spirits gain a Shield for 400 (+4% per level) over 3 seconds.  If this is the final Ability cast, the shield amount is increased to 750 (+4% per level) with no limited duration, and the duration of Storm, Earth, Fire is increased by 5 seconds.",
+        "hotkey": "Q",
+        "abilityId": "Chen|Q2",
+        "tooltipId": "ChenStorm",
+        "icon": "storm_temp_war3_btntornado.png",
+        "type": "basic"
+      },
+      {
+        "uid": "4e5a22",
+        "name": "Earth",
+        "description": "Fire and Earth leap to the target location, dealing 32 (+4% per level) damage and Slowing enemies in a large area by 70% for 1.5 seconds.  If this is the final Ability cast, increase the damage dealt by 300% and instead of Slowing, the leap Roots enemy Heroes hit for 1.75 seconds.",
+        "hotkey": "W",
+        "abilityId": "Chen|W2",
+        "tooltipId": "ChenEarth",
+        "icon": "storm_temp_war3_btnearthquake.png",
+        "type": "basic"
+      },
+      {
+        "uid": "48b037",
+        "name": "Fire",
+        "description": "Increase the Attack Speed and Basic Attack damage of the spirits by 50% for 5 seconds.  If this is the final Ability cast, the Attack Speed and damage bonus is increased to 75% and the spirits gain 50% Movement Speed for its duration.",
+        "hotkey": "E",
+        "abilityId": "Chen|E2",
+        "tooltipId": "ChenFire",
+        "icon": "storm_temp_war3_btnmarkoffire.png",
+        "type": "basic"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "ChenAccumulatingFlame",
+        "talentTreeId": "ChenAccumulatingFlame",
+        "name": "Accumulating Flame",
+        "description": "Reward: Damage enemy Heroes with Breath of Fire to permanently increase periodic damage by 0.25. Kills grant 2.  Reward: After gaining 20 damage, increase the range of Keg Smash.  Mythic Reward: Upon gaining 75 damage, Breath of Fire reduces enemy Armor by 20 and its duration is increased by 0.75 seconds each time Chen attacks the Hero.",
+        "icon": "storm_ui_icon_chen_breathoffire.png",
+        "type": "W",
+        "sort": 1,
+        "isQuest": true,
+        "abilityId": "Chen|W3",
+        "abilityLinks": [
+          "Chen|W1",
+          "Chen|W3"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenBreathOfFire",
+          "ChenKegSmash"
+        ]
+      },
+      {
+        "tooltipId": "ChenFreshestIngredients",
+        "talentTreeId": "ChenFreshestIngredients",
+        "name": "Freshest Ingredients",
+        "description": "Increase the healing duration of Regeneration Globes by 150%.  Quest: Gather 15 Regeneration Globes.  Reward: Reduce Fortifying Brew's cooldown by 2 seconds, and 50% of its Shield persists indefinitely after drinking.",
+        "icon": "storm_ui_icon_chen_fortifyingbrew.png",
+        "type": "Trait",
+        "sort": 2,
+        "isQuest": true,
+        "abilityId": "Chen|D1",
+        "abilityLinks": [
+          "Chen|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenFortifyingBrew"
+        ]
+      },
+      {
+        "tooltipId": "ChenStormstoutSecretRecipe",
+        "talentTreeId": "ChenStormstoutSecretRecipe",
+        "name": "Stormstout Secret Recipe",
+        "description": "Chen heals for 3.5% of his maximum Health when his Basic Abilities hit an enemy Hero.",
+        "icon": "storm_ui_icon_chen_stormstoutsecretrecipe.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Chen|Passive",
+        "abilityLinks": [
+          "Chen|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenFortifyingBrew"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "ChenFlyingKickDeadlyStrikeTalent",
+        "talentTreeId": "ChenDeadlyStrike",
+        "name": "Deadly Strike",
+        "description": "Flying Kick no longer costs Brew. Additionally, its damage is increased by 125% while Chen has Shields from Fortifying Brew.",
+        "icon": "storm_ui_icon_chen_flyingkick.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Chen|Q1",
+        "abilityLinks": [
+          "Chen|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenFlyingKick"
+        ]
+      },
+      {
+        "tooltipId": "ChenEyeOfTheTiger",
+        "talentTreeId": "ChenEyeOfTheTiger",
+        "name": "Eye of the Tiger",
+        "description": "Basic Attacks against Brew-soaked enemy Heroes deal 50% more damage and heal Chen for 60% of the damage done.",
+        "icon": "storm_ui_icon_chen_kegsmash.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Chen|W3",
+        "abilityLinks": [
+          "Chen|W1",
+          "Chen|W3"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenBreathOfFire",
+          "ChenKegSmash"
+        ]
+      },
+      {
+        "tooltipId": "ChenWitheringFlames",
+        "talentTreeId": "ChenWitheringFlames",
+        "name": "Withering Flames",
+        "description": "Igniting an enemy Hero reduces their Spell Power by 60% for 4 seconds.",
+        "icon": "storm_ui_icon_chen_breathoffire_a.png",
+        "type": "W",
+        "sort": 3,
+        "abilityId": "Chen|W3",
+        "abilityLinks": [
+          "Chen|W1",
+          "Chen|W3"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenBreathOfFire",
+          "ChenKegSmash"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "ChenGiftOfTheOxStagger",
+        "talentTreeId": "ChenGiftOfTheOxStagger",
+        "name": "Gift of the Ox",
+        "description": "Increase the duration of Stagger's damage prevention by 2 seconds, and reduce the amount of damage taken over time to 50% of damage taken.",
+        "icon": "storm_ui_icon_chen_stagger.png",
+        "type": "E",
+        "sort": 1,
+        "abilityId": "Chen|E1",
+        "abilityLinks": [
+          "Chen|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenStagger"
+        ]
+      },
+      {
+        "tooltipId": "ChenFortifyingBrewBrewmastersBalanceTalent",
+        "talentTreeId": "ChenBrewmastersBalance",
+        "name": "Brewmaster's Balance",
+        "description": "While at or below 50 Brew, gain 20% Movement Speed. While at or above 50 Brew, regenerate an additional 18 (+4% per level) Health per second.",
+        "icon": "storm_ui_icon_chen_fortifyingbrew.png",
+        "type": "Trait",
+        "sort": 2,
+        "abilityId": "Chen|D1",
+        "abilityLinks": [
+          "Chen|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenFortifyingBrew"
+        ]
+      },
+      {
+        "tooltipId": "ChenElusiveBrawler",
+        "talentTreeId": "ChenElusiveBrawler",
+        "name": "Elusive Brawler",
+        "description": "Activate to gain 20% Movement Speed and Evade enemy Basic Attacks for 2 seconds. Chen's Basic Attacks reduce this cooldown by 2 seconds.",
+        "icon": "storm_ui_icon_chen_elusivebrew.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 25,
+        "abilityId": "Chen|Active"
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "ChenWanderingKeg",
+        "talentTreeId": "ChenHeroicAbilityWanderingKeg",
+        "name": "Wandering Keg",
+        "description": "Roll around inside an Unstoppable barrel with 70% increased Movement Speed and 25 Armor, dealing 59 (+4% per level) damage to enemies in the way and knocking them back. Lasts for 5 seconds.",
+        "icon": "storm_ui_icon_chen_wanderingkeg.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 60,
+        "abilityId": "Chen|R2",
+        "abilityLinks": [
+          "Chen|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenWanderingKeg"
+        ]
+      },
+      {
+        "tooltipId": "ChenStormEarthFire",
+        "talentTreeId": "ChenHeroicAbilityStormEarthFire",
+        "name": "Storm, Earth, Fire",
+        "description": "After 1 second, Chen splits into three elemental spirits for 12 seconds, each with 70% of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well.  Storm can grant the spirits a Shield.  Earth can leap to an area and Slow enemies.  Fire can grant the spirits Attack Speed, damage.",
+        "icon": "storm_ui_icon_chen_stormearthfire.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 120,
+        "abilityId": "Chen|R1",
+        "abilityLinks": [
+          "Chen|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenStormEarthFire"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "ChenFlyingKickPressurePointTalent",
+        "talentTreeId": "ChenPressurePoint",
+        "name": "Pressure Point",
+        "description": "Flying Kick Slows the target enemy by 40% for 1.5 seconds, or by 80% if Chen has Shields from Fortifying Brew.",
+        "icon": "storm_ui_icon_chen_flyingkick.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Chen|Q1",
+        "abilityLinks": [
+          "Chen|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenFlyingKick"
+        ]
+      },
+      {
+        "tooltipId": "ChenKegSmashATouchOfHoneyTalent",
+        "talentTreeId": "ChenMasteryKegSmashATouchOfHoney",
+        "name": "A Touch of Honey",
+        "description": "Increase the Slows from Keg Smash by 30% and its duration by 0.5 seconds.",
+        "icon": "storm_ui_icon_chen_kegsmash.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Chen|W3",
+        "abilityLinks": [
+          "Chen|W1",
+          "Chen|W3"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenBreathOfFire",
+          "ChenKegSmash"
+        ]
+      },
+      {
+        "tooltipId": "ChenBreathOfFireRingOfFireTalent",
+        "talentTreeId": "ChenRingofFire",
+        "name": "Ring of Fire",
+        "description": "After Igniting an enemy, become bathed in a fiery aura, dealing 60 (+4% per level) damage every second to nearby enemies for 6 seconds.",
+        "icon": "storm_ui_icon_chen_breathoffire.png",
+        "type": "W",
+        "sort": 3,
+        "abilityId": "Chen|W3",
+        "abilityLinks": [
+          "Chen|W1",
+          "Chen|W3"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenBreathOfFire",
+          "ChenKegSmash"
+        ]
+      },
+      {
+        "tooltipId": "ChenFortifyingBrewEnoughToShareTalent",
+        "talentTreeId": "ChenMasteryFortifyingBrewEnoughToShare",
+        "name": "Enough to Share",
+        "description": "Fortifying Brew instantly grants Chen a Shield that absorbs 180 (+4% per level) damage, and each second grants nearby allied Heroes a Shield that absorbs 140 (+4% per level) damage, up to 420 (+4% per level).",
+        "icon": "storm_ui_icon_chen_fortifyingbrew.png",
+        "type": "Trait",
+        "sort": 4,
+        "abilityId": "Chen|D1",
+        "abilityLinks": [
+          "Chen|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenFortifyingBrew"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "ChenFlyingLeap",
+        "talentTreeId": "ChenFlyingLeap",
+        "name": "Flying Leap",
+        "description": "Increase Flying Kick's range by 15% and reduce its cooldown by 0.5 seconds each time an enemy Hero takes damage from being Ignited.",
+        "icon": "storm_ui_icon_chen_flyingkick.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Chen|Q1",
+        "abilityLinks": [
+          "Chen|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenFlyingKick"
+        ]
+      },
+      {
+        "tooltipId": "ChenCelerityStagger",
+        "talentTreeId": "ChenCelerity",
+        "name": "Celerity",
+        "description": "Basic Attacks against Stunned, Rooted, or Slowed enemy Heroes reduce the cooldown of Stagger by 2 seconds and grant Chen 30 Armor for 3 seconds.",
+        "icon": "storm_ui_icon_chen_stagger.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Chen|E1",
+        "abilityLinks": [
+          "Chen|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenStagger"
+        ]
+      },
+      {
+        "tooltipId": "ChenFortifyingBrewComboStrikesTalent",
+        "talentTreeId": "ChenComboStrikes",
+        "name": "Combo Strikes",
+        "description": "Every 3rd Basic Attack against the same target deals 75% bonus damage. While Chen has Shields from Fortifying Brew and for 2 seconds after, he gains 35% Attack Speed.",
+        "icon": "storm_ui_icon_chen_fortifyingbrew.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Chen|D1",
+        "abilityLinks": [
+          "Chen|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenFortifyingBrew"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "ChenWanderingKegUntappedPotentialTalent",
+        "talentTreeId": "ChenMasteryWanderingKegUntappedPotential",
+        "name": "Untapped Potential",
+        "description": "Increase Wandering Keg's Movement Speed bonus from 70% to 125%, and its Armor bonus to 75 for its duration and 5 seconds afterwards.",
+        "icon": "storm_ui_icon_chen_wanderingkeg.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "Chen|R2",
+        "abilityLinks": [
+          "Chen|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenWanderingKeg"
+        ],
+        "prerequisiteTalentIds": [
+          "ChenHeroicAbilityWanderingKeg"
+        ]
+      },
+      {
+        "tooltipId": "ChenStormEarthFireElementalConduitTalent",
+        "talentTreeId": "ChenElementalConduit",
+        "name": "Elemental Conduit",
+        "description": "Increase the spirits' Health to 100% of Chen's maximum Health and all of their Abilities are empowered.",
+        "icon": "storm_ui_icon_chen_stormearthfire.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "Chen|R1",
+        "abilityLinks": [
+          "Chen|E2",
+          "Chen|Q2",
+          "Chen|R1",
+          "Chen|W2"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenStormEarthFire",
+          "ChenStorm",
+          "ChenEarth",
+          "ChenFire"
+        ],
+        "prerequisiteTalentIds": [
+          "ChenHeroicAbilityStormEarthFire"
+        ]
+      },
+      {
+        "tooltipId": "ChenPurifyingBrew",
+        "talentTreeId": "ChenPurifyingBrew",
+        "name": "Purifying Brew",
+        "description": "Casting Fortifying Brew grants Chen Unstoppable for 1.5 seconds.",
+        "icon": "storm_ui_icon_chen_fortifyingbrew.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Chen|D1",
+        "abilityLinks": [
+          "Chen|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenFortifyingBrew"
+        ]
+      },
+      {
+        "tooltipId": "ChenFortifyingBrewEnergizingBrewTalent",
+        "talentTreeId": "ChenEnergizingBrew",
+        "name": "Energizing Brew",
+        "description": "If Chen Channels Fortifying Brew for its full duration, then he gains 20% bonus Health and 20% bonus damage for 25 seconds.",
+        "icon": "storm_ui_icon_chen_fortifyingbrew_b.png",
+        "type": "Trait",
+        "sort": 4,
+        "abilityId": "Chen|D1",
+        "abilityLinks": [
+          "Chen|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChenFortifyingBrew"
+        ]
+      }
+    ]
+  },
+  "tooltipMarkup": {
+    "ChenAccumulatingFlame": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Damage enemy Heroes with Breath of Fire to permanently increase periodic damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,AddFirebreathQuestToken,Value\" precision=\"2\"/></c>. Kills grant <c val=\"#TooltipNumbers\"><d ref=\"Effect,AddFirebreathQuestTokenHeroDeath,Value\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gaining <c val=\"#TooltipNumbers\">20</c> damage, increase the range of Keg Smash.<n/></n><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Mythic Reward:</c> Upon gaining <c val=\"#TooltipNumbers\">75</c> damage, Breath of Fire reduces enemy Armor by <c val=\"#TooltipNumbers\">20</c> and its duration is increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenBreathOfFireAccumulatingFlameIncreaseIgniteDuration,Value\" precision=\"2\"/></c> seconds each time Chen attacks the Hero.",
+    "ChenBreathOfFire": "Breathe a cone of flames, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenBreathOfFireDamage,Amount\"/></c> damage. Enemies that are soaked in Brew are Ignited, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenBreathOfFireDoTDamage,Amount*Behavior,ChenBreathofFireDoT,Duration\"/></c> additional damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenBreathofFireDoT,Duration\"/></c> seconds and adding <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenBreathofFireBoggedDownModifySlowBehaviorBuffDuration,Value\"Precision=\"2\"/></c> seconds to the duration of the Slow from Keg Smash. <n/><n/>After being used or after <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenBreathOfFireKegSmashAbilityChangeTimerBehavior,Duration\"/></c> seconds, this ability becomes Keg Smash.<n/><n/><c val=\"#ColorYellow\">Keg Smash</c><n/>Damage and Slow enemies.",
+    "ChenBreathOfFireRingOfFireTalent": "After Igniting an enemy, become bathed in a fiery aura, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenBreathOfFireRingOfFireTalentDamage,Amount\"/></c> damage every second to nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenBreathofFireRingOfFire,Duration\"/></c> seconds.",
+    "ChenCelerityStagger": "Basic Attacks against Stunned, Rooted, or Slowed enemy Heroes reduce the cooldown of Stagger by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChenCelerityStaggerModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds and grant Chen <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenCelerityStaggerArmorBuff,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenCelerityStaggerArmorBuff,Duration\"/></c> seconds.",
+    "ChenEarth": "Fire and Earth leap to the target location, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenEarthLeapDamage,Amount\"/></c> damage and Slowing enemies in a large area by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChenEarthLeapSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenEarthLeapSlow,Duration\"precision=\"1\"/></c> seconds.<n/><n/>If this is the final Ability cast, increase the damage dealt by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChenEarthLeapDamage,MultiplicativeModifierArray[EarthEmpoweredDamageBuff].Modifier\"/>%</c> and instead of Slowing, the leap Roots enemy Heroes hit for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenEarthEmpoweredLeapRoot,Duration\"Precision=\"2\"/></c> seconds.",
+    "ChenElusiveBrawler": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChenElusiveBrawlerMovementSpeedBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed and Evade enemy Basic Attacks for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenElusiveBrawler,Duration\"/></c> seconds. Chen's Basic Attacks reduce this cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChenElusiveBrawlerModifyPlayerCooldown,Cost.Cooldown.TimeUse\"/></c> seconds.",
+    "ChenEyeOfTheTiger": "Basic Attacks against Brew-soaked enemy Heroes deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChenHeroWeaponDamage,MultiplicativeModifierArray[EyeOfTheTiger].Modifier\"/>%</c> more damage and heal Chen for<c val=\"#TooltipNumbers\"> <d ref=\"100*Effect,ChenHeroWeaponDamage,LeechFraction[Life]\"/>%</c> of the damage done.",
+    "ChenFire": "Increase the Attack Speed and Basic Attack damage of the spirits by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChenFireStormEarthFireAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFireStormEarthFireAttackSpeedBuff,Duration\"/></c> seconds.<n/><n/>If this is the final Ability cast, the Attack Speed and damage bonus is increased to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChenFireStormEarthFireEmpoweredAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> and the spirits gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChenFireStormEarthFireEmpoweredMovementSpeedBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed for its duration.",
+    "ChenFlyingKick": "Kick through target enemy, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenFlyingKickDamage,Amount\"/></c> damage.",
+    "ChenFlyingKickDeadlyStrikeTalent": "Flying Kick no longer costs Brew. Additionally, its damage is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChenFlyingKickDamage,MultiplicativeModifierArray[DeadlyStrikeDamage].Modifier\"/>%</c> while Chen has Shields from Fortifying Brew.",
+    "ChenFlyingKickPressurePointTalent": "Flying Kick Slows the target enemy by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChenFlyingKickPressurePointSlow,Modification.UnifiedMoveSpeedFactor\" precision=\"2\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFlyingKickPressurePointSlow,Duration\" player=\"0\" precision=\"2\"/></c> seconds, or by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChenFlyingKickPressurePointSlowBrewDrenched,Modification.UnifiedMoveSpeedFactor\"/>%</c> if Chen has Shields from Fortifying Brew.",
+    "ChenFlyingLeap": "Increase Flying Kick's range by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,ChenFlyingLeap,AbilityModificationArray[0].Modifications[1].Value/Abil,ChenFlyingKick,Range\"player=\"0\"precision=\"0\"/>%</c> and reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChenFlyingKickFlyingLeapModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds each time an enemy Hero takes damage from being Ignited.",
+    "ChenFortifyingBrew": "Chen drinks from his keg, gaining <c val=\"#TooltipNumbers\"><d ref=\"8*Effect,ChenFortifyingBrewModifyEnergy,VitalArray[Energy].Change\"/></c> Brew and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFortifyingBrewShield,DamageResponse.ModifyLimit *2\"/></c> temporary Shields per second, up to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFortifyingBrewShield,DamageResponse.ModifyLimit * Behavior,ChenFortifyingBrewShield,MaxStackCount\"/></c> while drinking. Shields persist for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFortifyingBrewController,Duration\"/></c> seconds after he stops drinking.",
+    "ChenFortifyingBrewBrewmastersBalanceTalent": "While at or below <c val=\"#TooltipNumbers\">50</c> Brew, gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChenBrewmastersBalanceSpeedBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed. While at or above <c val=\"#TooltipNumbers\">50</c> Brew, regenerate an additional <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenBrewmastersBalanceHealthRegen,Modification.VitalRegenArray[Life]\"/></c> Health per second.",
+    "ChenFortifyingBrewComboStrikesTalent": "Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack against the same target deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChenHeroWeaponDamage,MultiplicativeModifierArray[FortifyingBrewComboStrikes].Modifier\"/>%</c> bonus damage. While Chen has Shields from Fortifying Brew and for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenFortifyingBrewComboStrikesAttackSpeedBuffApplyBehavior,Duration\"/></c> seconds after, he gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChenFortifyingBrewComboStrikesAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> Attack Speed.",
+    "ChenFortifyingBrewEnergizingBrewTalent": "If Chen Channels Fortifying Brew for its full duration, then he gains <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,ChenEnergizingBrewFortifyingBrewHealthBuff,Modification.VitalMaxArray[Life])/(Unit,HeroChen,LifeMax)\"/>%</c> bonus Health and <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChenBreathOfFireDamage,MultiplicativeModifierArray[EnergizingBrewDamage].Modifier\"/>%</c> bonus damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenEnergizingBrewFortifyingBrewHealthBuff,Duration\"/></c> seconds.",
+    "ChenFortifyingBrewEnoughToShareTalent": "Fortifying Brew instantly grants Chen a Shield that absorbs <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFortifyingBrewShield,DamageResponse.ModifyLimit*Effect,ChenFortifyingBrewApplyEnoughToShareTalentStacks,Count\"/></c> damage, and each second grants nearby allied Heroes a Shield that absorbs <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFortifyingBrewEnoughToShareAlliedShield,DamageResponse.ModifyLimit*2\"/></c> damage, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFortifyingBrewEnoughToShareAlliedShield,MaxStackCount*Behavior,ChenFortifyingBrewEnoughToShareAlliedShield,DamageResponse.ModifyLimit\"/></c>.",
+    "ChenFreshestIngredients": "Increase the healing duration of Regeneration Globes by <c val=\"#TooltipNumbers\"><d ref=\"(100*Talent,ChenFreshestIngredients,AbilityModificationArray[0].Modifications[1].Value)/Behavior,HeroGenericRegenGlobeBarbarianPercentBuff,Duration\"Player=\"0\"/>%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gather <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFreshestIngredientsTokenCounter,Max\"/></c> Regeneration Globes.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Reduce Fortifying Brew's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenFortifyingBrewFreshestIngredientsQuestCompleteModifyPlayer,EffectArray[0].Value\"/></c> seconds, and <c val=\"#TooltipNumbers\">50%</c> of its Shield persists indefinitely after drinking.",
+    "ChenGiftOfTheOxStagger": "Increase the duration of Stagger's damage prevention by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ChenGiftOfTheOxStagger,AbilityModificationArray[0].Modifications[0].Value\"Precision=\"2\"/></c> seconds, and reduce the amount of damage taken over time to <c val=\"#TooltipNumbers\">50%</c> of damage taken.",
+    "ChenKegSmash": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenKegSmashDamage,Amount\"/></c> damage and soak enemies in Brew for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenKegSmashDrenched,Duration\"Player=\"0\"/></c> seconds, Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ChenKegSmashSlow,Modification[0].UnifiedMoveSpeedFactor[0] * 100\" player=\"0\"/>%</c>. After <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenKegSmashSlow,Duration\"Precision=\"2\"Player=\"0\"/></c> seconds, the Slow is increased to <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ChenKegSmashBoggedDownSlow,Modification[0].UnifiedMoveSpeedFactor[0] * 100\" player=\"0\"/>%</c>.<n/><n/>After being used, this Ability becomes Breath of Fire.<n/><n/><c val=\"#ColorRed\">Breath of Fire</c><n/>Deal damage and Ignite Brew-soaked enemies.",
+    "ChenKegSmashATouchOfHoneyTalent": "Increase the Slows from Keg Smash by <c val=\"#TooltipNumbers\"><d ref=\"-100*Talent,ChenMasteryKegSmashATouchOfHoney,AbilityModificationArray[0].Modifications[0].Value\"/>%</c> and its duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ChenMasteryKegSmashATouchOfHoney,AbilityModificationArray[0].Modifications[3].Value\"Precision=\"2\"/></c> seconds.",
+    "ChenPurifyingBrew": "Casting Fortifying Brew grants Chen Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenPurifyingBrewUnstoppableBuff,Duration\"Precision=\"2\"/></c> seconds.",
+    "ChenStagger": "Damage taken over the next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenStaggerProtectedBuff,Duration\"Player=\"0\"/></c> seconds is prevented.  Once this effect ends, Chen receives <c val=\"#TooltipNumbers\">75%</c> of the damage taken over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenStaggerDoT,Duration\"Player=\"0\"/></c> seconds. This damage cannot be modified.",
+    "ChenStorm": "The spirits gain a Shield for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenStormShieldBuff,DamageResponse.ModifyLimit\"/></c> over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenStormShieldBuff,Duration\"/></c> seconds.<n/><n/>If this is the final Ability cast, the shield amount is increased to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenStormEmpoweredShieldBuff,DamageResponse.ModifyLimit\"/></c> with no limited duration, and the duration of Storm, Earth, Fire is increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenStormStormEarthFireEmpoweredCastModifyTimedLife,Value\"/></c> seconds.",
+    "ChenStormEarthFire": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,ChenStormEarthFire,CastIntroTime\"/></c> second, Chen splits into three elemental spirits for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StormEarthFireCasterBehavior,Duration[0]\"/></c> seconds, each with <c val=\"#TooltipNumbers\">70%</c> of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well.<n/><n/><c val=\"00ffff\">Storm</c> can grant the spirits a Shield. <n/><c val=\"00ff00\">Earth</c> can leap to an area and Slow enemies. <n/><c val=\"ff6600\">Fire</c> can grant the spirits Attack Speed, damage.",
+    "ChenStormEarthFireElementalConduitTalent": "Increase the spirits' Health to <c val=\"#TooltipNumbers\">100%</c> of Chen's maximum Health and all of their Abilities are empowered.",
+    "ChenStormstoutSecretRecipe": "Chen heals for <c val=\"#TooltipNumbers\"><d ref=\"(100*Effect,ChenStormstoutSecretRecipeCreateHealer,RechargeVitalFraction)+.01\"Precision=\"1\"/>%</c> of his maximum Health when his Basic Abilities hit an enemy Hero.",
+    "ChenWanderingKeg": "Roll around inside an Unstoppable barrel with <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,ChenWanderingKegCasterBuff,Modification.UnifiedMoveSpeedFactor)*100\" player=\"0\"/>%</c> increased Movement Speed and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenWanderingKegArmorBuff,ArmorModification.AllArmorBonus\" player =\"0\"/></c> Armor, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenWanderingKegDamage,Amount[0]\"/></c> damage to enemies in the way and knocking them back. Lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenWanderingKegCasterBuff,Duration[0]\"/></c> seconds.",
+    "ChenWanderingKegUntappedPotentialTalent": "Increase Wandering Keg's Movement Speed bonus from <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenWanderingKegCasterBuff,Modification.UnifiedMoveSpeedFactor*100\"Precision=\"2\"Player=\"0\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"((Behavior,ChenWanderingKegCasterBuff,Modification.UnifiedMoveSpeedFactor)+Talent,ChenMasteryWanderingKegUntappedPotential,AbilityModificationArray[0].Modifications[1].Value)*100\" player=\"0\"/>%</c>, and its Armor bonus to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenWanderingKegArmorBuff,ArmorModification.AllArmorBonus + Talent,ChenMasteryWanderingKegUntappedPotential,AbilityModificationArray[0].Modifications[3].Value\" player = \"0\"/></c> for its duration and <c val=\"#TooltipNumbers\"><d ref=\"Talent,ChenMasteryWanderingKegUntappedPotential,AbilityModificationArray[0].Modifications[2].Value\"/></c> seconds afterwards.",
+    "ChenWitheringFlames": "Igniting an enemy Hero reduces their Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChenBreathofFireWitheringFlamesTalentDebuff,Modification.DamageDealtFraction[Ability]\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenBreathofFireWitheringFlamesTalentDebuff,Duration\"/></c> seconds."
+  },
+  "tooltipSimple": {
+    "ChenAccumulatingFlame": "<c val=\"#TooltipQuest\">Quest:</c> Burn enemy Heroes to gain damage, range",
+    "ChenBreathOfFire": "Breathe fire in target direction, dealing damage and Igniting drenched enemies",
+    "ChenBreathOfFireRingOfFireTalent": "Damage nearby enemies after Igniting them",
+    "ChenCelerityStagger": "Basic Attacks reduce Stagger cooldown, grant Armor",
+    "ChenEarth": "Leap to a location, damaging and Rooting enemies",
+    "ChenElusiveBrawler": "Activate to Evade Basic Attacks",
+    "ChenEyeOfTheTiger": "Basic Attacks deal bonus damage, heal",
+    "ChenFire": "Increase Attack Speed, damage",
+    "ChenFlyingKick": "Kick through target enemy",
+    "ChenFlyingKickDeadlyStrikeTalent": "Increase Flying Kick damage and remove Brew cost",
+    "ChenFlyingKickPressurePointTalent": "Flying Kick Slows enemies",
+    "ChenFlyingLeap": "Increased Range, reduce cooldown",
+    "ChenFortifyingBrew": "Gain Brew and a Shield while drinking",
+    "ChenFortifyingBrewBrewmastersBalanceTalent": "Gain bonuses based on current level of Brew",
+    "ChenFortifyingBrewComboStrikesTalent": "Gain Attack Speed, damage",
+    "ChenFortifyingBrewEnergizingBrewTalent": "Fortifying Brew gives maximum Health, damage",
+    "ChenFortifyingBrewEnoughToShareTalent": "Fortifying Brew Shields allied Heroes",
+    "ChenFreshestIngredients": "<c val=\"#TooltipQuest\">Quest:</c> Regen Globes heal more",
+    "ChenGiftOfTheOxStagger": "Increase Stagger's duration, reduce damage taken",
+    "ChenKegSmash": "Drench enemies in a nearby area with Brew, Slowing them",
+    "ChenKegSmashATouchOfHoneyTalent": "Increase Keg Smash Slow amount, duration",
+    "ChenPurifyingBrew": "Fortifying Brew grants Unstoppable",
+    "ChenStagger": "Become immune to damage, then convert it to damage over time",
+    "ChenStorm": "Gain a Shield",
+    "ChenStormEarthFire": "Split into three elemental spirits",
+    "ChenStormEarthFireElementalConduitTalent": "All Storm, Earth, Fire Abilities are empowered",
+    "ChenStormstoutSecretRecipe": "Basic Abilities heal Chen",
+    "ChenWanderingKeg": "Roll around in the barrel and knock away enemies",
+    "ChenWanderingKegUntappedPotentialTalent": "Increases Wandering Keg Speed, Armor",
+    "ChenWitheringFlames": "Igniting Heroes reduces their Spell Power"
+  },
+  "tooltipColors": {
+    "ColorRed": "FF0000",
+    "ColorYellow": "E1C72C",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}

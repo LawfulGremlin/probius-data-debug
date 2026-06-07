@@ -1,0 +1,543 @@
+{
+  "id": 87,
+  "shortName": "qhira",
+  "hyperlinkId": "Qhira",
+  "attributeId": "NXHU",
+  "cHeroId": "NexusHunter",
+  "cUnitId": "HeroNexusHunter",
+  "name": "Qhira",
+  "icon": "qhira.png",
+  "role": "Assassin",
+  "expandedRole": "Melee Assassin",
+  "type": "Ranged",
+  "description": "A brutal Melee Assassin who is adept at both beginning and ending fights.",
+  "title": "Realmless Bounty Hunter",
+  "info": "A sworn knight and holder of a singularity shard, Qhira's only desire is to seek out others who may have escaped the destruction of her doomed home realm, Iresia. While she searches, she gets by as a bounty hunter – a job she loathes, despite her exceptional skill.",
+  "releaseDate": "2019-08-06",
+  "releasePatch": "2.47.0.75589",
+  "tags": [
+    "ChanneledAutoAttacker",
+    "Escaper",
+    "Ganker",
+    "Overconfident",
+    "Roamer",
+    "RoleAutoAttacker",
+    "SoloLaner"
+  ],
+  "stats": {
+    "hp": 2000,
+    "hpRegen": 4.168,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 500,
+    "resourceType": "Mana",
+    "resourceRegen": 3,
+    "attackDamage": 100,
+    "attackDamageScale": 0.04,
+    "attackRange": 2.25,
+    "attackSpeed": 1,
+    "radius": 0.625
+  },
+  "abilities": {
+    "Qhira": [
+      {
+        "uid": "c8c352",
+        "name": "Carnage",
+        "description": "Unleash your sword in the target direction, continuously dealing 30 (+4% per level) damage to enemies caught in its path.",
+        "hotkey": "Q",
+        "abilityId": "Qhira|Q1",
+        "tooltipId": "NexusHunterCarnage",
+        "cooldown": 6,
+        "manaCost": 40,
+        "icon": "storm_ui_icon_nexushunter_q.png",
+        "type": "basic"
+      },
+      {
+        "uid": "da6cb3",
+        "name": "Blood Rage",
+        "description": "Passive: Basic Attack and Ability damage cause enemies to bleed for 44 (+4% per level) damage over 4 seconds. Stacks 5 times.  Qhira deals 32 (+4% per level) damage and heals for 90 (+4% per level) Health per enemy Hero affected. Damage and healing is increased by 50% per each additional stack on that Hero.",
+        "hotkey": "W",
+        "abilityId": "Qhira|W1",
+        "tooltipId": "NexusHunterBloodRage",
+        "cooldown": 7,
+        "manaCost": 35,
+        "icon": "storm_ui_icon_nexushunter_w.png",
+        "type": "basic"
+      },
+      {
+        "uid": "0df908",
+        "name": "Revolving Sweep",
+        "description": "Attach your sword on the first enemy Hero hit, dealing 96 (+4% per level) damage and Stunning them for 0.25 seconds. Once attached, Qhira becomes Immune to all effects, swinging around the target for 2.75 seconds and dealing 105 (+4% per level) damage to enemies between you and the target.  Re-activate to send you to the target's location knocking them away, dealing 108 (+4% per level) damage and Stunning them for 0.75 seconds.",
+        "hotkey": "E",
+        "abilityId": "Qhira|E1",
+        "tooltipId": "NexusHunterRevolvingSweep",
+        "cooldown": 16,
+        "manaCost": 70,
+        "icon": "storm_ui_icon_nexushunter_e.png",
+        "type": "basic"
+      },
+      {
+        "uid": "67c4cc",
+        "name": "Unrelenting Strikes",
+        "description": "Deal 44 (+4% per level) damage to nearby enemies every 0.5 seconds for 2.5 seconds as your sword grows outward. Upon expiring, deal 160 (+4% per level) damage to nearby enemy Heroes and Stun them for 1.5 seconds.",
+        "hotkey": "R",
+        "abilityId": "Qhira|R1",
+        "tooltipId": "NexusHunterUnrelentingStrikes",
+        "cooldown": 60,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_nexushunter_r1.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "9b6fac",
+        "name": "Final Strike",
+        "description": "After 1 second, deal 410 (+4% per level) damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
+        "hotkey": "R",
+        "abilityId": "Qhira|R2",
+        "tooltipId": "NexusHunterFinalStrike",
+        "cooldown": 40,
+        "manaCost": 45,
+        "icon": "storm_ui_icon_nexushunter_r2.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "23b034",
+        "name": "Grappling Hook",
+        "description": "Qhira fires a grappling hook that pulls her to terrain it contacts. If an enemy Hero is hit, they take 35 (+4% per level) damage and Qhira launches at them, kicking them for an additional 108 (+4% per level) damage.  Can be used while Revolving Sweep is active.",
+        "hotkey": "D",
+        "trait": true,
+        "abilityId": "Qhira|D1",
+        "tooltipId": "NexusHunterGrapplingHook",
+        "cooldown": 20,
+        "icon": "storm_ui_icon_nexushunter_d.png",
+        "type": "trait"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "NexusHunterCarnageMaximumEffort",
+        "talentTreeId": "NexusHunterCarnageMaximumEffort",
+        "name": "Maximum Effort",
+        "description": "If Carnage damages the same enemy Hero 3 times it deals an additional 108 (+4% per level) damage and Slows by 25% for 2.5 seconds.",
+        "icon": "storm_ui_icon_nexushunter_q.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Qhira|Q1",
+        "abilityLinks": [
+          "Qhira|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterCarnage"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterFatalWounds",
+        "talentTreeId": "NexusHunterFatalWounds",
+        "name": "Fatal Wounds",
+        "description": "While at maximum stacks, Blood Rage's bleed deals 30% additional damage to enemy Heroes under 50% Health.  Quest: Damage enemy Heroes with Blood Rage's bleed damage.  Reward: After damaging Heroes with Blood Rage's bleed damage 150 times, Blood Rage's duration is increased by 2 seconds.",
+        "icon": "storm_ui_icon_nexushunter_w.png",
+        "type": "W",
+        "sort": 2,
+        "isQuest": true,
+        "abilityId": "Qhira|W1",
+        "abilityLinks": [
+          "Qhira|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterBloodRage"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterFinishingTouch",
+        "talentTreeId": "NexusHunterFinishingTouch",
+        "name": "Finishing Touch",
+        "description": "Gain 20% Basic Attack damage. When Qhira Basic Attacks an enemy Hero below 50% Health it deals 20% additional damage, and she gains 35% Attack Speed for 3 seconds.",
+        "icon": "storm_ui_icon_nexushunter_passive.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Qhira|Passive",
+        "abilityLinks": [
+          "Qhira|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterGrapplingHook"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "NexusHunterUpstage",
+        "talentTreeId": "NexusHunterUpstage",
+        "name": "Upstage",
+        "description": "Damaging at least 2 Heroes with Blood Rage causes Qhira to Evade the next 4 Heroic Basic Attacks within 12 seconds.",
+        "icon": "storm_ui_icon_nexushunter_w.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Qhira|W1",
+        "abilityLinks": [
+          "Qhira|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterBloodRage"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterEnsnaringSwing",
+        "talentTreeId": "NexusHunterEnsnaringSwing",
+        "name": "Ensnaring Swing",
+        "description": "The primary target of Revolving Sweep is Slowed by 60% while Qhira is attached to them. Secondary targets hit by Revolving Sweep's swing are Slowed by 40% for 3 seconds.",
+        "icon": "storm_ui_icon_nexushunter_e.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Qhira|E1",
+        "abilityLinks": [
+          "Qhira|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterRevolvingSweepSecondary",
+          "NexusHunterRevolvingSweep"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterBloodRageYourPainMyGain",
+        "talentTreeId": "NexusHunterBloodRageYourPainMyGain",
+        "name": "Your Pain, My Gain",
+        "description": "Basic Attacking an enemy Hero causes Qhira to gain 10 Armor for 3 seconds. Stacks 3 times.",
+        "icon": "storm_ui_icon_nexushunter_passive.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Qhira|Passive",
+        "abilityLinks": [
+          "Qhira|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterGrapplingHook"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "NexusHunterTheThirst",
+        "talentTreeId": "NexusHunterTheThirst",
+        "name": "The Thirst",
+        "description": "Carnage heals for 50% of the damage dealt to enemy Heroes. Anytime Carnage damages an enemy Hero, Qhira's next Basic Attack within 4 seconds against an enemy Hero deals 15% additional damage, stacking up to 10 times.",
+        "icon": "storm_ui_icon_nexushunter_q.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Qhira|Q1",
+        "abilityLinks": [
+          "Qhira|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterCarnage"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterBloodRageHealmonger",
+        "talentTreeId": "NexusHunterBloodRageHealmonger",
+        "name": "Healmonger",
+        "description": "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 210 (+4% per level) Health.",
+        "icon": "storm_ui_icon_nexushunter_w.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Qhira|W1",
+        "abilityLinks": [
+          "Qhira|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterBloodRage"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterSiphoningLink",
+        "talentTreeId": "NexusHunterSiphoningLink",
+        "name": "Siphoning Link",
+        "description": "Damaging an enemy Hero with Revolving Sweep's initial impact or swing causes Qhira to regenerate 96 (+4% per level) Health over 4 seconds. Stacks up to 4 times.  Passive: Basic Attacks heal for 20% of the damage dealt.",
+        "icon": "storm_ui_icon_nexushunter_e.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "Qhira|E1",
+        "abilityLinks": [
+          "Qhira|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterRevolvingSweepSecondary",
+          "NexusHunterRevolvingSweep"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "NexusHunterUnrelentingStrikes",
+        "talentTreeId": "NexusHunterUnrelentingStrikes",
+        "name": "Unrelenting Strikes",
+        "description": "Deal 44 (+4% per level) damage to nearby enemies every 0.5 seconds for 2.5 seconds as your sword grows outward. Upon expiring, deal 160 (+4% per level) damage to nearby enemy Heroes and Stun them for 1.5 seconds.",
+        "icon": "storm_ui_icon_nexushunter_r1.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 60,
+        "abilityId": "Qhira|R1",
+        "abilityLinks": [
+          "Qhira|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterUnrelentingStrikes"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterFinalStrike",
+        "talentTreeId": "NexusHunterFinalStrike",
+        "name": "Final Strike",
+        "description": "After 1 second, deal 410 (+4% per level) damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
+        "icon": "storm_ui_icon_nexushunter_r2.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 40,
+        "abilityId": "Qhira|R2",
+        "abilityLinks": [
+          "Qhira|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterFinalStrikeActivate"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "NexusHunterChainsaw",
+        "talentTreeId": "NexusHunterChainsaw",
+        "name": "Chainsaw",
+        "description": "Carnage's cooldown recharges 100% faster while an enemy Hero has maximum Blood Rage stacks.",
+        "icon": "storm_ui_icon_nexushunter_q.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Qhira|Q1",
+        "abilityLinks": [
+          "Qhira|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterCarnage"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterPulsingPain",
+        "talentTreeId": "NexusHunterPulsingPain",
+        "name": "Pulsing Pain",
+        "description": "Each additional enemy Hero hit by Revolving Sweep causes the primary target to take an additional 135 (+4% per level) damage.",
+        "icon": "storm_ui_icon_nexushunter_e.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Qhira|E1",
+        "abilityLinks": [
+          "Qhira|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterRevolvingSweepSecondary",
+          "NexusHunterRevolvingSweep"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterTheHunted",
+        "talentTreeId": "NexusHunterTheHunted",
+        "name": "The Hunted",
+        "description": "Basic Attacking an enemy Hero increases your Basic Attack damage against that Hero by 25%. Stacks up to 4 times and lasts 4 seconds. Bonus is reset if a different Hero is attacked.",
+        "icon": "storm_ui_icon_nexushunter_passive.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Qhira|Passive",
+        "abilityLinks": [
+          "Qhira|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterGrapplingHook"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "NexusHunterRevolvingSweepBoomingKick",
+        "talentTreeId": "NexusHunterRevolvingSweepBoomingKick",
+        "name": "Booming Kick",
+        "description": "Increase the Stun duration of Revolving Sweep's re-activation by 0.25 seconds. Enemy Heroes around the primary target are also affected by Revolving Sweep's re-activation.",
+        "icon": "storm_ui_icon_nexushunter_e.png",
+        "type": "E",
+        "sort": 1,
+        "abilityId": "Qhira|E1",
+        "abilityLinks": [
+          "Qhira|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterRevolvingSweepSecondary",
+          "NexusHunterRevolvingSweep"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterRevolvingSweepLingeringAilment",
+        "talentTreeId": "NexusHunterRevolvingSweepLingeringAilment",
+        "name": "Lingering Ailment",
+        "description": "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by 35 for 4 seconds.",
+        "icon": "storm_ui_icon_nexushunter_e_alt_1.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Qhira|E1",
+        "abilityLinks": [
+          "Qhira|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterRevolvingSweepSecondary",
+          "NexusHunterRevolvingSweep"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterRevolvingSweepSwingLifeAway",
+        "talentTreeId": "NexusHunterRevolvingSweepSwingLifeAway",
+        "name": "Swing Life Away",
+        "description": "Revolving Sweep's cooldown recharges 250% faster while Qhira is swinging around her target. She also gains 60 Spell Armor for 5 seconds after the re-activation impact.",
+        "icon": "storm_ui_icon_nexushunter_e_alt_2.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "Qhira|E1",
+        "abilityLinks": [
+          "Qhira|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterRevolvingSweepSecondary",
+          "NexusHunterRevolvingSweep"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "NexusHunterUnrelentingStrikesSilentKiller",
+        "talentTreeId": "NexusHunterUnrelentingStrikesSilentKiller",
+        "name": "Silent Killer",
+        "description": "Hitting enemy Heroes with Unrelenting Strikes Silences them for 0.5 seconds and reduces its cooldown by 3 seconds.",
+        "icon": "storm_ui_icon_nexushunter_r1.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "Qhira|R1",
+        "abilityLinks": [
+          "Qhira|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterUnrelentingStrikes"
+        ],
+        "prerequisiteTalentIds": [
+          "NexusHunterUnrelentingStrikes"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterFinalStrikeUnleashedPotential",
+        "talentTreeId": "NexusHunterFinalStrikeUnleashedPotential",
+        "name": "Unleashed Potential",
+        "description": "Increase the damage to enemy Heroes under 50% Health from 25% to 50%.  If an enemy Hero dies within 1.5 seconds of being hit by Final Strike, then reset the cooldowns of Final Strike and all of Qhira's Basic Abilities.",
+        "icon": "storm_ui_icon_nexushunter_r2.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "Qhira|R2",
+        "abilityLinks": [
+          "Qhira|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterFinalStrikeActivate"
+        ],
+        "prerequisiteTalentIds": [
+          "NexusHunterFinalStrike"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterGrapplingHookUtilityBelt",
+        "talentTreeId": "NexusHunterGrapplingHookUtilityBelt",
+        "name": "Utility Belt",
+        "description": "Grappling Hook's cooldown is reset when hitting an enemy Hero with the initial impact of Revolving Sweep and recharges 900% faster if Qhira hasn't taken damage within the last 2 seconds.",
+        "icon": "storm_ui_icon_nexushunter_d.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Qhira|D1",
+        "abilityLinks": [
+          "Qhira|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterGrapplingHook"
+        ]
+      },
+      {
+        "tooltipId": "NexusHunterHuntersVengeanceNoSanctuary",
+        "talentTreeId": "NexusHunterHuntersVengeanceNoSanctuary",
+        "name": "No Sanctuary",
+        "description": "Nearby enemy Heroes below 50% Health are revealed and you gain 20% Movement Speed while an enemy Hero is revealed by you in this way.  Additionally, you deal 20% increased damage to these revealed enemies.",
+        "icon": "storm_ui_icon_nexushunter_passive_alt_1.png",
+        "type": "Passive",
+        "sort": 4,
+        "abilityId": "Qhira|Passive",
+        "abilityLinks": [
+          "Qhira|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "NexusHunterGrapplingHook"
+        ]
+      }
+    ]
+  },
+  "tooltipMarkup": {
+    "NexusHunterBloodRage": "<c val=\"#AbilityPassive\">Passive:</c> Basic Attack and Ability damage cause enemies to bleed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterBloodRageDoTDamage,Amount*4\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterBloodRageDoTBehavior,Duration\" player=\"0\"/></c> seconds. Stacks <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterBloodRageDamageToken,Max+1\"/></c> times.<n/><n/>Qhira deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterBloodRageDamage,Amount\"/></c> damage and heals for <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,NexusHunterBloodRageHealAccumulatorTrackedHeroCount,Scale\"/></c> Health per enemy Hero affected. Damage and healing is increased by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,NexusHunterBloodRageActivateDamageToken,Scale*100\" precision=\"1\"/>%</c> per each additional stack on that Hero.",
+    "NexusHunterBloodRageHealmonger": "If Blood Rage damages an enemy Hero below <c val=\"#TooltipNumbers\"><d ref=\"Validator,TargetLifeLT50Percent,Value*100\"/>%</c> Health, it heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,NexusHunterBloodRageHealmongerHealAccumulator,Scale\"/></c> Health.",
+    "NexusHunterBloodRageYourPainMyGain": "Basic Attacking an enemy Hero causes Qhira to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterBloodRageYourPainMyGainBehavior,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterBloodRageYourPainMyGainBehavior,Duration\"/></c> seconds. Stacks <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterBloodRageYourPainMyGainBehavior,ArmorModification.StackCount\"/></c> times.",
+    "NexusHunterCarnage": "Unleash your sword in the target direction, continuously dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterCarnageDamage,Amount\"/></c> damage to enemies caught in its path.",
+    "NexusHunterCarnageMaximumEffort": "If Carnage damages the same enemy Hero <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterCarnageMaximumEffortTargetBehavior,MaxStackCount\"/></c> times it deals an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterCarnageMaximumEffortDamage,Amount\"/></c> damage and Slows by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NexusHunterCarnageMaximumEffortSlowBehavior,Modification.UnifiedMoveSpeedFactor*100\" precision=\"1\"player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterCarnageMaximumEffortSlowBehavior,Duration\"Precision=\"2\"/></c> seconds.",
+    "NexusHunterChainsaw": "Carnage's cooldown recharges <c val=\"#TooltipNumbers\"><d ref=\"-(Effect,NexusHunterChainsawCDR,Cost[0].CooldownTimeUse/0.0625)*100\"/>%</c> faster while an enemy Hero has maximum Blood Rage stacks.",
+    "NexusHunterEnsnaringSwing": "The primary target of Revolving Sweep is Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NexusHunterEnsnaringSwingPrimarySlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> while Qhira is attached to them. Secondary targets hit by Revolving Sweep's swing are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NexusHunterEnsnaringSwingSecondarySlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterEnsnaringSwingSecondarySlow,Duration\"/></c> seconds.",
+    "NexusHunterFatalWounds": "While at maximum stacks, Blood Rage's bleed deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterBloodRageDoTDamage,MultiplicativeModifierArray[0].Modifier*100\"/>%</c> additional damage to enemy Heroes under <c val=\"#TooltipNumbers\"><d ref=\"Validator,TargetLifeLT50Percent,Value*100\"/>%</c> Health.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Damage enemy Heroes with Blood Rage's bleed damage. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After damaging Heroes with Blood Rage's bleed damage <C val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterFatalWoundsToken,Max\"/></c> times, Blood Rage's duration is increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterFatalWoundsCompleteModifyDoTDuration,EffectArray[0].Value\"/></c> seconds.",
+    "NexusHunterFinalStrike": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,NexusHunterFinalStrikeActivate,CastIntroTime\"/></c> second, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterFinalStrikeDamage,Amount\"/></c> damage to enemies in a line. This damage is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,NexusHunterFinalStrikeDamage,MultiplicativeModifierArray[BonusHeroDamage].Modifier\"/>%</c> against enemy Heroes who are below <c val=\"#TooltipNumbers\"><d ref=\"Validator,TargetLifeLT50Percent,Value*100\"/>%</c> Health.",
+    "NexusHunterFinalStrikeUnleashedPotential": "Increase the damage to enemy Heroes under <c val=\"#TooltipNumbers\"><d ref=\"Validator,TargetLifeLT50Percent,Value*100\"/>%</c> Health from <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,NexusHunterFinalStrikeDamage,MultiplicativeModifierArray[BonusHeroDamage].Modifier\"Player=\"0\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"100*(Effect,NexusHunterFinalStrikeDamage,MultiplicativeModifierArray[BonusHeroDamage].Modifier+Effect,NexusHunterFinalStrikeDamage,MultiplicativeModifierArray[UnleashedPotentialDamageBonus].Modifier)\"Player=\"0\"/>%</c>.<n/><n/>If an enemy Hero dies within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterFinalStrikeUnleashedPotentialKillingBlowDebuff,Duration\"Precision=\"2\"/></c> seconds of being hit by Final Strike, then reset the cooldowns of Final Strike and all of Qhira's Basic Abilities.",
+    "NexusHunterFinishingTouch": "Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,NexusHunterWeaponDamage,MultiplicativeModifierArray[FinishingTouchBase].Modifier\"/>%</c> Basic Attack damage. When Qhira Basic Attacks an enemy Hero below <c val=\"#TooltipNumbers\"><d ref=\"Validator,NexusHunterTargetLifeLT50Percent,Value*100\"/>%</c> Health it deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,NexusHunterWeaponDamage,MultiplicativeModifierArray[FinishingTouchLowLife].Modifier\"/>%</c> additional damage, and she gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NexusHunterFinishingTouchAttackSpeed,Modification.AdditiveAttackSpeedFactor\"/>%</c> Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterFinishingTouchAttackSpeed,Duration\" precision=\"1\"/></c> seconds.",
+    "NexusHunterGrapplingHook": "Qhira fires a grappling hook that pulls her to terrain it contacts. If an enemy Hero is hit, they take <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterGrapplingHookDamage,Amount\"/></c> damage and Qhira launches at them, kicking them for an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterGrapplingHookKickDamage,Amount\"/></c> damage.<n/><n/>Can be used while Revolving Sweep is active.",
+    "NexusHunterGrapplingHookUtilityBelt": "Grappling Hook's cooldown is reset when hitting an enemy Hero with the initial impact of Revolving Sweep and recharges <c val=\"#TooltipNumbers\"><d ref=\"-(Effect,NexusHunterUtilityBeltCDR,Cost[0].CooldownTimeUse/Behavior,NexusHunterGrapplingHookUtilityBeltBehavior,Duration)*100\"/>%</c> faster if Qhira hasn't taken damage within the last <c val=\"#TooltipNumbers\"><d ref=\"Validator,SourceNotInCombatGE2,Value\"/></c> seconds.",
+    "NexusHunterHuntersVengeanceNoSanctuary": "Nearby enemy Heroes below <c val=\"#TooltipNumbers\"><d ref=\"Validator,NexusHunterTargetLifeLT50Percent,Value*100\"/>%</c> Health are revealed and you gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterHuntersVengeanceMovespeedBehavior,Modification.UnifiedMoveSpeedFactor*100\" precision=\"1\"/>%</c> Movement Speed while an enemy Hero is revealed by you in this way.<n/><n/>Additionally, you deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterWeaponDamage,MultiplicativeModifierArray[HuntersVengeance].Modifier*100\"/>%</c> increased damage to these revealed enemies.",
+    "NexusHunterPulsingPain": "Each additional enemy Hero hit by Revolving Sweep causes the primary target to take an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterPulsingPainDamage,Amount\"/></c> damage.",
+    "NexusHunterRevolvingSweep": "Attach your sword on the first enemy Hero hit, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterRevolvingSweepInitialDamage,Amount\"/></c> damage and Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterRevolvingSweepInitialStun,Duration\" precision=\"2\"/></c> seconds. Once attached, Qhira becomes Immune to all effects, swinging around the target for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterRevolvingSweepCasterBehavior,Duration\" precision=\"2\"/></c> seconds and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterRevolvingSweepPersistentDamage,Amount\"/></c> damage to enemies between you and the target.<n/><n/>Re-activate to send you to the target's location knocking them away, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterRevolvingSweepFinalDamage,Amount\"/></c> damage and Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterRevolvingSweepStun,Duration\" precision=\"2\"/></c> seconds.",
+    "NexusHunterRevolvingSweepBoomingKick": "Increase the Stun duration of Revolving Sweep's re-activation by <c val=\"#TooltipNumbers\"><d ref=\"Talent,NexusHunterRevolvingSweepBoomingKick,AbilityModificationArray[0].Modifications[1].Value\"Precision=\"2\"/></c> seconds. Enemy Heroes around the primary target are also affected by Revolving Sweep's re-activation.",
+    "NexusHunterRevolvingSweepLingeringAilment": "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterRevolvingSweepLingeringAilmentBehavior,ArmorModification.AllArmorBonus * (-1)\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterRevolvingSweepLingeringAilmentBehavior,Duration\"/></c> seconds.",
+    "NexusHunterRevolvingSweepSwingLifeAway": "Revolving Sweep's cooldown recharges <c val=\"#TooltipNumbers\"><d ref=\"-100*Effect,NexusHunterRevolvingSweepSwingLifeAwayCooldownReduction,Cost[0].CooldownTimeUse/.0625\"/>%</c> faster while Qhira is swinging around her target. She also gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterRevolvingSweepSwingLifeAwayAttachedArmorBonus,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterRevolvingSweepExpirationSwingLifeAwayArmorBonus,Duration\"Precision=\"2\"/></c> seconds after the re-activation impact.",
+    "NexusHunterSiphoningLink": "Damaging an enemy Hero with Revolving Sweep's initial impact or swing causes Qhira to regenerate <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterSiphoningLinkHeal,RechargeVitalRate *Behavior,NexusHunterSiphoningLink,Duration * 2 \"/></c> Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterSiphoningLink,Duration\"/></c> seconds. Stacks up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterSiphoningLinkToken,Max\"/></c> times.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Basic Attacks heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,NexusHunterWeaponDamage,LeechFraction[Life]\"/>%</c> of the damage dealt.",
+    "NexusHunterTheHunted": "Basic Attacking an enemy Hero increases your Basic Attack damage against that Hero by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,NexusHunterTheHuntedDamageAccumulator,Scale*100\"/>%</c>. Stacks up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterTheHuntedToken,Max\"/></c> times and lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterTheHuntedCaster,Duration\"/></c> seconds. Bonus is reset if a different Hero is attacked.",
+    "NexusHunterTheThirst": "Carnage heals for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,NexusHunterCarnageDamage,LeechFraction[Life]\"/>%</c> of the damage dealt to enemy Heroes. Anytime Carnage damages an enemy Hero, Qhira's next Basic Attack within <C val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterTheThirstCasterBehavior,Duration\"/></c> seconds against an enemy Hero deals <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,NexusHunterTheThirstDamageAccumulator,Scale\"/>%</c> additional damage, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterTheThirstToken,Max\"/></c> times.",
+    "NexusHunterUnrelentingStrikes": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterUnrelentingStrikesDamage,Amount\"/></c> damage to nearby enemies every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterUnrelentingStrikesCasterBehavior,Period\" precision=\"2\"/></c> seconds for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterUnrelentingStrikesCasterBehavior,Duration\" precision=\"1\"/></c> seconds as your sword grows outward. Upon expiring, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterUnrelentingStrikesFinalDamage,Amount\"/></c> damage to nearby enemy Heroes and Stun them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterUnrelentingStrikesInitialStun,Duration\" precision=\"2\"/></c> seconds.",
+    "NexusHunterUnrelentingStrikesSilentKiller": "Hitting enemy Heroes with Unrelenting Strikes Silences them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterUnrelentingStrikesSilentKillerSilence,Duration-.0625\"Precision=\"2\"/></c> seconds and reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,NexusHunterUnrelentingStrikesSilentKillerCDR,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "NexusHunterUpstage": "Damaging at least <C val=\"#TooltipNumbers\"><d ref=\"Validator,NexusHunterBloodRageSourceHasAtLeast2TrackedHeroes,Value\"/></c> Heroes with Blood Rage causes Qhira to Evade the next <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterUpstageEvadeApply,Count\"/></c> Heroic Basic Attacks within <C val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterUpstageEvade,Duration\"/></c> seconds."
+  },
+  "tooltipSimple": {
+    "NexusHunterBloodRage": "Your Basic Attacks and Abilities cause enemies to take damage over time",
+    "NexusHunterBloodRageHealmonger": "Blood Rage heals more against low Health",
+    "NexusHunterBloodRageYourPainMyGain": "Basic Attacking Heroes grants Armor",
+    "NexusHunterCarnage": "Unleash your blade to deal damage in an area in front of you",
+    "NexusHunterCarnageMaximumEffort": "Carnage deals additional damage, Slows",
+    "NexusHunterChainsaw": "Blood Rage reduces Carnage cooldown",
+    "NexusHunterEnsnaringSwing": "Revolving Sweep Slows enemies",
+    "NexusHunterFatalWounds": "<c val=\"#TooltipQuest\">Quest:</c> Increase Blood Rage damage, duration",
+    "NexusHunterFinalStrike": "Extend sword to deal finishing blow",
+    "NexusHunterFinalStrikeUnleashedPotential": "Final Strike refunds Ability cooldowns",
+    "NexusHunterFinishingTouch": "Empower Basic Attacks against weak Heroes",
+    "NexusHunterGrapplingHook": "Qhira launches herself towards terrain or Heroes",
+    "NexusHunterGrapplingHookUtilityBelt": "Grappling Hook recharges faster",
+    "NexusHunterHuntersVengeanceNoSanctuary": "Hunt low Health enemies",
+    "NexusHunterPulsingPain": "Increase Revolving Sweep damage to main target",
+    "NexusHunterRevolvingSweep": "Attach to an enemy Hero to rotate around and Stun them",
+    "NexusHunterRevolvingSweepBoomingKick": "Revolving Sweep re-activation hits area",
+    "NexusHunterRevolvingSweepLingeringAilment": "Reduce enemy Hero Armor",
+    "NexusHunterRevolvingSweepSwingLifeAway": "Revolving Sweep recharges faster",
+    "NexusHunterSiphoningLink": "Revolving Sweep heals over time",
+    "NexusHunterTheHunted": "Consecutive Basic Attacks deal bonus damage",
+    "NexusHunterTheThirst": "Carnage increases Basic Attack damage, healing",
+    "NexusHunterUnrelentingStrikes": "Deal damage and Stun nearby enemies",
+    "NexusHunterUnrelentingStrikesSilentKiller": "Unrelenting Strikes Silences",
+    "NexusHunterUpstage": "Blood Rage grants Evasion"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}

@@ -1,0 +1,535 @@
+{
+  "id": 81,
+  "shortName": "whitemane",
+  "hyperlinkId": "Whitemane",
+  "attributeId": "WHIT",
+  "cHeroId": "Whitemane",
+  "cUnitId": "HeroWhitemane",
+  "name": "Whitemane",
+  "icon": "whitemane.png",
+  "role": "Support",
+  "expandedRole": "Healer",
+  "type": "Ranged",
+  "description": "A versatile Healer who heals her allies by smiting her foes.",
+  "title": "High Inquisitor",
+  "info": "As the High Inquisitor of the Scarlet Crusade, Sally Whitemane zealously leads her champions in a neverending war against the undead. Under her guiding Light, all who have been touched by the plague of death will be purged by her cleansing flame... no matter how much they protest.",
+  "releaseDate": "2018-08-07",
+  "releasePatch": "2.36.0.67143",
+  "tags": [
+    "AllyHealer",
+    "EnergyImportant",
+    "RoleSupport",
+    "SelfHealer"
+  ],
+  "stats": {
+    "hp": 1400,
+    "hpRegen": 2.9218,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 500,
+    "resourceType": "Mana",
+    "resourceRegen": 3,
+    "attackDamage": 62,
+    "attackDamageScale": 0.04,
+    "attackRange": 5.5,
+    "attackSpeed": 1,
+    "radius": 0.625
+  },
+  "abilities": {
+    "Whitemane": [
+      {
+        "uid": "9fab17",
+        "name": "Desperate Plea",
+        "description": "Heal an allied Hero for 140 (+4% per level) and gain Desperation for 4 seconds.  Desperation increases Desperate Plea's Mana cost by 40, and stacks up to 3 times.  Current Mana Cost: 40",
+        "hotkey": "Q",
+        "abilityId": "Whitemane|Q1",
+        "tooltipId": "WhitemaneDesperatePlea",
+        "manaCost": 40,
+        "icon": "storm_ui_icon_whitemane_desperation.png",
+        "type": "basic"
+      },
+      {
+        "uid": "56560e",
+        "name": "Inquisition",
+        "description": "Channel on an enemy Hero for up to 3 seconds, dealing 50 (+4% per level) damage every 0.5 seconds and Slowing them by 30%. Removes a stack of Desperation.  Shares a cooldown with Clemency.",
+        "hotkey": "W",
+        "abilityId": "Whitemane|W1",
+        "tooltipId": "WhitemaneInquisition",
+        "cooldown": 12,
+        "icon": "storm_ui_icon_whitemane_inquisition.png",
+        "type": "basic"
+      },
+      {
+        "uid": "68420a",
+        "name": "Searing Lash",
+        "description": "After 0.5 seconds, smite enemies in a straight line for 82 (+4% per level) damage.  If the first strike hits an enemy Hero, a second strike will occur after a short delay.",
+        "hotkey": "E",
+        "abilityId": "Whitemane|E1",
+        "tooltipId": "WhitemaneSearingLash",
+        "cooldown": 6,
+        "icon": "storm_ui_icon_whitemane_lash.png",
+        "type": "basic"
+      },
+      {
+        "uid": "7ccf85",
+        "name": "Scarlet Aegis",
+        "description": "Bolster the spirits of nearby allied Heroes, healing them for 300 (+4% per level) and granting them 40 Armor for 4 seconds.",
+        "hotkey": "R",
+        "abilityId": "Whitemane|R1",
+        "tooltipId": "WhitemaneScarletAegis",
+        "cooldown": 60,
+        "icon": "storm_ui_icon_whitemane_aegis.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "61f9c2",
+        "name": "Divine Reckoning",
+        "description": "After 1 second, consecrate an area for 4 seconds, dealing 50 (+4% per level) damage every 0.5 seconds to enemies inside. 25% of the damage dealt to Heroes is returned as Mana.",
+        "hotkey": "R",
+        "abilityId": "Whitemane|R2",
+        "tooltipId": "WhitemaneDivineReckoning",
+        "cooldown": 75,
+        "icon": "storm_ui_icon_whitemane_reckoning.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "5cbe24",
+        "name": "Zeal",
+        "description": "Whitemane's healing Abilities apply Zeal for 8 seconds. Allies with Zeal are healed for 100% of the damage Whitemane deals to Heroes.  Activate to gain 25% Spell Power and lose 15 Armor for 5 seconds. Can be cast while channeling abilities.",
+        "hotkey": "D",
+        "trait": true,
+        "abilityId": "Whitemane|D1",
+        "tooltipId": "WhitemaneTraitZeal",
+        "cooldown": 40,
+        "icon": "storm_ui_icon_whitemane_zeal.png",
+        "type": "trait"
+      },
+      {
+        "uid": "c5b7e1",
+        "name": "Clemency",
+        "description": "Activate to cast Inquisition on an allied Hero, healing them for up to 329 (+4% per level) over 3 seconds while Channeling. Removes a stack of Desperation  Shares a cooldown with Inquisition.",
+        "hotkey": "1",
+        "abilityId": "Whitemane|11",
+        "tooltipId": "WhitemaneInquisitionClemency",
+        "cooldown": 12,
+        "icon": "storm_ui_icon_whitemane_clemency.png",
+        "type": "activable"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "WhitemaneZealPityTheFrail",
+        "talentTreeId": "WhitemaneZealPityTheFrail",
+        "name": "Pity the Frail",
+        "description": "For every Hero hit with Searing Lash, lower the cooldown of Inquisition by 1.5 seconds. Allies below 30% Health receive 25% more healing from Whitemane.",
+        "icon": "storm_ui_icon_whitemane_inquisition_lash.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Whitemane|W1",
+        "abilityLinks": [
+          "Whitemane|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneInquisition"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneSearingLashRighteousFlame",
+        "talentTreeId": "WhitemaneSearingLashRighteousFlame",
+        "name": "Righteous Flame",
+        "description": "Searing Lash deals 25% more damage to enemies. If the second strike hits an enemy Hero, they take an additional 25% damage and Whitemane gains 40% Attack Speed for 3 seconds.",
+        "icon": "storm_ui_icon_whitemane_lash.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Whitemane|E1",
+        "abilityLinks": [
+          "Whitemane|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneSearingLash"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneInquisitor'sPrayer",
+        "talentTreeId": "WhitemaneInquisitorsPrayer",
+        "name": "Inquisitor's Prayer",
+        "description": "Repeatable Quest: Hit Heroes with Searing Lash. Repeatable Quest: Hit 3 Heroes with Basic Attacks.  Reward: Permanently increase Whitemane's maximum Health by 3 and Mana by 2. Heroes hit with the second strike of Searing Lash count as 2 hits.",
+        "icon": "storm_ui_icon_whitemane_lash_alt_1.png",
+        "type": "E",
+        "sort": 3,
+        "isQuest": true,
+        "abilityId": "Whitemane|E1",
+        "abilityLinks": [
+          "Whitemane|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneSearingLash"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "WhitemaneDesperatePleaUnwaveringFaith",
+        "talentTreeId": "WhitemaneDesperatePleaUnwaveringFaith",
+        "name": "Unwavering Faith",
+        "description": "Increase Whitemane's Basic Attack range by 1.1. Whitemane gains 20% increased Basic Attack damage for each active Zeal buff.",
+        "icon": "storm_ui_icon_whitemane_desperation.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Whitemane|Q1",
+        "abilityLinks": [
+          "Whitemane|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneDesperatePlea"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneDesperatePleaMartyrdom",
+        "talentTreeId": "WhitemaneDesperatePleaMartyrdom",
+        "name": "Martyrdom",
+        "description": "Desperate Plea's healing is increased by 30%. Increase this by an additional 10% for each active Zeal.",
+        "icon": "storm_ui_icon_whitemane_desperation_alt_1.png",
+        "type": "Q",
+        "sort": 2,
+        "abilityId": "Whitemane|Q1",
+        "abilityLinks": [
+          "Whitemane|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneDesperatePlea"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneZealIndulgence",
+        "talentTreeId": "WhitemaneZealIndulgence",
+        "name": "Indulgence",
+        "description": "Gain 5% Movement Speed. Increase this by an additional 5% for each active Zeal.",
+        "icon": "storm_ui_icon_whitemane_zeal.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Whitemane|D1",
+        "abilityLinks": [
+          "Whitemane|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneFanaticalPower"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "WhitemaneDesperatePleaZealousSpirit",
+        "talentTreeId": "WhitemaneDesperatePleaZealousSpirit",
+        "name": "Zealous Spirit",
+        "description": "Upon reaching 2 stacks of Desperation, Whitemane gains Zeal.",
+        "icon": "storm_ui_icon_whitemane_desperation.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Whitemane|Q1",
+        "abilityLinks": [
+          "Whitemane|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneDesperatePlea"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneSaintlyGreatstaff",
+        "talentTreeId": "WhitemaneSaintlyGreatstaff",
+        "name": "Saintly Greatstaff",
+        "description": "Enemy Heroes hit by Searing Lash are marked for 3 seconds. Basic Attacks against them deal an additional 55 (+4% per level) Spell damage and remove the mark.",
+        "icon": "storm_ui_icon_whitemane_lash.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Whitemane|E1",
+        "abilityLinks": [
+          "Whitemane|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneSearingLash"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneIntercession",
+        "talentTreeId": "WhitemaneIntercession",
+        "name": "Intercession",
+        "description": "Activate to make an ally Unstoppable for 1 second.",
+        "icon": "storm_ui_icon_whitemane_intercession.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 45,
+        "abilityId": "Whitemane|Active"
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "WhitemaneScarletAegis",
+        "talentTreeId": "WhitemaneScarletAegis",
+        "name": "Scarlet Aegis",
+        "description": "Bolster the spirits of nearby allied Heroes, healing them for 300 (+4% per level) and granting them 40 Armor for 4 seconds.",
+        "icon": "storm_ui_icon_whitemane_aegis.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 60,
+        "abilityId": "Whitemane|R1",
+        "abilityLinks": [
+          "Whitemane|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneScarletAegis"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneDivineReckoning",
+        "talentTreeId": "WhitemaneDivineReckoning",
+        "name": "Divine Reckoning",
+        "description": "After 1 second, consecrate an area for 4 seconds, dealing 50 (+4% per level) damage every 0.5 seconds to enemies inside. 25% of the damage dealt to Heroes is returned as Mana.",
+        "icon": "storm_ui_icon_whitemane_reckoning.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 75,
+        "abilityId": "Whitemane|R2",
+        "abilityLinks": [
+          "Whitemane|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneDivineReckoning"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "WhitemaneInquisitionSubjugation",
+        "talentTreeId": "WhitemaneInquisitionSubjugation",
+        "name": "Subjugation",
+        "description": "Inquisition reduces all damage the target deals by 50%.",
+        "icon": "storm_ui_icon_whitemane_inquisition.png",
+        "type": "W",
+        "sort": 1,
+        "abilityId": "Whitemane|W1",
+        "abilityLinks": [
+          "Whitemane|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneInquisition"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneSearingLashLashingOut",
+        "talentTreeId": "WhitemaneSearingLashLashingOut",
+        "name": "Lashing Out",
+        "description": "If Searing Lash's second strike hits an enemy Hero, reduce its cooldown to 1 second.",
+        "icon": "storm_ui_icon_whitemane_lash.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Whitemane|E1",
+        "abilityLinks": [
+          "Whitemane|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneSearingLash"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneZealScarletWrath",
+        "talentTreeId": "WhitemaneZealScarletWrath",
+        "name": "Scarlet Wrath",
+        "description": "Basic Attacks against Heroes increase the duration of all active Zeals by 0.75 seconds, restore 0.5% Mana to all Zeal targets, and lower the cooldown of Zeals activation by 4 seconds.",
+        "icon": "storm_ui_icon_whitemane_zeal.png",
+        "type": "Trait",
+        "sort": 3,
+        "abilityId": "Whitemane|D1",
+        "abilityLinks": [
+          "Whitemane|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneFanaticalPower"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "WhitemaneDesperatePleaRadiance",
+        "talentTreeId": "WhitemaneDesperatePleaRadiance",
+        "name": "Radiance",
+        "description": "Reaching 3 stacks of Desperation heals for 175 (+4% per level) and reapplies Zeal to allies with Zeal.",
+        "icon": "storm_ui_icon_whitemane_desperation.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Whitemane|Q1",
+        "abilityLinks": [
+          "Whitemane|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneDesperatePlea"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneInquisitionSharedPunishment",
+        "talentTreeId": "WhitemaneInquisitionSharedPunishment",
+        "name": "Shared Punishment",
+        "description": "Upon casting, Inquisition can chain to an additional enemy Hero near its target, dealing 50 (+4% per level) damage every 0.5 seconds. Affected enemies lose 10 Armor.",
+        "icon": "storm_ui_icon_whitemane_inquisition.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Whitemane|W1",
+        "abilityLinks": [
+          "Whitemane|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneInquisition"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneSearingLashHarshDiscipline",
+        "talentTreeId": "WhitemaneSearingLashHarshDiscipline",
+        "name": "Harsh Discipline",
+        "description": "Hitting a Hero with Searing Lash while they are being targeted by Inquisition Roots them for 1.5 seconds.  Passive: Reduce Inquisition's cooldown by 2 seconds.",
+        "icon": "storm_ui_icon_whitemane_lash.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "Whitemane|E1",
+        "abilityLinks": [
+          "Whitemane|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneSearingLash"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "WhitemaneScarletAegisScarletCrusade",
+        "talentTreeId": "WhitemaneScarletAegisScarletCrusade",
+        "name": "Scarlet Crusade",
+        "description": "Scarlet Aegis heals for 50% more and makes affected allies Unstoppable for 2 seconds.",
+        "icon": "storm_ui_icon_whitemane_aegis.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "Whitemane|R1",
+        "abilityLinks": [
+          "Whitemane|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneScarletAegis"
+        ],
+        "prerequisiteTalentIds": [
+          "WhitemaneScarletAegis"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneDivineReckoningJudgmentDay",
+        "talentTreeId": "WhitemaneDivineReckoningJudgmentDay",
+        "name": "Judgment Day",
+        "description": "Divine Reckoning deals 50% more damage and pulls enemies to its center the first time it hits them.",
+        "icon": "storm_ui_icon_whitemane_reckoning.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "Whitemane|R2",
+        "abilityLinks": [
+          "Whitemane|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneDivineReckoning"
+        ],
+        "prerequisiteTalentIds": [
+          "WhitemaneDivineReckoning"
+        ]
+      },
+      {
+        "tooltipId": "WhitemaneGuidingLight",
+        "talentTreeId": "WhitemaneGuidingLight",
+        "name": "Guiding Light",
+        "description": "Activate to cast a permanent Zeal on an allied Hero that costs no Mana and doesn't grant Desperation. Only one can be active at a time and has global cast range.",
+        "icon": "storm_ui_icon_whitemane_zeal.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 30,
+        "abilityId": "Whitemane|Active",
+        "abilityLinks": [
+          "Whitemane|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "WhitemaneDesperatePlea"
+        ]
+      },
+      {
+        "tooltipId": "WhitemanePurgeTheWicked",
+        "talentTreeId": "WhitemanePurgeTheWicked",
+        "name": "Purge the Wicked",
+        "description": "Activate to blast an enemy Hero with holy fire, reducing their Armor by 25 and dealing 300 (+4% per level) damage over 4 seconds.",
+        "icon": "storm_ui_icon_whitemane_purge.png",
+        "type": "Active",
+        "sort": 4,
+        "cooldown": 40,
+        "abilityId": "Whitemane|Active"
+      }
+    ]
+  },
+  "tooltipMarkup": {
+    "WhitemaneDesperatePlea": "Heal an allied Hero for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneDesperatePleaCreateHealer,RechargeVitalRate\"/></c> and gain <c val=\"#WhitemaneDesperation\">Desperation</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneDesperatePleaDesperation,Duration\"/></c> seconds.<n/><n/><c val=\"#WhitemaneDesperation\">Desperation</c> increases Desperate Plea's Mana cost by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,WhitemaneDesperatePleaCostAccumulator,Scale\"/></c>, and stacks up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneDesperatePleaDesperationTokenCounter,Max\"/></c> times.<n/><n/><c val=\"ffff8a\">Current Mana Cost:</c> <c val=\"#TooltipNumbers\"><d ref=\"Abil,WhitemaneDesperatePlea,Cost[0].Vital[Energy]\"/></c>",
+    "WhitemaneDesperatePleaMartyrdom": "Desperate Plea's healing is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,WhitemaneDesperatePleaCreateHealer,MultiplicativeModifierArray[Martyrdom].Modifier\"/>%</c>. Increase this by an additional <c val=\"#TooltipNumbers\"><d ref=\"100 * Accumulator,WhitemaneZealMartyrdomHealAccumulator,Scale\"/>%</c> for each active <c val=\"#WhitemaneZeal\">Zeal</c>.",
+    "WhitemaneDesperatePleaRadiance": "Reaching <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneDesperatePleaDesperationTokenCounter,ConditionalEvents[0].CompareValue\"/></c> stacks of <c val=\"#WhitemaneDesperation\">Desperation</c> heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneDesperatePleaRadianceCreateHealer,RechargeVitalRate\"/></c> and reapplies <c val=\"#WhitemaneZeal\">Zeal</c> to allies with <c val=\"#WhitemaneZeal\">Zeal</c>.",
+    "WhitemaneDesperatePleaUnwaveringFaith": "Increase Whitemane's Basic Attack range by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneDesperatePleaUnwaveringFaithBasicAttackBuff,Modification.WeaponRange\"Precision=\"2\"/></c>. Whitemane gains <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,WhitemaneZealUnwaveringFaithAccumulator,Scale\"/>%</c> increased Basic Attack damage for each active <c val=\"#WhitemaneZeal\">Zeal</c> buff.",
+    "WhitemaneDesperatePleaZealousSpirit": "Upon reaching <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneDesperatePleaDesperationTokenCounter,ConditionalEvents[1].CompareValue\"/></c> stacks of <c val=\"#WhitemaneDesperation\">Desperation</c>, Whitemane gains <c val=\"#WhitemaneZeal\">Zeal</c>.",
+    "WhitemaneDivineReckoning": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,WhitemaneDivineReckoning,CastIntroTime + Effect,WhitemaneDivineReckoningInitialPersistent,PeriodicPeriodArray[0]\" player=\"0\" precision=\"2\"/></c> second, consecrate an area for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneDivineReckoningSearchPersistent,PeriodicPeriodArray[0] * Effect,WhitemaneDivineReckoningSearchPersistent,PeriodCount\" player=\"0\" precision=\"2\"/></c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneDivineReckoningDamage,Amount\"/></c> damage every <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneDivineReckoningSearchPersistent,PeriodicPeriodArray[0]\" precision=\"1\"/></c> seconds to enemies inside. <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,WhitemaneDivineReckoningDamage,LeechFraction\"/>%</c> of the damage dealt to Heroes is returned as Mana.",
+    "WhitemaneDivineReckoningJudgmentDay": "Divine Reckoning deals <c val=\"#TooltipNumbers\"><d ref=\"100 * Effect,WhitemaneDivineReckoningDamage,MultiplicativeModifierArray[0].Modifier\"/>%</c> more damage and pulls enemies to its center the first time it hits them.",
+    "WhitemaneGuidingLight": "Activate to cast a permanent <c val=\"#WhitemaneZeal\">Zeal</c> on an allied Hero that costs no Mana and doesn't grant <c val=\"#WhitemaneDesperation\">Desperation</c>. Only one can be active at a time and has global cast range.",
+    "WhitemaneInquisition": "Channel on an enemy Hero for up to <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneInquisitionDamageCreatePersistent,PeriodCount * Effect,WhitemaneInquisitionDamageCreatePersistent,PeriodicPeriodArray[0]\" player=\"0\" precision=\"2\"/></c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneInquisitionDamage,Amount\"/></c> damage every <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneInquisitionDamageCreatePersistent,PeriodicPeriodArray[0]\" precision=\"1\"/></c> seconds and Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-100 * Behavior,WhitemaneInquisitionSlow,Modification.UnifiedMoveSpeedFactor\" player=\"0\" precision=\"0\"/>%</c>. Removes a stack of <c val=\"#WhitemaneDesperation\">Desperation</c>.<n/><n/>Shares a cooldown with Clemency.",
+    "WhitemaneInquisitionClemency": "Activate to cast Inquisition on an allied Hero, healing them for up to <c val=\"#TooltipNumbers\"><d ref=\"(1 + Effect,WhitemaneInquisitionHealCreatePersistent,PeriodCount) * Effect,WhitemaneInquisitionCreateHealer,RechargeVitalRate\"/></c> over <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneInquisitionHealCreatePersistent,PeriodCount * Effect,WhitemaneInquisitionHealCreatePersistent,PeriodicPeriodArray[0]\" player=\"0\" precision=\"2\"/></c> seconds while Channeling. Removes a stack of <c val=\"#WhitemaneDesperation\">Desperation</c><n/><n/>Shares a cooldown with Inquisition.",
+    "WhitemaneInquisitionSharedPunishment": "Upon casting, Inquisition can chain to an additional enemy Hero near its target, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneInquisitionSharedPunishmentDamage,Amount\"/></c> damage every <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneInquisitionSharedPunishmentChainPersistent,PeriodicPeriodArray[0]\" precision=\"1\"/></c> seconds. Affected enemies lose <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,WhitemaneInquisitionSharedPunishmentArmorBehavior,ArmorModification.AllArmorBonus\"/></c> Armor.",
+    "WhitemaneInquisitionSubjugation": "Inquisition reduces all damage the target deals by <c val=\"#TooltipNumbers\"><d ref=\"-100 * Behavior,WhitemaneInquisitionSubjugationDamageReduction,Modification.DamageDealtFraction[Ability]\"/>%</c>.",
+    "WhitemaneInquisitor'sPrayer": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Repeatable Quest:</c> Hit Heroes with Searing Lash.<n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Repeatable Quest:</c> Hit <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneInquisitorsPrayerAttackTokenCounter,Max\"/></c> Heroes with Basic Attacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Permanently increase Whitemane's maximum Health by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,WhitemaneInquisitorsPrayerHealthAccumulator,Scale*Effect,WhitemaneInquisitorsPrayerAddTokenFirstStrike,Value\"/></c> and Mana by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,WhitemaneInquisitorsPrayerManaAccumulator,Scale*Effect,WhitemaneInquisitorsPrayerAddTokenFirstStrike,Value\" precision=\"2\"/></c>. Heroes hit with the second strike of Searing Lash count as <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneInquisitorsPrayerAddTokenSecondStrike,Value\"/></c> hits.",
+    "WhitemaneIntercession": "Activate to make an ally Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentCleanseBuff,Duration\"/></c> second.",
+    "WhitemanePurgeTheWicked": "Activate to blast an enemy Hero with holy fire, reducing their Armor by <c val=\"#TooltipNumbers\"><d ref=\"-1 * Behavior,WhitemanePurgeTheWickedArmorDebuff,ArmorModification.AllArmorBonus\"/></c> and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemanePurgeTheWickedDamage,Amount * (1 + Behavior,WhitemanePurgeTheWickedDoT,PeriodCount)\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemanePurgeTheWickedDoT,Period * Behavior,WhitemanePurgeTheWickedDoT,PeriodCount\"/></c> seconds.",
+    "WhitemaneSaintlyGreatstaff": "Enemy Heroes hit by Searing Lash are marked for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneSearingLashSaintlyGreatstaffMarkedBehavior,Duration\"/></c> seconds. Basic Attacks against them deal an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneSearingLashSaintlyGreatstaffDamage,Amount\"/></c> Spell damage and remove the mark.",
+    "WhitemaneScarletAegis": "Bolster the spirits of nearby allied Heroes, healing them for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneScarletAegisCreateHealer,RechargeVitalRate\"/></c> and granting them <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneScarletAegisArmor,ArmorModification.AllArmorBonus\" player=\"0\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneScarletAegisArmor,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
+    "WhitemaneScarletAegisScarletCrusade": "Scarlet Aegis heals for <c val=\"#TooltipNumbers\"><d ref=\"100 * Effect,WhitemaneScarletAegisCreateHealer,MultiplicativeModifierArray[0].Modifier\"/>%</c> more and makes affected allies Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneScarletAegisScarletCrusadeCleanseBuff,Duration\"/></c> seconds.",
+    "WhitemaneSearingLash": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,WhitemaneSearingLash,CastIntroTime + Effect,WhitemaneSearingLashInitialDelay,InitialDelay\" player=\"0\" precision=\"3\"/></c> seconds, smite enemies in a straight line for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneSearingLashDamage,Amount\"/></c> damage.<n/><n/>If the first strike hits an enemy Hero, a second strike will occur after a short delay.",
+    "WhitemaneSearingLashHarshDiscipline": "Hitting a Hero with Searing Lash while they are being targeted by Inquisition Roots them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneSearingLashHarshDisciplineRoot,Duration\" precision=\"2\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Reduce Inquisition's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Talent,WhitemaneSearingLashHarshDiscipline,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds.",
+    "WhitemaneSearingLashLashingOut": "If Searing Lash's second strike hits an enemy Hero, reduce its cooldown to <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneSearingLashLashingOutCooldownRefund,Cost[0].CooldownTimeUse\" player=\"0\" precision=\"2\"/></c> second.",
+    "WhitemaneSearingLashRighteousFlame": "Searing Lash deals <c val=\"#TooltipNumbers\"><d ref=\"100 * Effect,WhitemaneSearingLashDamage,MultiplicativeModifierArray[RighteousFlame].Modifier\"/>%</c> more damage to enemies. If the second strike hits an enemy Hero, they take an additional <c val=\"#TooltipNumbers\"><d ref=\"100 * Effect,WhitemaneSearingLashSecondStrikeDamage,MultiplicativeModifierArray[RighteousFlameHero].Modifier\"/>%</c> damage and Whitemane gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,WhitemaneSearingLashRighteousFlameAttackSpeedBehavior,Modification.AdditiveAttackSpeedFactor\"/>%</c> Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneSearingLashRighteousFlameAttackSpeedBehavior,Duration\"/></c> seconds.",
+    "WhitemaneTraitZeal": "Whitemane's healing Abilities apply <c val=\"#WhitemaneZeal\">Zeal</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneZealBuff,Duration\" player=\"0\"/></c> seconds. Allies with <c val=\"#WhitemaneZeal\">Zeal</c> are healed for <c val=\"#TooltipNumbers\"><d ref=\"100 * (1 + Effect,WhitemaneZealCreateHealer,MultiplicativeModifierArray[ZealBase].Modifier)\" player=\"0\"/>%</c> of the damage Whitemane deals to Heroes.<n/><n/>Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,WhitemaneFanaticalBuff,Modification.DamageDealtFraction\"/>%</c> Spell Power and lose <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,WhitemaneFanaticalPowerArmorBehavior,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneFanaticalBuff,Duration\"/></c> seconds. Can be cast while channeling abilities.",
+    "WhitemaneZealIndulgence": "Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,WhitemaneZealIndulgenceMoveSpeedBehavior,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed. Increase this by an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,WhitemaneZealIndulgenceAccumulator,Scale\"/>%</c> for each active <c val=\"#WhitemaneZeal\">Zeal</c>.",
+    "WhitemaneZealPityTheFrail": "For every Hero hit with Searing Lash, lower the cooldown of Inquisition by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,WhitemaneSearingLashPityTheFrailModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds. Allies below <c val=\"#TooltipNumbers\"><d ref=\"100 * Validator,WhitemaneZealPityTheFrailTargetHealthLT30,Value\"/>%</c> Health receive <c val=\"#TooltipNumbers\"><d ref=\"100 * Effect,WhitemaneZealCreateHealer,MultiplicativeModifierArray[PityTheFrail].Modifier\"/>%</c> more healing from Whitemane.",
+    "WhitemaneZealScarletWrath": "Basic Attacks against Heroes increase the duration of all active <c val=\"#WhitemaneZeal\">Zeals</c> by <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneZealScarletWrathModifyBehaviorDuration,Value\"precision=\"2\"/></c> seconds, restore <c val=\"#TooltipNumbers\"><c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneZealScarletWrathRestoreMana,RechargeVitalFraction*100\" precision=\"1\"/></c>%</c> Mana to all <c val=\"#WhitemaneZeal\">Zeal</c> targets, and lower the cooldown of <c val=\"#WhitemaneZeal\">Zeals</c> activation by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,WhitemaneZealScarletWrathModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds."
+  },
+  "tooltipSimple": {
+    "WhitemaneDesperatePlea": "Heal an allied Hero",
+    "WhitemaneDesperatePleaMartyrdom": "<c val=\"#WhitemaneZeal\">Zeal</c> increases Desperate Plea's healing",
+    "WhitemaneDesperatePleaRadiance": "<c val=\"#WhitemaneDesperation\">Desperation</c> heals allies with <c val=\"#WhitemaneZeal\">Zeal</c>",
+    "WhitemaneDesperatePleaUnwaveringFaith": "Increase Basic Attack range and damage",
+    "WhitemaneDesperatePleaZealousSpirit": "<c val=\"#WhitemaneDesperation\">Desperation</c> grants Whitemane <c val=\"#WhitemaneZeal\">Zeal</c>",
+    "WhitemaneDivineReckoning": "Consecrate an area",
+    "WhitemaneDivineReckoningJudgmentDay": "Divine Reckoning pulls in enemies",
+    "WhitemaneGuidingLight": "Activate to cast a free <c val=\"#WhitemaneZeal\">Zeal</c>",
+    "WhitemaneInquisition": "Damage or heal Heroes",
+    "WhitemaneInquisitionClemency": "Heal allies with Inquisition",
+    "WhitemaneInquisitionSharedPunishment": "Inquisition chains to a nearby enemy, lowers Armor",
+    "WhitemaneInquisitionSubjugation": "Inquisition reduces enemy damage",
+    "WhitemaneInquisitor'sPrayer": "<c val=\"#TooltipQuest\">Quest:</c> Hit Heroes to increase Health and Mana",
+    "WhitemaneIntercession": "Make an ally Unstoppable",
+    "WhitemanePurgeTheWicked": "Activate to damage, reduce Armor",
+    "WhitemaneSaintlyGreatstaff": "Searing Lash empowers Basic Attacks",
+    "WhitemaneScarletAegis": "Heal and grant Armor to nearby allies",
+    "WhitemaneScarletAegisScarletCrusade": "Scarlet Aegis makes allies Unstoppable",
+    "WhitemaneSearingLash": "Damage enemies in a line",
+    "WhitemaneSearingLashHarshDiscipline": "Searing Lash Roots Inquisition target",
+    "WhitemaneSearingLashLashingOut": "Reduce Searing Lash cooldown",
+    "WhitemaneSearingLashRighteousFlame": "Increase Searing Lash damage",
+    "WhitemaneTraitZeal": "Heal marked allies for damage dealt",
+    "WhitemaneZealIndulgence": "<c val=\"#WhitemaneZeal\">Zeal</c> grants Movement Speed",
+    "WhitemaneZealPityTheFrail": "Searing Lash lowers Inquisition cooldown",
+    "WhitemaneZealScarletWrath": "Basic Attacks increase <c val=\"#WhitemaneZeal\">Zeal</c> duration"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800",
+    "WhitemaneDesperation": "FF8B8B",
+    "WhitemaneZeal": "FFF5C2"
+  }
+}

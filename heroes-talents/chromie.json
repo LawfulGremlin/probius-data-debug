@@ -1,0 +1,536 @@
+{
+  "id": 52,
+  "shortName": "chromie",
+  "hyperlinkId": "Chromie",
+  "attributeId": "Chro",
+  "cHeroId": "Chromie",
+  "cUnitId": "HeroChromie",
+  "name": "Chromie",
+  "icon": "chromie.png",
+  "role": "Assassin",
+  "expandedRole": "Ranged Assassin",
+  "type": "Ranged",
+  "description": "A long range, high burst damage Mage, who requires good timing and setup.",
+  "title": "Keeper of Time",
+  "info": "At first glance, Chromie appears to be an ordinary gnome. In truth, she is Chronormu, Bronze Dragon and a master of time. When it comes to temporal manipulation there's no problem she can't solve... with some help from her future self, of course.",
+  "releaseDate": "2016-05-17",
+  "releasePatch": "1.18.0.42958",
+  "tags": [
+    "EnergyImportant",
+    "RoleCaster"
+  ],
+  "stats": {
+    "hp": 1390,
+    "hpRegen": 2.8984,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 500,
+    "resourceType": "Mana",
+    "resourceRegen": 3,
+    "attackDamage": 82,
+    "attackDamageScale": 0.04,
+    "attackRange": 7,
+    "attackSpeed": 1,
+    "radius": 0.625
+  },
+  "unitIds": [
+    "ChromieSandBlastPastAndFutureMeControllerUnit",
+    "ChromieTimeTrap"
+  ],
+  "abilities": {
+    "Chromie": [
+      {
+        "uid": "2cf39e",
+        "name": "Sand Blast",
+        "description": "After 0.5 seconds, fire a missile that deals 305 (+4% per level) damage to the first enemy hit. Deals 50% damage to Structures.  Casting Sand Blast leaves an Echo behind that mimics Chromie's Sand Blast and Basic Attack, dealing 40% damage. Maximum of 1 Echo active at a time.",
+        "hotkey": "Q",
+        "abilityId": "Chromie|Q1",
+        "tooltipId": "ChromieSandBlast",
+        "cooldown": 3,
+        "manaCost": 20,
+        "icon": "storm_ui_icon_chromie_aethercannon.png",
+        "type": "basic"
+      },
+      {
+        "uid": "282aa0",
+        "name": "Dragon's Breath",
+        "description": "Vector Targeting Launch 3 blasts into the air that land every 0.75 seconds towards the targeted direction, dealing 215 (+4% per level) damage each.",
+        "hotkey": "W",
+        "abilityId": "Chromie|W1",
+        "tooltipId": "ChromieDragonsBreath",
+        "cooldown": 14,
+        "manaCost": 65,
+        "icon": "storm_ui_icon_chromie_sandstrike.png",
+        "type": "basic"
+      },
+      {
+        "uid": "90eb5b",
+        "name": "Time Trap",
+        "description": "Place a Time Trap that arms and Stealths after 2 seconds. Chromie's Trait can be activated to detonate the trap, placing all nearby allied or enemy Heroes in Time Stop for 2 seconds. Maximum of 1 trap active at a time.",
+        "hotkey": "E",
+        "abilityId": "Chromie|E1",
+        "tooltipId": "ChromieTimeTrap",
+        "cooldown": 15,
+        "manaCost": 20,
+        "icon": "storm_ui_icon_chromie_timetrap.png",
+        "type": "basic"
+      },
+      {
+        "uid": "bd8ed1",
+        "name": "Temporal Loop",
+        "description": "Choose an enemy Hero. After 3 seconds, they are teleported back to the location where Temporal Loop was cast on them.  Basic Abilities recharge 500% faster for 3 seconds after casting Temporal Loop.",
+        "hotkey": "R",
+        "abilityId": "Chromie|R1",
+        "tooltipId": "ChromieTemporalLoop",
+        "cooldown": 50,
+        "manaCost": 60,
+        "icon": "storm_ui_icon_chromie_looper.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "e6b892",
+        "name": "Slowing Sands",
+        "description": "Summon a sand vortex that Slows enemies by 10% every 0.25 seconds, up to 70%.",
+        "hotkey": "R",
+        "abilityId": "Chromie|R2",
+        "tooltipId": "ChromieSlowingSands",
+        "cooldown": 5,
+        "manaCost": 5,
+        "manaPerSecond": true,
+        "icon": "storm_ui_icon_chromie_timewarp.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "185342",
+        "name": "Timewalker",
+        "description": "Chromie has traveled to the future, and as such, will learn her Talents 2 levels earlier than her teammates!  Detonate Time Trap  Detonates active Time Traps.",
+        "trait": true,
+        "abilityId": "Chromie|D1",
+        "tooltipId": "ChromieTimewalkerTrait",
+        "icon": "storm_ui_icon_chromie_timetraveler.png",
+        "type": "trait"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "ChromieSandBlastOnceAgaintheFirstTime",
+        "talentTreeId": "ChromieSandBlastOnceAgainTheFirstTime",
+        "name": "Once Again the First Time",
+        "description": "Quest: Hit 40 Heroes with Sand Blast from Chromie or her Echoes.  Reward: Increase the maximum number of active Echoes to 2, and increase Echo damage to 45%.",
+        "icon": "storm_ui_icon_chromie_aethercannon.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": true,
+        "abilityId": "Chromie|Q1",
+        "abilityLinks": [
+          "Chromie|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieSandBlast"
+        ]
+      },
+      {
+        "tooltipId": "ChromieDragonsBreathDeepBreathing",
+        "talentTreeId": "ChromieDragonsBreathDeepBreathing",
+        "name": "Deep Breathing",
+        "description": "Quest: Every time Dragon's Breath hits a Hero increase its damage by 1%, up to 20%.  Reward: After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40.",
+        "icon": "storm_ui_icon_chromie_sandstrike.png",
+        "type": "W",
+        "sort": 2,
+        "isQuest": true,
+        "abilityId": "Chromie|W1",
+        "abilityLinks": [
+          "Chromie|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieDragonsBreath"
+        ]
+      },
+      {
+        "tooltipId": "ChromieTimewalkersPursuit",
+        "talentTreeId": "ChromieTimewalkersPursuit",
+        "name": "Timewalker's Pursuit",
+        "description": "Gain 15% Spell Power and reduce the arming time of Time Traps by 0.75 seconds. Activate to reveal the targeted area for 4 seconds. Enemies seen are revealed for 4 seconds.",
+        "icon": "storm_ui_icon_talent_clairvoyance.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 25,
+        "abilityId": "Chromie|Active",
+        "abilityLinks": [
+          "Chromie|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieTimewalkerTrait"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "ChromieTimeTrapChronicConditions",
+        "talentTreeId": "ChromieTimeTrapChronicConditions",
+        "name": "Chronic Conditions",
+        "description": "After its Time Stop ends, enemies affected by Time Trap are Slowed by 30% for 3 seconds and allies gain 30% Movement Speed for 3 seconds.",
+        "icon": "storm_ui_icon_chromie_timetrap.png",
+        "type": "E",
+        "sort": 1,
+        "abilityId": "Chromie|E1",
+        "abilityLinks": [
+          "Chromie|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieTimeTrap",
+          "ChromieTimeTrapDetonate"
+        ]
+      },
+      {
+        "tooltipId": "ChromieTimeTrapTimeTroubles",
+        "talentTreeId": "ChromieTimeTrapTimeTroubles",
+        "name": "Time Troubles",
+        "description": "After its Time Stop ends, enemies affected by Time Trap lose 15 Armor for 3 seconds and allies gain 30 Armor for 3 seconds.",
+        "icon": "storm_ui_icon_chromie_timetrap_a.png",
+        "type": "E",
+        "sort": 2,
+        "abilityId": "Chromie|E1",
+        "abilityLinks": [
+          "Chromie|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieTimeTrap"
+        ]
+      },
+      {
+        "tooltipId": "ChromieTimeTrapAndorhalAnomaly",
+        "talentTreeId": "ChromieTimeTrapAndorhalAnomaly",
+        "name": "Andorhal Anomaly",
+        "description": "Increase the charges and maximum active Time Traps to 3, and reduce its cooldown by 8 seconds.",
+        "icon": "storm_ui_icon_chromie_timetrap_b.png",
+        "type": "E",
+        "sort": 3,
+        "abilityId": "Chromie|E1",
+        "abilityLinks": [
+          "Chromie|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieTimeTrap",
+          "ChromieTimeTrapDetonate"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "ChromieSandBlastBronzeTalons",
+        "talentTreeId": "ChromieSandBlastBronzeTalons",
+        "name": "Bronze Talons",
+        "description": "Hitting a Hero with Sand Blast from Chromie or her Echoes grants 50% additional Basic Attack damage for 5 seconds.",
+        "icon": "storm_ui_icon_chromie_aethercannon.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Chromie|Q1",
+        "abilityLinks": [
+          "Chromie|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieSandBlast"
+        ]
+      },
+      {
+        "tooltipId": "ChromieDragonsBreathMobiusLoop",
+        "talentTreeId": "ChromieDragonsBreathMobiusLoop",
+        "name": "Mobius Loop",
+        "description": "Dragon's Breath deals 30% bonus damage to enemies hit by its center. Enemy Heroes hit by its center are Slowed by 40% for 0.75 seconds.",
+        "icon": "storm_ui_icon_chromie_sandstrike.png",
+        "type": "W",
+        "sort": 2,
+        "abilityId": "Chromie|W1",
+        "abilityLinks": [
+          "Chromie|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieDragonsBreath"
+        ]
+      },
+      {
+        "tooltipId": "ChromieAProperGreeting",
+        "talentTreeId": "ChromieAProperGreeting",
+        "name": "A Proper Greeting",
+        "description": "Damaging a Stunned, Rooted, or Slowed enemy Hero grants 20% additional damage for 3 seconds.",
+        "icon": "storm_ui_icon_talent_abilitytalent_damage.png",
+        "type": "Passive",
+        "sort": 3,
+        "abilityId": "Chromie|Passive",
+        "abilityLinks": [
+          "Chromie|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieTimewalkerTrait"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "ChromieSlowingSands",
+        "talentTreeId": "ChromieHeroicAbilitySlowingSands",
+        "name": "Slowing Sands",
+        "description": "Summon a sand vortex that Slows enemies by 10% every 0.25 seconds, up to 70%.",
+        "icon": "storm_ui_icon_chromie_timewarp.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 5,
+        "abilityId": "Chromie|R2",
+        "abilityLinks": [
+          "Chromie|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieSlowingSands"
+        ]
+      },
+      {
+        "tooltipId": "ChromieTemporalLoop",
+        "talentTreeId": "ChromieHeroicAbilityTemporalLoop",
+        "name": "Temporal Loop",
+        "description": "Choose an enemy Hero. After 3 seconds, they are teleported back to the location where Temporal Loop was cast on them.  Basic Abilities recharge 500% faster for 3 seconds after casting Temporal Loop.",
+        "icon": "storm_ui_icon_chromie_looper.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 50,
+        "abilityId": "Chromie|R1",
+        "abilityLinks": [
+          "Chromie|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieTemporalLoop"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "ChromieSandBlastGnomeSpeedAhead",
+        "talentTreeId": "ChromieSandBlastGnomeSpeedAhead",
+        "name": "Gnome Speed Ahead!",
+        "description": "After casting Sand Blast, Chromie gains 20% Movement Speed and 200% increased Health Regeneration for 3 seconds.",
+        "icon": "storm_ui_icon_chromie_aethercannon.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Chromie|Q1",
+        "abilityLinks": [
+          "Chromie|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieSandBlast"
+        ]
+      },
+      {
+        "tooltipId": "ChromieHereAndThere",
+        "talentTreeId": "ChromieHereAndThere",
+        "name": "Here and There",
+        "description": "Activate to teleport to an area near an Echo, swapping it with Chromie's previous location.",
+        "icon": "storm_ui_icon_chromie_herethere.png",
+        "type": "Active",
+        "sort": 2,
+        "cooldown": 20,
+        "abilityId": "Chromie|Active"
+      },
+      {
+        "tooltipId": "ChromieTimeOutHotbar",
+        "talentTreeId": "ChromieTimeOut",
+        "name": "Time Out",
+        "description": "Activate to place Chromie in Stasis and gain Invulnerability for up to 5 seconds. Can be reactivated to end the effect early.",
+        "icon": "storm_ui_icon_chromie_timeblock.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 60,
+        "abilityId": "Chromie|Active"
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "ChromieSandBlastShiftingSands",
+        "talentTreeId": "ChromieSandBlastShiftingSands",
+        "name": "Shifting Sands",
+        "description": "Hitting an enemy Hero with Chromie's primary Sand Blast grants 5% Spell Power for 8 seconds, up to a maximum of 50%. The duration is refreshed whenever an enemy is damaged by the primary Sand Blast.",
+        "icon": "storm_ui_icon_chromie_aethercannon.png",
+        "type": "Q",
+        "sort": 1,
+        "abilityId": "Chromie|Q1",
+        "abilityLinks": [
+          "Chromie|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieSandBlast"
+        ]
+      },
+      {
+        "tooltipId": "ChromieSandBlastFastForward",
+        "talentTreeId": "ChromieSandBlastFastForward",
+        "name": "Fast Forward",
+        "description": "If Chromie's primary Sand Blast travels at least 50% of its base distance and hits a Hero, its cooldown is reduced to 0.5 seconds and it refunds 10 Mana.",
+        "icon": "storm_ui_icon_chromie_aethercannon_a.png",
+        "type": "Q",
+        "sort": 2,
+        "abilityId": "Chromie|Q1",
+        "abilityLinks": [
+          "Chromie|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieSandBlast"
+        ]
+      },
+      {
+        "tooltipId": "ChromieQuantumOverdrive",
+        "talentTreeId": "ChromieQuantumOverdrive",
+        "name": "Quantum Overdrive",
+        "description": "Activate to increase Spell Power by 30% for 8 seconds. Hitting an enemy Hero with Sand Blast reduces this cooldown by 3 seconds.",
+        "icon": "storm_ui_icon_chromie_hyperdrivesreach.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 45,
+        "abilityId": "Chromie|Active"
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "ChromieSlowingSandsUnravelling",
+        "talentTreeId": "ChromieSlowingSandsUnravelling",
+        "name": "Unravelling",
+        "description": "Every 0.25 seconds, enemy Heroes Slowed by Slowing Sands have their Spell Armor reduced by 10 up to 50.  Passive: Increase Slowing Sands cast range by 50%, and Slowing Sands persists for 5 seconds after it is cancelled.",
+        "icon": "storm_ui_icon_chromie_timewarp.png",
+        "type": "Heroic",
+        "sort": 1,
+        "abilityId": "Chromie|R2",
+        "abilityLinks": [
+          "Chromie|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieSlowingSandsCancel",
+          "ChromieSlowingSands"
+        ],
+        "prerequisiteTalentIds": [
+          "ChromieHeroicAbilitySlowingSands"
+        ]
+      },
+      {
+        "tooltipId": "ChromieTemporalLoopStuckInALoop",
+        "talentTreeId": "ChromieTemporalLoopStuckInALoop",
+        "name": "Stuck in a Loop",
+        "description": "Temporal Loop teleports the target a second time after the first, and Basic Abilities continue recharging for an additional 3 seconds. Increase the cooldown recharge rate from 500% to 700%.",
+        "icon": "storm_ui_icon_chromie_looper.png",
+        "type": "Heroic",
+        "sort": 2,
+        "abilityId": "Chromie|R1",
+        "abilityLinks": [
+          "Chromie|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieTemporalLoop"
+        ],
+        "prerequisiteTalentIds": [
+          "ChromieHeroicAbilityTemporalLoop"
+        ]
+      },
+      {
+        "tooltipId": "ChromieSandBlastPiercingSands",
+        "talentTreeId": "ChromieSandBlastPiercingSands",
+        "name": "Piercing Sands",
+        "description": "Sand Blasts cast from Chromie and her Echoes now pierce all enemies hit.",
+        "icon": "storm_ui_icon_chromie_aethercannon.png",
+        "type": "Q",
+        "sort": 3,
+        "abilityId": "Chromie|Q1",
+        "abilityLinks": [
+          "Chromie|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "ChromieSandBlast"
+        ]
+      },
+      {
+        "tooltipId": "ChromieBlessingOfTheBronze",
+        "talentTreeId": "ChromieBlessingOfTheBronze",
+        "name": "Blessing of the Bronze",
+        "description": "Activate to cause Chromie and all allied Heroes to gain 20% Movement Speed and their Basic Abilities recharge 35% faster for 8 seconds.  Hitting an enemy Hero with Sand Blast from Chromie or her Echoes reduces the cooldown of Blessing of the Bronze by 1 second.",
+        "icon": "storm_ui_icon_chromie_blessing_of_the_bronze.png",
+        "type": "Active",
+        "sort": 4,
+        "cooldown": 30,
+        "abilityId": "Chromie|Active"
+      }
+    ]
+  },
+  "summonUnits": [
+    {
+      "unitId": "ChromieTimeTrap",
+      "name": "Time Trap",
+      "icon": "storm_ui_icon_chromie_timetrap.png",
+      "stats": {
+        "hp": 400,
+        "hpRegen": 0,
+        "hpScale": 0.04,
+        "hpRegenScale": 0,
+        "radius": 0.75
+      },
+      "abilities": [],
+      "sourceAbilityTooltipId": "ChromieTimeTrap"
+    }
+  ],
+  "tooltipMarkup": {
+    "ChromieAProperGreeting": "Damaging a Stunned, Rooted, or Slowed enemy Hero grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieAProperGreetingDamageIncrease,Modification.DamageDealtFraction[Basic]*100\"/>%</c> additional damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieAProperGreetingDamageIncrease,Duration\"/></c> seconds.",
+    "ChromieBlessingOfTheBronze": "Activate to cause Chromie and all allied Heroes to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieBlessingOfTheBronzeIncreasedMovementSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> Movement Speed and their Basic Abilities recharge <c val=\"#TooltipNumbers\"><d ref=\"-(Effect,ChromieBlessingOfTheBronzeDummyCDRVariable,XP/Behavior,ChromieBlessingOfTheBronzeCDR,Period)*100\"/>%</c> faster for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieBlessingOfTheBronzeIncreasedMovementSpeed,Duration\"/></c> seconds.<n/><n/>Hitting an enemy Hero with Sand Blast from Chromie or her Echoes reduces the cooldown of Blessing of the Bronze by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChromieSandBlastBlessingOfTheBronzeCooldownReduction,Cost[0].CooldownTimeUse\"/></c> second.",
+    "ChromieDragonsBreath": "<c val=\"#TooltipNumbers\">Vector Targeting</c><n/>Launch <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieDragonsBreathInitialPersistent,PeriodCount-3\"/></c> blasts into the air that land every <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieDragonsBreathOffsetPersistent,PeriodicPeriodArray[1]+.0625\" precision=\"2\"/></c> seconds towards the targeted direction, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieDragonsBreathDamage,Amount\"/></c> damage each.",
+    "ChromieDragonsBreathDeepBreathing": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every time Dragon's Breath hits a Hero increase its damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ChromieDragonsBreathDeepBreathingAccumulator,Scale\" precision=\"2\"/>%</c>, up to <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ChromieDragonsBreathDeepBreathingAccumulator,MaxAccumulation\" precision=\"2\"/>%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieDragonsBreathDeepBreathingQuestToken,Max\"/></c> Heroes, reduce the cooldown of Dragon's Breath by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChromieDragonsBreathDeepBreathingFinalModifyUnit,EffectArray[2].Value\"/></c> seconds and its Mana cost from <c val=\"#TooltipNumbers\">65</c> to <c val=\"#TooltipNumbers\"><d ref=\"65+Effect,ChromieDragonsBreathDeepBreathingFinalModifyUnit,EffectArray[1].Value\"/></c>.",
+    "ChromieDragonsBreathMobiusLoop": "Dragon's Breath deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChromieDragonsBreathDamage,MultiplicativeModifierArray[ChromieDragonsBreathDragonsEye].Modifier\"/>%</c> bonus damage to enemies hit by its center. Enemy Heroes hit by its center are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChromieDragonsBreathMobiusLoopSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieDragonsBreathMobiusLoopSlow,Duration\"Precision=\"2\"/></c> seconds.",
+    "ChromieHereAndThere": "Activate to teleport to an area near an Echo, swapping it with Chromie's previous location.",
+    "ChromieQuantumOverdrive": "Activate to increase Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieQuantumOverdriveBuff,Modification.DamageDealtFraction[Ability]*(100)\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieQuantumOverdriveBuff,Duration\"/></c> seconds. Hitting an enemy Hero with Sand Blast reduces this cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChromieQuantumOverdriveModifyPlayerCooldown,Cost.Cooldown.TimeUse\"/></c> seconds.",
+    "ChromieSandBlast": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,ChromieSandBlast,CastIntroTime[0]\"Precision=\"1\"/></c> seconds, fire a missile that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieSandBlastDamage,Amount\"/></c> damage to the first enemy hit. Deals <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChromieSandBlastDamage,AttributeFactor[Structure]*100\"/>%</c> damage to Structures.<n/><n/>Casting Sand Blast leaves an Echo behind that mimics Chromie's Sand Blast and Basic Attack, dealing <c val=\"#TooltipNumbers\"><d ref=\"(1+Effect,ChromieSandBlastPastAndFutureMeDamage,MultiplicativeModifierArray[PastandFutureMe].Modifier)*100\"/>%</c> damage. Maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromiePastAndFutureMeTracker,MaxTrackedUnits\" player=\"0\"/></c> Echo active at a time.",
+    "ChromieSandBlastBronzeTalons": "Hitting a Hero with Sand Blast from Chromie or her Echoes grants <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChromieHeroWeaponDamage,MultiplicativeModifierArray[BronzeTalons].Modifier\"/>%</c> additional Basic Attack damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieSandBlastBronzeTalonsDamageIncrease,Duration\"/></c> seconds.",
+    "ChromieSandBlastFastForward": "If Chromie's primary Sand Blast travels at least <c val=\"#TooltipNumbers\"><d ref=\"Validator,ChromieFastForwardDistanceCheck,Range/Effect,ChromieSandBlastLaunchMissile,ImpactLocation.ProjectionDistanceScale*100\"/>%</c> of its base distance and hits a Hero, its cooldown is reduced to <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieSandBlastFastForwardCooldownReduction,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds and it refunds <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieSandBlastFastForwardCreateManaHealer,RechargeVitalRate\"/></c> Mana.",
+    "ChromieSandBlastGnomeSpeedAhead": "After casting Sand Blast, Chromie gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieSandBlastGnomeSpeedAheadIncreasedMovementSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> Movement Speed and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieSandBlastGnomeSpeedAheadRegeneration,Modification.VitalRegenMultiplier[0]*100\"/>%</c> increased Health Regeneration for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieSandBlastGnomeSpeedAheadRegeneration,Duration\"/></c> seconds.",
+    "ChromieSandBlastOnceAgaintheFirstTime": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieSandBlastOnceAgainTheFirstTimeQuestToken,Max\"/></c> Heroes with Sand Blast from Chromie or her Echoes.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Increase the maximum number of active Echoes to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromiePastAndFutureMeTracker,MaxTrackedUnits+Effect,ChromieSandBlastOnceAgainTheFirstTimeModifyTrackerMax,CatalogModifications[0].Value\" player=\"0\"/></c>, and increase Echo damage to <c val=\"#TooltipNumbers\"><d ref=\"(1+Effect,ChromieSandBlastPastAndFutureMeDamage,MultiplicativeModifierArray[OnceAgainTheFirstTime].Modifier)*100\"/>%</c>.",
+    "ChromieSandBlastPiercingSands": "Sand Blasts cast from Chromie and her Echoes now pierce all enemies hit.",
+    "ChromieSandBlastShiftingSands": "Hitting an enemy Hero with Chromie's primary Sand Blast grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieSandBlastShiftingSandsBuff,Modification.DamageDealtFraction[Ability]*(100)\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieSandBlastShiftingSandsBuff,Duration\"/></c> seconds, up to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieSandBlastShiftingSandsBuff,Modification.DamageDealtFraction[Ability]*Behavior,ChromieSandBlastShiftingSandsBuff,MaxStackCount*(100)\"/>%</c>. The duration is refreshed whenever an enemy is damaged by the primary Sand Blast.",
+    "ChromieSlowingSands": "Summon a sand vortex that Slows enemies by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ChromieSlowingSandsTargetBehavior,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\" precision=\"2\"/>%</c> every <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieSlowingSandsCreatePersistent,PeriodicPeriodArray[0]\" precision=\"2\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ChromieSlowingSandsTargetBehavior,Modification.UnifiedMoveSpeedFactor*Behavior,ChromieSlowingSandsTargetBehavior,MaxStackCount*100\" precision=\"2\"/>%</c>.",
+    "ChromieSlowingSandsUnravelling": "Every <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieSlowingSandsCreatePersistent,PeriodicPeriodArray[0]\" precision=\"2\"/></c> seconds, enemy Heroes Slowed by Slowing Sands have their Spell Armor reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ChromieSlowingSandsUnravellingArmorDebuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> up to <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ChromieSlowingSandsUnravellingArmorDebuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]*Behavior,ChromieSlowingSandsUnravellingArmorDebuff,ArmorModification.StackCount\"/></c>.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increase Slowing Sands cast range by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ChromieSlowingSandsUnravelling,AbilityModificationArray[0].Modifications[1].Value/Abil,ChromieSlowingSands,Range*100\" player=\"0\" precision=\"2\"/>%</c>, and Slowing Sands persists for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieSlowingSandsCancelDelay,Duration\"/></c> seconds after it is cancelled.",
+    "ChromieTemporalLoop": "Choose an enemy Hero. After <c val=\"#TooltipNumbers\">3</c> seconds, they are teleported back to the location where Temporal Loop was cast on them.<n/><n/>Basic Abilities recharge <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChromieTemporalLoopModifyCooldowns,Cost[0].CooldownTimeUse/Behavior,ChromieTemporalLoopBuff,Period*100\" player=\"0\"/>%</c> faster for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTemporalLoopBuff,Duration\" player=\"0\"/></c> seconds after casting Temporal Loop.",
+    "ChromieTemporalLoopStuckInALoop": "Temporal Loop teleports the target a second time after the first, and Basic Abilities continue recharging for an additional <c val=\"#TooltipNumbers\"><d ref=\"Talent,ChromieTemporalLoopStuckInALoop,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds. Increase the cooldown recharge rate from <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChromieTemporalLoopModifyCooldowns,Cost[0].CooldownTimeUse/Behavior,ChromieTemporalLoopBuff,Period*100\" player=\"0\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"-(Effect,ChromieTemporalLoopModifyCooldowns,Cost[0].CooldownTimeUse+Talent,ChromieTemporalLoopStuckInALoop,AbilityModificationArray[0].Modifications[2].Value)/Behavior,ChromieTemporalLoopBuff,Period*100\" player=\"0\"/>%</c>.",
+    "ChromieTimeOutHotbar": "Activate to place Chromie in Stasis and gain Invulnerability for up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeOutBehavior,Duration\"/></c> seconds. Can be reactivated to end the effect early.",
+    "ChromieTimeTrap": "Place a Time Trap that arms and Stealths after <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeTrapArmingBehavior,Duration\" precision=\"2\" player=\"0\"/></c> seconds. Chromie's Trait can be activated to detonate the trap, placing all nearby allied or enemy Heroes in Time Stop for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeTrapTargetBehavior,Duration\" precision=\"2\"/></c> seconds. Maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeTrapUnitTracker,MaxTrackedUnits\" player=\"0\"/></c> trap active at a time.",
+    "ChromieTimeTrapAndorhalAnomaly": "Increase the charges and maximum active Time Traps to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeTrapUnitTracker,MaxTrackedUnits+Talent,ChromieTimeTrapAndorhalAnomaly,AbilityModificationArray[0].Modifications[3].Value\" player=\"0\"/></c>, and reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,ChromieTimeTrapAndorhalAnomaly,AbilityModificationArray[0].Modifications[4].Value\"/></c> seconds.",
+    "ChromieTimeTrapChronicConditions": "After its Time Stop ends, enemies affected by Time Trap are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ChromieTimeTrapChronicConditionsSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeTrapChronicConditionsSlow,Duration\"/></c> seconds and allies gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeTrapChronicConditionsIncreasedMovementSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeTrapChronicConditionsIncreasedMovementSpeed,Duration\"/></c> seconds.",
+    "ChromieTimeTrapTimeTroubles": "After its Time Stop ends, enemies affected by Time Trap lose <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ChromieTimeTrapTimeTroublesReduceArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeTrapTimeTroublesReduceArmor,Duration\"/></c> seconds and allies gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeTrapTimeTroublesGainArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeTrapTimeTroublesGainArmor,Duration\"/></c> seconds.",
+    "ChromieTimewalkerTrait": "Chromie has traveled to the future, and as such, will learn her Talents <c val=\"#TooltipNumbers\">2</c> levels earlier than her teammates!<n/><n/><s val=\"StandardTooltipHeader\">Detonate Time Trap</s><n/><n/>Detonates active Time Traps.",
+    "ChromieTimewalkersPursuit": "Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChromieTimewalkersPursuitQuestCompleteAbilityPower,Modification.DamageDealtFraction[Ability]\"/>%</c> Spell Power and reduce the arming time of Time Traps by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,ChromieTimewalkersPursuit,AbilityModificationArray[0].Modifications[0].Value\" precision=\"2\"/></c> seconds. Activate to reveal the targeted area for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieTimewalkersPursuitRevealPersistent,PeriodCount*Effect,ChromieTimewalkersPursuitRevealPersistent,PeriodicPeriodArray[0]\"/></c> seconds. Enemies seen are revealed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimewalkersPursuitRevealer,Duration\"/></c> seconds."
+  },
+  "tooltipSimple": {
+    "ChromieAProperGreeting": "Damage disabled Heroes to increase damage",
+    "ChromieBlessingOfTheBronze": "Increase allied Move Speed and reduce cooldowns",
+    "ChromieDragonsBreath": "Fire a series of blasts in an area",
+    "ChromieDragonsBreathDeepBreathing": "<c val=\"#TooltipQuest\">Quest:</c> Hitting Heroes empowers Dragon's Breath",
+    "ChromieDragonsBreathMobiusLoop": "Dragon's Breath's center deals more damage, Slows",
+    "ChromieHereAndThere": "Activate to swap positions with an Echo",
+    "ChromieQuantumOverdrive": "Activate to gain Spell Power",
+    "ChromieSandBlast": "Fire a long range blast that damages an enemy",
+    "ChromieSandBlastBronzeTalons": "Sand Blast empowers Basic Attacks",
+    "ChromieSandBlastFastForward": "Long range Sand Blasts reduce its cooldown",
+    "ChromieSandBlastGnomeSpeedAhead": "Sand Blast increases Move Speed and Regen",
+    "ChromieSandBlastOnceAgaintheFirstTime": "<c val=\"#TooltipQuest\">Quest:</c> Sand Blast gains another Echo",
+    "ChromieSandBlastPiercingSands": "Sand Blast pierces",
+    "ChromieSandBlastShiftingSands": "Sand Blast grants Spell Power",
+    "ChromieSlowingSands": "Create a Slowing area",
+    "ChromieSlowingSandsUnravelling": "Slowing Sands reduces Spell Armor, lingers",
+    "ChromieTemporalLoop": "Return an enemy Hero to a previous position",
+    "ChromieTemporalLoopStuckInALoop": "Temporal Loop teleports twice",
+    "ChromieTimeOutHotbar": "Activate to become Invulnerable",
+    "ChromieTimeTrap": "Place a trap that Time Stops Heroes",
+    "ChromieTimeTrapAndorhalAnomaly": "Increase Time Trap charges, reduce cooldown",
+    "ChromieTimeTrapChronicConditions": "Time Trap affects enemy/allied Move Speed",
+    "ChromieTimeTrapTimeTroubles": "Time Trap affects enemy/allied Armor",
+    "ChromieTimewalkerTrait": "Gain Talents earlier than everyone else",
+    "ChromieTimewalkersPursuit": "Increase Spell Power, Activate to reveal an area"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}
