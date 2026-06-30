@@ -1136,7 +1136,6 @@ Banner/SortName/SpookyGhost18Var0=3Hollow2GhostVar0
 Banner/SortName/SpookyGhost18Var1=3Hollow2GhostVar1
 Banner/SortName/SpookyWitch18Var0=3Hollow3WitchVar0
 Banner/SortName/SpookyWitch18Var1=3Hollow3WitchVar1
-Behavior/Name/AbathurEvolveMonstrosityAbathurStack=Diener absorbiert
 Behavior/Name/ArchonTwilightArchon=Zwielichtarchon
 Behavior/Name/ArtanisFinalCutBuff=Todesstoß
 Behavior/Name/ArtanisFinalCutCarry=Todesstoß
@@ -1308,7 +1307,6 @@ Behavior/Name/WizardTeleportWormholeFreeTeleport=Teleportation - Wurmloch - kost
 Behavior/Name/ZagaraBileDropTokenCounter=Gallenabwurf - Token-Zähler
 Behavior/Name/ZagaraRapidIncubationChannel=Schnelle Inkubation
 Behavior/Name/ZeratulBlinkWormholeTalentTimerBuff=Wurmloch
-Behavior/Tooltip/AbathurEvolveMonstrosityAbathurStack=Lebenspunktebonus: <c val="#TooltipNumbers"><d ref="Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*$BehaviorStackCount:AbathurEvolveMonstrosityAbathurStack$*100"/>%</c><n/>Bonus auf Angriffsschaden: <c val="#TooltipNumbers"><d ref="Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*$BehaviorStackCount:AbathurEvolveMonstrosityAbathurStack$*100"/>%</c>
 Behavior/Tooltip/ArchonTwilightArchon=Verursacht zusätzlichen Schaden.
 Behavior/Tooltip/ArtanisFinalCutBuff=Der nächste automatische Angriff verursacht <c val="#TooltipNumbers"><d ref="Behavior,ArtanisFinalCutBuff,Modification.DamageDealtFraction[Basic]*100" player="0"/>%</c> mehr Schaden.
 Behavior/Tooltip/ArtanisFinalCutCarry=Letzter Schnitt verursacht <c val="#TooltipNumbers"><d ref="Effect,ArtanisFinalCutModifyPlayer,EffectArray[0].Value*100" player="0"/>%</c> mehr Schaden.
@@ -1893,6 +1891,7 @@ Button/Name/AbathurLocustSwarm=Schreckenbrut
 Button/Name/AbathurMonstrosityDeepTunnel=Tiefentunnel
 Button/Name/AbathurMonstrosityEvolutionCompleteTalent=Evolution abgeschlossen
 Button/Name/AbathurReinforcedCarapaceTalent=Verstärkter Panzer
+Button/Name/AbathurSlapathur=
 Button/Name/AbathurSymbiote=Symbiont
 Button/Name/AbathurSymbioteAdrenalOverloadTalent=Adrenalinsättigung
 Button/Name/AbathurSymbioteAdrenalineBoostTalent=Adrenalinschub
@@ -3745,6 +3744,7 @@ Button/SimpleDisplayText/AbathurLocustSwarm=Erschafft eine Gruppe Schrecken.
 Button/SimpleDisplayText/AbathurMonstrosityDeepTunnel=Gräbt sich zum Zielort.
 Button/SimpleDisplayText/AbathurMonstrosityEvolutionCompleteTalent=Erhöht den Schaden des Mutanten.
 Button/SimpleDisplayText/AbathurReinforcedCarapaceTalent=Erhöht die Schildmenge des Panzers.
+Button/SimpleDisplayText/AbathurSlapathur=
 Button/SimpleDisplayText/AbathurSymbiote=Unterstützt einen Verbündeten und erhält selbst neue Fähigkeiten.
 Button/SimpleDisplayText/AbathurSymbioteAdrenalOverloadTalent=Erhöht die Angriffsgeschwindigkeit des Symbiontenwirts.
 Button/SimpleDisplayText/AbathurSymbioteAdrenalineBoostTalent=Der Panzer erhöht die Bewegungsgeschwindigkeit.
@@ -5330,6 +5330,7 @@ Button/Tooltip/AbathurLocustSwarm=Aktivieren, um in der Nähe <c val="#TooltipNu
 Button/Tooltip/AbathurMonstrosityDeepTunnel=Befiehlt dem entwickelten Mutanten, sich schnell zu einem sichtbaren Ort auf der Karte durchzugraben.
 Button/Tooltip/AbathurMonstrosityEvolutionCompleteTalent=Erhöht den Schaden automatischer Angriffe des Mutanten um <c val="#TooltipNumbers"><d ref="100*Effect,AbathurEvolveMonstrosityWeaponDamage,MultiplicativeModifierArray[EvolutionCompleteDamage].Modifier"/>%</c>.
 Button/Tooltip/AbathurReinforcedCarapaceTalent=Erhöht die Schildmenge des Panzers um <c val="#TooltipNumbers"><d ref="100*(Talent,AbathurReinforcedCarapace,AbilityModificationArray[0].Modifications[0].Value)-100"Precision="2"/>%</c>.
+Button/Tooltip/AbathurSlapathur=
 Button/Tooltip/AbathurSymbiote=Erzeugt einen Symbionten, der sich mit einem anvisierten Verbündeten oder Gebäude verbindet. Abathur kontrolliert den Symbionten und kann so neue Symbiontenfähigkeiten einsetzen. Der Symbiont erhält EP, wenn Gegner in seiner Nähe sterben.
 Button/Tooltip/AbathurSymbioteAdrenalOverloadTalent=Erhöht die Angriffsgeschwindigkeit von heroischen Symbiontenwirten um <c val="#TooltipNumbers"><d ref="Behavior,AbathurAdrenalOverload,Modification.AdditiveAttackSpeedFactor*100" player="0" precision="2"/>%</c>.
 Button/Tooltip/AbathurSymbioteAdrenalineBoostTalent=Der Panzer des Symbionten erhöht die Bewegungsgeschwindigkeit des Ziels <c val="#TooltipNumbers"><d ref="Behavior,AdrenalineBoost,Duration" precision="1" player="0"/></c> Sek. lang um <c val="#TooltipNumbers"><d ref="100*Behavior,AdrenalineBoost,Modification.UnifiedMoveSpeedFactor"/>%</c>.

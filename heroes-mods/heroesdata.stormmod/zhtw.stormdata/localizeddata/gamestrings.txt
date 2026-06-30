@@ -1136,7 +1136,6 @@ Banner/SortName/SpookyGhost18Var0=3Hollow2GhostVar0
 Banner/SortName/SpookyGhost18Var1=3Hollow2GhostVar1
 Banner/SortName/SpookyWitch18Var0=3Hollow3WitchVar0
 Banner/SortName/SpookyWitch18Var1=3Hollow3WitchVar1
-Behavior/Name/AbathurEvolveMonstrosityAbathurStack=吸收的小兵數量
 Behavior/Name/ArchonTwilightArchon=暮光執政官
 Behavior/Name/ArtanisFinalCutBuff=終極斬
 Behavior/Name/ArtanisFinalCutCarry=終極斬
@@ -1308,7 +1307,6 @@ Behavior/Name/WizardTeleportWormholeFreeTeleport=傳送術 - 時空蟲洞 - 免�
 Behavior/Name/ZagaraBileDropTokenCounter=Bile Drop Token Counter
 Behavior/Name/ZagaraRapidIncubationChannel=快速復原
 Behavior/Name/ZeratulBlinkWormholeTalentTimerBuff=蟲洞
-Behavior/Tooltip/AbathurEvolveMonstrosityAbathurStack=生命值加成：<c val="#TooltipNumbers"><d ref="Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*$BehaviorStackCount:AbathurEvolveMonstrosityAbathurStack$*100"/>%</c><n/>攻擊傷害加成：<c val="#TooltipNumbers"><d ref="Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*$BehaviorStackCount:AbathurEvolveMonstrosityAbathurStack$*100"/>%</c>
 Behavior/Tooltip/ArchonTwilightArchon=造成額外傷害。
 Behavior/Tooltip/ArtanisFinalCutBuff=使下次基本攻擊傷害提高<c val="#TooltipNumbers"><d ref="Behavior,ArtanisFinalCutBuff,Modification.DamageDealtFraction[Basic]*100" player="0"/>%</c>
 Behavior/Tooltip/ArtanisFinalCutCarry=終極斬傷害提高<c val="#TooltipNumbers"><d ref="Effect,ArtanisFinalCutModifyPlayer,EffectArray[0].Value*100" player="0"/>%</c>
@@ -1893,6 +1891,7 @@ Button/Name/AbathurLocustSwarm=蝗蟲群落
 Button/Name/AbathurMonstrosityDeepTunnel=深度挖掘
 Button/Name/AbathurMonstrosityEvolutionCompleteTalent=進化完成
 Button/Name/AbathurReinforcedCarapaceTalent=強化蟲殼
+Button/Name/AbathurSlapathur=
 Button/Name/AbathurSymbiote=共生體
 Button/Name/AbathurSymbioteAdrenalOverloadTalent=激素過載
 Button/Name/AbathurSymbioteAdrenalineBoostTalent=激素分泌
@@ -3745,6 +3744,7 @@ Button/SimpleDisplayText/AbathurLocustSwarm=孵化一群蝗蟲
 Button/SimpleDisplayText/AbathurMonstrosityDeepTunnel=挖掘到目標區域
 Button/SimpleDisplayText/AbathurMonstrosityEvolutionCompleteTalent=畸獸的攻擊傷害提高
 Button/SimpleDisplayText/AbathurReinforcedCarapaceTalent=提高蟲殼加護的護盾
+Button/SimpleDisplayText/AbathurSlapathur=
 Button/SimpleDisplayText/AbathurSymbiote=支援一位盟友，並且切換成新的技能
 Button/SimpleDisplayText/AbathurSymbioteAdrenalOverloadTalent=宿主的攻擊速度提高
 Button/SimpleDisplayText/AbathurSymbioteAdrenalineBoostTalent=蟲殼加護可提高移動速度
@@ -5330,6 +5330,7 @@ Button/Tooltip/AbathurLocustSwarm=啟動後在附近孵化<c val="#TooltipNumber
 Button/Tooltip/AbathurMonstrosityDeepTunnel=命令你的畸獸快速挖掘移動至有視野的地點。
 Button/Tooltip/AbathurMonstrosityEvolutionCompleteTalent=畸獸的基本攻擊傷害提高<c val="#TooltipNumbers"><d ref="100*Effect,AbathurEvolveMonstrosityWeaponDamage,MultiplicativeModifierArray[EvolutionCompleteDamage].Modifier"/>%</c>。
 Button/Tooltip/AbathurReinforcedCarapaceTalent=蟲殼加護的護盾值提高<c val="#TooltipNumbers"><d ref="100*(Talent,AbathurReinforcedCarapace,AbilityModificationArray[0].Modifications[0].Value)-100"Precision="2"/>%</c>。
+Button/Tooltip/AbathurSlapathur=
 Button/Tooltip/AbathurSymbiote=生成一個共生體依附在目標盟友或建築上。在效果期間內，阿巴瑟會控制共生體，並且可以使用新技能。共生體可以在附近敵人死亡時獲得經驗值。
 Button/Tooltip/AbathurSymbioteAdrenalOverloadTalent=英雄共生體宿主的攻擊速度提高<c val="#TooltipNumbers"><d ref="Behavior,AbathurAdrenalOverload,Modification.AdditiveAttackSpeedFactor*100" player="0" precision="2"/>%</c>。
 Button/Tooltip/AbathurSymbioteAdrenalineBoostTalent=共生體的蟲殼加護使目標的移動速度提高<c val="#TooltipNumbers"><d ref="100*Behavior,AdrenalineBoost,Modification.UnifiedMoveSpeedFactor"/>%</c>，持續<c val="#TooltipNumbers"><d ref="Behavior,AdrenalineBoost,Duration" precision="1" player="0"/></c>秒。
@@ -26474,7 +26475,7 @@ UI/MapLoadingScreen/GardenOfTerror/Description3=花園懼魔會癱瘓敵方建�
 UI/MapLoadingScreen/GardenOfTerror/Title1=生成種子
 UI/MapLoadingScreen/GardenOfTerror/Title2=收集種子
 UI/MapLoadingScreen/GardenOfTerror/Title3=花園懼魔
-UI/MapLoadingScreen/GardenOfTerror2=恐怖花園傳統配置
+UI/MapLoadingScreen/GardenOfTerror2=恐怖花園經典版
 UI/MapLoadingScreen/GardenOfTerror2/Description1=夜半時分，跚行花魔將從花園現身。
 UI/MapLoadingScreen/GardenOfTerror2/Description2=擊殺跚行花魔，為團隊收集種子！
 UI/MapLoadingScreen/GardenOfTerror2/Description3=集滿 100 顆種子，就能控制花園懼魔消滅敵人！

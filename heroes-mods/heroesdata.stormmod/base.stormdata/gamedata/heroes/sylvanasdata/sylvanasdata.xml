@@ -4745,6 +4745,10 @@
   <CValidatorUnitCompareBehaviorCount id="SylvanasTargetUnPossessed">
     <Behavior value="SylvanasPossessionTarget" />
   </CValidatorUnitCompareBehaviorCount>
+  <CValidatorUnitCompareBehaviorCount id="SylvanasSourceUnPossessed">
+    <WhichUnit Value="Source" />
+    <Behavior value="SylvanasPossessionTarget" />
+  </CValidatorUnitCompareBehaviorCount>
   <CValidatorUnitCompareBehaviorCount id="SylvanasHasFullSkeletonFollowerCount">
     <WhichUnit Value="Caster" />
     <Compare value="GE" />

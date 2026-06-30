@@ -2066,7 +2066,7 @@
   </CEffectModifyPlayer>
   <CEffectEnumArea id="HoggerNoControlRetargetSearch">
     <ExcludeArray Effect="HoggerNoControlEnumerateTrackedUnitSwitch" Value="Target" />
-    <SearchFilters value="Heroic;Player,Ally,ImmuneToAOE,Missile,Item,Stasis,Dead" />
+    <SearchFilters value="Heroic,Visible;Player,Ally,ImmuneToAOE,Missile,Item,Stasis,Dead" />
     <TargetSorts RequestCount="2" RequestPercentage="1">
       <SortArray value="HoggerNotRecentlyTargetedByNoControl" />
       <SortArray value="TSFarthestDistance" />

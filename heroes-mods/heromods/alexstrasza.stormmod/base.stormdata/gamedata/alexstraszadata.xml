@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+  <const id="$AlexstraszaLifeMax" value="1698" />
+  <const id="$AlexstraszaLifeRegenBase" value="/($AlexstraszaLifeMax 480)" evaluateAsExpression="1" />
+  <const id="$AlexstraszaLifeRegenModifier" value="1.5" />
+  <const id="$AlexstraszaLifeRegen" value="*($AlexstraszaLifeRegenBase +($AlexstraszaLifeRegenModifier 1))" evaluateAsExpression="1" />
+  <const id="$AlexstraszaGiftOfLifeHealthCostFraction" value="0.15" />
   <const id="$AlexstraszaFlameBuffetSlowDuration" value="2" />
   <const id="$AlexstraszaFlameBuffetSlowAmountPos" value="0.4" />
   <const id="$AlexstraszaFlameBuffetSlowMultiplierPerStep" value="/($AlexstraszaFlameBuffetSlowAmountPos *($AlexstraszaFlameBuffetSlowDuration 16))" evaluateAsExpression="1" />
   <const id="$AlexstraszaFlameBuffetSlowMultiplierPerStep50PercentCCReduction" value="/($AlexstraszaFlameBuffetSlowMultiplierPerStep 0.5)" evaluateAsExpression="1" />
   <const id="$AlexstraszaFlameBuffetSlowMultiplierPerStep75PercentCCReduction" value="/($AlexstraszaFlameBuffetSlowMultiplierPerStep 0.25)" evaluateAsExpression="1" />
   <const id="$AlexstraszaFlameBuffetSlowAmount" value="negate($AlexstraszaFlameBuffetSlowAmountPos)" evaluateAsExpression="1" />
+  <const id="$AlexstraszaFlamesofFuryHitsForFirstMilestone" value="20" />
+  <const id="$AlexstraszaFlamesofFuryHitsForMythicQuest" value="40" />
+  <const id="$AlexstraszaFlamesofFuryQuestMaximum" value="+($AlexstraszaFlamesofFuryHitsForFirstMilestone $AlexstraszaFlamesofFuryHitsForMythicQuest)" evaluateAsExpression="1" />
+  <const id="$AlexstraszaGiftOfLifeLifeBlossomHealthCostReduction" value="0.05" />
+  <const id="$AlexstraszaGiftOfLifeHealthCostFractionWithLifeBlossom" value="-($AlexstraszaGiftOfLifeHealthCostFraction $AlexstraszaGiftOfLifeLifeBlossomHealthCostReduction)" evaluateAsExpression="1" />
   <const id="$AlexstraszaFlameBuffetHeatExhaustionBonusSlowAmount" value="0.1" />
   <const id="$AlexstraszaFlameBuffetHeatExhaustionSlowAmount" value="negate(+($AlexstraszaFlameBuffetSlowAmountPos $AlexstraszaFlameBuffetHeatExhaustionBonusSlowAmount))" evaluateAsExpression="1" />
   <const id="$AlexstraszaCleansingFlameCastRange" value="20" />
+  <const id="$AlexstraszaCleansingFlameTimeBetweenShots" value="1.1875" />
   <const id="$AlexstraszaLifebinderRange" value="7" />
   <const id="$AlexstraszaLifebinderDragonqueenRangeModifier" value="0.45" />
   <const id="$AlexstraszaLifebinderDragonqueenRange" value="+($AlexstraszaLifebinderRange *($AlexstraszaLifebinderRange $AlexstraszaLifebinderDragonqueenRangeModifier))" evaluateAsExpression="1" />
@@ -72,7 +83,7 @@
     <SharedFlags index="ForceQuickCast" value="1" />
     <Activity value="Abil/Activity/AlexstraszaCleansingFlame" />
     <PrepEffect value="AlexstraszaCleansingFlamePrepSet" />
-    <Effect value="AlexstraszaCleansingFlameFireballPersistent" />
+    <Effect value="AlexstraszaCleansingFlameCastSet" />
     <Flags index="ClearLastAttackTargetOutOfRange" value="1" />
     <Flags index="ClearLastMoveTarget" value="1" />
     <Flags index="RangeUseCasterRadius" value="0" />
@@ -93,7 +104,7 @@
     <UninterruptibleArray index="Channel" value="1" />
     <UninterruptibleArray index="Finish" value="1" />
     <CursorEffect value="AlexstraszaCleansingFlameFireballSearch" />
-    <CastOutroTimeEffect value="AlexstraszaCleansingFlameFireballPersistent" />
+    <CastOutroTimeEffect value="AlexstraszaCleansingFlameFireballPersistentInfinite" />
     <CursorRangeFlags index="ClampMin" value="1" />
     <CursorRangeFlags index="ClampMax" value="1" />
     <CmdButtonArray index="Execute" DefaultButtonFace="AlexstraszaCleansingFlame" Requirements="Ultimate2Unlocked">
@@ -102,7 +113,7 @@
   </CAbilEffectTarget>
   <CAbilEffectTarget id="AlexstraszaCleansingFlameDragonqueen">
     <PrepEffect value="AlexstraszaCleansingFlamePrepSet" />
-    <Effect value="AlexstraszaCleansingFlameFireballPersistent" />
+    <Effect value="AlexstraszaCleansingFlameCastSet" />
     <Flags index="ClearLastAttackTargetOutOfRange" value="1" />
     <Flags index="ClearLastMoveTarget" value="1" />
     <Flags index="RangeUseCasterRadius" value="0" />
@@ -121,7 +132,7 @@
     <UninterruptibleArray index="Channel" value="1" />
     <UninterruptibleArray index="Finish" value="1" />
     <CursorEffect value="AlexstraszaCleansingFlameFireballSearch" />
-    <CastOutroTimeEffect value="AlexstraszaCleansingFlameFireballPersistent" />
+    <CastOutroTimeEffect value="AlexstraszaCleansingFlameFireballPersistentInfinite" />
     <CmdButtonArray index="Execute" DefaultButtonFace="AlexstraszaCleansingFlameDragonqueen" Requirements="Ultimate2Unlocked">
       <Flags index="AllowSelfCast" value="0" />
     </CmdButtonArray>
@@ -138,7 +149,7 @@
     <Flags index="ClearLastAttackTargetOutOfRange" value="1" />
     <Flags index="ClearLastMoveTarget" value="1" />
     <Cost>
-      <Cooldown TimeStart="150" TimeUse="150" />
+      <Cooldown TimeStart="130" TimeUse="130" />
     </Cost>
     <InterruptArray index="Cast" value="1" />
     <InterruptCost>
@@ -295,13 +306,13 @@
   <CAccumulatorVitals id="AlexstraszaBreathOfLifeHealAccumulator" parent="BaseAccumulator">
     <MaxAccumulation value="9999" />
     <ApplicationRule value="Add" />
-    <Ratio value="0.2" />
+    <Ratio value="0.15" />
     <ModificationType value="PerUnit" />
   </CAccumulatorVitals>
   <CAccumulatorVitals id="AlexstraszaGiftOfLifeCostAccumulator" parent="BaseAccumulator">
     <MaxAccumulation value="0" />
     <ApplicationRule value="Add" />
-    <Ratio value="-0.15" />
+    <Ratio value="-$AlexstraszaGiftOfLifeHealthCostFraction" />
     <ModificationType value="PerUnit" />
     <MinAccumulation value="-9999" />
   </CAccumulatorVitals>
@@ -334,8 +345,8 @@
     <On Terms="ActorCreation" Send="SetTintColor 255,208,128" />
     <On Terms="Effect.AlexstraszaCleansingFlameRemoveOverlayDummy.Start" Send="Destroy Immediate" />
     <On Terms="ActorCreation" Send="StatusSet AmmoCount 5" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballSearch.Start" Send="StatusDecrement AmmoCount" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballSearch.Start; IsStatus AmmoCount 0" Send="Destroy Immediate" />
+    <On Terms="Effect.AlexstraszaCleansingFlameRemoveAmmoCounter.Start" Send="StatusDecrement AmmoCount" />
+    <On Terms="Effect.AlexstraszaCleansingFlameRemoveAmmoCounter.Start; IsStatus AmmoCount 0" Send="Destroy Immediate" />
     <Host Subject="::Creator" />
     <HostSiteOps Ops="SOpAttachHardPoint05" />
     <Model value="AlexstraszaCleansingFlameCursorAmmo" />
@@ -351,8 +362,8 @@
     <On Terms="ActorCreation" Send="SetTintColor 255,208,128" />
     <On Terms="Effect.AlexstraszaCleansingFlameRemoveOverlayDummy.Start" Send="Destroy Immediate" />
     <On Terms="ActorCreation" Send="StatusSet AmmoCount 4" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballSearch.Start" Send="StatusDecrement AmmoCount" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballSearch.Start; IsStatus AmmoCount 0" Send="Destroy Immediate" />
+    <On Terms="Effect.AlexstraszaCleansingFlameRemoveAmmoCounter.Start" Send="StatusDecrement AmmoCount" />
+    <On Terms="Effect.AlexstraszaCleansingFlameRemoveAmmoCounter.Start; IsStatus AmmoCount 0" Send="Destroy Immediate" />
     <Host Subject="::Creator" />
     <HostSiteOps Ops="SOpAttachHardPoint04" />
     <Model value="AlexstraszaCleansingFlameCursorAmmo" />
@@ -368,8 +379,8 @@
     <On Terms="ActorCreation" Send="SetTintColor 255,208,128" />
     <On Terms="Effect.AlexstraszaCleansingFlameRemoveOverlayDummy.Start" Send="Destroy Immediate" />
     <On Terms="ActorCreation" Send="StatusSet AmmoCount 3" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballSearch.Start" Send="StatusDecrement AmmoCount" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballSearch.Start; IsStatus AmmoCount 0" Send="Destroy Immediate" />
+    <On Terms="Effect.AlexstraszaCleansingFlameRemoveAmmoCounter.Start" Send="StatusDecrement AmmoCount" />
+    <On Terms="Effect.AlexstraszaCleansingFlameRemoveAmmoCounter.Start; IsStatus AmmoCount 0" Send="Destroy Immediate" />
     <Host Subject="::Creator" />
     <HostSiteOps Ops="SOpAttachHardPoint03" />
     <Model value="AlexstraszaCleansingFlameCursorAmmo" />
@@ -385,8 +396,8 @@
     <On Terms="ActorCreation" Send="SetTintColor 255,208,128" />
     <On Terms="Effect.AlexstraszaCleansingFlameRemoveOverlayDummy.Start" Send="Destroy Immediate" />
     <On Terms="ActorCreation" Send="StatusSet AmmoCount 2" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballSearch.Start" Send="StatusDecrement AmmoCount" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballSearch.Start; IsStatus AmmoCount 0" Send="Destroy Immediate" />
+    <On Terms="Effect.AlexstraszaCleansingFlameRemoveAmmoCounter.Start" Send="StatusDecrement AmmoCount" />
+    <On Terms="Effect.AlexstraszaCleansingFlameRemoveAmmoCounter.Start; IsStatus AmmoCount 0" Send="Destroy Immediate" />
     <Host Subject="::Creator" />
     <HostSiteOps Ops="SOpAttachHardPoint02" />
     <Model value="AlexstraszaCleansingFlameCursorAmmo" />
@@ -402,8 +413,8 @@
     <On Terms="ActorCreation" Send="SetTintColor 255,208,128" />
     <On Terms="Effect.AlexstraszaCleansingFlameRemoveOverlayDummy.Start" Send="Destroy Immediate" />
     <On Terms="ActorCreation" Send="StatusSet AmmoCount 1" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballSearch.Start" Send="StatusDecrement AmmoCount" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballSearch.Start; IsStatus AmmoCount 0" Send="Destroy Immediate" />
+    <On Terms="Effect.AlexstraszaCleansingFlameRemoveAmmoCounter.Start" Send="StatusDecrement AmmoCount" />
+    <On Terms="Effect.AlexstraszaCleansingFlameRemoveAmmoCounter.Start; IsStatus AmmoCount 0" Send="Destroy Immediate" />
     <Host Subject="::Creator" />
     <HostSiteOps Ops="SOpAttachHardPoint01" />
     <Model value="AlexstraszaCleansingFlameCursorAmmo" />
@@ -573,7 +584,7 @@
   </CActorModel>
   <CActorModel id="AlexstraszaCleansingFlameFXTakeoffDragon" parent="StormModelAnimationStyleOneShotUnit">
     <Remove Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballPersistent.Start; At Caster; ValidateUnit AlexstraszaDragonqueenIsADragon" Send="Create" />
+    <On Terms="Effect.AlexstraszaCleansingFlameApplyCasterBehavior.Start; At Caster; ValidateUnit AlexstraszaDragonqueenIsADragon" Send="Create" />
     <On Terms="ActorCreation" Send="AnimPlay Birth Birth" />
     <On Terms="AnimDone; AnimName Birth" Send="Destroy" />
     <HostSiteOps HoldPosition="1" HoldRotation="1" />
@@ -587,7 +598,7 @@
   </CActorModel>
   <CActorModel id="AlexstraszaCleansingFlameFXTakeoffHuman" parent="StormModelAnimationStyleOneShotUnit">
     <Remove Terms="ActorCreation" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballPersistent.Start; At Caster; !ValidateUnit AlexstraszaDragonqueenIsADragon" Send="Create" />
+    <On Terms="Effect.AlexstraszaCleansingFlameApplyCasterBehavior.Start; At Caster; !ValidateUnit AlexstraszaDragonqueenIsADragon" Send="Create" />
     <On Terms="ActorCreation" Send="AnimPlay Birth Birth" />
     <On Terms="AnimDone; AnimName Birth" Send="Destroy" />
     <HostSiteOps HoldPosition="1" HoldRotation="1" />
@@ -731,8 +742,8 @@
     <Inherits index="Visibility" value="0" />
     <FogVisibility value="Visible" />
     <On Terms="ActorCreation" Send="SetTintColor 225,160,25 0.000000 OneShot BaseTint" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballPersistent.Start" Send="Create" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballPersistent.Stop" Send="Destroy Immediate" />
+    <On Terms="Effect.AlexstraszaCleansingFlameFireballPersistentInfinite.Start" Send="Create" />
+    <On Terms="Effect.AlexstraszaCleansingFlameFinalPersistent.Start; FromEffectTreeDescendant" Send="Destroy Immediate" />
     <HostSiteOps Ops="SOpCasterPoint" />
     <Scale value="20.000000" />
     <ModelAspectSets>
@@ -745,7 +756,7 @@
   </CActorModel>
   <CActorRegionCircle id="AlexstraszaCleansingFlameCursorRegion" parent="StormGuideRegionCircle">
     <QueryRange value="20.000000" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballPersistent.Start" Send="SetRegionFilterEffect AlexstraszaCleansingFlameFireballSearch" />
+    <On Terms="Effect.AlexstraszaCleansingFlameFireballPersistentInfinite.Start" Send="SetRegionFilterEffect AlexstraszaCleansingFlameFireballSearch" />
   </CActorRegionCircle>
   <CActorModel id="AlexstraszaCleansingFlameCursorSplatLanding">
     <Filter index="All" value="1" />
@@ -916,7 +927,7 @@
   </CActorModel>
   <CActorModel id="AlexstraszaCleansingFlameCursorSplatOuter">
     <Filter index="All" value="1" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballPersistent.Start" Send="Create" />
+    <On Terms="Effect.AlexstraszaCleansingFlameFireballPersistentInfinite.Start" Send="Create" />
     <On Terms="Effect.AlexstraszaCleansingFlameRemoveOverlayDummy.Start" Send="Destroy Immediate" />
     <On Terms="ActorCreation" Send="SetTintColor 225,160,25" />
     <On Terms="ActorCreation" Send="Create AlexstraszaCleansingFlameCursorAmmo1" />
@@ -935,7 +946,7 @@
   </CActorModel>
   <CActorModel id="AlexstraszaCleansingFlameCursorSplatInner">
     <Filter index="All" value="1" />
-    <On Terms="Effect.AlexstraszaCleansingFlameFireballPersistent.Start" Send="Create" />
+    <On Terms="Effect.AlexstraszaCleansingFlameFireballPersistentInfinite.Start" Send="Create" />
     <On Terms="Effect.AlexstraszaCleansingFlameRemoveOverlayDummy.Start" Send="Destroy Immediate" />
     <On Terms="ActorCreation" Send="SetTintColor 225,160,25" />
     <On Terms="ActorCreation" Send="SetScale 0.100000" />
@@ -1500,14 +1511,9 @@
       <UnifiedMoveSpeedFactor value="$AlexstraszaFlameBuffetHeatExhaustionSlowAmount" />
     </Modification>
   </CBehaviorBuff>
-  <CBehaviorTokenCounter id="AlexstraszaGiftOfLifeLifeblossomTokenCounter" parent="StormQuestToken">
+  <CBehaviorTokenCounter id="AlexstraszaGiftOfLifeLifeblossomTokenCounter" parent="StormGenericToken">
+    <Alignment value="Positive" />
     <InfoFlags index="Hidden" value="1" />
-    <BehaviorCategories index="Quest" value="0" />
-    <IncreaseEvents index="0" EventId="" ValidRange="0,0" />
-    <DecreaseEvents index="0" EventId="" ValidRange="0,0" />
-    <AtMaxEvents index="0" EventId="" Effect="AlexstraszaGiftOfLifeLifeblossomReduceCost" />
-    <AtMinEvents index="0" EventId="" Effect="AlexstraszaGiftOfLifeLifeblossomInitializationSet" />
-    <InitEvents Effect="AlexstraszaGiftOfLifeLifeblossomInitializationSet" />
     <Max value="1" />
   </CBehaviorTokenCounter>
   <CBehaviorAbility id="AlexstraszaLifeUnboundItem">
@@ -1544,7 +1550,7 @@
   <CBehaviorTokenCounter id="AlexstraszaOnRubyWingsCleansingFlameTokenCounter" parent="StormGenericToken">
     <Alignment value="Positive" />
     <InfoFlags index="Hidden" value="1" />
-    <Max value="8" />
+    <Max value="3" />
   </CBehaviorTokenCounter>
   <CBehaviorBuff id="AlexstraszaCleansingFlameCasterBehavior" parent="StormStasisRemoved">
     <Modification>
@@ -1553,6 +1559,11 @@
       <AbilLinkEnableArray value="AlexstraszaCleansingFlameDragonqueen" />
       <AbilLinkEnableArray value="AlexstraszaDragonqueenDragonMorph" />
     </Modification>
+    <HealResponse Handled="AlexstraszaOnRubyWingsCleansingFlameAddTokenHeal" Location="Healer">
+      <ValidatorArray value="TargetIsHero" />
+      <RequireEffectArray value="AlexstraszaCleansingFlameFireballCreateHealer" />
+      <HealTypes index="Leech" value="0" />
+    </HealResponse>
   </CBehaviorBuff>
   <CBehaviorBuff id="AlexstraszaCleansingFlameOverlayDummy">
     <InfoFlags index="AlwaysUseGameText" value="1" />
@@ -1570,6 +1581,9 @@
       <ModifyFlags index="SuppressTurning" value="1" />
     </Modification>
     <Duration value="1.5" />
+  </CBehaviorBuff>
+  <CBehaviorBuff id="AlexstraszaCleansingFlameAmmoCounter">
+    <MaxStackCount value="5" />
   </CBehaviorBuff>
   <CBehaviorBuff id="AlexstraszaDragonScalesArmorCarry" parent="StormArmor">
     <Face value="AlexstraszaDragonScales" />
@@ -1730,6 +1744,11 @@
     <Duration value="15" />
     <PeriodCount value="1" />
     <FinalEffect value="AlexstraszaDragonqueenBehaviorFinalEffectSet" />
+    <DamageResponse Handled="AlexstraszaFlamesOfFuryRefreshDragonqueenDuration" Location="Attacker">
+      <Kind index="Basic" value="0" />
+      <TargetFilters value="Heroic;Ally,Player" />
+      <ValidatorArray value="TargetIsHero" />
+    </DamageResponse>
     <Modification>
       <AbilLinkDisableArray value="Mount" />
       <AbilLinkDisableArray value="Dismount" />
@@ -1767,7 +1786,11 @@
     </DamageResponse>
   </CBehaviorBuff>
   <CBehaviorTokenCounter id="AlexstraszaFlamesOfFuryFlameBuffetQuestToken" parent="StormQuestToken">
-    <Max value="20" />
+    <Max value="$AlexstraszaFlamesofFuryQuestMaximum" />
+    <ConditionalEvents Compare="GE" CompareValue="$AlexstraszaFlamesofFuryHitsForFirstMilestone">
+      <Event EventId="QuestMilestone" />
+    </ConditionalEvents>
+    <AtMaxEvents index="0" EventId="QuestComplete" Effect="AlexstraszaFlamesOfFuryModifyPlayerMythicCompleted" />
     <SortIndex value="10" />
   </CBehaviorTokenCounter>
   <CBehaviorBuff id="AlexstraszaLifebinderRitualOfLifeSuccessDummyCaster">
@@ -1831,6 +1854,9 @@
   </CButton>
   <CButton id="AlexstraszaBreathOfLife" parent="StormButtonParent">
     <Icon value="Assets\Textures\storm_ui_icon_alexstrasza_breath_of_life.dds" />
+    <TooltipAppender Validator="AlexstraszaLiveAndLetLiveGiftOfLifeHasTalent" Face="AlexstraszaLiveAndLetLiveGiftOfLife" />
+    <TooltipAppender Validator="AlexstraszaLifeblossomGiftOfLifeHasTalent" Face="AlexstraszaLifeblossomeGiftOfLife" />
+    <TooltipAppender Validator="AlexstraszaToughLoveHasTalent" Face="AlexstraszaToughLoveGiftOfLife" />
   </CButton>
   <CButton id="AlexstraszaOnRubyWingsCleansingFlame" parent="StormButtonParent">
     <Icon value="Assets\Textures\storm_ui_icon_alexstrasza_cleansing_flame.dds" />
@@ -1906,6 +1932,10 @@
   </CButton>
   <CButton id="AlexstraszaPreservation" parent="StormButtonParent">
     <Icon value="Assets\Textures\storm_ui_icon_alexstrasza_preservation.dds" />
+    <TooltipAppender Validator="AlexstraszaCircleOfLifeAbundanceHasTalent" Face="AlexstraszaCircleOfLifeAbundance" />
+    <TooltipAppender Validator="AlexstraszaSurgeOfVitalityAbundanceHasTalent" Face="AlexstraszaSurgeOfVitalityAbundance" />
+    <TooltipAppender Validator="AlexstraszaVerdantFlourishHasTalent" Face="AlexstraszaVerdantFlourishAbundance" />
+    <TooltipAppender Validator="AlexstraszaOverprotectiveHasTalent" Face="AlexstraszaOverprotectiveAbundance" />
   </CButton>
   <CButton id="AlexstraszaOverprotectiveAbundance" parent="StormButtonParent">
     <Icon value="Assets\Textures\storm_ui_icon_alexstrasza_abundance.dds" />
@@ -1921,6 +1951,8 @@
   </CButton>
   <CButton id="AlexstraszaFlamesOfFuryFlameBuffetQuestToken" parent="StormButtonParent">
     <Icon value="Assets\Textures\storm_ui_icon_alexstrasza_flame_buffet.dds" />
+    <TooltipAppender Text="Button/TooltipAppender/AlexstraszaFlamesOfFuryAppend1" />
+    <TooltipAppender Text="Button/TooltipAppender/AlexstraszaFlamesOfFuryAppend2" />
   </CButton>
   <CButton id="AlexstraszaRitualOfLifeLifebinder" parent="StormButtonParent">
     <Icon value="Assets\Textures\storm_ui_icon_alexstrasza_life_binder.dds" />
@@ -1989,8 +2021,7 @@
   <CEffectCreateHealer id="AlexstraszaAbundanceCreateHealer" parent="StormHealingSpellPercent">
     <RechargeVitalFraction value="0.2" />
     <SourceButtonFace value="AlexstraszaAbundance" />
-    <MultiplicativeModifierArray index="0" Validator="AlexstraszaVerdantFlourishHasTalentAndTargetIsSelf" Modifier="0.4" />
-    <CritValidatorArray value="AlexstraszaVerdantFlourishHasTalentAndTargetIsSelf" />
+    <MultiplicativeModifierArray index="0" Validator="AlexstraszaVerdantFlourishHasTalentAndTargetIsSelf" Modifier="0.4" Crit="1" />
   </CEffectCreateHealer>
   <CEffectCreatePersistent id="AlexstraszaAbundanceCreatePersistent">
     <PeriodCount value="24" />
@@ -2069,7 +2100,6 @@
   <CEffectSet id="AlexstraszaDragonqueenBehaviorInitialEffectSet">
     <EffectArray value="AlexstraszaDragonqueenLifebinderRangeIncrease" />
     <EffectArray value="AlexstraszaDragonqueenApplyHealthBuff" />
-    <EffectArray value="AlexstraszaGiftOfLifeLifeblossomModifyPlayer" />
   </CEffectSet>
   <CEffectApplyBehavior id="AlexstraszaDragonqueenApplyHealthBuff">
     <WhichUnit Value="Caster" />
@@ -2078,12 +2108,17 @@
   <CEffectSet id="AlexstraszaDragonqueenBehaviorFinalEffectSet">
     <EffectArray value="AlexstraszaDragonqueenExpirationStasisSwitch" />
     <EffectArray value="AlexstraszaDragonqueenRemoveHealthBuff" />
-    <EffectArray value="AlexstraszaGiftOfLifeLifeblossomModifyPlayer" />
+    <EffectArray value="AlexstraszaDragonqueenSetCooldown" />
   </CEffectSet>
   <CEffectRemoveBehavior id="AlexstraszaDragonqueenRemoveHealthBuff">
     <WhichUnit Value="Caster" />
     <BehaviorLink value="AlexstraszaDragonqueenHealthIncrease" />
   </CEffectRemoveBehavior>
+  <CEffectModifyUnit id="AlexstraszaDragonqueenSetCooldown">
+    <Cost Abil="AlexstraszaDragonqueen,Execute" CooldownOperation="Set">
+      <Fraction Cooldown="1" />
+    </Cost>
+  </CEffectModifyUnit>
   <CEffectEnumArea id="AlexstraszaDragonqueenDoodadSearchDummy">
     <AreaArray>
       <Radius value="4" />
@@ -2101,7 +2136,7 @@
   <CEffectModifyPlayer id="AlexstraszaGiftOfLifeLifeblossomModifyPlayer">
     <ValidatorArray value="AlexstraszaLifeblossomGiftOfLifeHasTalent" />
     <WhichPlayer Value="Caster" />
-    <EffectArray Operation="Set" Reference="Accumulator,AlexstraszaGiftOfLifeCostAccumulator,Ratio" Value="-0.1" />
+    <EffectArray Operation="Set" Reference="Accumulator,AlexstraszaGiftOfLifeCostAccumulator,Ratio" Value="-$AlexstraszaGiftOfLifeHealthCostFractionWithLifeBlossom" />
   </CEffectModifyPlayer>
   <CEffectApplyBehavior id="AlexstraszaLifebinderApplyHoTBehaviorTarget">
     <Behavior value="AlexstraszaLifebinderHoTControllerTarget" />
@@ -2147,7 +2182,7 @@
   <CEffectModifyPlayer id="AlexstraszaGiftOfLifeLifeblossomResetCost">
     <ValidatorArray value="AlexstraszaLifeblossomGiftOfLifeHasTalent" />
     <WhichPlayer Value="Caster" />
-    <EffectArray Operation="Set" Reference="Accumulator,AlexstraszaGiftOfLifeCostAccumulator,Ratio" Value="-0.15" />
+    <EffectArray Operation="Set" Reference="Accumulator,AlexstraszaGiftOfLifeCostAccumulator,Ratio" Value="$AlexstraszaGiftOfLifeHealthCostFraction" />
   </CEffectModifyPlayer>
   <CEffectModifyTokenCount id="AlexstraszaGiftOfLifeLifeblossomRemoveToken" parent="BaseEffectModifyTokenCount">
     <ValidatorArray value="AlexstraszaLifeblossomGiftOfLifeHasTalent" />
@@ -2174,6 +2209,20 @@
     <WhichUnit Value="Caster" />
     <Behavior value="AlexstraszaCleansingFlameSuppressTurning" />
   </CEffectApplyBehavior>
+  <CEffectApplyBehavior id="AlexstraszaCleansingFlameApplyAmmoCounter">
+    <WhichUnit Value="Caster" />
+    <Count value="5" />
+    <Behavior value="AlexstraszaCleansingFlameAmmoCounter" />
+  </CEffectApplyBehavior>
+  <CEffectRemoveBehavior id="AlexstraszaCleansingFlameRemoveAmmoCounter">
+    <WhichUnit Value="Caster" />
+    <BehaviorLink value="AlexstraszaCleansingFlameAmmoCounter" />
+    <Count value="1" />
+  </CEffectRemoveBehavior>
+  <CEffectSwitch id="AlexstraszaCleansingFlameRemoveAmmoCounterSwitch">
+    <CaseArray Validator="AlexstraszaOnRubyWingsCleansingFlameHasMaxTokens" Effect="AlexstrsazaCleansingFlameExtendChannelBarDummy" />
+    <CaseDefault value="AlexstraszaCleansingFlameRemoveAmmoCounter" />
+  </CEffectSwitch>
   <CEffectSet id="AlexstraszaCleansingFlameLandingInitialSet">
     <EffectArray value="AlexstraszaCleansingFlameLandingModifyFacing" />
   </CEffectSet>
@@ -2184,6 +2233,7 @@
   </CEffectModifyUnit>
   <CEffectSet id="AlexstraszaCleansingFlamePrepSet">
     <EffectArray value="AlexstraszaCleansingFlameApplySuppressTurning" />
+    <EffectArray value="AlexstraszaCleansingFlameApplyAmmoCounter" />
     <EffectArray value="DismountDecloakCasterSet" />
   </CEffectSet>
   <CEffectSwitch id="AlexstraszaCleansingFlamePersistentClampTeleportSwitch">
@@ -2216,6 +2266,10 @@
     <WhichUnit Value="Caster" />
     <Behavior value="AlexstraszaCleansingFlameChannelDummy" />
   </CEffectApplyBehavior>
+  <CEffectModifyBehaviorBuffDuration id="AlexstrsazaCleansingFlameExtendChannelBarDummy">
+    <Behavior value="AlexstraszaCleansingFlameChannelDummy" />
+    <Value value="$AlexstraszaCleansingFlameTimeBetweenShots" />
+  </CEffectModifyBehaviorBuffDuration>
   <CEffectSet id="AlexstraszaCleansingFlameLandingPrepSet">
     <EffectArray value="AlexstraszaCleansingFlameRemoveOverlayDummy" />
     <EffectArray value="AlexstraszaOnRubyWingsCleansingFlameLandingSwitch" />
@@ -2225,7 +2279,13 @@
     <SourceButtonFace value="AlexstraszaDragonqueen" />
     <ValidatorArray value="CasterNotBlinded" />
     <MultiplicativeModifierArray index="DraconicDiscipline" Validator="AlexstraszaDraconicDisciplineHasTalent" Modifier="0.5" />
+    <FinalEffect value="AlexstraszaDraconicDisciplineModifyCooldown" />
   </CEffectCreateHealer>
+  <CEffectModifyUnit id="AlexstraszaDraconicDisciplineModifyCooldown">
+    <ValidatorArray value="AlexstraszaDraconicDisciplineHasTalent" />
+    <ImpactUnit Value="Caster" />
+    <Cost Abil="AlexstraszaPreservation,Execute" CooldownOperation="Add" CooldownTimeUse="-1.25" />
+  </CEffectModifyUnit>
   <CEffectCreatePersistent id="AlexstraszaDragonConeWeaponCreatePersistent">
     <InitialOffset Y="-2.75" />
     <WhichLocation Value="SourceUnit" />
@@ -2244,7 +2304,9 @@
     <ValidatorArray value="noMarkers" />
     <ValidatorArray value="TargetNotInvulnerable" />
   </CEffectSet>
-  <CEffectSet id="AlexstraszaDragonqueenWeaponPreImpactSet" />
+  <CEffectSet id="AlexstraszaDragonqueenWeaponPreImpactSet">
+    <EffectArray value="AlexstraszaFlamesOfFuryRefreshDragonqueenDurationBasicAttack" />
+  </CEffectSet>
   <CEffectSet id="AlexstraszaDragonqueenWeaponPostImpactSet">
     <EffectArray value="AlexstraszaAncientFlameFlameBuffetImpactSet" />
   </CEffectSet>
@@ -2276,10 +2338,18 @@
     <SearchFlags index="DoActorSearch" value="1" />
     <SearchFilters value="-;Self,Player,Neutral,ImmuneToAOE,Missile,Item,Stasis,Dead,Hidden" />
   </CEffectEnumArea>
+  <CEffectModifyTokenCount id="AlexstraszaCleansingFlameOnRubyWingsSetTokenCountInitial">
+    <TokenId value="AlexstraszaOnRubyWingsCleansingFlameTokenCounter" />
+    <Operation value="Set" />
+  </CEffectModifyTokenCount>
   <CEffectModifyTokenCount id="AlexstraszaOnRubyWingsCleansingFlameAddToken" parent="BaseEffectModifyTokenCount">
     <ValidatorArray value="TargetIsHero" />
     <ValidatorArray value="AlexstraszaOnRubyWingsCleansingFlameLTMaxTokens" />
     <Chance value="0" />
+    <TokenId value="AlexstraszaOnRubyWingsCleansingFlameTokenCounter" />
+  </CEffectModifyTokenCount>
+  <CEffectModifyTokenCount id="AlexstraszaOnRubyWingsCleansingFlameAddTokenHeal" parent="BaseEffectModifyTokenCount">
+    <ValidatorArray value="AlexstraszaOnRubyWingsCleansingFlameLTMaxTokens" />
     <TokenId value="AlexstraszaOnRubyWingsCleansingFlameTokenCounter" />
   </CEffectModifyTokenCount>
   <CEffectApplyBehavior id="AlexstraszaOnRubyWingsCleansingFlameApplyTokenBehavior">
@@ -2322,31 +2392,38 @@
     <SearchFlags index="DoActorSearch" value="1" />
   </CEffectEnumArea>
   <CEffectSet id="AlexstraszaCleansingFlameFireballHealImpactSet">
-    <EffectArray value="AlexstraszaOnRubyWingsCleansingFlameAddToken" />
-    <EffectArray value="AlexstraszaOnRubyWingsCleansingFlameHealModifyDummy" />
     <EffectArray value="AlexstraszaCleansingFlameFireballCreateHealer" />
     <EffectArray value="AlexstraszaPacifyLifeUnboundModifyCooldownHealSet" />
   </CEffectSet>
-  <CEffectCreatePersistent id="AlexstraszaCleansingFlameFireballPersistent">
-    <ExpireEffect value="AlexstraszaCleansingFlameFinalPersistent" />
-    <PeriodCount value="8" />
-    <PeriodicEffectArray value="AlexstraszaCleansingFlameApplyChannelBarDummy" />
+  <CEffectSet id="AlexstraszaCleansingFlameCastSet">
+    <Marker>
+      <MatchFlags index="Id" value="1" />
+    </Marker>
+    <EffectArray value="AlexstraszaCleansingFlameApplyChannelBarDummyPersistent" />
+    <EffectArray value="AlexstraszaCleansingFlameFireballPersistentInfinite" />
+    <TargetLocationType value="Point" />
+  </CEffectSet>
+  <CEffectCreatePersistent id="AlexstraszaCleansingFlameApplyChannelBarDummyPersistent">
+    <InitialDelay value="0.25" />
+    <InitialEffect value="AlexstraszaCleansingFlameApplyChannelBarDummy" />
+  </CEffectCreatePersistent>
+  <CEffectCreatePersistent id="AlexstraszaCleansingFlameFireballPersistentInfinite">
+    <Flags index="PersistUntilDestroyed" value="1" />
+    <FinalEffect value="AlexstraszaCleansingFlameCleanupSet" />
+    <InitialDelay value="0.25" />
     <PeriodicEffectArray value="AlexstraszaCleansingFlamePersistentClampSwitch" />
-    <PeriodicEffectArray value="AlexstraszaCleansingFlamePersistentClampSwitch" />
-    <PeriodicEffectArray value="AlexstraszaCleansingFlamePersistentClampSwitch" />
-    <PeriodicEffectArray value="AlexstraszaCleansingFlamePersistentClampSwitch" />
-    <PeriodicEffectArray value="AlexstraszaCleansingFlamePersistentClampSwitch" />
-    <PeriodicEffectArray value="AlexstraszaCleansingFlameLandingPrepSet" />
-    <PeriodicEffectArray value="AlexstraszaCleansingFlamePersistentClampTeleportSwitch" />
-    <PeriodicPeriodArray value="0.25" />
-    <PeriodicPeriodArray value="1.1875" />
-    <PeriodicPeriodArray value="1.1875" />
-    <PeriodicPeriodArray value="1.1875" />
-    <PeriodicPeriodArray value="1.1875" />
-    <PeriodicPeriodArray value="1.1875" />
-    <PeriodicPeriodArray value="0" />
-    <PeriodicPeriodArray value="2" />
+    <PeriodicPeriodArray value="$AlexstraszaCleansingFlameTimeBetweenShots" />
     <InitialEffect value="AlexstraszaCleansingFlameInitialSet" />
+    <PeriodicValidator value="AlexstraszaCleansingFlameCasterHasAmmo" />
+  </CEffectCreatePersistent>
+  <CEffectSet id="AlexstraszaCleansingFlameCleanupSet">
+    <EffectArray value="AlexstraszaCleansingFlameRemoveOverlayDummy" />
+    <EffectArray value="AlexstraszaCleansingFlameLandingPersistent" />
+  </CEffectSet>
+  <CEffectCreatePersistent id="AlexstraszaCleansingFlameLandingPersistent">
+    <InitialDelay value="2" />
+    <InitialEffect value="AlexstraszaCleansingFlamePersistentClampTeleportSwitch" />
+    <ExpireEffect value="AlexstraszaCleansingFlameFinalPersistent" />
   </CEffectCreatePersistent>
   <CEffectCreatePersistent id="AlexstraszaCleansingFlameFinalPersistent">
     <FinalEffect value="AlexstraszaCleansingFlameFinalSet" />
@@ -2377,7 +2454,7 @@
   <CEffectCreatePersistent id="AlexstraszaCleansingFlameFireballSearchPersistentTargetPoint">
     <InitialEffect value="AlexstraszaCleansingFlameTeleport" />
     <PeriodCount value="1" />
-    <PeriodicEffectArray value="AlexstraszaCleansingFlameFireballSearch" />
+    <PeriodicEffectArray value="AlexstraszaCleansingFlameFireballSearchSet" />
     <RevealRadius value="3" />
     <RevealFlags index="Unfog" value="1" />
   </CEffectCreatePersistent>
@@ -2385,10 +2462,15 @@
     <WhichLocation Value="MousePoint" />
     <InitialEffect value="AlexstraszaCleansingFlameTeleport" />
     <PeriodCount value="1" />
-    <PeriodicEffectArray value="AlexstraszaCleansingFlameFireballSearch" />
+    <PeriodicEffectArray value="AlexstraszaCleansingFlameFireballSearchSet" />
     <RevealRadius value="3" />
     <RevealFlags index="Unfog" value="1" />
   </CEffectCreatePersistent>
+  <CEffectSet id="AlexstraszaCleansingFlameFireballSearchSet">
+    <EffectArray value="AlexstraszaCleansingFlameOnRubyWingsSetTokenCountInitial" />
+    <EffectArray value="AlexstraszaCleansingFlameFireballSearch" />
+    <EffectArray value="AlexstraszaCleansingFlameRemoveAmmoCounterSwitch" />
+  </CEffectSet>
   <CEffectCreatePersistent id="AlexstraszaCleansingFlameFireballSearchPersistent">
     <PeriodCount value="1" />
   </CEffectCreatePersistent>
@@ -2486,7 +2568,7 @@
   </CEffectRemoveBehavior>
   <CEffectSet id="AlexstraszaAncientFlameFlameBuffetImpactSet">
     <Chance value="0" />
-    <EffectArray value="AlexstraszaFlameBuffetImpactBonusSet" />
+    <EffectArray value="AlexstraszaAncientFlameImpactBonusSet" />
     <EffectArray value="AlexstraszaFlameBuffetApplyBehavior" />
     <ValidatorArray value="CasterNotBlindedAndTargetNotEvading" />
   </CEffectSet>
@@ -2583,22 +2665,45 @@
     <RechargeVitalRate value="40" />
   </CEffectCreateHealer>
   <CEffectModifyUnit id="AlexstraszaFlamesOfFuryFlameBuffetModifyDragonqueenCooldown">
+    <ValidatorArray value="AlexstraszaFlamesOfFuryFlameBuffetHasTalent" />
+    <ValidatorArray value="TargetIsHero" />
+    <ValidatorArray value="AlexstraszaFlamesOfFuryHasReachedFirstMilestone" />
     <ImpactUnit Value="Caster" />
     <Cost Abil="AlexstraszaDragonqueen,Execute" CooldownOperation="Add" CooldownTimeUse="-5" />
   </CEffectModifyUnit>
-  <CEffectSwitch id="AlexstraszaFlamesOfFuryFlameBuffetHeroImpactBonusSwitch">
+  <CEffectModifyPlayer id="AlexstraszaFlamesOfFuryModifyPlayerMythicCompleted">
+    <WhichPlayer Value="Caster" />
+    <EffectArray Operation="Set" Reference="Behavior,AlexstraszaDragonqueen,DamageResponse.Chance" Value="1" />
+  </CEffectModifyPlayer>
+  <CEffectModifyBehaviorBuffDuration id="AlexstraszaFlamesOfFuryRefreshDragonqueenDurationBasicAttack">
+    <ValidatorArray value="CasterNotBlindedAndTargetNotEvading" />
+    <ValidatorArray value="AlexstraszaFlamesOfFuryHasReachedMythicReward" />
     <ValidatorArray value="TargetIsHero" />
-    <Chance value="0" />
-    <CaseArray Validator="AlexstraszaFlamesOfFuryFlameBuffetLTMaxQuestTokens" Effect="AlexstraszaFlamesOfFuryFlameBuffetAddToken" />
-    <CaseArray Validator="AlexstraszaFlamesOfFuryHasFlameBuffetMaxQuestTokens" Effect="AlexstraszaFlamesOfFuryFlameBuffetModifyDragonqueenCooldown" />
-  </CEffectSwitch>
+    <Behavior value="AlexstraszaDragonqueen" />
+    <Operation value="Set" />
+    <Value value="15" />
+  </CEffectModifyBehaviorBuffDuration>
+  <CEffectModifyBehaviorBuffDuration id="AlexstraszaFlamesOfFuryRefreshDragonqueenDuration">
+    <ValidatorArray value="AlexstraszaFlamesOfFuryHasReachedMythicReward" />
+    <Behavior value="AlexstraszaDragonqueen" />
+    <Operation value="Set" />
+    <Value value="15" />
+  </CEffectModifyBehaviorBuffDuration>
   <CEffectSet id="AlexstraszaFlameBuffetImpactBonusSet">
     <ValidatorArray value="AlexstraszaFlameBuffetHasFlameBuffetDoT" />
     <EffectArray value="AlexstraszaFlameBuffetApplySlowSet" />
     <EffectArray value="AlexstraszaFlameBuffetManaRefundSwitch" />
-    <EffectArray value="AlexstraszaFlamesOfFuryFlameBuffetHeroImpactBonusSwitch" />
+    <EffectArray value="AlexstraszaFlamesOfFuryFlameBuffetModifyDragonqueenCooldown" />
+    <EffectArray value="AlexstraszaFlamesOfFuryFlameBuffetAddToken" />
     <EffectArray value="AlexstraszaFireWithinFlameBuffetHeroImpactBonusSet" />
     <EffectArray value="AlexstraszaFlameBuffetApplyBurningHitTracker" />
+    <EffectArray value="AlexstraszaFlameBuffetImpactBonusDamage" />
+  </CEffectSet>
+  <CEffectSet id="AlexstraszaAncientFlameImpactBonusSet">
+    <ValidatorArray value="AlexstraszaFlameBuffetHasFlameBuffetDoT" />
+    <EffectArray value="AlexstraszaFlameBuffetApplySlowSet" />
+    <EffectArray value="AlexstraszaFlamesOfFuryFlameBuffetModifyDragonqueenCooldown" />
+    <EffectArray value="AlexstraszaFireWithinFlameBuffetHeroImpactBonusSet" />
     <EffectArray value="AlexstraszaFlameBuffetImpactBonusDamage" />
   </CEffectSet>
   <CEffectRemoveBehavior id="AlexstraszaFlameBuffetRemoveSlowStack">
@@ -2639,6 +2744,7 @@
   <CEffectModifyUnit id="AlexstraszaLiveAndLetLiveGiftOfLifeModifyCooldown">
     <ImpactUnit Value="Caster" />
     <Cost Abil="AlexstraszaGiftOfLife,Execute" CooldownOperation="Add" CooldownTimeUse="-0.3125" />
+    <Cost Abil="AlexstraszaBreathOfLife,Execute" CooldownOperation="Add" CooldownTimeUse="-0.0625" />
   </CEffectModifyUnit>
   <CEffectCreateHealer id="AlexstraszaLifebinderCreateHealer" parent="StormHealingSpell">
     <SourceButtonFace value="AlexstraszaLifebinder" />
@@ -2801,6 +2907,12 @@
       <AccumulatorArray value="AlexstraszaBreathOfLifeHealAccumulator" />
     </RechargeVitalRate>
   </CEffectCreateHealer>
+  <CEffectRemoveBehavior id="AlexstraszaLifeblossomBreathOfLifeRemoveCCBehaviorCategories">
+    <ValidatorArray value="AlexstraszaLifeblossomGiftOfLifeHasTalent" />
+    <ValidatorArray value="AlexstraszaCasterHealthThreshold" />
+    <BehaviorCategories index="Slow" value="1" />
+    <BehaviorCategories index="DebuffRoot" value="1" />
+  </CEffectRemoveBehavior>
   <CEffectDamage id="AlexstraszaFlameBuffetDoTDamage" parent="StormSpellDot">
     <Amount value="15" />
     <SourceButtonFace value="AlexstraszaFlameBuffet" />
@@ -2809,6 +2921,8 @@
     <EffectArray value="AlexstraszaBreathOfLifeCreateHealer" />
     <EffectArray value="AlexstraszaBreathOfLifeModifyWeaponCooldown" />
     <EffectArray value="AlexstraszaPacifyLifeUnboundModifyCooldownHealSet" />
+    <EffectArray value="AlexstraszaLifeblossomBreathOfLifeRemoveCCBehaviorCategories" />
+    <EffectArray value="AlexstraszaToughLoveSet" />
     <ValidatorArray value="TargetIsHero" />
   </CEffectSet>
   <CEffectCreateHealer id="AlexstraszaGiftOfLifeCreateHealer" parent="StormHealingSpell">
@@ -2831,11 +2945,12 @@
     <Behavior value="AlexstraszaPreservationHoTPreview" />
   </CEffectApplyBehavior>
   <CEffectCreateHealer id="AlexstraszaPreservationCreateHealer" parent="StormHealingSpellPercent">
-    <RechargeVitalFraction value="0.3" />
+    <RechargeVitalFraction value="0.25" />
     <SourceButtonFace value="AlexstraszaPreservation" />
+    <MultiplicativeModifierArray index="0" Validator="AlexstraszaVerdantFlourishHasTalentAndTargetIsSelf" Modifier="0.4" Crit="1" />
   </CEffectCreateHealer>
   <CEffectCreatePersistent id="AlexstraszaPreservationCreatePersistent">
-    <FinalEffect value="AlexstraszaPreservationHealSearch" />
+    <FinalEffect value="AlexstraszaPreservationFinalSet" />
     <PeriodCount value="24" />
     <PeriodicEffectArray value="AlexstraszaPreservationPeriodicSearch" />
     <PeriodicPeriodArray value="0.125" />
@@ -2848,6 +2963,11 @@
       <Flags index="HelpsAlly" value="1" />
     </AINotifySettings>
   </CEffectCreatePersistent>
+  <CEffectSet id="AlexstraszaPreservationFinalSet">
+    <EffectArray value="AlexstraszaPreservationHealSearch" />
+    <EffectArray value="AlexstraszaCircleOfLifeAbundanceCreateRegenGlobeDummy" />
+    <TargetLocationType value="Point" />
+  </CEffectSet>
   <CEffectEnumArea id="AlexstraszaPreservationHealSearch">
     <ImpactLocation Value="TargetPoint" />
     <SearchFilters value="Heroic;Neutral,Enemy,Structure,ImmuneToFriendlyAbilities,Worker,Missile,Item,Stasis,Dead,Hidden" />
@@ -2859,6 +2979,7 @@
     <EffectArray value="AlexstraszaPreservationCreateHealer" />
     <EffectArray value="AlexstraszaPreservationRemovePreview" />
     <EffectArray value="AlexstraszaPacifyLifeUnboundModifyCooldownHealSet" />
+    <EffectArray value="AlexstraszaSurgeOfVitalityAbundanceApplyBehavior" />
   </CEffectSet>
   <CEffectRemoveBehavior id="AlexstraszaPreservationRemovePreview">
     <BehaviorLink value="AlexstraszaPreservationHoTPreview" />
@@ -2870,6 +2991,7 @@
     <TokenId value="AlexstraszaCircleOfLifeAbundanceQuestToken" />
   </CEffectModifyTokenCount>
   <CEffectModifyTokenCount id="AlexstraszaFlamesOfFuryFlameBuffetAddToken" parent="BaseEffectModifyTokenCount">
+    <ValidatorArray value="AlexstraszaFlamesOfFuryFlameBuffetHasTalent" />
     <ValidatorArray value="TargetIsHero" />
     <EffectCategory index="Quest" value="1" />
     <TokenId value="AlexstraszaFlamesOfFuryFlameBuffetQuestToken" />
@@ -2885,6 +3007,9 @@
     <CatalogModifications Reference="Effect,AlexstraszaAbundanceCreateHealer,RechargeVitalFraction">
       <Value value="0.05" />
     </CatalogModifications>
+    <CatalogModifications Reference="Effect,AlexstraszaPreservationCreateHealer,RechargeVitalFraction">
+      <Value value="0.05" />
+    </CatalogModifications>
   </CEffectModifyCatalogNumeric>
   <CEffectApplyBehavior id="AlexstraszaSurgeOfVitalityAbundanceApplyBehavior">
     <Chance value="0" />
@@ -2896,6 +3021,7 @@
     <AmmoUnit value="AlexstraszaWeaponMissile" />
   </CEffectLaunchMissile>
   <CEffectModifyUnit id="AlexstraszaGiftOfLifeModifyCasterHealth">
+    <ValidatorArray value="AlexstraszaDoesNotHaveLifeBlossomTalentOrHas0Tokens" />
     <ImpactUnit Value="Caster" />
     <VitalArray index="Life">
       <Change value="0">
@@ -3066,6 +3192,29 @@
   <CEffectSet id="RegenGlobeImpactSet">
     <EffectArray value="AlexstraszaCircleOfLifeAbundanceRegenGlobeImpactSet" />
   </CEffectSet>
+  <CEffectSet id="AlexstraszaDeathSet">
+    <EffectArray value="AlexstraszaDragonqueenRemoveBehavior" />
+    <EffectArray value="AlexstraszaFlamesOfFuryResetQuestProgressToMilestone" />
+  </CEffectSet>
+  <CEffectRemoveBehavior id="AlexstraszaDragonqueenRemoveBehavior">
+    <WhichUnit Value="Caster" />
+    <BehaviorLink value="AlexstraszaDragonqueen" />
+    <Count value="1" />
+  </CEffectRemoveBehavior>
+  <CEffectModifyTokenCount id="AlexstraszaFlamesOfFuryResetQuestProgressToMilestone" parent="BaseEffectModifyTokenCount">
+    <ValidatorArray value="AlexstraszaFlamesOfFuryHasReachedFirstMilestone" />
+    <ValidatorArray value="AlexstraszaFlamesOfFuryHasFinalMilestoneNotUnlocked" />
+    <EffectCategory index="Quest" value="1" />
+    <Value value="$AlexstraszaFlamesofFuryHitsForFirstMilestone" />
+    <TokenId value="AlexstraszaFlamesOfFuryFlameBuffetQuestToken" />
+    <Operation value="Set" />
+  </CEffectModifyTokenCount>
+  <CEffectModifyUnit id="AlexstraszaFlamesOfFuryMythicHitsNeededCatalog">
+    <XP value="$AlexstraszaFlamesofFuryHitsForMythicQuest" />
+  </CEffectModifyUnit>
+  <CEffectModifyUnit id="AlexstraszaLifeRegenMod">
+    <XP value="$AlexstraszaLifeRegenModifier" />
+  </CEffectModifyUnit>
   <CHero id="Alexstrasza">
     <AttributeId value="Alex" />
     <TalentTreeArray Talent="AlexstraszaLiveAndLetLiveGiftOfLife" Tier="1" Column="1" />
@@ -4608,20 +4757,18 @@
         <Field value="Chance" />
         <Value value="1.000000" />
       </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="AlexstraszaCleansingFlameCasterBehavior" />
+        <Field value="HealResponse.Chance" />
+        <Value value="1.000000" />
+      </Modifications>
     </AbilityModificationArray>
   </CTalent>
   <CTalent id="AlexstraszaDraconicDisciplineDragonqueen">
     <Face value="AlexstraszaDraconicDisciplineDragonqueen" />
     <Abil value="AlexstraszaDragonqueen" />
-    <AbilityModificationArray>
-      <Modifications>
-        <Type value="FlatModification" />
-        <Catalog value="Behavior" />
-        <Entry value="AlexstraszaDragonqueen" />
-        <Field value="Duration" />
-        <Value value="6.000000" />
-      </Modifications>
-    </AbilityModificationArray>
   </CTalent>
   <CTalent id="AlexstraszaAncientFlameFlameBuffet">
     <Face value="AlexstraszaAncientFlameFlameBuffet" />
@@ -4665,16 +4812,15 @@
     <AbilityModificationArray>
       <Modifications>
         <Type value="FlatModification" />
-        <Catalog value="Effect" />
-        <Entry value="AlexstraszaFlamesOfFuryFlameBuffetHeroImpactBonusSwitch" />
-        <Field value="Chance" />
-        <Value value="1.000000" />
-      </Modifications>
-      <Modifications>
-        <Type value="FlatModification" />
         <Entry value="AlexstraszaFlameBuffet" />
         <Field value="Cost.Vital[Energy]" />
         <Value value="-10.000000" />
+      </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="AlexstraszaDragonqueen" />
+        <Field value="DamageResponse.Chance" />
       </Modifications>
     </AbilityModificationArray>
     <QuestData StackBehavior="AlexstraszaFlamesOfFuryFlameBuffetQuestToken" />
@@ -4707,9 +4853,12 @@
         <Catalog value="Accumulator" />
         <Entry value="AlexstraszaGiftOfLifeCostAccumulator" />
         <Field value="Ratio" />
-        <Value value="0.050000" />
+        <Value value="$AlexstraszaGiftOfLifeLifeBlossomHealthCostReduction" />
       </Modifications>
     </AbilityModificationArray>
+    <RankArray>
+      <BehaviorArray value="AlexstraszaGiftOfLifeLifeblossomTokenCounter" />
+    </RankArray>
   </CTalent>
   <CTalent id="AlexstraszaCleansingFlame">
     <Face value="AlexstraszaCleansingFlame" />
@@ -4824,6 +4973,12 @@
         <Entry value="AlexstraszaAbundanceCreateHealer" />
         <Field value="RechargeVitalFraction" />
       </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Effect" />
+        <Entry value="AlexstraszaPreservationCreateHealer" />
+        <Field value="RechargeVitalFraction" />
+      </Modifications>
     </AbilityModificationArray>
     <QuestData StackBehavior="AlexstraszaCircleOfLifeAbundanceQuestToken" />
   </CTalent>
@@ -4917,11 +5072,10 @@
     <Mover value="HeroMissileSpeed22Ribbon" />
   </CUnit>
   <CUnit id="HeroAlexstrasza" parent="StormHeroMounted">
-    <LifeStart value="1698" />
-    <LifeMax value="1698" />
-    <LifeRegenRate value="8.8437" />
+    <LifeStart value="$AlexstraszaLifeMax" />
+    <LifeMax value="$AlexstraszaLifeMax" />
+    <LifeRegenRate value="$AlexstraszaLifeRegen" />
     <BehaviorArray Link="ExcellentMana" />
-    <BehaviorArray Link="AlexstraszaGiftOfLifeLifeblossomTokenCounter" />
     <AIThinkTree value="AI/Alexstrasza.aitree" />
     <HeroPlaystyleFlags index="AllyHealer" value="1" />
     <HeroPlaystyleFlags index="EnergyImportant" value="1" />
@@ -4947,11 +5101,12 @@
     <DestructionFunction value="libHALE_gf_HeroAlexstraszaDecrementHeroCountFunction" />
     <Radius value="0.625" />
     <InnerRadius value="0.625" />
+    <EffectArray index="Death" value="AlexstraszaDeathSet" />
   </CUnit>
   <CUnit id="HeroAlexstraszaDragon" parent="StormHeroMounted">
-    <LifeStart value="1698" />
-    <LifeMax value="1698" />
-    <LifeRegenRate value="8.8437" />
+    <LifeStart value="$AlexstraszaLifeMax" />
+    <LifeMax value="$AlexstraszaLifeMax" />
+    <LifeRegenRate value="$AlexstraszaLifeRegen" />
     <BehaviorArray Link="ExcellentMana" />
     <BehaviorArray Link="UltimateEvolutionInvalidTarget" />
     <BehaviorArray Link="HeroGenericIsFat" />
@@ -4988,11 +5143,13 @@
       <Charge Link="HeroAlexstrasza/Revive" />
       <Cooldown Link="HeroAlexstrasza/Revive" />
     </ReviveInfoBase>
+    <EffectArray index="Death" value="AlexstraszaDeathSet" />
     <InitializerFunction value="libHALE_gf_HeroAlexstraszaIncrementHeroCountFunction" />
     <DestructionFunction value="libHALE_gf_HeroAlexstraszaDecrementHeroCountFunction" />
   </CUnit>
   <CValidatorCombine id="AbilButtonAttentionQHealing">
     <CombineArray value="AlexstraszaGiftofLifeIsEmpowered" />
+    <CombineArray value="AlexstraszaBreathofLifeIsEmpowered" />
   </CValidatorCombine>
   <CValidatorUnitCompareBehaviorCount id="AlexstraszaBlessingOfTheRedTargetDoesntHaveBlessing">
     <Behavior value="AlexstraszaBlessingOfTheRed" />
@@ -5044,6 +5201,12 @@
     <Ability value="AlexstraszaGiftOfLife" />
     <CooldownLink value="Abil/AlexstraszaGiftOfLife" />
   </CValidatorUnitCompareCooldown>
+  <CValidatorUnitCompareCooldown id="AlexstraszaBreathOfLifeIsNotOnCooldown">
+    <Compare value="LE" />
+    <Location value="Unit" />
+    <Ability value="AlexstraszaBreathOfLife" />
+    <CooldownLink value="Abil/AlexstraszaBreathOfLife" />
+  </CValidatorUnitCompareCooldown>
   <CValidatorCombine id="AlexstraszaIsADragonAndNotCastingCleansingFlame">
     <Type value="And" />
     <CombineArray value="AlexstraszaCleansingFlameDoesNotHaveCasterBehavior" />
@@ -5076,6 +5239,15 @@
     <CombineArray value="CasterNotDazedOrDeadOrSilencedOrStasisOrStunned" />
     <CombineArray value="AlexstraszaCleansingFlameDoesNotHaveCasterBehavior" />
     <CombineArray value="AlexstraszaGiftofLifeIsNotOnCooldown" />
+  </CValidatorCombine>
+  <CValidatorCombine id="AlexstraszaBreathofLifeIsEmpowered">
+    <Type value="And" />
+    <CombineArray value="AlexstraszaGiftofLifeHasEmpoweredHealingTalent" />
+    <CombineArray value="AlexstraszaCasterHealthThreshold" />
+    <CombineArray value="AlexstraszaDragonqueenIsADragon" />
+    <CombineArray value="CasterNotDazedOrDeadOrSilencedOrStasisOrStunned" />
+    <CombineArray value="AlexstraszaCleansingFlameDoesNotHaveCasterBehavior" />
+    <CombineArray value="AlexstraszaBreathOfLifeIsNotOnCooldown" />
   </CValidatorCombine>
   <CValidatorCombine id="AlexstraszaDisplayRubyWingsCounterUI">
     <Type value="And" />
@@ -5118,6 +5290,12 @@
     <Behavior value="AlexstraszaCleansingFlameCasterBehavior" />
     <IncludeDisabled value="1" />
   </CValidatorUnitHasBehavior>
+  <CValidatorUnitCompareBehaviorCount id="AlexstraszaCleansingFlameCasterHasAmmo">
+    <WhichUnit Value="Caster" />
+    <Compare value="GE" />
+    <Value value="1" />
+    <Behavior value="AlexstraszaCleansingFlameAmmoCounter" />
+  </CValidatorUnitCompareBehaviorCount>
   <CValidatorUnitType id="AlexstraszaDragonqueenIsADragon">
     <WhichUnit Value="Caster" />
     <Value value="HeroAlexstraszaDragon" />
@@ -5200,10 +5378,23 @@
     <Find value="1" />
     <Value value="AlexstraszaBlessingOfTheRed" />
   </CValidatorPlayerTalent>
-  <CValidatorUnitCompareTokenCount id="AlexstraszaFlamesOfFuryHasFlameBuffetMaxQuestTokens">
+  <CValidatorUnitCompareTokenCount id="AlexstraszaFlamesOfFuryHasReachedMythicReward">
     <WhichUnit Value="Caster" />
-    <Value value="20" />
+    <Compare value="GE" />
+    <Value value="$AlexstraszaFlamesofFuryQuestMaximum" />
     <TokenId value="AlexstraszaFlamesOfFuryFlameBuffetQuestToken" />
+  </CValidatorUnitCompareTokenCount>
+  <CValidatorUnitCompareTokenCount id="AlexstraszaFlamesOfFuryHasReachedFirstMilestone">
+    <WhichUnit Value="Caster" />
+    <Compare value="GE" />
+    <Value value="$AlexstraszaFlamesofFuryHitsForFirstMilestone" />
+    <TokenId value="AlexstraszaFlamesOfFuryFlameBuffetQuestToken" />
+  </CValidatorUnitCompareTokenCount>
+  <CValidatorUnitCompareTokenCount id="AlexstraszaFlamesOfFuryHasFinalMilestoneNotUnlocked">
+    <Compare value="LT" />
+    <Value value="$AlexstraszaFlamesofFuryQuestMaximum" />
+    <TokenId value="AlexstraszaFlamesOfFuryFlameBuffetQuestToken" />
+    <WhichUnit Value="Caster" />
   </CValidatorUnitCompareTokenCount>
   <CValidatorUnitCompareBehaviorCount id="AlexstraszaLifebinderTargetHasBehavior">
     <WhichUnit Effect="AlexstraszaLifebinderInitialSet" />
@@ -5249,7 +5440,7 @@
   </CValidatorUnitCompareTokenCount>
   <CValidatorUnitCompareTokenCount id="AlexstraszaOnRubyWingsCleansingFlameHasMaxTokens">
     <WhichUnit Value="Caster" />
-    <Value value="8" />
+    <Value value="3" />
     <TokenId value="AlexstraszaOnRubyWingsCleansingFlameTokenCounter" />
   </CValidatorUnitCompareTokenCount>
   <CValidatorCombine id="AbilButtonAttentionDDamage">
@@ -5304,6 +5495,10 @@
     <Find value="1" />
     <Value value="AlexstraszaLifeblossomGiftOfLife" />
   </CValidatorPlayerTalent>
+  <CValidatorPlayerTalent id="AlexstraszaLifeblossomGiftOfLifeDoesNotHaveTalent">
+    <Value value="AlexstraszaLifeblossomGiftOfLife" />
+    <WhichPlayer Value="Caster" />
+  </CValidatorPlayerTalent>
   <CValidatorCombine id="AlexstraszaLiveandLetLiveGiftOfLifeHasTalentAndCasterHealthThreshold">
     <Type value="And" />
     <CombineArray value="AlexstraszaCasterHealthThreshold" />
@@ -5333,6 +5528,19 @@
     <CombineArray value="AlexstraszaGiftofLifeIsEmpowered" />
     <CombineArray value="AlexstraszaIsADragonAndNotCastingCleansingFlame" />
   </CValidatorCombine>
+  <CValidatorCombine id="AlexstraszaDoesNotHaveLifeBlossomTalentOrHas0Tokens">
+    <CombineArray value="AlexstraszaLifeBlossomHas0Tokens" />
+    <CombineArray value="AlexstraszaLifeblossomGiftOfLifeDoesNotHaveTalent" />
+  </CValidatorCombine>
+  <CValidatorUnitCompareTokenCount id="AlexstraszaLifeBlossomDoesNotHave0Tokens">
+    <WhichUnit Value="Caster" />
+    <Compare value="NE" />
+    <TokenId value="AlexstraszaGiftOfLifeLifeblossomTokenCounter" />
+  </CValidatorUnitCompareTokenCount>
+  <CValidatorUnitCompareTokenCount id="AlexstraszaLifeBlossomHas0Tokens">
+    <WhichUnit Value="Caster" />
+    <TokenId value="AlexstraszaGiftOfLifeLifeblossomTokenCounter" />
+  </CValidatorUnitCompareTokenCount>
   <CWeaponLegacy id="AlexstraszaAttackWeapon" parent="StormHeroMediumWeapon">
     <DisplayEffect value="AlexstraszaWeaponDamage" />
     <MinScanRange value="5.5" />

@@ -1136,7 +1136,6 @@ Banner/SortName/SpookyGhost18Var0=3Hollow2GhostVar0
 Banner/SortName/SpookyGhost18Var1=3Hollow2GhostVar1
 Banner/SortName/SpookyWitch18Var0=3Hollow3WitchVar0
 Banner/SortName/SpookyWitch18Var1=3Hollow3WitchVar1
-Behavior/Name/AbathurEvolveMonstrosityAbathurStack=小兵已被吸收
 Behavior/Name/ArchonTwilightArchon=暮光执政官
 Behavior/Name/ArtanisFinalCutBuff=斩断
 Behavior/Name/ArtanisFinalCutCarry=斩断
@@ -1308,7 +1307,6 @@ Behavior/Name/WizardTeleportWormholeFreeTeleport=传送虫洞免费传送
 Behavior/Name/ZagaraBileDropTokenCounter=Bile Drop Token Counter
 Behavior/Name/ZagaraRapidIncubationChannel=快速培育
 Behavior/Name/ZeratulBlinkWormholeTalentTimerBuff=虫洞
-Behavior/Tooltip/AbathurEvolveMonstrosityAbathurStack=生命值加成：<c val="#TooltipNumbers"><d ref="Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*$BehaviorStackCount:AbathurEvolveMonstrosityAbathurStack$*100"/>%</c><n/>攻击伤害加成：<c val="#TooltipNumbers"><d ref="Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*$BehaviorStackCount:AbathurEvolveMonstrosityAbathurStack$*100"/>%</c>
 Behavior/Tooltip/ArchonTwilightArchon=造成额外伤害。
 Behavior/Tooltip/ArtanisFinalCutBuff=下一次普通攻击造成<c val="#TooltipNumbers"><d ref="Behavior,ArtanisFinalCutBuff,Modification.DamageDealtFraction[Basic]*100" player="0"/>%</c>的额外伤害
 Behavior/Tooltip/ArtanisFinalCutCarry=斩断提供<c val="#TooltipNumbers"><d ref="Effect,ArtanisFinalCutModifyPlayer,EffectArray[0].Value*100" player="0"/>%</c>的伤害加成
@@ -1893,6 +1891,7 @@ Button/Name/AbathurLocustSwarm=蝗虫大军
 Button/Name/AbathurMonstrosityDeepTunnel=深槽虫道
 Button/Name/AbathurMonstrosityEvolutionCompleteTalent=进化完成
 Button/Name/AbathurReinforcedCarapaceTalent=强化甲壳
+Button/Name/AbathurSlapathur=
 Button/Name/AbathurSymbiote=共生体
 Button/Name/AbathurSymbioteAdrenalOverloadTalent=腺体过载
 Button/Name/AbathurSymbioteAdrenalineBoostTalent=肾上腺激素
@@ -3745,6 +3744,7 @@ Button/SimpleDisplayText/AbathurLocustSwarm=孵化一组蝗虫
 Button/SimpleDisplayText/AbathurMonstrosityDeepTunnel=通过虫道抵达目标区域。
 Button/SimpleDisplayText/AbathurMonstrosityEvolutionCompleteTalent=畸兽获得攻击伤害
 Button/SimpleDisplayText/AbathurReinforcedCarapaceTalent=提高甲壳硬化的护盾值
+Button/SimpleDisplayText/AbathurSlapathur=
 Button/SimpleDisplayText/AbathurSymbiote=协助盟友，获得新技能
 Button/SimpleDisplayText/AbathurSymbioteAdrenalOverloadTalent=共生体宿主的攻击速度提高
 Button/SimpleDisplayText/AbathurSymbioteAdrenalineBoostTalent=甲壳硬化提高移动速度
@@ -5330,6 +5330,7 @@ Button/Tooltip/AbathurLocustSwarm=激活后在附近孵化<c val="#TooltipNumber
 Button/Tooltip/AbathurMonstrosityDeepTunnel=命令你的进化的畸兽快速潜地前往一个可见位置。
 Button/Tooltip/AbathurMonstrosityEvolutionCompleteTalent=畸兽的普通攻击伤害提高<c val="#TooltipNumbers"><d ref="100*Effect,AbathurEvolveMonstrosityWeaponDamage,MultiplicativeModifierArray[EvolutionCompleteDamage].Modifier"/>%</c>。
 Button/Tooltip/AbathurReinforcedCarapaceTalent=甲壳硬化的护盾值提高<c val="#TooltipNumbers"><d ref="100*(Talent,AbathurReinforcedCarapace,AbilityModificationArray[0].Modifications[0].Value)-100"Precision="2"/>%</c>。
+Button/Tooltip/AbathurSlapathur=
 Button/Tooltip/AbathurSymbiote=孵化一只共生体，并附在目标盟友或建筑上。激活时，阿巴瑟控制共生体并获得新技能。共生体可以从附近敌人的死亡中获得经验值。
 Button/Tooltip/AbathurSymbioteAdrenalOverloadTalent=共生体宿主英雄的攻击速度提高<c val="#TooltipNumbers"><d ref="Behavior,AbathurAdrenalOverload,Modification.AdditiveAttackSpeedFactor*100" player="0" precision="2"/>%</c>。
 Button/Tooltip/AbathurSymbioteAdrenalineBoostTalent=共生体的甲壳硬化还能够使目标的移动速度提高<c val="#TooltipNumbers"><d ref="100*Behavior,AdrenalineBoost,Modification.UnifiedMoveSpeedFactor"/>%</c>，持续<c val="#TooltipNumbers"><d ref="Behavior,AdrenalineBoost,Duration" precision="1" player="0"/></c>秒。

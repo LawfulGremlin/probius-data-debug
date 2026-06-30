@@ -1136,7 +1136,6 @@ Banner/SortName/SpookyGhost18Var0=3Hollow2GhostVar0
 Banner/SortName/SpookyGhost18Var1=3Hollow2GhostVar1
 Banner/SortName/SpookyWitch18Var0=3Hollow3WitchVar0
 Banner/SortName/SpookyWitch18Var1=3Hollow3WitchVar1
-Behavior/Name/AbathurEvolveMonstrosityAbathurStack=Tropas Absorvidas
 Behavior/Name/ArchonTwilightArchon=Arconte do Crepúsculo
 Behavior/Name/ArtanisFinalCutBuff=Corte Final
 Behavior/Name/ArtanisFinalCutCarry=Corte Final
@@ -1308,7 +1307,6 @@ Behavior/Name/WizardTeleportWormholeFreeTeleport=Teleport Wormhole Free Teleport
 Behavior/Name/ZagaraBileDropTokenCounter=Contador de Tokens de Jorro de Bile
 Behavior/Name/ZagaraRapidIncubationChannel=Incubação Rápida
 Behavior/Name/ZeratulBlinkWormholeTalentTimerBuff=Buraco de Minhoca
-Behavior/Tooltip/AbathurEvolveMonstrosityAbathurStack=Bônus de Vida: <c val="#TooltipNumbers"><d ref="Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*$BehaviorStackCount:AbathurEvolveMonstrosityAbathurStack$*100"/>%</c><n/>Bônus de Dano de Ataque: <c val="#TooltipNumbers"><d ref="Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*$BehaviorStackCount:AbathurEvolveMonstrosityAbathurStack$*100"/>%</c>
 Behavior/Tooltip/ArchonTwilightArchon=Causando dano extra.
 Behavior/Tooltip/ArtanisFinalCutBuff=O próximo Ataque Básico causa <c val="#TooltipNumbers"><d ref="Behavior,ArtanisFinalCutBuff,Modification.DamageDealtFraction[Basic]*100" player="0"/>%</c> a mais de dano.
 Behavior/Tooltip/ArtanisFinalCutCarry=Corte Final concede <c val="#TooltipNumbers"><d ref="Effect,ArtanisFinalCutModifyPlayer,EffectArray[0].Value*100" player="0"/>%</c> a mais de dano.
@@ -1893,6 +1891,7 @@ Button/Name/AbathurLocustSwarm=Ninhada de Gafanhotos
 Button/Name/AbathurMonstrosityDeepTunnel=Túnel Profundo
 Button/Name/AbathurMonstrosityEvolutionCompleteTalent=Evolução Completa
 Button/Name/AbathurReinforcedCarapaceTalent=Carapaça Reforçada
+Button/Name/AbathurSlapathur=
 Button/Name/AbathurSymbiote=Simbionte
 Button/Name/AbathurSymbioteAdrenalOverloadTalent=Sobrecarga Adrenal
 Button/Name/AbathurSymbioteAdrenalineBoostTalent=Surto de Adrenalina
@@ -3745,6 +3744,7 @@ Button/SimpleDisplayText/AbathurLocustSwarm=Gera um grupo de Gafanhotos
 Button/SimpleDisplayText/AbathurMonstrosityDeepTunnel=Cava um túnel e se desloca.
 Button/SimpleDisplayText/AbathurMonstrosityEvolutionCompleteTalent=A Monstruosidade ganha Dano de Ataque
 Button/SimpleDisplayText/AbathurReinforcedCarapaceTalent=Aumenta o Escudo da Carapaça
+Button/SimpleDisplayText/AbathurSlapathur=
 Button/SimpleDisplayText/AbathurSymbiote=Você auxilia um aliado e ganha novas habilidades
 Button/SimpleDisplayText/AbathurSymbioteAdrenalOverloadTalent=O hospedeiro do Simbionte ganha Velocidade de Ataque
 Button/SimpleDisplayText/AbathurSymbioteAdrenalineBoostTalent=Carapaça aumenta a velocidade de movimento
@@ -5330,6 +5330,7 @@ Button/Tooltip/AbathurLocustSwarm=Ative para gerar <c val="#TooltipNumbers">3</c
 Button/Tooltip/AbathurMonstrosityDeepTunnel=Ordena que sua Monstruosidade Evoluída se desloque rapidamente por um túnel para um local visível
 Button/Tooltip/AbathurMonstrosityEvolutionCompleteTalent=Aumenta em <c val="#TooltipNumbers"><d ref="100*Effect,AbathurEvolveMonstrosityWeaponDamage,MultiplicativeModifierArray[EvolutionCompleteDamage].Modifier"/>%</c> o dano de Ataque Básico da Monstruosidade.
 Button/Tooltip/AbathurReinforcedCarapaceTalent=Aumenta o valor do Escudo da Carapaça em <c val="#TooltipNumbers"><d ref="100*(Talent,AbathurReinforcedCarapace,AbilityModificationArray[0].Modifications[0].Value)-100"Precision="2"/>%</c>.
+Button/Tooltip/AbathurSlapathur=
 Button/Tooltip/AbathurSymbiote=Cria e coloca um Simbionte em um alvo aliado ou em uma Estrutura. Enquanto ativo, Abathur controla o Simbionte, obtendo novas habilidades. O Simbionte recebe a EXP gerada pela morte de inimigos próximos.
 Button/Tooltip/AbathurSymbioteAdrenalOverloadTalent=Heróis hospedeiros do Simbionte ganham <c val="#TooltipNumbers"><d ref="Behavior,AbathurAdrenalOverload,Modification.AdditiveAttackSpeedFactor*100" player="0" precision="2"/>%</c> de velocidade de ataque.
 Button/Tooltip/AbathurSymbioteAdrenalineBoostTalent=A Carapaça do Simbionte aumenta a Velocidade de Movimento do alvo em <c val="#TooltipNumbers"><d ref="100*Behavior,AdrenalineBoost,Modification.UnifiedMoveSpeedFactor"/>%</c> por <c val="#TooltipNumbers"><d ref="Behavior,AdrenalineBoost,Duration" precision="1" player="0"/></c> segundos.

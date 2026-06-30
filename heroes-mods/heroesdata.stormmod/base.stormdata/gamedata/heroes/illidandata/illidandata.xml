@@ -703,7 +703,7 @@
     <BuffFlags index="UpdateDurationWhileDisabled" value="1" />
     <Duration value="3" />
     <Modification>
-      <DamageDealtFraction index="Basic" value="0.35" />
+      <AttackSpeedMultiplier value="1.35" />
     </Modification>
   </CBehaviorBuff>
   <CBehaviorBuff id="IllidanSweepingStrikesDamageBuffNoStackingBatteredAssault">
@@ -712,7 +712,7 @@
     <Aliases value="RangedDamageCrit" />
     <Duration value="5" />
     <Modification>
-      <DamageDealtFraction index="Basic" value="1.25" />
+      <DamageDealtFraction index="Basic" value="0.65" />
     </Modification>
   </CBehaviorBuff>
   <CBehaviorBuff id="IllidanHuntersOnslaughtLifeLeech">
@@ -1120,6 +1120,9 @@
       <WeaponDisableArray value="HeroIllidanMetamorphosis" />
     </Modification>
   </CBehaviorBuff>
+  <CButton id="IllidanBlindNotDeaf" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_illidan_evasion_a.dds" />
+  </CButton>
   <CButton id="IllidanSweepingStrikeBuffFace" parent="StormButtonParent">
     <Name value="Button/Name/IllidanSweepingStrike" />
   </CButton>
@@ -1997,6 +2000,11 @@
     <BehaviorLink value="IllidanMetamorphosisDoubleDummyHealth" />
     <Count value="10" />
   </CEffectRemoveBehavior>
+  <CEffectApplyBehavior id="IllidanEvasionApplyBlindNotDeaf">
+    <ValidatorArray index="0" value="HasIllidanBlindNotDeafEvasion" />
+    <WhichUnit Value="Caster" />
+    <Behavior value="25PercentCCReduction" />
+  </CEffectApplyBehavior>
   <CEffectApplyBehavior id="IllidanTheHuntApplyBehavior">
     <WhichUnit Value="Caster" />
     <Behavior value="IllidanTheHunt" />
@@ -2753,6 +2761,11 @@
       <BehaviorArray value="IllidanFieryBrandTargetTracker" />
     </RankArray>
   </CTalent>
+  <CTalent id="IllidanBlindNotDeafEvasion">
+    <Face value="IllidanBlindNotDeaf" />
+    <Abil value="IllidanEvasion" />
+    <RankArray />
+  </CTalent>
   <CTalent id="IllidanUnendingHatredPassive">
     <Face value="IllidanUnendingHatredTalent" />
     <RankArray>
@@ -3034,6 +3047,11 @@
     <HeroPlaystyleFlags index="Overconfident" value="1" />
     <HeroPlaystyleFlags index="RoleAutoAttacker" value="1" />
   </CUnit>
+  <CValidatorPlayerTalent id="HasIllidanBlindNotDeafEvasion">
+    <WhichPlayer Value="Caster" />
+    <Find value="1" />
+    <Value value="IllidanBlindNotDeafEvasion" />
+  </CValidatorPlayerTalent>
   <CValidatorUnitCompareBehaviorCount id="TargetDoesNotHaveBetrayersStrikeBehavior">
     <Behavior value="BetrayersStrike" />
   </CValidatorUnitCompareBehaviorCount>

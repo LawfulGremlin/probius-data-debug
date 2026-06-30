@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
+  <const id="$ChoConsumingBlazeHealAmount" value="40" />
   <const id="$GallOgreRageBonus" value="0.25" />
   <const id="$GallOgreRampageBonus" value="0.05" />
   <const id="$GallEyeOfKilroggRange" value="12" />
@@ -51,7 +52,7 @@
     <ParentAbil value="ChoSurgingFistCast" />
   </CAbilEffectTarget>
   <CAbilEffectInstant id="ChoConsumingBlaze">
-    <PrepEffect value="DismountDecloakCasterSet" />
+    <PrepEffect value="ChoConsumingBlazePrepSet" />
     <Effect value="ChoConsumingBlazeCastSet" />
     <Cost>
       <Cooldown TimeUse="12" />
@@ -317,10 +318,10 @@
     <Scale value="0.2" />
   </CAccumulatorToken>
   <CAccumulatorToken id="GallBombsAwayTalentDamageAccumulator" parent="BaseAccumulator">
-    <MaxAccumulation value="200" />
+    <MaxAccumulation value="10000" />
     <ApplicationRule value="Add" />
     <TokenId value="GallRunicBlastBombsAwayTalentTokenCounter" />
-    <Scale value="5" />
+    <Scale value="4" />
   </CAccumulatorToken>
   <CAccumulatorToken id="GallOgreRampageSpellPowerAccumulator" parent="BaseAccumulator">
     <MaxAccumulation value="0.1" />
@@ -333,7 +334,6 @@
     <ApplicationRule value="Add" />
     <TokenId value="GallTheWillofGallTokenCounter" />
     <Scale value="0.01" />
-    <UnitSource Value="Caster" />
   </CAccumulatorToken>
   <CAccumulatorToken id="GallShadowflameEdgeofMadnessTalentDamageAccumulator" parent="BaseTokenAccumulator">
     <MinAccumulation value="0" />
@@ -341,6 +341,18 @@
     <TokenId value="GallShadowflameEdgeofMadnessTalentTokenCounter" />
     <Scale value="0.12" />
     <UnitSource Value="Target" />
+  </CAccumulatorToken>
+  <CAccumulatorToken id="ChoConsumingBlazeHealAccumulator" parent="BaseAccumulator">
+    <MaxAccumulation value="30" />
+    <TokenId value="ChoConsumingBlazeNonHeroCounter" />
+    <Scale value="1" />
+    <Offset value="-1" />
+  </CAccumulatorToken>
+  <CAccumulatorToken id="ChoConsumingBlazeHeroHealAccumulator" parent="BaseAccumulator">
+    <MaxAccumulation value="15" />
+    <TokenId value="ChoConsumingBlazeHeroCounter" />
+    <Scale value="1" />
+    <Offset value="-1" />
   </CAccumulatorToken>
   <CActorRegion default="1" id="ChoSurgingFistGuideRegion" parent="StormGuideRegion">
     <On Terms="ActorCreation" Send="QueryPersistent ChoSurgingFistGuideRegionAdd StormGuideRegionRemove AgainstRadiusGame" />
@@ -736,7 +748,7 @@
     <On Terms="Effect.GallHurryUpOafApplySet.Start; At Target" Send="Create GallHurryUpOafChoGallOnlyAlert" />
     <On Terms="Signal.*.TwistingNetherOff" Target="GallTwistingNetherGlaze" Send="AnimBracketStop BSD" />
     <On Terms="Behavior.GallShoveMoveSpeedBuffKeepMoving.On" Send="AnimGroupApply Superior" />
-    <On Terms="Behavior.GallShoveMoveSpeedBuffKeepMoving.On" Send="SetWalkAnimMoveSpeed 5.95" />
+    <On Terms="Behavior.GallShoveMoveSpeedBuffKeepMoving.On" Send="SetWalkAnimMoveSpeed 5.9492" />
     <On Terms="Behavior.GallShoveMoveSpeedBuffKeepMoving.Off" Send="AnimGroupRemove Superior" />
     <On Terms="Behavior.GallShoveMoveSpeedBuffKeepMoving.Off" Send="SetWalkAnimMoveSpeed 4.7968" />
     <On Terms="Behavior.Mounted.On" Send="AnimGroupRemove Superior Instant" />
@@ -954,6 +966,8 @@
   </CActorSound>
   <CActorModel id="ChoConsumingBlazeHeal" parent="StormModelAnimationStyleOneShot">
     <On Terms="Effect.ChoConsumingBlazeCasterHeal.Start; At Caster" Send="Create" />
+    <On Terms="Effect.ChoConsumingBlazeCreateHealer.Start; At Caster" Send="Create" />
+    <On Terms="Effect.ChoConsumingBlazeCreateHealerHero.Start; At Caster" Send="Create" />
     <On Terms="ActorCreation" Send="SetTintColor {127,255,0 0.500000}" />
     <HostSiteOps Ops="SOpShadow" />
     <Inherits index="Visibility" value="1" />
@@ -1938,7 +1952,7 @@
   </CBehaviorAbility>
   <CBehaviorBuff id="ChoOgreHideCallousedHideTalentMoveSpeedCarry" parent="CarryBehaviorParent">
     <DisableValidatorArray value="ChoHasCallousedHideTalent" />
-    <DisableValidatorArray value="CasterLifeLT60Percent" />
+    <DisableValidatorArray value="CasterLifeLT40Percent" />
     <Modification>
       <HealTakenAdditiveMultiplier index="Life" value="0.15" />
       <UnifiedMoveSpeedFactor value="0.15" />
@@ -2069,7 +2083,7 @@
   </CBehaviorTokenCounter>
   <CBehaviorBuff id="GallDreadOrbDoubleBackTalentActive" />
   <CBehaviorBuff id="GallDreadOrbLeadenOrbTalentStun" parent="StormStun">
-    <Duration value="0.75" />
+    <Duration value="0.6" />
   </CBehaviorBuff>
   <CBehaviorBuff id="ChoSearedFleshSelfMarker">
     <Duration value="5" />
@@ -2144,7 +2158,6 @@
     <ConditionalEvents Compare="GE" CompareValue="20">
       <Event EventId="QuestIncrease" Effect="GallRunicBlastApplyBombsAwayTalentGallCarry" />
     </ConditionalEvents>
-    <Max value="40" />
   </CBehaviorTokenCounter>
   <CBehaviorTokenCounter id="GallShadowflameDoubleTroubleTalentTokenCounter" parent="StormQuestToken">
     <Face value="GallDoubleTroubleToken" />
@@ -2204,10 +2217,8 @@
   <CBehaviorBuff id="GallTwistingNetherShiftingNetherTalentCArry" parent="CarryBehaviorParent" />
   <CBehaviorTokenCounter id="GallWillofGallTokenCounter" parent="StormQuestToken">
     <Face value="GallTheWillofGallToken" />
-    <Alignment value="Positive" />
     <TokenId value="GallTheWillofGallTokenCounter" />
     <Max value="65000" />
-    <MinStackCountDisplayed value="0" />
     <SortIndex value="150" />
   </CBehaviorTokenCounter>
   <CBehaviorBuff id="GallShoveDisablerDummyBehavior">
@@ -2306,6 +2317,12 @@
     <PeriodicDisplayEffect value="ChoConsumingBlazeDamage" />
     <InitialEffect value="ChoConsumingBlazePeriodicSet" />
   </CBehaviorBuff>
+  <CBehaviorTokenCounter id="ChoConsumingBlazeNonHeroCounter" parent="StormGenericToken">
+    <Max value="30" />
+  </CBehaviorTokenCounter>
+  <CBehaviorTokenCounter id="ChoConsumingBlazeHeroCounter" parent="StormGenericToken">
+    <Max value="15" />
+  </CBehaviorTokenCounter>
   <CBehaviorBuff id="ChoSurgingFistInitialFakeCast">
     <BehaviorCategories index="Restorable" value="1" />
     <RemoveValidatorArray value="CasterNotDeadOrSilencedOrStasisOrStunned" />
@@ -2408,8 +2425,8 @@
     <Duration value="0.25" />
     <Period value="0.0625" />
     <Modification>
-      <MoveSpeedMaximum value="17.7" />
-      <MoveSpeedMinimum value="17.7" />
+      <MoveSpeedMaximum value="17.6992" />
+      <MoveSpeedMinimum value="17.6992" />
     </Modification>
     <InitialEffect value="ChoHammerOfTwilightKnockbackForce" />
     <PeriodicEffect value="ChoHammerOfTwilightKnockbackForce" />
@@ -2950,6 +2967,7 @@
   <CEffectModifyPlayer id="GallTwilightFrenzyDoubleTroubleTalentCompletionModifyPlayer" parent="GallShadowflameDoubleTroubleTalentCompletionModifyPlayer">
     <ValidatorArray value="GallHasDoubleTroubleTalent" />
     <ValidatorArray value="GallCastHasDoubleTroubleCompleted" />
+    <EffectArray index="0" Operation="Subtract" Reference="Abil,GallShadowflame,Cost.Cooldown.TimeUse" Value="1.000000" />
   </CEffectModifyPlayer>
   <CEffectSet id="ChoConsumingBlazeBasicAttackSet">
     <ValidatorArray value="CasterNotBlindedAndTargetNotEvading" />
@@ -2962,7 +2980,7 @@
     <ValidatorArray value="ChoHasFirestarterTalent" />
     <ValidatorArray value="TargetIsHero" />
     <ImpactUnit Value="Caster" />
-    <Cost Abil="ChoConsumingBlaze,Execute" CooldownOperation="Add" CooldownTimeUse="-1" />
+    <Cost Abil="ChoConsumingBlaze,Execute" CooldownOperation="Add" CooldownTimeUse="-1.5" />
   </CEffectModifyUnit>
   <CEffectDamage id="ChoFuelForTheFlameExplosionDamage" parent="StormSpell">
     <ValidatorArray value="CasterNotBlindedAndTargetNotEvading" />
@@ -3451,7 +3469,6 @@
   <CEffectAddTrackedUnit id="GallAddChoUnitToConjoinedTracker">
     <BehaviorLink value="ChoGallConjoinedUnitTracker" />
     <TrackerUnit Value="Target" />
-    <TrackedUnit Value="Caster" />
   </CEffectAddTrackedUnit>
   <CEffectModifyTokenCount id="ChoSurgingFistResetUppercutTalentTokenCount" parent="BaseEffectModifyTokenCount">
     <ValidatorArray value="ChoHasUppercutTalent" />
@@ -4012,8 +4029,15 @@
     <ImpactUnit Value="Caster" />
     <Cost Abil="ChoRuneBomb,Execute" CooldownOperation="Add" CooldownTimeUse="-1" />
   </CEffectModifyUnit>
+  <CEffectSet id="ChoConsumingBlazePrepSet">
+    <EffectArray value="DismountDecloakCasterSet" />
+    <EffectArray value="ChoConsumingBlazeResetNonHeroTokens" />
+    <EffectArray value="ChoConsumingBlazeResetHeroTokens" />
+  </CEffectSet>
   <CEffectSet id="ChoConsumingBlazeCastSet">
     <EffectArray value="ChoConsumingBlazeSearchArea" />
+    <EffectArray value="ChoConsumingBlazeCreateHealer" />
+    <EffectArray value="ChoConsumingBlazeCreateHealerHero" />
     <EffectArray value="ChoConsumingBlazeSetWeaponCooldown" />
   </CEffectSet>
   <CEffectSwitch id="ChoFuelForTheFlameSearchSwitch">
@@ -4054,7 +4078,7 @@
   </CEffectEnumArea>
   <CEffectSet id="ChoConsumingBlazeImpactSet">
     <EffectArray value="ChoConsumingBlazeApplyDoTBehavior" />
-    <EffectArray value="ChoConsumingBlazeCasterHeal" />
+    <EffectArray value="ChoConsumingBlazeImpactIncreaseTokenCountSwitch" />
     <EffectArray value="ChoEnragedRegenerationApplyHoT" />
     <EffectArray value="DismountTarget" />
     <EffectArray value="ApplyAbilityImpactReveal" />
@@ -4067,10 +4091,46 @@
     <WhichUnit Value="Source" />
     <Behavior value="ChoConsumingBlazeCasterHealer" />
   </CEffectApplyBehavior>
+  <CEffectSwitch id="ChoConsumingBlazeImpactIncreaseTokenCountSwitch">
+    <CaseArray Validator="TargetIsHero" Effect="ChoConsumingBlazeImpactIncreaseTokenCountHero" />
+    <CaseDefault value="ChoConsumingBlazeImpactIncreaseTokenCountNonHero" />
+  </CEffectSwitch>
+  <CEffectModifyTokenCount id="ChoConsumingBlazeImpactIncreaseTokenCountNonHero" parent="BaseEffectModifyTokenCount">
+    <TokenId value="ChoConsumingBlazeNonHeroCounter" />
+  </CEffectModifyTokenCount>
+  <CEffectModifyTokenCount id="ChoConsumingBlazeImpactIncreaseTokenCountHero" parent="BaseEffectModifyTokenCount">
+    <TokenId value="ChoConsumingBlazeHeroCounter" />
+  </CEffectModifyTokenCount>
+  <CEffectModifyTokenCount id="ChoConsumingBlazeResetNonHeroTokens" parent="BaseEffectModifyTokenCount">
+    <TokenId value="ChoConsumingBlazeNonHeroCounter" />
+    <Value value="0" />
+    <Operation value="Set" />
+  </CEffectModifyTokenCount>
+  <CEffectModifyTokenCount id="ChoConsumingBlazeResetHeroTokens" parent="BaseEffectModifyTokenCount">
+    <TokenId value="ChoConsumingBlazeHeroCounter" />
+    <Value value="0" />
+    <Operation value="Set" />
+  </CEffectModifyTokenCount>
   <CEffectCreateHealer id="ChoConsumingBlazeCasterHeal" parent="StormSelfOnlyHealingSpell">
     <ImpactUnit Value="Caster" />
-    <RechargeVitalRate value="40" />
-    <MultiplicativeModifierArray index="0" Validator="ChoTargetisHeroandCasterHasConsumingFireTalent" Modifier="1.5" />
+    <RechargeVitalRate value="$ChoConsumingBlazeHealAmount" />
+    <MultiplicativeModifierArray index="0" Validator="ChoTargetisHeroandCasterHasConsumingFireTalent" Modifier="1.5" Crit="1" />
+    <SourceButtonFace value="ChoConsumingBlaze" />
+  </CEffectCreateHealer>
+  <CEffectCreateHealer id="ChoConsumingBlazeCreateHealer" parent="StormSelfOnlyHealingSpell">
+    <ValidatorArray value="ChoConsumingBlazeCasterHasGE1NonHeroToken" />
+    <ImpactUnit Value="Caster" />
+    <RechargeVitalRate value="$ChoConsumingBlazeHealAmount">
+      <AccumulatorArray value="ChoConsumingBlazeHealAccumulator" />
+    </RechargeVitalRate>
+  </CEffectCreateHealer>
+  <CEffectCreateHealer id="ChoConsumingBlazeCreateHealerHero" parent="StormSelfOnlyHealingSpell">
+    <ValidatorArray value="ChoConsumingBlazeCasterHasGE1HeroToken" />
+    <ImpactUnit Value="Caster" />
+    <RechargeVitalRate value="$ChoConsumingBlazeHealAmount">
+      <AccumulatorArray value="ChoConsumingBlazeHeroHealAccumulator" />
+    </RechargeVitalRate>
+    <MultiplicativeModifierArray index="Hero" Validator="ChoHasConsumingFireTalent" Modifier="1.5" Crit="1" />
   </CEffectCreateHealer>
   <CEffectDamage id="ChoConsumingBlazeDamage" parent="StormSpellDot">
     <Amount value="15" />
@@ -4327,7 +4387,7 @@
   </CEffectSet>
   <CEffectCreatePersistent id="ChoSurgingFistKnockbackCreationPersistentLeft">
     <OffsetVectorStartLocation Effect="ChoSurgingFistCastSet" Value="OriginPoint" />
-    <OffsetVectorEndLocation Effect="ChoSurgingFistExecutionPersistent" Value="TargetPoint" />
+    <OffsetVectorEndLocation Effect="ChoSurgingFistExecutionPersistent" />
     <WhichLocation Effect="ChoSurgingFistKnockbackInitialSetLeft" Value="TargetUnit" />
     <InitialOffset X="-5" />
     <InitialEffect value="ChoSurgingFistLeftPushApply" />
@@ -4338,7 +4398,7 @@
   </CEffectApplyBehavior>
   <CEffectCreatePersistent id="ChoSurgingFistKnockbackCreationPersistentRight">
     <OffsetVectorStartLocation Effect="ChoSurgingFistCastSet" Value="OriginPoint" />
-    <OffsetVectorEndLocation Effect="ChoSurgingFistExecutionPersistent" Value="TargetPoint" />
+    <OffsetVectorEndLocation Effect="ChoSurgingFistExecutionPersistent" />
     <WhichLocation Effect="ChoSurgingFistKnockbackInitialSetRight" Value="TargetUnit" />
     <InitialOffset X="5" />
     <InitialEffect value="ChoSurgingFistRightPushApply" />
@@ -4648,8 +4708,9 @@
   </CEffectSet>
   <CEffectApplyForce id="ChoHammerOfTwilightKnockbackForce">
     <WhichLocation>
-      <Value value="OriginPoint" />
       <Effect value="ChoHammerOfTwilightInitialOffsetPersistent" />
+      <Value value="OriginPoint" />
+      <ProjectionAngle value="180" />
       <ProjectionMultiplier value="1" />
       <ProjectionSourceEffect value="ChoHammerOfTwilightInitialOffsetPersistent" />
       <ProjectionSourceValue value="OriginPoint" />
@@ -4657,7 +4718,6 @@
       <ProjectionTargetValue value="TargetPoint" />
       <UsesLineDash value="1" />
       <LineDashType value="AllowedInUnpathable" />
-      <ProjectionAngle value="180" />
       <ProjectionDistanceScale value="2" />
     </WhichLocation>
     <Amount value="9000" />
@@ -5634,6 +5694,22 @@
         <AffectedByAbilityPower value="1" />
         <AffectedByOverdrive value="1" />
       </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="ChoConsumingBlazeCreateHealer" />
+        <Field value="RechargeVitalRate" />
+        <Value value="0.040000" />
+        <AffectedByAbilityPower value="1" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="ChoConsumingBlazeCreateHealerHero" />
+        <Field value="RechargeVitalRate" />
+        <Value value="0.040000" />
+        <AffectedByAbilityPower value="1" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
     </LevelScalingArray>
     <LevelScalingArray Ability="ChoRuneBomb">
       <Modifications>
@@ -6077,6 +6153,22 @@
       <Modifications>
         <Catalog value="Effect" />
         <Entry value="ChoConsumingBlazeCasterHeal" />
+        <Field value="RechargeVitalRate" />
+        <Value value="0.040000" />
+        <AffectedByAbilityPower value="1" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="ChoConsumingBlazeCreateHealer" />
+        <Field value="RechargeVitalRate" />
+        <Value value="0.040000" />
+        <AffectedByAbilityPower value="1" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="ChoConsumingBlazeCreateHealerHero" />
         <Field value="RechargeVitalRate" />
         <Value value="0.040000" />
         <AffectedByAbilityPower value="1" />
@@ -7086,63 +7178,63 @@
         <Catalog value="Effect" />
         <Entry value="GallDreadOrbImpactSearch02" />
         <Field value="AreaArray[0].Radius" />
-        <Value value="0.400000" />
+        <Value value="0.320000" />
       </Modifications>
       <Modifications>
         <Type value="FlatModification" />
         <Catalog value="Effect" />
         <Entry value="GallDreadOrbImpactSearch03" />
         <Field value="AreaArray[0].Radius" />
-        <Value value="0.800000" />
+        <Value value="0.640000" />
       </Modifications>
       <Modifications>
         <Type value="FlatModification" />
         <Catalog value="Actor" />
         <Entry value="GallDreadOrbImpactWarningSplat02" />
         <Field value="Scale" />
-        <Value value="0.250000" />
+        <Value value="0.200000" />
       </Modifications>
       <Modifications>
         <Type value="FlatModification" />
         <Catalog value="Actor" />
         <Entry value="GallDreadOrbImpactWarningSplat03" />
         <Field value="Scale" />
-        <Value value="0.500000" />
+        <Value value="0.400000" />
       </Modifications>
       <Modifications>
         <Type value="FlatModification" />
         <Catalog value="Actor" />
         <Entry value="GallDreadOrbImpactWarningSplat02SuperbombTACW" />
         <Field value="Scale" />
-        <Value value="0.250000" />
+        <Value value="0.200000" />
       </Modifications>
       <Modifications>
         <Type value="FlatModification" />
         <Catalog value="Actor" />
         <Entry value="GallDreadOrbImpactWarningSplat02SuperbombTACCW" />
         <Field value="Scale" />
-        <Value value="0.250000" />
+        <Value value="0.200000" />
       </Modifications>
       <Modifications>
         <Type value="FlatModification" />
         <Catalog value="Actor" />
         <Entry value="GallDreadOrbImpactWarningSplat03DoubleBackTA" />
         <Field value="Scale" />
-        <Value value="0.500000" />
+        <Value value="0.400000" />
       </Modifications>
       <Modifications>
         <Type value="FlatModification" />
         <Catalog value="Actor" />
         <Entry value="GallDreadOrbBombImpactGround2" />
         <Field value="Scale" />
-        <Value value="0.100000" />
+        <Value value="0.080000" />
       </Modifications>
       <Modifications>
         <Type value="FlatModification" />
         <Catalog value="Actor" />
         <Entry value="GallDreadOrbBombImpactGround3" />
         <Field value="Scale" />
-        <Value value="0.200000" />
+        <Value value="0.160000" />
       </Modifications>
     </AbilityModificationArray>
   </CTalent>
@@ -7265,6 +7357,8 @@
     <BehaviorArray Link="ChoOgreRageVisualController" />
     <BehaviorArray Link="HeroGenericIsFat" />
     <BehaviorArray Link="ChoGallConjoinedUnitTracker" />
+    <BehaviorArray Link="ChoConsumingBlazeHeroCounter" />
+    <BehaviorArray Link="ChoConsumingBlazeNonHeroCounter" />
     <WeaponArray Link="ChoShortRangeHeroWeapon" />
     <WeaponArray Link="ChoHeroWeapon" />
     <WeaponArray Link="ChoLongRangeHeroWeaponCthunsGift" />
@@ -7953,6 +8047,18 @@
     <Behavior value="ChoConsumingBlazeCasterHealer" />
     <WhichUnit Value="Caster" />
   </CValidatorUnitCompareBehaviorCount>
+  <CValidatorUnitCompareTokenCount id="ChoConsumingBlazeCasterHasGE1NonHeroToken">
+    <WhichUnit Value="Caster" />
+    <Compare value="GE" />
+    <Value value="1" />
+    <TokenId value="ChoConsumingBlazeNonHeroCounter" />
+  </CValidatorUnitCompareTokenCount>
+  <CValidatorUnitCompareTokenCount id="ChoConsumingBlazeCasterHasGE1HeroToken">
+    <WhichUnit Value="Caster" />
+    <Compare value="GE" />
+    <Value value="1" />
+    <TokenId value="ChoConsumingBlazeHeroCounter" />
+  </CValidatorUnitCompareTokenCount>
   <CValidatorPlayerTalent id="GallTalentHasGiantScorcher">
     <WhichPlayer Value="Caster" />
     <Find value="1" />

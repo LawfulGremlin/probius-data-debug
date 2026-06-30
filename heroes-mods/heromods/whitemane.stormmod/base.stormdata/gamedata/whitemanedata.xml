@@ -51,7 +51,7 @@
     <PrepEffect value="DismountDecloakCasterSet" />
     <Effect value="WhitemaneIntercessionInitialSet" />
     <Cost>
-      <Cooldown TimeUse="45" />
+      <Cooldown TimeUse="60" />
     </Cost>
     <TargetFilters value="Heroic;Self,Player,Neutral,Enemy,Structure,ImmuneToFriendlyAbilities,Stasis,Summoned" />
     <Range value="7.5" />
@@ -129,9 +129,7 @@
     <Arc value="360" />
   </CAbilEffectTarget>
   <CAbilEffectTarget id="WhitemaneSearingLash">
-    <CmdButtonArray index="Execute" DefaultButtonFace="WhitemaneSearingLash">
-      <Flags index="AllowSelfCast" value="1" />
-    </CmdButtonArray>
+    <CmdButtonArray index="Execute" DefaultButtonFace="WhitemaneSearingLash" />
     <PrepEffect value="DismountDecloakCasterSet" />
     <Cost>
       <Cooldown TimeUse="6" />
@@ -894,7 +892,7 @@
     <On Terms="Effect.WhitemaneSearingLashLashingOutCooldownRefundSet.Start" Send="Create" />
     <Sound value="Whitemane_SearingLash_LashingOut_Impact" />
   </CActorSound>
-  <CActorModel id="WhitemaneSearingLashHarshDisciplineRoot" parent="StormModelRoot" effect="WhitemaneSearingLashHarshDisciplineApplyRootBehavior" behavior="WhitemaneSearingLashHarshDisciplineRoot">
+  <CActorModel id="WhitemaneSearingLashHarshDisciplineRoot" parent="StormModelRoot" behavior="WhitemaneSearingLashHarshDisciplineRoot" effect="WhitemaneSearingLashHarshDisciplineApplyRootBehavior">
     <HostSiteOps Ops="SOpBasicScopeFollow SOpShadow SOpRotationRandomDisc" HoldRotation="1" />
     <AutoScaleFactor value="1.000000" />
   </CActorModel>
@@ -1515,7 +1513,6 @@
   <CEffectModifyTokenCount id="WhitemaneInquisitorsPrayerAttackAddToken" parent="BaseEffectModifyTokenCount">
     <ValidatorArray value="TargetIsHero" />
     <ValidatorArray value="CasterNotBlindedAndTargetNotEvading" />
-    <ContextUnit Value="Caster" />
     <TokenId value="WhitemaneInquisitorsPrayerAttackTokenCounter" />
   </CEffectModifyTokenCount>
   <CEffectModifyTokenCount id="WhitemaneInquisitorsPrayerResetTokenAttack" parent="BaseEffectModifyTokenCount">
@@ -1524,17 +1521,15 @@
     <Value value="0" />
   </CEffectModifyTokenCount>
   <CEffectModifyTokenCount id="WhitemaneInquisitorsPrayerAttackAddQuestToken" parent="BaseEffectModifyTokenCount">
-    <ContextUnit Value="Caster" />
+    <ContextUnit Value="Source" />
     <TokenId value="WhitemaneInquisitorsPrayerQuestToken" />
   </CEffectModifyTokenCount>
   <CEffectModifyTokenCount id="WhitemaneInquisitorsPrayerAddTokenFirstStrike" parent="BaseEffectModifyTokenCount">
     <ValidatorArray value="TargetIsHero" />
-    <ContextUnit Value="Caster" />
     <TokenId value="WhitemaneInquisitorsPrayerQuestToken" />
   </CEffectModifyTokenCount>
   <CEffectModifyTokenCount id="WhitemaneInquisitorsPrayerAddTokenSecondStrike" parent="BaseEffectModifyTokenCount">
     <ValidatorArray value="TargetIsHero" />
-    <ContextUnit Value="Caster" />
     <TokenId value="WhitemaneInquisitorsPrayerQuestToken" />
     <Value value="2" />
   </CEffectModifyTokenCount>
@@ -1605,10 +1600,12 @@
   <CEffectSet id="WhitemaneSearingLashManaReturnFirstHitHeroImpactSet">
     <ValidatorArray value="TargetIsHero" />
     <EffectArray value="WhitemaneSearingLashFirstHitManaRestore" />
+    <Chance value="0" />
   </CEffectSet>
   <CEffectSet id="WhitemaneSearingLashManaReturnSecondHitHeroImpactSet">
     <ValidatorArray value="TargetIsHero" />
     <EffectArray value="WhitemaneSearingLashSecondHitManaRestore" />
+    <Chance value="0" />
   </CEffectSet>
   <CEffectModifyTokenCount id="WhitemaneDesperatePleaAddDesperationToken" parent="BaseEffectModifyTokenCount">
     <TokenId value="WhitemaneDesperatePleaDesperationTokenCounter" />
@@ -1718,7 +1715,7 @@
     <ValidatorArray value="TargetIsHero" />
     <Chance value="0" />
     <ImpactUnit Value="Caster" />
-    <Cost Abil="WhitemaneInquisition,Execute" CooldownOperation="Add" CooldownTimeUse="-1.5" />
+    <Cost Abil="WhitemaneInquisition,Execute" CooldownOperation="Add" CooldownTimeUse="-1" />
   </CEffectModifyUnit>
   <CEffectModifyUnit id="WhitemaneZealScarletWrathModifyCooldown">
     <ValidatorArray value="TargetIsHero" />
@@ -1996,9 +1993,7 @@
     <ImpactUnit Value="Caster" />
   </CEffectCreateHealer>
   <CEffectModifyCatalogNumeric id="WhitemaneDivineReckoningResetManaRestore">
-    <CatalogModifications Operation="Set" Reference="Effect,WhitemaneDivineReckoningRestoreMana,RechargeVitalRate">
-      <Value value="0" />
-    </CatalogModifications>
+    <CatalogModifications Operation="Set" Reference="Effect,WhitemaneDivineReckoningRestoreMana,RechargeVitalRate" />
   </CEffectModifyCatalogNumeric>
   <CEffectSet id="WhitemaneDivineReckoningInitialSet">
     <EffectArray value="WhitemaneDivineReckoningInitialPersistent" />
@@ -2036,6 +2031,7 @@
     <EffectArray value="WhitemaneSearingLashPityTheFrailModifyCooldown" />
     <EffectArray value="WhitemaneInquisitorsPrayerAddTokenFirstStrike" />
     <EffectArray value="ApplyAbilityImpactReveal" />
+    <EffectArray value="WhitemaneSearingLashManaReturnFirstHitHeroImpactSet" />
   </CEffectSet>
   <CEffectSet id="WhitemaneSearingLashStage2ImpactSet">
     <EffectArray value="WhitemaneSearingLashSecondStrikeDamage" />
@@ -2046,6 +2042,7 @@
     <EffectArray value="WhitemaneInquisitorsPrayerAddTokenSecondStrike" />
     <EffectArray value="WhitemaneSearingLashRighteousFlameApplyAttackSpeedBehavior" />
     <EffectArray value="ApplyAbilityImpactReveal" />
+    <EffectArray value="WhitemaneSearingLashManaReturnSecondHitHeroImpactSet" />
   </CEffectSet>
   <CEffectSet id="WhitemaneSearingLashInitialSet">
     <EffectArray value="WhitemaneSearingLashInitialDelay" />
@@ -2207,7 +2204,7 @@
   <CEffectCreateHealer id="WhitemaneZealScarletWrathRestoreMana" parent="StormManaRestore">
     <ValidatorArray value="TargetIsManaUser" />
     <ValidatorArray value="TargetIsHero" />
-    <RechargeVitalFraction value="0.005" />
+    <RechargeVitalFraction value="0.01" />
   </CEffectCreateHealer>
   <CEffectEnumTrackedUnits id="ZealScarletWrathEnumerateTrackedUnits">
     <Chance value="0" />
@@ -3464,12 +3461,29 @@
   <CTalent id="WhitemaneInquisitorsPrayer">
     <Face value="WhitemaneInquisitor'sPrayer" />
     <Abil value="WhitemaneSearingLash" />
-    <RankArray>
-      <BehaviorArray value="WhitemaneInquisitorsPrayerQuestToken" />
-      <BehaviorArray value="WhitemaneInquisitorsPrayerHealth" />
-      <BehaviorArray value="WhitemaneInquisitorsPrayerAttackTokenCounter" />
-    </RankArray>
-    <QuestData StackBehavior="WhitemaneInquisitorsPrayerQuestToken" />
+    <AbilityModificationArray>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Effect" />
+        <Entry value="WhitemaneSearingLashManaReturnFirstHitHeroImpactSet" />
+        <Field value="Chance" />
+        <Value value="1.000000" />
+      </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Effect" />
+        <Entry value="WhitemaneSearingLashManaReturnSecondHitHeroImpactSet" />
+        <Field value="Chance" />
+        <Value value="1.000000" />
+      </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="WhitemaneZealBuff" />
+        <Field value="Duration" />
+        <Value value="2.000000" />
+      </Modifications>
+    </AbilityModificationArray>
   </CTalent>
   <CTalent id="WhitemaneZealIndulgence">
     <Face value="WhitemaneZealIndulgence" />
@@ -3526,6 +3540,22 @@
       <BehaviorArray value="WhitemaneGuidingLightUnitTracker" />
     </RankArray>
     <Active value="1" />
+    <AbilityModificationArray>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="WhitemaneFanaticalBuff" />
+        <Field value="Modification.DamageDealtFraction[Ability]" />
+        <Value value="0.150000" />
+      </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="WhitemaneFanaticalBuff" />
+        <Field value="Modification.HealDealtAdditiveMultiplier[Life]" />
+        <Value value="0.150000" />
+      </Modifications>
+    </AbilityModificationArray>
   </CTalent>
   <CTalent id="WhitemaneInquisitionClemency">
     <Face value="WhitemaneInquisitionClemency" />
@@ -3750,6 +3780,9 @@
     <BehaviorArray Link="WhitemaneDesperatePleaDesperationTokenCounter" />
     <BehaviorArray Link="WhitemaneClemencyItem" />
     <BehaviorArray Link="WhitemaneZealTokenCounter" />
+    <BehaviorArray Link="WhitemaneInquisitorsPrayerQuestToken" />
+    <BehaviorArray Link="WhitemaneInquisitorsPrayerAttackTokenCounter" />
+    <BehaviorArray Link="WhitemaneInquisitorsPrayerHealth" />
     <WeaponArray Link="WhitemaneHeroWeapon" />
     <CardLayouts index="0">
       <LayoutButtons Face="WhitemaneScarletAegis" Type="AbilCmd" AbilCmd="WhitemaneScarletAegis,Execute" Slot="Heroic" />

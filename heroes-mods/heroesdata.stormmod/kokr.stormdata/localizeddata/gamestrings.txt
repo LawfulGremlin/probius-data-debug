@@ -1136,7 +1136,6 @@ Banner/SortName/SpookyGhost18Var0=3Hollow2GhostVar0
 Banner/SortName/SpookyGhost18Var1=3Hollow2GhostVar1
 Banner/SortName/SpookyWitch18Var0=3Hollow3WitchVar0
 Banner/SortName/SpookyWitch18Var1=3Hollow3WitchVar1
-Behavior/Name/AbathurEvolveMonstrosityAbathurStack=흡수한 돌격병
 Behavior/Name/ArchonTwilightArchon=황혼의 집정관
 Behavior/Name/ArtanisFinalCutBuff=최후의 베기
 Behavior/Name/ArtanisFinalCutCarry=최후의 베기
@@ -1308,7 +1307,6 @@ Behavior/Name/WizardTeleportWormholeFreeTeleport=Teleport Wormhole Free Teleport
 Behavior/Name/ZagaraBileDropTokenCounter=Bile Drop Token Counter
 Behavior/Name/ZagaraRapidIncubationChannel=급속 배양
 Behavior/Name/ZeratulBlinkWormholeTalentTimerBuff=웜홀
-Behavior/Tooltip/AbathurEvolveMonstrosityAbathurStack=추가 생명력: <c val="#TooltipNumbers"><d ref="Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*$BehaviorStackCount:AbathurEvolveMonstrosityAbathurStack$*100"/>%</c><n/>추가 일반 공격력: <c val="#TooltipNumbers"><d ref="Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*$BehaviorStackCount:AbathurEvolveMonstrosityAbathurStack$*100"/>%</c>
 Behavior/Tooltip/ArchonTwilightArchon=적에게 추가 피해
 Behavior/Tooltip/ArtanisFinalCutBuff=다음 일반 공격에 <c val="#TooltipNumbers"><d ref="Behavior,ArtanisFinalCutBuff,Modification.DamageDealtFraction[Basic]*100" player="0"/>%</c>의 추가 피해
 Behavior/Tooltip/ArtanisFinalCutCarry=최후의 베기의 공격력 <c val="#TooltipNumbers"><d ref="Effect,ArtanisFinalCutModifyPlayer,EffectArray[0].Value*100" player="0"/>%</c> 증가
@@ -1893,6 +1891,7 @@ Button/Name/AbathurLocustSwarm=식충 번식
 Button/Name/AbathurMonstrosityDeepTunnel=굴 파기
 Button/Name/AbathurMonstrosityEvolutionCompleteTalent=진화 완료
 Button/Name/AbathurReinforcedCarapaceTalent=갑피 보강
+Button/Name/AbathurSlapathur=
 Button/Name/AbathurSymbiote=공생체
 Button/Name/AbathurSymbioteAdrenalOverloadTalent=아드레날린 과부하
 Button/Name/AbathurSymbioteAdrenalineBoostTalent=아드레날린 증폭
@@ -3745,6 +3744,7 @@ Button/SimpleDisplayText/AbathurLocustSwarm=식충 떼 생성
 Button/SimpleDisplayText/AbathurMonstrosityDeepTunnel=대상 위치로 굴을 파서 이동
 Button/SimpleDisplayText/AbathurMonstrosityEvolutionCompleteTalent=흉물 공격력 증가
 Button/SimpleDisplayText/AbathurReinforcedCarapaceTalent=갑피 보호막 증가
+Button/SimpleDisplayText/AbathurSlapathur=
 Button/SimpleDisplayText/AbathurSymbiote=아군을 돕고 새 능력을 얻음
 Button/SimpleDisplayText/AbathurSymbioteAdrenalOverloadTalent=숙주 공격 속도 증가
 Button/SimpleDisplayText/AbathurSymbioteAdrenalineBoostTalent=갑피가 이동 속도를 증가시킴
@@ -5330,6 +5330,7 @@ Button/Tooltip/AbathurLocustSwarm=사용하면 주위 대상 지역에서 <c val
 Button/Tooltip/AbathurMonstrosityDeepTunnel=흉물이 대상 위치로 굴을 파도록 명령
 Button/Tooltip/AbathurMonstrosityEvolutionCompleteTalent=흉물의 일반 공격력이 <c val="#TooltipNumbers"><d ref="100*Effect,AbathurEvolveMonstrosityWeaponDamage,MultiplicativeModifierArray[EvolutionCompleteDamage].Modifier"/>%</c> 증가합니다. 
 Button/Tooltip/AbathurReinforcedCarapaceTalent=갑피의 보호막이 <c val="#TooltipNumbers"><d ref="100*(Talent,AbathurReinforcedCarapace,AbilityModificationArray[0].Modifications[0].Value)-100"Precision="2"/>%</c> 증가합니다.
+Button/Tooltip/AbathurSlapathur=
 Button/Tooltip/AbathurSymbiote=공생체를 소환하여 다른 아군 유닛이나 구조물을 지원합니다. 활성화된 동안 공생체를 조종하여 새로운 기술을 사용할 수 있습니다. 공생체는 주위 적들이 죽을 때 경험치를 획득할 수 있습니다.
 Button/Tooltip/AbathurSymbioteAdrenalOverloadTalent=숙주로 삼은 영웅의 공격 속도가 <c val="#TooltipNumbers"><d ref="Behavior,AbathurAdrenalOverload,Modification.AdditiveAttackSpeedFactor*100" player="0" precision="2"/>%</c> 증가합니다.
 Button/Tooltip/AbathurSymbioteAdrenalineBoostTalent=공생체의 갑피가 대상의 이동 속도를 <c val="#TooltipNumbers"><d ref="Behavior,AdrenalineBoost,Duration" precision="1" player="0"/></c>초 동안 <c val="#TooltipNumbers"><d ref="100*Behavior,AdrenalineBoost,Modification.UnifiedMoveSpeedFactor"/>%</c> 증가시킵니다.

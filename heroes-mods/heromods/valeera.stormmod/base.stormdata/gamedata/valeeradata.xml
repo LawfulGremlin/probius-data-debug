@@ -1312,6 +1312,7 @@
   </CButton>
   <CButton id="ValeeraCancelStealth" parent="StormButtonParent">
     <Icon value="Assets\Textures\hud_btn_bg_ability_cancel.dds" />
+    <SimpleDisplayText value="Button/Tooltip/ValeeraCancelStealth" />
     <TooltipAppender Validator="ValeeraHasSubtlety" Face="ValeeraSubtlety" />
     <TooltipAppender Validator="ValeeraHasInitiative" Face="ValeeraInitiative" />
     <TooltipAppender Validator="ValeeraHasElusiveness" Face="ValeeraElusiveness" />
@@ -2446,6 +2447,10 @@
     <Flags index="NoDamageTimerReset" value="1" />
   </CEffectDamage>
   <CHero id="Valeera">
+    <PortraitPaired value="Assets\Textures\ui_targetportrait_hero_valeera.dds" />
+    <PortraitPairedText value="Hero/PortraitPairedText/Valeera" />
+    <PairedHero value="ValeeraStealthed" />
+    <Flags index="IsBaseHeroOfPair" value="1" />
     <AttributeId value="VALE" />
     <Role value="Damage" />
     <RolesMultiClass value="Damage" />

@@ -1,7 +1,7 @@
 {
   "product": "herot",
   "region": "us",
-  "version": "2.55.16.96790",
+  "version": "2.55.17.97407",
   "extraction": {
     "manifestVersion": 1,
     "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
@@ -15,7 +15,7 @@
     },
     {
       "path": "core.stormmod/base.stormdata/buildid.txt",
-      "ckey": "8d8b56f6bb639142e93b0886eee17689",
+      "ckey": "a37ce44d7c697d4a86080f6b3648a548",
       "size": 7
     },
     {
@@ -25,12 +25,12 @@
     },
     {
       "path": "core.stormmod/base.stormdata/databuildid.txt",
-      "ckey": "8d8b56f6bb639142e93b0886eee17689",
+      "ckey": "a37ce44d7c697d4a86080f6b3648a548",
       "size": 7
     },
     {
       "path": "core.stormmod/base.stormdata/depotcache/source_build.txt",
-      "ckey": "0b912f38e1d7ee2da412ee24af25f0fd",
+      "ckey": "597dc54dd1bf4132d01408263c53bf38",
       "size": 6
     },
     {
@@ -1560,8 +1560,8 @@
     },
     {
       "path": "core.stormmod/base.stormdata/ui/fontstyles.stormstyle",
-      "ckey": "1d98797ee2ef1a126906d7f2d52d8744",
-      "size": 305623
+      "ckey": "7a9bee2d87fcfb56d88ee5cc2c745110",
+      "size": 305916
     },
     {
       "path": "core.stormmod/base.stormdata/ui/hotkeys/0_default.stormhotkeys",
@@ -21655,8 +21655,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/abildata.xml",
-      "ckey": "36f96ca43a65971864b8996d8646769c",
-      "size": 55005
+      "ckey": "f7c33faadc2a1c0b8f5eb8bd755257df",
+      "size": 55071
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/accumulatordata.xml",
@@ -21675,8 +21675,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/actordata.xml",
-      "ckey": "87c4906b7ed252cf0ccbd61e133ca551",
-      "size": 980781
+      "ckey": "a7cc12669c3298908adfecfb017a42dc",
+      "size": 980704
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/actorsupportdata.xml",
@@ -21840,8 +21840,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/behaviordata.xml",
-      "ckey": "904a84ce3014bfd1ea0b8593c55cebb1",
-      "size": 496155
+      "ckey": "681a94634cf1899d01180b9e2d32ff67",
+      "size": 496173
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/boostdata.xml",
@@ -21925,8 +21925,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/effectdata.xml",
-      "ckey": "7b3c99c4fdd85404349a4d80da363f7e",
-      "size": 331163
+      "ckey": "41c037d14cef61798bd2964aede7b965",
+      "size": 331162
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/emoticondata.xml",
@@ -22005,8 +22005,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/abathurdata/abathurdata.xml",
-      "ckey": "5973d7bdbd18bbbccfc7e8e5670f7e66",
-      "size": 296495
+      "ckey": "0e373e874f9dad566fd48f653e9fd9f0",
+      "size": 304778
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/abathurdata/abathurskindata/abathurbasedata/abathurbasedata.xml",
@@ -22135,8 +22135,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/anubarakdata/anubarakdata.xml",
-      "ckey": "ca8db149da5b3323504382e659200303",
-      "size": 230956
+      "ckey": "e13c155ba91e6a44e5bc1d18b397b552",
+      "size": 234200
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/anubarakdata/anubarakskindata/anubarakbasedata/anubarakbasedata.xml",
@@ -22385,8 +22385,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/arthasdata/arthasdata.xml",
-      "ckey": "10b88259c60dc410248804259261f86d",
-      "size": 190981
+      "ckey": "01fea75a679c34d751ddc589ab3b2262",
+      "size": 195699
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/arthasdata/arthasskindata/arthasbasedata/arthasbasedata.xml",
@@ -22540,8 +22540,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/azmodandata/azmodandata.xml",
-      "ckey": "acc401ce3fcb88f3846dfd29c0d0ca0b",
-      "size": 248496
+      "ckey": "8fdedb2211dbe90623cbc35f79cccd09",
+      "size": 248464
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/azmodandata/azmodanskindata/azmodanazguldandata/azmodanazguldanbasedata.xml",
@@ -23195,8 +23195,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/chendata/chendata.xml",
-      "ckey": "d2b87c539e03976b506dcc23d3c6fbcf",
-      "size": 269178
+      "ckey": "fb5bb175ad3fbf36e895dc9719aa59f5",
+      "size": 269187
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/chendata/chenskindata/chenbasedata/chenbasedata.xml",
@@ -23320,7 +23320,7 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/crusaderdata/crusaderdata.xml",
-      "ckey": "96b2be379766060892851cb36e445437",
+      "ckey": "1369fe64557f6f35ef9bb5d80de48ceb",
       "size": 203671
     },
     {
@@ -23710,7 +23710,7 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/diablodata/diablodata.xml",
-      "ckey": "d0c10187c005670ce0c965502769f3a0",
+      "ckey": "456ec91bcc278e6cd74d376e60fa7631",
       "size": 226894
     },
     {
@@ -24280,8 +24280,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/illidandata/illidandata.xml",
-      "ckey": "32e497ef81b9d4a263db3f672eb15c92",
-      "size": 181256
+      "ckey": "b01879a5c93be39948c524f629e4c7bd",
+      "size": 181999
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/illidandata/illidanskindata/illidanbasedata/illidanbasedata.xml",
@@ -24410,8 +24410,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/jainadata/jainadata.xml",
-      "ckey": "75935fd924ff7cb02c3d41af4ef8a218",
-      "size": 197101
+      "ckey": "c5dd24edc3cec9fd7319c18d6a33c5db",
+      "size": 226354
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/jainadata/jainaskindata/jainabasedata/jainabasedata.xml",
@@ -24725,8 +24725,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/kerrigandata/kerrigandata.xml",
-      "ckey": "173dd8e522ba6655bdeb5cf699da25a2",
-      "size": 193880
+      "ckey": "3cd49f9759d9f69fe740f7e8256c42f4",
+      "size": 198520
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/kerrigandata/kerriganskindata/kerriganbasedata/kerriganbasedata.xml",
@@ -25090,8 +25090,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/leoricdata/leoricdata.xml",
-      "ckey": "3cab8d157c42ee2acda2bb0ddd2f06fb",
-      "size": 260773
+      "ckey": "8bd5208810a2627d83af8ef4ede028a7",
+      "size": 260884
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/leoricdata/leoricskindata/leoricbasedata/leoricbasedata.xml",
@@ -25405,8 +25405,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/malfuriondata/malfuriondata.xml",
-      "ckey": "4caefec21a87139d3a3dd28cc0454f3b",
-      "size": 166021
+      "ckey": "bcbb3fd7d17ee8d4fb587bd92dd079f5",
+      "size": 169649
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/malfuriondata/malfurionskindata/malfurionbasedata/malfurionbasedata.xml",
@@ -25850,8 +25850,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/muradindata/muradindata.xml",
-      "ckey": "0038a4877463f01c5386d2bfe505e714",
-      "size": 163856
+      "ckey": "7c6710d27f99f7c117574fb2b2dfaf93",
+      "size": 163726
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/muradindata/muradinskindata/muradinbasedata/muradinbasedata.xml",
@@ -25990,8 +25990,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/murkydata/murkydata.xml",
-      "ckey": "1037830da90d8c2c8d47743edd5a9a93",
-      "size": 226961
+      "ckey": "2ffe714cad31141afb2c535cbcd86024",
+      "size": 226960
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/murkydata/murkyskindata/murkybasedata/murkybasedata.xml",
@@ -26135,8 +26135,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/necromancerdata/necromancerdata.xml",
-      "ckey": "7ed6aae32274a628b51b74cffc8b7191",
-      "size": 241492
+      "ckey": "49c1aa5abb3a040491e321059a6f570c",
+      "size": 247043
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/necromancerdata/necromancerskindata/necromancerbasedata/necromancerbasedata.xml",
@@ -26265,8 +26265,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/novadata/novadata.xml",
-      "ckey": "b6826b3c7ffca8851d7b73f2a0531453",
-      "size": 184982
+      "ckey": "1c24c7bdf953cf00397b46d02a21dbc0",
+      "size": 185225
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/novadata/novaskindata/novabasedata/novabasedata.xml",
@@ -26835,8 +26835,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/rexxardata/rexxardata.xml",
-      "ckey": "b061d408737c23a298b26d1036683cf4",
-      "size": 238751
+      "ckey": "c4ebf65a89d0e15396d20f224bcb57cd",
+      "size": 238927
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/rexxardata/rexxarskindata/rexxarbasedata/rexxarbasedata.xml",
@@ -26930,8 +26930,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/sgthammerdata/sgthammerdata.xml",
-      "ckey": "ded386253f27d9ea53e9d976fda4adc3",
-      "size": 191943
+      "ckey": "b3b3c75abeb62e21cdd74fb7e7fb434d",
+      "size": 192034
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/sgthammerdata/sgthammerskindata/sgthammerbasedata/sgthammerbasedata.xml",
@@ -27265,8 +27265,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/sylvanasdata/sylvanasdata.xml",
-      "ckey": "46fcd01c4617004170f695e4e646f030",
-      "size": 271961
+      "ckey": "1f821ee0b2456d472d76a78b1fe929ce",
+      "size": 272158
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/sylvanasdata/sylvanasskindata/sylvanasbasedata/sylvanasbasedata.xml",
@@ -27685,8 +27685,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/tinkerdata/tinkerdata.xml",
-      "ckey": "385e81ec57c6c826536e62aa3bcb20df",
-      "size": 266755
+      "ckey": "38709cd1d6f25bb16e4c81a0e6749737",
+      "size": 266756
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/tinkerdata/tinkerskindata/tinkerbagdata/tinkerbagbasedata.xml",
@@ -27820,8 +27820,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/tychusdata/tychusdata.xml",
-      "ckey": "4a11246577b041a363f8eee6dfa78c7f",
-      "size": 227903
+      "ckey": "631db65552b0e0cc7865e0f8b8d145ed",
+      "size": 228108
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/tychusdata/tychusskindata/tychusbasedata/tychusbasedata.xml",
@@ -28110,8 +28110,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/tyrandedata/tyrandedata.xml",
-      "ckey": "ba94ab3ec1a6d69478f58ae95073e3af",
-      "size": 145398
+      "ckey": "ac056b66906294b2c29d4f4d14b8b44e",
+      "size": 145741
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/tyrandedata/tyrandeskindata/tyrandebasedata/tyrandebasedata.xml",
@@ -28355,8 +28355,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/witchdoctordata/witchdoctordata.xml",
-      "ckey": "0f4a944bae646dbdf0ac32b108157ef3",
-      "size": 287743
+      "ckey": "8e7d5d6247f120140fb9f2a7175d993a",
+      "size": 292017
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/witchdoctordata/witchdoctorskindata/witchdoctorbasedata/witchdoctorbasedata.xml",
@@ -28760,8 +28760,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/zagaradata/zagaradata.xml",
-      "ckey": "b854adf5e7f4a0bf8b74bf50fb74207e",
-      "size": 248360
+      "ckey": "3169a7068f14d433d2bad2eed068258b",
+      "size": 249208
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/zagaradata/zagaraskindata/zagarabasedata/zagarabasedata.xml",
@@ -38220,8 +38220,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/validatordata.xml",
-      "ckey": "8bc66e5d5b224720d745abe4c93227e3",
-      "size": 329436
+      "ckey": "b79a0384bc9a25d0064126673d20adfd",
+      "size": 330385
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/vodefinitiondata.xml",
@@ -38280,13 +38280,13 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/triggerlibs/gamedatahelperlib_h.galaxy",
-      "ckey": "50a135afdb6e7d74448ad6c6f3bf0eff",
-      "size": 59723
+      "ckey": "36e4b3876e99900fe8e1d97f6b0f032e",
+      "size": 59618
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/triggerlibs/gamedatahelperlib.galaxy",
-      "ckey": "2bf7178ac7c9b30fd7e0398b59db2b19",
-      "size": 1392782
+      "ckey": "40e9a45d201f2666038004936093f60a",
+      "size": 1384888
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/triggerlibs/gamelib_h.galaxy",
@@ -38370,8 +38370,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/ui/layout/abathur.stormlayout",
-      "ckey": "fffd62361762060462d125b2f65f4c1e",
-      "size": 3062
+      "ckey": "51111ea14e28677dba2bbb5c11fc0ef3",
+      "size": 10499
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/ui/layout/anubarak.stormlayout",
@@ -38460,8 +38460,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/ui/layout/leoric.stormlayout",
-      "ckey": "4c4e195fd308f56c8fb0bda06841a840",
-      "size": 24782
+      "ckey": "14cd910f67e93a53bffe324ade8c07a4",
+      "size": 26942
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/ui/layout/lili.stormlayout",
@@ -38545,8 +38545,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/ui/layout/sylvanas.stormlayout",
-      "ckey": "3f0b517aa658bc80508f9e63b8afc453",
-      "size": 3341
+      "ckey": "7ac04445619dd35960428463eacf3fc7",
+      "size": 3768
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/ui/layout/tassadar.stormlayout",
@@ -38645,8 +38645,8 @@
     },
     {
       "path": "heroesdata.stormmod/dede.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "44375feb3476347910e62067c955546f",
-      "size": 2860385
+      "ckey": "6555f7b08ed77e757d4be36e74e0b2b7",
+      "size": 2859978
     },
     {
       "path": "heroesdata.stormmod/dede.stormdata/localizeddata/gender.txt",
@@ -38670,8 +38670,8 @@
     },
     {
       "path": "heroesdata.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "44c142c30b5c15984ff023da19827e74",
-      "size": 2619775
+      "ckey": "a8850eca72a6404f83d3395993fb72ea",
+      "size": 2620169
     },
     {
       "path": "heroesdata.stormmod/eses.stormdata/localizeddata/conversationstrings.txt",
@@ -38690,8 +38690,8 @@
     },
     {
       "path": "heroesdata.stormmod/eses.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "6f37029b540ba3e08c0a8e802e478288",
-      "size": 2830434
+      "ckey": "7398b575e32fced8807e7a01c77c05a6",
+      "size": 2830011
     },
     {
       "path": "heroesdata.stormmod/eses.stormdata/localizeddata/gender.txt",
@@ -38725,8 +38725,8 @@
     },
     {
       "path": "heroesdata.stormmod/esmx.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "8adea3963ee798a3ab21ce26afc8dee7",
-      "size": 2827128
+      "ckey": "57a7219d5a1e5393db3ea3bc307c7401",
+      "size": 2826707
     },
     {
       "path": "heroesdata.stormmod/esmx.stormdata/localizeddata/gender.txt",
@@ -38760,8 +38760,8 @@
     },
     {
       "path": "heroesdata.stormmod/frfr.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "5804791521bfa3f7900a176d9392fbb1",
-      "size": 2938731
+      "ckey": "0f0ea2aa07562564ca1838040625e3eb",
+      "size": 2938307
     },
     {
       "path": "heroesdata.stormmod/frfr.stormdata/localizeddata/gender.txt",
@@ -38805,8 +38805,8 @@
     },
     {
       "path": "heroesdata.stormmod/itit.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "1206e1cf97e0c96192db540f86318f1e",
-      "size": 2780740
+      "ckey": "6e3c79b1b79f78d65b260c39e800c729",
+      "size": 2780330
     },
     {
       "path": "heroesdata.stormmod/itit.stormdata/localizeddata/gender.txt",
@@ -38845,8 +38845,8 @@
     },
     {
       "path": "heroesdata.stormmod/kokr.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "2799f8e676cd4ab41e38322044ea53e2",
-      "size": 2867167
+      "ckey": "f42305dab9aa8693128b25f7263eedeb",
+      "size": 2866761
     },
     {
       "path": "heroesdata.stormmod/plpl.stormdata/cutscenes/home_cho.stormcutscene",
@@ -38885,8 +38885,8 @@
     },
     {
       "path": "heroesdata.stormmod/plpl.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "671d5b347468377d6d5126593c092f96",
-      "size": 2879239
+      "ckey": "5a08f5b72dd679133294a686b216a6af",
+      "size": 2878811
     },
     {
       "path": "heroesdata.stormmod/plpl.stormdata/localizeddata/gender.txt",
@@ -38925,8 +38925,8 @@
     },
     {
       "path": "heroesdata.stormmod/ptbr.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "aff03047132b2df7e5548058d87f8a42",
-      "size": 2760781
+      "ckey": "a78c8e11519d6026eed7b999cc7e47ef",
+      "size": 2760378
     },
     {
       "path": "heroesdata.stormmod/ptbr.stormdata/localizeddata/gender.txt",
@@ -38970,8 +38970,8 @@
     },
     {
       "path": "heroesdata.stormmod/ruru.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "b2a9a2b3f8f595283d8d897bd6e46a5f",
-      "size": 3609462
+      "ckey": "c76006feae185b809d5b630d89bd4010",
+      "size": 3608992
     },
     {
       "path": "heroesdata.stormmod/ruru.stormdata/localizeddata/gender.txt",
@@ -38995,8 +38995,8 @@
     },
     {
       "path": "heroesdata.stormmod/zhcn.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "edcdc2fc875388bfed4447ef1614c89f",
-      "size": 2617679
+      "ckey": "abe411d68afe138f1a9f71d130564ebf",
+      "size": 2617278
     },
     {
       "path": "heroesdata.stormmod/zhtw.stormdata/cutscenes/home_cho.stormcutscene",
@@ -39020,8 +39020,8 @@
     },
     {
       "path": "heroesdata.stormmod/zhtw.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "366f23dc262a10b6431a44e61e9d8415",
-      "size": 2687082
+      "ckey": "8b416220c706d551148b3ab40ea58296",
+      "size": 2686675
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/alteracpass.stormmod/base.stormdata/ai/avbosscore.aitree",
@@ -40120,8 +40120,8 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/braxisholdout.stormmod/base.stormdata/libscho.galaxy",
-      "ckey": "49102721763718e27a76a7dd48e49f0c",
-      "size": 262104
+      "ckey": "c680bc3e4c53599694b5ae63f34b42e1",
+      "size": 274160
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/braxisholdout.stormmod/base.stormdata/ui/layout/descindex.stormlayout",
@@ -40390,7 +40390,7 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/braxisholdout.stormmod/triggers.version",
-      "ckey": "e91b24bd786a26b7d9c9e3fc61af17ee",
+      "ckey": "ad0c57d56e902590af716ae2d4a0ef95",
       "size": 44
     },
     {
@@ -41230,7 +41230,7 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/gardenofterror_classic.stormmod/base.stormdata/libmdnc.galaxy",
-      "ckey": "c28b09b434feb75f9a026b930d0aa9de",
+      "ckey": "355dba1dee461ad3fdaaef3ddd47a69b",
       "size": 162736
     },
     {
@@ -41430,7 +41430,7 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/gardenofterror_classic.stormmod/triggers.version",
-      "ckey": "65f3fe45154c5244626601e92a893509",
+      "ckey": "45ff7bae474d586f39b420f7c8b578a1",
       "size": 44
     },
     {
@@ -43570,8 +43570,8 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/hauntedmines.stormmod/base.stormdata/libmhtm.galaxy",
-      "ckey": "f55d2c76ecfd9f287cd1a64e1abb27d3",
-      "size": 144494
+      "ckey": "1494ae508f7d0545e404b63256ff2a99",
+      "size": 144495
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/hauntedmines.stormmod/componentlist.stormcomponents",
@@ -43775,7 +43775,7 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/hauntedmines.stormmod/triggers.version",
-      "ckey": "f615e3eedc367daf5f83b8d4bf930f64",
+      "ckey": "a6fcfc26fafb07240d1cc8174e0e29b1",
       "size": 44
     },
     {
@@ -47240,8 +47240,8 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/volskayadata.stormmod/base.stormdata/gamedata/actordata.xml",
-      "ckey": "da78d516e96c2276926e692040832ad8",
-      "size": 138630
+      "ckey": "b642d8f1df1ae56a64d770fec3d1359f",
+      "size": 138650
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/volskayadata.stormmod/base.stormdata/gamedata/attachmethoddata.xml",
@@ -48320,13 +48320,13 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunction.stormmod/base.stormdata/libmsc2_h.galaxy",
-      "ckey": "9108802a4adda0d463d4e05f26a028cf",
-      "size": 10489
+      "ckey": "f83ea36140584d9d6ae8945e35c81112",
+      "size": 10531
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunction.stormmod/base.stormdata/libmsc2.galaxy",
-      "ckey": "49d66d33c2e733728d5c401299e69ceb",
-      "size": 148659
+      "ckey": "9a9c54e54c37ecf3175eca00edd94a38",
+      "size": 149683
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunction.stormmod/base.stormdata/ui/layout/descindex.stormlayout",
@@ -48605,7 +48605,7 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunction.stormmod/triggers.version",
-      "ckey": "3dfc35553b95eec519410ba924791593",
+      "ckey": "3380ceed3801ec65debcfe07fbb66704",
       "size": 44
     },
     {
@@ -48650,8 +48650,8 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunctiondata.stormmod/base.stormdata/gamedata/actordata.xml",
-      "ckey": "0ffd2c2e94c2e770dc3a995ef0b85298",
-      "size": 103239
+      "ckey": "1fdd933411e06015240c48d7c629ba32",
+      "size": 103437
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunctiondata.stormmod/base.stormdata/gamedata/assets.txt",
@@ -48660,8 +48660,8 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunctiondata.stormmod/base.stormdata/gamedata/behaviordata.xml",
-      "ckey": "195a50ba335529b440e2cc8448872360",
-      "size": 75605
+      "ckey": "4d0817c22177da80afb99eb0b35cec31",
+      "size": 75620
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunctiondata.stormmod/base.stormdata/gamedata/buttondata.xml",
@@ -48685,8 +48685,8 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunctiondata.stormmod/base.stormdata/gamedata/effectdata.xml",
-      "ckey": "fe82ff58d3ed9a903d80f304d7a68ff5",
-      "size": 50391
+      "ckey": "32eedfdcd4ac0f84a90739ce8868174a",
+      "size": 50333
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunctiondata.stormmod/base.stormdata/gamedata/goaldata.xml",
@@ -48775,8 +48775,8 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunctiondata.stormmod/base.stormdata/gamedata/validatordata.xml",
-      "ckey": "e53137b88921d4dfc2ba102faa2470b3",
-      "size": 7568
+      "ckey": "26773da0e04f64095b44a81710c4b3e2",
+      "size": 7754
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/warheadjunctiondata.stormmod/base.stormdata/gamedata/voiceoverdata.xml",
@@ -49675,8 +49675,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/base.stormdata/gamedata/alexstraszadata.xml",
-      "ckey": "143357a020f0b6cea3ee786153667d78",
-      "size": 313012
+      "ckey": "7f5b4ff17538ab7494b91dfc1b683776",
+      "size": 320195
     },
     {
       "path": "heromods/alexstrasza.stormmod/base.stormdata/gamedata/alexstraszaskindata/alexstraszabasedata/alexstraszabasedata.xml",
@@ -49855,8 +49855,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/dede.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "2f531fbfd5d5e9d2367a01d6f2f36aae",
-      "size": 35224
+      "ckey": "7219b0550b7c074b568e3d6cf90bc32f",
+      "size": 35336
     },
     {
       "path": "heromods/alexstrasza.stormmod/dede.stormdata/localizeddata/gender.txt",
@@ -49880,8 +49880,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "91db3f3392863321ce098c1df9d13920",
-      "size": 30655
+      "ckey": "a55f9b925b132687c1095bdc5cc56464",
+      "size": 32361
     },
     {
       "path": "heromods/alexstrasza.stormmod/eses.stormdata/localizeddata/conversationstrings.txt",
@@ -49895,8 +49895,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/eses.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "4d2c330c5b34ab35adf780a582156c54",
-      "size": 32019
+      "ckey": "9bfff49b65632fc25e8261c98b16c578",
+      "size": 32131
     },
     {
       "path": "heromods/alexstrasza.stormmod/eses.stormdata/localizeddata/gender.txt",
@@ -49920,8 +49920,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/esmx.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "67abb855725719da52d208ee3d21a800",
-      "size": 32683
+      "ckey": "4f413b19eb12c5262c468e0c931917b6",
+      "size": 32795
     },
     {
       "path": "heromods/alexstrasza.stormmod/esmx.stormdata/localizeddata/gender.txt",
@@ -49945,8 +49945,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/frfr.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "b987f548792f121a9875b18127fb0174",
-      "size": 34166
+      "ckey": "7da66e69badafe2a4bc5fce1e6faf56b",
+      "size": 34278
     },
     {
       "path": "heromods/alexstrasza.stormmod/frfr.stormdata/localizeddata/gender.txt",
@@ -49980,8 +49980,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/itit.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "3f158dcf2afc7d3897b7166df2f9c8b9",
-      "size": 32212
+      "ckey": "58da57848acf59520faa61748707770c",
+      "size": 32324
     },
     {
       "path": "heromods/alexstrasza.stormmod/itit.stormdata/localizeddata/gender.txt",
@@ -50000,8 +50000,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/kokr.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "b5e08e35a91b62ea2d9fc9746ed0ccfc",
-      "size": 32666
+      "ckey": "6d98a1226b456c4057495788691941d9",
+      "size": 32778
     },
     {
       "path": "heromods/alexstrasza.stormmod/objects.version",
@@ -50020,8 +50020,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/plpl.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "e5e439a402d9ebc8f077802dd55a461e",
-      "size": 33035
+      "ckey": "245eede3a1c38092565c53f3cb980946",
+      "size": 33147
     },
     {
       "path": "heromods/alexstrasza.stormmod/plpl.stormdata/localizeddata/gender.txt",
@@ -50045,8 +50045,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/ptbr.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "bc15473e431f9c04f57d4428ef3fdfc2",
-      "size": 31829
+      "ckey": "5b0ea92fba35638580e716559e58b111",
+      "size": 31941
     },
     {
       "path": "heromods/alexstrasza.stormmod/ptbr.stormdata/localizeddata/gender.txt",
@@ -50070,8 +50070,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/ruru.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "13abefbef9cc31c665d39043d917096e",
-      "size": 41147
+      "ckey": "40ce06bd247d517ca5ec3b2d2caa9281",
+      "size": 41259
     },
     {
       "path": "heromods/alexstrasza.stormmod/ruru.stormdata/localizeddata/gender.txt",
@@ -50095,8 +50095,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/zhcn.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "ab2f34a850065cc678c9779390825cbd",
-      "size": 30699
+      "ckey": "e48aa6a4c77caecc02594a76adda79e2",
+      "size": 30811
     },
     {
       "path": "heromods/alexstrasza.stormmod/zhtw.stormdata/localizeddata/conversationstrings.txt",
@@ -50105,8 +50105,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/zhtw.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "c5da6afe953d2c4116daec12e60b854d",
-      "size": 30794
+      "ckey": "1829a2db277f122c19a2e352d5729ec0",
+      "size": 30906
     },
     {
       "path": "heromods/amazon.stormmod/base.stormdata/cutscenes/draft_amazon.stormcutscene",
@@ -50665,8 +50665,8 @@
     },
     {
       "path": "heromods/ana.stormmod/base.stormdata/gamedata/anadata.xml",
-      "ckey": "513eaede7b67c55d178f7e29e188e9ab",
-      "size": 297893
+      "ckey": "3e61999612c701c002eed06a7926adf5",
+      "size": 299581
     },
     {
       "path": "heromods/ana.stormmod/base.stormdata/gamedata/anaskindata/anaarmy18data/anaarmy18basedata.xml",
@@ -50915,7 +50915,7 @@
     },
     {
       "path": "heromods/ana.stormmod/gamedata.version",
-      "ckey": "13233f367ed4baa83fc49e2675666222",
+      "ckey": "21157b77786b6b26e94c1c94d82e0fb0",
       "size": 44
     },
     {
@@ -52335,8 +52335,8 @@
     },
     {
       "path": "heromods/chogall.stormmod/base.stormdata/gamedata/chogalldata.xml",
-      "ckey": "504a36b4a41d40f66e2fc45a07fb1890",
-      "size": 423128
+      "ckey": "b2814388118717816e9c7b5be757a94c",
+      "size": 428508
     },
     {
       "path": "heromods/chogall.stormmod/base.stormdata/gamedata/chomountdata/chorun_horsearmorbasedata.xml",
@@ -53035,8 +53035,8 @@
     },
     {
       "path": "heromods/chogall.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "4e4369d58cb3ff38c53b8fb60f36ea09",
-      "size": 61160
+      "ckey": "009d851891c38fe93707443a0b8dcb76",
+      "size": 61017
     },
     {
       "path": "heromods/chogall.stormmod/eses.stormdata/localizeddata/conversationstrings.txt",
@@ -53115,7 +53115,7 @@
     },
     {
       "path": "heromods/chogall.stormmod/gamedata.version",
-      "ckey": "02ef4c16f7eea2092a960859939fcb10",
+      "ckey": "57043c7f02d55f6b9a280159eee88b68",
       "size": 44
     },
     {
@@ -53240,7 +53240,7 @@
     },
     {
       "path": "heromods/chogall.stormmod/triggers.version",
-      "ckey": "7934528bf9115b934507825644a7465d",
+      "ckey": "2ab7d943d701c6746ce9b7cdebf8f315",
       "size": 44
     },
     {
@@ -53335,8 +53335,8 @@
     },
     {
       "path": "heromods/chromie.stormmod/base.stormdata/gamedata/chromiedata.xml",
-      "ckey": "e5afe0962a122de37d2b5f513032fac7",
-      "size": 288902
+      "ckey": "8c4f3d02fa331bd220333d5095a42017",
+      "size": 295391
     },
     {
       "path": "heromods/chromie.stormmod/base.stormdata/gamedata/chromieskindata/chromiebasedata/chromiebasedata.xml",
@@ -53540,8 +53540,8 @@
     },
     {
       "path": "heromods/chromie.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "c003061fb010ba17f7aa2198eebf5acc",
-      "size": 37453
+      "ckey": "ac851bc441f013bb1ca20f796f62bc66",
+      "size": 37340
     },
     {
       "path": "heromods/chromie.stormmod/eses.stormdata/cutscenes/storechromie.stormcutscene",
@@ -53625,7 +53625,7 @@
     },
     {
       "path": "heromods/chromie.stormmod/gamedata.version",
-      "ckey": "52aca8660f4795eb66c805da1c9ba722",
+      "ckey": "e2b004c3a9087ac076f33c9c06a1ddea",
       "size": 44
     },
     {
@@ -53830,8 +53830,8 @@
     },
     {
       "path": "heromods/deathwing.stormmod/base.stormdata/gamedata/deathwingdata.xml",
-      "ckey": "bf01ec849dc3362889829e0113971895",
-      "size": 364106
+      "ckey": "5551139aa187d46e60afc11917571c86",
+      "size": 364152
     },
     {
       "path": "heromods/deathwing.stormmod/base.stormdata/gamedata/deathwingskindata/deathwingbasedata/deathwingbasedata.xml",
@@ -54320,8 +54320,8 @@
     },
     {
       "path": "heromods/deckard.stormmod/base.stormdata/gamedata/deckarddata.xml",
-      "ckey": "c4b40ebd7d60a5f4c20a1781ab807ba7",
-      "size": 229601
+      "ckey": "53be78d3e14b2fe8e8c452265a42a3ca",
+      "size": 229652
     },
     {
       "path": "heromods/deckard.stormmod/base.stormdata/gamedata/deckardskindata/deckardarmy19data/deckardarmy19basedata.xml",
@@ -56305,8 +56305,8 @@
     },
     {
       "path": "heromods/firebat.stormmod/base.stormdata/gamedata/firebatdata.xml",
-      "ckey": "4f4f324ec3ea0b1a9870b7039309764f",
-      "size": 291420
+      "ckey": "a26d9d66d754c1f510c4474af32777c6",
+      "size": 291423
     },
     {
       "path": "heromods/firebat.stormmod/base.stormdata/gamedata/firebatskindata/firebatarmy19data/firebatarmy19basedata.xml",
@@ -57310,8 +57310,8 @@
     },
     {
       "path": "heromods/genji.stormmod/base.stormdata/gamedata/genjidata.xml",
-      "ckey": "05be683c4fa4d2011ca904e2e7cdb62b",
-      "size": 261150
+      "ckey": "270536d120a4a92cccde1ef0f3783e69",
+      "size": 261127
     },
     {
       "path": "heromods/genji.stormmod/base.stormdata/gamedata/genjiskindata/genjiarmy18data/genjiarmy18basedata.xml",
@@ -58910,8 +58910,8 @@
     },
     {
       "path": "heromods/hogger.stormmod/base.stormdata/gamedata/hoggerdata.xml",
-      "ckey": "af1a4653b3fb0f62916664d6995abbd4",
-      "size": 283421
+      "ckey": "721aa392b201cc354ec96aa52aad7db5",
+      "size": 283429
     },
     {
       "path": "heromods/hogger.stormmod/base.stormdata/gamedata/hoggerskindata/hoggerbasedata/hoggerbasedata.xml",
@@ -61750,8 +61750,8 @@
     },
     {
       "path": "heromods/malganis.stormmod/base.stormdata/gamedata/malganisdata.xml",
-      "ckey": "5bb8d86b39b6c55d25abc40de1dd6564",
-      "size": 218851
+      "ckey": "aa38e510de22de8b8c0877c30fea644a",
+      "size": 218846
     },
     {
       "path": "heromods/malganis.stormmod/base.stormdata/gamedata/malganisskindata/malganisbasedata/malganisbasedata.xml",
@@ -61895,7 +61895,7 @@
     },
     {
       "path": "heromods/malganis.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "d1d848d2d7592a80a5cbb4cc2bf24aac",
+      "ckey": "19f62e3ef53127cb33b8aa90959dcd1c",
       "size": 24620
     },
     {
@@ -61975,7 +61975,7 @@
     },
     {
       "path": "heromods/malganis.stormmod/gamedata.version",
-      "ckey": "8fdce5176618d3e4ddd3054a3d8b07ad",
+      "ckey": "d5db3ae54f0896cd622464a16479d1bc",
       "size": 44
     },
     {
@@ -62700,8 +62700,8 @@
     },
     {
       "path": "heromods/medivh.stormmod/base.stormdata/gamedata/medivhdata.xml",
-      "ckey": "3e1b87b96961fab87d22297b77f30ca0",
-      "size": 257628
+      "ckey": "e64c513938081c6f1853a96f0a710c54",
+      "size": 257674
     },
     {
       "path": "heromods/medivh.stormmod/base.stormdata/gamedata/medivhskindata/medivhbasedata/medivhbasedata.xml",
@@ -63160,8 +63160,8 @@
     },
     {
       "path": "heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml",
-      "ckey": "37a842d6816de3911cdaeda9aecf7541",
-      "size": 216232
+      "ckey": "1e3e9b980021af1267d3dcbff57464d1",
+      "size": 216258
     },
     {
       "path": "heromods/meiow.stormmod/base.stormdata/gamedata/meiowskindata/meiowbasedata/meiowbasedata.xml",
@@ -64095,8 +64095,8 @@
     },
     {
       "path": "heromods/nexushunter.stormmod/base.stormdata/gamedata/nexushunterdata.xml",
-      "ckey": "dbeaffc97c0ed568dd1619f639522b64",
-      "size": 256580
+      "ckey": "28b81c4fe382ecf4ce0d81e161365c54",
+      "size": 271531
     },
     {
       "path": "heromods/nexushunter.stormmod/base.stormdata/gamedata/nexushunterskindata/nexushunterbasedata/nexushunterbasedata.xml",
@@ -64265,8 +64265,8 @@
     },
     {
       "path": "heromods/nexushunter.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "632d7f8572f2e579e8aac18b48a2d5e2",
-      "size": 25082
+      "ckey": "015df7d5e7397a8c3e2aabab93d8c4ae",
+      "size": 25204
     },
     {
       "path": "heromods/nexushunter.stormmod/eses.stormdata/localizeddata/conversationstrings.txt",
@@ -64345,7 +64345,7 @@
     },
     {
       "path": "heromods/nexushunter.stormmod/gamedata.version",
-      "ckey": "031108d9e5f6de37da13d4351fca0306",
+      "ckey": "a94ded0cb0a2b30c7b548c03f5ba27a0",
       "size": 44
     },
     {
@@ -65040,8 +65040,8 @@
     },
     {
       "path": "heromods/probius.stormmod/base.stormdata/gamedata/probiusdata.xml",
-      "ckey": "20361cf818f2708d19fcf354078fe49a",
-      "size": 278918
+      "ckey": "54ac1b41817ba3ea845da8f017f071bc",
+      "size": 281527
     },
     {
       "path": "heromods/probius.stormmod/base.stormdata/gamedata/probiusskindata/probiusbasedata/probiusbasedata.xml",
@@ -65195,8 +65195,8 @@
     },
     {
       "path": "heromods/probius.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "555cc4f2e2e3b01817960186ec48f23d",
-      "size": 24938
+      "ckey": "72e2b74147c3fea604dd5b339cbba21a",
+      "size": 24924
     },
     {
       "path": "heromods/probius.stormmod/eses.stormdata/localizeddata/conversationstrings.txt",
@@ -66300,7 +66300,7 @@
     },
     {
       "path": "heromods/stukov.stormmod/gamedata.version",
-      "ckey": "826dbc6ba6e0a32dd8725e4ca9c58ab8",
+      "ckey": "140cc8f36f7bef572902c3df05838d6d",
       "size": 44
     },
     {
@@ -66589,6 +66589,11 @@
       "size": 384
     },
     {
+      "path": "heromods/thefirelords.stormmod/base.stormdata/gamedata/effectdata.xml",
+      "ckey": "fa45b1da8107cd1d8aa1ea7ede856798",
+      "size": 366
+    },
+    {
       "path": "heromods/thefirelords.stormmod/base.stormdata/gamedata/gamedata.xml",
       "ckey": "6e369a39ca777e963458a94b779a0e0d",
       "size": 137
@@ -66675,8 +66680,8 @@
     },
     {
       "path": "heromods/thefirelords.stormmod/base.stormdata/gamedata/thefirelordsdata.xml",
-      "ckey": "db6f094d1eb79d05f4acef2f1a304947",
-      "size": 252530
+      "ckey": "246bac923fb6f36d530569959b2a8e09",
+      "size": 268036
     },
     {
       "path": "heromods/thefirelords.stormmod/base.stormdata/gamedata/voiceoverdata.xml",
@@ -66685,13 +66690,13 @@
     },
     {
       "path": "heromods/thefirelords.stormmod/base.stormdata/libhmaj_h.galaxy",
-      "ckey": "7e8577d5de5f33ded22fbbcd7c3f5c94",
-      "size": 2494
+      "ckey": "632ec0a747c3ad83cae2669627cef534",
+      "size": 2657
     },
     {
       "path": "heromods/thefirelords.stormmod/base.stormdata/libhmaj.galaxy",
-      "ckey": "24e96aaae710955e4a353732cbb75029",
-      "size": 43721
+      "ckey": "ccb1641f19876a4d7591023f99b333ed",
+      "size": 45958
     },
     {
       "path": "heromods/thefirelords.stormmod/base.stormdata/ui/fontstyles.stormstyle",
@@ -66760,8 +66765,8 @@
     },
     {
       "path": "heromods/thefirelords.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "c9c3ceafd90771564fa5000b1f17acf2",
-      "size": 31786
+      "ckey": "8e0d703edecf418827f0e42f9f3b245a",
+      "size": 31729
     },
     {
       "path": "heromods/thefirelords.stormmod/eses.stormdata/localizeddata/conversationstrings.txt",
@@ -66850,7 +66855,7 @@
     },
     {
       "path": "heromods/thefirelords.stormmod/gamedata.version",
-      "ckey": "f15cbafed115a2fdd163615c859d83b4",
+      "ckey": "e0b5c83d13807993286814c6322c3941",
       "size": 44
     },
     {
@@ -67000,7 +67005,7 @@
     },
     {
       "path": "heromods/thefirelords.stormmod/triggers.version",
-      "ckey": "24e9465b6280a872651867921c0f167f",
+      "ckey": "8ad602323d0f4aed85468f9b1e283dc4",
       "size": 44
     },
     {
@@ -67620,13 +67625,13 @@
     },
     {
       "path": "heromods/valeera.stormmod/base.stormdata/cutscenes/storevaleera.stormcutscene",
-      "ckey": "201b626059ea93c094e6a00f66ba34e5",
-      "size": 10125
+      "ckey": "d7a83186520980e42042dcce71f74462",
+      "size": 15814
     },
     {
       "path": "heromods/valeera.stormmod/base.stormdata/cutscenes/storevaleeratoys18.stormcutscene",
-      "ckey": "bc5bd73e4dd80ba29db89ae3e0fd3316",
-      "size": 10010
+      "ckey": "cd62428f4b4287c21312ab0d46f3d629",
+      "size": 15713
     },
     {
       "path": "heromods/valeera.stormmod/base.stormdata/gamedata.xml",
@@ -67655,8 +67660,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/base.stormdata/gamedata/valeeradata.xml",
-      "ckey": "a1e09f0998209a3ca687763d07179949",
-      "size": 184505
+      "ckey": "8679fe520bd18946784ecb5943889d91",
+      "size": 184822
     },
     {
       "path": "heromods/valeera.stormmod/base.stormdata/gamedata/valeeraskindata/valeerabasedata/valeerabasedata.xml",
@@ -67800,8 +67805,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/base.stormdata/gamedata/valeerasounddata/valeerabasesounddata.xml",
-      "ckey": "f0ab266a50ef453b333e0bbe48dc5936",
-      "size": 26573
+      "ckey": "7922ae6360420103fd2bfa8e81a0bff0",
+      "size": 26885
     },
     {
       "path": "heromods/valeera.stormmod/base.stormdata/gamedata/valeerasounddata/valeerabasevodata.xml",
@@ -67860,8 +67865,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/dede.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "e77032e3a0631d29432f592692457bbf",
-      "size": 32244
+      "ckey": "e5b3fca937316d171fba0710837cefdb",
+      "size": 32288
     },
     {
       "path": "heromods/valeera.stormmod/dede.stormdata/localizeddata/gender.txt",
@@ -67885,8 +67890,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "8af8a5b9c484e4f8139637aeb2e5c1cb",
-      "size": 28328
+      "ckey": "33ea5c96f0de8d1500b4124ec68a865d",
+      "size": 28372
     },
     {
       "path": "heromods/valeera.stormmod/eses.stormdata/localizeddata/conversationstrings.txt",
@@ -67900,8 +67905,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/eses.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "41ca2f7281e0c1fc43ac4a2df0047441",
-      "size": 30299
+      "ckey": "e42f49e07464847420cc0987c220cca2",
+      "size": 30343
     },
     {
       "path": "heromods/valeera.stormmod/eses.stormdata/localizeddata/gender.txt",
@@ -67925,8 +67930,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/esmx.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "84f91d3ee6d08889a1f47fa5a37846e6",
-      "size": 30400
+      "ckey": "9e794494b23aabf4b709aa31d256b889",
+      "size": 30444
     },
     {
       "path": "heromods/valeera.stormmod/esmx.stormdata/localizeddata/gender.txt",
@@ -67950,8 +67955,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/frfr.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "dd50bc249221ed8657c09b3c390920a5",
-      "size": 32587
+      "ckey": "a848f1aaa9c68b6d8899802ab7e66909",
+      "size": 32631
     },
     {
       "path": "heromods/valeera.stormmod/frfr.stormdata/localizeddata/gender.txt",
@@ -67985,8 +67990,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/itit.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "1d25a9a7fafdcd95f12bc3308b6e8c42",
-      "size": 29742
+      "ckey": "a628a53e9107af266ea5c54a14beb29c",
+      "size": 29786
     },
     {
       "path": "heromods/valeera.stormmod/itit.stormdata/localizeddata/gender.txt",
@@ -68005,8 +68010,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/kokr.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "1c8907047984e601291c44e3132294a6",
-      "size": 30762
+      "ckey": "858ea3d6f88ca2e7b1a98a601bc9799e",
+      "size": 30808
     },
     {
       "path": "heromods/valeera.stormmod/objects.version",
@@ -68025,8 +68030,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/plpl.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "e7cc5b369ef7591f9fdd3e988ebb59df",
-      "size": 31551
+      "ckey": "dbed6745f15bc3c8d86182008f5b6e7f",
+      "size": 31595
     },
     {
       "path": "heromods/valeera.stormmod/plpl.stormdata/localizeddata/gender.txt",
@@ -68050,8 +68055,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/ptbr.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "1bdb55d408fc26f1358d307b333ce478",
-      "size": 29472
+      "ckey": "32a253300be8175bed25ba70aeba0605",
+      "size": 29515
     },
     {
       "path": "heromods/valeera.stormmod/ptbr.stormdata/localizeddata/gender.txt",
@@ -68075,8 +68080,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/ruru.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "ab8b05acc34e4d4dd51cc3e4de930656",
-      "size": 40158
+      "ckey": "676134ee1faab00d1578d99a3e3c2b94",
+      "size": 40207
     },
     {
       "path": "heromods/valeera.stormmod/ruru.stormdata/localizeddata/gender.txt",
@@ -68100,8 +68105,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/zhcn.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "791ec7fe46cadc76c9b7bc14af5d7f8b",
-      "size": 28009
+      "ckey": "848b6e300048ff765bb3532b63ab4752",
+      "size": 28055
     },
     {
       "path": "heromods/valeera.stormmod/zhtw.stormdata/localizeddata/conversationstrings.txt",
@@ -68110,8 +68115,8 @@
     },
     {
       "path": "heromods/valeera.stormmod/zhtw.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "8c009419953d2815e3b113bc5094ac73",
-      "size": 28689
+      "ckey": "7c964359bfa57a54d59b657dad82feff",
+      "size": 28735
     },
     {
       "path": "heromods/varian.stormmod/base.stormdata/cutscenes/draft_varian.stormcutscene",
@@ -68755,8 +68760,8 @@
     },
     {
       "path": "heromods/whitemane.stormmod/base.stormdata/gamedata/whitemanedata.xml",
-      "ckey": "5f3afec362b2b0ac34fca3e971c4c608",
-      "size": 238779
+      "ckey": "649f7c2d014eea4d8bbc55a3a1b90be6",
+      "size": 240140
     },
     {
       "path": "heromods/whitemane.stormmod/base.stormdata/gamedata/whitemaneskindata/whitemanebasedata/whitemanebasedata.xml",
@@ -68915,8 +68920,8 @@
     },
     {
       "path": "heromods/whitemane.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "c1b0fb3bb82da39d62b357ff0075cb24",
-      "size": 25793
+      "ckey": "c1e3362cfc7a2de2e7903faf7c905ee6",
+      "size": 26044
     },
     {
       "path": "heromods/whitemane.stormmod/eses.stormdata/localizeddata/conversationstrings.txt",
@@ -68995,7 +69000,7 @@
     },
     {
       "path": "heromods/whitemane.stormmod/gamedata.version",
-      "ckey": "0e0b67b446a8fcf9f5e247018a865891",
+      "ckey": "00fab1fbcd16a28c02bfb727150d10d0",
       "size": 44
     },
     {
@@ -69225,8 +69230,8 @@
     },
     {
       "path": "heromods/yrel.stormmod/base.stormdata/gamedata/yreldata.xml",
-      "ckey": "8fb1418746bc7fbaed188c19e1f214e7",
-      "size": 228477
+      "ckey": "b1e92d3fd4e2ddfc0f54c2e557d996b5",
+      "size": 229131
     },
     {
       "path": "heromods/yrel.stormmod/base.stormdata/gamedata/yrelskindata/yrelbasedata/yrelbasedata.xml",
@@ -69370,8 +69375,8 @@
     },
     {
       "path": "heromods/yrel.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "64e4b85a6b47f6edf4bb88bc47eaa7ca",
-      "size": 19601
+      "ckey": "20ae30759f61248a68bca8a04e1c253d",
+      "size": 21390
     },
     {
       "path": "heromods/yrel.stormmod/eses.stormdata/localizeddata/conversationstrings.txt",
@@ -69450,8 +69455,8 @@
     },
     {
       "path": "heromods/yrel.stormmod/gamedata.version",
-      "ckey": "0a5b11071314c688d261be5f694318f1",
-      "size": 46
+      "ckey": "0d8d97df709da64e843d32c07139e685",
+      "size": 44
     },
     {
       "path": "heromods/yrel.stormmod/gametext.version",
