@@ -68,7 +68,7 @@
         "hotkey": "E",
         "abilityId": "Johanna|E1",
         "tooltipId": "CrusaderShieldGlare",
-        "cooldown": 12,
+        "cooldown": 13,
         "manaCost": 55,
         "icon": "storm_ui_icon_johanna_shield_glare.png",
         "type": "basic"
@@ -92,7 +92,7 @@
         "hotkey": "R",
         "abilityId": "Johanna|R2",
         "tooltipId": "CrusaderBlessedShield",
-        "cooldown": 60,
+        "cooldown": 65,
         "manaCost": 90,
         "icon": "storm_ui_icon_johanna_blessed_shield.png",
         "type": "heroic"
@@ -275,7 +275,7 @@
         "icon": "storm_ui_icon_johanna_blessed_shield.png",
         "type": "Heroic",
         "sort": 2,
-        "cooldown": 60,
+        "cooldown": 65,
         "abilityId": "Johanna|R2",
         "abilityLinks": [
           "Johanna|R2"

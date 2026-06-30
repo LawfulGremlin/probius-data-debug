@@ -46,7 +46,7 @@
       {
         "uid": "6e4a2c",
         "name": "Molten Flame",
-        "description": "After 1.5 seconds, Deathwing breathes a stream of flame, dealing 19 (+4% per level) damage every 0.125 seconds. Drains 30 Energy per second.",
+        "description": "After 1.5 seconds, Deathwing breathes a stream of flame, dealing 20 (+4% per level) damage every 0.125 seconds. Drains 30 Energy per second.",
         "hotkey": "Q",
         "abilityId": "Deathwing|Q1",
         "tooltipId": "DeathwingMoltenFlame",
@@ -499,7 +499,7 @@
         "tooltipId": "DeathwingDestroyersRampage",
         "talentTreeId": "DeathwingDestroyersRampage",
         "name": "Destroyer's Rampage",
-        "description": "For the next 6 seconds after landing in Destroyer form, Deathwing's damage is increased by 40% and his Basic Ability cooldowns recharge 50% faster.  Damaging Heroes refreshes this effect.",
+        "description": "For the next 4 seconds after landing in Destroyer form, Deathwing's damage is increased by 40% and his Basic Ability cooldowns recharge 50% faster.  Damaging Heroes refreshes this effect.",
         "icon": "storm_ui_icon_deathwing_destroyer.png",
         "type": "Trait",
         "sort": 3,

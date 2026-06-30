@@ -17,6 +17,7 @@
     "life": {
       "amount": 1350.0,
       "scale": 0.04,
+      "type": "Health",
       "regenRate": 0.0,
       "regenScale": 0.0
     },
@@ -71,9 +72,9 @@
       "Summoned"
     ],
     "life": {
-      "amount": 350.0,
+      "amount": 225.0,
       "scale": 0.0,
-      "regenRate": 0.0,
+      "regenRate": -13.235294117647058,
       "regenScale": 0.0
     }
   },
@@ -91,10 +92,10 @@
       "targetInfo": "storm_ui_ingame_targetinfopanel_unit_abathur_locust.png"
     },
     "life": {
-      "amount": 350.0,
+      "amount": 225.0,
       "scale": 0.04,
-      "regenRate": 0.0,
-      "regenScale": 0.0
+      "regenRate": -13.235294117647058,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -120,10 +121,10 @@
       "targetInfo": "storm_ui_ingame_targetinfopanel_unit_abathur_locust.png"
     },
     "life": {
-      "amount": 350.0,
+      "amount": 225.0,
       "scale": 0.04,
-      "regenRate": 0.0,
-      "regenScale": 0.0
+      "regenRate": -6.617647058823529,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -175,7 +176,7 @@
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "cooldownTooltip": "Cooldown: 15 seconds",
           "shortTooltip": "Spawn locusts that attack down the nearest lane",
-          "fullTooltip": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350~~0.04~~</c> health and deal <c val=\"bfd4fd\">58~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
+          "fullTooltip": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds.  Locusts heal for <c val=\"bfd4fd\">20%</c> of the damage they deal, and regain <c val=\"bfd4fd\">20%</c> of their Maximum health when a nearby minion dies.<n/><n/>Locusts lose health over <c val=\"bfd4fd\">17</c> seconds, have <c val=\"bfd4fd\">225~~0.04~~</c> health and deal <c val=\"bfd4fd\">58~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
           "abilityType": "Q",
           "isActive": false
         }
@@ -211,7 +212,7 @@
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "cooldownTooltip": "Cooldown: 15 seconds",
           "shortTooltip": "Spawn locusts that attack down the nearest lane",
-          "fullTooltip": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350~~0.04~~</c> health and deal <c val=\"bfd4fd\">58~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
+          "fullTooltip": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds.  Locusts heal for <c val=\"bfd4fd\">20%</c> of the damage they deal, and regain <c val=\"bfd4fd\">20%</c> of their Maximum health when a nearby minion dies.<n/><n/>Locusts lose health over <c val=\"bfd4fd\">17</c> seconds, have <c val=\"bfd4fd\">225~~0.04~~</c> health and deal <c val=\"bfd4fd\">58~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
           "abilityType": "Q",
           "isActive": false
         }
@@ -232,10 +233,10 @@
       "targetInfo": "storm_ui_ingame_targetinfopanel_unit_abathur_locust.png"
     },
     "life": {
-      "amount": 350.0,
+      "amount": 225.0,
       "scale": 0.04,
-      "regenRate": 0.0,
-      "regenScale": 0.0
+      "regenRate": -13.235294117647058,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -1313,8 +1314,8 @@
   "AzmodanDemonicInvasionDemonGrunt": {
     "name": "Demon Grunt",
     "hyperlinkId": "AzmodanDemonicInvasionDemonGrunt",
-    "innerRadius": 0.6875,
-    "radius": 0.6875,
+    "innerRadius": 0.5,
+    "radius": 0.5,
     "sight": 7.0,
     "speed": 4.875,
     "damageType": "Summon",
@@ -1327,15 +1328,15 @@
     "life": {
       "amount": 750.0,
       "scale": 0.04,
-      "regenRate": -75.0,
+      "regenRate": -37.5,
       "regenScale": 0.04
     },
     "weapons": [
       {
         "nameId": "AzmodanDemonGruntWeapon",
-        "range": 1.0,
+        "range": 0.8,
         "period": 1.0,
-        "damage": 39.0,
+        "damage": 30.0,
         "damageScale": 0.04
       }
     ]
@@ -1407,7 +1408,7 @@
     "weapons": [
       {
         "nameId": "AzmodanDemonWarriorWeapon",
-        "range": 1.0,
+        "range": 2.0,
         "period": 1.0,
         "damage": 53.0,
         "damageScale": 0.04
@@ -3841,7 +3842,7 @@
       "minimap": "storm_ui_minimapicon_chromie_time_trap.png"
     },
     "life": {
-      "amount": 400.0,
+      "amount": 250.0,
       "scale": 0.04,
       "regenRate": 0.0,
       "regenScale": 0.0
@@ -4167,7 +4168,7 @@
           "energyTooltip": "<s val=\"bfd4fd\" name=\"StandardTooltipDetails\">Mana: 10</s>",
           "cooldownTooltip": "Cooldown: 3 seconds",
           "shortTooltip": "Melt enemies with a stream of molten flame",
-          "fullTooltip": "After <c val=\"bfd4fd\">1.5</c> seconds, Deathwing breathes a stream of flame, dealing <c val=\"bfd4fd\">19~~0.04~~</c> damage every <c val=\"bfd4fd\">0.125</c> seconds. Drains <c val=\"bfd4fd\">30</c> Energy per second. ",
+          "fullTooltip": "After <c val=\"bfd4fd\">1.5</c> seconds, Deathwing breathes a stream of flame, dealing <c val=\"bfd4fd\">20~~0.04~~</c> damage every <c val=\"bfd4fd\">0.125</c> seconds. Drains <c val=\"bfd4fd\">30</c> Energy per second. ",
           "abilityType": "Q"
         },
         {
@@ -4462,7 +4463,7 @@
               "name": "Cancel",
               "icon": "hud_btn_bg_ability_cancel.png",
               "toggleCooldown": 0.75,
-              "fullTooltip": "After <c val=\"bfd4fd\">1.5</c> seconds, Deathwing breathes a stream of flame, dealing <c val=\"bfd4fd\">19~~0.04~~</c> damage every <c val=\"bfd4fd\">0.125</c> seconds. Drains <c val=\"bfd4fd\">30</c> Energy per second. ",
+              "fullTooltip": "After <c val=\"bfd4fd\">1.5</c> seconds, Deathwing breathes a stream of flame, dealing <c val=\"bfd4fd\">20~~0.04~~</c> damage every <c val=\"bfd4fd\">0.125</c> seconds. Drains <c val=\"bfd4fd\">30</c> Energy per second. ",
               "abilityType": "Q"
             }
           ]
@@ -8872,7 +8873,7 @@
         "nameId": "GazloweXplodiumChargeArkReaktorRockItTurretWeapon",
         "range": 6.0,
         "period": 1.0,
-        "damage": 36.0,
+        "damage": 43.0,
         "damageScale": 0.04
       }
     ],
@@ -14758,7 +14759,7 @@
         "nameId": "RockItTurret",
         "range": 6.0,
         "period": 1.0,
-        "damage": 36.0,
+        "damage": 43.0,
         "damageScale": 0.04
       }
     ],
@@ -15509,7 +15510,7 @@
       "minimap": "storm_ui_minimapicon_town_glow.png"
     },
     "life": {
-      "amount": 3996.0,
+      "amount": 5000.0,
       "scale": 0.04,
       "regenRate": -222.0,
       "regenScale": 0.04
@@ -15521,9 +15522,9 @@
           "buttonId": "RagnarosBigRagMoltenSwing",
           "name": "Molten Swing",
           "icon": "storm_ui_icon_ragnaros_moltenswing.png",
-          "cooldownTooltip": "Cooldown: 6 seconds",
+          "cooldownTooltip": "Cooldown: 9 seconds",
           "shortTooltip": "Stun and damage nearby enemies",
-          "fullTooltip": "Swing Sulfuras in a wide arc, dealing <c val=\"bfd4fd\">161~~0.04~~</c> damage and Stunning enemies for <c val=\"bfd4fd\">1</c> second.<n/><n/>Damage increased by <c val=\"bfd4fd\">25%</c> versus Minions, Mercenaries, and Monsters.",
+          "fullTooltip": "Swing Sulfuras in a wide arc, dealing <c val=\"bfd4fd\">250~~0.04~~</c> damage and Stunning enemies for <c val=\"bfd4fd\">1</c> second.",
           "abilityType": "Q"
         },
         {
@@ -15531,9 +15532,9 @@
           "buttonId": "RagnarosBigRagMeteorShower",
           "name": "Meteor Shower",
           "icon": "storm_ui_icon_ragnaros_meteorshower.png",
-          "cooldownTooltip": "Cooldown: 2.5 seconds",
+          "cooldownTooltip": "Cooldown: 6 seconds",
           "shortTooltip": "Summon a line of meteors",
-          "fullTooltip": "<c val=\"bfd4fd\">Vector Targeting</c><n/>Summon <c val=\"bfd4fd\">3</c> meteors at the target point that fall in the target direction. Each meteor deals <c val=\"bfd4fd\">151~~0.04~~</c> damage and Slows enemies by <c val=\"bfd4fd\">25%</c> for <c val=\"bfd4fd\">2</c> seconds.<n/><n/>Damage increased by <c val=\"bfd4fd\">25%</c> versus Minions, Mercenaries, and Monsters.",
+          "fullTooltip": "<c val=\"bfd4fd\">Vector Targeting</c><n/>Summon <c val=\"bfd4fd\">3</c> meteors at the target point that fall in the target direction. Each meteor deals <c val=\"bfd4fd\">200~~0.04~~</c> damage and Slows enemies by <c val=\"bfd4fd\">35%</c> for <c val=\"bfd4fd\">2</c> seconds.",
           "abilityType": "W"
         },
         {
@@ -15541,9 +15542,9 @@
           "buttonId": "RagnarosBigRagExplosiveRune",
           "name": "Explosive Rune",
           "icon": "storm_ui_icon_ragnaros_explosiverune.png",
-          "cooldownTooltip": "Cooldown: 4 seconds",
+          "cooldownTooltip": "Cooldown: 2.5 seconds",
           "shortTooltip": "Cause a delayed explosion in a large area",
-          "fullTooltip": "Create a rune that deals <c val=\"bfd4fd\">285~~0.04~~</c> damage to non-Structure enemies after <c val=\"bfd4fd\">1.5</c> seconds.<n/><n/>Damage increased by <c val=\"bfd4fd\">25%</c> versus Minions, Mercenaries, and Monsters.",
+          "fullTooltip": "Create a rune that erupts after <c val=\"bfd4fd\">1.5</c> and sets enemies on fire, dealing <c val=\"bfd4fd\">22~~0.04~~</c> damage per second for <c val=\"bfd4fd\">5</c> seconds.",
           "abilityType": "E"
         }
       ],
@@ -15596,9 +15597,16 @@
               "buttonId": "RagnarosSulfurasSmash",
               "name": "Sulfuras Smash",
               "icon": "storm_ui_icon_ragnaros_sulfurassmash.png",
+              "charges": {
+                "countMax": 1,
+                "countUse": 1,
+                "countStart": 1,
+                "hideCount": true,
+                "recastCooldown": 1.0
+              },
               "cooldownTooltip": "Cooldown: 60 seconds",
               "shortTooltip": "Damage and Stun enemies in an area",
-              "fullTooltip": "Hurl Sulfuras at the target area, landing after <c val=\"bfd4fd\">0.75</c> seconds, dealing <c val=\"bfd4fd\">250~~0.04~~</c> damage. Enemies in the center take <c val=\"bfd4fd\">594~~0.04~~</c> damage instead and are Stunned for <c val=\"bfd4fd\">0.5</c> seconds.",
+              "fullTooltip": "Hurl Sulfuras at the target area, landing after <c val=\"bfd4fd\">0.75</c> seconds, dealing <c val=\"bfd4fd\">250~~0.04~~</c> damage. Enemies in the center take <c val=\"bfd4fd\">594~~0.04~~</c> damage instead and are Stunned for <c val=\"bfd4fd\">0.5</c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit <c val=\"bfd4fd\">8</c> enemy Heroes in the center.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward:</c> Sulfuras Smash gains an additional charge.",
               "abilityType": "Heroic"
             }
           ]
@@ -19268,7 +19276,7 @@
         "nameId": "RockItTurret",
         "range": 6.0,
         "period": 1.0,
-        "damage": 36.0,
+        "damage": 43.0,
         "damageScale": 0.04
       }
     ],
@@ -19306,7 +19314,7 @@
         "nameId": "RockItTurret",
         "range": 6.0,
         "period": 1.0,
-        "damage": 36.0,
+        "damage": 43.0,
         "damageScale": 0.04
       }
     ],
@@ -26110,10 +26118,10 @@
       "targetInfo": "storm_ui_ingame_targetinfopanel_unit_tychus_drakkanlaserdrill.png"
     },
     "life": {
-      "amount": 1255.0,
+      "amount": 1500.0,
       "scale": 0.04,
-      "regenRate": 0.0,
-      "regenScale": 0.0
+      "regenRate": -60.0,
+      "regenScale": 0.04
     },
     "weapons": [
       {

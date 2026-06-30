@@ -92,7 +92,7 @@
       {
         "uid": "db26bd",
         "name": "Flying Kick",
-        "description": "Kick through target enemy, dealing 120 (+4% per level) damage.",
+        "description": "Kick through target enemy, dealing 130 (+4% per level) damage.",
         "hotkey": "Q",
         "abilityId": "Chen|Q1",
         "tooltipId": "ChenFlyingKick",
@@ -149,7 +149,7 @@
       {
         "uid": "c98538",
         "name": "Fortifying Brew",
-        "description": "Chen drinks from his keg, gaining 50 Brew and 180 (+4% per level) temporary Shields per second, up to a maximum of 540 (+4% per level) while drinking. Shields persist for 4 seconds after he stops drinking.",
+        "description": "Chen drinks from his keg, gaining 50 Brew and 190 (+4% per level) temporary Shields per second, up to a maximum of 570 (+4% per level) while drinking. Shields persist for 4 seconds after he stops drinking.",
         "hotkey": "D",
         "trait": true,
         "abilityId": "Chen|D1",
@@ -208,7 +208,7 @@
         "tooltipId": "ChenAccumulatingFlame",
         "talentTreeId": "ChenAccumulatingFlame",
         "name": "Accumulating Flame",
-        "description": "Reward: Damage enemy Heroes with Breath of Fire to permanently increase periodic damage by 0.25. Kills grant 2.  Reward: After gaining 20 damage, increase the range of Keg Smash.  Mythic Reward: Upon gaining 75 damage, Breath of Fire reduces enemy Armor by 20 and its duration is increased by 0.75 seconds each time Chen attacks the Hero.",
+        "description": "Reward: Damage enemy Heroes with Breath of Fire to permanently increase periodic damage by 0.25. Kills grant 2.  Reward: After gaining 25 damage, increase the range of Keg Smash.  Mythic Reward: Upon gaining 80 damage, Breath of Fire reduces enemy Armor by 20 and its duration is increased by 0.75 seconds each time Chen attacks the Hero.",
         "icon": "storm_ui_icon_chen_breathoffire.png",
         "type": "W",
         "sort": 1,
@@ -449,7 +449,7 @@
         "tooltipId": "ChenFortifyingBrewEnoughToShareTalent",
         "talentTreeId": "ChenMasteryFortifyingBrewEnoughToShare",
         "name": "Enough to Share",
-        "description": "Fortifying Brew instantly grants Chen a Shield that absorbs 180 (+4% per level) damage, and each second grants nearby allied Heroes a Shield that absorbs 140 (+4% per level) damage, up to 420 (+4% per level).",
+        "description": "Fortifying Brew instantly grants Chen a Shield that absorbs 190 (+4% per level) damage, and each second grants nearby allied Heroes a Shield that absorbs 140 (+4% per level) damage, up to 420 (+4% per level).",
         "icon": "storm_ui_icon_chen_fortifyingbrew.png",
         "type": "Trait",
         "sort": 4,
@@ -592,7 +592,7 @@
     ]
   },
   "tooltipMarkup": {
-    "ChenAccumulatingFlame": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Damage enemy Heroes with Breath of Fire to permanently increase periodic damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,AddFirebreathQuestToken,Value\" precision=\"2\"/></c>. Kills grant <c val=\"#TooltipNumbers\"><d ref=\"Effect,AddFirebreathQuestTokenHeroDeath,Value\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gaining <c val=\"#TooltipNumbers\">20</c> damage, increase the range of Keg Smash.<n/></n><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Mythic Reward:</c> Upon gaining <c val=\"#TooltipNumbers\">75</c> damage, Breath of Fire reduces enemy Armor by <c val=\"#TooltipNumbers\">20</c> and its duration is increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenBreathOfFireAccumulatingFlameIncreaseIgniteDuration,Value\" precision=\"2\"/></c> seconds each time Chen attacks the Hero.",
+    "ChenAccumulatingFlame": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Damage enemy Heroes with Breath of Fire to permanently increase periodic damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,AddFirebreathQuestToken,Value\" precision=\"2\"/></c>. Kills grant <c val=\"#TooltipNumbers\"><d ref=\"Effect,AddFirebreathQuestTokenHeroDeath,Value\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gaining <c val=\"#TooltipNumbers\">25</c> damage, increase the range of Keg Smash.<n/></n><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Mythic Reward:</c> Upon gaining <c val=\"#TooltipNumbers\">80</c> damage, Breath of Fire reduces enemy Armor by <c val=\"#TooltipNumbers\">20</c> and its duration is increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenBreathOfFireAccumulatingFlameIncreaseIgniteDuration,Value\" precision=\"2\"/></c> seconds each time Chen attacks the Hero.",
     "ChenBreathOfFire": "Breathe a cone of flames, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenBreathOfFireDamage,Amount\"/></c> damage. Enemies that are soaked in Brew are Ignited, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenBreathOfFireDoTDamage,Amount*Behavior,ChenBreathofFireDoT,Duration\"/></c> additional damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenBreathofFireDoT,Duration\"/></c> seconds and adding <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenBreathofFireBoggedDownModifySlowBehaviorBuffDuration,Value\"Precision=\"2\"/></c> seconds to the duration of the Slow from Keg Smash. <n/><n/>After being used or after <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenBreathOfFireKegSmashAbilityChangeTimerBehavior,Duration\"/></c> seconds, this ability becomes Keg Smash.<n/><n/><c val=\"#ColorYellow\">Keg Smash</c><n/>Damage and Slow enemies.",
     "ChenBreathOfFireRingOfFireTalent": "After Igniting an enemy, become bathed in a fiery aura, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenBreathOfFireRingOfFireTalentDamage,Amount\"/></c> damage every second to nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenBreathofFireRingOfFire,Duration\"/></c> seconds.",
     "ChenCelerityStagger": "Basic Attacks against Stunned, Rooted, or Slowed enemy Heroes reduce the cooldown of Stagger by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChenCelerityStaggerModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds and grant Chen <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenCelerityStaggerArmorBuff,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenCelerityStaggerArmorBuff,Duration\"/></c> seconds.",

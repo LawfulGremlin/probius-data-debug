@@ -102,7 +102,7 @@
       {
         "uid": "c6b01f",
         "name": "Locust Strain",
-        "description": "Spawns a Locust to attack down the nearest lane every 15 seconds. Locusts last for 16 seconds, have 350 (+4% per level) health and deal 58 (+4% per level) damage with each Basic Attack, dealing 25% bonus damage to enemy Structures.",
+        "description": "Spawns a Locust to attack down the nearest lane every 15 seconds.  Locusts heal for 20% of the damage they deal, and regain 20% of their Maximum health when a nearby minion dies.  Locusts lose health over 17 seconds, have 225 (+4% per level) health and deal 58 (+4% per level) damage with each Basic Attack, dealing 25% bonus damage to enemy Structures.",
         "trait": true,
         "abilityId": "Abathur|D1",
         "tooltipId": "AbathurLocustStrain",
@@ -193,7 +193,7 @@
         "tooltipId": "AbathurToxicNestEnvenomedNestTalent",
         "talentTreeId": "AbathurMasteryEnvenomedNestsToxicNest",
         "name": "Envenomed Nest",
-        "description": "Toxic Nests deal 75% more damage over 3 seconds and reduce the Armor of enemy Heroes hit by 10 for 4 seconds.",
+        "description": "Toxic Nests deal 75% more damage over 3 seconds and reduce the Armor of enemy Heroes hit by 15 for 4 seconds.",
         "icon": "storm_ui_icon_abathur_toxicnest.png",
         "type": "W",
         "sort": 2,
@@ -224,20 +224,15 @@
         ]
       },
       {
-        "tooltipId": "AbathurLocustStrainSurvivalInstinctsTalent",
-        "talentTreeId": "AbathurCombatStyleSurvivalInstincts",
-        "name": "Survival Instincts",
-        "description": "Increases Locust's Health by 100% and damage by 60%.",
+        "tooltipId": "AbathurLocustSwarm",
+        "talentTreeId": "AbathurCombatStyleLocustBrood",
+        "name": "Locust Brood",
+        "description": "Activate to spawn 3 Locusts at a nearby location.",
         "icon": "storm_ui_icon_abathur_spawnlocust.png",
-        "type": "Trait",
+        "type": "Active",
         "sort": 4,
-        "abilityId": "Abathur|D1",
-        "abilityLinks": [
-          "Abathur|D1"
-        ],
-        "abilityTalentLinkIds": [
-          "AbathurSpawnLocusts"
-        ]
+        "cooldown": 75,
+        "abilityId": "Abathur|Active"
       }
     ],
     "4": [
@@ -290,6 +285,15 @@
         "abilityTalentLinkIds": [
           "AbathurToxicNest"
         ]
+      },
+      {
+        "tooltipId": "AbathurSlapathur",
+        "talentTreeId": "AbathurSlapathur",
+        "name": "Slapathur",
+        "description": "Abathur's Basic Attacks now Stun non-Heroic enemies and deal 500% damage.",
+        "icon": "storm_ui_icon_abathur_volatilemutation.png",
+        "type": "E",
+        "sort": 4
       }
     ],
     "7": [
@@ -417,7 +421,7 @@
         "tooltipId": "AbathurLocustStrainBombardStrainTalent",
         "talentTreeId": "AbathurCombatStyleBombardStrain",
         "name": "Bombard Strain",
-        "description": "Locust's Basic Attacks become a long-range siege attack and their duration is increased by 75%.",
+        "description": "Locust's Basic Attacks become a long-range siege attack and they now lose health 50% more slowly.",
         "icon": "storm_ui_icon_abathur_spawnlocust.png",
         "type": "Trait",
         "sort": 3,
@@ -486,15 +490,20 @@
         ]
       },
       {
-        "tooltipId": "AbathurLocustSwarm",
-        "talentTreeId": "AbathurCombatStyleLocustBrood",
-        "name": "Locust Brood",
-        "description": "Activate to spawn 3 Locusts at a nearby location.",
+        "tooltipId": "AbathurLocustStrainSurvivalInstinctsTalent",
+        "talentTreeId": "AbathurCombatStyleSurvivalInstincts",
+        "name": "Survival Instincts",
+        "description": "Increases Locust's Health by 200% and damage by 60%.",
         "icon": "storm_ui_icon_abathur_spawnlocust.png",
-        "type": "Active",
+        "type": "Trait",
         "sort": 4,
-        "cooldown": 45,
-        "abilityId": "Abathur|Active"
+        "abilityId": "Abathur|D1",
+        "abilityLinks": [
+          "Abathur|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "AbathurSpawnLocusts"
+        ]
       }
     ],
     "20": [
@@ -587,14 +596,30 @@
       "sourceAbilityTooltipId": "AbathurEvolveMonstrosityHotbar"
     },
     {
+      "unitId": "AbathurLocust",
+      "name": "Locust",
+      "icon": "storm_ui_icon_abathur_spawnlocust.png",
+      "stats": {
+        "hp": 225,
+        "hpRegen": -13.235294117647058,
+        "hpScale": 0,
+        "hpRegenScale": 0,
+        "radius": 0.375,
+        "speed": 3.25,
+        "sight": 8
+      },
+      "abilities": [],
+      "sourceAbilityTooltipId": "AbathurLocustStrain"
+    },
+    {
       "unitId": "AbathurLocustAssaultStrain",
       "name": "Assault Locust",
       "icon": "storm_ui_icon_abathur_spawnlocust.png",
       "stats": {
-        "hp": 350,
-        "hpRegen": 0,
+        "hp": 225,
+        "hpRegen": -13.235294117647058,
         "hpScale": 0.04,
-        "hpRegenScale": 0,
+        "hpRegenScale": 0.04,
         "attackDamage": 43,
         "attackDamageScale": 0.04,
         "attackRange": 0.5,
@@ -611,10 +636,10 @@
       "name": "Locust",
       "icon": "storm_ui_icon_abathur_spawnlocust.png",
       "stats": {
-        "hp": 350,
-        "hpRegen": 0,
+        "hp": 225,
+        "hpRegen": -6.617647058823529,
         "hpScale": 0.04,
-        "hpRegenScale": 0,
+        "hpRegenScale": 0.04,
         "attackDamage": 58,
         "attackDamageScale": 0.04,
         "attackRange": 7,
@@ -631,10 +656,10 @@
       "name": "Locust",
       "icon": "storm_ui_icon_abathur_spawnlocust.png",
       "stats": {
-        "hp": 350,
-        "hpRegen": 0,
+        "hp": 225,
+        "hpRegen": -13.235294117647058,
         "hpScale": 0.04,
-        "hpRegenScale": 0,
+        "hpRegenScale": 0.04,
         "attackDamage": 58,
         "attackDamageScale": 0.04,
         "attackRange": 1.5,
@@ -649,15 +674,16 @@
   ],
   "tooltipMarkup": {
     "AbathurDeepTunnel": "Quickly tunnel to a visible location.",
-    "AbathurEvolveMonstrosityHotbar": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,AbathurEvolveMonstrosityHealthStack,Modification.VitalMaxArray[Life]/Unit,AbathurEvolvedMonstrosity,LifeStart\"/>%</c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*100\"/>%</c> Basic Attack damage, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AbathurEvolveMonstrosityAbathurStack,MaxStackCount\"/></c> times. The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every <c val=\"#TooltipNumbers\"><d ref=\"Abil,AbathurMonstrosityDeepTunnel,Cost.Cooldown.TimeUse\"/></c> seconds.<n/><n/>Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits. This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
+    "AbathurEvolveMonstrosityHotbar": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,AbathurEvolveMonstrosityStackHealthAccumulator,Scale/Unit,AbathurEvolvedMonstrosity,LifeStart\" player=\"0\"/>%</c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AbathurEvolveMonstrosityStackDamageAccumulator,Scale*100\" player=\"0\"/>%</c> Basic Attack damage, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AbathurEvolveMonstrosityQuestStack,Max\"/></c> times. The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every <c val=\"#TooltipNumbers\"><d ref=\"Abil,AbathurMonstrosityDeepTunnel,Cost.Cooldown.TimeUse\"/></c> seconds.<n/><n/>Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits. This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
     "AbathurLocustMasterHotbar": "Activate to create a nest that periodically spawns Locusts. Only one Locust Nest can be active at a time.",
-    "AbathurLocustStrain": "Spawns a Locust to attack down the nearest lane every <c val=\"#TooltipNumbers\"><d ref=\"Abil,AbathurSpawnLocusts,Cost[0].Cooldown.TimeUse\" player=\"0\" precision=\"1\"/></c> seconds. Locusts last for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LocustTimedLife,Duration\" player=\"0\"/></c> seconds, have <c val=\"#TooltipNumbers\"><d ref=\"Unit,AbathurLocustNormal,LifeMax\"/></c> health and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,AbathurLocustWeaponDamage,Amount\"/></c> damage with each Basic Attack, dealing <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,AbathurLocustWeaponDamage,MultiplicativeModifierArray[StructureDamage].Modifier\"/>%</c> bonus damage to enemy Structures.",
-    "AbathurLocustStrainBombardStrainTalent": "Locust's Basic Attacks become a long-range siege attack and their duration is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,AbathurCombatStyleBombardStrain,AbilityModificationArray[0].Modifications[0].Value/Behavior,LocustTimedLife,Duration\"Player=\"0\"/>%</c>.",
+    "AbathurLocustStrain": "Spawns a Locust to attack down the nearest lane every <c val=\"#TooltipNumbers\"><d ref=\"Abil,AbathurSpawnLocusts,Cost[0].Cooldown.TimeUse\" player=\"0\" precision=\"1\"/></c> seconds.  Locusts heal for <c val=\"#TooltipNumbers\">20%</c> of the damage they deal, and regain <c val=\"#TooltipNumbers\">20%</c> of their Maximum health when a nearby minion dies.</n></n>Locusts lose health over <c val=\"#TooltipNumbers\"><d ref=\"-Unit,AbathurLocust,LifeMax/Unit,AbathurLocust,LifeRegenRate\"/></c> seconds, have <c val=\"#TooltipNumbers\"><d ref=\"Unit,AbathurLocustNormal,LifeMax\"/></c> health and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,AbathurLocustWeaponDamage,Amount\"/></c> damage with each Basic Attack, dealing <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,AbathurLocustWeaponDamage,MultiplicativeModifierArray[StructureDamage].Modifier\"/>%</c> bonus damage to enemy Structures.",
+    "AbathurLocustStrainBombardStrainTalent": "Locust's Basic Attacks become a long-range siege attack and they now lose health <c val=\"#TooltipNumbers\">50%</c> more slowly.",
     "AbathurLocustStrainSurvivalInstinctsTalent": "Increases Locust's Health by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,AbathurSurvivalInstinctsBuff,Modification.VitalMaxAdditiveMultiplierArray[Life]\" player=\"0\"/>%</c> and damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,AbathurLocustWeaponDamage,MultiplicativeModifierArray[SurvivalInstincts].Modifier\"/>%</c>.",
     "AbathurLocustSwarm": "Activate to spawn <c val=\"#TooltipNumbers\">3</c> Locusts at a nearby location.",
     "AbathurMonstrosityDeepTunnel": "Order your Evolved Monstrosity to quickly tunnel to a visible location",
     "AbathurMonstrosityEvolutionCompleteTalent": "Increase Monstrosity's Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,AbathurEvolveMonstrosityWeaponDamage,MultiplicativeModifierArray[EvolutionCompleteDamage].Modifier\"/>%</c>.",
     "AbathurReinforcedCarapaceTalent": "Increase the Shield amount of Carapace by <c val=\"#TooltipNumbers\"><d ref=\"100*(Talent,AbathurReinforcedCarapace,AbilityModificationArray[0].Modifications[0].Value)-100\"Precision=\"2\"/>%</c>.",
+    "AbathurSlapathur": "Abathur's Basic Attacks now Stun non-Heroic enemies and deal <c val=\"#TooltipNumbers\">500%</c> damage.",
     "AbathurSymbiote": "Spawn and attach a Symbiote to a target ally or Structure. While active, Abathur controls the Symbiote, gaining access to new Abilities. The Symbiote is able to gain XP from nearby enemy deaths.",
     "AbathurSymbioteAdrenalOverloadTalent": "Heroic Symbiote hosts gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AbathurAdrenalOverload,Modification.AdditiveAttackSpeedFactor*100\" player=\"0\" precision=\"2\"/>%</c> increased Attack Speed.",
     "AbathurSymbioteAdrenalineBoostTalent": "Symbiote's Carapace increases the Movement Speed of the target by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,AdrenalineBoost,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AdrenalineBoost,Duration\" precision=\"1\" player=\"0\"/></c> seconds.",
@@ -691,6 +717,7 @@
     "AbathurMonstrosityDeepTunnel": "Tunnel to a location.",
     "AbathurMonstrosityEvolutionCompleteTalent": "Monstrosity gains Attack Damage",
     "AbathurReinforcedCarapaceTalent": "Increase Carapace Shield",
+    "AbathurSlapathur": "Basic attacks Stun, deal bonus damage",
     "AbathurSymbiote": "Assist an ally and gain new abilities",
     "AbathurSymbioteAdrenalOverloadTalent": "Symbiote host gains Attack Speed",
     "AbathurSymbioteAdrenalineBoostTalent": "Carapace increases Move Speed",

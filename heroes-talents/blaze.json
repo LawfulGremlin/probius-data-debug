@@ -82,7 +82,7 @@
         "hotkey": "R",
         "abilityId": "Blaze|R1",
         "tooltipId": "FirebatBunkerDrop",
-        "cooldown": 80,
+        "cooldown": 85,
         "manaCost": 80,
         "icon": "storm_ui_icon_blaze_bunker.png",
         "type": "heroic"
@@ -119,7 +119,7 @@
         "tooltipId": "FirebatAdrenalineStimpack",
         "talentTreeId": "FirebatAdrenalineStimpack",
         "name": "Adrenaline Stimpack",
-        "description": "Passive: While over 80% Health, gain 20% bonus Attack Speed and 10% bonus Movement Speed.  Activate to gain 100% Attack Speed and 25% Movement Speed for 5 seconds.",
+        "description": "Passive: While over 80% Health, gain 20% bonus Attack Speed and 10% bonus Movement Speed.  Activate to gain 85% Attack Speed and 25% Movement Speed for 5 seconds.",
         "icon": "storm_ui_icon_blaze_stim_2.png",
         "type": "Active",
         "sort": 1,
@@ -275,7 +275,7 @@
         "icon": "storm_ui_icon_blaze_bunker.png",
         "type": "Heroic",
         "sort": 1,
-        "cooldown": 80,
+        "cooldown": 85,
         "abilityId": "Blaze|R1",
         "abilityLinks": [
           "Blaze|R1"
