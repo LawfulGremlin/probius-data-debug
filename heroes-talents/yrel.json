@@ -51,7 +51,7 @@
         "abilityId": "Yrel|Q1",
         "tooltipId": "YrelVindication",
         "cooldown": 6,
-        "manaCost": 65,
+        "manaCost": 50,
         "icon": "storm_ui_icon_yrel_vindication.png",
         "type": "basic"
       },
@@ -63,7 +63,7 @@
         "abilityId": "Yrel|W1",
         "tooltipId": "YrelRighteousHammer",
         "cooldown": 6,
-        "manaCost": 65,
+        "manaCost": 50,
         "icon": "storm_ui_icon_yrel_righteous_hammer.png",
         "type": "basic"
       },
@@ -75,7 +75,7 @@
         "abilityId": "Yrel|E1",
         "tooltipId": "YrelAvengingWrath",
         "cooldown": 6,
-        "manaCost": 65,
+        "manaCost": 50,
         "icon": "storm_ui_icon_yrel_avenging_wrath.png",
         "type": "basic"
       },
@@ -110,7 +110,7 @@
         "trait": true,
         "abilityId": "Yrel|D1",
         "tooltipId": "YrelDivinePurpose",
-        "cooldown": 16,
+        "cooldown": 12,
         "icon": "storm_ui_icon_yrel_divine_purpose.png",
         "type": "trait"
       }
@@ -122,7 +122,7 @@
         "tooltipId": "YrelVindicationLightOfKarabor",
         "talentTreeId": "YrelVindicationLightOfKarabor",
         "name": "Light of Karabor",
-        "description": "Quest: Collect Regeneration Globes.  Reward: Upon collecting 10 Globes, increase Vindication's radius by 15%.  Reward: Upon collecting 20 Globes, hitting an enemy Hero increases Vindication's healing by 45%. If more than one Hero is hit, the bonus is increased to 90%.",
+        "description": "Increase Vindication's radius by 15%. Hitting an enemy Hero increases Vindication's healing by 45%. If more than one Hero is hit, the bonus is increased to 90%.",
         "icon": "storm_ui_icon_yrel_vindication.png",
         "type": "Q",
         "sort": 1,
@@ -208,7 +208,7 @@
         "tooltipId": "YrelRighteousHammerRighteousMomentum",
         "talentTreeId": "YrelRighteousHammerRighteousMomentum",
         "name": "Righteous Momentum",
-        "description": "Quest: Hit enemy Heroes with a fully charged Righteous Hammer.  This quest cannot be started until all previously selected quests are complete.  Reward: Upon hitting 10 Heroes, gain 5% Movement Speed. Yrel is no longer Slowed while Channeling Righteous Hammer, and instead this bonus is quadrupled.",
+        "description": "Gain 5% Movement Speed. Yrel is no longer Slowed while Channeling Righteous Hammer, and instead this bonus is quadrupled.",
         "icon": "storm_ui_icon_yrel_righteous_hammer.png",
         "type": "W",
         "sort": 1,
@@ -297,7 +297,7 @@
         "tooltipId": "YrelVindicationAldorPeacekeeper",
         "talentTreeId": "YrelVindicationAldorPeacekeeper",
         "name": "Aldor Peacekeeper",
-        "description": "Quest: Hit at least 2 Heroes with a maximum charge Light of Karabor, one of which must be an enemy.  This quest cannot be started until all previously selected quests are complete.  Reward: After hitting multiple Heroes 10 times, Enemy Heroes hit by Vindication at maximum charge deal 40% less damage for 3 seconds.  Mythic Reward: If Yrel completes all 3 of her Quests, reduce the charge time of all of her Basic Abilities by 50%.",
+        "description": "Enemy Heroes hit by Vindication at maximum charge deal 40% less damage for 3 seconds.",
         "icon": "storm_ui_icon_yrel_vindication.png",
         "type": "Q",
         "sort": 1,
@@ -465,15 +465,15 @@
     "YrelHolyWrath": "After casting a Basic Ability, Yrel's next Basic Attack splashes for <c val=\"#TooltipNumbers\"><d ref=\"Effect,YrelWeaponDamage,MultiplicativeModifierArray[HolyWrath].Modifier*100\" precision=\"2\" player=\"0\"/>%</c> increased damage around the target.",
     "YrelMaraadsInsight": "After damaging an enemy Hero with a Basic Ability, Yrel's next Basic Attack heals her for <c val=\"#TooltipNumbers\"><d ref=\"Effect,YrelMaraadsInsightCreateHealer,RechargeVitalRate\"/></c>.",
     "YrelRighteousHammer": "Swing Yrel's hammer, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,YrelRighteousHammerDamage,Amount*(1+Accumulator,YrelRighteousHammerDamageAccumulator,Offset)\"/></c> damage to enemies in front of her and knocking them away.</n></n>Charging up this Ability increases its knockback distance, and damage up to <c val=\"#TooltipNumbers\"><d ref=\"Effect,YrelRighteousHammerDamage,Amount\"/></c>. Enemies hit at maximum charge are Stunned for <c val=\"#TooltipNumbers\"><d const=\"$YrelRighteousHammerStunDuration\" precision=\"2\"/></c> seconds.",
-    "YrelRighteousHammerRighteousMomentum": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit enemy Heroes with a fully charged Righteous Hammer.  This quest cannot be started until all previously selected quests are complete.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Upon hitting 10 Heroes, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,YrelRighteousHammerRighteousMomentumBaseMoveSpeed,Modification.UnifiedMoveSpeedFactor *100\"/>%</c> Movement Speed. Yrel is no longer Slowed while Channeling Righteous Hammer, and instead this bonus is quadrupled.",
+    "YrelRighteousHammerRighteousMomentum": "Gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,YrelRighteousHammerRighteousMomentumBaseMoveSpeed,Modification.UnifiedMoveSpeedFactor *100\"/>%</c> Movement Speed. Yrel is no longer Slowed while Channeling Righteous Hammer, and instead this bonus is quadrupled.",
     "YrelRighteousHammerTemplarsVerdict": "Righteous Hammer reduces the Armor of enemy Heroes hit by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,YrelRighteousHammerTemplarsVerdictDebuff,ArmorModification.AllArmorBonus*(-1)\" player=\"0\" precision=\"2\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,YrelRighteousHammerTemplarsVerdictDebuff,Duration\" player=\"0\" precision=\"2\"/></c> seconds and deals bonus damage equal to <c val=\"#TooltipNumbers\"><d ref=\"Effect,YrelRighteousHammerTemplarsVerdictDamage,VitalFractionMax[Life]*100\"/>%</c> of their maximum Health.",
     "YrelSacredGround": "Yrel sanctifies the ground around her, gaining <c val=\"#TooltipNumbers\"><d const=\"$YrelSacredGroundArmorBonus\" precision=\"2\"/></c> Armor until she leaves the area.",
     "YrelSacredGroundHallowedGround": "Casting Avenging Wrath while inside Sacred Ground moves Sacred Ground to Yrel's location upon landing.",
     "YrelSeraphim": "Activate to become Unstoppable for <c val=\"#TooltipNumbers\"><d const=\"$YrelSeraphimBuffDuration\" precision=\"2\"/></c> seconds.",
     "YrelVelensChosen": "Hitting an enemy Hero with a Basic Ability at maximum charge grants <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,YrelVelensChosenAbilityPowerAccumulator,Scale*100\" precision=\"2\" player=\"0\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d const=\"$YrelVelensChosenAbilityPowerBuffDuration\" precision=\"2\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,YrelVelensChosenAbilityPowerToken,Max*(Accumulator,YrelVelensChosenAbilityPowerAccumulator,Scale*100)\" precision=\"2\" player=\"0\"/>%</c>.",
     "YrelVindication": "Unleash holy energy around Yrel, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,YrelVindicationDamage,Amount*(1+Accumulator,YrelVindicationDamageAccumulator,Offset)\"/></c> damage to nearby enemies and healing her for <c val=\"#TooltipNumbers\"><d ref=\"Effect,YrelVindicationCreateHealer,RechargeVitalRate*(1+Accumulator,YrelVindicationHealingAccumulator,Offset)\"/></c>.</n></n>Charging up this Ability increases its damage up to <c val=\"#TooltipNumbers\"><d ref=\"Effect,YrelVindicationDamage,Amount\"/></c>, and healing up to <c val=\"#TooltipNumbers\"><d ref=\"Effect,YrelVindicationCreateHealer,RechargeVitalRate\"/></c>.",
-    "YrelVindicationAldorPeacekeeper": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit at least 2 Heroes with a maximum charge Light of Karabor, one of which must be an enemy.  This quest cannot be started until all previously selected quests are complete.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting multiple Heroes 10 times, Enemy Heroes hit by Vindication at maximum charge deal <c val=\"#TooltipNumbers\"><d ref=\"Behavior,YrelVindicationAldorPeacekeeperDamageReduction,Modification.DamageDealtFraction[Ability]*(-100)\" precision=\"2\" player=\"0\"/>%</c> less damage for <c val=\"#TooltipNumbers\"><d const=\"$YrelVindicationAldorPeacekeeperDamageReductionDuration\" precision=\"2\"/></c> seconds.</n></n><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Mythic Reward:</c> If Yrel completes all 3 of her Quests, reduce the charge time of all of her Basic Abilities by 50%.",
-    "YrelVindicationLightOfKarabor": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Collect Regeneration Globes.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Upon collecting 10 Globes, increase Vindication's radius by <c val=\"#TooltipNumbers\"><d ref=\"(Talent,YrelVindicationLightOfKarabor,AbilityModificationArray[0].Modifications[0].StringReplacement/Effect,YrelVindicationSearchArea,AreaArray[0].Radius-1)*100\" precision=\"2\" player=\"0\"/>%</c>.</n></n><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Upon collecting 20 Globes, hitting an enemy Hero increases Vindication's healing by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,YrelVindicationLightOfKaraborHealingAccumulator,Scale*100\" precision=\"2\" player=\"0\"/>%</c>. If more than one Hero is hit, the bonus is increased to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,YrelVindicationLightOfKaraborHealingAccumulator,MaxAccumulation*100\" precision=\"2\" player=\"0\"/>%</c>.<n/>"
+    "YrelVindicationAldorPeacekeeper": "Enemy Heroes hit by Vindication at maximum charge deal <c val=\"#TooltipNumbers\"><d ref=\"Behavior,YrelVindicationAldorPeacekeeperDamageReduction,Modification.DamageDealtFraction[Ability]*(-100)\" precision=\"2\" player=\"0\"/>%</c> less damage for <c val=\"#TooltipNumbers\"><d const=\"$YrelVindicationAldorPeacekeeperDamageReductionDuration\" precision=\"2\"/></c> seconds.",
+    "YrelVindicationLightOfKarabor": "Increase Vindication's radius by <c val=\"#TooltipNumbers\"><d ref=\"(Talent,YrelVindicationLightOfKarabor,AbilityModificationArray[0].Modifications[0].StringReplacement/Effect,YrelVindicationSearchArea,AreaArray[0].Radius-1)*100\" precision=\"2\" player=\"0\"/>%</c>. Hitting an enemy Hero increases Vindication's healing by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,YrelVindicationLightOfKaraborHealingAccumulator,Scale*100\" precision=\"2\" player=\"0\"/>%</c>. If more than one Hero is hit, the bonus is increased to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,YrelVindicationLightOfKaraborHealingAccumulator,MaxAccumulation*100\" precision=\"2\" player=\"0\"/>%</c>."
   },
   "tooltipSimple": {
     "YrelArdentDefender": "Convert damage taken to Health",
@@ -504,7 +504,6 @@
   },
   "tooltipColors": {
     "AbilityPassive": "00FF90",
-    "TooltipNumbers": "BFD4FD",
-    "TooltipQuest": "E4B800"
+    "TooltipNumbers": "BFD4FD"
   }
 }

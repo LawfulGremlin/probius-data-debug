@@ -50,7 +50,7 @@
       {
         "uid": "4ec130",
         "name": "Sweeping Strike",
-        "description": "Dash towards target point, dealing 119 (+4% per level) damage to enemies along the way. Hitting an enemy increases Illidan's Basic Attack damage by 0% for 3 seconds.",
+        "description": "Dash towards target point, dealing 119 (+4% per level) damage to enemies along the way. Hitting an enemy increases Illidan's Basic Attack damage by 35% for 3 seconds.",
         "hotkey": "W",
         "abilityId": "Illidan|W1",
         "tooltipId": "IllidanSweepingStrike",
@@ -125,7 +125,7 @@
         "tooltipId": "IllidanSweepingStrikeBatteredAssaultTalent",
         "talentTreeId": "IllidanMasteryBatteredAssaultSweepingStrike",
         "name": "Battered Assault",
-        "description": "Increase Sweeping Strike's Basic Attack damage bonus duration from 3 to 5 seconds. If Sweeping Strike hits 2 Heroes its damage bonus is increased from 0% to 65%.",
+        "description": "Increase Sweeping Strike's Basic Attack damage bonus duration from 3 to 5 seconds. If Sweeping Strike hits 2 Heroes its damage bonus is increased from 35% to 125%.",
         "icon": "storm_ui_icon_illidan_sweepingstrike_a.png",
         "type": "W",
         "sort": 2,

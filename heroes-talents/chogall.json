@@ -128,7 +128,7 @@
         "tooltipId": "ChoCallousedHide",
         "talentTreeId": "ChoCallousedHide",
         "name": "Calloused Hide",
-        "description": "While under 40% maximum Health, Cho gains 15% increased Movement Speed and healing received.",
+        "description": "While under 50% maximum Health, Cho gains 15% increased Movement Speed and healing received.",
         "icon": "storm_ui_icon_cho_ogrehide.png",
         "type": "Trait",
         "sort": 2,
@@ -448,7 +448,7 @@
     ]
   },
   "tooltipMarkup": {
-    "ChoCallousedHide": "While under <c val=\"#TooltipNumbers\">40%</c> maximum Health, Cho gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChoOgreHideCallousedHideTalentMoveSpeedCarry,Modification.UnifiedMoveSpeedFactor\"/>%</c> increased Movement Speed and healing received.",
+    "ChoCallousedHide": "While under <c val=\"#TooltipNumbers\">50%</c> maximum Health, Cho gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChoOgreHideCallousedHideTalentMoveSpeedCarry,Modification.UnifiedMoveSpeedFactor\"/>%</c> increased Movement Speed and healing received.",
     "ChoConsumingBlaze": "Ignite nearby enemies, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoConsumingBlazeDamage,Amount*2*Behavior,ChoConsumingBlazeDoT,Duration\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoConsumingBlazeDoT,Duration\" player=\"0\"/></c> seconds. Basic Attacking burning enemies re-Ignites them. Cho is healed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoConsumingBlazeCasterHeal,RechargeVitalRate\"/></c> when an enemy is Ignited.",
     "ChoConsumingFire": "Consuming Blaze heals for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChoConsumingBlazeCasterHeal,MultiplicativeModifierArray[0].Modifier\"precision=\"2\"/>%</c> more when a Hero is Ignited.",
     "ChoCthunsGiftTalent": "Cho's Basic Attack becomes ranged and Slows targets by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChoCthunsGiftSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoCthunsGiftSlow,Duration\"/></c> seconds.",
