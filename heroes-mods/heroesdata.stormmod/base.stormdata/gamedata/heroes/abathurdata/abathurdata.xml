@@ -1459,6 +1459,10 @@
   </CActorSound>
   <CActorPortrait id="AbathurSkinUltimatePortrait" parent="StormCompositePortrait" />
   <CActorModel id="AbathurSkinUltimatePortraitAddition" parent="StormCompositePortraitAddition" />
+  <CBehaviorBuff id="SlapathurInternalCooldown">
+    <Alignment value="Negative" />
+    <Duration value="8" />
+  </CBehaviorBuff>
   <CBehaviorBuff id="AbathurLocustKillCreditAura">
     <BehaviorFlags index="Permanent" value="1" />
     <BehaviorFlags index="EnabledWhileDead" value="1" />
@@ -2220,8 +2224,18 @@
     <Age value="40" />
     <Unit value="HeroAbathur" />
   </CCharacter>
+  <CEffectApplyBehavior id="ApplySlapathurInternalCooldown">
+    <ValidatorArray index="0" value="TargetIsHeroOrStructure" />
+    <ValidatorArray value="TargetDoesNotHaveSlapthurInternalCooldown" />
+    <Chance value="0" />
+    <Behavior value="SlapathurInternalCooldown" />
+  </CEffectApplyBehavior>
   <CEffectApplyBehavior id="ApplySlapathur">
-    <ValidatorArray index="0" value="IsMercMinionorStructureANDNotMapBoss" />
+    <ValidatorArray index="0" value="TargetDoesNotHaveSlapthurInternalCooldown" />
+    <ValidatorArray value="TargetIsNotTownGateAndTownWall" />
+    <ValidatorArray value="SylvanasTargetDoesNotHaveImmuneToSylvanasBlackArrowsStructureDebuff" />
+    <ValidatorArray value="CasterNotBlindedAndTargetNotEvading" />
+    <ValidatorArray value="TargetIsNotABossUnitCombine" />
     <Marker Link="Effect/ApplyKillCreditBuff">
       <MatchFlags index="Id" value="1" />
     </Marker>
@@ -3451,6 +3465,7 @@
   </CEffectSet>
   <CEffectSet id="AbathurWeaponPreImpactSet">
     <EffectArray value="ApplySlapathur" />
+    <EffectArray value="ApplySlapathurInternalCooldown" />
   </CEffectSet>
   <CEffectSet id="AbathurWeaponPostImpactSet" />
   <CEffectDamage id="AbathurWeaponDamage" parent="StormWeapon">
@@ -4396,6 +4411,13 @@
         <Field value="Chance" />
         <Value value="1.000000" />
       </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Effect" />
+        <Entry value="ApplySlapathurInternalCooldown" />
+        <Field value="Chance" />
+        <Value value="1.000000" />
+      </Modifications>
     </AbilityModificationArray>
   </CTalent>
   <CTalent id="AbathurReinforcedCarapace">
@@ -5111,6 +5133,9 @@
     <OverlapIndex value="Hero" />
     <AIThinkTree value="AI/SummonedMinion.aitree" />
   </CUnit>
+  <CValidatorUnitCompareBehaviorCount id="TargetDoesNotHaveSlapthurInternalCooldown">
+    <Behavior value="SlapathurInternalCooldown" />
+  </CValidatorUnitCompareBehaviorCount>
   <CValidatorPlayerTalent id="AbathurHasSlapathur">
     <WhichPlayer Value="Caster" />
     <Find value="1" />

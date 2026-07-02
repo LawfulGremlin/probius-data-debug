@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
   <const id="$YrelBasicAbilityCooldown" value="6" />
-  <const id="$YrelBasicAbilityManaCost" value="65" />
+  <const id="$YrelBasicAbilityManaCost" value="50" />
   <const id="$YrelBasicAbilityChannelTokenMax" value="24" />
   <const id="$YrelBasicAbilityStartingOffsetRatio" value="0.3" />
   <const id="$YrelBasicAbilityChannelUnifiedMoveSpeedFactor" value="-0.25" />
@@ -183,7 +183,7 @@
     <Effect value="YrelDivinePurposeInitialSet" />
     <SharedFlags index="DelayHotkeysAfterThisByOneGameLoop" value="1" />
     <Cost>
-      <Cooldown TimeUse="$YrelDivinePurposeCooldown" />
+      <Cooldown TimeUse="12" />
     </Cost>
     <CmdButtonArray index="Execute" DefaultButtonFace="YrelDivinePurpose" ShowValidator="YrelDivinePurposeCasterDoesNotHaveBuff" />
   </CAbilEffectInstant>
@@ -1341,7 +1341,6 @@
   <CBehaviorBuff id="YrelAvengingWrathChannelBuff">
     <Alignment value="Positive" />
     <RemoveValidatorArray value="CasterNotDeadOrUserCategoryStunnedOrSilencedOrStasisExceptTimeStop" />
-    <RemoveValidatorArray value="CasterNotRooted" />
     <RemoveValidatorArray value="YrelDivinePurposeCasterDoesNotHaveBuff" />
     <InitialEffect value="YrelAvengingWrathChannelBuffInitialSet" />
     <Period value="0.0625" />
@@ -1725,9 +1724,12 @@
     <BuffFlags index="RefreshStack" value="1" />
     <BuffFlags index="UpdateDurationWhileDisabled" value="1" />
     <Duration value="$YrelArdentDefenderDamageTrackerDuration" />
-    <DamageResponse Chance="1" Priority="96" ModifyFraction="0">
-      <ModifyScoreArray Value="SelfHealing" />
+    <DamageResponse>
+      <Chance value="1" />
+      <Priority value="96" />
       <RecordBehaviorShieldDamage value="1" />
+      <ModifyFraction value="0" />
+      <ModifyScoreArray Value="SelfHealing" />
     </DamageResponse>
   </CBehaviorBuff>
   <CBehaviorBuff id="YrelVelensChosenAbilityPowerBuff" parent="StormDamageIncrease">
@@ -1869,7 +1871,7 @@
     </ColorEntry>
   </CColorStyle>
   <CEffectModifyUnit id="DivinePurposeModifyCooldown">
-    <Cost Abil="YrelDivinePurpose,Execute" CooldownOperation="Add" CooldownTimeUse="-8" />
+    <Cost Abil="YrelDivinePurpose,Execute" CooldownOperation="Add" CooldownTimeUse="-3" />
     <ValidatorArray value="TargetIsSilencedOrStunned" />
   </CEffectModifyUnit>
   <CEffectModifyUnit id="YrelArdentDefenderDamageConversionScaleDummyModifyUnit">

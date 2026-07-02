@@ -1144,7 +1144,6 @@ Behavior/Name/ArthasFrozenWastesQuestToken=Baldíos helados: variable de misión
 Behavior/Name/ArthasPathofFrostTimedBehavior=Camino de hielo
 Behavior/Name/AzmodanGlobeOfAnnihilationBombardmentTalentBuff=Bombardeo
 Behavior/Name/AzmodanGlobeOfAnnihilationTasteForBloodQuestToken=Orbe de aniquilación: Gusto por la sangre (variable de misión)
-Behavior/Name/BarbarianToughAsNailsCharged=Dura de pelar
 Behavior/Name/BarbarianWhirlwindChannel=Torbellino
 Behavior/Name/BarbarianWrathoftheBerserkerBase=Cólera enloquecida
 Behavior/Name/BlackSoulstone=Piedra de alma negra
@@ -1284,7 +1283,6 @@ Behavior/Name/TychusOdin=Odín
 Behavior/Name/TychusOverkillActive=Exterminar
 Behavior/Name/TychusPressTheAdvantageRangeBuff=Acercamiento peligroso
 Behavior/Name/TyraelArchangelsWrathDeathActiveBuff=Ira del Arcángel
-Behavior/Name/TyraelArdentRestorationTokenCounter=Restauración ardiente
 Behavior/Name/TyraelAspectofJusticeBuff=Aspecto de la Justicia
 Behavior/Name/TyraelSealOfElDruin=Sello de El'druin
 Behavior/Name/TyrandeLightofEluneCelestialAttunementTalentFreeCast=Armonización celestial
@@ -1397,7 +1395,6 @@ Behavior/Tooltip/Truesight=Revela a los héroes en sigilo.
 Behavior/Tooltip/TychusOdin=<lang rule="gender" word="#object">Transformado,Transformada</lang>.
 Behavior/Tooltip/TychusPressTheAdvantageRangeBuff=Alcance de ataque aumentado.
 Behavior/Tooltip/TyraelArchangelsWrathDeathActiveBuff=Buscando venganza.
-Behavior/Tooltip/TyraelArdentRestorationTokenCounter=Te curas <c val="#TooltipNumbers"><d ref="Accumulator,TyraelArdentRestorationAccumulator,Scale*Behavior,TyraelArdentRestorationHeal,Duration*$BehaviorStackCount:TyraelArdentRestorationTokenCounter$"/></c> durante <c val="#TooltipNumbers"><d ref="Behavior,TyraelArdentRestorationHeal,Duration"/></c> s.
 Behavior/Tooltip/TyraelSealOfElDruin=Velocidad de ataque aumentada.
 Behavior/Tooltip/UtherBlessedChampion=Los ataques básicos curan a los aliados cercanos.
 Behavior/Tooltip/UtherHardenedFocus=Los tiempos de reutilización se regeneran más rápido.

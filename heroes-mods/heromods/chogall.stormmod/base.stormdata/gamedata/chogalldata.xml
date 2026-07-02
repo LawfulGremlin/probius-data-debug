@@ -1952,7 +1952,7 @@
   </CBehaviorAbility>
   <CBehaviorBuff id="ChoOgreHideCallousedHideTalentMoveSpeedCarry" parent="CarryBehaviorParent">
     <DisableValidatorArray value="ChoHasCallousedHideTalent" />
-    <DisableValidatorArray value="CasterLifeLT40Percent" />
+    <DisableValidatorArray value="CasterLifeLT50Percent" />
     <Modification>
       <HealTakenAdditiveMultiplier index="Life" value="0.15" />
       <UnifiedMoveSpeedFactor value="0.15" />
@@ -4130,7 +4130,7 @@
     <RechargeVitalRate value="$ChoConsumingBlazeHealAmount">
       <AccumulatorArray value="ChoConsumingBlazeHeroHealAccumulator" />
     </RechargeVitalRate>
-    <MultiplicativeModifierArray index="Hero" Validator="ChoHasConsumingFireTalent" Modifier="1.5" Crit="1" />
+    <MultiplicativeModifierArray index="Hero" Validator="ChoHasConsumingFireTalent" Modifier="1.75" Crit="1" />
   </CEffectCreateHealer>
   <CEffectDamage id="ChoConsumingBlazeDamage" parent="StormSpellDot">
     <Amount value="15" />

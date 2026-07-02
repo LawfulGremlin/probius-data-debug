@@ -703,7 +703,7 @@
     <BuffFlags index="UpdateDurationWhileDisabled" value="1" />
     <Duration value="3" />
     <Modification>
-      <AttackSpeedMultiplier value="1.35" />
+      <DamageDealtFraction index="Basic" value="0.35" />
     </Modification>
   </CBehaviorBuff>
   <CBehaviorBuff id="IllidanSweepingStrikesDamageBuffNoStackingBatteredAssault">
@@ -712,7 +712,7 @@
     <Aliases value="RangedDamageCrit" />
     <Duration value="5" />
     <Modification>
-      <DamageDealtFraction index="Basic" value="0.65" />
+      <DamageDealtFraction index="Basic" value="1.25" />
     </Modification>
   </CBehaviorBuff>
   <CBehaviorBuff id="IllidanHuntersOnslaughtLifeLeech">
