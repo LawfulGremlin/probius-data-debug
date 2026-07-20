@@ -702,6 +702,7 @@
     <DisableValidatorArray value="IllidanDoesNotHaveBatteredAssaultTalentBuffTarget" />
     <BuffFlags index="UpdateDurationWhileDisabled" value="1" />
     <Duration value="3" />
+    <Aliases value="RangedDamageCrit" />
     <Modification>
       <DamageDealtFraction index="Basic" value="0.35" />
     </Modification>
@@ -2148,7 +2149,6 @@
   </CEffectCreatePersistent>
   <CEffectCreatePersistent id="IllidanTheHuntCancelRedirectPersistent">
     <ValidatorArray value="HasTheHuntMissileMover" />
-    <WhichLocation Value="TargetPoint" />
     <InitialEffect value="IllidanTheHuntRedirctMissileTargetDead" />
     <InitialDelay value="0.0625" />
   </CEffectCreatePersistent>

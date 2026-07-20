@@ -173,4 +173,54 @@
       </Frame>
     </Frame>
   </Frame>
+  <Frame type="SelectionUnitStatusPanel" name="AbathurStacksFrameContainer">
+    <Anchor relative="$parent" />
+    <SpecificUnit val="HeroAbathur" />
+    <Frame type="UnitStatusUnitStackingDebuffElement" name="SlapathurStatusFrame">
+      <Anchor relative="$ancestor[@name=HeroUnitStatusParentFrame]/PlayerUnitNameLabel" />
+      <BuffBehavior val="SlapathurInternalCooldown" />
+      <ShowForBehaviorOwner val="True" />
+      <Frame type="Image" name="SlapathurStatusBase">
+        <Anchor side="Bottom" relative="$parent" pos="Min" offset="0" />
+        <Anchor side="Left" relative="$parent" pos="Mid" offset="0" />
+        <Anchor side="Right" relative="$parent" pos="Mid" offset="0" />
+        <Texture val="@UI/Malfurion/RegrowthStatusBase" />
+        <Visible val="true" />
+        <Frame type="UnitStatusBehaviorIcon" name="SlapathurStatusCountdownFrame">
+          <Behavior val="SlapathurInternalCooldown" />
+          <Anchor relative="$parent" />
+          <Frame type="BehaviorIcon" name="BehaviorIcon">
+            <Anchor relative="$parent" />
+            <AcceptsMouse val="False" />
+            <Frame type="ProgressBar" name="CooldownBar">
+              <Anchor side="Top" relative="$parent" pos="Mid" offset="0" />
+              <Anchor side="Left" relative="$parent" pos="Mid" offset="0" />
+              <Anchor side="Right" relative="$parent" pos="Mid" offset="0" />
+              <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0" />
+              <Height val="48" />
+              <Width val="48" />
+              <Color val="A00000" />
+              <Circular val="True" />
+              <CircularStart val="0" />
+              <CircularEndOffset val="360" />
+              <Frame type="Frame" name="FillImageContainer">
+                <Anchor relative="$parent" />
+                <Frame type="Image" name="FillImage">
+                  <Anchor relative="$parent" />
+                  <Texture val="@UI/Malfurion/RegrowthStatusBar" />
+                  <TextureType val="Circular" />
+                </Frame>
+              </Frame>
+              <Frame type="Image" name="SlapathurStatusCenterIcon">
+                <Anchor relative="$parent" offset="-12" />
+                <Texture val="@UI/State/StunnedIcon" />
+                <Visible val="true" />
+                <IgnoreParentColor val="true" />
+              </Frame>
+            </Frame>
+          </Frame>
+        </Frame>
+      </Frame>
+    </Frame>
+  </Frame>
 </Desc>

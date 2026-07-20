@@ -1802,7 +1802,7 @@
     <ValidatorArray value="FirebatHasTwoFlameStreamCrossfireBehavior" />
     <Marker Link="Effect/FirebatFlameStreamIgniteModifyCooldown" />
     <ImpactUnit Value="Caster" />
-    <Cost Abil="FirebatIgnite,Execute" CooldownOperation="Add" CooldownTimeUse="-5" />
+    <Cost Abil="FirebatIgnite,Execute" CooldownOperation="Add" CooldownTimeUse="-4" />
   </CEffectModifyUnit>
   <CEffectDamage id="FirebatJetPropulsionCollisionCourseDamage" parent="StormSpell">
     <Chance value="0" />

@@ -2437,7 +2437,6 @@
     <EffectArray value="YrelSacredGroundEnumerateTrackedUnit" />
     <EffectArray value="YrelSacredGroundCreateUnit" />
     <EffectArray value="YrelSacredGroundArmorApplyBehavior" />
-    <EffectArray value="YrelDivinePurposeHeroicCastCooldownModifyUnit" />
   </CEffectSet>
   <CEffectDamage id="YrelSacredGroundKillUnit" parent="StormSuicideParent">
     <ImpactLocation Value="TargetUnit" />
@@ -2834,7 +2833,6 @@
   </CEffectCreateHealer>
   <CEffectSet id="YrelArdentDefenderInitialSet">
     <EffectArray value="YrelArdentDefenderDamageTrackerApplyBehavior" />
-    <EffectArray value="YrelDivinePurposeHeroicCastCooldownModifyUnit" />
   </CEffectSet>
   <CEffectApplyBehavior id="YrelArdentDefenderDamageTrackerApplyBehavior">
     <WhichUnit Value="Caster" />

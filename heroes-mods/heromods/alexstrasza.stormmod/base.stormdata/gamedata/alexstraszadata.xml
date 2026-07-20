@@ -330,6 +330,10 @@
     <CAccumulatorTimed id="AlexstraszaFlameBuffetDecayAccumulator75PercentCCReduction" parent="AlexstraszaFlameBuffetDecayAccumulator">
         <MultiplierPerStep value="$AlexstraszaFlameBuffetSlowMultiplierPerStep75PercentCCReduction"/>
     </CAccumulatorTimed>
+    <CAccumulatorToken id="AlexstraszaDragonqueenAncientFlameHealthAccumulator" parent="BaseAccumulator">
+        <TokenId value="AlexstraszaDragonqueenAncientFlameTokenCounter"/>
+        <Scale value="0.25"/>
+    </CAccumulatorToken>
     <CActorModel id="AlexstraszaAbundanceGroundEffectEnemy" parent="StormModelAnimationStyleContinuous">
         <Filter index="Self" value="1"/>
         <Filter index="Ally" value="1"/>
@@ -1760,9 +1764,15 @@
     <CBehaviorBuff id="AlexstraszaDragonqueenHealthIncrease">
         <RemoveValidatorArray value="AlexstraszaDragonqueenHasDragonqueenBehavior"/>
         <Modification>
-            <VitalMaxArray index="Life" value="500"/>
+            <VitalMaxArray index="Life" value="500">
+              <AccumulatorArray value="AlexstraszaDragonqueenAncientFlameHealthAccumulator"/>
+            </VitalMaxArray>
         </Modification>
     </CBehaviorBuff>
+    <CBehaviorTokenCounter id="AlexstraszaDragonqueenAncientFlameTokenCounter" parent="StormGenericToken">
+        <Max value="1"/>
+        <Init value="1"/>
+    </CBehaviorTokenCounter>    
     <CBehaviorBuff id="AlexstraszaFlameBuffetDoT" parent="StormDot">
         <Duration value="5.5"/>
         <Period value="1"/>
@@ -4781,6 +4791,9 @@
                 <Value value="1.000000"/>
             </Modifications>
         </AbilityModificationArray>
+        <RankArray>
+            <BehaviorArray value="AlexstraszaDragonqueenAncientFlameTokenCounter"/>
+        </RankArray>        
     </CTalent>
     <CTalent id="AlexstraszaFireWithinFlameBuffet">
         <Face value="AlexstraszaFireWithinFlameBuffet"/>

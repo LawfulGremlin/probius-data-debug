@@ -10,7 +10,7 @@
   <const id="$ChromieTimeTrapChargeCooldown" value="15" />
   <const id="$ChromieTimeTrapCooldown" value="1" />
   <const id="$ChromieSandBlastOnceAgainTheFirstTimeMaximumTokens" value="20" />
-  <const id="$ChromieDragonsBreathDeepBreathingMaxStackCount" value="9999" />
+  <const id="$ChromieDragonsBreathDeepBreathingMilestoneGoal" value="20" />
   <const id="$PastAndFutureMeUnitRadius" value="0.625" />
   <const id="$ChromieHereAndThereRange" value="40" />
   <const id="$ChromieHereAndThereSlopDistance" value="4" />
@@ -2038,9 +2038,9 @@
     <Max value="25" />
   </CBehaviorTokenCounter>
   <CBehaviorTokenCounter id="ChromieDragonsBreathDeepBreathingQuestToken" parent="StormQuestToken">
-    <Max value="$ChromieDragonsBreathDeepBreathingMaxStackCount" />
+    <Max value="65535" />
     <SortIndex value="10" />
-    <ConditionalEvents Compare="GE" CompareValue="20">
+    <ConditionalEvents Compare="GE" CompareValue="$ChromieDragonsBreathDeepBreathingMilestoneGoal">
       <Event EventId="QuestComplete" Effect="ChromieDragonsBreathDeepBreathingTalentCompletionSet" />
     </ConditionalEvents>
   </CBehaviorTokenCounter>
@@ -2334,6 +2334,7 @@
   <CEffectSet id="ChromieHereAndThereInitialSet">
     <EffectArray value="ChromieHereAndThereSearchForNearbyEcho" />
     <TargetLocationType value="Point" />
+    <ValidatorArray value="CasterNotRooted" />
   </CEffectSet>
   <CEffectSwitch id="ChromieHereAndThereTargetRangeSwitch">
     <ValidatorArray value="ChromieHereAndThereUnitIsBeingTracked" />
@@ -2782,7 +2783,6 @@
     <BehaviorLink value="ChromieSandBlastPiercingSandsSourceBehavior" />
   </CEffectRemoveBehavior>
   <CEffectModifyPlayer id="ChromieDragonsBreathDeepBreathingFinalModifyUnit">
-    <EffectArray Operation="Set" Reference="Effect,ChromieDragonsBreathDeepBreathingModifyQuestToken,Chance" Value="0" />
     <EffectArray Reference="Abil,ChromieDragonsBreath,Cost.Vital[Energy]" Value="-25" />
     <EffectArray Reference="Abil,ChromieDragonsBreath,Cost.Cooldown.TimeUse" Value="-4.000000" />
   </CEffectModifyPlayer>
@@ -4271,7 +4271,7 @@
       <Modifications Type="FlatModification" Entry="ChromieDragonsBreath" Field="Cost.Vital[Energy]" />
       <Modifications Type="FlatModification" Entry="ChromieDragonsBreath" Field="Cost.Cooldown.TimeUse" />
     </AbilityModificationArray>
-    <QuestData StackBehavior="ChromieDragonsBreathDeepBreathingQuestToken" TargetCount="20" />
+    <QuestData StackBehavior="ChromieDragonsBreathDeepBreathingQuestToken" TargetCount="$ChromieDragonsBreathDeepBreathingMilestoneGoal" />
   </CTalent>
   <CTalent id="ChromieTimeOut">
     <Face value="ChromieTimeOutHotbar" />
@@ -5031,7 +5031,7 @@
   </CValidatorUnitCompareBehaviorCount>
   <CValidatorUnitCompareBehaviorCount id="ChromieHasDragonsBreathDeepBreathingMaxStacks">
     <WhichUnit Value="Caster" />
-    <Value value="$ChromieDragonsBreathDeepBreathingMaxStackCount" />
+    <Value value="65535" />
     <Behavior value="ChromieDragonsBreathDeepBreathingQuestToken" />
     <Compare value="GE" />
   </CValidatorUnitCompareBehaviorCount>

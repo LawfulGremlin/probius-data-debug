@@ -1661,9 +1661,12 @@
   </CBehaviorAbility>
   <CBehaviorBuff id="LavaSurgeMovespeed">
     <Duration value="2" />
-    <Modification>
+    <Modification AccelerationBonus="1000">
+      <MoveSpeedMaximum value="11" />
+      <MoveSpeedMinimum value="11" />
       <UnifiedMoveSpeedFactor value="2" />
     </Modification>
+    <Alignment value="Positive" />
   </CBehaviorBuff>
   <CBehaviorBuff id="RagnarosEmpowerSulfurasHandOfRagnarosCooldownBehavior">
     <Duration value="4" />
@@ -1962,7 +1965,7 @@
   </CBehaviorBuff>
   <CBehaviorBuff id="RagnarosMoltenCoreCasterStasisReturnDelay" parent="StormStasisRemoved">
     <Duration value="0.5" />
-    <FinalEffect value="MoltenCoreEndSelfStun" />
+    <FinalEffect value="ApplySelfStun" />
   </CBehaviorBuff>
   <CBehaviorBuff id="RagnarosCatchingFireRegenIncreaseCarryBehavior" parent="CarryBehaviorParent">
     <Modification>
@@ -2203,6 +2206,9 @@
   <CButton id="RagnarosLivingMeteorMeteorBomb" parent="StormButtonParent">
     <Icon value="Assets\Textures\storm_ui_icon_ragnaros_livingmeteor.dds" />
   </CButton>
+  <CEffectApplyBehavior id="ApplySelfStun">
+    <Behavior value="MoltenCoreEndSelfStun" />
+  </CEffectApplyBehavior>
   <CEffectApplyBehavior id="RagApplyExplosiveRuneDOT">
     <ValidatorArray index="0" value="TargetNotDead" />
     <Marker Link="Effect/ChenBreathOfFireApplyDoT" />
@@ -2305,13 +2311,13 @@
     <TokenId value="RagnarosEmpowerSulfurasHandOfRagnarosTwoTargetCheck" />
   </CEffectModifyTokenCount>
   <CEffectApplyBehavior id="LavaWaveLavaSurgeMovementSpeedBoost">
-    <ValidatorArray value="TargetMinionOrMerc" />
+    <ValidatorArray index="0" value="TargetIsMinionOrMercANDTargetIsNotMapCreatureOrMapBoss" />
     <Behavior value="LavaSurgeMovespeed" />
   </CEffectApplyBehavior>
   <CEffectEnumArea id="LavaWaveSearchAreaAlly">
     <ValidatorArray value="HasRagnarosLavawaveLavaSurge" />
     <ImpactLocation Value="SourceUnit" />
-    <SearchFilters value="-;Player,Neutral,Enemy,ImmuneToAOE,Structure,Missile,Item,Stasis,Dead,Hidden,Invulnerable" />
+    <SearchFilters value="-;Neutral,Enemy,Structure,ImmuneToFriendlyAbilities,Missile,Item,Stasis,Dead,Hidden,Invulnerable" />
     <AreaArray Procedural="1" Effect="LavaWaveLavaSurgeMovementSpeedBoost" />
   </CEffectEnumArea>
   <CEffectSwitch id="RagnarosSulfurasSmashAddTokenCountSwitch">
@@ -2967,6 +2973,9 @@
   <CEffectApplyBehavior id="RagnarosMoltenCoreApplyCasterStasisReturnDelayBehavior">
     <WhichUnit Value="Caster" />
     <Behavior value="RagnarosMoltenCoreCasterStasisReturnDelay" />
+  </CEffectApplyBehavior>
+  <CEffectApplyBehavior id="MoltenCoreEndSelfStun">
+    <WhichUnit Value="Caster" />
   </CEffectApplyBehavior>
   <CEffectRemoveBehavior id="RagnarosMoltenCoreDurationRemove">
     <WhichUnit Value="Source" />

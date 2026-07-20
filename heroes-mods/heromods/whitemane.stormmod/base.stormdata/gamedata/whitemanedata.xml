@@ -190,6 +190,12 @@
     <TokenId value="WhitemaneZealTokenCounter" />
     <Scale value="0.1" />
   </CAccumulatorToken>
+  <CAccumulatorToken id="WhitemaneInquisitorsPrayerHitAccumulator" parent="BaseAccumulator">
+    <MaxAccumulation value="15" />
+    <TokenId value="WhitemaneInquisitorsPrayerHeroHitCounter" />
+    <Scale value="1" />
+    <Offset value="-1" />
+  </CAccumulatorToken>
   <CActorSimple default="1" id="WhitemaneSearingLashImpactControllerParent">
     <?token id="initialEffect" type="CEffectLink"?>
     <?token id="damageEffect" type="CEffectLink"?>
@@ -1148,6 +1154,9 @@
     <Face value="WhitemaneInquisitor'sPrayerQuestTokens" />
     <Max value="65000" />
   </CBehaviorTokenCounter>
+  <CBehaviorTokenCounter id="WhitemaneInquisitorsPrayerHeroHitCounter" parent="StormGenericToken">
+    <Max value="15" />
+  </CBehaviorTokenCounter>
   <CBehaviorBuff id="WhitemaneSearingLashRighteousFlameAttackSpeedBehavior" parent="CarryBehaviorParent">
     <Duration value="3" />
     <Modification>
@@ -1599,12 +1608,12 @@
   </CEffectApplyBehavior>
   <CEffectSet id="WhitemaneSearingLashManaReturnFirstHitHeroImpactSet">
     <ValidatorArray value="TargetIsHero" />
-    <EffectArray value="WhitemaneSearingLashFirstHitManaRestore" />
+    <EffectArray value="WhitemaneInquisitorsPrayerHeroHitIncrementTokenCount" />
     <Chance value="0" />
   </CEffectSet>
   <CEffectSet id="WhitemaneSearingLashManaReturnSecondHitHeroImpactSet">
     <ValidatorArray value="TargetIsHero" />
-    <EffectArray value="WhitemaneSearingLashSecondHitManaRestore" />
+    <EffectArray value="WhitemaneInquisitorsPrayerHeroHitIncrementTokenCount" />
     <Chance value="0" />
   </CEffectSet>
   <CEffectModifyTokenCount id="WhitemaneDesperatePleaAddDesperationToken" parent="BaseEffectModifyTokenCount">
@@ -2002,13 +2011,24 @@
   <CEffectSet id="WhitemaneDivineReckoningPrepSet">
     <EffectArray value="DismountDecloakCasterSet" />
   </CEffectSet>
+  <CEffectModifyTokenCount id="WhitemaneInquisitorsPrayerHeroHitIncrementTokenCount" parent="BaseEffectModifyTokenCount">
+    <TokenId value="WhitemaneInquisitorsPrayerHeroHitCounter" />
+  </CEffectModifyTokenCount>
+  <CEffectModifyTokenCount id="WhitemaneInquisitorsPrayerHeroHitResetTokens">
+    <TokenId value="WhitemaneInquisitorsPrayerHeroHitCounter" />
+    <Operation value="Set" />
+  </CEffectModifyTokenCount>
   <CEffectCreateHealer id="WhitemaneSearingLashFirstHitManaRestore" parent="StormManaRestore">
     <ImpactUnit Value="Caster" />
-    <RechargeVitalRate value="25" />
+    <RechargeVitalRate value="25">
+      <AccumulatorArray value="WhitemaneInquisitorsPrayerHitAccumulator" />
+    </RechargeVitalRate>
   </CEffectCreateHealer>
   <CEffectCreateHealer id="WhitemaneSearingLashSecondHitManaRestore" parent="StormManaRestore">
     <ImpactUnit Value="Caster" />
-    <RechargeVitalRate value="25" />
+    <RechargeVitalRate value="25">
+      <AccumulatorArray value="WhitemaneInquisitorsPrayerHitAccumulator" />
+    </RechargeVitalRate>
   </CEffectCreateHealer>
   <CEffectApplyBehavior id="WhitemaneSearingLashLashingOutApplyResetButtonFlash">
     <WhichUnit Value="Caster" />
@@ -2053,8 +2073,10 @@
     <InitialEffect value="WhitemaneSearingLashInitialSearchSet" />
   </CEffectCreatePersistent>
   <CEffectSet id="WhitemaneSearingLashInitialSearchSet">
+    <EffectArray value="WhitemaneInquisitorsPrayerHeroHitResetTokens" />
     <EffectArray value="WhitemaneSearingLashInitialSearch" />
     <EffectArray value="WhitemaneSearingLashInitialDamageSearch" />
+    <EffectArray value="WhitemaneSearingLashFirstHitManaRestore" />
     <EffectArray value="WhitemaneSearingLashExecuteSoundDummy" />
   </CEffectSet>
   <CEffectEnumArea id="WhitemaneSearingLashInitialDamageSearch">
@@ -2086,9 +2108,14 @@
   <CEffectCreatePersistent id="WhitemaneSearingLashFinalDelay">
     <WhichLocation Effect="WhitemaneSearingLashInitialSet" />
     <InitialDelay value="0.75" />
-    <InitialEffect value="WhitemaneSearingLashFinalSearch" />
+    <InitialEffect value="WhitemaneSearingLashFinalSearchSet" />
     <FinalEffect value="WhitemaneSearingLashExecuteSoundDummy" />
   </CEffectCreatePersistent>
+  <CEffectSet id="WhitemaneSearingLashFinalSearchSet">
+    <EffectArray value="WhitemaneInquisitorsPrayerHeroHitResetTokens" />
+    <EffectArray value="WhitemaneSearingLashFinalSearch" />
+    <EffectArray value="WhitemaneSearingLashSecondHitManaRestore" />
+  </CEffectSet>
   <CEffectEnumArea id="WhitemaneSearingLashFinalSearch">
     <AreaArray Effect="WhitemaneSearingLashStage2ImpactSet">
       <RectangleWidth value="7" />
@@ -3484,6 +3511,9 @@
         <Value value="2.000000" />
       </Modifications>
     </AbilityModificationArray>
+    <RankArray>
+      <BehaviorArray value="WhitemaneInquisitorsPrayerHeroHitCounter" />
+    </RankArray>
   </CTalent>
   <CTalent id="WhitemaneZealIndulgence">
     <Face value="WhitemaneZealIndulgence" />
@@ -4156,6 +4186,12 @@
   <CValidatorCombine id="AbilButtonActiveEDamage">
     <CombineArray value="WhitemaneSpirtLashLashingOutHasResetButtonFlash" />
   </CValidatorCombine>
+  <CValidatorUnitCompareTokenCount id="WhitemaneInquisitorsPrayerCasterHasGE1HeroHitToken">
+    <WhichUnit Value="Caster" />
+    <Compare value="GE" />
+    <Value value="1" />
+    <TokenId value="WhitemaneInquisitorsPrayerHeroHitCounter" />
+  </CValidatorUnitCompareTokenCount>
   <CWeaponLegacy id="WhitemaneHeroWeapon" parent="StormHeroMediumWeapon">
     <DisplayEffect value="WhitemaneWeaponDamage" />
     <MinScanRange value="5.5" />
