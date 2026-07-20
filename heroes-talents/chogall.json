@@ -112,7 +112,7 @@
         "tooltipId": "ChoConsumingFire",
         "talentTreeId": "ChoConsumingFire",
         "name": "Consuming Fire",
-        "description": "Consuming Blaze heals for 150% more when a Hero is Ignited.",
+        "description": "Consuming Blaze restores 75 (+4% per level) more Health when a Hero is Ignited.",
         "icon": "storm_ui_icon_cho_consumingflame.png",
         "type": "W",
         "sort": 1,
@@ -450,7 +450,7 @@
   "tooltipMarkup": {
     "ChoCallousedHide": "While under <c val=\"#TooltipNumbers\">50%</c> maximum Health, Cho gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChoOgreHideCallousedHideTalentMoveSpeedCarry,Modification.UnifiedMoveSpeedFactor\"/>%</c> increased Movement Speed and healing received.",
     "ChoConsumingBlaze": "Ignite nearby enemies, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoConsumingBlazeDamage,Amount*2*Behavior,ChoConsumingBlazeDoT,Duration\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoConsumingBlazeDoT,Duration\" player=\"0\"/></c> seconds. Basic Attacking burning enemies re-Ignites them. Cho is healed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoConsumingBlazeCasterHeal,RechargeVitalRate\"/></c> when an enemy is Ignited.",
-    "ChoConsumingFire": "Consuming Blaze heals for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChoConsumingBlazeCasterHeal,MultiplicativeModifierArray[0].Modifier\"precision=\"2\"/>%</c> more when a Hero is Ignited.",
+    "ChoConsumingFire": "Consuming Blaze restores <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ChoConsumingFireHitAccumulator,Scale\"/></c> more Health when a Hero is Ignited.",
     "ChoCthunsGiftTalent": "Cho's Basic Attack becomes ranged and Slows targets by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChoCthunsGiftSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoCthunsGiftSlow,Duration\"/></c> seconds.",
     "ChoEnragedRegeneration": "Each time Cho hits an enemy Hero with an Ability or Basic Attack, he heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoEnragedRegenerationCreateHealer,RechargeVitalRate*Behavior,ChoEnragedRegenerationHoT,PeriodCount\"/></c> over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoEnragedRegenerationHoT,Duration\"/></c> seconds. Enemy Heroes hit by Gall's Dread Orb receive <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,GallDreadOrbEnragedRegenerationTalentDebuff,Modification.HealTakenAdditiveMultiplier[Life]\"/>%</c> less healing for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallDreadOrbEnragedRegenerationTalentDebuff,Duration\"/></c> seconds.",
     "ChoFavorOfTheOldGodsTalent": "Upheaval Roots enemy Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoUpheavalFavoroftheOldGodsTalentRoot,Duration\"precision=\"2\"/></c> seconds.",

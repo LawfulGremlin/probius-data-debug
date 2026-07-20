@@ -92,7 +92,7 @@
       {
         "uid": "9e7cc6",
         "name": "Blunt Force Gun",
-        "description": "Fire a missile across the battlefield, dealing 500 (+3% per level) damage to non-Structure enemies in its path.",
+        "description": "Fire a missile across the battlefield, dealing 500 (+3% per level) damage to enemies in its path.  Deals 50% damage to Structures.",
         "hotkey": "R",
         "abilityId": "SgtHammer|R2",
         "tooltipId": "SgtHammerBluntForceGun",
@@ -284,7 +284,7 @@
         "tooltipId": "SgtHammerBluntForceGun",
         "talentTreeId": "SgtHammerHeroicAbilityBluntForceGun",
         "name": "Blunt Force Gun",
-        "description": "Fire a missile across the battlefield, dealing 500 (+3% per level) damage to non-Structure enemies in its path.",
+        "description": "Fire a missile across the battlefield, dealing 500 (+3% per level) damage to enemies in its path.  Deals 50% damage to Structures.",
         "icon": "storm_ui_icon_sgthammer_bluntforcegun.png",
         "type": "Heroic",
         "sort": 1,
@@ -503,7 +503,7 @@
   ],
   "tooltipMarkup": {
     "GenericExecutionerTalent": "Attacking a Hero that is Slowed, Rooted, or Stunned increases your Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Modification.DamageDealtFraction[Basic]*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Duration\"/></c> seconds.",
-    "SgtHammerBluntForceGun": "Fire a missile across the battlefield, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,BluntForceGunDamage,Amount\"/> </c>damage to non-Structure enemies in its path.",
+    "SgtHammerBluntForceGun": "Fire a missile across the battlefield, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,BluntForceGunDamage,Amount\"/> </c>damage to enemies in its path.  Deals <c val=\"#TooltipNumbers\">50%</c> damage to Structures.",
     "SgtHammerBluntForceGunOrbitalBFGTalent": "Blunt Force Gun's missile orbits the planet every <c val=\"#TooltipNumbers\">5</c> seconds. Only the last missile fired orbits.",
     "SgtHammerConcussiveBlast": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ConcussiveBlastDamage,Amount\"/></c> damage to enemies in front of Sgt. Hammer and knock them back.<n/><n/><c val=\"ffff8a\">Siege Mode:</c> Radius increased by <c val=\"#TooltipNumbers\"><d ref=\"((Effect,SgtHammerConcussiveBlastEnterSiegeModeModifyPlayer,EffectArray[0].Value-Effect,SgtHammerConcussiveBlastExitSiegeModeModifyPlayer,EffectArray[0].Value)/Effect,SgtHammerConcussiveBlastExitSiegeModeModifyPlayer,EffectArray[0].Value)*100\" player=\"0\"/>%</c>.",
     "SgtHammerConcussiveBlastBarricadeTalent": "Reduce Concussive Blast's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,SgtHammerBarricade,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds, its Mana cost by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,SgtHammerBarricade,AbilityModificationArray[0].Modifications[2].Value\"/></c>, and when cast create an impassable wall in front of Sgt. Hammer for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ConcussiveBlastScrapTimedLife,Duration\" player=\"0\"/></c> seconds.",

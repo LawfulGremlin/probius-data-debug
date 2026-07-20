@@ -131,14 +131,14 @@
         "nameId": "AbathurLocustBombardWeapon",
         "range": 7.0,
         "period": 1.0,
-        "damage": 58.0,
+        "damage": 36.0,
         "damageScale": 0.04
       },
       {
         "nameId": "AbathurLocustBombardWeaponCloseRange",
         "range": 3.0,
         "period": 1.0,
-        "damage": 46.0,
+        "damage": 36.0,
         "damageScale": 0.04
       }
     ]
@@ -176,7 +176,7 @@
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "cooldownTooltip": "Cooldown: 15 seconds",
           "shortTooltip": "Spawn locusts that attack down the nearest lane",
-          "fullTooltip": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds.  Locusts heal for <c val=\"bfd4fd\">20%</c> of the damage they deal, and regain <c val=\"bfd4fd\">20%</c> of their Maximum health when a nearby minion dies.<n/><n/>Locusts lose health over <c val=\"bfd4fd\">17</c> seconds, have <c val=\"bfd4fd\">225~~0.04~~</c> health and deal <c val=\"bfd4fd\">58~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
+          "fullTooltip": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds.  Locusts heal for <c val=\"bfd4fd\">20%</c> of the damage they deal, and regain <c val=\"bfd4fd\">20%</c> of their Maximum health when a nearby minion dies.<n/><n/>Locusts lose health over <c val=\"bfd4fd\">17</c> seconds, have <c val=\"bfd4fd\">225~~0.04~~</c> health and deal <c val=\"bfd4fd\">36~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">100%</c> bonus damage to enemy non-Heroes.",
           "abilityType": "Q",
           "isActive": false
         }
@@ -212,7 +212,7 @@
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "cooldownTooltip": "Cooldown: 15 seconds",
           "shortTooltip": "Spawn locusts that attack down the nearest lane",
-          "fullTooltip": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds.  Locusts heal for <c val=\"bfd4fd\">20%</c> of the damage they deal, and regain <c val=\"bfd4fd\">20%</c> of their Maximum health when a nearby minion dies.<n/><n/>Locusts lose health over <c val=\"bfd4fd\">17</c> seconds, have <c val=\"bfd4fd\">225~~0.04~~</c> health and deal <c val=\"bfd4fd\">58~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
+          "fullTooltip": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds.  Locusts heal for <c val=\"bfd4fd\">20%</c> of the damage they deal, and regain <c val=\"bfd4fd\">20%</c> of their Maximum health when a nearby minion dies.<n/><n/>Locusts lose health over <c val=\"bfd4fd\">17</c> seconds, have <c val=\"bfd4fd\">225~~0.04~~</c> health and deal <c val=\"bfd4fd\">36~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">100%</c> bonus damage to enemy non-Heroes.",
           "abilityType": "Q",
           "isActive": false
         }
@@ -243,7 +243,7 @@
         "nameId": "AbathurLocustWeapon",
         "range": 1.5,
         "period": 1.0,
-        "damage": 58.0,
+        "damage": 36.0,
         "damageScale": 0.04
       }
     ]
@@ -16450,7 +16450,7 @@
           "energyTooltip": "<s val=\"bfd4fd\" name=\"StandardTooltipDetails\">Mana: 100</s>",
           "cooldownTooltip": "Cooldown: 70 seconds",
           "shortTooltip": "Fire a large bullet across the map",
-          "fullTooltip": "Fire a missile across the battlefield, dealing <c val=\"bfd4fd\">500~~0.03~~ </c>damage to non-Structure enemies in its path.",
+          "fullTooltip": "Fire a missile across the battlefield, dealing <c val=\"bfd4fd\">500~~0.03~~ </c>damage to enemies in its path.  Deals <c val=\"bfd4fd\">50%</c> damage to Structures.",
           "abilityType": "Q"
         }
       ]
