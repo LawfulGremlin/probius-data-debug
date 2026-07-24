@@ -1924,6 +1924,7 @@
   "NexusHunterChainsaw": "Blood Rage reduces Carnage cooldown",
   "NexusHunterEnsnaringSwing": "Revolving Sweep Slows enemies",
   "NexusHunterFatalWounds": "Increase Blood Rage damage to low health enemies",
+  "NexusHunterFatalWoundsQuestToken": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Damage enemy Heroes with Blood Rage's bleed damage to permanently increase its damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,FatalWoundsDamage,Scale*100\" precision=\"2\"/>%</c>. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After damaging Heroes with Blood Rage's bleed damage <C val=\"#TooltipNumbers\"><d ref=\"Validator,NexusHunterFatalWoundsIsNotComplete,Value\"/></c> times, Blood Rage's duration is increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterFatalWoundsCompleteModifyDoTDuration,EffectArray[0].Value\"/></c> seconds.",
   "NexusHunterFinalStrike": "Extend sword to deal finishing blow",
   "NexusHunterFinalStrikeUnleashedPotential": "Final Strike refunds Ability cooldowns",
   "NexusHunterFinishingTouch": "Empower Basic Attacks against weak Heroes",
