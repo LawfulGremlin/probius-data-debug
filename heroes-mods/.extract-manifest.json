@@ -1,7 +1,7 @@
 {
   "product": "hero",
   "region": "us",
-  "version": "2.55.17.97650",
+  "version": "2.55.17.97771",
   "extraction": {
     "manifestVersion": 1,
     "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
@@ -15,7 +15,7 @@
     },
     {
       "path": "core.stormmod/base.stormdata/buildid.txt",
-      "ckey": "2066c2f1ec79c538029bfbec1594be3f",
+      "ckey": "a866ad86fe7421a2b650a61070690dec",
       "size": 7
     },
     {
@@ -25,12 +25,12 @@
     },
     {
       "path": "core.stormmod/base.stormdata/databuildid.txt",
-      "ckey": "2066c2f1ec79c538029bfbec1594be3f",
+      "ckey": "a866ad86fe7421a2b650a61070690dec",
       "size": 7
     },
     {
       "path": "core.stormmod/base.stormdata/depotcache/source_build.txt",
-      "ckey": "512271085e5ba943520b3367c899c180",
+      "ckey": "7d38179ef39127e9136219c93c77e461",
       "size": 6
     },
     {
@@ -1655,8 +1655,8 @@
     },
     {
       "path": "core.stormmod/base.stormdata/ui/layout/descindex.stormlayout",
-      "ckey": "14f287f33131ee40d0d6fc5ca48de5eb",
-      "size": 26793
+      "ckey": "19cd1e040cdd8e437a92461453c9eb2a",
+      "size": 26860
     },
     {
       "path": "core.stormmod/base.stormdata/ui/layout/editor/editor.stormlayout",
@@ -1737,6 +1737,11 @@
       "path": "core.stormmod/base.stormdata/ui/layout/glue/battleuservoiceframe.stormlayout",
       "ckey": "178b9b74ae5787ec15843aa72027730d",
       "size": 9792
+    },
+    {
+      "path": "core.stormmod/base.stormdata/ui/layout/glue/bdkcheckoutdialog.stormlayout",
+      "ckey": "b49f6652f5f564ec7168dc30bd117439",
+      "size": 3277
     },
     {
       "path": "core.stormmod/base.stormdata/ui/layout/glue/boostcollectionpanel.stormlayout",
@@ -1955,8 +1960,8 @@
     },
     {
       "path": "core.stormmod/base.stormdata/ui/layout/glue/gempackpurchasedialog.stormlayout",
-      "ckey": "1be2c012d2d95f23adef4cefcfe6116e",
-      "size": 114966
+      "ckey": "633b07077c2023f84aac3535ab3cbf0b",
+      "size": 115680
     },
     {
       "path": "core.stormmod/base.stormdata/ui/layout/glue/gluesingleton.stormlayout",
@@ -22005,8 +22010,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/abathurdata/abathurdata.xml",
-      "ckey": "5635b583cf7ffad50274c9539857536d",
-      "size": 310905
+      "ckey": "0c85fb6f4c5bf0c68fd15f4d3ebd8755",
+      "size": 310914
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/abathurdata/abathurskindata/abathurbasedata/abathurbasedata.xml",
@@ -28355,8 +28360,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/witchdoctordata/witchdoctordata.xml",
-      "ckey": "0d2a6755eec4b9b4866fb73244d8e6e1",
-      "size": 292089
+      "ckey": "197d7b6e5864da3980eac885bf2c9675",
+      "size": 292577
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/heroes/witchdoctordata/witchdoctorskindata/witchdoctorbasedata/witchdoctorbasedata.xml",
@@ -49675,8 +49680,8 @@
     },
     {
       "path": "heromods/alexstrasza.stormmod/base.stormdata/gamedata/alexstraszadata.xml",
-      "ckey": "d5ce83846dabc5d2e607ce22418dacd1",
-      "size": 343793
+      "ckey": "82a3a0b7be66085053404ca3ba8ffdf4",
+      "size": 343801
     },
     {
       "path": "heromods/alexstrasza.stormmod/base.stormdata/gamedata/alexstraszaskindata/alexstraszabasedata/alexstraszabasedata.xml",
@@ -53335,8 +53340,8 @@
     },
     {
       "path": "heromods/chromie.stormmod/base.stormdata/gamedata/chromiedata.xml",
-      "ckey": "d9ba2ffdbf86b129a4861a37b4e3d877",
-      "size": 295321
+      "ckey": "fb3fe44ff6efa2896aad53c6c5569b50",
+      "size": 295320
     },
     {
       "path": "heromods/chromie.stormmod/base.stormdata/gamedata/chromieskindata/chromiebasedata/chromiebasedata.xml",
@@ -66715,8 +66720,8 @@
     },
     {
       "path": "heromods/thefirelords.stormmod/base.stormdata/gamedata/thefirelordsdata.xml",
-      "ckey": "640867d367d4d1c11beb243f1716081b",
-      "size": 268454
+      "ckey": "3542920cb8eff8a4d5df914e9fa2799f",
+      "size": 268457
     },
     {
       "path": "heromods/thefirelords.stormmod/base.stormdata/gamedata/voiceoverdata.xml",
