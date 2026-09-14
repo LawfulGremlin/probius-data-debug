@@ -5327,7 +5327,7 @@ Button/Tooltip/AbathurLocustSwarm=Aktywuj, aby powić w pobliżu Szarańczę (<c
 Button/Tooltip/AbathurMonstrosityDeepTunnel=Nakazuje wyewoluowanej Potworności błyskawiczne przekopanie tunelu do widocznego punktu na mapie.
 Button/Tooltip/AbathurMonstrosityEvolutionCompleteTalent=Zwiększa obrażenia od ataku podstawowego Potworności o <c val="#TooltipNumbers"><d ref="100*Effect,AbathurEvolveMonstrosityWeaponDamage,MultiplicativeModifierArray[EvolutionCompleteDamage].Modifier"/>%</c>.
 Button/Tooltip/AbathurReinforcedCarapaceTalent=Zwiększa moc osłony Karapaksu o <c val="#TooltipNumbers"><d ref="100*(Talent,AbathurReinforcedCarapace,AbilityModificationArray[0].Modifications[0].Value)-100"Precision="2"/>%</c>.
-Button/Tooltip/AbathurSlapathur=Ataki podstawowe Abatura zadają obrażenia zwiększone o <c val=#TooltipNumbers>350%</c> i ogłuszają wrogów nieelitarnych, a także dezaktywują budowle na <c val=#TooltipNumbers><d ref=Behavior,AbathurSlapathurStun,Duration precision=1/></c> sek.</n></n>Jeden bohater lub budowla może ulec ogłuszeniu/dezaktywacji maksymalnie raz na <c val=#TooltipNumbers><d ref=Behavior,SlapathurInternalCooldown,Duration/></c> sek.
+Button/Tooltip/AbathurSlapathur=Ataki podstawowe Abatura zadają obrażenia zwiększone o <c val="#TooltipNumbers">500%</c> i ogłuszają wrogów nieelitarnych, a także dezaktywują budowle na <c val="#TooltipNumbers"><d ref="Behavior,AbathurSlapathurStun,Duration" precision="1"/></c> sek.</n></n>Jeden bohater lub budowla może ulec ogłuszeniu/dezaktywacji maksymalnie raz na <c val="#TooltipNumbers"><d ref="Behavior,SlapathurInternalCooldown,Duration"/></c> sek.
 Button/Tooltip/AbathurSymbiote=Wspomaga wybranego sojusznika lub budowlę ofensywną Symbiontem, który przyłącza się do celu. Abatur sprawuje kontrolę nad Symbiontem i uzyskuje dostęp do nowych zdolności. Symbiont może zdobywać PD za zabitych w pobliżu wrogów.
 Button/Tooltip/AbathurSymbioteAdrenalOverloadTalent=Żywiciele Symbionta będący bohaterami zyskują premię <c val="#TooltipNumbers"><d ref="Behavior,AbathurAdrenalOverload,Modification.AdditiveAttackSpeedFactor*100" player="0" precision="2"/>%</c> do szybkości ataku.
 Button/Tooltip/AbathurSymbioteAdrenalineBoostTalent=Karapaks Symbionta zwiększa szybkość ruchu celu o <c val="#TooltipNumbers"><d ref="100*Behavior,AdrenalineBoost,Modification.UnifiedMoveSpeedFactor"/>%</c> na <c val="#TooltipNumbers"><d ref="Behavior,AdrenalineBoost,Duration" precision="1" player="0"/></c> sek.
@@ -5431,7 +5431,7 @@ Button/Tooltip/ArtanisTwinBladesTripleStrikeTalent=Zwiększa liczbę ataków pod
 Button/Tooltip/ArtanisTwinBladesZealotChargeTalent=Zwiększa dystans szarży Bliźniaczych Ostrzy <w>o <c val="#TooltipNumbers">75%</c>.</w>
 Button/Tooltip/ArthasAbsoluteZeroSummonSindragosaTalent=Sindragosa pokonuje dwukrotnie większą odległość. Wrodzy bohaterowie zostają unieruchomieni na <c val="#TooltipNumbers"><d ref="Behavior,ArthasSummonSindragosaHeroRoot,Duration" player="0"Precision="2"/></c> sek., a następnie spowolnieni o <c val="#TooltipNumbers"><d ref="-100*Behavior,ArthasSummonSindragosaAbsoluteZeroSlow,Modification.UnifiedMoveSpeedFactor"/>%</c> <w>na <c val="#TooltipNumbers"><d ref="Behavior,ArthasSummonSindragosaAbsoluteZeroSlow,Duration" player="0" precision="1"/></c> sek.</w>
 Button/Tooltip/ArthasAntiMagicShellTalent=Aktywuj, aby zapewnić Arthasowi odporność na obrażenia od zaklęć na <c val="#TooltipNumbers"><d ref="Behavior,ArthasAntiMagicShellCaster,Duration"/></c> sek. i przywrócić mu równowartość <c val="#TooltipNumbers">25%</c> zablokowanych obrażeń w postaci punktów zdrowia.
-Button/Tooltip/ArthasArmyOfTheDead=Zużywa wszystkie ładunki, by przywołać taką samą liczbę Ghuli, które tracą zdrowie w ciągu <c val="#TooltipNumbers"><d ref="-Unit,ArthasArmyOfTheDeadGhoul,LifeMax/Unit,ArthasArmyOfTheDeadGhoul,LifeRegenRate" player="0"/></c> sek. i atakują, zadając <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadGhoulWeaponDamage,Amount"/></c> pkt. obrażeń. Aktywuj ponownie, aby poświęcić Ghula i przywrócić Arthasowi <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate"/></c> pkt. zdrowia. Maksymalna liczba ładunków: <c val="#TooltipNumbers"><d ref="Abil,ArthasArmyOfTheDead,Cost.Charge.CountMax"/></c>.<n/><n/>Za każdym razem, kiedy pobliski stronnik umiera, czas odnowienia ładunku tej zdolności jest skracany o <c val="#TooltipNumbers"><d ref="-Effect,ArthasArmyoftheDeadNPCDeathModifyChargeCooldown,Cost[0].ChargeTimeUse"precision="1"/></c> sek. Zabójstwa skracają czas odnowienia tej zdolności o <c val="#TooltipNumbers"><d ref="-Effect,ArthasArmyoftheDeadTakedownModifyChargeCooldown,Cost[0].ChargeTimeUse"precision="1"/></c> sek.
+Button/Tooltip/ArthasArmyOfTheDead=Przyzywa Ghule (<c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadSpawnPersistent,PeriodCount" player="0"/></c>) z <c val="#TooltipNumbers"><d ref="Unit,ArthasArmyOfTheDeadGhoul,LifeMax"/></c> pkt. zdrowia i tracą one zdrowie w ciągu <c val="#TooltipNumbers"><d const="$ArthasArmyOfTheDeadGhoulDecayDuration" /></c> sek. Ghule podążają za Arthasem i atakują pobliskich przeciwników, zadając im <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadGhoulWeaponDamage,Amount"/></c> pkt. obrażeń.<n/><n/>Aktywuj zdolność ponownie, aby poświęcić <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHealSearch,AreaArray[0].MaxCount"/></c> Ghula i przywrócić sobie <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate"/></c> pkt. zdrowia. Czas odnowienia tego efektu wynosi <c val="#TooltipNumbers"><d ref="Abil,ArthasArmyOfTheDeadSacrifice,Cost.Cooldown.TimeUse"/></c> sek.
 Button/Tooltip/ArthasArmyOfTheDeadSacrifice=Arthas poświęca ghula, aby przywrócić sobie <w><c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate"/></c> pkt.</w> zdrowia.
 Button/Tooltip/ArthasArmyOfTheDeadSacrificeUpgrade=<s val="StandardTooltipDetails">Czas odnowienia: <d ref="Abil,ArthasArmyOfTheDeadSacrifice,Cost[0].Cooldown.TimeUse"/> sek.<n/><n/><s val="StandardTooltip">Arthas poświęca ghula, aby przywrócić sobie <s val="StandardTooltipDetails"><d ref="Effect,ArmyOfTheDeadLegionofNorthrendHeal,RechargeVitalRate"/></s> pkt. zdrowia.
 Button/Tooltip/ArthasBitingColdFrozenTempestTalent=Za każdą sekundę, kiedy wróg jest raniony Lodową Nawałnicą, zadaje ona dodatkowe <c val="#TooltipNumbers"><d ref="100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,Scale*2"Precision="2"/>%</c> obrażeń, maksymalnie do <c val="#TooltipNumbers"><d ref="100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,MaxAccumulation"/>%</c>.
@@ -7226,7 +7226,7 @@ Button/TooltipAppender/AzmodanGlobeOfAnnihilationTasteForBlood=<n/><c val="#Tool
 Button/TooltipAppender/ButcherFreshMeatAbattoirTalentAppender=<n/><n/><c val="#TooltipQuest">Zebrane mięso: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ButcherFreshMeatAbattoirTalentTokenCounter$"/><n/><c val="#TooltipQuest">Premia do obrażeń od ataku: </c><d ref="$BehaviorStackCount:ButcherFreshMeatAbattoirTalentTokenCounter$*Accumulator,ButcherFreshMeatAbattoirTalentAccumulator,Scale"precision="1"/></c></c> pkt.
 Button/TooltipAppender/ButcherFreshMeatAppender=<n/><n/><c val="#TooltipQuest">Zebrane mięso: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$"/><n/><c val="#TooltipQuest">Premia do obrażeń od ataku: </c><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$*Accumulator,ButcherFreshMeatAccumulator,Scale"precision="1"/></c></c> pkt.
 Button/TooltipAppender/ButcherFreshMeatAppenderComplete=<n/><n/><c val="#TooltipQuest">ZADANIE WYKONANE!<n/>Zebrane mięso: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$"/><n/><c val="#TooltipQuest">Premia do obrażeń od ataku: </c><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$*Accumulator,ButcherFreshMeatAccumulator,Scale+Behavior,ButcherFreshMeatQuestCompletionCarry,Modification.DamageDealtScaled[Basic]"precision="1"/></c> pkt.</c>
-Button/TooltipAppender/ChenBreathofFireAccumulatingFlame=<n/><c val="#TooltipQuest">Podpaleni bohaterowie: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$"/>/<d ref="Behavior,ChenBreathOfFireAccumulatingFlameTokenCounter,Max"/><n/><c val="#TooltipQuest">Premia do obrażeń:</c> <d ref="100*($BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$)*Accumulator,BreathofFireQuestDamage,Scale"/>%
+Button/TooltipAppender/ChenBreathofFireAccumulatingFlame=<n/><c val="#TooltipQuest">Podpaleni bohaterowie: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$"/>/<d ref="Behavior,ChenBreathOfFireAccumulatingFlameTokenCounter,Max"/><n/><c val="#TooltipQuest">Premia do obrażeń:</c> <d ref="100*($BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$)*Accumulator,ChenAccumulatingFlameAccumulator,Scale"/>%
 Button/TooltipAppender/ChenBreathofFireAccumulatingFlameComplete=<n/><c val="#TooltipQuest">ZADANIE WYKONANE!<n/><c val="#TooltipQuest">Premia do obrażeń:</c> <c val="#TooltipNumbers"><d ref="100*($BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$)*Accumulator,ChenAccumulatingFlameAccumulator,Scale"/>%</c>
 Button/TooltipAppender/ChenFortifyingBrewFreshestIngredients=<n/><c val="#TooltipQuest">Zebrane Kule: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ChenFreshestIngredientsTokenCounter$"/>/<d ref="Behavior,ChenFreshestIngredientsTokenCounter,Max"/></c></c><n/><c val="#TooltipQuest">Regeneracja zdrowia: <c val="#TooltipNumbers"><d ref="Accumulator,ChenFreshestIngredientsTalentAccumulator,Scale*($BehaviorStackCount:ChenFreshestIngredientsTokenCounter$)"/></c></c> pkt./sek.
 Button/TooltipAppender/ChenFortifyingBrewFreshestIngredientsComplete=<n/><c val="#TooltipQuest">ZADANIE WYKONANE!<n/>Regeneracja zdrowia: <c val="#TooltipNumbers"><d ref="Accumulator,ChenFreshestIngredientsTalentAccumulator,Scale*($BehaviorStackCount:ChenFreshestIngredientsTokenCounter$)"/></c></c> pkt./sek.
@@ -7465,7 +7465,7 @@ DragonStatueDefendDefendDragonStatue=DefendDragonStatue
 Effect/Name/AllShallBurnCasterRevealerCreatePersistent=All Shall Burn Caster Revealer (Create Persistent)
 Effect/Name/AllShallBurnCasterRevealerDestroyPersistent=All Shall Burn Caster Revealer (Destroy Persistent)
 Effect/Name/Azmodan200IQCastSet=
-Effect/Name/Azmodan200IQPlayDummySet= 
+Effect/Name/Azmodan200IQPlayDummySet=
 Effect/Name/AzmodanAllShallBurnManaDrain=Azmodan All Shall Burn Mana Drain
 Effect/Name/AzmodanAllShallBurnMarchOfSinCreatePersistent=All Shall Burn (March Of Sin Create Persistent)
 Effect/Name/AzmodanAllShallBurnMarchOfSinCreatePersistentStructure=Azmodan All Shall Burn March of Sin Create Persistent Structure
@@ -15403,7 +15403,7 @@ Mount/Info/MountCrabRank18Base=Pełzacze z Mętnej Otchłani rzadko pojawiają s
 Mount/Info/MountCrabRank18Epic=Wiele pełzaczy głębin chroni dodatkowo swoje pancerze dzięki twardym, świetlistym kryształom pozyskiwanym na dużych głębokościach. Nagroda za osiągnięcie kategorii mistrzowskiej w lidze bohaterów lub lidze drużynowej w sezonie czwartym 2018.
 Mount/Info/MountDeer_Rank16_00=Jelenie żywiołów to niezwykle rzadkie stworzenia, które stanowią jaśniejący symbol odwagi i męstwa. Nagroda za osiągnięcie kategorii platynowej w lidze bohaterów lub kategorii brązowej w lidze drużynowej w sezonie trzecim.
 Mount/Info/MountDeer_Rank16_01=Epicki jeleń żywiołów posiada wielką moc i roztacza wokół siebie aurę dostojeństwa wzbudzającą podziw u wszystkich, którym dane było go zobaczyć. Nagroda za osiągnięcie kategorii mistrzowskiej w lidze bohaterów lub lidze drużynowej w sezonie trzecim.
-Mount/Info/MountDirewolfThreeTails=Nexus, od lat uznany za wygasły, rozbudził się na nowo, a z jego odmętów zaczęły wyłaniać się istoty, by rozpocząć nową erę. Wydano z okazji BlizzConu 2026.
+Mount/Info/MountDirewolfThreeTails=
 Mount/Info/MountDirewolf_Esport17_00=Wilki, którym dała życie niestabilna energia Nexusa, nigdy nie mogą zostać w pełni oswojone. Jedynie ci, którzy okażą się godni tego zaszczytu, mogą zasłużyć sobie na szacunek i lojalność tych bestii i ruszyć na ich grzbiecie do boju.
 Mount/Info/MountDirewolf_Esport17_01=Wilki chaosu ukształtowała moc Nexusa, a zahartował je ogień bitwy. Te opancerzone bestie to prawdziwe ucieleśnienie nieokiełznanej potęgi. Tylko najbardziej wyróżniający się wojownicy mogą ich dosiadać w boju.
 Mount/Info/MountDirewolf_Rank15_00=Wilki żywiołów przybywają na wyzwanie tylko tych bohaterów, których uznają za godnych takiego zaszczytu. Nagroda za osiągnięcie rangi 20 w lidze bohaterów lub rangi 40 w lidze drużynowej w czasie trwania okresu poprzedzającego sezon.
@@ -15448,6 +15448,7 @@ Mount/Info/MountNexagonSpooky18Var1=Pewnego rodzaju splugawienie nigdy nie może
 Mount/Info/MountNexagonSpooky18Var2=Wszystko, co zostało splugawione, może być odkupione i oczyszczone za sprawą oddania i poświęcenia. Nic nie będzie już takie samo, lecz życie rozkwitnie na nowo.
 Mount/Info/MountNexagonSpooky18Var3=Pewnego rodzaju splugawienie nigdy nie może zostać w pełni oczyszczone. Lepiej zaakceptować nowy porządek wszechświata niż kurczowo trzymać się umierającej prawdy.
 Mount/Info/MountOwlSeekerAltered20=W odległej krainie nietkniętej przez Płonący Legion i moc spaczenia stada dzikich poszukiwaczy wciąż przemierzają złote równiny Azeroth.
+Mount/Info/MountPhoenix=
 Mount/Info/MountPigNexus=Z chaotycznej energii Nexusa wciąż wyłaniają się nowe stwory i z czasem stają się coraz potężniejsze. Pamiątka z BlizzConu 2017.
 Mount/Info/MountPigPinata=Kiedy rusza się do boju na grzbiecie świñaty, można już zacierać ręce na myśl o tych wszystkich słodyczach, które wysypią się z niej, jeśli zginie! Ale pamiętaj – nie bądź prosiakiem! Podziel się z kolegami!
 Mount/Info/MountPigSpring19=Plotkuje się, że wysocy rangą agenci korporacji Jigoku Cybernetics grasują po Metropolii Kaldeum na grzbietach żarłocznych cybernetycznych dzików bojowych. Pogłoski te niełatwo jednak zweryfikować, ponieważ wszyscy, którzy cokolwiek na ten temat wiedzieli, zaginęli w tajemniczych okolicznościach...
@@ -15851,6 +15852,12 @@ Mount/Name/MountNexagonSpooky18Var3=Jadowity nagrobek
 Mount/Name/MountOwlSeekerAltered20=Poszukiwacz
 Mount/Name/MountOwlSeekerAltered20Var1=Leśny Poszukiwacz
 Mount/Name/MountOwlSeekerAltered20Var2=Zmierzchowy Poszukiwacz
+Mount/Name/MountPhoenix=Feniks
+Mount/Name/MountPhoenixVar1=
+Mount/Name/MountPhoenixVar2=
+Mount/Name/MountPhoenixVar3=
+Mount/Name/MountPhoenixVar4=
+Mount/Name/MountPhoenixVar5=
 Mount/Name/MountPigFel=Piekielny dzik
 Mount/Name/MountPigFelVar1=Spaczony piekielny dzik
 Mount/Name/MountPigFelVar2=Piekielny dzik klanu Cienistego Księżyca
@@ -16043,6 +16050,8 @@ Mount/Name/NexusCharger=Nexiański rumak bojowy
 Mount/Name/NexusChargerGold=Złoty nexiański rumak bojowy
 Mount/Name/NexusChargerOrange=Bursztynowy nexiański rumak bojowy
 Mount/Name/NexusChargerViolet=Purpurowy nexiański rumak bojowy
+Mount/Name/Phoenix=Feniks
+Mount/Name/PhoenixCommon=
 Mount/Name/RainbowUnicorn=Tęczowy jednorożec
 Mount/Name/RainbowUnicornGreen=Czterolistny tęczowy jednorożec
 Mount/Name/RainbowUnicornOrange=Pomarańczowy tęczowy jednorożec
@@ -21226,9 +21235,6 @@ Skin/AdditionalSearchText/CrusaderIvory=Niebieski beżowy beż
 Skin/AdditionalSearchText/CrusaderOWC20=reinhardt srebrny ow overwatch cosplay kostium
 Skin/AdditionalSearchText/CrusaderOWC20Var1=reinhardt niebieski ow overwatch cosplay kostium
 Skin/AdditionalSearchText/CrusaderOWC20Var2=reinhardt biały złoty ow overwatch cosplay kostium
-Skin/AdditionalSearchText/CrusaderOWC20Var3=reinhardt srebrny ow overwatch cosplay kostium
-Skin/AdditionalSearchText/CrusaderOWC20Var4=reinhardt niebieski ow overwatch cosplay kostium
-Skin/AdditionalSearchText/CrusaderOWC20Var5=reinhardt biały złoty ow overwatch cosplay kostium
 Skin/AdditionalSearchText/CrusaderRed=Czarny czerwony
 Skin/AdditionalSearchText/CrusaderSpell=Johanna Łamaczka Zaklęć Połączone uniwersa czerwony czerwona
 Skin/AdditionalSearchText/CrusaderSpellVar1=Czarny pomarańczowy
@@ -21257,9 +21263,6 @@ Skin/AdditionalSearchText/DemonHunterMecha19Var4=brązowy szary popielaty czarny
 Skin/AdditionalSearchText/DemonHunterOWC20=żniwiarz czarny ow overwatch cosplay kostium
 Skin/AdditionalSearchText/DemonHunterOWC20Var1=żniwiarz różowy ow overwatch cosplay kostium
 Skin/AdditionalSearchText/DemonHunterOWC20Var2=żniwiarz biały ow overwatch cosplay kostium
-Skin/AdditionalSearchText/DemonHunterOWC20Var3=żniwiarz czarny ow overwatch cosplay kostium
-Skin/AdditionalSearchText/DemonHunterOWC20Var4=żniwiarz różowy ow overwatch cosplay kostium
-Skin/AdditionalSearchText/DemonHunterOWC20Var5=żniwiarz biały ow overwatch cosplay kostium
 Skin/AdditionalSearchText/DemonHunterPink=Różowy purpurowy fiolet fioletowy purpurowa fioletowa
 Skin/AdditionalSearchText/DemonHunterVampireHunter=Łowczyni Wampirów Valla Kruczy Dwór niebieski
 Skin/AdditionalSearchText/DemonHunterVampireHunterDark=Czarny czerwony
@@ -21716,9 +21719,6 @@ Skin/AdditionalSearchText/RaynorMarshallSkinRed=Czerwony czarny
 Skin/AdditionalSearchText/RaynorOWC20=żołnierz 76 niebieski ow overwatch cosplay kostium
 Skin/AdditionalSearchText/RaynorOWC20Var1=żołnierz 76 złoty ow overwatch cosplay kostium
 Skin/AdditionalSearchText/RaynorOWC20Var2=żołnierz 76 czerwony ow overwatch cosplay kostium
-Skin/AdditionalSearchText/RaynorOWC20Var3=żołnierz 76 niebieski ow overwatch cosplay kostium
-Skin/AdditionalSearchText/RaynorOWC20Var4=żołnierz 76 złoty ow overwatch cosplay kostium
-Skin/AdditionalSearchText/RaynorOWC20Var5=żołnierz 76 czerwony ow overwatch cosplay kostium
 Skin/AdditionalSearchText/RaynorPatriot=Raynor Patriota niebieski czerwony
 Skin/AdditionalSearchText/RaynorPatriotBlack=Czarny szary czerwony
 Skin/AdditionalSearchText/RaynorPatriotRed=Czerwony niebieski
@@ -22123,7 +22123,6 @@ Skin/Info/ChenWarmaster=Mistrzowie Oręża stanowią niezłomny trzon wielkiej a
 Skin/Info/CrusaderCenturion=Na rozkaz cesarza Severusa cały legion ruszył do szturmu na portal bogów. Do domu wrócili wszyscy – z wyjątkiem jednej centurionki, która poniosła karę za ludzką pychę.
 Skin/Info/CrusaderEnforcer=Aspirujący agenci jednostki Specjalistów Taktyczno-Operacyjnego Reagowania Manewrowego (STORM) muszą sprostać zawyżonym wymaganiom budzącej postrach sierżant Johanny. Członkowie jej rodziny od lat robili karierę wojskową w jednostce STORM, dlatego nowemu narybkowi niełatwo jest jej zaimponować.
 Skin/Info/CrusaderOWC20=Johanna wie, że jedynym sposobem na odkupienie kościoła Zakarum jest wzbogacenie jego dogmatów o tradycje wywodzące się z innych krain. Pierwszy krok musi być jednak skromny – wystarczą nowe szaty i futurystyczny oręż.
-Skin/Info/CrusaderOWC20NoMask=Służba krzyżowca nie kończy się, gdy tracisz hełm. Oddanie sprawie Światłości to zobowiązanie na całe życie.
 Skin/Info/CrusaderSpell=Choć większość Łamaczy Zaklęć poświęciła się obronie Quel’thalas, Johanna podjęła krucjatę w celu oczyszczenia Lordaeronu z nieumarłych. Nie spocznie, dopóki jej ojczyzna się nie odrodzi.
 Skin/Info/CrusaderWCAV=Powiadają, że spotkać dowódcę z klanu Wojennej Pieśni w boju to przekonać się, czym jest prawdziwa potęga Hordy. Choć Jo'Hanna od wielu lat zaprawiona jest w wojennym rzemiośle, wciąż rusza do walki z okrzykiem bojowym, od którego trzęsą się nawet niebiosa.
 Skin/Info/Default=Domyślny opis skórki
@@ -22133,7 +22132,6 @@ Skin/Info/DemonHunterCowgirl=Nikt nie radził sobie z bezprawiem na ulicach Riks
 Skin/Info/DemonHunterHorns=Powróciwszy na Ponure Ziemie po pokonaniu Władcy Grozy, Valla wzięła na siebie obowiązki Mistrzyni Zakonu, aby dzielić się zdobytą wiedzą i doświadczeniem z młodymi łowcami demonów.
 Skin/Info/DemonHunterMecha19=Mech Valla została zaprojektowana z myślą o uzupełnieniu możliwości ofensywnych Mecha Yrel o niezrównaną zwinność i ogromną siłę ognia. Bliźniacze prototypy przeszły prawdziwy chrzest bojowy, gdy powrócił Xenotech.
 Skin/Info/DemonHunterOWC20=Valla poświęciła życie walce ze złem w Sanktuarium. Jakież było jej zdziwienie, gdy dowiedziała się, że multiwersum skrywa więcej demonów, niż kiedykolwiek przypuszczała. Niektóre z nich spoglądały na nią oczyma dawnych towarzyszy broni – wtedy właśnie zrozumiała, że pozwoliła sobie na zbytnią pobłażliwość.
-Skin/Info/DemonHunterOWC20NoMask=Valla poświęciła życie walce ze złem w Sanktuarium. Jakież było jej zdziwienie, gdy dowiedziała się, że multiwersum skrywa więcej demonów, niż kiedykolwiek przypuszczała. Niektóre z nich spoglądały na nią oczyma dawnych towarzyszy broni, inne wybrały własne oblicze.
 Skin/Info/DemonHunterPink=Wariant kolorystyczny.
 Skin/Info/DemonHunterVaHmpireunterDark=Pragnienia krwi Hrabiny nie ugasiła nawet jej śmierć. Kiedy z Zapomnianej Wieży Kruczego Dworu na świat zaczęły wylewać się wampiry, drużyna ocalałych bohaterów postanowiła stawić im czoło.
 Skin/Info/DemonHunterVampireHunter=Pragnienia krwi Hrabiny nie ugasiła nawet jej śmierć. Kiedy Kruczy Dwór opanowały chmary wampirów, drużyna ocalałych bohaterów postanowiła stawić im czoło.
@@ -22278,7 +22276,6 @@ Skin/Info/RaynorCommander=Czasami dobrze jest wygramolić się ze wspomaganego s
 Skin/Info/RaynorMadAxe18=Powiadają, że był dawno temu szeryfem, który walczył, by zaprowadzić prawo i porządek na Chromowych Pustkowiach. Być może nigdy nie dowiemy się, czy w tej zjawie tli się jeszcze choćby iskra wspomnień człowieka, którym niegdyś była.
 Skin/Info/RaynorMarshallSkinCommon=Kiedy Konfederacja wydobyła z Mar Sary wszystkie zasoby, zdesperowani koloniści zaczęli się buntować. Szeryf James E. Raynor samotnie stanął w obronie ładu i porządku na ogarniętej chaosem planecie.
 Skin/Info/RaynorOWC20=Zmuszony do pozostawienia ukochanej kobiety na pewną śmierć stał się na wiele lat obiektem oszczerstw płynących z ust wpływowych megalomanów... Nic dziwnego, że postanowił założyć maskę.
-Skin/Info/RaynorOWC20NoMask=Nic się nie martw, oddychanie w tej masce to naprawdę bułka z masłem. Raynor zdejmuje ją tylko po to, by wrogowie mogli zobaczyć jego groźną minę.
 Skin/Info/RaynorPatriot=Kiedy siłom kosmicznym Stanów Zjednoczonych udało się ewakuować kolonistów z sektora Koprulu, pułkownik Raynor obawiał się, że potwory mogą trafić ich tropem na Ziemię.
 Skin/Info/RaynorUltimate=Na przyczepionej w środku karteczce widnieje napis: „Cześć, kowboju! Pomyślałem, że temu rupieciowi przydałoby się parę ulepszeń. Podziękujesz mi przy okazji. – Swann”.
 Skin/Info/RedKaijoDiablo=Włodarze Neo-Tristram stali się zbyt pewni siebie, kiedy ich eksperymenty zaczęły przynosić coraz więcej energii jądrowej. Myśleli, że okiełznali potęgę atomu. Jakże się mylili...
@@ -22630,9 +22627,6 @@ Skin/Name/CrusaderIvory=Kremowa Johanna
 Skin/Name/CrusaderOWC20=Rozjemczyni Johanna
 Skin/Name/CrusaderOWC20Var1=Jaśniejąca Rozjemczyni Johanna
 Skin/Name/CrusaderOWC20Var2=Fanatyczna Rozjemczyni Johanna
-Skin/Name/CrusaderOWC20Var3=Zdemaskowana Rozjemczyni Johanna
-Skin/Name/CrusaderOWC20Var4=Zdemaskowana Jaśniejąca Rozjemczyni Johanna
-Skin/Name/CrusaderOWC20Var5=Zdemaskowana Fanatyczna Rozjemczyni Johanna
 Skin/Name/CrusaderRed=Onyksowa Johanna
 Skin/Name/CrusaderSpell=Johanna Łamaczka Zaklęć
 Skin/Name/CrusaderSpellVar1=Żelazna Johanna Łamaczka Zaklęć
@@ -22663,9 +22657,6 @@ Skin/Name/DemonHunterMecha19Var4=Kompozytowa Mech Valla
 Skin/Name/DemonHunterOWC20=Valla Tropicielka Cieni
 Skin/Name/DemonHunterOWC20Var1=Jaskrawa Valla Tropicielka Cieni
 Skin/Name/DemonHunterOWC20Var2=Alabastrowa Valla Tropicielka Cieni
-Skin/Name/DemonHunterOWC20Var3=Zdemaskowana Valla Tropicielka Cieni
-Skin/Name/DemonHunterOWC20Var4=Zdemaskowana Jaskrawa Valla Tropicielka Cieni
-Skin/Name/DemonHunterOWC20Var5=Zdemaskowana Alabastrowa Valla Tropicielka Cieni
 Skin/Name/DemonHunterPink=Fuksjowa Valla
 Skin/Name/DemonHunterVampireHunter=Łowczyni Wampirów Valla
 Skin/Name/DemonHunterVampireHunterDark=Hebanowa Łowczyni Wampirów Valla
@@ -23164,9 +23155,6 @@ Skin/Name/RaynorMarshallSkinRed=Raynor Szeryf Dominium
 Skin/Name/RaynorOWC20=Raynor 76
 Skin/Name/RaynorOWC20Var1=Wzmocniony Raynor 76
 Skin/Name/RaynorOWC20Var2=Elitarny Raynor 76
-Skin/Name/RaynorOWC20Var3=Zdemaskowany Raynor 76
-Skin/Name/RaynorOWC20Var4=Zdemaskowany Wzmocniony Raynor 76
-Skin/Name/RaynorOWC20Var5=Zdemaskowany Elitarny Raynor 76
 Skin/Name/RaynorPatriot=Raynor Patriota
 Skin/Name/RaynorPatriotBlack=Grafitowy Raynor Patriota
 Skin/Name/RaynorPatriotRed=Szkarłatny Raynor Patriota
@@ -23737,9 +23725,6 @@ Skin/SortName/CrusaderEnforcerVar1=EnforcerVar1
 Skin/SortName/CrusaderOWC20=CrusaderOW20MaskVar0
 Skin/SortName/CrusaderOWC20Var1=CrusaderOW20MaskVar1
 Skin/SortName/CrusaderOWC20Var2=CrusaderOW20MaskVar2
-Skin/SortName/CrusaderOWC20Var3=CrusaderOW20NoMaskVar0
-Skin/SortName/CrusaderOWC20Var4=CrusaderOW20NoMaskVar1
-Skin/SortName/CrusaderOWC20Var5=CrusaderOW20NoMaskVar2
 Skin/SortName/CrusaderSpellCommonVar0=SpellVar0
 Skin/SortName/CrusaderSpellCommonVar1=SpellVar1
 Skin/SortName/CrusaderUltimateCommonVar0=zUltimateVar0
@@ -23761,9 +23746,6 @@ Skin/SortName/DemonHunterMecha19CommonVar1=DemonHunterMecha19Var1
 Skin/SortName/DemonHunterOWC20=DemonHunterOWC20MaskVar0
 Skin/SortName/DemonHunterOWC20Var1=DemonHunterOWC20MaskVar1
 Skin/SortName/DemonHunterOWC20Var2=DemonHunterOWC20MaskVar2
-Skin/SortName/DemonHunterOWC20Var3=DemonHunterOWC20NoMaskVar0
-Skin/SortName/DemonHunterOWC20Var4=DemonHunterOWC20NoMaskVar1
-Skin/SortName/DemonHunterOWC20Var5=DemonHunterOWC20NoMaskVar2
 Skin/SortName/DemonHunterUltimateCommonVar0=zUltimateVar0
 Skin/SortName/DemonHunterUltimateCommonVar1=zUltimateVar1
 Skin/SortName/DemonHunterVampireCommonVar0=VampireVar0
@@ -24037,9 +24019,6 @@ Skin/SortName/RaynorMarshallCommonVar1=MarshallVar1
 Skin/SortName/RaynorOWC20=RaynorOWC20MaskVar0
 Skin/SortName/RaynorOWC20Var1=RaynorOWC20MaskVar1
 Skin/SortName/RaynorOWC20Var2=RaynorOWC20MaskVar2
-Skin/SortName/RaynorOWC20Var3=RaynorOWC20NoMaskVar0
-Skin/SortName/RaynorOWC20Var4=RaynorOWC20NoMaskVar1
-Skin/SortName/RaynorOWC20Var5=RaynorOWC20NoMaskVar2
 Skin/SortName/RaynorStarsCommonVar0=StarsVar0
 Skin/SortName/RaynorStarsCommonVar1=StarsVar1
 Skin/SortName/RaynorToys19CommonVar1=GreenArmyVar1
@@ -25929,6 +25908,23 @@ UI/AutoSelectFilterTooltip/Support=Pomocnicy
 UI/AutoSelectFilterTooltip/Tank=Wszystkie Tanki
 UI/AutoSelectFilterTooltip/Warrior=Wojownicy
 UI/AutoSelectToastTitle=Umiejętności wybrane automatycznie
+UI/BRAWL=
+UI/BRAWL/AdditionalInfoDescription=<ul indent="2" text="•"><li>Kamienie Powrotu (B) zostały dezaktywowane. Nie odzyskujesz zdrowia na obszarze startowym.</li><li>Generatory Kul Regeneracji tworzą na polu bitwy dodatkowe kule.</li></ul>
+UI/BRAWL/AdditionalInfoLabel=Dodatkowe informacje
+UI/BRAWL/BRAWLInfo=Informacje
+UI/BRAWL/Description=Losowi bohaterowie na jednej alei
+UI/BRAWL/InfoButton/Tooltip=
+UI/BRAWL/IntroDescription=Losowo wybrani bohaterowie ścierają się na jednej alei!
+UI/BRAWL/IntroLabel=
+UI/BRAWL/MapsRotation=Pola bitew
+UI/BRAWL/MapsRotation/Tooltip=
+UI/BRAWL/ObjectiveDescription=Aby zwyciężyć, zrównaj z ziemią bazę wroga.
+UI/BRAWL/ObjectiveLabel=Zniszcz bazę wroga
+UI/BRAWL/ShufflePickDescription=Wybierz jednego z trzech losowych bohaterów. Masz tylko 30 sekund, więc decyduj się szybko!
+UI/BRAWL/ShufflePickLabel=Losowy wybór
+UI/BRAWL/SingleLaneDescription=Nie ma żadnych dodatkowych celów do zrealizowania na polu bitwy. Przygotuj się na niekończącą się akcję.
+UI/BRAWL/SingleLaneLabel=Pojedyncza aleja
+UI/BRAWL/Unavailable=
 UI/BattleChat/CustomMessageFormat=<s val="BattleChatCustomMessage">[<a name="CustomMessage" href="CustomMessage"><IMG path="Assets\Textures\storm_social_socialpanel_broadcast.dds" height="16" width="21" alignment="absolutemiddle"/> Wiadomość</a>] <a name="PresenceId" href="%presenceId%">%senderName%</a>: %message%</s>
 UI/BattleChat/FriendProgramMatch=<s val="BattleChatSystem"><a name="PresenceId" href="%presenceId%">%userName%</a> przybywa do Nexusa. <a name="InviteToParty" href="%presenceId%"><c val="57b4ff">[Zaproś do ekipy]</c></a></s>
 UI/BattleChat/StatisticGames=Liczba trwających gier w Heroes of the Storm: %num%.

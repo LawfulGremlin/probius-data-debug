@@ -5327,7 +5327,7 @@ Button/Tooltip/AbathurLocustSwarm=Actívala para engendrar <c val="#TooltipNumbe
 Button/Tooltip/AbathurMonstrosityDeepTunnel=Ordena a tu monstruosidad evolucionada que cave rápidamente un túnel hasta una ubicación visible
 Button/Tooltip/AbathurMonstrosityEvolutionCompleteTalent=Aumenta el daño de ataque básico de la monstruosidad un <c val="#TooltipNumbers"><d ref="100*Effect,AbathurEvolveMonstrosityWeaponDamage,MultiplicativeModifierArray[EvolutionCompleteDamage].Modifier"/>%</c>.
 Button/Tooltip/AbathurReinforcedCarapaceTalent=Aumenta el escudo de Caparazón un <c val="#TooltipNumbers"><d ref="100*(Talent,AbathurReinforcedCarapace,AbilityModificationArray[0].Modifications[0].Value)-100"Precision="2"/>%</c>.
-Button/Tooltip/AbathurSlapathur=Los ataques básicos de Abathur infligen un <c val=#TooltipNumbers>350%</c> más de daño, aturden a los enemigos que no sean de élite y deshabilitan las estructuras durante <c val=#TooltipNumbers><d ref=Behavior,AbathurSlapathurStun,Duration precision=1/></c> segundos.</n></n>El mismo héroe o estructura se puede aturdir o deshabilitar solo una vez cada <c val=#TooltipNumbers><d ref=Behavior,SlapathurInternalCooldown,Duration/></c> segundos.
+Button/Tooltip/AbathurSlapathur=Los ataques básicos de Abathur infligen un <c val="#TooltipNumbers">500%</c> más de daño, aturden a los enemigos que no sean de élite y deshabilitan las estructuras durante <c val="#TooltipNumbers"><d ref="Behavior,AbathurSlapathurStun,Duration" precision="1"/></c> segundos.</n></n>El mismo héroe o estructura se puede aturdir o deshabilitar solo una vez cada <c val="#TooltipNumbers"><d ref="Behavior,SlapathurInternalCooldown,Duration"/></c> segundos.
 Button/Tooltip/AbathurSymbiote=Engendra un Simbionte y lo adhiere a un aliado o una estructura objetivo. Mientras la habilidad está activa, Abathur controla al Simbionte, lo que le permite acceder a nuevas habilidades. El Simbionte puede obtener PE de muertes de enemigos cercanos.
 Button/Tooltip/AbathurSymbioteAdrenalOverloadTalent=El huésped del Simbionte heroico obtiene un <c val="#TooltipNumbers"><d ref="Behavior,AbathurAdrenalOverload,Modification.AdditiveAttackSpeedFactor*100" player="0" precision="2"/>%</c> más de velocidad de ataque.
 Button/Tooltip/AbathurSymbioteAdrenalineBoostTalent=La habilidad Caparazón del Simbionte aumenta un <c val="#TooltipNumbers"><d ref="100*Behavior,AdrenalineBoost,Modification.UnifiedMoveSpeedFactor"/>%</c> la velocidad de movimiento del objetivo durante <c val="#TooltipNumbers"><d ref="Behavior,AdrenalineBoost,Duration" precision="1" player="0"/></c> segundos.
@@ -5431,7 +5431,7 @@ Button/Tooltip/ArtanisTwinBladesTripleStrikeTalent=Aumenta la cantidad de ataque
 Button/Tooltip/ArtanisTwinBladesZealotChargeTalent=Aumenta la distancia de arremetida de Cuchillas gemelas un <c val="#TooltipNumbers">75%</c>.
 Button/Tooltip/ArthasAbsoluteZeroSummonSindragosaTalent=Sindragosa vuela dos veces más lejos. Los héroes enemigos quedan arraigados durante <c val="#TooltipNumbers"><d ref="Behavior,ArthasSummonSindragosaHeroRoot,Duration" player="0"Precision="2"/></c> segundos y después son ralentizados un <c val="#TooltipNumbers"><d ref="-100*Behavior,ArthasSummonSindragosaAbsoluteZeroSlow,Modification.UnifiedMoveSpeedFactor"/>%</c> durante <c val="#TooltipNumbers"><d ref="Behavior,ArthasSummonSindragosaAbsoluteZeroSlow,Duration" player="0" precision="1"/></c> segundos.
 Button/Tooltip/ArthasAntiMagicShellTalent=Actívalo para que Arthas sea inmune al daño de habilidad especial durante <c val="#TooltipNumbers"><d ref="Behavior,ArthasAntiMagicShellCaster,Duration"/></c> segundos y que sane por un <c val="#TooltipNumbers">25%</c> del daño que se evita.
-Button/Tooltip/ArthasArmyOfTheDead=Consume todas las cargas para invocar el mismo número de Necrófagos que pierdan salud durante <c val="#TooltipNumbers"><d ref="-Unit,ArthasArmyOfTheDeadGhoul,LifeMax/Unit,ArthasArmyOfTheDeadGhoul,LifeRegenRate" player="0"/></c> segundos y atacan para infligir <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadGhoulWeaponDamage,Amount"/></c> de daño. Reactívala para sacrificar a un Necrófago, lo que te cura <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate"/></c> de salud. Acumula hasta <c val="#TooltipNumbers"><d ref="Abil,ArthasArmyOfTheDead,Cost.Charge.CountMax"/></c> cargas.<n/><n/>Cada vez que muere un esbirro enemigo cercano, reduce el tiempo de reutilización de carga de esta habilidad <c val="#TooltipNumbers"><d ref="-Effect,ArthasArmyoftheDeadNPCDeathModifyChargeCooldown,Cost[0].ChargeTimeUse"precision="1"/></c> segundos. Los derribos reducen el tiempo de reutilización de carga de esta habilidad <c val="#TooltipNumbers"><d ref="-Effect,ArthasArmyoftheDeadTakedownModifyChargeCooldown,Cost[0].ChargeTimeUse"precision="1"/></c> segundos.
+Button/Tooltip/ArthasArmyOfTheDead=Invoca <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadSpawnPersistent,PeriodCount" player="0"/></c> Necrófagos con <c val="#TooltipNumbers"><d ref="Unit,ArthasArmyOfTheDeadGhoul,LifeMax"/></c> de salud que se consume durante <c val="#TooltipNumbers"><d const="$ArthasArmyOfTheDeadGhoulDecayDuration" /></c> segundos. Los Necrófagos siguen a Arthas, atacan a los enemigos cercanos e infligen <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadGhoulWeaponDamage,Amount"/></c> de daño.<n/><n/>Reactiva para sacrificar <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHealSearch,AreaArray[0].MaxCount"/></c> Necrófago y recuperar <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate"/></c> de salud a Arthas. Este efecto tiene un tiempo de reutilización de <c val="#TooltipNumbers"><d ref="Abil,ArthasArmyOfTheDeadSacrifice,Cost.Cooldown.TimeUse"/></c> segundos.
 Button/Tooltip/ArthasArmyOfTheDeadSacrifice=Sacrifica un necrófago para sanar por <c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate"/></c> de salud.
 Button/Tooltip/ArthasArmyOfTheDeadSacrificeUpgrade=<s val="StandardTooltipDetails">Tiempo de reutilización: <d ref="Abil,ArthasArmyOfTheDeadSacrifice,Cost[0].Cooldown.TimeUse"/> segundos<n/><n/><s val="StandardTooltip">Sacrifica un Necrófago para recuperar <s val="StandardTooltipDetails"><d ref="Effect,ArmyOfTheDeadLegionofNorthrendHeal,RechargeVitalRate"/></s> de salud.
 Button/Tooltip/ArthasBitingColdFrozenTempestTalent=Cada segundo que Tempestad gélida daña a un enemigo, inflige un <c val="#TooltipNumbers"><d ref="100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,Scale*2"Precision="2"/>%</c> más de daño, hasta un máximo de <c val="#TooltipNumbers"><d ref="100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,MaxAccumulation"/>%</c> adicional.
@@ -7226,7 +7226,7 @@ Button/TooltipAppender/AzmodanGlobeOfAnnihilationTasteForBlood=<n/><c val="#Tool
 Button/TooltipAppender/ButcherFreshMeatAbattoirTalentAppender=<n/><n/><c val="#TooltipQuest">Carne recolectada: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ButcherFreshMeatAbattoirTalentTokenCounter$"/><n/><c val="#TooltipQuest">Bonificación de daño de ataque: </c><d ref="$BehaviorStackCount:ButcherFreshMeatAbattoirTalentTokenCounter$*Accumulator,ButcherFreshMeatAbattoirTalentAccumulator,Scale"precision="1"/></c></c>
 Button/TooltipAppender/ButcherFreshMeatAppender=<n/><n/><c val="#TooltipQuest">Carne recolectada: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$"/><n/><c val="#TooltipQuest">Bonificación de daño de ataque: </c><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$*Accumulator,ButcherFreshMeatAccumulator,Scale"precision="1"/></c></c>
 Button/TooltipAppender/ButcherFreshMeatAppenderComplete=<n/><n/><c val="#TooltipQuest">¡MISIÓN COMPLETADA!<n/>Carne recolectada: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$"/><n/><c val="#TooltipQuest">Bonificación de daño de ataque: </c><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$*Accumulator,ButcherFreshMeatAccumulator,Scale+Behavior,ButcherFreshMeatQuestCompletionCarry,Modification.DamageDealtScaled[Basic]"precision="1"/></c></c>
-Button/TooltipAppender/ChenBreathofFireAccumulatingFlame=<n/><c val="#TooltipQuest">Héroes incinerados: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$"/>/<d ref="Behavior,ChenBreathOfFireAccumulatingFlameTokenCounter,Max"/><n/><c val="#TooltipQuest">Bonificación de daño:</c> <d ref="100*($BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$)*Accumulator,BreathofFireQuestDamage,Scale"/>%
+Button/TooltipAppender/ChenBreathofFireAccumulatingFlame=<n/><c val="#TooltipQuest">Héroes incinerados: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$"/>/<d ref="Behavior,ChenBreathOfFireAccumulatingFlameTokenCounter,Max"/><n/><c val="#TooltipQuest">Bonificación de daño:</c> <d ref="100*($BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$)*Accumulator,ChenAccumulatingFlameAccumulator,Scale"/>%
 Button/TooltipAppender/ChenBreathofFireAccumulatingFlameComplete=<n/><c val="#TooltipQuest">¡MISIÓN COMPLETADA!<n/><c val="#TooltipQuest">Bonificación de daño:</c> <c val="#TooltipNumbers"><d ref="100*($BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$)*Accumulator,ChenAccumulatingFlameAccumulator,Scale"/>%</c>
 Button/TooltipAppender/ChenFortifyingBrewFreshestIngredients=<n/><c val="#TooltipQuest">Esferas recogidas: <c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ChenFreshestIngredientsTokenCounter$"/>/<d ref="Behavior,ChenFreshestIngredientsTokenCounter,Max"/></c><n/>Regeneración de salud: <c val="#TooltipNumbers"><d ref="Accumulator,ChenFreshestIngredientsTalentAccumulator,Scale*($BehaviorStackCount:ChenFreshestIngredientsTokenCounter$)"/></c></c>
 Button/TooltipAppender/ChenFortifyingBrewFreshestIngredientsComplete=<n/><c val="#TooltipQuest">¡MISIÓN COMPLETADA!<n/>Regeneración de salud: <c val="#TooltipNumbers"><d ref="Accumulator,ChenFreshestIngredientsTalentAccumulator,Scale*($BehaviorStackCount:ChenFreshestIngredientsTokenCounter$)"/></c></c>
@@ -7465,7 +7465,7 @@ DragonStatueDefendDefendDragonStatue=DefendDragonStatue
 Effect/Name/AllShallBurnCasterRevealerCreatePersistent=Fuego devastador - Lanzador - Revelador (Crear - Persistente)
 Effect/Name/AllShallBurnCasterRevealerDestroyPersistent=Fuego devastador - Lanzador - Revelador (Destruir - Persistente)
 Effect/Name/Azmodan200IQCastSet=
-Effect/Name/Azmodan200IQPlayDummySet= 
+Effect/Name/Azmodan200IQPlayDummySet=
 Effect/Name/AzmodanAllShallBurnManaDrain=All Shall Burn (Mana Drain)
 Effect/Name/AzmodanAllShallBurnMarchOfSinCreatePersistent=All Shall Burn (March Of Sin Create Persistent)
 Effect/Name/AzmodanAllShallBurnMarchOfSinCreatePersistentStructure=All Shall Burn (March of Sin Create Persistent Structure)
@@ -15403,7 +15403,7 @@ Mount/Info/MountCrabRank18Base=Los artrópodos del Abismo Turbio rara vez aparec
 Mount/Info/MountCrabRank18Epic=Muchos Merodeadores de lo profundo incorporan los densos y brillantes cristales de su entorno de alta presión a sus caparazones para obtener una mayor protección. Se obtiene uno al llegar a Maestro en la Liga de héroes o la Liga de equipos durante la temporada 4 de 2018.
 Mount/Info/MountDeer_Rank16_00=Los Venados elementales son símbolos flameantes y poco comunes del coraje y la valentía. Se obtienen por alcanzar el nivel Platino en la Liga de héroes o Bronce en la Liga de equipos durante la temporada tres.
 Mount/Info/MountDeer_Rank16_01=Este Venado elemental épico alberga un gran poder y posee una gracia que despierta la admiración de todos los que lo ven. Se obtiene al llegar a Maestro en la Liga de héroes o en la Liga de equipos durante la temporada tres.
-Mount/Info/MountDirewolfThreeTails=El Nexo, que por muchos años se creía inactivo, vuelve a la vida y nuevas criaturas emergen de él dando inicio a una nueva era. Publicado con motivo de las celebraciones de la BlizzCon 2026.
+Mount/Info/MountDirewolfThreeTails=
 Mount/Info/MountDirewolf_Esport17_00=Los lobos, fruto de las volátiles energías del Nexo, jamás podrán ser verdaderamente domados. Sin embargo, aquellos que son dignos han podido ganarse su respeto y lealtad.
 Mount/Info/MountDirewolf_Esport17_01=Forjados en el Nexo y templados por el conflicto, los lobos caóticos blindados son la representación del poder primitivo. Solo aquellos que realmente se destacan pueden montarlos en batalla.
 Mount/Info/MountDirewolf_Rank15_00=Los Lobos elementales solo responden al llamado de aquellos a los que consideran dignos. Se obtiene por alcanzar el rango 20 en la Liga de héroes o el rango 40 en la Liga de equipos durante la pretemporada.
@@ -15448,6 +15448,7 @@ Mount/Info/MountNexagonSpooky18Var1=Algunos efectos de corrupción nunca podrán
 Mount/Info/MountNexagonSpooky18Var2=Todo se puede conseguir, pero solo mediante dedicación y sacrificio. Es posible que las cosas nunca vuelvan a ser como antes, pero la vida florecerá de nuevo.
 Mount/Info/MountNexagonSpooky18Var3=Algunos efectos de corrupción nunca podrán ser purgados del todo. Es mejor aceptar el nuevo orden del cosmos, en lugar de aferrarse a una verdad moribunda.
 Mount/Info/MountOwlSeekerAltered20=En un reino lejano, libre de la Legión Ardiente, hordas de salvajes buscadores aún deambulan por las doradas praderas de Azeroth.
+Mount/Info/MountPhoenix=
 Mount/Info/MountPigNexus=Nuevas criaturas misteriosas emergen de las energías caóticas del Nexo, cuyo poder crece cada vez más con el paso del tiempo. Lanzado en conmemoración de la BlizzCon 2017.
 Mount/Info/MountPigPinata=¿La mejor parte de montar un Cerdopiñata en batalla? ¡Que hay dulces gratis para todos cuando muere! Pero, por favor, intenta no quedar como un cerdo y acapararlos todos...
 Mount/Info/MountPigSpring19=Se rumorea que agentes prominentes de Cibernética Jigoku merodean la Acrópolis de Caldeum montados en jabalíes cibernéticos voraces, pero aquellos que llegaron a verlos desaparecieron misteriosamente.
@@ -15851,6 +15852,12 @@ Mount/Name/MountNexagonSpooky18Var3=Tumba venenosa
 Mount/Name/MountOwlSeekerAltered20=Buscador
 Mount/Name/MountOwlSeekerAltered20Var1=Buscador del bosque
 Mount/Name/MountOwlSeekerAltered20Var2=Buscador crepuscular
+Mount/Name/MountPhoenix=Fénix
+Mount/Name/MountPhoenixVar1=
+Mount/Name/MountPhoenixVar2=
+Mount/Name/MountPhoenixVar3=
+Mount/Name/MountPhoenixVar4=
+Mount/Name/MountPhoenixVar5=
 Mount/Name/MountPigFel=Jabainferno
 Mount/Name/MountPigFelVar1=Jabainferno vil
 Mount/Name/MountPigFelVar2=Jabainferno de Sombraluna
@@ -16043,6 +16050,8 @@ Mount/Name/NexusCharger=Electrocorcel del Nexo
 Mount/Name/NexusChargerGold=Electrocorcel del Nexo dorado
 Mount/Name/NexusChargerOrange=Electrocorcel del Nexo ámbar
 Mount/Name/NexusChargerViolet=Electrocorcel del Nexo violeta
+Mount/Name/Phoenix=Fénix
+Mount/Name/PhoenixCommon=
 Mount/Name/RainbowUnicorn=Unicornio arcoíris
 Mount/Name/RainbowUnicornGreen=Unicornio arcoíris de la suerte
 Mount/Name/RainbowUnicornOrange=Unicornio arcoíris naranja
@@ -21226,9 +21235,6 @@ Skin/AdditionalSearchText/CrusaderIvory=Azul tostado tostada
 Skin/AdditionalSearchText/CrusaderOWC20=reinhardt plateado ow overwatch cosplay
 Skin/AdditionalSearchText/CrusaderOWC20Var1=reinhardt azul ow overwatch cosplay
 Skin/AdditionalSearchText/CrusaderOWC20Var2=reinhardt blanco dorado ow overwatch cosplay
-Skin/AdditionalSearchText/CrusaderOWC20Var3=reinhardt plateado ow overwatch cosplay
-Skin/AdditionalSearchText/CrusaderOWC20Var4=reinhardt azul ow overwatch cosplay
-Skin/AdditionalSearchText/CrusaderOWC20Var5=reinhardt blanco dorado ow overwatch cosplay
 Skin/AdditionalSearchText/CrusaderRed=Rojo negro roja negra
 Skin/AdditionalSearchText/CrusaderSpell=Fusión Johanna rompehechizos rojo roja
 Skin/AdditionalSearchText/CrusaderSpellVar1=Negro negra anaranjado anaranjada
@@ -21257,9 +21263,6 @@ Skin/AdditionalSearchText/DemonHunterMecha19Var4=marrón gris negro robot
 Skin/AdditionalSearchText/DemonHunterOWC20=reaper negro ow overwatch cosplay
 Skin/AdditionalSearchText/DemonHunterOWC20Var1=reaper rosa ow overwatch cosplay
 Skin/AdditionalSearchText/DemonHunterOWC20Var2=reaper blanco ow overwatch cosplay
-Skin/AdditionalSearchText/DemonHunterOWC20Var3=reaper negro ow overwatch cosplay
-Skin/AdditionalSearchText/DemonHunterOWC20Var4=reaper rosa ow overwatch cosplay
-Skin/AdditionalSearchText/DemonHunterOWC20Var5=reaper blanco ow overwatch cosplay
 Skin/AdditionalSearchText/DemonHunterPink=Rosa púrpura
 Skin/AdditionalSearchText/DemonHunterVampireHunter=Vala cazavampiros Corte del Cuervo azul
 Skin/AdditionalSearchText/DemonHunterVampireHunterDark=Rojo negro roja negra
@@ -21716,9 +21719,6 @@ Skin/AdditionalSearchText/RaynorMarshallSkinRed=Rojo negro
 Skin/AdditionalSearchText/RaynorOWC20=soldado 76 azul ow overwatch cosplay
 Skin/AdditionalSearchText/RaynorOWC20Var1=soldado 76 dorado ow overwatch cosplay
 Skin/AdditionalSearchText/RaynorOWC20Var2=soldado 76 rojo ow overwatch cosplay
-Skin/AdditionalSearchText/RaynorOWC20Var3=soldado 76 azul ow overwatch cosplay
-Skin/AdditionalSearchText/RaynorOWC20Var4=soldado 76 dorado ow overwatch cosplay
-Skin/AdditionalSearchText/RaynorOWC20Var5=soldado 76 rojo ow overwatch cosplay
 Skin/AdditionalSearchText/RaynorPatriot=Raynor embanderado azul rojo
 Skin/AdditionalSearchText/RaynorPatriotBlack=Negro gris rojo
 Skin/AdditionalSearchText/RaynorPatriotRed=Rojo azul
@@ -22123,7 +22123,6 @@ Skin/Info/ChenWarmaster=Los Maestros guerreros son parte de la inquebrantable l�
 Skin/Info/CrusaderCenturion=Bajo las órdenes del emperador Severus, una legión entera marchó sobre el portal de los dioses. Solo uno de sus miembros no regresó a casa: una sola centuriona tomada como castigo por la arrogancia del hombre.
 Skin/Info/CrusaderEnforcer=Para unirse a la Unidad de Operaciones Tácticas Especiales y Misiones de Rescate (STORM), los agentes deben cumplir con los estrictos requisitos de la sargento de maniobras Johanna. El largo legado de su familia como oficiales de STORM hace que sea muy difícil de impresionar.
 Skin/Info/CrusaderOWC20=Johanna sabe que el credo de Zakarum solo puede redimirse adaptando las tradiciones de otros reinos. Se empieza con pequeños cambios: nueva ropa y armas propulsadas.
-Skin/Info/CrusaderOWC20NoMask=Ser una guerrera divina no termina cuando pierdes el yelmo. Es una devoción al servicio de la Luz de por vida.
 Skin/Info/CrusaderSpell=Aunque la mayoría de los rompehechizos trabajan para defender Quel’Thalas, Johanna se ha embarcado en una cruzada para purificar las tierras de Lordaeron y no descansará hasta restablecer su hogar.
 Skin/Info/CrusaderWCAV=Se dice que enfrentar a un Comandante Grito de Guerra en batalla es la forma de sentir el poder de la Horda en carne propia. A pesar de años de guerra constante, Jo'Hanna aún carga hacia la batalla con un grito de guerra que hace temblar los cielos.
 Skin/Info/Default=Descripción informativa del diseño predeterminado
@@ -22133,7 +22132,6 @@ Skin/Info/DemonHunterCowgirl=Nadie ponía fin a las disputas en las anárquicas 
 Skin/Info/DemonHunterHorns=Después de regresar a las Tierras Temibles tras derrotar al Señor del Terror, Vala ha tomado el manto de Maestra de la orden para compartir su conocimiento y su experiencia con los cazadores de demonios neófitos.
 Skin/Info/DemonHunterMecha19=Mecavala se diseñó para complementar la destreza ofensiva de Mecayrel con un poder de fuego y agilidad sin igual. Los prototipos gemelos se pusieron a prueba con la llegada de la amenaza xenotécnica.
 Skin/Info/DemonHunterOWC20=Después de toda una vida exterminando los males de Santuario, Vala se sorprendió al descubrir que el multiverso poseía más demonios de los que imaginaba. Algunos portaban los rostros de antiguos camaradas; así fue como supo que había sido negligente.
-Skin/Info/DemonHunterOWC20NoMask=Después de toda una vida exterminando los males de Santuario, Vala se sorprendió al descubrir que el multiverso poseía más demonios de los que imaginaba. Algunos portaban los rostros de antiguos camaradas; algunos eligen los propios.
 Skin/Info/DemonHunterPink=Variante de color.
 Skin/Info/DemonHunterVaHmpireunterDark=La Condesa no pudo saciar su sed de sangre ni con su propia muerte. Cuando el enjambre vampírico se expandió desde la Torre olvidada de la Corte del Cuervo, un grupo de sobrevivientes se alzó para hacerle frente.
 Skin/Info/DemonHunterVampireHunter=La Condesa no pudo saciar su sed de sangre ni con su propia muerte. Cuando el enjambre vampírico se expandió por la Corte del Cuervo, un grupo de sobrevivientes se alzó para hacerle frente.
@@ -22278,7 +22276,6 @@ Skin/Info/RaynorCommander=Hay días en los que es genial sacarse el traje de com
 Skin/Info/RaynorMadAxe18=Las leyendas dicen que el Jinete rebelde era un antiguo mariscal que luchó para mantener la ley y el orden en los Páramos del Cromacaos. Lo que queda de ese hombre dentro de esta aparición fantasmal seguirá siendo un misterio.
 Skin/Info/RaynorMarshallSkinCommon=Luego de que la Confederación agotó los recursos de Mar Sara por completo, los colonos entraron en pánico. Entonces el Mariscal James E. Raynor supo que solo él podía acometer la tarea de mantener la paz en un mundo sumido en el caos.
 Skin/Info/RaynorOWC20=Verse obligado a dar por muerta una persona que aprecias. Años de injurias de megalómanos influyentes. Eso es suficiente para hacer que cualquiera use una máscara.
-Skin/Info/RaynorOWC20NoMask=En realidad, es mucho más fácil respirar dentro de una máscara de lo que piensas. Raynor se la quita para que los enemigos puedan ver su rostro de guerra.
 Skin/Info/RaynorPatriot=Mientras las Fuerzas Espaciales de los Estados Unidos rescataban a los colonos del sector Koprulu, el Coronel Raynor solo pensaba en lo que pasaría si esos monstruos encontraban la Tierra.
 Skin/Info/RaynorUltimate=Una nota amarilla pegada en el interior dice: "Hola, vaquero. Me pareció que a ese traje tuyo le vendrían bien un par de mejoras. Ya me lo agradecerás luego. -Swann"
 Skin/Info/RedKaijoDiablo=El gobierno de Neo-Tristram se vanagloriaba al ver que sus experimentos producían más y más energía nuclear. Creyeron tener el poder del átomo bajo su control. Pero se equivocaron.
@@ -22630,9 +22627,6 @@ Skin/Name/CrusaderIvory=Johanna ebúrnea
 Skin/Name/CrusaderOWC20=Johanna pacificadora
 Skin/Name/CrusaderOWC20Var1=Johanna pacificadora resplandeciente
 Skin/Name/CrusaderOWC20Var2=Johanna pacificadora fanática
-Skin/Name/CrusaderOWC20Var3=Johanna pacificadora sin máscara
-Skin/Name/CrusaderOWC20Var4=Johanna pacificadora resplandeciente sin máscara
-Skin/Name/CrusaderOWC20Var5=Johanna pacificadora fanática sin máscara
 Skin/Name/CrusaderRed=Johanna ónice
 Skin/Name/CrusaderSpell=Johanna rompehechizos
 Skin/Name/CrusaderSpellVar1=Johanna rompehechizos férrea
@@ -22663,9 +22657,6 @@ Skin/Name/DemonHunterMecha19Var4=Mecavala de aleación
 Skin/Name/DemonHunterOWC20=Vala acechadora sombría
 Skin/Name/DemonHunterOWC20Var1=Vala acechadora sombría vibrante
 Skin/Name/DemonHunterOWC20Var2=Vala acechadora sombría alabastro
-Skin/Name/DemonHunterOWC20Var3=Vala acechadora sombría sin máscara
-Skin/Name/DemonHunterOWC20Var4=Vala acechadora sombría vibrante sin máscara
-Skin/Name/DemonHunterOWC20Var5=Vala acechadora sombría alabastro sin máscara
 Skin/Name/DemonHunterPink=Vala fucsia
 Skin/Name/DemonHunterVampireHunter=Vala cazavampiros
 Skin/Name/DemonHunterVampireHunterDark=Vala cazavampiros de ébano
@@ -23164,9 +23155,6 @@ Skin/Name/RaynorMarshallSkinRed=Mariscal Raynor del Dominio
 Skin/Name/RaynorOWC20=Raynor 76
 Skin/Name/RaynorOWC20Var1=Raynor 76 mejorado
 Skin/Name/RaynorOWC20Var2=Raynor 76 de élite
-Skin/Name/RaynorOWC20Var3=Raynor 76 sin máscara
-Skin/Name/RaynorOWC20Var4=Raynor 76 mejorado sin máscara
-Skin/Name/RaynorOWC20Var5=Raynor 76 de élite sin máscara
 Skin/Name/RaynorPatriot=Raynor patriota
 Skin/Name/RaynorPatriotBlack=Raynor Agente embanderado
 Skin/Name/RaynorPatriotRed=Raynor Guardián embanderado
@@ -23737,9 +23725,6 @@ Skin/SortName/CrusaderEnforcerVar1=EnforcerVar1
 Skin/SortName/CrusaderOWC20=CrusaderOW20MaskVar0
 Skin/SortName/CrusaderOWC20Var1=CrusaderOW20MaskVar1
 Skin/SortName/CrusaderOWC20Var2=CrusaderOW20MaskVar2
-Skin/SortName/CrusaderOWC20Var3=CrusaderOW20NoMaskVar0
-Skin/SortName/CrusaderOWC20Var4=CrusaderOW20NoMaskVar1
-Skin/SortName/CrusaderOWC20Var5=CrusaderOW20NoMaskVar2
 Skin/SortName/CrusaderSpellCommonVar0=SpellVar0
 Skin/SortName/CrusaderSpellCommonVar1=SpellVar1
 Skin/SortName/CrusaderUltimateCommonVar0=zUltimateVar0
@@ -23761,9 +23746,6 @@ Skin/SortName/DemonHunterMecha19CommonVar1=DemonHunterMecha19Var1
 Skin/SortName/DemonHunterOWC20=DemonHunterOWC20MaskVar0
 Skin/SortName/DemonHunterOWC20Var1=DemonHunterOWC20MaskVar1
 Skin/SortName/DemonHunterOWC20Var2=DemonHunterOWC20MaskVar2
-Skin/SortName/DemonHunterOWC20Var3=DemonHunterOWC20NoMaskVar0
-Skin/SortName/DemonHunterOWC20Var4=DemonHunterOWC20NoMaskVar1
-Skin/SortName/DemonHunterOWC20Var5=DemonHunterOWC20NoMaskVar2
 Skin/SortName/DemonHunterUltimateCommonVar0=zUltimateVar0
 Skin/SortName/DemonHunterUltimateCommonVar1=zUltimateVar1
 Skin/SortName/DemonHunterVampireCommonVar0=VampireVar0
@@ -24037,9 +24019,6 @@ Skin/SortName/RaynorMarshallCommonVar1=MarshallVar1
 Skin/SortName/RaynorOWC20=RaynorOWC20MaskVar0
 Skin/SortName/RaynorOWC20Var1=RaynorOWC20MaskVar1
 Skin/SortName/RaynorOWC20Var2=RaynorOWC20MaskVar2
-Skin/SortName/RaynorOWC20Var3=RaynorOWC20NoMaskVar0
-Skin/SortName/RaynorOWC20Var4=RaynorOWC20NoMaskVar1
-Skin/SortName/RaynorOWC20Var5=RaynorOWC20NoMaskVar2
 Skin/SortName/RaynorStarsCommonVar0=StarsVar0
 Skin/SortName/RaynorStarsCommonVar1=StarsVar1
 Skin/SortName/RaynorToys19CommonVar1=GreenArmyVar1
@@ -25929,6 +25908,23 @@ UI/AutoSelectFilterTooltip/Support=Incluir a todos los héroes de apoyo
 UI/AutoSelectFilterTooltip/Tank=Incluir a todos los tanques
 UI/AutoSelectFilterTooltip/Warrior=Incluir a todos los héroes guerreros
 UI/AutoSelectToastTitle=Selección de habilidades automática
+UI/BRAWL=
+UI/BRAWL/AdditionalInfoDescription=<ul indent="2" text="•"><li>Las Piedras de hogar (B) están deshabilitadas y tu área inicial no regenera salud.</li><li>Los generadores de esferas crean esferas de regeneración en el campo de batalla.</li></ul>
+UI/BRAWL/AdditionalInfoLabel=Información adicional
+UI/BRAWL/BRAWLInfo=Información
+UI/BRAWL/Description=Acrónimo de "All Random All Mid"
+UI/BRAWL/InfoButton/Tooltip=
+UI/BRAWL/IntroDescription=¡Héroes seleccionados al azar combaten en una sola vía!
+UI/BRAWL/IntroLabel=
+UI/BRAWL/MapsRotation=Campos de batalla
+UI/BRAWL/MapsRotation/Tooltip=
+UI/BRAWL/ObjectiveDescription=Destruye el núcleo del enemigo para ganar.
+UI/BRAWL/ObjectiveLabel=Destruye el núcleo enemigo
+UI/BRAWL/ShufflePickDescription=Elige a uno de los tres héroes seleccionados aleatoriamente. Solo tienes 30 segundos. ¡Piensa rápido!
+UI/BRAWL/ShufflePickLabel=Preselección
+UI/BRAWL/SingleLaneDescription=No hay objetivos adicionales en el campo de batalla. Prepárate para la acción constante.
+UI/BRAWL/SingleLaneLabel=Una vía
+UI/BRAWL/Unavailable=
 UI/BattleChat/CustomMessageFormat=<s val="BattleChatCustomMessage">[<a name="CustomMessage" href="CustomMessage"><IMG path="Assets\Textures\storm_social_socialpanel_broadcast.dds" height="16" width="21" alignment="absolutemiddle"/> Trasmisión de</a>] <a name="PresenceId" href="%presenceId%">%senderName%</a>: %message%</s>
 UI/BattleChat/FriendProgramMatch=<s val="BattleChatSystem"><a name="PresenceId" href="%presenceId%">%userName%</a> ha entrado al Nexo <a name="InviteToParty" href="%presenceId%"><c val="57b4ff">[Invitar al grupo]</c></a></s>
 UI/BattleChat/StatisticGames=Se están jugando %num% partidas de Heroes of the Storm.

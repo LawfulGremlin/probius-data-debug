@@ -5327,7 +5327,7 @@ Button/Tooltip/AbathurLocustSwarm=激活后在附近孵化<c val="#TooltipNumber
 Button/Tooltip/AbathurMonstrosityDeepTunnel=命令你的进化的畸兽快速潜地前往一个可见位置。
 Button/Tooltip/AbathurMonstrosityEvolutionCompleteTalent=畸兽的普通攻击伤害提高<c val="#TooltipNumbers"><d ref="100*Effect,AbathurEvolveMonstrosityWeaponDamage,MultiplicativeModifierArray[EvolutionCompleteDamage].Modifier"/>%</c>。
 Button/Tooltip/AbathurReinforcedCarapaceTalent=甲壳硬化的护盾值提高<c val="#TooltipNumbers"><d ref="100*(Talent,AbathurReinforcedCarapace,AbilityModificationArray[0].Modifications[0].Value)-100"Precision="2"/>%</c>。
-Button/Tooltip/AbathurSlapathur=阿巴瑟的普通攻击造成的伤害提高<c val=#TooltipNumbers>350%</c>，并且使非精英敌人昏迷，使建筑瘫痪<c val=#TooltipNumbers><d ref=Behavior,AbathurSlapathurStun,Duration precision=1/></c>秒。</n></n>同一个英雄或建筑每<c val=#TooltipNumbers><d ref=Behavior,SlapathurInternalCooldown,Duration/></c>秒只能昏迷或瘫痪一次。
+Button/Tooltip/AbathurSlapathur=阿巴瑟的普通攻击造成的伤害提高<c val="#TooltipNumbers">500%</c>，并且使非精英敌人昏迷，使建筑瘫痪<c val="#TooltipNumbers"><d ref="Behavior,AbathurSlapathurStun,Duration" precision="1"/></c>秒。</n></n>同一个英雄或建筑每<c val="#TooltipNumbers"><d ref="Behavior,SlapathurInternalCooldown,Duration"/></c>秒只能昏迷或瘫痪一次。
 Button/Tooltip/AbathurSymbiote=孵化一只共生体，并附在目标盟友或建筑上。激活时，阿巴瑟控制共生体并获得新技能。共生体可以从附近敌人的死亡中获得经验值。
 Button/Tooltip/AbathurSymbioteAdrenalOverloadTalent=共生体宿主英雄的攻击速度提高<c val="#TooltipNumbers"><d ref="Behavior,AbathurAdrenalOverload,Modification.AdditiveAttackSpeedFactor*100" player="0" precision="2"/>%</c>。
 Button/Tooltip/AbathurSymbioteAdrenalineBoostTalent=共生体的甲壳硬化还能够使目标的移动速度提高<c val="#TooltipNumbers"><d ref="100*Behavior,AdrenalineBoost,Modification.UnifiedMoveSpeedFactor"/>%</c>，持续<c val="#TooltipNumbers"><d ref="Behavior,AdrenalineBoost,Duration" precision="1" player="0"/></c>秒。
@@ -5431,7 +5431,7 @@ Button/Tooltip/ArtanisTwinBladesTripleStrikeTalent=双刃的普通攻击次数�
 Button/Tooltip/ArtanisTwinBladesZealotChargeTalent=双刃的冲锋距离提高<c val="#TooltipNumbers">75%</c>。
 Button/Tooltip/ArthasAbsoluteZeroSummonSindragosaTalent=辛达苟萨飞行距离翻倍。敌方英雄将被定身<c val="#TooltipNumbers"><d ref="Behavior,ArthasSummonSindragosaHeroRoot,Duration" player="0"Precision="2"/></c>秒，并且随后被减速<c val="#TooltipNumbers"><d ref="-100*Behavior,ArthasSummonSindragosaAbsoluteZeroSlow,Modification.UnifiedMoveSpeedFactor"/>%</c>，持续 <c val="#TooltipNumbers"><d ref="Behavior,ArthasSummonSindragosaAbsoluteZeroSlow,Duration" player="0" precision="1"/></c>秒。
 Button/Tooltip/ArthasAntiMagicShellTalent=激活后使阿尔萨斯免疫法术伤害，持续<c val="#TooltipNumbers"><d ref="Behavior,ArthasAntiMagicShellCaster,Duration"/></c>秒，并为阿尔萨斯恢复相当于所阻挡伤害的<c val="#TooltipNumbers">25%</c>的生命值。
-Button/Tooltip/ArthasArmyOfTheDead=消耗所有充能，召唤等量的食尸鬼，食尸鬼会在<c val="#TooltipNumbers"><d ref="-Unit,ArthasArmyOfTheDeadGhoul,LifeMax/Unit,ArthasArmyOfTheDeadGhoul,LifeRegenRate" player="0"/></c>秒内持续失去生命值，并造成<c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadGhoulWeaponDamage,Amount"/></c>点伤害。重新激活可牺牲一只食尸鬼，为阿尔萨斯恢复<c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate"/></c>点生命值。最多可储存<c val="#TooltipNumbers"><d ref="Abil,ArthasArmyOfTheDead,Cost.Charge.CountMax"/></c>层充能。<n/><n/>每当附近有敌方小兵死亡时，该技能的充能冷却时间缩短<c val="#TooltipNumbers"><d ref="-Effect,ArthasArmyoftheDeadNPCDeathModifyChargeCooldown,Cost[0].ChargeTimeUse"precision="1"/></c>秒。击杀英雄会使该技能的充能冷却时间缩短<c val="#TooltipNumbers"><d ref="-Effect,ArthasArmyoftheDeadTakedownModifyChargeCooldown,Cost[0].ChargeTimeUse"precision="1"/></c>秒。
+Button/Tooltip/ArthasArmyOfTheDead=召唤<c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadSpawnPersistent,PeriodCount" player="0"/></c>只食尸鬼，食尸鬼的生命值为<c val="#TooltipNumbers"><d ref="Unit,ArthasArmyOfTheDeadGhoul,LifeMax"/></c>，会在<c val="#TooltipNumbers"><d const="$ArthasArmyOfTheDeadGhoulDecayDuration" /></c>秒内持续衰减。食尸鬼跟随阿尔萨斯行动，并会攻击附近敌人，造成<c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadGhoulWeaponDamage,Amount"/></c>伤害。<n/><n/>重新激活以献祭<c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHealSearch,AreaArray[0].MaxCount"/></c>只食尸鬼，为阿尔萨斯恢复<c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate"/></c>生命值。该效果有<c val="#TooltipNumbers"><d ref="Abil,ArthasArmyOfTheDeadSacrifice,Cost.Cooldown.TimeUse"/></c>秒冷却时间。
 Button/Tooltip/ArthasArmyOfTheDeadSacrifice=牺牲一只食尸鬼，恢复<c val="#TooltipNumbers"><d ref="Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate"/></c>点生命值。
 Button/Tooltip/ArthasArmyOfTheDeadSacrificeUpgrade=<s val="StandardTooltipDetails">冷却时间：<d ref="Abil,ArthasArmyOfTheDeadSacrifice,Cost[0].Cooldown.TimeUse"/>秒<n/><n/><s val="StandardTooltip">牺牲一只食尸鬼为你恢复<s val="StandardTooltipDetails"><d ref="Effect,ArmyOfTheDeadLegionofNorthrendHeal,RechargeVitalRate"/></s>点生命值。
 Button/Tooltip/ArthasBitingColdFrozenTempestTalent=敌人每受到一秒寒冰风暴的伤害就能使该技能的伤害提高<c val="#TooltipNumbers"><d ref="100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,Scale*2"Precision="2"/>%</c>，最多提高<c val="#TooltipNumbers"><d ref="100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,MaxAccumulation"/>%</c>。
@@ -7226,7 +7226,7 @@ Button/TooltipAppender/AzmodanGlobeOfAnnihilationTasteForBlood=<n/><c val="#Tool
 Button/TooltipAppender/ButcherFreshMeatAbattoirTalentAppender=<n/><n/><c val="#TooltipQuest">收集的肉：<c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ButcherFreshMeatAbattoirTalentTokenCounter$"/><n/><c val="#TooltipQuest">攻击伤害加成：</c><d ref="$BehaviorStackCount:ButcherFreshMeatAbattoirTalentTokenCounter$*Accumulator,ButcherFreshMeatAbattoirTalentAccumulator,Scale"precision="1"/></c></c>
 Button/TooltipAppender/ButcherFreshMeatAppender=<n/><n/><c val="#TooltipQuest">收集的肉：<c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$"/><n/><c val="#TooltipQuest">攻击伤害加成：</c><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$*Accumulator,ButcherFreshMeatAccumulator,Scale"precision="1"/></c></c>
 Button/TooltipAppender/ButcherFreshMeatAppenderComplete=<n/><n/><c val="#TooltipQuest">任务完成！<n/>收集的肉：<c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$"/><n/><c val="#TooltipQuest">攻击伤害加成：</c><d ref="$BehaviorStackCount:ButcherFreshMeatTokenCounter$*Accumulator,ButcherFreshMeatAccumulator,Scale+Behavior,ButcherFreshMeatQuestCompletionCarry,Modification.DamageDealtScaled[Basic]"precision="1"/></c></c>
-Button/TooltipAppender/ChenBreathofFireAccumulatingFlame=<n/><c val="#TooltipQuest">点燃英雄：<c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$"/>/<d ref="Behavior,ChenBreathOfFireAccumulatingFlameTokenCounter,Max"/><n/><c val="#TooltipQuest">伤害加成：</c><d ref="100*($BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$)*Accumulator,BreathofFireQuestDamage,Scale"/>%
+Button/TooltipAppender/ChenBreathofFireAccumulatingFlame=<n/><c val="#TooltipQuest">点燃英雄：<c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$"/>/<d ref="Behavior,ChenBreathOfFireAccumulatingFlameTokenCounter,Max"/><n/><c val="#TooltipQuest">伤害加成：</c><d ref="100*($BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$)*Accumulator,ChenAccumulatingFlameAccumulator,Scale"/>%
 Button/TooltipAppender/ChenBreathofFireAccumulatingFlameComplete=<n/><c val="#TooltipQuest">任务完成！<n/><c val="#TooltipQuest">伤害加成：</c><c val="#TooltipNumbers"><d ref="100*($BehaviorStackCount:ChenBreathOfFireAccumulatingFlameTokenCounter$)*Accumulator,ChenAccumulatingFlameAccumulator,Scale"/>%</c>
 Button/TooltipAppender/ChenFortifyingBrewFreshestIngredients=<n/><c val="#TooltipQuest">已收集恢复之球：<c val="#TooltipNumbers"><d ref="$BehaviorStackCount:ChenFreshestIngredientsTokenCounter$"/>/<d ref="Behavior,ChenFreshestIngredientsTokenCounter,Max"/></c><n/>生命恢复加成：<c val="#TooltipNumbers"><d ref="Accumulator,ChenFreshestIngredientsTalentAccumulator,Scale*($BehaviorStackCount:ChenFreshestIngredientsTokenCounter$)"/></c></c>
 Button/TooltipAppender/ChenFortifyingBrewFreshestIngredientsComplete=<n/><c val="#TooltipQuest">任务完成！<n/>生命恢复速度：<c val="#TooltipNumbers"><d ref="Accumulator,ChenFreshestIngredientsTalentAccumulator,Scale*($BehaviorStackCount:ChenFreshestIngredientsTokenCounter$)"/></c></c>
@@ -7465,7 +7465,7 @@ DragonStatueDefendDefendDragonStatue=DefendDragonStatue
 Effect/Name/AllShallBurnCasterRevealerCreatePersistent=All Shall Burn Caster Revealer (Create Persistent)
 Effect/Name/AllShallBurnCasterRevealerDestroyPersistent=All Shall Burn Caster Revealer (Destroy Persistent)
 Effect/Name/Azmodan200IQCastSet=
-Effect/Name/Azmodan200IQPlayDummySet= 
+Effect/Name/Azmodan200IQPlayDummySet=
 Effect/Name/AzmodanAllShallBurnManaDrain=All Shall Burn (Mana Drain)
 Effect/Name/AzmodanAllShallBurnMarchOfSinCreatePersistent=All Shall Burn (March Of Sin Create Persistent)
 Effect/Name/AzmodanAllShallBurnMarchOfSinCreatePersistentStructure=Azmodan All Shall Burn March of Sin Create Persistent Structure
@@ -15403,7 +15403,7 @@ Mount/Info/MountCrabRank18Base=混沌深渊的螃蟹很少在陆地上出没，�
 Mount/Info/MountCrabRank18Epic=许多深渊爬行蟹会在高压环境中，把绚丽的水晶密密麻麻地镶嵌在壳上，以获得更强的防护。在2018第四赛季的英雄联赛或团队联赛中达到大师级即可获得。
 Mount/Info/MountDeer_Rank16_00=罕见的元素驯鹿是勇气与英勇的炽热象征。在第三赛季的英雄联赛中达到白金级或在团队联赛中达到青铜级即可获得。
 Mount/Info/MountDeer_Rank16_01=在获得强大的力量后，史诗元素驯鹿展现出的优雅鼓舞着每个看到它的勇士。在第三赛季的英雄联赛或团队联赛中达到大师级即可获得。
-Mount/Info/MountDirewolfThreeTails=沉寂多年的时空枢纽已经苏醒，全新的生灵从中涌现，新的时代就此开启。2026暴雪嘉年华纪念坐骑。
+Mount/Info/MountDirewolfThreeTails=
 Mount/Info/MountDirewolf_Esport17_00=由时空枢纽的动荡能量塑造而成的狼永远无法被真正驯服。但是众所周知，有资格的人还是可以赢得它们的尊敬和忠诚。
 Mount/Info/MountDirewolf_Esport17_01=装甲混沌战狼由时空枢纽打造，经过了战争的洗礼，是原始力量的化身。只有真正卓越的人才能骑上它们冲入战场。
 Mount/Info/MountDirewolf_Rank15_00=只有证明了自己能力的勇士才能召唤元素战狼。在英雄联赛季前赛达到20级或团队联赛季前赛达到40级即可获得。
@@ -15448,6 +15448,7 @@ Mount/Info/MountNexagonSpooky18Var1=有些腐化永远无法净除。与其坚�
 Mount/Info/MountNexagonSpooky18Var2=一切错误均可救赎，只是要付出大量的努力和牺牲。虽然往昔已一去不返，但生命还会再次繁荣昌盛。
 Mount/Info/MountNexagonSpooky18Var3=有些腐化永远无法净除。与其坚持垂死的真相，不如坦然接受宇宙的新秩序。
 Mount/Info/MountOwlSeekerAltered20=在遥远的地方，有个未被燃烧军团染指的国度，成群的野生寻觅者仍然遨游在艾泽拉斯的金色平原上。
+Mount/Info/MountPhoenix=
 Mount/Info/MountPigNexus=神秘的全新生物不断从时空枢纽的混沌能量中浮现，并随着时间的流逝变得越发强大。为纪念2017暴雪嘉年华而发布。
 Mount/Info/MountPigPinata=你知道骑着皮纳塔小猪去战斗的最大好处是什么吗？那就是每次它死掉的时候有免费的糖果吃！不过，别把它们吃个精光喔……
 Mount/Info/MountPigSpring19=传闻说，地狱机控的高级特工就是骑着赛博战猪在卡尔蒂姆卫城行动的，但非常巧合的是，目击者全都人间蒸发了。
@@ -15851,6 +15852,12 @@ Mount/Name/MountNexagonSpooky18Var3=剧毒之墓碑
 Mount/Name/MountOwlSeekerAltered20=寻觅者
 Mount/Name/MountOwlSeekerAltered20Var1=林地寻觅者
 Mount/Name/MountOwlSeekerAltered20Var2=暮光寻觅者
+Mount/Name/MountPhoenix=凤凰
+Mount/Name/MountPhoenixVar1=
+Mount/Name/MountPhoenixVar2=
+Mount/Name/MountPhoenixVar3=
+Mount/Name/MountPhoenixVar4=
+Mount/Name/MountPhoenixVar5=
 Mount/Name/MountPigFel=地狱野猪
 Mount/Name/MountPigFelVar1=凶猛野猪
 Mount/Name/MountPigFelVar2=影月地狱野猪
@@ -16043,6 +16050,8 @@ Mount/Name/NexusCharger=时空战马
 Mount/Name/NexusChargerGold=黄金战马
 Mount/Name/NexusChargerOrange=琥珀时空战马
 Mount/Name/NexusChargerViolet=紫罗兰时空战马
+Mount/Name/Phoenix=凤凰
+Mount/Name/PhoenixCommon=
 Mount/Name/RainbowUnicorn=彩虹独角兽
 Mount/Name/RainbowUnicornGreen=幸运彩虹独角兽
 Mount/Name/RainbowUnicornOrange=橙色彩虹独角兽
@@ -21226,9 +21235,6 @@ Skin/AdditionalSearchText/CrusaderIvory=蓝色，棕黄
 Skin/AdditionalSearchText/CrusaderOWC20=莱因哈特，银色，守望先锋，cosplay
 Skin/AdditionalSearchText/CrusaderOWC20Var1=莱因哈特，蓝色，守望先锋，cosplay
 Skin/AdditionalSearchText/CrusaderOWC20Var2=莱因哈特，白色，金色，守望先锋，cosplay
-Skin/AdditionalSearchText/CrusaderOWC20Var3=莱因哈特，银色，守望先锋，cosplay
-Skin/AdditionalSearchText/CrusaderOWC20Var4=莱因哈特，蓝色，守望先锋，cosplay
-Skin/AdditionalSearchText/CrusaderOWC20Var5=莱因哈特，白色，金色，守望先锋，cosplay
 Skin/AdditionalSearchText/CrusaderRed=红色，黑色
 Skin/AdditionalSearchText/CrusaderSpell=破法者乔汉娜，穿越，红色
 Skin/AdditionalSearchText/CrusaderSpellVar1=黑色，橙色
@@ -21257,9 +21263,6 @@ Skin/AdditionalSearchText/DemonHunterMecha19Var4=棕色，灰色，黑色，机�
 Skin/AdditionalSearchText/DemonHunterOWC20=死神，黑色，守望先锋，cosplay
 Skin/AdditionalSearchText/DemonHunterOWC20Var1=死神，粉色，守望先锋，cosplay
 Skin/AdditionalSearchText/DemonHunterOWC20Var2=死神，白色，守望先锋，cosplay
-Skin/AdditionalSearchText/DemonHunterOWC20Var3=死神，黑色，守望先锋，cosplay
-Skin/AdditionalSearchText/DemonHunterOWC20Var4=死神，粉色，守望先锋，cosplay
-Skin/AdditionalSearchText/DemonHunterOWC20Var5=死神，白色，守望先锋，cosplay
 Skin/AdditionalSearchText/DemonHunterPink=粉色，紫色
 Skin/AdditionalSearchText/DemonHunterVampireHunter=吸血鬼杀手维拉，乌鸦庭，蓝色
 Skin/AdditionalSearchText/DemonHunterVampireHunterDark=红色，黑色
@@ -21716,9 +21719,6 @@ Skin/AdditionalSearchText/RaynorMarshallSkinRed=红色，黑色
 Skin/AdditionalSearchText/RaynorOWC20=士兵76，76，蓝色，守望先锋，cosplay
 Skin/AdditionalSearchText/RaynorOWC20Var1=士兵76，76，金色，守望先锋，cosplay
 Skin/AdditionalSearchText/RaynorOWC20Var2=士兵76，76，红色，守望先锋，cosplay
-Skin/AdditionalSearchText/RaynorOWC20Var3=士兵76，76，蓝色，守望先锋，cosplay
-Skin/AdditionalSearchText/RaynorOWC20Var4=士兵76，76，金色，守望先锋，cosplay
-Skin/AdditionalSearchText/RaynorOWC20Var5=士兵76，76，红色，守望先锋，cosplay
 Skin/AdditionalSearchText/RaynorPatriot=星条旗雷诺，蓝色，红色
 Skin/AdditionalSearchText/RaynorPatriotBlack=黑色，灰色，红色
 Skin/AdditionalSearchText/RaynorPatriotRed=红色，蓝色
@@ -22123,7 +22123,6 @@ Skin/Info/ChenWarmaster=战争大师组成了雷神大军不可逾越的前线�
 Skin/Info/CrusaderCenturion=在塞维鲁皇帝的命令下，一整支军团开始向众神之门进军。所有人最后都回到了家园，只有一名百夫长被带走作为众神对凡人傲慢的惩罚。
 Skin/Info/CrusaderEnforcer=要想加入特别战术救援机动队(STORM)，有资质的特工们必须要满足乔汉娜教官每一项苛刻的要求。而她的家族世代皆为机动队警官的这一传统，更是让她的选人眼光挑剔无比。
 Skin/Info/CrusaderOWC20=乔汉娜知道，萨卡兰姆的信条只有通过适应其他时空的传统才能得到救赎。它的开头很低调：新衣服和火箭武器。
-Skin/Info/CrusaderOWC20NoMask=即使丢了头盔，圣教军的身份也不会停止。为圣光服务是毕生的奉献。
 Skin/Info/CrusaderSpell=尽管大多数破法者在奎尔萨拉斯防御部队中服役，但乔汉娜则踏上了净化洛丹伦的圣战之旅。在故乡被净化之前，她不会停下。
 Skin/Info/CrusaderWCAV=据说，在战场上面对一名战歌指挥官会让你切身实地地感受到什么叫做部落的力量。连续多年的征战并未消磨乔哈娜的斗志，她冲向战场时所发出战吼声依然震天撼地。
 Skin/Info/Default=默认皮肤信息描述。
@@ -22133,7 +22132,6 @@ Skin/Info/DemonHunterCowgirl=在处理瑞克斯维尔大街上的小混混时，
 Skin/Info/DemonHunterHorns=杀死恐惧之王后，维拉从恐惧之地归来。她继承了秩序大师的衣钵，向新加入的猎魔人传授自己的经验和知识。
 Skin/Info/DemonHunterMecha19=专注于超凡火力和敏捷性的设计，机甲维拉与着重前线冲击力的机甲伊瑞尔可谓相得益彰。由于异度机甲的到来，这对双胞胎姊妹原型机被直接投入实战中进行测试。
 Skin/Info/DemonHunterOWC20=在经历了铲除庇护之地邪恶势力的一生后，维拉惊讶地发现，多元宇宙中存在着比她想象中还要多的恶魔。有些恶魔的脸长得和从前战友一模一样。维拉也是因此才知道自己松懈了。
-Skin/Info/DemonHunterOWC20NoMask=在经历了铲除庇护之地邪恶势力的一生后，维拉惊讶地发现，多元宇宙中存在着比她想象中还要多的恶魔。有些恶魔的脸长得和从前战友一模一样；而有些恶魔还是老样子。
 Skin/Info/DemonHunterPink=特殊配色。
 Skin/Info/DemonHunterVaHmpireunterDark=即使是死亡也无法压制女伯爵对鲜血的渴望。随着吸血鬼大军从乌鸦庭的遗忘高塔逐渐扩大，一组幸存者站了出来，对他们发起了抵抗。
 Skin/Info/DemonHunterVampireHunter=即使是死亡也无法压制女伯爵对鲜血的渴望。随着吸血鬼大军在乌鸦庭逐渐壮大，一群幸存者站了出来，开始反抗吸血鬼的统治。
@@ -22278,7 +22276,6 @@ Skin/Info/RaynorCommander=有时候，从厚重的CMC动力装甲里钻出来，
 Skin/Info/RaynorMadAxe18=传说，巡游侠曾是一名警长，在战争合金废土中维护着法律和秩序。不过，在他的那副骇鬼皮囊里如今还残留着什么，恐怕永远不会有人知道。
 Skin/Info/RaynorMarshallSkinCommon=一旦联邦挖光了玛·萨拉的矿产资源，当地移民者就会变得绝望。而警长詹姆斯·雷诺发现自己必须独自维持这个混乱星球的和平。
 Skin/Info/RaynorOWC20=被迫离开一个你在乎的人。多年来受到有影响力的自大狂的诽谤。这足以让任何人戴上面具。
-Skin/Info/RaynorOWC20NoMask=说真的，戴上面具时呼吸比你想象的要顺畅。雷诺摘下了面具，这样敌人就能看见他愤怒的面容。
 Skin/Info/RaynorPatriot=随着美国宇航部队成功解救了科普卢星区的移民者，雷诺上校开始担心怪物会顺势追到地球。
 Skin/Info/RaynorUltimate=内侧贴着一张黄色便条，上面写着“嗨，牛仔先生。我帮你的战斗服做了几个免费升级，别客气，回头再谢我吧。 -斯旺”
 Skin/Info/RedKaijoDiablo=随着新崔斯特姆政府的核能实验逐渐取得了进展，他们变得狂妄，自以为原子的力量完全在他们的掌控之中。但他们错了。
@@ -22630,9 +22627,6 @@ Skin/Name/CrusaderIvory=象牙乔汉娜
 Skin/Name/CrusaderOWC20=和平捍卫者乔汉娜
 Skin/Name/CrusaderOWC20Var1=闪烁和平捍卫者乔汉娜
 Skin/Name/CrusaderOWC20Var2=狂热和平捍卫者乔汉娜
-Skin/Name/CrusaderOWC20Var3=摘下面具的和平捍卫者乔汉娜
-Skin/Name/CrusaderOWC20Var4=摘下面具的闪烁和平捍卫者乔汉娜
-Skin/Name/CrusaderOWC20Var5=摘下面具的狂热和平捍卫者乔汉娜
 Skin/Name/CrusaderRed=黑色乔汉娜
 Skin/Name/CrusaderSpell=破法者乔汉娜
 Skin/Name/CrusaderSpellVar1=钢铁破法者乔汉娜
@@ -22663,9 +22657,6 @@ Skin/Name/DemonHunterMecha19Var4=合金机甲维拉
 Skin/Name/DemonHunterOWC20=暗影行者维拉
 Skin/Name/DemonHunterOWC20Var1=活力四射暗影行者维拉
 Skin/Name/DemonHunterOWC20Var2=雪白纯净暗影行者维拉
-Skin/Name/DemonHunterOWC20Var3=摘下面具的暗影行者维拉
-Skin/Name/DemonHunterOWC20Var4=摘下面具的活力四射暗影行者维拉
-Skin/Name/DemonHunterOWC20Var5=摘下面具的雪白纯净暗影行者维拉
 Skin/Name/DemonHunterPink=紫红维拉
 Skin/Name/DemonHunterVampireHunter=吸血鬼杀手维拉
 Skin/Name/DemonHunterVampireHunterDark=乌木吸血鬼杀手维拉
@@ -23164,9 +23155,6 @@ Skin/Name/RaynorMarshallSkinRed=帝国警长雷诺
 Skin/Name/RaynorOWC20=士兵雷诺76
 Skin/Name/RaynorOWC20Var1=强化士兵雷诺76
 Skin/Name/RaynorOWC20Var2=精英士兵雷诺76
-Skin/Name/RaynorOWC20Var3=摘下面具的士兵雷诺76
-Skin/Name/RaynorOWC20Var4=摘下面具的强化士兵雷诺76
-Skin/Name/RaynorOWC20Var5=摘下面具的精英士兵雷诺76
 Skin/Name/RaynorPatriot=星条旗雷诺
 Skin/Name/RaynorPatriotBlack=特工星条旗雷诺
 Skin/Name/RaynorPatriotRed=守护者星条旗雷诺
@@ -23737,9 +23725,6 @@ Skin/SortName/CrusaderEnforcerVar1=EnforcerVar1
 Skin/SortName/CrusaderOWC20=CrusaderOW20MaskVar0
 Skin/SortName/CrusaderOWC20Var1=CrusaderOW20MaskVar1
 Skin/SortName/CrusaderOWC20Var2=CrusaderOW20MaskVar2
-Skin/SortName/CrusaderOWC20Var3=CrusaderOW20NoMaskVar0
-Skin/SortName/CrusaderOWC20Var4=CrusaderOW20NoMaskVar1
-Skin/SortName/CrusaderOWC20Var5=CrusaderOW20NoMaskVar2
 Skin/SortName/CrusaderSpellCommonVar0=SpellVar0
 Skin/SortName/CrusaderSpellCommonVar1=SpellVar1
 Skin/SortName/CrusaderUltimateCommonVar0=zUltimateVar0
@@ -23761,9 +23746,6 @@ Skin/SortName/DemonHunterMecha19CommonVar1=DemonHunterMecha19Var1
 Skin/SortName/DemonHunterOWC20=DemonHunterOWC20MaskVar0
 Skin/SortName/DemonHunterOWC20Var1=DemonHunterOWC20MaskVar1
 Skin/SortName/DemonHunterOWC20Var2=DemonHunterOWC20MaskVar2
-Skin/SortName/DemonHunterOWC20Var3=DemonHunterOWC20NoMaskVar0
-Skin/SortName/DemonHunterOWC20Var4=DemonHunterOWC20NoMaskVar1
-Skin/SortName/DemonHunterOWC20Var5=DemonHunterOWC20NoMaskVar2
 Skin/SortName/DemonHunterUltimateCommonVar0=zUltimateVar0
 Skin/SortName/DemonHunterUltimateCommonVar1=zUltimateVar1
 Skin/SortName/DemonHunterVampireCommonVar0=VampireVar0
@@ -24037,9 +24019,6 @@ Skin/SortName/RaynorMarshallCommonVar1=MarshallVar1
 Skin/SortName/RaynorOWC20=RaynorOWC20MaskVar0
 Skin/SortName/RaynorOWC20Var1=RaynorOWC20MaskVar1
 Skin/SortName/RaynorOWC20Var2=RaynorOWC20MaskVar2
-Skin/SortName/RaynorOWC20Var3=RaynorOWC20NoMaskVar0
-Skin/SortName/RaynorOWC20Var4=RaynorOWC20NoMaskVar1
-Skin/SortName/RaynorOWC20Var5=RaynorOWC20NoMaskVar2
 Skin/SortName/RaynorStarsCommonVar0=StarsVar0
 Skin/SortName/RaynorStarsCommonVar1=StarsVar1
 Skin/SortName/RaynorToys19CommonVar1=GreenArmyVar1
@@ -25929,6 +25908,23 @@ UI/AutoSelectFilterTooltip/Support=包括所有辅助型英雄
 UI/AutoSelectFilterTooltip/Tank=包括所有坦克英雄
 UI/AutoSelectFilterTooltip/Warrior=包括所有战斗型英雄
 UI/AutoSelectToastTitle=已自动选择技能
+UI/BRAWL=
+UI/BRAWL/AdditionalInfoDescription=<ul indent="2" text="•"><li>炉石(B)已禁用，并且初始位置无法恢复生命值。</li><li>恢复之球会出现在战场上特定的刷新位置。</li></ul>
+UI/BRAWL/AdditionalInfoLabel=额外信息
+UI/BRAWL/BRAWLInfo=信息
+UI/BRAWL/Description=全随机中路乱斗
+UI/BRAWL/InfoButton/Tooltip=
+UI/BRAWL/IntroDescription=随机选择的英雄将在一条兵线上战斗！
+UI/BRAWL/IntroLabel=
+UI/BRAWL/MapsRotation=战场
+UI/BRAWL/MapsRotation/Tooltip=
+UI/BRAWL/ObjectiveDescription=摧毁敌方核心即可获胜。
+UI/BRAWL/ObjectiveLabel=摧毁敌方核心
+UI/BRAWL/ShufflePickDescription=从三位随机选择的英雄中选择一位。你只有30秒，抓紧时间！
+UI/BRAWL/ShufflePickLabel=随机挑选
+UI/BRAWL/SingleLaneDescription=战场上不会出现战场机制，准备好持久作战吧。
+UI/BRAWL/SingleLaneLabel=单兵线
+UI/BRAWL/Unavailable=
 UI/BattleChat/CustomMessageFormat=<s val="BattleChatCustomMessage">[<a name="CustomMessage" href="CustomMessage"><IMG path="Assets\Textures\storm_social_socialpanel_broadcast.dds" height="16" width="21" alignment="absolutemiddle"/>广播</a>]<a name="PresenceId" href="%presenceId%">%senderName%</a>：%message%</s>
 UI/BattleChat/FriendProgramMatch=<s val="BattleChatSystem"><a name="PresenceId" href="%presenceId%">%userName%</a>进入了时空枢纽<a name="InviteToParty" href="%presenceId%"><c val="57b4ff">[邀请加入队伍]</c></a></s>
 UI/BattleChat/StatisticGames=现在有%num%场《风暴英雄》游戏正在进行。
