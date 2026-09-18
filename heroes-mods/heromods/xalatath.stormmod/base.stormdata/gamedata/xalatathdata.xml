@@ -3,6 +3,7 @@
   <const id="$XalatathLife" value="1270" />
   <const id="$XalatathBasicAttackRange" value="7" />
   <const id="$XalatathHeroWeaponDamage" value="69" />
+  <const id="$XalatathUnitRadius" value="0.6875" />
   <const id="$XalatathAncoredCoreModifier" value="2" />
   <const id="$XalatathDarkHeartRitualLinkRadius" value="3" />
   <const id="$XalatathDarkHeartsProtectionBreakRadius" value="4.0" />
@@ -18,11 +19,11 @@
   <const id="$XalatathDarkHeartRitualLinkDamage" value="35" />
   <const id="$XalatathDarkHeartRitualThrowRange" value="7" />
   <const id="$XalatathDarkHeartRitualSecondaryLinkDamage" value="/($XalatathDarkHeartRitualLinkDamage 2)" evaluateAsExpression="1" />
-  <const id="$XalatathDarkHeartRitualDetonationDamage" value="120" />
-  <const id="$XalatathDarkheartsProtectionSilenceDuration" value="1" />
+  <const id="$XalatathDarkHeartRitualDetonationDamage" value="180" />
+  <const id="$XalatathDarkheartsProtectionSilenceDuration" value="2" />
   <const id="$XalatathDarkHeartRitualDetonationBonusDamageModifier" value="0.50" />
   <const id="$XalatathDarkHeartRitualDetonationBonusDamage" value="*($XalatathDarkHeartRitualDetonationDamage $XalatathDarkHeartRitualDetonationBonusDamageModifier)" evaluateAsExpression="1" />
-  <const id="$XalatathUnstableCoreFireDOTDamage" value="15" />
+  <const id="$XalatathUnstableCoreFireDOTDamage" value="45" />
   <const id="$XalatathUnstableCoreFireDuration" value="5" />
   <const id="$XalatathCloakOfShadowsSpeedBonus" value="0.5" />
   <const id="$XalatathCloakOfShadowsSpellArmorBonus" value="25" />
@@ -52,18 +53,21 @@
   <const id="$XalatathVoidVolleyQuestSecondMilestoneStacks" value="55" />
   <const id="$XalatathVoidVolleyQuestMaxStacks" value="90" />
   <const id="$XalatathVoidVolleyTalentQuestDamageBonusPerStack" value="0.001" />
+  <const id="$XalatathVoidVolleyMinimumRange" value="3" />
+  <const id="$XalatathVoidVolleyRangeSplat" value="+($XalatathVoidVolleyRange $XalatathUnitRadius)" evaluateAsExpression="1" />
+  <const id="$XalatathVoidVolleyMinimumRangeSplat" value="+($XalatathVoidVolleyMinimumRange $XalatathUnitRadius)" evaluateAsExpression="1" />
+  <const id="$XalatathVoidVolleyQuestCompleteRangeValueSplat" value="+($XalatathVoidVolleyQuestCompleteRangeValue $XalatathUnitRadius)" evaluateAsExpression="1" />
+  <const id="$XalatathVoidVolleyManaCost" value="35" />
   <const id="$XalatathVoidVolleyHoldFireDuration" value="2" />
-  <const id="$XalatathVoidConvergenceLifeTime" value="30" />
-  <const id="$XalatathVoidConvergencePortalDecayDuration" value="20" />
-  <const id="$XalatathVoidConvergencePortalLifeDecayRate" value="/($XalatathVoidConvergencePortalHealth $XalatathVoidConvergencePortalDecayDuration)" evaluateAsExpression="1" />
+  <const id="$XalatathVoidConvergencePortalDuration" value="15" />
   <const id="$XalatathVoidConvergenceRespawnPeriod" value="0.5" />
-  <const id="$XalatathVoidConvergencePortalHealth" value="1200" />
-  <const id="$XalatathVoidMinionHealth" value="250" />
-  <const id="$XalatathVoidMinionDecayDuration" value="30" />
+  <const id="$XalatathVoidConvergencePortalHealth" value="1000" />
+  <const id="$XalatathVoidMinionHealth" value="450" />
+  <const id="$XalatathVoidMinionDecayDuration" value="10" />
   <const id="$XalatathVoidMinionLifeDecayRate" value="/($XalatathVoidMinionHealth $XalatathVoidMinionDecayDuration)" evaluateAsExpression="1" />
   <const id="$XalatathVoidMinionWeaponDamage" value="95" />
   <const id="$XalatathFracturedRealityTrailDuration" value="3" />
-  <const id="$XalatathFracturedRealityFireDamage" value="15" />
+  <const id="$XalatathFracturedRealityFireDamage" value="45" />
   <CAbilAttack id="XalatathAttack" parent="attack">
     <Flags index="UpdateTarget" value="1" />
     <Name value="Abil/Name/XalatathAttack" />
@@ -97,12 +101,12 @@
     <Flags index="DeferCooldown" value="1" />
     <Flags index="RequireTargetVision" value="0" />
     <Range value="$XalatathVoidVolleyRange" />
-    <MinimumRange value="3" />
+    <MinimumRange value="$XalatathVoidVolleyMinimumRange" />
     <Arc value="360" />
     <ShowProgressArray index="Cast" value="1" />
     <CastIntroTime value="0.375" />
     <Cost>
-      <Vital index="Energy" value="75" />
+      <Vital index="Energy" value="$XalatathVoidVolleyManaCost" />
     </Cost>
     <UninterruptibleArray index="Cast" value="1" />
     <UninterruptibleArray index="Channel" value="1" />
@@ -110,6 +114,7 @@
     <CmdButtonArray index="Execute" DefaultButtonFace="XalatathVoidVolley" UseValidator="XalatathVoidVolleyCanCastValidator">
       <Flags index="AllowSelfCast" value="0" />
     </CmdButtonArray>
+    <CursorRangeFlags index="ClampMin" value="1" />
     <CursorEffect value="XalatathVoidVolley2MissileSearch" />
   </CAbilEffectTarget>
   <CAbilEffectTarget id="XalatathVoidStep">
@@ -193,7 +198,7 @@
     <Arc value="360" />
     <CastIntroTime value="0.15" />
     <UninterruptibleArray index="Cast" value="1" />
-    <CursorEffect value="XalatathShadowMarkOuterSearch" />
+    <CursorEffect value="XalatathShadowMarkTargetSearch" />
     <CmdButtonArray index="Execute" DefaultButtonFace="XalatathShadowMark" />
   </CAbilEffectTarget>
   <CAbilEffectTarget id="XalatathVoidConvergence" DefaultButtonFace="XalatathVoidConvergence" Requirements="Ultimate1Unlocked">
@@ -292,8 +297,8 @@
     <AbilSoundArray AbilCmd="XalatathVoidVolley,Execute" Sound="StormNoSound" />
     <On Terms="Effect.XalatathVoidEruptionTargetingEnterSet.Start" Send="StatusSet VoidEruptionReleased 0" />
     <On Terms="Effect.XalatathVoidEruptionTargetingEnterSet.Start" Send="AnimPlay Spell Spell,D,Start PlayForever -1.000000 -1.000000 1.000000 AsTimeScale" />
-    <On Terms="Effect.XalatathVoidEruptionInitialSetSwitch.Start" Send="StatusSet VoidEruptionReleased 1" />
-    <On Terms="Effect.XalatathVoidEruptionInitialSetSwitch.Start" Send="AnimPlay Spell Spell,D,End 0 -1.000000 -1.000000 1.000000 AsTimeScale" />
+    <On Terms="Effect.XalatathVoidEruptionExecuteSet.Start" Send="StatusSet VoidEruptionReleased 1" />
+    <On Terms="Effect.XalatathVoidEruptionExecuteSet.Start" Send="AnimPlay Spell Spell,D,End 0 -1.000000 -1.000000 1.000000 AsTimeScale" />
     <On Terms="Effect.XalatathVoidEruptionCancelSet.Start; IsStatus VoidEruptionReleased 0" Send="AnimClear Spell" />
     <AbilSoundArray AbilCmd="XalatathVoidEruption,Execute" Sound="XalatathBase_Ultimate2Used" />
     <On Terms="Abil.XalatathVoidConvergence.SourceCastStart" Send="AnimPlay Spell Spell,D,Start PlayForever -1.000000 -1.000000 1.000000 AsTimeScale" />
@@ -338,6 +343,7 @@
   </CActorModelMaterial>
   <CActorSound id="XalatathWeaponMissilesImpactSound" parent="SoundOneShot">
     <On Terms="Effect.XalatathVoidVolleyDamage.Start" Send="Create" />
+    <On Terms="Effect.XalatathHeroWeaponDamage.Start" Send="Create" />
     <Host Subject="_Unit" />
     <Sound value="Xalatath_Attack_Impact" />
   </CActorSound>
@@ -860,7 +866,7 @@
     <On Terms="ActorCreation" Send="TimerSet 12.000000 AnchorLife" />
     <On Terms="TimerExpired; TimerName AnchorLife" Send="Destroy" />
     <Model value="Invisible" />
-    <HostSiteOps Ops="SOpTargetPointStationary SOpForwardCasterPointInverted" HoldPosition="1" HoldRotation="1" />
+    <HostSiteOps Ops="SOpTargetPointStationary SOpForwardCasterPointInverted SOpMoveUpByDot25" HoldPosition="1" HoldRotation="1" />
   </CActorModel>
   <CActorModel id="XalatathVoidStepSilenceOfTheLambFX" parent="StormModelAnimationStyleOneShot">
     <On Terms="Effect.XalatathVoidStepSilenceOfTheLambCreatePersistent.Start" Send="Create" />
@@ -871,6 +877,7 @@
     <On Terms="Abil.XalatathVoidStep.SourceCastStop; ValidateUnit CasterIsSilenced" Send="Destroy Immediate" />
     <On Terms="Abil.XalatathVoidStep.SourceCastStop; ValidateUnit CasterIsDazed" Send="Destroy Immediate" />
     <On Terms="Abil.XalatathVoidStep.SourceCastStop; ValidateUnit CasterIsStunned" Send="Destroy Immediate" />
+    <HostSiteOps Ops="SOpMoveUpByDot25" />
   </CActorModel>
   <CActorSiteOpLocalOffset id="XalatathVoidStepTargetSplatDecoupledOffset">
     <LocalOffset Y="-1.000000" />
@@ -914,11 +921,7 @@
   </CActorSound>
   <CActorSound id="XalatathVoidStepEndSound" parent="SoundOneShot">
     <On Terms="Effect.XalatathVoidStepSilenceOfTheLambCreatePersistent.Stop" Send="Create" />
-    <Sound value="Xalatath_VoidStep_EndSound" />
-  </CActorSound>
-  <CActorSound id="XalatathVoidStepLaunchSound" parent="SoundOneShot">
-    <On Terms="Effect.XalatathVoidStepSilenceOfTheLambCreatePersistent.Start" Send="Create" />
-    <Sound value="Xalatath_VoidStep_Cast" />
+    <Sound value="Xalatath_VoidStep_Impact" />
   </CActorSound>
   <CActorSound id="XalatathVoidStepPortalUnitCreateSound" parent="SoundOneShot">
     <Sound value="Event_VoidPortal_Open" />
@@ -947,6 +950,7 @@
     <On Terms="Signal.*.XalatathVoidConvergencePortalBirth" Send="AnimPlay Birth Birth" />
     <On Terms="Effect.XalatathVoidConvergenceRevealPersistent.Stop" Send="AnimBracketStart BSD Birth Stand Death ContentPlayOnce" />
     <DeathArray index="Normal" SoundLink="Xalatath_VoidConvergencePortal_Death" />
+    <CustomUnitStatusFrame value="UnitStatus/MinionUnitStatusFrameWithDurationBars" />
     <PlacementModel value="XalatathVoidConvergencePortalPlacement" />
     <PlacementActorModel value="XalatathVoidConvergencePortalPlacement" />
     <PlaceholderActorModel value="XalatathVoidConvergencePortalPlacement" />
@@ -955,9 +959,9 @@
     <UnitIcon value="Assets\Textures\storm_temp_btn-research-zerg-psidisruptor.dds" />
     <MinimapIconType value="Hidden" />
     <GroupIcon>
-      <Image value="Assets\Textures\Storm_UI_InGame_TargetInfoPanel_Unit_Rehgar_EarthbindTotem.dds" />
+      <Image value="Assets\Textures\Storm_UI_InGame_TargetInfoPanel_Unit_Xalatath_VoidConvergencePortal.dds" />
     </GroupIcon>
-    <Scale value="1.25" />
+    <Scale value="1.5" />
   </CActorUnit>
   <CActorModel id="XalatathVoidConvergencePortalPlacement" parent="StormPlacementModel">
     <Filter index="Ally" value="1" />
@@ -1148,39 +1152,50 @@
     <RevealRadius value="4" />
     <RevealFlags index="Unfog" value="1" />
   </CEffectCreatePersistent>
+  <CBehaviorUnitTracker id="XalatathVoidConvergencePortalBehaviorUnitTracker">
+    <TrackingValidatorArray value="XalatathVoidConvergencePortalAliveValidatorUnitFilters" />
+    <BehaviorFlags index="Permanent" value="1" />
+    <BehaviorFlags index="EnabledWhileDead" value="1" />
+    <UseSharedList value="0" />
+    <MaxTrackedUnits value="1" />
+    <UnitAddedAtMaxRule value="ReplaceOldest" />
+  </CBehaviorUnitTracker>
+  <CValidatorUnitFilters id="XalatathVoidConvergencePortalAliveValidatorUnitFilters">
+    <WhichUnit Value="Source" />
+    <Filters value="-;Dead" />
+  </CValidatorUnitFilters>
+  <CValidatorIsUnitTracked id="XalatathVoidConvergencePortalValidatorIsUnitTracked">
+    <BehaviorLink value="XalatathVoidConvergencePortalBehaviorUnitTracker" />
+    <Find value="0" />
+    <TrackerUnit Value="Caster" />
+    <TrackedUnit Value="Target" />
+  </CValidatorIsUnitTracked>
+  <CBehaviorBuff id="XalatathVoidConvergencePortalLimitBehaviorBuff">
+    <DisableValidatorArray value="XalatathVoidConvergencePortalValidatorIsUnitTracked" />
+    <PeriodicEffect value="XalatathVoidConvergencePortalSuicideDamage" />
+  </CBehaviorBuff>
+  <CEffectApplyBehavior id="XalatathVoidConvergencePortalLimitApplyBehavior">
+    <WhichUnit Value="Target" />
+    <Behavior value="XalatathVoidConvergencePortalLimitBehaviorBuff" />
+  </CEffectApplyBehavior>
+  <CEffectAddTrackedUnit id="XalatathVoidConvergencePortalAddTrackedUnit">
+    <BehaviorLink value="XalatathVoidConvergencePortalBehaviorUnitTracker" />
+    <TrackerUnit Value="Caster" />
+    <TrackedUnit Value="Target" />
+  </CEffectAddTrackedUnit>
+  <CEffectDamage id="XalatathVoidConvergencePortalSuicideDamage" parent="StormSuicideParent">
+    <ImpactLocation Value="TargetUnit" />
+  </CEffectDamage>
   <CEffectCreateUnit id="XalatathVoidConvergenceCreatePortalUnit">
-    <ValidatorArray value="PortalAliveRequirementUnitCount" />
     <WhichLocation Value="TargetPoint" />
     <SpawnEffect value="XalatathVoidConvergencePortalSpawnSet" />
     <SpawnUnit value="XalatathVoidConvergencePortalUnit" />
     <SpawnRange value="1" />
   </CEffectCreateUnit>
   <CEffectSet id="XalatathVoidConvergencePortalSpawnSet">
-    <EffectArray value="XalatathVoidConvergencePortalApplyTimedLife" />
+    <EffectArray value="XalatathVoidConvergencePortalAddTrackedUnit" />
+    <EffectArray value="XalatathVoidConvergencePortalLimitApplyBehavior" />
   </CEffectSet>
-  <CValidatorPlayerRequirement id="PortalAliveRequirementUnitCount">
-    <Find value="1" />
-    <Value value="PortalAliveAliveUnitCount" />
-    <WhichUnit Value="Target" />
-  </CValidatorPlayerRequirement>
-  <CValidatorCompareTrackedUnitsCount id="PortalIsAlive">
-    <Compare value="GE" />
-    <Value value="1" />
-    <BehaviorLink value="PortalTracker" />
-    <TrackerUnit Value="Caster" />
-    <TrackedUnitFilters value="Heroic;Ally,Neutral,Enemy,Dead" />
-  </CValidatorCompareTrackedUnitsCount>
-  <CRequirement id="PortalAliveUnitCount">
-    <NodeArray index="Use" Link="AndCountUnitPortalQueuedOrBetter1" />
-  </CRequirement>
-  <CRequirementAnd id="AndCountUnitPortalQueuedOrBetter1">
-    <OperandArray value="CountUnitPortalQueuedOrBetter" />
-    <OperandArray value="1" />
-  </CRequirementAnd>
-  <CRequirementCountUnit id="CountUnitPortalQueuedOrBetter">
-    <Flags index="TechTreeCheat" value="0" />
-    <Count Link="XalatathVoidConvergencePortalUnita" State="QueuedOrBetter" />
-  </CRequirementCountUnit>
   <CBehaviorBuff id="XalatathVoidConvergenceSpawnMinionBehavior">
     <Alignment value="Negative" />
     <Duration value="-1" />
@@ -1193,18 +1208,23 @@
     <CaseDefault value="XalatathVoidConvergenceBaseInitialSet" />
   </CEffectSwitch>
   <CEffectSet id="XalatathVoidConvergenceRiftInvasionInitialSet">
-    <EffectArray value="XalatathVoidConvergenceCreationInitialPersistent6" />
-    <EffectArray value="XalatathVoidConvergencePortalApplyPermanent" />
-    <EffectArray value="XalatathVoidConvergenceApplyInitialBurstTimestamp6" />
-  </CEffectSet>
-  <CEffectSet id="XalatathVoidConvergenceBaseInitialSet">
     <EffectArray value="XalatathVoidConvergenceCreationInitialPersistent4" />
+    <EffectArray value="XalatathVoidConvergenceApplyInitialBurstTimestamp6" />
+    <EffectArray value="XalatathVoidConvergencePortalApplyTimedLifeForever" />
+    <EffectArray value="XalatathVoidConvergencePortalRemoveDefaultTimedLife" />
+  </CEffectSet>
+  <CEffectRemoveBehavior id="XalatathVoidConvergencePortalRemoveDefaultTimedLife">
+    <BehaviorLink value="XalatathVoidConvergencePortalTimedLifeEffect" />
+    <WhichUnit Value="Source" />
+  </CEffectRemoveBehavior>
+  <CEffectApplyBehavior id="XalatathVoidConvergencePortalApplyTimedLifeForever">
+    <WhichUnit Value="Source" />
+    <Behavior value="XalatathVoidConvergencePortalTimedLifeForeverEffect" />
+  </CEffectApplyBehavior>
+  <CEffectSet id="XalatathVoidConvergenceBaseInitialSet">
+    <EffectArray value="XalatathVoidConvergenceCreationInitialPersistent3" />
     <EffectArray value="XalatathVoidConvergenceApplyInitialBurstTimestamp4" />
   </CEffectSet>
-  <CEffectApplyBehavior id="XalatathVoidConvergencePortalApplyPermanent">
-    <WhichUnit Value="Source" />
-    <Behavior value="XalatathVoidConvergencePortalPermanent" />
-  </CEffectApplyBehavior>
   <CEffectSwitch id="XalatathVoidConvergenceRespawnSwitch">
     <CaseArray Validator="XalatathHasXalatathRiftInvasionTalent" Effect="XalatathVoidConvergenceRespawnSingle6" />
     <CaseDefault value="XalatathVoidConvergenceRespawnSingle4" />
@@ -1246,9 +1266,9 @@
     <RevealRadius value="4" />
     <RevealFlags index="Unfog" value="1" />
   </CEffectCreatePersistent>
-  <CEffectCreatePersistent id="XalatathVoidConvergenceCreationInitialPersistent4">
+  <CEffectCreatePersistent id="XalatathVoidConvergenceCreationInitialPersistent3">
     <Flags index="RandomOffset" value="1" />
-    <PeriodCount value="4" />
+    <PeriodCount value="3" />
     <PeriodicEffectArray value="XalatathVoidConvergenceCreationSlightOffsetPersistent" />
     <PeriodicOffsetArray X="-3.5" />
     <PeriodicOffsetArray X="3.5" />
@@ -1261,9 +1281,9 @@
     <PeriodicPeriodArray value="0.125" />
     <OffsetRandMode value="Shuffle" />
   </CEffectCreatePersistent>
-  <CEffectCreatePersistent id="XalatathVoidConvergenceCreationInitialPersistent6">
+  <CEffectCreatePersistent id="XalatathVoidConvergenceCreationInitialPersistent4">
     <Flags index="RandomOffset" value="1" />
-    <PeriodCount value="6" />
+    <PeriodCount value="4" />
     <PeriodicEffectArray value="XalatathVoidConvergenceCreationSlightOffsetPersistent" />
     <PeriodicOffsetArray X="-3.5" />
     <PeriodicOffsetArray X="3.5" />
@@ -1313,7 +1333,7 @@
     <TargetLocationType value="Point" />
   </CEffectSet>
   <CEffectCreateUnit id="XalatathVoidConvergenceCreateUnit4">
-    <ValidatorArray value="XalatathVoidConvergenceHasLT4SpawnedUnits" />
+    <ValidatorArray value="XalatathVoidConvergenceHasLT3SpawnedUnits" />
     <ValidatorArray value="HasVisionOfTarget" />
     <WhichLocation Value="TargetPoint" />
     <CreateFlags index="Placement" value="0" />
@@ -1322,7 +1342,7 @@
     <SpawnRange value="10" />
   </CEffectCreateUnit>
   <CEffectCreateUnit id="XalatathVoidConvergenceCreateUnit6">
-    <ValidatorArray value="XalatathVoidConvergenceHasLT6SpawnedUnits" />
+    <ValidatorArray value="XalatathVoidConvergenceHasLT4SpawnedUnits" />
     <ValidatorArray value="HasVisionOfTarget" />
     <WhichLocation Value="TargetPoint" />
     <CreateFlags index="Placement" value="0" />
@@ -1330,13 +1350,14 @@
     <SpawnUnit value="XalatathVoidMinion" />
     <SpawnRange value="10" />
   </CEffectCreateUnit>
-  <CBehaviorBuff id="XalatathVoidConvergencePortalPermanent">
-    <Modification>
-      <VitalRegenArray index="Life" value="$XalatathVoidConvergencePortalLifeDecayRate" />
-      <VitalMaxFractionArray index="Life" value="1" />
-    </Modification>
-  </CBehaviorBuff>
   <CBehaviorBuff id="XalatathVoidConvergencePortalTimedLifeEffect" parent="StormTimedLife">
+    <Duration value="12" />
+    <Period value="0.25" />
+    <InitialEffect value="XalatathVoidConvergencePortalTimedLifeInitialSet" />
+    <PeriodicEffect value="XalatathVoidConvergencePortalSearch" />
+  </CBehaviorBuff>
+  <CBehaviorBuff id="XalatathVoidConvergencePortalTimedLifeForeverEffect" parent="StormTimedLife">
+    <Duration value="99999" />
     <Period value="0.25" />
     <InitialEffect value="XalatathVoidConvergencePortalTimedLifeInitialSet" />
     <PeriodicEffect value="XalatathVoidConvergencePortalSearch" />
@@ -1386,14 +1407,14 @@
     <TimestampBehavior value="XalatathVoidConvergenceInitialBurstTimestamp6" />
     <MinLoopsElapsed value="13" />
   </CValidatorUnitTimeElapsed>
+  <CValidatorCompareTrackedUnitsCount id="XalatathVoidConvergenceHasLT3SpawnedUnits">
+    <Compare value="LT" />
+    <Value value="3" />
+    <BehaviorLink value="XalatathVoidConvergenceUnitTracker" />
+  </CValidatorCompareTrackedUnitsCount>
   <CValidatorCompareTrackedUnitsCount id="XalatathVoidConvergenceHasLT4SpawnedUnits">
     <Compare value="LT" />
     <Value value="4" />
-    <BehaviorLink value="XalatathVoidConvergenceUnitTracker" />
-  </CValidatorCompareTrackedUnitsCount>
-  <CValidatorCompareTrackedUnitsCount id="XalatathVoidConvergenceHasLT6SpawnedUnits">
-    <Compare value="LT" />
-    <Value value="6" />
     <BehaviorLink value="XalatathVoidConvergenceUnitTracker" />
   </CValidatorCompareTrackedUnitsCount>
   <CEffectSet id="XalatathVoidMinionWeaponImpactSet">
@@ -1424,13 +1445,12 @@
     <Behavior value="XalatathVoidMinionTimedLife" />
   </CEffectApplyBehavior>
   <CBehaviorBuff id="XalatathVoidMinionTimedLife" parent="StormTimedLife">
-    <Duration value="-1" />
+    <Duration value="-2" />
   </CBehaviorBuff>
   <CEffectSet id="XalatathVoidMinionDummySet">
     <EffectArray value="TimedLifeFate" />
   </CEffectSet>
   <CEffectDamage id="XalatathVoidMinionWeaponDamage" parent="StormSummonedUnitWeapon">
-    <Flags index="Crit" value="1" />
     <Amount value="$XalatathVoidMinionWeaponDamage" />
     <MultiplicativeModifierArray index="MercMinion" Validator="IsMercorMinion" Modifier="1" />
   </CEffectDamage>
@@ -1439,6 +1459,7 @@
   </CEffectApplyBehavior>
   <CEffectEnumTrackedUnits id="XalatathVoidMinionUnitTrackerEnum">
     <BehaviorLink value="XalatathShadowMarkUnitTracker" />
+    <TrackerUnit Value="Creator" />
     <Effect value="XalatathVoidMinionMoveToMarkedTarget" />
   </CEffectEnumTrackedUnits>
   <CBehaviorBuff id="XalatathVoidMinionChasingMarkedTarget">
@@ -1488,8 +1509,12 @@
     <Abil Link="XalatathVoidVolley" />
   </CActorRange>
   <CActorSplat id="XalatathVoidVolleyRangeSplat" parent="StormRangeSplat">
-    <Scale value="$XalatathVoidVolleyRange" />
+    <Scale value="$XalatathVoidVolleyRangeSplat" />
   </CActorSplat>
+  <CActorSplat id="XalatathVoidVolleyInnerRangeSplat" parent="StormRangeSplat">
+    <Scale value="$XalatathVoidVolleyMinimumRangeSplat" />
+  </CActorSplat>
+  <CActorRange id="XalatathVoidVolleyInnerRange" parent="StormRangeAbilPlusSplat" abil="XalatathVoidVolley" />
   <CActorSplat id="XalatathVoidVolleyCursorSplat" parent="StormGuideVisualCircle" abil="XalatathVoidVolley">
     <Model value="XalatathShadowMarkCursorSplat" />
     <FogVisibility value="Visible" />
@@ -1528,9 +1553,11 @@
   </CEffectEnumArea>
   <CEffectSet id="XalatathFracturedRealityFireSearchSet">
     <EffectArray value="XalatathFracturedRealityFireDamage" />
+    <EffectArray value="XalatathUnstableCoreApplyDOTDamageBehavior" />
   </CEffectSet>
   <CEffectDamage id="XalatathFracturedRealityFireDamage" parent="StormSpell">
     <Amount value="$XalatathFracturedRealityFireDamage" />
+    <CollationId value="VoidFireDamage" />
   </CEffectDamage>
   <CBehaviorBuff id="XalatathFracturedRealityTrailMissileBehavior">
     <Period value="0.075" />
@@ -1574,11 +1601,6 @@
     <StatusBarFlags index="Custom" value="0" />
     <Scale value="0.4500000" />
   </CActorUnit>
-  <CActorModel id="XalatathFracturedRealityDamageImpact" parent="StormModelAnimationStyleOneShotUnit">
-    <On Terms="Effect.XalatathFracturedRealityTrailCreateUnit.Start; At Source" Send="Create" />
-    <On Terms="Behavior.XalatathFracturedRealityTrailTimedLife.Off" Send="AnimBracketStop BSD" />
-    <HostSiteOps Ops="SOpAttachCenter" />
-  </CActorModel>
   <CEffectApplyBehavior id="XalatathCrushingCascadeApplySlowBehavior" parent="StormSlowApply">
     <ValidatorArray index="0" value="TargetNotUnstoppable" />
     <ValidatorArray index="1" removed="1" />
@@ -1648,7 +1670,7 @@
     <EffectArray Operation="Set" Reference="Abil,XalatathVoidVolley,Cost.Vital[Energy]" Value="0" />
   </CEffectModifyPlayer>
   <CEffectModifyPlayer id="XalatathVoidAcolyteResetVoidVolleyCost">
-    <EffectArray Operation="Set" Reference="Abil,XalatathVoidVolley,Cost.Vital[Energy]" Value="55" />
+    <EffectArray Operation="Set" Reference="Abil,XalatathVoidVolley,Cost.Vital[Energy]" Value="$XalatathVoidVolleyManaCost" />
   </CEffectModifyPlayer>
   <CEffectApplyBehavior id="XalatathVoidAcolyteApplyVoidAcolyteMarker">
     <ValidatorArray value="XalatathHasXalatathVoidAcolyteTalent" />
@@ -1794,6 +1816,15 @@
     <WhichUnit Value="Target" />
     <TokenId value="XalatathVoidVolleyChargeTalentTokenCounter" />
     <Chance value="0" />
+  </CEffectModifyTokenCount>
+  <CEffectSet id="XalatathVoidVolleyChargeApplyAllStacksSet">
+    <EffectArray value="XalatathVoidVolleyChargeDurationControllerApplyBehavior" />
+    <EffectArray value="XalatathVoidVolleyGrantAllCharges" />
+    <EffectArray value="XalatathVoidVolleyChargePrimedApplyBehavior" />
+  </CEffectSet>
+  <CEffectModifyTokenCount id="XalatathVoidVolleyGrantAllCharges">
+    <TokenId value="XalatathVoidVolleyChargeTokenCounter" />
+    <Value value="$XalatathAttacksToChargeVoidVolley" />
   </CEffectModifyTokenCount>
   <CValidatorCombine id="XalatathVoidVolleyChargeValidator">
     <CombineArray value="XalatathHasXalatathVoidVolleyChargesAndSecondMilestoneNotComplete" />
@@ -1957,7 +1988,7 @@
       <Value value="$XalatathVoidVolleyQuestCompleteRangeValue" />
     </CatalogModifications>
     <CatalogModifications Operation="Set" Reference="Actor,XalatathVoidVolleyRangeSplat,Scale">
-      <Value value="$XalatathVoidVolleyQuestCompleteRangeValue" />
+      <Value value="$XalatathVoidVolleyQuestCompleteRangeValueSplat" />
     </CatalogModifications>
   </CEffectModifyCatalogNumeric>
   <CEffectModifyPlayer id="XalatathVoidVolleyQuestFirstMilestoneCheckpointMinimum">
@@ -1976,19 +2007,6 @@
     <TokenId value="XalatathVoidVolleyQuestTokenCounter" />
     <Scale value="$XalatathVoidVolleyTalentQuestDamageBonusPerStack" />
   </CAccumulatorToken>
-  <CActorSound id="XalatathVoidVolleyImpactSound" parent="SoundOneShot">
-    <On Terms="Effect.XalatathVoidVolleyDamage.Start" Send="Create" />
-    <Host Subject="_Unit" />
-    <Sound value="Xalatath_VoidVolley_Impact" />
-  </CActorSound>
-  <CActorSound id="XalatathVoidVolleyLaunchSound" parent="SoundOneShot">
-    <On Terms="Effect.XalatathVoidVolleyCPInitialSet.Start" Send="Create" />
-    <Sound value="Xalatath_VoidVolley_Launch" />
-  </CActorSound>
-  <CActorSound id="XalatathVoidVolleyMissileSound" parent="SoundContinuous">
-    <Sound value="Xalatath_VoidVolley_Projectile" />
-  </CActorSound>
-  <CEffectSet id="XalatathVoidVolleyMissileLaunchDummy" />
   <CEffectSet id="XalatathDarkHeartRitualPrepSet">
     <EffectArray value="XalatathWeaponDisablerHoldFireApplyBehavior" />
     <EffectArray value="XalatathDarkHeartRitualSetFacing" />
@@ -2024,9 +2042,6 @@
     <UnitIcon value="Assets\Textures\storm_temp_btn-research-zerg-psidisruptor.dds" />
     <CustomUnitStatusFrame value="UnitStatus/IndestructibleTimedUnitStatusFrameTemplate" />
     <MinimapIconType value="Hidden" />
-    <GroupIcon>
-      <Image value="Assets\Textures\Storm_UI_InGame_TargetInfoPanel_Unit_Rehgar_EarthbindTotem.dds" />
-    </GroupIcon>
     <Scale value="4.2500000" />
     <HostSiteOps Ops="SOpBasicScopePositionFollowHoldRotation" />
   </CActorUnit>
@@ -2239,10 +2254,10 @@
   </CEffectEnumArea>
   <CEffectEnumArea id="XalatathDarkHeartsProtectionSearch">
     <SearchFilters value="Heroic;Neutral,Enemy,Structure,ImmuneToFriendlyAbilities,Missile,Stasis,Dead" />
-    <AreaArray MaxCount="5" Effect="XalatathDarkHeartsProtectionImpactSet">
+    <AreaArray MaxCount="9" Effect="XalatathDarkHeartsProtectionImpactSet">
       <Radius value="$XalatathDarkHeartRitualLinkRadius" />
     </AreaArray>
-    <MaxCount value="5" />
+    <MaxCount value="9" />
   </CEffectEnumArea>
   <CEffectApplyBehavior id="XalatathDarkHeartsProtectionApplySilenceBehavior">
     <ValidatorArray value="XalatathHasXalatathDarkHeartsProtectionTalent" />
@@ -2261,7 +2276,6 @@
   <CBehaviorBuff id="XalatathDarkHeartRitualSpellArmor" parent="StormArmor">
     <Duration value="0" />
     <Alignment value="Positive" />
-    <InfoIcon value="Assets\Textures\storm_ui_icon_brightwing_pixiedust.dds" />
     <SortIndex value="100" />
     <BuffFlags index="RemoveDamageResponseExhausted" value="0" />
     <MaxStackCountPerCaster value="1" />
@@ -2298,7 +2312,7 @@
   </CBehaviorBuff>
   <CEffectEnumArea id="XalatathDarkHeartRitualDamageLinkPeriodicSearch">
     <SearchFilters value="-;Player,Ally,ImmuneToAOE,Missile,Item,Stasis,Dead,Hidden,Invulnerable" />
-    <AreaArray MaxCount="5" Effect="XalatathDarkHeartRitualDamageLinkImpactSet">
+    <AreaArray MaxCount="15" Effect="XalatathDarkHeartRitualDamageLinkImpactSet">
       <Radius value="$XalatathDarkHeartRitualLinkRadius" />
     </AreaArray>
     <TargetSorts>
@@ -2306,7 +2320,7 @@
       <SortArray value="TSLifeFraction" />
       <SortArray value="TSDistanceToTarget" />
     </TargetSorts>
-    <MaxCount value="5" />
+    <MaxCount value="15" />
   </CEffectEnumArea>
   <CEffectSet id="XalatathDarkHeartRitualDamageLinkImpactSet">
     <EffectArray value="XalatathDarkBarrierInitialSet" />
@@ -2491,10 +2505,34 @@
   </CEffectEnumArea>
   <CEffectSet id="XalatathUnstableCoreFireSearchSet">
     <EffectArray value="XalatathUnstableCoreFireDamage" />
+    <EffectArray value="XalatathUnstableCoreApplyDOTDamageBehavior" />
   </CEffectSet>
   <CEffectDamage id="XalatathUnstableCoreFireDamage" parent="StormSpell">
     <Amount value="$XalatathUnstableCoreFireDOTDamage" />
+    <CollationId value="VoidFireDamage" />
   </CEffectDamage>
+  <CActorModel id="XalatathFracturedRealityDamageImpact" parent="StormModelAddition">
+    <On Terms="Behavior.XalatathUnstableCoreDOTDamage.On" Send="Create" />
+    <On Terms="Behavior.XalatathUnstableCoreDOTDamage.Off" Send="AnimBracketStop BSD" />
+    <On Terms="Effect.XalatathFracturedRealityTrailCreateUnit.Start; At Source" Send="Create" />
+    <On Terms="Behavior.XalatathFracturedRealityTrailTimedLife.Off" Send="AnimBracketStop BSD" />
+    <Host Subject="_Unit" />
+    <HostSiteOps Ops="SOpAttachCenterSoft" />
+    <On Terms="ActorCreation" Send="SetTintColor 190,40,255 0.000000 OneShot BaseTint" />
+  </CActorModel>
+  <CEffectApplyBehavior id="XalatathUnstableCoreApplyDOTDamageBehavior">
+    <Behavior value="XalatathUnstableCoreDOTDamage" />
+  </CEffectApplyBehavior>
+  <CBehaviorBuff id="XalatathUnstableCoreDOTDamage">
+    <Alignment value="Negative" />
+    <InfoIcon value="Assets\Textures\storm_ui_icon_sgthammer_napalmstrike.dds" />
+    <TimeScaleSource Value="Global" />
+    <Duration value="3" />
+    <Period value="1" />
+    <InitialEffect value="XalatathUnstableCoreFireDamage" />
+    <PeriodicEffect value="XalatathUnstableCoreFireDamage" />
+    <BehaviorCategories index="Permanent" value="1" />
+  </CBehaviorBuff>
   <CEffectSet id="XalatathDarkHeartRitualDetonateOnMarkedSet">
     <ValidatorArray value="XalatathShadowMarkTargetHasDebuff" />
     <EffectArray value="XalatathDarkHeartRitualDetonateSearchArea" />
@@ -2570,6 +2608,7 @@
   </CEffectDamage>
   <CEffectEnumTrackedUnits id="XalatathShadowMarkUnitTrackerEnum">
     <BehaviorLink value="XalatathShadowMarkUnitTracker" />
+    <TrackerUnit Value="Creator" />
     <Effect value="XalatathDarkHeartMoveToMarkedTarget" />
   </CEffectEnumTrackedUnits>
   <CBehaviorBuff id="XalatathDarkHeartRitualChasingMarkedTarget">
@@ -2787,8 +2826,6 @@
       <StateFlags index="SuppressAttack" value="1" />
       <StateFlags index="SuppressFidgeting" value="1" />
       <AbilClassDisableArray index="CAbilAttack" value="1" />
-      <AbilClassDisableArray index="CAbilEffectInstant" value="1" />
-      <AbilClassDisableArray index="CAbilEffectTarget" value="1" />
     </Modification>
   </CBehaviorBuff>
   <CEffectLaunchMissile id="XalatathShadowMarkLaunchMissile">
@@ -2803,49 +2840,10 @@
     <CaseArray Validator="XalatathProjectileMinimumDistanceCast" Effect="XalatathShadowMarkLaunchMissileLaunchOffset" />
     <CaseDefault value="XalatathShadowMarkLaunchMissile" />
   </CEffectSwitch>
-  <CEffectEnumArea id="XalatathShadowMarkInnerSearch">
-    <Marker>
-      <MatchFlags index="Id" value="1" />
-    </Marker>
-    <SearchFilters value="-;Player,Ally,ImmuneToAOE,Missile,Item,Stasis,Hidden,Invulnerable" />
-    <AreaArray Effect="XalatathShadowMarkInnerImpactSet">
-      <Radius value="$XalatathShadowMarkInnerImpactRange" />
-    </AreaArray>
-    <RevealerParams Duration="0.125">
-      <RevealFlags index="Unfog" value="1" />
-    </RevealerParams>
-  </CEffectEnumArea>
   <CValidatorLocationCompareRange id="XalatathProjectileMinimumDistanceCast">
     <Compare value="LT" />
     <Range value="0.5" />
   </CValidatorLocationCompareRange>
-  <CEffectEnumArea id="XalatathShadowMarkInnerHeroSearch">
-    <Marker>
-      <MatchFlags index="Id" value="1" />
-    </Marker>
-    <SearchFilters value="Heroic;Player,Ally,ImmuneToAOE,Missile,Item,Stasis,Hidden,Invulnerable" />
-    <AreaArray Effect="XalatathShadowMarkInnerHeroSearchSet">
-      <Radius value="$XalatathShadowMarkInnerImpactRange" />
-    </AreaArray>
-    <RevealerParams Duration="0.125">
-      <RevealFlags index="Unfog" value="1" />
-    </RevealerParams>
-    <MaxCount value="1" />
-  </CEffectEnumArea>
-  <CEffectSet id="XalatathShadowMarkInnerHeroSearchSet">
-    <EffectArray value="XalatathShadowMarkInnerHeroImpactSet" />
-  </CEffectSet>
-  <CEffectSet id="XalatathShadowMarkInnerHeroImpactSet">
-    <ValidatorArray value="noMarkers" />
-    <ValidatorArray value="IsKeyStructureOrHero" />
-    <EffectArray value="XalatathShadowMarkApplyMarkSet" />
-  </CEffectSet>
-  <CEffectSet id="XalatathShadowMarkApplyMarkSet">
-    <EffectArray value="XalatathShadowMarkApplyDebuffBehavior" />
-    <EffectArray value="XalatathShadowMarkApplyToxicMarkDebuffBehavior" />
-    <EffectArray value="XalatathShadowMarkApplyRevealBehavior" />
-    <EffectArray value="HeroGenericDummyAbilityandWakeupImpactSet" />
-  </CEffectSet>
   <CEffectApplyBehavior id="XalatathShadowMarkApplyDebuffBehavior">
     <Behavior value="XalatathShadowMarkDebuff" />
   </CEffectApplyBehavior>
@@ -2880,10 +2878,12 @@
   </CValidatorUnitCompareBehaviorDuration>
   <CEffectRemoveTrackedUnit id="XalatathShadowMarkUnitTrackerRemove">
     <BehaviorLink value="XalatathShadowMarkUnitTracker" />
+    <TrackerUnit Value="Creator" />
     <TrackedUnit Value="Target" />
   </CEffectRemoveTrackedUnit>
   <CEffectAddTrackedUnit id="XalatathShadowMarkUnitTrackerAdd">
     <BehaviorLink value="XalatathShadowMarkUnitTracker" />
+    <TrackerUnit Value="Creator" />
     <TrackedUnit Value="Target" />
   </CEffectAddTrackedUnit>
   <CEffectLaunchMissile id="XalatathShadowMarkLaunchMissileLaunchOffset" parent="XalatathShadowMarkLaunchMissile">
@@ -2894,7 +2894,7 @@
     <Flags index="PersistUntilDestroyed" value="1" />
     <PeriodicValidator value="SourceNotDead" />
     <PeriodicPeriodArray value="0.0625" />
-    <AINotifySettings AreaEffect="XalatathShadowMarkOuterSearch">
+    <AINotifySettings AreaEffect="XalatathShadowMarkTargetSearch">
       <Flags index="HurtsEnemy" value="1" />
     </AINotifySettings>
   </CEffectCreatePersistent>
@@ -2904,29 +2904,56 @@
   </CEffectSet>
   <CEffectSet id="XalatathShadowMarkSearchSet">
     <EffectArray value="XalatathShadowMarkCreateDummyUnit" />
-    <EffectArray value="XalatathShadowMarkInnerHeroSearch" />
-    <EffectArray value="XalatathShadowMarkInnerSearch" />
-    <EffectArray value="XalatathShadowMarkOuterSearch" />
+    <EffectArray value="XalatathShadowMarkTargetSearch" />
   </CEffectSet>
-  <CEffectEnumArea id="XalatathShadowMarkOuterSearch">
+  <CEffectEnumArea id="XalatathShadowMarkTargetSearch">
     <SearchFilters value="-;Player,Ally,ImmuneToAOE,Missile,Item,Stasis,Hidden,Invulnerable" />
-    <AreaArray Effect="XalatathShadowMarkOuterImpactSet">
+    <AreaArray Effect="XalatathShadowMarkImpactSwitch">
       <Radius value="$XalatathShadowMarkOuterImpactRange" />
     </AreaArray>
     <RevealerParams Duration="0.75" ShapeExpansion="0.25">
       <RevealFlags index="Unfog" value="1" />
     </RevealerParams>
   </CEffectEnumArea>
+  <CEffectSwitch id="XalatathShadowMarkImpactSwitch">
+    <CaseArray Validator="XalatathShadowMarkTargetIsInInnerAreaAndIsHero" Effect="XalatathShadowMarkInnerImpactSetHero" />
+    <CaseArray Validator="XalatathShadowMarkTargetIsInInnerArea" Effect="XalatathShadowMarkInnerImpactSet" />
+    <CaseDefault value="XalatathShadowMarkOuterImpactSet" />
+  </CEffectSwitch>
+  <CValidatorCombine id="XalatathShadowMarkTargetIsInInnerAreaAndIsHero">
+    <Type value="And" />
+    <CombineArray value="TargetIsHero" />
+    <CombineArray value="XalatathShadowMarkTargetIsInInnerArea" />
+  </CValidatorCombine>
+  <CValidatorLocationCompareRange id="XalatathShadowMarkTargetIsInInnerArea">
+    <WhichLocation Effect="XalatathShadowMarkTargetSearch" />
+    <Compare value="LT" />
+    <Range value="$XalatathShadowMarkInnerImpactRange" />
+    <Value Value="TargetUnit" />
+  </CValidatorLocationCompareRange>
   <CEffectSet id="XalatathShadowMarkOuterImpactSet">
     <EffectArray value="XalatathShadowMarkRemoveCasterBehavior" />
     <EffectArray value="XalatathShadowMarkOuterDamage" />
-    <EffectArray value="XalatathShadowMarkApplyFrozenMarkBehavior" />
+    <EffectArray value="ApplyAbilityImpactReveal" />
   </CEffectSet>
   <CEffectSet id="XalatathShadowMarkInnerImpactSet">
     <EffectArray value="XalatathVoidStepWeaponChargeIncrementTokenCount" />
     <EffectArray value="XalatathShadowMarkRemoveCasterBehavior" />
     <EffectArray value="ApplyAbilityImpactReveal" />
     <EffectArray value="XalatathShadowMarkInnerDamage" />
+    <EffectArray value="XalatathShadowMarkOuterDamage" />
+    <EffectArray value="XalatathShadowMarkApplyFrozenMarkBehavior" />
+  </CEffectSet>
+  <CEffectSet id="XalatathShadowMarkInnerImpactSetHero">
+    <EffectArray value="XalatathShadowMarkApplyDebuffBehavior" />
+    <EffectArray value="XalatathShadowMarkApplyRevealBehavior" />
+    <EffectArray value="HeroGenericDummyAbilityandWakeupImpactSet" />
+    <EffectArray value="XalatathVoidStepWeaponChargeIncrementTokenCount" />
+    <EffectArray value="XalatathShadowMarkRemoveCasterBehavior" />
+    <EffectArray value="ApplyAbilityImpactReveal" />
+    <EffectArray value="XalatathShadowMarkInnerDamage" />
+    <EffectArray value="XalatathShadowMarkOuterDamage" />
+    <EffectArray value="XalatathShadowMarkApplyToxicMarkDebuffBehavior" />
     <EffectArray value="XalatathShadowMarkApplyFrozenMarkBehavior" />
   </CEffectSet>
   <CEffectCreateUnit id="XalatathShadowMarkCreateDummyUnit">
@@ -2960,11 +2987,11 @@
   </CEffectSet>
   <CEffectEnumTrackedUnits id="XalatathShadowMarkDummyUnitTrackerEnum">
     <BehaviorLink value="XalatathShadowMarkDummyUnitTracker" />
+    <TrackerUnit Value="Creator" />
     <Effect value="XalatathDarkHeartMoveToMarkedDummyTarget" />
   </CEffectEnumTrackedUnits>
   <CBehaviorUnitTracker id="XalatathShadowMarkDummyUnitTracker">
     <TrackingValidatorArray value="XalatathShadowMarkDummyUnitIsAlive" />
-    <UseSharedList value="1" />
   </CBehaviorUnitTracker>
   <CBehaviorBuff id="XalatathShadowMarkDummyUnitTimedLife">
     <Duration value="1" />
@@ -2973,10 +3000,12 @@
   </CBehaviorBuff>
   <CEffectRemoveTrackedUnit id="XalatathShadowMarkDummyUnitTrackerRemove">
     <BehaviorLink value="XalatathShadowMarkDummyUnitTracker" />
+    <TrackerUnit Value="Creator" />
     <TrackedUnit Value="Caster" />
   </CEffectRemoveTrackedUnit>
   <CEffectAddTrackedUnit id="XalatathShadowMarkDummyUnitTrackerAdd">
     <BehaviorLink value="XalatathShadowMarkDummyUnitTracker" />
+    <TrackerUnit Value="Creator" />
     <TrackedUnit Value="Caster" />
   </CEffectAddTrackedUnit>
   <CEffectSet id="XalatathShadowMarkDummyUnitTimedLifeFinaleSet">
@@ -2987,10 +3016,6 @@
     <Compare value="GT" />
     <Behavior value="XalatathShadowMarkDummyUnitTimedLife" />
   </CValidatorUnitCompareBehaviorCount>
-  <CValidatorUnitFilters id="XalatathVoidConvergencePortalisAlive">
-    <WhichUnit Effect="XalatathVoidConvergencePortalUnit" Value="Source" />
-    <Filters value="-;Dead" />
-  </CValidatorUnitFilters>
   <CEffectSet id="XalatathDarkHeartRitualChasingDummyTargetSet">
     <EffectArray value="XalatathShadowMarkDummyUnitTrackerEnum" />
   </CEffectSet>
@@ -3054,12 +3079,16 @@
     <RemoveValidatorArray value="XalatathShadowMarkTargetHasDebuff" />
   </CBehaviorBuff>
   <CBehaviorUnitTracker id="XalatathShadowMarkUnitTracker">
-    <TrackingValidatorArray value="XalatathShadowMarkTargetHasDebuff" />
-    <UseSharedList value="1" />
+    <TrackingValidatorArray value="XalatathShadowMarkTargetHasOwnDebuff" />
   </CBehaviorUnitTracker>
   <CValidatorUnitCompareBehaviorCount id="XalatathShadowMarkTargetHasDebuff">
     <Compare value="GT" />
     <Behavior value="XalatathShadowMarkDebuff" />
+  </CValidatorUnitCompareBehaviorCount>
+  <CValidatorUnitCompareBehaviorCount id="XalatathShadowMarkTargetHasOwnDebuff">
+    <Compare value="GT" />
+    <Behavior value="XalatathShadowMarkDebuff" />
+    <RequireCasterUnit Value="Creator" />
   </CValidatorUnitCompareBehaviorCount>
   <CValidatorUnitCompareBehaviorCount id="XalatathDarkHeartIsNotChasingMarkedTarget">
     <Compare value="GT" />
@@ -3242,9 +3271,17 @@
     <On Terms="Effect.XalatathShadowMarkLaunchMissileLaunchOffset.Start; At Caster" Send="Create" />
     <LaunchSiteOps Ops="SOpAttachCenter SOpMoveUpBy1 SOpForwardCasterPoint" />
     <Missile value="XalatathShadowMarkMissile" />
-    <LaunchAssets Model="XalatathShadowMarkLaunch" Sound="Xalatath_ShadowMark_Launch" />
+    <LaunchAssets Model="XalatathShadowMarkLaunch" Sound="XalatathShadowMarkLaunchSound" />
     <LaunchModel value="XalatathShadowMarkLaunch" />
   </CActorAction>
+  <CActorSound id="XalatathShadowMarkLaunchSound" parent="SoundOneShot">
+    <Filter index="All" value="1" />
+    <On Terms="Effect.XalatathShadowMarkLaunchMissileLaunchOffset.Start; At Caster" Send="Create" />
+    <Sound value="Xalatath_ShadowMark_Launch" />
+    <Inherits index="Visibility" value="0" />
+    <VisibleToAtCreation index="Caster" value="1" />
+    <VisibleToAtCreation index="Target" value="1" />
+  </CActorSound>
   <CActorSound id="XalatathShadowMarkInnerImpactSound" parent="SoundOneShot">
     <Filter index="All" value="1" />
     <On Terms="Effect.XalatathShadowMarkInnerDamage.Start; At Source" Send="Create" />
@@ -3381,7 +3418,6 @@
     <EffectArray value="UniversalWeaponImpact" />
     <EffectArray value="XalatathHeroWeaponDamage" />
     <EffectArray value="XalatathWeaponMissileSuicide" />
-    <EffectArray value="ApplyAbilityImpactReveal" />
     <EffectArray value="UniversalWeaponImpact" />
     <EffectArray value="XalatathHeroWeaponApplyShootingTargetBehavior" />
     <EffectArray value="UniversalWeaponPostImpactSet" />
@@ -3437,6 +3473,7 @@
     <Flags index="PersistUntilDestroyed" value="1" />
   </CEffectCreatePersistent>
   <CEffectDamage id="XalatathHeroWeaponDamage" parent="StormWeapon">
+    <CollationId value="VoidAutoDamage" />
     <Amount value="$XalatathHeroWeaponDamage" />
     <CritValidatorArray index="0" value="XalatathCritAliasRangedDamageORHasVoidStepChargeWeaponBehavior" />
     <MultiplicativeModifierArray index="Quest" Validator="XalatathCompletedVoidVolleyQuest" Modifier="$XalatathVoidVolleyQuestCompleteDamageModifier" />
@@ -3518,11 +3555,15 @@
   </CActorSound>
   <CActorMissile id="XalatathWeaponMissileLeft" parent="StormMissileWithDeathEarly" unitName="XalatathWeaponMissileLeft">
     <Model value="XalatathWeaponMissile" />
+    <On Terms="ActorCreation" Send="Create XalatathWeaponMissileProjectileSound" />
+    <On Terms="ActorDestruction" Target="XalatathWeaponMissileProjectileSound" Send="Destroy" />
     <DeathArray index="Normal" ModelLink="XalatathWeaponMissile" />
     <Scale value="1" />
   </CActorMissile>
   <CActorMissile id="XalatathWeaponMissileRight" parent="StormMissileWithDeathEarly" unitName="XalatathWeaponMissileRight">
     <Model value="XalatathWeaponMissile" />
+    <On Terms="ActorCreation" Send="Create XalatathWeaponMissileProjectileSound" />
+    <On Terms="ActorDestruction" Target="XalatathWeaponMissileProjectileSound" Send="Destroy" />
     <DeathArray index="Normal" ModelLink="XalatathWeaponMissile" />
     <Scale value="1" />
   </CActorMissile>
@@ -3543,7 +3584,7 @@
     <LaunchAssets Sound="Xalatath_Attack_Launch" />
   </CActorAction>
   <CActorSound id="XalatathWeaponMissileProjectileSound" parent="SoundContinuous">
-    <Sound value="XalatathWeaponProjectile" />
+    <Sound value="Xalatath_VoidVolley_Projectile" />
   </CActorSound>
   <CActorSound id="Xalatath_Hearth" parent="SoundOneShot">
     <On Terms="Abil.Hearthstone.SourceCastStop" Send="Destroy Immediate" />
@@ -3588,12 +3629,12 @@
       <Flags index="AffectedByCooldownReduction" value="1" />
       <Flags index="AffectedByOverdrive" value="1" />
     </HeroAbilArray>
-    <HeroAbilArray Abil="XalatathVoidStep" Button="XalatathVoidStep">
+    <HeroAbilArray Abil="XalatathDarkHeartRitual" Button="XalatathDarkHeartRitual">
       <Flags index="ShowInHeroSelect" value="1" />
       <Flags index="AffectedByCooldownReduction" value="1" />
       <Flags index="AffectedByOverdrive" value="1" />
     </HeroAbilArray>
-    <HeroAbilArray Abil="XalatathDarkHeartRitual" Button="XalatathDarkHeartRitual">
+    <HeroAbilArray Abil="XalatathVoidStep" Button="XalatathVoidStep">
       <Flags index="ShowInHeroSelect" value="1" />
       <Flags index="AffectedByCooldownReduction" value="1" />
       <Flags index="AffectedByOverdrive" value="1" />
@@ -3700,6 +3741,13 @@
         <Value value="0.040000" />
         <AffectedByOverdrive value="1" />
       </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="XalatathFracturedRealityFireDamage" />
+        <Field value="Amount" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
     </LevelScalingArray>
     <LevelScalingArray Ability="XalatathVoidStep">
       <Modifications>
@@ -3751,6 +3799,13 @@
       <Modifications>
         <Catalog value="Effect" />
         <Entry value="XalatathDarkHeartRitualChainDamage" />
+        <Field value="Amount" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="XalatathDarkHeartRitualDamageLinkChainTargetDamage" />
         <Field value="Amount" />
         <Value value="0.040000" />
         <AffectedByOverdrive value="1" />
@@ -3827,22 +3882,22 @@
     <AllowedMountCategoryArray value="Ridesurf" />
     <Rarity value="Legendary" />
     <TalentTreeArray Talent="XalatathToxicMark" Tier="1" Column="1" />
-    <TalentTreeArray Talent="XalatathCloakOfShadows" Tier="1" Column="2" />
-    <TalentTreeArray Talent="XalatathAnchoredCore" Tier="1" Column="3" />
+    <TalentTreeArray Talent="XalatathAnchoredCore" Tier="1" Column="2" />
+    <TalentTreeArray Talent="XalatathCloakOfShadows" Tier="1" Column="3" />
     <TalentTreeArray Talent="XalatathFrozenMark" Tier="2" Column="1" />
-    <TalentTreeArray Talent="XalatathVoidAcolyte" Tier="2" Column="2" />
-    <TalentTreeArray Talent="XalatathDarkBarrier" Tier="2" Column="3" />
+    <TalentTreeArray Talent="XalatathDarkBarrier" Tier="2" Column="2" />
+    <TalentTreeArray Talent="XalatathVoidAcolyte" Tier="2" Column="3" />
     <TalentTreeArray Talent="XalatathVoidAdept" Tier="3" Column="1" />
     <TalentTreeArray Talent="XalatathSilenceOfTheLamb" Tier="3" Column="2" />
     <TalentTreeArray Talent="XalatathVoidSummoner" Tier="3" Column="3" />
     <TalentTreeArray Talent="XalatathHeroicAbilityVoidEruption" Tier="4" Column="1" />
     <TalentTreeArray Talent="XalatathHeroicAbilityVoidConvergence" Tier="4" Column="2" />
-    <TalentTreeArray Talent="XalatathPummelingStep" Tier="5" Column="1" />
-    <TalentTreeArray Talent="XalatathDarkHeartsProtection" Tier="5" Column="2" />
-    <TalentTreeArray Talent="XalatathCrushingCascade" Tier="5" Column="3" />
+    <TalentTreeArray Talent="XalatathCrushingCascade" Tier="5" Column="1" />
+    <TalentTreeArray Talent="XalatathPullOfTheDarkHeart" Tier="5" Column="2" />
+    <TalentTreeArray Talent="XalatathDarkHeartsProtection" Tier="5" Column="3" />
     <TalentTreeArray Talent="XalatathMarkedResilience" Tier="6" Column="1" />
-    <TalentTreeArray Talent="XalatathPullOfTheDarkHeart" Tier="6" Column="2" />
-    <TalentTreeArray Talent="XalatathFracturedReality" Tier="6" Column="3" />
+    <TalentTreeArray Talent="XalatathFracturedReality" Tier="6" Column="2" />
+    <TalentTreeArray Talent="XalatathPummelingStep" Tier="6" Column="3" />
     <TalentTreeArray Talent="XalatathOrbitalEruption" Tier="7" Column="1">
       <PrerequisiteTalentArray value="XalatathHeroicAbilityVoidEruption" />
     </TalentTreeArray>
@@ -3850,15 +3905,15 @@
       <PrerequisiteTalentArray value="XalatathHeroicAbilityVoidConvergence" />
     </TalentTreeArray>
     <TalentTreeArray Talent="XalatathDuelingOrbs" Tier="7" Column="3" />
-    <TalentTreeArray Talent="XalatathParadoxLoop" Tier="7" Column="4" />
-    <TalentTreeArray Talent="XalatathUnstableCore" Tier="7" Column="5" />
+    <TalentTreeArray Talent="XalatathUnstableCore" Tier="7" Column="4" />
+    <TalentTreeArray Talent="XalatathParadoxLoop" Tier="7" Column="5" />
     <TalentAIBuildsArray ChanceToPick="16">
       <TalentsArray value="XalatathAnchoredCore" />
       <TalentsArray value="XalatathDarkBarrier" />
       <TalentsArray value="XalatathSilenceOfTheLamb" />
       <TalentsArray value="XalatathHeroicAbilityVoidConvergence" />
-      <TalentsArray value="XalatathDarkHeartsProtection" />
       <TalentsArray value="XalatathPullOfTheDarkHeart" />
+      <TalentsArray value="XalatathMarkedResilience" />
       <TalentsArray value="XalatathUnstableCore" />
     </TalentAIBuildsArray>
     <TalentAIBuildsArray ChanceToPick="16">
@@ -3866,8 +3921,8 @@
       <TalentsArray value="XalatathVoidAcolyte" />
       <TalentsArray value="XalatathVoidSummoner" />
       <TalentsArray value="XalatathHeroicAbilityVoidConvergence" />
-      <TalentsArray value="XalatathCrushingCascade" />
       <TalentsArray value="XalatathPullOfTheDarkHeart" />
+      <TalentsArray value="XalatathPummelingStep" />
       <TalentsArray value="XalatathParadoxLoop" />
     </TalentAIBuildsArray>
     <TalentAIBuildsArray ChanceToPick="16">
@@ -3978,15 +4033,16 @@
     <BehaviorArray Link="XalatathShadowMarkDummyUnitTracker" />
     <BehaviorArray Link="XalatathShadowMarkUnitTracker" />
     <BehaviorArray Link="XalatathVoidVolleyQuestTokenCounter" />
+    <BehaviorArray Link="XalatathVoidConvergencePortalBehaviorUnitTracker" />
     <WeaponArray Link="XalatathHeroWeapon" />
     <TurningRate value="999.8437" />
     <CardLayouts index="0">
       <LayoutButtons index="2" Face="Attack" Type="AbilCmd" AbilCmd="XalatathTargetingAttackClick,Execute" Slot="Attack" />
       <LayoutButtons Face="XalatathVoidVolley" Type="AbilCmd" AbilCmd="XalatathVoidVolley,Execute" Slot="Trait" />
       <LayoutButtons Face="XalatathShadowMark" Type="AbilCmd" AbilCmd="XalatathShadowMark,Execute" Slot="Ability1" />
-      <LayoutButtons Face="XalatathVoidStepCancel" Type="AbilCmd" AbilCmd="XalatathVoidStepCancel,Execute" Slot="Ability2" />
-      <LayoutButtons Face="XalatathVoidStep" Type="AbilCmd" AbilCmd="XalatathVoidStep,Execute" Slot="Ability2" />
-      <LayoutButtons Face="XalatathDarkHeartRitual" Type="AbilCmd" AbilCmd="XalatathDarkHeartRitual,Execute" Slot="Ability3" />
+      <LayoutButtons Face="XalatathDarkHeartRitual" Type="AbilCmd" AbilCmd="XalatathDarkHeartRitual,Execute" Slot="Ability2" />
+      <LayoutButtons Face="XalatathVoidStepCancel" Type="AbilCmd" AbilCmd="XalatathVoidStepCancel,Execute" Slot="Ability3" />
+      <LayoutButtons Face="XalatathVoidStep" Type="AbilCmd" AbilCmd="XalatathVoidStep,Execute" Slot="Ability3" />
       <LayoutButtons Face="XalatathVoidEruptionCancel" Type="AbilCmd" AbilCmd="XalatathVoidEruptionCancel,Execute" Slot="Heroic" />
       <LayoutButtons Face="XalatathVoidEruption" Type="AbilCmd" AbilCmd="XalatathVoidEruption,Execute" Slot="Heroic" />
       <LayoutButtons Face="XalatathVoidConvergence" Type="AbilCmd" AbilCmd="XalatathVoidConvergence,Execute" Slot="Heroic" />
@@ -3998,8 +4054,8 @@
     <HeroPlaystyleFlags index="Overconfident" value="1" />
     <HeroPlaystyleFlags index="TowerPusher" value="1" />
     <HeroPlaystyleFlags index="Escaper" value="1" />
-    <Radius value="0.6875" />
-    <InnerRadius value="0.6875" />
+    <Radius value="$XalatathUnitRadius" />
+    <InnerRadius value="$XalatathUnitRadius" />
     <AIThinkTree value="AI\Wizard.aitree" />
     <AIEvalFactor value="1.2" />
     <TauntDuration index="Dance" value="8.7" />
@@ -4017,12 +4073,11 @@
     <SeparationRadius value="0.125" />
     <InnerRadius value=".25" />
   </CUnit>
-  <CUnit id="XalatathVoidConvergencePortalUnit" parent="StormSummonPassive">
+  <CUnit id="XalatathVoidConvergencePortalUnit" parent="StormSummonActive">
     <Sight value="5" />
     <BehaviorArray Link="HeroicSummon" />
     <LifeStart value="$XalatathVoidConvergencePortalHealth" />
     <LifeMax value="$XalatathVoidConvergencePortalHealth" />
-    <LifeRegenRate value="-$XalatathVoidConvergencePortalLifeDecayRate" />
     <FlagArray index="Uncommandable" value="1" />
     <AbilArray Link="HeroGenericSummonedUnitSpecialCaseInteraction" />
     <BehaviorArray Link="ShrubProximityDetector" />
@@ -4030,7 +4085,7 @@
     <BehaviorArray Link="XalatathVoidConvergenceSpawnMinionBehavior" />
     <BehaviorArray Link="XalatathVoidConvergenceUnitTracker" />
     <BehaviorArray Link="XalatathVoidConvergenceRevealerBehavior" />
-    <Radius value="4.5" />
+    <Radius value=".75" />
     <SeparationRadius value="0.125" />
     <InnerRadius value="0.25" />
     <DeathTime value="1.5" />
@@ -4064,7 +4119,7 @@
     <BehaviorArray Link="StormSummonedUnitTargetTracker" />
     <BehaviorArray Link="StormSummonedUnitDamagedUnitTracker" />
     <InnerRadius value="1" />
-    <Radius value="1" />
+    <Radius value="1.25" />
     <CardLayouts>
       <LayoutButtons Face="Move" Type="AbilCmd" AbilCmd="move,Move" Slot="Stop" />
       <LayoutButtons Face="Stop" Type="AbilCmd" AbilCmd="stop,Stop" Slot="Stop" />
@@ -4115,7 +4170,7 @@
     <BehaviorArray Link="XalatathDarkHeartRitualChasingDummyTarget" />
     <BehaviorArray Link="XalatathShadowMarkUnitTracker" />
     <BehaviorArray Link="XalatathShadowMarkDummyUnitTracker" />
-    <Radius value="0.125" />
+    <Radius value="0.25" />
     <InnerRadius value="0.125" />
     <Speed value="$XalatathDarkHeartRitualMoveSpeed" />
     <OverlapIndex value="Hero" />
@@ -4175,7 +4230,7 @@
       <Modifications>
         <Type value="MultiplyLevelModification" />
         <Catalog value="Effect" />
-        <Entry value="XalatathDarkHeartsProtectionPeriodicSearch" />
+        <Entry value="XalatathDarkHeartsProtectionSearch" />
         <Field value="AreaArray[0].Radius" />
         <Value value="1.5" />
       </Modifications>
@@ -4198,7 +4253,7 @@
         <Catalog value="Behavior" />
         <Entry value="XalatathDarkHeartRitualTimedLife" />
         <Field value="Duration" />
-        <Value value="1.5" />
+        <Value value="1.25" />
       </Modifications>
     </AbilityModificationArray>
   </CTalent>
@@ -4329,10 +4384,17 @@
     <AbilityModificationArray>
       <Modifications>
         <Type value="FlatModification" />
-        <Catalog value="Effect" />
-        <Entry value="XalatathVoidConvergencePortalApplyTimedLife" />
-        <Field value="Chance" />
-        <Value value="0" />
++               <Catalog value="Behavior" />
++               <Entry value="XalatathVoidConvergencePortalTimedLifeEffect" />
++               <Field value="Chance" />
++               <Value value="-1" /></Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="XalatathVoidConvergencePortalBehaviorUnitTracker" />
+        <Field value="MaxTrackedUnits" />
+        <FieldIsInteger value="1" />
+        <Value value="1" />
       </Modifications>
     </AbilityModificationArray>
   </CTalent>
@@ -4744,7 +4806,8 @@
     <AcquireFilters value="-;NoMinionAggro,Missile,Dead,Benign" />
     <MinScanRange value="7" />
     <Range value="1.5" />
-    <Period value=".75" />
+    <RangeSlop value="2" />
+    <Period value="1.75" />
     <DamagePoint value="0.25" />
     <Backswing value="0.0625" />
     <Effect value="XalatathVoidMinionWeaponImpactSwitch" />

@@ -2261,7 +2261,7 @@ UI/BattleClubContextMenuOpenMembersTab=Abrir pestaña Miembros
 UI/BattleClubContextMenuOpenNewsTab=Abrir pestaña Noticias
 UI/BattleClubContextMenuReportClub=Denunciar clan
 UI/BattleClubContextMenuReportGroup=Informar de agrupación
-UI/BattleLobbyPanel/AddComputerButton=#¿NOMBRE?
+UI/BattleLobbyPanel/AddComputerButton=Agregar IA
 UI/BattleLobbyPanel/GameAttributesTitle=Ajustes de partida personalizada
 UI/BattleLobbyPanel/InviteButton=Invitar
 UI/BattleLobbyPanel/LeaveGameButton=Abandonar partida
@@ -2528,7 +2528,7 @@ UI/CREDITS/GROUP_1712=CRÉDITOS DE HEROES OF THE STORM 2016
 UI/CREDITS/GROUP_1713=CRÉDITOS DE HEROES OF THE STORM 2017
 UI/CREDITS/GROUP_1714=CRÉDITOS DE HEROES OF THE STORM 2018
 UI/CREDITS/GROUP_1715=2020 HEROES OF THE STORM CREDITS
-UI/CREDITS/GROUP_1716=
+UI/CREDITS/GROUP_1716=CRÉDITOS DE HEROES OF THE STORM 2026
 UI/CREDITS/GROUP_3365=ART
 UI/CREDITS/GROUP_3366=DESIGN
 UI/CREDITS/GROUP_3367=LEADERSHIP
@@ -2614,7 +2614,7 @@ UI/CREDITS/GROUP_8044=SOUND
 UI/CREDITS/GROUP_8045=SUPPORT
 UI/CREDITS/GROUP_8046=TESTING
 UI/CREDITS/GROUP_8047=ADDITIONAL DEVELOPMENT
-UI/CREDITS/OPENING=Heroes 2016 
+UI/CREDITS/OPENING=Heroes 2026
 UI/CREDITS/ROLE_11344=Game Designers
 UI/CREDITS/ROLE_11348=Technical Director
 UI/CREDITS/ROLE_11352=Game Director
@@ -6706,10 +6706,10 @@ UI/ScoreScreen/RankTooltip/ReservedPoints=<s val="ScoreRewardAmountLabel">%forma
 UI/ScoreScreen/RankTooltip/Silver=Plata
 UI/ScoreScreen/RankTooltip/Unknown=<s val="ScoreRewardPanelHeaderLabel">Imposible recuperar datos de partidas clasificatorias</s><n/><s val="ScoreRewardAmountLabel">No se han podido recuperar del servidor tus datos de partidas clasificatorias ni de reducción de rango</s>
 UI/ScoreScreen/ResultFormat=%mapname% %result%
-UI/ScoreScreen/Result_Defeat=#¿NOMBRE?
-UI/ScoreScreen/Result_Tie=#¿NOMBRE?
-UI/ScoreScreen/Result_Undecided=#¿NOMBRE?
-UI/ScoreScreen/Result_Victory=#¿NOMBRE?
+UI/ScoreScreen/Result_Defeat=Derrota
+UI/ScoreScreen/Result_Tie=Empate
+UI/ScoreScreen/Result_Undecided=Inconcluso
+UI/ScoreScreen/Result_Victory=Victoria
 UI/ScoreScreen/Reward/ToolTip=<s val="ScoreRewardAmountLabel">%source%<n/><s val="ScoreRewardPanelHeaderLabel">%name%</s><n/>%description%</s>
 UI/ScoreScreen/Reward/ToolTipForPointRewards=<s val="ScoreRewardAmountLabel">%source%<n/><s val="ScoreRewardPanelHeaderLabel">%name%</s></s>
 UI/ScoreScreen/RewardGold=Oro: %goldamount%

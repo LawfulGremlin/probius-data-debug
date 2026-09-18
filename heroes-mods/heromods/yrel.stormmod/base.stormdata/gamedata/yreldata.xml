@@ -278,7 +278,7 @@
   <CAccumulatorToken id="YrelVelensChosenAbilityPowerAccumulator" parent="BaseAccumulator">
     <ApplicationRule value="Add" />
     <TokenId value="YrelVelensChosenAbilityPowerToken" />
-    <Scale value="0.08" />
+    <Scale value="0.075" />
   </CAccumulatorToken>
   <CAccumulatorToken id="YrelRighteousHammerDamageAccumulator" parent="BaseAccumulator">
     <MinAccumulation value="$YrelBasicAbilityChannelPercentageScale" />
@@ -1753,7 +1753,7 @@
     <Face value="YrelVelensChosenAbilityPowerToken" />
   </CBehaviorBuff>
   <CBehaviorTokenCounter id="YrelVelensChosenAbilityPowerToken" parent="StormGenericToken">
-    <Max value="3" />
+    <Max value="4" />
   </CBehaviorTokenCounter>
   <CBehaviorTokenCounter id="YrelVelensChosenEnemyHitToken" parent="StormGenericToken">
     <Max value="1" />

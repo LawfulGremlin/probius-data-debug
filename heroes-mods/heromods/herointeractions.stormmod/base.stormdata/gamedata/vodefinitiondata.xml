@@ -9757,5 +9757,57 @@
         <UnitKillInteractionArray Target="HeroTracer" Sound="MeiOWBase_KillTracer"/>
         <UnitKillInteractionArray Target="HeroZarya" Sound="MeiOWBase_KillFriend"/>
         <UnitKillInteractionArray Target="HeroHanzo" Sound="MeiOWBase_KillHanzo"/>
-    </CVODefinition>
+    </CVODefinition>   
+    <CVODefinition id="Xalatath">
+        <GroupArray value="Warcraft"/>
+        <GroupArray value="Evil"/>
+
+        <HeroIntroArray Target="Garrosh" Question="Xalatath_IntroQuestion_Garrosh" Response="Xalatath_IntroResponse_Garrosh"/>
+        <HeroIntroArray Target="Guldan" Question="Xalatath_IntroQuestion_Guldan" Response="Xalatath_IntroResponse_Guldan"/>
+        <HeroIntroArray Target="Murky" Question="Xalatath_IntroQuestion_Murky" Response="Xalatath_IntroResponse_Murky"/>
+        <HeroIntroArray Target="Thrall" Question="Xalatath_IntroQuestion_Thrall" Response="Xalatath_IntroResponse_Thrall"/>
+        <HeroIntroArray Target="Uther" Question="Xalatath_IntroQuestion_Uther" Response="Xalatath_IntroResponse_Uther"/>
+        <HeroIntroArray Target="Varian" Question="Xalatath_IntroQuestion_Varian" Response="Xalatath_IntroResponse_Varian"/>
+
+        <GroupIntroArray Question="Xalatath_IntroBoast" Response="Xalatath_IntroResponse_Positive">
+            <GroupArray value="Good"/>
+        </GroupIntroArray>        
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Angel" Response="Xalatath_IntroResponse_Angel">
+            <GroupArray value="Angel"/>
+        </GroupIntroArray>      
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Alliance" Response="Xalatath_IntroResponse_Alliance">
+            <GroupArray value="Alliance"/>
+        </GroupIntroArray>
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Evil" Response="Xalatath_IntroResponse_Evil">
+            <GroupArray value="Evil"/>
+        </GroupIntroArray>                
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Horde" Response="Xalatath_IntroResponse_Horde">
+            <GroupArray value="Horde"/>
+        </GroupIntroArray>
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Orc" Response="Xalatath_IntroResponse_Orc">
+            <GroupArray value="Orc"/>
+        </GroupIntroArray>                  
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Positive" Response="Xalatath_IntroResponse_Positive">
+            <GroupArray value="Positive"/>
+        </GroupIntroArray>
+        <GroupKillInteractionArray Sound="Xalatath_KillAlliance">
+            <GroupArray value="Alliance"/>
+        </GroupKillInteractionArray>
+        <GroupKillInteractionArray Sound="Xalatath_KillAngel">
+            <GroupArray value="Angel"/>
+        </GroupKillInteractionArray>       
+        <GroupKillInteractionArray Sound="Xalatath_KillDemon">
+            <GroupArray value="Demon"/>
+        </GroupKillInteractionArray>
+        <GroupKillInteractionArray Sound="Xalatath_KillHorde">
+            <GroupArray value="Horde"/>
+        </GroupKillInteractionArray>
+        <GroupKillInteractionArray Sound="Xalatath_KillOrc">
+            <GroupArray value="Orc"/>
+        </GroupKillInteractionArray>                
+        <GroupKillInteractionArray Sound="Xalatath_KillPaladin">
+            <GroupArray value="Paladin"/>
+        </GroupKillInteractionArray>    
+
+    </CVODefinition>     
 </Catalog>

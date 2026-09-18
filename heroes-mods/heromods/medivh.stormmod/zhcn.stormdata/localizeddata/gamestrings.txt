@@ -149,7 +149,7 @@ Button/Tooltip/MedivhTransformRaven=变为乌鸦，移动速度提高<c val="#To
 Button/Tooltip/MedivhTransformRavenBirdsEyeView=乌鸦形态的视野范围永久扩大<c val="#TooltipNumbers">25%</c>。激活后使该加成提高至<c val="#TooltipNumbers"><d ref="Behavior,MedivhTransformRavenBirdsEyeView,Modification.SightBonus/Unit,HeroMedivhRaven,Sight*100" player="0"/>%</c>，持续<c val="#TooltipNumbers"><d ref="Behavior,MedivhTransformRavenBirdsEyeView,Duration"/></c>秒。
 Button/Tooltip/MedivhTransformRavenLand=取消乌鸦形态。
 Button/Tooltip/MedivhTransformRavenRavensIntellect=乌鸦形态可以使麦迪文的法力值与生命值的恢复速度提高<c val="#TooltipNumbers"><d ref="Talent,MedivhTransformRavenRavensIntellect,AbilityModificationArray[0].Modifications[0].Value*100"/>%</c>。
-Button/Tooltip/MedivhTransformRavenWindsOfCelerity=乌鸦形态的移动速度加成提高<c val="#TooltipNumbers"><d ref="Talent,MedivhTransformRavenWindsOfCelerity,AbilityModificationArray[0].Modifications[0].Value/Behavior,MedivhTransformRaven,Modification.UnifiedMoveSpeedFactor*100" player="0"/>%</c>。
+Button/Tooltip/MedivhTransformRavenWindsOfCelerity=乌鸦形态的移动速度加成提高<c val=#TooltipNumbers><d ref=Talent,MedivhTransformRavenWindsOfCelerity,AbilityModificationArray[0].Modifications[0].Value/Behavior,MedivhTransformRaven,Modification.UnifiedMoveSpeedFactor*100 player=0/>%</c>。
 Button/TooltipAppender/LockedUntilGameStarts=<n/><n/><c val="FF0000">游戏开始后解锁。</c>
 Button/TooltipAppender/MedivhArcaneRiftTheMastersTouch=<n/><c val="#TooltipQuest">当前进度：</c><c val="#TooltipNumbers"><d ref="$BehaviorTokenCount:MedivhArcaneRiftTheMastersTouchQuestToken$"/>/<c val="#TooltipNumbers"><d ref="Behavior,MedivhArcaneRiftTheMastersTouchQuestToken,Max"/></c>
 Button/TooltipAppender/MedivhArcaneRiftTheMastersTouchComplete=<c val="#TooltipQuest">任务完成！</c>

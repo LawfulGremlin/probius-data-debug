@@ -90,7 +90,7 @@
     <InitialDelay value="0.1875" />
     <PeriodicValidator value="SourceNotDead" />
     <PeriodicEffectArray value="XalatathVoidVolley2MissileSearch" />
-    <PeriodicPeriodArray value="0.125" />
+    <PeriodicPeriodArray value="0.0625" />
   </CEffectCreatePersistent>
   <CEffectSet id="XalatathVoidVolley2DetonateSet">
     <EffectArray value="XalatathVoidVolley2AoESearch" />
@@ -244,6 +244,7 @@
   </CUnit>
   <CActorMissile id="XalatathVoidVolley2MissileBase" parent="StormMissileWithDeathEarly" default="1">
     <On Terms="ActorCreation" Send="Create XalatathVoidVolleyMissileSound" />
+    <On Terms="ActorDestruction" Target="XalatathVoidVolleyMissileSound" Send="Destroy" />
     <Model value="XalatathVoidVolleyMissile" />
   </CActorMissile>
   <CActorMissile id="XalatathVoidVolley2MissileInnerLeft" parent="XalatathVoidVolley2MissileBase" unitName="XalatathVoidVolley2MissileInnerLeft" />
@@ -264,22 +265,27 @@
     <Scale value=".55" />
     <Model value="XalatathVoidVolleyGroundImpact" />
   </CActorModel>
-  <CActorModel id="XalatathVoidVolleyTargetImpact" parent="StormModelAnimationStyleOneShot">
-    <On Terms="Effect.XalatathVoidVolleyDamageSet.Start" Send="Create" />
-    <Model value="XalatathVoidVolleyImpact" />
-  </CActorModel>
-  <CActorSound id="XalatathVoidVolley2PierceImpactActor" parent="SoundOneShot">
-    <Host Subject="_Unit" />
+  <CActorSound id="XalatathVoidVolleyImpactSound" parent="SoundOneShot">
+    <On Terms="Effect.XalatathVoidVolleyDamage.Start" Send="Create" />
     <On Terms="Effect.XalatathVoidVolley2PierceEffectSet.Start" Send="Create" />
+    <Host Subject="_Unit" />
     <Sound value="Xalatath_VoidVolley_Impact" />
   </CActorSound>
+  <CActorSound id="XalatathVoidVolleyLaunchSound" parent="SoundOneShot">
+    <On Terms="Effect.XalatathVoidVolley2CreatePersistents.Start" Send="Create" />
+    <Sound value="Xalatath_VoidVolley_Launch" />
+  </CActorSound>
+  <CActorSound id="XalatathVoidVolleyMissileSound" parent="SoundContinuous">
+    <Sound value="Xalatath_VoidVolley_Projectile" />
+  </CActorSound>
+  <CEffectSet id="XalatathVoidVolleyMissileLaunchDummy" />
   <CActorAction id="XalatathVoidVolley2AttackInnerLeft" parent="GenericAttackPointStorm" effectImpact="XalatathVoidVolley2ImpactSet" effectLaunch="XalatathVoidVolley2MissileInnerLeftLM">
     <LaunchSiteOps Ops="SOpAttachHardPoint02 SOpSpringXalatathShoulderOrb" />
     <Missile value="XalatathVoidVolley2MissileInnerLeft" />
     <ImpactMap index="None" Model="XalatathAttackImpact" Sound="XalatathVoidVolleyImpactSound" />
     <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpShadow SOpMoveUpBy1" />
     <ShieldFlashType value="None" />
-    <LaunchAssets Sound="XalatathVoidVolleyLaunchSound" />
+    <LaunchAssets Sound="Xalatath_VoidVolley_Launch" />
   </CActorAction>
   <CActorAction id="XalatathVoidVolley2AttackInnerRight" parent="GenericAttackPointStorm" effectImpact="XalatathVoidVolley2ImpactSet" effectLaunch="XalatathVoidVolley2MissileInnerRightLM">
     <LaunchSiteOps Ops="SOpAttachHardPoint01 SOpSpringXalatathShoulderOrb" />
@@ -287,7 +293,7 @@
     <ImpactMap index="None" Model="XalatathAttackImpact" Sound="XalatathVoidVolleyImpactSound" />
     <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpShadow SOpMoveUpBy1" />
     <ShieldFlashType value="None" />
-    <LaunchAssets Sound="XalatathVoidVolleyLaunchSound" />
+    <LaunchAssets Sound="Xalatath_VoidVolley_Launch" />
   </CActorAction>
   <CActorAction id="XalatathVoidVolley2AttackMiddleLeft" parent="GenericAttackPointStorm" effectImpact="XalatathVoidVolley2ImpactSet" effectLaunch="XalatathVoidVolley2MissileMiddleLeftLM">
     <LaunchSiteOps Ops="SOpAttachHardPoint02 SOpSpringXalatathShoulderOrb" />
@@ -295,14 +301,14 @@
     <ImpactMap index="None" Model="XalatathAttackImpact" Sound="XalatathVoidVolleyImpactSound" />
     <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpShadow SOpMoveUpBy1" />
     <ShieldFlashType value="None" />
-    <LaunchAssets Sound="XalatathVoidVolleyLaunchSound" />
+    <LaunchAssets Sound="Xalatath_VoidVolley_Launch" />
   </CActorAction>
   <CActorAction id="XalatathVoidVolley2AttackMiddleRight" parent="GenericAttackPointStorm" effectImpact="XalatathVoidVolley2ImpactSet" effectLaunch="XalatathVoidVolley2MissileMiddleRightLM">
     <LaunchSiteOps Ops="SOpAttachHardPoint01 SOpSpringXalatathShoulderOrb" />
     <Missile value="XalatathVoidVolley2MissileMiddleRight" />
     <ImpactMap index="None" Model="XalatathAttackImpact" Sound="XalatathVoidVolleyImpactSound" />
     <ShieldFlashType value="None" />
-    <LaunchAssets Sound="XalatathVoidVolleyLaunchSound" />
+    <LaunchAssets Sound="Xalatath_VoidVolley_Launch" />
     <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpShadow SOpMoveUpBy1" />
   </CActorAction>
   <CActorAction id="XalatathVoidVolley2AttackOuterLeft" parent="GenericAttackPointStorm" effectImpact="XalatathVoidVolley2ImpactSet" effectLaunch="XalatathVoidVolley2MissileOuterLeftLM">
@@ -311,7 +317,7 @@
     <ImpactMap index="None" Model="XalatathAttackImpact" Sound="XalatathVoidVolleyImpactSound" />
     <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpShadow SOpMoveUpBy1" />
     <ShieldFlashType value="None" />
-    <LaunchAssets Sound="XalatathVoidVolleyLaunchSound" />
+    <LaunchAssets Sound="Xalatath_VoidVolley_Launch" />
   </CActorAction>
   <CActorAction id="XalatathVoidVolley2AttackOuterRight" parent="GenericAttackPointStorm" effectImpact="XalatathVoidVolley2ImpactSet" effectLaunch="XalatathVoidVolley2MissileOuterRightLM">
     <LaunchSiteOps Ops="SOpAttachHardPoint01 SOpSpringXalatathShoulderOrb" />
@@ -319,6 +325,6 @@
     <ImpactMap index="None" Model="XalatathAttackImpact" Sound="XalatathVoidVolleyImpactSound" />
     <ImpactPointSiteOps Ops="SOpTargetPointStationary SOpShadow SOpMoveUpBy1" />
     <ShieldFlashType value="None" />
-    <LaunchAssets Sound="XalatathVoidVolleyLaunchSound" />
+    <LaunchAssets Sound="Xalatath_VoidVolley_Launch" />
   </CActorAction>
 </Catalog>

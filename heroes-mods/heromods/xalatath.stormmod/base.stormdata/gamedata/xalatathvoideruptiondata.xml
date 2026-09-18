@@ -898,6 +898,7 @@
     <BehaviorLink value="XalatathVoidEruptionAimSeedBehaviorMousePointUpdater" />
   </CEffectRemoveBehavior>
   <CBehaviorBuff id="XalatathVoidEruptionCharging">
+    <BuffFlags index="Countdown" value="0" />
     <Alignment value="Positive" />
     <InfoFlags index="AlwaysUseGameText" value="1" />
     <BehaviorCategories index="Restorable" value="1" />
