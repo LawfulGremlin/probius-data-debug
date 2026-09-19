@@ -121,6 +121,7 @@
         "icon": "storm_ui_icon_muradin_dwarftoss.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Muradin|E1",
         "abilityLinks": [
           "Muradin|E1"
@@ -137,12 +138,14 @@
         "icon": "storm_ui_icon_muradin_secondwind.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Muradin|D1",
         "abilityLinks": [
           "Muradin|D1"
         ],
         "abilityTalentLinkIds": [
-          "MuradinSecondWind"
+          "MuradinSecondWind",
+          "Stoneform"
         ]
       },
       {
@@ -153,6 +156,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Muradin|Passive",
         "abilityLinks": [
           "Muradin|D1"
@@ -171,6 +175,7 @@
         "icon": "storm_ui_icon_muradin_stormbolt.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Muradin|Q1",
         "abilityLinks": [
           "Muradin|Q1"
@@ -187,6 +192,7 @@
         "icon": "storm_ui_icon_muradin_thunderclap.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Muradin|W1",
         "abilityLinks": [
           "Muradin|W1"
@@ -203,6 +209,7 @@
         "icon": "storm_ui_icon_muradin_thunderclap_b.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Muradin|W1",
         "abilityLinks": [
           "Muradin|W1"
@@ -221,6 +228,7 @@
         "icon": "storm_ui_icon_muradin_stormbolt.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Muradin|Q1",
         "abilityLinks": [
           "Muradin|Q1"
@@ -237,6 +245,7 @@
         "icon": "storm_ui_icon_muradin_dwarftoss.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Muradin|E1",
         "abilityLinks": [
           "Muradin|E1"
@@ -253,12 +262,14 @@
         "icon": "storm_ui_icon_talent_autoattack_stun.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Muradin|Passive",
         "abilityLinks": [
           "Muradin|D1"
         ],
         "abilityTalentLinkIds": [
-          "MuradinSecondWind"
+          "MuradinSecondWind",
+          "Stoneform"
         ]
       }
     ],
@@ -272,6 +283,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Muradin|R1",
         "abilityLinks": [
           "Muradin|R1"
@@ -289,6 +301,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 40,
+        "isQuest": false,
         "abilityId": "Muradin|R2",
         "abilityLinks": [
           "Muradin|R2"
@@ -307,6 +320,7 @@
         "icon": "storm_ui_icon_talent_burningrage.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Muradin|Q1",
         "abilityLinks": [
           "Muradin|Q1"
@@ -323,6 +337,7 @@
         "icon": "storm_ui_icon_muradin_thunderclap_a.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Muradin|W1",
         "abilityLinks": [
           "Muradin|W1"
@@ -339,6 +354,7 @@
         "icon": "storm_ui_icon_muradin_thunderclap.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Muradin|W1",
         "abilityLinks": [
           "Muradin|W1"
@@ -357,6 +373,7 @@
         "icon": "storm_ui_icon_muradin_dwarftoss.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Muradin|E1",
         "abilityLinks": [
           "Muradin|E1"
@@ -374,13 +391,14 @@
         "type": "Trait",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Muradin|D1",
         "abilityLinks": [
           "Muradin|D1"
         ],
         "abilityTalentLinkIds": [
-          "Stoneform",
-          "MuradinSecondWind"
+          "MuradinSecondWind",
+          "Stoneform"
         ]
       },
       {
@@ -392,7 +410,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 20,
-        "abilityId": "Muradin|Active"
+        "isQuest": false,
+        "abilityId": "Muradin|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TalentImposingPresence"
+        ]
       }
     ],
     "20": [
@@ -404,6 +427,7 @@
         "icon": "storm_ui_icon_muradin_avatar.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Muradin|R1",
         "abilityLinks": [
           "Muradin|R1"
@@ -423,6 +447,7 @@
         "icon": "storm_ui_icon_muradin_haymaker.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Muradin|R2",
         "abilityLinks": [
           "Muradin|R2"
@@ -442,6 +467,7 @@
         "icon": "storm_ui_icon_muradin_thunderclap_b.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Muradin|Passive"
       },
       {
@@ -453,7 +479,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
-        "abilityId": "Muradin|Active"
+        "isQuest": false,
+        "abilityId": "Muradin|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TalentHardenedShield"
+        ]
       }
     ]
   },

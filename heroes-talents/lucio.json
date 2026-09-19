@@ -38,6 +38,9 @@
     "radius": 0.6875,
     "attackDamageMultiplier": 4
   },
+  "unitIds": [
+    "LucioBoombox"
+  ],
   "abilities": {
     "Lucio": [
       {
@@ -111,7 +114,7 @@
         "type": "trait"
       },
       {
-        "uid": "169f23",
+        "uid": "ef8b50",
         "name": "Wall Ride",
         "description": "When moving alongside terrain, Lúcio begins to Wall Ride for 2 seconds. While Wall Ride is active, Lúcio can walk through units and gains 20% Movement Speed that stacks with other bonuses.",
         "hotkey": "Z",
@@ -119,6 +122,40 @@
         "tooltipId": "LucioWallRide",
         "icon": "storm_ui_icon_lucio_mount.png",
         "type": "mount"
+      }
+    ],
+    "LucioCrossfade": [
+      {
+        "uid": "3f86e6",
+        "name": "Boombox",
+        "description": "Place a boombox that plays Lúcio's active Crossfade track. Its volume adjusts with Amp It Up. Allied Heroes near the boombox gain 5 Armor.  Crossfade tracks from Lúcio and the Boombox do not stack.",
+        "hotkey": "1",
+        "abilityId": "Lucio|11",
+        "tooltipId": "LucioBoomboxBoombox",
+        "cooldown": 20,
+        "icon": "storm_ui_icon_lucio_fineshrine.png",
+        "type": "activable"
+      },
+      {
+        "uid": "a2aa23",
+        "name": "Summer Anthem",
+        "description": "Activate for allies affected by Crossfade to become Unkillable for 1.5 seconds.",
+        "hotkey": "2",
+        "abilityId": "Lucio|21",
+        "tooltipId": "LucioItemSummerAnthem",
+        "cooldown": 60,
+        "icon": "storm_ui_icon_lucio_crossfade_a.png",
+        "type": "activable"
+      },
+      {
+        "uid": "07a7bb",
+        "name": "Crossfade",
+        "description": "Currently playing Healing Boost, passively healing Lúcio and nearby allied Heroes for 15 (+4% per level) Health per second.  Toggle to play Speed Boost instead.",
+        "hotkey": "W",
+        "abilityId": "Lucio|W2",
+        "tooltipId": "LucioCrossfadeActivateSpeedBoost",
+        "icon": "storm_ui_icon_lucio_crossfadespeed.png",
+        "type": "basic"
       }
     ]
   },
@@ -135,9 +172,11 @@
         "isQuest": true,
         "abilityId": "Lucio|W1",
         "abilityLinks": [
-          "Lucio|W1"
+          "Lucio|W1",
+          "Lucio|W2"
         ],
         "abilityTalentLinkIds": [
+          "LucioCrossfade",
           "LucioCrossfade"
         ]
       },
@@ -149,6 +188,7 @@
         "icon": "storm_ui_icon_lucio_wallride.png",
         "type": "Z",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lucio|Z1",
         "abilityLinks": [
           "Lucio|Z1"
@@ -165,6 +205,7 @@
         "icon": "storm_ui_icon_lucio_wallride_a.png",
         "type": "Z",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Lucio|Z1",
         "abilityLinks": [
           "Lucio|Z1"
@@ -200,6 +241,7 @@
         "icon": "storm_ui_icon_lucio_soundwave_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lucio|Q1",
         "abilityLinks": [
           "Lucio|Q1"
@@ -216,6 +258,7 @@
         "icon": "storm_ui_icon_lucio_accelerando.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Lucio|D1",
         "abilityLinks": [
           "Lucio|D1"
@@ -234,6 +277,7 @@
         "icon": "storm_ui_icon_lucio_soundwave.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Lucio|Q1",
         "abilityLinks": [
           "Lucio|Q1"
@@ -250,11 +294,14 @@
         "icon": "storm_ui_icon_lucio_crossfade_all.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lucio|W1",
         "abilityLinks": [
-          "Lucio|W1"
+          "Lucio|W1",
+          "Lucio|W2"
         ],
         "abilityTalentLinkIds": [
+          "LucioCrossfade",
           "LucioCrossfade"
         ]
       },
@@ -267,7 +314,14 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 20,
-        "abilityId": "Lucio|Active"
+        "isQuest": false,
+        "abilityId": "Lucio|Active",
+        "abilityLinks": [
+          "Lucio|11"
+        ],
+        "abilityTalentLinkIds": [
+          "LucioBoombox"
+        ]
       }
     ],
     "10": [
@@ -280,6 +334,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Lucio|R1",
         "abilityLinks": [
           "Lucio|R1"
@@ -297,6 +352,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 25,
+        "isQuest": false,
         "abilityId": "Lucio|R2",
         "abilityLinks": [
           "Lucio|R2"
@@ -315,11 +371,14 @@
         "icon": "storm_ui_icon_lucio_crossfade_all.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Lucio|W1",
         "abilityLinks": [
-          "Lucio|W1"
+          "Lucio|W1",
+          "Lucio|W2"
         ],
         "abilityTalentLinkIds": [
+          "LucioCrossfade",
           "LucioCrossfade"
         ]
       },
@@ -331,6 +390,7 @@
         "icon": "storm_ui_icon_lucio_accelerando.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lucio|D1",
         "abilityLinks": [
           "Lucio|D1"
@@ -347,6 +407,7 @@
         "icon": "storm_ui_icon_lucio_wallride.png",
         "type": "Z",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Lucio|Z1",
         "abilityLinks": [
           "Lucio|Z1"
@@ -365,6 +426,7 @@
         "icon": "storm_ui_icon_lucio_ampitup.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Lucio|E1",
         "abilityLinks": [
           "Lucio|E1"
@@ -381,6 +443,7 @@
         "icon": "storm_ui_icon_lucio_ampitup_b.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lucio|E1",
         "abilityLinks": [
           "Lucio|E1"
@@ -397,6 +460,7 @@
         "icon": "storm_ui_icon_lucio_ampitup_a.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Lucio|E1",
         "abilityLinks": [
           "Lucio|E1"
@@ -415,6 +479,7 @@
         "icon": "storm_ui_icon_lucio_soundbarrier.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Lucio|R1",
         "abilityLinks": [
           "Lucio|R1"
@@ -434,6 +499,7 @@
         "icon": "storm_ui_icon_lucio_highfive.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lucio|R2",
         "abilityLinks": [
           "Lucio|R2"
@@ -453,11 +519,14 @@
         "icon": "storm_ui_icon_lucio_crossfade_all.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Lucio|W1",
         "abilityLinks": [
-          "Lucio|W1"
+          "Lucio|W1",
+          "Lucio|W2"
         ],
         "abilityTalentLinkIds": [
+          "LucioCrossfade",
           "LucioCrossfade"
         ]
       },
@@ -470,16 +539,37 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Lucio|Active",
         "abilityLinks": [
-          "Lucio|W1"
+          "Lucio|W1",
+          "Lucio|W2"
         ],
         "abilityTalentLinkIds": [
+          "LucioCrossfade",
           "LucioCrossfade"
         ]
       }
     ]
   },
+  "summonUnits": [
+    {
+      "unitId": "LucioBoombox",
+      "name": "LucioBoombox",
+      "icon": "storm_ui_icon_lucio_fineshrine.png",
+      "stats": {
+        "hp": 600,
+        "hpRegen": 0,
+        "hpScale": 0.04,
+        "hpRegenScale": 0,
+        "radius": 0.25,
+        "speed": 0,
+        "sight": 7.25
+      },
+      "abilities": [],
+      "sourceAbilityTooltipId": "LucioBoomboxBoombox"
+    }
+  ],
   "tooltipMarkup": {
     "LucioAmpItUp": "Raise Lúcio's Crossfade track volume for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioAmpItUp,Duration\" player=\"0\"/></c> seconds, amping <c val=\"FFF800\">Healing Boost</c> to <c val=\"#TooltipNumbers\"><d ref=\"Effect,LucioAmpItUpCrossfadeHealingBoostHeal,RechargeVitalRate*8\"/></c> Health per second and <c val=\"3DFF7F\">Speed Boost</c> to <c val=\"#TooltipNumbers\"><d ref=\"(Effect,LucioAmpItUpSpeedBoostModifyPlayerOn,EffectArray[0].Value)*100\"/>%</c> increased Movement Speed.",
     "LucioAmpItUpRejuvenescencia": "While Amp It Up is active, Crossfade's <c val=\"FFF800\">Healing Boost</c> heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"Talent,LucioAmpItUpRejuvenescencia,AbilityModificationArray[0].Modifications[0].Value*(1/Behavior,LucioCrossfadeHealingBoost,Period)*100\"precision=\"2\"/>%</c> of the target's maximum Health each second.",
@@ -487,6 +577,7 @@
     "LucioAmpItUpUpToEleven": "Hitting an enemy Hero with Soundwave or Push Off increases the duration of Amp It Up.<n/><n/>Soundwave grants <c val=\"#TooltipNumbers\"><d ref=\"Effect,LucioAmpItUpUpToElevenModfifyBehaviorDuration,Value\" precision=\"2\"/></c> seconds and Push Off grants <c val=\"#TooltipNumbers\"><d ref=\"Effect,LucioAmpItUpUpToElevenModfifyBehaviorDurationPushOff,Value\" precision=\"2\"/></c> second. If Amp It Up is not active, these bonuses are granted to its next activation, up to <c val=\"#TooltipNumbers\"><d ref=\"Effect,LucioAmpItUpUpToElevenModfifyBehaviorDuration,Value*Behavior,LucioAmpItUpUpToElevenReservoirTokenCounter,Max\" precision=\"2\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increase the duration of Amp It Up by <c val=\"#TooltipNumbers\"><d ref=\"Talent,LucioAmpItUpUpToEleven,AbilityModificationArray[0].Modifications[0].Value\"/></c> second.",
     "LucioBoomboxBoombox": "Place a boombox that plays Lúcio's active Crossfade track. Its volume adjusts with Amp It Up. Allied Heroes near the boombox gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioBoomboxArmorBehavior,ArmorModification.AllArmorBonus\"/></c> Armor.<n/><n/>Crossfade tracks from Lúcio and the Boombox do not stack.",
     "LucioCrossfadeActivateHealingBoost": "Currently playing <c val=\"3DFF7F\">Speed Boost</c>, increasing the Movement Speed of Lúcio and nearby allied Heroes by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioCrossfadeSpeedBoost,Modification.UnifiedMoveSpeedFactor*100\"Player=\"0\"/>%</c>.<n/><n/>Toggle to play <c val=\"FFF800\">Healing Boost</c> instead.",
+    "LucioCrossfadeActivateSpeedBoost": "Currently playing <c val=\"FFF800\">Healing Boost</c>, passively healing Lúcio and nearby allied Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Effect,LucioCrossfadeHealingBoostHeal,RechargeVitalRate*8\"/></c> Health per second.<n/><n/>Toggle to play <c val=\"3DFF7F\">Speed Boost</c> instead.",
     "LucioCrossfadeAllTogether": "For each ally affected by Crossfade, Lúcio gains <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,LucioCrossfadeAllTogetherMovementSpeedAccumulator,Scale/Unit,HeroLucio,Speed\" player=\"0\"/>%</c> Movement Speed that stacks with other bonuses.",
     "LucioCrossfadePartyMix": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Play Lúcio's Crossfade tracks to nearby allies. Multiple allies provide additional time.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> For every <c val=\"#TooltipNumbers\">1</c> Minute played, permanently increase Lúcio's maximum Mana by <c val=\"#TooltipNumbers\">10</c>. <n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Once you have played for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioCrossfadePartyMixQuestToken,Max/60\"/></c> minutes or more, permanently increase Crossfade's radius by <c val=\"#TooltipNumbers\"><d ref=\"Effect,LucioCrossfadePartyMixQuestCompleteModifyPlayer,EffectArray[0].Value/Effect,LucioCrossfadeSearchArea,AreaArray[0].Radius*100\" player=\"0\"/>%</c>.",
     "LucioHighFive": "Quickly skate to an allied Hero. Upon arrival the ally is healed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,LucioHighFiveCreateHealer,RechargeVitalRate\"/></c>, Lúcio is healed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,LucioHighFiveSelfHealCreateHealer,RechargeVitalRate\"/></c>, and both gain Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioHighFiveUnstoppable,Duration\"/></c> second.",
@@ -515,6 +606,7 @@
     "LucioAmpItUpUpToEleven": "Increase Amp It Up duration",
     "LucioBoomboxBoombox": "Drop a boombox that plays Crossfade",
     "LucioCrossfadeActivateHealingBoost": "Play a <c val=\"FFF800\">Healing Boost</c> or <c val=\"3DFF7F\">Speed Boost</c> track",
+    "LucioCrossfadeActivateSpeedBoost": "Play a <c val=\"FFF800\">Healing Boost</c> or <c val=\"3DFF7F\">Speed Boost</c> track",
     "LucioCrossfadeAllTogether": "Gain Move Speed from nearby allies",
     "LucioCrossfadePartyMix": "<c val=\"#TooltipQuest\">Quest:</c> Increase Crossfade radius, max Mana",
     "LucioHighFive": "Skate to allies, healing and granting Unstoppable",

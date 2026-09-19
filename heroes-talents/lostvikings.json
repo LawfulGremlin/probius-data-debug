@@ -27,7 +27,8 @@
     "hp": 1,
     "hpRegen": 0,
     "hpScale": 0,
-    "hpRegenScale": 0
+    "hpRegenScale": 0,
+    "radius": 0
   },
   "heroUnits": {
     "Baleog": {
@@ -41,8 +42,7 @@
         "attackRange": 1.25,
         "attackSpeed": 1.1111,
         "radius": 0.5625
-      },
-      "portrait": "storm_ui_ingame_targetinfopanel_unit_hero_baleog.png"
+      }
     },
     "Erik": {
       "stats": {
@@ -55,8 +55,7 @@
         "attackRange": 6.5,
         "attackSpeed": 1.4286,
         "radius": 0.5
-      },
-      "portrait": "storm_ui_ingame_targetinfopanel_unit_hero_eric.png"
+      }
     },
     "Olaf": {
       "stats": {
@@ -69,47 +68,11 @@
         "attackRange": 1.25,
         "attackSpeed": 1,
         "radius": 0.875
-      },
-      "portrait": "storm_ui_ingame_targetinfopanel_unit_hero_olaf.png"
+      }
     }
   },
-  "unitIds": [
-    "LongboatRaidBoat"
-  ],
   "abilities": {
     "LostVikings": [
-      {
-        "uid": "39ea12",
-        "name": "Spin To Win!",
-        "description": "Activate to have each Viking deal 85 (+4% per level) damage to nearby enemies.  Deals 100% bonus damage to enemy Heroes.",
-        "hotkey": "Q",
-        "abilityId": "LostVikings|Q1",
-        "tooltipId": "LostVikingsSpinToWin",
-        "cooldown": 10,
-        "icon": "storm_ui_icon_lostvikings_spintowin.png",
-        "type": "basic"
-      },
-      {
-        "uid": "4fe3b3",
-        "name": "Jump!",
-        "description": "Makes all Vikings Invulnerable and able to pass over enemies for 1.5 seconds.",
-        "hotkey": "W",
-        "abilityId": "LostVikings|W1",
-        "tooltipId": "LostVikingsJump",
-        "cooldown": 30,
-        "icon": "storm_ui_icon_lostvikings_jump.png",
-        "type": "basic"
-      },
-      {
-        "uid": "86ef1a",
-        "name": "Viking Bribery",
-        "description": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.",
-        "hotkey": "E",
-        "abilityId": "LostVikings|E1",
-        "tooltipId": "LostVikingsVikingBribery",
-        "icon": "storm_ui_icon_talent_bribe.png",
-        "type": "basic"
-      },
       {
         "uid": "e9f133",
         "name": "Longboat Raid!",
@@ -154,7 +117,7 @@
         "type": "mount"
       },
       {
-        "uid": "66631d",
+        "uid": "7c5195",
         "name": "Select Olaf",
         "description": "Olaf can charge enemies and slow their Movement Speed by 30% for 3 seconds by right-clicking on them. 8 second cooldown.  Olaf gains increased Health Regeneration when out of combat for 4 seconds.",
         "hotkey": "1",
@@ -164,7 +127,7 @@
         "type": "activable"
       },
       {
-        "uid": "f173dc",
+        "uid": "8e0473",
         "name": "Select Baleog",
         "description": "Baleog's Basic Attacks deal 50% damage to enemies behind his attack target.",
         "hotkey": "2",
@@ -174,7 +137,7 @@
         "type": "activable"
       },
       {
-        "uid": "f14745",
+        "uid": "df3f4b",
         "name": "Select Erik",
         "description": "Erik moves faster than the other Vikings and has increased Basic Attack range.",
         "hotkey": "3",
@@ -184,7 +147,7 @@
         "type": "activable"
       },
       {
-        "uid": "8da17f",
+        "uid": "4bd5ec",
         "name": "Select All Vikings",
         "description": "The Lost Vikings can be controlled individually or as a group. Each Viking has particular strengths.",
         "hotkey": "4",
@@ -192,6 +155,40 @@
         "tooltipId": "LostVikingSelectAll",
         "icon": "storm_ui_ingame_heroselect_btn_lostvikings.png",
         "type": "activable"
+      }
+    ],
+    "LostVikingsLongboatRaidNewer": [
+      {
+        "uid": "39ea12",
+        "name": "Spin To Win!",
+        "description": "Activate to have each Viking deal 85 (+4% per level) damage to nearby enemies.  Deals 100% bonus damage to enemy Heroes.",
+        "hotkey": "Q",
+        "abilityId": "LostVikings|Q1",
+        "tooltipId": "LostVikingsSpinToWin",
+        "cooldown": 10,
+        "icon": "storm_ui_icon_lostvikings_spintowin.png",
+        "type": "basic"
+      },
+      {
+        "uid": "4fe3b3",
+        "name": "Jump!",
+        "description": "Makes all Vikings Invulnerable and able to pass over enemies for 1.5 seconds.",
+        "hotkey": "W",
+        "abilityId": "LostVikings|W1",
+        "tooltipId": "LostVikingsJump",
+        "cooldown": 30,
+        "icon": "storm_ui_icon_lostvikings_jump.png",
+        "type": "basic"
+      },
+      {
+        "uid": "86ef1a",
+        "name": "Viking Bribery",
+        "description": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.",
+        "hotkey": "E",
+        "abilityId": "LostVikings|E1",
+        "tooltipId": "LostVikingsVikingBribery",
+        "icon": "storm_ui_icon_talent_bribe.png",
+        "type": "basic"
       },
       {
         "uid": "c7798d",
@@ -214,15 +211,13 @@
         "cooldown": 20,
         "icon": "storm_ui_icon_talent_autoattack_searing.png",
         "type": "basic"
-      }
-    ],
-    "LostVikingsLongboatRaidNewer": [
+      },
       {
         "uid": "a40d9c",
         "name": "Mortar",
         "description": "Fires a mortar at the targeted location, dealing 228 (+4% per level) damage in a large area.",
         "hotkey": "Q",
-        "abilityId": "LostVikings|Q5",
+        "abilityId": "LostVikings|Q3",
         "tooltipId": "LostVikingsMortar",
         "cooldown": 3,
         "icon": "storm_ui_icon_lostvikings_mortar.png",
@@ -240,6 +235,7 @@
         "icon": "storm_ui_icon_lostvikings_selectolaf.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive",
         "abilityLinks": [
           "LostVikings|11"
@@ -256,6 +252,7 @@
         "icon": "storm_ui_icon_lostvikings_selecterik.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive",
         "abilityLinks": [
           "LostVikings|31"
@@ -272,6 +269,7 @@
         "icon": "storm_ui_icon_lostvikings_selectbaleog.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive",
         "abilityLinks": [
           "LostVikings|21"
@@ -286,9 +284,9 @@
         "name": "Viking Bribery",
         "description": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.",
         "icon": "storm_ui_icon_talent_bribe.png",
-        "type": "Active",
+        "type": "E",
         "sort": 4,
-        "abilityId": "LostVikings|Active"
+        "isQuest": false
       }
     ],
     "4": [
@@ -300,6 +298,7 @@
         "icon": "storm_ui_icon_lostvikings_selectbaleog.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive",
         "abilityLinks": [
           "LostVikings|21"
@@ -316,6 +315,7 @@
         "icon": "storm_ui_icon_lostvikings_selecterik.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive",
         "abilityLinks": [
           "LostVikings|31"
@@ -332,6 +332,7 @@
         "icon": "storm_ui_icon_lostvikings_selecterik_var1.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive",
         "abilityLinks": [
           "LostVikings|31"
@@ -348,6 +349,7 @@
         "icon": "storm_ui_icon_talent_mercenarylord.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive"
       }
     ],
@@ -360,6 +362,7 @@
         "icon": "storm_ui_icon_lostvikings_selectbaleog.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive",
         "abilityLinks": [
           "LostVikings|21"
@@ -374,10 +377,10 @@
         "name": "Spin To Win!",
         "description": "Activate to have each Viking deal 85 (+4% per level) damage to nearby enemies.  Deals 100% bonus damage to enemy Heroes.",
         "icon": "storm_ui_icon_lostvikings_spintowin.png",
-        "type": "Active",
+        "type": "Q",
         "sort": 2,
         "cooldown": 10,
-        "abilityId": "LostVikings|Active"
+        "isQuest": false
       },
       {
         "tooltipId": "LostVikingsNorseForce",
@@ -385,10 +388,10 @@
         "name": "Norse Force!",
         "description": "All Vikings gain a 140 (+4% per level) to 308 (+4% per level) point Shield, increasing in strength for each Viking alive. Lasts 4 seconds.",
         "icon": "storm_ui_icon_lostvikings_norseforce.png",
-        "type": "Active",
+        "type": "Q",
         "sort": 3,
         "cooldown": 15,
-        "abilityId": "LostVikings|Active"
+        "isQuest": false
       }
     ],
     "10": [
@@ -401,13 +404,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 90,
-        "abilityId": "LostVikings|R1",
-        "abilityLinks": [
-          "LostVikings|R1"
-        ],
-        "abilityTalentLinkIds": [
-          "LostVikingsLongboatRaidNewer"
-        ]
+        "isQuest": false
       },
       {
         "tooltipId": "LostVikingsPlayAgain",
@@ -418,13 +415,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 100,
-        "abilityId": "LostVikings|R2",
-        "abilityLinks": [
-          "LostVikings|R2"
-        ],
-        "abilityTalentLinkIds": [
-          "LostVikingsPlayAgain"
-        ]
+        "isQuest": false
       }
     ],
     "13": [
@@ -436,6 +427,7 @@
         "icon": "storm_ui_icon_lostvikings_selectolaf.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive",
         "abilityLinks": [
           "LostVikings|11"
@@ -450,10 +442,10 @@
         "name": "Jump!",
         "description": "Makes all Vikings Invulnerable and able to pass over enemies for 1.5 seconds.",
         "icon": "storm_ui_icon_lostvikings_jump.png",
-        "type": "Active",
+        "type": "W",
         "sort": 2,
         "cooldown": 30,
-        "abilityId": "LostVikings|Active"
+        "isQuest": false
       },
       {
         "tooltipId": "LostVikingsNordicAttackSquad",
@@ -463,6 +455,7 @@
         "icon": "storm_ui_icon_talent_autoattack_searing.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive"
       }
     ],
@@ -475,6 +468,7 @@
         "icon": "storm_ui_icon_lostvikings_selectolaf.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive",
         "abilityLinks": [
           "LostVikings|11"
@@ -491,6 +485,7 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive"
       },
       {
@@ -501,6 +496,7 @@
         "icon": "storm_ui_icon_lostvikings_64kbmarathon.png",
         "type": "Z",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LostVikings|Z1",
         "abilityLinks": [
           "LostVikings|Z1"
@@ -517,6 +513,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive"
       }
     ],
@@ -529,6 +526,7 @@
         "icon": "storm_ui_icon_lostvikings_longboatraid.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LostVikings|R1",
         "abilityLinks": [
           "LostVikings|R1"
@@ -548,6 +546,7 @@
         "icon": "storm_ui_icon_lostvikings_playagain.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LostVikings|R2",
         "abilityLinks": [
           "LostVikings|R2"
@@ -567,6 +566,7 @@
         "icon": "storm_ui_icon_lostvikings_fastrestart.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LostVikings|D1",
         "abilityLinks": [
           "LostVikings|D1"
@@ -583,6 +583,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "LostVikings|Passive"
       }
     ]
@@ -590,7 +591,7 @@
   "summonUnits": [
     {
       "unitId": "LongboatRaidBoat",
-      "name": "Longboat Raid Boat",
+      "name": "LongboatRaidBoat",
       "icon": "storm_ui_icon_lostvikings_longboatraid.png",
       "stats": {
         "hp": 750,
@@ -610,7 +611,8 @@
           "name": "Mortar",
           "hotkey": "Q",
           "icon": "storm_ui_icon_lostvikings_mortar.png",
-          "description": "Fires a mortar at the targeted location, dealing <c val=\"bfd4fd\">228~~0.04~~</c> damage in a large area.",
+          "description": "Fires a mortar at the targeted location, dealing 228 damage in a large area.",
+          "cooldown": 3,
           "tooltipId": "LostVikingsMortar"
         }
       ],

@@ -129,6 +129,7 @@
         "icon": "storm_ui_icon_gazlowe_explodiumcharge.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gazlowe|E1",
         "abilityLinks": [
           "Gazlowe|E1"
@@ -145,6 +146,7 @@
         "icon": "storm_ui_icon_gazlowe_salvager.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Gazlowe|D1",
         "abilityLinks": [
           "Gazlowe|D1"
@@ -161,6 +163,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Gazlowe|Passive",
         "abilityLinks": [
           "Gazlowe|D1"
@@ -179,6 +182,7 @@
         "icon": "storm_ui_icon_gazlowe_rockitturret.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gazlowe|Q1",
         "abilityLinks": [
           "Gazlowe|Q1"
@@ -195,6 +199,7 @@
         "icon": "storm_ui_icon_gazlowe_combo_w_e.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Gazlowe|Passive",
         "abilityLinks": [
           "Gazlowe|E1",
@@ -214,7 +219,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Gazlowe|Active"
+        "isQuest": false,
+        "abilityId": "Gazlowe|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "GazloweDethLazorEZPZDimensionalRipperAbility"
+        ]
       }
     ],
     "7": [
@@ -226,6 +236,7 @@
         "icon": "storm_ui_icon_gazlowe_combo_q_w.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gazlowe|Q1",
         "abilityLinks": [
           "Gazlowe|Q1",
@@ -244,6 +255,7 @@
         "icon": "storm_ui_icon_gazlowe_dethlazor_a.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Gazlowe|W1",
         "abilityLinks": [
           "Gazlowe|W1"
@@ -260,6 +272,7 @@
         "icon": "storm_ui_icon_gazlowe_combo_w_e.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Gazlowe|Passive",
         "abilityLinks": [
           "Gazlowe|E1",
@@ -281,6 +294,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 40,
+        "isQuest": false,
         "abilityId": "Gazlowe|R1",
         "abilityLinks": [
           "Gazlowe|R1"
@@ -298,6 +312,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Gazlowe|R2",
         "abilityLinks": [
           "Gazlowe|R2"
@@ -316,6 +331,7 @@
         "icon": "storm_ui_icon_gazlowe_rockitturret.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gazlowe|Q1",
         "abilityLinks": [
           "Gazlowe|Q1"
@@ -332,6 +348,7 @@
         "icon": "storm_ui_icon_gazlowe_rockitturret_var1.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Gazlowe|Q1",
         "abilityLinks": [
           "Gazlowe|Q1"
@@ -348,6 +365,7 @@
         "icon": "storm_ui_icon_gazlowe_rockitturret_var2.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Gazlowe|Q1",
         "abilityLinks": [
           "Gazlowe|Q1"
@@ -366,6 +384,7 @@
         "icon": "storm_ui_icon_gazlowe_dethlazor.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gazlowe|W1",
         "abilityLinks": [
           "Gazlowe|W1"
@@ -382,6 +401,7 @@
         "icon": "storm_ui_icon_gazlowe_explodiumcharge.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Gazlowe|E1",
         "abilityLinks": [
           "Gazlowe|E1"
@@ -398,6 +418,7 @@
         "icon": "storm_ui_icon_talent_autoattack_searing.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Gazlowe|Passive",
         "abilityLinks": [
           "Gazlowe|D1"
@@ -416,6 +437,7 @@
         "icon": "storm_ui_icon_gazlowe_robogoblin.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gazlowe|R1",
         "abilityLinks": [
           "Gazlowe|R1"
@@ -435,6 +457,7 @@
         "icon": "storm_ui_icon_gazlowe_gravobomb.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Gazlowe|R2",
         "abilityLinks": [
           "Gazlowe|R2"
@@ -454,6 +477,7 @@
         "icon": "storm_ui_icon_gazlowe_rockitturret.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Gazlowe|Q1",
         "abilityLinks": [
           "Gazlowe|Q1"
@@ -470,6 +494,7 @@
         "icon": "storm_ui_icon_gazlowe_explodiumcharge.png",
         "type": "E",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Gazlowe|E1",
         "abilityLinks": [
           "Gazlowe|E1"
@@ -483,7 +508,7 @@
   "summonUnits": [
     {
       "unitId": "TinkerRockItTurret",
-      "name": "Rock-It! Turret",
+      "name": "TinkerRockItTurret",
       "icon": "storm_ui_icon_gazlowe_rockitturret.png",
       "stats": {
         "hp": 600,

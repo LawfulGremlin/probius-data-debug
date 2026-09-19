@@ -135,6 +135,7 @@
         "icon": "storm_ui_icon_brightwing_polymorph.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Brightwing|W1",
         "abilityLinks": [
           "Brightwing|W1"
@@ -151,6 +152,7 @@
         "icon": "storm_ui_icon_brightwing_hypershift.png",
         "type": "Z",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Brightwing|Z1",
         "abilityLinks": [
           "Brightwing|Z1"
@@ -167,7 +169,12 @@
         "icon": "storm_ui_icon_talent_bribe.png",
         "type": "Active",
         "sort": 3,
-        "abilityId": "Brightwing|Active"
+        "isQuest": false,
+        "abilityId": "Brightwing|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "FaerieDragonPixieCharm"
+        ]
       }
     ],
     "4": [
@@ -179,6 +186,7 @@
         "icon": "storm_ui_icon_brightwing_arcaneflare.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Brightwing|Q1",
         "abilityLinks": [
           "Brightwing|Q1"
@@ -195,6 +203,7 @@
         "icon": "storm_ui_icon_brightwing_polymorph.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Brightwing|W1",
         "abilityLinks": [
           "Brightwing|W1"
@@ -211,6 +220,7 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Brightwing|Passive",
         "abilityLinks": [
           "Brightwing|D1"
@@ -229,6 +239,7 @@
         "icon": "storm_ui_icon_brightwing_arcaneflare.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Brightwing|Q1",
         "abilityLinks": [
           "Brightwing|Q1"
@@ -245,6 +256,7 @@
         "icon": "storm_ui_icon_brightwing_hypershift.png",
         "type": "Z",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Brightwing|Z1",
         "abilityLinks": [
           "Brightwing|Z1"
@@ -261,6 +273,7 @@
         "icon": "storm_ui_icon_brightwing_soothingmist.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Brightwing|D1",
         "abilityLinks": [
           "Brightwing|D1"
@@ -280,6 +293,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 9,
+        "isQuest": false,
         "abilityId": "Brightwing|R1",
         "abilityLinks": [
           "Brightwing|R1"
@@ -297,6 +311,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Brightwing|R2",
         "abilityLinks": [
           "Brightwing|R2"
@@ -315,6 +330,7 @@
         "icon": "storm_ui_icon_brightwing_pixiedust.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Brightwing|E1",
         "abilityLinks": [
           "Brightwing|E1"
@@ -331,6 +347,7 @@
         "icon": "storm_ui_icon_brightwing_pixiedust_a.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Brightwing|E1",
         "abilityLinks": [
           "Brightwing|E1"
@@ -347,6 +364,7 @@
         "icon": "storm_ui_icon_brightwing_pixiedust_b.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Brightwing|E1",
         "abilityLinks": [
           "Brightwing|E1"
@@ -365,6 +383,7 @@
         "icon": "storm_ui_icon_brightwing_arcaneflare.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Brightwing|Q1",
         "abilityLinks": [
           "Brightwing|Q1"
@@ -381,6 +400,7 @@
         "icon": "storm_ui_icon_brightwing_polymorph.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Brightwing|W1",
         "abilityLinks": [
           "Brightwing|W1"
@@ -398,7 +418,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 20,
-        "abilityId": "Brightwing|Active"
+        "isQuest": false,
+        "abilityId": "Brightwing|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "BrightwingPhaseOut"
+        ]
       }
     ],
     "20": [
@@ -410,6 +435,7 @@
         "icon": "storm_ui_icon_brightwing_blinkheal.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Brightwing|R1",
         "abilityLinks": [
           "Brightwing|R1"
@@ -429,6 +455,7 @@
         "icon": "storm_ui_icon_brightwing_emeraldwind.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Brightwing|R2",
         "abilityLinks": [
           "Brightwing|R2"
@@ -448,6 +475,8 @@
         "icon": "storm_ui_icon_brightwing_hypershift.png",
         "type": "Z",
         "sort": 3,
+        "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Brightwing|Z1",
         "abilityLinks": [
           "Brightwing|Z1"
@@ -465,6 +494,7 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 45,
+        "isQuest": false,
         "abilityId": "Brightwing|Active",
         "abilityLinks": [
           "Brightwing|E1"

@@ -122,6 +122,7 @@
         "icon": "storm_ui_icon_orphea_q.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Orphea|Q1",
         "abilityLinks": [
           "Orphea|Q1"
@@ -155,13 +156,14 @@
         "icon": "storm_ui_icon_orphea_trait.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Orphea|D1",
         "abilityLinks": [
           "Orphea|D1"
         ],
         "abilityTalentLinkIds": [
-          "OrpheaOverflowingChaosInvasiveMiasma",
-          "OrpheaOverflowingChaos"
+          "OrpheaOverflowingChaos",
+          "OrpheaOverflowingChaosInvasiveMiasma"
         ]
       }
     ],
@@ -174,6 +176,7 @@
         "icon": "storm_ui_icon_orphea_q.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Orphea|Q1",
         "abilityLinks": [
           "Orphea|Q1"
@@ -190,6 +193,7 @@
         "icon": "storm_ui_icon_orphea_w.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Orphea|W1",
         "abilityLinks": [
           "Orphea|W1"
@@ -206,13 +210,14 @@
         "icon": "storm_ui_icon_orphea_trait.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Orphea|D1",
         "abilityLinks": [
           "Orphea|D1"
         ],
         "abilityTalentLinkIds": [
-          "OrpheaOverflowingChaosInvasiveMiasma",
-          "OrpheaOverflowingChaos"
+          "OrpheaOverflowingChaos",
+          "OrpheaOverflowingChaosInvasiveMiasma"
         ]
       }
     ],
@@ -225,6 +230,7 @@
         "icon": "storm_ui_icon_orphea_w.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Orphea|W1",
         "abilityLinks": [
           "Orphea|W1"
@@ -278,6 +284,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Orphea|R2",
         "abilityLinks": [
           "Orphea|R2"
@@ -295,6 +302,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "Orphea|R1",
         "abilityLinks": [
           "Orphea|R1"
@@ -313,6 +321,7 @@
         "icon": "storm_ui_icon_orphea_q.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Orphea|Q1",
         "abilityLinks": [
           "Orphea|Q1"
@@ -329,6 +338,7 @@
         "icon": "storm_ui_icon_orphea_w.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Orphea|W1",
         "abilityLinks": [
           "Orphea|W1"
@@ -346,6 +356,7 @@
         "type": "Trait",
         "sort": 3,
         "cooldown": 10,
+        "isQuest": false,
         "abilityId": "Orphea|Trait",
         "abilityLinks": [
           "Orphea|Trait"
@@ -364,6 +375,7 @@
         "icon": "storm_ui_icon_orphea_q.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Orphea|Q1",
         "abilityLinks": [
           "Orphea|Q1"
@@ -380,13 +392,14 @@
         "icon": "storm_ui_icon_orphea_trait.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Orphea|D1",
         "abilityLinks": [
           "Orphea|D1"
         ],
         "abilityTalentLinkIds": [
-          "OrpheaOverflowingChaosInvasiveMiasma",
-          "OrpheaOverflowingChaos"
+          "OrpheaOverflowingChaos",
+          "OrpheaOverflowingChaosInvasiveMiasma"
         ]
       },
       {
@@ -398,6 +411,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 10,
+        "isQuest": false,
         "abilityId": "Orphea|Active",
         "abilityLinks": [
           "Orphea|E1"
@@ -416,6 +430,7 @@
         "icon": "storm_ui_icon_orphea_ult_darkfall.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Orphea|R2",
         "abilityLinks": [
           "Orphea|R2"
@@ -435,6 +450,7 @@
         "icon": "storm_ui_icon_orphea_ult_thrasher.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Orphea|R1",
         "abilityLinks": [
           "Orphea|R1"
@@ -454,13 +470,14 @@
         "icon": "storm_ui_icon_orphea_trait.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Orphea|D1",
         "abilityLinks": [
           "Orphea|D1"
         ],
         "abilityTalentLinkIds": [
-          "OrpheaOverflowingChaosInvasiveMiasma",
-          "OrpheaOverflowingChaos"
+          "OrpheaOverflowingChaos",
+          "OrpheaOverflowingChaosInvasiveMiasma"
         ]
       },
       {
@@ -472,6 +489,7 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 20,
+        "isQuest": false,
         "abilityId": "Orphea|Active",
         "abilityLinks": [
           "Orphea|Q1"

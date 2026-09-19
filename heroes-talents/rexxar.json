@@ -48,8 +48,7 @@
         "attackRange": 1.5,
         "attackSpeed": 0.8333,
         "radius": 0.9375
-      },
-      "portrait": "storm_ui_ingame_targetinfopanel_unit_hero_misha.png"
+      }
     }
   },
   "unitIds": [
@@ -140,6 +139,7 @@
         "icon": "storm_ui_icon_rexxar_spiritswoop.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Rexxar|Q1",
         "abilityLinks": [
           "Rexxar|Q1"
@@ -156,6 +156,7 @@
         "icon": "storm_ui_icon_rexxar_heremishaactive.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Rexxar|Passive"
       },
       {
@@ -167,7 +168,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 20,
-        "abilityId": "Rexxar|Active"
+        "isQuest": false,
+        "abilityId": "Rexxar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "RexxarFlare"
+        ]
       }
     ],
     "4": [
@@ -179,6 +185,7 @@
         "icon": "storm_ui_icon_rexxar_heremishaactive.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Rexxar|Passive"
       },
       {
@@ -200,6 +207,7 @@
         "icon": "storm_ui_icon_talent_block.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Rexxar|Passive"
       },
       {
@@ -210,6 +218,7 @@
         "icon": "storm_ui_icon_rexxar_stayinalive.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Rexxar|Passive"
       }
     ],
@@ -222,6 +231,7 @@
         "icon": "storm_ui_icon_rexxar_spiritswoop.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Rexxar|Q1",
         "abilityLinks": [
           "Rexxar|Q1"
@@ -238,6 +248,7 @@
         "icon": "storm_ui_icon_rexxar_spiritswoop_var1.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Rexxar|Q1",
         "abilityLinks": [
           "Rexxar|Q1"
@@ -254,13 +265,14 @@
         "icon": "storm_ui_icon_rexxar_mishacharge.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Rexxar|W1",
         "abilityLinks": [
           "Rexxar|W1"
         ],
         "abilityTalentLinkIds": [
-          "RexxarMishaChargeRedirect",
-          "RexxarMishaCharge"
+          "RexxarMishaCharge",
+          "RexxarMishaChargeRedirect"
         ]
       }
     ],
@@ -274,6 +286,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Rexxar|R2",
         "abilityLinks": [
           "Rexxar|R2"
@@ -291,6 +304,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Rexxar|R1",
         "abilityLinks": [
           "Rexxar|R1"
@@ -309,6 +323,7 @@
         "icon": "storm_ui_icon_rexxar_spiritswoop.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Rexxar|Q1",
         "abilityLinks": [
           "Rexxar|Q1"
@@ -325,13 +340,14 @@
         "icon": "storm_ui_icon_rexxar_mishacharge.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Rexxar|W1",
         "abilityLinks": [
           "Rexxar|W1"
         ],
         "abilityTalentLinkIds": [
-          "RexxarMishaChargeRedirect",
-          "RexxarMishaCharge"
+          "RexxarMishaCharge",
+          "RexxarMishaChargeRedirect"
         ]
       },
       {
@@ -342,6 +358,7 @@
         "icon": "storm_ui_icon_talent_burningrage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Rexxar|Passive"
       }
     ],
@@ -354,6 +371,7 @@
         "icon": "storm_ui_icon_rexxar_heremishaactive.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Rexxar|Passive"
       },
       {
@@ -365,7 +383,12 @@
         "type": "Active",
         "sort": 2,
         "cooldown": 20,
-        "abilityId": "Rexxar|Active"
+        "isQuest": false,
+        "abilityId": "Rexxar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "RexxarPrimalIntimidation"
+        ]
       },
       {
         "tooltipId": "RexxarFeignDeath",
@@ -376,6 +399,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 35,
+        "isQuest": false,
         "abilityId": "Rexxar|Active"
       }
     ],
@@ -388,6 +412,7 @@
         "icon": "storm_ui_icon_rexxar_bestialwrath.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Rexxar|R2",
         "abilityLinks": [
           "Rexxar|R2"
@@ -407,6 +432,7 @@
         "icon": "storm_ui_icon_rexxar_unleashtheboars.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Rexxar|R1",
         "abilityLinks": [
           "Rexxar|R1"
@@ -426,6 +452,7 @@
         "icon": "storm_ui_icon_talent_autoattack_slow.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Rexxar|Passive"
       },
       {
@@ -437,15 +464,19 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
-        "abilityId": "Rexxar|Active"
+        "isQuest": false,
+        "abilityId": "Rexxar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "RexxarHardenedSkin"
+        ]
       }
     ]
   },
   "companionUnits": [
     {
       "unitId": "RexxarMisha",
-      "name": "Misha",
-      "icon": "storm_ui_ingame_targetinfopanel_unit_hero_misha.png",
+      "name": "RexxarMisha",
       "stats": {
         "hp": 1520,
         "hpRegen": 3.1718,
@@ -464,7 +495,7 @@
           "name": "Misha, Charge!",
           "hotkey": "W",
           "icon": "storm_ui_icon_rexxar_mishacharge.png",
-          "description": "Misha charges in a line, dealing <c val=\"bfd4fd\">150~~0.04~~</c> damage and stunning enemies for <c val=\"bfd4fd\">1.25</c> seconds.",
+          "description": "Misha charges in a line, dealing 150 damage and stunning enemies for 1.25 seconds.",
           "tooltipId": "RexxarMishaChargeRedirect"
         }
       ]

@@ -32,7 +32,7 @@
     "resourceRegen": 3,
     "attackDamage": 261,
     "attackDamageScale": 0.04,
-    "attackRange": 1.5,
+    "attackRange": 5.5,
     "attackSpeed": 0.6667,
     "radius": 0.6875
   },
@@ -142,6 +142,7 @@
         "icon": "storm_ui_icon_stukov_lurkingarm.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Stukov|E1",
         "abilityLinks": [
           "Stukov|E1"
@@ -159,6 +160,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 75,
+        "isQuest": false,
         "abilityId": "Stukov|Active",
         "abilityLinks": [
           "Stukov|W1"
@@ -177,6 +179,7 @@
         "icon": "storm_ui_icon_stukov_healingpathogen.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Stukov|Q1",
         "abilityLinks": [
           "Stukov|Q1"
@@ -193,6 +196,7 @@
         "icon": "storm_ui_icon_stukov_healingpathogen_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Stukov|Q1",
         "abilityLinks": [
           "Stukov|Q1"
@@ -209,6 +213,7 @@
         "icon": "storm_ui_icon_stukov_bio-killswitch.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Stukov|D1",
         "abilityLinks": [
           "Stukov|D1"
@@ -227,6 +232,7 @@
         "icon": "storm_ui_icon_stukov_weightedpustule.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Stukov|W1",
         "abilityLinks": [
           "Stukov|W1"
@@ -243,6 +249,7 @@
         "icon": "storm_ui_icon_stukov_lurkingarm.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Stukov|E1",
         "abilityLinks": [
           "Stukov|E1"
@@ -259,6 +266,7 @@
         "icon": "storm_ui_icon_stukov_bio-killswitch.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Stukov|D1",
         "abilityLinks": [
           "Stukov|D1"
@@ -278,6 +286,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Stukov|R2",
         "abilityLinks": [
           "Stukov|R2"
@@ -295,6 +304,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 20,
+        "isQuest": false,
         "abilityId": "Stukov|R1",
         "abilityLinks": [
           "Stukov|R1"
@@ -313,6 +323,7 @@
         "icon": "storm_ui_icon_stukov_lurkingarm.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Stukov|E1",
         "abilityLinks": [
           "Stukov|E1"
@@ -329,6 +340,7 @@
         "icon": "storm_ui_icon_stukov_lurkingarm_a.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Stukov|E1",
         "abilityLinks": [
           "Stukov|E1"
@@ -345,6 +357,7 @@
         "icon": "storm_ui_icon_stukov_bio-killswitch.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Stukov|D1",
         "abilityLinks": [
           "Stukov|D1"
@@ -363,6 +376,7 @@
         "icon": "storm_ui_icon_stukov_healingpathogen.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Stukov|Q1",
         "abilityLinks": [
           "Stukov|Q1"
@@ -379,6 +393,7 @@
         "icon": "storm_ui_icon_stukov_healingpathogen_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Stukov|Q1",
         "abilityLinks": [
           "Stukov|Q1"
@@ -395,6 +410,7 @@
         "icon": "storm_ui_icon_stukov_bio-killswitch.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Stukov|D1",
         "abilityLinks": [
           "Stukov|D1"
@@ -413,6 +429,7 @@
         "icon": "storm_ui_icon_stukov_flailingswipe.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Stukov|R2",
         "abilityLinks": [
           "Stukov|R2"
@@ -432,6 +449,7 @@
         "icon": "storm_ui_icon_stukov_massiveshove.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Stukov|R1",
         "abilityLinks": [
           "Stukov|R1"
@@ -451,6 +469,7 @@
         "icon": "storm_ui_icon_stukov_healingpathogen.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Stukov|Q1",
         "abilityLinks": [
           "Stukov|Q1"
@@ -467,6 +486,7 @@
         "icon": "storm_ui_icon_stukov_bio-killswitch.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Stukov|D1",
         "abilityLinks": [
           "Stukov|D1"

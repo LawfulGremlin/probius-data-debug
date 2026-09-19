@@ -138,6 +138,7 @@
         "icon": "storm_ui_icon_zeratul_cleave.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zeratul|Q1",
         "abilityLinks": [
           "Zeratul|Q1"
@@ -171,6 +172,7 @@
         "icon": "storm_ui_icon_zeratul_cloak.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zeratul|D1",
         "abilityLinks": [
           "Zeratul|D1"
@@ -189,6 +191,7 @@
         "icon": "storm_ui_icon_zeratul_cleave.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zeratul|Q1",
         "abilityLinks": [
           "Zeratul|Q1"
@@ -205,6 +208,7 @@
         "icon": "storm_ui_icon_talent_abilitytalent_damage.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zeratul|Passive"
       },
       {
@@ -216,7 +220,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Zeratul|Active"
+        "isQuest": false,
+        "abilityId": "Zeratul|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ZeratulDarknessDescendsActive"
+        ]
       }
     ],
     "7": [
@@ -228,6 +237,7 @@
         "icon": "storm_ui_icon_zeratul_blink.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zeratul|E1",
         "abilityLinks": [
           "Zeratul|E1"
@@ -244,6 +254,7 @@
         "icon": "storm_ui_icon_zeratul_singularityspike.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zeratul|W1",
         "abilityLinks": [
           "Zeratul|W1"
@@ -260,6 +271,7 @@
         "icon": "storm_ui_icon_zeratul_vorpalblade.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zeratul|Passive",
         "abilityLinks": [
           "Zeratul|11"
@@ -278,6 +290,8 @@
         "icon": "storm_ui_icon_zeratul_mightofnerazim.png",
         "type": "Heroic",
         "sort": 1,
+        "cooldown": 20,
+        "isQuest": false,
         "abilityId": "Zeratul|R1",
         "abilityLinks": [
           "Zeratul|R1"
@@ -295,6 +309,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Zeratul|R2",
         "abilityLinks": [
           "Zeratul|R2"
@@ -313,6 +328,7 @@
         "icon": "storm_ui_icon_zeratul_cloak.png",
         "type": "Trait",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zeratul|D1",
         "abilityLinks": [
           "Zeratul|D1"
@@ -329,6 +345,7 @@
         "icon": "storm_ui_icon_talent_autoattack_heal.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zeratul|Passive"
       },
       {
@@ -339,6 +356,7 @@
         "icon": "storm_ui_icon_talent_spellshield.png",
         "type": "Active",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zeratul|Active"
       }
     ],
@@ -351,6 +369,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zeratul|Passive",
         "abilityLinks": [
           "Zeratul|D1"
@@ -367,6 +386,7 @@
         "icon": "storm_ui_icon_zeratul_cleave.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zeratul|Q1",
         "abilityLinks": [
           "Zeratul|Q1"
@@ -383,6 +403,7 @@
         "icon": "storm_ui_icon_zeratul_singularityspike.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zeratul|W1",
         "abilityLinks": [
           "Zeratul|W1"
@@ -401,13 +422,13 @@
         "icon": "storm_ui_icon_zeratul_mightofnerazim.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zeratul|R1",
         "abilityLinks": [
           "Zeratul|R1"
         ],
         "abilityTalentLinkIds": [
-          "ZeratulMightOfTheNerazimDummy",
-          "ZeratulMightOfTheNerazim"
+          "ZeratulMightOfTheNerazimDummy"
         ],
         "prerequisiteTalentIds": [
           "ZeratulMightOfTheNerazim"
@@ -421,6 +442,7 @@
         "icon": "storm_ui_icon_zeratul_singularityspike.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zeratul|W1",
         "abilityLinks": [
           "Zeratul|W1"
@@ -437,6 +459,7 @@
         "icon": "storm_ui_icon_zeratul_vorpalblade.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zeratul|Passive",
         "abilityLinks": [
           "Zeratul|11"
@@ -453,6 +476,7 @@
         "icon": "storm_ui_icon_talent_abilitytalent_heal.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Zeratul|Passive"
       }
     ]

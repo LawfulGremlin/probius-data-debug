@@ -126,6 +126,7 @@
         "icon": "storm_ui_icon_genji_swiftstrike.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Genji|E1",
         "abilityLinks": [
           "Genji|E1"
@@ -142,6 +143,7 @@
         "icon": "storm_ui_icon_genji_cyberagility.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Genji|D1",
         "abilityLinks": [
           "Genji|D1"
@@ -158,6 +160,7 @@
         "icon": "storm_ui_icon_genji_cyberagility_a.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Genji|D1",
         "abilityLinks": [
           "Genji|D1"
@@ -193,6 +196,7 @@
         "icon": "storm_ui_icon_genji_swiftstrike.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Genji|E1",
         "abilityLinks": [
           "Genji|E1"
@@ -209,6 +213,7 @@
         "icon": "storm_ui_icon_genji_shurikens_dragonsoul.png",
         "type": "Active",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Genji|Active",
         "abilityLinks": [
           "Genji|W1"
@@ -227,6 +232,7 @@
         "icon": "storm_ui_icon_genji_deflect.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Genji|W1",
         "abilityLinks": [
           "Genji|W1"
@@ -243,6 +249,7 @@
         "icon": "storm_ui_icon_genji_deflect_a.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Genji|W1",
         "abilityLinks": [
           "Genji|W1"
@@ -259,6 +266,7 @@
         "icon": "storm_ui_icon_genji_cyberagility.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Genji|D1",
         "abilityLinks": [
           "Genji|D1"
@@ -278,6 +286,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Genji|R1",
         "abilityLinks": [
           "Genji|R1"
@@ -295,6 +304,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 75,
+        "isQuest": false,
         "abilityId": "Genji|R2",
         "abilityLinks": [
           "Genji|R2"
@@ -313,6 +323,7 @@
         "icon": "storm_ui_icon_genji_shurikens.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Genji|Q1",
         "abilityLinks": [
           "Genji|Q1"
@@ -329,6 +340,7 @@
         "icon": "storm_ui_icon_genji_swiftstrike.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Genji|E1",
         "abilityLinks": [
           "Genji|E1"
@@ -345,6 +357,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Genji|Passive",
         "abilityLinks": [
           "Genji|D1"
@@ -363,6 +376,7 @@
         "icon": "storm_ui_icon_genji_deflect.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Genji|W1",
         "abilityLinks": [
           "Genji|W1"
@@ -379,6 +393,7 @@
         "icon": "storm_ui_icon_genji_swiftstrike.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Genji|E1",
         "abilityLinks": [
           "Genji|E1"
@@ -395,6 +410,7 @@
         "icon": "storm_ui_icon_genji_swiftstrike_a.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Genji|E1",
         "abilityLinks": [
           "Genji|E1"
@@ -413,13 +429,15 @@
         "icon": "storm_ui_icon_genji_dragonblade.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Genji|R1",
         "abilityLinks": [
           "Genji|R1"
         ],
         "abilityTalentLinkIds": [
           "GenjiDragonbladeAttack",
-          "GenjiDragonblade"
+          "GenjiDragonblade",
+          "GenjiDragonbladeAttack"
         ],
         "prerequisiteTalentIds": [
           "GenjiHeroicDragonblade"
@@ -433,6 +451,7 @@
         "icon": "storm_ui_icon_genji_shurikens_xblade.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Genji|R2",
         "abilityLinks": [
           "Genji|R2"
@@ -452,6 +471,7 @@
         "icon": "storm_ui_icon_genji_shurikens.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Genji|Q1",
         "abilityLinks": [
           "Genji|Q1"

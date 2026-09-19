@@ -23,7 +23,8 @@
     "hp": 1,
     "hpRegen": 0,
     "hpScale": 0,
-    "hpRegenScale": 0
+    "hpRegenScale": 0,
+    "radius": 0
   },
   "abilities": {
     "Gall": [
@@ -127,6 +128,7 @@
         "icon": "storm_ui_icon_gall_shove.png",
         "type": "Z",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gall|Z1",
         "abilityLinks": [
           "Gall|Z1"
@@ -143,6 +145,7 @@
         "icon": "storm_ui_icon_gall_shove_a.png",
         "type": "Z",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Gall|Z1",
         "abilityLinks": [
           "Gall|Z1"
@@ -159,6 +162,7 @@
         "icon": "storm_ui_icon_gall_eyeofkilrogg.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Gall|Passive",
         "abilityLinks": [
           "Gall|11"
@@ -177,6 +181,7 @@
         "icon": "storm_ui_icon_gall_chaoscollision.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gall|W1",
         "abilityLinks": [
           "Gall|W1"
@@ -193,6 +198,7 @@
         "icon": "storm_ui_icon_gall_detonaterunes.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Gall|E1",
         "abilityLinks": [
           "Gall|E1"
@@ -228,6 +234,7 @@
         "icon": "storm_ui_icon_gall_shadowflame.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gall|Q1",
         "abilityLinks": [
           "Gall|Q1"
@@ -261,13 +268,14 @@
         "icon": "storm_ui_icon_gall_ogrerage.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Gall|D1",
         "abilityLinks": [
           "Gall|D1"
         ],
         "abilityTalentLinkIds": [
-          "GallOgreRage",
-          "GallOgreRagePassive"
+          "GallOgreRagePassive",
+          "GallOgreRage"
         ]
       }
     ],
@@ -281,6 +289,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Gall|R2",
         "abilityLinks": [
           "Gall|R2"
@@ -298,6 +307,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Gall|R1",
         "abilityLinks": [
           "Gall|R1"
@@ -316,6 +326,7 @@
         "icon": "storm_ui_icon_gall_shadowflame.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gall|Q1",
         "abilityLinks": [
           "Gall|Q1"
@@ -332,13 +343,14 @@
         "icon": "storm_ui_icon_gall_psychoticbreak.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Gall|Passive",
         "abilityLinks": [
           "Gall|D1"
         ],
         "abilityTalentLinkIds": [
-          "GallOgreRage",
-          "GallOgreRagePassive"
+          "GallOgreRagePassive",
+          "GallOgreRage"
         ]
       },
       {
@@ -349,6 +361,7 @@
         "icon": "storm_ui_icon_gall_chaoscollision_var1.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Gall|W1",
         "abilityLinks": [
           "Gall|W1"
@@ -367,6 +380,7 @@
         "icon": "storm_ui_icon_gall_chaoscollision.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gall|W1",
         "abilityLinks": [
           "Gall|W1"
@@ -383,6 +397,7 @@
         "icon": "storm_ui_icon_gall_detonaterunes.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Gall|E1",
         "abilityLinks": [
           "Gall|E1"
@@ -399,13 +414,14 @@
         "icon": "storm_ui_icon_gall_twoheaded.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Gall|Passive",
         "abilityLinks": [
           "Gall|D1"
         ],
         "abilityTalentLinkIds": [
-          "GallOgreRage",
-          "GallOgreRagePassive"
+          "GallOgreRagePassive",
+          "GallOgreRage"
         ]
       }
     ],
@@ -418,6 +434,7 @@
         "icon": "storm_ui_icon_gall_shadowboltvolley.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Gall|R2",
         "abilityLinks": [
           "Gall|R2"
@@ -437,13 +454,15 @@
         "icon": "storm_ui_icon_gall_twistingnether_a.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Gall|R1",
         "abilityLinks": [
           "Gall|R1"
         ],
         "abilityTalentLinkIds": [
-          "GallTwistingNetherActivated",
-          "GallTwistingNether"
+          "GallShiftingNether",
+          "GallTwistingNether",
+          "GallTwistingNetherActivated"
         ],
         "prerequisiteTalentIds": [
           "GallHeroicAbilityTwistingNether"
@@ -463,8 +482,8 @@
           "Gall|D1"
         ],
         "abilityTalentLinkIds": [
-          "GallOgreRage",
-          "GallOgreRagePassive"
+          "GallOgreRagePassive",
+          "GallOgreRage"
         ]
       },
       {
@@ -476,7 +495,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 30,
-        "abilityId": "Gall|Active"
+        "isQuest": false,
+        "abilityId": "Gall|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "GallTwilightFrenzy"
+        ]
       }
     ]
   },

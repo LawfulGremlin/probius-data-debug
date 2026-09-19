@@ -26,7 +26,7 @@
   ],
   "stats": {
     "hp": 2517,
-    "hpRegen": 5.24375,
+    "hpRegen": 5.2438,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -103,7 +103,7 @@
       {
         "uid": "ffd447",
         "name": "Archangel's Wrath",
-        "description": "Upon dying, become Invulnerable and gain 20% Movement Speed for 4 seconds. Upon expiration, explode, dealing 450 (+4% per level) damage and reducing Tyrael's death timer by 10% per enemy Hero hit. Archangel's Wrath reduces nearby enemy Heroes' damage by  50% while active and for  3 seconds when it expires.",
+        "description": "Upon dying, become Invulnerable and gain 20% Movement Speed for 4 seconds. Upon expiration, explode, dealing 450 (+4% per level) damage and reducing Tyrael's death timer by 10% per enemy Hero hit.  Archangel's Wrath reduces nearby enemy Heroes' damage by 50% while active and for 3 seconds when it expires.",
         "trait": true,
         "abilityId": "Tyrael|D1",
         "tooltipId": "TyraelArchangelsWrath",
@@ -122,6 +122,7 @@
         "icon": "storm_ui_icon_tyrael_righteousness.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tyrael|W1",
         "abilityLinks": [
           "Tyrael|W1"
@@ -138,6 +139,7 @@
         "icon": "storm_ui_icon_tyrael_righteousness_var1.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrael|W1",
         "abilityLinks": [
           "Tyrael|W1"
@@ -167,6 +169,7 @@
         "icon": "storm_ui_icon_tyrael_eldruinsmight_a.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tyrael|Q1",
         "abilityLinks": [
           "Tyrael|Q1"
@@ -184,6 +187,7 @@
         "icon": "storm_ui_icon_tyrael_righteousness.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrael|W1",
         "abilityLinks": [
           "Tyrael|W1"
@@ -200,6 +204,7 @@
         "icon": "storm_ui_icon_tyrael_smite.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tyrael|E1",
         "abilityLinks": [
           "Tyrael|E1"
@@ -218,6 +223,7 @@
         "icon": "storm_ui_icon_talent_burningrage.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tyrael|Q1",
         "abilityLinks": [
           "Tyrael|Q1"
@@ -235,6 +241,7 @@
         "icon": "storm_ui_icon_tyrael_smite.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrael|E1",
         "abilityLinks": [
           "Tyrael|E1"
@@ -251,6 +258,7 @@
         "icon": "storm_ui_icon_tyrael_smite_a.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tyrael|E1",
         "abilityLinks": [
           "Tyrael|E1"
@@ -270,6 +278,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "Tyrael|R1",
         "abilityLinks": [
           "Tyrael|R1"
@@ -287,6 +296,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 85,
+        "isQuest": false,
         "abilityId": "Tyrael|R2",
         "abilityLinks": [
           "Tyrael|R2"
@@ -305,6 +315,7 @@
         "icon": "storm_ui_icon_tyrael_eldruinsmight_a.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tyrael|Q1",
         "abilityLinks": [
           "Tyrael|Q1"
@@ -322,6 +333,7 @@
         "icon": "storm_ui_icon_tyrael_eldruinsmight_b.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrael|Q1",
         "abilityLinks": [
           "Tyrael|Q1"
@@ -339,6 +351,7 @@
         "icon": "storm_ui_icon_tyrael_zealous_conviction.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tyrael|Passive",
         "abilityLinks": [
           "Tyrael|E1",
@@ -359,6 +372,7 @@
         "icon": "storm_ui_icon_tyrael_eldruinsmight_a.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tyrael|Q1",
         "abilityLinks": [
           "Tyrael|Q1"
@@ -376,6 +390,7 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrael|Q1",
         "abilityLinks": [
           "Tyrael|Q1"
@@ -393,6 +408,7 @@
         "icon": "storm_ui_icon_tyrael_smite.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tyrael|E1",
         "abilityLinks": [
           "Tyrael|E1"
@@ -411,6 +427,7 @@
         "icon": "storm_ui_icon_tyrael_judgement.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tyrael|R1",
         "abilityLinks": [
           "Tyrael|R1"
@@ -430,6 +447,7 @@
         "icon": "storm_ui_icon_tyrael_sanctification.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrael|R2",
         "abilityLinks": [
           "Tyrael|R2"
@@ -449,6 +467,7 @@
         "icon": "storm_ui_icon_talent_autoattack_speed.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tyrael|Passive"
       },
       {
@@ -460,7 +479,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
-        "abilityId": "Tyrael|Active"
+        "isQuest": false,
+        "abilityId": "Tyrael|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TyraelDefenseOfTheAngels"
+        ]
       },
       {
         "tooltipId": "TyraelAspectofJusticeTalent",
@@ -471,12 +495,14 @@
         "type": "Trait",
         "sort": 5,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Tyrael|D1",
         "abilityLinks": [
           "Tyrael|D1"
         ],
         "abilityTalentLinkIds": [
-          "TyraelArchangelsWrathDummy"
+          "TyraelArchangelsWrathDummy",
+          "TyraelAspectofJustice"
         ]
       }
     ]

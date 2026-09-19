@@ -101,6 +101,17 @@
     ],
     "FenixPhaseBomb": [
       {
+        "uid": "41f8ae",
+        "name": "Divert Power: Weapons",
+        "description": "Activate to gain 40% Basic Attack damage for 5 seconds. Basic Attacking a Hero refreshes this duration. Once Divert Power: Weapons ends, drain all of Shield Capacitor's Shields.",
+        "hotkey": "1",
+        "abilityId": "Fenix|11",
+        "tooltipId": "FenixDivertPowerWeapons",
+        "cooldown": 40,
+        "icon": "storm_ui_icon_fenix_w_2.png",
+        "type": "activable"
+      },
+      {
         "uid": "657fba",
         "name": "Weapon Mode: Phase Bomb",
         "description": "Basic Attacks have 1.25 increased range, deal 25% more damage, and splash to nearby enemies.  Activate to change to Weapon Mode: Repeater Cannon, increasing Basic Attack speed.",
@@ -109,6 +120,28 @@
         "tooltipId": "FenixRepeaterCannon",
         "icon": "storm_ui_icon_fenix_w_1.png",
         "type": "basic"
+      },
+      {
+        "uid": "c04773",
+        "name": "Shield Capacitor",
+        "description": "Fenix has a permanent 760 (+4% per level) Shield which regenerates at 10% per second after not taking damage for 5 seconds.",
+        "hotkey": "D",
+        "trait": true,
+        "abilityId": "Fenix|D2",
+        "tooltipId": "FenixShieldCapacitor",
+        "cooldown": 5,
+        "icon": "storm_ui_icon_fenix_shield_1.png",
+        "type": "trait"
+      },
+      {
+        "uid": "bccb4f",
+        "name": "Unconquered Spirit",
+        "description": "Upon taking fatal damage, Shield Capacitor regains 800 (+4% per level) Shields. This effect has a 120 second cooldown.",
+        "abilityId": "Fenix|12",
+        "tooltipId": "FenixUnconqueredSpirit",
+        "cooldown": 120,
+        "icon": "storm_ui_icon_fenix_shield_1.png",
+        "type": "activable"
       }
     ]
   },
@@ -139,14 +172,15 @@
         "icon": "storm_ui_icon_fenix_w_1.png",
         "type": "W",
         "sort": 2,
-        "abilityId": "Fenix|W2",
+        "isQuest": false,
+        "abilityId": "Fenix|W1",
         "abilityLinks": [
           "Fenix|W1",
           "Fenix|W2"
         ],
         "abilityTalentLinkIds": [
-          "FenixRepeaterCannon",
-          "FenixPhaseBomb"
+          "FenixPhaseBomb",
+          "FenixRepeaterCannon"
         ]
       },
       {
@@ -157,14 +191,15 @@
         "icon": "storm_ui_icon_fenix_w_2.png",
         "type": "W",
         "sort": 3,
-        "abilityId": "Fenix|W2",
+        "isQuest": false,
+        "abilityId": "Fenix|W1",
         "abilityLinks": [
           "Fenix|W1",
           "Fenix|W2"
         ],
         "abilityTalentLinkIds": [
-          "FenixRepeaterCannon",
-          "FenixPhaseBomb"
+          "FenixPhaseBomb",
+          "FenixRepeaterCannon"
         ]
       }
     ],
@@ -177,6 +212,7 @@
         "icon": "storm_ui_icon_fenix_w_2.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Fenix|W1",
         "abilityLinks": [
           "Fenix|W1"
@@ -193,6 +229,7 @@
         "icon": "storm_ui_icon_fenix_w_1.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Fenix|W2",
         "abilityLinks": [
           "Fenix|W2"
@@ -209,12 +246,15 @@
         "icon": "storm_ui_icon_fenix_shield_1.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Fenix|D1",
         "abilityLinks": [
-          "Fenix|D1"
+          "Fenix|D1",
+          "Fenix|D2"
         ],
         "abilityTalentLinkIds": [
-          "FenixShieldCapacitor"
+          "FenixShieldCapacitor",
+          "FenixShieldCapacitorVisual"
         ]
       }
     ],
@@ -227,6 +267,7 @@
         "icon": "storm_ui_icon_fenix_q.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Fenix|Q1",
         "abilityLinks": [
           "Fenix|Q1"
@@ -243,6 +284,7 @@
         "icon": "storm_ui_icon_fenix_teleport.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Fenix|E1",
         "abilityLinks": [
           "Fenix|E1"
@@ -260,12 +302,15 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 40,
+        "isQuest": false,
         "abilityId": "Fenix|Active",
         "abilityLinks": [
-          "Fenix|D1"
+          "Fenix|D1",
+          "Fenix|D2"
         ],
         "abilityTalentLinkIds": [
-          "FenixShieldCapacitor"
+          "FenixShieldCapacitor",
+          "FenixShieldCapacitorVisual"
         ]
       }
     ],
@@ -279,6 +324,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Fenix|R2",
         "abilityLinks": [
           "Fenix|R2"
@@ -296,6 +342,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Fenix|R1",
         "abilityLinks": [
           "Fenix|R1"
@@ -314,6 +361,7 @@
         "icon": "storm_ui_icon_fenix_teleport.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Fenix|E1",
         "abilityLinks": [
           "Fenix|E1"
@@ -330,12 +378,15 @@
         "icon": "storm_ui_icon_fenix_shield_1.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Fenix|D1",
         "abilityLinks": [
-          "Fenix|D1"
+          "Fenix|D1",
+          "Fenix|D2"
         ],
         "abilityTalentLinkIds": [
-          "FenixShieldCapacitor"
+          "FenixShieldCapacitor",
+          "FenixShieldCapacitorVisual"
         ]
       },
       {
@@ -346,12 +397,15 @@
         "icon": "storm_ui_icon_fenix_shield_3.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Fenix|D1",
         "abilityLinks": [
-          "Fenix|D1"
+          "Fenix|D1",
+          "Fenix|D2"
         ],
         "abilityTalentLinkIds": [
-          "FenixShieldCapacitor"
+          "FenixShieldCapacitor",
+          "FenixShieldCapacitorVisual"
         ]
       },
       {
@@ -362,12 +416,15 @@
         "icon": "storm_ui_icon_fenix_shield_2.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Fenix|D1",
         "abilityLinks": [
-          "Fenix|D1"
+          "Fenix|D1",
+          "Fenix|D2"
         ],
         "abilityTalentLinkIds": [
-          "FenixShieldCapacitor"
+          "FenixShieldCapacitor",
+          "FenixShieldCapacitorVisual"
         ]
       }
     ],
@@ -380,6 +437,7 @@
         "icon": "storm_ui_icon_fenix_w_2.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Fenix|W1",
         "abilityLinks": [
           "Fenix|W1"
@@ -396,12 +454,15 @@
         "icon": "storm_ui_icon_fenix_shield_1.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Fenix|D1",
         "abilityLinks": [
-          "Fenix|D1"
+          "Fenix|D1",
+          "Fenix|D2"
         ],
         "abilityTalentLinkIds": [
-          "FenixShieldCapacitor"
+          "FenixShieldCapacitor",
+          "FenixShieldCapacitorVisual"
         ]
       },
       {
@@ -412,14 +473,15 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Fenix|Passive",
         "abilityLinks": [
           "Fenix|W1",
           "Fenix|W2"
         ],
         "abilityTalentLinkIds": [
-          "FenixRepeaterCannon",
-          "FenixPhaseBomb"
+          "FenixPhaseBomb",
+          "FenixRepeaterCannon"
         ]
       }
     ],
@@ -432,6 +494,7 @@
         "icon": "storm_ui_icon_fenix_r_planet_cracker.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Fenix|R1",
         "abilityLinks": [
           "Fenix|R1"
@@ -451,6 +514,7 @@
         "icon": "storm_ui_icon_fenix_q.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Fenix|Q1",
         "abilityLinks": [
           "Fenix|Q1"
@@ -467,14 +531,15 @@
         "icon": "storm_ui_icon_fenix_w_2.png",
         "type": "W",
         "sort": 3,
-        "abilityId": "Fenix|W2",
+        "isQuest": false,
+        "abilityId": "Fenix|W1",
         "abilityLinks": [
           "Fenix|W1",
           "Fenix|W2"
         ],
         "abilityTalentLinkIds": [
-          "FenixRepeaterCannon",
-          "FenixPhaseBomb"
+          "FenixPhaseBomb",
+          "FenixRepeaterCannon"
         ]
       },
       {
@@ -485,12 +550,16 @@
         "icon": "storm_ui_icon_fenix_shield_1.png",
         "type": "Passive",
         "sort": 4,
+        "cooldown": 120,
+        "isQuest": false,
         "abilityId": "Fenix|Passive",
         "abilityLinks": [
-          "Fenix|D1"
+          "Fenix|D1",
+          "Fenix|D2"
         ],
         "abilityTalentLinkIds": [
-          "FenixShieldCapacitor"
+          "FenixShieldCapacitor",
+          "FenixShieldCapacitorVisual"
         ]
       }
     ]

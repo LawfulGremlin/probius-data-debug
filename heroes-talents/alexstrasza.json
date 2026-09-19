@@ -23,7 +23,7 @@
   ],
   "stats": {
     "hp": 1698,
-    "hpRegen": 8.84375,
+    "hpRegen": 8.8438,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -39,23 +39,20 @@
     "AlexstraszaDragon": {
       "stats": {
         "hp": 1698,
-        "hpRegen": 8.84375,
+        "hpRegen": 8.8438,
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "resource": 500,
+        "resourceType": "Mana",
         "resourceRegen": 3,
         "attackDamage": 143,
         "attackDamageScale": 0.04,
         "attackRange": 9,
         "attackSpeed": 0.8,
         "radius": 1.25
-      },
-      "portrait": "storm_ui_ingame_partyframe_alexstrasza.png"
+      }
     }
   },
-  "unitIds": [
-    "AlexstraszaLifeblossomGiftOfLife"
-  ],
   "abilities": {
     "Alexstrasza": [
       {
@@ -132,6 +129,51 @@
     ],
     "AlexstraszaDragon": [
       {
+        "uid": "60a035",
+        "name": "Cleansing Flame",
+        "description": "Take to the sky and drop 5 fireballs over 6 seconds at the position of the mouse cursor. Fireballs deal 135 (+4% per level) damage to enemies and heal allied Heroes for 300 (+4% per level) Health.  2 seconds after dropping all fireballs, Alexstrasza lands at the position of the mouse cursor.",
+        "hotkey": "R",
+        "abilityId": "Alexstrasza|R3",
+        "tooltipId": "AlexstraszaCleansingFlameDragonqueen",
+        "cooldown": 100,
+        "manaCost": 100,
+        "icon": "storm_ui_icon_alexstrasza_cleansing_flame.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "fed633",
+        "name": "Life Unbound",
+        "description": "Activate to heal an allied Hero for 15% of their maximum Health and deal 200 (+4% per level) damage to nearby enemies.  Healing a Stunned, Rooted, or Silenced ally reduces Life Unbound's cooldown by 30 seconds.  Cannot be used on Alexstrasza.",
+        "hotkey": "1",
+        "abilityId": "Alexstrasza|11",
+        "tooltipId": "AlexstraszaLifeUnbound",
+        "cooldown": 90,
+        "icon": "storm_ui_icon_alexstrasza_life_unbound.png",
+        "type": "activable"
+      },
+      {
+        "uid": "5cbe62",
+        "name": "Pacify",
+        "description": "Activate to Slow and reduce an enemy Hero's damage by 50% for 3 seconds.  Healing a Stunned, Rooted, or Silenced ally reduces Pacify's cooldown by 30 seconds.",
+        "hotkey": "2",
+        "abilityId": "Alexstrasza|21",
+        "tooltipId": "AlexstraszaPacify",
+        "cooldown": 60,
+        "icon": "storm_ui_icon_alexstrasza_pacify.png",
+        "type": "activable"
+      },
+      {
+        "uid": "85e240",
+        "name": "Blessing of the Red",
+        "description": "Activate to grant an allied Hero 500 bonus maximum Health until they die.  Cannot be used on Alexstrasza, or on a Hero who already has Blessing of the Red.",
+        "hotkey": "3",
+        "abilityId": "Alexstrasza|31",
+        "tooltipId": "AlexstraszaBlessingOfTheRed",
+        "cooldown": 40,
+        "icon": "storm_ui_icon_alexstrasza_blessing_of_the_red.png",
+        "type": "activable"
+      },
+      {
         "uid": "8a1ec5",
         "name": "Breath of Life",
         "description": "Heal an allied Hero for 15% of Alexstrasza's current Health.  Breath of Life is also empowered by Gift of Life Talents.",
@@ -175,16 +217,14 @@
         "type": "trait"
       },
       {
-        "uid": "60a035",
-        "name": "Cleansing Flame",
-        "description": "Take to the sky and drop 5 fireballs over 6 seconds at the position of the mouse cursor. Fireballs deal 135 (+4% per level) damage to enemies and heal allied Heroes for 300 (+4% per level) Health.  2 seconds after dropping all fireballs, Alexstrasza lands at the position of the mouse cursor.",
-        "hotkey": "R",
-        "abilityId": "Alexstrasza|R4",
-        "tooltipId": "AlexstraszaCleansingFlameDragonqueen",
-        "cooldown": 100,
-        "manaCost": 100,
-        "icon": "storm_ui_icon_alexstrasza_cleansing_flame.png",
-        "type": "heroic"
+        "uid": "c2f8ab",
+        "name": "Dragon Scales",
+        "description": "Gain 50 Armor while Stunned, Rooted, or Silenced, and for 2 seconds after. Can only trigger once every 10 seconds.",
+        "abilityId": "Alexstrasza|22",
+        "tooltipId": "AlexstraszaDragonScales",
+        "cooldown": 10,
+        "icon": "storm_ui_icon_alexstrasza_dragon_scales.png",
+        "type": "activable"
       }
     ]
   },
@@ -198,14 +238,15 @@
         "icon": "storm_ui_icon_alexstrasza_gift_of_life.png",
         "type": "Q",
         "sort": 1,
-        "abilityId": "Alexstrasza|Q1",
+        "isQuest": false,
+        "abilityId": "Alexstrasza|Q2",
         "abilityLinks": [
           "Alexstrasza|Q1",
           "Alexstrasza|Q2"
         ],
         "abilityTalentLinkIds": [
-          "AlexstraszaGiftOfLife",
-          "AlexstraszaBreathOfLife"
+          "AlexstraszaBreathOfLife",
+          "AlexstraszaGiftOfLife"
         ]
       },
       {
@@ -254,6 +295,7 @@
         "icon": "storm_ui_icon_alexstrasza_abundance.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Alexstrasza|W1",
         "abilityLinks": [
           "Alexstrasza|W1",
@@ -272,6 +314,7 @@
         "icon": "storm_ui_icon_alexstrasza_flame_buffet.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Alexstrasza|E1",
         "abilityLinks": [
           "Alexstrasza|E1"
@@ -288,6 +331,7 @@
         "icon": "storm_ui_icon_alexstrasza_exuberance.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Alexstrasza|Passive"
       }
     ],
@@ -300,14 +344,15 @@
         "icon": "storm_ui_icon_alexstrasza_life_blossom.png",
         "type": "Q",
         "sort": 1,
-        "abilityId": "Alexstrasza|Q1",
+        "isQuest": false,
+        "abilityId": "Alexstrasza|Q2",
         "abilityLinks": [
           "Alexstrasza|Q1",
           "Alexstrasza|Q2"
         ],
         "abilityTalentLinkIds": [
-          "AlexstraszaGiftOfLife",
-          "AlexstraszaBreathOfLife"
+          "AlexstraszaBreathOfLife",
+          "AlexstraszaGiftOfLife"
         ]
       },
       {
@@ -318,6 +363,7 @@
         "icon": "storm_ui_icon_alexstrasza_abundance.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Alexstrasza|W1",
         "abilityLinks": [
           "Alexstrasza|W1",
@@ -336,6 +382,7 @@
         "icon": "storm_ui_icon_alexstrasza_flame_buffet.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Alexstrasza|E1",
         "abilityLinks": [
           "Alexstrasza|E1"
@@ -355,13 +402,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 50,
-        "abilityId": "Alexstrasza|R1",
-        "abilityLinks": [
-          "Alexstrasza|R1"
-        ],
-        "abilityTalentLinkIds": [
-          "AlexstraszaLifebinder"
-        ]
+        "isQuest": false
       },
       {
         "tooltipId": "AlexstraszaCleansingFlame",
@@ -372,14 +413,13 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Alexstrasza|R2",
         "abilityLinks": [
-          "Alexstrasza|R2",
-          "Alexstrasza|R4"
+          "Alexstrasza|R2"
         ],
         "abilityTalentLinkIds": [
-          "AlexstraszaCleansingFlame",
-          "AlexstraszaCleansingFlameDragonqueen"
+          "AlexstraszaCleansingFlame"
         ]
       }
     ],
@@ -392,6 +432,8 @@
         "icon": "storm_ui_icon_alexstrasza_dragon_scales.png",
         "type": "Passive",
         "sort": 1,
+        "cooldown": 10,
+        "isQuest": false,
         "abilityId": "Alexstrasza|Passive"
       },
       {
@@ -403,7 +445,14 @@
         "type": "Active",
         "sort": 2,
         "cooldown": 60,
-        "abilityId": "Alexstrasza|Active"
+        "isQuest": false,
+        "abilityId": "Alexstrasza|Active",
+        "abilityLinks": [
+          "Alexstrasza|21"
+        ],
+        "abilityTalentLinkIds": [
+          "AlexstraszaPacify"
+        ]
       },
       {
         "tooltipId": "AlexstraszaLifeUnbound",
@@ -414,7 +463,14 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 90,
-        "abilityId": "Alexstrasza|Active"
+        "isQuest": false,
+        "abilityId": "Alexstrasza|Active",
+        "abilityLinks": [
+          "Alexstrasza|11"
+        ],
+        "abilityTalentLinkIds": [
+          "AlexstraszaLifeUnbound"
+        ]
       }
     ],
     "16": [
@@ -426,14 +482,15 @@
         "icon": "storm_ui_icon_alexstrasza_gift_of_life.png",
         "type": "Q",
         "sort": 1,
-        "abilityId": "Alexstrasza|Q1",
+        "isQuest": false,
+        "abilityId": "Alexstrasza|Q2",
         "abilityLinks": [
           "Alexstrasza|Q1",
           "Alexstrasza|Q2"
         ],
         "abilityTalentLinkIds": [
-          "AlexstraszaGiftOfLife",
-          "AlexstraszaBreathOfLife"
+          "AlexstraszaBreathOfLife",
+          "AlexstraszaGiftOfLife"
         ]
       },
       {
@@ -444,6 +501,7 @@
         "icon": "storm_ui_icon_alexstrasza_abundance.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Alexstrasza|W1",
         "abilityLinks": [
           "Alexstrasza|W1",
@@ -462,14 +520,15 @@
         "icon": "storm_ui_icon_alexstrasza_dragon_queen.png",
         "type": "Trait",
         "sort": 3,
-        "abilityId": "Alexstrasza|D1",
+        "isQuest": false,
+        "abilityId": "Alexstrasza|D2",
         "abilityLinks": [
           "Alexstrasza|D1",
           "Alexstrasza|D2"
         ],
         "abilityTalentLinkIds": [
-          "AlexstraszaDragonqueen",
-          "AlexstraszaDragonqueenDragonFormPassive"
+          "AlexstraszaDragonqueenDragonFormPassive",
+          "AlexstraszaDragonqueen"
         ]
       }
     ],
@@ -482,6 +541,7 @@
         "icon": "storm_ui_icon_alexstrasza_life_binder.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Alexstrasza|R1",
         "abilityLinks": [
           "Alexstrasza|R1"
@@ -501,10 +561,11 @@
         "icon": "storm_ui_icon_alexstrasza_cleansing_flame.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Alexstrasza|R2",
         "abilityLinks": [
           "Alexstrasza|R2",
-          "Alexstrasza|R4"
+          "Alexstrasza|R3"
         ],
         "abilityTalentLinkIds": [
           "AlexstraszaCleansingFlame",
@@ -522,14 +583,15 @@
         "icon": "storm_ui_icon_alexstrasza_dragon_queen_a.png",
         "type": "Trait",
         "sort": 3,
-        "abilityId": "Alexstrasza|D1",
+        "isQuest": false,
+        "abilityId": "Alexstrasza|D2",
         "abilityLinks": [
           "Alexstrasza|D1",
           "Alexstrasza|D2"
         ],
         "abilityTalentLinkIds": [
-          "AlexstraszaDragonqueen",
-          "AlexstraszaDragonqueenDragonFormPassive"
+          "AlexstraszaDragonqueenDragonFormPassive",
+          "AlexstraszaDragonqueen"
         ]
       },
       {
@@ -541,7 +603,14 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 40,
-        "abilityId": "Alexstrasza|Active"
+        "isQuest": false,
+        "abilityId": "Alexstrasza|Active",
+        "abilityLinks": [
+          "Alexstrasza|31"
+        ],
+        "abilityTalentLinkIds": [
+          "AlexstraszaBlessingOfTheRed"
+        ]
       }
     ]
   },

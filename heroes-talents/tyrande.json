@@ -124,6 +124,7 @@
         "icon": "storm_ui_icon_tyrande_sentinel.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tyrande|W1",
         "abilityLinks": [
           "Tyrande|W1"
@@ -140,6 +141,7 @@
         "icon": "storm_ui_icon_tyrande_lightofelune.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrande|Q1",
         "abilityLinks": [
           "Tyrande|Q1"
@@ -157,6 +159,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 45,
+        "isQuest": false,
         "abilityId": "Tyrande|Active",
         "abilityLinks": [
           "Tyrande|D1"
@@ -175,6 +178,7 @@
         "icon": "storm_ui_icon_tyrande_lightofelune.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tyrande|Q1",
         "abilityLinks": [
           "Tyrande|Q1"
@@ -191,6 +195,7 @@
         "icon": "storm_ui_icon_tyrande_huntersmark.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrande|D1",
         "abilityLinks": [
           "Tyrande|D1"
@@ -208,7 +213,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Tyrande|Active"
+        "isQuest": false,
+        "abilityId": "Tyrande|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TyrandeElunesChosen"
+        ]
       }
     ],
     "7": [
@@ -219,7 +229,15 @@
         "description": "Hitting an enemy Hero with Lunar Flare grants 20% Spell Power for 10 seconds.",
         "icon": "storm_ui_icon_tyrande_lunarflare.png",
         "type": "E",
-        "sort": 1
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Tyrande|E1",
+        "abilityLinks": [
+          "Tyrande|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "TyrandeLunarFlare"
+        ]
       },
       {
         "tooltipId": "TyrandeKaldoreiResistance",
@@ -229,6 +247,7 @@
         "icon": "storm_ui_icon_tyrande_lightofelune_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrande|Q1",
         "abilityLinks": [
           "Tyrande|Q1"
@@ -245,6 +264,7 @@
         "icon": "storm_ui_icon_tyrande_huntersmark.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tyrande|D1",
         "abilityLinks": [
           "Tyrande|D1"
@@ -264,6 +284,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Tyrande|R1",
         "abilityLinks": [
           "Tyrande|R1"
@@ -281,6 +302,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Tyrande|R2",
         "abilityLinks": [
           "Tyrande|R2"
@@ -299,6 +321,7 @@
         "icon": "storm_ui_icon_tyrande_lightofelune.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tyrande|Q1",
         "abilityLinks": [
           "Tyrande|Q1"
@@ -315,6 +338,7 @@
         "icon": "storm_ui_icon_tyrande_sentinel.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrande|W1",
         "abilityLinks": [
           "Tyrande|W1"
@@ -331,6 +355,7 @@
         "icon": "storm_ui_icon_tyrande_huntersmark.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tyrande|D1",
         "abilityLinks": [
           "Tyrande|D1"
@@ -349,6 +374,7 @@
         "icon": "storm_ui_icon_tyrande_lightofelune.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tyrande|Q1",
         "abilityLinks": [
           "Tyrande|Q1"
@@ -365,6 +391,7 @@
         "icon": "storm_ui_icon_tyrande_sentinel.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrande|W1",
         "abilityLinks": [
           "Tyrande|W1"
@@ -381,6 +408,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tyrande|Passive",
         "abilityLinks": [
           "Tyrande|D1"
@@ -399,6 +427,7 @@
         "icon": "storm_ui_icon_tyrande_shadowstalk.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tyrande|R1",
         "abilityLinks": [
           "Tyrande|R1"
@@ -418,6 +447,7 @@
         "icon": "storm_ui_icon_tyrande_starfall.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tyrande|R2",
         "abilityLinks": [
           "Tyrande|R2"
@@ -437,6 +467,7 @@
         "icon": "storm_ui_icon_tyrande_sentinel.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tyrande|W1",
         "abilityLinks": [
           "Tyrande|W1"
@@ -453,6 +484,7 @@
         "icon": "storm_ui_icon_talent_autoattack_slow.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Tyrande|Passive",
         "abilityLinks": [
           "Tyrande|D1"

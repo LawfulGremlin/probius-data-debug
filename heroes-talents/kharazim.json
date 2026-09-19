@@ -26,7 +26,7 @@
   ],
   "stats": {
     "hp": 2080,
-    "hpRegen": 4.333333333333333,
+    "hpRegen": 4.3333,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -38,6 +38,11 @@
     "attackSpeed": 2,
     "radius": 0.625
   },
+  "unitIds": [
+    "MonkAirAlly",
+    "MonkEarthAlly",
+    "MonkSpiritAlly"
+  ],
   "abilities": {
     "Kharazim": [
       {
@@ -121,7 +126,8 @@
         "description": "Every 3rd Basic Attack heals the lowest nearby allied Hero for 104 (+4% per level) and gives 25% increased Move Speed for 2.5 seconds.",
         "icon": "storm_ui_icon_monk_trait_transcendence.png",
         "type": "Trait",
-        "sort": 1
+        "sort": 1,
+        "isQuest": false
       },
       {
         "tooltipId": "MonkIronFistsTalent",
@@ -130,7 +136,8 @@
         "description": "Every 3rd Basic Attack deals 110% bonus damage and gives 25% increased Move Speed for 2.5 seconds.",
         "icon": "storm_ui_icon_monk_trait_ironfist.png",
         "type": "Trait",
-        "sort": 2
+        "sort": 2,
+        "isQuest": false
       },
       {
         "tooltipId": "MonkInsightTalent",
@@ -153,7 +160,12 @@
         "type": "Active",
         "sort": 1,
         "cooldown": 45,
-        "abilityId": "Kharazim|Active"
+        "isQuest": false,
+        "abilityId": "Kharazim|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MonkSpiritAlly"
+        ]
       },
       {
         "tooltipId": "MonkEarthAlly",
@@ -164,7 +176,12 @@
         "type": "Active",
         "sort": 2,
         "cooldown": 45,
-        "abilityId": "Kharazim|Active"
+        "isQuest": false,
+        "abilityId": "Kharazim|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MonkEarthAlly"
+        ]
       },
       {
         "tooltipId": "MonkAirAlly",
@@ -175,7 +192,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Kharazim|Active"
+        "isQuest": false,
+        "abilityId": "Kharazim|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MonkAirAlly"
+        ]
       }
     ],
     "7": [
@@ -187,6 +209,7 @@
         "icon": "storm_ui_icon_monk_dash.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kharazim|Q1",
         "abilityLinks": [
           "Kharazim|Q1"
@@ -203,6 +226,7 @@
         "icon": "storm_ui_icon_monk_breath0fheaven.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kharazim|W1",
         "abilityLinks": [
           "Kharazim|W1"
@@ -219,6 +243,7 @@
         "icon": "storm_ui_icon_monk_deadlyreach.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kharazim|E1",
         "abilityLinks": [
           "Kharazim|E1"
@@ -239,6 +264,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Kharazim|R2",
         "abilityLinks": [
           "Kharazim|R2"
@@ -256,6 +282,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Kharazim|R1",
         "abilityLinks": [
           "Kharazim|R1"
@@ -274,6 +301,7 @@
         "icon": "storm_ui_icon_monk_dash.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kharazim|Q1",
         "abilityLinks": [
           "Kharazim|Q1"
@@ -290,6 +318,7 @@
         "icon": "storm_ui_icon_talent_spellshield.png",
         "type": "Active",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kharazim|Active"
       },
       {
@@ -300,6 +329,7 @@
         "icon": "storm_ui_icon_talent_relentless.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kharazim|Passive"
       }
     ],
@@ -312,6 +342,7 @@
         "icon": "storm_ui_icon_monk_dash.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kharazim|Q1",
         "abilityLinks": [
           "Kharazim|Q1"
@@ -328,6 +359,7 @@
         "icon": "storm_ui_icon_monk_dash_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kharazim|Q1",
         "abilityLinks": [
           "Kharazim|Q1"
@@ -344,6 +376,7 @@
         "icon": "storm_ui_icon_monk_breath0fheaven.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kharazim|W1",
         "abilityLinks": [
           "Kharazim|W1"
@@ -362,6 +395,7 @@
         "icon": "storm_ui_icon_monk_divinepalm.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kharazim|R2",
         "abilityLinks": [
           "Kharazim|R2"
@@ -381,6 +415,7 @@
         "icon": "storm_ui_icon_monk_sevensidedstrike.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kharazim|R1",
         "abilityLinks": [
           "Kharazim|R1"
@@ -400,13 +435,14 @@
         "icon": "storm_ui_icon_kharazim_fistoflegend.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kharazim|D1",
         "abilityLinks": [
           "Kharazim|D1"
         ],
         "abilityTalentLinkIds": [
-          "MonkIronFists",
           "MonkInsight",
+          "MonkIronFists",
           "MonkTranscendence"
         ]
       },
@@ -419,7 +455,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 45,
-        "abilityId": "Kharazim|Active"
+        "isQuest": false,
+        "abilityId": "Kharazim|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TalentBucketStormShield"
+        ]
       },
       {
         "tooltipId": "MonkEpiphany",
@@ -430,14 +471,19 @@
         "type": "Active",
         "sort": 5,
         "cooldown": 70,
-        "abilityId": "Kharazim|Active"
+        "isQuest": false,
+        "abilityId": "Kharazim|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MonkEpiphany"
+        ]
       }
     ]
   },
   "summonUnits": [
     {
       "unitId": "MonkAirAlly",
-      "name": "Air Ally",
+      "name": "MonkAirAlly",
       "icon": "storm_ui_icon_monk_allyair.png",
       "stats": {
         "hp": 300,
@@ -445,6 +491,7 @@
         "hpScale": 0.04,
         "hpRegenScale": 0,
         "radius": 0.125,
+        "speed": 0,
         "sight": 8.25
       },
       "abilities": [],
@@ -452,7 +499,7 @@
     },
     {
       "unitId": "MonkEarthAlly",
-      "name": "Earth Ally",
+      "name": "MonkEarthAlly",
       "icon": "storm_ui_icon_monk_allyearth.png",
       "stats": {
         "hp": 400,
@@ -460,6 +507,7 @@
         "hpScale": 0.04,
         "hpRegenScale": 0,
         "radius": 0.125,
+        "speed": 0,
         "sight": 8.25
       },
       "abilities": [],
@@ -467,7 +515,7 @@
     },
     {
       "unitId": "MonkSpiritAlly",
-      "name": "Spirit Ally",
+      "name": "MonkSpiritAlly",
       "icon": "storm_ui_icon_monk_allyspirit.png",
       "stats": {
         "hp": 150,
@@ -475,6 +523,7 @@
         "hpScale": 0.04,
         "hpRegenScale": 0,
         "radius": 0.125,
+        "speed": 0,
         "sight": 8.25
       },
       "abilities": [],

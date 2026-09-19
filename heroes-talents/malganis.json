@@ -126,9 +126,9 @@
           "MalGanis|Q1"
         ],
         "abilityTalentLinkIds": [
-          "MalGanisFelClawsThird",
+          "MalGanisFelClawsFirst",
           "MalGanisFelClawsSecond",
-          "MalGanisFelClawsFirst"
+          "MalGanisFelClawsThird"
         ]
       },
       {
@@ -139,6 +139,7 @@
         "icon": "storm_ui_icon_malganis_necrotic.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "MalGanis|W1",
         "abilityLinks": [
           "MalGanis|W1"
@@ -155,6 +156,7 @@
         "icon": "storm_ui_icon_malganis_trait_b.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "MalGanis|Passive",
         "abilityLinks": [
           "MalGanis|D1"
@@ -173,6 +175,7 @@
         "icon": "storm_ui_icon_malganis_necrotic_b.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "MalGanis|W1",
         "abilityLinks": [
           "MalGanis|W1"
@@ -189,6 +192,7 @@
         "icon": "storm_ui_icon_malganis_necrotic_c.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "MalGanis|W1",
         "abilityLinks": [
           "MalGanis|W1"
@@ -205,6 +209,7 @@
         "icon": "storm_ui_icon_malganis_trait.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "MalGanis|D1",
         "abilityLinks": [
           "MalGanis|D1"
@@ -223,14 +228,15 @@
         "icon": "storm_ui_icon_malganis_fel_1.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "MalGanis|Q1",
         "abilityLinks": [
           "MalGanis|Q1"
         ],
         "abilityTalentLinkIds": [
-          "MalGanisFelClawsThird",
+          "MalGanisFelClawsFirst",
           "MalGanisFelClawsSecond",
-          "MalGanisFelClawsFirst"
+          "MalGanisFelClawsThird"
         ]
       },
       {
@@ -241,6 +247,7 @@
         "icon": "storm_ui_icon_malganis_necrotic.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "MalGanis|W1",
         "abilityLinks": [
           "MalGanis|W1"
@@ -257,6 +264,7 @@
         "icon": "storm_ui_icon_malganis_nightrush.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "MalGanis|E1",
         "abilityLinks": [
           "MalGanis|E1"
@@ -276,6 +284,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "MalGanis|R2",
         "abilityLinks": [
           "MalGanis|R2"
@@ -293,6 +302,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "MalGanis|R1",
         "abilityLinks": [
           "MalGanis|R1"
@@ -311,6 +321,7 @@
         "icon": "storm_ui_icon_malganis_nightrush.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "MalGanis|E1",
         "abilityLinks": [
           "MalGanis|E1"
@@ -327,6 +338,7 @@
         "icon": "storm_ui_icon_malganis_nightrush_b.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "MalGanis|E1",
         "abilityLinks": [
           "MalGanis|E1"
@@ -343,6 +355,7 @@
         "icon": "storm_ui_icon_malganis_trait.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "MalGanis|D1",
         "abilityLinks": [
           "MalGanis|D1"
@@ -361,6 +374,7 @@
         "icon": "storm_ui_icon_malganis_necrotic.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "MalGanis|W1",
         "abilityLinks": [
           "MalGanis|W1"
@@ -377,6 +391,7 @@
         "icon": "storm_ui_icon_malganis_trait.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "MalGanis|Passive",
         "abilityLinks": [
           "MalGanis|D1"
@@ -394,7 +409,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "MalGanis|Active"
+        "isQuest": false,
+        "abilityId": "MalGanis|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MalGanisFelClawsBlindAsABat"
+        ]
       }
     ],
     "20": [
@@ -406,6 +426,7 @@
         "icon": "storm_ui_icon_malganis_ult_swarm.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "MalGanis|R2",
         "abilityLinks": [
           "MalGanis|R2"
@@ -425,6 +446,7 @@
         "icon": "storm_ui_icon_malganis_ult_conversion.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "MalGanis|R1",
         "abilityLinks": [
           "MalGanis|R1"
@@ -444,14 +466,15 @@
         "icon": "storm_ui_icon_malganis_fel_1.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "MalGanis|Q1",
         "abilityLinks": [
           "MalGanis|Q1"
         ],
         "abilityTalentLinkIds": [
-          "MalGanisFelClawsThird",
+          "MalGanisFelClawsFirst",
           "MalGanisFelClawsSecond",
-          "MalGanisFelClawsFirst"
+          "MalGanisFelClawsThird"
         ]
       },
       {
@@ -462,6 +485,7 @@
         "icon": "storm_ui_icon_malganis_nightrush.png",
         "type": "E",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "MalGanis|E1",
         "abilityLinks": [
           "MalGanis|E1"

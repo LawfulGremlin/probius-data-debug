@@ -148,6 +148,7 @@
         "icon": "storm_ui_icon_garrosh_wrecking_ball.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Garrosh|E1",
         "abilityLinks": [
           "Garrosh|E1"
@@ -165,7 +166,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 15,
-        "abilityId": "Garrosh|Active"
+        "isQuest": false,
+        "abilityId": "Garrosh|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "GarroshArmorUpBodyCheck"
+        ]
       }
     ],
     "4": [
@@ -177,6 +183,7 @@
         "icon": "storm_ui_icon_garrosh_bloodthirst.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Garrosh|W1",
         "abilityLinks": [
           "Garrosh|W1"
@@ -193,6 +200,7 @@
         "icon": "storm_ui_icon_garrosh_bloodthirst_var1.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Garrosh|W1",
         "abilityLinks": [
           "Garrosh|W1"
@@ -210,7 +218,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 40,
-        "abilityId": "Garrosh|Active"
+        "isQuest": false,
+        "abilityId": "Garrosh|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "GarroshIndomitable"
+        ]
       }
     ],
     "7": [
@@ -222,6 +235,7 @@
         "icon": "storm_ui_icon_garrosh_groundbreaker.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Garrosh|Q1",
         "abilityLinks": [
           "Garrosh|Q1"
@@ -238,6 +252,7 @@
         "icon": "storm_ui_icon_garrosh_bloodthirst.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Garrosh|W1",
         "abilityLinks": [
           "Garrosh|W1"
@@ -254,6 +269,7 @@
         "icon": "storm_ui_icon_garrosh_intothefray.png",
         "type": "Active",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Garrosh|Active",
         "abilityLinks": [
           "Garrosh|11"
@@ -273,6 +289,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Garrosh|R1",
         "abilityLinks": [
           "Garrosh|R1"
@@ -290,6 +307,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 8,
+        "isQuest": false,
         "abilityId": "Garrosh|R2",
         "abilityLinks": [
           "Garrosh|R2"
@@ -308,6 +326,7 @@
         "icon": "storm_ui_icon_garrosh_groundbreaker.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Garrosh|Q1",
         "abilityLinks": [
           "Garrosh|Q1"
@@ -324,6 +343,7 @@
         "icon": "storm_ui_icon_garrosh_bloodthirst.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Garrosh|W1",
         "abilityLinks": [
           "Garrosh|W1"
@@ -341,6 +361,7 @@
         "type": "Trait",
         "sort": 3,
         "cooldown": 30,
+        "isQuest": false,
         "abilityId": "Garrosh|D1",
         "abilityLinks": [
           "Garrosh|D1"
@@ -359,6 +380,7 @@
         "icon": "storm_ui_icon_garrosh_groundbreaker.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Garrosh|E1",
         "abilityLinks": [
           "Garrosh|E1"
@@ -375,6 +397,7 @@
         "icon": "storm_ui_icon_garrosh_wrecking_ball.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Garrosh|E1",
         "abilityLinks": [
           "Garrosh|E1"
@@ -391,13 +414,14 @@
         "icon": "storm_ui_icon_garrosh_bloodthirst.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Garrosh|Passive",
         "abilityLinks": [
           "Garrosh|D1"
         ],
         "abilityTalentLinkIds": [
-          "GarroshArmorUpDoubleUp",
-          "GarroshArmorUp"
+          "GarroshArmorUp",
+          "GarroshArmorUpDoubleUp"
         ]
       }
     ],
@@ -410,6 +434,7 @@
         "icon": "storm_ui_icon_garrosh_warlords_challenge.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Garrosh|R1",
         "abilityLinks": [
           "Garrosh|R1"
@@ -429,6 +454,7 @@
         "icon": "storm_ui_icon_garrosh_decimate.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Garrosh|R2",
         "abilityLinks": [
           "Garrosh|R2"
@@ -448,6 +474,7 @@
         "icon": "storm_ui_icon_garrosh_wrecking_ball.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Garrosh|E1",
         "abilityLinks": [
           "Garrosh|E1"
@@ -464,6 +491,7 @@
         "icon": "storm_ui_icon_garrosh_slam.png",
         "type": "Active",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Garrosh|Active",
         "abilityLinks": [
           "Garrosh|11"

@@ -124,7 +124,12 @@
         "type": "Active",
         "sort": 1,
         "cooldown": 30,
-        "abilityId": "Blaze|Active"
+        "isQuest": false,
+        "abilityId": "Blaze|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "FirebatAdrenalineStimpack"
+        ]
       },
       {
         "tooltipId": "FirebatEnduranceStimpack",
@@ -135,7 +140,12 @@
         "type": "Active",
         "sort": 2,
         "cooldown": 30,
-        "abilityId": "Blaze|Active"
+        "isQuest": false,
+        "abilityId": "Blaze|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "FirebatEnduranceStimpack"
+        ]
       },
       {
         "tooltipId": "FirebatNeuralStimpack",
@@ -146,7 +156,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Blaze|Active"
+        "isQuest": false,
+        "abilityId": "Blaze|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "FirebatNeuralStimpack"
+        ]
       },
       {
         "tooltipId": "FirebatNewHabits",
@@ -175,6 +190,7 @@
         "icon": "storm_ui_icon_blaze_oil.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Blaze|W1",
         "abilityLinks": [
           "Blaze|W1"
@@ -191,6 +207,7 @@
         "icon": "storm_ui_icon_blaze_pyromania.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Blaze|D1",
         "abilityLinks": [
           "Blaze|D1"
@@ -207,6 +224,7 @@
         "icon": "storm_ui_icon_talent_autoattack_building.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Blaze|Passive",
         "abilityLinks": [
           "Blaze|D1"
@@ -225,6 +243,7 @@
         "icon": "storm_ui_icon_blaze_flame.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Blaze|Q1",
         "abilityLinks": [
           "Blaze|Q1"
@@ -241,6 +260,7 @@
         "icon": "storm_ui_icon_blaze_oil.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Blaze|W1",
         "abilityLinks": [
           "Blaze|W1"
@@ -257,6 +277,7 @@
         "icon": "storm_ui_icon_blaze_jet.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Blaze|E1",
         "abilityLinks": [
           "Blaze|E1"
@@ -276,6 +297,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 85,
+        "isQuest": false,
         "abilityId": "Blaze|R1",
         "abilityLinks": [
           "Blaze|R1"
@@ -293,6 +315,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Blaze|R2",
         "abilityLinks": [
           "Blaze|R2"
@@ -328,6 +351,7 @@
         "icon": "storm_ui_icon_blaze_oil_b.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Blaze|W1",
         "abilityLinks": [
           "Blaze|W1"
@@ -344,6 +368,7 @@
         "icon": "storm_ui_icon_blaze_jet.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Blaze|E1",
         "abilityLinks": [
           "Blaze|E1"
@@ -362,6 +387,7 @@
         "icon": "storm_ui_icon_blaze_jet.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Blaze|E1",
         "abilityLinks": [
           "Blaze|E1"
@@ -378,6 +404,7 @@
         "icon": "storm_ui_icon_blaze_pyromania.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Blaze|D1",
         "abilityLinks": [
           "Blaze|D1"
@@ -395,7 +422,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Blaze|Active"
+        "isQuest": false,
+        "abilityId": "Blaze|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "FirebatJuggernautPlating"
+        ]
       }
     ],
     "20": [
@@ -407,6 +439,7 @@
         "icon": "storm_ui_icon_blaze_bunker.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Blaze|R1",
         "abilityLinks": [
           "Blaze|R1"
@@ -426,6 +459,7 @@
         "icon": "storm_ui_icon_blaze_combustion.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Blaze|R2",
         "abilityLinks": [
           "Blaze|R2"
@@ -445,6 +479,7 @@
         "icon": "storm_ui_icon_talent_autoattack_slow.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Blaze|Passive",
         "abilityLinks": [
           "Blaze|D1"
@@ -458,7 +493,7 @@
   "summonUnits": [
     {
       "unitId": "FirebatBunkerDropBunkerUnit",
-      "name": "Bunker",
+      "name": "FirebatBunkerDropBunkerUnit",
       "icon": "storm_ui_icon_blaze_bunker.png",
       "stats": {
         "hp": 1435,
@@ -466,6 +501,7 @@
         "hpScale": 0.04,
         "hpRegenScale": 0,
         "radius": 1.25,
+        "speed": 0,
         "sight": 3
       },
       "abilities": [
@@ -473,14 +509,16 @@
           "name": "Flamethrower",
           "hotkey": "Q",
           "icon": "storm_ui_icon_blaze_flame.png",
-          "description": "Deal <c val=\"bfd4fd\">150~~0.04~~</c> damage to enemies in a line.",
+          "description": "Deal 150 damage to enemies in a line.",
+          "cooldown": 1,
           "tooltipId": "FirebatBunkerDropFlamethrower"
         },
         {
           "name": "Oil Spill",
           "hotkey": "W",
           "icon": "storm_ui_icon_blaze_oil.png",
-          "description": "<c val=\"bfd4fd\">Vector Targeting</c><n/>Dispense an Oil Spill that Slows enemies and can be set on fire by Blaze.",
+          "description": "Vector Targeting\nDispense an Oil Spill that Slows enemies and can be set on fire by Blaze.",
+          "cooldown": 6,
           "tooltipId": "FirebatBunkerDropFortifiedBunkerOilSpill",
           "gatedBy": {
             "tier": 20,

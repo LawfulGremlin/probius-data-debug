@@ -171,6 +171,7 @@
         "icon": "storm_ui_icon_guldan_healthfunnel.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Guldan|W1",
         "abilityLinks": [
           "Guldan|W1"
@@ -187,13 +188,14 @@
         "icon": "storm_ui_icon_guldan_lifetap.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Guldan|D1",
         "abilityLinks": [
           "Guldan|D1"
         ],
         "abilityTalentLinkIds": [
-          "GuldanLifeTapFree",
-          "GuldanLifeTap"
+          "GuldanLifeTap",
+          "GuldanLifeTapFree"
         ]
       },
       {
@@ -205,7 +207,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 25,
-        "abilityId": "Guldan|Active"
+        "isQuest": false,
+        "abilityId": "Guldan|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "GuldanConsumeSoul"
+        ]
       }
     ],
     "7": [
@@ -217,6 +224,7 @@
         "icon": "storm_ui_icon_guldan_felflame.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Guldan|Q1",
         "abilityLinks": [
           "Guldan|Q1"
@@ -233,6 +241,7 @@
         "icon": "storm_ui_icon_guldan_healthfunnel.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Guldan|W1",
         "abilityLinks": [
           "Guldan|W1"
@@ -249,13 +258,14 @@
         "icon": "storm_ui_icon_guldan_hungerforpower.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Guldan|Passive",
         "abilityLinks": [
           "Guldan|D1"
         ],
         "abilityTalentLinkIds": [
-          "GuldanLifeTapFree",
-          "GuldanLifeTap"
+          "GuldanLifeTap",
+          "GuldanLifeTapFree"
         ]
       }
     ],
@@ -269,6 +279,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Guldan|R1",
         "abilityLinks": [
           "Guldan|R1"
@@ -286,6 +297,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "Guldan|R2",
         "abilityLinks": [
           "Guldan|R2"
@@ -304,6 +316,7 @@
         "icon": "storm_ui_icon_guldan_felflame.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Guldan|Q1",
         "abilityLinks": [
           "Guldan|Q1"
@@ -320,6 +333,7 @@
         "icon": "storm_ui_icon_guldan_healthfunnel.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Guldan|W1",
         "abilityLinks": [
           "Guldan|W1"
@@ -336,13 +350,14 @@
         "icon": "storm_ui_icon_guldan_darkbargain.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Guldan|Passive",
         "abilityLinks": [
           "Guldan|D1"
         ],
         "abilityTalentLinkIds": [
-          "GuldanLifeTapFree",
-          "GuldanLifeTap"
+          "GuldanLifeTap",
+          "GuldanLifeTapFree"
         ]
       },
       {
@@ -354,7 +369,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 45,
-        "abilityId": "Guldan|Active"
+        "isQuest": false,
+        "abilityId": "Guldan|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "GuldanHealthstone"
+        ]
       }
     ],
     "16": [
@@ -366,6 +386,7 @@
         "icon": "storm_ui_icon_guldan_felflame.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Guldan|Q1",
         "abilityLinks": [
           "Guldan|Q1"
@@ -382,6 +403,7 @@
         "icon": "storm_ui_icon_guldan_handofguldan.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Guldan|E1",
         "abilityLinks": [
           "Guldan|E1"
@@ -398,13 +420,14 @@
         "icon": "storm_ui_icon_guldan_lifetap.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Guldan|D1",
         "abilityLinks": [
           "Guldan|D1"
         ],
         "abilityTalentLinkIds": [
-          "GuldanLifeTapFree",
-          "GuldanLifeTap"
+          "GuldanLifeTap",
+          "GuldanLifeTapFree"
         ]
       }
     ],
@@ -417,6 +440,7 @@
         "icon": "storm_ui_icon_guldan_horrify.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Guldan|R1",
         "abilityLinks": [
           "Guldan|R1"
@@ -436,6 +460,7 @@
         "icon": "storm_ui_icon_guldan_rainoffire.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Guldan|R2",
         "abilityLinks": [
           "Guldan|R2"
@@ -456,7 +481,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "Guldan|Active"
+        "isQuest": false,
+        "abilityId": "Guldan|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "GuldanDemonicCircleSummon"
+        ]
       }
     ]
   },

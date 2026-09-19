@@ -37,9 +37,9 @@
     "radius": 1.1875
   },
   "unitIds": [
-    "AzmodanDemonicInvasionDemonGrunt",
     "AzmodanDemonLieutenant",
-    "AzmodanDemonWarrior"
+    "AzmodanDemonWarrior",
+    "AzmodanDemonicInvasionDemonGrunt"
   ],
   "abilities": {
     "Azmodan": [
@@ -180,6 +180,7 @@
         "icon": "storm_ui_icon_azmodan_summondemonwarrior.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Azmodan|W1",
         "abilityLinks": [
           "Azmodan|W1"
@@ -196,6 +197,7 @@
         "icon": "storm_ui_icon_azmodan_summondemonwarrior_a.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Azmodan|W1",
         "abilityLinks": [
           "Azmodan|D1",
@@ -214,6 +216,7 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Azmodan|Passive",
         "abilityLinks": [
           "Azmodan|D1",
@@ -234,6 +237,7 @@
         "icon": "storm_ui_icon_azmodan_globeofannihilation.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Azmodan|Q1",
         "abilityLinks": [
           "Azmodan|Q1"
@@ -250,6 +254,7 @@
         "icon": "storm_ui_icon_azmodan_globeofannihilation_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Azmodan|Q1",
         "abilityLinks": [
           "Azmodan|Q1"
@@ -266,6 +271,7 @@
         "icon": "storm_ui_icon_azmodan_allshallburn.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Azmodan|E1",
         "abilityLinks": [
           "Azmodan|E1"
@@ -285,6 +291,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Azmodan|R1",
         "abilityLinks": [
           "Azmodan|R1"
@@ -302,6 +309,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 20,
+        "isQuest": false,
         "abilityId": "Azmodan|R2",
         "abilityLinks": [
           "Azmodan|R2"
@@ -320,6 +328,7 @@
         "icon": "storm_ui_icon_azmodan_summondemonwarrior.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Azmodan|W1",
         "abilityLinks": [
           "Azmodan|W1"
@@ -336,6 +345,7 @@
         "icon": "storm_ui_icon_azmodan_allshallburn.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Azmodan|E1",
         "abilityLinks": [
           "Azmodan|E1"
@@ -352,6 +362,7 @@
         "icon": "storm_ui_icon_azmodan_generalofhell.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Azmodan|D1",
         "abilityLinks": [
           "Azmodan|D1"
@@ -370,6 +381,7 @@
         "icon": "storm_ui_icon_azmodan_globeofannihilation.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Azmodan|Q1",
         "abilityLinks": [
           "Azmodan|Q1"
@@ -386,6 +398,7 @@
         "icon": "storm_ui_icon_azmodan_allshallburn.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Azmodan|E1",
         "abilityLinks": [
           "Azmodan|E1"
@@ -403,7 +416,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 20,
-        "abilityId": "Azmodan|Active"
+        "isQuest": false,
+        "abilityId": "Azmodan|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AzmodanTrample"
+        ]
       }
     ],
     "20": [
@@ -415,6 +433,7 @@
         "icon": "storm_ui_icon_azmodan_demonicinvasion.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Azmodan|R1",
         "abilityLinks": [
           "Azmodan|R1"
@@ -434,6 +453,7 @@
         "icon": "storm_ui_icon_azmodan_blackpool.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Azmodan|R2",
         "abilityLinks": [
           "Azmodan|R2"
@@ -454,6 +474,7 @@
         "icon": "storm_ui_icon_azmodan_globeofannihilation.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Azmodan|Q1",
         "abilityLinks": [
           "Azmodan|Q1"
@@ -470,6 +491,7 @@
         "icon": "storm_ui_icon_azmodan_allshallburn.png",
         "type": "E",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Azmodan|E1",
         "abilityLinks": [
           "Azmodan|E1"
@@ -483,7 +505,7 @@
   "summonUnits": [
     {
       "unitId": "AzmodanDemonicInvasionDemonGrunt",
-      "name": "Demon Grunt",
+      "name": "AzmodanDemonicInvasionDemonGrunt",
       "icon": "storm_ui_icon_azmodan_demonicinvasion.png",
       "stats": {
         "hp": 750,
@@ -503,11 +525,11 @@
     },
     {
       "unitId": "AzmodanDemonLieutenant",
-      "name": "Demon Lieutenant",
+      "name": "AzmodanDemonLieutenant",
       "icon": "storm_ui_icon_azmodan_generalofhell.png",
       "stats": {
         "hp": 593,
-        "hpRegen": -28.238095238095237,
+        "hpRegen": -28.2381,
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "attackDamage": 52,
@@ -523,11 +545,11 @@
     },
     {
       "unitId": "AzmodanDemonWarrior",
-      "name": "Demon Warrior",
+      "name": "AzmodanDemonWarrior",
       "icon": "storm_ui_icon_azmodan_summondemonwarrior.png",
       "stats": {
         "hp": 435,
-        "hpRegen": -25.58823529411765,
+        "hpRegen": -25.5882,
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "attackDamage": 53,

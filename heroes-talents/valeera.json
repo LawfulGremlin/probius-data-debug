@@ -111,6 +111,39 @@
     ],
     "ValeeraStealth": [
       {
+        "uid": "80a34c",
+        "name": "Crippling Poison",
+        "description": "Activate to make Valeera's next damaging Ability and subsequent Abilities within 4 seconds Slow targets by 20% for 4 seconds.  Activating Crippling Poison does not break Stealth.",
+        "hotkey": "1",
+        "abilityId": "Valeera|11",
+        "tooltipId": "ValeeraCripplingPoison",
+        "cooldown": 15,
+        "icon": "storm_ui_icon_valeera_cripplingpoison.png",
+        "type": "activable"
+      },
+      {
+        "uid": "1dc170",
+        "name": "Wound Poison",
+        "description": "Activate to make Valeera's next damaging Ability and subsequent Abilities within 4 seconds reduce enemy healing received by 50% for 4 seconds.  Activating Wound Poison does not break Stealth.",
+        "hotkey": "2",
+        "abilityId": "Valeera|21",
+        "tooltipId": "ValeeraWoundPoison",
+        "cooldown": 15,
+        "icon": "storm_ui_icon_valeera_woundpoison.png",
+        "type": "activable"
+      },
+      {
+        "uid": "a99a0d",
+        "name": "Thistle Tea",
+        "description": "Activate to instantly restore 100 Energy.  Activating Thistle Tea does not break Stealth.",
+        "hotkey": "3",
+        "abilityId": "Valeera|31",
+        "tooltipId": "ValeeraThistleTea",
+        "cooldown": 20,
+        "icon": "storm_ui_icon_valeera_thistletea.png",
+        "type": "activable"
+      },
+      {
         "uid": "06bc5c",
         "name": "Ambush",
         "description": "Ambush an enemy, dealing 130 (+4% per level) damage and reducing their Armor by 10 for 5 seconds.  Awards 1 Combo Point.  Unstealth: Sinister Strike Dash forward, damaging enemies.",
@@ -181,6 +214,7 @@
         "icon": "storm_ui_icon_valeera_vanish.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Valeera|D2",
         "abilityLinks": [
           "Valeera|D1",
@@ -199,6 +233,7 @@
         "icon": "storm_ui_icon_talent_block.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Valeera|Passive"
       },
       {
@@ -210,7 +245,14 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 15,
-        "abilityId": "Valeera|Active"
+        "isQuest": false,
+        "abilityId": "Valeera|Active",
+        "abilityLinks": [
+          "Valeera|11"
+        ],
+        "abilityTalentLinkIds": [
+          "ValeeraCripplingPoison"
+        ]
       }
     ],
     "4": [
@@ -222,6 +264,7 @@
         "icon": "storm_ui_icon_valeera_sinisterstrike.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Valeera|Q1",
         "abilityLinks": [
           "Valeera|Q1"
@@ -238,6 +281,7 @@
         "icon": "storm_ui_icon_valeera_garrote.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Valeera|E2",
         "abilityLinks": [
           "Valeera|E2"
@@ -254,6 +298,7 @@
         "icon": "storm_ui_icon_valeera_vanish.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Valeera|D2",
         "abilityLinks": [
           "Valeera|D1",
@@ -273,7 +318,14 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 15,
-        "abilityId": "Valeera|Active"
+        "isQuest": false,
+        "abilityId": "Valeera|Active",
+        "abilityLinks": [
+          "Valeera|21"
+        ],
+        "abilityTalentLinkIds": [
+          "ValeeraWoundPoison"
+        ]
       }
     ],
     "7": [
@@ -285,6 +337,7 @@
         "icon": "storm_ui_icon_valeera_sinisterstrike.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Valeera|Q1",
         "abilityLinks": [
           "Valeera|Q1"
@@ -318,6 +371,7 @@
         "icon": "storm_ui_icon_valeera_eviscerate.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Valeera|E1",
         "abilityLinks": [
           "Valeera|E1"
@@ -337,6 +391,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Valeera|R2",
         "abilityLinks": [
           "Valeera|R2"
@@ -354,6 +409,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 15,
+        "isQuest": false,
         "abilityId": "Valeera|R1",
         "abilityLinks": [
           "Valeera|R1"
@@ -372,6 +428,7 @@
         "icon": "storm_ui_icon_valeera_ambush.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Valeera|Q2",
         "abilityLinks": [
           "Valeera|Q2"
@@ -388,6 +445,7 @@
         "icon": "storm_ui_icon_valeera_cheapshot.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Valeera|W2",
         "abilityLinks": [
           "Valeera|W2"
@@ -404,6 +462,7 @@
         "icon": "storm_ui_icon_valeera_garrote.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Valeera|E2",
         "abilityLinks": [
           "Valeera|E2"
@@ -422,6 +481,7 @@
         "icon": "storm_ui_icon_valeera_sinisterstrike.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Valeera|Q1",
         "abilityLinks": [
           "Valeera|Q1"
@@ -438,6 +498,7 @@
         "icon": "storm_ui_icon_valeera_ambush.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Valeera|Q2",
         "abilityLinks": [
           "Valeera|Q2"
@@ -455,7 +516,14 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 20,
-        "abilityId": "Valeera|Active"
+        "isQuest": false,
+        "abilityId": "Valeera|Active",
+        "abilityLinks": [
+          "Valeera|31"
+        ],
+        "abilityTalentLinkIds": [
+          "ValeeraThistleTea"
+        ]
       }
     ],
     "20": [
@@ -467,6 +535,7 @@
         "icon": "storm_ui_icon_valeera_smokebomb.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Valeera|R2",
         "abilityLinks": [
           "Valeera|R2"
@@ -486,6 +555,7 @@
         "icon": "storm_ui_icon_valeera_cloakofshadows.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Valeera|R1",
         "abilityLinks": [
           "Valeera|R1"
@@ -505,6 +575,7 @@
         "icon": "storm_ui_icon_valeera_garrote.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Valeera|E2",
         "abilityLinks": [
           "Valeera|E2"
@@ -521,6 +592,7 @@
         "icon": "storm_ui_icon_valeera_vanish.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Valeera|D2",
         "abilityLinks": [
           "Valeera|D1",

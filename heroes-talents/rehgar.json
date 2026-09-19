@@ -39,7 +39,8 @@
     "radius": 0.75
   },
   "unitIds": [
-    "RehgarEarthbindTotem"
+    "RehgarEarthbindTotem",
+    "TalentHealingWard"
   ],
   "abilities": {
     "Rehgar": [
@@ -155,6 +156,7 @@
         "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Rehgar|E1",
         "abilityLinks": [
           "Rehgar|E1"
@@ -171,6 +173,7 @@
         "icon": "storm_ui_icon_rehgar_ghostwolf.png",
         "type": "Z",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Rehgar|Z1",
         "abilityLinks": [
           "Rehgar|Z1"
@@ -189,6 +192,7 @@
         "icon": "storm_ui_icon_rehgar_chainheal.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Rehgar|Q1",
         "abilityLinks": [
           "Rehgar|Q1"
@@ -205,6 +209,7 @@
         "icon": "storm_ui_icon_rehgar_lightningshield.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Rehgar|W1",
         "abilityLinks": [
           "Rehgar|W1"
@@ -222,7 +227,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Rehgar|Active"
+        "isQuest": false,
+        "abilityId": "Rehgar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "RehgarHealingTotem"
+        ]
       }
     ],
     "7": [
@@ -234,6 +244,7 @@
         "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Rehgar|E1",
         "abilityLinks": [
           "Rehgar|E1"
@@ -250,6 +261,7 @@
         "icon": "storm_ui_icon_rehgar_purge.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Rehgar|D1",
         "abilityLinks": [
           "Rehgar|D1"
@@ -266,6 +278,7 @@
         "icon": "storm_ui_icon_rehgar_ghostwolf.png",
         "type": "Z",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Rehgar|Z1",
         "abilityLinks": [
           "Rehgar|Z1"
@@ -285,6 +298,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Rehgar|R2",
         "abilityLinks": [
           "Rehgar|R2"
@@ -302,6 +316,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Rehgar|R1",
         "abilityLinks": [
           "Rehgar|R1"
@@ -320,6 +335,7 @@
         "icon": "storm_ui_icon_rehgar_chainheal.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Rehgar|Q1",
         "abilityLinks": [
           "Rehgar|Q1"
@@ -336,6 +352,7 @@
         "icon": "storm_ui_icon_rehgar_lightningshield.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Rehgar|W1",
         "abilityLinks": [
           "Rehgar|W1"
@@ -352,6 +369,7 @@
         "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Rehgar|E1",
         "abilityLinks": [
           "Rehgar|E1"
@@ -370,6 +388,7 @@
         "icon": "storm_ui_icon_rehgar_lightningshield.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Rehgar|W1",
         "abilityLinks": [
           "Rehgar|W1"
@@ -386,6 +405,7 @@
         "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Rehgar|E1",
         "abilityLinks": [
           "Rehgar|E1"
@@ -402,6 +422,7 @@
         "icon": "storm_ui_icon_rehgar_ghostwolf.png",
         "type": "Z",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Rehgar|Z1",
         "abilityLinks": [
           "Rehgar|Z1"
@@ -420,6 +441,7 @@
         "icon": "storm_ui_icon_rehgar_ancestralhealing.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Rehgar|R2",
         "abilityLinks": [
           "Rehgar|R2"
@@ -439,6 +461,7 @@
         "icon": "storm_ui_icon_rehgar_bloodlust.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Rehgar|R1",
         "abilityLinks": [
           "Rehgar|R1"
@@ -459,7 +482,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 70,
-        "abilityId": "Rehgar|Active"
+        "isQuest": false,
+        "abilityId": "Rehgar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "RehgarElementalConduit"
+        ]
       },
       {
         "tooltipId": "RehgarPitFighter",
@@ -469,6 +497,7 @@
         "icon": "storm_ui_ingame_heroselect_btn_rehgar.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Rehgar|Passive"
       }
     ]
@@ -476,7 +505,7 @@
   "summonUnits": [
     {
       "unitId": "RehgarEarthbindTotem",
-      "name": "Earthbind Totem",
+      "name": "RehgarEarthbindTotem",
       "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
       "stats": {
         "hp": 260,
@@ -484,6 +513,7 @@
         "hpScale": 0.04,
         "hpRegenScale": 0,
         "radius": 0.125,
+        "speed": 0,
         "sight": 7
       },
       "abilities": [],
@@ -491,13 +521,15 @@
     },
     {
       "unitId": "TalentHealingWard",
-      "name": "Healing Ward",
+      "name": "TalentHealingWard",
       "icon": "storm_ui_icon_talent_healingward.png",
       "stats": {
         "hp": 125,
         "hpRegen": 0,
         "hpScale": 0.04,
         "hpRegenScale": 0,
+        "radius": 0,
+        "speed": 0,
         "sight": 8
       },
       "abilities": [],

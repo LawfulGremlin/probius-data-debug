@@ -142,6 +142,7 @@
         "icon": "storm_ui_icon_kaelthas_verdantspheres.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kaelthas|D1",
         "abilityLinks": [
           "Kaelthas|D1"
@@ -172,6 +173,7 @@
         "icon": "storm_ui_icon_kaelthas_gravitylapse.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kaelthas|E1",
         "abilityLinks": [
           "Kaelthas|E1"
@@ -188,6 +190,7 @@
         "icon": "storm_ui_icon_kaelthas_gravitylapse_a.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kaelthas|E1",
         "abilityLinks": [
           "Kaelthas|E1"
@@ -204,6 +207,7 @@
         "icon": "storm_ui_icon_kaelthas_verdantspheres.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kaelthas|D1",
         "abilityLinks": [
           "Kaelthas|D1"
@@ -223,6 +227,7 @@
         "icon": "storm_ui_icon_kaelthas_flamestrike.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kaelthas|Q1",
         "abilityLinks": [
           "Kaelthas|Q1"
@@ -239,6 +244,7 @@
         "icon": "storm_ui_icon_kaelthas_livingbomb.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kaelthas|W1",
         "abilityLinks": [
           "Kaelthas|W1"
@@ -255,6 +261,7 @@
         "icon": "storm_ui_icon_kaelthas_verdantspheres.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kaelthas|D1",
         "abilityLinks": [
           "Kaelthas|D1"
@@ -275,6 +282,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Kaelthas|R2",
         "abilityLinks": [
           "Kaelthas|R2"
@@ -292,6 +300,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Kaelthas|R1",
         "abilityLinks": [
           "Kaelthas|R1"
@@ -310,6 +319,7 @@
         "icon": "storm_ui_icon_kaelthas_livingbomb.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kaelthas|W1",
         "abilityLinks": [
           "Kaelthas|W1"
@@ -326,6 +336,7 @@
         "icon": "storm_ui_icon_kaelthas_livingbomb_var1.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kaelthas|W1",
         "abilityLinks": [
           "Kaelthas|W1"
@@ -342,6 +353,7 @@
         "icon": "storm_ui_icon_kaelthas_livingbomb_b.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kaelthas|W1",
         "abilityLinks": [
           "Kaelthas|W1"
@@ -360,6 +372,7 @@
         "icon": "storm_ui_icon_kaelthas_flamestrike.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kaelthas|Q1",
         "abilityLinks": [
           "Kaelthas|Q1"
@@ -376,6 +389,7 @@
         "icon": "storm_ui_icon_kaelthas_livingbomb.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kaelthas|W1",
         "abilityLinks": [
           "Kaelthas|W1"
@@ -392,17 +406,18 @@
         "icon": "storm_ui_icon_kaelthas_verdantspheres.png",
         "type": "Trait",
         "sort": 3,
-        "abilityId": "Kaelthas|D1",
+        "isQuest": false,
+        "abilityId": "Kaelthas|Q1",
         "abilityLinks": [
           "Kaelthas|D1",
           "Kaelthas|Q1",
           "Kaelthas|W1"
         ],
         "abilityTalentLinkIds": [
-          "KaelthasVerdantSpheresActive",
-          "KaelthasVerdantSpheres",
           "KaelthasFlamestrike",
-          "KaelthasLivingBomb"
+          "KaelthasLivingBomb",
+          "KaelthasVerdantSpheresActive",
+          "KaelthasVerdantSpheres"
         ]
       }
     ],
@@ -415,6 +430,7 @@
         "icon": "storm_ui_icon_kaelthas_phoenix.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kaelthas|R2",
         "abilityLinks": [
           "Kaelthas|R2"
@@ -434,6 +450,7 @@
         "icon": "storm_ui_icon_kaelthas_pyroblast.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kaelthas|R1",
         "abilityLinks": [
           "Kaelthas|R1"
@@ -453,6 +470,7 @@
         "icon": "storm_ui_icon_kaelthas_livingbomb.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kaelthas|W1",
         "abilityLinks": [
           "Kaelthas|W1"
@@ -469,6 +487,7 @@
         "icon": "storm_ui_icon_kaelthas_flamestrike.png",
         "type": "Q",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Kaelthas|Q1",
         "abilityLinks": [
           "Kaelthas|Q1"

@@ -134,6 +134,7 @@
         "icon": "storm_ui_icon_maiev_pursuit_vengeance.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Maiev|W1",
         "abilityLinks": [
           "Maiev|W1"
@@ -151,6 +152,7 @@
         "icon": "storm_ui_icon_maiev_memento.png",
         "type": "Active",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Maiev|Active",
         "abilityLinks": [
           "Maiev|Q1"
@@ -186,6 +188,7 @@
         "icon": "storm_ui_icon_maiev_knives_2.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Maiev|Q1",
         "abilityLinks": [
           "Maiev|Q1"
@@ -202,13 +205,14 @@
         "icon": "storm_ui_icon_maiev_rush_2.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Maiev|E1",
         "abilityLinks": [
           "Maiev|E1"
         ],
         "abilityTalentLinkIds": [
-          "MaievSpiritOfVengeanceBlink",
-          "MaievSpiritOfVengeance"
+          "MaievSpiritOfVengeance",
+          "MaievSpiritOfVengeanceBlink"
         ]
       }
     ],
@@ -221,6 +225,7 @@
         "icon": "storm_ui_icon_maiev_knives.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Maiev|Q1",
         "abilityLinks": [
           "Maiev|Q1"
@@ -237,6 +242,7 @@
         "icon": "storm_ui_icon_maiev_orb_corruption.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Maiev|W1",
         "abilityLinks": [
           "Maiev|W1"
@@ -254,13 +260,14 @@
         "icon": "storm_ui_icon_maiev_rush_1.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Maiev|E1",
         "abilityLinks": [
           "Maiev|E1"
         ],
         "abilityTalentLinkIds": [
-          "MaievSpiritOfVengeanceBlink",
-          "MaievSpiritOfVengeance"
+          "MaievSpiritOfVengeance",
+          "MaievSpiritOfVengeanceBlink"
         ]
       }
     ],
@@ -274,6 +281,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 40,
+        "isQuest": false,
         "abilityId": "Maiev|R1",
         "abilityLinks": [
           "Maiev|R1"
@@ -291,6 +299,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Maiev|R2",
         "abilityLinks": [
           "Maiev|R2"
@@ -309,6 +318,7 @@
         "icon": "storm_ui_icon_maiev_knives.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Maiev|Q1",
         "abilityLinks": [
           "Maiev|Q1"
@@ -325,6 +335,7 @@
         "icon": "storm_ui_icon_maiev_umbra_1.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Maiev|W1",
         "abilityLinks": [
           "Maiev|W1"
@@ -342,13 +353,14 @@
         "icon": "storm_ui_icon_maiev_rush_2.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Maiev|E1",
         "abilityLinks": [
           "Maiev|E1"
         ],
         "abilityTalentLinkIds": [
-          "MaievSpiritOfVengeanceBlink",
-          "MaievSpiritOfVengeance"
+          "MaievSpiritOfVengeance",
+          "MaievSpiritOfVengeanceBlink"
         ]
       }
     ],
@@ -361,6 +373,7 @@
         "icon": "storm_ui_icon_maiev_knives.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Maiev|Q1",
         "abilityLinks": [
           "Maiev|Q1"
@@ -377,6 +390,7 @@
         "icon": "storm_ui_icon_maiev_umbra_1.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Maiev|W1",
         "abilityLinks": [
           "Maiev|W1"
@@ -394,6 +408,7 @@
         "icon": "storm_ui_icon_maiev_heavy_strikes.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Maiev|Passive"
       }
     ],
@@ -406,7 +421,12 @@
         "icon": "storm_ui_icon_maiev_shadoworb_vengeance.png",
         "type": "Active",
         "sort": 1,
-        "abilityId": "Maiev|Active"
+        "isQuest": false,
+        "abilityId": "Maiev|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MaievSpiritOfVengeanceShadowOrbVengeance"
+        ]
       },
       {
         "tooltipId": "MaievShadowOrbHuntress",
@@ -416,7 +436,12 @@
         "icon": "storm_ui_icon_maiev_shadoworb_relentless.png",
         "type": "Active",
         "sort": 2,
-        "abilityId": "Maiev|Active"
+        "isQuest": false,
+        "abilityId": "Maiev|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MaievShadowOrbHuntress"
+        ]
       },
       {
         "tooltipId": "MaievShadowOrbShadowStrike",
@@ -426,7 +451,12 @@
         "icon": "storm_ui_icon_maiev_shadoworb_strike.png",
         "type": "Active",
         "sort": 3,
-        "abilityId": "Maiev|Active"
+        "isQuest": false,
+        "abilityId": "Maiev|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MaievShadowOrbShadowStrike"
+        ]
       }
     ]
   },

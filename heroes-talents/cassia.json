@@ -139,6 +139,7 @@
         "icon": "storm_ui_icon_cassia_fend.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Cassia|E1",
         "abilityLinks": [
           "Cassia|E1"
@@ -155,6 +156,7 @@
         "icon": "storm_ui_icon_cassia_new_chargedstrikes.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Cassia|Passive"
       }
     ],
@@ -167,13 +169,14 @@
         "icon": "storm_ui_icon_cassia_avoidance_b.png",
         "type": "Trait",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Cassia|D1",
         "abilityLinks": [
           "Cassia|D1"
         ],
         "abilityTalentLinkIds": [
-          "AmazonSurgeOfLight",
-          "AmazonAvoidance"
+          "AmazonAvoidance",
+          "AmazonSurgeOfLight"
         ]
       },
       {
@@ -184,6 +187,7 @@
         "icon": "storm_ui_icon_cassia_ringoftheleech.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Cassia|Passive"
       },
       {
@@ -195,6 +199,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "Cassia|Active",
         "abilityLinks": [
           "Cassia|Q1"
@@ -213,6 +218,7 @@
         "icon": "storm_ui_icon_cassia_combo_q_e.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Cassia|Q1",
         "abilityLinks": [
           "Cassia|E1",
@@ -231,6 +237,7 @@
         "icon": "storm_ui_icon_cassia_blindinglight.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Cassia|W1",
         "abilityLinks": [
           "Cassia|W1"
@@ -247,12 +254,14 @@
         "icon": "storm_ui_icon_cassia_avoidance_b.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Cassia|D1",
         "abilityLinks": [
           "Cassia|D1"
         ],
         "abilityTalentLinkIds": [
-          "AmazonAvoidance"
+          "AmazonAvoidance",
+          "AmazonSurgeOfLight"
         ]
       }
     ],
@@ -266,6 +275,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Cassia|R1",
         "abilityLinks": [
           "Cassia|R1"
@@ -283,6 +293,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Cassia|R2",
         "abilityLinks": [
           "Cassia|R2"
@@ -301,6 +312,7 @@
         "icon": "storm_ui_icon_cassia_fend.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Cassia|E1",
         "abilityLinks": [
           "Cassia|E1"
@@ -317,13 +329,14 @@
         "icon": "storm_ui_icon_cassia_avoidance_b.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Cassia|D1",
         "abilityLinks": [
           "Cassia|D1"
         ],
         "abilityTalentLinkIds": [
-          "AmazonSurgeOfLight",
           "AmazonAvoidance",
+          "AmazonSurgeOfLight",
           "AmazonWarTravelerSummonMount"
         ]
       },
@@ -335,13 +348,14 @@
         "icon": "storm_ui_icon_cassia_new_gloves.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Cassia|D1",
         "abilityLinks": [
           "Cassia|D1"
         ],
         "abilityTalentLinkIds": [
-          "AmazonSurgeOfLight",
-          "AmazonAvoidance"
+          "AmazonAvoidance",
+          "AmazonSurgeOfLight"
         ]
       }
     ],
@@ -354,6 +368,7 @@
         "icon": "storm_ui_icon_cassia_combo_q_w.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Cassia|Q1",
         "abilityLinks": [
           "Cassia|Q1",
@@ -372,6 +387,7 @@
         "icon": "storm_ui_icon_cassia_combo_q_e.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Cassia|Q1",
         "abilityLinks": [
           "Cassia|E1",
@@ -390,6 +406,7 @@
         "icon": "storm_ui_icon_talent_autoattack_searing.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Cassia|Passive"
       }
     ],
@@ -402,6 +419,7 @@
         "icon": "storm_ui_icon_cassia_balllightning.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Cassia|R1",
         "abilityLinks": [
           "Cassia|R1"
@@ -421,6 +439,7 @@
         "icon": "storm_ui_icon_cassia_valkrie.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Cassia|R2",
         "abilityLinks": [
           "Cassia|R2"
@@ -440,13 +459,14 @@
         "icon": "storm_ui_icon_cassia_avoidance_b.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Cassia|D1",
         "abilityLinks": [
           "Cassia|D1"
         ],
         "abilityTalentLinkIds": [
-          "AmazonSurgeOfLight",
-          "AmazonAvoidance"
+          "AmazonAvoidance",
+          "AmazonSurgeOfLight"
         ]
       },
       {
@@ -458,13 +478,14 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 30,
+        "isQuest": false,
         "abilityId": "Cassia|Active",
         "abilityLinks": [
           "Cassia|D1"
         ],
         "abilityTalentLinkIds": [
-          "AmazonSurgeOfLight",
-          "AmazonAvoidance"
+          "AmazonAvoidance",
+          "AmazonSurgeOfLight"
         ]
       }
     ]

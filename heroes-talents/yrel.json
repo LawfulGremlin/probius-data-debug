@@ -68,7 +68,7 @@
         "type": "basic"
       },
       {
-        "uid": "ba08af",
+        "uid": "772872",
         "name": "Avenging Wrath",
         "description": "Leap to a location, dealing 260 (+4% per level) damage to enemies in an area and Slowing them by 60% for 1 second.  Charging up this Ability increases its range.",
         "hotkey": "E",
@@ -126,13 +126,14 @@
         "icon": "storm_ui_icon_yrel_vindication.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Yrel|Q1",
         "abilityLinks": [
           "Yrel|Q1"
         ],
         "abilityTalentLinkIds": [
-          "YrelVindicationCast",
-          "YrelVindication"
+          "YrelVindication",
+          "YrelVindicationCast"
         ]
       },
       {
@@ -143,6 +144,7 @@
         "icon": "storm_ui_icon_talent_abilitytalent_armor.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Yrel|Passive"
       },
       {
@@ -153,6 +155,7 @@
         "icon": "storm_ui_icon_talent_autoattack_heal.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Yrel|Passive"
       }
     ],
@@ -165,14 +168,15 @@
         "icon": "storm_ui_icon_yrel_avenging_wrath.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Yrel|E1",
         "abilityLinks": [
           "Yrel|E1"
         ],
         "abilityTalentLinkIds": [
-          "YrelAvengingWrathDivinePurpose",
           "YrelAvengingWrath",
-          "YrelAvengingWrathChannel"
+          "YrelAvengingWrathChannel",
+          "YrelAvengingWrathDivinePurpose"
         ]
       },
       {
@@ -183,11 +187,13 @@
         "icon": "storm_ui_icon_yrel_divine_purpose.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Yrel|D1",
         "abilityLinks": [
           "Yrel|D1"
         ],
         "abilityTalentLinkIds": [
+          "YrelDivinePurposeActive",
           "YrelDivinePurpose"
         ]
       },
@@ -200,7 +206,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 40,
-        "abilityId": "Yrel|Active"
+        "isQuest": false,
+        "abilityId": "Yrel|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "YrelHandOfFreedom"
+        ]
       }
     ],
     "7": [
@@ -212,14 +223,15 @@
         "icon": "storm_ui_icon_yrel_righteous_hammer.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Yrel|W1",
         "abilityLinks": [
           "Yrel|W1"
         ],
         "abilityTalentLinkIds": [
-          "YrelRighteousHammerDivinePurpose",
           "YrelRighteousHammer",
-          "YrelRighteousHammerChannel"
+          "YrelRighteousHammerChannel",
+          "YrelRighteousHammerDivinePurpose"
         ]
       },
       {
@@ -230,14 +242,15 @@
         "icon": "storm_ui_icon_yrel_avenging_wrath.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Yrel|E1",
         "abilityLinks": [
           "Yrel|E1"
         ],
         "abilityTalentLinkIds": [
-          "YrelAvengingWrathDivinePurpose",
           "YrelAvengingWrath",
-          "YrelAvengingWrathChannel"
+          "YrelAvengingWrathChannel",
+          "YrelAvengingWrathDivinePurpose"
         ]
       },
       {
@@ -248,6 +261,7 @@
         "icon": "storm_ui_icon_yrel_divine_steed.png",
         "type": "Z",
         "sort": 3,
+        "isQuest": false,
         "abilityLinks": [
           "Yrel|Z"
         ],
@@ -266,6 +280,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 120,
+        "isQuest": false,
         "abilityId": "Yrel|R1",
         "abilityLinks": [
           "Yrel|R1"
@@ -283,6 +298,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 25,
+        "isQuest": false,
         "abilityId": "Yrel|R2",
         "abilityLinks": [
           "Yrel|R2"
@@ -301,13 +317,14 @@
         "icon": "storm_ui_icon_yrel_vindication.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Yrel|Q1",
         "abilityLinks": [
           "Yrel|Q1"
         ],
         "abilityTalentLinkIds": [
-          "YrelVindicationCast",
-          "YrelVindication"
+          "YrelVindication",
+          "YrelVindicationCast"
         ]
       },
       {
@@ -318,14 +335,15 @@
         "icon": "storm_ui_icon_yrel_avenging_wrath.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Yrel|E1",
         "abilityLinks": [
           "Yrel|E1"
         ],
         "abilityTalentLinkIds": [
-          "YrelAvengingWrathDivinePurpose",
           "YrelAvengingWrath",
-          "YrelAvengingWrathChannel"
+          "YrelAvengingWrathChannel",
+          "YrelAvengingWrathDivinePurpose"
         ]
       },
       {
@@ -336,6 +354,7 @@
         "icon": "storm_ui_icon_yrel_velens_chosen.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Yrel|Passive"
       }
     ],
@@ -348,14 +367,15 @@
         "icon": "storm_ui_icon_yrel_righteous_hammer.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Yrel|W1",
         "abilityLinks": [
           "Yrel|W1"
         ],
         "abilityTalentLinkIds": [
-          "YrelRighteousHammerDivinePurpose",
           "YrelRighteousHammer",
-          "YrelRighteousHammerChannel"
+          "YrelRighteousHammerChannel",
+          "YrelRighteousHammerDivinePurpose"
         ]
       },
       {
@@ -366,11 +386,13 @@
         "icon": "storm_ui_icon_yrel_divine_purpose.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Yrel|D1",
         "abilityLinks": [
           "Yrel|D1"
         ],
         "abilityTalentLinkIds": [
+          "YrelDivinePurposeActive",
           "YrelDivinePurpose"
         ]
       },
@@ -382,6 +404,7 @@
         "icon": "storm_ui_icon_talent_autoattack_aoe.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Yrel|Passive"
       }
     ],
@@ -394,6 +417,7 @@
         "icon": "storm_ui_icon_yrel_ardent_defender.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Yrel|R1",
         "abilityLinks": [
           "Yrel|R1"
@@ -413,6 +437,7 @@
         "icon": "storm_ui_icon_yrel_sacred_ground.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Yrel|R2",
         "abilityLinks": [
           "Yrel|R2"
@@ -433,7 +458,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 80,
-        "abilityId": "Yrel|Active"
+        "isQuest": false,
+        "abilityId": "Yrel|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "YrelBubbleHearth"
+        ]
       },
       {
         "tooltipId": "YrelSeraphim",
@@ -444,7 +474,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 20,
-        "abilityId": "Yrel|Active"
+        "isQuest": false,
+        "abilityId": "Yrel|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "YrelSeraphim"
+        ]
       }
     ]
   },

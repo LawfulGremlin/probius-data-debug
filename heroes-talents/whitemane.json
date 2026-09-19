@@ -127,6 +127,7 @@
         "icon": "storm_ui_icon_whitemane_inquisition_lash.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Whitemane|W1",
         "abilityLinks": [
           "Whitemane|W1"
@@ -143,6 +144,7 @@
         "icon": "storm_ui_icon_whitemane_lash.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Whitemane|E1",
         "abilityLinks": [
           "Whitemane|E1"
@@ -159,6 +161,7 @@
         "icon": "storm_ui_icon_whitemane_lash_alt_1.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Whitemane|E1",
         "abilityLinks": [
           "Whitemane|E1"
@@ -177,6 +180,7 @@
         "icon": "storm_ui_icon_whitemane_desperation.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Whitemane|Q1",
         "abilityLinks": [
           "Whitemane|Q1"
@@ -193,6 +197,7 @@
         "icon": "storm_ui_icon_whitemane_desperation_alt_1.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Whitemane|Q1",
         "abilityLinks": [
           "Whitemane|Q1"
@@ -209,6 +214,7 @@
         "icon": "storm_ui_icon_whitemane_zeal.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Whitemane|D1",
         "abilityLinks": [
           "Whitemane|D1"
@@ -227,6 +233,7 @@
         "icon": "storm_ui_icon_whitemane_desperation.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Whitemane|Q1",
         "abilityLinks": [
           "Whitemane|Q1"
@@ -243,6 +250,7 @@
         "icon": "storm_ui_icon_whitemane_lash.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Whitemane|E1",
         "abilityLinks": [
           "Whitemane|E1"
@@ -260,7 +268,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "Whitemane|Active"
+        "isQuest": false,
+        "abilityId": "Whitemane|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "WhitemaneIntercession"
+        ]
       }
     ],
     "10": [
@@ -273,6 +286,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Whitemane|R1",
         "abilityLinks": [
           "Whitemane|R1"
@@ -290,6 +304,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 75,
+        "isQuest": false,
         "abilityId": "Whitemane|R2",
         "abilityLinks": [
           "Whitemane|R2"
@@ -308,6 +323,7 @@
         "icon": "storm_ui_icon_whitemane_inquisition.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Whitemane|W1",
         "abilityLinks": [
           "Whitemane|W1"
@@ -324,6 +340,7 @@
         "icon": "storm_ui_icon_whitemane_lash.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Whitemane|E1",
         "abilityLinks": [
           "Whitemane|E1"
@@ -340,6 +357,7 @@
         "icon": "storm_ui_icon_whitemane_zeal.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Whitemane|D1",
         "abilityLinks": [
           "Whitemane|D1"
@@ -358,6 +376,7 @@
         "icon": "storm_ui_icon_whitemane_desperation.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Whitemane|Q1",
         "abilityLinks": [
           "Whitemane|Q1"
@@ -374,6 +393,7 @@
         "icon": "storm_ui_icon_whitemane_inquisition.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Whitemane|W1",
         "abilityLinks": [
           "Whitemane|W1"
@@ -390,6 +410,7 @@
         "icon": "storm_ui_icon_whitemane_lash.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Whitemane|E1",
         "abilityLinks": [
           "Whitemane|E1"
@@ -408,6 +429,7 @@
         "icon": "storm_ui_icon_whitemane_aegis.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Whitemane|R1",
         "abilityLinks": [
           "Whitemane|R1"
@@ -427,6 +449,7 @@
         "icon": "storm_ui_icon_whitemane_reckoning.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Whitemane|R2",
         "abilityLinks": [
           "Whitemane|R2"
@@ -447,6 +470,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
+        "isQuest": false,
         "abilityId": "Whitemane|Active",
         "abilityLinks": [
           "Whitemane|Q1"
@@ -464,7 +488,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 40,
-        "abilityId": "Whitemane|Active"
+        "isQuest": false,
+        "abilityId": "Whitemane|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "WhitemanePurgeTheWicked"
+        ]
       }
     ]
   },

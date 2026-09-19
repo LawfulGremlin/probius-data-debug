@@ -148,6 +148,7 @@
         "icon": "storm_ui_icon_varian_parry.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Varian|W1",
         "abilityLinks": [
           "Varian|W1"
@@ -185,6 +186,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 16,
+        "isQuest": false,
         "abilityId": "Varian|R1",
         "abilityLinks": [
           "Varian|R1"
@@ -202,6 +204,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 20,
+        "isQuest": false,
         "abilityId": "Varian|R2",
         "abilityLinks": [
           "Varian|R2"
@@ -218,13 +221,7 @@
         "icon": "storm_ui_icon_varian_twinbladesoffury.png",
         "type": "Heroic",
         "sort": 3,
-        "abilityId": "Varian|R3",
-        "abilityLinks": [
-          "Varian|R3"
-        ],
-        "abilityTalentLinkIds": [
-          "VarianTwinBladesOfFury"
-        ]
+        "isQuest": false
       }
     ],
     "7": [
@@ -236,12 +233,15 @@
         "icon": "storm_ui_icon_varian_lionsfang.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Varian|Q1",
         "abilityLinks": [
-          "Varian|Q1"
+          "Varian|Q1",
+          "Varian|W1"
         ],
         "abilityTalentLinkIds": [
-          "VarianLionsFang"
+          "VarianLionsFang",
+          "VarianParry"
         ]
       },
       {
@@ -252,6 +252,7 @@
         "icon": "storm_ui_icon_varian_secondwind.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Varian|Passive"
       },
       {
@@ -262,6 +263,8 @@
         "icon": "storm_ui_icon_varian_victoryrush.png",
         "type": "Passive",
         "sort": 3,
+        "cooldown": 30,
+        "isQuest": false,
         "abilityId": "Varian|Passive"
       }
     ],
@@ -274,6 +277,7 @@
         "icon": "storm_ui_icon_varian_parry.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Varian|W1",
         "abilityLinks": [
           "Varian|W1"
@@ -290,6 +294,7 @@
         "icon": "storm_ui_icon_varian_charge.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Varian|E1",
         "abilityLinks": [
           "Varian|E1"
@@ -308,6 +313,7 @@
         "icon": "storm_ui_icon_varian_charge.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Varian|E1",
         "abilityLinks": [
           "Varian|E1"
@@ -324,6 +330,7 @@
         "icon": "storm_ui_icon_varian_mortalstrike.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Varian|D1",
         "abilityLinks": [
           "Varian|D1"
@@ -342,7 +349,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Varian|Active"
+        "isQuest": false,
+        "abilityId": "Varian|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "VarianShatteringThrow"
+        ]
       }
     ],
     "16": [
@@ -355,7 +367,12 @@
         "type": "Active",
         "sort": 1,
         "cooldown": 25,
-        "abilityId": "Varian|Active"
+        "isQuest": false,
+        "abilityId": "Varian|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "VarianBannerOfStormwind"
+        ]
       },
       {
         "tooltipId": "VarianBannerOfIronforge",
@@ -366,7 +383,12 @@
         "type": "Active",
         "sort": 2,
         "cooldown": 45,
-        "abilityId": "Varian|Active"
+        "isQuest": false,
+        "abilityId": "Varian|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "VarianBannerOfIronforge"
+        ]
       },
       {
         "tooltipId": "VarianBannerOfDalaran",
@@ -377,7 +399,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 25,
-        "abilityId": "Varian|Active"
+        "isQuest": false,
+        "abilityId": "Varian|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "VarianBannerOfDalaran"
+        ]
       }
     ],
     "20": [
@@ -389,6 +416,7 @@
         "icon": "storm_ui_icon_varian_taunt.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Varian|R1",
         "abilityLinks": [
           "Varian|R1"
@@ -408,6 +436,7 @@
         "icon": "storm_ui_icon_varian_colossus_smash.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Varian|R2",
         "abilityLinks": [
           "Varian|R2"
@@ -427,6 +456,7 @@
         "icon": "storm_ui_icon_varian_twinbladesoffury.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Varian|Passive",
         "abilityLinks": [
           "Varian|R3"
@@ -446,6 +476,7 @@
         "icon": "storm_ui_icon_varian_glorytothealliance.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Varian|Passive",
         "abilityLinks": [
           "Varian|11",
@@ -453,9 +484,9 @@
           "Varian|13"
         ],
         "abilityTalentLinkIds": [
-          "VarianBannerOfStormwind",
+          "VarianBannerOfDalaran",
           "VarianBannerOfIronforge",
-          "VarianBannerOfDalaran"
+          "VarianBannerOfStormwind"
         ]
       },
       {
@@ -467,7 +498,12 @@
         "type": "Active",
         "sort": 5,
         "cooldown": 20,
-        "abilityId": "Varian|Active"
+        "isQuest": false,
+        "abilityId": "Varian|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "VarianDemoralizingShout"
+        ]
       }
     ]
   },

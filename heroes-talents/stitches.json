@@ -133,7 +133,15 @@
         "description": "Gain 3 Armor for every unit afflicted with Vile Gas, stacking up to 8 times. While Shambling Horror is active, this Armor amount is doubled.  Passive: Increase regeneration effects and all healing received by 15%.",
         "icon": "storm_ui_icon_stitches_patchwork.png",
         "type": "W",
-        "sort": 1
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Stitches|W1",
+        "abilityLinks": [
+          "Stitches|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "StitchesSlam"
+        ]
       },
       {
         "tooltipId": "StitchesDevourSavorTheFlavorTalent",
@@ -173,6 +181,7 @@
         "icon": "storm_ui_icon_stitches_slam.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Stitches|W1",
         "abilityLinks": [
           "Stitches|W1"
@@ -189,6 +198,7 @@
         "icon": "storm_ui_icon_stitches_acidcloud.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Stitches|D1",
         "abilityLinks": [
           "Stitches|D1"
@@ -205,6 +215,7 @@
         "icon": "storm_ui_icon_talent_autoattack_slow.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Stitches|Passive"
       }
     ],
@@ -217,6 +228,7 @@
         "icon": "storm_ui_icon_stitches_hook.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Stitches|Q1",
         "abilityLinks": [
           "Stitches|Q1"
@@ -250,6 +262,7 @@
         "icon": "storm_ui_icon_stitches_acidcloud.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Stitches|D1",
         "abilityLinks": [
           "Stitches|D1"
@@ -269,6 +282,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 75,
+        "isQuest": false,
         "abilityId": "Stitches|R1",
         "abilityLinks": [
           "Stitches|R1"
@@ -286,6 +300,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 65,
+        "isQuest": false,
         "abilityId": "Stitches|R2",
         "abilityLinks": [
           "Stitches|R2"
@@ -304,6 +319,7 @@
         "icon": "storm_ui_icon_stitches_hook.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Stitches|Q1",
         "abilityLinks": [
           "Stitches|Q1"
@@ -337,6 +353,7 @@
         "icon": "storm_ui_icon_stitches_chopchop.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Stitches|D1",
         "abilityLinks": [
           "Stitches|D1"
@@ -355,6 +372,7 @@
         "icon": "storm_ui_icon_stitches_slam.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Stitches|W1",
         "abilityLinks": [
           "Stitches|W1"
@@ -371,6 +389,7 @@
         "icon": "storm_ui_icon_stitches_devour.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Stitches|E1",
         "abilityLinks": [
           "Stitches|E1"
@@ -386,7 +405,8 @@
         "description": "Deals 15 (+4% per level) damage per second to nearby enemies. Hitting an enemy Hero with Hook or activating Shambling Horror increases this damage by 150% for 4 seconds.",
         "icon": "storm_ui_icon_talent_burningrage.png",
         "type": "Trait",
-        "sort": 3
+        "sort": 3,
+        "isQuest": false
       }
     ],
     "20": [
@@ -418,6 +438,7 @@
         "icon": "storm_ui_icon_stitches_cannibalize.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Stitches|R2",
         "abilityLinks": [
           "Stitches|R2"
@@ -437,6 +458,7 @@
         "icon": "storm_ui_icon_stitches_hook.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Stitches|Q1",
         "abilityLinks": [
           "Stitches|11",
@@ -455,6 +477,7 @@
         "icon": "storm_ui_icon_stitches_acidcloud.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Stitches|D1",
         "abilityLinks": [
           "Stitches|D1"

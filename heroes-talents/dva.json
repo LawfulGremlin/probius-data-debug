@@ -44,14 +44,14 @@
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "resource": 100,
+        "resourceType": "Charge",
         "resourceRegen": 2.1992,
         "attackDamage": 55,
         "attackDamageScale": 0.04,
         "attackRange": 5.5,
         "attackSpeed": 4,
         "radius": 0.625
-      },
-      "portrait": "storm_ui_ingame_partyframe_dva.png"
+      }
     }
   },
   "abilities": {
@@ -133,11 +133,22 @@
     ],
     "D.VaPilot": [
       {
+        "uid": "a9bbf2",
+        "name": "Liquid Cooling",
+        "description": "Activate to gain the effects of Healing Fountain. Requires Mech Mode.  Passive: While in Mech Mode, Healing Fountain's cooldown is reduced to 50 seconds and its effects last 50% longer.",
+        "hotkey": "1",
+        "abilityId": "DVa|11",
+        "tooltipId": "DVaLiquidCooling",
+        "cooldown": 50,
+        "icon": "storm_ui_icon_dva_mechmode_b.png",
+        "type": "activable"
+      },
+      {
         "uid": "d090e0",
         "name": "Self-Destruct",
         "description": "Eject from the Mech, setting it to self-destruct after 4 seconds. Deals 400 (+4% per level) to 1100 (+4% per level) damage in a large area, depending on distance from center. Deals 50% damage against Structures.  Gain 1% Charge for every 2 seconds spent Basic Attacking, and 25% Charge per 100% of Mech Health lost.",
-        "hotkey": "1",
-        "abilityId": "DVa|11",
+        "hotkey": "2",
+        "abilityId": "DVa|21",
         "tooltipId": "DVaMechSelfDestruct",
         "icon": "storm_ui_icon_dva_selfdestruct.png",
         "type": "activable"
@@ -228,6 +239,7 @@
         "icon": "storm_ui_icon_dva_mechmode.png",
         "type": "Trait",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "DVa|D1",
         "abilityLinks": [
           "DVa|D1"
@@ -244,14 +256,15 @@
         "icon": "storm_ui_icon_dva_mechmode_a.png",
         "type": "Trait",
         "sort": 2,
-        "abilityId": "DVa|D1",
+        "isQuest": false,
+        "abilityId": "DVa|E2",
         "abilityLinks": [
           "DVa|D1",
           "DVa|E2"
         ],
         "abilityTalentLinkIds": [
-          "DVaMechMechMode",
-          "DVaPilotCallMech"
+          "DVaPilotCallMech",
+          "DVaMechMechMode"
         ]
       },
       {
@@ -263,6 +276,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "DVa|Active",
         "abilityLinks": [
           "DVa|D1"
@@ -281,6 +295,7 @@
         "icon": "storm_ui_icon_dva_boosters.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "DVa|Q1",
         "abilityLinks": [
           "DVa|Q1"
@@ -297,6 +312,7 @@
         "icon": "storm_ui_icon_dva_defensematrix.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "DVa|W1",
         "abilityLinks": [
           "DVa|W1",
@@ -315,9 +331,10 @@
         "icon": "storm_ui_icon_dva_selfdestruct.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "DVa|E1",
         "abilityLinks": [
-          "DVa|11",
+          "DVa|21",
           "DVa|E1",
           "DVa|R4"
         ],
@@ -337,6 +354,7 @@
         "icon": "storm_ui_icon_dva_boosters.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "DVa|Q1",
         "abilityLinks": [
           "DVa|Q1"
@@ -353,6 +371,7 @@
         "icon": "storm_ui_icon_dva_boosters_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "DVa|Q1",
         "abilityLinks": [
           "DVa|Q1"
@@ -369,6 +388,7 @@
         "icon": "storm_ui_icon_dva_defensematrix.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "DVa|W1",
         "abilityLinks": [
           "DVa|W1",
@@ -390,13 +410,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 70,
-        "abilityId": "DVa|R1",
-        "abilityLinks": [
-          "DVa|R1"
-        ],
-        "abilityTalentLinkIds": [
-          "DVaMechBunnyHopHeroic"
-        ]
+        "isQuest": false
       },
       {
         "tooltipId": "DVaMicroMissiles",
@@ -407,6 +421,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 19,
+        "isQuest": false,
         "abilityId": "DVa|R2",
         "abilityLinks": [
           "DVa|R2"
@@ -425,6 +440,7 @@
         "icon": "storm_ui_icon_dva_defensematrix.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "DVa|W1",
         "abilityLinks": [
           "DVa|W1",
@@ -442,7 +458,17 @@
         "description": "Pilot Mode: Unlocks the Torpedo Dash and Concussive Pulse abilities.  Torpedo Dash: Dash a short distance. 10 second cooldown.  Concussive Pulse: Deal 120 (+4% per level) damage to enemies in a cone and knock them back. 10 second cooldown.",
         "icon": "storm_ui_icon_dva_pilotmode.png",
         "type": "Trait",
-        "sort": 2
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "DVa|Q3",
+        "abilityLinks": [
+          "DVa|Q3",
+          "DVa|W3"
+        ],
+        "abilityTalentLinkIds": [
+          "DVaPilotTorpedoDash",
+          "DVaPilotConcussivePulse"
+        ]
       },
       {
         "tooltipId": "DVaBigShotPewPewPew",
@@ -452,6 +478,7 @@
         "icon": "storm_ui_icon_dva_bigshot.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "DVa|R4",
         "abilityLinks": [
           "DVa|R4"
@@ -470,6 +497,7 @@
         "icon": "storm_ui_icon_dva_boosters.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "DVa|Q1",
         "abilityLinks": [
           "DVa|Q1"
@@ -486,6 +514,7 @@
         "icon": "storm_ui_icon_dva_defensematrix.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "DVa|W1",
         "abilityLinks": [
           "DVa|W1",
@@ -504,6 +533,7 @@
         "icon": "storm_ui_icon_dva_mechmode.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "DVa|D1",
         "abilityLinks": [
           "DVa|D1"
@@ -522,6 +552,7 @@
         "icon": "storm_ui_icon_dva_bunnyhop.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "DVa|R1",
         "abilityLinks": [
           "DVa|R1"
@@ -541,6 +572,7 @@
         "icon": "storm_ui_icon_dva_micromissiles.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "DVa|R2",
         "abilityLinks": [
           "DVa|R2"
@@ -560,6 +592,7 @@
         "icon": "storm_ui_icon_dva_bigshot.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "DVa|R4",
         "abilityLinks": [
           "DVa|R4"
@@ -576,6 +609,7 @@
         "icon": "storm_ui_icon_dva_mechmode.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "DVa|D1",
         "abilityLinks": [
           "DVa|D1"
@@ -586,6 +620,64 @@
       }
     ]
   },
+  "summonUnits": [
+    {
+      "unitId": "HeroDVaPilot",
+      "name": "HeroDVaPilot",
+      "icon": "storm_ui_icon_dva_mount.png",
+      "stats": {
+        "hp": 1109,
+        "hpRegen": 2.5664,
+        "hpScale": 0.04,
+        "hpRegenScale": 0.04,
+        "resource": 100,
+        "resourceType": "Charge",
+        "resourceRegen": 2.1992,
+        "attackDamage": 55,
+        "attackDamageScale": 0.04,
+        "attackRange": 5.5,
+        "attackSpeed": 4,
+        "radius": 0.625,
+        "speed": 4.8398,
+        "sight": 12
+      },
+      "abilities": [
+        {
+          "name": "Torpedo Dash",
+          "hotkey": "Q",
+          "icon": "storm_ui_icon_dva_jetpackattack.png",
+          "description": "Dash towards the target location, passing through enemies along the way.",
+          "cooldown": 10,
+          "tooltipId": "DVaPilotTorpedoDashAbility"
+        },
+        {
+          "name": "Concussive Pulse",
+          "hotkey": "W",
+          "icon": "storm_ui_icon_dva_concussivecharge.png",
+          "description": "Deal 120 damage to enemies in a cone and knock them back.",
+          "cooldown": 10,
+          "tooltipId": "DVaPilotConcussivePulseAbility"
+        },
+        {
+          "name": "Call Mech",
+          "hotkey": "E",
+          "icon": "storm_ui_icon_dva_callmech.png",
+          "description": "Call a new Mech and enter Mech Mode.\n\nBasic Attacks lower this cooldown by 0.5 seconds each.",
+          "cooldown": 45,
+          "tooltipId": "DVaPilotCallMech"
+        },
+        {
+          "name": "Big Shot",
+          "hotkey": "Heroic",
+          "icon": "storm_ui_icon_dva_bigshot.png",
+          "description": "Deal 150 damage to all enemies in a line. Heroes hit have their Movement Speed Slowed by 25% for 1.5 seconds. The cooldown of Call Mech is reduced by 5 seconds for each enemy Hero hit.\n\nRequires Pilot Mode.",
+          "cooldown": 6,
+          "tooltipId": "DVaPilotBigShot"
+        }
+      ],
+      "sourceAbilityTooltipId": "DVaMechanizedWalker"
+    }
+  ],
   "tooltipMarkup": {
     "DVaBigShotPewPewPew": "<c val=\"#AbilityPassive\">Pilot Mode: </c>Instead of a single shot, Big Shot fires <c val=\"#TooltipNumbers\"><d ref=\"Effect,DVaBigShotPewPewPewOffsetPeriodic,PeriodCount\"/></c> shots over <c val=\"#TooltipNumbers\"><d ref=\"Effect,DVaBigShotPewPewPewOffsetPeriodic,PeriodicPeriodArray[1]+Effect,DVaBigShotPewPewPewOffsetPeriodic,PeriodicPeriodArray[2]\" precision=\"2\"/></c> seconds. Each shot deals <c val=\"#TooltipNumbers\"><d ref=\"1+Effect,DVaPilotBigShotDamage,MultiplicativeModifierArray[PewPewPew].Modifier*100\"player=\"0\"/>%</c> damage.",
     "DVaBoostersHitTheNitrous": "The initial speed bonus of Boosters is increased to <c val=\"#TooltipNumbers\">300%</c>, then decays to normal boost speed over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DVaBoostersMoveSpeedActive,Period*Behavior,DVaBoostersHitTheNitrousToken,Init\" precision=\"3\" player=\"0\"/></c> seconds. During this time, Boosters Stuns for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DVaBoostersHitTheNitrousTalentStun,Duration\"precision=\"3\"/></c> seconds.",

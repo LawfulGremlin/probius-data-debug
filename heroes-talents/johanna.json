@@ -121,6 +121,7 @@
         "icon": "storm_ui_icon_johanna_shield_glare.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Johanna|E1",
         "abilityLinks": [
           "Johanna|E1"
@@ -150,7 +151,11 @@
         "sort": 3,
         "cooldown": 40,
         "isQuest": true,
-        "abilityId": "Johanna|Active"
+        "abilityId": "Johanna|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "CrusaderLawsOfHope"
+        ]
       }
     ],
     "4": [
@@ -179,6 +184,7 @@
         "icon": "storm_ui_icon_johanna_condemn.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Johanna|W1",
         "abilityLinks": [
           "Johanna|W1"
@@ -195,6 +201,7 @@
         "icon": "storm_ui_icon_johanna_iron_skin.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Johanna|D1",
         "abilityLinks": [
           "Johanna|D1"
@@ -213,6 +220,7 @@
         "icon": "storm_ui_icon_johanna_punish.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Johanna|Q1",
         "abilityLinks": [
           "Johanna|Q1"
@@ -229,6 +237,7 @@
         "icon": "storm_ui_icon_johanna_condemn.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Johanna|W1",
         "abilityLinks": [
           "Johanna|W1"
@@ -246,7 +255,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 20,
-        "abilityId": "Johanna|Active"
+        "isQuest": false,
+        "abilityId": "Johanna|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "CrusaderSteedCharge"
+        ]
       }
     ],
     "10": [
@@ -259,6 +273,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Johanna|R1",
         "abilityLinks": [
           "Johanna|R1"
@@ -276,6 +291,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 65,
+        "isQuest": false,
         "abilityId": "Johanna|R2",
         "abilityLinks": [
           "Johanna|R2"
@@ -294,6 +310,7 @@
         "icon": "storm_ui_icon_johanna_punish.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Johanna|Q1",
         "abilityLinks": [
           "Johanna|Q1"
@@ -309,7 +326,15 @@
         "description": "Deal 15 (+4% per level) damage per second to nearby enemies. Each Hero hit by Condemn increases this damage by 40% for 5 seconds.",
         "icon": "storm_ui_icon_talent_burningrage.png",
         "type": "W",
-        "sort": 2
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Johanna|W1",
+        "abilityLinks": [
+          "Johanna|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderCondemn"
+        ]
       },
       {
         "tooltipId": "CrusaderCondemnBlessedHammerTalent",
@@ -320,7 +345,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Johanna|Active"
+        "isQuest": false,
+        "abilityId": "Johanna|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "CrusaderBlessedHammer"
+        ]
       }
     ],
     "16": [
@@ -332,6 +362,7 @@
         "icon": "storm_ui_icon_johanna_condemn.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Johanna|W1",
         "abilityLinks": [
           "Johanna|W1"
@@ -348,6 +379,7 @@
         "icon": "storm_ui_icon_johanna_shield_glare.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Johanna|E1",
         "abilityLinks": [
           "Johanna|E1"
@@ -364,6 +396,7 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Johanna|Passive"
       }
     ],
@@ -376,12 +409,14 @@
         "icon": "storm_ui_icon_johanna_falling_sword.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Johanna|R1",
         "abilityLinks": [
           "Johanna|R1"
         ],
         "abilityTalentLinkIds": [
-          "CrusaderFallingSword"
+          "CrusaderFallingSword",
+          "CrusaderBlindedByTheLight"
         ],
         "prerequisiteTalentIds": [
           "CrusaderHeroicAbilityFallingSword"
@@ -395,6 +430,7 @@
         "icon": "storm_ui_icon_johanna_blessed_shield.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Johanna|R2",
         "abilityLinks": [
           "Johanna|R2"
@@ -414,6 +450,7 @@
         "icon": "storm_ui_icon_johanna_indestructible.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Johanna|Passive"
       },
       {
@@ -425,7 +462,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
-        "abilityId": "Johanna|Active"
+        "isQuest": false,
+        "abilityId": "Johanna|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "CrusaderBlindedByTheLight"
+        ]
       }
     ]
   },

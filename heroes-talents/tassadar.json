@@ -138,6 +138,7 @@
         "icon": "storm_ui_icon_tassadar_psionicstorm.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tassadar|W1",
         "abilityLinks": [
           "Tassadar|W1"
@@ -160,8 +161,8 @@
           "Tassadar|D1"
         ],
         "abilityTalentLinkIds": [
-          "TassadarResonanceBeamArcDischargeDummy",
-          "TassadarResonanceBeam"
+          "TassadarResonanceBeam",
+          "TassadarResonanceBeamArcDischargeDummy"
         ]
       }
     ],
@@ -174,6 +175,7 @@
         "icon": "storm_ui_icon_tassadar_rework_q_ray.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tassadar|Q1",
         "abilityLinks": [
           "Tassadar|Q1"
@@ -190,6 +192,7 @@
         "icon": "storm_ui_icon_tassadar_forcewall.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tassadar|E1",
         "abilityLinks": [
           "Tassadar|E1"
@@ -206,13 +209,14 @@
         "icon": "storm_ui_icon_tassadar_rework_trait.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tassadar|D1",
         "abilityLinks": [
           "Tassadar|D1"
         ],
         "abilityTalentLinkIds": [
-          "TassadarResonanceBeamArcDischargeDummy",
-          "TassadarResonanceBeam"
+          "TassadarResonanceBeam",
+          "TassadarResonanceBeamArcDischargeDummy"
         ]
       }
     ],
@@ -225,6 +229,7 @@
         "icon": "storm_ui_icon_tassadar_rework_q_ray.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tassadar|Q1",
         "abilityLinks": [
           "Tassadar|Q1"
@@ -241,6 +246,7 @@
         "icon": "storm_ui_icon_tassadar_psionicstorm.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tassadar|Q1",
         "abilityLinks": [
           "Tassadar|Q1",
@@ -259,13 +265,14 @@
         "icon": "storm_ui_icon_tassadar_rework_trait.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tassadar|D1",
         "abilityLinks": [
           "Tassadar|D1"
         ],
         "abilityTalentLinkIds": [
-          "TassadarResonanceBeamArcDischargeDummy",
-          "TassadarResonanceBeam"
+          "TassadarResonanceBeam",
+          "TassadarResonanceBeamArcDischargeDummy"
         ]
       }
     ],
@@ -279,6 +286,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Tassadar|R1",
         "abilityLinks": [
           "Tassadar|R1"
@@ -296,6 +304,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Tassadar|R2",
         "abilityLinks": [
           "Tassadar|R2"
@@ -314,6 +323,7 @@
         "icon": "storm_ui_icon_tassadar_psionicstorm.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tassadar|W1",
         "abilityLinks": [
           "Tassadar|W1"
@@ -331,7 +341,12 @@
         "type": "Active",
         "sort": 2,
         "cooldown": 60,
-        "abilityId": "Tassadar|Active"
+        "isQuest": false,
+        "abilityId": "Tassadar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TassadarShadowWalk"
+        ]
       },
       {
         "tooltipId": "TassadarOracleTargeted",
@@ -342,7 +357,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 45,
-        "abilityId": "Tassadar|Active"
+        "isQuest": false,
+        "abilityId": "Tassadar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TassadarOracleTargeted"
+        ]
       }
     ],
     "16": [
@@ -354,6 +374,7 @@
         "icon": "storm_ui_icon_tassadar_rework_q_ray.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tassadar|Q1",
         "abilityLinks": [
           "Tassadar|Q1"
@@ -370,6 +391,7 @@
         "icon": "storm_ui_icon_tassadar_psionicstorm.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tassadar|W1",
         "abilityLinks": [
           "Tassadar|W1"
@@ -387,7 +409,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 40,
-        "abilityId": "Tassadar|Active"
+        "isQuest": false,
+        "abilityId": "Tassadar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TassadarExecutorsWill"
+        ]
       }
     ],
     "20": [
@@ -399,11 +426,13 @@
         "icon": "storm_ui_icon_tassadar_archon.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Tassadar|R1",
         "abilityLinks": [
           "Tassadar|R1"
         ],
         "abilityTalentLinkIds": [
+          "TassadarArchon",
           "TassadarArchon"
         ],
         "prerequisiteTalentIds": [
@@ -418,6 +447,7 @@
         "icon": "storm_ui_icon_tassadar_rework_blackhole.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Tassadar|R2",
         "abilityLinks": [
           "Tassadar|R2"
@@ -437,6 +467,7 @@
         "icon": "storm_ui_icon_tassadar_forcewall.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Tassadar|E1",
         "abilityLinks": [
           "Tassadar|E1"
@@ -453,6 +484,7 @@
         "icon": "storm_ui_icon_tassadar_rework_active_khala.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Tassadar|Passive"
       }
     ]

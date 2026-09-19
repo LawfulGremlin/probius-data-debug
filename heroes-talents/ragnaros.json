@@ -44,8 +44,7 @@
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "radius": 3
-      },
-      "portrait": "storm_ui_ingame_partyframe_ragnaros.png"
+      }
     }
   },
   "abilities": {
@@ -136,6 +135,39 @@
         "type": "heroic"
       },
       {
+        "uid": "5b3594",
+        "name": "Cancel Submerge",
+        "description": "Cancel Submerge.",
+        "hotkey": "1",
+        "abilityId": "Ragnaros|11",
+        "tooltipId": "RagnarosSubmergeCancel",
+        "cooldown": 60,
+        "icon": "hud_btn_bg_ability_cancel.png",
+        "type": "activable"
+      },
+      {
+        "uid": "7f42e0",
+        "name": "Catching Fire",
+        "description": "Activate to gain 25 Armor for 3 seconds, reducing damage taken by 25%.",
+        "hotkey": "2",
+        "abilityId": "Ragnaros|21",
+        "tooltipId": "RagnarosCatchingFireItem",
+        "cooldown": 30,
+        "icon": "storm_ui_icon_ragnaros_catchingfire.png",
+        "type": "activable"
+      },
+      {
+        "uid": "544c27",
+        "name": "Submerge",
+        "description": "Ragnaros submerges below, entering Stasis and healing for 600 (+4% per level) Health over 3 seconds.",
+        "hotkey": "3",
+        "abilityId": "Ragnaros|31",
+        "tooltipId": "RagnarosSubmerge",
+        "cooldown": 60,
+        "icon": "storm_ui_icon_ragnaros_submerge.png",
+        "type": "activable"
+      },
+      {
         "uid": "b06941",
         "name": "Explosive Rune",
         "description": "Create a rune that erupts after 1.5 and sets enemies on fire, dealing 22 (+4% per level) damage per second for 5 seconds.",
@@ -145,6 +177,16 @@
         "cooldown": 2.5,
         "icon": "storm_ui_icon_ragnaros_explosiverune.png",
         "type": "basic"
+      },
+      {
+        "uid": "f05405",
+        "name": "Resilient Flame",
+        "description": "When Ragnaros is Stunned, he gains 40 Armor for 3 seconds, reducing damage taken by 40%.  This effect has a 15 second cooldown.",
+        "abilityId": "Ragnaros|22",
+        "tooltipId": "RagnarosResilientFlame",
+        "cooldown": 15,
+        "icon": "storm_ui_icon_talent_resistance.png",
+        "type": "activable"
       },
       {
         "uid": "2539b7",
@@ -215,6 +257,7 @@
         "icon": "storm_ui_icon_ragnaros_blastwave.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Ragnaros|E1",
         "abilityLinks": [
           "Ragnaros|E1"
@@ -233,6 +276,7 @@
         "icon": "storm_ui_icon_ragnaros_livingmeteor.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Ragnaros|W1",
         "abilityLinks": [
           "Ragnaros|W1"
@@ -249,6 +293,7 @@
         "icon": "storm_ui_icon_ragnaros_blastwave.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Ragnaros|E1",
         "abilityLinks": [
           "Ragnaros|E1"
@@ -266,7 +311,13 @@
         "type": "Active",
         "sort": 3,
         "isQuest": true,
-        "abilityId": "Ragnaros|Active"
+        "abilityId": "Ragnaros|Active",
+        "abilityLinks": [
+          "Ragnaros|21"
+        ],
+        "abilityTalentLinkIds": [
+          "RagnarosCatchingFire"
+        ]
       }
     ],
     "7": [
@@ -278,6 +329,7 @@
         "icon": "storm_ui_icon_ragnaros_empowersulfuras.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Ragnaros|Q1",
         "abilityLinks": [
           "Ragnaros|Q1"
@@ -295,6 +347,7 @@
         "icon": "storm_ui_icon_ragnaros_livingmeteor.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Ragnaros|W1",
         "abilityLinks": [
           "Ragnaros|W1"
@@ -311,6 +364,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Ragnaros|Passive"
       }
     ],
@@ -342,13 +396,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 120,
-        "abilityId": "Ragnaros|R2",
-        "abilityLinks": [
-          "Ragnaros|R2"
-        ],
-        "abilityTalentLinkIds": [
-          "RagnarosLavaWaveTargetPoint"
-        ]
+        "isQuest": false
       }
     ],
     "13": [
@@ -360,6 +408,7 @@
         "icon": "storm_ui_icon_ragnaros_empowersulfuras.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Ragnaros|Q1",
         "abilityLinks": [
           "Ragnaros|Q1"
@@ -377,6 +426,7 @@
         "icon": "storm_ui_icon_ragnaros_blastwave.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Ragnaros|E1",
         "abilityLinks": [
           "Ragnaros|E1"
@@ -393,6 +443,7 @@
         "icon": "storm_ui_icon_talent_resistance.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Ragnaros|Passive"
       }
     ],
@@ -405,6 +456,7 @@
         "icon": "storm_ui_icon_ragnaros_empowersulfuras.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Ragnaros|Q1",
         "abilityLinks": [
           "Ragnaros|Q1"
@@ -422,6 +474,7 @@
         "icon": "storm_ui_icon_ragnaros_livingmeteor.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Ragnaros|W1",
         "abilityLinks": [
           "Ragnaros|W1"
@@ -438,6 +491,7 @@
         "icon": "storm_ui_icon_ragnaros_blastwave.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Ragnaros|E1",
         "abilityLinks": [
           "Ragnaros|E1"
@@ -456,14 +510,15 @@
         "icon": "storm_ui_icon_ragnaros_sulfurassmash.png",
         "type": "Heroic",
         "sort": 1,
-        "abilityId": "Ragnaros|R1",
+        "isQuest": false,
+        "abilityId": "Ragnaros|R3",
         "abilityLinks": [
           "Ragnaros|R1",
           "Ragnaros|R3"
         ],
         "abilityTalentLinkIds": [
-          "RagnarosSulfurasSmash",
-          "RagnarosBigRagSulfurasSmash"
+          "RagnarosBigRagSulfurasSmash",
+          "RagnarosSulfurasSmash"
         ],
         "prerequisiteTalentIds": [
           "RagnarosSulfurasSmash"
@@ -477,6 +532,7 @@
         "icon": "storm_ui_icon_ragnaros_lavawave.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Ragnaros|R2",
         "abilityLinks": [
           "Ragnaros|R2"
@@ -496,6 +552,7 @@
         "icon": "storm_ui_icon_ragnaros_moltencore.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Ragnaros|D1",
         "abilityLinks": [
           "Ragnaros|D1"
@@ -513,6 +570,7 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Ragnaros|Active"
       }
     ]
@@ -527,6 +585,7 @@
     "RagnarosBlastWaveSlowBurn": "Blast Wave Slows enemies hit by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,RagnarosBlastWaveSlowBurn,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosBlastWaveSlowBurn,Duration\"/></c> seconds.",
     "RagnarosBlastWaveTemperedFlame": "When Blast Wave damages an enemy Hero, gain a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,RagnarosBlastWaveDamage,LeechFraction[Shields]\"/>%</c> of the damage dealt for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosBlastWaveTemperedFlame,Duration\"/></c> seconds.",
     "RagnarosBlisteringAttacks": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosBlisteringAttacksCooldown,Duration\"/></c> seconds, Ragnaros's next Basic Attack against a Hero deals <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RagnarosBlisteringAttacksDamageBuff,Modification.DamageDealtFraction[Basic]\"/>%</c> bonus damage. Hitting enemies with Basic Abilities reduces this cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,RagnarosBlisteringAttacksModifyCooldownDuration,Value\"/></c> second.",
+    "RagnarosCatchingFireItem": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,Duration\"/></c> seconds, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,ArmorModification.AllArmorBonus\"/>%</c>.",
     "RagnarosCatchingFireTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gathering a Regeneration Globe increases Ragnaros' Health Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,RagnarosCatchingFireTalentAccumulator,Scale\"precision=\"2\"/></c> per second, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireTokenCounter,Max * Accumulator,RagnarosCatchingFireTalentAccumulator,Scale\" precision=\"2\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gathering <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireTokenCounter,Max\"/></c> Regeneration Globes, activate Catching Fire to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,Duration\"/></c> seconds, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,ArmorModification.AllArmorBonus\"/>%</c>.",
     "RagnarosEmpowerSulfuras": "Ragnaros's next Basic Attack is instant, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,RagnarosEmpowerSulfurasHeroicSplashDamage,Amount\"/></c> Ability damage in an area, and heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RagnarosEmpowerSulfurasNonHeroicSplashDamage,LeechFraction[Life] * 100\"/>%</c> of the damage dealt. Healing doubled versus Heroes.<n/><n/><c val=\"#ColorViolet\">Molten Core: Molten Swing</c><n/>Stun and damage nearby enemies.",
     "RagnarosEmpowerSulfurasCauterizeWounds": "Empower Sulfuras heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,RagnarosCauterizeWoundsHealerAccumulator,Scale*100\"/>%</c> of damage dealt to Heroes over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosEmpowerSulfurasCauterizeWoundsHeal,Duration\"/></c> seconds.",
@@ -544,6 +603,7 @@
     "RagnarosMoltenCoreHeroicDifficulty": "Molten Core's range is increased by <c val=\"#TooltipNumbers\">100%</c> at the start of its duration.  In addition, the cooldown of Molten Core is reduced by <c val=\"#TooltipNumbers\">90</c> seconds when used on a destroyed Fort or Keep.",
     "RagnarosResilientFlame": "When Ragnaros is Stunned, he gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosResilientFlameArmorBehavior,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RagnarosResilientFlameApplyResistantBehavior,Duration\"/></c> seconds, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosResilientFlameArmorBehavior,ArmorModification.AllArmorBonus\"/>%</c>. <n/><n/>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Effect,RagnarosResilientFlameModifyPlayerCooldown,Cost.Cooldown.TimeUse\"/></c></c> second cooldown.",
     "RagnarosSubmerge": "Ragnaros submerges below, entering Stasis and healing for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RagnarosSubmergeHeal,RechargeVitalRate * Behavior,RagnarosSubmerge,Duration\"/></c> Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosSubmerge,Duration\"/></c> seconds.",
+    "RagnarosSubmergeCancel": "Cancel Submerge.",
     "RagnarosSulfurasSmash": "Hurl Sulfuras at the target area, landing after <c val=\"#TooltipNumbers\"><d ref=\"Effect,RagnarosSulfurasSmashTargetPersistent,ExpireDelay\" precision=\"2\"/></c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,RagnarosSulfurasSmashDamage,Amount\"/></c> damage. Enemies in the center take <c val=\"#TooltipNumbers\"><d ref=\"Effect,RagnarosSulfurasSmashEpicenterDamage,Amount\"/></c> damage instead and are Stunned for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosSulfurasSmashStun,Duration\" precision=\"2\" player=\"0\"/></c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosSulfurasSmashTokenCounter,Max\"/></c> enemy Heroes in the center.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Mythic Reward:</c> Sulfuras Smash gains an additional charge.",
     "RagnarosSulfurasSmashFlamesOfSulfuron": "Sulfuras Smash Slows enemies by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,RagnarosSulfurasSmashFlamesOfSulfuronSlow,Modification.UnifiedMoveSpeedFactor * 100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosSulfurasSmashFlamesOfSulfuronSlow,Duration\"Precision=\"2\"/></c> seconds, and the Stun duration of enemies hit in the center is increased by <c val=\"#TooltipNumbers\"><d ref=\"Talent,RagnarosSulfurasSmashFlamesOfSulfuron,AbilityModificationArray[0].Modifications[0].Value\"/></c> second."
   },
@@ -557,6 +617,7 @@
     "RagnarosBlastWaveSlowBurn": "Blast Wave slows enemies",
     "RagnarosBlastWaveTemperedFlame": "Blast Wave damage gives Shields",
     "RagnarosBlisteringAttacks": "Periodically empower Basic Attacks against Heroes",
+    "RagnarosCatchingFireItem": "Activate to gain Resistant for a short time",
     "RagnarosCatchingFireTalent": "<c val=\"#TooltipQuest\">Quest:</c> Regen Globes increase Health Regen",
     "RagnarosEmpowerSulfuras": "Deal damage in an area and heal Ragnaros",
     "RagnarosEmpowerSulfurasCauterizeWounds": "Empower Sulfuras healing increased",

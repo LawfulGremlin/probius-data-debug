@@ -25,7 +25,7 @@
   ],
   "stats": {
     "hp": 1975,
-    "hpRegen": 4.114583333333333,
+    "hpRegen": 4.1146,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -112,6 +112,48 @@
     ],
     "UtherEternalDevotion": [
       {
+        "uid": "c15c4d",
+        "name": "Spell Shield - Disabled",
+        "description": "Spell Shield is disabled and will not trigger.  Click this button to enable Spell Shield.",
+        "hotkey": "1",
+        "abilityId": "Uther|11",
+        "tooltipId": "GenericSpellShieldItemDisabled",
+        "icon": "storm_ui_icon_talent_spellshield.png",
+        "type": "activable"
+      },
+      {
+        "uid": "2c61f9",
+        "name": "Holy Shock",
+        "description": "Activate to deal 145 (+4% per level) damage to the target enemy, and gain the self-healing benefits of Holy Light. Shares a cooldown with Holy Light",
+        "hotkey": "2",
+        "abilityId": "Uther|21",
+        "tooltipId": "UtherHolyShock",
+        "cooldown": 6,
+        "icon": "storm_ui_icon_uther_holyshock.png",
+        "type": "activable"
+      },
+      {
+        "uid": "d78db4",
+        "name": "Hand of Protection",
+        "description": "Activate to make target ally Unstoppable for 1 second. Cannot be cast on Uther. Basic Attacks reduce Hand of Protection's cooldown by 5 seconds.",
+        "hotkey": "3",
+        "abilityId": "Uther|31",
+        "tooltipId": "UtherHandOfProtection",
+        "cooldown": 90,
+        "icon": "storm_ui_icon_talent_cleanse.png",
+        "type": "activable"
+      },
+      {
+        "uid": "1a5bdf",
+        "name": "Spell Shield - Enabled",
+        "description": "Every 30 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 50%.  Click this button to disable Spell Shield from Triggering automatically.",
+        "hotkey": "4",
+        "abilityId": "Uther|41",
+        "tooltipId": "GenericSpellShieldItemEnabled",
+        "icon": "hud_btn_bg_ability_cancel.png",
+        "type": "activable"
+      },
+      {
         "uid": "c5c996",
         "name": "Flash of Light",
         "description": "Heal an ally for 230 (+4% per level) Health.",
@@ -121,6 +163,28 @@
         "cooldown": 1.5,
         "icon": "storm_ui_icon_uther_flashoflight.png",
         "type": "basic"
+      },
+      {
+        "uid": "7b5de9",
+        "name": "Armor of Faith",
+        "description": "Being Stunned, Rooted, or Silenced grants Uther 90 Mana and causes Holy Light's cooldown to recharge 200% faster for 6 seconds. This effect has a 20 second cooldown.",
+        "hotkey": "Q",
+        "abilityId": "Uther|Q3",
+        "tooltipId": "UtherEternalDevotionArmorOfFaithTalent",
+        "cooldown": 20,
+        "icon": "storm_ui_icon_uther_holylight.png",
+        "type": "activable"
+      },
+      {
+        "uid": "cfea6f",
+        "name": "Benediction",
+        "description": "Activate to reduce the Mana cost of Uther's next Basic Ability by 50 and its cooldown by 10 seconds.",
+        "hotkey": "5",
+        "abilityId": "Uther|51",
+        "tooltipId": "UtherBenedictionHotbar",
+        "cooldown": 60,
+        "icon": "storm_ui_icon_uther_benediction.png",
+        "type": "activable"
       }
     ]
   },
@@ -188,7 +252,14 @@
         "type": "Active",
         "sort": 1,
         "cooldown": 6,
-        "abilityId": "Uther|Active"
+        "isQuest": false,
+        "abilityId": "Uther|Active",
+        "abilityLinks": [
+          "Uther|21"
+        ],
+        "abilityTalentLinkIds": [
+          "UtherHolyShock"
+        ]
       },
       {
         "tooltipId": "UtherHammerOfJusticePursuitOfJusticeTalent",
@@ -198,6 +269,7 @@
         "icon": "storm_ui_icon_uther_hammerofjustice.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Uther|E1",
         "abilityLinks": [
           "Uther|E1"
@@ -214,6 +286,7 @@
         "icon": "storm_ui_icon_uther_holyfire.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Uther|Passive",
         "abilityLinks": [
           "Uther|D1"
@@ -232,6 +305,7 @@
         "icon": "storm_ui_icon_uther_holylight.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Uther|Q1",
         "abilityLinks": [
           "Uther|Q1"
@@ -248,6 +322,7 @@
         "icon": "storm_ui_icon_uther_eternaldevotion.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Uther|D1",
         "abilityLinks": [
           "Uther|D1"
@@ -265,7 +340,14 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 90,
-        "abilityId": "Uther|Active"
+        "isQuest": false,
+        "abilityId": "Uther|Active",
+        "abilityLinks": [
+          "Uther|31"
+        ],
+        "abilityTalentLinkIds": [
+          "UtherHandOfProtection"
+        ]
       }
     ],
     "10": [
@@ -278,6 +360,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Uther|R1",
         "abilityLinks": [
           "Uther|R1"
@@ -295,6 +378,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Uther|R2",
         "abilityLinks": [
           "Uther|R2"
@@ -313,6 +397,7 @@
         "icon": "storm_ui_icon_uther_holylight.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Uther|Q1",
         "abilityLinks": [
           "Uther|Q1"
@@ -329,6 +414,7 @@
         "icon": "storm_ui_icon_uther_hammerofjustice.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Uther|E1",
         "abilityLinks": [
           "Uther|E1"
@@ -345,6 +431,7 @@
         "icon": "storm_ui_icon_talent_spellshield.png",
         "type": "Active",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Uther|Active"
       }
     ],
@@ -357,6 +444,7 @@
         "icon": "storm_ui_icon_uther_holylight.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Uther|Q1",
         "abilityLinks": [
           "Uther|Q1"
@@ -373,6 +461,7 @@
         "icon": "storm_ui_icon_uther_holyradiance.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Uther|W1",
         "abilityLinks": [
           "Uther|W1"
@@ -390,7 +479,14 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "Uther|Active"
+        "isQuest": false,
+        "abilityId": "Uther|Active",
+        "abilityLinks": [
+          "Uther|51"
+        ],
+        "abilityTalentLinkIds": [
+          "UtherBenediction"
+        ]
       }
     ],
     "20": [
@@ -402,6 +498,7 @@
         "icon": "storm_ui_icon_uther_divineshield.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Uther|R1",
         "abilityLinks": [
           "Uther|R1"
@@ -421,6 +518,7 @@
         "icon": "storm_ui_icon_uther_divinestorm.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Uther|R2",
         "abilityLinks": [
           "Uther|R2"
@@ -440,6 +538,7 @@
         "icon": "storm_ui_icon_uther_eternaldevotion.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Uther|D1",
         "abilityLinks": [
           "Uther|D1"
@@ -456,6 +555,7 @@
         "icon": "storm_ui_icon_uther_eternaldevotion_a.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Uther|D1",
         "abilityLinks": [
           "Uther|D1"
@@ -467,6 +567,8 @@
     ]
   },
   "tooltipMarkup": {
+    "GenericSpellShieldItemDisabled": "Spell Shield is disabled and will not trigger.<n/><n/>Click this button to enable Spell Shield.",
+    "GenericSpellShieldItemEnabled": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldCooldown,Duration\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor against the next enemy Ability and subsequent Abilities for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,Duration\" precision=\"1\"/></c> seconds, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.<n/><n/>Click this button to disable Spell Shield from Triggering automatically.",
     "GenericSpellShieldTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldCooldown,Duration\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor against the next enemy Ability and subsequent Abilities for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,Duration\" precision=\"1\"/></c> seconds, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.<n/><n/>Can be toggled to allow or prevent this talent from triggering automatically.",
     "UtherBeaconOfLight": "Uther receives <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier*100\"/>%</c> bonus self-healing when targeting others with Holy Light. This bonus is increased to <c val=\"#TooltipNumbers\"><d ref=\"(Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier+Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier)*100\"/>%</c> while he is below <c val=\"#TooltipNumbers\"><d ref=\"Validator,UtherBeaconOfLifeLTThreshold,Value*100\"/>%</c> Health.",
     "UtherBenedictionHotbar": "Activate to reduce the Mana cost of Uther's next Basic Ability by <c val=\"#TooltipNumbers\"><d const=\"$UtherBenedictionManaCostReduction\"/></c> and its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,UtherBenedictionHolyLightCooldownRefund,Cost[0].CooldownTimeUse\"/></c> seconds.",
@@ -492,9 +594,12 @@
     "UtherHolyRadiance": "Heal all allied Heroes and Minions in a line for <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyRadianceCreateHealer,RechargeVitalRate\"/></c> Health, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyRadianceEnemyDamage,Amount\"/></c> damage to enemies.",
     "UtherHolyRadianceTyrsDeliveranceTalent": "Increase the damage and healing of Holy Radiance by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,UtherTyrsDeliveranceAccumulator,Offset\"/>%</c>. Basic Attacks against enemy Heroes cause Uther's next cast of Holy Radiance to have its damage and healing increased by an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,UtherTyrsDeliveranceAccumulator,Scale\"/>%</c>, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherTyrsDeliveranceTokenCounter,Max\"/></c> times.",
     "UtherHolyRadianceWaveofLightTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Damage or heal Heroes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyRadianceWaveofLightQuestTokenBehavior,Max\"/></c> times with Holy Radiance.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Increase the duration of Devotion by <c val=\"#TooltipNumbers\"><d const=\"$UtherWaveofLightQuestCompleteDevotionDurationBonus\" precision=\"1\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Damaging or healing Heroes with Holy Radiance refunds <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherWaveofLightRestoreMana,RechargeVitalRate\"/></c> Mana and reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,WaveofLightModifyUnit,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.",
+    "UtherHolyShock": "Activate to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyShockDamage,Amount\"/></c> damage to the target enemy, and gain the self-healing benefits of Holy Light. Shares a cooldown with Holy Light",
     "UtherRedemptionTalent": "After Eternal Vanguard ends, Uther revives at the spirit's location with <c val=\"#TooltipNumbers\"><d ref=\"1+Effect,RedemptionSetHealth,VitalArray[Life].ChangeFraction*100\"/>%</c> of his maximum Health.<n/><n/>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RedemptionCooldown,Duration\" player=\"0\"/></c> second cooldown."
   },
   "tooltipSimple": {
+    "GenericSpellShieldItemDisabled": "Activate to reduce incoming Ability Damage",
+    "GenericSpellShieldItemEnabled": "Activate to reduce incoming Ability Damage",
     "GenericSpellShieldTalent": "Periodically gain temporary Spell Armor",
     "UtherBeaconOfLight": "Increase Holy Light self-healing",
     "UtherBenedictionHotbar": "Reduce Mana cost, cooldown of next ability",
@@ -520,6 +625,7 @@
     "UtherHolyRadiance": "Heal allies and damage enemies in a line",
     "UtherHolyRadianceTyrsDeliveranceTalent": "Increased Holy Radiance healing and damage",
     "UtherHolyRadianceWaveofLightTalent": "<c val=\"#TooltipQuest\">Quest:</c> Holy Radiance increases Devotion duration",
+    "UtherHolyShock": "Cast Holy Light on an enemy, dealing damage",
     "UtherRedemptionTalent": "Resurrect after Eternal Vanguard ends"
   },
   "tooltipColors": {

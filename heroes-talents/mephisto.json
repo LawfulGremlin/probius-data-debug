@@ -139,6 +139,7 @@
         "icon": "storm_ui_icon_mephisto_lightning.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Mephisto|W1",
         "abilityLinks": [
           "Mephisto|W1"
@@ -155,6 +156,7 @@
         "icon": "storm_ui_icon_mephisto_shade.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Mephisto|E1",
         "abilityLinks": [
           "Mephisto|E1"
@@ -173,6 +175,7 @@
         "icon": "storm_ui_icon_mephisto_skull.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Mephisto|Q1",
         "abilityLinks": [
           "Mephisto|Q1"
@@ -189,6 +192,7 @@
         "icon": "storm_ui_icon_mephisto_lightning.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Mephisto|W1",
         "abilityLinks": [
           "Mephisto|W1"
@@ -205,6 +209,7 @@
         "icon": "storm_ui_icon_mephisto_hatred.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Mephisto|Passive",
         "abilityLinks": [
           "Mephisto|D1"
@@ -223,6 +228,7 @@
         "icon": "storm_ui_icon_mephisto_shade.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Mephisto|E1",
         "abilityLinks": [
           "Mephisto|E1"
@@ -239,6 +245,7 @@
         "icon": "storm_ui_icon_mephisto_shade_b.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Mephisto|E1",
         "abilityLinks": [
           "Mephisto|E1"
@@ -255,6 +262,7 @@
         "icon": "storm_ui_icon_mephisto_shade_c.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Mephisto|E1",
         "abilityLinks": [
           "Mephisto|E1"
@@ -274,6 +282,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 120,
+        "isQuest": false,
         "abilityId": "Mephisto|R1",
         "abilityLinks": [
           "Mephisto|R1"
@@ -291,6 +300,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Mephisto|R2",
         "abilityLinks": [
           "Mephisto|R2"
@@ -309,6 +319,7 @@
         "icon": "storm_ui_icon_mephisto_skull.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Mephisto|Q1",
         "abilityLinks": [
           "Mephisto|Q1"
@@ -325,6 +336,7 @@
         "icon": "storm_ui_icon_mephisto_hatred.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Mephisto|D1",
         "abilityLinks": [
           "Mephisto|D1"
@@ -341,6 +353,7 @@
         "icon": "storm_ui_icon_mephisto_splash.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Mephisto|Passive"
       }
     ],
@@ -353,6 +366,7 @@
         "icon": "storm_ui_icon_mephisto_skull.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Mephisto|Q1",
         "abilityLinks": [
           "Mephisto|Q1"
@@ -369,6 +383,7 @@
         "icon": "storm_ui_icon_mephisto_lightning.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Mephisto|W1",
         "abilityLinks": [
           "Mephisto|W1"
@@ -385,6 +400,7 @@
         "icon": "storm_ui_icon_mephisto_lightning_b.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Mephisto|W1",
         "abilityLinks": [
           "Mephisto|W1"
@@ -403,6 +419,7 @@
         "icon": "storm_ui_icon_mephisto_souls.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Mephisto|R1",
         "abilityLinks": [
           "Mephisto|R1"
@@ -422,6 +439,7 @@
         "icon": "storm_ui_icon_mephisto_durance.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Mephisto|R2",
         "abilityLinks": [
           "Mephisto|R2"
@@ -441,6 +459,7 @@
         "icon": "storm_ui_icon_mephisto_lightning.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Mephisto|W1",
         "abilityLinks": [
           "Mephisto|W1"
@@ -458,6 +477,7 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 20,
+        "isQuest": false,
         "abilityId": "Mephisto|Active",
         "abilityLinks": [
           "Mephisto|E1"

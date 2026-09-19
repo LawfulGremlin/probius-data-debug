@@ -101,13 +101,6 @@
         "cooldown": 20,
         "icon": "storm_ui_icon_hogger_trait.png",
         "type": "trait"
-      },
-      {
-        "name": "Rage",
-        "description": "Rage is gained by taking damage or dealing Basic Attack damage. Hogger's Basic Ability cooldowns refresh 1% faster for every 2 points of Rage. After 3 seconds of not gaining Rage, it begins to quickly decay. ***Hogger gains 5 Rage when landing a Basic Attack and 1 Rage each time he takes damage.***",
-        "hotkey": "D",
-        "icon": "storm_ui_icon_hogger_rage.png",
-        "type": "trait"
       }
     ]
   },
@@ -138,6 +131,7 @@
         "icon": "storm_ui_icon_hogger_trait.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Hogger|D1",
         "abilityLinks": [
           "Hogger|D1"
@@ -155,7 +149,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 45,
-        "abilityId": "Hogger|Active"
+        "isQuest": false,
+        "abilityId": "Hogger|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "HoggerOnTheProwl"
+        ]
       }
     ],
     "4": [
@@ -184,6 +183,7 @@
         "icon": "storm_ui_icon_hogger_e.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Hogger|E1",
         "abilityLinks": [
           "Hogger|E1"
@@ -200,6 +200,7 @@
         "icon": "storm_ui_icon_hogger_rage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Hogger|Passive"
       }
     ],
@@ -212,6 +213,7 @@
         "icon": "storm_ui_icon_hogger_w.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Hogger|Q1",
         "abilityLinks": [
           "Hogger|Q1",
@@ -230,6 +232,7 @@
         "icon": "storm_ui_icon_hogger_trait.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Hogger|D1",
         "abilityLinks": [
           "Hogger|D1"
@@ -246,6 +249,7 @@
         "icon": "storm_ui_icon_hogger_rage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Hogger|Passive",
         "abilityLinks": [
           "Hogger|E1",
@@ -267,6 +271,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Hogger|R1",
         "abilityLinks": [
           "Hogger|R1"
@@ -284,6 +289,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "Hogger|R2",
         "abilityLinks": [
           "Hogger|R2"
@@ -302,6 +308,7 @@
         "icon": "storm_ui_icon_hogger_e.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Hogger|E1",
         "abilityLinks": [
           "Hogger|E1"
@@ -318,6 +325,7 @@
         "icon": "storm_ui_icon_hogger_e_variant.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Hogger|E1",
         "abilityLinks": [
           "Hogger|E1"
@@ -334,6 +342,7 @@
         "icon": "storm_ui_icon_talent_autoattack_heal.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Hogger|Passive",
         "abilityLinks": [
           "Hogger|E1",
@@ -354,6 +363,7 @@
         "icon": "storm_ui_icon_hogger_q.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Hogger|Q1",
         "abilityLinks": [
           "Hogger|Q1"
@@ -370,6 +380,7 @@
         "icon": "storm_ui_icon_hogger_w.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Hogger|W1",
         "abilityLinks": [
           "Hogger|W1"
@@ -386,6 +397,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Hogger|Passive",
         "abilityLinks": [
           "Hogger|E1",
@@ -408,6 +420,7 @@
         "icon": "storm_ui_icon_hogger_r1.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Hogger|R1",
         "abilityLinks": [
           "Hogger|R1"
@@ -427,6 +440,7 @@
         "icon": "storm_ui_icon_hogger_r2.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Hogger|R2",
         "abilityLinks": [
           "Hogger|R2"
@@ -447,7 +461,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "Hogger|Active"
+        "isQuest": false,
+        "abilityId": "Hogger|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "HoggerNoControl"
+        ]
       },
       {
         "tooltipId": "HoggerAngerManagement",
@@ -457,6 +476,7 @@
         "icon": "storm_ui_icon_hogger_rage.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Hogger|Passive"
       }
     ]

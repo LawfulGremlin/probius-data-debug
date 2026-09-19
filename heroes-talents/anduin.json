@@ -122,6 +122,7 @@
         "icon": "storm_ui_icon_anduin_flash_heal.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anduin|Q1",
         "abilityLinks": [
           "Anduin|Q1"
@@ -138,6 +139,7 @@
         "icon": "storm_ui_icon_anduin_divine_star.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Anduin|W1",
         "abilityLinks": [
           "Anduin|W1"
@@ -155,7 +157,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 75,
-        "abilityId": "Anduin|Active"
+        "isQuest": false,
+        "abilityId": "Anduin|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AnduinLightwell"
+        ]
       }
     ],
     "4": [
@@ -167,6 +174,7 @@
         "icon": "storm_ui_icon_anduin_divine_star.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anduin|W1",
         "abilityLinks": [
           "Anduin|W1"
@@ -183,6 +191,7 @@
         "icon": "storm_ui_icon_anduin_chastise.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Anduin|E1",
         "abilityLinks": [
           "Anduin|E1"
@@ -218,6 +227,7 @@
         "icon": "storm_ui_icon_anduin_flash_heal.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anduin|Q1",
         "abilityLinks": [
           "Anduin|Q1"
@@ -234,6 +244,8 @@
         "icon": "storm_ui_icon_anduin_blessed_recovery.png",
         "type": "Passive",
         "sort": 2,
+        "cooldown": 10,
+        "isQuest": false,
         "abilityId": "Anduin|Passive"
       },
       {
@@ -245,7 +257,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 35,
-        "abilityId": "Anduin|Active"
+        "isQuest": false,
+        "abilityId": "Anduin|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AnduinFlashHealDesperatePrayer"
+        ]
       }
     ],
     "10": [
@@ -258,6 +275,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Anduin|R1",
         "abilityLinks": [
           "Anduin|R1"
@@ -275,6 +293,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Anduin|R2",
         "abilityLinks": [
           "Anduin|R2"
@@ -293,6 +312,7 @@
         "icon": "storm_ui_icon_anduin_divine_star.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anduin|W1",
         "abilityLinks": [
           "Anduin|W1"
@@ -308,7 +328,8 @@
         "description": "Damaging an enemy Hero increases Movement Speed by 2.5% and the amount healed by Pursued By Grace by 5% for 6 seconds. These effects stack up to 8 times.",
         "icon": "storm_ui_icon_anduin_varians_legacy.png",
         "type": "Trait",
-        "sort": 2
+        "sort": 2,
+        "isQuest": false
       },
       {
         "tooltipId": "AnduinLeapOfFaithEnchantBootsLionsSpeed",
@@ -318,6 +339,7 @@
         "icon": "storm_ui_icon_anduin_leap_of_faith.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Anduin|D1",
         "abilityLinks": [
           "Anduin|D1"
@@ -336,6 +358,7 @@
         "icon": "storm_ui_icon_anduin_flash_heal.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anduin|Q1",
         "abilityLinks": [
           "Anduin|Q1"
@@ -352,6 +375,7 @@
         "icon": "storm_ui_icon_anduin_divine_star.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Anduin|W1",
         "abilityLinks": [
           "Anduin|W1"
@@ -368,6 +392,7 @@
         "icon": "storm_ui_icon_anduin_leap_of_faith.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Anduin|D1",
         "abilityLinks": [
           "Anduin|D1"
@@ -385,7 +410,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 20,
-        "abilityId": "Anduin|Active"
+        "isQuest": false,
+        "abilityId": "Anduin|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AnduinFlashHealInnerFocus"
+        ]
       }
     ],
     "20": [
@@ -397,6 +427,7 @@
         "icon": "storm_ui_icon_anduin_holy_word_salvation.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anduin|R1",
         "abilityLinks": [
           "Anduin|R1"
@@ -416,6 +447,7 @@
         "icon": "storm_ui_icon_anduin_light_bomb.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Anduin|R2",
         "abilityLinks": [
           "Anduin|R2"
@@ -435,6 +467,7 @@
         "icon": "storm_ui_icon_anduin_chastise.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Anduin|E1",
         "abilityLinks": [
           "Anduin|E1"
@@ -451,6 +484,7 @@
         "icon": "storm_ui_icon_anduin_varians_legacy.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Anduin|Passive",
         "abilityLinks": [
           "Anduin|D1"

@@ -38,7 +38,6 @@
     "radius": 0.625
   },
   "unitIds": [
-    "MarchoftheMurlocsInvisibleDummy",
     "MurkyPufferfish"
   ],
   "abilities": {
@@ -122,6 +121,7 @@
         "icon": "storm_ui_icon_murky_trait_spawnegg.png",
         "type": "Trait",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Murky|D1",
         "abilityLinks": [
           "Murky|D1"
@@ -138,6 +138,7 @@
         "icon": "storm_ui_icon_murky_egghunt.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Murky|D1",
         "abilityLinks": [
           "Murky|D1"
@@ -154,7 +155,12 @@
         "icon": "storm_ui_icon_talent_bribe.png",
         "type": "Active",
         "sort": 3,
-        "abilityId": "Murky|Active"
+        "isQuest": false,
+        "abilityId": "Murky|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MurkyAFishyDeal"
+        ]
       }
     ],
     "4": [
@@ -183,6 +189,7 @@
         "icon": "storm_ui_icon_murky_pufferfish.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Murky|W1",
         "abilityLinks": [
           "Murky|W1"
@@ -218,6 +225,7 @@
         "icon": "storm_ui_icon_murky_slime.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Murky|Q1",
         "abilityLinks": [
           "Murky|Q1"
@@ -234,6 +242,7 @@
         "icon": "storm_ui_icon_murky_safetybubble.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Murky|E1",
         "abilityLinks": [
           "Murky|E1"
@@ -250,6 +259,7 @@
         "icon": "storm_ui_icon_talent_autoattack_slow.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Murky|Passive"
       }
     ],
@@ -263,6 +273,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Murky|R1",
         "abilityLinks": [
           "Murky|R1"
@@ -280,6 +291,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Murky|R2",
         "abilityLinks": [
           "Murky|R2"
@@ -298,6 +310,7 @@
         "icon": "storm_ui_icon_murky_safetybubble.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Murky|E1",
         "abilityLinks": [
           "Murky|E1"
@@ -314,6 +327,7 @@
         "icon": "storm_ui_icon_murky_trait_spawnegg.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Murky|D1",
         "abilityLinks": [
           "Murky|D1"
@@ -330,6 +344,7 @@
         "icon": "storm_ui_icon_murky_fishtank.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Murky|Passive",
         "abilityLinks": [
           "Murky|D1"
@@ -348,6 +363,7 @@
         "icon": "storm_ui_icon_murky_slime.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Murky|Q1",
         "abilityLinks": [
           "Murky|Q1"
@@ -364,6 +380,7 @@
         "icon": "storm_ui_icon_murky_pufferfish.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Murky|W1",
         "abilityLinks": [
           "Murky|W1"
@@ -380,6 +397,7 @@
         "icon": "storm_ui_icon_murky_pufferfish_b.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Murky|W1",
         "abilityLinks": [
           "Murky|W1"
@@ -398,6 +416,7 @@
         "icon": "storm_ui_icon_murky_marchofthemurlocs.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Murky|R1",
         "abilityLinks": [
           "Murky|R1"
@@ -417,6 +436,7 @@
         "icon": "storm_ui_icon_murky_octograb.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Murky|R2",
         "abilityLinks": [
           "Murky|R2"
@@ -436,6 +456,7 @@
         "icon": "storm_ui_icon_murky_slime.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Murky|Q1",
         "abilityLinks": [
           "Murky|Q1"
@@ -452,6 +473,7 @@
         "icon": "storm_ui_icon_murky_pufferfish.png",
         "type": "W",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Murky|D1",
         "abilityLinks": [
           "Murky|D1"
@@ -465,7 +487,7 @@
   "summonUnits": [
     {
       "unitId": "MurkyPufferfish",
-      "name": "Pufferfish",
+      "name": "MurkyPufferfish",
       "icon": "storm_ui_icon_murky_pufferfish.png",
       "stats": {
         "hp": 225,
@@ -473,6 +495,7 @@
         "hpScale": 0.055,
         "hpRegenScale": 0,
         "radius": 0.125,
+        "speed": 0,
         "sight": 3
       },
       "abilities": [],
@@ -480,7 +503,7 @@
     },
     {
       "unitId": "MurkyRespawnEgg",
-      "name": "Murky Egg",
+      "name": "MurkyRespawnEgg",
       "icon": "storm_ui_icon_murky_trait_spawnegg.png",
       "stats": {
         "hp": 420,
@@ -488,6 +511,7 @@
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "radius": 0.5,
+        "speed": 0,
         "sight": 6
       },
       "abilities": [],

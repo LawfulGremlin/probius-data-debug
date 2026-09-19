@@ -126,14 +126,14 @@
         "type": "W",
         "sort": 1,
         "isQuest": true,
-        "abilityId": "Arthas|W1",
+        "abilityId": "Arthas|Q1",
         "abilityLinks": [
           "Arthas|Q1",
           "Arthas|W1"
         ],
         "abilityTalentLinkIds": [
-          "ArthasHowlingBlast",
-          "ArthasDeathCoil"
+          "ArthasDeathCoil",
+          "ArthasHowlingBlast"
         ]
       },
       {
@@ -144,6 +144,7 @@
         "icon": "storm_ui_icon_arthas_frosentempest.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Arthas|E1",
         "abilityLinks": [
           "Arthas|E1"
@@ -160,6 +161,7 @@
         "icon": "storm_ui_icon_talent_block.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Arthas|Passive"
       }
     ],
@@ -172,6 +174,7 @@
         "icon": "storm_ui_icon_arthas_howlingblast.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Arthas|W1",
         "abilityLinks": [
           "Arthas|W1"
@@ -188,13 +191,14 @@
         "icon": "storm_ui_icon_arthas_frosentempest.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Arthas|E1",
         "abilityLinks": [
           "Arthas|E1"
         ],
         "abilityTalentLinkIds": [
-          "ArthasFrozenTempestCancel",
-          "ArthasFrozenTempest"
+          "ArthasFrozenTempest",
+          "ArthasFrozenTempestCancel"
         ]
       },
       {
@@ -205,6 +209,7 @@
         "icon": "storm_ui_icon_arthas_frostmournehungers_off.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Arthas|D1",
         "abilityLinks": [
           "Arthas|D1"
@@ -224,6 +229,7 @@
         "icon": "storm_ui_icon_arthas_deathcoil.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Arthas|Q1",
         "abilityLinks": [
           "Arthas|Q1"
@@ -240,6 +246,7 @@
         "icon": "storm_ui_icon_arthas_runetap.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Arthas|Passive"
       },
       {
@@ -251,7 +258,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 35,
-        "abilityId": "Arthas|Active"
+        "isQuest": false,
+        "abilityId": "Arthas|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ArthasIceboundFortitude"
+        ]
       }
     ],
     "10": [
@@ -264,6 +276,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 18,
+        "isQuest": false,
         "abilityId": "Arthas|R1",
         "abilityLinks": [
           "Arthas|R1"
@@ -281,6 +294,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Arthas|R2",
         "abilityLinks": [
           "Arthas|R2"
@@ -299,6 +313,7 @@
         "icon": "storm_ui_icon_arthas_deathcoil.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Arthas|Q1",
         "abilityLinks": [
           "Arthas|Q1"
@@ -315,6 +330,7 @@
         "icon": "storm_ui_icon_arthas_howlingblast.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Arthas|W1",
         "abilityLinks": [
           "Arthas|W1"
@@ -331,13 +347,14 @@
         "icon": "storm_ui_icon_arthas_frosentempest.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Arthas|E1",
         "abilityLinks": [
           "Arthas|E1"
         ],
         "abilityTalentLinkIds": [
-          "ArthasFrozenTempestCancel",
-          "ArthasFrozenTempest"
+          "ArthasFrozenTempest",
+          "ArthasFrozenTempestCancel"
         ]
       }
     ],
@@ -350,13 +367,14 @@
         "icon": "storm_ui_icon_arthas_frosentempest.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Arthas|E1",
         "abilityLinks": [
           "Arthas|E1"
         ],
         "abilityTalentLinkIds": [
-          "ArthasFrozenTempestCancel",
-          "ArthasFrozenTempest"
+          "ArthasFrozenTempest",
+          "ArthasFrozenTempestCancel"
         ]
       },
       {
@@ -367,6 +385,7 @@
         "icon": "storm_ui_icon_arthas_frostmournehungers_off.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Arthas|D1",
         "abilityLinks": [
           "Arthas|D1"
@@ -385,7 +404,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "Arthas|Active"
+        "isQuest": false,
+        "abilityId": "Arthas|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ArthasAntiMagicShell"
+        ]
       }
     ],
     "20": [
@@ -397,13 +421,14 @@
         "icon": "storm_ui_icon_arthas_armyofthedead.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Arthas|R1",
         "abilityLinks": [
           "Arthas|R1"
         ],
         "abilityTalentLinkIds": [
-          "ArthasArmyOfTheDeadSacrifice",
-          "ArthasArmyOfTheDead"
+          "ArthasArmyOfTheDead",
+          "ArthasArmyOfTheDeadSacrifice"
         ],
         "prerequisiteTalentIds": [
           "ArthasHeroicAbilityArmyoftheDead"
@@ -417,6 +442,7 @@
         "icon": "storm_ui_icon_arthas_summonsindragosa.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Arthas|R2",
         "abilityLinks": [
           "Arthas|R2"
@@ -436,14 +462,15 @@
         "icon": "storm_ui_icon_arthas_frostmournehungers_off.png",
         "type": "Trait",
         "sort": 3,
-        "abilityId": "Arthas|D1",
+        "isQuest": false,
+        "abilityId": "Arthas|Q1",
         "abilityLinks": [
           "Arthas|D1",
           "Arthas|Q1"
         ],
         "abilityTalentLinkIds": [
-          "ArthasFrostmourneHungers",
-          "ArthasDeathCoil"
+          "ArthasDeathCoil",
+          "ArthasFrostmourneHungers"
         ]
       },
       {
@@ -455,14 +482,19 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
-        "abilityId": "Arthas|Active"
+        "isQuest": false,
+        "abilityId": "Arthas|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ArthasPathofFrost"
+        ]
       }
     ]
   },
   "summonUnits": [
     {
       "unitId": "ArthasArmyOfTheDeadGhoul",
-      "name": "Ghoul",
+      "name": "ArthasArmyOfTheDeadGhoul",
       "icon": "storm_ui_icon_arthas_armyofthedead.png",
       "stats": {
         "hp": 1200,

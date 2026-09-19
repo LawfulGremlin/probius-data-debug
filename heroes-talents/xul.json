@@ -138,11 +138,14 @@
         "icon": "storm_ui_icon_necromancer_bonearmor_b.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Xul|Passive",
         "abilityLinks": [
           "Xul|11"
         ],
         "abilityTalentLinkIds": [
+          "NecromancerBoneArmor",
+          "NecromancerBoneArmor",
           "NecromancerBoneArmor"
         ]
       },
@@ -154,11 +157,14 @@
         "icon": "storm_ui_icon_necromancer_bonearmor_c.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Xul|Passive",
         "abilityLinks": [
           "Xul|11"
         ],
         "abilityTalentLinkIds": [
+          "NecromancerBoneArmor",
+          "NecromancerBoneArmor",
           "NecromancerBoneArmor"
         ]
       },
@@ -170,11 +176,14 @@
         "icon": "storm_ui_icon_necromancer_bonearmor.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Xul|Passive",
         "abilityLinks": [
           "Xul|11"
         ],
         "abilityTalentLinkIds": [
+          "NecromancerBoneArmor",
+          "NecromancerBoneArmor",
           "NecromancerBoneArmor"
         ]
       }
@@ -188,6 +197,7 @@
         "icon": "storm_ui_icon_necromancer_reap.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Xul|Q1",
         "abilityLinks": [
           "Xul|Q1"
@@ -204,6 +214,7 @@
         "icon": "storm_ui_icon_necromancer_cursedstrikes_off.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Xul|W1",
         "abilityLinks": [
           "Xul|W1"
@@ -240,6 +251,7 @@
         "icon": "storm_ui_icon_necromancer_cursedstrikes_off.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Xul|W1",
         "abilityLinks": [
           "Xul|W1"
@@ -257,6 +269,7 @@
         "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Xul|D1",
         "abilityLinks": [
           "Xul|D1"
@@ -273,11 +286,14 @@
         "icon": "storm_ui_icon_necromancer_bonearmor.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Xul|Passive",
         "abilityLinks": [
           "Xul|11"
         ],
         "abilityTalentLinkIds": [
+          "NecromancerBoneArmor",
+          "NecromancerBoneArmor",
           "NecromancerBoneArmor"
         ]
       }
@@ -292,6 +308,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Xul|R2",
         "abilityLinks": [
           "Xul|R2"
@@ -309,6 +326,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Xul|R1",
         "abilityLinks": [
           "Xul|R1"
@@ -327,6 +345,7 @@
         "icon": "storm_ui_icon_necromancer_reap.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Xul|Q1",
         "abilityLinks": [
           "Xul|Q1"
@@ -343,6 +362,7 @@
         "icon": "storm_ui_icon_necromancer_cursedstrikes_off.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Xul|W1",
         "abilityLinks": [
           "Xul|W1"
@@ -360,6 +380,7 @@
         "icon": "storm_ui_icon_necromancer_boneprison.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Xul|E1",
         "abilityLinks": [
           "Xul|E1"
@@ -378,6 +399,7 @@
         "icon": "storm_ui_icon_necromancer_reap.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Xul|D1",
         "abilityLinks": [
           "Xul|D1"
@@ -394,6 +416,7 @@
         "icon": "storm_ui_icon_necromancer_cursedstrikes_off.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Xul|W1",
         "abilityLinks": [
           "Xul|W1"
@@ -412,7 +435,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 12,
-        "abilityId": "Xul|Active"
+        "isQuest": false,
+        "abilityId": "Xul|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "NecromancerBoneSpear"
+        ]
       }
     ],
     "20": [
@@ -424,6 +452,7 @@
         "icon": "storm_ui_icon_necromancer_poisonnova.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Xul|R2",
         "abilityLinks": [
           "Xul|R2"
@@ -443,6 +472,7 @@
         "icon": "storm_ui_icon_necromancer_skeletalmages.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Xul|R1",
         "abilityLinks": [
           "Xul|R1"
@@ -462,6 +492,7 @@
         "icon": "storm_ui_icon_necromancer_reap.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Xul|Q1",
         "abilityLinks": [
           "Xul|Q1"
@@ -478,6 +509,7 @@
         "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Xul|D1",
         "abilityLinks": [
           "Xul|D1"
@@ -491,7 +523,7 @@
   "summonUnits": [
     {
       "unitId": "NecromancerRaiseSkeleton",
-      "name": "Raise Skeleton",
+      "name": "NecromancerRaiseSkeleton",
       "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
       "stats": {
         "hp": 240,
@@ -510,8 +542,28 @@
       "sourceAbilityTooltipId": "NecromancerRaiseSkeleton"
     },
     {
+      "unitId": "NecromancerRaiseSkeletonBonePrisonTalentJailor",
+      "name": "NecromancerRaiseSkeletonBonePrisonTalentJailor",
+      "icon": "storm_ui_icon_necromancer_boneprison.png",
+      "stats": {
+        "hp": 240,
+        "hpRegen": -20,
+        "hpScale": 0.04,
+        "hpRegenScale": 0.04,
+        "attackDamage": 21,
+        "attackDamageScale": 0.04,
+        "attackRange": 0.5,
+        "attackSpeed": 1,
+        "radius": 0.5,
+        "speed": 3.25,
+        "sight": 8
+      },
+      "abilities": [],
+      "sourceAbilityTooltipId": "NecromancerBonePrison"
+    },
+    {
       "unitId": "NecromancerSkeletalMage",
-      "name": "Skeletal Mage",
+      "name": "NecromancerSkeletalMage",
       "icon": "storm_ui_icon_necromancer_skeletalmages.png",
       "stats": {
         "hp": 700,
@@ -523,6 +575,7 @@
         "attackRange": 5,
         "attackSpeed": 1,
         "radius": 0.375,
+        "speed": 0,
         "sight": 5.5
       },
       "abilities": [],

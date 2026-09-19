@@ -120,6 +120,7 @@
         "icon": "storm_ui_icon_alarak_discordstrike.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Alarak|Q1",
         "abilityLinks": [
           "Alarak|Q1"
@@ -136,6 +137,7 @@
         "icon": "storm_ui_icon_alarak_telekinesis.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Alarak|W1",
         "abilityLinks": [
           "Alarak|D1",
@@ -143,9 +145,9 @@
         ],
         "abilityTalentLinkIds": [
           "AlarakTelekinesis",
-          "AlarakDeadlyChargeActivate2ndHeroic",
+          "AlarakSadism",
           "AlarakCounterStrikeTargeted2ndHeroic",
-          "AlarakSadism"
+          "AlarakDeadlyChargeActivate2ndHeroic"
         ]
       },
       {
@@ -162,8 +164,8 @@
           "Alarak|E1"
         ],
         "abilityTalentLinkIds": [
-          "AlarakLightningSurgeLightningBarrage",
-          "AlarakLightningSurge"
+          "AlarakLightningSurge",
+          "AlarakLightningSurgeLightningBarrage"
         ]
       }
     ],
@@ -199,8 +201,8 @@
           "Alarak|E1"
         ],
         "abilityTalentLinkIds": [
-          "AlarakLightningSurgeLightningBarrage",
-          "AlarakLightningSurge"
+          "AlarakLightningSurge",
+          "AlarakLightningSurgeLightningBarrage"
         ]
       },
       {
@@ -211,14 +213,15 @@
         "icon": "storm_ui_icon_alarak_sadism.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Alarak|D1",
         "abilityLinks": [
           "Alarak|D1"
         ],
         "abilityTalentLinkIds": [
-          "AlarakDeadlyChargeActivate2ndHeroic",
+          "AlarakSadism",
           "AlarakCounterStrikeTargeted2ndHeroic",
-          "AlarakSadism"
+          "AlarakDeadlyChargeActivate2ndHeroic"
         ]
       }
     ],
@@ -231,6 +234,7 @@
         "icon": "storm_ui_icon_alarak_discordstrike.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Alarak|Q1",
         "abilityLinks": [
           "Alarak|Q1"
@@ -247,6 +251,7 @@
         "icon": "storm_ui_icon_alarak_telekinesis_a.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Alarak|W1",
         "abilityLinks": [
           "Alarak|W1"
@@ -263,6 +268,7 @@
         "icon": "storm_ui_icon_alarak_telekinesis.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Alarak|W1",
         "abilityLinks": [
           "Alarak|W1"
@@ -282,6 +288,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 45,
+        "isQuest": false,
         "abilityId": "Alarak|R1",
         "abilityLinks": [
           "Alarak|R1"
@@ -299,6 +306,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 30,
+        "isQuest": false,
         "abilityId": "Alarak|R2",
         "abilityLinks": [
           "Alarak|R2"
@@ -317,14 +325,15 @@
         "icon": "storm_ui_icon_alarak_sadism.png",
         "type": "Trait",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Alarak|D1",
         "abilityLinks": [
           "Alarak|D1"
         ],
         "abilityTalentLinkIds": [
-          "AlarakDeadlyChargeActivate2ndHeroic",
+          "AlarakSadism",
           "AlarakCounterStrikeTargeted2ndHeroic",
-          "AlarakSadism"
+          "AlarakDeadlyChargeActivate2ndHeroic"
         ]
       },
       {
@@ -335,14 +344,15 @@
         "icon": "storm_ui_icon_alarak_sadism_a.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Alarak|D1",
         "abilityLinks": [
           "Alarak|D1"
         ],
         "abilityTalentLinkIds": [
-          "AlarakDeadlyChargeActivate2ndHeroic",
+          "AlarakSadism",
           "AlarakCounterStrikeTargeted2ndHeroic",
-          "AlarakSadism"
+          "AlarakDeadlyChargeActivate2ndHeroic"
         ]
       },
       {
@@ -353,7 +363,12 @@
         "icon": "storm_ui_icon_alarak_sadism_b.png",
         "type": "Trait",
         "sort": 3,
-        "cooldown": 300
+        "cooldown": 300,
+        "isQuest": false,
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AlarakRiteofRakShir"
+        ]
       }
     ],
     "16": [
@@ -365,6 +380,7 @@
         "icon": "storm_ui_icon_alarak_discordstrike.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Alarak|Q1",
         "abilityLinks": [
           "Alarak|Q1"
@@ -381,13 +397,14 @@
         "icon": "storm_ui_icon_alarak_lightningsurge.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Alarak|E1",
         "abilityLinks": [
           "Alarak|E1"
         ],
         "abilityTalentLinkIds": [
-          "AlarakLightningSurgeLightningBarrage",
-          "AlarakLightningSurge"
+          "AlarakLightningSurge",
+          "AlarakLightningSurgeLightningBarrage"
         ]
       },
       {
@@ -398,14 +415,15 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Alarak|Passive",
         "abilityLinks": [
           "Alarak|D1"
         ],
         "abilityTalentLinkIds": [
-          "AlarakDeadlyChargeActivate2ndHeroic",
+          "AlarakSadism",
           "AlarakCounterStrikeTargeted2ndHeroic",
-          "AlarakSadism"
+          "AlarakDeadlyChargeActivate2ndHeroic"
         ]
       }
     ],
@@ -417,7 +435,15 @@
         "description": "If Deadly Charge was the selected Heroic, Heroes hit by Deadly Charge take bonus damage from Alarak's Abilities equal to 75% of Sadism's bonus damage for 4 seconds.  If Counter-Strike was the selected Heroic, its cooldown is reduced by 2.5 seconds for each enemy Hero hit by Alarak's Basic Abilities.",
         "icon": "storm_ui_icon_alarak_sadism.png",
         "type": "Heroic",
-        "sort": 1
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Alarak|R2",
+        "abilityLinks": [
+          "Alarak|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "AlarakCounterStrikeTargeted"
+        ]
       },
       {
         "tooltipId": "AlarakMightOfTheHighlord",
@@ -427,7 +453,12 @@
         "icon": "storm_ui_icon_alarak_sadism_a.png",
         "type": "Active",
         "sort": 2,
-        "abilityId": "Alarak|Active"
+        "isQuest": false,
+        "abilityId": "Alarak|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AlarakMightOfTheHighlordSetDeadlyChargeAsHeroic"
+        ]
       },
       {
         "tooltipId": "AlarakLastLaugh",
@@ -438,7 +469,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Alarak|Active"
+        "isQuest": false,
+        "abilityId": "Alarak|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AlarakLastLaugh"
+        ]
       },
       {
         "tooltipId": "AlarakHastyBargain",
@@ -449,7 +485,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 20,
-        "abilityId": "Alarak|Active"
+        "isQuest": false,
+        "abilityId": "Alarak|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AlarakHastyBargain"
+        ]
       }
     ]
   },

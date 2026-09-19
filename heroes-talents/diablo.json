@@ -24,7 +24,7 @@
   ],
   "stats": {
     "hp": 2825,
-    "hpRegen": 5.885416666666667,
+    "hpRegen": 5.8854,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -120,6 +120,7 @@
         "icon": "storm_ui_icon_diablo_combo_1.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Diablo|Passive",
         "abilityLinks": [
           "Diablo|E1",
@@ -138,6 +139,7 @@
         "icon": "storm_ui_icon_diablo_blacksoulstone_var1.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Diablo|D1",
         "abilityLinks": [
           "Diablo|D1"
@@ -155,7 +157,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 45,
-        "abilityId": "Diablo|Active"
+        "isQuest": false,
+        "abilityId": "Diablo|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "DiabloBlackSoulstoneSoulShield"
+        ]
       }
     ],
     "4": [
@@ -167,6 +174,7 @@
         "icon": "storm_ui_icon_diablo_shadowcharge_var1.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Diablo|Q1",
         "abilityLinks": [
           "Diablo|Q1"
@@ -183,6 +191,7 @@
         "icon": "storm_ui_icon_diablo_firestomp.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Diablo|W1",
         "abilityLinks": [
           "Diablo|W1"
@@ -199,6 +208,7 @@
         "icon": "storm_ui_icon_talent_autoattack_heal.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Diablo|Passive",
         "abilityLinks": [
           "Diablo|D1"
@@ -217,6 +227,7 @@
         "icon": "storm_ui_icon_diablo_firestomp.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Diablo|W1",
         "abilityLinks": [
           "Diablo|W1"
@@ -233,6 +244,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Diablo|Passive",
         "abilityLinks": [
           "Diablo|D1"
@@ -249,6 +261,7 @@
         "icon": "storm_ui_icon_diablo_combo_1.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Diablo|Passive",
         "abilityLinks": [
           "Diablo|D1"
@@ -268,6 +281,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Diablo|R1",
         "abilityLinks": [
           "Diablo|R1"
@@ -285,6 +299,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Diablo|R2",
         "abilityLinks": [
           "Diablo|R2"
@@ -320,6 +335,7 @@
         "icon": "storm_ui_icon_diablo_firestomp.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Diablo|W1",
         "abilityLinks": [
           "Diablo|W1"
@@ -336,6 +352,7 @@
         "icon": "storm_ui_icon_diablo_combo_1.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Diablo|Passive",
         "abilityLinks": [
           "Diablo|E1",
@@ -356,6 +373,7 @@
         "icon": "storm_ui_icon_diablo_shadowcharge_var1.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Diablo|Q1",
         "abilityLinks": [
           "Diablo|E1",
@@ -374,6 +392,7 @@
         "icon": "storm_ui_icon_diablo_firestomp.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Diablo|W1",
         "abilityLinks": [
           "Diablo|W1"
@@ -390,6 +409,7 @@
         "icon": "storm_ui_icon_diablo_overpower_var1.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Diablo|E1",
         "abilityLinks": [
           "Diablo|E1"
@@ -408,6 +428,7 @@
         "icon": "storm_ui_icon_diablo_apocalypse.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Diablo|R1",
         "abilityLinks": [
           "Diablo|R1"
@@ -427,6 +448,7 @@
         "icon": "storm_ui_icon_diablo_lightningbreath.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Diablo|R2",
         "abilityLinks": [
           "Diablo|R2"
@@ -447,7 +469,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "Diablo|Active"
+        "isQuest": false,
+        "abilityId": "Diablo|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "DiabloTalentLordOfTerror"
+        ]
       },
       {
         "tooltipId": "DiabloHellgateTalent",
@@ -458,7 +485,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 100,
-        "abilityId": "Diablo|Active"
+        "isQuest": false,
+        "abilityId": "Diablo|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "DiabloHellgate"
+        ]
       }
     ]
   },

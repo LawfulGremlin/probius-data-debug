@@ -132,13 +132,14 @@
         "icon": "storm_ui_icon_lunara_wisp.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Lunara|E1",
         "abilityLinks": [
           "Lunara|E1"
         ],
         "abilityTalentLinkIds": [
-          "DryadWispRedirect",
-          "DryadWisp"
+          "DryadWisp",
+          "DryadWispRedirect"
         ]
       },
       {
@@ -149,6 +150,7 @@
         "icon": "storm_ui_icon_lunara_stiflingblossom.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lunara|D1",
         "abilityLinks": [
           "Lunara|D1"
@@ -165,13 +167,14 @@
         "icon": "storm_ui_icon_lunara_boundlessstride_a.png",
         "type": "Z",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Lunara|Z1",
         "abilityLinks": [
           "Lunara|Z1"
         ],
         "abilityTalentLinkIds": [
-          "DryadGallopingGait",
-          "DryadDryadsSwiftness"
+          "DryadDryadsSwiftness",
+          "DryadGallopingGait"
         ]
       }
     ],
@@ -184,6 +187,7 @@
         "icon": "storm_ui_icon_lunara_pollencloud.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Lunara|Q1",
         "abilityLinks": [
           "Lunara|Q1"
@@ -200,6 +204,7 @@
         "icon": "storm_ui_icon_lunara_stiflingblossom.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lunara|D1",
         "abilityLinks": [
           "Lunara|D1"
@@ -216,6 +221,7 @@
         "icon": "storm_ui_icon_lunara_stiflingblossom_var1.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Lunara|D1",
         "abilityLinks": [
           "Lunara|D1"
@@ -234,6 +240,7 @@
         "icon": "storm_ui_icon_lunara_pollencloud.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Lunara|Q1",
         "abilityLinks": [
           "Lunara|Q1"
@@ -250,6 +257,7 @@
         "icon": "storm_ui_icon_lunara_pollencloud_b.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lunara|Q1",
         "abilityLinks": [
           "Lunara|Q1"
@@ -266,6 +274,7 @@
         "icon": "storm_ui_icon_lunara_fullbloom.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Lunara|W1",
         "abilityLinks": [
           "Lunara|W1"
@@ -285,6 +294,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 15,
+        "isQuest": false,
         "abilityId": "Lunara|R1",
         "abilityLinks": [
           "Lunara|R1"
@@ -302,6 +312,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 20,
+        "isQuest": false,
         "abilityId": "Lunara|R2",
         "abilityLinks": [
           "Lunara|R2"
@@ -320,6 +331,7 @@
         "icon": "storm_ui_icon_lunara_fullbloom.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Lunara|W1",
         "abilityLinks": [
           "Lunara|W1"
@@ -336,6 +348,7 @@
         "icon": "storm_ui_icon_lunara_fullbloom_a.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lunara|W1",
         "abilityLinks": [
           "Lunara|W1"
@@ -352,6 +365,7 @@
         "icon": "storm_ui_icon_lunara_greaterspellshield.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Lunara|Passive"
       },
       {
@@ -363,7 +377,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 20,
-        "abilityId": "Lunara|Active"
+        "isQuest": false,
+        "abilityId": "Lunara|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "DryadAbolishMagic"
+        ]
       }
     ],
     "16": [
@@ -375,6 +394,7 @@
         "icon": "storm_ui_icon_lunara_pollencloud.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Lunara|Q1",
         "abilityLinks": [
           "Lunara|Q1"
@@ -391,6 +411,7 @@
         "icon": "storm_ui_icon_lunara_fullbloom.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lunara|W1",
         "abilityLinks": [
           "Lunara|W1"
@@ -407,6 +428,7 @@
         "icon": "storm_ui_icon_lunara_fullbloom_a.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Lunara|W1",
         "abilityLinks": [
           "Lunara|W1"
@@ -423,6 +445,7 @@
         "icon": "storm_ui_icon_lunara_stiflingblossom.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Lunara|D1",
         "abilityLinks": [
           "Lunara|D1"
@@ -441,6 +464,7 @@
         "icon": "storm_ui_icon_lunara_wildspear.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Lunara|R1",
         "abilityLinks": [
           "Lunara|R1"
@@ -460,6 +484,7 @@
         "icon": "storm_ui_icon_lunara_boundlessstride.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Lunara|R2",
         "abilityLinks": [
           "Lunara|R2"
@@ -478,7 +503,15 @@
         "description": "Lunara's Heroic Ability applies 1 additional stack of Nature's Toxin to enemies, and its range is increased by 30%.  Passive: Increase Lunara's vision radius by 35%.",
         "icon": "storm_ui_icon_lunara_forests_wrath.png",
         "type": "Heroic",
-        "sort": 3
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Lunara|R1",
+        "abilityLinks": [
+          "Lunara|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "DryadThornwoodVine"
+        ]
       },
       {
         "tooltipId": "DryadIntensifyingToxin",
@@ -488,14 +521,15 @@
         "icon": "storm_ui_icon_lunara_stiflingblossom.png",
         "type": "Trait",
         "sort": 4,
-        "abilityId": "Lunara|D1",
+        "isQuest": false,
+        "abilityId": "Lunara|Q1",
         "abilityLinks": [
           "Lunara|D1",
           "Lunara|Q1"
         ],
         "abilityTalentLinkIds": [
-          "DryadNaturesToxin",
-          "DryadNoxiousBlossom"
+          "DryadNoxiousBlossom",
+          "DryadNaturesToxin"
         ]
       },
       {
@@ -507,12 +541,14 @@
         "type": "Z",
         "sort": 5,
         "cooldown": 30,
+        "isQuest": false,
         "abilityId": "Lunara|Z1",
         "abilityLinks": [
           "Lunara|Z1"
         ],
         "abilityTalentLinkIds": [
-          "DryadDryadsSwiftness"
+          "DryadDryadsSwiftness",
+          "DryadGallopingGait"
         ]
       }
     ]

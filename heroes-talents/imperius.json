@@ -120,6 +120,7 @@
         "icon": "storm_ui_icon_imperius_q.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Imperius|Q1",
         "abilityLinks": [
           "Imperius|Q1"
@@ -136,6 +137,7 @@
         "icon": "storm_ui_icon_imperius_w.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Imperius|W1",
         "abilityLinks": [
           "Imperius|W1"
@@ -152,6 +154,7 @@
         "icon": "storm_ui_icon_imperius_trait.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Imperius|D1",
         "abilityLinks": [
           "Imperius|D1"
@@ -170,6 +173,7 @@
         "icon": "storm_ui_icon_imperius_e.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Imperius|E1",
         "abilityLinks": [
           "Imperius|E1"
@@ -186,6 +190,7 @@
         "icon": "storm_ui_icon_imperius_trait.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Imperius|D1",
         "abilityLinks": [
           "Imperius|D1"
@@ -202,6 +207,7 @@
         "icon": "storm_ui_icon_imperius_globe.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Imperius|Passive",
         "abilityLinks": [
           "Imperius|D1"
@@ -220,6 +226,7 @@
         "icon": "storm_ui_icon_imperius_q.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Imperius|Q1",
         "abilityLinks": [
           "Imperius|Q1"
@@ -236,6 +243,7 @@
         "icon": "storm_ui_icon_imperius_w.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Imperius|W1",
         "abilityLinks": [
           "Imperius|W1"
@@ -253,7 +261,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 25,
-        "abilityId": "Imperius|Active"
+        "isQuest": false,
+        "abilityId": "Imperius|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ImperiusHolyFervor"
+        ]
       }
     ],
     "10": [
@@ -266,6 +279,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "Imperius|R1",
         "abilityLinks": [
           "Imperius|R1"
@@ -283,6 +297,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Imperius|R2",
         "abilityLinks": [
           "Imperius|R2"
@@ -301,6 +316,7 @@
         "icon": "storm_ui_icon_imperius_q.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Imperius|Q1",
         "abilityLinks": [
           "Imperius|Q1"
@@ -317,6 +333,7 @@
         "icon": "storm_ui_icon_imperius_e.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Imperius|E1",
         "abilityLinks": [
           "Imperius|E1"
@@ -333,6 +350,7 @@
         "icon": "storm_ui_icon_imperius_e_alt_01.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Imperius|E1",
         "abilityLinks": [
           "Imperius|E1"
@@ -351,6 +369,7 @@
         "icon": "storm_ui_icon_imperius_q.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Imperius|Q1",
         "abilityLinks": [
           "Imperius|Q1"
@@ -367,6 +386,7 @@
         "icon": "storm_ui_icon_imperius_e.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Imperius|E1",
         "abilityLinks": [
           "Imperius|E1"
@@ -384,7 +404,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 20,
-        "abilityId": "Imperius|Active"
+        "isQuest": false,
+        "abilityId": "Imperius|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ImperiusValorousPursuit"
+        ]
       }
     ],
     "20": [
@@ -396,6 +421,7 @@
         "icon": "storm_ui_icon_imperius_r1.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Imperius|R1",
         "abilityLinks": [
           "Imperius|R1"
@@ -415,6 +441,7 @@
         "icon": "storm_ui_icon_imperius_r2.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Imperius|R2",
         "abilityLinks": [
           "Imperius|R2"
@@ -434,6 +461,7 @@
         "icon": "storm_ui_icon_imperius_e.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Imperius|E1",
         "abilityLinks": [
           "Imperius|E1"
@@ -450,6 +478,7 @@
         "icon": "storm_ui_icon_imperius_trait.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Imperius|D1",
         "abilityLinks": [
           "Imperius|D1"
@@ -467,7 +496,12 @@
         "type": "Active",
         "sort": 5,
         "cooldown": 75,
-        "abilityId": "Imperius|Active"
+        "isQuest": false,
+        "abilityId": "Imperius|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ImperiusImpervious"
+        ]
       }
     ]
   },

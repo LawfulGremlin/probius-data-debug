@@ -159,6 +159,7 @@
         "icon": "storm_ui_icon_malfurion_entanglingroots_a.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Malfurion|E1",
         "abilityLinks": [
           "Malfurion|E1"
@@ -177,6 +178,7 @@
         "icon": "storm_ui_icon_malfurion_regrowth.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Malfurion|Q1",
         "abilityLinks": [
           "Malfurion|Q1"
@@ -193,6 +195,7 @@
         "icon": "storm_ui_icon_malfurion_moonfire.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Malfurion|W1",
         "abilityLinks": [
           "Malfurion|W1"
@@ -209,6 +212,7 @@
         "icon": "storm_ui_icon_malfurion_innerrvate.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Malfurion|D1",
         "abilityLinks": [
           "Malfurion|D1"
@@ -227,6 +231,7 @@
         "icon": "storm_ui_icon_malfurion_wildgrowth.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Malfurion|Passive",
         "abilityLinks": [
           "Malfurion|Q1",
@@ -245,6 +250,7 @@
         "icon": "storm_ui_icon_malfurion_entanglingroots.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Malfurion|E1",
         "abilityLinks": [
           "Malfurion|E1"
@@ -262,6 +268,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 45,
+        "isQuest": false,
         "abilityId": "Malfurion|Active",
         "abilityLinks": [
           "Malfurion|Q1"
@@ -281,6 +288,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Malfurion|R1",
         "abilityLinks": [
           "Malfurion|R1"
@@ -298,6 +306,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Malfurion|R2",
         "abilityLinks": [
           "Malfurion|R2"
@@ -316,6 +325,7 @@
         "icon": "storm_ui_icon_malfurion_regrowth.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Malfurion|Q1",
         "abilityLinks": [
           "Malfurion|Q1"
@@ -332,6 +342,7 @@
         "icon": "storm_ui_icon_malfurion_moonfire.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Malfurion|W1",
         "abilityLinks": [
           "Malfurion|W1"
@@ -348,6 +359,7 @@
         "icon": "storm_ui_icon_malfurion_innerrvate.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Malfurion|D1",
         "abilityLinks": [
           "Malfurion|D1"
@@ -366,6 +378,7 @@
         "icon": "storm_ui_icon_malfurion_regrowth.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Malfurion|Q1",
         "abilityLinks": [
           "Malfurion|Q1"
@@ -382,6 +395,7 @@
         "icon": "storm_ui_icon_malfurion_wildgrowth.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Malfurion|Passive",
         "abilityLinks": [
           "Malfurion|Q1",
@@ -400,6 +414,7 @@
         "icon": "storm_ui_icon_malfurion_wildgrowth_a.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Malfurion|Passive",
         "abilityLinks": [
           "Malfurion|Q1",
@@ -420,6 +435,7 @@
         "icon": "storm_ui_icon_malfurion_tranquility.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Malfurion|R1",
         "abilityLinks": [
           "Malfurion|R1"
@@ -439,6 +455,7 @@
         "icon": "storm_ui_icon_malfurion_twilightdream.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Malfurion|R2",
         "abilityLinks": [
           "Malfurion|R2"
@@ -458,6 +475,7 @@
         "icon": "storm_ui_icon_malfurion_regrowth.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Malfurion|Q1",
         "abilityLinks": [
           "Malfurion|Q1"
@@ -474,6 +492,7 @@
         "icon": "storm_ui_icon_malfurion_moonfire.png",
         "type": "W",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Malfurion|W1",
         "abilityLinks": [
           "Malfurion|W1"
@@ -487,7 +506,7 @@
   "summonUnits": [
     {
       "unitId": "MalfurionEntanglingRootsVengefulRootsTreant",
-      "name": "Treant",
+      "name": "MalfurionEntanglingRootsVengefulRootsTreant",
       "icon": "storm_ui_icon_malfurion_entanglingroots_b.png",
       "stats": {
         "hp": 550,

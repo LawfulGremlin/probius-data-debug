@@ -135,6 +135,7 @@
         "icon": "storm_ui_icon_sylvanas_witheringfire.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sylvanas|Q1",
         "abilityLinks": [
           "Sylvanas|Q1"
@@ -151,6 +152,7 @@
         "icon": "storm_ui_icon_sylvanas_shadowdagger.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sylvanas|W1",
         "abilityLinks": [
           "Sylvanas|W1"
@@ -167,13 +169,14 @@
         "icon": "storm_ui_icon_sylvanas_blackarrows.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Sylvanas|D1",
         "abilityLinks": [
           "Sylvanas|D1"
         ],
         "abilityTalentLinkIds": [
-          "SylvanasBlackArrowsActive",
-          "SylvanasBlackArrowsPassive"
+          "SylvanasBlackArrowsPassive",
+          "SylvanasBlackArrowsActive"
         ]
       }
     ],
@@ -186,6 +189,7 @@
         "icon": "storm_ui_icon_sylvanas_shadowdagger.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sylvanas|W1",
         "abilityLinks": [
           "Sylvanas|W1"
@@ -202,13 +206,14 @@
         "icon": "storm_ui_icon_sylvanas_blackarrows.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sylvanas|D1",
         "abilityLinks": [
           "Sylvanas|D1"
         ],
         "abilityTalentLinkIds": [
-          "SylvanasBlackArrowsActive",
-          "SylvanasBlackArrowsPassive"
+          "SylvanasBlackArrowsPassive",
+          "SylvanasBlackArrowsActive"
         ]
       },
       {
@@ -220,13 +225,14 @@
         "type": "Trait",
         "sort": 3,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Sylvanas|D1",
         "abilityLinks": [
           "Sylvanas|D1"
         ],
         "abilityTalentLinkIds": [
-          "SylvanasBlackArrowsActive",
-          "SylvanasBlackArrowsPassive"
+          "SylvanasBlackArrowsPassive",
+          "SylvanasBlackArrowsActive"
         ]
       }
     ],
@@ -239,6 +245,7 @@
         "icon": "storm_ui_icon_sylvanas_witheringfire.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sylvanas|Q1",
         "abilityLinks": [
           "Sylvanas|Q1"
@@ -255,6 +262,7 @@
         "icon": "storm_ui_icon_sylvanas_shadowdagger.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sylvanas|W1",
         "abilityLinks": [
           "Sylvanas|W1"
@@ -271,6 +279,7 @@
         "icon": "storm_ui_icon_sylvanas_hauntingwave.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Sylvanas|E1",
         "abilityLinks": [
           "Sylvanas|E1"
@@ -290,6 +299,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Sylvanas|R1",
         "abilityLinks": [
           "Sylvanas|R1"
@@ -307,6 +317,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 40,
+        "isQuest": false,
         "abilityId": "Sylvanas|R2",
         "abilityLinks": [
           "Sylvanas|R2"
@@ -325,6 +336,7 @@
         "icon": "storm_ui_icon_sylvanas_shadowdagger.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sylvanas|W1",
         "abilityLinks": [
           "Sylvanas|W1"
@@ -341,13 +353,14 @@
         "icon": "storm_ui_icon_sylvanas_hauntingwave.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sylvanas|E1",
         "abilityLinks": [
           "Sylvanas|E1"
         ],
         "abilityTalentLinkIds": [
-          "SylvanasHauntingWaveWindrunnerTalent",
-          "SylvanasHauntingWave"
+          "SylvanasHauntingWave",
+          "SylvanasHauntingWaveWindrunnerTalent"
         ]
       },
       {
@@ -358,13 +371,14 @@
         "icon": "storm_ui_icon_sylvanas_blackarrows.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Sylvanas|D1",
         "abilityLinks": [
           "Sylvanas|D1"
         ],
         "abilityTalentLinkIds": [
-          "SylvanasBlackArrowsActive",
-          "SylvanasBlackArrowsPassive"
+          "SylvanasBlackArrowsPassive",
+          "SylvanasBlackArrowsActive"
         ]
       }
     ],
@@ -377,6 +391,7 @@
         "icon": "storm_ui_icon_sylvanas_witheringfire.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sylvanas|Q1",
         "abilityLinks": [
           "Sylvanas|Q1"
@@ -393,13 +408,14 @@
         "icon": "storm_ui_icon_sylvanas_blackarrows.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sylvanas|D1",
         "abilityLinks": [
           "Sylvanas|D1"
         ],
         "abilityTalentLinkIds": [
-          "SylvanasBlackArrowsActive",
-          "SylvanasBlackArrowsPassive"
+          "SylvanasBlackArrowsPassive",
+          "SylvanasBlackArrowsActive"
         ]
       },
       {
@@ -411,7 +427,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "Sylvanas|Active"
+        "isQuest": false,
+        "abilityId": "Sylvanas|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "SylvanasWillOfTheForsaken"
+        ]
       }
     ],
     "20": [
@@ -423,6 +444,7 @@
         "icon": "storm_ui_icon_sylvanas_wailingarrow.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sylvanas|R1",
         "abilityLinks": [
           "Sylvanas|R1"
@@ -442,6 +464,7 @@
         "icon": "storm_ui_icon_sylvanas_mindcontrol.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sylvanas|R2",
         "abilityLinks": [
           "Sylvanas|R2"
@@ -461,6 +484,7 @@
         "icon": "storm_ui_icon_sylvanas_witheringfire.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Sylvanas|Q1",
         "abilityLinks": [
           "Sylvanas|Q1"
@@ -478,7 +502,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 70,
-        "abilityId": "Sylvanas|Active"
+        "isQuest": false,
+        "abilityId": "Sylvanas|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "FlashoftheStorms"
+        ]
       }
     ]
   },

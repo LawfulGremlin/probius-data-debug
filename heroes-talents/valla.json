@@ -173,6 +173,7 @@
         "icon": "storm_ui_icon_valla_multishot.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Valla|W1",
         "abilityLinks": [
           "Valla|W1"
@@ -189,6 +190,7 @@
         "icon": "storm_ui_icon_valla_vault.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Valla|E1",
         "abilityLinks": [
           "Valla|E1"
@@ -205,6 +207,7 @@
         "icon": "storm_ui_icon_valla_repeatingarrow.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Valla|E1",
         "abilityLinks": [
           "Valla|E1"
@@ -223,6 +226,7 @@
         "icon": "storm_ui_icon_valla_hungeringarrow.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Valla|Q1",
         "abilityLinks": [
           "Valla|Q1"
@@ -239,6 +243,7 @@
         "icon": "storm_ui_icon_valla_siphoningarrow.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Valla|Q1",
         "abilityLinks": [
           "Valla|Q1",
@@ -257,6 +262,7 @@
         "icon": "storm_ui_icon_valla_hatred.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Valla|D1",
         "abilityLinks": [
           "Valla|D1"
@@ -276,6 +282,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Valla|R1",
         "abilityLinks": [
           "Valla|R1"
@@ -293,6 +300,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Valla|R2",
         "abilityLinks": [
           "Valla|R2"
@@ -311,6 +319,7 @@
         "icon": "storm_ui_icon_valla_siphoningarrow.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Valla|Q1",
         "abilityLinks": [
           "Valla|Q1",
@@ -329,6 +338,7 @@
         "icon": "storm_ui_icon_valla_hatred.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Valla|D1",
         "abilityLinks": [
           "Valla|D1"
@@ -346,6 +356,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 5,
+        "isQuest": false,
         "abilityId": "Valla|Active",
         "abilityLinks": [
           "Valla|D1"
@@ -364,6 +375,7 @@
         "icon": "storm_ui_icon_valla_multishot.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Valla|W1",
         "abilityLinks": [
           "Valla|W1"
@@ -380,6 +392,7 @@
         "icon": "storm_ui_icon_valla_hatred.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Valla|D1",
         "abilityLinks": [
           "Valla|D1"
@@ -396,6 +409,7 @@
         "icon": "storm_ui_icon_talent_autoattack_searing.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Valla|Passive"
       }
     ],
@@ -408,6 +422,7 @@
         "icon": "storm_ui_icon_valla_strafe.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Valla|R1",
         "abilityLinks": [
           "Valla|R1"
@@ -427,6 +442,7 @@
         "icon": "storm_ui_icon_valla_rainofvengeance.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Valla|R2",
         "abilityLinks": [
           "Valla|R2"
@@ -446,6 +462,7 @@
         "icon": "storm_ui_icon_valla_vault.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Valla|E1",
         "abilityLinks": [
           "Valla|E1"
@@ -462,6 +479,7 @@
         "icon": "storm_ui_icon_valla_hatred.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Valla|D1",
         "abilityLinks": [
           "Valla|D1"

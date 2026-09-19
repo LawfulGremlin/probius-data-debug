@@ -131,6 +131,7 @@
         "icon": "storm_ui_icon_zarya_shieldally.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zarya|E1",
         "abilityLinks": [
           "Zarya|E1"
@@ -147,6 +148,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zarya|D1",
         "abilityLinks": [
           "Zarya|D1"
@@ -182,6 +184,7 @@
         "icon": "storm_ui_icon_zarya_personalbarrier.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zarya|W1",
         "abilityLinks": [
           "Zarya|W1"
@@ -215,6 +218,7 @@
         "icon": "storm_ui_icon_zarya_shieldally_a.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zarya|E1",
         "abilityLinks": [
           "Zarya|E1"
@@ -231,6 +235,7 @@
         "icon": "storm_ui_icon_zarya_pumped.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Zarya|Passive",
         "abilityLinks": [
           "Zarya|E1",
@@ -251,6 +256,7 @@
         "icon": "storm_ui_icon_zarya_particlegrenade.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zarya|Q1",
         "abilityLinks": [
           "Zarya|Q1"
@@ -267,6 +273,7 @@
         "icon": "storm_ui_icon_zarya_particlegrenade_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zarya|Q1",
         "abilityLinks": [
           "Zarya|Q1"
@@ -283,6 +290,7 @@
         "icon": "storm_ui_icon_zarya_personalbarrier.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zarya|W1",
         "abilityLinks": [
           "Zarya|W1"
@@ -302,6 +310,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Zarya|R1",
         "abilityLinks": [
           "Zarya|R1"
@@ -319,6 +328,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 45,
+        "isQuest": false,
         "abilityId": "Zarya|R2",
         "abilityLinks": [
           "Zarya|R2"
@@ -337,6 +347,7 @@
         "icon": "storm_ui_icon_zarya_personalbarrier.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zarya|W1",
         "abilityLinks": [
           "Zarya|W1"
@@ -353,6 +364,7 @@
         "icon": "storm_ui_icon_zarya_personalbarrier_a.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zarya|W1",
         "abilityLinks": [
           "Zarya|W1"
@@ -369,6 +381,7 @@
         "icon": "storm_ui_icon_zarya_energy.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zarya|D1",
         "abilityLinks": [
           "Zarya|D1"
@@ -386,7 +399,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 30,
-        "abilityId": "Zarya|Active"
+        "isQuest": false,
+        "abilityId": "Zarya|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ZaryaPainIsTemporary"
+        ]
       }
     ],
     "16": [
@@ -398,6 +416,7 @@
         "icon": "storm_ui_icon_zarya_shieldally.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zarya|E1",
         "abilityLinks": [
           "Zarya|E1"
@@ -414,6 +433,7 @@
         "icon": "storm_ui_icon_zarya_shieldally_a.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zarya|E1",
         "abilityLinks": [
           "Zarya|E1"
@@ -430,6 +450,7 @@
         "icon": "storm_ui_icon_zarya_energy.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zarya|D1",
         "abilityLinks": [
           "Zarya|D1"
@@ -448,6 +469,7 @@
         "icon": "storm_ui_icon_zarya_gravitonsurge.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zarya|R1",
         "abilityLinks": [
           "Zarya|R1"
@@ -467,6 +489,7 @@
         "icon": "storm_ui_icon_zarya_expulsionzone.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zarya|R2",
         "abilityLinks": [
           "Zarya|R2"
@@ -486,6 +509,7 @@
         "icon": "storm_ui_icon_zarya_particlegrenade.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zarya|Q1",
         "abilityLinks": [
           "Zarya|Q1"
@@ -503,7 +527,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
-        "abilityId": "Zarya|Active"
+        "isQuest": false,
+        "abilityId": "Zarya|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ZaryaUnyieldingDefender"
+        ]
       }
     ]
   },

@@ -38,7 +38,9 @@
     "radius": 1.0625
   },
   "unitIds": [
-    "AnubarakBeetleSpitBeetle"
+    "AnubarakBeetleSpitBeetle",
+    "AnubarakCocoonFat",
+    "AnubarakCocoonNormal"
   ],
   "abilities": {
     "Anubarak": [
@@ -124,6 +126,7 @@
         "icon": "storm_ui_icon_anubarak_hardencarapace_var1.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anubarak|W1",
         "abilityLinks": [
           "Anubarak|W1"
@@ -140,6 +143,7 @@
         "icon": "storm_ui_icon_anubarak_scarabhost.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Anubarak|D1",
         "abilityLinks": [
           "Anubarak|D1"
@@ -169,6 +173,7 @@
         "icon": "storm_ui_icon_anubarak_impale.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anubarak|Q1",
         "abilityLinks": [
           "Anubarak|Q1"
@@ -185,6 +190,7 @@
         "icon": "storm_ui_icon_anubarak_hardencarapace_var1.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Anubarak|W1",
         "abilityLinks": [
           "Anubarak|W1"
@@ -201,6 +207,7 @@
         "icon": "storm_ui_icon_anubarak_burrowcharge.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Anubarak|E1",
         "abilityLinks": [
           "Anubarak|E1"
@@ -219,6 +226,7 @@
         "icon": "storm_ui_icon_anubarak_hardencarapace_var1.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anubarak|W1",
         "abilityLinks": [
           "Anubarak|W1"
@@ -235,6 +243,7 @@
         "icon": "storm_ui_icon_anubarak_burrowcharge.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Anubarak|E1",
         "abilityLinks": [
           "Anubarak|E1"
@@ -251,6 +260,7 @@
         "icon": "storm_ui_icon_anubarak_scarabhost.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Anubarak|D1",
         "abilityLinks": [
           "Anubarak|D1"
@@ -270,6 +280,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Anubarak|R1",
         "abilityLinks": [
           "Anubarak|R1"
@@ -287,6 +298,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "Anubarak|R2",
         "abilityLinks": [
           "Anubarak|R2"
@@ -305,6 +317,7 @@
         "icon": "storm_ui_icon_anubarak_hardencarapace_var1.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anubarak|W1",
         "abilityLinks": [
           "Anubarak|W1"
@@ -320,7 +333,8 @@
         "description": "Deal 21 (+4% per level) damage per second to nearby enemies. Beetles deal 6 (+4% per level) damage per second to nearby enemies.",
         "icon": "storm_ui_icon_talent_burningrage.png",
         "type": "Trait",
-        "sort": 2
+        "sort": 2,
+        "isQuest": false
       },
       {
         "tooltipId": "AnubarakAcidDrenchedMandibles",
@@ -330,6 +344,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Anubarak|Passive"
       }
     ],
@@ -342,6 +357,7 @@
         "icon": "storm_ui_icon_anubarak_burrowcharge.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anubarak|E1",
         "abilityLinks": [
           "Anubarak|E1"
@@ -358,6 +374,7 @@
         "icon": "storm_ui_icon_anubarak_combo_q_e.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Anubarak|Passive",
         "abilityLinks": [
           "Anubarak|E1",
@@ -376,6 +393,7 @@
         "icon": "storm_ui_icon_anubarak_scarabhost.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Anubarak|D1",
         "abilityLinks": [
           "Anubarak|D1"
@@ -394,6 +412,7 @@
         "icon": "storm_ui_icon_anubarak_locustswarm.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Anubarak|R1",
         "abilityLinks": [
           "Anubarak|R1"
@@ -413,6 +432,7 @@
         "icon": "storm_ui_icon_anubarak_webblast.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Anubarak|R2",
         "abilityLinks": [
           "Anubarak|R2"
@@ -433,7 +453,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "Anubarak|Active"
+        "isQuest": false,
+        "abilityId": "Anubarak|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AnubarakTheTraitorKing"
+        ]
       },
       {
         "tooltipId": "GenericRewindHotbar",
@@ -444,14 +469,19 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
-        "abilityId": "Anubarak|Active"
+        "isQuest": false,
+        "abilityId": "Anubarak|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TalentRewind"
+        ]
       }
     ]
   },
   "summonUnits": [
     {
       "unitId": "AnubarakBeetleSpitBeetle",
-      "name": "Beetle",
+      "name": "AnubarakBeetleSpitBeetle",
       "icon": "storm_ui_icon_anubarak_scarabhost.png",
       "stats": {
         "hp": 285,

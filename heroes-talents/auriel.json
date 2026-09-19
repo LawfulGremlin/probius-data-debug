@@ -133,6 +133,7 @@
         "icon": "storm_ui_icon_auriel_angelicsweep_b.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Auriel|Q1",
         "abilityLinks": [
           "Auriel|Q1"
@@ -149,6 +150,7 @@
         "icon": "storm_ui_icon_auriel_rayofheaven.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Auriel|W1",
         "abilityLinks": [
           "Auriel|W1"
@@ -167,6 +169,7 @@
         "icon": "storm_ui_icon_auriel_angelicsweep.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Auriel|Q1",
         "abilityLinks": [
           "Auriel|Q1"
@@ -183,6 +186,7 @@
         "icon": "storm_ui_icon_auriel_restrainingblow.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Auriel|E1",
         "abilityLinks": [
           "Auriel|E1"
@@ -218,6 +222,7 @@
         "icon": "storm_ui_icon_auriel_rayofheaven.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Auriel|W1",
         "abilityLinks": [
           "Auriel|W1"
@@ -234,6 +239,7 @@
         "icon": "storm_ui_icon_auriel_bestowhope.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Auriel|D1",
         "abilityLinks": [
           "Auriel|D1"
@@ -250,6 +256,7 @@
         "icon": "storm_ui_icon_auriel_bestowhope_a.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Auriel|D1",
         "abilityLinks": [
           "Auriel|D1"
@@ -269,6 +276,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Auriel|R1",
         "abilityLinks": [
           "Auriel|R1"
@@ -286,6 +294,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Auriel|R2",
         "abilityLinks": [
           "Auriel|R2"
@@ -304,6 +313,7 @@
         "icon": "storm_ui_icon_auriel_angelicsweep.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Auriel|Q1",
         "abilityLinks": [
           "Auriel|Q1"
@@ -320,6 +330,7 @@
         "icon": "storm_ui_icon_auriel_angelicsweep_b.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Auriel|Q1",
         "abilityLinks": [
           "Auriel|Q1"
@@ -336,6 +347,7 @@
         "icon": "storm_ui_icon_auriel_restrainingblow.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Auriel|E1",
         "abilityLinks": [
           "Auriel|E1"
@@ -371,6 +383,7 @@
         "icon": "storm_ui_icon_auriel_bestowhope.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Auriel|D1",
         "abilityLinks": [
           "Auriel|D1"
@@ -387,6 +400,7 @@
         "icon": "storm_ui_icon_auriel_bestowhope_a.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Auriel|D1",
         "abilityLinks": [
           "Auriel|D1"
@@ -405,13 +419,14 @@
         "icon": "storm_ui_icon_auriel_resurrect.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Auriel|R1",
         "abilityLinks": [
           "Auriel|R1"
         ],
         "abilityTalentLinkIds": [
-          "AurielResurrectSelf",
-          "AurielResurrect"
+          "AurielResurrect",
+          "AurielResurrectSelf"
         ],
         "prerequisiteTalentIds": [
           "AurielHeroicResurrect"
@@ -425,6 +440,7 @@
         "icon": "storm_ui_icon_auriel_ribboncocoon.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Auriel|R2",
         "abilityLinks": [
           "Auriel|R2"
@@ -445,7 +461,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Auriel|Active"
+        "isQuest": false,
+        "abilityId": "Auriel|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AurielAngelicFlight"
+        ]
       },
       {
         "tooltipId": "AurielShieldOfHopeTalent",
@@ -456,7 +477,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
-        "abilityId": "Auriel|Active"
+        "isQuest": false,
+        "abilityId": "Auriel|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AurielShieldOfHope"
+        ]
       }
     ]
   },

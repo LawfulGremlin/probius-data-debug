@@ -118,6 +118,50 @@
         "icon": "storm_ui_icon_kelthuzad_glacialspike.png",
         "type": "activable"
       }
+    ],
+    "KelThuzadMasterOfTheColdDark": [
+      {
+        "uid": "e8f26d",
+        "name": "Armor of the Archlich",
+        "description": "Activate to gain 50 Physical Armor for 4 seconds. Upon activation, nearby enemies take 45 (+4% per level) damage and are Slowed by 35% for 4 seconds.",
+        "hotkey": "2",
+        "abilityId": "KelThuzad|21",
+        "tooltipId": "KelThuzadArchlichArmor",
+        "cooldown": 25,
+        "icon": "storm_ui_icon_kelthuzad_armorofthearchlich.png",
+        "type": "activable"
+      },
+      {
+        "uid": "22108a",
+        "name": "Shifting Malice",
+        "description": "Activate to dash forward, dealing 150 (+2.5% per level) damage to enemies in the path. Takedowns reset the cooldown of Shifting Malice.",
+        "hotkey": "3",
+        "abilityId": "KelThuzad|31",
+        "tooltipId": "KelThuzadShiftingMalice",
+        "cooldown": 240,
+        "icon": "storm_ui_icon_kelthuzad_shiftingmalice.png",
+        "type": "activable"
+      },
+      {
+        "uid": "a9dece",
+        "name": "The Damned Return",
+        "description": "Activate to create a Shade of Naxxramas that lasts 15 seconds and mimics Kel'Thuzad's casts of Death and Decay.",
+        "hotkey": "4",
+        "abilityId": "KelThuzad|41",
+        "tooltipId": "KelThuzadTheDamnedReturn",
+        "cooldown": 15,
+        "icon": "storm_ui_icon_kelthuzad_cultofthedamned.png",
+        "type": "activable"
+      },
+      {
+        "uid": "04055f",
+        "name": "Phylactery of Kel'Thuzad",
+        "description": "Can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again.  Passive: Kel'Thuzad heals for 10% of all Spell Damage dealt while the Phylactery is charged.",
+        "abilityId": "KelThuzad|22",
+        "tooltipId": "KelThuzadPhylacteryItem",
+        "icon": "storm_ui_icon_kelthuzad_phylactery.png",
+        "type": "activable"
+      }
     ]
   },
   "talents": {
@@ -130,6 +174,7 @@
         "icon": "storm_ui_icon_kelthuzad_deathanddecay.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "KelThuzad|Q1",
         "abilityLinks": [
           "KelThuzad|Q1"
@@ -146,6 +191,7 @@
         "icon": "storm_ui_icon_kelthuzad_frostnova.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "KelThuzad|W1",
         "abilityLinks": [
           "KelThuzad|W1"
@@ -162,6 +208,7 @@
         "icon": "storm_ui_icon_kelthuzad_chains.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "KelThuzad|E1",
         "abilityLinks": [
           "KelThuzad|E1"
@@ -180,6 +227,7 @@
         "icon": "storm_ui_icon_kelthuzad_chains.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "KelThuzad|E1",
         "abilityLinks": [
           "KelThuzad|E1"
@@ -214,7 +262,14 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 25,
-        "abilityId": "KelThuzad|Active"
+        "isQuest": false,
+        "abilityId": "KelThuzad|Active",
+        "abilityLinks": [
+          "KelThuzad|21"
+        ],
+        "abilityTalentLinkIds": [
+          "KelThuzadArchlichArmor"
+        ]
       }
     ],
     "7": [
@@ -226,6 +281,7 @@
         "icon": "storm_ui_icon_kelthuzad_deathanddecay.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "KelThuzad|Q1",
         "abilityLinks": [
           "KelThuzad|Q1"
@@ -242,6 +298,7 @@
         "icon": "storm_ui_icon_kelthuzad_chillingtouch.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "KelThuzad|Passive",
         "abilityLinks": [
           "KelThuzad|D1"
@@ -258,6 +315,7 @@
         "icon": "storm_ui_icon_kelthuzad_glacialspike.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "KelThuzad|Passive",
         "abilityLinks": [
           "KelThuzad|11"
@@ -277,6 +335,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "KelThuzad|R1",
         "abilityLinks": [
           "KelThuzad|R1"
@@ -294,6 +353,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 16,
+        "isQuest": false,
         "abilityId": "KelThuzad|R2",
         "abilityLinks": [
           "KelThuzad|R2"
@@ -312,6 +372,7 @@
         "icon": "storm_ui_icon_kelthuzad_frostnova.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "KelThuzad|W1",
         "abilityLinks": [
           "KelThuzad|W1"
@@ -328,6 +389,7 @@
         "icon": "storm_ui_icon_kelthuzad_chains.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "KelThuzad|E1",
         "abilityLinks": [
           "KelThuzad|E1"
@@ -344,6 +406,7 @@
         "icon": "storm_ui_icon_kelthuzad_chains_a.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "KelThuzad|E1",
         "abilityLinks": [
           "KelThuzad|E1"
@@ -362,6 +425,7 @@
         "icon": "storm_ui_icon_kelthuzad_deathanddecay.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "KelThuzad|Q1",
         "abilityLinks": [
           "KelThuzad|Q1"
@@ -378,6 +442,7 @@
         "icon": "storm_ui_icon_talent_abilitytalent_damage.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "KelThuzad|Passive",
         "abilityLinks": [
           "KelThuzad|D1"
@@ -394,6 +459,7 @@
         "icon": "storm_ui_icon_kelthuzad_poweroficecrown.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "KelThuzad|Passive",
         "abilityLinks": [
           "KelThuzad|D1"
@@ -412,6 +478,7 @@
         "icon": "storm_ui_icon_kelthuzad_frozentomb.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "KelThuzad|R1",
         "abilityLinks": [
           "KelThuzad|R1"
@@ -431,6 +498,7 @@
         "icon": "storm_ui_icon_kelthuzad_shadowfissure.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "KelThuzad|R2",
         "abilityLinks": [
           "KelThuzad|R2"
@@ -451,7 +519,14 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 240,
-        "abilityId": "KelThuzad|Active"
+        "isQuest": false,
+        "abilityId": "KelThuzad|Active",
+        "abilityLinks": [
+          "KelThuzad|31"
+        ],
+        "abilityTalentLinkIds": [
+          "KelThuzadShiftingMalice"
+        ]
       },
       {
         "tooltipId": "KelThuzadTheDamnedReturn",
@@ -462,7 +537,14 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 15,
-        "abilityId": "KelThuzad|Active"
+        "isQuest": false,
+        "abilityId": "KelThuzad|Active",
+        "abilityLinks": [
+          "KelThuzad|41"
+        ],
+        "abilityTalentLinkIds": [
+          "KelThuzadSpawnShade"
+        ]
       }
     ]
   },
@@ -487,6 +569,7 @@
     "KelThuzadMasterOfTheColdDark": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gain <c val=\"#TooltipNumbers\"><d ref=\"Effect,KelThuzadMasterOfTheColdDarkModifyToken,Value\"/></c> Blight every time a Hero is Rooted by Frost Nova or hit by Chains of Kel'Thuzad.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gaining <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KelThuzadMasterOfTheColdDarkToken,ConditionalEvents[0].CompareValue\"/></c> Blight, gain the Glacial Spike Ability.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gaining <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KelThuzadMasterOfTheColdDarkToken,Max\"/></c> Blight, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KelThuzadMasterOfTheColdDarkSpellPower,Modification.DamageDealtFraction[Ability] * 100\"/>%</c> Spell Power.<n/><n/><c val=\"#TooltipQuest\">Blight:</c> <c val=\"#TooltipNumbers\" validator=\"True\"><d ref=\"$BehaviorStackCount:KelThuzadMasterOfTheColdDarkToken$\"/>/<d ref=\"Behavior,KelThuzadMasterOfTheColdDarkToken,Max\"/></c>",
     "KelThuzadMightOfTheScourge": "If a Hero is hit with Shadow Fissure, a second one is cast below them <c val=\"#TooltipNumbers\"><d ref=\"Effect,KelThuzadShadowFissureMightOfTheScourgeDelayPersistent,InitialDelay\"/></c> second later. This second cast will not duplicate itself.",
     "KelThuzadPhylactery": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Collect <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KelThuzadPhylacteryQuestToken,Max\"/></c> Regeneration Globes to charge Kel'Thuzad's Phylactery.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Kel'Thuzad's Phylactery can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Kel'Thuzad heals for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KelThuzadPhylacterySpellVamp,Modification.VitalDamageLeechArray[Life].KindArray[Ability] * 100\"/>%</c> of all Spell Damage dealt while the Phylactery is charged.",
+    "KelThuzadPhylacteryItem": "Can be activated while dead to immediately respawn at the Hall of Storms, but must be charged again.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Kel'Thuzad heals for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KelThuzadPhylacterySpellVamp,Modification.VitalDamageLeechArray[Life].KindArray[Ability] * 100\"/>%</c> of all Spell Damage dealt while the Phylactery is charged.",
     "KelThuzadPowerOfIcecrown": "Stunning, Rooting, or Slowing a Hero grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KelThuzadPowerOfIcecrown,Modification.DamageDealtFraction[Ability] * 100\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KelThuzadPowerOfIcecrown,Duration\"/></c> seconds, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KelThuzadPowerOfIcecrown,MaxStackCount\"/></c> times.",
     "KelThuzadShadowFissure": "Create a fissure anywhere on the Battleground that explodes after <c val=\"#TooltipNumbers\"><d ref=\"Effect,KelThuzadShadowFissureCreatePersistent,InitialDelay\" precision=\"2\"/></c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,KelThuzadShadowFissureDamage,Amount\"/></c> damage to enemy Heroes in its area. If an enemy Hero is hit, set its cooldown to <c val=\"#TooltipNumbers\"><d ref=\"Effect,KelThuzadShadowFissureModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds.",
     "KelThuzadShiftingMalice": "Activate to dash forward, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,KelThuzadShiftingMaliceDamage,Amount\"/></c> damage to enemies in the path. Takedowns reset the cooldown of Shifting Malice.",
@@ -515,6 +598,7 @@
     "KelThuzadMasterOfTheColdDark": "Kel'Thuzad becomes increasingly stronger as he disrupts enemies",
     "KelThuzadMightOfTheScourge": "Hitting Heroes recasts Shadow Fissure",
     "KelThuzadPhylactery": "<c val=\"#TooltipQuest\">Quest:</c> Collect Regen Globes for instant respawn",
+    "KelThuzadPhylacteryItem": "",
     "KelThuzadPowerOfIcecrown": "Disabling enemies grants Spell Power",
     "KelThuzadShadowFissure": "Deal high damage in an area",
     "KelThuzadShiftingMalice": "Activate to dash and deal damage",

@@ -130,6 +130,7 @@
         "icon": "storm_ui_icon_zagara_banelingbarrage.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zagara|Q1",
         "abilityLinks": [
           "Zagara|Q1"
@@ -146,6 +147,7 @@
         "icon": "storm_ui_icon_zagara_infesteddrop.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zagara|E1",
         "abilityLinks": [
           "Zagara|E1"
@@ -176,7 +178,12 @@
         "type": "Active",
         "sort": 1,
         "cooldown": 30,
-        "abilityId": "Zagara|Active"
+        "isQuest": false,
+        "abilityId": "Zagara|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ZagaraEnvenomedSpines"
+        ]
       },
       {
         "tooltipId": "ZagaraMedusaBladesTalent",
@@ -186,6 +193,7 @@
         "icon": "storm_ui_icon_talent_autoattack_aoe.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zagara|Passive"
       },
       {
@@ -209,6 +217,7 @@
         "icon": "storm_ui_icon_zagara_banelingbarrage.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zagara|Q1",
         "abilityLinks": [
           "Zagara|Q1"
@@ -225,6 +234,7 @@
         "icon": "storm_ui_icon_zagara_banelingbarrage_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zagara|Q1",
         "abilityLinks": [
           "Zagara|Q1"
@@ -261,6 +271,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Zagara|R2",
         "abilityLinks": [
           "Zagara|R2"
@@ -278,6 +289,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 120,
+        "isQuest": false,
         "abilityId": "Zagara|R1",
         "abilityLinks": [
           "Zagara|R1"
@@ -296,6 +308,7 @@
         "icon": "storm_ui_icon_zagara_hunterkiller.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zagara|W1",
         "abilityLinks": [
           "Zagara|W1"
@@ -312,6 +325,7 @@
         "icon": "storm_ui_icon_zagara_creep.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zagara|D1",
         "abilityLinks": [
           "Zagara|D1"
@@ -328,6 +342,7 @@
         "icon": "storm_ui_icon_talent_spellshield.png",
         "type": "Active",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zagara|Active"
       }
     ],
@@ -340,6 +355,7 @@
         "icon": "storm_ui_icon_zagara_hunterkiller.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zagara|W1",
         "abilityLinks": [
           "Zagara|W1"
@@ -356,6 +372,7 @@
         "icon": "storm_ui_icon_zagara_hunterkillermuta.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zagara|W1",
         "abilityLinks": [
           "Zagara|W1"
@@ -372,6 +389,7 @@
         "icon": "storm_ui_icon_zagara_creep.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zagara|D1",
         "abilityLinks": [
           "Zagara|D1"
@@ -390,6 +408,7 @@
         "icon": "storm_ui_icon_zagara_devouringmaw.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zagara|R2",
         "abilityLinks": [
           "Zagara|R2"
@@ -409,6 +428,7 @@
         "icon": "storm_ui_icon_zagara_nydusworm.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zagara|R1",
         "abilityLinks": [
           "Zagara|R1"
@@ -428,6 +448,7 @@
         "icon": "storm_ui_icon_zagara_banelingbarrage.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zagara|Q1",
         "abilityLinks": [
           "Zagara|Q1"
@@ -444,6 +465,7 @@
         "icon": "storm_ui_icon_zagara_hunterkiller.png",
         "type": "W",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Zagara|W1",
         "abilityLinks": [
           "Zagara|W1"
@@ -457,7 +479,7 @@
   "summonUnits": [
     {
       "unitId": "ZagaraCreepTumor",
-      "name": "Creep Tumor",
+      "name": "ZagaraCreepTumor",
       "icon": "storm_ui_icon_zagara_creep.png",
       "stats": {
         "hp": 250,
@@ -465,6 +487,7 @@
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "radius": 1,
+        "speed": 0,
         "sight": 7
       },
       "abilities": [],
@@ -472,7 +495,7 @@
     },
     {
       "unitId": "ZagaraHydralisk",
-      "name": "Hydralisk",
+      "name": "ZagaraHydralisk",
       "icon": "storm_ui_icon_zagara_hunterkiller.png",
       "stats": {
         "hp": 450,
@@ -492,7 +515,7 @@
     },
     {
       "unitId": "ZagaraMutalisk",
-      "name": "Mutalisk",
+      "name": "ZagaraMutalisk",
       "icon": "storm_ui_icon_zagara_hunterkillermuta.png",
       "stats": {
         "hp": 420,
@@ -512,7 +535,7 @@
     },
     {
       "unitId": "ZagaraNydusWorm",
-      "name": "Nydus Worm",
+      "name": "ZagaraNydusWorm",
       "icon": "storm_ui_icon_zagara_nydusworm.png",
       "stats": {
         "hp": 550,
@@ -520,6 +543,7 @@
         "hpScale": 0.04,
         "hpRegenScale": 0,
         "radius": 0.75,
+        "speed": 0,
         "sight": 10
       },
       "abilities": [],
@@ -527,7 +551,7 @@
     },
     {
       "unitId": "ZagaraRoach",
-      "name": "Roach",
+      "name": "ZagaraRoach",
       "icon": "storm_ui_icon_zagara_infesteddrop.png",
       "stats": {
         "hp": 328,

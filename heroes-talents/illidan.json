@@ -113,6 +113,7 @@
         "icon": "storm_ui_icon_illidan_sweepingstrike.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Illidan|W1",
         "abilityLinks": [
           "Illidan|W1"
@@ -129,6 +130,7 @@
         "icon": "storm_ui_icon_illidan_sweepingstrike_a.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Illidan|W1",
         "abilityLinks": [
           "Illidan|W1"
@@ -158,6 +160,7 @@
         "icon": "storm_ui_icon_illidan_dive.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Illidan|Q1",
         "abilityLinks": [
           "Illidan|Q1"
@@ -174,6 +177,7 @@
         "icon": "storm_ui_icon_illidan_betrayersthirst.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Illidan|D1",
         "abilityLinks": [
           "Illidan|D1"
@@ -190,6 +194,7 @@
         "icon": "storm_ui_icon_illidan_betrayersthirst_a.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Illidan|D1",
         "abilityLinks": [
           "Illidan|D1"
@@ -208,6 +213,7 @@
         "icon": "storm_ui_icon_illidan_dive.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Illidan|Q1",
         "abilityLinks": [
           "Illidan|Q1"
@@ -224,6 +230,7 @@
         "icon": "storm_ui_icon_illidan_dive_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Illidan|Q1",
         "abilityLinks": [
           "Illidan|Q1"
@@ -260,6 +267,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 120,
+        "isQuest": false,
         "abilityId": "Illidan|R2",
         "abilityLinks": [
           "Illidan|R2"
@@ -277,6 +285,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Illidan|R1",
         "abilityLinks": [
           "Illidan|R1"
@@ -295,6 +304,7 @@
         "icon": "storm_ui_icon_illidan_sweepingstrike.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Illidan|W1",
         "abilityLinks": [
           "Illidan|W1"
@@ -311,6 +321,7 @@
         "icon": "storm_ui_icon_illidan_evasion.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Illidan|E1",
         "abilityLinks": [
           "Illidan|E1"
@@ -327,6 +338,7 @@
         "icon": "storm_ui_icon_illidan_evasion_a.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Illidan|E1",
         "abilityLinks": [
           "Illidan|E1"
@@ -345,6 +357,7 @@
         "icon": "storm_ui_icon_illidan_dive.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Illidan|Q1",
         "abilityLinks": [
           "Illidan|Q1"
@@ -361,6 +374,7 @@
         "icon": "storm_ui_icon_talent_autoattack_searing.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Illidan|Passive"
       },
       {
@@ -371,7 +385,12 @@
         "icon": "storm_ui_icon_illidan_sweepingstrike_c.png",
         "type": "Active",
         "sort": 3,
-        "abilityId": "Illidan|Active"
+        "isQuest": false,
+        "abilityId": "Illidan|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "IllidanBladesOfAzzinoth"
+        ]
       }
     ],
     "20": [
@@ -383,6 +402,7 @@
         "icon": "storm_ui_icon_illidan_metamorphosis.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Illidan|R2",
         "abilityLinks": [
           "Illidan|R2"
@@ -402,6 +422,7 @@
         "icon": "storm_ui_icon_illidan_thehunt.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Illidan|R1",
         "abilityLinks": [
           "Illidan|R1"
@@ -421,6 +442,7 @@
         "icon": "storm_ui_icon_talent_autoattack_slow.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Illidan|Passive"
       },
       {
@@ -432,7 +454,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 70,
-        "abilityId": "Illidan|Active"
+        "isQuest": false,
+        "abilityId": "Illidan|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "FlashoftheStorms"
+        ]
       }
     ]
   },

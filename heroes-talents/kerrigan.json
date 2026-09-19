@@ -36,6 +36,7 @@
     "radius": 0.6875
   },
   "unitIds": [
+    "KerriganChrysalis",
     "KerriganUltralisk"
   ],
   "abilities": {
@@ -122,6 +123,7 @@
         "icon": "storm_ui_icon_kerrigan_ravage.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kerrigan|Q1",
         "abilityLinks": [
           "Kerrigan|Q1"
@@ -138,6 +140,7 @@
         "icon": "storm_ui_icon_kerrigan_assimilation.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kerrigan|D1",
         "abilityLinks": [
           "Kerrigan|D1"
@@ -154,6 +157,7 @@
         "icon": "storm_ui_icon_talent_autoattack_aoe.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kerrigan|Passive"
       }
     ],
@@ -166,6 +170,7 @@
         "icon": "storm_ui_icon_kerrigan_ravage.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kerrigan|Q1",
         "abilityLinks": [
           "Kerrigan|Q1"
@@ -182,6 +187,7 @@
         "icon": "storm_ui_icon_kerrigan_impalingblades.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kerrigan|W1",
         "abilityLinks": [
           "Kerrigan|W1"
@@ -198,6 +204,7 @@
         "icon": "storm_ui_icon_kerrigan_primalgrasp.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kerrigan|E1",
         "abilityLinks": [
           "Kerrigan|E1"
@@ -216,6 +223,7 @@
         "icon": "storm_ui_icon_kerrigan_ravage.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kerrigan|Q1",
         "abilityLinks": [
           "Kerrigan|Q1"
@@ -232,6 +240,7 @@
         "icon": "storm_ui_icon_kerrigan_ravage_b.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kerrigan|Q1",
         "abilityLinks": [
           "Kerrigan|Q1"
@@ -248,6 +257,7 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kerrigan|Passive"
       }
     ],
@@ -261,6 +271,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Kerrigan|R2",
         "abilityLinks": [
           "Kerrigan|R2"
@@ -278,6 +289,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Kerrigan|R1",
         "abilityLinks": [
           "Kerrigan|R1"
@@ -296,6 +308,7 @@
         "icon": "storm_ui_icon_kerrigan_primalgrasp.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kerrigan|E1",
         "abilityLinks": [
           "Kerrigan|E1"
@@ -312,6 +325,7 @@
         "icon": "storm_ui_icon_kerrigan_assimilation.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kerrigan|D1",
         "abilityLinks": [
           "Kerrigan|D1"
@@ -329,7 +343,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 90,
-        "abilityId": "Kerrigan|Active"
+        "isQuest": false,
+        "abilityId": "Kerrigan|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "KerriganChrysalis"
+        ]
       }
     ],
     "16": [
@@ -341,6 +360,7 @@
         "icon": "storm_ui_icon_kerrigan_ravage.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kerrigan|Q1",
         "abilityLinks": [
           "Kerrigan|Q1"
@@ -357,6 +377,7 @@
         "icon": "storm_ui_icon_kerrigan_impalingblades.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kerrigan|W1",
         "abilityLinks": [
           "Kerrigan|W1"
@@ -373,14 +394,15 @@
         "icon": "storm_ui_icon_talent_abilitytalent_damage.png",
         "type": "Heroic",
         "sort": 3,
-        "abilityId": "Kerrigan|R1",
+        "isQuest": false,
+        "abilityId": "Kerrigan|R2",
         "abilityLinks": [
           "Kerrigan|R1",
           "Kerrigan|R2"
         ],
         "abilityTalentLinkIds": [
-          "KerriganSummonUltralisk",
-          "KerriganMaelstrom"
+          "KerriganMaelstrom",
+          "KerriganSummonUltralisk"
         ]
       }
     ],
@@ -393,6 +415,7 @@
         "icon": "storm_ui_icon_kerrigan_maelstrom.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Kerrigan|R2",
         "abilityLinks": [
           "Kerrigan|R2"
@@ -412,6 +435,7 @@
         "icon": "storm_ui_icon_kerrigan_ultralisk.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Kerrigan|R1",
         "abilityLinks": [
           "Kerrigan|R1"
@@ -431,6 +455,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Kerrigan|Passive"
       },
       {
@@ -442,14 +467,19 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 70,
-        "abilityId": "Kerrigan|Active"
+        "isQuest": false,
+        "abilityId": "Kerrigan|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "KerriganPsionicShift"
+        ]
       }
     ]
   },
   "summonUnits": [
     {
       "unitId": "KerriganChrysalis",
-      "name": "Chrysalis",
+      "name": "KerriganChrysalis",
       "icon": "storm_ui_icon_kerrigan_chrysalis.png",
       "stats": {
         "hp": 650,
@@ -457,6 +487,7 @@
         "hpScale": 0.04,
         "hpRegenScale": 0,
         "radius": 0.6875,
+        "speed": 0,
         "sight": 8
       },
       "abilities": [],
@@ -464,7 +495,7 @@
     },
     {
       "unitId": "KerriganUltralisk",
-      "name": "Ultralisk",
+      "name": "KerriganUltralisk",
       "icon": "storm_ui_icon_kerrigan_ultralisk.png",
       "stats": {
         "hp": 1369,
@@ -485,6 +516,7 @@
           "hotkey": "W",
           "icon": "storm_ui_icon_anubarak_burrowcharge.png",
           "description": "Charge at an enemy.",
+          "cooldown": 1,
           "tooltipId": "KerriganUltraliskCharge"
         }
       ],

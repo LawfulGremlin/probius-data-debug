@@ -119,6 +119,7 @@
         "icon": "storm_ui_icon_talent_autoattack_mana.png",
         "type": "Passive",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LtMorales|Passive"
       },
       {
@@ -129,6 +130,7 @@
         "icon": "storm_ui_icon_medic_healingbeam.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LtMorales|Q1",
         "abilityLinks": [
           "LtMorales|Q1"
@@ -166,6 +168,7 @@
         "type": "Active",
         "sort": 1,
         "cooldown": 20,
+        "isQuest": false,
         "abilityId": "LtMorales|Active",
         "abilityLinks": [
           "LtMorales|W1"
@@ -182,6 +185,7 @@
         "icon": "storm_ui_icon_medic_advancedblock.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LtMorales|Passive",
         "abilityLinks": [
           "LtMorales|D1"
@@ -198,6 +202,7 @@
         "icon": "storm_ui_icon_medic_displacementgrenade.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LtMorales|E1",
         "abilityLinks": [
           "LtMorales|E1"
@@ -216,6 +221,7 @@
         "icon": "storm_ui_icon_medic_deployshield.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LtMorales|W1",
         "abilityLinks": [
           "LtMorales|W1"
@@ -232,6 +238,7 @@
         "icon": "storm_ui_icon_medic_deployshield_c.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LtMorales|W1",
         "abilityLinks": [
           "LtMorales|W1"
@@ -248,6 +255,7 @@
         "icon": "storm_ui_icon_medic_deployshield_b.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LtMorales|W1",
         "abilityLinks": [
           "LtMorales|W1"
@@ -267,6 +275,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "LtMorales|R1",
         "abilityLinks": [
           "LtMorales|R1"
@@ -284,6 +293,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 45,
+        "isQuest": false,
         "abilityId": "LtMorales|R2",
         "abilityLinks": [
           "LtMorales|R2"
@@ -302,6 +312,7 @@
         "icon": "storm_ui_icon_medic_displacementgrenade.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LtMorales|E1",
         "abilityLinks": [
           "LtMorales|E1"
@@ -318,6 +329,7 @@
         "icon": "storm_ui_icon_medic_displacementgrenade_b.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LtMorales|E1",
         "abilityLinks": [
           "LtMorales|E1"
@@ -335,6 +347,7 @@
         "icon": "storm_ui_icon_medic_displacementgrenade_c.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LtMorales|E1",
         "abilityLinks": [
           "LtMorales|E1"
@@ -353,13 +366,14 @@
         "icon": "storm_ui_icon_medic_healingbeam.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LtMorales|Q1",
         "abilityLinks": [
           "LtMorales|Q1"
         ],
         "abilityTalentLinkIds": [
-          "MedicRedirectHealingBeam",
-          "MedicHealingBeam"
+          "MedicHealingBeam",
+          "MedicRedirectHealingBeam"
         ]
       },
       {
@@ -370,13 +384,14 @@
         "icon": "storm_ui_icon_medic_healingbeam_c.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LtMorales|Q1",
         "abilityLinks": [
           "LtMorales|Q1"
         ],
         "abilityTalentLinkIds": [
-          "MedicRedirectHealingBeam",
-          "MedicHealingBeam"
+          "MedicHealingBeam",
+          "MedicRedirectHealingBeam"
         ]
       },
       {
@@ -387,6 +402,7 @@
         "icon": "storm_ui_icon_medic_deployshield.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LtMorales|W1",
         "abilityLinks": [
           "LtMorales|W1"
@@ -405,6 +421,7 @@
         "icon": "storm_ui_icon_medic_stim.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LtMorales|R1",
         "abilityLinks": [
           "LtMorales|R1"
@@ -424,6 +441,7 @@
         "icon": "storm_ui_icon_medic_medivacdropship.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LtMorales|R2",
         "abilityLinks": [
           "LtMorales|R2"
@@ -443,6 +461,7 @@
         "icon": "storm_ui_icon_medic_deployshield.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LtMorales|W1",
         "abilityLinks": [
           "LtMorales|W1"
@@ -459,6 +478,7 @@
         "icon": "storm_ui_icon_medic_displacementgrenade.png",
         "type": "E",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "LtMorales|E1",
         "abilityLinks": [
           "LtMorales|E1"
@@ -472,7 +492,7 @@
   "summonUnits": [
     {
       "unitId": "MedicMedivacDropship",
-      "name": "Medivac Dropship",
+      "name": "MedicMedivacDropship",
       "icon": "storm_ui_icon_medic_medivacdropship.png",
       "stats": {
         "hp": 955.8,
@@ -483,7 +503,15 @@
         "speed": 28,
         "sight": 8
       },
-      "abilities": [],
+      "abilities": [
+        {
+          "name": "Depart",
+          "hotkey": "E",
+          "icon": "storm_ui_medic_departbutton.png",
+          "description": "Departs for the targeted location immediately.",
+          "tooltipId": "MedicMedivacDropshipDepart"
+        }
+      ],
       "sourceAbilityTooltipId": "MedicMedivacDropship"
     }
   ],
@@ -504,6 +532,7 @@
     "MedicLifeSupport": "During the first <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicHealingBeamLifeSupportActive,Duration\"/></c> seconds of Energy regeneration, Healing Beam regenerates <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MedicHealingBeamLifeSupportTalentEnergyAccumulator,MaxAccumulation/Effect,MedicCaduceusReactorCreateEnergyHealer,RechargeVitalRate\"/>%</c> more Energy.<n/><n/><c val=\"#AbilityPassive\">Passive: </c>Increase your maximum Energy by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicHealingBeamLifeSupportTalentCarry,Modification.VitalMaxArray[Energy]\"/></c>.",
     "MedicMediDrone": "Allies with Safeguard receive <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MedicHealingBeamMediDroneTalentCreateHealer,RechargeVitalRate/Effect,MedicHealingBeamCreateHealer,RechargeVitalRate\"/>%</c> of the healing done by Healing Beam on another ally.",
     "MedicMedivacDropship": "Target a location for a Medivac transport. For up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicMedivacDropshipDepartureDelay,Duration+1\"/></c> seconds before takeoff, allies can right-click to enter the Medivac.",
+    "MedicMedivacDropshipDepart": "Departs for the targeted location immediately.",
     "MedicMedivacDropshipsTalentFace": "Unlock the Medivac Dropship and Reinforcements abilities. These abilities share a cooldown.<n/><n/><s val=\"StandardTooltipHeader\">Medivac Dropship</s><n/>Target a location for a Medivac transport. For up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicMedivacDropshipDepartureDelay,Duration+1\"/></c> seconds before takeoff, allies can right-click to enter the Medivac.<n/><n/><s val=\"StandardTooltipHeader\">Reinforcements</s><n/>Call down a Medivac Dropship at your Hall of Storms for your allies. After <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicMedivacDropshipAcceptingPassengers,Duration\"/></c> seconds, or when the Ability is activated again, the Medivac will travel to the original cast location to unload its passengers.",
     "MedicPhysicalTherapy": "Safeguard removes all Slows from its target and its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,MedicPhysicalTherapy,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
     "MedicSafeZoneTalent": "After exiting the Medivac, allies are Protected from all damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicMedivacDropshipSafeZoneTalentProtectedBuff,Duration\"precision=\"1\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive: </c>Reduce the cooldown of Medivac Dropship abilities by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,MedicSafeZone,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds.",

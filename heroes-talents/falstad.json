@@ -168,7 +168,11 @@
         "sort": 3,
         "cooldown": 60,
         "isQuest": true,
-        "abilityId": "Falstad|Active"
+        "abilityId": "Falstad|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "FalstadFrequentFlyerActive"
+        ]
       }
     ],
     "4": [
@@ -180,6 +184,7 @@
         "icon": "storm_ui_icon_falstad_lightningrod.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Falstad|W1",
         "abilityLinks": [
           "Falstad|W1"
@@ -196,6 +201,7 @@
         "icon": "storm_ui_icon_falstad_barrelroll.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Falstad|E1",
         "abilityLinks": [
           "Falstad|E1"
@@ -212,6 +218,7 @@
         "icon": "storm_ui_icon_talent_autoattack_heal.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Falstad|Passive",
         "abilityLinks": [
           "Falstad|D1"
@@ -230,6 +237,7 @@
         "icon": "storm_ui_icon_falstad_hammerang.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Falstad|Q1",
         "abilityLinks": [
           "Falstad|Q1"
@@ -246,6 +254,7 @@
         "icon": "storm_ui_icon_falstad_hammerang_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Falstad|Q1",
         "abilityLinks": [
           "Falstad|Q1"
@@ -262,6 +271,7 @@
         "icon": "storm_ui_icon_falstad_lightningrod.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Falstad|W1",
         "abilityLinks": [
           "Falstad|W1"
@@ -281,6 +291,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 120,
+        "isQuest": false,
         "abilityId": "Falstad|R2",
         "abilityLinks": [
           "Falstad|R2"
@@ -298,6 +309,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Falstad|R1",
         "abilityLinks": [
           "Falstad|R1"
@@ -316,6 +328,7 @@
         "icon": "storm_ui_icon_falstad_lightningrod.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Falstad|W1",
         "abilityLinks": [
           "Falstad|W1"
@@ -332,6 +345,7 @@
         "icon": "storm_ui_icon_falstad_tailwind.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Falstad|D1",
         "abilityLinks": [
           "Falstad|D1"
@@ -348,6 +362,7 @@
         "icon": "storm_ui_icon_falstad_tailwind_a.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Falstad|D1",
         "abilityLinks": [
           "Falstad|D1"
@@ -366,6 +381,7 @@
         "icon": "storm_ui_icon_falstad_hammerang.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Falstad|Q1",
         "abilityLinks": [
           "Falstad|Q1"
@@ -382,6 +398,7 @@
         "icon": "storm_ui_icon_falstad_tailwind.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Falstad|D1",
         "abilityLinks": [
           "Falstad|D1"
@@ -398,6 +415,7 @@
         "icon": "storm_ui_icon_falstad_barrelroll.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Falstad|E1",
         "abilityLinks": [
           "Falstad|E1"
@@ -416,6 +434,7 @@
         "icon": "storm_ui_icon_falstad_hinterlandblast.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Falstad|R2",
         "abilityLinks": [
           "Falstad|R2"
@@ -435,6 +454,7 @@
         "icon": "storm_ui_icon_falstad_mightygust.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Falstad|R1",
         "abilityLinks": [
           "Falstad|R1"
@@ -454,6 +474,7 @@
         "icon": "storm_ui_icon_talent_autoattack_range.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Falstad|Passive"
       },
       {
@@ -464,6 +485,7 @@
         "icon": "storm_ui_icon_falstad_epicmount.png",
         "type": "Z",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Falstad|Z1",
         "abilityLinks": [
           "Falstad|Z1"

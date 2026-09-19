@@ -119,6 +119,7 @@
         "icon": "storm_ui_icon_sonya_seismicslam.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sonya|W1",
         "abilityLinks": [
           "Sonya|W1"
@@ -135,13 +136,14 @@
         "icon": "storm_ui_icon_talent_autoattack_heal.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sonya|Passive",
         "abilityLinks": [
           "Sonya|D1"
         ],
         "abilityTalentLinkIds": [
-          "BarbarianShotofFury",
-          "BarbarianFury"
+          "BarbarianFury",
+          "BarbarianShotofFury"
         ]
       },
       {
@@ -152,6 +154,7 @@
         "icon": "storm_ui_icon_talent_block.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Sonya|Passive"
       }
     ],
@@ -164,6 +167,7 @@
         "icon": "storm_ui_icon_sonya_seismicslam.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sonya|W1",
         "abilityLinks": [
           "Sonya|W1"
@@ -180,6 +184,7 @@
         "icon": "storm_ui_icon_sonya_whirlwind.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sonya|E1",
         "abilityLinks": [
           "Sonya|E1"
@@ -197,13 +202,14 @@
         "type": "Trait",
         "sort": 3,
         "cooldown": 40,
+        "isQuest": false,
         "abilityId": "Sonya|D1",
         "abilityLinks": [
           "Sonya|D1"
         ],
         "abilityTalentLinkIds": [
-          "BarbarianShotofFury",
-          "BarbarianFury"
+          "BarbarianFury",
+          "BarbarianShotofFury"
         ]
       }
     ],
@@ -216,6 +222,7 @@
         "icon": "storm_ui_icon_sonya_ancientspear.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sonya|Q1",
         "abilityLinks": [
           "Sonya|Q1"
@@ -232,6 +239,7 @@
         "icon": "storm_ui_icon_sonya_whirlwind.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sonya|E1",
         "abilityLinks": [
           "Sonya|E1"
@@ -249,7 +257,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Sonya|Active"
+        "isQuest": false,
+        "abilityId": "Sonya|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "BarbarianBattleRage"
+        ]
       }
     ],
     "10": [
@@ -262,6 +275,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Sonya|R1",
         "abilityLinks": [
           "Sonya|R1"
@@ -279,6 +293,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Sonya|R2",
         "abilityLinks": [
           "Sonya|R2"
@@ -297,6 +312,7 @@
         "icon": "storm_ui_icon_sonya_ancientspear.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sonya|Q1",
         "abilityLinks": [
           "Sonya|Q1"
@@ -313,6 +329,7 @@
         "icon": "storm_ui_icon_sonya_whirlwind.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sonya|E1",
         "abilityLinks": [
           "Sonya|E1"
@@ -329,13 +346,14 @@
         "icon": "storm_ui_icon_sonya_fury.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Sonya|D1",
         "abilityLinks": [
           "Sonya|D1"
         ],
         "abilityTalentLinkIds": [
-          "BarbarianShotofFury",
-          "BarbarianFury"
+          "BarbarianFury",
+          "BarbarianShotofFury"
         ]
       }
     ],
@@ -348,6 +366,7 @@
         "icon": "storm_ui_icon_sonya_seismicslam.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sonya|W1",
         "abilityLinks": [
           "Sonya|W1"
@@ -364,6 +383,7 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sonya|Passive"
       },
       {
@@ -375,7 +395,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "Sonya|Active"
+        "isQuest": false,
+        "abilityId": "Sonya|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "BarbarianNervesOfSteel"
+        ]
       }
     ],
     "20": [
@@ -387,6 +412,7 @@
         "icon": "storm_ui_icon_sonya_leap.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Sonya|R1",
         "abilityLinks": [
           "Sonya|R1"
@@ -406,6 +432,7 @@
         "icon": "storm_ui_icon_sonya_wrathoftheberserker.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Sonya|R2",
         "abilityLinks": [
           "Sonya|R2"
@@ -425,6 +452,7 @@
         "icon": "storm_ui_icon_sonya_ancientspear.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Sonya|Q1",
         "abilityLinks": [
           "Sonya|Q1"
@@ -442,7 +470,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
-        "abilityId": "Sonya|Active"
+        "isQuest": false,
+        "abilityId": "Sonya|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "BarbarianIgnorePain"
+        ]
       }
     ]
   },

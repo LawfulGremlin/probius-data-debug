@@ -173,6 +173,7 @@
         "icon": "storm_ui_icon_thrall_feralspirit.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Thrall|W1",
         "abilityLinks": [
           "Thrall|W1"
@@ -206,13 +207,14 @@
         "icon": "storm_ui_icon_thrall_frostwolfresilience.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Thrall|D1",
         "abilityLinks": [
           "Thrall|D1"
         ],
         "abilityTalentLinkIds": [
-          "ThrallFrostwolfsGrace",
-          "ThrallFrostwolfResilience"
+          "ThrallFrostwolfResilience",
+          "ThrallFrostwolfsGrace"
         ]
       }
     ],
@@ -225,6 +227,7 @@
         "icon": "storm_ui_icon_thrall_chainlightning_var2.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Thrall|Q1",
         "abilityLinks": [
           "Thrall|Q1"
@@ -241,7 +244,12 @@
         "icon": "storm_ui_icon_talent_bloodforblood.png",
         "type": "Active",
         "sort": 2,
-        "abilityId": "Thrall|Active"
+        "isQuest": false,
+        "abilityId": "Thrall|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ThrallAncestralWrath"
+        ]
       },
       {
         "tooltipId": "ThrallElementalAssault",
@@ -251,6 +259,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Thrall|Passive"
       }
     ],
@@ -264,6 +273,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "Thrall|R1",
         "abilityLinks": [
           "Thrall|R1"
@@ -281,6 +291,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Thrall|R2",
         "abilityLinks": [
           "Thrall|R2"
@@ -299,6 +310,7 @@
         "icon": "storm_ui_icon_thrall_windfury.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Thrall|E1",
         "abilityLinks": [
           "Thrall|E1"
@@ -316,13 +328,14 @@
         "type": "Trait",
         "sort": 2,
         "cooldown": 15,
+        "isQuest": false,
         "abilityId": "Thrall|D1",
         "abilityLinks": [
           "Thrall|D1"
         ],
         "abilityTalentLinkIds": [
-          "ThrallFrostwolfsGrace",
-          "ThrallFrostwolfResilience"
+          "ThrallFrostwolfResilience",
+          "ThrallFrostwolfsGrace"
         ]
       },
       {
@@ -334,6 +347,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 45,
+        "isQuest": false,
         "abilityId": "Thrall|Active"
       }
     ],
@@ -346,6 +360,7 @@
         "icon": "storm_ui_icon_thrall_windfury.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Thrall|E1",
         "abilityLinks": [
           "Thrall|E1"
@@ -379,6 +394,7 @@
         "icon": "storm_ui_icon_thrall_feralspirit.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Thrall|W1",
         "abilityLinks": [
           "Thrall|W1"
@@ -397,6 +413,7 @@
         "icon": "storm_ui_icon_thrall_sundering.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Thrall|R1",
         "abilityLinks": [
           "Thrall|R1"
@@ -416,6 +433,7 @@
         "icon": "storm_ui_icon_thrall_earthquake.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Thrall|R2",
         "abilityLinks": [
           "Thrall|R2"
@@ -435,6 +453,7 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Thrall|Passive"
       },
       {
@@ -445,6 +464,7 @@
         "icon": "storm_ui_icon_talent_autoattack_slow.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Thrall|Passive"
       },
       {
@@ -456,7 +476,12 @@
         "type": "Active",
         "sort": 5,
         "cooldown": 90,
-        "abilityId": "Thrall|Active"
+        "isQuest": false,
+        "abilityId": "Thrall|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ThrallWindRush"
+        ]
       }
     ]
   },

@@ -116,6 +116,7 @@
         "icon": "storm_ui_icon_cho_consumingflame.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Chogall|W1",
         "abilityLinks": [
           "Chogall|W1"
@@ -132,6 +133,7 @@
         "icon": "storm_ui_icon_cho_ogrehide.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Chogall|D1",
         "abilityLinks": [
           "Chogall|D1"
@@ -169,13 +171,14 @@
         "icon": "storm_ui_icon_cho_moltensurge_a.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Chogall|Q1",
         "abilityLinks": [
           "Chogall|Q1"
         ],
         "abilityTalentLinkIds": [
-          "ChoSurgingFistTrigger",
-          "ChoSurgingFistCast"
+          "ChoSurgingFistCast",
+          "ChoSurgingFistTrigger"
         ]
       },
       {
@@ -186,6 +189,7 @@
         "icon": "storm_ui_icon_cho_runebomb.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Chogall|E1",
         "abilityLinks": [
           "Chogall|E1"
@@ -202,6 +206,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Chogall|Passive"
       }
     ],
@@ -214,13 +219,14 @@
         "icon": "storm_ui_icon_cho_moltensurge_a.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Chogall|Q1",
         "abilityLinks": [
           "Chogall|Q1"
         ],
         "abilityTalentLinkIds": [
-          "ChoSurgingFistTrigger",
-          "ChoSurgingFistCast"
+          "ChoSurgingFistCast",
+          "ChoSurgingFistTrigger"
         ]
       },
       {
@@ -231,6 +237,7 @@
         "icon": "storm_ui_icon_cho_consumingflame.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Chogall|W1",
         "abilityLinks": [
           "Chogall|W1"
@@ -247,6 +254,7 @@
         "icon": "storm_ui_icon_cho_ogrehide.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Chogall|D1",
         "abilityLinks": [
           "Chogall|D1"
@@ -267,6 +275,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 15,
+        "isQuest": false,
         "abilityId": "Chogall|R2",
         "abilityLinks": [
           "Chogall|R2"
@@ -284,6 +293,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 40,
+        "isQuest": false,
         "abilityId": "Chogall|R1",
         "abilityLinks": [
           "Chogall|R1"
@@ -302,13 +312,14 @@
         "icon": "storm_ui_icon_cho_moltensurge_a.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Chogall|Q1",
         "abilityLinks": [
           "Chogall|Q1"
         ],
         "abilityTalentLinkIds": [
-          "ChoSurgingFistTrigger",
-          "ChoSurgingFistCast"
+          "ChoSurgingFistCast",
+          "ChoSurgingFistTrigger"
         ]
       },
       {
@@ -320,7 +331,12 @@
         "type": "Active",
         "sort": 2,
         "cooldown": 30,
-        "abilityId": "Chogall|Active"
+        "isQuest": false,
+        "abilityId": "Chogall|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ChoTwilightVeil"
+        ]
       },
       {
         "tooltipId": "ChoTalentMoltenBlock",
@@ -331,6 +347,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Chogall|Active"
       }
     ],
@@ -343,13 +360,14 @@
         "icon": "storm_ui_icon_cho_moltensurge_a.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Chogall|Q1",
         "abilityLinks": [
           "Chogall|Q1"
         ],
         "abilityTalentLinkIds": [
-          "ChoSurgingFistTrigger",
-          "ChoSurgingFistCast"
+          "ChoSurgingFistCast",
+          "ChoSurgingFistTrigger"
         ]
       },
       {
@@ -360,6 +378,7 @@
         "icon": "storm_ui_icon_cho_runebomb.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Chogall|E1",
         "abilityLinks": [
           "Chogall|E1"
@@ -376,6 +395,7 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Chogall|Passive"
       }
     ],
@@ -388,6 +408,7 @@
         "icon": "storm_ui_icon_cho_hammeroftwilight.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Chogall|R2",
         "abilityLinks": [
           "Chogall|R2"
@@ -407,6 +428,7 @@
         "icon": "storm_ui_icon_cho_upheaval.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Chogall|R1",
         "abilityLinks": [
           "Chogall|R1"
@@ -426,6 +448,7 @@
         "icon": "storm_ui_icon_talent_autoattack_aoe.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Chogall|Passive",
         "abilityLinks": [
           "Chogall|D1"
@@ -443,6 +466,7 @@
         "icon": "storm_ui_icon_gall_psychoticbreak.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Chogall|Passive"
       }
     ]

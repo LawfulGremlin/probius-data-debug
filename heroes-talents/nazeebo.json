@@ -121,11 +121,55 @@
         "name": "Gargantuan Stomp",
         "description": "Order the Gargantuan to stomp, dealing 240 (+4% per level) damage to nearby enemies and Slowing them by 30% for 2 seconds.",
         "hotkey": "R",
-        "abilityId": "Nazeebo|R4",
+        "abilityId": "Nazeebo|R3",
         "tooltipId": "WitchDoctorGargantuanStomp",
         "cooldown": 5,
         "icon": "storm_ui_icon_nazeebo_gargantuanstomp.png",
         "type": "subunit"
+      },
+      {
+        "uid": "12540c",
+        "name": "Cancel Ice Block",
+        "description": "Cancel Ice Block early, removing the Stasis and Invulnerability.",
+        "hotkey": "1",
+        "abilityId": "Nazeebo|11",
+        "tooltipId": "GenericIceBlockCancel",
+        "cooldown": 60,
+        "icon": "hud_btn_bg_ability_cancel.png",
+        "type": "activable"
+      },
+      {
+        "uid": "6aa74b",
+        "name": "Ice Block",
+        "description": "Activate to place yourself in Stasis and gain Invulnerability for 3 seconds.",
+        "hotkey": "2",
+        "abilityId": "Nazeebo|21",
+        "tooltipId": "GenericIceBlockTalent",
+        "cooldown": 60,
+        "icon": "storm_ui_icon_talent_iceblock.png",
+        "type": "activable"
+      },
+      {
+        "uid": "6d75a1",
+        "name": "Soul Harvest",
+        "description": "Activate to increase Nazeebo's Health and Spell Power by 7% for each nearby enemy, up to a maximum of 35%. Lasts 15 seconds.",
+        "hotkey": "3",
+        "abilityId": "Nazeebo|31",
+        "tooltipId": "WitchDoctorSoulHarvest",
+        "cooldown": 15,
+        "icon": "storm_ui_icon_nazeebo_soulharvest.png",
+        "type": "activable"
+      },
+      {
+        "uid": "77e5b2",
+        "name": "Bad Medicine",
+        "description": "Consume 5 stacks of Voodoo Ritual to become Unstoppable, gain 20% increased Movement Speed, and 50 Armor for 2 seconds.",
+        "hotkey": "4",
+        "abilityId": "Nazeebo|41",
+        "tooltipId": "WitchDoctorBadMedicine",
+        "cooldown": 30,
+        "icon": "storm_ui_icon_nazeebo_voodooritual_a.png",
+        "type": "activable"
       }
     ]
   },
@@ -192,6 +236,7 @@
         "icon": "storm_ui_icon_nazeebo_corpsespider.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Nazeebo|Q1",
         "abilityLinks": [
           "Nazeebo|Q1"
@@ -208,6 +253,7 @@
         "icon": "storm_ui_icon_nazeebo_voodooritual.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Nazeebo|D1",
         "abilityLinks": [
           "Nazeebo|D1"
@@ -224,6 +270,7 @@
         "icon": "storm_ui_icon_nazeebo_voodooritual_a.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Nazeebo|D1",
         "abilityLinks": [
           "Nazeebo|D1"
@@ -242,6 +289,7 @@
         "icon": "storm_ui_icon_nazeebo_corpsespider.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Nazeebo|Q1",
         "abilityLinks": [
           "Nazeebo|Q1"
@@ -258,6 +306,7 @@
         "icon": "storm_ui_icon_nazeebo_zombiewall.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Nazeebo|W1",
         "abilityLinks": [
           "Nazeebo|W1"
@@ -274,6 +323,7 @@
         "icon": "storm_ui_icon_nazeebo_plagueoftoads.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Nazeebo|E1",
         "abilityLinks": [
           "Nazeebo|E1"
@@ -293,6 +343,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "Nazeebo|R1",
         "abilityLinks": [
           "Nazeebo|R1"
@@ -310,6 +361,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 90,
+        "isQuest": false,
         "abilityId": "Nazeebo|R2",
         "abilityLinks": [
           "Nazeebo|R2"
@@ -328,6 +380,7 @@
         "icon": "storm_ui_icon_nazeebo_plagueoftoads.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Nazeebo|E1",
         "abilityLinks": [
           "Nazeebo|E1"
@@ -344,6 +397,7 @@
         "icon": "storm_ui_icon_nazeebo_suprerstition.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Nazeebo|Passive"
       },
       {
@@ -355,6 +409,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Nazeebo|Active"
       }
     ],
@@ -367,6 +422,7 @@
         "icon": "storm_ui_icon_nazeebo_corpsespider.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Nazeebo|Q1",
         "abilityLinks": [
           "Nazeebo|Q1"
@@ -383,6 +439,7 @@
         "icon": "storm_ui_icon_nazeebo_zombiewall.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Nazeebo|W1",
         "abilityLinks": [
           "Nazeebo|W1"
@@ -400,7 +457,14 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 15,
-        "abilityId": "Nazeebo|Active"
+        "isQuest": false,
+        "abilityId": "Nazeebo|Active",
+        "abilityLinks": [
+          "Nazeebo|31"
+        ],
+        "abilityTalentLinkIds": [
+          "WitchDoctorSoulHarvest"
+        ]
       }
     ],
     "20": [
@@ -412,6 +476,7 @@
         "icon": "storm_ui_icon_nazeebo_gargantuan.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Nazeebo|R1",
         "abilityLinks": [
           "Nazeebo|R1"
@@ -431,6 +496,7 @@
         "icon": "storm_ui_icon_nazeebo_ravenousspirit.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Nazeebo|R2",
         "abilityLinks": [
           "Nazeebo|R2"
@@ -468,7 +534,14 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 30,
-        "abilityId": "Nazeebo|Active"
+        "isQuest": false,
+        "abilityId": "Nazeebo|Active",
+        "abilityLinks": [
+          "Nazeebo|41"
+        ],
+        "abilityTalentLinkIds": [
+          "WitchDoctorBadMedicine"
+        ]
       }
     ]
   },
@@ -495,11 +568,11 @@
     },
     {
       "unitId": "WitchDoctorGargantuan",
-      "name": "Gargantuan",
+      "name": "WitchDoctorGargantuan",
       "icon": "storm_ui_icon_nazeebo_gargantuan.png",
       "stats": {
         "hp": 2000,
-        "hpRegen": -68.96551724137932,
+        "hpRegen": -68.9655,
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "attackDamage": 140,
@@ -515,7 +588,7 @@
     },
     {
       "unitId": "WitchDoctorZombieWallDeadRushTalentUnit",
-      "name": "Zombie Wall",
+      "name": "WitchDoctorZombieWallDeadRushTalentUnit",
       "icon": "storm_ui_icon_nazeebo_zombiewall.png",
       "stats": {
         "hp": 300,
@@ -535,7 +608,7 @@
     },
     {
       "unitId": "WitchDoctorZombieWallUnit",
-      "name": "Zombie Wall",
+      "name": "WitchDoctorZombieWallUnit",
       "icon": "storm_ui_icon_nazeebo_zombiewall.png",
       "stats": {
         "hp": 225,
@@ -547,6 +620,7 @@
         "attackRange": 0.4375,
         "attackSpeed": 0.8,
         "radius": 0.8125,
+        "speed": 0,
         "sight": 2
       },
       "abilities": [],
@@ -554,6 +628,7 @@
     }
   ],
   "tooltipMarkup": {
+    "GenericIceBlockCancel": "<n/><s val=\"StandardTooltip\">Cancel Ice Block early, removing the Stasis and Invulnerability.</s>",
     "GenericIceBlockTalent": "Activate to place yourself in Stasis and gain Invulnerability for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketIceBlock,Duration\" player=\"0\"/></c> seconds.",
     "WitchDoctorBadMedicine": "Consume <c val=\"#TooltipNumbers\"><d ref=\"-Effect,WitchDoctorBadMedicineModifyTokenCount,Value\"/></c> stacks of Voodoo Ritual to become Unstoppable, gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,WitchDoctorBadMedicineSpeedBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> increased Movement Speed, and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WitchDoctorBadMedicineArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WitchDoctorBadMedicineSpeedBuff,Duration\"/></c> seconds.",
     "WitchDoctorBigVoodoo": "Increases the Health and Mana bonuses from Voodoo Ritual by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,WitchDoctorBigVoodooHealthAccumulator,Scale/Accumulator,WitchDoctorVoodooRitualHealthAccumulator,Scale*100\"/>%</c>.",

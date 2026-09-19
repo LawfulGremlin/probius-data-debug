@@ -123,6 +123,7 @@
         "icon": "storm_ui_icon_lili_healingbrew.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LiLi|Q1",
         "abilityLinks": [
           "LiLi|Q1"
@@ -139,6 +140,7 @@
         "icon": "storm_ui_icon_lili_cloudserpent.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LiLi|W1",
         "abilityLinks": [
           "LiLi|W1"
@@ -155,13 +157,14 @@
         "icon": "storm_ui_icon_lili_fastfeet.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LiLi|D1",
         "abilityLinks": [
           "LiLi|D1"
         ],
         "abilityTalentLinkIds": [
-          "LiLiSafetySprint",
-          "LiLiFastFeet"
+          "LiLiFastFeet",
+          "LiLiSafetySprint"
         ]
       }
     ],
@@ -174,6 +177,7 @@
         "icon": "storm_ui_icon_lili_cloudserpent.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LiLi|W1",
         "abilityLinks": [
           "LiLi|W1"
@@ -190,6 +194,7 @@
         "icon": "storm_ui_icon_lili_blindingwind.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LiLi|E1",
         "abilityLinks": [
           "LiLi|E1"
@@ -207,13 +212,14 @@
         "type": "Trait",
         "sort": 3,
         "cooldown": 30,
+        "isQuest": false,
         "abilityId": "LiLi|D1",
         "abilityLinks": [
           "LiLi|D1"
         ],
         "abilityTalentLinkIds": [
-          "LiLiSafetySprint",
-          "LiLiFastFeet"
+          "LiLiFastFeet",
+          "LiLiSafetySprint"
         ]
       }
     ],
@@ -226,6 +232,7 @@
         "icon": "storm_ui_icon_lili_healingbrew.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LiLi|Q1",
         "abilityLinks": [
           "LiLi|Q1"
@@ -242,6 +249,7 @@
         "icon": "storm_ui_icon_lili_blindingwind.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LiLi|E1",
         "abilityLinks": [
           "LiLi|E1"
@@ -259,7 +267,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 40,
-        "abilityId": "LiLi|Active"
+        "isQuest": false,
+        "abilityId": "LiLi|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "LiLiLetsGo"
+        ]
       }
     ],
     "10": [
@@ -272,6 +285,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 20,
+        "isQuest": false,
         "abilityId": "LiLi|R1",
         "abilityLinks": [
           "LiLi|R1"
@@ -289,6 +303,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "LiLi|R2",
         "abilityLinks": [
           "LiLi|R2"
@@ -307,6 +322,7 @@
         "icon": "storm_ui_icon_lili_cloudserpent.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LiLi|W1",
         "abilityLinks": [
           "LiLi|W1"
@@ -323,6 +339,7 @@
         "icon": "storm_ui_icon_lili_blindingwind.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LiLi|E1",
         "abilityLinks": [
           "LiLi|E1"
@@ -339,6 +356,7 @@
         "icon": "storm_ui_icon_lili_blindingwind_a.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LiLi|E1",
         "abilityLinks": [
           "LiLi|E1"
@@ -357,6 +375,7 @@
         "icon": "storm_ui_icon_lili_healingbrew.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LiLi|Q1",
         "abilityLinks": [
           "LiLi|Q1"
@@ -373,6 +392,7 @@
         "icon": "storm_ui_icon_lili_healingbrew_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LiLi|Q1",
         "abilityLinks": [
           "LiLi|Q1"
@@ -389,6 +409,7 @@
         "icon": "storm_ui_icon_lili_cloudserpent.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "LiLi|W1",
         "abilityLinks": [
           "LiLi|W1"
@@ -407,6 +428,7 @@
         "icon": "storm_ui_icon_lili_jugofathousandcups.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "LiLi|R1",
         "abilityLinks": [
           "LiLi|R1"
@@ -426,6 +448,7 @@
         "icon": "storm_ui_icon_lili_waterdragon.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "LiLi|R2",
         "abilityLinks": [
           "LiLi|R2"
@@ -446,7 +469,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "LiLi|Active"
+        "isQuest": false,
+        "abilityId": "LiLi|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "LiLiMistweaver"
+        ]
       },
       {
         "tooltipId": "LiLiShakeItOffTalent",
@@ -456,13 +484,14 @@
         "icon": "storm_ui_icon_lili_fastfeet.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "LiLi|D1",
         "abilityLinks": [
           "LiLi|D1"
         ],
         "abilityTalentLinkIds": [
-          "LiLiSafetySprint",
-          "LiLiFastFeet"
+          "LiLiFastFeet",
+          "LiLiSafetySprint"
         ]
       }
     ]

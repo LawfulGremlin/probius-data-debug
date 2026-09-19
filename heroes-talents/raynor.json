@@ -117,6 +117,7 @@
         "icon": "storm_ui_icon_raynor_inspire.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Raynor|W1",
         "abilityLinks": [
           "Raynor|D1",
@@ -124,8 +125,8 @@
         ],
         "abilityTalentLinkIds": [
           "RaynorInspire",
-          "RaynorBountyHunter",
-          "RaynorGiveEmSomePepper"
+          "RaynorGiveEmSomePepper",
+          "RaynorBountyHunter"
         ]
       },
       {
@@ -142,8 +143,8 @@
           "Raynor|D1"
         ],
         "abilityTalentLinkIds": [
-          "RaynorBountyHunter",
-          "RaynorGiveEmSomePepper"
+          "RaynorGiveEmSomePepper",
+          "RaynorBountyHunter"
         ]
       },
       {
@@ -154,13 +155,14 @@
         "icon": "storm_ui_icon_raynor_acardtoplay.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Raynor|Passive",
         "abilityLinks": [
           "Raynor|D1"
         ],
         "abilityTalentLinkIds": [
-          "RaynorBountyHunter",
-          "RaynorGiveEmSomePepper"
+          "RaynorGiveEmSomePepper",
+          "RaynorBountyHunter"
         ]
       }
     ],
@@ -173,6 +175,7 @@
         "icon": "storm_ui_icon_raynor_adrenalinrush.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Raynor|E1",
         "abilityLinks": [
           "Raynor|E1"
@@ -189,13 +192,14 @@
         "icon": "storm_ui_icon_raynor_acquireweakspot.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Raynor|D1",
         "abilityLinks": [
           "Raynor|D1"
         ],
         "abilityTalentLinkIds": [
-          "RaynorBountyHunter",
-          "RaynorGiveEmSomePepper"
+          "RaynorGiveEmSomePepper",
+          "RaynorBountyHunter"
         ]
       },
       {
@@ -212,8 +216,8 @@
           "Raynor|D1"
         ],
         "abilityTalentLinkIds": [
-          "RaynorBountyHunter",
-          "RaynorGiveEmSomePepper"
+          "RaynorGiveEmSomePepper",
+          "RaynorBountyHunter"
         ]
       }
     ],
@@ -226,6 +230,7 @@
         "icon": "storm_ui_icon_raynor_penetratinground.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Raynor|Q1",
         "abilityLinks": [
           "Raynor|Q1"
@@ -242,6 +247,7 @@
         "icon": "storm_ui_icon_raynor_split_debilitatingrounds.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Raynor|Passive",
         "abilityLinks": [
           "Raynor|E1",
@@ -260,13 +266,14 @@
         "icon": "storm_ui_icon_raynor_acquireweakspot.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Raynor|D1",
         "abilityLinks": [
           "Raynor|D1"
         ],
         "abilityTalentLinkIds": [
-          "RaynorBountyHunter",
-          "RaynorGiveEmSomePepper"
+          "RaynorGiveEmSomePepper",
+          "RaynorBountyHunter"
         ]
       }
     ],
@@ -280,6 +287,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Raynor|R1",
         "abilityLinks": [
           "Raynor|R1"
@@ -297,6 +305,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 45,
+        "isQuest": false,
         "abilityId": "Raynor|R2",
         "abilityLinks": [
           "Raynor|R2"
@@ -315,6 +324,7 @@
         "icon": "storm_ui_icon_raynor_penetratinground.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Raynor|Q1",
         "abilityLinks": [
           "Raynor|Q1"
@@ -331,6 +341,7 @@
         "icon": "storm_ui_icon_raynor_inspire.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Raynor|W1",
         "abilityLinks": [
           "Raynor|W1"
@@ -347,6 +358,7 @@
         "icon": "storm_ui_icon_raynor_split_debilitatingrounds.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Raynor|W1",
         "abilityLinks": [
           "Raynor|E1",
@@ -367,6 +379,7 @@
         "icon": "storm_ui_icon_raynor_penetratinground.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Raynor|Q1",
         "abilityLinks": [
           "Raynor|Q1"
@@ -383,6 +396,7 @@
         "icon": "storm_ui_icon_raynor_inspire.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Raynor|W1",
         "abilityLinks": [
           "Raynor|W1"
@@ -400,12 +414,14 @@
         "type": "Trait",
         "sort": 3,
         "cooldown": 40,
+        "isQuest": false,
         "abilityId": "Raynor|D1",
         "abilityLinks": [
           "Raynor|D1"
         ],
         "abilityTalentLinkIds": [
-          "RaynorGiveEmSomePepper"
+          "RaynorGiveEmSomePepper",
+          "RaynorBountyHunter"
         ]
       }
     ],
@@ -418,6 +434,7 @@
         "icon": "storm_ui_icon_raynor_hyperion.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Raynor|R1",
         "abilityLinks": [
           "Raynor|R1"
@@ -437,6 +454,7 @@
         "icon": "storm_ui_icon_raynor_raynorsraiders.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Raynor|R2",
         "abilityLinks": [
           "Raynor|R2"
@@ -457,6 +475,7 @@
         "icon": "storm_ui_icon_raynor_adrenalinrush.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Raynor|E1",
         "abilityLinks": [
           "Raynor|E1"
@@ -473,13 +492,14 @@
         "icon": "storm_ui_icon_raynor_acquireweakspot.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Raynor|D1",
         "abilityLinks": [
           "Raynor|D1"
         ],
         "abilityTalentLinkIds": [
-          "RaynorBountyHunter",
-          "RaynorGiveEmSomePepper"
+          "RaynorGiveEmSomePepper",
+          "RaynorBountyHunter"
         ]
       },
       {
@@ -490,6 +510,7 @@
         "icon": "storm_ui_icon_raynor_advancedoptics.png",
         "type": "Passive",
         "sort": 5,
+        "isQuest": false,
         "abilityId": "Raynor|Passive"
       }
     ]
@@ -497,7 +518,7 @@
   "summonUnits": [
     {
       "unitId": "RaynorRaynorsBanshee",
-      "name": "Banshee",
+      "name": "RaynorRaynorsBanshee",
       "icon": "storm_ui_icon_raynor_raynorsraiders.png",
       "stats": {
         "hp": 1000,

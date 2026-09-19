@@ -122,6 +122,7 @@
         "icon": "storm_ui_icon_etc_guitarsolo.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "ETC|E1",
         "abilityLinks": [
           "ETC|E1"
@@ -155,6 +156,7 @@
         "icon": "storm_ui_icon_etc_rockstar.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "ETC|D1",
         "abilityLinks": [
           "ETC|D1"
@@ -173,6 +175,7 @@
         "icon": "storm_ui_icon_etc_powerslide.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "ETC|Q1",
         "abilityLinks": [
           "ETC|Q1"
@@ -189,6 +192,7 @@
         "icon": "storm_ui_icon_etc_facemelt.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "ETC|W1",
         "abilityLinks": [
           "ETC|W1"
@@ -205,6 +209,7 @@
         "icon": "storm_ui_icon_etc_speedmetal.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "ETC|D1",
         "abilityLinks": [
           "ETC|D1"
@@ -223,6 +228,7 @@
         "icon": "storm_ui_icon_etc_facemelt.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "ETC|W1",
         "abilityLinks": [
           "ETC|W1"
@@ -239,6 +245,7 @@
         "icon": "storm_ui_icon_etc_guitarsolo.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "ETC|E1",
         "abilityLinks": [
           "ETC|E1"
@@ -255,6 +262,7 @@
         "icon": "storm_ui_icon_etc_echopedal.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "ETC|Passive",
         "abilityLinks": [
           "ETC|D1"
@@ -274,6 +282,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 120,
+        "isQuest": false,
         "abilityId": "ETC|R1",
         "abilityLinks": [
           "ETC|R1"
@@ -291,6 +300,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 75,
+        "isQuest": false,
         "abilityId": "ETC|R2",
         "abilityLinks": [
           "ETC|R2"
@@ -309,6 +319,7 @@
         "icon": "storm_ui_icon_etc_facemelt.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "ETC|W1",
         "abilityLinks": [
           "ETC|W1"
@@ -325,6 +336,7 @@
         "icon": "storm_ui_icon_etc_facemelt_a.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "ETC|W1",
         "abilityLinks": [
           "ETC|W1"
@@ -341,6 +353,7 @@
         "icon": "storm_ui_icon_etc_facemelt_b.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "ETC|W1",
         "abilityLinks": [
           "ETC|W1"
@@ -359,6 +372,7 @@
         "icon": "storm_ui_icon_etc_powerslide.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "ETC|Q1",
         "abilityLinks": [
           "ETC|Q1"
@@ -375,6 +389,7 @@
         "icon": "storm_ui_icon_etc_guitarsolo.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "ETC|E1",
         "abilityLinks": [
           "ETC|E1"
@@ -392,7 +407,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 20,
-        "abilityId": "ETC|Active"
+        "isQuest": false,
+        "abilityId": "ETC|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TalentImposingPresence"
+        ]
       }
     ],
     "20": [
@@ -404,6 +424,7 @@
         "icon": "storm_ui_icon_etc_moshpit.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "ETC|R1",
         "abilityLinks": [
           "ETC|R1"
@@ -423,6 +444,7 @@
         "icon": "storm_ui_icon_etc_stagedive.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "ETC|R2",
         "abilityLinks": [
           "ETC|R2"
@@ -442,6 +464,7 @@
         "icon": "storm_ui_icon_etc_moshpit_a.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "ETC|Passive",
         "abilityLinks": [
           "ETC|D1"
@@ -459,7 +482,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 45,
-        "abilityId": "ETC|Active"
+        "isQuest": false,
+        "abilityId": "ETC|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "L90ETCPoweroftheHorde"
+        ]
       },
       {
         "tooltipId": "L90ETCRidetheLightning",
@@ -470,7 +498,12 @@
         "type": "Active",
         "sort": 5,
         "cooldown": 70,
-        "abilityId": "ETC|Active"
+        "isQuest": false,
+        "abilityId": "ETC|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "L90ETCRidetheLightning"
+        ]
       }
     ]
   },

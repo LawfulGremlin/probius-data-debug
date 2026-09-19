@@ -32,12 +32,9 @@
     "attackDamage": 105,
     "attackDamageScale": 0.04,
     "attackRange": 6.5,
-    "attackSpeed": 1,
+    "attackSpeed": 2,
     "radius": 0.625
   },
-  "unitIds": [
-    "NovaHoloClone"
-  ],
   "abilities": {
     "Nova": [
       {
@@ -133,6 +130,7 @@
         "icon": "storm_ui_icon_nova_pinningshot.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Nova|W1",
         "abilityLinks": [
           "Nova|W1"
@@ -149,6 +147,7 @@
         "icon": "storm_ui_icon_nova_pinningshot_var1.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Nova|W1",
         "abilityLinks": [
           "Nova|W1"
@@ -165,6 +164,7 @@
         "icon": "storm_ui_icon_nova_personalcloaking.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Nova|D1",
         "abilityLinks": [
           "Nova|D1"
@@ -183,6 +183,7 @@
         "icon": "storm_ui_icon_nova_holodecoy.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Nova|E1",
         "abilityLinks": [
           "Nova|E1"
@@ -199,6 +200,7 @@
         "icon": "storm_ui_icon_nova_holodecoy_var2.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Nova|E1",
         "abilityLinks": [
           "Nova|11",
@@ -217,7 +219,12 @@
         "icon": "storm_ui_icon_talent_bribe.png",
         "type": "Active",
         "sort": 3,
-        "abilityId": "Nova|Active"
+        "isQuest": false,
+        "abilityId": "Nova|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "NovaCovertMission"
+        ]
       }
     ],
     "7": [
@@ -229,6 +236,7 @@
         "icon": "storm_ui_icon_nova_snipe.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Nova|Q1",
         "abilityLinks": [
           "Nova|Q1"
@@ -245,6 +253,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Nova|Passive",
         "abilityLinks": [
           "Nova|D1"
@@ -261,6 +270,7 @@
         "icon": "storm_ui_icon_talent_antiarmorshells.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Nova|Passive",
         "abilityLinks": [
           "Nova|D1"
@@ -280,6 +290,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Nova|R1",
         "abilityLinks": [
           "Nova|R1"
@@ -297,6 +308,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Nova|R2",
         "abilityLinks": [
           "Nova|R2"
@@ -315,6 +327,7 @@
         "icon": "storm_ui_icon_nova_snipe.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Nova|Q1",
         "abilityLinks": [
           "Nova|Q1"
@@ -331,6 +344,7 @@
         "icon": "storm_ui_icon_nova_pinningshot.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Nova|W1",
         "abilityLinks": [
           "Nova|W1"
@@ -347,6 +361,7 @@
         "icon": "storm_ui_icon_nova_personalcloaking.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Nova|D1",
         "abilityLinks": [
           "Nova|D1"
@@ -365,6 +380,7 @@
         "icon": "storm_ui_icon_nova_snipe.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Nova|Q1",
         "abilityLinks": [
           "Nova|Q1"
@@ -381,6 +397,7 @@
         "icon": "storm_ui_icon_nova_pinningshot.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Nova|W1",
         "abilityLinks": [
           "Nova|W1"
@@ -397,6 +414,7 @@
         "icon": "storm_ui_icon_nova_holodecoy.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Nova|E1",
         "abilityLinks": [
           "Nova|E1"
@@ -415,6 +433,7 @@
         "icon": "storm_ui_icon_nova_tripletap.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Nova|R1",
         "abilityLinks": [
           "Nova|R1"
@@ -434,6 +453,7 @@
         "icon": "storm_ui_icon_nova_orbitalstrike.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Nova|R2",
         "abilityLinks": [
           "Nova|R2"
@@ -453,6 +473,7 @@
         "icon": "storm_ui_icon_nova_personalcloaking.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Nova|D1",
         "abilityLinks": [
           "Nova|D1"
@@ -470,7 +491,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
-        "abilityId": "Nova|Active"
+        "isQuest": false,
+        "abilityId": "Nova|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TalentRewind"
+        ]
       }
     ]
   },

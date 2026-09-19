@@ -123,6 +123,7 @@
         "icon": "storm_ui_icon_ana_biotic_grenade.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Ana|W1",
         "abilityLinks": [
           "Ana|W1"
@@ -139,6 +140,7 @@
         "icon": "storm_ui_icon_ana_sleep_dart.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Ana|E1",
         "abilityLinks": [
           "Ana|E1"
@@ -161,8 +163,8 @@
           "Ana|D1"
         ],
         "abilityTalentLinkIds": [
-          "AnaAimDownSightsDeactivate",
-          "AnaAimDownSightsActivate"
+          "AnaAimDownSightsActivate",
+          "AnaAimDownSightsDeactivate"
         ]
       }
     ],
@@ -175,6 +177,7 @@
         "icon": "storm_ui_icon_ana_biotic_grenade.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Ana|W1",
         "abilityLinks": [
           "Ana|W1"
@@ -191,6 +194,7 @@
         "icon": "storm_ui_icon_ana_sleep_dart.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Ana|E1",
         "abilityLinks": [
           "Ana|E1"
@@ -208,7 +212,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 20,
-        "abilityId": "Ana|Active"
+        "isQuest": false,
+        "abilityId": "Ana|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AnaDebilitatingDart"
+        ]
       }
     ],
     "7": [
@@ -220,6 +229,7 @@
         "icon": "storm_ui_icon_ana_biotic_grenade.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Ana|W1",
         "abilityLinks": [
           "Ana|W1"
@@ -236,6 +246,7 @@
         "icon": "storm_ui_icon_ana_sleep_dart.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Ana|E1",
         "abilityLinks": [
           "Ana|E1"
@@ -252,13 +263,14 @@
         "icon": "storm_ui_icon_ana_shrike.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Ana|D1",
         "abilityLinks": [
           "Ana|D1"
         ],
         "abilityTalentLinkIds": [
-          "AnaAimDownSightsDeactivate",
-          "AnaAimDownSightsActivate"
+          "AnaAimDownSightsActivate",
+          "AnaAimDownSightsDeactivate"
         ]
       }
     ],
@@ -272,6 +284,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "Ana|R1",
         "abilityLinks": [
           "Ana|R1"
@@ -289,6 +302,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Ana|R2",
         "abilityLinks": [
           "Ana|R2"
@@ -307,6 +321,7 @@
         "icon": "storm_ui_icon_ana_healing_dart.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Ana|Q1",
         "abilityLinks": [
           "Ana|Q1"
@@ -323,6 +338,7 @@
         "icon": "storm_ui_icon_ana_healing_dart_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Ana|Q1",
         "abilityLinks": [
           "Ana|Q1"
@@ -339,6 +355,7 @@
         "icon": "storm_ui_icon_ana_healing_dart_b.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Ana|Q1",
         "abilityLinks": [
           "Ana|Q1"
@@ -357,6 +374,7 @@
         "icon": "storm_ui_icon_ana_healing_dart.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Ana|Q1",
         "abilityLinks": [
           "Ana|Q1"
@@ -373,6 +391,7 @@
         "icon": "storm_ui_icon_ana_healing_dart_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Ana|Q1",
         "abilityLinks": [
           "Ana|Q1"
@@ -390,6 +409,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Ana|Active",
         "abilityLinks": [
           "Ana|Q1"
@@ -408,6 +428,7 @@
         "icon": "storm_ui_icon_ana_nano_bost.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Ana|R1",
         "abilityLinks": [
           "Ana|R1"
@@ -427,6 +448,7 @@
         "icon": "storm_ui_icon_ana_overwatch.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Ana|R2",
         "abilityLinks": [
           "Ana|R2"
@@ -446,13 +468,14 @@
         "icon": "storm_ui_icon_ana_aim_down_sights.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Ana|D1",
         "abilityLinks": [
           "Ana|D1"
         ],
         "abilityTalentLinkIds": [
-          "AnaAimDownSightsDeactivate",
-          "AnaAimDownSightsActivate"
+          "AnaAimDownSightsActivate",
+          "AnaAimDownSightsDeactivate"
         ]
       },
       {
@@ -463,13 +486,14 @@
         "icon": "storm_ui_icon_ana_aim_down_sights_a.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Ana|D1",
         "abilityLinks": [
           "Ana|D1"
         ],
         "abilityTalentLinkIds": [
-          "AnaAimDownSightsDeactivate",
-          "AnaAimDownSightsActivate"
+          "AnaAimDownSightsActivate",
+          "AnaAimDownSightsDeactivate"
         ]
       }
     ]

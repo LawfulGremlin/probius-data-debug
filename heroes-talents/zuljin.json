@@ -130,6 +130,7 @@
         "icon": "storm_ui_icon_zuljin_grievousthrow.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zuljin|Q1",
         "abilityLinks": [
           "Zuljin|Q1"
@@ -146,13 +147,14 @@
         "icon": "storm_ui_icon_zuljin_berzerker.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zuljin|D1",
         "abilityLinks": [
           "Zuljin|D1"
         ],
         "abilityTalentLinkIds": [
-          "ZuljinCancelBerserker",
-          "ZuljinBerserker"
+          "ZuljinBerserker",
+          "ZuljinCancelBerserker"
         ]
       },
       {
@@ -176,12 +178,14 @@
         "icon": "storm_ui_icon_zuljin_regeneration.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zuljin|E1",
         "abilityLinks": [
           "Zuljin|E1"
         ],
         "abilityTalentLinkIds": [
-          "ZuljinRegeneration"
+          "ZuljinRegeneration",
+          "ZuljinRegenerationForestMedicine"
         ]
       },
       {
@@ -193,12 +197,14 @@
         "type": "Active",
         "sort": 2,
         "cooldown": 10,
+        "isQuest": false,
         "abilityId": "Zuljin|Active",
         "abilityLinks": [
           "Zuljin|E1"
         ],
         "abilityTalentLinkIds": [
-          "ZuljinRegeneration"
+          "ZuljinRegeneration",
+          "ZuljinRegenerationForestMedicine"
         ]
       },
       {
@@ -209,6 +215,7 @@
         "icon": "storm_ui_icon_zuljin_davoodooshuffle.png",
         "type": "Active",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zuljin|Active",
         "abilityLinks": [
           "Zuljin|11"
@@ -227,6 +234,7 @@
         "icon": "storm_ui_icon_zuljin_grievousthrow.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zuljin|Q1",
         "abilityLinks": [
           "Zuljin|Q1"
@@ -260,13 +268,14 @@
         "icon": "storm_ui_icon_zuljin_berzerker.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zuljin|D1",
         "abilityLinks": [
           "Zuljin|D1"
         ],
         "abilityTalentLinkIds": [
-          "ZuljinCancelBerserker",
-          "ZuljinBerserker"
+          "ZuljinBerserker",
+          "ZuljinCancelBerserker"
         ]
       }
     ],
@@ -280,6 +289,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 100,
+        "isQuest": false,
         "abilityId": "Zuljin|R1",
         "abilityLinks": [
           "Zuljin|R1"
@@ -297,6 +307,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 30,
+        "isQuest": false,
         "abilityId": "Zuljin|R2",
         "abilityLinks": [
           "Zuljin|R2"
@@ -315,6 +326,7 @@
         "icon": "storm_ui_icon_zuljin_twincleave.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zuljin|W1",
         "abilityLinks": [
           "Zuljin|W1"
@@ -331,6 +343,7 @@
         "icon": "storm_ui_icon_talent_autoattack_base.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zuljin|Passive"
       },
       {
@@ -342,7 +355,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 40,
-        "abilityId": "Zuljin|Active"
+        "isQuest": false,
+        "abilityId": "Zuljin|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ZuljinEnsnare"
+        ]
       }
     ],
     "16": [
@@ -354,6 +372,7 @@
         "icon": "storm_ui_icon_zuljin_grievousthrow.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zuljin|Q1",
         "abilityLinks": [
           "Zuljin|Q1"
@@ -370,6 +389,7 @@
         "icon": "storm_ui_icon_zuljin_twincleave.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zuljin|W1",
         "abilityLinks": [
           "Zuljin|W1"
@@ -386,6 +406,7 @@
         "icon": "storm_ui_icon_talent_autoattack_speed.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zuljin|Passive"
       }
     ],
@@ -398,6 +419,7 @@
         "icon": "storm_ui_icon_zuljin_tazdingo.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Zuljin|R1",
         "abilityLinks": [
           "Zuljin|R1"
@@ -417,6 +439,7 @@
         "icon": "storm_ui_icon_zuljin_guillotine.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Zuljin|R2",
         "abilityLinks": [
           "Zuljin|R2"
@@ -436,12 +459,14 @@
         "icon": "storm_ui_icon_zuljin_regeneration.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Zuljin|E1",
         "abilityLinks": [
           "Zuljin|E1"
         ],
         "abilityTalentLinkIds": [
-          "ZuljinRegeneration"
+          "ZuljinRegeneration",
+          "ZuljinRegenerationForestMedicine"
         ]
       },
       {
@@ -452,6 +477,7 @@
         "icon": "storm_ui_icon_talent_autoattack_aoe.png",
         "type": "Passive",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Zuljin|Passive"
       }
     ]

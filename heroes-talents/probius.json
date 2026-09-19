@@ -135,6 +135,7 @@
         "icon": "storm_ui_icon_probius_disruptionpulse.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Probius|Q1",
         "abilityLinks": [
           "Probius|Q1"
@@ -187,6 +188,7 @@
         "icon": "storm_ui_icon_probius_photoncannon.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Probius|E1",
         "abilityLinks": [
           "Probius|E1"
@@ -203,6 +205,7 @@
         "icon": "storm_ui_icon_probius_workerrush.png",
         "type": "Z",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Probius|Z1",
         "abilityLinks": [
           "Probius|Z1"
@@ -219,6 +222,7 @@
         "icon": "storm_ui_icon_probius_shieldcapacitor.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Probius|D1",
         "abilityLinks": [
           "Probius|D1"
@@ -237,6 +241,7 @@
         "icon": "storm_ui_icon_probius_disruptionpulse.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Probius|Q1",
         "abilityLinks": [
           "Probius|Q1"
@@ -253,6 +258,7 @@
         "icon": "storm_ui_icon_probius_warprift.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Probius|W1",
         "abilityLinks": [
           "Probius|W1"
@@ -269,6 +275,7 @@
         "icon": "storm_ui_icon_probius_photoncannon.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Probius|E1",
         "abilityLinks": [
           "Probius|E1"
@@ -288,6 +295,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Probius|R1",
         "abilityLinks": [
           "Probius|R1"
@@ -305,6 +313,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 25,
+        "isQuest": false,
         "abilityId": "Probius|R2",
         "abilityLinks": [
           "Probius|R2"
@@ -323,6 +332,7 @@
         "icon": "storm_ui_icon_probius_warpinpylon.png",
         "type": "Trait",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Probius|D1",
         "abilityLinks": [
           "Probius|D1"
@@ -339,6 +349,7 @@
         "icon": "storm_ui_icon_probius_warpinpylon_a.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Probius|D1",
         "abilityLinks": [
           "Probius|D1"
@@ -355,6 +366,7 @@
         "icon": "storm_ui_icon_probius_warpinpylon_b.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Probius|D1",
         "abilityLinks": [
           "Probius|D1"
@@ -373,6 +385,7 @@
         "icon": "storm_ui_icon_probius_warprift.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Probius|W1",
         "abilityLinks": [
           "Probius|W1"
@@ -389,6 +402,7 @@
         "icon": "storm_ui_icon_probius_warprift_a.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Probius|W1",
         "abilityLinks": [
           "Probius|W1"
@@ -405,6 +419,7 @@
         "icon": "storm_ui_icon_probius_warprift_c.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Probius|W1",
         "abilityLinks": [
           "Probius|W1"
@@ -423,6 +438,7 @@
         "icon": "storm_ui_icon_probius_pylonovercharge.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Probius|R1",
         "abilityLinks": [
           "Probius|R1"
@@ -442,6 +458,7 @@
         "icon": "storm_ui_icon_probius_voidgate.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Probius|R2",
         "abilityLinks": [
           "Probius|R2"
@@ -461,6 +478,7 @@
         "icon": "storm_ui_icon_probius_disruptionpulse.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Probius|Q1",
         "abilityLinks": [
           "Probius|Q1"
@@ -477,6 +495,7 @@
         "icon": "storm_ui_icon_probius_warprift.png",
         "type": "W",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Probius|W1",
         "abilityLinks": [
           "Probius|W1"
@@ -490,7 +509,7 @@
   "summonUnits": [
     {
       "unitId": "ProbiusPhotonCannon",
-      "name": "Photon Cannon",
+      "name": "ProbiusPhotonCannon",
       "icon": "storm_ui_icon_probius_photoncannon.png",
       "stats": {
         "hp": 778,
@@ -502,6 +521,7 @@
         "attackRange": 6.5,
         "attackSpeed": 0.7143,
         "radius": 1,
+        "speed": 0,
         "sight": 7
       },
       "abilities": [],
@@ -509,7 +529,7 @@
     },
     {
       "unitId": "ProbiusPylon",
-      "name": "Pylon",
+      "name": "ProbiusPylon",
       "icon": "storm_ui_icon_probius_warpinpylon.png",
       "stats": {
         "hp": 400,
@@ -517,6 +537,7 @@
         "hpScale": 0.05,
         "hpRegenScale": 0,
         "radius": 0.5,
+        "speed": 0,
         "sight": 8.5
       },
       "abilities": [],

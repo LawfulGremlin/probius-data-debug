@@ -134,6 +134,7 @@
         "icon": "storm_ui_icon_medivh_ravenform.png",
         "type": "Z",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Medivh|D1",
         "abilityLinks": [
           "Medivh|D1"
@@ -150,6 +151,7 @@
         "icon": "storm_ui_icon_medivh_ravenform_b.png",
         "type": "Z",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Medivh|D1",
         "abilityLinks": [
           "Medivh|D1"
@@ -167,11 +169,13 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 16,
+        "isQuest": false,
         "abilityId": "Medivh|Active",
         "abilityLinks": [
           "Medivh|E1"
         ],
         "abilityTalentLinkIds": [
+          "MedivhPortal2",
           "MedivhPortalInstant"
         ]
       }
@@ -185,11 +189,13 @@
         "icon": "storm_ui_icon_medivh_portal.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Medivh|E1",
         "abilityLinks": [
           "Medivh|E1"
         ],
         "abilityTalentLinkIds": [
+          "MedivhPortal2",
           "MedivhPortalInstant"
         ]
       },
@@ -201,11 +207,13 @@
         "icon": "storm_ui_icon_medivh_portal_a.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Medivh|E1",
         "abilityLinks": [
           "Medivh|E1"
         ],
         "abilityTalentLinkIds": [
+          "MedivhPortal2",
           "MedivhPortalInstant"
         ]
       },
@@ -218,7 +226,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 45,
-        "abilityId": "Medivh|Active"
+        "isQuest": false,
+        "abilityId": "Medivh|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MedivhDustOfAppearance"
+        ]
       }
     ],
     "7": [
@@ -230,6 +243,7 @@
         "icon": "storm_ui_icon_medivh_arcanemissile.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Medivh|Q1",
         "abilityLinks": [
           "Medivh|Q1"
@@ -246,6 +260,7 @@
         "icon": "storm_ui_icon_medivh_forceofwill.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Medivh|W1",
         "abilityLinks": [
           "Medivh|W1"
@@ -262,6 +277,7 @@
         "icon": "storm_ui_icon_medivh_forceofwill_a.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Medivh|W1",
         "abilityLinks": [
           "Medivh|W1"
@@ -281,13 +297,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 40,
-        "abilityId": "Medivh|R1",
-        "abilityLinks": [
-          "Medivh|R1"
-        ],
-        "abilityTalentLinkIds": [
-          "MedivhPolyBomb"
-        ]
+        "isQuest": false
       },
       {
         "tooltipId": "MedivhLeyLineSeal",
@@ -298,13 +308,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 80,
-        "abilityId": "Medivh|R2",
-        "abilityLinks": [
-          "Medivh|R2"
-        ],
-        "abilityTalentLinkIds": [
-          "MedivhLeyLineSeal"
-        ]
+        "isQuest": false
       }
     ],
     "13": [
@@ -316,6 +320,7 @@
         "icon": "storm_ui_icon_medivh_forceofwill.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Medivh|W1",
         "abilityLinks": [
           "Medivh|W1"
@@ -332,6 +337,7 @@
         "icon": "storm_ui_icon_medivh_forceofwill_a.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Medivh|W1",
         "abilityLinks": [
           "Medivh|W1"
@@ -348,6 +354,7 @@
         "icon": "storm_ui_icon_medivh_forceofwill_b.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Medivh|W1",
         "abilityLinks": [
           "Medivh|W1"
@@ -366,6 +373,7 @@
         "icon": "storm_ui_icon_medivh_arcanemissile.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Medivh|Q1",
         "abilityLinks": [
           "Medivh|Q1"
@@ -382,6 +390,7 @@
         "icon": "storm_ui_icon_medivh_arcanemissile_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Medivh|Q1",
         "abilityLinks": [
           "Medivh|Q1"
@@ -398,11 +407,13 @@
         "icon": "storm_ui_icon_medivh_portal.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Medivh|E1",
         "abilityLinks": [
           "Medivh|E1"
         ],
         "abilityTalentLinkIds": [
+          "MedivhPortal2",
           "MedivhPortalInstant"
         ]
       }
@@ -416,12 +427,14 @@
         "icon": "storm_ui_icon_medivh_polybomb.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Medivh|R1",
         "abilityLinks": [
           "Medivh|R1"
         ],
         "abilityTalentLinkIds": [
-          "MedivhPolyBomb"
+          "MedivhPolyBomb",
+          "MedivhPolyBombGlyphOfPolyBomb"
         ],
         "prerequisiteTalentIds": [
           "MedivhPolyBomb"
@@ -435,6 +448,7 @@
         "icon": "storm_ui_icon_medivh_leylineblast.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Medivh|R2",
         "abilityLinks": [
           "Medivh|R2"
@@ -454,6 +468,7 @@
         "icon": "storm_ui_icon_medivh_arcanemissile.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Medivh|Q1",
         "abilityLinks": [
           "Medivh|Q1"
@@ -471,7 +486,12 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 60,
-        "abilityId": "Medivh|Active"
+        "isQuest": false,
+        "abilityId": "Medivh|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MedivhArcaneBrilliance"
+        ]
       },
       {
         "tooltipId": "MedivhDustofDisappearance",
@@ -482,10 +502,77 @@
         "type": "Active",
         "sort": 5,
         "cooldown": 10,
-        "abilityId": "Medivh|Active"
+        "isQuest": false,
+        "abilityId": "Medivh|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "MedivhDustofDisappearance"
+        ]
       }
     ]
   },
+  "summonUnits": [
+    {
+      "unitId": "HeroMedivhRaven",
+      "name": "HeroMedivhRaven",
+      "icon": "storm_ui_icon_medivh_dustofappearance.png",
+      "stats": {
+        "hp": 1470,
+        "hpRegen": 3.0625,
+        "hpScale": 0.045,
+        "hpRegenScale": 0.045,
+        "resource": 500,
+        "resourceType": "Mana",
+        "resourceRegen": 3,
+        "radius": 0.75,
+        "speed": 4.8398,
+        "sight": 7
+      },
+      "abilities": [
+        {
+          "name": "Arcane Rift",
+          "hotkey": "Q",
+          "icon": "storm_ui_icon_medivh_arcanemissile.png",
+          "description": "Launch a rift that deals 170 damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by 5 seconds and refund 50 Mana.\n\nQuest: Hit 40 enemy Heroes with Arcane Rift without dying.\n\nReward: Permanently increase the damage dealt by 75 and cooldown reduction for hitting a Hero by 1 second.",
+          "cooldown": 7,
+          "tooltipId": "MedivhArcaneRift"
+        },
+        {
+          "name": "Force of Will",
+          "hotkey": "W",
+          "icon": "storm_ui_icon_medivh_forceofwill.png",
+          "description": "Protect an allied Hero from all damage for 1.5 seconds. Upon expiration, Force of Will heals the target for 20% of the damage it absorbed.",
+          "cooldown": 9,
+          "tooltipId": "MedivhForceOfWill"
+        },
+        {
+          "name": "Portal",
+          "hotkey": "E",
+          "icon": "storm_ui_icon_medivh_portal.png",
+          "description": "Create a set of portals between Medivh and the target location, allowing allies to teleport between both. The portals last 6 seconds.",
+          "cooldown": 16,
+          "tooltipId": "MedivhPortal"
+        },
+        {
+          "name": "Poly Bomb",
+          "hotkey": "Heroic",
+          "icon": "storm_ui_icon_medivh_polybomb.png",
+          "description": "Polymorph an enemy Hero for 2 seconds, Silencing them and making them unable to attack. On expiration, Poly Bomb spreads to other nearby enemy Heroes.",
+          "cooldown": 40,
+          "tooltipId": "MedivhPolyBomb"
+        },
+        {
+          "name": "Ley Line Seal",
+          "hotkey": "Heroic",
+          "icon": "storm_ui_icon_medivh_leylineblast.png",
+          "description": "After 0.5 seconds, unleash a wave of energy that places enemy Heroes in Time Stop for 3 seconds.",
+          "cooldown": 80,
+          "tooltipId": "MedivhLeyLineSeal"
+        }
+      ],
+      "sourceAbilityTooltipId": "MedivhDustOfAppearance"
+    }
+  ],
   "tooltipMarkup": {
     "MedivhArcaneBrilliance": "Activate to instantly restore <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedivhArcaneBrillianceManaRestore,RechargeVitalRate\"/></c> mana to all nearby allied Heroes and grant them <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedivhArcaneBrilliance,Modification.DamageDealtFraction[Ability]*100\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedivhArcaneBrilliance,Duration\"/></c> seconds.",
     "MedivhArcaneRift": "Launch a rift that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedivhArcaneRiftDamage,Amount\"/></c> damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedivhArcaneRiftCooldownReduction,Cost[0].CooldownTimeUse*(-1)\" precision=\"1\" player=\"0\"/></c> seconds and refund <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedivhArcaneRiftManaRefund,RechargeVitalRate\" player=\"0\"/></c> Mana.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedivhArcaneRiftTheMastersTouchQuestToken,Max\"/></c> enemy Heroes with Arcane Rift without dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Permanently increase the damage dealt by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedivhArcaneRiftDamage,FlatModifierArray[MastersTouchDamage].Modifier\"/></c> and cooldown reduction for hitting a Hero by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedivhArcaneRiftTheMastersTouchQuestCompleteModifyPlayer,EffectArray[0].Value\" precision=\"1\"/></c> second.",

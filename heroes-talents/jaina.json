@@ -120,6 +120,40 @@
         "icon": "storm_ui_icon_talent_iceblock.png",
         "type": "activable"
       }
+    ],
+    "JainaTraitFrostbite": [
+      {
+        "uid": "9d5c50",
+        "name": "Cancel Improved Ice Block",
+        "description": "Cancel Improved Ice Block, removing the Stasis and Invulnerability and Chilling nearby enemies.",
+        "hotkey": "2",
+        "abilityId": "Jaina|21",
+        "tooltipId": "JainaImprovedIceBlockCancel",
+        "icon": "hud_btn_bg_ability_cancel.png",
+        "type": "activable"
+      },
+      {
+        "uid": "592303",
+        "name": "Icy Veins",
+        "description": "Activate to make Jaina's Basic Abilities' cooldowns recharge 200% faster and reduce their Mana cost by 50% for 5 seconds.",
+        "hotkey": "3",
+        "abilityId": "Jaina|31",
+        "tooltipId": "JainaIcyVeinsHotbar",
+        "cooldown": 60,
+        "icon": "storm_ui_icon_jaina_icyveins.png",
+        "type": "activable"
+      },
+      {
+        "uid": "8e9ecd",
+        "name": "Ice Blink",
+        "description": "Activate to teleport a short distance and Chill all nearby enemies.",
+        "hotkey": "4",
+        "abilityId": "Jaina|41",
+        "tooltipId": "JainaFrigidTransmission",
+        "cooldown": 60,
+        "icon": "storm_ui_icon_talent_boltofthestorm.png",
+        "type": "activable"
+      }
     ]
   },
   "talents": {
@@ -132,6 +166,7 @@
         "icon": "storm_ui_icon_jaina_frostbolt.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Jaina|Q1",
         "abilityLinks": [
           "Jaina|Q1"
@@ -148,6 +183,7 @@
         "icon": "storm_ui_icon_jaina_frostbite.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Jaina|D1",
         "abilityLinks": [
           "Jaina|D1"
@@ -183,6 +219,7 @@
         "icon": "storm_ui_icon_jaina_frostbolt.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Jaina|Q1",
         "abilityLinks": [
           "Jaina|Q1"
@@ -199,6 +236,7 @@
         "icon": "storm_ui_icon_jaina_arcaneintellect.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Jaina|D1",
         "abilityLinks": [
           "Jaina|D1"
@@ -215,6 +253,7 @@
         "icon": "storm_ui_icon_jaina_frostarmor.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Jaina|Passive"
       }
     ],
@@ -227,6 +266,7 @@
         "icon": "storm_ui_icon_jaina_frostbolt.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Jaina|Q1",
         "abilityLinks": [
           "Jaina|Q1"
@@ -243,6 +283,7 @@
         "icon": "storm_ui_icon_jaina_coneofcold.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Jaina|E1",
         "abilityLinks": [
           "Jaina|E1"
@@ -259,6 +300,7 @@
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Jaina|Passive",
         "abilityLinks": [
           "Jaina|W1"
@@ -278,6 +320,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 70,
+        "isQuest": false,
         "abilityId": "Jaina|R2",
         "abilityLinks": [
           "Jaina|R2"
@@ -295,6 +338,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Jaina|R1",
         "abilityLinks": [
           "Jaina|R1"
@@ -313,6 +357,7 @@
         "icon": "storm_ui_icon_jaina_blizzard.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Jaina|W1",
         "abilityLinks": [
           "Jaina|W1"
@@ -329,6 +374,7 @@
         "icon": "storm_ui_icon_jaina_frostbite.png",
         "type": "Trait",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Jaina|D1",
         "abilityLinks": [
           "Jaina|D1"
@@ -346,7 +392,14 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "Jaina|Active"
+        "isQuest": false,
+        "abilityId": "Jaina|Active",
+        "abilityLinks": [
+          "Jaina|31"
+        ],
+        "abilityTalentLinkIds": [
+          "IcyVeins"
+        ]
       }
     ],
     "16": [
@@ -358,6 +411,7 @@
         "icon": "storm_ui_icon_jaina_blizzard.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Jaina|W1",
         "abilityLinks": [
           "Jaina|W1"
@@ -374,6 +428,7 @@
         "icon": "storm_ui_icon_jaina_coneofcold.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Jaina|E1",
         "abilityLinks": [
           "Jaina|E1"
@@ -390,6 +445,7 @@
         "icon": "storm_ui_icon_jaina_coneofcold_var1.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Jaina|E1",
         "abilityLinks": [
           "Jaina|E1"
@@ -408,6 +464,7 @@
         "icon": "storm_ui_icon_jaina_ringoffrost.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Jaina|R2",
         "abilityLinks": [
           "Jaina|R2"
@@ -427,6 +484,7 @@
         "icon": "storm_ui_icon_jaina_summonwaterelemental.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Jaina|R1",
         "abilityLinks": [
           "Jaina|R1"
@@ -447,7 +505,14 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
-        "abilityId": "Jaina|Active"
+        "isQuest": false,
+        "abilityId": "Jaina|Active",
+        "abilityLinks": [
+          "Jaina|41"
+        ],
+        "abilityTalentLinkIds": [
+          "JainaFrigidTransmission"
+        ]
       },
       {
         "tooltipId": "JainaFrostbiteDeepChillTalent",
@@ -457,6 +522,7 @@
         "icon": "storm_ui_icon_jaina_frostbite.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Jaina|D1",
         "abilityLinks": [
           "Jaina|D1"
@@ -470,7 +536,7 @@
   "summonUnits": [
     {
       "unitId": "JainaWaterElemental",
-      "name": "Water Elemental",
+      "name": "JainaWaterElemental",
       "icon": "storm_ui_icon_jaina_summonwaterelemental.png",
       "stats": {
         "hp": 958,
@@ -490,8 +556,9 @@
           "name": "Frostbolt",
           "hotkey": "Q",
           "icon": "storm_ui_icon_jaina_frostbolt.png",
-          "description": "Deal <c val=\"bfd4fd\">184~~0.04~~</c> damage and Chill the target.",
+          "description": "Deal 184 damage and Chill the target.",
           "tooltipId": "JainaFrostbolt",
+          "cooldown": 4,
           "gatedBy": {
             "tier": 20,
             "talentName": "Wintermute",
@@ -502,8 +569,9 @@
           "name": "Blizzard",
           "hotkey": "W",
           "icon": "storm_ui_icon_jaina_blizzard.png",
-          "description": "Bombard an area with <c val=\"bfd4fd\">3</c> waves of ice, dealing <c val=\"bfd4fd\">142~~0.04~~</c> damage each. Damaged enemies are Chilled.",
+          "description": "Bombard an area with 3 waves of ice, dealing 142 damage each. Damaged enemies are Chilled.",
           "tooltipId": "JainaBlizzard",
+          "cooldown": 15,
           "gatedBy": {
             "tier": 20,
             "talentName": "Wintermute",
@@ -514,8 +582,9 @@
           "name": "Cone of Cold",
           "hotkey": "E",
           "icon": "storm_ui_icon_jaina_coneofcold.png",
-          "description": "Deal <c val=\"bfd4fd\">220~~0.04~~</c> damage and Chill targets.",
+          "description": "Deal 220 damage and Chill targets.",
           "tooltipId": "JainaConeOfCold",
+          "cooldown": 10,
           "gatedBy": {
             "tier": 20,
             "talentName": "Wintermute",
@@ -546,6 +615,7 @@
     "JainaFrostboltWintersReachTalent": "Increase the range and travel speed of Frostbolt by <c val=\"#TooltipNumbers\">30%</c>.",
     "JainaIcefuryWand": "Basic Attacks against Chilled enemies deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,JainaWeaponDamage,MultiplicativeModifierArray[IcefuryWandNonHero].Modifier\"/>%</c> more damage and lower the cooldown of Blizzard by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,JainaIcefuryWandModifyBlizzardCooldownNonHeroTarget,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds. Doubled against enemy Heroes.",
     "JainaIcyVeinsHotbar": "Activate to make Jaina's Basic Abilities' cooldowns recharge <c val=\"#TooltipNumbers\"><d ref=\"-Effect,JainaIcyVeinsModifyUnit,Cost[0].CooldownTimeUse/Behavior,JainaIcyVeinsBuff,Period*100\"/>%</c> faster and reduce their Mana cost by <c val=\"#TooltipNumbers\">50%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaIcyVeinsBuff,Duration\" player=\"0\"/></c> seconds.",
+    "JainaImprovedIceBlockCancel": "<n/><s val=\"StandardTooltip\">Cancel Improved Ice Block, removing the Stasis and Invulnerability and Chilling nearby enemies.</s>",
     "JainaImprovedIceBlockHotbar": "Activate to place Jaina in Stasis and gain Invulnerability for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaImprovedIceBlock,Duration\" precision=\"2\" player=\"0\"/></c> seconds. When this effect expires, nearby enemies are Chilled.",
     "JainaRingOfFrost": "After a <c val=\"#TooltipNumbers\">1.5</c> second delay, create a Ring of Frost in an area that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,JainaRingOfFrostImpactDamage,Amount\"/></c> damage and Roots enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaRingOfFrostRoot,Duration\" player=\"0\"/></c> seconds. The ring persists for <c val=\"#TooltipNumbers\">3</c> seconds afterward, Chilling any enemies who touch it.",
     "JainaRingOfFrostColdSnapTalent": "The center area of Ring of Frost deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,JainaRingOfFrostImpactDamage,Amount\"/></c> damage and Roots enemies after the outer ring expires. Each enemy Hero hit reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,JainaColdSnapModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",

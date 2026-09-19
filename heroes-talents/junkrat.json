@@ -119,6 +119,7 @@
         "icon": "storm_ui_icon_junkrat_frag_launcher.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Junkrat|Q1",
         "abilityLinks": [
           "Junkrat|Q1"
@@ -135,6 +136,7 @@
         "icon": "storm_ui_icon_junkrat_frag_launcher_b.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Junkrat|Q1",
         "abilityLinks": [
           "Junkrat|Q1"
@@ -151,6 +153,7 @@
         "icon": "storm_ui_icon_junkrat_trap_mine.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Junkrat|Passive",
         "abilityLinks": [
           "Junkrat|E1",
@@ -188,6 +191,7 @@
         "icon": "storm_ui_icon_junkrat_concussion_mine.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Junkrat|W1",
         "abilityLinks": [
           "Junkrat|W1"
@@ -205,6 +209,7 @@
         "icon": "storm_ui_icon_junkrat_steel_trap.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Junkrat|E1",
         "abilityLinks": [
           "Junkrat|E1"
@@ -223,6 +228,7 @@
         "icon": "storm_ui_icon_junkrat_concussion_mine.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Junkrat|W1",
         "abilityLinks": [
           "Junkrat|W1"
@@ -240,6 +246,7 @@
         "icon": "storm_ui_icon_junkrat_steel_trap.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Junkrat|E1",
         "abilityLinks": [
           "Junkrat|E1"
@@ -256,6 +263,7 @@
         "icon": "storm_ui_icon_junkrat_bomb_pack.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Junkrat|D1",
         "abilityLinks": [
           "Junkrat|D1"
@@ -275,6 +283,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 75,
+        "isQuest": false,
         "abilityId": "Junkrat|R1",
         "abilityLinks": [
           "Junkrat|R1"
@@ -292,6 +301,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 75,
+        "isQuest": false,
         "abilityId": "Junkrat|R2",
         "abilityLinks": [
           "Junkrat|R2"
@@ -310,6 +320,7 @@
         "icon": "storm_ui_icon_junkrat_frag_launcher.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Junkrat|Q1",
         "abilityLinks": [
           "Junkrat|Q1"
@@ -326,6 +337,7 @@
         "icon": "storm_ui_icon_junkrat_concussion_mine.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Junkrat|W1",
         "abilityLinks": [
           "Junkrat|W1"
@@ -343,6 +355,7 @@
         "icon": "storm_ui_icon_junkrat_steel_trap.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Junkrat|E1",
         "abilityLinks": [
           "Junkrat|E1"
@@ -359,6 +372,7 @@
         "icon": "storm_ui_icon_junkrat_steel_trap_a.png",
         "type": "E",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Junkrat|E1",
         "abilityLinks": [
           "Junkrat|E1"
@@ -377,6 +391,7 @@
         "icon": "storm_ui_icon_junkrat_frag_launcher_f.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Junkrat|Q1",
         "abilityLinks": [
           "Junkrat|Q1"
@@ -393,6 +408,7 @@
         "icon": "storm_ui_icon_junkrat_frag_launcher_e.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Junkrat|Q1",
         "abilityLinks": [
           "Junkrat|Q1"
@@ -410,7 +426,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 30,
-        "abilityId": "Junkrat|Active"
+        "isQuest": false,
+        "abilityId": "Junkrat|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "JunkratSpreadVolley"
+        ]
       }
     ],
     "20": [
@@ -422,6 +443,7 @@
         "icon": "storm_ui_icon_junkrat_rip_tire.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Junkrat|R1",
         "abilityLinks": [
           "Junkrat|R1"
@@ -441,6 +463,7 @@
         "icon": "storm_ui_icon_junkrat_rocket_ride.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Junkrat|R1",
         "abilityLinks": [
           "Junkrat|R1",
@@ -462,6 +485,7 @@
         "icon": "storm_ui_icon_junkrat_frag_launcher_g.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Junkrat|Q1",
         "abilityLinks": [
           "Junkrat|Q1"
@@ -478,6 +502,7 @@
         "icon": "storm_ui_icon_junkrat_mount_rocket.png",
         "type": "Z",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Junkrat|D1",
         "abilityLinks": [
           "Junkrat|D1"
@@ -491,7 +516,7 @@
   "summonUnits": [
     {
       "unitId": "JunkratRIPTire",
-      "name": "RIP-Tire",
+      "name": "JunkratRIPTire",
       "icon": "storm_ui_icon_junkrat_rip_tire.png",
       "stats": {
         "hp": 530,

@@ -157,6 +157,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 25,
+        "isQuest": false,
         "abilityId": "Chromie|Active",
         "abilityLinks": [
           "Chromie|D1"
@@ -175,6 +176,7 @@
         "icon": "storm_ui_icon_chromie_timetrap.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Chromie|E1",
         "abilityLinks": [
           "Chromie|E1"
@@ -192,6 +194,7 @@
         "icon": "storm_ui_icon_chromie_timetrap_a.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Chromie|E1",
         "abilityLinks": [
           "Chromie|E1"
@@ -208,6 +211,7 @@
         "icon": "storm_ui_icon_chromie_timetrap_b.png",
         "type": "E",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Chromie|E1",
         "abilityLinks": [
           "Chromie|E1"
@@ -227,6 +231,7 @@
         "icon": "storm_ui_icon_chromie_aethercannon.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Chromie|Q1",
         "abilityLinks": [
           "Chromie|Q1"
@@ -243,6 +248,7 @@
         "icon": "storm_ui_icon_chromie_sandstrike.png",
         "type": "W",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Chromie|W1",
         "abilityLinks": [
           "Chromie|W1"
@@ -259,6 +265,7 @@
         "icon": "storm_ui_icon_talent_abilitytalent_damage.png",
         "type": "Passive",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Chromie|Passive",
         "abilityLinks": [
           "Chromie|D1"
@@ -278,6 +285,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 5,
+        "isQuest": false,
         "abilityId": "Chromie|R2",
         "abilityLinks": [
           "Chromie|R2"
@@ -295,6 +303,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 50,
+        "isQuest": false,
         "abilityId": "Chromie|R1",
         "abilityLinks": [
           "Chromie|R1"
@@ -313,6 +322,7 @@
         "icon": "storm_ui_icon_chromie_aethercannon.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Chromie|Q1",
         "abilityLinks": [
           "Chromie|Q1"
@@ -330,7 +340,12 @@
         "type": "Active",
         "sort": 2,
         "cooldown": 20,
-        "abilityId": "Chromie|Active"
+        "isQuest": false,
+        "abilityId": "Chromie|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ChromieHereAndThere"
+        ]
       },
       {
         "tooltipId": "ChromieTimeOutHotbar",
@@ -341,6 +356,7 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 60,
+        "isQuest": false,
         "abilityId": "Chromie|Active"
       }
     ],
@@ -353,6 +369,7 @@
         "icon": "storm_ui_icon_chromie_aethercannon.png",
         "type": "Q",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Chromie|Q1",
         "abilityLinks": [
           "Chromie|Q1"
@@ -369,6 +386,7 @@
         "icon": "storm_ui_icon_chromie_aethercannon_a.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Chromie|Q1",
         "abilityLinks": [
           "Chromie|Q1"
@@ -386,7 +404,12 @@
         "type": "Active",
         "sort": 3,
         "cooldown": 45,
-        "abilityId": "Chromie|Active"
+        "isQuest": false,
+        "abilityId": "Chromie|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ChromieQuantumOverdrive"
+        ]
       }
     ],
     "20": [
@@ -398,13 +421,14 @@
         "icon": "storm_ui_icon_chromie_timewarp.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Chromie|R2",
         "abilityLinks": [
           "Chromie|R2"
         ],
         "abilityTalentLinkIds": [
-          "ChromieSlowingSandsCancel",
-          "ChromieSlowingSands"
+          "ChromieSlowingSands",
+          "ChromieSlowingSandsCancel"
         ],
         "prerequisiteTalentIds": [
           "ChromieHeroicAbilitySlowingSands"
@@ -418,6 +442,7 @@
         "icon": "storm_ui_icon_chromie_looper.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Chromie|R1",
         "abilityLinks": [
           "Chromie|R1"
@@ -437,6 +462,7 @@
         "icon": "storm_ui_icon_chromie_aethercannon.png",
         "type": "Q",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Chromie|Q1",
         "abilityLinks": [
           "Chromie|Q1"
@@ -454,21 +480,28 @@
         "type": "Active",
         "sort": 4,
         "cooldown": 30,
-        "abilityId": "Chromie|Active"
+        "isQuest": false,
+        "abilityId": "Chromie|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "ChromieBlessingOfTheBronze"
+        ]
       }
     ]
   },
   "summonUnits": [
     {
       "unitId": "ChromieTimeTrap",
-      "name": "Time Trap",
+      "name": "ChromieTimeTrap",
       "icon": "storm_ui_icon_chromie_timetrap.png",
       "stats": {
         "hp": 250,
         "hpRegen": 0,
         "hpScale": 0.04,
         "hpRegenScale": 0,
-        "radius": 0.75
+        "radius": 0.75,
+        "speed": 0,
+        "sight": 0
       },
       "abilities": [],
       "sourceAbilityTooltipId": "ChromieTimeTrap"

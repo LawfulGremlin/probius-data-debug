@@ -156,6 +156,7 @@
         "icon": "storm_ui_icon_greymane_beastfocus.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Greymane|W2",
         "abilityLinks": [
           "Greymane|W1",
@@ -174,6 +175,7 @@
         "icon": "storm_ui_icon_greymane_qattack.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Greymane|Q1",
         "abilityLinks": [
           "Greymane|Q1"
@@ -190,6 +192,7 @@
         "icon": "storm_ui_icon_greymane_beastfocus_var1.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Greymane|W2",
         "abilityLinks": [
           "Greymane|W1",
@@ -210,6 +213,7 @@
         "icon": "storm_ui_icon_greymane_darkflight.png",
         "type": "E",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Greymane|E1",
         "abilityLinks": [
           "Greymane|E1"
@@ -226,6 +230,7 @@
         "icon": "storm_ui_icon_greymane_disengage.png",
         "type": "E",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Greymane|E2",
         "abilityLinks": [
           "Greymane|E2"
@@ -242,6 +247,7 @@
         "icon": "storm_ui_icon_greymane_beastfocus.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Greymane|W2",
         "abilityLinks": [
           "Greymane|W1",
@@ -262,6 +268,7 @@
         "icon": "storm_ui_icon_greymane_curseoftheworgen.png",
         "type": "Trait",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Greymane|D1",
         "abilityLinks": [
           "Greymane|D1"
@@ -315,6 +322,7 @@
         "type": "Heroic",
         "sort": 1,
         "cooldown": 80,
+        "isQuest": false,
         "abilityId": "Greymane|R1",
         "abilityLinks": [
           "Greymane|R1"
@@ -332,6 +340,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 30,
+        "isQuest": false,
         "abilityId": "Greymane|R2",
         "abilityLinks": [
           "Greymane|R2"
@@ -350,14 +359,15 @@
         "icon": "storm_ui_icon_greymane_darkflight.png",
         "type": "E",
         "sort": 1,
-        "abilityId": "Greymane|E2",
+        "isQuest": false,
+        "abilityId": "Greymane|E1",
         "abilityLinks": [
           "Greymane|E1",
           "Greymane|E2"
         ],
         "abilityTalentLinkIds": [
-          "GreymaneDisengage",
-          "GreymaneDarkflight"
+          "GreymaneDarkflight",
+          "GreymaneDisengage"
         ]
       },
       {
@@ -368,6 +378,7 @@
         "icon": "storm_ui_icon_greymane_swipe.png",
         "type": "Q",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Greymane|Q2",
         "abilityLinks": [
           "Greymane|Q2"
@@ -384,6 +395,7 @@
         "icon": "storm_ui_icon_greymane_beastfocus.png",
         "type": "W",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Greymane|W2",
         "abilityLinks": [
           "Greymane|W1",
@@ -404,6 +416,7 @@
         "icon": "storm_ui_icon_greymane_beastfocus.png",
         "type": "W",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Greymane|W2",
         "abilityLinks": [
           "Greymane|W1",
@@ -422,6 +435,7 @@
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Greymane|Passive"
       },
       {
@@ -432,6 +446,7 @@
         "icon": "storm_ui_icon_greymane_curseoftheworgen_var1.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Greymane|D1",
         "abilityLinks": [
           "Greymane|D1"
@@ -450,6 +465,7 @@
         "icon": "storm_ui_icon_greymane_goforthethroat.png",
         "type": "Heroic",
         "sort": 1,
+        "isQuest": false,
         "abilityId": "Greymane|R1",
         "abilityLinks": [
           "Greymane|R1"
@@ -469,6 +485,7 @@
         "icon": "storm_ui_icon_greymane_snapshot.png",
         "type": "Heroic",
         "sort": 2,
+        "isQuest": false,
         "abilityId": "Greymane|R2",
         "abilityLinks": [
           "Greymane|R2"
@@ -488,6 +505,7 @@
         "icon": "storm_ui_icon_greymane_curseoftheworgen.png",
         "type": "Trait",
         "sort": 3,
+        "isQuest": false,
         "abilityId": "Greymane|D1",
         "abilityLinks": [
           "Greymane|D1"
@@ -504,6 +522,7 @@
         "icon": "storm_ui_icon_greymane_curseoftheworgen_var1.png",
         "type": "Trait",
         "sort": 4,
+        "isQuest": false,
         "abilityId": "Greymane|D1",
         "abilityLinks": [
           "Greymane|D1"
