@@ -9042,6 +9042,180 @@
         <GroupIntroArray index="1" removed="1"/>
     </CVODefinition>
     <CVODefinition id="WizardStarQueen" parent="WizardSkinStarPrincess"/>
+    <CVODefinition id="Xalatath">
+        <GroupArray value="HighElf"/>
+        <GroupArray value="Warcraft"/>
+        <GroupArray value="Evil"/>
+        <HeroIntroArray Target="Uther" Question="XalatathBase_IntroQuestion_Uther" Response="XalatathBase_IntroResponse_Uther"/>
+        <HeroIntroArray Target="Varian" Question="XalatathBase_IntroQuestion_Varian" Response="XalatathBase_IntroResponse_Varian"/>
+        <HeroIntroArray Target="Garrosh" Question="XalatathBase_IntroQuestion_Garrosh" Response="XalatathBase_IntroResponse_Garrosh"/>
+        <HeroIntroArray Target="Guldan" Question="XalatathBase_IntroQuestion_Guldan" Response="XalatathBase_IntroResponse_Guldan"/>
+        <HeroIntroArray Target="Thrall" Question="XalatathBase_IntroQuestion_Thrall" Response="XalatathBase_IntroResponse_Thrall"/>
+        <HeroIntroArray Target="Alarak" Question="XalatathBase_IntroQuestion_Alarak" Response="XalatathBase_IntroResponse_Alarak"/>
+        <HeroIntroArray Target="Fenix" Question="XalatathBase_IntroQuestion_Fenix" Response="XalatathBase_IntroResponse_Fenix"/>
+        <HeroIntroArray Target="Crusader" Question="XalatathBase_IntroQuestion_Johanna" Response="XalatathBase_IntroResponse_Johanna">
+            <ExcludedVODefinitions value="CrusaderOrc"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="LostVikings" Question="XalatathBase_IntroQuestion_LostVikings" Response="XalatathBase_IntroResponse_LostVikings"/>
+        <HeroIntroArray Target="Murky" Question="XalatathBase_IntroQuestion_Murky" Response="XalatathBase_IntroResponse_Murky"/>
+        <HeroIntroArray Target="Probius" Question="XalatathBase_IntroQuestion_Space" Response="XalatathBase_IntroResponse_Gibberish"/>
+        <HeroIntroArray Target="Butcher" Question="XalatathBase_IntroQuestion_Demon" Response="XalatathBase_IntroResponse_Demon"/>
+        <HeroIntroArray Target="Rehgar" Question="XalatathBase_IntroQuestion_Orc" Response="XalatathBase_IntroResponse_Orc">
+            <ExcludedVODefinitions value="RehgarMecha"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Samuro" Question="XalatathBase_IntroQuestion_Orc" Response="XalatathBase_IntroResponse_Orc"/>
+        <HeroIntroArray Target="Crusader" Question="XalatathBase_IntroQuestion_Orc" Response="XalatathBase_IntroResponse_Orc">
+            <RequiredVODefinitions value="CrusaderOrc"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Junkrat" Question="XalatathBase_IntroQuestion_Horde" Response="XalatathBase_IntroResponse_Horde">
+            <RequiredVODefinitions value="JunkratGoblin"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Artanis" Question="XalatathBase_IntroQuestion_Space" Response="XalatathBase_IntroResponse_Space"/>
+        <HeroIntroArray Target="Abathur" Question="XalatathBase_IntroQuestion_Space" Response="XalatathBase_IntroResponse_Space">
+            <ExcludedVODefinitions value="AbathurMecha"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Dehaka" Question="XalatathBase_IntroQuestion_Space" Response="XalatathBase_IntroResponse_Space">
+            <ExcludedVODefinitions value="DehakaMecha"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Tassadar" Question="XalatathBase_IntroQuestion_Space" Response="XalatathBase_IntroResponse_Space">
+            <ExcludedVODefinitions value="TassadarMecha"/>
+            <ExcludedVODefinitions value="TassadarPharaoh"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Zagara" Question="XalatathBase_IntroQuestion_Space" Response="XalatathBase_IntroResponse_Space"/>
+        <HeroIntroArray Target="Zeratul" Question="XalatathBase_IntroQuestion_Space" Response="XalatathBase_IntroResponse_Space">
+            <ExcludedVODefinitions value="ZeratulRonin"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="L90ETC" Question="XalatathBase_IntroQuestion_Horde" Response="XalatathBase_IntroResponse_Fear"/>
+        <HeroIntroArray Target="Hanzo" Question="XalatathBase_IntroQuestion_Horde" Response="XalatathBase_IntroResponse_Horde">
+            <RequiredVODefinitions value="HanzoBloodElf"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Falstad" Question="XalatathBase_IntroQuestion_Alliance" Response="XalatathBase_IntroResponse_Alliance"/>
+        <HeroIntroArray Target="Jaina" Question="XalatathBase_IntroQuestion_Alliance" Response="XalatathBase_IntroResponse_Alliance">
+            <ExcludedVODefinitions value="JainaDreadlord"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Junkrat" Question="XalatathBase_IntroQuestion_Horde" Response="XalatathBase_IntroResponse_Horde">
+            <ExcludedVODefinitions value="JunkratGoblin"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Leoric" Question="XalatathBase_IntroQuestion_Negative" Response="XalatathBase_IntroResponse_Undead"/>
+        <HeroIntroArray Target="LiLi" Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_IntroResponse_Positive"/>
+        <HeroIntroArray Target="Malfurion" Question="XalatathBase_IntroQuestion_Alliance" Response="XalatathBase_IntroResponse_Alliance">
+            <ExcludedVODefinitions value="MalfurionFlame"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Malfurion" Question="XalatathBase_IntroQuestion_Negative" Response="XalatathBase_IntroResponse_Negative">
+            <RequiredVODefinitions value="MalfurionFlame"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Malthael" Question="XalatathBase_IntroQuestion_Negative" Response="XalatathBase_IntroResponse_Negative"/>
+        <HeroIntroArray Target="Muradin" Question="XalatathBase_IntroQuestion_Alliance" Response="XalatathBase_IntroResponse_Alliance">
+            <ExcludedVODefinitions value="MuradinMarauder"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Ragnaros" Question="XalatathBase_IntroQuestion_Negative" Response="XalatathBase_IntroResponse_Ragnaros"/>
+        <HeroIntroArray Target="Rexxar" Question="XalatathBase_IntroQuestion_Horde" Response="XalatathBase_IntroResponse_Horde"/>
+        <HeroIntroArray Target="Wizard" Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_IntroResponse_Positive"/>
+        <HeroIntroArray Target="Monk" Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_IntroResponse_Positive"/>
+        <HeroIntroArray Target="WitchDoctor" Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_IntroResponse_Positive"/>
+        <HeroIntroArray Target="Barbarian" Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_IntroResponse_Positive">
+            <ExcludedVODefinitions value="BarbarianDK"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Barbarian" Question="XalatathBase_IntroQuestion_Negative" Response="XalatathBase_IntroResponse_Undead">
+            <RequiredVODefinitions value="BarbarianDKFemale"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="DemonHunter" Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_IntroResponse_Positive"/>
+        <HeroIntroArray Target="SgtHammer" Question="XalatathBase_IntroQuestion_Horde" Response="XalatathBase_IntroResponse_Horde">
+            <RequiredVODefinitions value="BarbarianDKFemale"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Stitches" Question="XalatathBase_IntroQuestion_Negative" Response="XalatathBase_IntroResponse_Undead"/>
+        <HeroIntroArray Target="Sylvanas" Question="XalatathBase_IntroQuestion_Horde" Response="XalatathBase_IntroResponse_Angry">
+            <ExcludedVODefinitions value="SylvanasRanger"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Sylvanas" Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_IntroResponse_Positive">
+            <RequiredVODefinitions value="SylvanasRanger"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Tracer" Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_Social_Hello"/>
+        <HeroIntroArray Target="Tyrande" Question="XalatathBase_IntroQuestion_Alliance" Response="XalatathBase_IntroResponse_Alliance"/>
+        <HeroIntroArray Target="Zuljin" Question="XalatathBase_IntroQuestion_Horde" Response="XalatathBase_IntroResponse_Negative"/>
+        <HeroIntroArray Target="Tinker" Question="XalatathBase_IntroQuestion_Horde" Response="XalatathBase_IntroResponse_Horde">
+            <ExcludedVODefinitions value="GazloweMartian"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Auriel" Question="XalatathBase_IntroQuestion_Angel" Response="XalatathBase_IntroResponse_Angel">
+            <ExcludedVODefinitions value="AurielSpirit"/>
+            <ExcludedVODefinitions value="AurielDemonic"/>
+            <ExcludedVODefinitions value="AurielOmnic"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Auriel" Question="XalatathBase_IntroQuestion_Demon" Response="XalatathBase_IntroResponse_Demon">
+            <RequiredVODefinitions value="AurielDemonic"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Auriel" Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_IntroResponse_Righteous">
+            <RequiredVODefinitions value="AurielSpirit"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Tyrael" Question="XalatathBase_IntroQuestion_Angel" Response="XalatathBase_IntroResponse_Angel">
+            <ExcludedVODefinitions value="TyraelDemonic"/>
+            <ExcludedVODefinitions value="TyraelMecha"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Tyrael" Question="XalatathBase_IntroQuestion_Demon" Response="XalatathBase_IntroResponse_Demon">
+            <RequiredVODefinitions value="TyraelDemonic"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Chromie" Question="XalatathBase_IntroQuestion_Chromie" Response="XalatathBase_IntroResponse_Positive"/>
+        <HeroIntroArray Target="Greymane" Question="XalatathBase_IntroQuestion_Alliance" Response="XalatathBase_IntroResponse_Alliance"/>
+        <HeroIntroArray Target="Kerrigan" Question="XalatathBase_IntroQuestion_Chromie" Response="XalatathBase_IntroRespond">
+            <ExcludedVODefinitions value="KerriganGhost"/>
+            <ExcludedVODefinitions value="KerriganCountess"/>
+            <ExcludedVODefinitions value="KerriganSuccubus"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Kerrigan" Question="XalatathBase_IntroQuestion_Demon" Response="XalatathBase_IntroResponse_Demon">
+            <RequiredVODefinitions value="KerriganSuccubus"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Whitemane" Question="XalatathBase_IntroQuestion_Whitemane" Response="XalatathBase_IntroResponse_Whitemane"/>
+        <HeroIntroArray Target="Orphea" Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_IntroResponse_Positive"/>
+        <HeroIntroArray Target="FaerieDragon" Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_IntroResponse_Gibberish">
+            <RequiredVODefinitions value="BrightwingMonkey"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Imperius" Question="XalatathBase_IntroQuestion_Angel" Response="XalatathBase_IntroResponse_Angel">
+            <ExcludedVODefinitions value="ImperiusDemonic"/>
+        </HeroIntroArray>
+        <HeroIntroArray Target="Imperius" Question="XalatathBase_IntroQuestion_Demon" Response="XalatathBase_IntroResponse_Demon">
+            <RequiredVODefinitions value="ImperiusDemonic"/>
+        </HeroIntroArray>
+        <GroupIntroArray Question="XalatathBase_IntroQuestion_Alliance" Response="XalatathBase_IntroResponse_Alliance">
+            <GroupArray value="Alliance"/>
+        </GroupIntroArray>
+        <GroupIntroArray Question="XalatathBase_IntroQuestion_Demon" Response="XalatathBase_IntroResponse_Demon">
+            <GroupArray value="Demon"/>
+        </GroupIntroArray>
+        <GroupIntroArray Question="XalatathBase_IntroQuestion_Orc" Response="XalatathBase_IntroResponse_Orc">
+            <GroupArray value="Orc"/>
+        </GroupIntroArray>
+        <GroupIntroArray Question="XalatathBase_IntroQuestion_Angel" Response="XalatathBase_IntroResponse_Angel">
+            <GroupArray value="Angel"/>
+        </GroupIntroArray>
+        <GroupIntroArray Question="XalatathBase_IntroQuestion_Horde" Response="XalatathBase_IntroResponse_Horde">
+            <GroupArray value="Horde"/>
+        </GroupIntroArray>
+        <GroupIntroArray Question="XalatathBase_IntroQuestion_Positive" Response="XalatathBase_IntroResponse_Positive">
+            <GroupArray value="Good"/>
+        </GroupIntroArray>
+        <GroupIntroArray Question="XalatathBase_IntroQuestion_Negative" Response="XalatathBase_IntroResponse_Negative">
+            <GroupArray value="Evil"/>
+        </GroupIntroArray>
+        <GroupKillInteractionArray Sound="XalatathBase_KillAlliance">
+            <GroupArray value="Alliance"/>
+        </GroupKillInteractionArray>
+        <GroupKillInteractionArray Sound="XalatathBase_KillAngel">
+            <GroupArray value="Angel"/>
+        </GroupKillInteractionArray>
+        <GroupKillInteractionArray Sound="XalatathBase_KillDemon">
+            <GroupArray value="Demon"/>
+        </GroupKillInteractionArray>
+        <GroupKillInteractionArray Sound="XalatathBase_KillHorde">
+            <GroupArray value="Horde"/>
+        </GroupKillInteractionArray>
+        <GroupKillInteractionArray Sound="XalatathBase_KillOrc">
+            <GroupArray value="Orc"/>
+        </GroupKillInteractionArray>
+        <GroupKillInteractionArray Sound="XalatathBase_KillPaladin">
+            <GroupArray value="Paladin"/>
+        </GroupKillInteractionArray>
+    </CVODefinition>
+
     <CVODefinition id="Yrel">
         <GroupArray value="Draenei"/>
         <GroupArray value="Alliance"/>
@@ -9583,5 +9757,57 @@
         <UnitKillInteractionArray Target="HeroTracer" Sound="MeiOWBase_KillTracer"/>
         <UnitKillInteractionArray Target="HeroZarya" Sound="MeiOWBase_KillFriend"/>
         <UnitKillInteractionArray Target="HeroHanzo" Sound="MeiOWBase_KillHanzo"/>
-    </CVODefinition>
+    </CVODefinition>   
+    <CVODefinition id="Xalatath">
+        <GroupArray value="Warcraft"/>
+        <GroupArray value="Evil"/>
+
+        <HeroIntroArray Target="Garrosh" Question="Xalatath_IntroQuestion_Garrosh" Response="Xalatath_IntroResponse_Garrosh"/>
+        <HeroIntroArray Target="Guldan" Question="Xalatath_IntroQuestion_Guldan" Response="Xalatath_IntroResponse_Guldan"/>
+        <HeroIntroArray Target="Murky" Question="Xalatath_IntroQuestion_Murky" Response="Xalatath_IntroResponse_Murky"/>
+        <HeroIntroArray Target="Thrall" Question="Xalatath_IntroQuestion_Thrall" Response="Xalatath_IntroResponse_Thrall"/>
+        <HeroIntroArray Target="Uther" Question="Xalatath_IntroQuestion_Uther" Response="Xalatath_IntroResponse_Uther"/>
+        <HeroIntroArray Target="Varian" Question="Xalatath_IntroQuestion_Varian" Response="Xalatath_IntroResponse_Varian"/>
+
+        <GroupIntroArray Question="Xalatath_IntroBoast" Response="Xalatath_IntroResponse_Positive">
+            <GroupArray value="Good"/>
+        </GroupIntroArray>        
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Angel" Response="Xalatath_IntroResponse_Angel">
+            <GroupArray value="Angel"/>
+        </GroupIntroArray>      
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Alliance" Response="Xalatath_IntroResponse_Alliance">
+            <GroupArray value="Alliance"/>
+        </GroupIntroArray>
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Evil" Response="Xalatath_IntroResponse_Evil">
+            <GroupArray value="Evil"/>
+        </GroupIntroArray>                
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Horde" Response="Xalatath_IntroResponse_Horde">
+            <GroupArray value="Horde"/>
+        </GroupIntroArray>
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Orc" Response="Xalatath_IntroResponse_Orc">
+            <GroupArray value="Orc"/>
+        </GroupIntroArray>                  
+        <GroupIntroArray Question="Xalatath_IntroQuestion_Positive" Response="Xalatath_IntroResponse_Positive">
+            <GroupArray value="Positive"/>
+        </GroupIntroArray>
+        <GroupKillInteractionArray Sound="Xalatath_KillAlliance">
+            <GroupArray value="Alliance"/>
+        </GroupKillInteractionArray>
+        <GroupKillInteractionArray Sound="Xalatath_KillAngel">
+            <GroupArray value="Angel"/>
+        </GroupKillInteractionArray>       
+        <GroupKillInteractionArray Sound="Xalatath_KillDemon">
+            <GroupArray value="Demon"/>
+        </GroupKillInteractionArray>
+        <GroupKillInteractionArray Sound="Xalatath_KillHorde">
+            <GroupArray value="Horde"/>
+        </GroupKillInteractionArray>
+        <GroupKillInteractionArray Sound="Xalatath_KillOrc">
+            <GroupArray value="Orc"/>
+        </GroupKillInteractionArray>                
+        <GroupKillInteractionArray Sound="Xalatath_KillPaladin">
+            <GroupArray value="Paladin"/>
+        </GroupKillInteractionArray>    
+
+    </CVODefinition>     
 </Catalog>
