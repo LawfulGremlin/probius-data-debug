@@ -13,11 +13,11 @@ void libHXAL_gf_HeroXalatathIncrementHeroCountFunction ();
 void libHXAL_gf_HeroXalatathDecrementHeroCountFunction ();
 
 // Trigger Declarations
+trigger libHXAL_gt_HeroXalatathVoidVolleyCooldownReset;
 trigger libHXAL_gt_HeroXalatathHeroWeaponApplyTargetingUnit;
 trigger libHXAL_gt_HeroXalatathTargetAcquired;
 trigger libHXAL_gt_HeroXalatathForceAcquireTargetTaunt;
 trigger libHXAL_gt_HeroXalatathHoldFire;
-trigger libHXAL_gt_HeroXalatathVoidVolleyCooldownReset;
 
 // Library Initialization
 void libHXAL_InitVariables ();

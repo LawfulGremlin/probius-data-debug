@@ -456,7 +456,7 @@
     <DupeThresholdPoints Count="3" Volume="-16.000000" />
     <DupeThresholdPoints Count="1" Volume="-2.000000" />
   </CSound>
-  <CSound id="Xalatath_VoidEruption_Channel" parent="_FX_Hero_Ult_Launch">
+  <CSound id="Xalatath_VoidEruption_Birth" parent="_FX_Hero_Ult_Launch">
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Birth01.wav" FacialGroup="" />
     <VolumeRolloffBlend value="Linear" />
     <VolumeRolloffPoints index="0" removed="1" />
@@ -470,6 +470,22 @@
     <VolumeRolloffPoints index="0" removed="1" />
     <VolumeRolloffPoints index="1" removed="1" />
   </CSound>
+  <CSound id="Xalatath_VoidEruption_Detonation" parent="_FX_Hero_Ult_Impact">
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Explo01.wav" FacialGroup="" />
+    <Volume value="2.000000,2.000000" />
+    <CategoryDuckingLocal value="" />
+    <CategoryDuckingLocalAlly value="" />
+    <CategoryDuckingNonLocal value="" />
+    <CategoryLocalAlly value="User42" />
+  </CSound>
+  <CSound id="Xalatath_OrbitalEruption_Detonation" parent="_FX_Hero_Ult_Impact">
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Explo02.wav" FacialGroup="" />
+    <Volume value="2.000000,2.000000" />
+    <CategoryDuckingLocal value="" />
+    <CategoryDuckingLocalAlly value="" />
+    <CategoryDuckingNonLocal value="" />
+    <CategoryLocalAlly value="User42" />
+  </CSound>
   <CSound id="Xalatath_VoidEruption_Impact" parent="_FX_Hero_Ult_Impact">
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Impact01.wav" FacialGroup="" />
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Impact02.wav" FacialGroup="" />
@@ -480,26 +496,23 @@
     <CategoryDuckingNonLocal value="" />
     <CategoryLocalAlly value="User42" />
   </CSound>
-  <CSound id="Xalatath_VoidEruption_Impact_Skin" parent="_FX_Hero_Ult_Impact">
-    <AssetArray File="Assets\Sounds\Generic\Test_NoSound.wav" FacialGroup="" />
-    <Volume value="-96.000000,-96.000000" />
-    <CategoryDuckingLocal value="" />
-    <CategoryDuckingLocalAlly value="" />
-    <CategoryDuckingNonLocal value="" />
-  </CSound>
   <CSound id="Xalatath_VoidEruption_Launch" parent="_FX_Hero_Spell_Launch">
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Cast01.wav" FacialGroup="" />
     <Volume value="-3.000000,-3.000000" />
   </CSound>
-  <CSound id="Xalatath_VoidEruption_Travel_Loop" parent="_FX_Hero_Ult_Loop">
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Orb_Loop01.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Orb_Loop02.wav" FacialGroup="" />
-    <Pitch value="-1.000000,-1.000000" />
-    <Spread value="10.000000" />
-    <Volume value="-8.000000,-8.000000" />
-  </CSound>
   <CSound id="Xalatath_VoidEruption_Missile" parent="_FX_Hero_Spell_Projectile">
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Orb_Loop01.wav" FacialGroup="" />
+    <LoopCount value="-1" />
+    <OffsetShiftIn Time="30" Pitch="-12.000000" />
+    <OffsetShiftIn Time="2000" />
+    <Volume value="-4.000000,-4.000000" />
+    <VolumeRolloffPoints index="0" removed="1" />
+    <VolumeRolloffPoints index="1" removed="1" />
+    <Category value="User29" />
+    <CategoryLocal value="TV" />
+  </CSound>
+  <CSound id="Xalatath_OrbitalEruption_Missile" parent="_FX_Hero_Spell_Projectile">
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Orb_Loop02.wav" FacialGroup="" />
     <LoopCount value="-1" />
     <OffsetShiftIn Time="30" Pitch="-12.000000" />
     <OffsetShiftIn Time="2000" />

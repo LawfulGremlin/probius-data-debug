@@ -5917,6 +5917,7 @@ UI/PlayerAnnounce/AbilityReady=<s val="PlayerAnnounceHeroName">%name%</s>: сп�
 UI/PlayerAnnounce/BehaviorDuration=<s val="PlayerAnnounceHeroName">%name%</s>: эффект «<s val="PlayerAnnounceAbilityName">%behavior%</s>» продлится еще <s val="PlayerAnnounceAbilityState"><d time="%duration%" precision="%precision%"/></s> сек.
 UI/PlayerAnnounce/BehaviorPresent=<s val="PlayerAnnounceHeroName">%name%</s>: на меня действует эффект «<s val="PlayerAnnounceAbilityName">%behavior%</s>».
 UI/PlayerAnnounce/BehaviorStacks=<s val="PlayerAnnounceHeroName">%name%</s>: у меня <s val="PlayerAnnounceAbilityState">%stacks%</s> <lang rule="plural" val=">наложение,наложения,наложений</lang> эффекта «<s val="PlayerAnnounceAbilityName">%behavior%</s>».
+UI/PlayerAnnounce/HealingFountain=
 UI/PlayerAnnounce/LowVital=<s val="PlayerAnnounceHeroName">%name%</s>: у меня <s val="PlayerAnnounceAbilityState">%percent%% <lang rule="declension" case="g">%vital%</lang></s>.
 UI/PlayerAnnounce/TooMuchSpam=<c val="ff0000">Вы слишком часто используете сигналы. Пожалуйста, подождите, прежде чем использовать их снова.</c>
 UI/PlayerBlockFrame/Blocked=<c val="#ColorWhite">Каналы чата отключены</c><n/>Чтобы включить каналы чата, щелкните по значку настроек.

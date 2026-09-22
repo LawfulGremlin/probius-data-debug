@@ -5917,6 +5917,7 @@ UI/PlayerAnnounce/AbilityReady=<s val="PlayerAnnounceHeroName">%name%</s><lang r
 UI/PlayerAnnounce/BehaviorDuration=<s val="PlayerAnnounceHeroName">%name%</s><lang rule="plural" val="%name%">有,有</lang><s val="PlayerAnnounceAbilityState"><d time="%duration%" precision="%precision%"/></s>的<s val="PlayerAnnounceAbilityName">%behavior%</s>！
 UI/PlayerAnnounce/BehaviorPresent=<s val="PlayerAnnounceHeroName">%name%</s><lang rule="plural" val="%name%">有,有</lang><s val="PlayerAnnounceAbilityName">%behavior%</s>!
 UI/PlayerAnnounce/BehaviorStacks=<s val="PlayerAnnounceHeroName">%name%</s><lang rule="plural" val="%name%">累積了,累積了</lang><s val="PlayerAnnounceAbilityState">%stacks%<lang rule="plural">層,層</lang></s>的<s val="PlayerAnnounceAbilityName">%behavior%</s>！
+UI/PlayerAnnounce/HealingFountain=
 UI/PlayerAnnounce/LowVital=<s val="PlayerAnnounceHeroName">%name%</s><lang rule="plural" val="%name%">還有,還有</lang> <s val="PlayerAnnounceAbilityState">%percent%% %vital%</s>！
 UI/PlayerAnnounce/TooMuchSpam=<c val="ff0000">你發送太多通知了，請稍後再試。</c>
 UI/PlayerBlockFrame/Blocked=<c val="#ColorWhite">已封鎖所有通訊</c><n/>使用這個選項來解除封鎖。

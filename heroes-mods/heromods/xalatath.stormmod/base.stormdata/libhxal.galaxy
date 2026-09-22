@@ -1,7 +1,6 @@
 include "TriggerLibs/NativeLib"
 include "TriggerLibs/HeroesLib"
 include "TriggerLibs/GameLib"
-include "LibHDEC"
 
 include "LibHXAL_h"
 
@@ -13,7 +12,6 @@ void libHXAL_InitLibraries () {
     libNtve_InitVariables();
     libCore_InitVariables();
     libGame_InitVariables();
-    libHDEC_InitVariables();
 }
 
 // Variable Initialization
@@ -67,6 +65,42 @@ void libHXAL_gf_HeroXalatathDecrementHeroCountFunction () {
 }
 
 // Triggers
+//--------------------------------------------------------------------------------------------------
+// Trigger: New Trigger: Hero - Xalatath - Void Volley - Cooldown Reset
+//--------------------------------------------------------------------------------------------------
+bool libHXAL_gt_HeroXalatathVoidVolleyCooldownReset_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    int lv_player;
+    unit lv_playerHero;
+
+    // Automatic Variable Declarations
+    // Variable Initialization
+    lv_player = libGame_gf_SpecialCaseTalentCooldownResetPlayer();
+    lv_playerHero = libGame_gv_players[lv_player].lv_heroUnit;
+
+    // Conditions
+    if (testConds) {
+        if (!((UnitHasBehavior2(lv_playerHero, "XalatathVoidVolleyChargeTokenCounter") == true))) {
+            return false;
+        }
+    }
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitCreateEffectUnit(lv_playerHero, "XalatathVoidVolleyChargeApplyAllStacksSet", lv_playerHero);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void libHXAL_gt_HeroXalatathVoidVolleyCooldownReset_Init () {
+    libHXAL_gt_HeroXalatathVoidVolleyCooldownReset = TriggerCreate("libHXAL_gt_HeroXalatathVoidVolleyCooldownReset_Func");
+    TriggerEnable(libHXAL_gt_HeroXalatathVoidVolleyCooldownReset, false);
+    libGame_gf_SpecialCaseTalentCooldownReset(libHXAL_gt_HeroXalatathVoidVolleyCooldownReset);
+}
+
 //--------------------------------------------------------------------------------------------------
 // Trigger: Hero - Xalatath - Hero Weapon Apply Targeting Unit
 //--------------------------------------------------------------------------------------------------
@@ -276,7 +310,7 @@ bool libHXAL_gt_HeroXalatathHoldFire_Func (bool testConds, bool runActions) {
         return true;
     }
 
-    UnitBehaviorAdd(lv_xalatath, "XalatathWeaponDisablerHoldFire", lv_xalatath, 1);
+    UnitBehaviorAdd(lv_xalatath, "XalatathHeroWeaponDisablerHoldFire", lv_xalatath, 1);
     return true;
 }
 
@@ -286,76 +320,13 @@ void libHXAL_gt_HeroXalatathHoldFire_Init () {
     TriggerEnable(libHXAL_gt_HeroXalatathHoldFire, false);
     TriggerAddEventUnitOrder(libHXAL_gt_HeroXalatathHoldFire, null, AbilityCommand("HoldFire", 1));
 }
-// New Trigger: Hero - Xalatath - Void Volley - Cooldown Reset
-    // Element Properties:
-        // Initially On Disabled
-    // Events
-        // Special Case - Talent Cooldown Reset(from Game Library)
-    // Variables:
-        // Variable 1: Player
-            // Type: Integer
-            // Initial Value: Special Case - Talet Cooldown Reset Player
-        // Variable 2: Player Hero
-            // Type: Unit
-            // Initial Value: Players[Player].lv_heroUnit
-                // Players (Variable from Game Library)
-                    // Index 1: Player(Local Variable)
-                    // Member: Hero Unit
-    // Conditions
-        // Comparison 1
-            // Value 1: Unit Has Behavior(this could instead validate Xal'atath being the Player Hero, but this seems just as good)
-                // Unit: Player Hero(Local Variable)
-                // Behavior: XalatathVoidVolleyChargeTokenCounter(I don't have the editor friendly name for this)
-            // Operator: ==
-            // Value 2: True
-            
-    // Actions
-    // Action 1: Create Effect On Unit (From Unit)
-        // Effect: XalatathVoidVolleyChargeApplyAllStacksSet(the newly created effect set)
-        // Target: Player Hero
-        // Caster: Player Hero  
 
-    //--------------------------------------------------------------------------------------------------
-    // Trigger: Hero - Xalatath - Void Volley - Cooldown Reset
-    //--------------------------------------------------------------------------------------------------
-    bool libHXAL_gt_HeroXalatathVoidVolleyCooldownReset_Func (bool testConds, bool runActions) {
-        // Variable Declarations
-        int lv_player;
-        unit lv_playerHero;
-
-        // Automatic Variable Declarations
-        // Variable Initialization
-        lv_player = libGame_gf_SpecialCaseTalentCooldownResetPlayer();
-        lv_playerHero = libGame_gv_players[lv_player].lv_heroUnit;
-
-        // Conditions
-        if (testConds) {
-            if (!((UnitHasBehavior2(lv_playerHero, "XalatathVoidVolleyChargeTokenCounter") == true))) {
-                return false;
-            }
-        }
-
-        // Actions
-        if (!runActions) {
-            return true;
-        }
-
-        UnitCreateEffectUnit(lv_playerHero, "XalatathVoidVolleyChargeApplyAllStacksSet", lv_playerHero);
-        return true;
-    }
-
-    //--------------------------------------------------------------------------------------------------
-    void libHXAL_gt_HeroXalatathVoidVolleyCooldownReset_Init () {
-        libHXAL_gt_HeroXalatathVoidVolleyCooldownReset = TriggerCreate("libHXAL_gt_HeroXalatathVoidVolleyCooldownReset_Func");
-        TriggerEnable(libHXAL_gt_HeroXalatathVoidVolleyCooldownReset, false);
-        libGame_gf_SpecialCaseTalentCooldownReset(libHXAL_gt_HeroXalatathVoidVolleyCooldownReset);
-    }
 void libHXAL_InitTriggers () {
+    libHXAL_gt_HeroXalatathVoidVolleyCooldownReset_Init();
     libHXAL_gt_HeroXalatathHeroWeaponApplyTargetingUnit_Init();
     libHXAL_gt_HeroXalatathTargetAcquired_Init();
     libHXAL_gt_HeroXalatathForceAcquireTargetTaunt_Init();
     libHXAL_gt_HeroXalatathHoldFire_Init();
-    libHXAL_gt_HeroXalatathVoidVolleyCooldownReset_Init();
 }
 
 //--------------------------------------------------------------------------------------------------

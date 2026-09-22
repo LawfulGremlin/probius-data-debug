@@ -5917,6 +5917,7 @@ UI/PlayerAnnounce/AbilityReady=<s val="PlayerAnnounceHeroName">%name%</s>: zdoln
 UI/PlayerAnnounce/BehaviorDuration=<s val="PlayerAnnounceHeroName">%name%</s>: <s val="PlayerAnnounceAbilityName">%behavior%</s> przez <s val="PlayerAnnounceAbilityState"><d time="%duration%" precision="%precision%"/></s>!
 UI/PlayerAnnounce/BehaviorPresent=<s val="PlayerAnnounceHeroName">%name%</s>: <s val="PlayerAnnounceAbilityName">%behavior%</s>!
 UI/PlayerAnnounce/BehaviorStacks=<s val="PlayerAnnounceHeroName">%name%</s>: poziomy kumulacji zdolności <s val="PlayerAnnounceAbilityName">%behavior%</s>: <s val="PlayerAnnounceAbilityState">%stacks%</s>!
+UI/PlayerAnnounce/HealingFountain=
 UI/PlayerAnnounce/LowVital=<s val="PlayerAnnounceHeroName">%name%</s>: <s val="PlayerAnnounceAbilityState">%percent%% <lang rule="declension" case="g">%vital%</lang></s>!
 UI/PlayerAnnounce/TooMuchSpam=<c val="ff0000">Zbyt wiele sygnałów. Spróbuj ponownie później.</c>
 UI/PlayerBlockFrame/Blocked=<c val="#ColorWhite">Całkowite blokowanie komunikacji</c><n/>Użyj ikony opcji, aby odblokować komunikację.

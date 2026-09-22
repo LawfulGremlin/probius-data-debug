@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
-    <const id="$AlexstraszaLifeMax" value="1698"/>
+    <const id="$AlexstraszaLifeMax" value="1780"/>
     <const id="$AlexstraszaLifeRegenBase" value="/($AlexstraszaLifeMax 480)" evaluateAsExpression="1"/>
     <const id="$AlexstraszaLifeRegenModifier" value="1.5"/>
     <const id="$AlexstraszaLifeRegen" value="*($AlexstraszaLifeRegenBase +($AlexstraszaLifeRegenModifier 1))" evaluateAsExpression="1"/>
@@ -2768,7 +2768,7 @@
     </CEffectSet>
     <CEffectModifyUnit id="AlexstraszaOverprotectiveAbundanceShieldFractionScaleDummy">
         <VitalArray index="Shields">
-            <ChangeFraction value="0.7"/>
+            <ChangeFraction value="0.5"/>
         </VitalArray>
     </CEffectModifyUnit>
     <CEffectApplyBehavior id="AlexstraszaPacifyApplyDamageReductionBehavior">

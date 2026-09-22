@@ -36,6 +36,7 @@
   <const id="$YrelSeraphimBuffDuration" value="2" />
   <const id="$YrelBubbleHearthCastIntroTime" value="1" />
   <const id="$YrelHandOfFreedomMoveSpeedDuration" value="3" />
+  <const id="$YrelVindicationManaCost" value="65" />
   <const id="$YrelVelensChosenAbilityPowerBuffDuration" value="10" />
   <const id="$YrelBasicAbilityChannelPercentageScale" value="-($YrelBasicAbilityStartingOffsetRatio 1)" evaluateAsExpression="1" />
   <const id="$YrelBasicAbilityChannelPercentageIncreasePerGameLoop" value="/(negate($YrelBasicAbilityChannelPercentageScale) $YrelBasicAbilityChannelTokenMax)" evaluateAsExpression="1" />
@@ -48,7 +49,7 @@
     <Effect value="YrelVindicationInitialSet" />
     <SharedFlags index="DelayHotkeysAfterThisByOneGameLoop" value="1" />
     <Cost>
-      <Vital index="Energy" value="65" />
+      <Vital index="Energy" value="$YrelVindicationManaCost" />
       <Cooldown TimeUse="$YrelBasicAbilityCooldown" />
     </Cost>
     <FinishTime value="$YrelBasicAbilityPostCastPause" />
@@ -2752,7 +2753,7 @@
   <CEffectModifyCatalogNumeric id="YrelVindicationManaCostOnModifyCatalogNumeric">
     <WhichPlayer Value="Caster" />
     <CatalogModifications Operation="Set" Reference="Abil,YrelVindication,Cost.Vital[Energy]">
-      <Value value="$YrelBasicAbilityManaCost" />
+      <Value value="$YrelVindicationManaCost" />
     </CatalogModifications>
   </CEffectModifyCatalogNumeric>
   <CEffectModifyCatalogNumeric id="YrelVindicationManaCostOffModifyCatalogNumeric">
@@ -2811,7 +2812,7 @@
   </CEffectApplyBehavior>
   <CEffectCreateHealer id="YrelVindicationChannelManaRefundModifyUnit" parent="StormManaRestoreNoFloater">
     <ImpactUnit Value="Caster" />
-    <RechargeVitalRate value="$YrelBasicAbilityManaCost" />
+    <RechargeVitalRate value="$YrelVindicationManaCost" />
   </CEffectCreateHealer>
   <CEffectSet id="YrelArdentDefenderHealSet">
     <EffectArray value="YrelArdentDefenderCreateHealer" />

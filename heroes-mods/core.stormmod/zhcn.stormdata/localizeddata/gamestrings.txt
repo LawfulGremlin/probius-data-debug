@@ -5917,6 +5917,7 @@ UI/PlayerAnnounce/AbilityReady=<s val="PlayerAnnounceHeroName">%name%</s><lang r
 UI/PlayerAnnounce/BehaviorDuration=<s val="PlayerAnnounceHeroName">%name%</s> <lang rule="plural" val="%name%">获得</lang> <s val="PlayerAnnounceAbilityName">%behavior%</s>，持续<s val="PlayerAnnounceAbilityState"><d time="%duration%" precision="%precision%"/></s>！
 UI/PlayerAnnounce/BehaviorPresent=<s val="PlayerAnnounceHeroName">%name%</s> <lang rule="plural" val="%name%">获得</lang> <s val="PlayerAnnounceAbilityName">%behavior%</s>！
 UI/PlayerAnnounce/BehaviorStacks=<s val="PlayerAnnounceHeroName">%name%</s> <lang rule="plural" val="%name%">获得</lang> <s val="PlayerAnnounceAbilityState">%stacks% <lang rule="plural">层</lang></s><s val="PlayerAnnounceAbilityName">%behavior%</s>！
+UI/PlayerAnnounce/HealingFountain=
 UI/PlayerAnnounce/LowVital=<s val="PlayerAnnounceHeroName">%name%</s>有<s val="PlayerAnnounceAbilityState">%percent%%的%vital%</s>
 UI/PlayerAnnounce/TooMuchSpam=<c val="ff0000">你的发言过于频繁。请过一段时间再试。</c>
 UI/PlayerBlockFrame/Blocked=<c val="#ColorWhite">已屏蔽所有通讯</c><n/>使用选项图标解锁通讯。

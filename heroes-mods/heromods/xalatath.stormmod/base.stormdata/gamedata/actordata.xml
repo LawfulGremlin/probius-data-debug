@@ -1,18 +1,99 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <Catalog>
     <CActorScene id="SYSTEM_Scene">
-        <On Terms="SceneEffectSearchNotifyResults.HoggerStaggeringBlowSearch1" Send="SceneEffectSearchResponse DoodadImpactable"/>
-        <On Terms="SceneEffectSearchNotifyResults.HoggerStaggeringBlowSearch2" Send="SceneEffectSearchResponse DoodadImpactable"/>
-        <On Terms="SceneEffectSearchNotifyResults.HoggerStaggeringBlowSearch3" Send="SceneEffectSearchResponse DoodadImpactable"/>
+        <On Terms="SceneEffectSearchNotifyResults.XalatathVoidStepEnemySearch" Send="SceneEffectSearchResponse DoodadImpactable"/>
     </CActorScene>
-    <CActorRegionCircle id="DoodadImpactSearch2">
-        <On Terms="Effect.HoggerShockwaveSecondarySearch.Start; At Effect" Send="Create"/>
-    </CActorRegionCircle>
-    <CActorRegionCircle id="DoodadImpactSearch3">
-        <On Terms="Effect.HoggerEzThroDynamiteFinalSearch.Start; At Effect" Send="Create"/>
-        <On Terms="Effect.HoggerHoggWildSearch.Start; At Effect" Send="Create"/>
-        <On Terms="Effect.HoggerLootHoardGroundImpactSearch.Start; At Effect" Send="Create"/>
-        <On Terms="Effect.HoggerShockwaveInitialSearch.Start; At Effect" Send="Create"/>
-        <On Terms="Effect.HoggerEzThroDynamiteDenseBlastingPowderFinalSearch.Start; At Effect" Send="Create"/>
-    </CActorRegionCircle>
+ <CActorRegionCircle id="DoodadImpactSearch1">
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier1.Start; At Effect" Send="Create"/>
+  </CActorRegionCircle>
+  <CActorRegionCircle id="DoodadImpactSearch2">
+    <On Terms="Effect.XalatathVoidVolley2AoESearch.Start; At Effect" Send="Create"/>
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier2.Start; At Effect" Send="Create"/>
+  </CActorRegionCircle>
+  <CActorRegionCircle id="DoodadImpactSearch3">
+    <On Terms="Effect.XalatathShadowMarkTargetSearch.Start; At Effect" Send="Create"/>
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier3.Start; At Effect" Send="Create"/>
+  </CActorRegionCircle>
+  <CActorRegionCircle id="DoodadImpactSearch4">
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier4.Start; At Effect" Send="Create"/>
+  </CActorRegionCircle>
+  <CActorForceSphere id="XalatathShadowMarkOutForce">
+    <On Terms="Effect.XalatathShadowMarkTargetSearch.Stop; At Effect" Send="Create" />
+    <Host Subject="SOpTargetPoint SOpSplashDamagePositionVariance" />
+    <Duration value="0.150000" />
+    <Magnitude value="20.000000" />
+    <Radius value="$XalatathShadowMarkOuterImpactRange" />
+  </CActorForceSphere>
+  <CActorForceCylinder id="XalatathShadowMarkUpForce">
+    <On Terms="Effect.XalatathShadowMarkTargetSearch.Stop; At Effect" Send="Create" />
+    <HostSiteOps Ops="SOpTargetPoint" />
+    <Duration value="0.150000" />
+    <Magnitude value="55.000000" />
+    <HostEndSiteOps Ops="SOpTargetPoint SOpHigherBy3" />
+    <Radius value="$XalatathShadowMarkOuterImpactRange" />
+  </CActorForceCylinder>
+  <CActorForceSphere id="XalatathVoidEruptionFlightTowardsGroundForceTier1">
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier1.Stop; At Effect" Send="Create" />
+    <Host Subject="SOpTargetPoint" />
+    <Duration value="0.150000" />
+    <Magnitude value="-25.000000" />
+    <HostEndSiteOps Ops="SOpTargetPoint" />
+    <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier1" />
+  </CActorForceSphere>
+  <CActorForceCylinder id="XalatathVoidEruptionFlightTowardsFlightForceTier1">
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier1.Stop; At Effect" Send="Create" />
+    <HostSiteOps Ops="SOpTargetPoint" />
+    <Duration value="0.150000" />
+    <Magnitude value="30.000000" />
+    <HostEndSiteOps Ops="SOpTargetPoint SOpHigherBy2" />
+    <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier1" />
+  </CActorForceCylinder>
+  <CActorForceSphere id="XalatathVoidEruptionFlightTowardsGroundForceTier2">
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier2.Stop; At Effect" Send="Create" />
+    <Host Subject="SOpTargetPoint" />
+    <Duration value="0.150000" />
+    <Magnitude value="-35.000000" />
+    <HostEndSiteOps Ops="SOpTargetPoint" />
+    <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier2" />
+  </CActorForceSphere>
+  <CActorForceCylinder id="XalatathVoidEruptionFlightTowardsFlightForceTier2">
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier2.Stop; At Effect" Send="Create" />
+    <HostSiteOps Ops="SOpTargetPoint" />
+    <Duration value="0.150000" />
+    <Magnitude value="40.000000" />
+    <HostEndSiteOps Ops="SOpTargetPoint SOpHigherBy2" />
+    <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier2" />
+  </CActorForceCylinder>
+  <CActorForceSphere id="XalatathVoidEruptionFlightTowardsGroundForceTier3">
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier3.Stop; At Effect" Send="Create" />
+    <Host Subject="SOpTargetPoint" />
+    <Duration value="0.150000" />
+    <Magnitude value="-45.000000" />
+    <HostEndSiteOps Ops="SOpTargetPoint" />
+    <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier3" />
+  </CActorForceSphere>
+  <CActorForceCylinder id="XalatathVoidEruptionFlightTowardsFlightForceTier3">
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier3.Stop; At Effect" Send="Create" />
+    <HostSiteOps Ops="SOpTargetPoint" />
+    <Duration value="0.150000" />
+    <Magnitude value="50.000000" />
+    <HostEndSiteOps Ops="SOpTargetPoint SOpHigherBy2" />
+    <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier3" />
+  </CActorForceCylinder>
+  <CActorForceSphere id="XalatathVoidEruptionFlightTowardsGroundForceTier4">
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier4.Stop; At Effect" Send="Create" />
+    <Host Subject="SOpTargetPoint" />
+    <Duration value="0.150000" />
+    <Magnitude value="-55.000000" />
+    <HostEndSiteOps Ops="SOpTargetPoint" />
+    <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier4" />
+  </CActorForceSphere>
+  <CActorForceCylinder id="XalatathVoidEruptionFlightTowardsFlightForceTier4">
+    <On Terms="Effect.XalatathVoidEruptionMissileScanTier4.Stop; At Effect" Send="Create" />
+    <HostSiteOps Ops="SOpTargetPoint" />
+    <Duration value="0.150000" />
+    <Magnitude value="60.000000" />
+    <HostEndSiteOps Ops="SOpTargetPoint SOpHigherBy2" />
+    <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier4" />
+  </CActorForceCylinder>
 </Catalog>

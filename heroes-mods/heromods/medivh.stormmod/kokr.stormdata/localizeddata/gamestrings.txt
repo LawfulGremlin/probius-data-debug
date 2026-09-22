@@ -149,7 +149,7 @@ Button/Tooltip/MedivhTransformRaven=까마귀로 변신하여 이동 속도가 <
 Button/Tooltip/MedivhTransformRavenBirdsEyeView=까마귀 형상일 때의 시야가 영구히 <c val="#TooltipNumbers">25%</c> 증가합니다. 사용하면 이 증가량이 <c val="#TooltipNumbers"><d ref="Behavior,MedivhTransformRavenBirdsEyeView,Duration"/></c>초 동안 <c val="#TooltipNumbers"><d ref="Behavior,MedivhTransformRavenBirdsEyeView,Modification.SightBonus/Unit,HeroMedivhRaven,Sight*100" player="0"/>%</c>로 증가합니다.
 Button/Tooltip/MedivhTransformRavenLand=까마귀 형상을 취소합니다.
 Button/Tooltip/MedivhTransformRavenRavensIntellect=까마귀 형상일 때 생명력 및 마나 재생량이 <c val="#TooltipNumbers"><d ref="Talent,MedivhTransformRavenRavensIntellect,AbilityModificationArray[0].Modifications[0].Value*100"/>%</c> 증가합니다.
-Button/Tooltip/MedivhTransformRavenWindsOfCelerity=까마귀 형상의 이동 속도 증가량이 <c val=#TooltipNumbers><d ref=Talent,MedivhTransformRavenWindsOfCelerity,AbilityModificationArray[0].Modifications[0].Value/Behavior,MedivhTransformRaven,Modification.UnifiedMoveSpeedFactor*100 player=0/>%</c> 증가합니다.
+Button/Tooltip/MedivhTransformRavenWindsOfCelerity=까마귀 형상의 이동 속도 증가량이 <c val="#TooltipNumbers"><d ref="Talent,MedivhTransformRavenWindsOfCelerity,AbilityModificationArray[0].Modifications[0].Value/Behavior,MedivhTransformRaven,Modification.UnifiedMoveSpeedFactor*100" player="0"/>%</c> 증가합니다.
 Button/TooltipAppender/LockedUntilGameStarts=<n/><n/><c val="FF0000">게임 시작 전에는 사용할 수 없습니다.</c>
 Button/TooltipAppender/MedivhArcaneRiftTheMastersTouch=<n/><c val="#TooltipQuest">현재 진행 상황: </c><c val="#TooltipNumbers"><d ref="$BehaviorTokenCount:MedivhArcaneRiftTheMastersTouchQuestToken$"/>/<c val="#TooltipNumbers"><d ref="Behavior,MedivhArcaneRiftTheMastersTouchQuestToken,Max"/></c>
 Button/TooltipAppender/MedivhArcaneRiftTheMastersTouchComplete=<c val="#TooltipQuest">퀘스트 완료!</c>

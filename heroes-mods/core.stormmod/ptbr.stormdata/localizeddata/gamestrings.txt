@@ -5917,6 +5917,7 @@ UI/PlayerAnnounce/AbilityReady=<s val="PlayerAnnounceHeroName">%name%</s> já <l
 UI/PlayerAnnounce/BehaviorDuration=<s val="PlayerAnnounceHeroName">%name%</s> <lang rule="plural" val="%name%">tem,têm</lang> <s val="PlayerAnnounceAbilityName">%behavior%</s> para <s val="PlayerAnnounceAbilityState"><d time="%duration%" precision="%precision%"/></s>!
 UI/PlayerAnnounce/BehaviorPresent=<s val="PlayerAnnounceHeroName">%name%</s> <lang rule="plural" val="%name%">tem,têm</lang> <s val="PlayerAnnounceAbilityName">%behavior%</s>!
 UI/PlayerAnnounce/BehaviorStacks=<s val="PlayerAnnounceHeroName">%name%</s> <lang rule="plural" val="%name%">tem,têm</lang> <s val="PlayerAnnounceAbilityState">%stacks% <lang rule="plural">aplicação,aplicações</lang></s> de <s val="PlayerAnnounceAbilityName">%behavior%</s>!
+UI/PlayerAnnounce/HealingFountain=
 UI/PlayerAnnounce/LowVital=<s val="PlayerAnnounceHeroName">%name%</s> <lang rule="plural" val="%name%">tem,têm</lang> <s val="PlayerAnnounceAbilityState">%percent%% de %vital%</s>!
 UI/PlayerAnnounce/TooMuchSpam=<c val="ff0000">Você fez avisos demais. Tente de novo mais tarde.</c>
 UI/PlayerBlockFrame/Blocked=<c val="#ColorWhite">Toda a comunicação bloqueada</c><n/>Use o ícone de opção para desbloquear a comunicação.

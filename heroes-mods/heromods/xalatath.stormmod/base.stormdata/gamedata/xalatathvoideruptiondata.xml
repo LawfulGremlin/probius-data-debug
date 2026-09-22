@@ -43,7 +43,7 @@
   <const id="$XalatathVoidEruptionFlightDamageRadiusTier3" value="3" />
   <const id="$XalatathVoidEruptionFlightDamageRadiusTier4" value="4" />
   <const id="$XalatathVoidEruptionFlightDamagePeriod" value="0.0625" />
-  <const id="$XalatathVoidEruptionFlightDamageCooldown" value="0.2" />
+  <const id="$XalatathVoidEruptionFlightDamageCooldown" value="0.25" />
   <const id="$XalatathVoidEruptionFlightDamagePerSecondTier1" value="1800" />
   <const id="$XalatathVoidEruptionFlightDamagePerSecondTier2" value="2000" />
   <const id="$XalatathVoidEruptionFlightDamagePerSecondTier3" value="2400" />
@@ -88,8 +88,10 @@
   <const id="$XalatathVoidEruptionRadiusTier2" value="1.5" />
   <const id="$XalatathVoidEruptionRadiusTier3" value="2.5" />
   <const id="$XalatathVoidEruptionRadiusTier4" value="3.25" />
+  <const id="$XalatathOrbitalEruptionCooldownReductionPerHeroHit" value="14" />
   <CAbilEffectTarget id="XalatathVoidEruption" DefaultButtonFace="XalatathVoidEruption" Requirements="Ultimate2Unlocked">
     <Activity value="Abil/XalatathVoidEruptionActivity" />
+    <SharedFlags index="QuickCastOnReleaseOnly" value="1" />
     <Flags index="RequireTargetVision" value="0" />
     <Effect value="XalatathVoidEruptionExecuteSet" />
     <TargetingEnterEffect value="XalatathVoidEruptionTargetingEnterSet" />
@@ -124,6 +126,9 @@
   <CActorSiteOpLocalOffset id="XalatathVoidEruptionLaunchUpOffset">
     <LocalOffset Z="1.0000" />
   </CActorSiteOpLocalOffset>
+  <CActorSiteOpLocalOffset id="XalatathVoidEruptionLaunchForwardOffset">
+    <LocalOffset Y="-$XalatathVoidEruptionChargeForwardOffset" />
+  </CActorSiteOpLocalOffset>
   <CActorQuad id="XalatathVoidEruptionCenterMissileGuide" parent="StormGuideVisualQuadDownFantasy" abil="XalatathVoidEruption">
     <Height value="16" />
     <Width value="1.25" />
@@ -136,32 +141,17 @@
     <Height value="16.000000" />
     <Width value="6" />
   </CActorQuad>
-  <CActorSound id="XalatathVoidEruptionChannelSound" parent="SoundOneShot">
-    <On Terms="Effect.XalatathVoidEruptionApplyChargingBehavior.SourceCastStart" Send="Create" />
-    <On Terms="Effect.XalatathVoidEruptionRemoveChargingBehavior.SourceCastStop" Send="Destroy" />
-    <Sound value="Xalatath_VoidEruption_Channel" />
-    <Sound value="Xalatath_VoidEruption_Missile" />
-    <Layers Sound="Xalatath_VoidEruption_Channel_Skin" />
-  </CActorSound>
-  <CActorSound id="XalatathVoidEruptionTravelSound" parent="SoundContinuous">
-    <Host Subject="_Missile" />
-    <Sound value="Xalatath_VoidEruption_Travel_Loop" />
+  <CActorSound id="XalatathVoidEruptionCastSound" parent="SoundOneShot">
+    <On Terms="Effect.XalatathVoidEruptionTargetingEnterSet.Start" Send="Create" />
+    <Sound value="Xalatath_VoidEruption_Birth" />
   </CActorSound>
   <CActorSound id="XalatathVoidEruptionLaunchSound" parent="SoundOneShot">
+    <On Terms="Effect.XalatathVoidEruptionTargetingExitSwitch.Start" Send="Create" />
     <Sound value="Xalatath_VoidEruption_Launch" />
-    <On Terms="Behavior.XalatathVoidEruptionCharging.Stop" Send="Create" />
-  </CActorSound>
-  <CActorSound id="XalatathVoidEruptionImpactSkinSound" parent="SoundOneShot">
-    <On Terms="Effect.XalatathVoidEruptionKillDummyMissile.Start" Send="Create" />
-    <Sound value="Xalatath_VoidEruption_Impact_Skin" />
   </CActorSound>
   <CActorSound id="XalatathVoidEruptionMissileSound" parent="SoundContinuous">
     <Sound value="Xalatath_VoidEruption_Missile" />
     <Host Subject="_Missile" />
-  </CActorSound>
-  <CActorSound id="XalatathVoidEruptionCastVoX" parent="SoundOneShot">
-    <On Terms="Abil.XalatathVoidEruption.Start" Send="Create" />
-    <Sound value="Xalatath_VoidEruption_Channel" />
   </CActorSound>
   <CActorSound id="XalatathVoidEruptionDetonationSound" parent="SoundOneShot">
     <On Terms="Effect.XalatathVoidEruptionFinalAoESetTier1.Start" Send="Create" />
@@ -170,7 +160,7 @@
     <On Terms="Effect.XalatathVoidEruptionFinalAoESetTier4.Start" Send="Create" />
     <On Terms="Behavior.XalatathVoidEruptionMissileSuicideDelayAB.On" Send="Create" />
     <On Terms="Behavior.XalatathVoidEruptionOrbDamageControllerBehaviorBuff.Off" Send="Create" />
-    <Sound value="Xalatath_VoidEruption_Impact" />
+    <Sound value="Xalatath_VoidEruption_Detonation" />
   </CActorSound>
   <CActorSound id="XalatathVoidEruptionImpactSound" parent="SoundOneShot">
     <On Terms="Effect.XalatathVoidEruptionFlightDamageTalentSwitchTier1.Start" Send="Create" />
@@ -178,6 +168,14 @@
     <On Terms="Effect.XalatathVoidEruptionFlightDamageTalentSwitchTier3.Start" Send="Create" />
     <On Terms="Effect.XalatathVoidEruptionFlightDamageTalentSwitchTier4.Start" Send="Create" />
     <Sound value="Xalatath_VoidEruption_Impact" />
+  </CActorSound>
+  <CActorSound id="XalatathOrbitalEruptionMissileSound" parent="SoundContinuous">
+    <Sound value="Xalatath_OrbitalEruption_Missile" />
+    <Host Subject="_Missile" />
+  </CActorSound>
+  <CActorSound id="XalatathVoidEruptionCastVoX" parent="SoundOneShot">
+    <On Terms="Abil.XalatathVoidEruption.SourceCastStart" Send="Create" />
+    <Sound value="Xalatath_VoidEruption_Channel" />
   </CActorSound>
   <CEffectCreatePersistent id="XalatathVoidEruptionCreatePersistent">
     <InitialEffect value="XalatathVoidEruptionInitialSetSwitch" />
@@ -196,8 +194,33 @@
     <On Terms="Behavior.XalatathVoidEruptionOrbFlightDamageTier2BehaviorBuff.On" Send="PauseScale" />
     <On Terms="Behavior.XalatathVoidEruptionOrbFlightDamageTier3BehaviorBuff.On" Send="PauseScale" />
     <On Terms="Behavior.XalatathVoidEruptionOrbFlightDamageTier4BehaviorBuff.On" Send="PauseScale" />
+    <On Terms="ActorCreation" Send="SetOpacity" />
+    <On Terms="Effect.XalatathVoidEruptionLaunchUnitFlightDummy.Start" Send="SetOpacity 1.000000" />
     <HostSiteOps Ops="XalatathVoidEruptionLaunchUpOffset" />
   </CActorUnit>
+  <CActorModel id="XalatathVoidEruptionModelChargingDummy" parent="StormModelAnimationStyleContinuous">
+    <On Terms="Effect.XalatathVoidEruptionCreateDummyMissile.Start; At Caster" Send="Create" />
+    <On Terms="Effect.XalatathVoidEruptionCreatePersistent.Start; At Caster" Send="Destroy" />
+    <On Terms="Effect.XalatathVoidEruptionEnumKillDummy.Start; At Caster" Send="Destroy" />
+    <HostSiteOps Ops="SOpCasterUnit SOpAttachOrigin XalatathVoidEruptionLaunchForwardOffset XalatathVoidEruptionLaunchUpOffset" />
+    <Model value="XalatathVoidEruptionMissileTier1" />
+    <On Terms="ActorCreation" Send="SetScale $XalatathVoidEruptionMissileScaleTier1" />
+    <On Terms="ActorCreation" Send="SetScale 12 $XalatathVoidEruptionMissileScaleGrowDuration" />
+  </CActorModel>
+  <CActorUnit id="XalatathOrbitalEruptionOrbActor" parent="StormMinionStandard" unitName="XalatathOrbitalEruptionOrbUnit">
+    <On Terms="ActorCreation" Send="Create XalatathOrbitalEruptionMissileSound" />
+    <On Terms="ActorCreation" Send="SetScale $XalatathVoidEruptionMissileScaleTier1" />
+    <On Terms="ActorCreation" Send="SetScale 9 $XalatathVoidEruptionMissileScaleGrowDuration" />
+    <On Terms="Behavior.XalatathVoidEruptionOrbFlightDamageTier1BehaviorBuff.On" Send="PauseScale" />
+    <On Terms="Behavior.XalatathVoidEruptionOrbFlightDamageTier2BehaviorBuff.On" Send="PauseScale" />
+    <On Terms="Behavior.XalatathVoidEruptionOrbFlightDamageTier3BehaviorBuff.On" Send="PauseScale" />
+    <On Terms="Behavior.XalatathVoidEruptionOrbFlightDamageTier4BehaviorBuff.On" Send="PauseScale" />
+    <Model value="XalatathOrbitalEruptionOrbModel" />
+    <HostSiteOps Ops="XalatathVoidEruptionLaunchUpOffset" />
+  </CActorUnit>
+  <CModel id="XalatathOrbitalEruptionOrbModel" parent="MissileFX">
+    <Model value="Assets\Effects\Storm_FX_Xalatath_Base_VoidErruption\Storm_FX_Xalatath_Base_VoidErruption.m3" />
+  </CModel>
   <CActorForceSphere id="XalatathVoidEruptionMissileImpactSphereTA">
     <On Terms="Effect.XalatathVoidEruptionFinalAoESearchTier1.Start; ValidatePlayer  XalatathHasXalatathVoidEruptionTalent" Send="Create" />
     <On Terms="Effect.XalatathVoidEruptionFinalAoESearchTier2.Start; ValidatePlayer  XalatathHasXalatathVoidEruptionTalent" Send="Create" />
@@ -295,6 +318,9 @@
     <CreateFlags index="NormalizeSpawnOffset" value="0" />
     <SpawnOwner Value="Caster" />
     <SpawnUnit value="XalatathOrbitalEruptionOrbUnit" />
+    <CreateFlags index="Placement" value="0" />
+    <CreateFlags index="PlacementIgnoreBlockers" value="1" />
+    <CreateFlags index="PlacementIgnoreCliffTest" value="1" />
   </CEffectCreateUnit>
   <CValidatorUnitTimeElapsed id="XalatathVoidEruptionScaleTier1Elapsed">
     <WhichUnit Value="Creator" />
@@ -321,9 +347,7 @@
   <CUnit default="1" id="XalatathVoidEruptionDummyMissile" parent="MISSILE_INVULNERABLE">
     <FlagArray index="Missile" value="0" />
   </CUnit>
-  <CUnit id="XalatathVoidEruptionDummyMissileCenter" parent="XalatathVoidEruptionDummyMissile">
-    <BehaviorArray Link="XalatathVoidEruptionOrbDamageControllerBehaviorBuff" />
-  </CUnit>
+  <CUnit id="XalatathVoidEruptionDummyMissileCenter" parent="XalatathVoidEruptionDummyMissile" />
   <CEffectAddTrackedUnit id="XalatathVoidEruptionAddDummyToTracker">
     <BehaviorLink value="XalatathVoidEruptionMissileTracker" />
     <TrackedUnit Value="Target" />
@@ -332,12 +356,19 @@
     <EffectArray value="XalatathVoidEruptionAddDummyToTracker" />
     <EffectArray value="XalatathVoidEruptionAddDummyToAnchorTracker" />
     <EffectArray value="XalatathVoidEruptionDummyMissileSetFacing" />
+    <EffectArray value="XalatathVoidEruptionApplyFlightDamageController" />
   </CEffectSet>
+  <CEffectApplyBehavior id="XalatathVoidEruptionApplyFlightDamageController">
+    <Behavior value="XalatathVoidEruptionOrbDamageControllerBehaviorBuff" />
+  </CEffectApplyBehavior>
   <CEffectModifyUnit id="XalatathVoidEruptionDummyMissileSetFacing">
     <FacingLocation Value="FocusPoint" />
     <FacingType value="LookAt" />
   </CEffectModifyUnit>
   <CEffectCreateUnit id="XalatathVoidEruptionCreateDummyMissile">
+    <Marker Duration="$XalatathVoidEruptionFlightDamageCooldown">
+      <MatchFlags index="Id" value="1" />
+    </Marker>
     <WhichLocation>
       <Value value="CasterPoint" />
       <ProjectionSourceValue value="CasterPoint" />
@@ -348,6 +379,9 @@
     <CreateFlags index="SetFacing" value="1" />
     <SpawnEffect value="XalatathVoidEruptionCreateDummyMissileSpawnSet" />
     <SpawnUnit value="XalatathVoidEruptionDummyMissileCenter" />
+    <CreateFlags index="Placement" value="0" />
+    <CreateFlags index="PlacementIgnoreBlockers" value="1" />
+    <CreateFlags index="PlacementIgnoreCliffTest" value="1" />
   </CEffectCreateUnit>
   <CEffectCreatePersistent id="XalatathVoidEruptionDummyDeferredCreatePersistent">
     <WhichLocation Value="CasterPoint" />
@@ -478,10 +512,10 @@
     <MaxStackCountPerCaster value="1" />
   </CBehaviorBuff>
   <CEffectApplyBehavior id="XalatathVoidEruptionFlightDamageCooldownApplyBehavior">
+    <Chance value="0" />
     <WhichUnit Value="Target" />
     <Behavior value="XalatathVoidEruptionFlightDamageCooldownBehaviorBuff" />
     <ValidatorArray value="XalatathVoidEruptionNoFlightDamageCooldownValidatorUnitCompareBehaviorCount" />
-    <ValidatorArray value="TargetNotEvading" />
   </CEffectApplyBehavior>
   <CValidatorUnitCompareBehaviorCount id="XalatathVoidEruptionNoFlightDamageCooldownValidatorUnitCompareBehaviorCount">
     <WhichUnit Value="Target" />
@@ -534,7 +568,7 @@
   </CBehaviorBuff>
   <CValidatorUnitCompareBehaviorCount id="VoidEruptionTargetHasBlind">
     <Value value="1" />
-    <Behavior value="ShieldGlare" />
+    <Behavior value="XalatathVoidEruptionBlindDebuff" />
   </CValidatorUnitCompareBehaviorCount>
   <CBehaviorBuff id="XalatathVoidEruptionBlindDebuff" parent="StormBlind">
     <BehaviorCategories index="Fast" value="1" />
@@ -575,25 +609,21 @@
   </CEffectDamage>
   <CEffectSwitch id="XalatathVoidEruptionFlightDamageTalentSwitchTier1">
     <ValidatorArray value="XalatathVoidEruptionNoFlightDamageCooldownValidatorUnitCompareBehaviorCount" />
-    <ValidatorArray value="TargetNotEvading" />
     <CaseArray Validator="XalatathHasXalatathOrbitalEruptionTalent" Effect="XalatathOrbitalEruptionFlightDamageTier1" />
     <CaseDefault value="XalatathVoidEruptionFlightDamageTier1" />
   </CEffectSwitch>
   <CEffectSwitch id="XalatathVoidEruptionFlightDamageTalentSwitchTier2">
     <ValidatorArray value="XalatathVoidEruptionNoFlightDamageCooldownValidatorUnitCompareBehaviorCount" />
-    <ValidatorArray value="TargetNotEvading" />
     <CaseArray Validator="XalatathHasXalatathOrbitalEruptionTalent" Effect="XalatathOrbitalEruptionFlightDamageTier2" />
     <CaseDefault value="XalatathVoidEruptionFlightDamageTier2" />
   </CEffectSwitch>
   <CEffectSwitch id="XalatathVoidEruptionFlightDamageTalentSwitchTier3">
     <ValidatorArray value="XalatathVoidEruptionNoFlightDamageCooldownValidatorUnitCompareBehaviorCount" />
-    <ValidatorArray value="TargetNotEvading" />
     <CaseArray Validator="XalatathHasXalatathOrbitalEruptionTalent" Effect="XalatathOrbitalEruptionFlightDamageTier3" />
     <CaseDefault value="XalatathVoidEruptionFlightDamageTier3" />
   </CEffectSwitch>
   <CEffectSwitch id="XalatathVoidEruptionFlightDamageTalentSwitchTier4">
     <ValidatorArray value="XalatathVoidEruptionNoFlightDamageCooldownValidatorUnitCompareBehaviorCount" />
-    <ValidatorArray value="TargetNotEvading" />
     <CaseArray Validator="XalatathHasXalatathOrbitalEruptionTalent" Effect="XalatathOrbitalEruptionFlightDamageTier4" />
     <CaseDefault value="XalatathVoidEruptionFlightDamageTier4" />
   </CEffectSwitch>
@@ -603,7 +633,7 @@
     <AreaArray Effect="XalatathVoidEruptionFlightImpactSetTier1">
       <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier1" />
     </AreaArray>
-    <RevealerParams Duration="0.5" ShapeExpansion="1">
+    <RevealerParams Duration="1.75" ShapeExpansion="1">
       <RevealFlags index="Unfog" value="1" />
     </RevealerParams>
   </CEffectEnumArea>
@@ -613,7 +643,7 @@
     <AreaArray Effect="XalatathVoidEruptionFlightImpactSetTier2">
       <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier2" />
     </AreaArray>
-    <RevealerParams Duration="0.5" ShapeExpansion="1">
+    <RevealerParams Duration="1.75" ShapeExpansion="1">
       <RevealFlags index="Unfog" value="1" />
     </RevealerParams>
   </CEffectEnumArea>
@@ -623,7 +653,7 @@
     <AreaArray Effect="XalatathVoidEruptionFlightImpactSetTier3">
       <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier3" />
     </AreaArray>
-    <RevealerParams Duration="0.5" ShapeExpansion="1">
+    <RevealerParams Duration="1.75" ShapeExpansion="1">
       <RevealFlags index="Unfog" value="1" />
     </RevealerParams>
   </CEffectEnumArea>
@@ -633,7 +663,7 @@
     <AreaArray Effect="XalatathVoidEruptionFlightImpactSetTier4">
       <Radius value="$XalatathVoidEruptionFlightDamageRadiusTier4" />
     </AreaArray>
-    <RevealerParams Duration="0.5" ShapeExpansion="1">
+    <RevealerParams Duration="1.75" ShapeExpansion="1">
       <RevealFlags index="Unfog" value="1" />
     </RevealerParams>
   </CEffectEnumArea>
@@ -715,68 +745,62 @@
     <ValidatorArray value="noMarkers" />
     <EffectArray value="XalatathVoidEruptionFinalDamageTalentSwitchTier1" />
     <EffectArray value="ApplyAbilityImpactReveal" />
+    <EffectArray value="XalatathOrbitalEruptionHeroHitCooldownReduction" />
   </CEffectSet>
   <CEffectSet id="XalatathVoidEruptionFinalImpactSetTier2">
     <ValidatorArray value="noMarkers" />
     <EffectArray value="XalatathVoidEruptionFinalDamageTalentSwitchTier2" />
     <EffectArray value="ApplyAbilityImpactReveal" />
+    <EffectArray value="XalatathOrbitalEruptionHeroHitCooldownReduction" />
   </CEffectSet>
   <CEffectSet id="XalatathVoidEruptionFinalImpactSetTier3">
     <ValidatorArray value="noMarkers" />
     <EffectArray value="XalatathVoidEruptionFinalDamageTalentSwitchTier3" />
     <EffectArray value="ApplyAbilityImpactReveal" />
+    <EffectArray value="XalatathOrbitalEruptionHeroHitCooldownReduction" />
   </CEffectSet>
   <CEffectSet id="XalatathVoidEruptionFinalImpactSetTier4">
     <ValidatorArray value="noMarkers" />
     <EffectArray value="XalatathVoidEruptionFinalDamageTalentSwitchTier4" />
     <EffectArray value="ApplyAbilityImpactReveal" />
+    <EffectArray value="XalatathOrbitalEruptionHeroHitCooldownReduction" />
   </CEffectSet>
+  <CEffectModifyUnit id="XalatathOrbitalEruptionHeroHitCooldownReduction">
+    <ValidatorArray value="XalatathHasXalatathOrbitalEruptionTalent" />
+    <ValidatorArray value="TargetIsHero" />
+    <ImpactUnit Value="Caster" />
+    <Cost Abil="XalatathVoidEruption,Execute" CooldownOperation="Add" CooldownTimeUse="-$XalatathOrbitalEruptionCooldownReductionPerHeroHit" />
+  </CEffectModifyUnit>
   <CEffectDamage id="XalatathVoidEruptionFinalDamageTier1" parent="StormSpell">
     <Flags index="Crit" value="1" />
-    <ValidatorArray value="TargetNotEvading" />
-    <ValidatorArray value="TargetNotInvulnerable" />
     <Amount value="$XalatathVoidEruptionDamageTier1" />
   </CEffectDamage>
   <CEffectDamage id="XalatathVoidEruptionFinalDamageTier2" parent="StormSpell">
     <Flags index="Crit" value="1" />
-    <ValidatorArray value="TargetNotEvading" />
-    <ValidatorArray value="TargetNotInvulnerable" />
     <Amount value="$XalatathVoidEruptionDamageTier2" />
   </CEffectDamage>
   <CEffectDamage id="XalatathVoidEruptionFinalDamageTier3" parent="StormSpell">
     <Flags index="Crit" value="1" />
-    <ValidatorArray value="TargetNotEvading" />
-    <ValidatorArray value="TargetNotInvulnerable" />
     <Amount value="$XalatathVoidEruptionDamageTier3" />
   </CEffectDamage>
   <CEffectDamage id="XalatathVoidEruptionFinalDamageTier4" parent="StormSpell">
     <Flags index="Crit" value="1" />
-    <ValidatorArray value="TargetNotEvading" />
-    <ValidatorArray value="TargetNotInvulnerable" />
     <Amount value="$XalatathVoidEruptionDamageTier4" />
   </CEffectDamage>
   <CEffectDamage id="XalatathOrbitalEruptionFinalDamageTier1" parent="StormSpell">
     <Flags index="Crit" value="1" />
-    <ValidatorArray value="TargetNotEvading" />
-    <ValidatorArray value="TargetNotInvulnerable" />
     <Amount value="$XalatathOrbitalEruptionDamageTier1" />
   </CEffectDamage>
   <CEffectDamage id="XalatathOrbitalEruptionFinalDamageTier2" parent="StormSpell">
     <Flags index="Crit" value="1" />
-    <ValidatorArray value="TargetNotEvading" />
-    <ValidatorArray value="TargetNotInvulnerable" />
     <Amount value="$XalatathOrbitalEruptionDamageTier2" />
   </CEffectDamage>
   <CEffectDamage id="XalatathOrbitalEruptionFinalDamageTier3" parent="StormSpell">
     <Flags index="Crit" value="1" />
-    <ValidatorArray value="TargetNotEvading" />
-    <ValidatorArray value="TargetNotInvulnerable" />
     <Amount value="$XalatathOrbitalEruptionDamageTier3" />
   </CEffectDamage>
   <CEffectDamage id="XalatathOrbitalEruptionFinalDamageTier4" parent="StormSpell">
     <Flags index="Crit" value="1" />
-    <ValidatorArray value="TargetNotEvading" />
-    <ValidatorArray value="TargetNotInvulnerable" />
     <Amount value="$XalatathOrbitalEruptionDamageTier4" />
   </CEffectDamage>
   <CEffectSwitch id="XalatathVoidEruptionFinalDamageTalentSwitchTier1">
@@ -1007,22 +1031,7 @@
   </CValidatorUnitCompareBehaviorCount>
   <CUnit id="XalatathOrbitalEruptionOrbUnit" parent="MISSILE_INVULNERABLE">
     <FlagArray index="Missile" value="1" />
-    <BehaviorArray Link="XalatathVoidEruptionOrbDamageControllerBehaviorBuff" />
   </CUnit>
-  <CActorUnit id="XalatathOrbitalEruptionOrbActor" parent="StormMinionStandard" unitName="XalatathOrbitalEruptionOrbUnit">
-    <On Terms="ActorCreation" Send="Create XalatathVoidEruptionMissileSound" />
-    <On Terms="ActorCreation" Send="SetScale $XalatathVoidEruptionMissileScaleTier1" />
-    <On Terms="ActorCreation" Send="SetScale 9 $XalatathVoidEruptionMissileScaleGrowDuration" />
-    <On Terms="Behavior.XalatathVoidEruptionOrbFlightDamageTier1BehaviorBuff.On" Send="PauseScale" />
-    <On Terms="Behavior.XalatathVoidEruptionOrbFlightDamageTier2BehaviorBuff.On" Send="PauseScale" />
-    <On Terms="Behavior.XalatathVoidEruptionOrbFlightDamageTier3BehaviorBuff.On" Send="PauseScale" />
-    <On Terms="Behavior.XalatathVoidEruptionOrbFlightDamageTier4BehaviorBuff.On" Send="PauseScale" />
-    <Model value="XalatathOrbitalEruptionOrbModel" />
-    <HostSiteOps Ops="XalatathVoidEruptionLaunchUpOffset" />
-  </CActorUnit>
-  <CModel id="XalatathOrbitalEruptionOrbModel" parent="MissileFX">
-    <Model value="Assets\Effects\Storm_FX_Xalatath_Base_VoidErruption\Storm_FX_Xalatath_Base_VoidErruption.m3" />
-  </CModel>
   <CKineticFollow id="XalatathVoidEruptionOrbitKineticFollow">
     <Where Value="SourceUnit" />
     <Follow value="Position" />
@@ -1049,7 +1058,7 @@
     <FlagArray index="Missile" value="0" />
   </CUnit>
   <CActorUnit id="XalatathOrbitalEruptionCenterDummyActor" parent="GenericUnitMinimal" unitName="XalatathOrbitalEruptionCenterDummyUnit">
-    <On Terms="ActorCreation" Send="SetOpacity 0.000000" />
+    <On Terms="ActorCreation" Send="SetOpacity 1.000000" />
     <Model value="XalatathOrbitalEruptionCenterDummyModel" />
   </CActorUnit>
   <CModel id="XalatathInvisibleOverrideModel">
@@ -1129,6 +1138,7 @@
     <EffectArray value="XalatathOrbitalEruptionOrbAddTrackedUnit" />
     <EffectArray value="XalatathVoidEruptionOrbitFollowApplyKinetic" />
     <EffectArray value="XalatathOrbitalEruptionOrbitRotateApplyKinetic" />
+    <EffectArray value="XalatathVoidEruptionApplyFlightDamageController" />
   </CEffectSet>
   <CEffectCreateUnit id="XalatathOrbitalEruptionOrbChargeBaseCreateUnit" parent="XalatathOrbitalEruptionOrbBaseCreateUnit">
     <WhichLocation Value="TargetUnit" />
@@ -1136,12 +1146,21 @@
     <SpawnEffect value="XalatathOrbitalEruptionOrbChargeSpawnEffectSet" />
   </CEffectCreateUnit>
   <CEffectCreateUnit id="XalatathOrbitalEruptionOrbChargeACreateUnit" parent="XalatathOrbitalEruptionOrbChargeBaseCreateUnit">
+    <Marker Duration="$XalatathVoidEruptionFlightDamageCooldown">
+      <MatchFlags index="Id" value="1" />
+    </Marker>
     <SpawnOffset X="$XalatathOrbitalEruptionOrbitRadiusTier4" />
   </CEffectCreateUnit>
   <CEffectCreateUnit id="XalatathOrbitalEruptionOrbChargeBCreateUnit" parent="XalatathOrbitalEruptionOrbChargeBaseCreateUnit">
+    <Marker Duration="$XalatathVoidEruptionFlightDamageCooldown">
+      <MatchFlags index="Id" value="1" />
+    </Marker>
     <SpawnOffset X="-$XalatathOrbitalEruptionOrbitRadiusHalfTier4" Y="$XalatathOrbitalEruptionOrbitRadiusSqrt3HalfTier4" />
   </CEffectCreateUnit>
   <CEffectCreateUnit id="XalatathOrbitalEruptionOrbChargeCCreateUnit" parent="XalatathOrbitalEruptionOrbChargeBaseCreateUnit">
+    <Marker Duration="$XalatathVoidEruptionFlightDamageCooldown">
+      <MatchFlags index="Id" value="1" />
+    </Marker>
     <SpawnOffset X="-$XalatathOrbitalEruptionOrbitRadiusHalfTier4" Y="-$XalatathOrbitalEruptionOrbitRadiusSqrt3HalfTier4" />
   </CEffectCreateUnit>
   <CEffectSet id="XalatathOrbitalEruptionCreateOrbChargeEffectSet">
@@ -1162,6 +1181,9 @@
       <ProjectionMultiplier value="0.001" />
       <ProjectionOffset Y="-$XalatathOrbitalEruptionChargeForwardOffset" />
     </WhichLocation>
+    <CreateFlags index="Placement" value="0" />
+    <CreateFlags index="PlacementIgnoreBlockers" value="1" />
+    <CreateFlags index="PlacementIgnoreCliffTest" value="1" />
     <CreateFlags index="SetFacing" value="1" />
     <SpawnEffect value="XalatathOrbitalEruptionCenterDummySpawnEffectSet" />
     <SpawnUnit value="XalatathOrbitalEruptionCenterDummyUnit" />
@@ -1198,7 +1220,9 @@
     <BehaviorLink value="XalatathOrbitalEruptionCenterDummyBehaviorUnitTracker" />
     <Effect value="XalatathOrbitalEruptionCenterDummyRepositionTeleport" />
   </CEffectEnumTrackedUnits>
-  <CBehaviorBuff id="XalatathVoidEruptionOrbFlightDamageBaseBehaviorBuff" parent="StormTimedLife" />
+  <CBehaviorBuff id="XalatathVoidEruptionOrbFlightDamageBaseBehaviorBuff" parent="StormTimedLife">
+    <InitialEffect value="XalatathVoidEruptionLaunchUnitFlightDummy" />
+  </CBehaviorBuff>
   <CBehaviorBuff id="XalatathVoidEruptionOrbFlightDamageTier1BehaviorBuff" parent="XalatathVoidEruptionOrbFlightDamageBaseBehaviorBuff">
     <Duration value="$XalatathVoidEruptionMissileTimeoutTier1" />
     <ExpireEffect value="XalatathVoidEruptionFinalAoESetTier1" />
@@ -1215,6 +1239,7 @@
     <Duration value="$XalatathVoidEruptionMissileTimeoutTier4" />
     <ExpireEffect value="XalatathVoidEruptionFinalAoESetTier4" />
   </CBehaviorBuff>
+  <CEffectModifyUnit id="XalatathVoidEruptionLaunchUnitFlightDummy" />
   <CEffectApplyBehavior id="XalatathVoidEruptionOrbFlightDamageTier1ApplyBehavior">
     <WhichUnit Value="Target" />
     <Behavior value="XalatathVoidEruptionOrbFlightDamageTier1BehaviorBuff" />

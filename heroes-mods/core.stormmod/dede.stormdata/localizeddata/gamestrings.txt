@@ -5917,6 +5917,7 @@ UI/PlayerAnnounce/AbilityReady=<s val="PlayerAnnounceHeroName">%name%</s> <lang 
 UI/PlayerAnnounce/BehaviorDuration=<s val="PlayerAnnounceHeroName">%name%</s> <lang rule="plural" val="%name%">hat,haben</lang> <s val="PlayerAnnounceAbilityState"><d time="%duration%" precision="%precision%"/></s> lang <s val="PlayerAnnounceAbilityName">%behavior%</s>.
 UI/PlayerAnnounce/BehaviorPresent=<s val="PlayerAnnounceHeroName">%name%</s> <lang rule="plural" val="%name%">hat,haben</lang> <s val="PlayerAnnounceAbilityName">%behavior%</s>.
 UI/PlayerAnnounce/BehaviorStacks=<s val="PlayerAnnounceHeroName">%name%</s> <lang rule="plural" val="%name%">hat,haben</lang> <s val="PlayerAnnounceAbilityState">%stacks% Stapel</s> von <s val="PlayerAnnounceAbilityName">%behavior%</s>.
+UI/PlayerAnnounce/HealingFountain=
 UI/PlayerAnnounce/LowVital=<s val="PlayerAnnounceHeroName">%name%</s> <lang rule="plural" val="%name%">hat,haben</lang> <s val="PlayerAnnounceAbilityState">%percent%% %vital%</s>!
 UI/PlayerAnnounce/TooMuchSpam=<c val="ff0000">Du hast zu viele Benachrichtigungen gesendet. Versuche es später erneut.</c>
 UI/PlayerBlockFrame/Blocked=<c val="#ColorWhite">Spielerchat stummgeschaltet</c><n/>Klicke auf das Optionssymbol, um den Spielerchat zu aktivieren.

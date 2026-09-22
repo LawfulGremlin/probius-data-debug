@@ -109,6 +109,9 @@
   <CModel id="XalatathAttackImpact" parent="ImpactFX">
     <Model value="Assets\Effects\Storm_FX_Xalatath_Base_BasicMissile_Impact\Storm_FX_Xalatath_Base_BasicMissile_Impact.m3" />
   </CModel>
+  <CModel id="XalatathDarkHeartRitualRangeFX" parent="PersistentSpellFX">
+    <Model value="Assets\Effects\Storm_FX_Xalatath_Base_DarkHeart_RadiusSplat\Storm_FX_Xalatath_Base_DarkHeart_RadiusSplat.m3" />
+  </CModel>
   <CModel id="XalatathDarkHeartRitual" parent="Building">
     <Model value="Assets\Effects\Storm_FX_Xalatath_Base_DarkHeart\Storm_FX_Xalatath_Base_DarkHeart.m3" />
     <SelectionLayer value="2" />
@@ -302,7 +305,7 @@
     <Model value="Assets\Effects\Storm_FX_Xalatath_Base_VoidConvergence_Portal\Storm_FX_Xalatath_Base_VoidConvergence_Portal.m3" />
   </CModel>
   <CModel id="XalatathVoidConvergencePortalPlacement" parent="Placement">
-    <Model value="assets\effects\storm_fx_xalatath_base_voidconvergence_reticle\storm_fx_xalatath_base_voidconvergence_reticle.m3" />
+    <Model value="Assets\Effects\Storm_FX_Xalatath_Base_VoidConvergence_Portal\Storm_FX_Xalatath_Base_VoidConvergence_Portal.m3" />
   </CModel>
   <CModel id="XalatathVoidConvergencePortalCursorSplat" parent="UI">
     <Model value="assets\effects\storm_fx_xalatath_base_voidconvergence_reticle\storm_fx_xalatath_base_voidconvergence_reticle.m3" />
@@ -381,7 +384,7 @@
     </ModelGroups>
     <SortName value="Skin/SortName/XalatathBaseCommon" />
     <InfoText value="Hero/Info/Xalatath" />
-    <ReleaseDate Month="12" Year="2020" />
+    <ReleaseDate Month="9" Day="28" Year="2026" />
     <Rarity value="Rare" />
     <Universe value="Warcraft" />
   </CSkin>
