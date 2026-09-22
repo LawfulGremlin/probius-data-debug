@@ -22,8 +22,8 @@
     "RoleSupport"
   ],
   "stats": {
-    "hp": 1698,
-    "hpRegen": 8.8438,
+    "hp": 1780,
+    "hpRegen": 9.2708,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -38,8 +38,8 @@
   "heroUnits": {
     "AlexstraszaDragon": {
       "stats": {
-        "hp": 1698,
-        "hpRegen": 8.8438,
+        "hp": 1780,
+        "hpRegen": 9.2708,
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "resource": 500,
@@ -497,7 +497,7 @@
         "tooltipId": "AlexstraszaOverprotectiveAbundance",
         "talentTreeId": "AlexstraszaOverprotectiveAbundance",
         "name": "Overprotective",
-        "description": "Heroes healed by Abundance gain a Shield for 6 seconds equal to 70% of the amount healed.",
+        "description": "Heroes healed by Abundance gain a Shield for 6 seconds equal to 50% of the amount healed.",
         "icon": "storm_ui_icon_alexstrasza_abundance.png",
         "type": "W",
         "sort": 2,

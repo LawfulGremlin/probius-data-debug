@@ -17275,8 +17275,8 @@
     "unitId": "XalatathVoidConvergencePortalUnit",
     "portraits": {},
     "life": {
-      "amount": 1000,
-      "scale": 0,
+      "amount": 1200,
+      "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
     },
@@ -17360,9 +17360,9 @@
     "unitId": "XalatathVoidMinion",
     "portraits": {},
     "life": {
-      "amount": 450,
+      "amount": 300,
       "scale": 0.04,
-      "regenRate": -45,
+      "regenRate": -25,
       "regenScale": 0.04
     },
     "weapons": [
@@ -17371,15 +17371,15 @@
         "isDisabled": false,
         "range": 1.5,
         "minimumRange": 0,
-        "period": 1.75,
-        "damage": 95,
+        "period": 1.2,
+        "damage": 50,
         "damageScale": 0.04
       }
     ],
-    "radius": 1,
+    "radius": 1.25,
     "innerRadius": 1,
-    "sight": 7,
-    "speed": 5.75,
+    "sight": 10,
+    "speed": 5,
     "abilities": {
       "basic": [
         {
@@ -18283,9 +18283,9 @@
     "unitId": "HeroAlexstraszaDragon",
     "portraits": {},
     "life": {
-      "amount": 1698,
+      "amount": 1780,
       "scale": 0.04,
-      "regenRate": 8.8438,
+      "regenRate": 9.2708,
       "regenScale": 0.04,
       "type": "Health"
     },

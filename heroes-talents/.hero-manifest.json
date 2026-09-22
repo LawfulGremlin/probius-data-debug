@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "track": "ptr",
   "product": "herot",
-  "version": "2.57.0.98182",
-  "buildId": "B98182",
-  "generation": "78e6189fdccbe2fb01202ae91e6d2270fb5b1d23ee830d93c37b37eebb57c5c4",
+  "version": "2.57.0.98217",
+  "buildId": "B98217",
+  "generation": "b5484bbefc3a13ee7ff74e3f6d820ec9b3d6558d1582c10ffbdbce3beffca964",
   "producer": {
     "hdpVersion": "5.0.4",
     "adapterSchemaVersion": 1,
@@ -1107,11 +1107,11 @@
   ],
   "files": {
     ".tooltip_colors.json": "f2f6aa2eef0ad63aaf2ec9e7b1712339036cd9b74e93f05ccb48938b694b9245",
-    ".tooltip_markup.json": "6c6ee690bdfe828c83339e0c6f1af8319d4ef1d118c24420d52d6bc63edd9718",
-    ".tooltip_simple.json": "1610e93dc83f40c37e546305f8f5b1b0a25b3a33286a4381964aaf876d493260",
-    "abathur.json": "eee50b08068174ce4c15f84ca46a44bb23cbd2ffb49590bc1e0c6af8da6bc450",
+    ".tooltip_markup.json": "45d2bfba4e7438b5922c1d97c8f15c98bf836fbb836d8be7ce3f5bbf3cb32e5c",
+    ".tooltip_simple.json": "ab7e83cff26689059acdf1c0b0d71166454b85a28246bc65f5fa5f6c6c56170e",
+    "abathur.json": "1b5595a27fa5782e655b0c1f78ae789ee272649c205e426befd59acdf30085b7",
     "alarak.json": "c92cc6969d1250858dd911472042b5a409723cb27ec0fcb68bf6fcf60881f302",
-    "alexstrasza.json": "4a3902384c423287a6467c2f71af466834332d7de817e67ee47f77f33881817b",
+    "alexstrasza.json": "5e600669d04c984b99caa7c8f010aeae11603794ba2ad34521bc0eb51eea78ec",
     "ana.json": "9a7bbc62d611339a96e8aad924b365c1b425ddf5a111ceb4283606b9185afc98",
     "anduin.json": "f759ea166fa7d12e939b9bd3d988430c5c457febaf99aefed6934ccbc562326d",
     "anubarak.json": "220bf9b2f42a47732b0d34a957753628ec2b7018573711904919b93a6111fd4a",
@@ -1188,13 +1188,13 @@
     "tychus.json": "0d8868a2f6c8b240db6fa1ac0a3a0614a287e49ba5712d6e561c81510abea753",
     "tyrael.json": "0968cddb67f582842205d4137357b7481f0530f852fe259ca8b501ace5cc5526",
     "tyrande.json": "968cca97b3e70e65b3e6b0d8b981d5273582f0936db2da48660323b672dde839",
-    "unitdata_2.57.0.98182.json": "f458d8cc69c650b0053c1987bcdf43267902b5f5e9994b8eaf4a00a41f45bdc6",
+    "unitdata_2.57.0.98217.json": "16eb3333781431718618dca2a285a031be1ea4b35d51c487cfb810a6a368b043",
     "uther.json": "c797a4ce87587743e4f4b597732be0b862365baf270dca5cbb226b8da058a771",
     "valeera.json": "2ba75a32b2c8dbe46638dda7ba99dbe8b663d41b742afe06b6ae41295692acfa",
     "valla.json": "2fbffcd086d4e71345f3c88f386cead52c300764868d0cb51a238ddde4f975e2",
     "varian.json": "462d9d0d2257eee06cbbcaade2c9a1a4ce5d4486bbf729cf94635242826a9c4c",
     "whitemane.json": "63e53a4fb007f2fa67660124853a337c880dbb78765eb4120ae340cc323f6cc0",
-    "xalatath.json": "0bda73c67e3ef8eb1dca5325ab21e34f4374d70c6494fe207d858804e6a1b90c",
+    "xalatath.json": "a2f2d9b9a58728ad977e5325b2601f184a3134d37bc478c1249f591f8bd354ea",
     "xul.json": "dcf3604c8aa0fa02f501ce020c3157175986f5b149519799077df11a630bafba",
     "yrel.json": "62e4f6c18819c25a7a3845299da0fc371bee1f336b97605d9f26bbca102d1e64",
     "zagara.json": "07de1380b861e925df8f307baaa3db759536c3e62c3c7f5d8fe66f65f032dc69",
@@ -1211,9 +1211,6 @@
         "releasePatch",
         "releaseDate"
       ]
-    },
-    "Alexstrasza: differs from the previous publication: unitIds disappeared",
-    "LostVikings: differs from the previous publication: unitIds disappeared",
-    "Nova: differs from the previous publication: unitIds disappeared"
+    }
   ]
 }
