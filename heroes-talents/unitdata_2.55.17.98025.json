@@ -121,7 +121,7 @@
     "life": {
       "amount": 225,
       "scale": 0.04,
-      "regenRate": -7.9412,
+      "regenRate": -6.6176,
       "regenScale": 0.04
     },
     "weapons": [
@@ -11827,7 +11827,7 @@
           "_hdp5LinkId": "MuradinStormBolt|MuradinStormbolt|Q",
           "icon": "storm_ui_icon_muradin_stormbolt.png",
           "name": "Storm Bolt",
-          "fullText": "Throw a hammer, dealing <c val=\"bfd4fd\">110</c><c val=\"a7a7a7\">~~0.04~~</c> damage to the first enemy hit and Stunning them for <c val=\"bfd4fd\">1.25</c> seconds<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Basic Attack Heroes affected by Stuns, Slows, or Roots. Slowed or Rooted enemies grant <c val=\"bfd4fd\">1</c> stack. Stunned enemies provide <c val=\"bfd4fd\">2</c> stacks.  If the Hero dies within <c val=\"bfd4fd\">3</c> seconds, gain <c val=\"bfd4fd\">5</c> stacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Upon hitting <c val=\"bfd4fd\">45</c> targets, Storm Bolt pierces to hit an additional target, and Muradin's Basic Attacks reduce the cooldown of Storm Bolt by <c val=\"bfd4fd\">0.5</c> seconds and restore <c val=\"bfd4fd\">3</c> Mana.<n/><<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward:</c> Upon hitting <c val=\"bfd4fd\">160</c> targets, Storm Bolt's range is increased by <c val=\"bfd4fd\">50%</c>, width increased by <c val=\"bfd4fd\">100%</c>, and now pierces all targets.",
+          "fullText": "Throw a hammer, dealing <c val=\"bfd4fd\">110</c><c val=\"a7a7a7\">~~0.04~~</c> damage to the first enemy hit and Stunning them for <c val=\"bfd4fd\">1.25</c> seconds<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Basic Attack Heroes affected by Stuns, Slows, or Roots. Slowed or Rooted enemies grant <c val=\"bfd4fd\">1</c> stack. Stunned enemies provide <c val=\"bfd4fd\">2</c> stacks.  If the Hero dies within <c val=\"bfd4fd\">3</c> seconds, gain <c val=\"bfd4fd\">5</c> stacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Upon hitting <c val=\"bfd4fd\">45</c> targets, Storm Bolt pierces to hit an additional target, and Muradin's Basic Attacks reduce the cooldown of Storm Bolt by <c val=\"bfd4fd\">0.5</c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward:</c> Upon hitting <c val=\"bfd4fd\">160</c> targets, Storm Bolt's range is increased by <c val=\"bfd4fd\">50%</c>, width increased by <c val=\"bfd4fd\">100%</c>, and now pierces all targets.",
           "cooldownText": "Cooldown: 10 seconds"
         },
         {
@@ -17116,405 +17116,6 @@
     "sight": 0,
     "speed": 0
   },
-  "XalatathDarkHeartRitual": {
-    "unitId": "XalatathDarkHeartRitual",
-    "portraits": {},
-    "life": {
-      "amount": 1,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0.25,
-    "innerRadius": 0.125,
-    "sight": 7,
-    "speed": 3.5,
-    "abilities": {}
-  },
-  "XalatathFracturedRealityTrailUnit": {
-    "unitId": "XalatathFracturedRealityTrailUnit",
-    "portraits": {},
-    "life": {
-      "amount": 1,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0.25,
-    "innerRadius": 0.25,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathOrbitalEruptionCenterDummyUnit": {
-    "unitId": "XalatathOrbitalEruptionCenterDummyUnit",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathOrbitalEruptionCenterMissileTier1Unit": {
-    "unitId": "XalatathOrbitalEruptionCenterMissileTier1Unit",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathOrbitalEruptionCenterMissileTier2Unit": {
-    "unitId": "XalatathOrbitalEruptionCenterMissileTier2Unit",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathOrbitalEruptionCenterMissileTier3Unit": {
-    "unitId": "XalatathOrbitalEruptionCenterMissileTier3Unit",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathOrbitalEruptionCenterMissileTier4Unit": {
-    "unitId": "XalatathOrbitalEruptionCenterMissileTier4Unit",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathOrbitalEruptionOrbUnit": {
-    "unitId": "XalatathOrbitalEruptionOrbUnit",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathShadowMarkDummyUnit": {
-    "unitId": "XalatathShadowMarkDummyUnit",
-    "portraits": {},
-    "life": {
-      "amount": 1,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0.5,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathShadowMarkMissile": {
-    "unitId": "XalatathShadowMarkMissile",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 2,
-    "speed": 0
-  },
-  "XalatathUnstableCoreFireUnit": {
-    "unitId": "XalatathUnstableCoreFireUnit",
-    "portraits": {},
-    "life": {
-      "amount": 1,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 1.5,
-    "innerRadius": 1.5,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathVoidConvergencePortalUnit": {
-    "unitId": "XalatathVoidConvergencePortalUnit",
-    "portraits": {},
-    "life": {
-      "amount": 1200,
-      "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0.75,
-    "innerRadius": 0.25,
-    "sight": 5,
-    "speed": 3.25,
-    "abilities": {}
-  },
-  "XalatathVoidEruptionCarrierMissileTier1Unit": {
-    "unitId": "XalatathVoidEruptionCarrierMissileTier1Unit",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathVoidEruptionCarrierMissileTier2Unit": {
-    "unitId": "XalatathVoidEruptionCarrierMissileTier2Unit",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathVoidEruptionCarrierMissileTier3Unit": {
-    "unitId": "XalatathVoidEruptionCarrierMissileTier3Unit",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathVoidEruptionCarrierMissileTier4Unit": {
-    "unitId": "XalatathVoidEruptionCarrierMissileTier4Unit",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathVoidEruptionDummyMissileCenter": {
-    "unitId": "XalatathVoidEruptionDummyMissileCenter",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathVoidMinion": {
-    "unitId": "XalatathVoidMinion",
-    "portraits": {},
-    "life": {
-      "amount": 300,
-      "scale": 0.04,
-      "regenRate": -25,
-      "regenScale": 0.04
-    },
-    "weapons": [
-      {
-        "nameId": "XalatathVoidMinionWeapon",
-        "isDisabled": false,
-        "range": 1.5,
-        "minimumRange": 0,
-        "period": 1.2,
-        "damage": 50,
-        "damageScale": 0.04
-      }
-    ],
-    "radius": 1.25,
-    "innerRadius": 1,
-    "sight": 10,
-    "speed": 5,
-    "abilities": {
-      "basic": [
-        {
-          "nameId": "XalatathVoidMinionDash",
-          "buttonId": "XalatathVoidMinionDash",
-          "abilityType": "Q",
-          "isPassive": false,
-          "_hdp5LinkId": "XalatathVoidMinionDash|XalatathVoidMinionDash|Q"
-        }
-      ],
-      "hearth": [
-        {
-          "nameId": "move",
-          "buttonId": "MovePatrol",
-          "abilityType": "B",
-          "isPassive": false,
-          "_hdp5LinkId": "move|MovePatrol|B",
-          "icon": "btn-command-patrol.png",
-          "name": "Move Patrol"
-        }
-      ]
-    }
-  },
-  "XalatathVoidVolley2MissileInnerLeft": {
-    "unitId": "XalatathVoidVolley2MissileInnerLeft",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathVoidVolley2MissileInnerRight": {
-    "unitId": "XalatathVoidVolley2MissileInnerRight",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathVoidVolley2MissileMiddleLeft": {
-    "unitId": "XalatathVoidVolley2MissileMiddleLeft",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathVoidVolley2MissileMiddleRight": {
-    "unitId": "XalatathVoidVolley2MissileMiddleRight",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathVoidVolley2MissileOuterLeft": {
-    "unitId": "XalatathVoidVolley2MissileOuterLeft",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathVoidVolley2MissileOuterRight": {
-    "unitId": "XalatathVoidVolley2MissileOuterRight",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathWeaponMissileLeft": {
-    "unitId": "XalatathWeaponMissileLeft",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "XalatathWeaponMissileRight": {
-    "unitId": "XalatathWeaponMissileRight",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
   "XelnagaArtifact": {
     "unitId": "XelnagaArtifact",
     "portraits": {},
@@ -17674,9 +17275,9 @@
     "unitId": "ZagaraHydralisk",
     "portraits": {},
     "life": {
-      "amount": 500,
+      "amount": 450,
       "scale": 0.045,
-      "regenRate": -50,
+      "regenRate": -45,
       "regenScale": 0.045
     },
     "weapons": [
@@ -17777,9 +17378,9 @@
     "unitId": "ZagaraMutalisk",
     "portraits": {},
     "life": {
-      "amount": 450,
+      "amount": 420,
       "scale": 0.045,
-      "regenRate": -10.7143,
+      "regenRate": -10,
       "regenScale": 0.045
     },
     "weapons": [
@@ -17886,9 +17487,9 @@
     "unitId": "ZagaraRoach",
     "portraits": {},
     "life": {
-      "amount": 360,
+      "amount": 328,
       "scale": 0.04,
-      "regenRate": -36,
+      "regenRate": -32.8,
       "regenScale": 0.04
     },
     "weapons": [
@@ -18283,9 +17884,9 @@
     "unitId": "HeroAlexstraszaDragon",
     "portraits": {},
     "life": {
-      "amount": 1780,
+      "amount": 1698,
       "scale": 0.04,
-      "regenRate": 9.2708,
+      "regenRate": 8.8438,
       "regenScale": 0.04,
       "type": "Health"
     },
