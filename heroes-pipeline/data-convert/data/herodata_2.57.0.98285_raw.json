@@ -1416,9 +1416,9 @@
       "targetInfo": ""
     },
     "life": {
-      "amount": 1698,
+      "amount": 1780,
       "scale": 0.04,
-      "regenRate": 8.8438,
+      "regenRate": 9.2708,
       "regenScale": 0.04,
       "type": "Health"
     },
@@ -1969,9 +1969,9 @@
           "unitId": "HeroAlexstraszaDragon",
           "portraits": {},
           "life": {
-            "amount": 1698,
+            "amount": 1780,
             "scale": 0.04,
-            "regenRate": 8.8438,
+            "regenRate": 9.2708,
             "regenScale": 0.04,
             "type": "Health"
           },
@@ -52291,6 +52291,577 @@
               "_hdp5LinkId": "WizardArchonPurePower|WizardArchonPurePowerHotbar|Active",
               "toggleCooldown": 0.5,
               "icon": "storm_ui_icon_wizard_archon.png"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Xalatath": {
+    "unitId": "HeroXalatath",
+    "hyperlinkId": "Xalatath",
+    "attributeId": "HXAL",
+    "franchise": "Warcraft",
+    "gender": "Male",
+    "rarity": "Legendary",
+    "releaseDate": "2026-09-28",
+    "difficulty": "Medium",
+    "innerRadius": 0.6875,
+    "radius": 0.6875,
+    "sight": 12,
+    "speed": 4.8398,
+    "scalingLinkId": "ExcellentMana",
+    "descriptors": [
+      "EnergyImportant",
+      "Escaper",
+      "Ganker",
+      "Overconfident",
+      "TowerPusher"
+    ],
+    "units": [
+      "XalatathDarkHeartRitual",
+      "XalatathVoidMinion"
+    ],
+    "portraits": {
+      "heroSelect": "",
+      "leaderboard": "",
+      "loading": "",
+      "partyPanel": "",
+      "target": "",
+      "draftScreen": "",
+      "partyFrames": [],
+      "minimap": "",
+      "targetInfo": ""
+    },
+    "life": {
+      "amount": 1330,
+      "scale": 0.04,
+      "regenRate": 2.6484,
+      "regenScale": 0.04,
+      "type": "Health"
+    },
+    "energy": {
+      "amount": 500,
+      "regenRate": 3,
+      "type": "Mana"
+    },
+    "ratings": {
+      "complexity": 8,
+      "damage": 8,
+      "survivability": 6,
+      "utility": 6
+    },
+    "weapons": [
+      {
+        "nameId": "XalatathHeroWeapon",
+        "isDisabled": false,
+        "range": 6.5,
+        "minimumRange": 0,
+        "period": 1,
+        "damage": 55,
+        "damageScale": 0.04
+      }
+    ],
+    "skins": [
+      "XalatathVoidflame"
+    ],
+    "variationSkins": [
+      "XalatathVar1",
+      "XalatathVar2",
+      "XalatathVar3",
+      "XalatathVar4"
+    ],
+    "voiceLines": [
+      "XalatathBase_VoiceLine01",
+      "XalatathBase_VoiceLine02",
+      "XalatathBase_VoiceLine03",
+      "XalatathBase_VoiceLine04",
+      "XalatathBase_VoiceLine05"
+    ],
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "XalatathShadowMark",
+          "buttonId": "XalatathShadowMark",
+          "abilityType": "Q",
+          "isPassive": false,
+          "_hdp5LinkId": "XalatathShadowMark|XalatathShadowMark|Q",
+          "charges": {
+            "countMax": 1,
+            "countStart": 1,
+            "countUse": 1,
+            "recastCooldown": 3,
+            "isCountHidden": true
+          },
+          "icon": "storm_ui_icon_xalatath_q_shadowmark.png"
+        },
+        {
+          "nameId": "XalatathDarkHeartRitual",
+          "buttonId": "XalatathDarkHeartRitual",
+          "abilityType": "W",
+          "isPassive": false,
+          "_hdp5LinkId": "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W",
+          "icon": "storm_ui_icon_xalatath_e_darkheartritual.png"
+        },
+        {
+          "nameId": "XalatathVoidStep",
+          "buttonId": "XalatathVoidStep",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "XalatathVoidStep|XalatathVoidStep|E",
+          "icon": "storm_ui_icon_xalatath_w_voidstep.png"
+        }
+      ],
+      "heroic": [
+        {
+          "nameId": "XalatathVoidEruption",
+          "buttonId": "XalatathVoidEruption",
+          "abilityType": "Heroic",
+          "isPassive": false,
+          "_hdp5LinkId": "XalatathVoidEruption|XalatathVoidEruption|Heroic",
+          "icon": "storm_ui_icon_xalatath_r1_voideruption.png"
+        },
+        {
+          "nameId": "XalatathVoidConvergence",
+          "buttonId": "XalatathVoidConvergence",
+          "abilityType": "Heroic",
+          "isPassive": false,
+          "_hdp5LinkId": "XalatathVoidConvergence|XalatathVoidConvergence|Heroic",
+          "icon": "storm_ui_icon_xalatath_r2_voidconvergence.png"
+        }
+      ],
+      "trait": [
+        {
+          "nameId": "XalatathVoidVolley",
+          "buttonId": "XalatathVoidVolley",
+          "abilityType": "Trait",
+          "isPassive": false,
+          "_hdp5LinkId": "XalatathVoidVolley|XalatathVoidVolley|Trait",
+          "icon": "storm_ui_icon_xalatath_trait.png"
+        }
+      ],
+      "hearth": [
+        {
+          "nameId": "Hearthstone",
+          "buttonId": "Hearthstone",
+          "abilityType": "B",
+          "isPassive": false,
+          "_hdp5LinkId": "Hearthstone|Hearthstone|B",
+          "icon": "storm_ui_icon_miscrune_1.png"
+        }
+      ],
+      "mount": [
+        {
+          "nameId": "Mount",
+          "buttonId": "SummonMount",
+          "abilityType": "Z",
+          "isPassive": false,
+          "_hdp5LinkId": "Mount|SummonMount|Z",
+          "icon": "storm_ui_icon_generic_mount.png"
+        }
+      ]
+    },
+    "talents": {
+      "level1": [
+        {
+          "nameId": "XalatathVoidAdept",
+          "buttonId": "XalatathVoidAdept",
+          "abilityType": "Q",
+          "isPassive": false,
+          "sort": 1,
+          "_hdp5LinkId": "XalatathVoidAdept|XalatathVoidAdept|Q|Level1",
+          "isQuest": true,
+          "icon": "storm_ui_icon_xalatath_q_shadowmark.png",
+          "_hdp5AbilityLinks": [
+            "XalatathShadowMark|XalatathShadowMark|Q"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathShadowMark"
+          ]
+        },
+        {
+          "nameId": "XalatathAnchoredCore",
+          "buttonId": "XalatathAnchoredCore",
+          "abilityType": "W",
+          "isPassive": false,
+          "sort": 2,
+          "_hdp5LinkId": "XalatathAnchoredCore|XalatathAnchoredCore|W|Level1",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_e_darkheartritual.png",
+          "_hdp5AbilityLinks": [
+            "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathDarkHeartRitual"
+          ]
+        },
+        {
+          "nameId": "XalatathCloakOfShadows",
+          "buttonId": "XalatathCloakOfShadows",
+          "abilityType": "E",
+          "isPassive": false,
+          "sort": 3,
+          "_hdp5LinkId": "XalatathCloakOfShadows|XalatathCloakOfShadows|E|Level1",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_w_voidstep.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidStep|XalatathVoidStep|E"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidStep"
+          ]
+        }
+      ],
+      "level4": [
+        {
+          "nameId": "XalatathFrozenMark",
+          "buttonId": "XalatathFrozenMark",
+          "abilityType": "Q",
+          "isPassive": false,
+          "sort": 1,
+          "_hdp5LinkId": "XalatathFrozenMark|XalatathFrozenMark|Q|Level4",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_q_shadowmark.png",
+          "_hdp5AbilityLinks": [
+            "XalatathShadowMark|XalatathShadowMark|Q"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathShadowMark"
+          ]
+        },
+        {
+          "nameId": "XalatathDarkBarrier",
+          "buttonId": "XalatathDarkBarrier",
+          "abilityType": "W",
+          "isPassive": false,
+          "sort": 2,
+          "_hdp5LinkId": "XalatathDarkBarrier|XalatathDarkBarrier|W|Level4",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_e_darkheartritual.png",
+          "_hdp5AbilityLinks": [
+            "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathDarkHeartRitual"
+          ]
+        },
+        {
+          "nameId": "XalatathVoidAcolyte",
+          "buttonId": "XalatathVoidAcolyte",
+          "abilityType": "E",
+          "isPassive": false,
+          "sort": 3,
+          "_hdp5LinkId": "XalatathVoidAcolyte|XalatathVoidAcolyte|E|Level4",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_w_voidstep.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidStep|XalatathVoidStep|E",
+            "XalatathVoidVolley|XalatathVoidVolley|Trait"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidStep",
+            "XalatathVoidVolley"
+          ]
+        }
+      ],
+      "level7": [
+        {
+          "nameId": "XalatathToxicMark",
+          "buttonId": "XalatathToxicMark",
+          "abilityType": "Q",
+          "isPassive": false,
+          "sort": 1,
+          "_hdp5LinkId": "XalatathToxicMark|XalatathToxicMark|Q|Level7",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_q_shadowmark.png",
+          "_hdp5AbilityLinks": [
+            "XalatathShadowMark|XalatathShadowMark|Q"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathShadowMark"
+          ]
+        },
+        {
+          "nameId": "XalatathSilenceOfTheLamb",
+          "buttonId": "XalatathSilenceOfTheLamb",
+          "abilityType": "E",
+          "isPassive": false,
+          "sort": 2,
+          "_hdp5LinkId": "XalatathSilenceOfTheLamb|XalatathSilenceOfTheLamb|E|Level7",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_w_voidstep_c.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidStep|XalatathVoidStep|E"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidStep"
+          ]
+        },
+        {
+          "nameId": "XalatathVoidSummoner",
+          "buttonId": "XalatathVoidSummoner",
+          "abilityType": "E",
+          "isPassive": false,
+          "sort": 3,
+          "_hdp5LinkId": "XalatathVoidSummoner|XalatathVoidSummoner|E|Level7",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_w_voidstep_b.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidStep|XalatathVoidStep|E"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidStep"
+          ]
+        }
+      ],
+      "level10": [
+        {
+          "nameId": "XalatathHeroicAbilityVoidEruption",
+          "buttonId": "XalatathVoidEruption",
+          "abilityType": "Heroic",
+          "isPassive": false,
+          "sort": 1,
+          "_hdp5LinkId": "XalatathHeroicAbilityVoidEruption|XalatathVoidEruption|Heroic|Level10",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_r1_voideruption.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidEruption|XalatathVoidEruption|Heroic"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidEruption"
+          ]
+        },
+        {
+          "nameId": "XalatathHeroicAbilityVoidConvergence",
+          "buttonId": "XalatathVoidConvergence",
+          "abilityType": "Heroic",
+          "isPassive": false,
+          "sort": 2,
+          "_hdp5LinkId": "XalatathHeroicAbilityVoidConvergence|XalatathVoidConvergence|Heroic|Level10",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_r2_voidconvergence.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidConvergence|XalatathVoidConvergence|Heroic"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidConvergence"
+          ]
+        }
+      ],
+      "level13": [
+        {
+          "nameId": "XalatathPullOfTheDarkHeart",
+          "buttonId": "XalatathPullOfTheDarkHeart",
+          "abilityType": "W",
+          "isPassive": false,
+          "sort": 1,
+          "_hdp5LinkId": "XalatathPullOfTheDarkHeart|XalatathPullOfTheDarkHeart|W|Level13",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_e_darkheartritual.png",
+          "_hdp5AbilityLinks": [
+            "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathDarkHeartRitual"
+          ]
+        },
+        {
+          "nameId": "XalatathDarkHeartsProtection",
+          "buttonId": "XalatathDarkHeartsProtection",
+          "abilityType": "W",
+          "isPassive": false,
+          "sort": 2,
+          "_hdp5LinkId": "XalatathDarkHeartsProtection|XalatathDarkHeartsProtection|W|Level13",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_e_darkheartritual_b.png",
+          "_hdp5AbilityLinks": [
+            "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathDarkHeartRitual"
+          ]
+        },
+        {
+          "nameId": "XalatathCrushingCascade",
+          "buttonId": "XalatathCrushingCascade",
+          "abilityType": "Trait",
+          "isPassive": false,
+          "sort": 3,
+          "_hdp5LinkId": "XalatathCrushingCascade|XalatathCrushingCascade|Trait|Level13",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_trait.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidVolley|XalatathVoidVolley|Trait"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidVolley"
+          ]
+        }
+      ],
+      "level16": [
+        {
+          "nameId": "XalatathMarkedResilience",
+          "buttonId": "XalatathMarkedResilience",
+          "abilityType": "Q",
+          "isPassive": false,
+          "sort": 1,
+          "_hdp5LinkId": "XalatathMarkedResilience|XalatathMarkedResilience|Q|Level16",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_q_shadowmark.png",
+          "_hdp5AbilityLinks": [
+            "XalatathShadowMark|XalatathShadowMark|Q"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathShadowMark"
+          ]
+        },
+        {
+          "nameId": "XalatathPummelingStep",
+          "buttonId": "XalatathPummelingStep",
+          "abilityType": "E",
+          "isPassive": false,
+          "sort": 2,
+          "_hdp5LinkId": "XalatathPummelingStep|XalatathPummelingStep|E|Level16",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_w_voidstep.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidStep|XalatathVoidStep|E"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidStep"
+          ]
+        },
+        {
+          "nameId": "XalatathFracturedReality",
+          "buttonId": "XalatathFracturedReality",
+          "abilityType": "Trait",
+          "isPassive": false,
+          "sort": 3,
+          "_hdp5LinkId": "XalatathFracturedReality|XalatathFracturedReality|Trait|Level16",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_trait.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidVolley|XalatathVoidVolley|Trait"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidVolley"
+          ]
+        }
+      ],
+      "level20": [
+        {
+          "nameId": "XalatathOrbitalEruption",
+          "buttonId": "XalatathOrbitalEruption",
+          "abilityType": "Heroic",
+          "isPassive": false,
+          "sort": 1,
+          "_hdp5LinkId": "XalatathOrbitalEruption|XalatathOrbitalEruption|Heroic|Level20",
+          "isQuest": false,
+          "prerequisiteTalentIds": [
+            "XalatathHeroicAbilityVoidEruption"
+          ],
+          "icon": "storm_ui_icon_xalatath_r1_voideruption_b.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidEruption|XalatathVoidEruption|Heroic"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidEruption"
+          ]
+        },
+        {
+          "nameId": "XalatathRiftInvasion",
+          "buttonId": "XalatathRiftInvasion",
+          "abilityType": "Heroic",
+          "isPassive": false,
+          "sort": 2,
+          "_hdp5LinkId": "XalatathRiftInvasion|XalatathRiftInvasion|Heroic|Level20",
+          "isQuest": false,
+          "prerequisiteTalentIds": [
+            "XalatathHeroicAbilityVoidConvergence"
+          ],
+          "icon": "storm_ui_icon_xalatath_r2_voidconvergence.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidConvergence|XalatathVoidConvergence|Heroic"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidConvergence"
+          ]
+        },
+        {
+          "nameId": "XalatathDuelingOrbs",
+          "buttonId": "XalatathDuelingOrbs",
+          "abilityType": "Q",
+          "isPassive": false,
+          "sort": 3,
+          "_hdp5LinkId": "XalatathDuelingOrbs|XalatathDuelingOrbs|Q|Level20",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_q_shadowmark.png",
+          "_hdp5AbilityLinks": [
+            "XalatathShadowMark|XalatathShadowMark|Q"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathShadowMark"
+          ]
+        },
+        {
+          "nameId": "XalatathUnstableCore",
+          "buttonId": "XalatathUnstableCore",
+          "abilityType": "W",
+          "isPassive": false,
+          "sort": 4,
+          "_hdp5LinkId": "XalatathUnstableCore|XalatathUnstableCore|W|Level20",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_e_darkheartritual.png",
+          "_hdp5AbilityLinks": [
+            "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathDarkHeartRitual"
+          ]
+        },
+        {
+          "nameId": "XalatathParadoxLoop",
+          "buttonId": "XalatathParadoxLoop",
+          "abilityType": "E",
+          "isPassive": false,
+          "sort": 5,
+          "_hdp5LinkId": "XalatathParadoxLoop|XalatathParadoxLoop|E|Level20",
+          "isQuest": false,
+          "icon": "storm_ui_icon_xalatath_w_voidstep.png",
+          "_hdp5AbilityLinks": [
+            "XalatathVoidStep|XalatathVoidStep|E"
+          ],
+          "abilityTalentLinkIds": [
+            "XalatathVoidStep"
+          ]
+        }
+      ]
+    },
+    "subAbilities": [
+      {
+        "XalatathVoidStep|XalatathVoidStep|E": {
+          "basic": [
+            {
+              "nameId": "XalatathVoidStepCancel",
+              "buttonId": "XalatathVoidStepCancel",
+              "abilityType": "E",
+              "isPassive": false,
+              "_hdp5LinkId": "XalatathVoidStepCancel|XalatathVoidStepCancel|E",
+              "toggleCooldown": 0.25,
+              "icon": "hud_btn_bg_ability_cancel.png"
+            }
+          ]
+        },
+        "Mount|SummonMount|Z": {
+          "mount": [
+            {
+              "nameId": "Dismount",
+              "buttonId": "UnsummonMount",
+              "abilityType": "Z",
+              "isPassive": false,
+              "_hdp5LinkId": "Dismount|UnsummonMount|Z",
+              "toggleCooldown": 0.1,
+              "icon": "storm_ui_icon_generic_cancel_mount.png"
             }
           ]
         }

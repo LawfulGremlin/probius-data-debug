@@ -3,21 +3,31 @@
   "component": "heroes-talents",
   "track": "live",
   "product": "hero",
-  "version": "2.55.17.98025",
-  "buildId": "B98025",
-  "sourceSha": "add5a7d773309d6c10b870f4e00c12bab3c5e756",
-  "generation": "ad183d8e622f18214cd0606ef4e947b82c6f77912dbfc3e48caf550fbaea8a6f",
+  "version": "2.57.0.98285",
+  "buildId": "B98285",
+  "sourceSha": "50f5683588e80900d6faa6adca4156ef415c8062",
+  "generation": "96ca80e207b61c4af7ec6516dc9d7b56f76ec9305211f7d8cf1611d8c9f4199a",
   "producer": {
     "hdpVersion": "5.0.4",
     "adapterSchemaVersion": 1,
     "artifactSha256": "8ee8afaa4df6add6c3710e0527435558bcc94a6a14d60f783a0deb3948404850",
     "configurationSha256": "6a2c6674cff17b6ad8faf079c4adb829eeef6114365ad1521cafd2b722c99d99"
   },
-  "status": "unchanged",
-  "expected": 90,
-  "native": 90,
-  "converted": 90,
-  "warnings": [],
+  "status": "published",
+  "expected": 91,
+  "native": 91,
+  "converted": 91,
+  "warnings": [
+    {
+      "code": "NEW_HERO_METADATA_MISSING",
+      "cHeroId": "Xalatath",
+      "fields": [
+        "id",
+        "releasePatch",
+        "releaseDate"
+      ]
+    }
+  ],
   "missingCatalogs": [
     {
       "mod": "heroesdata.stormmod",
@@ -29,13 +39,13 @@
     }
   ],
   "enrichment": {
-    "tooltipCount": 3416,
+    "tooltipCount": 3448,
     "colorCount": 251,
     "enrichedCompanions": 1,
-    "enrichedSummons": 27,
-    "enrichedTooltips": 90,
-    "enrichedSimple": 90,
-    "enrichedColors": 90,
+    "enrichedSummons": 28,
+    "enrichedTooltips": 91,
+    "enrichedSimple": 91,
+    "enrichedColors": 91,
     "multiShotEnriched": 3
   },
   "exclusions": {
@@ -1083,6 +1093,14 @@
         "WhitemaneIntercession",
         "WhitemanePurgeTheWicked"
       ],
+      "Xalatath": [
+        "Dismount",
+        "Hearthstone",
+        "Mount",
+        "SummonMount",
+        "UnsummonMount",
+        "XalatathVoidStepCancel"
+      ],
       "Necromancer": [
         "Dismount",
         "Hearthstone",
@@ -1194,12 +1212,12 @@
     "heroes": 90
   },
   "publication": {
-    "status": "unchanged",
-    "commit": "e68ef3bd3cc1c1447a0e13f858ca5d836542e375",
+    "status": "published",
+    "commit": "61144b119563e62aaa1c8a36541f9271c64e7933",
     "branch": "live",
-    "generation": "ad183d8e622f18214cd0606ef4e947b82c6f77912dbfc3e48caf550fbaea8a6f",
-    "componentTree": "307e18a3bcf223944b428f2a776845d096c28c20"
+    "generation": "96ca80e207b61c4af7ec6516dc9d7b56f76ec9305211f7d8cf1611d8c9f4199a",
+    "componentTree": "72119968faf6a28f53e2e7241d0c2ced94081fbb"
   },
   "imageStatus": "partial",
-  "imageReport": "live-2.55.17.98025-images.json"
+  "imageReport": "live-2.57.0.98285-images.json"
 }

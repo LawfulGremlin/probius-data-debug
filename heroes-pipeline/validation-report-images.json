@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "component": "heroes-images",
   "track": "live",
-  "version": "2.55.17.98025",
-  "sourceSha": "add5a7d773309d6c10b870f4e00c12bab3c5e756",
+  "version": "2.57.0.98285",
+  "sourceSha": "50f5683588e80900d6faa6adca4156ef415c8062",
   "status": "partial",
-  "generation": "040d3eae1b6527a18213eb8d60293d7ed4ade139f3291eaeb8f8889ef6dd1719",
+  "generation": "3a734119abedc803605a4c2c26b89226bee2cb6c9687bb88796d0678fade5f84",
   "missing": [
     "btn-ability-protoss-prismaticbeam-color.dds",
     "btn-ability-protoss-psistorm-color.dds",
@@ -230,7 +230,11 @@
     "storm_ui_icon_souleateraura_2.dds",
     "storm_ui_icon_souleaterauralevel2_2.dds",
     "storm_ui_icon_souleaterauralevel3_2.dds",
+    "storm_ui_icon_xalatath_e_shadowmark.dds",
+    "storm_ui_icon_xalatath_voidminion.dds",
     "storm_ui_ingame_hero_icon_erik.dds",
+    "storm_ui_ingame_targetinfopanel_unit_xalatath_voidconvergenceportal.dds",
+    "storm_ui_ingame_targetinfopanel_unit_xalatath_voidminion.dds",
     "storm_ui_minimapicon_gardenseed_bw.dds",
     "storm_ui_minimapicon_healthgenerator.dds",
     "storm_ui_minimapicon_leoricundying.dds",
@@ -4254,6 +4258,7 @@
     "shared/storm_ui_bundle_h52_necrotopologistmeiskinpack.png",
     "shared/storm_ui_bundle_h52_terranalliancebundle.png",
     "shared/storm_ui_bundle_h52_worldscollidebundle.png",
+    "shared/storm_ui_bundle_h57_xalatath.png",
     "shared/storm_ui_bundle_jadedragonkharazim.png",
     "shared/storm_ui_bundle_judgement.png",
     "shared/storm_ui_bundle_mad_and_mighty_complete.png",
@@ -5280,6 +5285,7 @@
     "shared/storm_ui_icon_wizard_arcaneorb_b.png",
     "shared/storm_ui_icon_wizard_disintegrate_b.png",
     "shared/storm_ui_icon_wrathofthelichking.png",
+    "shared/storm_ui_icon_xalatath_q_shadowmark_b.png",
     "shared/storm_ui_icon_yrel_avenging_wrath_active.png",
     "shared/storm_ui_icon_yrel_divine_purpose_active.png",
     "shared/storm_ui_icon_yrel_righteous_hammer_active.png",
@@ -5425,6 +5431,7 @@
     "shared/storm_ui_ingame_partyframe_whitemane.png",
     "shared/storm_ui_ingame_partyframe_witchdoctor.png",
     "shared/storm_ui_ingame_partyframe_wizard.png",
+    "shared/storm_ui_ingame_partyframe_xalatath.png",
     "shared/storm_ui_ingame_partyframe_yrel.png",
     "shared/storm_ui_ingame_partyframe_zagara.png",
     "shared/storm_ui_ingame_partyframe_zarya.png",
@@ -5902,6 +5909,7 @@
     "shared/storm_ui_minimapicon_whitemane.png",
     "shared/storm_ui_minimapicon_witchdoctor.png",
     "shared/storm_ui_minimapicon_wizard.png",
+    "shared/storm_ui_minimapicon_xalatath.png",
     "shared/storm_ui_minimapicon_yrel.png",
     "shared/storm_ui_minimapicon_zagara.png",
     "shared/storm_ui_minimapicon_zarya.png",
@@ -5973,6 +5981,7 @@
     "shared/storm_ui_voice_nazeebo.png",
     "shared/storm_ui_voice_sonya.png",
     "shared/storm_ui_voice_valla.png",
+    "shared/storm_ui_voice_xalatath.png",
     "shared/storm_ui_voice_xul.png",
     "shared/storm_ui-editoricon_braxis_1.png",
     "shared/storm_ui-editoricon_braxis_2.png",
@@ -6398,6 +6407,7 @@
     "shared/ui_targetportrait_hero_whitemane.png",
     "shared/ui_targetportrait_hero_witchdoctor.png",
     "shared/ui_targetportrait_hero_wizard.png",
+    "shared/ui_targetportrait_hero_xalatath.png",
     "shared/ui_targetportrait_hero_yrel.png",
     "shared/ui_targetportrait_hero_zagara.png",
     "shared/ui_targetportrait_hero_zarya.png",
@@ -6735,6 +6745,7 @@
     "ui/storm_ui_glues_draft_portrait_whiteout.png",
     "ui/storm_ui_glues_draft_portrait_witchdoctor.png",
     "ui/storm_ui_glues_draft_portrait_wizard.png",
+    "ui/storm_ui_glues_draft_portrait_xalatath.png",
     "ui/storm_ui_glues_draft_portrait_yrel.png",
     "ui/storm_ui_glues_draft_portrait_zagara.png",
     "ui/storm_ui_glues_draft_portrait_zarya.png",
@@ -6991,7 +7002,7 @@
   "stages": {
     "icons": {
       "status": "partial",
-      "converted": 7647,
+      "converted": 7665,
       "failed": 6
     },
     "sheets": {
@@ -7011,11 +7022,11 @@
     }
   },
   "publication": {
-    "status": "unchanged",
-    "commit": "e68ef3bd3cc1c1447a0e13f858ca5d836542e375",
+    "status": "published",
+    "commit": "696c1fde582f2585c1eaa010693b79d8c2d152d3",
     "branch": "live",
-    "generation": "040d3eae1b6527a18213eb8d60293d7ed4ade139f3291eaeb8f8889ef6dd1719",
-    "componentTree": "97cc1a81c0fdc8138ebe0ce3e7663153b17ede0a"
+    "generation": "3a734119abedc803605a4c2c26b89226bee2cb6c9687bb88796d0678fade5f84",
+    "componentTree": "e266e259c9e6905cd01d7af50070d8f69ce1ee20"
   },
   "baseline": {
     "branch": "live",

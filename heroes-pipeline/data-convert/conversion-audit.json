@@ -9737,6 +9737,124 @@
             ]
         },
         {
+            "cHeroId": "Xalatath",
+            "hyperlinkId": "Xalatath",
+            "id": null,
+            "releasePatch": null,
+            "talents": [
+                {
+                    "nameId": "XalatathVoidAdept",
+                    "level": "1",
+                    "sort": 1
+                },
+                {
+                    "nameId": "XalatathAnchoredCore",
+                    "level": "1",
+                    "sort": 2
+                },
+                {
+                    "nameId": "XalatathCloakOfShadows",
+                    "level": "1",
+                    "sort": 3
+                },
+                {
+                    "nameId": "XalatathFrozenMark",
+                    "level": "4",
+                    "sort": 1
+                },
+                {
+                    "nameId": "XalatathDarkBarrier",
+                    "level": "4",
+                    "sort": 2
+                },
+                {
+                    "nameId": "XalatathVoidAcolyte",
+                    "level": "4",
+                    "sort": 3
+                },
+                {
+                    "nameId": "XalatathToxicMark",
+                    "level": "7",
+                    "sort": 1
+                },
+                {
+                    "nameId": "XalatathSilenceOfTheLamb",
+                    "level": "7",
+                    "sort": 2
+                },
+                {
+                    "nameId": "XalatathVoidSummoner",
+                    "level": "7",
+                    "sort": 3
+                },
+                {
+                    "nameId": "XalatathHeroicAbilityVoidEruption",
+                    "level": "10",
+                    "sort": 1
+                },
+                {
+                    "nameId": "XalatathHeroicAbilityVoidConvergence",
+                    "level": "10",
+                    "sort": 2
+                },
+                {
+                    "nameId": "XalatathPullOfTheDarkHeart",
+                    "level": "13",
+                    "sort": 1
+                },
+                {
+                    "nameId": "XalatathDarkHeartsProtection",
+                    "level": "13",
+                    "sort": 2
+                },
+                {
+                    "nameId": "XalatathCrushingCascade",
+                    "level": "13",
+                    "sort": 3
+                },
+                {
+                    "nameId": "XalatathMarkedResilience",
+                    "level": "16",
+                    "sort": 1
+                },
+                {
+                    "nameId": "XalatathPummelingStep",
+                    "level": "16",
+                    "sort": 2
+                },
+                {
+                    "nameId": "XalatathFracturedReality",
+                    "level": "16",
+                    "sort": 3
+                },
+                {
+                    "nameId": "XalatathOrbitalEruption",
+                    "level": "20",
+                    "sort": 1
+                },
+                {
+                    "nameId": "XalatathRiftInvasion",
+                    "level": "20",
+                    "sort": 2
+                },
+                {
+                    "nameId": "XalatathDuelingOrbs",
+                    "level": "20",
+                    "sort": 3
+                },
+                {
+                    "nameId": "XalatathUnstableCore",
+                    "level": "20",
+                    "sort": 4
+                },
+                {
+                    "nameId": "XalatathParadoxLoop",
+                    "level": "20",
+                    "sort": 5
+                }
+            ]
+        },
+        {
             "cHeroId": "Yrel",
             "hyperlinkId": "Yrel",
             "id": 80,
@@ -10317,5 +10435,15 @@
             ]
         }
     ],
-    "warnings": []
+    "warnings": [
+        {
+            "code": "NEW_HERO_METADATA_MISSING",
+            "cHeroId": "Xalatath",
+            "fields": [
+                "id",
+                "releasePatch",
+                "releaseDate"
+            ]
+        }
+    ]
 }

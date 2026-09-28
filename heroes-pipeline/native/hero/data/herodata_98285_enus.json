@@ -1,6 +1,6 @@
 {
   "meta": {
-    "heroesVersion": "2.55.17.98025",
+    "heroesVersion": "2.57.0.98285",
     "hdpVersion": "5.0.4",
     "itemsType": "Data",
     "dataType": "HeroData",
@@ -17,7 +17,7 @@
         "preserved": false
       }
     },
-    "totalItems": 90
+    "totalItems": 91
   },
   "items": {
     "Abathur": {
@@ -530,7 +530,7 @@
             "abilityId": ":PASSIVE:",
             "name": "Bombard Strain",
             "shortText": "Locusts gain a ranged attack, increased duration",
-            "fullText": "Locust's Basic Attacks become a long-range siege attack and they now lose health <c val=\"bfd4fd\">50%</c> more slowly.",
+            "fullText": "Locust's Basic Attacks become a long-range siege attack and they now lose health <c val=\"bfd4fd\">40%</c> more slowly.",
             "abilityType": "Trait",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -603,7 +603,7 @@
             "abilityId": ":PASSIVE:",
             "name": "Survival Instincts",
             "shortText": "Increases Locust Health and damage",
-            "fullText": "Increases Locust's Health by <c val=\"bfd4fd\">100%</c> and damage by <c val=\"bfd4fd\">60%</c>.",
+            "fullText": "Reduce damage taken by Locusts from non-Heroes by <c val=\"bfd4fd\">50%</c> and increase their damage by <c val=\"bfd4fd\">60%</c>.",
             "abilityType": "Trait",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -1549,9 +1549,9 @@
       "description": "A Healer who shares her Health with allies and can transform into a Dragon to empower her Abilities.",
       "infoText": "Alexstrasza, the queen of dragons, was empowered by the titans to be the guardian of all life on Azeroth. She has aided mortals time and again, even at great personal cost. Now, she soars across the Nexus, protecting life wherever she finds it.",
       "life": {
-        "amount": 1698,
+        "amount": 1780,
         "scale": 0.04,
-        "regenRate": 8.8438,
+        "regenRate": 9.2708,
         "regenScale": 0.04,
         "type": "Health"
       },
@@ -1811,7 +1811,7 @@
             "abilityId": "AlexstraszaFlameBuffet",
             "name": "Flames of Fury",
             "shortText": "<c val=\"e4b800\">Quest:</c> Lower Dragonqueen cooldown, last forever",
-            "fullText": "Reduce the Mana cost of Flame Buffet from <c val=\"bfd4fd\">50</c> to <c val=\"bfd4fd\">40</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit Burning enemy Heroes with Flame Buffet. <c val=\"bfd4fd\">20</c> hits unlocks a Mythic Quest.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After hitting <c val=\"bfd4fd\">20</c> Heroes, hitting a Burning enemy Hero with Flame Buffet reduces Dragonqueen's cooldown by <c val=\"bfd4fd\">6</c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Quest:</c> After hitting <c val=\"bfd4fd\">40</c> more Heroes without dying, Dragonqueen damage against Heroes refreshes its duration.",
+            "fullText": "Reduce the Mana cost of Flame Buffet from <c val=\"bfd4fd\">50</c> to <c val=\"bfd4fd\">40</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit Burning enemy Heroes with Flame Buffet. <c val=\"bfd4fd\">20</c> hits unlocks a Mythic Quest.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After hitting <c val=\"bfd4fd\">20</c> Heroes, hitting a Burning enemy Hero with Flame Buffet reduces Dragonqueen's cooldown by <c val=\"bfd4fd\">6</c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Quest:</c> After hitting <c val=\"bfd4fd\">30</c> more Heroes without dying, Dragonqueen damage against Heroes refreshes its duration.",
             "abilityType": "E",
             "isQuest": true,
             "upgradesAbilityType": false,
@@ -2034,7 +2034,7 @@
             "abilityId": "AlexstraszaAbundance",
             "name": "Overprotective",
             "shortText": "Abundance grants Shields",
-            "fullText": "Heroes healed by Abundance gain a Shield for <c val=\"bfd4fd\">6</c> seconds equal to <c val=\"bfd4fd\">70%</c> of the amount healed.",
+            "fullText": "Heroes healed by Abundance gain a Shield for <c val=\"bfd4fd\">6</c> seconds equal to <c val=\"bfd4fd\">50%</c> of the amount healed.",
             "abilityType": "W",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -2156,9 +2156,9 @@
             "HeroDummyVeterancy"
           ],
           "life": {
-            "amount": 1698,
+            "amount": 1780,
             "scale": 0.04,
-            "regenRate": 8.8438,
+            "regenRate": 9.2708,
             "regenScale": 0.04,
             "type": "Health"
           },
@@ -20133,7 +20133,7 @@
               "name": "Double Up",
               "cooldownText": "Cooldown: 30 seconds",
               "shortText": "Activate Armor Up to increase bonus",
-              "fullText": "Armor Up can be activated to increase its Armor bonus by <c val=\"bfd4fd\">100%</c> for <c val=\"bfd4fd\">3</c> seconds.",
+              "fullText": "Armor Up can be activated to increase its Armor bonus by <c val=\"bfd4fd\">100%</c> for <c val=\"bfd4fd\">5</c> seconds.",
               "abilityType": "Trait"
             }
           ]
@@ -20165,7 +20165,7 @@
             "abilityId": "GarroshWreckingBall",
             "name": "Unrivaled Strength",
             "shortText": "Increase Wrecking Ball's throw range, damage",
-            "fullText": "Increase Wrecking Ball's throw range by <c val=\"bfd4fd\">15%</c> and its damage by <c val=\"bfd4fd\">125%</c>.",
+            "fullText": "Increase Wrecking Ball's throw range by <c val=\"bfd4fd\">15%</c> and its damage by <c val=\"bfd4fd\">75%</c>.",
             "abilityType": "E",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -20199,7 +20199,7 @@
             "abilityId": "GarroshBloodthirst",
             "name": "In For the Kill",
             "shortText": "Bloodthirst kills reset cooldown, restore Mana",
-            "fullText": "Increase Bloodthirst's damage against non-Heroes by <c val=\"bfd4fd\">70%</c>. Killing enemies with Bloodthirst resets its cooldown and refunds its Mana cost.",
+            "fullText": "Increase Bloodthirst's damage against non-Heroes by <c val=\"bfd4fd\">100%</c>. Killing enemies with Bloodthirst resets its cooldown and refunds its Mana cost.",
             "abilityType": "W",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -20267,7 +20267,7 @@
             "abilityId": "GarroshBloodthirst",
             "name": "Oppressor ",
             "shortText": "Basic Attacks, Bloodthirst reduce Spell Power",
-            "fullText": "Basic Attacks and Bloodthirst against Heroes reduce the target's Spell Power by <c val=\"bfd4fd\">30%</c> for <c val=\"bfd4fd\">2.5</c> seconds.",
+            "fullText": "Basic Attacks and Bloodthirst against Heroes reduce the target's Spell Power by <c val=\"bfd4fd\">25%</c> for <c val=\"bfd4fd\">2.5</c> seconds.",
             "abilityType": "W",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -20354,7 +20354,7 @@
             "abilityId": "GarroshBloodthirst",
             "name": "Bloodcraze",
             "shortText": "Bloodthirst heals over time",
-            "fullText": "When hitting a Hero, Bloodthirst heals for an additional <c val=\"bfd4fd\">15%</c> of Garrosh's maximum Health over <c val=\"bfd4fd\">3</c> seconds.",
+            "fullText": "When hitting a Hero, Bloodthirst heals for an additional <c val=\"bfd4fd\">15%</c> of Garrosh's maximum Health over <c val=\"bfd4fd\">4</c> seconds.",
             "abilityType": "W",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -20372,7 +20372,7 @@
             "name": "Double Up",
             "cooldownText": "Cooldown: 30 seconds",
             "shortText": "Activate Armor Up to increase bonus",
-            "fullText": "Armor Up can be activated to increase its Armor bonus by <c val=\"bfd4fd\">100%</c> for <c val=\"bfd4fd\">3</c> seconds.",
+            "fullText": "Armor Up can be activated to increase its Armor bonus by <c val=\"bfd4fd\">100%</c> for <c val=\"bfd4fd\">5</c> seconds.",
             "abilityType": "Trait",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -33482,7 +33482,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 70</s>",
             "cooldownText": "Cooldown: 14 seconds",
             "shortText": "Gain Move Speed and put enemies to Sleep",
-            "fullText": "After <c val=\"bfd4fd\">0.75</c> seconds, gain <c val=\"bfd4fd\">50%</c> Movement Speed for <c val=\"bfd4fd\">2</c> seconds. While active, Mal'Ganis can move through enemy Heroes and put them to Sleep for <c val=\"bfd4fd\">2.5</c> seconds.",
+            "fullText": "After <c val=\"bfd4fd\">0.62</c> seconds, gain <c val=\"bfd4fd\">50%</c> Movement Speed for <c val=\"bfd4fd\">2</c> seconds. While active, Mal'Ganis can move through enemy Heroes and put them to Sleep for <c val=\"bfd4fd\">2.5</c> seconds.",
             "abilityType": "E"
           }
         ],
@@ -33518,7 +33518,7 @@
             "buttonId": "MalGanisVampiricTouch",
             "name": "Vampiric Touch",
             "shortText": "Mal'Ganis heals from damage dealt",
-            "fullText": "Mal'Ganis heals for <c val=\"bfd4fd\">45%</c> of damage dealt to enemy Heroes and <c val=\"bfd4fd\">10%</c> of damage dealt to non-Heroes.",
+            "fullText": "Mal'Ganis heals for <c val=\"bfd4fd\">50%</c> of damage dealt to enemy Heroes and <c val=\"bfd4fd\">15%</c> of damage dealt to non-Heroes.",
             "abilityType": "Trait"
           }
         ],
@@ -38393,7 +38393,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 45</s>",
             "cooldownText": "Cooldown: 10 seconds",
             "shortText": "Throw a hammer, stunning and damaging the first enemy hit",
-            "fullText": "Throw a hammer, dealing <c val=\"bfd4fd\">110</c><c val=\"a7a7a7\">~~0.04~~</c> damage to the first enemy hit and Stunning them for <c val=\"bfd4fd\">1.25</c> seconds<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Basic Attack Heroes affected by Stuns, Slows, or Roots. Slowed or Rooted enemies grant <c val=\"bfd4fd\">1</c> stack. Stunned enemies provide <c val=\"bfd4fd\">2</c> stacks.  If the Hero dies within <c val=\"bfd4fd\">3</c> seconds, gain <c val=\"bfd4fd\">5</c> stacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Upon hitting <c val=\"bfd4fd\">45</c> targets, Storm Bolt pierces to hit an additional target, and Muradin's Basic Attacks reduce the cooldown of Storm Bolt by <c val=\"bfd4fd\">0.5</c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward:</c> Upon hitting <c val=\"bfd4fd\">160</c> targets, Storm Bolt's range is increased by <c val=\"bfd4fd\">50%</c>, width increased by <c val=\"bfd4fd\">100%</c>, and now pierces all targets.",
+            "fullText": "Throw a hammer, dealing <c val=\"bfd4fd\">110</c><c val=\"a7a7a7\">~~0.04~~</c> damage to the first enemy hit and Stunning them for <c val=\"bfd4fd\">1.25</c> seconds<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Basic Attack Heroes affected by Stuns, Slows, or Roots. Slowed or Rooted enemies grant <c val=\"bfd4fd\">1</c> stack. Stunned enemies provide <c val=\"bfd4fd\">2</c> stacks.  If the Hero dies within <c val=\"bfd4fd\">3</c> seconds, gain <c val=\"bfd4fd\">5</c> stacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Upon hitting <c val=\"bfd4fd\">45</c> targets, Storm Bolt pierces to hit an additional target, and Muradin's Basic Attacks reduce the cooldown of Storm Bolt by <c val=\"bfd4fd\">0.5</c> seconds and restore <c val=\"bfd4fd\">3</c> Mana.<n/><<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward:</c> Upon hitting <c val=\"bfd4fd\">160</c> targets, Storm Bolt's range is increased by <c val=\"bfd4fd\">50%</c>, width increased by <c val=\"bfd4fd\">100%</c>, and now pierces all targets.",
             "abilityType": "Q"
           },
           {
@@ -40348,7 +40348,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 35</s>",
             "cooldownText": "Cooldown: 7 seconds",
             "shortText": "Your Basic Attacks and Abilities cause enemies to take damage over time",
-            "fullText": "Qhira deals <c val=\"bfd4fd\">32</c><c val=\"a7a7a7\">~~0.04~~</c> damage and heals for <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> Health per enemy Hero affected. Damage and healing is increased by <c val=\"bfd4fd\">50%</c> per each additional stack on that Hero.<n/><n/><c val=\"00ff90\">Passive:</c> Basic Attack and Ability damage cause enemies to bleed for <c val=\"bfd4fd\">32</c><c val=\"a7a7a7\">~~0.04~~</c> damage over <c val=\"bfd4fd\">4</c> seconds. Stacks <c val=\"bfd4fd\">5</c> times.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Damage enemy Heroes with Blood Rage's bleed damage to permanently increase its damage by <c val=\"bfd4fd\">0.24%</c>. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After damaging Heroes with Blood Rage's bleed damage <c val=\"bfd4fd\">150</c> times, Blood Rage's duration is increased by <c val=\"bfd4fd\">2</c> seconds.",
+            "fullText": "Qhira deals <c val=\"bfd4fd\">32</c><c val=\"a7a7a7\">~~0.04~~</c> damage and heals for <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> Health per enemy Hero affected. Damage and healing is increased by <c val=\"bfd4fd\">50%</c> per each additional stack on that Hero.<n/><n/><c val=\"00ff90\">Passive:</c> Basic Attack and Ability damage cause enemies to bleed for <c val=\"bfd4fd\">28</c><c val=\"a7a7a7\">~~0.04~~</c> damage over <c val=\"bfd4fd\">4</c> seconds. Stacks <c val=\"bfd4fd\">5</c> times.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Damage enemy Heroes with Blood Rage's bleed damage to permanently increase its damage by <c val=\"bfd4fd\">0.2%</c>. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After damaging Heroes with Blood Rage's bleed damage <c val=\"bfd4fd\">150</c> times, Blood Rage's duration is increased by <c val=\"bfd4fd\">2</c> seconds.",
             "abilityType": "W"
           },
           {
@@ -40476,7 +40476,7 @@
             "abilityId": "NexusHunterBloodRage",
             "name": "Fatal Wounds",
             "shortText": "Increase Blood Rage damage to low health enemies",
-            "fullText": "While at maximum stacks, Blood Rage's bleed deals <c val=\"bfd4fd\">50%</c> additional damage to enemy Heroes under <c val=\"bfd4fd\">50%</c> Health.",
+            "fullText": "While at maximum stacks, Blood Rage's bleed deals <c val=\"bfd4fd\">70%</c> additional damage to enemy Heroes under <c val=\"bfd4fd\">50%</c> Health.",
             "abilityType": "W",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -40671,7 +40671,7 @@
             "abilityId": "NexusHunterRevolvingSweep",
             "name": "Pulsing Pain",
             "shortText": "Increase Revolving Sweep damage to main target",
-            "fullText": "Each additional enemy Hero hit by Revolving Sweep causes the primary target to take an additional <c val=\"bfd4fd\">135</c><c val=\"a7a7a7\">~~0.04~~</c> damage.",
+            "fullText": "Each additional enemy Hero hit by Revolving Sweep causes the primary target to take an additional <c val=\"bfd4fd\">150</c><c val=\"a7a7a7\">~~0.04~~</c> damage.",
             "abilityType": "E",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -40726,7 +40726,7 @@
             "abilityId": "NexusHunterRevolvingSweep",
             "name": "Lingering Ailment",
             "shortText": "Reduce enemy Hero Armor",
-            "fullText": "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by <c val=\"bfd4fd\">35</c> for <c val=\"bfd4fd\">4</c> seconds.",
+            "fullText": "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by <c val=\"bfd4fd\">25</c> for <c val=\"bfd4fd\">4</c> seconds.",
             "abilityType": "E",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -43357,7 +43357,7 @@
             "abilityId": "RagnarosMoltenCore",
             "name": "Heroic Difficulty",
             "shortText": "Enhances Molten Core range, cooldown",
-            "fullText": "Molten Core's range is increased by <c val=\"bfd4fd\">100%</c> at the start of its duration.  In addition, the cooldown of Molten Core is reduced by <c val=\"bfd4fd\">90</c> seconds when used on a destroyed Fort or Keep.",
+            "fullText": "Molten Core's range is increased by <c val=\"bfd4fd\">100%</c> at the start of its duration.  In addition, the cooldown of Molten Core is reduced by <c val=\"bfd4fd\">110</c> seconds when used on a destroyed Fort or Keep.",
             "abilityType": "Trait",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -48294,7 +48294,7 @@
               "buttonId": "SylvanasBlackArrowsPassive",
               "name": "Black Arrows",
               "shortText": "Basic Attacks apply Black Arrows, increasing Sylvanas's damage",
-              "fullText": "Basic Attacks infect enemies with Black Arrows for <c val=\"bfd4fd\">3</c> seconds, stacking up to <c val=\"bfd4fd\">3</c> times. Sylvanas deals <c val=\"bfd4fd\">15%</c> more damage to enemies with <c val=\"bfd4fd\">3</c> stacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Damage Heroes and Structures with <c val=\"bfd4fd\">3</c> stacks of Black Arrows.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Upon damaging enemies <c val=\"bfd4fd\">250</c> times, increase the damage bonus provided by Black Arrows to <c val=\"bfd4fd\">50%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Pinnacle Reward:</c> Upon damaging enemies <c val=\"bfd4fd\">400</c> times, Black Arrows now heals Sylvanas for <c val=\"bfd4fd\">25%</c> of damage dealt at <c val=\"bfd4fd\">3</c> stacks, doubled against Heroes.",
+              "fullText": "Basic Attacks infect enemies with Black Arrows for <c val=\"bfd4fd\">3</c> seconds, stacking up to <c val=\"bfd4fd\">3</c> times. Sylvanas deals <c val=\"bfd4fd\">15%</c> more damage to enemies with <c val=\"bfd4fd\">3</c> stacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Damage Heroes and Structures with <c val=\"bfd4fd\">3</c> stacks of Black Arrows.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Upon damaging enemies <c val=\"bfd4fd\">250</c> times, increase the damage bonus provided by Black Arrows to <c val=\"bfd4fd\">50%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward:</c> Upon damaging enemies <c val=\"bfd4fd\">400</c> times, Black Arrows now heals Sylvanas for <c val=\"bfd4fd\">25%</c> of damage dealt at <c val=\"bfd4fd\">3</c> stacks, doubled against Heroes.",
               "abilityType": "Trait"
             }
           ]
@@ -55584,9 +55584,9 @@
             "buttonId": "WhitemaneDesperatePlea",
             "name": "Desperate Plea",
             "toggleCooldown": 0.5,
-            "energyText": "<s val=\"bfd4fd\">Mana: 40</s>",
+            "energyText": "<s val=\"bfd4fd\">Mana: 45</s>",
             "shortText": "Heal an allied Hero",
-            "fullText": "Heal an allied Hero for <c val=\"bfd4fd\">140</c><c val=\"a7a7a7\">~~0.04~~</c> and gain <c val=\"FF8B8B\">Desperation</c> for <c val=\"bfd4fd\">4</c> seconds.<n/><n/><c val=\"FF8B8B\">Desperation</c> increases Desperate Plea's Mana cost by <c val=\"bfd4fd\">40</c>, and stacks up to <c val=\"bfd4fd\">3</c> times.<n/><n/><c val=\"ffff8a\">Current Mana Cost:</c> <c val=\"bfd4fd\">40</c>",
+            "fullText": "Heal an allied Hero for <c val=\"bfd4fd\">140</c><c val=\"a7a7a7\">~~0.04~~</c> and gain <c val=\"FF8B8B\">Desperation</c> for <c val=\"bfd4fd\">4</c> seconds.<n/><n/><c val=\"FF8B8B\">Desperation</c> increases Desperate Plea's Mana cost by <c val=\"bfd4fd\">40</c>, and stacks up to <c val=\"bfd4fd\">3</c> times.<n/><n/><c val=\"ffff8a\">Current Mana Cost:</c> <c val=\"bfd4fd\">45</c>",
             "abilityType": "Q"
           },
           {
@@ -55751,7 +55751,7 @@
               "abilityId": "WhitemaneIntercession",
               "buttonId": "WhitemaneIntercession",
               "name": "Intercession",
-              "cooldownText": "Cooldown: 60 seconds",
+              "cooldownText": "Cooldown: 75 seconds",
               "shortText": "Make an ally Unstoppable",
               "fullText": "Activate to make an ally Unstoppable for <c val=\"bfd4fd\">1</c> second.",
               "abilityType": "Active"
@@ -55935,7 +55935,7 @@
             "buttonId": "WhitemaneIntercession",
             "abilityId": "WhitemaneIntercession",
             "name": "Intercession",
-            "cooldownText": "Cooldown: 60 seconds",
+            "cooldownText": "Cooldown: 75 seconds",
             "shortText": "Make an ally Unstoppable",
             "fullText": "Activate to make an ally Unstoppable for <c val=\"bfd4fd\">1</c> second.",
             "abilityType": "Active",
@@ -56038,7 +56038,7 @@
             "abilityId": "WhitemaneDesperatePlea",
             "name": "Radiance",
             "shortText": "<c val=\"FF8B8B\">Desperation</c> heals allies with <c val=\"FFF5C2\">Zeal</c>",
-            "fullText": "Reaching <c val=\"bfd4fd\">3</c> stacks of <c val=\"FF8B8B\">Desperation</c> heals for <c val=\"bfd4fd\">175</c><c val=\"a7a7a7\">~~0.04~~</c> and reapplies <c val=\"FFF5C2\">Zeal</c> to allies with <c val=\"FFF5C2\">Zeal</c>.",
+            "fullText": "Reaching <c val=\"bfd4fd\">3</c> stacks of <c val=\"FF8B8B\">Desperation</c> heals for <c val=\"bfd4fd\">190</c><c val=\"a7a7a7\">~~0.04~~</c> and reapplies <c val=\"FFF5C2\">Zeal</c> to allies with <c val=\"FFF5C2\">Zeal</c>.",
             "abilityType": "Q",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -57547,6 +57547,635 @@
         ]
       }
     },
+    "Xalatath": {
+      "name": "Xal'atath",
+      "unitId": "HeroXalatath",
+      "hyperlinkId": "Xalatath",
+      "attributeId": "HXAL",
+      "title": "The Harbinger of the Void",
+      "franchise": "Warcraft",
+      "rarity": "Legendary",
+      "releaseDate": "2026-09-28",
+      "difficulty": "Medium",
+      "isMelee": false,
+      "gender": "Male",
+      "radius": 0.6875,
+      "innerRadius": 0.6875,
+      "sight": 12,
+      "speed": 4.8398,
+      "attributes": [
+        "Heroic"
+      ],
+      "scalingLinkIds": [
+        "ExcellentMana",
+        "HeroDummyVeterancy"
+      ],
+      "defaultMountId": "HorseCommon",
+      "roles": [
+        "Assassin"
+      ],
+      "expandedRole": "Ranged Assassin",
+      "ratings": {
+        "complexity": 8,
+        "damage": 8,
+        "survivability": 6,
+        "utility": 6
+      },
+      "portraits": {
+        "heroSelect": "",
+        "leaderboard": "",
+        "loading": "",
+        "partyPanel": "",
+        "target": "",
+        "draftScreen": "",
+        "partyFrames": [],
+        "minimap": "",
+        "targetInfo": ""
+      },
+      "searchText": "World of Warcraft Mage Void",
+      "description": "A ranged Assassin who manipulates void energy to overwhelm enemies and control the battlefield.",
+      "infoText": "For eons, Xal'atath has manipulated gods and mortals alike to ascend the cosmic ladder. Once a servant of Dimensius the All-Devouring, and then a prisoner of the Old Gods, Xal'atath has now attained her freedom and set her own plans in motion—starting with the destruction of Dalaran and the transformation of the Sunwell.",
+      "life": {
+        "amount": 1330,
+        "scale": 0.04,
+        "regenRate": 2.6484,
+        "regenScale": 0.04,
+        "type": "Health"
+      },
+      "energy": {
+        "amount": 500,
+        "regenRate": 3,
+        "type": "Mana"
+      },
+      "playstyles": [
+        "EnergyImportant",
+        "Escaper",
+        "Ganker",
+        "Overconfident",
+        "TowerPusher"
+      ],
+      "summonedUnitIds": [
+        "XalatathDarkHeartRitual",
+        "XalatathVoidMinion"
+      ],
+      "weapons": [
+        {
+          "nameId": "XalatathHeroWeapon",
+          "isDisabled": false,
+          "range": 6.5,
+          "minimumRange": 0,
+          "period": 1,
+          "damage": 55,
+          "damageScale": 0.04
+        }
+      ],
+      "skinIds": [
+        "XalatathVoidflame"
+      ],
+      "variationSkinIds": [
+        "XalatathVar1",
+        "XalatathVar2",
+        "XalatathVar3",
+        "XalatathVar4"
+      ],
+      "voiceLineIds": [
+        "XalatathBase_VoiceLine01",
+        "XalatathBase_VoiceLine02",
+        "XalatathBase_VoiceLine03",
+        "XalatathBase_VoiceLine04",
+        "XalatathBase_VoiceLine05"
+      ],
+      "mountCategoryIds": [
+        "Ride",
+        "Ridebeast",
+        "Ridebike",
+        "Ridesurf"
+      ],
+      "abilities": {
+        "Basic": [
+          {
+            "linkId": "XalatathShadowMark|XalatathShadowMark|Q",
+            "abilityId": "XalatathShadowMark",
+            "buttonId": "XalatathShadowMark",
+            "name": "Shadow Mark",
+            "charges": {
+              "countMax": 1,
+              "countStart": 1,
+              "countUse": 1,
+              "recastCooldown": 3,
+              "isCountHidden": true
+            },
+            "energyText": "<s val=\"bfd4fd\">Mana: 45</s>",
+            "cooldownText": "Cooldown: 7 seconds",
+            "shortText": "Launch a single large Void Orb",
+            "fullText": "Shoot a Void Orb that deals <c val=\"bfd4fd\">60</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit, and an additional <c val=\"bfd4fd\">120</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the center.<n/><n/>If an enemy Hero or Structure is hit by the center, they are marked for <c val=\"bfd4fd\">4</c> seconds.<n/><n/>Targets afflicted by Shadow Mark are Revealed and draw the Dark Heart and Void Minions towards them.",
+            "abilityType": "Q"
+          },
+          {
+            "linkId": "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W",
+            "abilityId": "XalatathDarkHeartRitual",
+            "buttonId": "XalatathDarkHeartRitual",
+            "name": "Dark Heart Ritual",
+            "energyText": "<s val=\"bfd4fd\">Mana: 50</s>",
+            "cooldownText": "Cooldown: 15 seconds",
+            "shortText": "Summon the Dark Heart",
+            "fullText": "Summon the Dark Heart, which pulses for <c val=\"bfd4fd\">50</c><c val=\"a7a7a7\">~~0.04~~</c> damage per second to nearby enemies and lasts <c val=\"bfd4fd\">8</c> seconds.<n/><n/>The Dark Heart moves to Shadow Mark's impact location.<n/><n/>The Dark Heart will pursue targets afflicted by Shadow Mark and detonate on impact, dealing <c val=\"bfd4fd\">245</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies and <c val=\"bfd4fd\">61</c><c val=\"a7a7a7\">~~0.04~~</c> more damage to the Marked target.",
+            "abilityType": "W"
+          },
+          {
+            "linkId": "XalatathVoidStep|XalatathVoidStep|E",
+            "abilityId": "XalatathVoidStep",
+            "buttonId": "XalatathVoidStep",
+            "name": "Void Step",
+            "energyText": "<s val=\"bfd4fd\">Mana: 50</s>",
+            "cooldownText": "Cooldown: 15 seconds",
+            "shortText": "Cast to teleport Xal'atath around in a trianglular pattern",
+            "fullText": "Cast to teleport Xal'atath <c val=\"bfd4fd\">3</c> times in a triangular pattern.<n/><n/>Each time Xal'atath teleports, her Basic Attacks deal <s val=\"bfd4fd\">10%</s> more damage while the Ability is active.<n/><n/>Reactivate to end Void Step early and remain at your current location.",
+            "abilityType": "E"
+          }
+        ],
+        "Heroic": [
+          {
+            "linkId": "XalatathVoidEruption|XalatathVoidEruption|Heroic",
+            "abilityId": "XalatathVoidEruption",
+            "buttonId": "XalatathVoidEruption",
+            "name": "Void Eruption",
+            "energyText": "<s val=\"bfd4fd\">Mana: 80</s>",
+            "cooldownText": "Cooldown: 75 seconds",
+            "shortText": "Channel a growing orb that deals damage in its path",
+            "fullText": "Channel a powerful Void Orb that grows over time until reaching maximum size after <c val=\"bfd4fd\">2</c> seconds. Recast to launch the Orb early.<n/><n/>Enemies that come into contact with the Orb take <c val=\"bfd4fd\">112</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Blinded for <s val=\"bfd4fd\">1</s> second.<n/><n/>When the Orb reaches the end of its path, it detonates in a large explosion, dealing <c val=\"bfd4fd\">400</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/>Charging up this Ability increases its contact damage up to <c val=\"bfd4fd\">175</c><c val=\"a7a7a7\">~~0.04~~</c> and its explosion damage up to <c val=\"bfd4fd\">700</c><c val=\"a7a7a7\">~~0.04~~</c>.<n/><n/><s val=\"a7a7a7\">Contact damage is dealt every 0.25 seconds.</s>",
+            "abilityType": "Heroic"
+          },
+          {
+            "linkId": "XalatathVoidConvergence|XalatathVoidConvergence|Heroic",
+            "abilityId": "XalatathVoidConvergence",
+            "buttonId": "XalatathVoidConvergence",
+            "name": "Void Convergence",
+            "energyText": "<s val=\"bfd4fd\">Mana: 75</s>",
+            "cooldownText": "Cooldown: 75 seconds",
+            "shortText": "Summon a Portal that will spawn Void Minions",
+            "fullText": "After channeling for <c val=\"bfd4fd\">2</c> seconds, summon a Void Portal that spawns up to <c val=\"bfd4fd\">3</c> Void Minions to attack nearby enemies.<n/><n/>You can have up to <c val=\"bfd4fd\">1</c> active Void Portal.<n/><n/>Enemies near the Void Portal are Slowed by <c val=\"bfd4fd\">25%</c>.<n/><n/>Void Minions are attracted to targets afflicted by Shadow Mark.<n/><n/><s val=\"a7a7a7\">The Portal expires after 20 seconds.</s><n/><s val=\"a7a7a7\">Void Minions automatically choose a nearby lane to push.</s><n/><s val=\"a7a7a7\">Void Minion Basic Attacks deal 50</s><c val=\"a7a7a7\">~~0.04~~</c><s val=\"a7a7a7\"> damage per hit.</s><n/><s val=\"a7a7a7\">Void Minions lose Health over 12 seconds.</s>",
+            "abilityType": "Heroic"
+          }
+        ],
+        "Trait": [
+          {
+            "linkId": "XalatathVoidVolley|XalatathVoidVolley|Trait",
+            "abilityId": "XalatathVoidVolley",
+            "buttonId": "XalatathVoidVolley",
+            "name": "Void Volley",
+            "energyText": "<s val=\"bfd4fd\">Mana: 35</s>",
+            "shortText": "Unleash a barrage of Void Missiles at a target location",
+            "fullText": "After attacking enemies with her Basic Attacks <c val=\"bfd4fd\">5</c> times, Xal'atath can activate Void Volley to unleash a barrage of <c val=\"bfd4fd\">6</c> Void Orbs at a target location, each dealing <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact.<n/><n/>Charge fully decays if Xal’atath does not hit an enemy with a Basic Attack after <c val=\"bfd4fd\">6</c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit enemy Heroes with Void Volley to grant <c val=\"bfd4fd\">1</c> stack per hit and increases Void Volley's damage by <c val=\"bfd4fd\">1%</c>. Lose all stacks upon dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward (20 Stacks):</c><n/>   <c val=\"00ff90\">+2</c> Void Volley Range<n/>   Stack loss on death lowered to <c val=\"bfd4fd\">6</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward (60 Stacks):</c><n/>   <c val=\"00ff90\">-1</c> Basic Attack required to charge Void Volley.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward (100 Stacks):</c><n/>   <c val=\"00ff90\">+50%</c> Basic Attack and Void Volley Damage.<n/>   Void Volley projectiles Pierce all targets.<n/><n/><s val=\"a7a7a7\">Stack loss will never cause the Hero to fall below a quest reward threshold.</s>",
+            "abilityType": "Trait"
+          }
+        ],
+        "Mount": [
+          {
+            "linkId": "Mount|SummonMount|Z",
+            "abilityId": "Mount",
+            "buttonId": "SummonMount",
+            "name": "Summon Mount",
+            "cooldownText": "Cooldown: 4 seconds",
+            "fullText": "After Channeling for <c val=\"bfd4fd\">1</c> second, gain <s val=\"bfd4fd\">30%</s> Movement Speed.",
+            "abilityType": "Z"
+          }
+        ],
+        "Hearth": [
+          {
+            "linkId": "Hearthstone|Hearthstone|B",
+            "abilityId": "Hearthstone",
+            "buttonId": "Hearthstone",
+            "name": "Hearthstone",
+            "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana.",
+            "abilityType": "B"
+          }
+        ]
+      },
+      "subAbilities": {
+        "XalatathVoidStep|XalatathVoidStep|E": {
+          "Basic": [
+            {
+              "linkId": "XalatathVoidStepCancel|XalatathVoidStepCancel|E",
+              "abilityId": "XalatathVoidStepCancel",
+              "buttonId": "XalatathVoidStepCancel",
+              "name": "Cancel Void Step",
+              "toggleCooldown": 0.25,
+              "fullText": "Cancel ability early to stop where you are.",
+              "abilityType": "E"
+            }
+          ]
+        },
+        "Mount|SummonMount|Z": {
+          "Mount": [
+            {
+              "linkId": "Dismount|UnsummonMount|Z",
+              "abilityId": "Dismount",
+              "buttonId": "UnsummonMount",
+              "name": "Unsummon Mount",
+              "toggleCooldown": 0.1,
+              "fullText": "Dismounts you.",
+              "abilityType": "Z"
+            }
+          ]
+        }
+      },
+      "talents": {
+        "Level1": [
+          {
+            "linkId": "XalatathVoidAdept|XalatathVoidAdept|Q|Level1",
+            "talentId": "XalatathVoidAdept",
+            "buttonId": "XalatathVoidAdept",
+            "abilityId": "XalatathShadowMark",
+            "name": "Void Adept",
+            "shortText": "<c val=\"e4b800\">Quest:</c> Detonate Dark Heart on targets afflicted by Shadow Mark to increase damage",
+            "fullText": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Detonate the Dark Heart on targets afflicted by Shadow Mark.<n/><n/>Each successful detonation permanently increases Shadow Mark and the Dark Heart Ritual Detonation damage by <c val=\"bfd4fd\">20</c>, up to <c val=\"bfd4fd\">10</c> times.",
+            "abilityType": "Q",
+            "isQuest": true,
+            "upgradesAbilityType": false,
+            "hasHotkey": true,
+            "sort": 1,
+            "tooltipAbilityLinkIds": [
+              "XalatathShadowMark|XalatathShadowMark|Q"
+            ]
+          },
+          {
+            "linkId": "XalatathAnchoredCore|XalatathAnchoredCore|W|Level1",
+            "talentId": "XalatathAnchoredCore",
+            "buttonId": "XalatathAnchoredCore",
+            "abilityId": "XalatathDarkHeartRitual",
+            "name": "Anchored Core",
+            "shortText": "Increase duration and radius of the Dark Heart",
+            "fullText": "Dark Heart Ritual:<n/><c val=\"00ff90\">+50%</c> Radius<n/><c val=\"00ff90\">+25%</c> Duration<n/><n/>Dark Heart's damage bounces <c val=\"bfd4fd\">2</c> times from the primary target to nearby enemies, dealing <c val=\"bfd4fd\">25</c><c val=\"a7a7a7\">~~0.04~~</c> damage.",
+            "abilityType": "W",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 2,
+            "tooltipAbilityLinkIds": [
+              "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W"
+            ]
+          },
+          {
+            "linkId": "XalatathCloakOfShadows|XalatathCloakOfShadows|E|Level1",
+            "talentId": "XalatathCloakOfShadows",
+            "buttonId": "XalatathCloakOfShadows",
+            "abilityId": "XalatathVoidStep",
+            "name": "Cloak of Shadows",
+            "shortText": "Void Step grants Spell Armor and Movement Speed",
+            "fullText": "Activating Void Step grants <s val=\"bfd4fd\">50%</s> Movement Speed and <c val=\"bfd4fd\">25</c> Spell Armor for <s val=\"bfd4fd\">2</s> seconds. This bonus refreshes each time Xal'atath teleports.",
+            "abilityType": "E",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 3,
+            "tooltipAbilityLinkIds": [
+              "XalatathVoidStep|XalatathVoidStep|E"
+            ]
+          }
+        ],
+        "Level4": [
+          {
+            "linkId": "XalatathFrozenMark|XalatathFrozenMark|Q|Level4",
+            "talentId": "XalatathFrozenMark",
+            "buttonId": "XalatathFrozenMark",
+            "abilityId": "XalatathShadowMark",
+            "name": "Cold Feet",
+            "shortText": "Heroes afflicted by Shadow Mark are slowed, Mark duration is increased",
+            "fullText": "<c val=\"00ff90\">+1s</c> Shadow Mark Duration<n/><n/>Heroes afflicted by Shadow Mark have their Movement Speed reduced by <s val=\"bfd4fd\">25%</s>.",
+            "abilityType": "Q",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 1,
+            "tooltipAbilityLinkIds": [
+              "XalatathShadowMark|XalatathShadowMark|Q"
+            ]
+          },
+          {
+            "linkId": "XalatathDarkBarrier|XalatathDarkBarrier|W|Level4",
+            "talentId": "XalatathDarkBarrier",
+            "buttonId": "XalatathDarkBarrier",
+            "abilityId": "XalatathDarkHeartRitual",
+            "name": "Dark Barrier",
+            "shortText": "Gain a Shield whenever the Dark Heart damages an enemy",
+            "fullText": "Each time Dark Heart damages an enemy, Xal'atath gains a Shield equal to <c val=\"bfd4fd\">2%</c> of her maximum Health, up to <c val=\"bfd4fd\">10%</c>.",
+            "abilityType": "W",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 2,
+            "tooltipAbilityLinkIds": [
+              "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W"
+            ]
+          },
+          {
+            "linkId": "XalatathVoidAcolyte|XalatathVoidAcolyte|E|Level4",
+            "talentId": "XalatathVoidAcolyte",
+            "buttonId": "XalatathVoidAcolyte",
+            "abilityId": "XalatathVoidStep",
+            "name": "Void Acolyte",
+            "shortText": "Upon completing Void Step, empower Void Volley",
+            "fullText": "Completing Void Step fully charges Void Volley.<n/><n/>The next Void Volley deals <c val=\"bfd4fd\">25%</c> increased damage and costs no Mana.",
+            "abilityType": "E",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 3,
+            "tooltipAbilityLinkIds": [
+              "XalatathVoidStep|XalatathVoidStep|E",
+              "XalatathVoidVolley|XalatathVoidVolley|Trait"
+            ]
+          }
+        ],
+        "Level7": [
+          {
+            "linkId": "XalatathToxicMark|XalatathToxicMark|Q|Level7",
+            "talentId": "XalatathToxicMark",
+            "buttonId": "XalatathToxicMark",
+            "abilityId": "XalatathShadowMark",
+            "name": "Toxic Mark",
+            "shortText": "Shadow Mark affliction deals damage over time",
+            "fullText": "<c val=\"00ff90\">+1s</c> Shadow Mark Duration<n/><n/>Heroes affliced with Shadow Mark have their Armor reduced by <s val=\"bfd4fd\">10</s> and take damage equal to <c val=\"bfd4fd\">1%</c> of their maximum Health every second.",
+            "abilityType": "Q",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 1,
+            "tooltipAbilityLinkIds": [
+              "XalatathShadowMark|XalatathShadowMark|Q"
+            ]
+          },
+          {
+            "linkId": "XalatathSilenceOfTheLamb|XalatathSilenceOfTheLamb|E|Level7",
+            "talentId": "XalatathSilenceOfTheLamb",
+            "buttonId": "XalatathSilenceOfTheLamb",
+            "abilityId": "XalatathVoidStep",
+            "name": "Silence of the Lamb",
+            "shortText": "After completing Void Step, silence Heroes within pattern",
+            "fullText": "Activating Void Step summons a seal of void magic on the ground. When the seal completes, it deals <c val=\"bfd4fd\">250</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies inside and Silences them for <s val=\"bfd4fd\">1</s> seconds.",
+            "abilityType": "E",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 2,
+            "tooltipAbilityLinkIds": [
+              "XalatathVoidStep|XalatathVoidStep|E"
+            ]
+          },
+          {
+            "linkId": "XalatathVoidSummoner|XalatathVoidSummoner|E|Level7",
+            "talentId": "XalatathVoidSummoner",
+            "buttonId": "XalatathVoidSummoner",
+            "abilityId": "XalatathVoidStep",
+            "name": "Void Summoner",
+            "shortText": "When using Void Step, summon a single Void Minion",
+            "fullText": "Activating Void Step summons a single Void Minion in Xalataths original postion. Void Minions are attracted to targets afflicted by Shadow Mark.<n/><n/><s val=\"a7a7a7\">Void Minions automatically choose a nearby lane to push.</s><n/><s val=\"a7a7a7\">Void Minion Basic Attacks deal 50</s><c val=\"a7a7a7\">~~0.04~~</c><s val=\"a7a7a7\"> damage per hit.</s><n/><s val=\"a7a7a7\">Void Minion loses Health over 12 seconds.</s>",
+            "abilityType": "E",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 3,
+            "tooltipAbilityLinkIds": [
+              "XalatathVoidStep|XalatathVoidStep|E"
+            ]
+          }
+        ],
+        "Level10": [
+          {
+            "linkId": "XalatathHeroicAbilityVoidEruption|XalatathVoidEruption|Heroic|Level10",
+            "talentId": "XalatathHeroicAbilityVoidEruption",
+            "buttonId": "XalatathVoidEruption",
+            "abilityId": "XalatathVoidEruption",
+            "name": "Void Eruption",
+            "energyText": "<s val=\"bfd4fd\">Mana: 80</s>",
+            "cooldownText": "Cooldown: 75 seconds",
+            "shortText": "Channel a growing orb that deals damage in its path",
+            "fullText": "Channel a powerful Void Orb that grows over time until reaching maximum size after <c val=\"bfd4fd\">2</c> seconds. Recast to launch the Orb early.<n/><n/>Enemies that come into contact with the Orb take <c val=\"bfd4fd\">112</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Blinded for <s val=\"bfd4fd\">1</s> second.<n/><n/>When the Orb reaches the end of its path, it detonates in a large explosion, dealing <c val=\"bfd4fd\">400</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/>Charging up this Ability increases its contact damage up to <c val=\"bfd4fd\">175</c><c val=\"a7a7a7\">~~0.04~~</c> and its explosion damage up to <c val=\"bfd4fd\">700</c><c val=\"a7a7a7\">~~0.04~~</c>.<n/><n/><s val=\"a7a7a7\">Contact damage is dealt every 0.25 seconds.</s>",
+            "abilityType": "Heroic",
+            "isQuest": false,
+            "upgradesAbilityType": false,
+            "hasHotkey": true,
+            "sort": 1
+          },
+          {
+            "linkId": "XalatathHeroicAbilityVoidConvergence|XalatathVoidConvergence|Heroic|Level10",
+            "talentId": "XalatathHeroicAbilityVoidConvergence",
+            "buttonId": "XalatathVoidConvergence",
+            "abilityId": "XalatathVoidConvergence",
+            "name": "Void Convergence",
+            "energyText": "<s val=\"bfd4fd\">Mana: 75</s>",
+            "cooldownText": "Cooldown: 75 seconds",
+            "shortText": "Summon a Portal that will spawn Void Minions",
+            "fullText": "After channeling for <c val=\"bfd4fd\">2</c> seconds, summon a Void Portal that spawns up to <c val=\"bfd4fd\">3</c> Void Minions to attack nearby enemies.<n/><n/>You can have up to <c val=\"bfd4fd\">1</c> active Void Portal.<n/><n/>Enemies near the Void Portal are Slowed by <c val=\"bfd4fd\">25%</c>.<n/><n/>Void Minions are attracted to targets afflicted by Shadow Mark.<n/><n/><s val=\"a7a7a7\">The Portal expires after 20 seconds.</s><n/><s val=\"a7a7a7\">Void Minions automatically choose a nearby lane to push.</s><n/><s val=\"a7a7a7\">Void Minion Basic Attacks deal 50</s><c val=\"a7a7a7\">~~0.04~~</c><s val=\"a7a7a7\"> damage per hit.</s><n/><s val=\"a7a7a7\">Void Minions lose Health over 12 seconds.</s>",
+            "abilityType": "Heroic",
+            "isQuest": false,
+            "upgradesAbilityType": false,
+            "hasHotkey": true,
+            "sort": 2
+          }
+        ],
+        "Level13": [
+          {
+            "linkId": "XalatathPullOfTheDarkHeart|XalatathPullOfTheDarkHeart|W|Level13",
+            "talentId": "XalatathPullOfTheDarkHeart",
+            "buttonId": "XalatathPullOfTheDarkHeart",
+            "abilityId": "XalatathDarkHeartRitual",
+            "name": "Pull of the Dark Heart",
+            "shortText": "Slow enemies near the Dark Heart",
+            "fullText": "Enemies damaged by the Dark Heart Ritual are Slowed by <c val=\"bfd4fd\">10%</c> for each pulse, stacking up to <c val=\"bfd4fd\">5</c> times and decaying over <c val=\"bfd4fd\">2</c> seconds.",
+            "abilityType": "W",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 1,
+            "tooltipAbilityLinkIds": [
+              "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W"
+            ]
+          },
+          {
+            "linkId": "XalatathDarkHeartsProtection|XalatathDarkHeartsProtection|W|Level13",
+            "talentId": "XalatathDarkHeartsProtection",
+            "buttonId": "XalatathDarkHeartsProtection",
+            "abilityId": "XalatathDarkHeartRitual",
+            "name": "Dark Heart's Protection",
+            "shortText": "Xal'atath and Allies receive Spell Armor while near the Dark Heart",
+            "fullText": "Casting Dark Heart Ritual Silences enemies inside its radius for <c val=\"bfd4fd\">1</c> second.<n/><n/>Xal'atath and allied Heroes gain <c val=\"bfd4fd\">30</c> Spell Armor while inside the Dark Heart's radius.",
+            "abilityType": "W",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 2,
+            "tooltipAbilityLinkIds": [
+              "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W"
+            ]
+          },
+          {
+            "linkId": "XalatathCrushingCascade|XalatathCrushingCascade|Trait|Level13",
+            "talentId": "XalatathCrushingCascade",
+            "buttonId": "XalatathCrushingCascade",
+            "abilityId": "XalatathVoidVolley",
+            "name": "Crushing Cascade",
+            "shortText": "Void Volley hits Slow enemies",
+            "fullText": "Enemies hit by Void Volley are Slowed by <c val=\"bfd4fd\">6%</c> for <c val=\"bfd4fd\">2</c> seconds per projectile, up to <c val=\"bfd4fd\">50%</c>.",
+            "abilityType": "Trait",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 3,
+            "tooltipAbilityLinkIds": [
+              "XalatathVoidVolley|XalatathVoidVolley|Trait"
+            ]
+          }
+        ],
+        "Level16": [
+          {
+            "linkId": "XalatathMarkedResilience|XalatathMarkedResilience|Q|Level16",
+            "talentId": "XalatathMarkedResilience",
+            "buttonId": "XalatathMarkedResilience",
+            "abilityId": "XalatathShadowMark",
+            "name": "Marked Resilience",
+            "shortText": "Basic Attacks on enemy Heroes afflicted by Shadow Mark grant Shields",
+            "fullText": "Basic Attacks against enemy Heroes afflicted by Shadow Mark grant a <c val=\"bfd4fd\">0</c><c val=\"#ColorGray\">~~NaN~~</c> point Shield that rapidly decays.<n/><n/><s val=\"a7a7a7\">Shield starts decaying after 1 second, decays over 2 seconds.</s>",
+            "abilityType": "Q",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 1,
+            "tooltipAbilityLinkIds": [
+              "XalatathShadowMark|XalatathShadowMark|Q"
+            ]
+          },
+          {
+            "linkId": "XalatathPummelingStep|XalatathPummelingStep|E|Level16",
+            "talentId": "XalatathPummelingStep",
+            "buttonId": "XalatathPummelingStep",
+            "abilityId": "XalatathVoidStep",
+            "name": "Relentless Whispers",
+            "shortText": "While Void Step is active, increase Void Orb rate of fire",
+            "fullText": "While Void Step is active, Xal'atath's Basic Attack Speed is increased by <c val=\"bfd4fd\">150%</c>.",
+            "abilityType": "E",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 2,
+            "tooltipAbilityLinkIds": [
+              "XalatathVoidStep|XalatathVoidStep|E"
+            ]
+          },
+          {
+            "linkId": "XalatathFracturedReality|XalatathFracturedReality|Trait|Level16",
+            "talentId": "XalatathFracturedReality",
+            "buttonId": "XalatathFracturedReality",
+            "abilityId": "XalatathVoidVolley",
+            "name": "Fractured Reality",
+            "shortText": "Void Volley leaves a trail of fire along its path",
+            "fullText": "<c val=\"00ff90\">+25%</c> Void Volley Projectile Damage<n/><n/>Void Volley's projectiles leave behind a trail of fire for <c val=\"bfd4fd\">3</c> seconds, constantly dealing <c val=\"bfd4fd\">9</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies. Damage is increased the longer a target stands in the flames.<n/><n/><s val=\"a7a7a7\">Damage is dealt every 0.1875 seconds.</s><n/><s val=\"a7a7a7\">Damage increases up to 300%.</s><n/><s val=\"a7a7a7\">Damage increase from multiple fires stack.</s>",
+            "abilityType": "Trait",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 3,
+            "tooltipAbilityLinkIds": [
+              "XalatathVoidVolley|XalatathVoidVolley|Trait"
+            ]
+          }
+        ],
+        "Level20": [
+          {
+            "linkId": "XalatathOrbitalEruption|XalatathOrbitalEruption|Heroic|Level20",
+            "talentId": "XalatathOrbitalEruption",
+            "buttonId": "XalatathOrbitalEruption",
+            "abilityId": "XalatathVoidEruption",
+            "name": "Harbinger's Consumption",
+            "shortText": "Grow and launch three Void Orbs",
+            "fullText": "Void Eruption splits into <c val=\"bfd4fd\">3</c> orbiting Void Orbs. Each enemy Hero hit by their explosions reduces Void Eruption's cooldown by <c val=\"bfd4fd\">14</c> seconds.",
+            "abilityType": "Heroic",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 1,
+            "tooltipAbilityLinkIds": [
+              "XalatathVoidEruption|XalatathVoidEruption|Heroic"
+            ],
+            "prerequisiteTalentIds": [
+              "XalatathHeroicAbilityVoidEruption"
+            ]
+          },
+          {
+            "linkId": "XalatathRiftInvasion|XalatathRiftInvasion|Heroic|Level20",
+            "talentId": "XalatathRiftInvasion",
+            "buttonId": "XalatathRiftInvasion",
+            "abilityId": "XalatathVoidConvergence",
+            "name": "Rift Invasion",
+            "shortText": "Portal no longer has a lifetime and spawns more Void Minions",
+            "fullText": "Void Convergence's Void Portal no longer has a life duration, raises the active Void Portal limit to <c val=\"bfd4fd\">2</c>, and can spawn and sustain up to <c val=\"bfd4fd\">4</c> Void Minions.",
+            "abilityType": "Heroic",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 2,
+            "tooltipAbilityLinkIds": [
+              "XalatathVoidConvergence|XalatathVoidConvergence|Heroic"
+            ],
+            "prerequisiteTalentIds": [
+              "XalatathHeroicAbilityVoidConvergence"
+            ]
+          },
+          {
+            "linkId": "XalatathDuelingOrbs|XalatathDuelingOrbs|Q|Level20",
+            "talentId": "XalatathDuelingOrbs",
+            "buttonId": "XalatathDuelingOrbs",
+            "abilityId": "XalatathShadowMark",
+            "name": "Dueling Orbs",
+            "shortText": "Shadow Mark gains an additional charge",
+            "fullText": "<c val=\"00ff90\">+1</c> Shadow Mark Charge<n/><n/><s val=\"a7a7a7\">Shadow Mark has a 3 second cooldown between uses.</s>",
+            "abilityType": "Q",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 3,
+            "tooltipAbilityLinkIds": [
+              "XalatathShadowMark|XalatathShadowMark|Q"
+            ]
+          },
+          {
+            "linkId": "XalatathUnstableCore|XalatathUnstableCore|W|Level20",
+            "talentId": "XalatathUnstableCore",
+            "buttonId": "XalatathUnstableCore",
+            "abilityId": "XalatathDarkHeartRitual",
+            "name": "Unstable Core",
+            "shortText": "Upon Dark Heart destruction, leave behind a pool of Void flames",
+            "fullText": "When the Dark Heart expires or detonates on a target afflicted by Shadow Mark, it leaves behind a pool of void flames for <c val=\"bfd4fd\">5</c> seconds. Enemies in the flames take <c val=\"bfd4fd\">45</c><c val=\"a7a7a7\">~~0.04~~</c> damage over time.<n/><n/><s val=\"a7a7a7\">The flames deal damage every 1 second.</s>",
+            "abilityType": "W",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 4,
+            "tooltipAbilityLinkIds": [
+              "XalatathDarkHeartRitual|XalatathDarkHeartRitual|W"
+            ]
+          },
+          {
+            "linkId": "XalatathParadoxLoop|XalatathParadoxLoop|E|Level20",
+            "talentId": "XalatathParadoxLoop",
+            "buttonId": "XalatathParadoxLoop",
+            "abilityId": "XalatathVoidStep",
+            "name": "Paradox Loop",
+            "shortText": "After completing Void Step, reverse the pattern",
+            "fullText": "After completing Void Step, Xal'atath immediately performs a second Void Step in the opposite direction. Added effects are triggered again.<n/><n/><s val=\"a7a7a7\">Bonus Basic Attack damage stacks up to 3 times</s>",
+            "abilityType": "E",
+            "isQuest": false,
+            "upgradesAbilityType": true,
+            "hasHotkey": true,
+            "sort": 5,
+            "tooltipAbilityLinkIds": [
+              "XalatathVoidStep|XalatathVoidStep|E"
+            ]
+          }
+        ]
+      }
+    },
     "Yrel": {
       "name": "Yrel",
       "unitId": "HeroYrel",
@@ -57902,7 +58531,7 @@
               "abilityId": "YrelSeraphim",
               "buttonId": "YrelSeraphim",
               "name": "Seraphim",
-              "cooldownText": "Cooldown: 20 seconds",
+              "cooldownText": "Cooldown: 30 seconds",
               "shortText": "Activate to become Unstoppable",
               "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">2</c> seconds.",
               "abilityType": "Active"
@@ -58111,7 +58740,7 @@
             "abilityId": "YrelVindication",
             "name": "Aldor Peacekeeper",
             "shortText": "Vindication can reduce enemy damage",
-            "fullText": "Enemy Heroes hit by Vindication at maximum charge deal <c val=\"bfd4fd\">40%</c> less damage for <c val=\"bfd4fd\">3</c> seconds.",
+            "fullText": "Enemy Heroes hit by Vindication at maximum charge deal <c val=\"bfd4fd\">50%</c> less damage for <c val=\"bfd4fd\">4</c> seconds.",
             "abilityType": "Q",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -58148,7 +58777,7 @@
             "abilityId": ":PASSIVE:",
             "name": "Velen's Chosen",
             "shortText": "Basic Abilities can grant Spell Power",
-            "fullText": "Hitting an enemy Hero with a Basic Ability at maximum charge grants <c val=\"bfd4fd\">10%</c> Spell Power for <c val=\"bfd4fd\">10</c> seconds, up to <c val=\"bfd4fd\">30%</c>.",
+            "fullText": "Hitting an enemy Hero with a Basic Ability at maximum charge grants <c val=\"bfd4fd\">7.5%</c> Spell Power for <c val=\"bfd4fd\">10</c> seconds, up to <c val=\"bfd4fd\">30%</c>.",
             "abilityType": "Passive",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -58271,7 +58900,7 @@
             "buttonId": "YrelSeraphim",
             "abilityId": "YrelSeraphim",
             "name": "Seraphim",
-            "cooldownText": "Cooldown: 20 seconds",
+            "cooldownText": "Cooldown: 30 seconds",
             "shortText": "Activate to become Unstoppable",
             "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">2</c> seconds.",
             "abilityType": "Active",
@@ -58419,7 +59048,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 75</s>",
             "cooldownText": "Cooldown: 16 seconds",
             "shortText": "Unleash a Hydralisk on an enemy",
-            "fullText": "Summon a Hydralisk to attack a single target, dealing <c val=\"bfd4fd\">71</c><c val=\"a7a7a7\">~~0.05~~</c> damage per second. The Hydralisk loses Health over <c val=\"bfd4fd\">10</c> seconds, and has <c val=\"bfd4fd\">450</c><c val=\"a7a7a7\">~~0.045~~</c> Health.",
+            "fullText": "Summon a Hydralisk to attack a single target, dealing <c val=\"bfd4fd\">71</c><c val=\"a7a7a7\">~~0.05~~</c> damage per second. The Hydralisk loses Health over <c val=\"bfd4fd\">10</c> seconds, and has <c val=\"bfd4fd\">500</c><c val=\"a7a7a7\">~~0.045~~</c> Health.",
             "abilityType": "W"
           },
           {
@@ -58852,7 +59481,7 @@
             "abilityId": "ZagaraSummonHydralisk",
             "name": "Mutalisk",
             "shortText": "Hunter Killer summons a Mutalisk instead",
-            "fullText": "Reduce the cooldown of Hunter Killer by <c val=\"bfd4fd\">4</c> seconds. Hunter Killer now spawns a Mutalisk. Mutalisks have a bounce attack, lose Health over <c val=\"bfd4fd\">42</c> seconds, and have <c val=\"bfd4fd\">420</c><c val=\"a7a7a7\">~~0.045~~</c> Health.",
+            "fullText": "Reduce the cooldown of Hunter Killer by <c val=\"bfd4fd\">4</c> seconds. Hunter Killer now spawns a Mutalisk. Mutalisks have a bounce attack, lose Health over <c val=\"bfd4fd\">42</c> seconds, and have <c val=\"bfd4fd\">450</c><c val=\"a7a7a7\">~~0.045~~</c> Health.",
             "abilityType": "W",
             "isQuest": false,
             "upgradesAbilityType": true,
