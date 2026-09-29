@@ -44,7 +44,7 @@
   <const id="$XalatathToxicMarkArmorDebuff" value="-10" />
   <const id="$XalatathShadowMarkRange" value="8" />
   <const id="$XalatathShadowMarkOuterImpactRange" value="2.5" />
-  <const id="$XalatathShadowMarkInnerImpactRange" value="1.55" />
+  <const id="$XalatathShadowMarkInnerImpactRange" value="1" />
   <const id="$XalatathShadowMarkOuterDamage" value="/($XalatathShadowMarkInnerDamage 2)" evaluateAsExpression="1" />
   <const id="$XalatathShadowMarkInnerDamage" value="120" />
   <const id="$XalatathVoidVolleyCastTime" value="0.175" />
@@ -501,7 +501,7 @@
     <On Terms="Behavior.XalatathVoidStepCasterBehavior.Off" Send="Destroy" />
     <Sound value="Xalatath_VoidStep_Impact" />
   </CActorSound>
-  <CActorUnit id="XalatathVoidConvergencePortalUnit" parent="StormMinionStandard" unitName="XalatathVoidConvergencePortalUnit">
+  <CActorUnit default="1" id="XalatathVoidConvergencePortalBaseActor" parent="StormMinionStandard">
     <On Terms="ActorCreation" Send="AnimPlay Stand Stand PlayForever -1.000000 -1.000000 1.000000 AsDuration" />
     <On Terms="Signal.*.XalatathVoidConvergencePortalBirth" Send="AnimClear Spell 0.000000" />
     <On Terms="Signal.*.XalatathVoidConvergencePortalBirth" Send="AnimPlay Birth Birth" />
@@ -518,6 +518,10 @@
       <Image value="Assets\Textures\Storm_UI_InGame_TargetInfoPanel_Unit_Xalatath_VoidConvergencePortal.dds" />
     </GroupIcon>
     <Scale value="2.250000" />
+  </CActorUnit>
+  <CActorUnit id="XalatathVoidConvergencePortalUnit" parent="XalatathVoidConvergencePortalBaseActor" unitName="XalatathVoidConvergencePortalUnit" />
+  <CActorUnit id="XalatathVoidConvergenceRiftInvasionPortalActor" parent="XalatathVoidConvergencePortalBaseActor" unitName="XalatathVoidConvergenceRiftInvasionPortalUnit">
+    <Model value="XalatathVoidConvergencePortalUnit" />
   </CActorUnit>
   <CActorModel id="XalatathVoidConvergencePortalPlacement" parent="StormPlacementModel">
     <Filter index="Ally" value="1" />
@@ -660,10 +664,12 @@
   </CActorSound>
   <CActorSound id="XalatathVoidConvergenceBirthSound" parent="SoundOneShot">
     <On Terms="UnitBirth.XalatathVoidConvergencePortalUnit" Send="Create" />
+    <On Terms="UnitBirth.XalatathVoidConvergenceRiftInvasionPortalUnit" Send="Create" />
     <Sound value="Xalatath_VoidConvergencePortal_Death" />
   </CActorSound>
   <CActorSound id="XalatathVoidConvergenceDeathSound" parent="SoundOneShot">
     <On Terms="UnitDeath.XalatathVoidConvergencePortalUnit" Send="Create" />
+    <On Terms="UnitDeath.XalatathVoidConvergenceRiftInvasionPortalUnit" Send="Create" />
     <Sound value="Xalatath_VoidConvergencePortal_Death" />
   </CActorSound>
   <CActorSound id="XalatathVoidConvergenceCastSound" parent="SoundOneShot">
@@ -744,6 +750,8 @@
     <On Terms="Effect.XalatathDarkHeartRitualPulseArtHookMU.Start; !AnimPlayingName Birth" Send="AnimPlay Spell Spell 0 -1.000000 -1.000000 1.000000 AsTimeScale" />
     <On Terms="Signal.*.DarkHeartRitualBirth" Send="AnimClear Spell 0.000000" />
     <On Terms="Signal.*.DarkHeartRitualBirth" Send="AnimPlay Birth Birth" />
+    <On Terms="ActorCreation" Send="Create XalatathDarkHeartRitualRangeFXSplatAlly" />
+    <On Terms="ActorCreation" Send="Create XalatathDarkHeartRitualRangeFXSplatEnemy" />
     <DeathArray index="Normal" AnimProps="Birth" ModelLink="XalatathDarkHeartRitualDeath" SoundLink="Xalatath_DarkHeartRitual_Death" />
     <DeathArray index="Timeout" AnimProps="Death" ModelLink="XalatathDarkHeartRitualTimeout" />
     <PlacementModel value="XalatathDarkHeartRitualPlacement" />
@@ -788,13 +796,6 @@
     <On Terms="UnitDeath.XalatathDarkHeartRitual" Send="Create" />
     <Sound value="Xalatath_DarkHeartRitual_Death" />
   </CActorSound>
-  <CActorModel id="XalatathDarkHeartRitualRangeFX" parent="StormModelAnimationStyleOneShotUnit">
-    <On Terms="UnitBirth.XalatathDarkHeartRitual" Send="Create" />
-    <On Terms="UnitDeath.XalatathDarkHeartRitual" Send="Destroy" />
-    <Host Subject="_Selectable" />
-    <HostSiteOps Ops="SOpAttachOrigin SOpRotationRandomDisc" />
-    <Scale value="0.850000" />
-  </CActorModel>
   <CActorModel id="XalatathDarkHeartRitualPulse" parent="StormModelAnimationStyleOneShotUnit">
     <On Terms="Effect.XalatathDarkHeartRitualPulseArtHookMU.Start" Send="Create" />
     <On Terms="Effect.XalatathDarkHeartRitualPulseArtHookMU.Start; At Effect" Send="Create XalatathDarkHeartRitualPulseSound" />
@@ -979,6 +980,24 @@
     <On Terms="Behavior.XalatathPlasmaShield.Off" Send="Destroy" />
     <Sound value="Xalatath_DarkBarrier_Cast" />
   </CActorSound>
+  <CActorModel id="XalatathDarkHeartRitualRangeFXSplatAlly" parent="StormModelAnimationStyleContinuousUnit">
+    <Filter index="All" value="1" />
+    <VisibleTo index="Self" value="1" />
+    <VisibleTo index="Ally" value="1" />
+    <Inherits index="TeamColor" value="1" />
+    <Host Subject="::Creator" />
+    <HostSiteOps Ops="SOpAttachOrigin SOpShadow SOpPointSouthWorld" HoldPosition="1" HoldRotation="1" />
+    <On Terms="ActorOrphan" Send="Destroy" />
+    <Scale value=".550000" />
+  </CActorModel>
+  <CActorModel id="XalatathDarkHeartRitualRangeFXSplatEnemy" parent="StormModelAnimationStyleContinuousUnit">
+    <Filter index="All" value="1" />
+    <VisibleTo index="Enemy" value="1" />
+    <Host Subject="::Creator" />
+    <HostSiteOps Ops="SOpAttachOrigin SOpShadow SOpPointSouthWorld" HoldPosition="1" HoldRotation="1" />
+    <On Terms="ActorOrphan" Send="Destroy" />
+    <Scale value=".550000" />
+  </CActorModel>
   <CActorModel id="XalatathDarkHeartRitualInitialImpact" parent="StormModelAnimationStyleOneShot">
     <On Terms="Effect.XalatathDarkHeartRitualDetonateSearchArea.Start; At Source" Send="Create" />
     <Model value="XalatathDarkHeartRitualImpactSplat" />
@@ -1512,11 +1531,6 @@
     <DisableValidatorArray value="XalatathVoidConvergencePortalValidatorIsUnitTracked" />
     <PeriodicEffect value="XalatathVoidConvergencePortalSuicideDamage" />
   </CBehaviorBuff>
-  <CBehaviorBuff id="XalatathRiftInvasionPortalNoHealthDecay">
-    <Modification>
-      <VitalRegenArray index="Life" value="75" />
-    </Modification>
-  </CBehaviorBuff>
   <CBehaviorBuff id="XalatathVoidConvergenceSpawnMinionBehavior">
     <Alignment value="Negative" />
     <Duration value="-1" />
@@ -1533,12 +1547,6 @@
     <PeriodicEffect value="XalatathVoidConvergenceRevealerPersistent" />
   </CBehaviorBuff>
   <CBehaviorBuff id="XalatathVoidConvergencePortalTimedLifeEffect" parent="StormTimedLife">
-    <Period value="0.25" />
-    <InitialEffect value="XalatathVoidConvergencePortalTimedLifeInitialSet" />
-    <PeriodicEffect value="XalatathVoidConvergencePortalSearch" />
-  </CBehaviorBuff>
-  <CBehaviorBuff id="XalatathVoidConvergencePortalTimedLifeForeverEffect" parent="StormTimedLife">
-    <Duration value="-31073" />
     <Period value="0.25" />
     <InitialEffect value="XalatathVoidConvergencePortalTimedLifeInitialSet" />
     <PeriodicEffect value="XalatathVoidConvergencePortalSearch" />
@@ -2343,9 +2351,10 @@
     <TargetLocationType value="Point" />
   </CEffectSet>
   <CEffectCreateUnit id="XalatatVoidSummoneCreateUnit">
+    <Origin Effect="XalatathVoidStep" Value="OriginPoint" />
     <WhichLocation Value="CasterUnit" />
     <SpawnUnit value="XalatathVoidMinion" />
-    <SpawnRange value="1" />
+    <CreateFlags index="SetFacing" value="1" />
   </CEffectCreateUnit>
   <CEffectModifyUnit id="XalatathVoidMinionModifyWeaponCooldownReset">
     <ImpactUnit Value="Caster" />
@@ -2363,7 +2372,7 @@
   </CEffectSet>
   <CEffectCreatePersistent id="XalatathVoidConvergenceCreatePortalPersistent">
     <PeriodCount value="1" />
-    <PeriodicEffectArray value="XalatathVoidConvergenceCreatePortalUnit" />
+    <PeriodicEffectArray value="XalatathVoidConvergencePortalCreateUnitSwitch" />
     <PeriodicPeriodArray value="0.0625" />
     <ValidatorArray value="SourceNotDead" />
   </CEffectCreatePersistent>
@@ -2388,10 +2397,14 @@
     <SpawnUnit value="XalatathVoidConvergencePortalUnit" />
     <SpawnRange value="1" />
   </CEffectCreateUnit>
-  <CEffectApplyBehavior id="XalatathRiftInvasionPortalNoHealthDecayApply">
-    <WhichUnit Value="Source" />
-    <Behavior value="XalatathRiftInvasionPortalNoHealthDecay" />
-  </CEffectApplyBehavior>
+  <CEffectCreateUnit id="XalatathVoidConvergenceRiftInvasionPortalCreateUnit" parent="XalatathVoidConvergenceCreatePortalUnit">
+    <SpawnUnit value="XalatathVoidConvergenceRiftInvasionPortalUnit" />
+  </CEffectCreateUnit>
+  <CEffectSwitch id="XalatathVoidConvergencePortalCreateUnitSwitch">
+    <CaseArray Validator="XalatathHasXalatathRiftInvasionTalent" Effect="XalatathVoidConvergenceRiftInvasionPortalCreateUnit" />
+    <CaseDefault value="XalatathVoidConvergenceCreatePortalUnit" />
+    <TargetLocationType value="Point" />
+  </CEffectSwitch>
   <CEffectSet id="XalatathVoidConvergencePortalSpawnSet">
     <EffectArray value="XalatathVoidConvergencePortalAddTrackedUnit" />
     <EffectArray value="XalatathVoidConvergencePortalLimitApplyBehavior" />
@@ -2403,17 +2416,7 @@
   <CEffectSet id="XalatathVoidConvergenceRiftInvasionInitialSet">
     <EffectArray value="XalatathVoidConvergenceCreationInitialPersistent4" />
     <EffectArray value="XalatathVoidConvergenceApplyInitialBurstTimestamp6" />
-    <EffectArray value="XalatathRiftInvasionPortalNoHealthDecayApply" />
-    <EffectArray value="XalatathVoidConvergencePortalRemoveDefaultTimedLife" />
   </CEffectSet>
-  <CEffectRemoveBehavior id="XalatathVoidConvergencePortalRemoveDefaultTimedLife">
-    <BehaviorLink value="XalatathVoidConvergencePortalTimedLifeEffect" />
-    <WhichUnit Value="Source" />
-  </CEffectRemoveBehavior>
-  <CEffectApplyBehavior id="XalatathVoidConvergencePortalApplyTimedLifeForever">
-    <WhichUnit Value="Source" />
-    <Behavior value="XalatathVoidConvergencePortalTimedLifeForeverEffect" />
-  </CEffectApplyBehavior>
   <CEffectSet id="XalatathVoidConvergenceBaseInitialSet">
     <EffectArray value="XalatathVoidConvergenceCreationInitialPersistent3" />
     <EffectArray value="XalatathVoidConvergenceApplyInitialBurstTimestamp4" />
@@ -3690,6 +3693,20 @@
       </Modifications>
       <Modifications>
         <Catalog value="Unit" />
+        <Entry value="XalatathVoidConvergenceRiftInvasionPortalUnit" />
+        <Field value="LifeStart" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Unit" />
+        <Entry value="XalatathVoidConvergenceRiftInvasionPortalUnit" />
+        <Field value="LifeMax" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Unit" />
         <Entry value="XalatathVoidMinion" />
         <Field value="LifeStart" />
         <Value value="0.040000" />
@@ -3903,6 +3920,62 @@
         <Value value="0.040000" />
         <AffectedByOverdrive value="1" />
       </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="XalatathOrbitalEruptionFlightDamageTier1" />
+        <Field value="Amount" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="XalatathOrbitalEruptionFlightDamageTier2" />
+        <Field value="Amount" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="XalatathOrbitalEruptionFlightDamageTier3" />
+        <Field value="Amount" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="XalatathOrbitalEruptionFlightDamageTier4" />
+        <Field value="Amount" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="XalatathOrbitalEruptionFinalDamageTier1" />
+        <Field value="Amount" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="XalatathOrbitalEruptionFinalDamageTier2" />
+        <Field value="Amount" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="XalatathOrbitalEruptionFinalDamageTier3" />
+        <Field value="Amount" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
+      <Modifications>
+        <Catalog value="Effect" />
+        <Entry value="XalatathOrbitalEruptionFinalDamageTier4" />
+        <Field value="Amount" />
+        <Value value="0.040000" />
+        <AffectedByOverdrive value="1" />
+      </Modifications>
     </LevelScalingArray>
     <AllowedMountCategoryArray value="Ride" />
     <AllowedMountCategoryArray value="Ridebeast" />
@@ -4111,6 +4184,20 @@
     <Face value="XalatathAnchoredCore" />
     <Abil value="XalatathDarkHeartRitual" />
     <AbilityModificationArray>
+      <Modifications>
+        <Type value="MultiplyLevelModification" />
+        <Catalog value="Actor" />
+        <Entry value="XalatathDarkHeartRitualRangeFXSplatAlly" />
+        <Field value="Scale" />
+        <Value value="1.500000" />
+      </Modifications>
+      <Modifications>
+        <Type value="MultiplyLevelModification" />
+        <Catalog value="Actor" />
+        <Entry value="XalatathDarkHeartRitualRangeFXSplatEnemy" />
+        <Field value="Scale" />
+        <Value value="1.500000" />
+      </Modifications>
       <Modifications>
         <Type value="MultiplyLevelModification" />
         <Catalog value="Actor" />
@@ -4444,6 +4531,9 @@
     <SeparationRadius value="1" />
     <InnerRadius value="1.25" />
     <DeathTime value="1.5" />
+  </CUnit>
+  <CUnit id="XalatathVoidConvergenceRiftInvasionPortalUnit" parent="XalatathVoidConvergencePortalUnit">
+    <LifeRegenRate value="0" />
   </CUnit>
   <CUnit id="XalatathVoidMinion" parent="StormSummonActive">
     <FlagArray index="AIForceTactical" value="1" />
