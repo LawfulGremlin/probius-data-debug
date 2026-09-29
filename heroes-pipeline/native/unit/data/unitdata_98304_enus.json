@@ -1,6 +1,6 @@
 {
   "meta": {
-    "heroesVersion": "2.57.0.98285",
+    "heroesVersion": "2.57.0.98304",
     "hdpVersion": "5.0.4",
     "itemsType": "Data",
     "dataType": "UnitData",
@@ -17,7 +17,7 @@
         "preserved": false
       }
     },
-    "totalItems": 943
+    "totalItems": 944
   },
   "items": {
     "AbathurEvolvedMonstrosity": {
@@ -22342,6 +22342,34 @@
         "scale": 0.04,
         "regenRate": -75,
         "regenScale": 0.04
+      },
+      "portraits": {},
+      "abilities": {
+        "Hidden": [
+          {
+            "linkId": "HeroGenericSummonedUnitSpecialCaseInteraction|SummonedUnitSpecialCaseInteraction|Hidden",
+            "abilityId": "HeroGenericSummonedUnitSpecialCaseInteraction",
+            "buttonId": "SummonedUnitSpecialCaseInteraction",
+            "name": "Summoned Unit Special Case Interaction",
+            "abilityType": "Hidden"
+          }
+        ]
+      }
+    },
+    "XalatathVoidConvergenceRiftInvasionPortalUnit": {
+      "damageType": "Summon",
+      "radius": 1.5,
+      "innerRadius": 1.25,
+      "sight": 5,
+      "speed": 3.25,
+      "attributes": [
+        "Summoned"
+      ],
+      "life": {
+        "amount": 1500,
+        "scale": 0.04,
+        "regenRate": 0,
+        "regenScale": 0
       },
       "portraits": {},
       "abilities": {
