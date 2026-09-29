@@ -22,8 +22,8 @@
     "RoleSupport"
   ],
   "stats": {
-    "hp": 1698,
-    "hpRegen": 8.8438,
+    "hp": 1780,
+    "hpRegen": 9.2708,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -38,8 +38,8 @@
   "heroUnits": {
     "AlexstraszaDragon": {
       "stats": {
-        "hp": 1698,
-        "hpRegen": 8.8438,
+        "hp": 1780,
+        "hpRegen": 9.2708,
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "resource": 500,
@@ -272,7 +272,7 @@
         "tooltipId": "AlexstraszaFlamesOfFuryFlameBuffet",
         "talentTreeId": "AlexstraszaFlamesOfFuryFlameBuffet",
         "name": "Flames of Fury",
-        "description": "Reduce the Mana cost of Flame Buffet from 50 to 40.  Quest: Hit Burning enemy Heroes with Flame Buffet. 20 hits unlocks a Mythic Quest.  Reward: After hitting 20 Heroes, hitting a Burning enemy Hero with Flame Buffet reduces Dragonqueen's cooldown by 6 seconds.  Mythic Quest: After hitting 40 more Heroes without dying, Dragonqueen damage against Heroes refreshes its duration.",
+        "description": "Reduce the Mana cost of Flame Buffet from 50 to 40.  Quest: Hit Burning enemy Heroes with Flame Buffet. 20 hits unlocks a Mythic Quest.  Reward: After hitting 20 Heroes, hitting a Burning enemy Hero with Flame Buffet reduces Dragonqueen's cooldown by 6 seconds.  Mythic Quest: After hitting 30 more Heroes without dying, Dragonqueen damage against Heroes refreshes its duration.",
         "icon": "storm_ui_icon_alexstrasza_flame_buffet.png",
         "type": "E",
         "sort": 3,
@@ -497,7 +497,7 @@
         "tooltipId": "AlexstraszaOverprotectiveAbundance",
         "talentTreeId": "AlexstraszaOverprotectiveAbundance",
         "name": "Overprotective",
-        "description": "Heroes healed by Abundance gain a Shield for 6 seconds equal to 70% of the amount healed.",
+        "description": "Heroes healed by Abundance gain a Shield for 6 seconds equal to 50% of the amount healed.",
         "icon": "storm_ui_icon_alexstrasza_abundance.png",
         "type": "W",
         "sort": 2,
