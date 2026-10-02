@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+  <Frame type="UnitStatusFrame" name="SgtHammerBFGMinimapIcon" template="MinimapUnitStatus/UnitStatusMinimapIconFrameTemplate">
+    <AllyRenderPriority val="#RenderPriorityHero_Ally" />
+    <EnemyRenderPriority val="#RenderPriorityHero_Enemy" />
+    <OwnerRenderPriority val="#RenderPriorityHero_Owner" />
+    <Frame type="UnitStatusMinimapIcon" name="UnitStatusMinimapIcon">
+      <FacingOffset val="180.0" />
+      <Frame type="Image" name="IconImage">
+        <SubpixelRendering val="true" />
+        <Texture val="{$parent/@MinimapIcon}" layer="0" />
+        <LayerColor val="{$parent/@Color}" layer="0" />
+        <TextureCoords bottom="1.15" left="-0.15" top="-0.15" right="1.15" />
+        <TextureCoordRotation val="{$parent/@Facing}" layer="0" />
+      </Frame>
+      <StateGroup name="ImageFlip">
+        <DefaultState val="NoFlip" />
+        <State name="Flip">
+          <When type="Property" frame="IconImage" operator="GreaterThanOrEqual" TextureCoordRotation="90" />
+          <When type="Property" frame="IconImage" operator="LessThanOrEqual" TextureCoordRotation="270" />
+          <Action type="SetProperty" frame="IconImage" Texture="Assets\Textures\storm_ui_minimapicon_sgthammerbfg_flipped.dds" />
+        </State>
+        <State name="NoFlip">
+          <Action type="SetProperty" frame="IconImage" Texture="{$parent/@MinimapIcon}" />
+        </State>
+      </StateGroup>
+    </Frame>
+  </Frame>
+  <Frame type="SelectionUnitStatusPanel" name="SgtHammerSiegeModeButtonOverride">
+    <Anchor relative="$parent" />
+    <SpecificUnit val="HeroSgtHammer" />
+    <Frame type="UnitStatusFrame" name="UnitStatusFrame0">
+      <Anchor relative="$parent" />
+      <AcceptsMouse val="False" />
+      <Frame type="UnitStatusValidatorAnimElement" name="SgtHammerAmbushModeVisibilityController">
+        <Anchor relative="$parent" />
+        <Validator val="SgtHammerAmbushButtonOverrideValidator" />
+      </Frame>
+      <Frame type="UnitStatusBehaviorIcon" name="UnitStatusSgtHammerGenericCloakRevealerIcon">
+        <Anchor relative="$parent" />
+        <Behavior val="GenericCloakRevealer" />
+        <AcceptsMouse val="False" />
+        <Frame type="BehaviorIcon" name="BehaviorIcon">
+          <Anchor relative="$parent" />
+          <Behavior val="GenericCloakRevealer" />
+          <AcceptsMouse val="False" />
+          <Frame type="ProgressBar" name="CooldownBar">
+            <Anchor side="Top" relative="$parent" pos="Mid" offset="0" />
+            <Anchor side="Left" relative="$parent" pos="Mid" offset="0" />
+            <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0" />
+            <Anchor side="Right" relative="$parent" pos="Mid" offset="0" />
+            <Height val="120" />
+            <Width val="120" />
+            <AcceptsMouse val="False" />
+            <MinValue val="0" />
+            <MaxValue val="3" />
+            <Value val="0" />
+            <Circular val="True" />
+            <CircularStart val="0" />
+            <CircularEndOffset val="360" />
+            <FillInset val="0.0" />
+            <Frame type="Frame" name="FillImageContainer">
+              <Anchor relative="$parent" />
+              <Visible val="{$parent/$parent/$parent/$parent/SgtHammerAmbushModeVisibilityController/@Visible}" />
+              <Frame type="Image" name="FillImage">
+                <Anchor relative="$parent" />
+                <SubpixelRendering val="True" />
+                <ColorAdjustMode val="Colorize" />
+                <AdjustmentColor val="221d6b" />
+                <RenderPriority val="510" />
+                <Texture val="@UI/Storm_UI_InGame_AbilityButton_Active_Add" />
+                <BlendMode val="Normal" />
+                <TextureType val="Circular" />
+              </Frame>
+            </Frame>
+          </Frame>
+        </Frame>
+      </Frame>
+    </Frame>
+  </Frame>
+</Desc>

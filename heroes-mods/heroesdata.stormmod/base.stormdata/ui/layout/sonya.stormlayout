@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Desc>
+
+   <Frame type="SelectionUnitStatusPanel" name="BarbarianCommandCardFrame">
+        <Anchor side="Top" relative="$parent" pos="Min" offset="0"/>
+        <Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+        <Height val="165"/>
+        <Width val="826"/>
+        <SpecificUnit val="HeroBarbarian"/>
+        <AcceptsMouse val="False"/>
+    </Frame>
+
+    <Frame type="SelectionUnitStatusPanel" name="BarbarianFuryButtonOverride">
+        <Anchor relative="$parent"/>
+        <SpecificUnit val="HeroBarbarian"/>
+        
+        <Frame type="UnitStatusFrame" name="UnitStatusFrame0">
+            <Anchor relative="$parent"/>
+            <AcceptsMouse val="False"/>
+
+            <Frame type="UnitStatusBehaviorIcon" name="UnitStatusBarbarianFuryIcon">
+                <Anchor relative="$parent"/>
+                <Behavior val="BarbarianFuryTraitMoveSpeedBuff"/>
+                <AcceptsMouse val="False"/>
+
+                <Frame type="BehaviorIcon" name="BehaviorIcon">
+                    <Anchor relative="$parent"/>
+                    <Behavior val="BarbarianFuryTraitMoveSpeedBuff"/>
+                    <AcceptsMouse val="False"/>
+
+                    <Frame type="ProgressBar" name="CooldownBar">
+                        <Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+                        <Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+                        <Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+                        <Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+                        <Height val="120"/>
+                        <Width val="120"/>
+                        <AcceptsMouse val="False"/>
+
+                        <MinValue val="0"/>
+                        <MaxValue val="4"/>
+                        <Value val="0"/>
+                        <Circular val="True"/>
+                        <CircularStart val="0"/>
+                        <CircularEndOffset val="360"/>
+                        <FillInset val="0.0"/>
+
+                        <Frame type="Frame" name="FillImageContainer">
+                            <Anchor relative="$parent"/>
+
+                            <Frame type="Image" name="FillImage">
+                                <Anchor relative="$parent"/>
+                                <SubpixelRendering val="True"/>
+                                <ColorAdjustMode val="Colorize"/>
+                                <AdjustmentColor val="FAC814"/>
+                                <RenderPriority val="510"/>
+
+                                <Texture val="@UI/Storm_UI_InGame_AbilityButton_Active_Add"/>
+                                <BlendMode val="Normal"/>
+                                <TextureType val="Circular"/>
+                            </Frame>
+                        </Frame>
+                    </Frame>
+                </Frame>
+            </Frame>
+        </Frame>
+    </Frame>
+	
+	<Frame type="SelectionUnitStatusPanel" name="BarbarianWrathoftheBerserkerDuration">
+		<Anchor side="Bottom" relative="$GameUI_HeroCustomChannelBarPlaceholder" pos="Max" offset="0"/>
+		<Anchor side="Left" relative="$parent" pos="Mid" offset="0"/>
+		<Anchor side="Right" relative="$parent" pos="Mid" offset="0"/>
+		<Height val="56"/>
+		<Width val="602"/>
+		<SpecificUnit val="HeroBarbarian"/>
+ 
+		<Frame type="UnitStatusFrame" name="UnitStatusFrame0">
+			<Anchor relative="$parent"/>
+			<VisibleToOwner val="true"/>
+			<VisibleToAlly val="false"/>
+			<VisibleToEnemy val="false"/>
+ 
+			<Frame type="UnitStatusDurationBar" name="BarbarianWrathoftheBerserkerDurationBar">
+				<Anchor side="Top" relative="$parent" pos="Min" offset="0"/>		
+				<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+				<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+				<Behavior val="BarbarianWrathoftheBerserkerBase"/>
+				<Height val="#ChannelBarHeight"/>
+				<Texture val="@UI/Storm_UI_Ingame_hud_bar_cast_grey"/>
+				<BackgroundShown val="true"/>
+				<BackgroundColor val="125, 0, 0, 0"/>
+				<BarInsetRect top="0" left="0" bottom="0" right="0"/>
+				<ColorStyle val="DurationBar" index="0"/>
+				<Sliced val="false" index="0"/>
+				<Tiled val="true" index="0"/>
+ 
+				<Frame type="Image" name="ChannelBarFrame">
+					<Anchor side="Bottom" relative="$parent" pos="Max" offset="0"/>
+					<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+					<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+					<Height val="#ChannelBarHeight"/>
+					<Texture val="@UI/HUD_Bar_CastChannel_BG"/>
+					<TextureType val="NineSlice"/>
+					<RenderPriority val="600"/>
+				</Frame>
+ 
+				<Frame type="Label" name="ChannelNameLabel">
+					<Anchor side="Top" relative="$parent" pos="Mid" offset="0"/>
+					<Anchor side="Bottom" relative="$parent" pos="Mid" offset="0"/>
+					<Anchor side="Left" relative="$parent" pos="Min" offset="0"/>
+					<Anchor side="Right" relative="$parent" pos="Max" offset="0"/>
+					<Style val="Storm_BehaviorBarLabel"/>
+					<Text val="@Behavior/Name/BarbarianWrathoftheBerserkerBase"/>
+					<RenderPriority val="602"/>
+				</Frame>
+			</Frame>
+		</Frame>
+	</Frame>
+</Desc>
