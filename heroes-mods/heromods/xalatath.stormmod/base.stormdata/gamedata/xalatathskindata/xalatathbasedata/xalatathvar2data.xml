@@ -37,10 +37,7 @@
     </CLight>
     <CModel id="XalatathPortraitVar2" parent="XalatathPortraitCommon">
         <Lighting value="Storm_Portrait_Xalatath_Var2"/>
-    </CModel>
-    <CModel id="XalatathShoulderOrb" parent="PersistentSpellFX">
-        <Model value="Assets\Effects\Storm_FX_Xalatath_VoidOrb\Storm_FX_Xalatath_VoidOrb.m3"/>
-    </CModel>
+    </CModel>        
     <CRewardSkin id="XalatathVar2">
         <License value="1172642"/>
     </CRewardSkin>
@@ -50,8 +47,10 @@
         <RequiredRewardArray value="XalatathVar2"/>
         <ProductId value="2072999"/>
         <ModelMacroRun Models="XalatathBaseModels" Macro="XalatathVar2Macro"/>
-        <Rarity value="Epic"/>
     </CSkin>
+    <CModel id="XalatathShoulderOrb" parent="PersistentSpellFX">
+        <Model value="Assets\Effects\Storm_FX_Xalatath_VoidOrb\Storm_FX_Xalatath_VoidOrb.m3"/>
+    </CModel>
     <CTexture id="Storm_Hero_Xalatath_Base_Var2_Diff" parent="MainSlotTexture"/>
     <CTexture id="Storm_Hero_Xalatath_Base_Var2_Spec" parent="MainSlotTexture"/>
 </Catalog>

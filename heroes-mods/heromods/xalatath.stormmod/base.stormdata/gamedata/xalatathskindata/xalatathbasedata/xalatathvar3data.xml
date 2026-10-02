@@ -37,7 +37,7 @@
     </CLight>
     <CModel id="XalatathPortraitVar3" parent="XalatathPortraitCommon">
         <Lighting value="Storm_Portrait_Xalatath_Var3"/>
-    </CModel>
+    </CModel>        
     <CRewardSkin id="XalatathVar3">
         <License value="1172643"/>
     </CRewardSkin>
@@ -47,7 +47,6 @@
         <RequiredRewardArray value="XalatathVar3"/>
         <ProductId value="2073000"/>
         <ModelMacroRun Models="XalatathBaseModels" Macro="XalatathVar3Macro"/>
-        <Rarity value="Epic"/>
     </CSkin>
     <CTexture id="Storm_Hero_Xalatath_Base_Var3_Diff" parent="MainSlotTexture"/>
     <CTexture id="Storm_Hero_Xalatath_Base_Var3_Spec" parent="MainSlotTexture"/>

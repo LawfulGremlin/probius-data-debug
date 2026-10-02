@@ -1,7 +1,7 @@
 {
-  "product": "hero",
+  "product": "herot",
   "region": "us",
-  "version": "2.57.0.98304",
+  "version": "2.57.0.98217",
   "extraction": {
     "manifestVersion": 1,
     "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
@@ -21,7 +21,7 @@
     },
     {
       "path": "core.stormmod/base.stormdata/buildid.txt",
-      "ckey": "bb286567b4f21d1b8e482f511213b7a3",
+      "ckey": "54260a2f8107121e68c9b78c8aaa83ce",
       "size": 7
     },
     {
@@ -31,12 +31,12 @@
     },
     {
       "path": "core.stormmod/base.stormdata/databuildid.txt",
-      "ckey": "bb286567b4f21d1b8e482f511213b7a3",
+      "ckey": "54260a2f8107121e68c9b78c8aaa83ce",
       "size": 7
     },
     {
       "path": "core.stormmod/base.stormdata/depotcache/source_build.txt",
-      "ckey": "9cd32a39cb16d09867cb7e19eabd8273",
+      "ckey": "153ce00de7479db4e381050773eddc79",
       "size": 6
     },
     {
@@ -9105,11 +9105,6 @@
       "size": 128987
     },
     {
-      "path": "heroesdata.stormmod/base.stormdata/ai/xalatath.aitree",
-      "ckey": "ea60dbc40911c8c7dfdd1f2c63dddde9",
-      "size": 12727
-    },
-    {
       "path": "heroesdata.stormmod/base.stormdata/ai/yrel.aitree",
       "ckey": "d03f78bc6baf040369ee2dc50e0cf8e0",
       "size": 113185
@@ -16821,8 +16816,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/behaviordata.xml",
-      "ckey": "1fb1a5314de9f04edf6dfdcdaa962cac",
-      "size": 496334
+      "ckey": "ee8d0d141d93109308b515bd264a61ab",
+      "size": 496439
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/boostdata.xml",
@@ -16836,8 +16831,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/bundledata.xml",
-      "ckey": "29b73f4dd2718507c4aecff71860b326",
-      "size": 136421
+      "ckey": "7b3fad2f2fc647c9858b4551054b2432",
+      "size": 136459
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/buttondata.xml",
@@ -31026,8 +31021,8 @@
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/mounts/mountdogbandage19data/mount_ride_dogbandage19var3data.xml",
-      "ckey": "8b446a192319e87626dd4dee35d392a8",
-      "size": 1009
+      "ckey": "334960ed82b7fb23912eaf3b3b1cdd11",
+      "size": 1043
     },
     {
       "path": "heroesdata.stormmod/base.stormdata/gamedata/mounts/mountdogfoo/mount_ride_dogfoobasedata.xml",
@@ -33606,8 +33601,8 @@
     },
     {
       "path": "heroesdata.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "50681b05801337760aee3dba5d8f9882",
-      "size": 2620464
+      "ckey": "9627abbef5eb1d0da8a1b47edf832f07",
+      "size": 2620391
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/alteracpass.stormmod/base.stormdata/ai/avbosscore.aitree",
@@ -37566,8 +37561,8 @@
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/volskayadata.stormmod/base.stormdata/gamedata/actordata.xml",
-      "ckey": "1eda519f43f91c188940af3dfb1a9a87",
-      "size": 139438
+      "ckey": "b642d8f1df1ae56a64d770fec3d1359f",
+      "size": 138650
     },
     {
       "path": "heroesmapmods/battlegroundmapmods/volskayadata.stormmod/base.stormdata/gamedata/attachmethoddata.xml",
@@ -39786,8 +39781,8 @@
     },
     {
       "path": "heromods/auriel.stormmod/base.stormdata/gamedata/aurieldata.xml",
-      "ckey": "09baf47643940c98faa5a2cdd40da80d",
-      "size": 213322
+      "ckey": "9939cd21c97ed4b9ca847124917c8f59",
+      "size": 213174
     },
     {
       "path": "heromods/auriel.stormmod/base.stormdata/gamedata/aurielskindata/aurielbasedata/aurielbasedata.xml",
@@ -48146,8 +48141,8 @@
     },
     {
       "path": "heromods/thefirelords.stormmod/base.stormdata/gamedata/thefirelordsdata.xml",
-      "ckey": "ad9805c7c234f6b4ce6f44b62db401d8",
-      "size": 268392
+      "ckey": "3542920cb8eff8a4d5df914e9fa2799f",
+      "size": 268457
     },
     {
       "path": "heromods/thefirelords.stormmod/base.stormdata/gamedata/voiceoverdata.xml",
@@ -48161,8 +48156,8 @@
     },
     {
       "path": "heromods/thefirelords.stormmod/base.stormdata/libhmaj.galaxy",
-      "ckey": "ccb1641f19876a4d7591023f99b333ed",
-      "size": 45958
+      "ckey": "a63d79ec7041218c78a7a0ed4fe77e80",
+      "size": 45957
     },
     {
       "path": "heromods/thefirelords.stormmod/base.stormdata/ui/fontstyles.stormstyle",
@@ -48196,8 +48191,8 @@
     },
     {
       "path": "heromods/thefirelords.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "6752864c1c2880cdf545e1ce303c1492",
-      "size": 31862
+      "ckey": "150414e5fa5e6072dece0492cba146b5",
+      "size": 31861
     },
     {
       "path": "heromods/thefirelords.stormmod/gamedata.version",
@@ -49476,8 +49471,8 @@
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/actordata.xml",
-      "ckey": "0cef3836e81425259b625d239a2e3a61",
-      "size": 66
+      "ckey": "813fd4ba90f9dfeb56b18820e3f2997f",
+      "size": 5324
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/assets.txt",
@@ -49546,33 +49541,33 @@
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml",
-      "ckey": "2814d2261e1ff0959b668e60598715e5",
-      "size": 293509
+      "ckey": "29d471178ac0c83727eddb68674afa1a",
+      "size": 259995
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathskindata/xalatathbasedata/xalatathbasedata.xml",
-      "ckey": "d798543956a36c80ea9d0d870ccfc5c9",
-      "size": 23994
+      "ckey": "ed86ff2f5ef73cb6e219b5b0e69390d8",
+      "size": 24006
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathskindata/xalatathbasedata/xalatathvar1data.xml",
-      "ckey": "e7dfd609620bb48dfa81059fe74be737",
-      "size": 3163
+      "ckey": "1ccd91179843da8fa0e59b0ceef6b213",
+      "size": 3139
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathskindata/xalatathbasedata/xalatathvar2data.xml",
-      "ckey": "50310fd705db5c20cf01c5144354eb6c",
-      "size": 3163
+      "ckey": "2684947c8acf53e128d20aef2138c9ee",
+      "size": 3139
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathskindata/xalatathbasedata/xalatathvar3data.xml",
-      "ckey": "3b8304665ef77eaefa9078a21656d9d1",
-      "size": 2986
+      "ckey": "ac071c652670e8f3afdbd240e82020e8",
+      "size": 2962
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathskindata/xalatathbasedata/xalatathvar4data.xml",
-      "ckey": "c60718bfcb0dedf76454cd46bb915b6d",
-      "size": 3305
+      "ckey": "01d1545918df5a5816c913843638f0cf",
+      "size": 3272
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathskindata/xalatathvoidflamedata/xalatathvoidflamebasedata.xml",
@@ -49581,28 +49576,28 @@
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathskindata/xalatathvoidflamedata/xalatathvoidflamevar1data.xml",
-      "ckey": "f0a032984182e236e17c52b02f064a17",
-      "size": 3686
+      "ckey": "32b3aee68644f5b63a908e5a7d93dfdb",
+      "size": 3740
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathskindata/xalatathvoidflamedata/xalatathvoidflamevar2data.xml",
-      "ckey": "f5787e85b479202e0251363c2063e207",
-      "size": 3686
+      "ckey": "7dc5af9e527817e98302674521b6da9a",
+      "size": 3740
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathskindata/xalatathvoidflamedata/xalatathvoidflamevar3data.xml",
-      "ckey": "e537c58e8547b5c121cf74f3c352f5af",
-      "size": 3509
+      "ckey": "467629c69dd2ddfd8818ae9bf8803156",
+      "size": 3563
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathskindata/xalatathvoidflamedata/xalatathvoidflamevar4data.xml",
-      "ckey": "0b1bc7b7e57f25dd043da6954351a6b8",
-      "size": 3509
+      "ckey": "e70b96fffd11c7d85c86a45e5126aef1",
+      "size": 3563
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathsounddata/xalatathbasesounddata.xml",
-      "ckey": "5874aadd040a90b622c316b5c46d95ee",
-      "size": 42269
+      "ckey": "65e7b3a86de7f45685b38a8255517a9c",
+      "size": 41684
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathsounddata/xalatathbasevodata.xml",
@@ -49611,13 +49606,13 @@
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathvoideruptiondata.xml",
-      "ckey": "3447a8fa3ad65519f234d090122d9a6d",
-      "size": 106837
+      "ckey": "191d64e7f62d786c7913e39a945df4a7",
+      "size": 104547
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathvoidvolley2data.xml",
-      "ckey": "83a8e337744a16363a9f183d11b993cb",
-      "size": 20510
+      "ckey": "a46955883f071bea3d134c335a1b6537",
+      "size": 19381
     },
     {
       "path": "heromods/xalatath.stormmod/base.stormdata/libhxal_h.galaxy",
@@ -49656,12 +49651,12 @@
     },
     {
       "path": "heromods/xalatath.stormmod/enus.stormdata/localizeddata/gamestrings.txt",
-      "ckey": "1ece4e984fa0dba6cabe6d99f27d388f",
-      "size": 26458
+      "ckey": "8245e7374597614308220ffeacf72fdb",
+      "size": 26366
     },
     {
       "path": "heromods/xalatath.stormmod/gamedata.version",
-      "ckey": "651ad89b165d6e5a30e797156e65c11b",
+      "ckey": "35cf9b8d30a3fbad8b2598e2c60b109b",
       "size": 44
     },
     {

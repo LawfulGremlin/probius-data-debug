@@ -53,6 +53,11 @@
   <CModel id="HeroXalatathCommon" parent="HeroModelParent">
     <TextureDeclares Prefix="Storm_Hero_Xalatath_" Slot="main" />
     <RequiredAnims value="Assets\Units\Heroes\Storm_Hero_Xalatath_RequiredAnims\Storm_Hero_Xalatath_RequiredAnims.m3a" />
+    <AnimAliases Anim="Walk,A" Alias="Walk,B" />
+    <AnimAliases Anim="Walk,A" Alias="Walk,D" />
+    <AnimAliases Anim="Walk,A" Alias="Walk,E" />
+    <AnimAliases Anim="Walk,A" Alias="Walk,F" />
+    <AnimAliases Anim="Walk,A" Alias="Walk,H" />
     <TextureDeclares Prefix="Storm_Hero_Xalatath_" Slot="main" />
   </CModel>
   <CModel id="HeroXalatath" parent="HeroXalatathCommon">
@@ -104,10 +109,7 @@
   <CModel id="XalatathAttackImpact" parent="ImpactFX">
     <Model value="Assets\Effects\Storm_FX_Xalatath_Base_BasicMissile_Impact\Storm_FX_Xalatath_Base_BasicMissile_Impact.m3" />
   </CModel>
-  <CModel id="XalatathDarkHeartRitualRangeFXSplatAlly" parent="PersistentSpellFX">
-    <Model value="Assets\Effects\Storm_FX_Xalatath_Base_DarkHeart_RadiusSplat\Storm_FX_Xalatath_Base_DarkHeart_RadiusSplat.m3" />
-  </CModel>
-  <CModel id="XalatathDarkHeartRitualRangeFXSplatEnemy" parent="PersistentSpellFX">
+  <CModel id="XalatathDarkHeartRitualRangeFX" parent="PersistentSpellFX">
     <Model value="Assets\Effects\Storm_FX_Xalatath_Base_DarkHeart_RadiusSplat\Storm_FX_Xalatath_Base_DarkHeart_RadiusSplat.m3" />
   </CModel>
   <CModel id="XalatathDarkHeartRitual" parent="Building">

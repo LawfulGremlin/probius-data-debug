@@ -132,17 +132,14 @@
   <CActorQuad id="XalatathVoidEruptionCenterMissileGuide" parent="StormGuideVisualQuadDownFantasy" abil="XalatathVoidEruption">
     <Height value="16" />
     <Width value="1.25" />
-    <FogVisibility value="Hidden" />
   </CActorQuad>
   <CActorQuad id="XalatathVoidEruptionMissileGuideTier2" parent="StormGuideVisualQuadDownFantasy" abil="XalatathVoidEruption">
     <Height value="16" />
     <Width value="3" />
-    <FogVisibility value="Hidden" />
   </CActorQuad>
   <CActorQuad id="XalatathVoidEruptionMissileGuideTier4" parent="StormGuideVisualQuadDownFantasy" abil="XalatathVoidEruption">
     <Height value="16.000000" />
     <Width value="6" />
-    <FogVisibility value="Hidden" />
   </CActorQuad>
   <CActorSound id="XalatathVoidEruptionCastSound" parent="SoundOneShot">
     <On Terms="Effect.XalatathVoidEruptionTargetingEnterSet.Start" Send="Create" />
@@ -399,8 +396,7 @@
     <TargetLocation>
       <Value value="CasterPoint" />
       <ProjectionSourceValue value="CasterPoint" />
-      <ProjectionTargetEffect value="XalatathVoidEruptionFaceUpdateSetSharedPoint" />
-      <ProjectionTargetValue value="TargetPoint" />
+      <ProjectionTargetValue value="MousePoint" />
       <ProjectionMultiplier value="0.001" />
       <ProjectionOffset Y="-$XalatathVoidEruptionChargeForwardOffset" />
     </TargetLocation>
@@ -501,7 +497,7 @@
   <CEffectModifyUnit id="XalatathVoidEruptionCancelCooldown">
     <ImpactUnit Value="Caster" />
     <ValidatorArray value="XalatathVoidEruptionHasMissileTrackerValidatorUnitCompareBehaviorCount" />
-    <Cost Abil="XalatathVoidEruption,Execute" CooldownOperation="Set" CooldownTimeUse="75" />
+    <Cost Abil="XalatathVoidEruption,Execute" CooldownOperation="Set" CooldownTimeUse="10" />
   </CEffectModifyUnit>
   <CEffectSet id="XalatathVoidEruptionEarlyAbortCleanupEffectSet">
     <ValidatorArray value="XalatathVoidEruptionHasMissileTrackerValidatorUnitCompareBehaviorCount" />
@@ -831,7 +827,7 @@
   </CEffectApplyBehavior>
   <CEffectSet id="XalatathVoidEruptionTargetingEnterSet">
     <EffectArray value="XalatathDisableXalatathWeaponFacingPlayer" />
-    <EffectArray value="XalatathVoidEruptionFaceTargetPoint" />
+    <EffectArray value="XalatathVoidEruptionFaceMousePosition" />
     <EffectArray value="DismountDecloakCasterSet" />
     <EffectArray value="LockFacingRemoveBehaviors" />
     <EffectArray value="XalatathWeaponCasterTargetApplyDisablerBehavior" />
@@ -874,14 +870,6 @@
   <CBehaviorBuff id="XalatathVoidEruptionTargeting">
     <RemoveValidatorArray value="CasterNotDeadOrCataegoryStunnedOrSilencedOrStasisOrDazedExceptTimeStop" />
     <Modification>
-      <StateFlags index="SuppressCloak" value="1" />
-      <AbilClassDisableArray index="CAbilStop" value="1" />
-      <AbilClassDisableArray index="CAbilMove" value="1" />
-      <AbilLinkDisableArray value="XalatathVoidStep" />
-      <AbilLinkDisableArray value="XalatathShadowMark" />
-      <AbilLinkDisableArray value="XalatathVoidVolley" />
-      <AbilLinkDisableArray value="XalatathVoidConvergence" />
-      <AbilLinkDisableArray value="XalatathDarkHeartRitual" />
       <ModifyFlags index="DisableWeapons" value="1" />
       <ModifyFlags index="SuppressTurning" value="1" />
       <AbilLinkDisableArray value="attack" />
@@ -896,16 +884,11 @@
     </Modification>
     <InitialEffect value="ApplyMousePointUpdater" />
     <Period value="0.0125" />
-    <PeriodicEffect value="XalatathVoidEruptionFacePeriodicPersistent" />
+    <PeriodicEffect value="XalatathVoidEruptionFacePeriodicSet" />
     <FinalEffect value="RemoveMousePointUpdater" />
   </CBehaviorBuff>
-  <CEffectCreatePersistent id="XalatathVoidEruptionFacePeriodicPersistent">
-    <WhichLocation Value="MousePoint" />
-    <InitialEffect value="XalatathVoidEruptionFaceUpdateSetSharedPoint" />
-  </CEffectCreatePersistent>
-  <CEffectSet id="XalatathVoidEruptionFaceUpdateSetSharedPoint">
-    <TargetLocationType value="Point" />
-    <EffectArray value="XalatathVoidEruptionUpdateCasterFacing" />
+  <CEffectSet id="XalatathVoidEruptionFacePeriodicSet">
+    <EffectArray value="XalatathVoidEruptionFaceMousePosition" />
     <EffectArray value="XalatathVoidEruptionUpdateDummyFacing" />
     <EffectArray value="XalatathVoidEruptionUpdateDummyPositionEnumTrackedUnits" />
     <EffectArray value="XalatathOrbitalEruptionUpdateCenterDummyFacingEnumTrackedUnits" />
@@ -914,23 +897,17 @@
   <CEffectEnumTrackedUnits id="XalatathVoidEruptionUpdateDummyFacing">
     <TrackerUnit Value="Caster" />
     <BehaviorLink value="XalatathVoidEruptionMissileTracker" />
-    <Effect value="XalatathVoidEruptionDummyFaceSharedPoint" />
+    <Effect value="XalatathVoidEruptionDummyFaceMousePoint" />
   </CEffectEnumTrackedUnits>
-  <CEffectModifyUnit id="XalatathVoidEruptionDummyFaceSharedPoint">
+  <CEffectModifyUnit id="XalatathVoidEruptionDummyFaceMousePoint">
     <ImpactUnit Value="Target" />
-    <FacingLocation Effect="XalatathVoidEruptionFaceUpdateSetSharedPoint" Value="TargetPoint" />
+    <FacingLocation Value="MousePoint" />
     <FacingType value="LookAt" />
   </CEffectModifyUnit>
-  <CEffectModifyUnit id="XalatathVoidEruptionUpdateCasterFacing">
+  <CEffectModifyUnit id="XalatathVoidEruptionFaceMousePosition">
     <ImpactUnit Value="Caster" />
     <ModifyFlags index="InterpolateFacing" value="1" />
-    <FacingLocation Effect="XalatathVoidEruptionFaceUpdateSetSharedPoint" Value="TargetPoint" />
-    <FacingType value="LookAt" />
-  </CEffectModifyUnit>
-  <CEffectModifyUnit id="XalatathVoidEruptionFaceTargetPoint">
-    <ImpactUnit Value="Caster" />
-    <ModifyFlags index="InterpolateFacing" value="1" />
-    <FacingLocation Value="TargetPoint" />
+    <FacingLocation Value="MousePoint" />
     <FacingType value="LookAt" />
   </CEffectModifyUnit>
   <CBehaviorMousePointUpdater id="XalatathVoidEruptionAimSeedBehaviorMousePointUpdater">
@@ -988,19 +965,12 @@
     <ValidatorArray value="HeroGenericNoTauntOrderInProgressCaster" />
   </CEffectSet>
   <CEffectSwitch id="XalatathVoidEruptionExecuteBranchSwitch">
-    <ValidatorArray value="XalatathCasterHasVoidEruptionMissileTracker" />
     <CaseArray Validator="XalatathVoidEruptionMinimumChargeComplete" Effect="XalatathVoidEruptionNormalClickEffectSet" />
     <CaseDefault value="XalatathVoidEruptionEarlyClickEffectSet" />
   </CEffectSwitch>
-  <CValidatorUnitCompareBehaviorCount id="XalatathCasterHasVoidEruptionMissileTracker">
-    <WhichUnit Value="Caster" />
-    <Value value="1" />
-    <Behavior value="XalatathVoidEruptionMissileTracker" />
-  </CValidatorUnitCompareBehaviorCount>
   <CEffectSet id="XalatathVoidEruptionNormalClickEffectSet">
-    <EffectArray value="XalatathVoidEruptionFaceUpdateSetSharedPoint" />
-    <EffectArray value="LockFacingToDirection" />
     <EffectArray value="XalatathVoidEruptionCreatePersistent" />
+    <EffectArray value="LockFacingToDirection" />
     <EffectArray value="XalatathDisableXalatathWeaponFacingPlayer" />
     <EffectArray value="XalatathVoidEruptionRemoveBehaviors" />
   </CEffectSet>
@@ -1232,7 +1202,7 @@
   <CEffectEnumTrackedUnits id="XalatathOrbitalEruptionUpdateCenterDummyFacingEnumTrackedUnits">
     <TrackerUnit Value="Caster" />
     <BehaviorLink value="XalatathOrbitalEruptionCenterDummyBehaviorUnitTracker" />
-    <Effect value="XalatathVoidEruptionDummyFaceSharedPoint" />
+    <Effect value="XalatathVoidEruptionDummyFaceMousePoint" />
   </CEffectEnumTrackedUnits>
   <CEffectTeleport id="XalatathOrbitalEruptionCenterDummyRepositionTeleport">
     <WhichUnit Value="Target" />
@@ -1240,8 +1210,7 @@
     <TargetLocation>
       <Value value="CasterPoint" />
       <ProjectionSourceValue value="CasterPoint" />
-      <ProjectionTargetEffect value="XalatathVoidEruptionFaceUpdateSetSharedPoint" />
-      <ProjectionTargetValue value="TargetPoint" />
+      <ProjectionTargetValue value="MousePoint" />
       <ProjectionMultiplier value="0.001" />
       <ProjectionOffset Y="-$XalatathOrbitalEruptionChargeForwardOffset" />
     </TargetLocation>
@@ -1322,12 +1291,9 @@
   <CEffectLaunchMissile id="XalatathOrbitalEruptionCenterBaseLaunchMissile">
     <LaunchLocation Value="TargetOuterUnit" />
     <ImpactLocation>
-      <Effect value="XalatathVoidEruptionNormalClickEffectSet" />
       <Value value="TargetPoint" />
       <ProjectionMultiplier value="1" />
-      <ProjectionSourceEffect value="XalatathVoidEruptionNormalClickEffectSet" />
-      <ProjectionSourceValue value="CasterPoint" />
-      <ProjectionTargetEffect value="XalatathVoidEruptionNormalClickEffectSet" />
+      <ProjectionSourceValue value="OriginPoint" />
       <ProjectionTargetValue value="TargetPoint" />
       <UsesLineDash value="1" />
       <LineDashType value="AllowedInUnpathable" />
@@ -1573,12 +1539,9 @@
   <CEffectLaunchMissile id="XalatathVoidEruptionCarrierBaseLaunchMissile">
     <LaunchLocation Value="TargetOuterUnit" />
     <ImpactLocation>
-      <Effect value="XalatathVoidEruptionNormalClickEffectSet" />
       <Value value="TargetPoint" />
       <ProjectionMultiplier value="1" />
-      <ProjectionSourceEffect value="XalatathVoidEruptionNormalClickEffectSet" />
-      <ProjectionSourceValue value="CasterPoint" />
-      <ProjectionTargetEffect value="XalatathVoidEruptionNormalClickEffectSet" />
+      <ProjectionSourceValue value="OriginPoint" />
       <ProjectionTargetValue value="TargetPoint" />
       <UsesLineDash value="1" />
       <LineDashType value="AllowedInUnpathable" />
