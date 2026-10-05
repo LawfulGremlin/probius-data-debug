@@ -3,10 +3,10 @@
   "component": "heroes-talents",
   "track": "live",
   "product": "hero",
-  "version": "2.57.0.98304",
-  "buildId": "B98304",
-  "sourceSha": "50f5683588e80900d6faa6adca4156ef415c8062",
-  "generation": "28c5e9a255e8f57d59811bbff61b55818d50965196cf1c9ade20ada18d68ca70",
+  "version": "2.57.0.98348",
+  "buildId": "B98348",
+  "sourceSha": "05f23b3e317650f3fb6f5b6002af16f60f2ed880",
+  "generation": "434e65cf2da2708a102a17657bdf8c9151642fec0b4b29012bd68f7071f16949",
   "producer": {
     "hdpVersion": "5.0.4",
     "adapterSchemaVersion": 1,
@@ -1206,18 +1206,18 @@
     "buckets": []
   },
   "baseline": {
-    "version": "2.57.0.98285",
-    "generation": "96ca80e207b61c4af7ec6516dc9d7b56f76ec9305211f7d8cf1611d8c9f4199a",
+    "version": "2.57.0.98304",
+    "generation": "28c5e9a255e8f57d59811bbff61b55818d50965196cf1c9ade20ada18d68ca70",
     "legacyDerived": false,
     "heroes": 91
   },
   "publication": {
     "status": "published",
-    "commit": "e61557fb1f761f6c5e296b409b00464484bfc60d",
+    "commit": "1c3a028c5874930f60e72bd0df388c1038bb63c5",
     "branch": "live",
-    "generation": "28c5e9a255e8f57d59811bbff61b55818d50965196cf1c9ade20ada18d68ca70",
-    "componentTree": "4bfecd0788066a423f77fe114ae484432270958e"
+    "generation": "434e65cf2da2708a102a17657bdf8c9151642fec0b4b29012bd68f7071f16949",
+    "componentTree": "9a32b8fcb05143434b34cdf9ea9bff077dfc67f0"
   },
   "imageStatus": "partial",
-  "imageReport": "live-2.57.0.98304-images.json"
+  "imageReport": "live-2.57.0.98348-images.json"
 }
