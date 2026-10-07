@@ -23,8 +23,8 @@
     "RoleAutoAttacker"
   ],
   "stats": {
-    "hp": 1876,
-    "hpRegen": 3.9062,
+    "hp": 1896,
+    "hpRegen": 3.9492,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -449,7 +449,7 @@
         "tooltipId": "ThrallElementalMomentum",
         "talentTreeId": "ThrallElementalMomentum",
         "name": "Elemental Momentum",
-        "description": "Basic Attacks reduce Thrall's Basic and Heroic Ability cooldowns by 0.25 seconds, doubled against Heroes.",
+        "description": "Basic Attacks reduce Thrall's Basic and Heroic Ability cooldowns by 0.25 seconds, tripled against Heroes.",
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 3,
@@ -496,7 +496,7 @@
     "ThrallEarthenShieldsTalent": "Allies within the Earthquake area gain a Shield equal to <c val=\"#TooltipNumbers\">15%</c> of their maximum Health each pulse. This shield lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallEarthenShield,Duration\" player=\"0\"/></c> seconds.",
     "ThrallEarthquake": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,ThrallEarthquake,FinishTime\" precision=\"1\"/></c> seconds, summon a massive Earthquake that pulses every <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallEarthquakeInitialPersistent,PeriodicPeriodArray[1]\"/></c> seconds. Each pulse lasts <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallEarthquakePeriodicPersistent,PeriodCount*Effect,ThrallEarthquakePeriodicPersistent,PeriodicPeriodArray[0]\"/></c> seconds, Slowing all enemies in the area by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ThrallEarthquakeSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>, and deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallEarthquakeHeroDamage,Amount\"/></c> damage to enemy Heroes. Does <c val=\"#TooltipNumbers\">3 </c>pulses.",
     "ThrallEchooftheElements": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Kill Minions or Heroes within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallChainLightningEchooftheElementsTalentDebuff,Duration\" precision=\"1\"/></c> seconds of hitting them with Chain Lightning.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After killing <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallEchooftheElementsTokenCounter,ConditionalEvents[0].CompareValue\"/></c> enemies, reduce the Mana cost of Chain Lightning from <c val=\"#TooltipNumbers\"><d ref=\"Abil,ThrallChainLightning,Cost.Vital[Energy]\"player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallChainLightningEchooftheElementsTalent1stQuestModifyPlayer,EffectArray[0].Value\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After killing <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallEchooftheElementsTokenCounter,Max\"/></c> enemies, gain a second charge of Chain Lightning.",
-    "ThrallElementalMomentum": "Basic Attacks reduce Thrall's Basic and Heroic Ability cooldowns by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,ThrallElementalMomentumModifyCooldowns,Cost[0].ChargeTimeUse\" precision =\"2\"/></c> seconds, doubled against Heroes.",
+    "ThrallElementalMomentum": "Basic Attacks reduce Thrall's Basic and Heroic Ability cooldowns by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,ThrallElementalMomentumModifyCooldowns,Cost[0].ChargeTimeUse\" precision =\"2\"/></c> seconds, tripled against Heroes.",
     "ThrallFeralResilience": "Heroes damaged by Feral Spirit grant <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallFrostwolfResilience4StackPersistent,PeriodCount\"/></c> stacks of Frostwolf Resilience and <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallFeralSpiritFeralResilienceTalentApplyBlockBehavior,Count\"/></c> stacks of Feral Resilience, granting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallFeralResilience,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next incoming Hero Basic Attack.<n/><n/>Stacks are consumed on the next cast of Feral Spirit.",
     "ThrallFeralSpirit": "Unleash a Feral Spirit that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallFeralSpiritDamage,Amount\"/></c> damage to enemies in its path and Roots Heroes hit for <c val=\"#TooltipNumbers\">1</c> second. Each Hero hit increases the distance traveled by <c val=\"#TooltipNumbers\">25%</c>.",
     "ThrallFrostwolfPack": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallFrostwolfPackTokenCounter,Max\"/></c> Heroes with Feral Spirit. Progress is lost on death and when Thrall fails to hit a Hero.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Reduce the cooldown and Mana cost of Feral Spirit by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ThrallFeralSpiritFrostwolfPackTalentModifyPlayer,EffectArray[0].Value/Abil,ThrallFeralSpirit,Cost.Vital[Energy]\"player=\"0\"/>%</c>.",
