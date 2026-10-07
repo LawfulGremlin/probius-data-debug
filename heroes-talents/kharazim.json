@@ -428,13 +428,32 @@
         ]
       },
       {
+        "tooltipId": "MonkFistsofLegend",
+        "talentTreeId": "MonkFistsofLegendTrait",
+        "name": "Fists of Legend",
+        "description": "Gain 50% of the benefit from both level 1  talents that were not chosen.",
+        "icon": "storm_ui_glues_draft_portrait_monk.png",
+        "type": "Trait",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Kharazim|D1",
+        "abilityLinks": [
+          "Kharazim|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "MonkInsight",
+          "MonkIronFists",
+          "MonkTranscendence"
+        ]
+      },
+      {
         "tooltipId": "GenericStormShield",
         "talentTreeId": "GenericTalentStormShield",
         "name": "Storm Shield",
         "description": "Activate to give all nearby allied Heroes a Shield for 20% of their max Health for 3 seconds.",
         "icon": "storm_ui_icon_talent_stormshield.png",
         "type": "Active",
-        "sort": 3,
+        "sort": 4,
         "cooldown": 45,
         "isQuest": false,
         "abilityId": "Kharazim|Active",
@@ -450,7 +469,7 @@
         "description": "Activate to restore 33% of Kharazim's maximum Mana and refill 2 charges of Radiant Dash.",
         "icon": "storm_ui_icon_kharazim_epiphany.png",
         "type": "Active",
-        "sort": 4,
+        "sort": 5,
         "cooldown": 60,
         "isQuest": false,
         "abilityId": "Kharazim|Active",
@@ -526,6 +545,7 @@
     "MonkEchoofHeavenTalent": "Breath of Heaven heals <c val=\"#TooltipNumbers\"><d ref=\"1+Effect,MonkBreathOfHeavenCreateHealerExecute,MultiplicativeModifierArray[MonkBreathOfHeavenEchoOfHeaven].Modifier*100\"/>%</c> of its normal amount, but heals a second time <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkEchoofHeavenBreathofHeaven,Duration\" player=\"0\" precision=\"2\"/></c> seconds later.",
     "MonkElevenSidedStrikeTalent": "Seven-Sided Strike hits <c val=\"#TooltipNumbers\">4</c> additional times.",
     "MonkEpiphany": "Activate to restore <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkEpiphanyRenerateMana,RechargeVitalFraction*100\"/>%</c> of Kharazim's maximum Mana and refill <c val=\"#TooltipNumbers\">2</c> charges of Radiant Dash.",
+    "MonkFistsofLegend": "Gain <c val=\"#TooltipNumbers\">50%</c> of the benefit from both level <c val=\"#TooltipNumbers\">1</c>  talents that were not chosen.",
     "MonkHeavenlyZealBreathofHeaven": "Increases Breath of Heaven's Movement Speed bonus to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkBreathofHeavenMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor+Talent,MonkHeavenlyZealBreathofHeaven,AbilityModificationArray[0].Modifications[0].Value*100\" player=\"0\"/>%</c>.  Radiant Dashing to an ally increases the healing they receive from Breath of Heaven by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkBreathOfHeavenCreateHealerExecute,MultiplicativeModifierArray[MonkBreathOfHeavenDashOfHeaven].Modifier*100\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkBreathofHeavenHeavenlyZealTalentTrackingBehavior,Duration\"Precision=\"2\"/></c> seconds.",
     "MonkInsightTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\"height=\"22\" /><c val=\"#TooltipQuest\">Quest:</c> Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack restores <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkComboWeaponInsightRegenMana,RechargeVitalRate\"/></c> Mana, grants a stack of Insight, and gives <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkIronFistMoveSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> increased Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkIronFistMoveSpeed,Duration\"Precision=\"2\"/></c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\"height=\"22\" /><c val=\"#TooltipQuest\">Reward:</c> Upon getting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkInsightQuestToken,Max\"/></c> stacks of Insight, every <c val=\"#TooltipNumbers\">3rd</c> attack also reduces Basic Ability cooldowns by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,MonkInsightModifyUnit,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.",
     "MonkIronFistsTalent": "Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkWeaponDamage,MultiplicativeModifierArray[MonkIronFists].Modifier*100\"/>%</c> bonus damage and gives <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkIronFistMoveSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> increased Move Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkIronFistMoveSpeed,Duration\" precision=\"2\"/></c> seconds.",
@@ -553,6 +573,7 @@
     "MonkEchoofHeavenTalent": "Breath of Heaven heals a second time",
     "MonkElevenSidedStrikeTalent": "Seven-Sided Strike hits more",
     "MonkEpiphany": "Activate to restore Mana and Radiant Dash charges",
+    "MonkFistsofLegend": "Gain partial level 1 talent benefits",
     "MonkHeavenlyZealBreathofHeaven": "Breath of Heaven increases allies Move Speed",
     "MonkInsightTalent": "<c val=\"#TooltipQuest\">Quest:</c> Basic Attacks restore Mana, lower cooldowns",
     "MonkIronFistsTalent": "Basic Attacks deal more damage",

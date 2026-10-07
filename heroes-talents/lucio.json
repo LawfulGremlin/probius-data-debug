@@ -92,7 +92,7 @@
       {
         "uid": "fb6e89",
         "name": "High Five",
-        "description": "Quickly skate to an allied Hero. Upon arrival the ally is healed for 250 (+4% per level), Lúcio is healed for 80 (+4% per level), and both gain Unstoppable for 1 second.",
+        "description": "Quickly skate to an allied Hero. Upon arrival the ally is healed for 230 (+4% per level), Lúcio is healed for 80 (+4% per level), and both gain Unstoppable for 1 second.",
         "hotkey": "R",
         "abilityId": "Lucio|R2",
         "tooltipId": "LucioHighFive",
@@ -323,7 +323,7 @@
         "tooltipId": "LucioHighFive",
         "talentTreeId": "LucioHighFive",
         "name": "High Five",
-        "description": "Quickly skate to an allied Hero. Upon arrival the ally is healed for 250 (+4% per level), Lúcio is healed for 80 (+4% per level), and both gain Unstoppable for 1 second.",
+        "description": "Quickly skate to an allied Hero. Upon arrival the ally is healed for 230 (+4% per level), Lúcio is healed for 80 (+4% per level), and both gain Unstoppable for 1 second.",
         "icon": "storm_ui_icon_lucio_highfive.png",
         "type": "Heroic",
         "sort": 2,
@@ -379,7 +379,7 @@
         "tooltipId": "LucioWallRideSlip",
         "talentTreeId": "LucioWallRideSlip",
         "name": "Slip",
-        "description": "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to 40% for 1 second.  Passive: Wall Ride grants 15 Armor.",
+        "description": "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to 40%, and grants 15 Armor, for 1 second.",
         "icon": "storm_ui_icon_lucio_wallride.png",
         "type": "Z",
         "sort": 3,
@@ -573,7 +573,7 @@
     "LucioSoundwaveSubwoofer": "Enemies within the first half of Soundwave's range are knocked back <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,LucioSoundwaveSubwooferKnockbackPersistent,PeriodCount/Effect,LucioSoundwaveKnockbackPersistent,PeriodCount-100\" precision=\"2\"/>%</c> further.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit <c val=\"#TooltipNumbers\">3</c> enemy Heroes with a single Soundwave.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Increase Soundwave's arc by <c val=\"#TooltipNumbers\"><d ref=\"(100)/(Effect,LucioSoundwaveSearch,AreaArray[0].Arc/Effect,LucioSoundwaveSubwooferQuestCompleteModifyPlayer,EffectArray[1].Value)\" player=\"0\"/>%</c> and its range by <c val=\"#TooltipNumbers\"><d ref=\"(100)/(Effect,LucioSoundwaveSearch,AreaArray[0].Radius/Effect,LucioSoundwaveSubwooferQuestCompleteModifyPlayer,EffectArray[0].Value)\" player=\"0\"/>%</c>.",
     "LucioWallRide": "When moving alongside terrain, Lúcio begins to Wall Ride for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSpeed,Duration\"player=\"0\"/></c> seconds. While Wall Ride is active, Lúcio can walk through units and gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSpeed,Modification.MoveSpeedBonus/Unit,HeroLucio,Speed*100\"/>%</c> Movement Speed that stacks with other bonuses.",
     "LucioWallRideAccelerando": "Wall Ride's Movement Speed bonus gradually increases to <c val=\"#TooltipNumbers\"><d ref=\"(Accumulator,LucioWallRideAccelerandoTokenAccumulator,MaxAccumulation/Unit,HeroLucio,Speed)+(Behavior,LucioWallRideSpeed,Modification.MoveSpeedBonus/Unit,HeroLucio,Speed)*100\" player=\"0\"/>%</c> over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideAccelerandoToken,Max*Behavior,LucioWallRideSpeed,Period\"/></c> seconds while Lúcio maintains its effect.",
-    "LucioWallRideSlip": "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSlip,Modification.MoveSpeedBonus+Behavior,LucioWallRideSpeed,Modification.MoveSpeedBonus/Unit,HeroLucio,Speed*100\" player=\"0\"/>%</c> for <c al=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSlip,Duration\"/></c> second.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Wall Ride grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSlipArmor,ArmorModification.AllArmorBonus\"/></c> Armor."
+    "LucioWallRideSlip": "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSlip,Modification.MoveSpeedBonus+Behavior,LucioWallRideSpeed,Modification.MoveSpeedBonus/Unit,HeroLucio,Speed*100\" player=\"0\"/>%</c>, and grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSlip,ArmorModification.AllArmorBonus\"/></c> Armor, for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSlip,Duration\"/></c> second."
   },
   "tooltipSimple": {
     "LucioAmpItUp": "Boost the effect of Lúcio's Crossfade track",
