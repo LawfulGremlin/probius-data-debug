@@ -53,7 +53,7 @@
         "abilityId": "Kharazim|Q1",
         "tooltipId": "MonkRadiantDash",
         "cooldown": 12,
-        "manaCost": 30,
+        "manaCost": 25,
         "icon": "storm_ui_icon_monk_dash.png",
         "type": "basic"
       },
@@ -77,7 +77,7 @@
         "abilityId": "Kharazim|E1",
         "tooltipId": "MonkDeadlyReach",
         "cooldown": 10,
-        "manaCost": 50,
+        "manaCost": 45,
         "icon": "storm_ui_icon_monk_deadlyreach.png",
         "type": "basic"
       },
@@ -100,7 +100,7 @@
         "hotkey": "R",
         "abilityId": "Kharazim|R2",
         "tooltipId": "MonkDivinePalm",
-        "cooldown": 60,
+        "cooldown": 50,
         "manaCost": 50,
         "icon": "storm_ui_icon_monk_divinepalm.png",
         "type": "heroic"
@@ -222,7 +222,7 @@
         "tooltipId": "MonkHeavenlyZealBreathofHeaven",
         "talentTreeId": "MonkHeavenlyZealBreathofHeaven",
         "name": "Heavenly Zeal",
-        "description": "Increases Breath of Heaven's Movement Speed bonus to 30%.",
+        "description": "Increases Breath of Heaven's Movement Speed bonus to 30%.  Radiant Dashing to an ally increases the healing they receive from Breath of Heaven by 50% for 3 seconds.",
         "icon": "storm_ui_icon_monk_breath0fheaven.png",
         "type": "W",
         "sort": 2,
@@ -239,7 +239,7 @@
         "tooltipId": "MonkBlazingFistsTalent",
         "talentTreeId": "MonkBlazingFistsDeadlyReach",
         "name": "Blazing Fists",
-        "description": "Every 3rd Basic Attack reduces the cooldown of Deadly Reach by 0.75 seconds.",
+        "description": "Increase the duration of Deadly Reach by 100%.  Every 3rd Basic Attack reduces the cooldown of Deadly Reach by 0.75 seconds.",
         "icon": "storm_ui_icon_monk_deadlyreach.png",
         "type": "E",
         "sort": 3,
@@ -263,7 +263,7 @@
         "icon": "storm_ui_icon_monk_divinepalm.png",
         "type": "Heroic",
         "sort": 1,
-        "cooldown": 60,
+        "cooldown": 50,
         "isQuest": false,
         "abilityId": "Kharazim|R2",
         "abilityLinks": [
@@ -311,31 +311,13 @@
         ]
       },
       {
-        "tooltipId": "MonkFistsofFuryTalent",
-        "talentTreeId": "MonkFistsofFuryDeadlyReach",
-        "name": "Fists of Fury",
-        "description": "Increases Deadly Reach's duration by 100%.",
-        "icon": "storm_ui_icon_monk_deadlyreach.png",
-        "type": "E",
-        "sort": 2,
-        "isQuest": false,
-        "abilityId": "Kharazim|E1",
-        "abilityLinks": [
-          "Kharazim|E1"
-        ],
-        "abilityTalentLinkIds": [
-          "MonkDeadlyReachActive",
-          "MonkDeadlyReach"
-        ]
-      },
-      {
         "tooltipId": "GenericSpellShieldTalent",
         "talentTreeId": "GenericTalentSpellShield",
         "name": "Spell Shield",
         "description": "Every 30 seconds, gain 50 Spell Armor against the next enemy Ability and subsequent Abilities for 3 seconds, reducing the damage taken by 50%.  Can be toggled to allow or prevent this talent from triggering automatically.",
         "icon": "storm_ui_icon_talent_spellshield.png",
         "type": "Active",
-        "sort": 3,
+        "sort": 2,
         "isQuest": false,
         "abilityId": "Kharazim|Active"
       },
@@ -346,7 +328,7 @@
         "description": "While Stunned or Rooted, gain 75 Physical Armor against Hero Basic Attacks for 4 seconds, reducing their damage by 75%.",
         "icon": "storm_ui_icon_talent_relentless.png",
         "type": "Passive",
-        "sort": 4,
+        "sort": 3,
         "isQuest": false,
         "abilityId": "Kharazim|Passive"
       }
@@ -394,23 +376,6 @@
         "icon": "storm_ui_icon_monk_breath0fheaven.png",
         "type": "W",
         "sort": 3,
-        "isQuest": false,
-        "abilityId": "Kharazim|W1",
-        "abilityLinks": [
-          "Kharazim|W1"
-        ],
-        "abilityTalentLinkIds": [
-          "MonkBreathOfHeaven"
-        ]
-      },
-      {
-        "tooltipId": "MonkDashofLight",
-        "talentTreeId": "MonkDashofLight",
-        "name": "Dash of Light",
-        "description": "Radiant Dashing to an ally increases the healing they receive from Breath of Heaven by 75% for 3 seconds.",
-        "icon": "storm_ui_icon_monk_breath0fheaven_var1.png",
-        "type": "W",
-        "sort": 4,
         "isQuest": false,
         "abilityId": "Kharazim|W1",
         "abilityLinks": [
@@ -535,19 +500,17 @@
     "GenericStormShield": "Activate to give all nearby allied Heroes a Shield for <c val=\"#TooltipNumbers\">20%</c> of their max Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketStormShield,Duration\" player=\"0\"/></c> seconds.",
     "MonkAirAlly": "Place an Air Ally that grants vision and reveals a large area around it. Has <c val=\"#TooltipNumbers\"><d ref=\"Unit,MonkAirAlly,LifeMax\"/></c> Health and lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkAirAllyTimedLife,Duration\" player=\"0\"/></c> seconds. Kharazim can Radiant Dash to Air Allies.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,MonkAirAlly,Cost.Charge.CountMax\"/></c> charges.",
     "MonkBlankTrait": "<c val=\"#TooltipNumbers\">Choose between Transcendence, Iron Fists, and Insight from the Talents panel.",
-    "MonkBlazingFistsTalent": "Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack reduces the cooldown of Deadly Reach by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,MonkDeadlyReachBlazingFistsModifyCooldown,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.",
+    "MonkBlazingFistsTalent": "Increase the duration of Deadly Reach by <c val=\"#TooltipNumbers\">100%</c>.  Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack reduces the cooldown of Deadly Reach by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,MonkDeadlyReachBlazingFistsModifyCooldown,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.",
     "MonkBlindingSpeedTalent": "Decreases Radiant Dash's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,MonkBlindingSpeedRadiantDash,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds and increases the maximum number of charges by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MonkBlindingSpeedRadiantDash,AbilityModificationArray[0].Modifications[0].Value\"/></c>.",
     "MonkBreathOfHeaven": "Heal nearby Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkBreathOfHeavenCreateHealerExecute,RechargeVitalRate\"/></c> and give them <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkBreathofHeavenMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor*100\"player=\"0\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkBreathofHeavenMoveSpeedBuff,Duration\" player=\"0\"/></c> seconds.",
     "MonkCleansingTouch": "Radiant Dashing to an ally makes them Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentCleanseBuff,Duration\"/></c> second.",
-    "MonkDashofLight": "Radiant Dashing to an ally increases the healing they receive from Breath of Heaven by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkBreathOfHeavenCreateHealerExecute,MultiplicativeModifierArray[MonkBreathOfHeavenDashOfHeaven].Modifier*100\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkBreathofHeavenDashofLightTalentTrackingBehavior,Duration\"/></c> seconds.",
     "MonkDeadlyReach": "Kharazim's next Basic Attack increases his Attack Speed and Attack Range by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkDeadlyReachCasterBehavior,Modification.UnifiedAttackSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkDeadlyReachCasterBehavior,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
     "MonkDivinePalm": "Protect an allied Hero from death, causing them to be healed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkDivinePalmCreateHealer,RechargeVitalRate\"/></c> if they take fatal damage in the next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkDivinePalmTargetBehavior,Duration\" player=\"0\"/></c> seconds.",
     "MonkEarthAlly": "Place an Earth Ally that grants nearby allied Heroes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkEarthAllyBlockBuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against Heroic Basic Attacks, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkEarthAllyBlockBuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>. Has <c val=\"#TooltipNumbers\"><d ref=\"Unit,MonkEarthAlly,LifeMax\"/></c> Health and lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkEarthAllyTimedLife,Duration\" player=\"0\"/></c> seconds.  Kharazim can Radiant Dash to Earth Allies.",
     "MonkEchoofHeavenTalent": "Breath of Heaven heals <c val=\"#TooltipNumbers\"><d ref=\"1+Effect,MonkBreathOfHeavenCreateHealerExecute,MultiplicativeModifierArray[MonkBreathOfHeavenEchoOfHeaven].Modifier*100\"/>%</c> of its normal amount, but heals a second time <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkEchoofHeavenBreathofHeaven,Duration\" player=\"0\" precision=\"2\"/></c> seconds later.",
     "MonkElevenSidedStrikeTalent": "Seven-Sided Strike hits <c val=\"#TooltipNumbers\">4</c> additional times.",
     "MonkEpiphany": "Activate to restore <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkEpiphanyRenerateMana,RechargeVitalFraction*100\"/>%</c> of Kharazim's maximum Mana and refill <c val=\"#TooltipNumbers\">2</c> charges of Radiant Dash.",
-    "MonkFistsofFuryTalent": "Increases Deadly Reach's duration by <c val=\"#TooltipNumbers\">100%</c>.",
-    "MonkHeavenlyZealBreathofHeaven": "Increases Breath of Heaven's Movement Speed bonus to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkBreathofHeavenMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor+Talent,MonkHeavenlyZealBreathofHeaven,AbilityModificationArray[0].Modifications[0].Value*100\" player=\"0\"/>%</c>.",
+    "MonkHeavenlyZealBreathofHeaven": "Increases Breath of Heaven's Movement Speed bonus to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkBreathofHeavenMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor+Talent,MonkHeavenlyZealBreathofHeaven,AbilityModificationArray[0].Modifications[0].Value*100\" player=\"0\"/>%</c>.  Radiant Dashing to an ally increases the healing they receive from Breath of Heaven by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkBreathOfHeavenCreateHealerExecute,MultiplicativeModifierArray[MonkBreathOfHeavenDashOfHeaven].Modifier*100\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkBreathofHeavenHeavenlyZealTalentTrackingBehavior,Duration\"/></c> seconds.",
     "MonkInsightTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\"height=\"22\" /><c val=\"#TooltipQuest\">Quest:</c> Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack restores <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkComboWeaponInsightRegenMana,RechargeVitalRate\"/></c> Mana, grants a stack of Insight, and gives <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkIronFistMoveSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> increased Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkIronFistMoveSpeed,Duration\"/></c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\"height=\"22\" /><c val=\"#TooltipQuest\">Reward:</c> Upon getting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkInsightQuestToken,Max\"/></c> stacks of Insight, every <c val=\"#TooltipNumbers\">3rd</c> attack also reduces Basic Ability cooldowns by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,MonkInsightModifyUnit,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.",
     "MonkIronFistsTalent": "Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkWeaponDamage,MultiplicativeModifierArray[MonkIronFists].Modifier*100\"/>%</c> bonus damage and gives <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkIronFistMoveSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> increased Move Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkIronFistMoveSpeed,Duration\"/></c> seconds.",
     "MonkPeacefulReposeTalent": "Divine Palm's cooldown is set to <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkDivinePalmModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds if the Hero does not die.",
@@ -568,14 +531,12 @@
     "MonkBlindingSpeedTalent": "Radiant Dash more often",
     "MonkBreathOfHeaven": "Heal nearby ally Heroes and grant Movement Speed",
     "MonkCleansingTouch": "Radiant Dash makes ally Unstoppable",
-    "MonkDashofLight": "Radiant Dash increases Breath of Heaven healing",
     "MonkDeadlyReach": "Increases Attack Speed and Attack Range",
     "MonkDivinePalm": "Prevent an ally from death",
     "MonkEarthAlly": "Place an Earth Ally that grants Physical Armor",
     "MonkEchoofHeavenTalent": "Breath of Heaven heals a second time",
     "MonkElevenSidedStrikeTalent": "Seven-Sided Strike hits more",
     "MonkEpiphany": "Activate to restore Mana and Radiant Dash charges",
-    "MonkFistsofFuryTalent": "Increases Deadly Reach duration",
     "MonkHeavenlyZealBreathofHeaven": "Breath of Heaven increases allies Move Speed",
     "MonkInsightTalent": "<c val=\"#TooltipQuest\">Quest:</c> Basic Attacks restore Mana, lower cooldowns",
     "MonkIronFistsTalent": "Basic Attacks deal more damage",

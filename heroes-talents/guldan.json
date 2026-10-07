@@ -76,9 +76,9 @@
       {
         "uid": "cbd573",
         "name": "Rain of Destruction",
-        "description": "Channel to summon a rain of meteors in an area over 7 seconds. Each meteor deals 165 (+4% per level) damage in a small area.",
+        "description": "After 1.5 seconds, summon a rain of meteors in an area for 7 seconds. Each meteor deals 165 (+4% per level) damage in a small area.",
         "hotkey": "R",
-        "abilityId": "Guldan|R3",
+        "abilityId": "Guldan|R2",
         "tooltipId": "GuldanRainOfDestruction",
         "cooldown": 100,
         "manaCost": 90,
@@ -114,7 +114,7 @@
         "tooltipId": "GuldanFelFlameTalentPursuitOfFlame",
         "talentTreeId": "GuldanFelFlamePursuitOfFlame",
         "name": "Pursuit of Flame",
-        "description": "Quest: Hit 40 enemy Heroes with Fel Flame.  Reward: Fel Flame's radius is increased by 10%.",
+        "description": "Quest: Hit 30 enemy Heroes with Fel Flame.  Reward: Fel Flame's radius is increased by 10%.",
         "icon": "storm_ui_icon_guldan_felflame.png",
         "type": "Q",
         "sort": 1,
@@ -131,7 +131,7 @@
         "tooltipId": "GuldanChaoticEnergy",
         "talentTreeId": "GuldanChaoticEnergy",
         "name": "Chaotic Energy",
-        "description": "Increases the cast range of Drain Life by 25% and the healing provided by Regen Globes by 50%.  Quest: Gather 20 Regen Globes.  Reward: Basic Ability Mana costs are permanently reduced by 20.",
+        "description": "Increases the cast range of Drain Life by 25% and the healing provided by Regen Globes by 50%.  Quest: Gather 15 Regen Globes.  Reward: Basic Ability Mana costs are permanently reduced by 20.",
         "icon": "storm_ui_icon_guldan_healthfunnel.png",
         "type": "W",
         "sort": 2,
@@ -219,7 +219,7 @@
         "tooltipId": "GuldanFelFlameBoundByShadow",
         "talentTreeId": "GuldanFelFlameBoundByShadow",
         "name": "Bound by Shadow",
-        "description": "Each enemy Hero hit with Fel Flame reduces the cooldown of Corruption by 1 second.",
+        "description": "Each enemy Hero hit with Fel Flame reduces the cooldown of Corruption by 1.5 seconds.",
         "icon": "storm_ui_icon_guldan_felflame.png",
         "type": "Q",
         "sort": 1,
@@ -236,7 +236,7 @@
         "tooltipId": "GuldanCorruptionCurseOfExhaustion",
         "talentTreeId": "GuldanCorruptionCurseOfExhaustion",
         "name": "Curse of Exhaustion",
-        "description": "Drain Life deals 50% more damage and Slows the target's Movement Speed by 35% if they are afflicted by Corruption.",
+        "description": "Drain Life deals 50% more damage and Slows the target's Movement Speed by 50% if they are afflicted by Corruption.",
         "icon": "storm_ui_icon_guldan_healthfunnel.png",
         "type": "W",
         "sort": 2,
@@ -290,15 +290,15 @@
         "tooltipId": "GuldanRainOfDestruction",
         "talentTreeId": "GuldanRainOfDestruction",
         "name": "Rain of Destruction",
-        "description": "Channel to summon a rain of meteors in an area over 7 seconds. Each meteor deals 165 (+4% per level) damage in a small area.",
+        "description": "After 1.5 seconds, summon a rain of meteors in an area for 7 seconds. Each meteor deals 165 (+4% per level) damage in a small area.",
         "icon": "storm_ui_icon_guldan_rainoffire.png",
         "type": "Heroic",
         "sort": 2,
         "cooldown": 100,
         "isQuest": false,
-        "abilityId": "Guldan|R3",
+        "abilityId": "Guldan|R2",
         "abilityLinks": [
-          "Guldan|R3"
+          "Guldan|R2"
         ],
         "abilityTalentLinkIds": [
           "GuldanRainOfDestruction"
@@ -413,7 +413,7 @@
         "tooltipId": "GuldanLifeTapDarknessWithin",
         "talentTreeId": "GuldanLifeTapDarknessWithin",
         "name": "Darkness Within",
-        "description": "After using Life Tap, the damage and healing of Gul'dan's next Ability is increased by 25%.",
+        "description": "After using Life Tap, the damage and healing of Gul'dan's next Ability is increased by 30%.",
         "icon": "storm_ui_icon_guldan_lifetap.png",
         "type": "Trait",
         "sort": 3,
@@ -457,9 +457,9 @@
         "type": "Heroic",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Guldan|R3",
+        "abilityId": "Guldan|R2",
         "abilityLinks": [
-          "Guldan|R3"
+          "Guldan|R2"
         ],
         "abilityTalentLinkIds": [
           "GuldanRainOfDestruction"
@@ -499,7 +499,7 @@
     "GuldanDrainLifeHarvestLife": "Drain Life heals for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,GuldanDrainLifeCreateHealer,MultiplicativeModifierArray[HarvestLife].Modifier\"/>%</c> more Health when used on Heroes.",
     "GuldanDrainLifeHealthFunnel": "Drain Life's cooldown recharges <c val=\"#TooltipNumbers\"><d ref=\"-100*(Effect,GuldanDrainLifeHealthFunnelTalentPeriodicModifyCooldown,Cost[0].CooldownTimeUse/Effect,GuldanDrainLifeChannelCreatePersistent,PeriodicPeriodArray[0])\"/>%</c> faster while it is channeling. If an enemy dies while under the effect of Drain Life, the cooldown is instantly refreshed.",
     "GuldanFelFlame": "Release a wave of flame, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,GuldanFelFlameDamage,Amount\"/></c> damage to enemies.",
-    "GuldanFelFlameBoundByShadow": "Each enemy Hero hit with Fel Flame reduces the cooldown of Corruption by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,GuldanFelFlameBoundByShadowModifyCooldown,Cost[0].CooldownTimeUse\" precision=\"1\"/></c> second.",
+    "GuldanFelFlameBoundByShadow": "Each enemy Hero hit with Fel Flame reduces the cooldown of Corruption by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,GuldanFelFlameBoundByShadowModifyCooldown,Cost[0].CooldownTimeUse\" precision=\"1\"/></c> seconds.",
     "GuldanFelFlameFelArmor": "Hitting an enemy Hero with Fel Flame grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanFelFlameFelArmorSpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanFelFlameFelArmorSpellShieldActive,Duration\"Precision=\"2\"/></c> seconds, reducing Ability Damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanFelFlameFelArmorSpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.",
     "GuldanFelFlameRampantHellfire": "Fel Flame's damage is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,GuldanRampantHellfireAccumulator,Scale\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanFelFlameRampantHellfireStackDummyBehavior,Duration\"/></c> seconds when hitting an enemy Hero. This can stack up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanRampantHellfireTokenCounter,Max\"/></c> times.",
     "GuldanFelFlameTalentPursuitOfFlame": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanFelFlamePursuitOfFlameQuestToken,Max\"/></c> enemy Heroes with Fel Flame.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Fel Flame's radius is increased by <c val=\"#TooltipNumbers\">10%</c>.",
@@ -510,7 +510,7 @@
     "GuldanLifeTapDarknessWithin": "After using Life Tap, the damage and healing of Gul'dan's next Ability is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,GuldanCorruptionRuinousAfflictionDamage,MultiplicativeModifierArray[GuldanLifeTapDarknessWithin].Modifier\"/>%</c>.",
     "GuldanLifeTapHungerforPower": "Increases Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,GuldanLifeTapHungerforPowerBehavior,Modification.DamageDealtFraction[Ability]\" precision=\"2\"/>%</c> but reduces healing received from allies by <c val=\"#TooltipNumbers\">25%</c>.",
     "GuldanLifeTapImprovedLifeTap": "Increase the Mana restored by Life Tap to <c val=\"#TooltipNumbers\">35%</c>.",
-    "GuldanRainOfDestruction": "Channel to summon a rain of meteors in an area over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanRainOfDestructionChannel,Duration\"/></c> seconds. Each meteor deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,GuldanRainOfDestructionDamage,Amount\"/></c> damage in a small area.",
+    "GuldanRainOfDestruction": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,GuldanRainOfDestruction,CastIntroTime\"precision=\"1\"/></c> seconds, summon a rain of meteors in an area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanRainOfDestructionChannel,Duration\"/></c> seconds. Each meteor deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,GuldanRainOfDestructionDamage,Amount\"/></c> damage in a small area.",
     "GuldanRainOfDestructionDeepImpact": "Rain of Destruction slows enemies Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,GuldanRainOfDestructionDeepImpactSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanRainOfDestructionDeepImpactSlow,Duration\" precision=\"1\"/></c> seconds."
   },
   "tooltipSimple": {
@@ -529,7 +529,7 @@
     "GuldanFelFlameBoundByShadow": "Fel Flame hits reduce the cooldown of Corruption",
     "GuldanFelFlameFelArmor": "Fel Flame grants Spell Armor",
     "GuldanFelFlameRampantHellfire": "Increases Fel Flame's damage",
-    "GuldanFelFlameTalentPursuitOfFlame": "<c val=\"#TooltipQuest\">Quest:</c> Hit <c val=\"#TooltipNumbers\">40</c> Heroes to increase area",
+    "GuldanFelFlameTalentPursuitOfFlame": "<c val=\"#TooltipQuest\">Quest:</c> Hit <c val=\"#TooltipNumbers\">30</c> Heroes to increase area",
     "GuldanHealthstone": "Activate to heal",
     "GuldanHorrify": "Deals damage and Fears Heroes",
     "GuldanHorrifyHaunt": "Increases Horrify duration, lower enemies' Armor",

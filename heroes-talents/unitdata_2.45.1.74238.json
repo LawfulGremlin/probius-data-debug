@@ -754,7 +754,7 @@
     "unitId": "AnubarakCocoonFat",
     "portraits": {},
     "life": {
-      "amount": 32,
+      "amount": 28,
       "scale": 0,
       "regenRate": -4,
       "regenScale": 0
@@ -782,7 +782,7 @@
     "unitId": "AnubarakCocoonNormal",
     "portraits": {},
     "life": {
-      "amount": 32,
+      "amount": 28,
       "scale": 0,
       "regenRate": -4,
       "regenScale": 0
@@ -11190,7 +11190,7 @@
           "_hdp5LinkId": "AnubarakCocoon|AnubarakCocoon|E",
           "icon": "storm_ui_icon_anubarak_webblast.png",
           "name": "Cocoon",
-          "fullText": "Wraps target enemy Hero in a cocoon, rendering them unable to act or be targeted for <c val=\"bfd4fd\">8</c> seconds. Allies of the Hero can attack the cocoon to break it and free them early.",
+          "fullText": "Wraps target enemy Hero in a cocoon, rendering them unable to act or be targeted for <c val=\"bfd4fd\">7</c> seconds. Allies of the Hero can attack the cocoon to break it and free them early.",
           "cooldownText": "Cooldown: 70 seconds"
         }
       ],
@@ -18436,10 +18436,10 @@
     "unitId": "RexxarMisha",
     "portraits": {},
     "life": {
-      "amount": 1762,
-      "scale": 0.04,
-      "regenRate": 3.6718,
-      "regenScale": 0.04,
+      "amount": 1620,
+      "scale": 0.0475,
+      "regenRate": 3.375,
+      "regenScale": 0.0475,
       "type": "Health"
     },
     "weapons": [
