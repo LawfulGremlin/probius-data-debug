@@ -2258,7 +2258,7 @@
           "_hdp5LinkId": "DeathwingIncinerate|DeathwingIncinerate|W",
           "icon": "storm_ui_icon_deathwing_incinerate.png",
           "name": "Incinerate",
-          "fullText": "After <c val=\"bfd4fd\">0.75</c> seconds, Deathwing flaps his wings, dealing <c val=\"bfd4fd\">70</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Lava Burst</c><n/>Create a lava pool that damages and Slows",
+          "fullText": "After <c val=\"bfd4fd\">0.75</c> seconds, Deathwing flaps his wings, dealing <c val=\"bfd4fd\">65</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Lava Burst</c><n/>Create a lava pool that damages and Slows",
           "cooldownText": "Cooldown: 4 seconds"
         },
         {
@@ -4036,7 +4036,7 @@
         "range": 6,
         "minimumRange": 0,
         "period": 1,
-        "damage": 36,
+        "damage": 40,
         "damageScale": 0.04
       }
     ],
@@ -12795,7 +12795,7 @@
         "range": 6,
         "minimumRange": 0,
         "period": 1,
-        "damage": 36,
+        "damage": 40,
         "damageScale": 0.04
       }
     ],
@@ -12835,7 +12835,7 @@
         "range": 6,
         "minimumRange": 0,
         "period": 1,
-        "damage": 36,
+        "damage": 40,
         "damageScale": 0.04
       }
     ],
@@ -12945,7 +12945,7 @@
         "damage": 75,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": 0.4,
+          "Heroic": 0.5,
           "MapCreature": 1,
           "Merc": 1,
           "Minion": 1,
@@ -12993,7 +12993,6 @@
         "damage": 250,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -13035,7 +13034,6 @@
         "damage": 250,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -13077,7 +13075,6 @@
         "damage": 330,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -13119,7 +13116,6 @@
         "damage": 330,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -13846,7 +13842,7 @@
     "unitId": "TownMoonwell",
     "portraits": {},
     "life": {
-      "amount": 1125,
+      "amount": 375,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13860,7 +13856,7 @@
     "unitId": "TownMoonwellL2",
     "portraits": {},
     "life": {
-      "amount": 2000,
+      "amount": 250,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13874,7 +13870,7 @@
     "unitId": "TownMoonwellL3",
     "portraits": {},
     "life": {
-      "amount": 2350,
+      "amount": 700,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -14032,7 +14028,6 @@
         "damage": 375,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -14074,7 +14069,6 @@
         "damage": 440,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -17902,7 +17896,7 @@
           "icon": "storm_ui_icon_alexstrasza_life_binder.png",
           "name": "Life-Binder",
           "fullText": "Bind Alexstrasza's life force with an allied Hero. Both her and her target are healed for <c val=\"bfd4fd\">480</c><c val=\"a7a7a7\">~~0.04~~</c> Health over <c val=\"bfd4fd\">2</c> seconds. Afterwards, the Hero with a lower percentage of Health is healed to the same Health percentage as the other Hero.",
-          "cooldownText": "Cooldown: 60 seconds"
+          "cooldownText": "Cooldown: 50 seconds"
         },
         {
           "nameId": "AlexstraszaCleansingFlameDragonqueen",

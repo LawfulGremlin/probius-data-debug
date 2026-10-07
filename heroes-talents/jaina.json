@@ -223,7 +223,7 @@
         "tooltipId": "JainaFrostbiteArcaneIntellectTalent",
         "talentTreeId": "JainaFrostbiteArcaneIntellect",
         "name": "Arcane Intellect",
-        "description": "Dealing damage to a Chilled target returns Mana to Jaina. Basic Attacks return 5 Mana and Abilities return 20.",
+        "description": "Dealing damage to a Chilled target returns Mana to Jaina. Basic Attacks return 5 Mana and Abilities return 20.  Passive: While above 75% Mana, Jaina gains 10% Spell Power.",
         "icon": "storm_ui_icon_jaina_arcaneintellect.png",
         "type": "Trait",
         "sort": 2,
@@ -240,7 +240,7 @@
         "tooltipId": "JainaFrostbiteFrostArmorTalent",
         "talentTreeId": "JainaFrostbiteFrostArmor",
         "name": "Frost Armor",
-        "description": "Enemies that attack Jaina are Chilled. Additionally, every 10 seconds, Jaina gains 50 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 50%.",
+        "description": "Enemies that attack Jaina are Chilled. Additionally, every 10 seconds, Jaina gains 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.",
         "icon": "storm_ui_icon_jaina_frostarmor.png",
         "type": "Passive",
         "sort": 3,
@@ -287,7 +287,7 @@
         "tooltipId": "JainaIcefuryWand",
         "talentTreeId": "JainaIcefuryWand",
         "name": "Icefury Wand",
-        "description": "Basic Attacks against Chilled Heroes deal 100% more damage and lower the cooldown of Blizzard by 2 seconds.",
+        "description": "Basic Attacks against Chilled Heroes deal 100% more damage and lower the cooldown of Blizzard by 2.5 seconds.",
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
@@ -591,7 +591,7 @@
     "JainaConeOfColdNumbingBlastTalent": "Cone of Cold Roots Chilled targets for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaConeOfColdNumbingBlastRoot,Duration\" player=\"0\" precision=\"1\"/></c> second.",
     "JainaFingersOfFrost": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gather Regeneration Globes to increase Jaina's Mana regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,JainaFingersOfFrostAccumulatorUnnamed,Scale\" precision=\"1\"/></c> per second, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,JainaFingersOfFrostAccumulatorUnnamed,MaxAccumulation\" precision=\"1\"/></c> per second. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gathering <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaFingersOfFrostQuestToken,Max\" precision=\"1\"/></c> Globes, the damage bonus from Frostbite is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,JainaBlizzardDamageChilled,MultiplicativeModifierArray[FrostMagePursuitBonus].Modifier\"/>%</c>.",
     "JainaFrigidTransmission": "Activate to teleport a short distance and Chill all nearby enemies.",
-    "JainaFrostbiteArcaneIntellectTalent": "Dealing damage to a Chilled target returns Mana to Jaina. Basic Attacks return <c val=\"#TooltipNumbers\"><d ref=\"Effect,JainaArcaneIntellectBasicAttackManaRestore,RechargeVitalRate\"/></c> Mana and Abilities return <c val=\"#TooltipNumbers\"><d ref=\"Effect,JainaArcaneIntellectAbilityDamageManaRestore,RechargeVitalRate\"/></c>.",
+    "JainaFrostbiteArcaneIntellectTalent": "Dealing damage to a Chilled target returns Mana to Jaina. Basic Attacks return <c val=\"#TooltipNumbers\"><d ref=\"Effect,JainaArcaneIntellectBasicAttackManaRestore,RechargeVitalRate\"/></c> Mana and Abilities return <c val=\"#TooltipNumbers\"><d ref=\"Effect,JainaArcaneIntellectAbilityDamageManaRestore,RechargeVitalRate\"/></c>.<n/><n/><c val=\"#AbilityPassive\">Passive: </c>While above <c val=\"#TooltipNumbers\"><d ref=\"100*Validator,JainaHasGTE75PercentMana,Value\"Precision=\"2\"/>%</c> Mana, Jaina gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,JainaArcaneIntellectSpellPower,Modification.DamageDealtFraction\"/>%</c> Spell Power.",
     "JainaFrostbiteDeepChillTalent": "Frostbite's Chill can now stack a second time, slowing targets up to <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,JainaChilledDeepChillTalentSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>.",
     "JainaFrostbiteFrostArmorTalent": "Enemies that attack Jaina are Chilled. Additionally, every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaFrostbiteFrostArmorStack,DamageResponse.Cost.Charge.TimeUse\"/></c> seconds, Jaina gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaFrostbiteFrostArmorArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaFrostbiteFrostArmorArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.",
     "JainaFrostbiteIceBarrierTalent": "Gain a Shield for <c val=\"#TooltipNumbers\">25%</c> of Ability damage dealt to Chilled targets. The shield lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaFrostbiteIceBarrierShield,Duration\" player=\"0\"/></c> seconds.",
@@ -639,6 +639,7 @@
     "JainaTraitFrostbite": "Jaina's Abilities Chill targets, slowing them and causing them to take more damage"
   },
   "tooltipColors": {
+    "AbilityPassive": "00FF90",
     "TooltipNumbers": "BFD4FD",
     "TooltipQuest": "E4B800"
   }
