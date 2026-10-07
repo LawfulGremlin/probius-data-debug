@@ -4124,20 +4124,6 @@
     "sight": 0,
     "speed": 0
   },
-  "GPUTest": {
-    "unitId": "GPUTest",
-    "portraits": {},
-    "life": {
-      "amount": 1,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0.5,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
   "GraveGolemEntanglingRootsMissile": {
     "unitId": "GraveGolemEntanglingRootsMissile",
     "portraits": {},
@@ -7015,6 +7001,90 @@
     "sight": 0,
     "speed": 0
   },
+  "MeiOWAvalancheCascadeTalentSnowballMissile": {
+    "unitId": "MeiOWAvalancheCascadeTalentSnowballMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "MeiOWAvalancheMissile": {
+    "unitId": "MeiOWAvalancheMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "MeiOWHeroWeaponMissile": {
+    "unitId": "MeiOWHeroWeaponMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "MeiOWIceWallUnit": {
+    "unitId": "MeiOWIceWallUnit",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 1.5,
+    "innerRadius": 0.0625,
+    "sight": 2,
+    "speed": 0
+  },
+  "MeiOWSnowBlindMissile": {
+    "unitId": "MeiOWSnowBlindMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "MeiOWSnowBlindTheBigOneTalentMissile": {
+    "unitId": "MeiOWSnowBlindTheBigOneTalentMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "MephistoDuranceOfHateMissile": {
     "unitId": "MephistoDuranceOfHateMissile",
     "portraits": {},
@@ -8374,8 +8444,8 @@
     "unitId": "MurkyEggHuntEgg",
     "portraits": {},
     "life": {
-      "amount": 324,
-      "scale": 30,
+      "amount": 420,
+      "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
     },
@@ -8431,8 +8501,8 @@
     "unitId": "MurkyRespawnEgg",
     "portraits": {},
     "life": {
-      "amount": 324,
-      "scale": 30,
+      "amount": 420,
+      "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
     },
@@ -16415,6 +16485,20 @@
     "sight": 0,
     "speed": 0
   },
+  "WeatherUnit": {
+    "unitId": "WeatherUnit",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "WhitemaneWeaponMissile": {
     "unitId": "WhitemaneWeaponMissile",
     "portraits": {},
@@ -17673,7 +17757,7 @@
           "icon": "storm_ui_icon_alexstrasza_cleansing_flame.png",
           "name": "Cleansing Flame",
           "fullText": "Take to the sky and drop <c val=\"bfd4fd\">5</c> fireballs over <c val=\"bfd4fd\">6</c> seconds at the position of the mouse cursor. Fireballs deal <c val=\"bfd4fd\">135</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies and heal allied Heroes for <c val=\"bfd4fd\">300</c><c val=\"a7a7a7\">~~0.04~~</c> Health.<n/><n/><c val=\"bfd4fd\">2</c> seconds after dropping all fireballs, Alexstrasza lands at the position of the mouse cursor.",
-          "cooldownText": "Cooldown: 90 seconds"
+          "cooldownText": "Cooldown: 100 seconds"
         }
       ],
       "trait": [
