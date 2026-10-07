@@ -174,10 +174,10 @@
     ],
     "4": [
       {
-        "tooltipId": "GallDoubleBackTalent",
-        "talentTreeId": "GallDoubleBack",
-        "name": "Double Back",
-        "description": "Activate Dread Orb before the second bounce ends to reverse the direction of the third bounce.  Passive: The third bounce of Dread Orb deals 50% more damage to Heroic targets, and 200% more damage to Non-Heroic targets.",
+        "tooltipId": "GallRisingDreadTalent",
+        "talentTreeId": "GallRisingDread",
+        "name": "Rising Dread",
+        "description": "Each bounce of Dread Orb increases its radius by 25% and damage by 25%. Activate Dread Orb before the second bounce ends to reverse the direction of the third bounce.",
         "icon": "storm_ui_icon_gall_chaoscollision.png",
         "type": "W",
         "sort": 1,
@@ -336,20 +336,18 @@
         ]
       },
       {
-        "tooltipId": "GallRisingDreadTalent",
-        "talentTreeId": "GallRisingDread",
-        "name": "Rising Dread",
-        "description": "Each bounce of Dread Orb increases its radius by 25% and damage by 25%.",
-        "icon": "storm_ui_icon_gall_chaoscollision.png",
-        "type": "W",
+        "tooltipId": "GallPsychoticBreakTalent",
+        "talentTreeId": "GallPsychoticBreak",
+        "name": "Psychotic Break",
+        "description": "Increase Gall's damage to enemy Heroes by 10%. Upon dying, Gall gains Ogre Rage and can use Abilities for 10 seconds.",
+        "icon": "storm_ui_icon_gall_psychoticbreak.png",
+        "type": "Passive",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Gall|W1",
-        "abilityLinks": [
-          "Gall|W1"
-        ],
+        "abilityId": "Gall|Passive",
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
-          "GallDreadOrb"
+          "GallOgreRagePassive"
         ]
       },
       {
@@ -468,7 +466,6 @@
         "icon": "storm_ui_icon_gall_ogrerage.png",
         "type": "Trait",
         "sort": 3,
-        "cooldown": 60,
         "isQuest": false,
         "abilityId": "Gall|D1",
         "abilityLinks": [
@@ -480,22 +477,26 @@
         ]
       },
       {
-        "tooltipId": "GallPsychoticBreakTalent",
-        "talentTreeId": "GallPsychoticBreak",
-        "name": "Psychotic Break",
-        "description": "Upon dying, Gall gains Ogre Rage and can use Abilities for 10 seconds.",
+        "tooltipId": "GallTwilightFrenzy",
+        "talentTreeId": "GallTwilightFrenzy",
+        "name": "Twilight Frenzy",
+        "description": "Activate to reduce the cooldowns of Shadowflame and Dread Orb to 2 seconds for the next 6 seconds.",
         "icon": "storm_ui_icon_gall_psychoticbreak.png",
-        "type": "Passive",
+        "type": "Active",
         "sort": 4,
+        "cooldown": 30,
         "isQuest": false,
-        "abilityId": "Gall|Passive"
+        "abilityId": "Gall|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "GallTwilightFrenzy"
+        ]
       }
     ]
   },
   "tooltipMarkup": {
     "GallBombsAwayTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Damaging a Hero with Runic Blast increases its damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,GallBombsAwayTalentDamageAccumulator,Scale\"/></c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallRunicBlastBombsAwayTalentTokenCounter,Max*Accumulator,GallBombsAwayTalentDamageAccumulator,Scale\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After damaging <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallRunicBlastBombsAwayTalentTokenCounter,ConditionalEvents[0].CompareValue\"/></c> Heroes, the range and speed of Cho's Rune Bomb is increased by <c val=\"#TooltipNumbers\">20%</c>.",
     "GallDeafeningBlast": "Runic Blast Silences enemy Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallRunicBlastDeafeningBlastTalentSilence,Duration\"precision=\"2\"/></c> seconds.",
-    "GallDoubleBackTalent": "Activate Dread Orb before the second bounce ends to reverse the direction of the third bounce.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> The third bounce of Dread Orb deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,GallDreadOrbImpactDamage03,MultiplicativeModifierArray[DoubleBackHeroic].Modifier\"/>%</c> more damage to Heroic targets, and <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,GallDreadOrbImpactDamage03,MultiplicativeModifierArray[DoubleBackNonHeroic].Modifier\"/>%</c> more damage to Non-Heroic targets.",
     "GallDoubleTroubleTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> If Shadowflame hits an enemy Hero that is afflicted by Cho's Consuming Blaze, its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,GallShadowflameDoubleTroubleTalentModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallShadowflameDoubleTroubleTalentTokenCounter,Max\"/></c> Heroes, Shadowflame's cooldown is instead permanently reduced by <c val=\"#TooltipNumbers\"><d ref=\"Effect,GallShadowflameDoubleTroubleTalentCompletionModifyPlayer,EffectArray[0].Value\" precision=\"1\"/></c> seconds.",
     "GallDreadOrb": "Throw a bomb that will bounce three times, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,GallDreadOrbImpactDamage01,Amount\"/></c> damage to enemies.",
     "GallEdgeOfMadnessTalent": "Every subsequent hit of Shadowflame against the same enemy Hero deals an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,GallShadowflameEdgeofMadnessTalentDamageAccumulator,Scale\"/>%</c> damage, to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,GallShadowflameEdgeofMadnessTalentDamageAccumulator,MaxAccumulation\"/>%</c>. These bonuses are lost if the Hero has not been hit for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallShadowflameEdgeofMadnessTalentDuration,Duration\"/></c> seconds.",
@@ -504,8 +505,8 @@
     "GallLeadenOrb": "Dread Orb Stuns enemy Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallDreadOrbLeadenOrbTalentStun,Duration\"precision=\"2\"/></c> second.",
     "GallOgreRageActivated": "Activate to increase Gall's damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChoOgreRage,Modification.DamageDealtFraction[Ability]\"player=\"0\"/>%</c>, but reduce Cho's Armor by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoOgreHide,ArmorModification.AllArmorBonus\"player=\"0\"/></c>.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Gall is permanently immune to Stun and Silence effects.",
     "GallOgreRampage": "Increase the damage bonus of Ogre Rage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallOgreRageOgreRampageSpellpower,Modification.DamageDealtFraction[Ability]*100\"/>%</c>. Each time Gall damages an enemy Hero this bonus increases by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,GallOgreRampageSpellPowerAccumulator,Scale\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallOgreRageOgreRampageDurationBuff,Duration\"/></c> seconds, up to an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,GallOgreRampageSpellPowerAccumulator,MaxAccumulation\"/>%</c> bonus damage.",
-    "GallPsychoticBreakTalent": "Upon dying, Gall gains Ogre Rage and can use Abilities for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallPsychoticBreakDyingBehavior,Duration\"/></c> seconds.",
-    "GallRisingDreadTalent": "Each bounce of Dread Orb increases its radius by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,GallRisingDread,AbilityModificationArray[0].Modifications[0].Value/Effect,GallDreadOrbImpactSearch01,AreaArray[0].Radius\"player=\"0\"/>%</c> and damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,GallDreadOrbImpactDamage02,MultiplicativeModifierArray[RisingDread].Modifier\"/>%</c>.",
+    "GallPsychoticBreakTalent": "Increase Gall's damage to enemy Heroes by <c val=\"#TooltipNumbers\">10%</c>. Upon dying, Gall gains Ogre Rage and can use Abilities for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallPsychoticBreakDyingBehavior,Duration\"/></c> seconds.",
+    "GallRisingDreadTalent": "Each bounce of Dread Orb increases its radius by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,GallRisingDread,AbilityModificationArray[0].Modifications[0].Value/Effect,GallDreadOrbImpactSearch01,AreaArray[0].Radius\"player=\"0\"/>%</c> and damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,GallDreadOrbImpactDamage02,MultiplicativeModifierArray[RisingDread].Modifier\"/>%</c>. Activate Dread Orb before the second bounce ends to reverse the direction of the third bounce.",
     "GallRunicBlast": "Detonate Cho's Rune Bomb, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,GallRunicBlastImpactDamage,Amount\"/></c> damage around it.",
     "GallRunicPersistenceTalent": "Runic Blast deals an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,GallRunicBlastRunicPersistenceTalentDamage,Amount*Effect,GallRunicBlastRunicPersistenceTalentPersistent,PeriodCount\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Effect,GallRunicBlastRunicPersistenceTalentPersistent,PeriodCount*Effect,GallRunicBlastRunicPersistenceTalentPersistent,PeriodicPeriodArray[0]\"/></c> seconds in an area around the detonation point.",
     "GallSearingShadows": "Enemy Heroes hit by Shadowflame take an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,GallShadowflameSearingShadowsTalentDamage,VitalFractionMax[Life]\"/>%</c> of their maximum Health as damage.",
@@ -517,6 +518,7 @@
     "GallShoveHotbar": "Nudge Cho a small distance and grant him <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,GallShoveMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor\"player=\"0\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallShoveMoveSpeedBuff,Duration\"player=\"0\"/></c> seconds.",
     "GallTaskmaster": "Every time Cho is hit by a Hero Basic Attack, reduce the cooldown of Shove by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,GallShoveTaskmasterTalentModifyGallCooldowns,Cost[0].CooldownTimeUse\"/></c> second.",
     "GallTheWillofGall": "Takedowns permanently increase the bonus of Ogre Rage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,GallTheWillofGallModifyTokenCount,Value*Effect,GallWillofGallModifyTokenPersistent,PeriodCount\"/>%</c>.",
+    "GallTwilightFrenzy": "Activate to reduce the cooldowns of Shadowflame and Dread Orb to <c val=\"#TooltipNumbers\">2</c> seconds for the next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallTwilightFrenzyBuff,Duration\"/></c> seconds.",
     "GallTwilightNovaTalent": "<c val=\"#AbilityPassive\">Passive:</c> The cooldown of Dread Orb is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,GallTwilightNova,AbilityModificationArray[0].Modifications[2].Value\"/></c> second.<n/><n/>After the first bounce of Dread Orb, <c val=\"#TooltipNumbers\">2</c> extra bombs bounce to the sides once.",
     "GallTwistingNether": "After <c val=\"#TooltipNumbers\">1</c> second, nearby enemies are slowed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallTwistingNetherSlowBehavior,Modification.UnifiedMoveSpeedFactor*(-100)\"/>%</c> while Gall channels, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallTwistingNetherChannelingBehavior,Duration - Behavior,GallTwistingNetherFirstSecondLeadInBehavior,Duration\"/></c> seconds. Activate to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,GallTwistingNetherDamage,Amount\"/></c> damage.",
     "GallWeSeeYou": "Eye of Kilrogg's cooldown is decreased by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,GallWeSeeYou,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds, its range is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*(Talent,GallWeSeeYou,AbilityModificationArray[2].Modifications[0].Value/Abil,GallTalentEyeOfKilrogg,Range)\"/>%</c>, and the number of Basic Attacks required to kill it is increased by <c val=\"#TooltipNumbers\">1</c>."
@@ -524,7 +526,6 @@
   "tooltipSimple": {
     "GallBombsAwayTalent": "<c val=\"#TooltipQuest\">Quest: </c>Empower Runic Blast",
     "GallDeafeningBlast": "Runic Blast Silences",
-    "GallDoubleBackTalent": "Re-activate Dread Orb to reverse third bounce",
     "GallDoubleTroubleTalent": "<c val=\"#TooltipQuest\">Quest: </c>Lower Shadowflame's cooldown",
     "GallDreadOrb": "Lob a ball of energy that bounces three times, damaging enemies it hits",
     "GallEdgeOfMadnessTalent": "Increase Shadowflame damage",
@@ -533,7 +534,7 @@
     "GallLeadenOrb": "Dread Orb Stuns",
     "GallOgreRageActivated": "Activate to increase Gall's Damage",
     "GallOgreRampage": "Empower Ogre Rage",
-    "GallPsychoticBreakTalent": "Cast Abilities after death",
+    "GallPsychoticBreakTalent": "Gain damage to Heroes, cast Abilities after death",
     "GallRisingDreadTalent": "Increase Dread Orb area and damage",
     "GallRunicBlast": "Detonate Cho's Rune Bomb, dealing area damage",
     "GallRunicPersistenceTalent": "Runic Blast deals additional damage over time",
@@ -546,6 +547,7 @@
     "GallShoveHotbar": "Nudge Cho a short distance",
     "GallTaskmaster": "Reduce Shove's cooldown",
     "GallTheWillofGall": "Takedowns increase Ogre Rage's Damage Bonus",
+    "GallTwilightFrenzy": "Activate to reduce cooldowns",
     "GallTwilightNovaTalent": "Dread Orb launches 2 extra bombs",
     "GallTwistingNether": "Slow and damage nearby enemies",
     "GallWeSeeYou": "Lower Eye of Kilrogg cooldown"

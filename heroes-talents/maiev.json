@@ -75,8 +75,8 @@
         "hotkey": "R",
         "abilityId": "Maiev|R1",
         "tooltipId": "MaievContainmentDisc",
-        "cooldown": 50,
-        "manaCost": 60,
+        "cooldown": 40,
+        "manaCost": 50,
         "icon": "storm_ui_icon_maiev_heroic_1_a.png",
         "type": "heroic"
       },
@@ -130,7 +130,7 @@
         "tooltipId": "MaievUmbralBindPursuitOfVengeance",
         "talentTreeId": "MaievUmbralBindPursuitOfVengeance",
         "name": "Pursuit of Vengeance",
-        "description": "Each Hero tethered by Umbral Bind reduces the cooldown of Spirit of Vengeance by 2.5 seconds.",
+        "description": "Each Hero tethered by Umbral Bind reduces the cooldown of Spirit of Vengeance by 2.5 seconds and each Hero hit by Spirit of Vengeance reduces the cooldown of Umbral Bind by 1 second.",
         "icon": "storm_ui_icon_maiev_pursuit_vengeance.png",
         "type": "W",
         "sort": 2,
@@ -238,7 +238,7 @@
         "tooltipId": "MaievUmbralBindBondsOfCorruption",
         "talentTreeId": "MaievUmbralBindBondsOfCorruption",
         "name": "Bonds of Corruption",
-        "description": "Enemy Heroes pulled by Umbral Bind have their Armor reduced by 10 for 4 seconds.",
+        "description": "Enemy Heroes pulled by Umbral Bind have their Armor reduced by 10 and are Slowed by 20% for 4 seconds",
         "icon": "storm_ui_icon_maiev_orb_corruption.png",
         "type": "W",
         "sort": 2,
@@ -280,7 +280,7 @@
         "icon": "storm_ui_icon_maiev_heroic_1_a.png",
         "type": "Heroic",
         "sort": 1,
-        "cooldown": 50,
+        "cooldown": 40,
         "isQuest": false,
         "abilityId": "Maiev|R1",
         "abilityLinks": [
@@ -366,13 +366,30 @@
     ],
     "16": [
       {
+        "tooltipId": "MaievSpiritOfVengeanceVengefulKnives",
+        "talentTreeId": "MaievSpiritOfVengeanceVengefulKnives",
+        "name": "Vengeful Knives",
+        "description": "Dealing damage to enemy Heores causes the next cast of Fan of Knives that hits enemy Heroes to deal 1% maximum Health as bonus damage, up to 5%.",
+        "icon": "storm_ui_icon_maiev_knives.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Maiev|Q1",
+        "abilityLinks": [
+          "Maiev|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "MaievFanOfKnives"
+        ]
+      },
+      {
         "tooltipId": "MaievUmbralBindCruelChain",
         "talentTreeId": "MaievUmbralBindCruelChain",
         "name": "Cruel Chain",
         "description": "Umbral Bind grants 25% Movement Speed for 2.5 seconds. In addition, each time Maiev deals damage to tethered targets, Umbral Bind's pull damage to all targets is increased by 30%, up to 150%.",
         "icon": "storm_ui_icon_maiev_umbra_1.png",
         "type": "W",
-        "sort": 1,
+        "sort": 2,
         "isQuest": false,
         "abilityId": "Maiev|W1",
         "abilityLinks": [
@@ -381,24 +398,6 @@
         "abilityTalentLinkIds": [
           "MaievUmbralBindPrimed",
           "MaievUmbralBind"
-        ]
-      },
-      {
-        "tooltipId": "MaievSpiritOfVengeanceVengefulKnives",
-        "talentTreeId": "MaievSpiritOfVengeanceVengefulKnives",
-        "name": "Vengeful Knives",
-        "description": "For 5 seconds after teleporting with Spirit of Vengeance, Fan of Knives will deal 1% maximum Health as bonus damage to enemy Heroes. Increase this damage bonus by an additional 1% for each enemy Hero hit by Spirit of Vengeance.",
-        "icon": "storm_ui_icon_maiev_vengeful_knives.png",
-        "type": "E",
-        "sort": 2,
-        "isQuest": false,
-        "abilityId": "Maiev|E1",
-        "abilityLinks": [
-          "Maiev|E1"
-        ],
-        "abilityTalentLinkIds": [
-          "MaievSpiritOfVengeance",
-          "MaievSpiritOfVengeanceBlink"
         ]
       },
       {
@@ -477,13 +476,13 @@
     "MaievSpiritOfVengeanceShadowArmor": "Blink grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievSpiritOfVengeanceShadowArmorArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievSpiritOfVengeanceShadowArmorArmor,Duration\"precision=\"2\"/></c> seconds. Maiev's Basic Attacks against enemy Heroes refresh this duration.",
     "MaievSpiritOfVengeanceShadowOrbVengeance": "Activate to reset the cooldown of Spirit of Vengeance.<n/><n/>Recharge Shadow Orb by damaging enemy Heroes with Spirit of Vengeance <c val=\"#TooltipNumbers\"><d ref=\"Abil,MaievSpiritOfVengeanceShadowOrbVengeance,Cost.Charge.CountMax\"/></c> times.",
     "MaievSpiritOfVengeanceSuddenVengeance": "After blinking with Spirit of Vengeance, the shadow explodes, damaging all nearby enemy Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievSpiritOfVengeanceSuddenVengeanceDamage,VitalFractionMax[Life]*100\"/>%</c> of their maximum Health.",
-    "MaievSpiritOfVengeanceVengefulKnives": "For <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievSpiritofVengeanceVengefulKnivesBuff,Duration\"/></c> seconds after teleporting with Spirit of Vengeance, Fan of Knives will deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MaievSpiritOfVengeanceVengefulKnivesDamage,VitalFractionMax[Life]\"/>%</c> maximum Health as bonus damage to enemy Heroes. Increase this damage bonus by an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MaievSpiritofVengeanceVengefulKnivesTalentDamageAccumulator,Scale\"/>%</c> for each enemy Hero hit by Spirit of Vengeance.",
+    "MaievSpiritOfVengeanceVengefulKnives": "Dealing damage to enemy Heores causes the next cast of Fan of Knives that hits enemy Heroes to deal <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MaievSpiritofVengeanceVengefulKnivesTalentDamageAccumulator,Scale\"Precision=\"2\"/>%</c> maximum Health as bonus damage, up to <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MaievSpiritofVengeanceVengefulKnivesTalentDamageAccumulator,MaxAccumulation\"Precision=\"2\"/>%</c>.",
     "MaievUmbralBind": "Maiev's next Basic Attack cleaves and applies a tether to enemy Heroes hit for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievUmbralBindTetherPersistent,ExpireDelay\" precision=\"1\"/></c> seconds. If a tethered Hero moves too far from Maiev, they are pulled toward her, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievUmbralBindPullDamage,Amount\"/></c> damage and breaking the tether.",
-    "MaievUmbralBindBondsOfCorruption": "Enemy Heroes pulled by Umbral Bind have their Armor reduced by <c val=\"#TooltipNumbers\"><d ref=\"-1*Behavior,MaievUmbralBindBondsOfCorruptionArmorDecrease,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindBondsOfCorruptionArmorDecrease,Duration\"/></c> seconds.",
+    "MaievUmbralBindBondsOfCorruption": "Enemy Heroes pulled by Umbral Bind have their Armor reduced by <c val=\"#TooltipNumbers\"><d ref=\"-1*Behavior,MaievUmbralBindBondsOfCorruptionArmorDecrease,ArmorModification.AllArmorBonus\"/></c> and are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,MaievUmbralBindBondsOfCorruptionSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindBondsOfCorruptionArmorDecrease,Duration\"/></c> seconds",
     "MaievUmbralBindBondsOfJustice": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Each tether applied to a secondary target of Umbral Bind permanently increases Umbral Bind's pull damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievUmbralBindBondsOfJusticeDamageIncreaseTokenCount,Value\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After applying <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindBondsOfJusticeQuestToken,ConditionalEvents[0].CompareValue\"/></c> tethers to secondary targets, increase Umbral Bind's pull damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievUmbralBindBondsOfJusticeQuestMinorMilestoneIncreaseTokenCount,Value\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After applying <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindBondsOfJusticeQuestToken,ConditionalEvents[1].CompareValue\"/></c> tethers to secondary targets, increase Umbral Bind's cleave damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievWeaponUmbralBindDamage,MultiplicativeModifierArray[MaievBondsOfJustice].Modifier*100\"/>%</c>.",
     "MaievUmbralBindChainGang": "Tethering at least <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindTargetCounter,ConditionalEvents[0].CompareValue\"/></c> enemy Heroes with Umbral Bind grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindChainGangArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindChainGangArmor,Duration\"/></c> seconds.",
     "MaievUmbralBindCruelChain": "Umbral Bind grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindCruelChainMoveSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindCruelChainMoveSpeed,Duration\" precision=\"2\"/></c> seconds. In addition, each time Maiev deals damage to tethered targets, Umbral Bind's pull damage to all targets is increased by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,MaievUmbralBindCruelChainDamageAccumulator,Scale*100\"/>%</c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,MaievUmbralBindCruelChainDamageAccumulator,Scale*Behavior,MaievUmbralBindCruelChainToken,Max*100\"/>%</c>.",
-    "MaievUmbralBindPursuitOfVengeance": "Each Hero tethered by Umbral Bind reduces the cooldown of Spirit of Vengeance by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievUmbralBindPursuitOfVengeanceModifyCooldown,Cost[0].CooldownTimeUse*(-1)\" precision=\"2\"/></c> seconds.",
+    "MaievUmbralBindPursuitOfVengeance": "Each Hero tethered by Umbral Bind reduces the cooldown of Spirit of Vengeance by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievUmbralBindPursuitOfVengeanceModifyCooldown,Cost[0].CooldownTimeUse*(-1)\" precision=\"2\"/></c> seconds and each Hero hit by Spirit of Vengeance reduces the cooldown of Umbral Bind by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,MaievUmbralBindPursuitOfVengeanceUmbralBindModifyCooldown,Cost[0].CooldownTimeUse\"/></c> second.",
     "MaievVaultOfTheWardens": "Leap into the air, becoming Immune to all hostile effects for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievVaultOfTheWardensAirborneStasis,Duration\" precision=\"2\"/></c> seconds.",
     "MaievWardensCage": "Summon <c val=\"#TooltipNumbers\">8</c> Warden Avatars as a cage around Maiev. After <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievWardensCageSpawnDelayPersistent,InitialDelay\" precision=\"1\"/></c> seconds, enemy Heroes that come in contact with an Avatar consume it and are knocked to the center of the cage. Warden Avatars last <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievWardensCageSpawnDelayPersistent,PeriodCount*Effect,MaievWardensCageSpawnDelayPersistent,PeriodicPeriodArray[0]\"/></c> seconds."
   },
@@ -503,13 +502,13 @@
     "MaievSpiritOfVengeanceShadowArmor": "Blink grants Armor",
     "MaievSpiritOfVengeanceShadowOrbVengeance": "Activate to reset Spirit of Vengeance cooldown",
     "MaievSpiritOfVengeanceSuddenVengeance": "Blink deals area damage",
-    "MaievSpiritOfVengeanceVengefulKnives": "Spirit of Vengeance increases Fan of Knives damage",
+    "MaievSpiritOfVengeanceVengefulKnives": "Dealing damage increases Fan of Knives damage",
     "MaievUmbralBind": "Tether enemy Heroes to Maiev, pulling those that stray too far",
-    "MaievUmbralBindBondsOfCorruption": "Umbral Bind pull reduces Armor",
+    "MaievUmbralBindBondsOfCorruption": "Umbral Bind pull reduces Armor, Movement Speed",
     "MaievUmbralBindBondsOfJustice": "<c val=\"#TooltipQuest\">Quest:</c> Secondary tethers increase Umbral Bind damage",
     "MaievUmbralBindChainGang": "Multiple Umbral Bind tethers grant Armor",
     "MaievUmbralBindCruelChain": "Damage Umbral Bind targets to increase pull damage",
-    "MaievUmbralBindPursuitOfVengeance": "Umbral Bind tethers reduce Spirit of Vengeance cooldown",
+    "MaievUmbralBindPursuitOfVengeance": "Reduce Umbral Bind, Spirit of Vengeance cooldown",
     "MaievVaultOfTheWardens": "Leap into the air, becoming temporarily Immune",
     "MaievWardensCage": "Trap enemies in a cage of Avatars"
   },

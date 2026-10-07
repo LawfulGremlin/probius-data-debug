@@ -150,11 +150,11 @@
         "tooltipId": "GarroshArmorUpBodyCheck",
         "talentTreeId": "GarroshArmorUpBodyCheck",
         "name": "Body Check",
-        "description": "Activate to deal 111 (+4% per level) damage to a target enemy and Slow them by 35% for 2 seconds. Enemy Heroes hit receive 30% reduced healing for 3 seconds.",
+        "description": "Activate to deal 111 (+4% per level) damage to a target enemy and Slow them by 35% for 3 seconds. Enemy Heroes hit receive 30% reduced healing for 3 seconds.",
         "icon": "storm_ui_icon_garrosh_slam.png",
         "type": "Active",
         "sort": 3,
-        "cooldown": 16,
+        "cooldown": 15,
         "isQuest": false,
         "abilityId": "Garrosh|Active",
         "abilityLinks": [],
@@ -355,47 +355,13 @@
     ],
     "16": [
       {
-        "tooltipId": "GarroshGroundbreakerRoughLanding",
-        "talentTreeId": "GarroshGroundbreakerRoughLanding",
-        "name": "Rough Landing",
-        "description": "Increase Groundbreaker's Slow amount by 10% and duration by 1 second.",
-        "icon": "storm_ui_icon_garrosh_groundbreaker.png",
-        "type": "Q",
-        "sort": 1,
-        "isQuest": false,
-        "abilityId": "Garrosh|Q1",
-        "abilityLinks": [
-          "Garrosh|Q1"
-        ],
-        "abilityTalentLinkIds": [
-          "GarroshGroundbreaker"
-        ]
-      },
-      {
         "tooltipId": "GarroshGroundbreakerMortalCombo",
         "talentTreeId": "GarroshGroundbreakerMortalCombo",
         "name": "Mortal Combo",
         "description": "Hitting a Hero with Groundbreaker's Stun and throwing them with Wrecking Ball within 3 seconds reduces Wrecking Ball's cooldown by 10 seconds, regardless of order.",
-        "icon": "storm_ui_icon_garrosh_groundbreaker_var1.png",
-        "type": "Q",
-        "sort": 2,
-        "isQuest": false,
-        "abilityId": "Garrosh|Q1",
-        "abilityLinks": [
-          "Garrosh|Q1"
-        ],
-        "abilityTalentLinkIds": [
-          "GarroshGroundbreaker"
-        ]
-      },
-      {
-        "tooltipId": "GarroshWreckingBallEarthshaker",
-        "talentTreeId": "GarroshWreckingBallEarthshaker",
-        "name": "Earthshaker",
-        "description": "Wrecking Ball Stuns enemies near the impact area for 0.5 seconds.",
         "icon": "storm_ui_icon_garrosh_wrecking_ball.png",
         "type": "E",
-        "sort": 3,
+        "sort": 1,
         "isQuest": false,
         "abilityId": "Garrosh|E1",
         "abilityLinks": [
@@ -404,6 +370,41 @@
         "abilityTalentLinkIds": [
           "GarroshWreckingBall"
         ]
+      },
+      {
+        "tooltipId": "GarroshWreckingBallEarthshaker",
+        "talentTreeId": "GarroshWreckingBallEarthshaker",
+        "name": "Earthshaker",
+        "description": "Wrecking Ball Stuns enemies near the impact area for 0.5 seconds.",
+        "icon": "storm_ui_icon_garrosh_intothefray.png",
+        "type": "E",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Garrosh|E1",
+        "abilityLinks": [
+          "Garrosh|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "GarroshWreckingBall"
+        ]
+      },
+      {
+        "tooltipId": "GarroshArmorUpSeasonedSoldier",
+        "talentTreeId": "GarroshArmorUpSeasonedSoldier",
+        "name": "Seasoned Soldier",
+        "description": "Gain 5% maximum Health, increase Groundbreaker's Slow duration by 1 second, and Bloodthirst gains an additional charge.",
+        "icon": "storm_ui_icon_garrosh_armor_up.png",
+        "type": "Active",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Garrosh|Active",
+        "abilityLinks": [
+          "Garrosh|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "GarroshArmorUp",
+          "GarroshArmorUpDoubleUp"
+        ]
       }
     ],
     "20": [
@@ -411,7 +412,7 @@
         "tooltipId": "GarroshWarlordsChallengeDeathWish",
         "talentTreeId": "GarroshWarlordsChallengeDeathWish",
         "name": "Death Wish",
-        "description": "If an enemy Hero is killed while Taunted by Warlord's Challenge, its cooldown is reduced by 45 seconds.",
+        "description": "Increase the duration of Warlord's Challenge by 0.5 seconds.  If an enemy Hero is killed while Taunted by Warlord's Challenge, its cooldown is reduced by 45 seconds.",
         "icon": "storm_ui_icon_garrosh_warlords_challenge.png",
         "type": "Heroic",
         "sort": 1,
@@ -431,7 +432,7 @@
         "tooltipId": "GarroshDecimateDeadlyCalm",
         "talentTreeId": "GarroshDecimateDeadlyCalm",
         "name": "Deadly Calm",
-        "description": "Heroes hit by Decimate deal 25% less damage for 3 seconds.",
+        "description": "Heroes hit by Decimate deal 40% less damage for 3 seconds.",
         "icon": "storm_ui_icon_garrosh_decimate.png",
         "type": "Heroic",
         "sort": 2,
@@ -468,7 +469,7 @@
         "tooltipId": "GarroshArmorUpInnerRage",
         "talentTreeId": "GarroshArmorUpInnerRage",
         "name": "Inner Rage",
-        "description": "Body Check gains an additional charge, and its cooldown recharges 100% faster while Armor Up's bonus is at or above 25.",
+        "description": "Body Check gains an additional charge and its healing reduction is increased by an additional 45%.",
         "icon": "storm_ui_icon_garrosh_slam.png",
         "type": "Active",
         "sort": 4,
@@ -488,25 +489,25 @@
   },
   "tooltipMarkup": {
     "GarroshArmorUp": "Garrosh gains <c val=\"#TooltipNumbers\"><d ref=\".5*2\"/></c> Armor for every <c val=\"#TooltipNumbers\">2%</c> of maximum Health missing.",
-    "GarroshArmorUpBodyCheck": "Activate to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshArmorUpBodyCheckDamage,Amount\"/></c> damage to a target enemy and Slow them by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshBodyCheckSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshBodyCheckSlow,Duration\"/></c> seconds. Enemy Heroes hit receive <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,GarroshBodyCheckBruteForceHealReduction,Modification.HealTakenAdditiveMultiplier[Life]*(-1))*100\" precision=\"2\"/>%</c> reduced healing for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshBodyCheckBruteForceHealReduction,Duration\"/></c> seconds.",
+    "GarroshArmorUpBodyCheck": "Activate to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshArmorUpBodyCheckDamage,Amount\"/></c> damage to a target enemy and Slow them by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshBodyCheckSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshBodyCheckSlow,Duration\"/></c> seconds. Enemy Heroes hit receive <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,GarroshBodyCheckBruteForceHealReduction,Modification.HealTakenAdditiveMultiplier[Life]*(-1))*100\" precision=\"2\"Player=\"0\"/>%</c> reduced healing for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshBodyCheckBruteForceHealReduction,Duration\"/></c> seconds.",
     "GarroshArmorUpDoubleUp": "Armor Up can be activated to increase its Armor bonus by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshArmorUpDoubleUpCarryBehavior,MaxStackCount*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshArmorUpActive,Duration\"/></c> seconds.",
-    "GarroshArmorUpInnerRage": "Body Check gains an additional charge, and its cooldown recharges <c val=\"#TooltipNumbers\"><d ref=\"-100*Effect,GarroshBodyCheckInnerRageModifyCooldownEffect,Cost[0].ChargeTimeUse/Behavior,GarroshBodyCheckInnerRage,Period\"/>%</c> faster while Armor Up's bonus is at or above <c val=\"#TooltipNumbers\"><d ref=\"Validator,GarroshArmorUpLTE25,Value*Accumulator,GarroshArmorUpHealthToArmor,Ratio\" precision=\"2\"/></c>.",
+    "GarroshArmorUpInnerRage": "Body Check gains an additional charge and its healing reduction is increased by an additional <c val=\"#TooltipNumbers\"><d ref=\"-100*Talent,GarroshArmorUpInnerRage,AbilityModificationArray[0].Modifications[2].Value\"/>%</c>.",
+    "GarroshArmorUpSeasonedSoldier": "Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,GarroshArmorUpSeasonedSoldierHealthBuff,Modification.VitalMaxFractionArray[Life]\"/>%</c> maximum Health, increase Groundbreaker's Slow duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,GarroshArmorUpSeasonedSoldier,AbilityModificationArray[0].Modifications[0].Value\"/></c> second, and Bloodthirst gains an additional charge.",
     "GarroshBloodthirst": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshBloodThirstDamage,Amount\"/></c> damage to an enemy and heal for <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,GarroshBloodThirstVitalAccumulator,Ratio*100\" precision=\"2\"/>%</c> of Garrosh's missing Health. Healing is increased by <c val=\"#TooltipNumbers\">100%</c> against Heroes.",
     "GarroshBloodthirstBloodcraze": "When hitting a Hero, Bloodthirst heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"1+Behavior,GarroshBloodthirstBloodcraze,Duration*Effect,GarroshBloodthirstHoTCreateHealer,RechargeVitalFraction*100\"/>%</c> of Garrosh's maximum Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshBloodthirstBloodcraze,Duration\"/></c> seconds.",
     "GarroshBloodthirstInFortheKill": "Increase Bloodthirst's damage against non-Heroes by <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshBloodThirstDamage,MultiplicativeModifierArray[InForTheKill].Modifier*100\"/>%</c>. Killing enemies with Bloodthirst resets its cooldown and refunds its Mana cost.",
-    "GarroshBloodthirstThirstforBattle": "Basic Attacks against Heroes reduce the cooldown of Bloodthirst by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,GarroshThirstforBattleBloodthirstModifyCooldown,Cost[0].CooldownTimeUse\" precision=\"1\"/></c> seconds.",
+    "GarroshBloodthirstThirstforBattle": "Basic Attacks against Heroes reduce the cooldown of Bloodthirst by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,GarroshThirstforBattleBloodthirstModifyCooldown,Cost[0].ChargeTimeUse\"/></c> seconds.",
     "GarroshDecimate": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshDecimateDamage,Amount\"/></c> damage to nearby enemies and Slow them by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshDecimateSlow,Modification.UnifiedMoveSpeedFactor*100\" precision=\"2\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshDecimateSlow,Duration\" precision=\"1\"/></c> seconds. Deals <c val=\"#TooltipNumbers\">100%</c> more damage to Heroes, and each Hero hit reduces the cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,GarroshDecimateModifyCooldown,Cost[0].ChargeTimeUse\" precision=\"2\"/></c> second.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,GarroshDecimate,Cost.Charge.CountMax\"/></c> charges.",
     "GarroshDecimateDeadlyCalm": "Heroes hit by Decimate deal <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshDecimateDeadlyCalmDamageReduction,Modification.DamageDealtFraction[Ability]*100\" precision=\"2\"/>%</c> less damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshDecimateDeadlyCalmDamageReduction,Duration\" precision=\"2\"/></c> seconds.",
     "GarroshGroundbreaker": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshGroundbreakerDamage,Amount\"/></c> damage to enemies in an area. Heroes hit on the outer edge are Stunned for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerStun,Duration\"Precision=\"2\"/></c> seconds and then Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,GarroshGroundbreakerPostLandingSlowBehavior,Modification.UnifiedMoveSpeedFactor\"Player=\"0\"/>% </c>for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerPostLandingSlowBehavior,Duration\"Player=\"0\"/></c> seconds.",
     "GarroshGroundbreakerDefensiveMeasures": "If Groundbreaker Stuns a Hero, Garrosh gains a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerDefensiveMeasures,DamageResponse.ModifyLimit\"/></c> Shield for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerDefensiveMeasures,Duration\"/></c> seconds.",
     "GarroshGroundbreakerIntimidation": "Groundbreaker reduces the Attack Speed of Heroes hit by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshGroundbreakerIntimidationAttackSpeedSlow,Modification.AdditiveAttackSpeedFactor*100\" precision=\"2\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerIntimidationAttackSpeedSlow,Duration\" precision=\"2\"/></c> seconds.",
     "GarroshGroundbreakerMortalCombo": "Hitting a Hero with Groundbreaker's Stun and throwing them with Wrecking Ball within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerMortalComboBehavior,Duration\" precision=\"2\"/></c> seconds reduces Wrecking Ball's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,GarroshGroundbreakerMortalComboCooldown,Cost[0].CooldownTimeUse\"/></c> seconds, regardless of order.",
-    "GarroshGroundbreakerRoughLanding": "Increase Groundbreaker's Slow amount by <c val=\"#TooltipNumbers\"><d ref=\"-(Talent,GarroshGroundbreakerRoughLanding,AbilityModificationArray[0].Modifications[1].Value * 100)\" precision=\"2\" player=\"0\"/>%</c> and duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,GarroshGroundbreakerRoughLanding,AbilityModificationArray[0].Modifications[0].Value\" precision=\"1\" player=\"0\"/></c> second.",
     "GarroshGroundbreakerWarbreaker": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Stun Heroes with Groundbreaker.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Stunning <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerWarbreakerQuestToken,ConditionalEvents[0].CompareValue\"/></c> Heroes, Groundbreaker's Stun deals an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshGroundbreakerWarbreakerDamage,Amount*Behavior,GarroshGroundbreakerWarbreakerDoT,Duration/Behavior,GarroshGroundbreakerWarbreakerDoT,Period\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerWarbreakerDoT,Duration\"/></c> seconds to Heroes.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Stunning <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerWarbreakerQuestToken,Max\"/></c> Heroes, permanently reduce Groundbreaker's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshGroundbreakerWarbreakerQuestCompleteCooldownModify,EffectArray[0].Value\" precision=\"2\"/></c> seconds.",
     "GarroshIndomitable": "Activate to become Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshIndomitableUnstoppableBehavior,Duration\" precision=\"1\"/></c> seconds.",
     "GarroshOppressor": "Basic Attacks against Heroes reduce the target's Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshOppressorBehavior,Modification.DamageDealtFraction[Ability]*100\" precision=\"2\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshOppressorBehavior,Duration\"precision=\"2\"/></c> seconds.",
     "GarroshWarlordsChallenge": "Silence nearby Heroes and force them to attack Garrosh for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWarlordsChallengeTaunted,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
-    "GarroshWarlordsChallengeDeathWish": "If an enemy Hero is killed while Taunted by Warlord's Challenge, its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"Abil,GarroshWarlordsChallenge,Cost.Cooldown.TimeUse - Effect,GarroshWarlordsChallengeDeathWishModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "GarroshWarlordsChallengeDeathWish": "Increase the duration of Warlord's Challenge by <c val=\"#TooltipNumbers\"><d ref=\"Talent,GarroshWarlordsChallengeDeathWish,AbilityModificationArray[0].Modifications[1].Value\"Precision=\"2\"/></c> seconds.  If an enemy Hero is killed while Taunted by Warlord's Challenge, its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"Abil,GarroshWarlordsChallenge,Cost.Cooldown.TimeUse - Effect,GarroshWarlordsChallengeDeathWishModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "GarroshWreckingBall": "Throw a nearby enemy Hero, Minion, or Mercenary to the target location, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshWreckingBallDamage,Amount\"/></c> damage to enemies near the impact and Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshWreckingBallSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallSlow,Duration\" precision=\"2\"/></c> seconds.",
     "GarroshWreckingBallEarthshaker": "Wrecking Ball Stuns enemies near the impact area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallStun,Duration\" precision=\"2\"/></c> seconds.",
     "GarroshWreckingBallIntotheFray": "Activate to throw a nearby ally and grant them <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallIntotheFrayArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallIntotheFrayArmor,Duration\" precision=\"1\"/></c> seconds. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshWreckingBallDamage,Amount\"/></c> damage to nearby enemies upon impact and Slows them by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshWreckingBallSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallSlow,Duration\" precision=\"2\"/></c> seconds.<n/><n/>While in flight, allied Heroes are Unstoppable.",
@@ -518,6 +519,7 @@
     "GarroshArmorUpBodyCheck": "Damage and Slow an enemy",
     "GarroshArmorUpDoubleUp": "Activate Armor Up to increase bonus",
     "GarroshArmorUpInnerRage": "Body Check gains an additional charge",
+    "GarroshArmorUpSeasonedSoldier": "Gain multiple bonuses",
     "GarroshBloodthirst": "Deal damage and heal for a portion of missing Health",
     "GarroshBloodthirstBloodcraze": "Bloodthirst heals over time",
     "GarroshBloodthirstInFortheKill": "Bloodthirst kills reset cooldown, restore Mana",
@@ -528,7 +530,6 @@
     "GarroshGroundbreakerDefensiveMeasures": "Groundbreaker Stun grants Shield",
     "GarroshGroundbreakerIntimidation": "Groundbreaker reduces Attack Speed",
     "GarroshGroundbreakerMortalCombo": "Reduce Wrecking Ball cooldown on Stunned targets",
-    "GarroshGroundbreakerRoughLanding": "Increase Groundbreaker Slow",
     "GarroshGroundbreakerWarbreaker": "<c val=\"#TooltipQuest\">Quest:</c> Stun Heroes to empower Groundbreaker",
     "GarroshIndomitable": "Activate to become Unstoppable",
     "GarroshOppressor": "Basic Attacks reduce Spell Power",

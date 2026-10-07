@@ -105,7 +105,7 @@
         "trait": true,
         "abilityId": "Johanna|D1",
         "tooltipId": "CrusaderIronSkin",
-        "cooldown": 20,
+        "cooldown": 25,
         "icon": "storm_ui_icon_johanna_iron_skin.png",
         "type": "trait"
       }
@@ -426,7 +426,7 @@
         "tooltipId": "CrusaderBlessedShieldRadiatingFaithTalent",
         "talentTreeId": "CrusaderMasteryBlessedShieldRadiatingFaith",
         "name": "Radiating Faith",
-        "description": "Increase the number of enemies hit by Blessed Shield by 2. Its Stun duration is increased to 2 seconds and all targets hit are Stunned for the maximum duration.",
+        "description": "Increase the number of enemies hit by Blessed Shield by 2. Its Stun duration is increased to 1.75 seconds and all targets hit are Stunned for the maximum duration.",
         "icon": "storm_ui_icon_johanna_blessed_shield.png",
         "type": "Heroic",
         "sort": 2,
@@ -473,7 +473,7 @@
   },
   "tooltipMarkup": {
     "CrusaderBlessedShield": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderBlessedShieldDamage,Amount\"/></c> damage and Stun the first enemy hit for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderBlessedShieldStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds. Blessed Shield then bounces to <c val=\"#TooltipNumbers\">2</c> nearby enemies, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderBlessedShieldBounce1Damage,Amount\"/></c> damage and Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderBlessedShieldBounceStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
-    "CrusaderBlessedShieldRadiatingFaithTalent": "Increase the number of enemies hit by Blessed Shield by <c val=\"#TooltipNumbers\">2</c>. Its Stun duration is increased to <c val=\"#TooltipNumbers\">2</c> seconds and all targets hit are Stunned for the maximum duration.",
+    "CrusaderBlessedShieldRadiatingFaithTalent": "Increase the number of enemies hit by Blessed Shield by <c val=\"#TooltipNumbers\">2</c>. Its Stun duration is increased to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderBlessedShieldStun,Duration+Talent,CrusaderMasteryBlessedShieldRadiatingFaith,AbilityModificationArray[0].Modifications[1].Value\"Precision=\"2\"Player=\"0\"/></c> seconds and all targets hit are Stunned for the maximum duration.",
     "CrusaderBlindedByTheLight": "Activate to grant nearby allied Heroes a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,CrusaderBlindedByTheLightShield,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]\"/>%</c> of their maximum Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderBlindedByTheLightShield,Duration\"/></c> seconds.<n/><n/>Hitting Heroes with Shield Glare reduces the cooldown of this Ability by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,CrusaderBlindedByTheLightModifyPlayer,Cost.Cooldown.TimeUse\"/></c> seconds.",
     "CrusaderCondemn": "After <c val=\"#TooltipNumbers\">1</c> second, Johanna pulls nearby enemies toward her, stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderCondemnPostPullStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderCondemnDamage,Amount\"/></c> damage. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderCondemnDamage,MultiplicativeModifierArray[CondemnPvE].Modifier*100\"/>%</c> increased damage to Minions and Mercenaries.",
     "CrusaderCondemnBlessedHammerTalent": "Activate to create <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderBlessedHammerCreateUnitPersistent,PeriodCount\"/></c> hammers that spiral outward from Johanna, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderBlessedHammerDamage,Amount\"/></c> damage to enemies hit.<n/><n/>Hitting Heroes with Shield Glare reduces the cooldown of this Ability by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,CrusaderShieldGlareBlessedHammerTalentModifyPlayerCooldown,Cost.Cooldown.TimeUse\"/></c> seconds.",
