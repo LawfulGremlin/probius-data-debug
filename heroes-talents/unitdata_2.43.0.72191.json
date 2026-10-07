@@ -43,6 +43,19 @@
           "icon": "btn-command-patrol.png",
           "name": "Move Patrol"
         }
+      ],
+      "mount": [
+        {
+          "nameId": "AbathurMonstrosityDeepTunnel",
+          "buttonId": "AbathurMonstrosityDeepTunnel",
+          "abilityType": "Z",
+          "isPassive": false,
+          "_hdp5LinkId": "AbathurMonstrosityDeepTunnel|AbathurMonstrosityDeepTunnel|Z",
+          "icon": "storm_ui_icon_abathur_mount.png",
+          "name": "Deep Tunnel",
+          "fullText": "Order your Evolved Monstrosity to quickly tunnel to a visible location",
+          "cooldownText": "Cooldown: 80 seconds"
+        }
       ]
     }
   },
@@ -117,7 +130,7 @@
         "range": 7,
         "minimumRange": 3,
         "period": 1,
-        "damage": 57.8,
+        "damage": 40,
         "damageScale": 0.04
       },
       {
@@ -126,7 +139,7 @@
         "range": 3,
         "minimumRange": 0,
         "period": 1,
-        "damage": 57,
+        "damage": 40,
         "damageScale": 0.04
       }
     ],
@@ -169,7 +182,7 @@
           "_hdp5LinkId": "AbathurSpawnLocusts|AbathurLocustStrain|Q",
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "name": "Locust Strain",
-          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">25</c> seconds, have <c val=\"bfd4fd\">316</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">34</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack.",
+          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">316</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">40</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack.",
           "cooldownText": "Cooldown: 15 seconds"
         }
       ]
@@ -208,7 +221,7 @@
           "_hdp5LinkId": "AbathurSpawnLocusts|AbathurLocustStrain|Q",
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "name": "Locust Strain",
-          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">25</c> seconds, have <c val=\"bfd4fd\">316</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">34</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack.",
+          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">316</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">40</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack.",
           "cooldownText": "Cooldown: 15 seconds"
         }
       ]
@@ -230,7 +243,7 @@
         "range": 1.5,
         "minimumRange": 0,
         "period": 1,
-        "damage": 34,
+        "damage": 40,
         "damageScale": 0.04
       }
     ],
@@ -16770,8 +16783,8 @@
           "_hdp5LinkId": "AbathurSymbioteCarapace|AbathurSymbioteCarapace|E",
           "icon": "storm_ui_icon_abathur_carapace.png",
           "name": "Carapace",
-          "fullText": "Shields the assisted ally for <c val=\"bfd4fd\">157</c><c val=\"a7a7a7\">~~0.04~~</c>. Lasts for <c val=\"bfd4fd\">8</c> seconds.",
-          "cooldownText": "Cooldown: 12 seconds"
+          "fullText": "Shields the assisted ally for <c val=\"bfd4fd\">157</c><c val=\"a7a7a7\">~~0.04~~</c>. Allied Heroes are healed for <c val=\"bfd4fd\">22</c><c val=\"a7a7a7\">~~0.04~~</c> Health per second while the Shield is active. Lasts for <c val=\"bfd4fd\">6</c> seconds.",
+          "cooldownText": "Cooldown: 6 seconds"
         }
       ],
       "heroic": [
@@ -16785,6 +16798,19 @@
           "name": "Cancel Symbiote",
           "fullText": "Cancels the Symbiote ability.",
           "cooldownText": "Cooldown: 1.5 seconds"
+        }
+      ],
+      "mount": [
+        {
+          "nameId": "AbathurMonstrosityDeepTunnel",
+          "buttonId": "AbathurMonstrosityDeepTunnel",
+          "abilityType": "Z",
+          "isPassive": false,
+          "_hdp5LinkId": "AbathurMonstrosityDeepTunnel|AbathurMonstrosityDeepTunnel|Z",
+          "icon": "storm_ui_icon_abathur_mount.png",
+          "name": "Deep Tunnel",
+          "fullText": "Order your Evolved Monstrosity to quickly tunnel to a visible location",
+          "cooldownText": "Cooldown: 80 seconds"
         }
       ]
     }

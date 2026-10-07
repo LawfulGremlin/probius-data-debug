@@ -91,7 +91,7 @@
       {
         "uid": "e00d4f",
         "name": "Shield Capacitor",
-        "description": "Fenix has a permanent 760 (+4% per level) Shield which regenerates at 76 (+4% per level) per second after not taking damage for 5 seconds.",
+        "description": "Fenix has a permanent 760 (+4% per level) Shield which regenerates at 10% per second after not taking damage for 5 seconds.",
         "trait": true,
         "abilityId": "Fenix|D1",
         "tooltipId": "FenixShieldCapacitor",
@@ -113,7 +113,7 @@
       {
         "uid": "c04773",
         "name": "Shield Capacitor",
-        "description": "Fenix has a permanent 760 (+4% per level) Shield which regenerates at 76 (+4% per level) per second after not taking damage for 5 seconds.",
+        "description": "Fenix has a permanent 760 (+4% per level) Shield which regenerates at 10% per second after not taking damage for 5 seconds.",
         "hotkey": "D",
         "trait": true,
         "abilityId": "Fenix|D2",
@@ -536,7 +536,7 @@
     "FenixRapidRecharge": "Whenever Fenix is healed, Shield Capacitor's Shield recharges for <c val=\"#TooltipNumbers\"><d ref=\"Effect,FenixRapidRechargeHealingDummyModifyUnit,XP*100\" precision=\"2\"/>%</c> of the healing received.",
     "FenixRepeaterCannon": "Basic Attacks have <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FenixPhaseBombBehavior,Modification.WeaponRange\" precision=\"2\" player=\"0\"/></c> increased range, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,FenixHeroPhaseBombWeaponDamage,Amount / Effect,FenixHeroWeaponDamage,Amount - 1 * 100\" player=\"0\"/>%</c> more damage, and splash to nearby enemies.<n/><n/>Activate to change to <c val=\"#AbilityPassive\">Weapon Mode: Repeater Cannon</c>, increasing Basic Attack speed.",
     "FenixSecondaryFire": "Hitting an enemy Hero with Plasma Cutter fires a Purification Salvo missile at them after <c val=\"#TooltipNumbers\"><d ref=\"Effect,FenixPurificationSalvoPlasmaCutterCreateTargetingPersistent,InitialDelay\" precision=\"2\"/></c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,FenixPurificationSalvoDamage,Amount\"/></c> damage. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,FenixPurificationSalvoDamage,MultiplicativeModifierArray[Slowed].Modifier*100\"/>%</c> increased damage to Slowed targets.",
-    "FenixShieldCapacitor": "Fenix has a permanent <c val=\"#TooltipNumbers\"><d ref=\"Unit,HeroFenix,ShieldsMax\"/></c> Shield which regenerates at <c val=\"#TooltipNumbers\"><d ref=\"Unit,HeroFenix,ShieldRegenRate\"/></c> per second after not taking damage for <c val=\"#TooltipNumbers\"><d ref=\"Unit,HeroFenix,ShieldRegenDelay\"/></c> seconds.",
+    "FenixShieldCapacitor": "Fenix has a permanent <c val=\"#TooltipNumbers\"><d ref=\"Unit,HeroFenix,ShieldsMax\"/></c> Shield which regenerates at <c val=\"#TooltipNumbers\"><d ref=\"Unit,HeroFenix,ShieldRegenRate/Unit,HeroFenix,ShieldsMax*100\" player=\"0\"/>%</c> per second after not taking damage for <c val=\"#TooltipNumbers\"><d ref=\"Unit,HeroFenix,ShieldRegenDelay\"/></c> seconds.",
     "FenixSingularityCharge": "Repeater Cannon grants <c val=\"#TooltipNumbers\"><d ref=\"Talent,FenixSingularityCharge,AbilityModificationArray[0].Modifications[0].Value*100\" player=\"0\"/>%</c> more Attack Speed, and Phase Bomb grants <c val=\"#TooltipNumbers\"><d ref=\"Talent,FenixSingularityCharge,AbilityModificationArray[0].Modifications[1].StringReplacement-Behavior,FenixPhaseBombBehavior,Modification.WeaponRange\" precision=\"2\" player=\"0\"/></c> more range.",
     "FenixTargetAcquired": "Basic Attacks against Slowed Heroes with Repeater Cannon active grant <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,FenixTargetAcquiredSpeedBehavior,Modification.UnifiedMoveSpeedFactor\" precision=\"2\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\">4</c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,FenixTargetAcquiredSpeedBehavior,Modification.UnifiedMoveSpeedFactor*Behavior,FenixTargetAcquiredSpeedBehavior,MaxStackCount\"/>%</c>.",
     "FenixUnconqueredSpirit": "Upon taking fatal damage, Shield Capacitor regains <c val=\"#TooltipNumbers\"><d ref=\"Effect,FenixUnconqueredSpiritShieldHealer,RechargeVitalRate\"/></c> Shields. This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderIndestructibleCooldown,Duration\" player=\"0\"/></c> second cooldown.",

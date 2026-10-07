@@ -104,7 +104,7 @@
       {
         "uid": "f397dc",
         "name": "Summon Sindragosa",
-        "description": "Deals 230 (+4% per level) damage and Slows enemies by 60% for 4 seconds.  Also disables Minions, Mercenaries, Monsters and Structures for 20 seconds.",
+        "description": "Deals 230 (+4% per level) damage and Slows enemies by 60% for 4 seconds. Also disables Minions, Mercenaries, Monsters and Structures for 20 seconds.",
         "hotkey": "R",
         "abilityId": "Arthas|R3",
         "tooltipId": "ArthasSummonSindragosa",
@@ -299,7 +299,7 @@
         "tooltipId": "ArthasSummonSindragosa",
         "talentTreeId": "ArthasHeroicAbilitySummonSindragosa",
         "name": "Summon Sindragosa",
-        "description": "Deals 230 (+4% per level) damage and Slows enemies by 60% for 4 seconds.  Also disables Minions, Mercenaries, Monsters and Structures for 20 seconds.",
+        "description": "Deals 230 (+4% per level) damage and Slows enemies by 60% for 4 seconds. Also disables Minions, Mercenaries, Monsters and Structures for 20 seconds.",
         "icon": "storm_ui_icon_arthas_summonsindragosa.png",
         "type": "Heroic",
         "sort": 2,
@@ -429,7 +429,7 @@
         "tooltipId": "ArthasLegionOfNorthrendArmyOfTheDeadTalent",
         "talentTreeId": "ArthasMasteryLegionOfNorthrendArmyoftheDead",
         "name": "Legion of Northrend",
-        "description": "3 additional Ghouls are created.  Ghouls heal for an additional 50% and last 5 seconds longer.",
+        "description": "3 additional Ghouls are created. Ghouls heal for an additional 50% and last 5 seconds longer.",
         "icon": "storm_ui_icon_arthas_armyofthedead.png",
         "type": "Heroic",
         "sort": 1,
@@ -451,7 +451,7 @@
         "tooltipId": "ArthasAbsoluteZeroSummonSindragosaTalent",
         "talentTreeId": "ArthasMasteryAbsoluteZeroSummonSindragosa",
         "name": "Absolute Zero",
-        "description": "Sindragosa flies twice as far.  Enemy Heroes are Rooted for 2 seconds, and then Slowed by 60% for 3.5 seconds.",
+        "description": "Sindragosa flies twice as far. Enemy Heroes are Rooted for 2 seconds, and then Slowed by 60% for 3.5 seconds.",
         "icon": "storm_ui_icon_arthas_summonsindragosa.png",
         "type": "Heroic",
         "sort": 2,
@@ -524,7 +524,7 @@
     }
   ],
   "tooltipMarkup": {
-    "ArthasAbsoluteZeroSummonSindragosaTalent": "Sindragosa flies twice as far.  Enemy Heroes are Rooted for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaHeroRoot,Duration\" player=\"0\"/></c> seconds, and then Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ArthasSummonSindragosaSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaSlow,Duration\" player=\"0\" precision=\"1\"/></c> seconds.",
+    "ArthasAbsoluteZeroSummonSindragosaTalent": "Sindragosa flies twice as far. Enemy Heroes are Rooted for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaHeroRoot,Duration\" player=\"0\"/></c> seconds, and then Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ArthasSummonSindragosaSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaSlow,Duration\" player=\"0\" precision=\"1\"/></c> seconds.",
     "ArthasAntiMagicShellTalent": "Activate to make Arthas immune to Spell Damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasAntiMagicShellCaster,Duration\"/></c> seconds and heal Arthas for <c val=\"#TooltipNumbers\">25%</c> of the damage prevented.",
     "ArthasArmyOfTheDead": "Summons Ghouls that last <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasArmyOfTheDeadGhoulTimedLife,Duration\" player=\"0\" precision=\"1\"/></c> seconds. Sacrifice Ghouls to heal for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate\"/></c> Health.",
     "ArthasArmyOfTheDeadSacrifice": "Sacrifice a Ghoul to restore <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate\"/></c> Health.",
@@ -544,12 +544,12 @@
     "ArthasIceboundFortitudeTalent": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasIceboundFortitudeCasterBehavior,ArmorModification.AllArmorBonus\"/></c> Armor, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,Resistant25,ArmorModification.AllArmorBonus\"/>%</c>, and reduce the duration of Stuns, Slows, and Roots against Arthas by <c val=\"#TooltipNumbers\">75%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasIceboundFortitudeCasterBehavior,Duration\" precision=\"1\"/></c> seconds.",
     "ArthasIcyTalons": "Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ArthasFrozenTempestIcyTalonsTalentAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor\"precision=\"2\"/>%</c> Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrozenTempestIcyTalonsTalentAttackSpeedBuff,Duration\" precision=\"3\"/></c> seconds every time a Hero is damaged by Frozen Tempest, to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ArthasFrozenTempestIcyTalonsTalentAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor*Behavior,ArthasFrozenTempestIcyTalonsTalentAttackSpeedBuff,MaxStackCount\" precision=\"3\"/>%</c>.",
     "ArthasImmortalCoilDeathCoilTalent": "Gain the healing effect of Death Coil even when used on enemies. If Death Coil is used on Arthas, it heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasDeathCoilSelfCastCreateHealer,MultiplicativeModifierArray[0].Modifier*100\"Precision=\"2\"/>%</c> bonus healing.",
-    "ArthasLegionOfNorthrendArmyOfTheDeadTalent": "<c val=\"#TooltipNumbers\"><d ref=\"Talent,ArthasMasteryLegionOfNorthrendArmyoftheDead,AbilityModificationArray[0].Modifications[0].Value\"/></c> additional Ghouls are created.  Ghouls heal for an additional <c val=\"#TooltipNumbers\">50%</c> and last <c val=\"#TooltipNumbers\"><d ref=\"Talent,ArthasMasteryLegionOfNorthrendArmyoftheDead,AbilityModificationArray[0].Modifications[2].Value\"/></c> seconds longer.",
+    "ArthasLegionOfNorthrendArmyOfTheDeadTalent": "<c val=\"#TooltipNumbers\"><d ref=\"Talent,ArthasMasteryLegionOfNorthrendArmyoftheDead,AbilityModificationArray[0].Modifications[0].Value\"/></c> additional Ghouls are created. Ghouls heal for an additional <c val=\"#TooltipNumbers\">50%</c> and last <c val=\"#TooltipNumbers\"><d ref=\"Talent,ArthasMasteryLegionOfNorthrendArmyoftheDead,AbilityModificationArray[0].Modifications[2].Value\"/></c> seconds longer.",
     "ArthasRemorselessWinterFrozenTempestTalent": "Enemy Heroes that remain within Frozen Tempest for <c val=\"#TooltipNumbers\">3</c> seconds are Rooted for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrozenTempestRemorselessWinterRoot,Duration\"Precision=\"2\"/></c> seconds. This effect can only happen once every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrozenTempestRemorselessWinterImmunity,Duration\"/></c> seconds.",
     "ArthasRime": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasRimeCharged,DamageResponse.Cost.Charge.TimeUse\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasRimeChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasRimeChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>. Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasRimeCharged,DamageResponse.Cost.Charge.CountMax\"/></c> charges.",
     "ArthasRuneTapTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasRuneTapStacks,MaxStackCount\"/>rd</c> Basic Attack heals Arthas for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasRuneTapHealer,RechargeVitalFraction*100\"/>%</c> of his max Health.",
     "ArthasShatteredArmor": "Enemy Heroes hit by Howling Blast have their Armor reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ArthasHowlingBlastShatteredArmor,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasHowlingBlastShatteredArmor,Duration\"/></c> seconds.",
-    "ArthasSummonSindragosa": "Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasSummonSindragosaDamage,Amount\"/></c> damage and Slows enemies by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ArthasSummonSindragosaSlow,Modification.UnifiedMoveSpeedFactor*100\" precision=\"1\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaHeroOrSummonSlow,Duration\" player=\"0\" precision=\"1\"/></c> seconds.  Also disables Minions, Mercenaries, Monsters and Structures for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaStructureDebuff,Duration\" player=\"0\" precision=\"2\"/></c> seconds."
+    "ArthasSummonSindragosa": "Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasSummonSindragosaDamage,Amount\"/></c> damage and Slows enemies by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ArthasSummonSindragosaSlow,Modification.UnifiedMoveSpeedFactor*100\" precision=\"1\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaHeroOrSummonSlow,Duration\" player=\"0\" precision=\"1\"/></c> seconds. Also disables Minions, Mercenaries, Monsters and Structures for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaStructureDebuff,Duration\" player=\"0\" precision=\"2\"/></c> seconds."
   },
   "tooltipSimple": {
     "ArthasAbsoluteZeroSummonSindragosaTalent": "Increases Sindragosa range and disable duration",
