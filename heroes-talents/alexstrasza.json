@@ -141,39 +141,6 @@
         "type": "heroic"
       },
       {
-        "uid": "fed633",
-        "name": "Life Unbound",
-        "description": "Activate to heal an allied Hero for 15% of their maximum Health and deal 200 (+4% per level) damage to nearby enemies.  Healing a Stunned, Rooted, or Silenced ally reduces Life Unbound's cooldown by 30 seconds.  Cannot be used on Alexstrasza.",
-        "hotkey": "1",
-        "abilityId": "Alexstrasza|11",
-        "tooltipId": "AlexstraszaLifeUnbound",
-        "cooldown": 90,
-        "icon": "storm_ui_icon_alexstrasza_life_unbound.png",
-        "type": "activable"
-      },
-      {
-        "uid": "5cbe62",
-        "name": "Pacify",
-        "description": "Activate to Slow and reduce an enemy Hero's damage by 50% for 3 seconds.  Healing a Stunned, Rooted, or Silenced ally reduces Pacify's cooldown by 30 seconds.",
-        "hotkey": "2",
-        "abilityId": "Alexstrasza|21",
-        "tooltipId": "AlexstraszaPacify",
-        "cooldown": 60,
-        "icon": "storm_ui_icon_alexstrasza_pacify.png",
-        "type": "activable"
-      },
-      {
-        "uid": "85e240",
-        "name": "Blessing of the Red",
-        "description": "Activate to grant an allied Hero 500 bonus maximum Health until they die.  Cannot be used on Alexstrasza, or on a Hero who already has Blessing of the Red.",
-        "hotkey": "3",
-        "abilityId": "Alexstrasza|31",
-        "tooltipId": "AlexstraszaBlessingOfTheRed",
-        "cooldown": 40,
-        "icon": "storm_ui_icon_alexstrasza_blessing_of_the_red.png",
-        "type": "activable"
-      },
-      {
         "uid": "8a1ec5",
         "name": "Breath of Life",
         "description": "Heal an allied Hero for 15% of Alexstrasza's current Health.  Breath of Life is also empowered by Gift of Life Talents.",
@@ -215,16 +182,6 @@
         "tooltipId": "AlexstraszaDragonqueenDragonFormPassive",
         "icon": "storm_ui_icon_alexstrasza_dragon_queen.png",
         "type": "trait"
-      },
-      {
-        "uid": "c2f8ab",
-        "name": "Dragon Scales",
-        "description": "Gain 50 Armor while Stunned, Rooted, or Silenced, and for 2 seconds after. Can only trigger once every 10 seconds.",
-        "abilityId": "Alexstrasza|22",
-        "tooltipId": "AlexstraszaDragonScales",
-        "cooldown": 10,
-        "icon": "storm_ui_icon_alexstrasza_dragon_scales.png",
-        "type": "activable"
       }
     ]
   },
@@ -447,9 +404,7 @@
         "cooldown": 60,
         "isQuest": false,
         "abilityId": "Alexstrasza|Active",
-        "abilityLinks": [
-          "Alexstrasza|21"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "AlexstraszaPacify"
         ]
@@ -465,9 +420,7 @@
         "cooldown": 90,
         "isQuest": false,
         "abilityId": "Alexstrasza|Active",
-        "abilityLinks": [
-          "Alexstrasza|11"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "AlexstraszaLifeUnbound"
         ]
@@ -605,9 +558,7 @@
         "cooldown": 40,
         "isQuest": false,
         "abilityId": "Alexstrasza|Active",
-        "abilityLinks": [
-          "Alexstrasza|31"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "AlexstraszaBlessingOfTheRed"
         ]

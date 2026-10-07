@@ -370,7 +370,7 @@
         "tooltipId": "XalatathMarkedResilience",
         "talentTreeId": "XalatathMarkedResilience",
         "name": "Marked Resilience",
-        "description": "Basic Attacks against enemy Heroes afflicted by Shadow Mark grant a 0~~NaN~~ point Shield that rapidly decays.  Shield starts decaying after 1 second, decays over 2 seconds.",
+        "description": "Basic Attacks against enemy Heroes afflicted by Shadow Mark grant a 160 (+4% per level) point Shield that rapidly decays.  Shield starts decaying after 1 second, decays over 2 seconds.",
         "icon": "storm_ui_icon_xalatath_q_shadowmark.png",
         "type": "Q",
         "sort": 1,
@@ -599,5 +599,7 @@
     "TooltipGreen": "00FF90",
     "TooltipNumbers": "BFD4FD",
     "TooltipQuest": "E4B800"
-  }
+  },
+  "releasePatch": "2.57.0.98285",
+  "releaseDate": "2026-09-28"
 }

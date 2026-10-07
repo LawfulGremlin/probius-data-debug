@@ -68,6 +68,18 @@
         "type": "basic"
       },
       {
+        "uid": "690519",
+        "name": "Onslaught",
+        "description": "After 0.5 seconds, Deathwing lunges in a direction dealing 60 (+4% per level) damage to enemies and Slowing them by 35% for 2 seconds. Deathwing bites enemies at the end of the lunge, dealing an additional 120 (+4% per level) damage.  World Breaker: Earth Shatter Damage and Stun enemies in two lines",
+        "hotkey": "E",
+        "abilityId": "Deathwing|E1",
+        "tooltipId": "DeathwingOnslaught",
+        "cooldown": 6,
+        "manaCost": 20,
+        "icon": "storm_ui_icon_deathwing_onslaught.png",
+        "type": "basic"
+      },
+      {
         "uid": "8a4932",
         "name": "Cataclysm",
         "description": "After 2 seconds, Deathwing flies in the targeted direction, dealing 90 (+4% per level) damage on impact and leaving scorched ground that deals 36 (+4% per level) damage a second. Lasts 6 seconds.  Quest: Hit Heroes with Molten Flame to grant 1 stack. Quest: Score Takedowns to grant 50 stacks.  Mythic Reward: After reaching 2000 stacks, Deathwing brings on the Hour of Twilight. Cataclysm's periodic damage to Structures is increased by 2500%.",
@@ -98,7 +110,9 @@
         "cooldown": 20,
         "icon": "storm_ui_icon_deathwing_mount.png",
         "type": "mount"
-      },
+      }
+    ],
+    "DeathwingFormSwitch": [
       {
         "uid": "077d3c",
         "name": "Lava Burst",
@@ -110,42 +124,6 @@
         "manaCost": 25,
         "icon": "storm_ui_icon_deathwing_lava_burst.png",
         "type": "basic"
-      }
-    ],
-    "DeathwingFormSwitch": [
-      {
-        "uid": "690519",
-        "name": "Onslaught",
-        "description": "After 0.5 seconds, Deathwing lunges in a direction dealing 60 (+4% per level) damage to enemies and Slowing them by 35% for 2 seconds. Deathwing bites enemies at the end of the lunge, dealing an additional 120 (+4% per level) damage.  World Breaker: Earth Shatter Damage and Stun enemies in two lines",
-        "hotkey": "E",
-        "abilityId": "Deathwing|E1",
-        "tooltipId": "DeathwingOnslaught",
-        "cooldown": 6,
-        "manaCost": 20,
-        "icon": "storm_ui_icon_deathwing_onslaught.png",
-        "type": "basic"
-      },
-      {
-        "uid": "c27bc4",
-        "name": "Bellowing Roar",
-        "description": "After 1 second, Deathwing unleashes a mighty roar, dealing 25 (+4% per level) damage to nearby Heroes and causing them to run in Fear for 1.5 seconds.",
-        "hotkey": "1",
-        "abilityId": "Deathwing|11",
-        "tooltipId": "DeathwingBellowingRoar",
-        "cooldown": 60,
-        "icon": "storm_ui_icon_deathwing_bellowing_roar.png",
-        "type": "activable"
-      },
-      {
-        "uid": "1bd28a",
-        "name": "Elementium Plating",
-        "description": "Activate to gain a Shield equal to 30% of Deathwing's missing Health for 8 seconds. While the Shield holds, Deathwing regenerates 2% of his maximum Health per second.  When the Shield expires or is destroyed, Deathwing regains Armor Plates appropriate for his new Health.  The Shield and effect end immediately if Deathwing uses Dragonflight.",
-        "hotkey": "2",
-        "abilityId": "Deathwing|21",
-        "tooltipId": "DeathwingElementiumPlating",
-        "cooldown": 60,
-        "icon": "storm_ui_icon_deathwing_elemental_plating.png",
-        "type": "activable"
       },
       {
         "uid": "41daae",
@@ -386,9 +364,7 @@
         "cooldown": 60,
         "isQuest": false,
         "abilityId": "Deathwing|Active",
-        "abilityLinks": [
-          "Deathwing|11"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "DeathwingBellowingRoar"
         ]
@@ -501,9 +477,7 @@
         "cooldown": 60,
         "isQuest": false,
         "abilityId": "Deathwing|Active",
-        "abilityLinks": [
-          "Deathwing|21"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "DeathwingElementiumPlating"
         ]
@@ -574,7 +548,6 @@
   "tooltipMarkup": {
     "DeathwingArrivalOfAGod": "<c val=\"#DeathwingDestroyer\">Destroyer</c> or <c val=\"#DeathwingWorldBreaker\">World Breaker's</c> landing damage is increased by <C val=\"#TooltipNumbers\"><d ref=\"100*Effect,DeathwingDragonflightLandDamage,MultiplicativeModifierArray[ArrivalOfAGod].Modifier\"/>%</c>.<n/><n/>Deathwing also gains the benefits of all of his level <c val=\"#TooltipNumbers\">7</c> talents.",
     "DeathwingAspectOfDeath": "Deathwing is fitted with <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DeathwingAdamantineArmorPlatesAccumulator,MaxAccumulation/Accumulator,DeathwingAdamantineArmorPlatesAccumulator,Scale\"/></c> Armor Plates which grant <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DeathwingAdamantineArmorPlatesAccumulator,Scale\"/></c> Armor each. Every <c val=\"#TooltipNumbers\"><d ref=\"Validator,DeathwingHealthLE25,Value*100\"/>%</c> Health lost causes Deathwing to lose a plate. Plates are only restored when Dragonflight is used, based on the amount of Health Deathwing has when landing.<n/><n/>Deathwing is also a mighty Dragon Aspect who is permanently Unstoppable and deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingMoltenFlameDamage,MultiplicativeModifierArray[HeroDamage].Modifier*100\" precision=\"2\"/>%</c> additional Spell Damage to Heroes, but views his allies with contempt and ignores any of their friendly effects.",
-    "DeathwingBellowingRoar": "After <C val=\"#TooltipNumbers\"><d ref=\"Abil,DeathwingBellowingRoar,CastIntroTime\"/></c> second, Deathwing unleashes a mighty roar, dealing <C val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingBellowingRoarDamage,Amount\"/></c> damage to nearby Heroes and causing them to run in Fear for <C val=\"#TooltipNumbers\"><d ref=\"Behavior,DeathwingBellowingRoarFear,Duration\"Precision=\"2\"/></c> seconds.",
     "DeathwingBellowingRoarTalent": "After <C val=\"#TooltipNumbers\"><d ref=\"Abil,DeathwingBellowingRoar,CastIntroTime\"/></c> second, Deathwing unleashes a mighty roar, dealing <C val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingBellowingRoarDamage,Amount\"/></c> damage to nearby Heroes and causing them to run in Fear for <C val=\"#TooltipNumbers\"><d ref=\"Behavior,DeathwingBellowingRoarFear,Duration\"Precision=\"2\"/></c> seconds.",
     "DeathwingBurnBeneathMyShadow": "When an enemy Fort or Keep is destroyed the cooldown of Cataclysm is reset. Cataclysm's periodic damage is increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingCataclysmDoTDamage,MultiplicativeModifierArray[Burn].Modifier*100\"/>%</c>.",
     "DeathwingCataclysm": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,DeathwingCataclysm,CastIntroTime\" precision=\"2\"/></c> seconds, Deathwing flies in the targeted direction, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingCataclysmDamage,Amount\"/></c> damage on impact and leaving scorched ground that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingCataclysmDoTDamage,Amount/Behavior,DeathwingCataclysmDoT,Period\"/></c> damage a second. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingCataclysmGroundPersistent,PeriodCount*Effect,DeathwingCataclysmGroundPersistent,PeriodicPeriodArray[0]\" player=\"0\" precision=\"2\"/></c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit Heroes with Molten Flame to grant <c val=\"#TooltipNumbers\">1</c> stack.<n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Score Takedowns to grant <c val=\"#TooltipNumbers\">50</c> stacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Mythic Reward:</c> After reaching <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DeathwingCataclysmQuestToken,Max\"/></c> stacks, Deathwing brings on the Hour of Twilight. Cataclysm's periodic damage to Structures is increased by <c val=\"#TooltipNumbers\">2500%</c>.",
@@ -587,7 +560,6 @@
     "DeathwingDragonflight": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,DeathwingDragonflight,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, fly into the sky, becoming Immune to all effects and gaining <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingDragonflightCreateHealer,RechargeVitalFraction*100\" player=\"0\" precision=\"2\"/>%</c> Health per second. Once cast, this ability cannot be interrupted. Cannot be cast for <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingDragonflightSetCooldown,Cost[0].CooldownTimeUse\" player=\"0\"/></c> seconds after taking damage, Basic Attacking or casting an Ability.",
     "DeathwingDragonsIre": "While Deathwing has <c val=\"#TooltipNumbers\">3</c> or fewer Armor Plates, his damage is increased by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DeathwingDragonsIre,Modification.DamageDealtFraction[Ability] * 100\"/>%</c>.",
     "DeathwingEarthShatter": "Create a fissure of earth that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingEarthShatterDamage,Amount\"/></c> damage to enemies hit and Stuns them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DeathwingEarthShatterStun,Duration\" precision=\"3\"/></c> seconds.<n/><n/><c val=\"#DeathwingDestroyer\">Destroyer: Onslaught</c><n/>Lunge in a direction",
-    "DeathwingElementiumPlating": "Activate to gain a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingElementiumPlatingMissingHealthRatioDummy,XP*100\"/>%</c> of Deathwing's missing Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DeathwingElementiumPlatingShield,Duration\"/></c> seconds. While the Shield holds, Deathwing regenerates <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingElementiumPlatingCreateHealer,RechargeVitalFraction*100\"/>%</c> of his maximum Health per second. <n/><n/>When the Shield expires or is destroyed, Deathwing regains Armor Plates appropriate for his new Health.<n/><n/>The Shield and effect end immediately if Deathwing uses Dragonflight.",
     "DeathwingElementiumPlatingTalent": "Activate to gain a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingElementiumPlatingMissingHealthRatioDummy,XP*100\"/>%</c> of Deathwing's missing Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DeathwingElementiumPlatingShield,Duration\"/></c> seconds. While the Shield holds, Deathwing regenerates <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingElementiumPlatingCreateHealer,RechargeVitalFraction*100\"/>%</c> of his maximum Health per second. <n/><n/>When the Shield expires or is destroyed, Deathwing regains Armor Plates appropriate for his new Health.<n/><n/>The Shield and effect end immediately if Deathwing uses Dragonflight.",
     "DeathwingFireAndFury": "Basic Attacks against Rooted, Slowed, or Stunned enemy Heroes deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingWeaponDamage,MultiplicativeModifierArray[DeathwingFireAndFury].Modifier*100\"/>%</c> additional damage and reduce the cooldowns of Deathwing's Basic Abilities by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,DeathwingFireAndFuryCooldownReductionModifyUnit,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds.",
     "DeathwingFirestorm": "Reduce the cooldown of Deathwing's landing Abilities by <c val=\"#TooltipNumbers\"><d ref=\"Abil,DeathwingWorldbreakerForm,Cost.Cooldown.TimeUse-Effect,DeathwingDragonflightFirestormCooldownReduction,EffectArray[0].Value\"Player=\"0\"/></c> seconds. When Deathwing lands, he drops <c val=\"#TooltipNumbers\">7</c> meteors near the landing area, dealing <C val=\"#TooltipNumbers\"><d ref=\"Effect,DeathwingFirestormExplosionDamage,Amount\"/></c> damage to enemies hit. <n/><n/>Meteors prioritize landing on Heroes, otherwise they fall randomly in the area.",
@@ -608,7 +580,6 @@
   "tooltipSimple": {
     "DeathwingArrivalOfAGod": "Landing damage increased, gain all level 7 talents",
     "DeathwingAspectOfDeath": "Deathwing is especially powerful, but ignores friendly effects",
-    "DeathwingBellowingRoar": "Roar Fears nearby Heroes",
     "DeathwingBellowingRoarTalent": "Roar Fears nearby Heroes",
     "DeathwingBurnBeneathMyShadow": "Destroying Forts or Keeps refreshes Cataclysm",
     "DeathwingCataclysm": "Deathwing flies over an area, causing devastation in his wake.",
@@ -621,7 +592,6 @@
     "DeathwingDragonflight": "Take to the sky",
     "DeathwingDragonsIre": "Deathwing gains damage while missing Armor Plates",
     "DeathwingEarthShatter": "Damage and Stun enemies in two lines",
-    "DeathwingElementiumPlating": "Activate to gain a Shield, restore Health",
     "DeathwingElementiumPlatingTalent": "Activate to gain a Shield, restore Health",
     "DeathwingFireAndFury": "Empower Basic Attacks against disabled enemies",
     "DeathwingFirestorm": "Meteors upon landing, reduced landing delay.",
