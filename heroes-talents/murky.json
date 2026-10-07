@@ -117,7 +117,7 @@
         "tooltipId": "MurkyFishEye",
         "talentTreeId": "MurkyFishEye",
         "name": "Fish Eye",
-        "description": "Egg's Health is increased by 100%, its sight radius is increased by 300% and it can see Stealthed enemies.  Passive: Spawning from his Egg increases Murky's mount speed to 45% for 5 seconds.",
+        "description": "Spawning from his Egg increases Murky's mount speed to 45% for 5 seconds.  Passive: Increase the Egg's Health and Shields by 100%, its sight radius by 300%, and it reveals all enemies in its sight radius.",
         "icon": "storm_ui_icon_murky_trait_spawnegg.png",
         "type": "Trait",
         "sort": 1,
@@ -499,22 +499,6 @@
       },
       "abilities": [],
       "sourceAbilityTooltipId": "MurkyPufferfish"
-    },
-    {
-      "unitId": "MurkyRespawnEgg",
-      "name": "MurkyRespawnEgg",
-      "icon": "storm_ui_icon_murky_trait_spawnegg.png",
-      "stats": {
-        "hp": 420,
-        "hpRegen": 0,
-        "hpScale": 0.04,
-        "hpRegenScale": 0,
-        "radius": 0.5,
-        "speed": 0,
-        "sight": 6
-      },
-      "abilities": [],
-      "sourceAbilityTooltipId": "MurkySpawnEgg"
     }
   ],
   "tooltipMarkup": {
@@ -522,7 +506,7 @@
     "MurkyBigTunaKahuna": "Murky's maximum Health and Egg respawn time are doubled.",
     "MurkyEggHuntTalent": "Activate to place a fake Egg. If the fake Egg dies, it casts an untalented Slime. Maximum <c val=\"#TooltipNumbers\">3 </c>fake Eggs.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Spawning from his Egg grants Murky Stealth for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyEggHuntCloak,Duration\"/></c> seconds.",
     "MurkyEggShell": "Spawning from his Egg grants Murky a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MurkyEggShellShield,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]\"/>%</c> of his maximum Health. Casting Spawn Egg refreshes this Shield for an amount equal to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,MurkyEggShellRespawnEggAmountAccumulator,Ratio*100\"/>%</c> of Murky's current Health.",
-    "MurkyFishEye": "Egg's Health is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MurkySpawnEggFishEyeTalentBuff,Modification.VitalMaxAdditiveMultiplierArray[Life]\"/>%</c>, its sight radius is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,MurkySpawnEggFishEyeTalentBuff,Modification.SightBonus)/(Unit,MurkyRespawnEgg,Sight)\"/>%</c> and it can see Stealthed enemies. <n/><n/><c val=\"#AbilityPassive\">Passive:</c> Spawning from his Egg increases Murky's mount speed to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyFishEyeMountSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyFishEyeMountSpeed,Duration\"/></c> seconds.",
+    "MurkyFishEye": "Spawning from his Egg increases Murky's mount speed to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyFishEyeMountSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyFishEyeMountSpeed,Duration\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increase the Egg's Health and Shields by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MurkySpawnEggFishEyeTalentBuff,Modification.VitalMaxAdditiveMultiplierArray[Life]\"/>%</c>, its sight radius by <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,MurkySpawnEggFishEyeTalentBuff,Modification.SightBonus)/(Unit,MurkyRespawnEgg,Sight)\"/>%</c>, and it reveals all enemies in its sight radius.",
     "MurkyFishOil": "The Pufferfish casts Slime at its location upon landing.",
     "MurkyFishTank": "Murky is healed for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MurkySlimeDamage,LeechFraction[Life]\"/>%</c> of the damage he deals with Basic Attacks and Basic Abilities.",
     "MurkyLivingTheDreamTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyLivingTheDreamCarry,Period\" player=\"0\"/></c> seconds Murky is alive, he gains <c val=\"#TooltipNumbers\"><d ref=\"Effect,MurkyLivingTheDreamModifyQuestToken,Value\"/>%</c> Spell Power, up to <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MurkyLivingTheDreamAccumulator,MaxAccumulation\"/>%</c>. This bonus is reset upon his death.",
@@ -549,7 +533,7 @@
     "MurkyBigTunaKahuna": "Increase Health and respawn time",
     "MurkyEggHuntTalent": "Place fake Eggs",
     "MurkyEggShell": "Spawning from Egg grants Shield",
-    "MurkyFishEye": "Egg sees further, detects Stealth",
+    "MurkyFishEye": "Egg reveals large area, increased Health",
     "MurkyFishOil": "Casts Slime at Pufferfish location",
     "MurkyFishTank": "Heal for damage dealt",
     "MurkyLivingTheDreamTalent": "<c val=\"#TooltipQuest\">Quest:</c> Living increases Spell Power",

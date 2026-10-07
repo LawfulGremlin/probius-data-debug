@@ -309,20 +309,6 @@
     "sight": 0,
     "speed": 0
   },
-  "AlarakCounterStrikeItem": {
-    "unitId": "AlarakCounterStrikeItem",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0.5,
-    "innerRadius": 0,
-    "sight": 2.5,
-    "speed": 0
-  },
   "AlarakCounterStrikeMissile": {
     "unitId": "AlarakCounterStrikeMissile",
     "portraits": {},
@@ -8700,7 +8686,7 @@
     "unitId": "MurkyEggHuntEgg",
     "portraits": {},
     "life": {
-      "amount": 420,
+      "amount": 84,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
@@ -8757,7 +8743,7 @@
     "unitId": "MurkyRespawnEgg",
     "portraits": {},
     "life": {
-      "amount": 420,
+      "amount": 84,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
@@ -18024,7 +18010,7 @@
           "_hdp5LinkId": "AlexstraszaLifebinder|AlexstraszaLifebinder|Heroic",
           "icon": "storm_ui_icon_alexstrasza_life_binder.png",
           "name": "Life-Binder",
-          "fullText": "Bind Alexstrasza's life force with an allied Hero. Both her and her target are healed for <c val=\"bfd4fd\">480</c><c val=\"a7a7a7\">~~0.04~~</c> Health over <c val=\"bfd4fd\">2</c> seconds. Afterwards, the Hero with a lower percentage of Health is healed to the same Health percentage as the other Hero.",
+          "fullText": "Bind Alexstrasza's life force with an allied Hero. Both her and her target are healed for <c val=\"bfd4fd\">480</c><c val=\"a7a7a7\">~~0.04~~</c> Health over <c val=\"bfd4fd\">2</c> seconds. Afterwards, the Hero with a lower percentage of Health is healed to the same Health percentage as the other Hero.<n/><n/><c val=\"D65CFF\">Dragonqueen:</c> Cast range increased by <c val=\"bfd4fd\">50%</c>.",
           "cooldownText": "Cooldown: 50 seconds"
         },
         {
