@@ -73,7 +73,7 @@
       {
         "uid": "f59acd",
         "name": "Upheaval",
-        "description": "After 1 second, pull enemies towards Cho'gall, slowing them by 25% for 3 seconds and dealing 175 (+4% per level) damage.",
+        "description": "After 1 second, pull enemies towards Cho'gall, Slowing them by 25% for 3 seconds and dealing 175 (+4% per level) damage.",
         "hotkey": "R",
         "abilityId": "Chogall|R1",
         "tooltipId": "ChoUpheaval",
@@ -287,7 +287,7 @@
         "tooltipId": "ChoUpheaval",
         "talentTreeId": "ChoHeroicAbilityUpheaval",
         "name": "Upheaval",
-        "description": "After 1 second, pull enemies towards Cho'gall, slowing them by 25% for 3 seconds and dealing 175 (+4% per level) damage.",
+        "description": "After 1 second, pull enemies towards Cho'gall, Slowing them by 25% for 3 seconds and dealing 175 (+4% per level) damage.",
         "icon": "storm_ui_icon_cho_upheaval.png",
         "type": "Heroic",
         "sort": 2,
@@ -495,7 +495,7 @@
     "ChoTalentMoltenBlock": "Activate to enter Stasis and gain Invulnerability for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoTalentMoltenBlock,Duration\"/></c> seconds, damaging nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoMoltenBlockImpactDamage,Amount*2\"/></c> damage per second.",
     "ChoTheWillofCho": "Takedowns permanently increase the Armor granted by Ogre Hide by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoWillofChoModifyToken,Value*Effect,ChoWillofChoModifyTokenPersistent,PeriodCount\"/></c>, to a max of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoWillofChoTokenCounter,Max\"/></c> extra Armor.",
     "ChoTwilightVeilTalent": "Activate to increase the Armor bonus of Ogre Hide to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoOgreHideTwilightVeilTalentArmorBuff,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoOgreHideTwilightVeilTalentArmorBuff,Duration\"/></c> seconds. If cast while Ogre Rage is active, it instantly swaps to Ogre Hide.",
-    "ChoUpheaval": "After <c val=\"#TooltipNumbers\">1</c> second, pull enemies towards Cho'gall, slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChoUpheavalSlowBehavior,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoUpheavalSlowBehavior,Duration\"/></c> seconds and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoUpheavalDamage,Amount\"/></c> damage.",
+    "ChoUpheaval": "After <c val=\"#TooltipNumbers\">1</c> second, pull enemies towards Cho'gall, Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChoUpheavalSlowBehavior,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoUpheavalSlowBehavior,Duration\"/></c> seconds and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoUpheavalDamage,Amount\"/></c> damage.",
     "ChoUppercut": "Surging Fist deals additional damage to Heroes equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChoSurgingFistUppercutTalentDamage,VitalFractionMax[Life]\"/>%</c> of their max Health."
   },
   "tooltipSimple": {

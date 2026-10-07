@@ -2178,16 +2178,16 @@
     "unitId": "DeathwingDragonflightUnit",
     "portraits": {},
     "life": {
-      "amount": 3200,
+      "amount": 2850,
       "scale": 0.04,
-      "regenRate": 6.668,
+      "regenRate": 5.9375,
       "regenScale": 0.04,
       "type": "Health"
     },
     "energy": {
       "amount": 100,
       "regenRate": 5,
-      "type": "Mana"
+      "type": "Energy"
     },
     "radius": 1.25,
     "innerRadius": 1,
@@ -5734,7 +5734,7 @@
       "regenRate": 0,
       "regenScale": 0
     },
-    "radius": 0.5,
+    "radius": 0.6875,
     "innerRadius": 0,
     "sight": 8,
     "speed": 0
@@ -5859,7 +5859,18 @@
     "innerRadius": 0,
     "sight": 11,
     "speed": 0,
-    "abilities": {}
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "TowerMarkAttackTarget",
+          "buttonId": "TowerMarkAttackTarget",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "TowerMarkAttackTarget|TowerMarkAttackTarget|E",
+          "icon": "storm_temp_war3_btnrallypoint.png"
+        }
+      ]
+    }
   },
   "KnightMagicVolleyMissile": {
     "unitId": "KnightMagicVolleyMissile",
@@ -11752,6 +11763,34 @@
       }
     ]
   },
+  "TassadarBlackHole": {
+    "unitId": "TassadarBlackHole",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "TassadarBlackHoleMissile": {
+    "unitId": "TassadarBlackHoleMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "TassadarForceWall": {
     "unitId": "TassadarForceWall",
     "portraits": {},
@@ -11761,9 +11800,9 @@
       "regenRate": 0,
       "regenScale": 0
     },
-    "radius": 1.5,
+    "radius": 1.0625,
     "innerRadius": 0.0625,
-    "sight": 2.5,
+    "sight": 6,
     "speed": 0
   },
   "TassadarForceWallArtEndUnitLeft": {
@@ -11852,6 +11891,20 @@
   },
   "TassadarForceWallMissile": {
     "unitId": "TassadarForceWallMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "TassadarShockRayMissile": {
+    "unitId": "TassadarShockRayMissile",
     "portraits": {},
     "life": {
       "amount": 10,
@@ -12619,6 +12672,20 @@
       ]
     }
   },
+  "TombCoreDeathWaveMissile": {
+    "unitId": "TombCoreDeathWaveMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "TowerMissile": {
     "unitId": "TowerMissile",
     "portraits": {},
@@ -12652,7 +12719,7 @@
         "damage": 75,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": 0.5,
+          "Heroic": 0.6,
           "MapCreature": 1,
           "Merc": 1,
           "Minion": 1,
@@ -12700,6 +12767,7 @@
         "damage": 250,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -12709,7 +12777,18 @@
     "innerRadius": 0,
     "sight": 10,
     "speed": 0,
-    "abilities": {}
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "TowerMarkAttackTarget",
+          "buttonId": "TowerMarkAttackTarget",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "TowerMarkAttackTarget|TowerMarkAttackTarget|E",
+          "icon": "storm_temp_war3_btnrallypoint.png"
+        }
+      ]
+    }
   },
   "TownCannonTowerL2Standalone": {
     "unitId": "TownCannonTowerL2Standalone",
@@ -12730,6 +12809,7 @@
         "damage": 250,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -12739,7 +12819,18 @@
     "innerRadius": 0,
     "sight": 8,
     "speed": 0,
-    "abilities": {}
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "TowerMarkAttackTarget",
+          "buttonId": "TowerMarkAttackTarget",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "TowerMarkAttackTarget|TowerMarkAttackTarget|E",
+          "icon": "storm_temp_war3_btnrallypoint.png"
+        }
+      ]
+    }
   },
   "TownCannonTowerL3": {
     "unitId": "TownCannonTowerL3",
@@ -12760,6 +12851,7 @@
         "damage": 330,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -12769,7 +12861,18 @@
     "innerRadius": 0,
     "sight": 10,
     "speed": 0,
-    "abilities": {}
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "TowerMarkAttackTarget",
+          "buttonId": "TowerMarkAttackTarget",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "TowerMarkAttackTarget|TowerMarkAttackTarget|E",
+          "icon": "storm_temp_war3_btnrallypoint.png"
+        }
+      ]
+    }
   },
   "TownCannonTowerL3Standalone": {
     "unitId": "TownCannonTowerL3Standalone",
@@ -12790,6 +12893,7 @@
         "damage": 330,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -12799,7 +12903,18 @@
     "innerRadius": 0,
     "sight": 8,
     "speed": 0,
-    "abilities": {}
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "TowerMarkAttackTarget",
+          "buttonId": "TowerMarkAttackTarget",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "TowerMarkAttackTarget|TowerMarkAttackTarget|E",
+          "icon": "storm_temp_war3_btnrallypoint.png"
+        }
+      ]
+    }
   },
   "TownCircleWallDiagonalBig": {
     "unitId": "TownCircleWallDiagonalBig",
@@ -13691,6 +13806,7 @@
         "damage": 375,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -13700,7 +13816,18 @@
     "innerRadius": 0,
     "sight": 12,
     "speed": 0,
-    "abilities": {}
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "TowerMarkAttackTarget",
+          "buttonId": "TowerMarkAttackTarget",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "TowerMarkAttackTarget|TowerMarkAttackTarget|E",
+          "icon": "storm_temp_war3_btnrallypoint.png"
+        }
+      ]
+    }
   },
   "TownTownHallL3": {
     "unitId": "TownTownHallL3",
@@ -13721,6 +13848,7 @@
         "damage": 440,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -13730,7 +13858,18 @@
     "innerRadius": 0,
     "sight": 12,
     "speed": 0,
-    "abilities": {}
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "TowerMarkAttackTarget",
+          "buttonId": "TowerMarkAttackTarget",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "TowerMarkAttackTarget|TowerMarkAttackTarget|E",
+          "icon": "storm_temp_war3_btnrallypoint.png"
+        }
+      ]
+    }
   },
   "TownWallDiagonalBLUR": {
     "unitId": "TownWallDiagonalBLUR",
@@ -16020,6 +16159,33 @@
       ]
     }
   },
+  "VolskayaCoreSkyLaserMoverUnit": {
+    "unitId": "VolskayaCoreSkyLaserMoverUnit",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 25.3007,
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "move",
+          "buttonId": "Move",
+          "abilityType": "Q",
+          "isPassive": false,
+          "_hdp5LinkId": "move|Move|Q",
+          "icon": "btn-command-move.png",
+          "name": "Move"
+        }
+      ]
+    }
+  },
   "VolskayaVehicle": {
     "unitId": "VolskayaVehicle",
     "portraits": {},
@@ -17410,9 +17576,9 @@
     "unitId": "HeroAlexstraszaDragon",
     "portraits": {},
     "life": {
-      "amount": 1787,
+      "amount": 1698,
       "scale": 0.04,
-      "regenRate": 3.7226,
+      "regenRate": 3.539,
       "regenScale": 0.04,
       "type": "Health"
     },
