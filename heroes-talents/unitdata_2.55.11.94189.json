@@ -3074,6 +3074,20 @@
     "sight": 0,
     "speed": 0
   },
+  "DryadThornwoodVineForTheWildlandsMissile": {
+    "unitId": "DryadThornwoodVineForTheWildlandsMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 1.5,
+    "speed": 0
+  },
   "DryadThornwoodVineMissile": {
     "unitId": "DryadThornwoodVineMissile",
     "portraits": {},
@@ -9213,6 +9227,21 @@
     "innerRadius": 0,
     "sight": 0,
     "speed": 0
+  },
+  "OrpheaShadowWaltzMovingWalkStartDummy": {
+    "unitId": "OrpheaShadowWaltzMovingWalkStartDummy",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 4,
+    "abilities": {}
   },
   "OrpheaWeaponMissile": {
     "unitId": "OrpheaWeaponMissile",

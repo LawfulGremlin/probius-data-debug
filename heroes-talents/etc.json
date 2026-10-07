@@ -59,7 +59,7 @@
         "hotkey": "W",
         "abilityId": "ETC|W1",
         "tooltipId": "L90ETCFaceMelt",
-        "cooldown": 12,
+        "cooldown": 10,
         "manaCost": 55,
         "icon": "storm_ui_icon_etc_facemelt.png",
         "type": "basic"
@@ -67,7 +67,7 @@
       {
         "uid": "d10411",
         "name": "Guitar Solo",
-        "description": "Regenerate 66 (+4% per level) Health per second for 4 seconds.",
+        "description": "Regenerate 66 Health per second for 4 seconds.",
         "hotkey": "E",
         "abilityId": "ETC|E1",
         "tooltipId": "L90ETCGuitarSolo",
@@ -103,7 +103,7 @@
       {
         "uid": "687b0a",
         "name": "Rockstar",
-        "description": "Using a Basic Ability grants 20 Armor for 2 seconds. Heroic Abilities grant 60 Armor.",
+        "description": "Using a Basic Ability grants 25 Armor for 2 seconds. Heroic Abilities grant 50 Armor.",
         "trait": true,
         "abilityId": "ETC|D1",
         "tooltipId": "L90ETCRockstar",
@@ -171,7 +171,7 @@
         "tooltipId": "ETCCrowdSurfer",
         "talentTreeId": "ETCCrowdSurfer",
         "name": "Crowd Surfer",
-        "description": "Allows Powerslide to travel over walls and terrain. If no enemies are hit, reduce the cooldown by 7 seconds and refund the Mana cost.",
+        "description": "Allows Powerslide to travel over walls and terrain. If no enemies are hit, reduce the cooldown by 6 seconds and refund the Mana cost.",
         "icon": "storm_ui_icon_etc_powerslide.png",
         "type": "Q",
         "sort": 1,
@@ -241,7 +241,7 @@
         "tooltipId": "ETCHammeronTalent",
         "talentTreeId": "ETCMasteryHammeron",
         "name": "Hammer-on",
-        "description": "While Guitar Solo is active your Basic Attacks deal 35% more damage.",
+        "description": "E.T.C.'s Basic Attacks deal 12% more damage, increased to 36% while Guitar Solo is active.",
         "icon": "storm_ui_icon_etc_guitarsolo.png",
         "type": "E",
         "sort": 2,
@@ -332,7 +332,7 @@
         "tooltipId": "ETCEncoreTalent",
         "talentTreeId": "ETCMasteryEncore",
         "name": "Encore",
-        "description": "Face Melt leaves an Amp behind, which will knock enemies away again 2 seconds later.  Passive: Each enemy Hero hit by Face Melt or the Amp reduces your Heroic Ability cooldown by 5%.",
+        "description": "Face Melt leaves an Amp behind, which will knock enemies away again 2 seconds later.  Passive: Each enemy Hero hit by Face Melt or the Amp reduces your Heroic Ability cooldown by 4%.",
         "icon": "storm_ui_icon_etc_facemelt_a.png",
         "type": "W",
         "sort": 2,
@@ -474,10 +474,10 @@
         ]
       },
       {
-        "tooltipId": "GenericStormShield",
-        "talentTreeId": "GenericTalentStormShield",
-        "name": "Storm Shield",
-        "description": "Activate to give all nearby allied Heroes a Shield for 20% of their max Health for 3 seconds.",
+        "tooltipId": "L90ETCPoweroftheHorde",
+        "talentTreeId": "L90ETCPoweroftheHorde",
+        "name": "Power of the Horde",
+        "description": "Activate to grant nearby allied Heroes a Shield that absorbs damage equal to 30% of their maximum Health for 5 seconds, increased by 2% for each other allied Hero in the area.",
         "icon": "storm_ui_icon_talent_stormshield.png",
         "type": "Active",
         "sort": 4,
@@ -486,14 +486,14 @@
         "abilityId": "ETC|Active",
         "abilityLinks": [],
         "abilityTalentLinkIds": [
-          "TalentBucketStormShield"
+          "L90ETCPoweroftheHorde"
         ]
       },
       {
-        "tooltipId": "GenericBoltoftheStormTalent",
-        "talentTreeId": "GenericTalentFlashoftheStorms",
-        "name": "Bolt of the Storm",
-        "description": "Activate to teleport to a nearby location.",
+        "tooltipId": "L90ETCRidetheLightning",
+        "talentTreeId": "L90ETCRidetheLightning",
+        "name": "Ride the Lightning",
+        "description": "Activate to teleport to a nearby location and deal 48 (+4% per level) damage to nearby enemy Heroes. The cooldown is reduced by 10 second for every enemy Hero hit, up to 50 seconds.",
         "icon": "storm_ui_icon_talent_boltofthestorm.png",
         "type": "Active",
         "sort": 5,
@@ -502,7 +502,7 @@
         "abilityId": "ETC|Active",
         "abilityLinks": [],
         "abilityTalentLinkIds": [
-          "FlashoftheStorms"
+          "L90ETCRidetheLightning"
         ]
       }
     ]
@@ -512,16 +512,14 @@
     "ETCCrowdSurfer": "Allows Powerslide to travel over walls and terrain. If no enemies are hit, reduce the cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,L90ETCPowerSlideCrowdSurferCooldownReduction,Cost[0].CooldownTimeUse\"/></c> seconds and refund the Mana cost.",
     "ETCEncoreTalent": "Face Melt leaves an Amp behind, which will knock enemies away again <c val=\"#TooltipNumbers\"><d ref=\"Effect,FaceMeltEncoreMasteryCreatePersistent,ExpireDelay\" precision=\"2\"/></c> seconds later.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Each enemy Hero hit by Face Melt or the Amp reduces your Heroic Ability cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-100*Effect,ETCFaceMeltEncoreModifyHeroicCooldown,Cost[0].Fraction.Cooldown\"/>%</c>.",
     "ETCGuitarSoloAggressiveShreddingTalent": "E.T.C.'s Basic Attacks reduce the cooldown of Guitar Solo by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ETCGuitarSoloAggressiveShreddingTalentModifyCooldown,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.",
-    "ETCHammeronTalent": "While Guitar Solo is active your Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,L90ETCWeaponDamage,MultiplicativeModifierArray[HammerOn].Modifier\"/>%</c> more damage.",
+    "ETCHammeronTalent": "E.T.C.'s Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,L90ETCWeaponDamage,MultiplicativeModifierArray[HasHammeron].Modifier\"/>%</c> more damage, increased to <c val=\"#TooltipNumbers\"><d ref=\"100*(Effect,L90ETCWeaponDamage,MultiplicativeModifierArray[HasHammeron].Modifier+Effect,L90ETCWeaponDamage,MultiplicativeModifierArray[HasGuitarSoloActive].Modifier)\"/>%</c> while Guitar Solo is active.",
     "ETCMicCheckTalent": "Hitting at least <c val=\"#TooltipNumbers\"><d ref=\"1+Validator,MicCheckTargetsValidator,AreaArray[0].Count\"/></c> targets with Face Melt reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,FaceMeltMicCheckMasteryModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "ETCPinballWizardTalent": "Hitting an enemy with Powerslide causes the next Face Melt against them within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCEligibleForPinballWizard,Duration\"/></c> seconds to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,L90ETCFaceMeltPinballWizardDamage,MultiplicativeModifierArray[PinballWizard].Modifier*100\"/>%</c> more damage.",
     "ETCProgRockTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gathering a Regeneration Globe permanently increases the healing per second of Guitar Solo by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ETCProgRockAccumulator,Scale\"/></c>, to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ETCProgRockAccumulator,Scale*Behavior,ETCProgRockTokenCounter,Max\"/></c><n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gathering <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ETCProgRockTokenCounter,Max\"/></c> Regeneration Globes, Guitar Solo also heals nearby allied Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Effect,L90ETCGuitarSoloAllyHeal,RechargeVitalRate\"/></c> Health every second while it is active.",
     "ETCShowStopperTalent": "After using Powerslide, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,PowerSlideApplyShowStopperArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,PowerSlideApplyShowStopperArmorIncrease,Duration\" player=\"0\"/></c> seconds, reducing all damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,PowerSlideApplyShowStopperArmorIncrease,ArmorModification.AllArmorBonus\"/>%</c>.",
     "ETCSpeedMetalTalent": "Using a Basic or Heroic ability also gives nearby allied Heroes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ETCSpeedMetal,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ETCSpeedMetal,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
     "ETCStageDiveCrowdPleaserTalent": "Stage Dive's impact area is <c val=\"#TooltipNumbers\">50%</c> bigger, and its Slow is increased by <c val=\"#TooltipNumbers\"><d ref=\"-100*Talent,L90ETCMasteryStageDiveCrowdPleaser,AbilityModificationArray[0].Modifications[4].Value\"/>%</c>.",
-    "GenericBoltoftheStormTalent": "Activate to teleport to a nearby location.",
     "GenericImposingPresenceTalent": "Activate to reduce the Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceActivatedDebuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> and Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceActivatedDebuffSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> of nearby Heroes and Summons for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentImposingPresenceActivatedDebuffSlow,Duration\"precision=\"2\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Heroes and Summons that attack your Hero have their Attack Speed Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceDamageResponseDebuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentImposingPresenceDamageResponseDebuff,Duration\"precision=\"2\"/> </c>seconds.",
-    "GenericStormShield": "Activate to give all nearby allied Heroes a Shield for <c val=\"#TooltipNumbers\">20%</c> of their max Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketStormShield,Duration\" player=\"0\"/></c> seconds.",
     "L90ETCDeathMetalTalent": "Upon dying, a ghost uses Mosh Pit at E.T.C's location.",
     "L90ETCFaceMelt": "Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,FaceMeltDamage,Amount\"/></c> damage to nearby enemies, knocking them back.",
     "L90ETCFaceMeltFaceSmeltTalent": "Face Melt Slows enemies by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,L90ETCFaceSmeltSlow,Modification.UnifiedMoveSpeedFactor*100\" precision=\"0\"/>%</c>, decaying over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCFaceSmeltSlow,Duration\" player=\"0\"/></c> seconds.",
@@ -530,7 +528,9 @@
     "L90ETCGuitarSoloGuitarHeroTalent": "While Guitar Solo is active, E.T.C. heals for <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,ETCMasteryGuitarHero,AbilityModificationArray[0].Modifications[0].Value\"/>%</c> of his damage dealt by Basic Attacks. Basic Attacks increase the duration of Guitar Solo by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ETCGuiltarSoloGuitarHeroModifyBuffDuration,Value\"Precision=\"2\"/></c> seconds.",
     "L90ETCMoshPit": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,L90ETCMoshPit,CastIntroTime[0]\" precision=\"2\"/></c> seconds, channel to stun nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCMoshPitStun,Duration*8\" precision=\"2\"/></c> seconds.",
     "L90ETCMoshPitTourBusTalent": "Channeling Mosh Pit refreshes Powerslide's cooldown, and it can be cast to increase Mosh Pit's duration by <c val=\"#TooltipNumbers\">2</c> seconds.",
+    "L90ETCPoweroftheHorde": "Activate to grant nearby allied Heroes a Shield that absorbs damage equal to <c val=\"#TooltipNumbers\"><d ref=\"Effect,L90ETCPoweroftheHordeShieldCreateHealer,RechargeVitalFraction*100\"/>%</c> of their maximum Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCPoweroftheHordeShield,Duration\"/></c> seconds, increased by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,L90ETCPoweroftheHordeAccumulator,Scale*100\"/>%</c> for each other allied Hero in the area.",
     "L90ETCPowerslide": "Slide to a location dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,PowerSlideDamage,Amount + (Effect,PowerSlideDamage,Amount * Effect,PowerSlideDamage,AttributeFactor[Heroic])\"/></c> damage and Stunning enemies hit for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,PowerslideStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
+    "L90ETCRidetheLightning": "Activate to teleport to a nearby location and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,L90ETCRidetheLightningDamage,Amount\"/></c> damage to nearby enemy Heroes. The cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,L90ETCRidetheLightningModifyCooldown,Cost[0].CooldownTimeUse\"/></c> second for every enemy Hero hit, up to <c val=\"#TooltipNumbers\"><d ref=\"-Effect,L90ETCRidetheLightningModifyCooldown,Cost[0].CooldownTimeUse*Behavior,L90ETCRideTheLightningCooldownController,MaxStackCount\"/></c> seconds.",
     "L90ETCRockstar": "Using a Basic Ability grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ETCRockstarArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ETCRockstarArmor,Duration\" player=\"0\"/></c> seconds. Heroic Abilities grant <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ETCHeroicRockstarArmor,ArmorModification.AllArmorBonus\"/></c> Armor.",
     "L90ETCRockstarEchoPedalTalent": "Using a Basic or Heroic Ability releases two pulses of <c val=\"#TooltipNumbers\"><d ref=\"Effect,L90ETCPassiveEchoPedalDamage,Amount\"/></c> damage. This deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,L90ETCPassiveEchoPedalDamage,MultiplicativeModifierArray[MinionOrMercOrMonster].Modifier*100\"/>%</c> bonus damage to Minions, Mercenaries, and Monsters. The first occurs instantly, the second occurs <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCPassiveEchoPedal,Duration\" player=\"0\"/></c> seconds later.",
     "L90ETCStageDive": "Leap to target location, landing after <c val=\"#TooltipNumbers\">2.75</c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,StageDiveDamage,Amount + (Effect,StageDiveDamage,Amount * Effect,StageDiveDamage,AttributeFactor[Heroic])\"/></c> damage to enemies in the area, and slowing them by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StageDiveSlow,Modification.UnifiedMoveSpeedFactor*(-100)\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StageDiveSlow,Duration\" player=\"0\" precision=\"2\"/></c> seconds."
@@ -547,9 +547,7 @@
     "ETCShowStopperTalent": "Powerslide gives Armor",
     "ETCSpeedMetalTalent": "Move Speed is added to Rockstar",
     "ETCStageDiveCrowdPleaserTalent": "Stage Dive impact area bigger, Slow increased",
-    "GenericBoltoftheStormTalent": "Activate to teleport a short distance",
     "GenericImposingPresenceTalent": "Activate to Slow enemy Basic Attacks and Move Speed",
-    "GenericStormShield": "Activate to grant Shields to all nearby allies",
     "L90ETCDeathMetalTalent": "Dying causes Mosh Pit",
     "L90ETCFaceMelt": "Knock back and damage nearby enemies",
     "L90ETCFaceMeltFaceSmeltTalent": "Face Melt Slows enemies",
@@ -558,7 +556,9 @@
     "L90ETCGuitarSoloGuitarHeroTalent": "Basic Attacks add duration, heal during Guitar Solo",
     "L90ETCMoshPit": "Nearby enemies must dance",
     "L90ETCMoshPitTourBusTalent": "Cast Powerslide during Mosh Pit",
+    "L90ETCPoweroftheHorde": "Activate to Shield nearby allies",
     "L90ETCPowerslide": "Dash to an area, Stunning and damaging enemies hit",
+    "L90ETCRidetheLightning": "Activate to teleport a short distance",
     "L90ETCRockstar": "After using an ability, E.T.C. gains Armor",
     "L90ETCRockstarEchoPedalTalent": "Abilities cause area damage",
     "L90ETCStageDive": "Dive to a location and deal damage"
