@@ -107,6 +107,17 @@
         "tooltipId": "GarroshArmorUp",
         "icon": "storm_ui_icon_garrosh_armor_up.png",
         "type": "trait"
+      },
+      {
+        "uid": "0d71e7",
+        "name": "Into the Fray",
+        "description": "Activate to throw a nearby ally and grant them 20 Armor for 3 seconds. Deals 91 (+4% per level) damage to nearby enemies upon impact and Slows them by 30% for 2.5 seconds.  While in flight, allied Heroes are Unstoppable.",
+        "hotkey": "1",
+        "abilityId": "Garrosh|11",
+        "tooltipId": "GarroshWreckingBallIntotheFray",
+        "cooldown": 45,
+        "icon": "storm_ui_icon_garrosh_intothefray.png",
+        "type": "activable"
       }
     ]
   },
@@ -220,7 +231,7 @@
         "tooltipId": "GarroshGroundbreakerIntimidation",
         "talentTreeId": "GarroshGroundbreakerIntimidation",
         "name": "Intimidation",
-        "description": "Groundbreaker reduces the Attack Speed of Heroes hit by 40% for 4 seconds.",
+        "description": "Groundbreaker reduces the Attack Speed of Heroes hit by 30% for 4 seconds.",
         "icon": "storm_ui_icon_garrosh_groundbreaker.png",
         "type": "Q",
         "sort": 1,
@@ -237,25 +248,32 @@
         "tooltipId": "GarroshOppressor",
         "talentTreeId": "GarroshOppressor",
         "name": "Oppressor",
-        "description": "Basic Attacks against Heroes reduce the target's Spell Power by 40% for 2.5 seconds.",
-        "icon": "storm_ui_icon_talent_autoattack_slow.png",
-        "type": "Passive",
+        "description": "Basic Attacks and Bloodthirst against Heroes reduce the target's Spell Power by 30% for 2.5 seconds.",
+        "icon": "storm_ui_icon_garrosh_bloodthirst.png",
+        "type": "W",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Garrosh|Passive"
+        "abilityId": "Garrosh|W1",
+        "abilityLinks": [
+          "Garrosh|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "GarroshBloodthirst"
+        ]
       },
       {
-        "tooltipId": "GarroshWreckingBallIntotheFray",
-        "talentTreeId": "GarroshWreckingBallIntotheFray",
-        "name": "Into the Fray",
-        "description": "Activate to throw a nearby ally and grant them 25 Armor for 3 seconds. Deals 91 (+4% per level) damage to nearby enemies upon impact and Slows them by 30% for 2.5 seconds.  While in flight, allied Heroes are Unstoppable.",
+        "tooltipId": "GarroshIntoTheFrayLoktarOgar",
+        "talentTreeId": "GarroshIntotheFrayLoktarOgar",
+        "name": "Lok-tar ogar!",
+        "description": "Increase Into the Fray's Armor by 20. Hitting enemy Heroes with Into the Fray reduces its cooldown by 12 seconds.",
         "icon": "storm_ui_icon_garrosh_intothefray.png",
         "type": "Active",
         "sort": 3,
-        "cooldown": 45,
         "isQuest": false,
         "abilityId": "Garrosh|Active",
-        "abilityLinks": [],
+        "abilityLinks": [
+          "Garrosh|11"
+        ],
         "abilityTalentLinkIds": [
           "GarroshWreckingBallIntotheFray"
         ]
@@ -505,12 +523,13 @@
     "GarroshGroundbreakerMortalCombo": "Hitting a Hero with Groundbreaker's Stun and throwing them with Wrecking Ball within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerMortalComboBehavior,Duration\" precision=\"2\"/></c> seconds reduces Wrecking Ball's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,GarroshGroundbreakerMortalComboCooldown,Cost[0].CooldownTimeUse\"/></c> seconds, regardless of order.",
     "GarroshGroundbreakerWarbreaker": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Stun Heroes with Groundbreaker.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Stunning <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerWarbreakerQuestToken,ConditionalEvents[0].CompareValue\"/></c> Heroes, Groundbreaker's Stun deals an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshGroundbreakerWarbreakerDamage,Amount*Behavior,GarroshGroundbreakerWarbreakerDoT,Duration/Behavior,GarroshGroundbreakerWarbreakerDoT,Period\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerWarbreakerDoT,Duration\"/></c> seconds to Heroes.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Stunning <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshGroundbreakerWarbreakerQuestToken,Max\"/></c> Heroes, permanently reduce Groundbreaker's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshGroundbreakerWarbreakerQuestCompleteCooldownModify,EffectArray[0].Value\" precision=\"2\"/></c> seconds.",
     "GarroshIndomitable": "Activate to become Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshIndomitableUnstoppableBehavior,Duration\" precision=\"1\"/></c> seconds.",
-    "GarroshOppressor": "Basic Attacks against Heroes reduce the target's Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshOppressorBehavior,Modification.DamageDealtFraction[Ability]*100\" precision=\"2\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshOppressorBehavior,Duration\"precision=\"2\"/></c> seconds.",
+    "GarroshIntoTheFrayLoktarOgar": "Increase Into the Fray's Armor by <c val=\"#TooltipNumbers\"><d ref=\"Talent,GarroshIntotheFrayLoktarOgar,AbilityModificationArray[0].Modifications[0].Value\"/></c>. Hitting enemy Heroes with Into the Fray reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,GarroshIntotheFrayLoktarOgarModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "GarroshOppressor": "Basic Attacks and Bloodthirst against Heroes reduce the target's Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshOppressorBehavior,Modification.DamageDealtFraction[Ability]*100\" precision=\"2\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshOppressorBehavior,Duration\"precision=\"2\"/></c> seconds.",
     "GarroshWarlordsChallenge": "Silence nearby Heroes and force them to attack Garrosh for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWarlordsChallengeTaunted,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
     "GarroshWarlordsChallengeDeathWish": "Increase the duration of Warlord's Challenge by <c val=\"#TooltipNumbers\"><d ref=\"Talent,GarroshWarlordsChallengeDeathWish,AbilityModificationArray[0].Modifications[1].Value\"Precision=\"2\"/></c> seconds.  If an enemy Hero is killed while Taunted by Warlord's Challenge, its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"Abil,GarroshWarlordsChallenge,Cost.Cooldown.TimeUse - Effect,GarroshWarlordsChallengeDeathWishModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "GarroshWreckingBall": "Throw a nearby enemy Hero, Minion, or Mercenary to the target location, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshWreckingBallDamage,Amount\"/></c> damage to enemies near the impact and Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshWreckingBallSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallSlow,Duration\" precision=\"2\"/></c> seconds.",
     "GarroshWreckingBallEarthshaker": "Wrecking Ball Stuns enemies near the impact area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallStun,Duration\" precision=\"2\"/></c> seconds.",
-    "GarroshWreckingBallIntotheFray": "Activate to throw a nearby ally and grant them <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallIntotheFrayArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallIntotheFrayArmor,Duration\" precision=\"1\"/></c> seconds. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshWreckingBallDamage,Amount\"/></c> damage to nearby enemies upon impact and Slows them by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshWreckingBallSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallSlow,Duration\" precision=\"2\"/></c> seconds.<n/><n/>While in flight, allied Heroes are Unstoppable.",
+    "GarroshWreckingBallIntotheFray": "Activate to throw a nearby ally and grant them <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallIntotheFrayArmor,ArmorModification.AllArmorBonus\" player=\"0\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallIntotheFrayArmor,Duration\" precision=\"1\"/></c> seconds. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshWreckingBallDamage,Amount\"/></c> damage to nearby enemies upon impact and Slows them by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshWreckingBallSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallSlow,Duration\" precision=\"2\"/></c> seconds.<n/><n/>While in flight, allied Heroes are Unstoppable.",
     "GarroshWreckingBallTitanicMight": "Wrecking Ball now throws the <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshWreckingBallSearchAreaMarker,AreaArray[0].MaxCount+Talent,GarroshWreckingBallTitanicMight,AbilityModificationArray[0].Modifications[0].Value\" player=\"0\"/></c> closest enemies.",
     "GarroshWreckingBallUnrivaledStrength": "Increase Wrecking Ball's throw range by <c val=\"#TooltipNumbers\"><d ref=\"(100*Talent,GarroshWreckingBallUnrivaledStrength,AbilityModificationArray[0].Modifications[0].Value)-100\"/>%</c> and its damage by <c val=\"#TooltipNumbers\"><d ref=\"(100*Effect,GarroshWreckingBallUnrivaledStrengthDamage,Amount/Effect,GarroshWreckingBallDamage,Amount)-100\"player=\"0\"/>%</c>."
   },
@@ -532,7 +551,8 @@
     "GarroshGroundbreakerMortalCombo": "Reduce Wrecking Ball cooldown on Stunned targets",
     "GarroshGroundbreakerWarbreaker": "<c val=\"#TooltipQuest\">Quest:</c> Stun Heroes to empower Groundbreaker",
     "GarroshIndomitable": "Activate to become Unstoppable",
-    "GarroshOppressor": "Basic Attacks reduce Spell Power",
+    "GarroshIntoTheFrayLoktarOgar": "Increase Into the Fray Armor, lower cooldown",
+    "GarroshOppressor": "Basic Attacks, Bloodthirst reduce Spell Power",
     "GarroshWarlordsChallenge": "Force nearby Heroes to attack Garrosh",
     "GarroshWarlordsChallengeDeathWish": "Takedowns reduce Warlord's Challenge cooldown",
     "GarroshWreckingBall": "Throw an enemy, damaging and Slowing them",

@@ -116,7 +116,7 @@
         "tooltipId": "DemonHunterHungeringArrowPuncturingArrowTalent",
         "talentTreeId": "DemonHunterMasteryPuncturingArrow",
         "name": "Puncturing Arrow",
-        "description": "Increase the number of Hungering Arrow bounces by 1.  Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow refunds 40 Mana and permanently increases the damage of its initial impact by 6.",
+        "description": "Increase the number of Hungering Arrow bounces by 1.  Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow refunds 40 Mana and permanently increases the damage of its initial impact by 7.",
         "icon": "storm_ui_icon_valla_hungeringarrow.png",
         "type": "Q",
         "sort": 1,
@@ -133,7 +133,7 @@
         "tooltipId": "DemonHunterMultishotFireAtWill",
         "talentTreeId": "DemonHunterMultishotFireAtWill",
         "name": "Fire At Will",
-        "description": "Quest: Hitting a Hero with Multishot grants 2 Hatred and permanently increases its damage by 4.",
+        "description": "Quest: Hitting a Hero with Multishot grants 2 Hatred and permanently increases its damage by 2.  Reward: After hitting 20 Heroes with Multishot, increase its damage by 40.",
         "icon": "storm_ui_icon_valla_multishot.png",
         "type": "W",
         "sort": 2,
@@ -150,7 +150,7 @@
         "tooltipId": "DemonHunterCreedoftheHunter",
         "talentTreeId": "DemonHunterCreedoftheHunter",
         "name": "Creed of the Hunter",
-        "description": "Loan: Gain 20% bonus Attack Speed. Every death reduces this bonus by 5%.  Quest: Every 50 Basic Attacks against Heroes increases Hatred's damage bonus per stack by 1%, up to 5%.",
+        "description": "Quest: Every 50 Basic Attacks against Heroes increases Hatred's damage bonus per stack by 1%, up to 5%.  Gambit: Gain 20% bonus Attack Speed. Every death reduces this bonus by 5%.",
         "icon": "storm_ui_icon_valla_hatred.png",
         "type": "Trait",
         "sort": 3,
@@ -491,7 +491,7 @@
     ]
   },
   "tooltipMarkup": {
-    "DemonHunterCreedoftheHunter": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Loan:</c> Gain <c val=\"#TooltipNumbers\">20%</c> bonus Attack Speed. Every death reduces this bonus by <c val=\"#TooltipNumbers\">5%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterCreedoftheHunterTokenCounter,DeltaEvents[1].Delta\"/></c> Basic Attacks against Heroes increases Hatred's damage bonus per stack by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterHeroWeaponCreedoftheHunterTalentModifyPlayer,EffectArray[0].Value*100\"/>%</c>, up to <c val=\"#TooltipNumbers\">5%</c>.",
+    "DemonHunterCreedoftheHunter": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterCreedoftheHunterTokenCounter,DeltaEvents[1].Delta\"/></c> Basic Attacks against Heroes increases Hatred's damage bonus per stack by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterHeroWeaponCreedoftheHunterTalentModifyPlayer,EffectArray[0].Value*100\"/>%</c>, up to <c val=\"#TooltipNumbers\">5%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Gambit:</c> Gain <c val=\"#TooltipNumbers\">20%</c> bonus Attack Speed. Every death reduces this bonus by <c val=\"#TooltipNumbers\">5%</c>.",
     "DemonHunterDeathDealer": "Increase Vaults Basic Attack damage bonus from <c val=\"#TooltipNumbers\">6%</c> to <c val=\"#TooltipNumbers\">15%</c> per stack of Hatred. If this attack kills its victim within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterVaultTalentDeathDealerDeathResponse,Duration\"Precision=\"2\"/></c> seconds, the Mana cost and cooldown of Vault are refunded.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Reduce the cooldown of Vault by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,DemonHunterDeathDealer,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
     "DemonHunterFarflightQuiver": "Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DemonHunterFarflightQuiverBaseRangeIncrease,Modification.WeaponRange/Weapon,HeroDemonHunter,Range\"/>%</c> Basic Attack range. While at max Hatred, gain an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DemonHunterFarflightQuiverMaxRangeIncrease,Modification.WeaponRange/Weapon,HeroDemonHunter,Range\"/>%</c> Basic Attack range.",
     "DemonHunterGloom": "Activate to consume all Hatred, granting <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DemonHunterGloomActiveSpellArmorAccumulator,Scale\"/></c> Spell Armor per Hatred consumed for <c val=\"#TooltipNumbers\"><d ref=\"Abil,DemonHunterGloom,Cost.Cooldown.TimeUse\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterHatredTalentGloomCarry,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor, and each stack of Hatred heals for <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DemonHunterGloomHPSAccumulator,Scale\"Precision=\"2\"Player=\"0\"/></c> Health per second.",
@@ -507,7 +507,7 @@
     "DemonHunterManticore": "Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack against the same Hero deals an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,DemonHunterHeroWeaponManticoreTalentProcDamage,VitalFractionMax[Life]\"/>%</c> of their maximum Health as damage.",
     "DemonHunterMultishot": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,MultishotDamage,AmountArray\"/></c> damage to enemies within the target area.",
     "DemonHunterMultishotArsenalTalent": "Increase the range of Multishot by <c val=\"#TooltipNumbers\">20%</c>. Multishot also fires <c val=\"#TooltipNumbers\"><d ref=\"Effect,MultishotArsenalGrenadeMissileScan,MaxCount\"/></c> grenades that deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,MultishotArsenalGrenadeDamage,Amount\"/></c> damage and refund <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterMultishotArsenalCreateManaHealer,RechargeVitalRate\"/></c> Mana after hitting enemy Heroes.",
-    "DemonHunterMultishotFireAtWill": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hitting a Hero with Multishot grants <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterMultishotFireAtWillAddHatredBehaviorCount,Count\"/></c> Hatred and permanently increases its damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DemonHunterMultishotFireAtWillQuestAccumulator,Scale\"Precision =\"2\"/></c>.",
+    "DemonHunterMultishotFireAtWill": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hitting a Hero with Multishot grants <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterMultishotFireAtWillAddHatredBehaviorCount,Count\"/></c> Hatred and permanently increases its damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DemonHunterMultishotFireAtWillDamageAccumulator,Scale\"Precision =\"2\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterMultishotFireAtWillQuestTokenCounter,ConditionalEvents[0].CompareValue\"/></c> Heroes with Multishot, increase its damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterMultishotFireAtWillQuestMilestoneAddDamageTokenCount,Value*Accumulator,DemonHunterMultishotFireAtWillDamageAccumulator,Scale\"Precision =\"2\"/></c>.",
     "DemonHunterRainOfVengeance": "Launch a wave of Shadow Beasts that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,RainOfVengeanceDamage,Amount\"/></c> damage and Stuns enemies in the target area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RainOfVengeanceStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,DemonHunterRainOfVengeance,Cost.Charge.CountMax\"/></c> charges.",
     "DemonHunterRainOfVengeanceStormOfVengeanceTalent": "Basic Attacks against Heroes reduce the cooldown of Rain of Vengeance by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,DemonHunterStormOfVengeanceModifyHeroicCooldown,Cost[0].ChargeTimeUse\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Each stack of Hatred increases your Attack Speed by <c val=\"#TooltipNumbers\">2%</c>. While at max Hatred, gain an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DemonHunterRainOfVengeanceStormOfVengeanceCarryBehavior,Modification.AdditiveAttackSpeedFactor\"/>%</c> Attack Speed.",
     "DemonHunterSeethingHatred": "While at max Hatred, increase all damage dealt by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterHatredSeethingHatredTalentCarry,Modification.DamageDealtFraction[Ability] *100\" precision =\"2\"/>%</c>.",
@@ -518,7 +518,7 @@
     "DemonHunterVaultRepeatingArrowTalent": "Vault no longer has a Mana cost. Casting Vault resets the cooldown of Hungering Arrow."
   },
   "tooltipSimple": {
-    "DemonHunterCreedoftheHunter": "<c val=\"#TooltipQuest\">Loan:</c> Gain Attack Speed<n/><c val=\"#TooltipQuest\">Quest:</c> Increase Hatred Basic Attack bonus",
+    "DemonHunterCreedoftheHunter": "<c val=\"#TooltipQuest\">Gambit:</c> Gain Attack Speed<n/><c val=\"#TooltipQuest\">Quest:</c> Increase Hatred Basic Attack bonus",
     "DemonHunterDeathDealer": "Increases Vault damage bonus, reduce cooldown",
     "DemonHunterFarflightQuiver": "Gain Basic Attack range, increased by Hatred",
     "DemonHunterGloom": "Consume Hatred to gain Spell Armor",
