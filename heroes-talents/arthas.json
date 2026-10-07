@@ -81,7 +81,7 @@
       {
         "uid": "2f62cd",
         "name": "Army of the Dead",
-        "description": "Summons Ghouls that last 15 seconds and atttack for 20 (+4% per level) damage. Sacrifice Ghouls to heal for 267 (+4% per level) Health.",
+        "description": "Summons Ghouls that last 15 seconds and attack for 20 (+4% per level) damage. Sacrifice Ghouls to heal for 267 (+4% per level) Health.",
         "hotkey": "R",
         "abilityId": "Arthas|R1",
         "tooltipId": "ArthasArmyOfTheDead",
@@ -271,7 +271,7 @@
         "tooltipId": "ArthasArmyOfTheDead",
         "talentTreeId": "ArthasHeroicAbilityArmyoftheDead",
         "name": "Army of the Dead",
-        "description": "Summons Ghouls that last 15 seconds and atttack for 20 (+4% per level) damage. Sacrifice Ghouls to heal for 267 (+4% per level) Health.",
+        "description": "Summons Ghouls that last 15 seconds and attack for 20 (+4% per level) damage. Sacrifice Ghouls to heal for 267 (+4% per level) Health.",
         "icon": "storm_ui_icon_arthas_armyofthedead.png",
         "type": "Heroic",
         "sort": 1,
@@ -517,7 +517,7 @@
   "tooltipMarkup": {
     "ArthasAbsoluteZeroSummonSindragosaTalent": "Sindragosa flies twice as far. Enemy Heroes are Rooted for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaHeroRoot,Duration\" player=\"0\"Precision=\"2\"/></c> seconds, and then Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ArthasSummonSindragosaAbsoluteZeroSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaAbsoluteZeroSlow,Duration\" player=\"0\" precision=\"1\"/></c> seconds.",
     "ArthasAntiMagicShellTalent": "Activate to make Arthas immune to Spell Damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasAntiMagicShellCaster,Duration\"/></c> seconds and heal Arthas for <c val=\"#TooltipNumbers\">25%</c> of the damage prevented.",
-    "ArthasArmyOfTheDead": "Summons Ghouls that last <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasArmyOfTheDeadGhoulTimedLife,Duration\" player=\"0\" precision=\"1\"/></c> seconds and atttack for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasArmyOfTheDeadGhoulWeaponDamage,Amount\"/></c> damage. Sacrifice Ghouls to heal for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate\"/></c> Health.",
+    "ArthasArmyOfTheDead": "Summons Ghouls that last <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasArmyOfTheDeadGhoulTimedLife,Duration\" player=\"0\" precision=\"1\"/></c> seconds and attack for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasArmyOfTheDeadGhoulWeaponDamage,Amount\"/></c> damage. Sacrifice Ghouls to heal for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate\"/></c> Health.",
     "ArthasBitingColdFrozenTempestTalent": "Each second an enemy is damaged by Frozen Tempest, it deals <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,Scale*2\"Precision=\"2\"/>%</c> bonus damage, up to a <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,MaxAccumulation\"/>%</c> bonus.",
     "ArthasDeathCoil": "Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasDeathCoilDamage,Amount\"/></c> damage to target enemy.<n/><n/>Can be self-cast to heal for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasDeathCoilSelfCastCreateHealer,RechargeVitalRate\"/></c> Health.",
     "ArthasDeathlord": "Increase the range of Death Coil by <c val=\"#TooltipNumbers\"><d ref=\"-100*(1-Talent,ArthasDeathlord,AbilityModificationArray[0].Modifications[1].Value)\"/>%</c>, reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Talent,ArthasDeathlord,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds, and if Death Coil is used on an enemy Hero, its Mana cost is refunded.",

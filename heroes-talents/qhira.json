@@ -55,11 +55,11 @@
       {
         "uid": "da6cb3",
         "name": "Blood Rage",
-        "description": "Passive: Basic Attack and Ability damage cause enemies to bleed for 44 (+4% per level) damage over 4 seconds. Stacks 5 times.  Qhira deals 32 (+4% per level) damage and heals for 85 (+4% per level) Health per enemy Hero affected. Damage and healing is increased by 50% per each additional stack on that Hero.",
+        "description": "Passive: Basic Attack and Ability damage cause enemies to bleed for 44 (+4% per level) damage over 4 seconds. Stacks 5 times.  Qhira deals 32 (+4% per level) damage and heals for 90 (+4% per level) Health per enemy Hero affected. Damage and healing is increased by 50% per each additional stack on that Hero.",
         "hotkey": "W",
         "abilityId": "Qhira|W1",
         "tooltipId": "NexusHunterBloodRage",
-        "cooldown": 8,
+        "cooldown": 7,
         "manaCost": 35,
         "icon": "storm_ui_icon_nexushunter_w.png",
         "type": "basic"
@@ -91,7 +91,7 @@
       {
         "uid": "9b6fac",
         "name": "Final Strike",
-        "description": "After 1 second, deal 395 (+4% per level) damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
+        "description": "After 1 second, deal 410 (+4% per level) damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
         "hotkey": "R",
         "abilityId": "Qhira|R2",
         "tooltipId": "NexusHunterFinalStrike",
@@ -108,7 +108,7 @@
         "trait": true,
         "abilityId": "Qhira|D1",
         "tooltipId": "NexusHunterGrapplingHook",
-        "cooldown": 25,
+        "cooldown": 20,
         "icon": "storm_ui_icon_nexushunter_d.png",
         "type": "trait"
       }
@@ -244,7 +244,7 @@
         "tooltipId": "NexusHunterBloodRageHealmonger",
         "talentTreeId": "NexusHunterBloodRageHealmonger",
         "name": "Healmonger",
-        "description": "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 190 (+4% per level) Health.",
+        "description": "If Blood Rage damages an enemy Hero below 50% Health, it heals for an additional 210 (+4% per level) Health.",
         "icon": "storm_ui_icon_nexushunter_w.png",
         "type": "W",
         "sort": 2,
@@ -299,7 +299,7 @@
         "tooltipId": "NexusHunterFinalStrike",
         "talentTreeId": "NexusHunterFinalStrike",
         "name": "Final Strike",
-        "description": "After 1 second, deal 395 (+4% per level) damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
+        "description": "After 1 second, deal 410 (+4% per level) damage to enemies in a line. This damage is increased by 25% against enemy Heroes who are below 50% Health.",
         "icon": "storm_ui_icon_nexushunter_r2.png",
         "type": "Heroic",
         "sort": 2,
@@ -391,7 +391,7 @@
         "tooltipId": "NexusHunterRevolvingSweepLingeringAilment",
         "talentTreeId": "NexusHunterRevolvingSweepLingeringAilment",
         "name": "Lingering Ailment",
-        "description": "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by 25 for 3 seconds.",
+        "description": "Enemy Heroes hit by Revolving Sweep or by Grappling Hook have their Armor reduced by 35 for 4 seconds.",
         "icon": "storm_ui_icon_nexushunter_e_alt_1.png",
         "type": "E",
         "sort": 2,
@@ -503,7 +503,7 @@
   },
   "tooltipMarkup": {
     "NexusHunterBloodRage": "<c val=\"#AbilityPassive\">Passive:</c> Basic Attack and Ability damage cause enemies to bleed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterBloodRageDoTDamage,Amount*4\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterBloodRageDoTBehavior,Duration\" player=\"0\"/></c> seconds. Stacks <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterBloodRageDamageToken,Max+1\"/></c> times.<n/><n/>Qhira deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterBloodRageDamage,Amount\"/></c> damage and heals for <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,NexusHunterBloodRageHealAccumulatorTrackedHeroCount,Scale\"/></c> Health per enemy Hero affected. Damage and healing is increased by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,NexusHunterBloodRageActivateDamageToken,Scale*100\" precision=\"1\"/>%</c> per each additional stack on that Hero.",
-    "NexusHunterBloodRageHealmonger": "If Blood Rage damages an enemy Hero below <c val=\"#TooltipNumbers\"><d ref=\"Validator,TargetLifeLT50Percent,Value*100\"/>%</c> Health, it heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterBloodRageHealmongerCreateHealer,RechargeVitalRate\"/></c> Health.",
+    "NexusHunterBloodRageHealmonger": "If Blood Rage damages an enemy Hero below <c val=\"#TooltipNumbers\"><d ref=\"Validator,TargetLifeLT50Percent,Value*100\"/>%</c> Health, it heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,NexusHunterBloodRageHealmongerHealAccumulator,Scale\"/></c> Health.",
     "NexusHunterBloodRageYourPainMyGain": "Basic Attacking an enemy Hero causes Qhira to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterBloodRageYourPainMyGainBehavior,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterBloodRageYourPainMyGainBehavior,Duration\"/></c> seconds. Stacks <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterBloodRageYourPainMyGainBehavior,ArmorModification.StackCount\"/></c> times.",
     "NexusHunterCarnage": "Unleash your sword in the target direction, continuously dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterCarnageDamage,Amount\"/></c> damage to enemies caught in its path.",
     "NexusHunterCarnageMaximumEffort": "If Carnage damages the same enemy Hero <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterCarnageMaximumEffortTargetBehavior,MaxStackCount\"/></c> times it deals an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,NexusHunterCarnageMaximumEffortDamage,Amount\"/></c> damage and Slows by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NexusHunterCarnageMaximumEffortSlowBehavior,Modification.UnifiedMoveSpeedFactor*100\" precision=\"1\"player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusHunterCarnageMaximumEffortSlowBehavior,Duration\"Precision=\"2\"/></c> seconds.",
