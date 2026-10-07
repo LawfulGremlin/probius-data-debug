@@ -73,7 +73,7 @@
       {
         "uid": "29fc08",
         "name": "Resurrect",
-        "description": "Channel on the spirit of a dead ally for 0.5 seconds. After a 5 second delay, they are brought back to life with 50% of their maximum Health at the location where they died.",
+        "description": "Channel on the spirit of a dead ally for 0.5 seconds. After a 3 second delay, they are brought back to life with 100% of their maximum Health at the location where they died.  Auriel can use this ability while dead to resurrect herself.",
         "hotkey": "R",
         "abilityId": "Auriel|R1",
         "tooltipId": "AurielResurrect",
@@ -288,7 +288,7 @@
         "tooltipId": "AurielResurrect",
         "talentTreeId": "AurielHeroicResurrect",
         "name": "Resurrect",
-        "description": "Channel on the spirit of a dead ally for 0.5 seconds. After a 5 second delay, they are brought back to life with 50% of their maximum Health at the location where they died.",
+        "description": "Channel on the spirit of a dead ally for 0.5 seconds. After a 3 second delay, they are brought back to life with 100% of their maximum Health at the location where they died.  Auriel can use this ability while dead to resurrect herself.",
         "icon": "storm_ui_icon_auriel_resurrect.png",
         "type": "Heroic",
         "sort": 1,
@@ -442,7 +442,8 @@
           "Auriel|R1"
         ],
         "abilityTalentLinkIds": [
-          "AurielResurrect"
+          "AurielResurrect",
+          "AurielResurrectSelf"
         ],
         "prerequisiteTalentIds": [
           "AurielHeroicResurrect"
@@ -521,7 +522,7 @@
     "AurielRayOfHeaven": "Consume Auriel's stored energy and heal allied Heroes in the area for the amount of energy consumed.",
     "AurielRepeatedOffenseDetainmentStrikeTalent": "Enemies hit by Detainment Strike are knocked back <c val=\"#TooltipNumbers\">25%</c> farther.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every time Detainment Strike stuns a Hero, increase the stun damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AurielDetainmentStrikeRepeatedOffenseAccumulator,Scale\"/></c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AurielDetainmentStrikeRepeatedOffenseQuestToken,ConditionalEvents[0].CompareValue*Accumulator,AurielDetainmentStrikeRepeatedOffenseAccumulator,Scale\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After stunning <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AurielDetainmentStrikeRepeatedOffenseQuestToken,ConditionalEvents[0].CompareValue\"/></c> Heroes, increase this damage bonus to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AurielDetainmentStrikeRepeatedOffenseQuestToken,Max*Accumulator,AurielDetainmentStrikeRepeatedOffenseAccumulator,Scale\"/></c>.",
     "AurielReservoirofHopeRayOfHeavenTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Each maximum energy Ray of Heaven Auriel casts increases the maximum amount of energy that can be stored by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AurielRayOfHeavenReservoirOfHopeAccumulator,Scale\"/></c>.",
-    "AurielResurrect": "Channel on the spirit of a dead ally for <c val=\"#TooltipNumbers\"><d ref=\"Abil,AurielResurrect,CastIntroTime\"precision=\"2\"/></c> seconds. After a <c val=\"#TooltipNumbers\">5</c> second delay, they are brought back to life with <c val=\"#TooltipNumbers\">50%</c> of their maximum Health at the location where they died.",
+    "AurielResurrect": "Channel on the spirit of a dead ally for <c val=\"#TooltipNumbers\"><d ref=\"Abil,AurielResurrect,CastIntroTime\"precision=\"2\"/></c> seconds. After a <c val=\"#TooltipNumbers\">3</c> second delay, they are brought back to life with <c val=\"#TooltipNumbers\">100%</c> of their maximum Health at the location where they died.<n/><n/>Auriel can use this ability while dead to resurrect herself.",
     "AurielRighteousAssaultSacredSweepTalent": "Reduces the cooldown of Sacred Sweep by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,AurielSacredSweepRighteousAssaultModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds for each enemy Hero hit by its center.",
     "AurielSacredSweep": "Sweep the area with sacred power, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,AurielSacredSweepHeroDamage,Amount\"/></c> damage to enemies and an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,AurielSacredSweepHeroCenterDamage,Amount\"/></c> damage to enemies caught in the center.",
     "AurielSearingLightRayOfHeavenTalent": "Ray of Heaven also deals damage to enemies in the area equal to <c val=\"#TooltipNumbers\">30%</c> of the energy consumed.",

@@ -22,8 +22,8 @@
     "WaveClearer"
   ],
   "stats": {
-    "hp": 2700,
-    "hpRegen": 5.625,
+    "hp": 2625,
+    "hpRegen": 5.4687,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -52,7 +52,7 @@
       {
         "uid": "cf15e0",
         "name": "Condemn",
-        "description": "After 1 second, Johanna pulls nearby enemies toward her, stunning them for 0.25 seconds and dealing 58 (+4% per level) damage. Deals 200% increased damage to Minions and Mercenaries.",
+        "description": "After 1 second, Johanna pulls nearby enemies toward her, stunning them for 0.25 seconds and dealing 55 (+4% per level) damage. Deals 200% increased damage to Minions and Mercenaries.",
         "hotkey": "W",
         "abilityId": "Johanna|W1",
         "tooltipId": "CrusaderCondemn",

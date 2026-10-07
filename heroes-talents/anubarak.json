@@ -83,7 +83,7 @@
       {
         "uid": "d0c32b",
         "name": "Locust Swarm",
-        "description": "Deal 62 (+4% per level) damage per second to nearby enemies. Each enemy damaged restores 21 (+4% per level) Health. Lasts 6 seconds.",
+        "description": "Deal 68 (+4% per level) damage per second to nearby enemies. Each enemy damaged restores 24 (+4% per level) Health. Lasts 6 seconds.",
         "hotkey": "R",
         "abilityId": "Anubarak|R1",
         "tooltipId": "AnubarakLocustSwarm",
@@ -275,7 +275,7 @@
         "tooltipId": "AnubarakLocustSwarm",
         "talentTreeId": "AnubarakLocustSwarm",
         "name": "Locust Swarm",
-        "description": "Deal 62 (+4% per level) damage per second to nearby enemies. Each enemy damaged restores 21 (+4% per level) Health. Lasts 6 seconds.",
+        "description": "Deal 68 (+4% per level) damage per second to nearby enemies. Each enemy damaged restores 24 (+4% per level) Health. Lasts 6 seconds.",
         "icon": "storm_ui_icon_anubarak_locustswarm.png",
         "type": "Heroic",
         "sort": 1,
@@ -371,7 +371,7 @@
         "tooltipId": "AnubarakDebilitation",
         "talentTreeId": "AnubarakDebilitation",
         "name": "Debilitation",
-        "description": "Enemy Heroes hit by Burrow Charge have their Spell Power reduced by 50% for 4 seconds.",
+        "description": "Enemy Heroes hit by Burrow Charge have their Spell Power reduced by 50% for 5 seconds.",
         "icon": "storm_ui_icon_anubarak_burrowcharge_a.png",
         "type": "E",
         "sort": 2,
@@ -388,7 +388,7 @@
         "tooltipId": "AnubarakBeetleSpitBeetleJuiceTalent",
         "talentTreeId": "AnubarakScarabHostBeetleJuiced",
         "name": "Beetle, Juiced",
-        "description": "Every 3rd Basic Attack against enemy Heroes spawns a Beetle.",
+        "description": "Passive: Beetles gain 20% increased health.  Every 3rd Basic Attack against enemy Heroes spawns a Beetle.",
         "icon": "storm_ui_icon_anubarak_scarabhost.png",
         "type": "Passive",
         "sort": 3,
@@ -501,7 +501,7 @@
   ],
   "tooltipMarkup": {
     "AnubarakAcidDrenchedMandibles": "Attacking a Hero that is slowed, rooted, or stunned increases Anub'arak's Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnubarakAcidDrenchedMandibles,Modification.DamageDealtFraction[Basic]*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnubarakAcidDrenchedMandibles,Duration\"/></c> seconds.",
-    "AnubarakBeetleSpitBeetleJuiceTalent": "Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack against enemy Heroes spawns a Beetle.",
+    "AnubarakBeetleSpitBeetleJuiceTalent": "<c val=\"#AbilityPassive\">Passive:</c> Beetles gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ScarabHostBeetleJuicedTalentCarry,Modification.VitalMaxFractionArray[Life]\"/>%</c> increased health.<n/><n/>Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack against enemy Heroes spawns a Beetle.",
     "AnubarakBurrowCharge": "Burrow to the target location, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,AnubarakBurrowChargeDamage,Amount\"/></c> damage and briefly stunning enemies in a small area upon surfacing, slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,AnubarakBurrowChargeSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnubarakBurrowChargeSlow,Duration\"Precision=\"2\"/></c> seconds.<n/><n/>Burrow Charge can be reactivated to surface early.",
     "AnubarakBurrowChargeEpicenterTalent": "Increases Burrow Charge impact area by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,AnubarakMasteryEpicenterBurrowCharge,AbilityModificationArray[0].Modifications[2].Value\"player=\"0\"/>%</c> and lowers the cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,AnubarakBurrowChargeEpicenterModifyCooldown,Cost[0].CooldownTimeUse\"precision=\"2\"/></c> second for each Hero hit.",
     "AnubarakBurrowChargeUnderkingTalent": "Increases Burrow Charge range by <c val=\"#TooltipNumbers\">20%</c> and damage by <c val=\"#TooltipNumbers\">100%</c>.",
@@ -554,6 +554,7 @@
     "HardenedShieldTalent": "Activate to gain massive Armor"
   },
   "tooltipColors": {
+    "AbilityPassive": "00FF90",
     "TooltipNumbers": "BFD4FD",
     "TooltipQuest": "E4B800"
   }
