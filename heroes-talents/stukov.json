@@ -66,6 +66,18 @@
         "type": "basic"
       },
       {
+        "uid": "24adc9",
+        "name": "Lurking Arm",
+        "description": "Channel at a target location, creating an area that deals 136 (+4% per level) damage per second to non-Structure enemies and Silences them. Deals 50% reduced damage to non-Heroes.  Does not cost Mana while Channeling, and lasts until canceled or interrupted.",
+        "hotkey": "E",
+        "abilityId": "Stukov|E1",
+        "tooltipId": "StukovLurkingArm",
+        "cooldown": 10,
+        "manaCost": 60,
+        "icon": "storm_ui_icon_stukov_lurkingarm.png",
+        "type": "basic"
+      },
+      {
         "uid": "da09fd",
         "name": "Massive Shove",
         "description": "Extend Stukov's arm. If it hits an enemy Hero, they are rapidly shoved until they collide with terrain, dealing 190 (+4% per level) damage and Stunning them for 0.5 seconds. Stukov gains 50 Armor while shoving an enemy.",
@@ -100,18 +112,6 @@
         "cooldown": 16,
         "icon": "storm_ui_icon_stukov_bio-killswitch.png",
         "type": "trait"
-      },
-      {
-        "uid": "24adc9",
-        "name": "Lurking Arm",
-        "description": "Channel at a target location, creating an area that deals 136 (+4% per level) damage per second to non-Structure enemies and Silences them. Deals 50% reduced damage to non-Heroes.  Does not cost Mana while Channeling, and lasts until canceled or interrupted.",
-        "hotkey": "E",
-        "abilityId": "Stukov|E2",
-        "tooltipId": "StukovLurkingArm",
-        "cooldown": 10,
-        "manaCost": 60,
-        "icon": "storm_ui_icon_stukov_lurkingarm.png",
-        "type": "basic"
       }
     ]
   },
@@ -143,9 +143,9 @@
         "type": "E",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Stukov|E2",
+        "abilityId": "Stukov|E1",
         "abilityLinks": [
-          "Stukov|E2"
+          "Stukov|E1"
         ],
         "abilityTalentLinkIds": [
           "StukovLurkingArm"
@@ -250,9 +250,9 @@
         "type": "E",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Stukov|E2",
+        "abilityId": "Stukov|E1",
         "abilityLinks": [
-          "Stukov|E2"
+          "Stukov|E1"
         ],
         "abilityTalentLinkIds": [
           "StukovLurkingArm"
@@ -324,9 +324,9 @@
         "type": "E",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Stukov|E2",
+        "abilityId": "Stukov|E1",
         "abilityLinks": [
-          "Stukov|E2"
+          "Stukov|E1"
         ],
         "abilityTalentLinkIds": [
           "StukovLurkingArm"
@@ -341,9 +341,9 @@
         "type": "E",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Stukov|E2",
+        "abilityId": "Stukov|E1",
         "abilityLinks": [
-          "Stukov|E2"
+          "Stukov|E1"
         ],
         "abilityTalentLinkIds": [
           "StukovLurkingArm"

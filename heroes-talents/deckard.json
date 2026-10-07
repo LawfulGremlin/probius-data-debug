@@ -82,7 +82,7 @@
         "name": "Stay Awhile and Listen",
         "description": "After 1 second, Channel for 3 seconds, putting enemy Heroes in front of Deckard to Sleep while Channeling, and for 2 seconds after.  Enemies can only be put to Sleep once per cast, and Sleep's effects end instantly if they take damage.",
         "hotkey": "R",
-        "abilityId": "Deckard|R2",
+        "abilityId": "Deckard|R1",
         "tooltipId": "DeckardStayAWhileAndListen",
         "cooldown": 70,
         "manaCost": 60,
@@ -94,7 +94,7 @@
         "name": "Lorenado",
         "description": "Vector Targeting After 1 second, create a twirling tome tornado that travels towards the targeted direction, continually knocking away enemies that come into contact with it. Deals 20 (+4% per level) damage to Heroes hit.",
         "hotkey": "R",
-        "abilityId": "Deckard|R3",
+        "abilityId": "Deckard|R2",
         "tooltipId": "DeckardLorenado",
         "cooldown": 30,
         "manaCost": 35,
@@ -287,9 +287,9 @@
         "sort": 1,
         "cooldown": 70,
         "isQuest": false,
-        "abilityId": "Deckard|R2",
+        "abilityId": "Deckard|R1",
         "abilityLinks": [
-          "Deckard|R2"
+          "Deckard|R1"
         ],
         "abilityTalentLinkIds": [
           "DeckardStayAWhileAndListen"
@@ -305,9 +305,9 @@
         "sort": 2,
         "cooldown": 30,
         "isQuest": false,
-        "abilityId": "Deckard|R3",
+        "abilityId": "Deckard|R2",
         "abilityLinks": [
-          "Deckard|R3"
+          "Deckard|R2"
         ],
         "abilityTalentLinkIds": [
           "DeckardLorenado"
@@ -427,9 +427,9 @@
         "type": "Heroic",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Deckard|R2",
+        "abilityId": "Deckard|R1",
         "abilityLinks": [
-          "Deckard|R2"
+          "Deckard|R1"
         ],
         "abilityTalentLinkIds": [
           "DeckardStayAWhileAndListen"
@@ -447,9 +447,9 @@
         "type": "Heroic",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Deckard|R3",
+        "abilityId": "Deckard|R2",
         "abilityLinks": [
-          "Deckard|R3"
+          "Deckard|R2"
         ],
         "abilityTalentLinkIds": [
           "DeckardLorenado"

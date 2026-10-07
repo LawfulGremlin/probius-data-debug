@@ -111,13 +111,13 @@
         "type": "heroic"
       },
       {
-        "uid": "9efa22",
-        "name": "Cancel Defense Matrix",
-        "description": "Stop channeling Defense Matrix",
+        "uid": "d32b79",
+        "name": "Mech Mode",
+        "description": "When D.Va's Mech dies, she is ejected out after 0.75 seconds and can continue to fight. D.Va's Mech only awards 50% of a normal Hero's experience upon dying.  Fusion Cannons  D.Va's Mech Basic Attacks deal 22 (+4% per level) damage in a large area every 0.25 seconds. Deals 40% bonus damage against enemies very close to the Mech.",
         "trait": true,
         "abilityId": "DVa|D1",
-        "tooltipId": "DvaCancelDefenseMatrix",
-        "icon": "hud_btn_bg_ability_cancel.png",
+        "tooltipId": "DVaMechMechMode",
+        "icon": "storm_ui_icon_dva_mechmode.png",
         "type": "trait"
       },
       {
@@ -129,26 +129,6 @@
         "tooltipId": "DVaMechanizedWalker",
         "icon": "storm_ui_icon_dva_mount.png",
         "type": "mount"
-      },
-      {
-        "uid": "e0fee7",
-        "name": "Retarget Defense Matrix",
-        "description": "Retarget Defense Matrix",
-        "hotkey": "W",
-        "abilityId": "DVa|W2",
-        "tooltipId": "DVaRetargetDefenseMatrix",
-        "icon": "storm_ui_icon_dva_defensematrix_a.png",
-        "type": "basic"
-      },
-      {
-        "uid": "d32b79",
-        "name": "Mech Mode",
-        "description": "When D.Va's Mech dies, she is ejected out after 0.75 seconds and can continue to fight. D.Va's Mech only awards 50% of a normal Hero's experience upon dying.  Fusion Cannons  D.Va's Mech Basic Attacks deal 22 (+4% per level) damage in a large area every 0.25 seconds. Deals 40% bonus damage against enemies very close to the Mech.",
-        "trait": true,
-        "abilityId": "DVa|D2",
-        "tooltipId": "DVaMechMechMode",
-        "icon": "storm_ui_icon_dva_mechmode.png",
-        "type": "trait"
       }
     ],
     "D.VaPilot": [
@@ -163,6 +143,16 @@
         "type": "activable"
       },
       {
+        "uid": "e0fee7",
+        "name": "Retarget Defense Matrix",
+        "description": "Retarget Defense Matrix",
+        "hotkey": "W",
+        "abilityId": "DVa|W2",
+        "tooltipId": "DVaRetargetDefenseMatrix",
+        "icon": "storm_ui_icon_dva_defensematrix_a.png",
+        "type": "basic"
+      },
+      {
         "uid": "64f1f0",
         "name": "Call Mech",
         "description": "Call a new Mech and enter Mech Mode.  Basic Attacks lower this cooldown by 0.5 seconds each.",
@@ -172,6 +162,16 @@
         "cooldown": 45,
         "icon": "storm_ui_icon_dva_callmech.png",
         "type": "basic"
+      },
+      {
+        "uid": "9efa22",
+        "name": "Cancel Defense Matrix",
+        "description": "Stop channeling Defense Matrix",
+        "trait": true,
+        "abilityId": "DVa|D2",
+        "tooltipId": "DvaCancelDefenseMatrix",
+        "icon": "hud_btn_bg_ability_cancel.png",
+        "type": "trait"
       },
       {
         "uid": "c2a7b9",
@@ -229,9 +229,9 @@
         "type": "Trait",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "DVa|D2",
+        "abilityId": "DVa|D1",
         "abilityLinks": [
-          "DVa|D2"
+          "DVa|D1"
         ],
         "abilityTalentLinkIds": [
           "DVaMechMechMode"
@@ -248,7 +248,7 @@
         "isQuest": false,
         "abilityId": "DVa|E2",
         "abilityLinks": [
-          "DVa|D2",
+          "DVa|D1",
           "DVa|E2"
         ],
         "abilityTalentLinkIds": [
@@ -268,7 +268,7 @@
         "isQuest": false,
         "abilityId": "DVa|Active",
         "abilityLinks": [
-          "DVa|D2"
+          "DVa|D1"
         ],
         "abilityTalentLinkIds": [
           "DVaMechMechMode"
@@ -523,9 +523,9 @@
         "type": "Trait",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "DVa|D2",
+        "abilityId": "DVa|D1",
         "abilityLinks": [
-          "DVa|D2"
+          "DVa|D1"
         ],
         "abilityTalentLinkIds": [
           "DVaMechMechMode"
@@ -599,9 +599,9 @@
         "type": "Trait",
         "sort": 4,
         "isQuest": false,
-        "abilityId": "DVa|D2",
+        "abilityId": "DVa|D1",
         "abilityLinks": [
-          "DVa|D2"
+          "DVa|D1"
         ],
         "abilityTalentLinkIds": [
           "DVaMechMechMode"

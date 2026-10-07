@@ -76,21 +76,11 @@
         "type": "basic"
       },
       {
-        "uid": "0cd7c7",
-        "name": "Cancel March of the Murlocs",
-        "description": "Stop channeling March of the Murlocs",
-        "hotkey": "R",
-        "abilityId": "Murky|R1",
-        "tooltipId": "MurkyCancelMarchoftheMurlocs",
-        "icon": "hud_btn_bg_ability_cancel.png",
-        "type": "heroic"
-      },
-      {
         "uid": "b50a9e",
         "name": "March of the Murlocs",
         "description": "After 0.75 seconds, Murky commands a legion of Murlocs to march in a target direction, each one leaping onto the first enemy Hero or Structure they find. Each Murloc deals 125 (+4% per level) damage and slows its target by 15% for 5 seconds. Murlocs deal 50% damage to Structures.",
         "hotkey": "R",
-        "abilityId": "Murky|R2",
+        "abilityId": "Murky|R1",
         "tooltipId": "MurkyMarchOfTheMurlocs",
         "cooldown": 110,
         "icon": "storm_ui_icon_murky_marchofthemurlocs.png",
@@ -101,7 +91,7 @@
         "name": "Octo-Grab",
         "description": "Murky becomes Unstoppable and Stuns target enemy Hero for 3 seconds while he hits them for 1 damage a second.",
         "hotkey": "R",
-        "abilityId": "Murky|R3",
+        "abilityId": "Murky|R2",
         "tooltipId": "MurkyOctoGrab",
         "cooldown": 50,
         "icon": "storm_ui_icon_murky_octograb.png",
@@ -283,9 +273,9 @@
         "sort": 1,
         "cooldown": 110,
         "isQuest": false,
-        "abilityId": "Murky|R2",
+        "abilityId": "Murky|R1",
         "abilityLinks": [
-          "Murky|R2"
+          "Murky|R1"
         ],
         "abilityTalentLinkIds": [
           "MurkyMarchoftheMurlocs"
@@ -301,9 +291,9 @@
         "sort": 2,
         "cooldown": 50,
         "isQuest": false,
-        "abilityId": "Murky|R3",
+        "abilityId": "Murky|R2",
         "abilityLinks": [
-          "Murky|R3"
+          "Murky|R2"
         ],
         "abilityTalentLinkIds": [
           "MurkyOctoGrab"
@@ -426,9 +416,9 @@
         "type": "Heroic",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Murky|R2",
+        "abilityId": "Murky|R1",
         "abilityLinks": [
-          "Murky|R2"
+          "Murky|R1"
         ],
         "abilityTalentLinkIds": [
           "MurkyMarchoftheMurlocs"
@@ -446,9 +436,9 @@
         "type": "Heroic",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Murky|R3",
+        "abilityId": "Murky|R2",
         "abilityLinks": [
-          "Murky|R3"
+          "Murky|R2"
         ],
         "abilityTalentLinkIds": [
           "MurkyOctoGrab"
@@ -530,7 +520,6 @@
   "tooltipMarkup": {
     "MurkyAFishyDeal": "Killing a Minion with Pufferfish grants a stack of Bribe. Use <c val=\"#TooltipNumbers\"><d ref=\"-Effect,MurkyAFishyDealSubtractTokenCount,Value\"/></c> stacks to bribe a Mercenary, instantly defeating them. Does not work on Elite Mercenaries.<n/><n/>Maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyAFishyDealTokenCounter,Max\"/></c> stacks of Bribe.",
     "MurkyBigTunaKahuna": "Murky's maximum Health and Egg respawn time are doubled.",
-    "MurkyCancelMarchoftheMurlocs": "Stop channeling March of the Murlocs",
     "MurkyEggHuntTalent": "Activate to place a fake Egg. If the fake Egg dies, it casts an untalented Slime. Maximum <c val=\"#TooltipNumbers\">3 </c>fake Eggs.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Spawning from his Egg grants Murky Stealth for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyEggHuntCloak,Duration\"/></c> seconds.",
     "MurkyEggShell": "Spawning from his Egg grants Murky a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MurkyEggShellShield,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]\"/>%</c> of his maximum Health. The shield lasts indefinitely.",
     "MurkyFishEye": "Egg's Health is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MurkySpawnEggFishEyeTalentBuff,Modification.VitalMaxAdditiveMultiplierArray[Life]\"/>%</c>, its sight radius is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,MurkySpawnEggFishEyeTalentBuff,Modification.SightBonus)/(Unit,MurkyRespawnEgg,Sight)\"/>%</c> and it can see Stealthed enemies. <n/><n/><c val=\"#AbilityPassive\">Passive:</c> Spawning from his Egg increases Murky's mount speed to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyFishEyeMountSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyFishEyeMountSpeed,Duration\"/></c> seconds.",

@@ -23,8 +23,8 @@
     "RoleTank"
   ],
   "stats": {
-    "hp": 2860,
-    "hpRegen": 5.957,
+    "hp": 2980,
+    "hpRegen": 6.207,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -44,7 +44,7 @@
       {
         "uid": "7bb3a3",
         "name": "Death Coil",
-        "description": "Deals 164 (+4% per level) damage to target enemy.  Can be self-cast to heal for 262 (+4% per level) Health.",
+        "description": "Deals 164 (+4% per level) damage to target enemy.  Can be self-cast to heal for 290 (+4% per level) Health.",
         "hotkey": "Q",
         "abilityId": "Arthas|Q1",
         "tooltipId": "ArthasDeathCoil",
@@ -73,28 +73,17 @@
         "abilityId": "Arthas|E1",
         "tooltipId": "ArthasFrozenTempest",
         "cooldown": 1,
-        "manaCost": 13,
+        "manaCost": 11,
         "manaPerSecond": true,
         "icon": "storm_ui_icon_arthas_frosentempest.png",
         "type": "basic"
-      },
-      {
-        "uid": "7a9690",
-        "name": "Sacrifice",
-        "description": "Sacrifice a Ghoul to restore 267 (+4% per level) Health.",
-        "hotkey": "R",
-        "abilityId": "Arthas|R1",
-        "tooltipId": "ArthasArmyOfTheDeadSacrifice",
-        "cooldown": 2,
-        "icon": "storm_ui_icon_arthas_sacrifice.png",
-        "type": "heroic"
       },
       {
         "uid": "2f62cd",
         "name": "Army of the Dead",
         "description": "Summons Ghouls that last 15 seconds and atttack for 20 (+4% per level) damage. Sacrifice Ghouls to heal for 267 (+4% per level) Health.",
         "hotkey": "R",
-        "abilityId": "Arthas|R2",
+        "abilityId": "Arthas|R1",
         "tooltipId": "ArthasArmyOfTheDead",
         "cooldown": 80,
         "manaCost": 80,
@@ -106,7 +95,7 @@
         "name": "Summon Sindragosa",
         "description": "Deals 230 (+4% per level) damage and Slows enemies by 60% for 4 seconds. Also disables Minions, Mercenaries, Monsters and Structures for 20 seconds.",
         "hotkey": "R",
-        "abilityId": "Arthas|R3",
+        "abilityId": "Arthas|R2",
         "tooltipId": "ArthasSummonSindragosa",
         "cooldown": 100,
         "manaCost": 100,
@@ -288,9 +277,9 @@
         "sort": 1,
         "cooldown": 80,
         "isQuest": false,
-        "abilityId": "Arthas|R2",
+        "abilityId": "Arthas|R1",
         "abilityLinks": [
-          "Arthas|R2"
+          "Arthas|R1"
         ],
         "abilityTalentLinkIds": [
           "ArthasArmyOfTheDead"
@@ -306,9 +295,9 @@
         "sort": 2,
         "cooldown": 100,
         "isQuest": false,
-        "abilityId": "Arthas|R3",
+        "abilityId": "Arthas|R2",
         "abilityLinks": [
-          "Arthas|R3"
+          "Arthas|R2"
         ],
         "abilityTalentLinkIds": [
           "ArthasSummonSindragosa"
@@ -435,10 +424,9 @@
         "type": "Heroic",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Arthas|R2",
+        "abilityId": "Arthas|R1",
         "abilityLinks": [
-          "Arthas|R1",
-          "Arthas|R2"
+          "Arthas|R1"
         ],
         "abilityTalentLinkIds": [
           "ArthasArmyOfTheDead",
@@ -457,9 +445,9 @@
         "type": "Heroic",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Arthas|R3",
+        "abilityId": "Arthas|R2",
         "abilityLinks": [
-          "Arthas|R3"
+          "Arthas|R2"
         ],
         "abilityTalentLinkIds": [
           "ArthasSummonSindragosa"
@@ -530,7 +518,6 @@
     "ArthasAbsoluteZeroSummonSindragosaTalent": "Sindragosa flies twice as far. Enemy Heroes are Rooted for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaHeroRoot,Duration\" player=\"0\"Precision=\"2\"/></c> seconds, and then Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ArthasSummonSindragosaAbsoluteZeroSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaAbsoluteZeroSlow,Duration\" player=\"0\" precision=\"1\"/></c> seconds.",
     "ArthasAntiMagicShellTalent": "Activate to make Arthas immune to Spell Damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasAntiMagicShellCaster,Duration\"/></c> seconds and heal Arthas for <c val=\"#TooltipNumbers\">25%</c> of the damage prevented.",
     "ArthasArmyOfTheDead": "Summons Ghouls that last <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasArmyOfTheDeadGhoulTimedLife,Duration\" player=\"0\" precision=\"1\"/></c> seconds and atttack for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasArmyOfTheDeadGhoulWeaponDamage,Amount\"/></c> damage. Sacrifice Ghouls to heal for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate\"/></c> Health.",
-    "ArthasArmyOfTheDeadSacrifice": "Sacrifice a Ghoul to restore <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasArmyOfTheDeadHeal,RechargeVitalRate\"/></c> Health.",
     "ArthasBitingColdFrozenTempestTalent": "Each second an enemy is damaged by Frozen Tempest, it deals <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,Scale*2\"Precision=\"2\"/>%</c> bonus damage, up to a <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,MaxAccumulation\"/>%</c> bonus.",
     "ArthasDeathCoil": "Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasDeathCoilDamage,Amount\"/></c> damage to target enemy.<n/><n/>Can be self-cast to heal for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasDeathCoilSelfCastCreateHealer,RechargeVitalRate\"/></c> Health.",
     "ArthasDeathlord": "Increase the range of Death Coil by <c val=\"#TooltipNumbers\"><d ref=\"-100*(1-Talent,ArthasDeathlord,AbilityModificationArray[0].Modifications[1].Value)\"/>%</c>, reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Talent,ArthasDeathlord,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds, and if Death Coil is used on an enemy Hero, its Mana cost is refunded.",
@@ -558,7 +545,6 @@
     "ArthasAbsoluteZeroSummonSindragosaTalent": "Increases Sindragosa range and disable duration",
     "ArthasAntiMagicShellTalent": "Activate to become immune to Spell Damage",
     "ArthasArmyOfTheDead": "Raise ghouls that fight enemies, heal Arthas",
-    "ArthasArmyOfTheDeadSacrifice": "Sacrifice a Ghoul to heal",
     "ArthasBitingColdFrozenTempestTalent": "Frozen Tempest damage increased",
     "ArthasDeathCoil": "Deals damage to a target or heal Arthas",
     "ArthasDeathlord": "Reduce Death Coil cooldown, refund Mana cost",

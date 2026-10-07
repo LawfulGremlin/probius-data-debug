@@ -65,13 +65,15 @@
         "type": "basic"
       },
       {
-        "uid": "4a1025",
-        "name": "Cancel Burrow",
-        "description": "Cancels Burrow",
+        "uid": "45fd30",
+        "name": "Burrow",
+        "description": "Burrow into the ground, entering Stasis and becoming Invulnerable for 2 seconds. While Burrowed, Dehaka can move at 50% movement speed.",
         "hotkey": "E",
         "abilityId": "Dehaka|E1",
-        "tooltipId": "DehakaCancelBurrow",
-        "icon": "hud_btn_bg_ability_cancel.png",
+        "tooltipId": "DehakaBurrow",
+        "cooldown": 20,
+        "manaCost": 65,
+        "icon": "storm_ui_icon_dehaka_burrow.png",
         "type": "basic"
       },
       {
@@ -120,18 +122,6 @@
         "cooldown": 75,
         "icon": "storm_ui_icon_dehaka_mount.png",
         "type": "mount"
-      },
-      {
-        "uid": "45fd30",
-        "name": "Burrow",
-        "description": "Burrow into the ground, entering Stasis and becoming Invulnerable for 2 seconds. While Burrowed, Dehaka can move at 50% movement speed.",
-        "hotkey": "E",
-        "abilityId": "Dehaka|E2",
-        "tooltipId": "DehakaBurrow",
-        "cooldown": 20,
-        "manaCost": 65,
-        "icon": "storm_ui_icon_dehaka_burrow.png",
-        "type": "basic"
       }
     ]
   },
@@ -199,9 +189,9 @@
         "type": "E",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Dehaka|E2",
+        "abilityId": "Dehaka|E1",
         "abilityLinks": [
-          "Dehaka|E2"
+          "Dehaka|E1"
         ],
         "abilityTalentLinkIds": [
           "DehakaBurrow"
@@ -417,9 +407,9 @@
         "type": "E",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Dehaka|E2",
+        "abilityId": "Dehaka|E1",
         "abilityLinks": [
-          "Dehaka|E2"
+          "Dehaka|E1"
         ],
         "abilityTalentLinkIds": [
           "DehakaBurrow"
@@ -528,7 +518,6 @@
     "DehakaBrushstalkerFerociousStalkerTalent": "Dark Swarm Slows enemy Heroes by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,DehakaDarkSwarmFerociousStalkerSlow,Modification.UnifiedMoveSpeedFactor\"Precision=\"2\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DehakaDarkSwarmFerociousStalkerSlow,Duration\"Precision=\"2\"/></c> seconds and deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,DehakaDarkSwarmDamage,MultiplicativeModifierArray[FerociousStalker].Modifier\"/>%</c> more damage while Brushstalker's Movement Speed bonus is active.",
     "DehakaBurrow": "Burrow into the ground, entering Stasis and becoming Invulnerable for <C val=\"#TooltipNumbers\"><d ref=\"Behavior,DehakaBurrowChannel,Duration\"/></c> seconds. While Burrowed, Dehaka can move at <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DehakaBurrowChannel,Modification.MoveSpeedMaximum/Unit,HeroDehaka,Speed\"player=\"0\"/>%</c> movement speed.",
     "DehakaBurrowTalentLurkerStrain": "Emerging from Burrow grants Dehaka Stealth for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DehakaBurrowTalentLurkerStrainBuff,Duration\"/></c> seconds and knocks nearby enemies back, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,DehakaBurrowLurkerStrainTalentDamage,Amount\"/></c> damage and Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,DehakaBurrowTalentNumbingEruptionSlow,Modification.UnifiedMoveSpeedFactor\" precision=\"1\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DehakaBurrowTalentNumbingEruptionSlow,Duration\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Reduce the cooldown of Burrow by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,DehakaBurrowTalentLurkerStrain,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds.",
-    "DehakaCancelBurrow": "Cancels Burrow",
     "DehakaDarkSwarm": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,DehakaDarkSwarmDamage,Amount\"/></c> damage every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DehakaDarkSwarm,Period\" precision=\"1\"/></c> seconds to nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DehakaDarkSwarm,Duration\" player=\"0\"precision=\"1\"/></c> seconds. While active, you are able to move through units. Can be cast during Drag and Burrow.",
     "DehakaDarkSwarmTalentEnduringSwarm": "Dark Swarm's duration is increased by <c val=\"#TooltipNumbers\"><d ref=\"Talent,DehakaDarkSwarmTalentEnduringSwarm,AbilityModificationArray[0].Modifications[0].Value\"Precision=\"2\"/></c> seconds and grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DehakaDarkSwarmEnduringSwarm,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor while active.",
     "DehakaDarkSwarmTalentSymbiosis": "Every time Dark Swarm damages an enemy Hero, reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,DehakaDarkSwarmSymbiosisTalentModifyUnit,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.",
@@ -557,7 +546,6 @@
     "DehakaBrushstalkerFerociousStalkerTalent": "Brushstalker Slows, increases Dark Swarm damage",
     "DehakaBurrow": "Gain Stasis by burrowing into the ground",
     "DehakaBurrowTalentLurkerStrain": "Burrow Stealths, knocks enemies away",
-    "DehakaCancelBurrow": "Unburrow",
     "DehakaDarkSwarm": "Damage nearby enemies",
     "DehakaDarkSwarmTalentEnduringSwarm": "Increases Dark Swarm duration, grants Spell Armor",
     "DehakaDarkSwarmTalentSymbiosis": "Reduces Dark Swarm cooldown against Heroes",

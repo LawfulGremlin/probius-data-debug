@@ -52,6 +52,30 @@
         "type": "basic"
       },
       {
+        "uid": "33bdc2",
+        "name": "Biotic Grenade",
+        "description": "Toss a grenade at the target area. Allied Heroes hit are healed for 152 (+4% per level) Health and receive 25% increased healing from Ana for 4 seconds. Enemies hit take 60 (+4% per level) damage and receive 100% less healing for 1.75 seconds.",
+        "hotkey": "W",
+        "abilityId": "Ana|W1",
+        "tooltipId": "AnaBioticGrenade",
+        "cooldown": 16,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_ana_biotic_grenade.png",
+        "type": "basic"
+      },
+      {
+        "uid": "0d497c",
+        "name": "Sleep Dart",
+        "description": "Fire a dart that puts the first enemy Hero hit to Sleep, Stunning them for 3 seconds. Sleep's effects end instantly if the target takes damage after the first 0.5 seconds.  Cannot be used on Vehicles.",
+        "hotkey": "E",
+        "abilityId": "Ana|E1",
+        "tooltipId": "AnaSleepDart",
+        "cooldown": 14,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_ana_sleep_dart.png",
+        "type": "basic"
+      },
+      {
         "uid": "d32efd",
         "name": "Nano Boost",
         "description": "Instantly boost an allied Hero, restoring 200 Mana. For the next 8 seconds, they gain 30% Spell Power and their Basic Ability cooldowns recharge 150% faster.  Cannot be used on Ana.",
@@ -86,30 +110,6 @@
         "cooldown": 4,
         "icon": "storm_ui_icon_ana_aim_down_sights.png",
         "type": "trait"
-      },
-      {
-        "uid": "33bdc2",
-        "name": "Biotic Grenade",
-        "description": "Toss a grenade at the target area. Allied Heroes hit are healed for 152 (+4% per level) Health and receive 25% increased healing from Ana for 4 seconds. Enemies hit take 60 (+4% per level) damage and receive 100% less healing for 1.75 seconds.",
-        "hotkey": "W",
-        "abilityId": "Ana|W2",
-        "tooltipId": "AnaBioticGrenade",
-        "cooldown": 16,
-        "manaCost": 50,
-        "icon": "storm_ui_icon_ana_biotic_grenade.png",
-        "type": "basic"
-      },
-      {
-        "uid": "0d497c",
-        "name": "Sleep Dart",
-        "description": "Fire a dart that puts the first enemy Hero hit to Sleep, Stunning them for 3 seconds. Sleep's effects end instantly if the target takes damage after the first 0.5 seconds.  Cannot be used on Vehicles.",
-        "hotkey": "E",
-        "abilityId": "Ana|E2",
-        "tooltipId": "AnaSleepDart",
-        "cooldown": 14,
-        "manaCost": 50,
-        "icon": "storm_ui_icon_ana_sleep_dart.png",
-        "type": "basic"
       }
     ]
   },
@@ -124,9 +124,9 @@
         "type": "W",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Ana|W2",
+        "abilityId": "Ana|W1",
         "abilityLinks": [
-          "Ana|W2"
+          "Ana|W1"
         ],
         "abilityTalentLinkIds": [
           "AnaBioticGrenade"
@@ -141,9 +141,9 @@
         "type": "E",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Ana|E2",
+        "abilityId": "Ana|E1",
         "abilityLinks": [
-          "Ana|E2"
+          "Ana|E1"
         ],
         "abilityTalentLinkIds": [
           "AnaSleepDart"
@@ -178,9 +178,9 @@
         "type": "W",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Ana|W2",
+        "abilityId": "Ana|W1",
         "abilityLinks": [
-          "Ana|W2"
+          "Ana|W1"
         ],
         "abilityTalentLinkIds": [
           "AnaBioticGrenade"
@@ -195,9 +195,9 @@
         "type": "E",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Ana|E2",
+        "abilityId": "Ana|E1",
         "abilityLinks": [
-          "Ana|E2"
+          "Ana|E1"
         ],
         "abilityTalentLinkIds": [
           "AnaSleepDart"
@@ -230,9 +230,9 @@
         "type": "W",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Ana|W2",
+        "abilityId": "Ana|W1",
         "abilityLinks": [
-          "Ana|W2"
+          "Ana|W1"
         ],
         "abilityTalentLinkIds": [
           "AnaBioticGrenade"
@@ -247,9 +247,9 @@
         "type": "E",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Ana|E2",
+        "abilityId": "Ana|E1",
         "abilityLinks": [
-          "Ana|E2"
+          "Ana|E1"
         ],
         "abilityTalentLinkIds": [
           "AnaSleepDart"

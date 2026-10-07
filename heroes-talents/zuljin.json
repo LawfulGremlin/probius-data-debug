@@ -98,13 +98,13 @@
         "type": "heroic"
       },
       {
-        "uid": "256724",
-        "name": "Cancel Berserker",
-        "description": "Activate to leave the berserker frenzy, reducing Zul'jin's Basic Attack damage by 25% and no longer consuming 2% of his maximum Health per attack.  Passive: Zul'jin attacks 1% faster for every 1% of maximum Health missing.  You Want Axe?  Quest: Every 5 Basic Attacks against Heroes permanently increases Basic Attack damage by 1.  Reward: After attacking Heroes 75 times, Basic Attack range is increased by 1.1.  Reward: After attacking Heroes 150 times, Twin Cleave now revolves twice.",
+        "uid": "6241a7",
+        "name": "Berserker",
+        "description": "Activate to increase Basic Attack damage by 25% but consume 2% maximum Health per attack.  Passive: Zul'jin attacks 1% faster for every 1% of maximum Health missing.  You Want Axe?  Quest: Every 5 Basic Attacks against Heroes permanently increases Basic Attack damage by 1.  Reward: After attacking Heroes 75 times, Basic Attack range is increased by 1.1.  Reward: After attacking Heroes 150 times, Twin Cleave now revolves twice.",
         "trait": true,
         "abilityId": "Zuljin|D1",
-        "tooltipId": "ZuljinCancelBerserker",
-        "icon": "storm_ui_icon_zuljin_berzerker_off.png",
+        "tooltipId": "ZuljinBerserker",
+        "icon": "storm_ui_icon_zuljin_berzerker.png",
         "type": "trait"
       },
       {
@@ -117,16 +117,6 @@
         "cooldown": 30,
         "icon": "storm_ui_icon_zuljin_davoodooshuffle.png",
         "type": "activable"
-      },
-      {
-        "uid": "6241a7",
-        "name": "Berserker",
-        "description": "Activate to increase Basic Attack damage by 25% but consume 2% maximum Health per attack.  Passive: Zul'jin attacks 1% faster for every 1% of maximum Health missing.  You Want Axe?  Quest: Every 5 Basic Attacks against Heroes permanently increases Basic Attack damage by 1.  Reward: After attacking Heroes 75 times, Basic Attack range is increased by 1.1.  Reward: After attacking Heroes 150 times, Twin Cleave now revolves twice.",
-        "trait": true,
-        "abilityId": "Zuljin|D2",
-        "tooltipId": "ZuljinBerserker",
-        "icon": "storm_ui_icon_zuljin_berzerker.png",
-        "type": "trait"
       }
     ]
   },
@@ -158,10 +148,9 @@
         "type": "Trait",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Zuljin|D2",
+        "abilityId": "Zuljin|D1",
         "abilityLinks": [
-          "Zuljin|D1",
-          "Zuljin|D2"
+          "Zuljin|D1"
         ],
         "abilityTalentLinkIds": [
           "ZuljinBerserker",
@@ -280,10 +269,9 @@
         "type": "Trait",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Zuljin|D2",
+        "abilityId": "Zuljin|D1",
         "abilityLinks": [
-          "Zuljin|D1",
-          "Zuljin|D2"
+          "Zuljin|D1"
         ],
         "abilityTalentLinkIds": [
           "ZuljinBerserker",
@@ -503,7 +491,6 @@
     "ZuljinBerserker": "Activate to increase Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZuljinWeaponDamage,MultiplicativeModifierArray[LaunchedWithBerserker].Modifier*100\"/>%</c> but consume <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ZuljinBerserkerModifyLife,VitalArray[Life].ChangeFraction*100\" precision=\"2\"/>%</c> maximum Health per attack.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Zul'jin attacks <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ZuljinBerserkerHealthToAttackSpeed,Ratio\" precision=\"2\"/>%</c> faster for every <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ZuljinBerserkerHealthToAttackSpeed,Ratio\" precision=\"2\"/>%</c> of maximum Health missing.<n/><n/><s val=\"StandardTooltipHeader\">You Want Axe?</s><n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinYouWantAxeQuestMiniProgressToken,Max\"/></c> Basic Attacks against Heroes permanently increases Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ZuljinYouWantAxeWeaponDamage,Scale\"precision=\"2\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After attacking Heroes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinYouWantAxeQuestMainToken,ConditionalEvents[0].CompareValue*Accumulator,ZuljinYouWantAxeWeaponDamage,Scale*Behavior,ZuljinYouWantAxeQuestMiniProgressToken,Max/Accumulator,ZuljinYouWantAxeWeaponDamage,Scale\"/></c> times, Basic Attack range is increased by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinYouWantAxeRangeIncrease,Modification[0].WeaponRange\" precision=\"2\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After attacking Heroes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinYouWantAxeQuestMainToken,ConditionalEvents[1].CompareValue*Accumulator,ZuljinYouWantAxeWeaponDamage,Scale*Behavior,ZuljinYouWantAxeQuestMiniProgressToken,Max/Accumulator,ZuljinYouWantAxeWeaponDamage,Scale\"/></c> times, Twin Cleave now revolves twice.",
     "ZuljinBoneslicer": "Grievous Throw now pierces through all enemies hit and restores <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZuljinGrievousThrowBoneslicerCreateManaHealer,RechargeVitalRate\"/></c> Mana per Hero hit. Additionally, Grievous Throw's mark is no longer removed by Basic Attacks.",
     "ZuljinBuzzsaw": "After impact, Guillotine continues forward, dealing <c val=\"#TooltipNumbers\"><d ref=\"1+Effect,ZuljinGuillotineBuzzsawDamage,MultiplicativeModifierArray[Buzzsaw].Modifier*100\"/>%</c> damage to enemies hit. If a Hero is killed by Guillotine, Zul'jin is instantly healed to full.",
-    "ZuljinCancelBerserker": "Activate to leave the berserker frenzy, reducing Zul'jin's Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZuljinWeaponDamage,MultiplicativeModifierArray[LaunchedWithBerserker].Modifier*100\"/>%</c> and no longer consuming <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ZuljinBerserkerModifyLife,VitalArray[Life].ChangeFraction*100\" precision=\"2\"/>%</c> of his maximum Health per attack.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Zul'jin attacks <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ZuljinBerserkerHealthToAttackSpeed,Ratio\" precision=\"2\"/>%</c> faster for every <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ZuljinBerserkerHealthToAttackSpeed,Ratio\" precision=\"2\"/>%</c> of maximum Health missing.<n/><n/><s val=\"StandardTooltipHeader\">You Want Axe?</s><n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinYouWantAxeQuestMiniProgressToken,Max\"/></c> Basic Attacks against Heroes permanently increases Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ZuljinYouWantAxeWeaponDamage,Scale\"precision=\"2\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After attacking Heroes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinYouWantAxeQuestMainToken,ConditionalEvents[0].CompareValue*Accumulator,ZuljinYouWantAxeWeaponDamage,Scale*Behavior,ZuljinYouWantAxeQuestMiniProgressToken,Max/Accumulator,ZuljinYouWantAxeWeaponDamage,Scale\"/></c> times, Basic Attack range is increased by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinYouWantAxeRangeIncrease,Modification[0].WeaponRange\" precision=\"2\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After attacking Heroes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinYouWantAxeQuestMainToken,ConditionalEvents[1].CompareValue*Accumulator,ZuljinYouWantAxeWeaponDamage,Scale*Behavior,ZuljinYouWantAxeQuestMiniProgressToken,Max/Accumulator,ZuljinYouWantAxeWeaponDamage,Scale\"/></c> times, Twin Cleave now revolves twice.",
     "ZuljinEnsnare": "Throw a net forward, Rooting the first enemy Hero hit for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinEnsnareRoot,Duration\"precision=\"2\"/></c> seconds. If no Heroes are hit, Ensnare's cooldown is reduced to <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZuljinEnsnareMissModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "ZuljinEyeOfZuljin": "Basic Attacks against enemy Heroes grant Zul'jin <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ZuljinEyeOfZuljinAccumulator,Scale\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinEyeOfZuljin,Duration\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,ZuljinEyeOfZuljin,Modification.UnifiedMoveSpeedFactor+Accumulator,ZuljinEyeOfZuljinAccumulator,MaxAccumulation)\"player =\"0\"/>%</c>.",
     "ZuljinFerocity": "Increases the Attack Speed bonus of Berserker by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ZuljinBerserkerFerocityHealthToAttackSpeed,Ratio*100-100\"/>%</c>.",
