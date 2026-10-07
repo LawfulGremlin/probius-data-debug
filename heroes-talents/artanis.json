@@ -123,11 +123,13 @@
         "type": "W",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Artanis|W1",
+        "abilityId": "Artanis|Q1",
         "abilityLinks": [
+          "Artanis|Q1",
           "Artanis|W1"
         ],
         "abilityTalentLinkIds": [
+          "ArtanisBladeDash",
           "ArtanisTwinBladesPrimed",
           "ArtanisTwinBlades"
         ]

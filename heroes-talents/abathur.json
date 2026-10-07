@@ -114,7 +114,7 @@
       {
         "uid": "8562c7",
         "name": "Deep Tunnel",
-        "description": "Quickly tunnel to a visible location",
+        "description": "Quickly tunnel to a visible location.",
         "hotkey": "Z",
         "abilityId": "Abathur|Z1",
         "tooltipId": "AbathurDeepTunnel",
@@ -217,11 +217,13 @@
         "type": "E",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Abathur|E1",
+        "abilityId": "Abathur|Q1",
         "abilityLinks": [
-          "Abathur|E1"
+          "Abathur|E1",
+          "Abathur|Q1"
         ],
         "abilityTalentLinkIds": [
+          "AbathurSymbiote",
           "AbathurSymbioteCarapace"
         ]
       },
@@ -380,7 +382,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 90,
-        "isQuest": false,
+        "isQuest": true,
         "abilityId": "Abathur|R1",
         "abilityLinks": [
           "Abathur|R1"
@@ -706,7 +708,7 @@
     }
   ],
   "tooltipMarkup": {
-    "AbathurDeepTunnel": "Quickly tunnel to a visible location",
+    "AbathurDeepTunnel": "Quickly tunnel to a visible location.",
     "AbathurEvolveMonstrosityHotbar": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,AbathurEvolveMonstrosityHealthStack,Modification.VitalMaxArray[Life]/Unit,AbathurEvolvedMonstrosity,LifeStart\"/>%</c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*100\"/>%</c> Basic Attack damage, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AbathurEvolveMonstrosityAbathurStack,MaxStackCount\"/></c> times.  The Monstrosity can be healed by Carapace and has the ability to Burrow to a visible location every <c val=\"#TooltipNumbers\"><d ref=\"Abil,AbathurMonstrosityDeepTunnel,Cost.Cooldown.TimeUse\"/></c> seconds.<n/><n/>Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
     "AbathurLocustMasterHotbar": "Activate to create a nest that periodically spawns Locusts. Only one Locust Nest can be active at a time.",
     "AbathurLocustStrain": "Spawns a Locust to attack down the nearest lane every <c val=\"#TooltipNumbers\"><d ref=\"Abil,AbathurSpawnLocusts,Cost[0].Cooldown.TimeUse\" player=\"0\" precision=\"1\"/></c> seconds. Locusts last for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LocustTimedLife,Duration\" player=\"0\"/></c> seconds, have <c val=\"#TooltipNumbers\"><d ref=\"Unit,AbathurLocustNormal,LifeMax\"/></c> health and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,AbathurLocustWeaponDamage,Amount\"/></c> damage with each Basic Attack, dealing <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,AbathurLocustWeaponDamage,MultiplicativeModifierArray[StructureDamage].Modifier\"/>%</c> bonus damage to enemy Structures.",

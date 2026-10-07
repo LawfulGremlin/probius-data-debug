@@ -221,7 +221,13 @@
         "type": "Passive",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Brightwing|Passive"
+        "abilityId": "Brightwing|Passive",
+        "abilityLinks": [
+          "Brightwing|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "BrightwingCalmingMist"
+        ]
       }
     ],
     "7": [

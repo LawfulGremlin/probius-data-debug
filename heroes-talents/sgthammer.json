@@ -499,6 +499,28 @@
       }
     ]
   },
+  "summonUnits": [
+    {
+      "unitId": "SgtHammerSpiderMinesUnit",
+      "name": "SgtHammerSpiderMinesUnit",
+      "icon": "storm_ui_icon_sgthammer_spidermines.png",
+      "stats": {
+        "hp": 25,
+        "hpRegen": 0,
+        "hpScale": 0,
+        "hpRegenScale": 0,
+        "attackDamage": 96,
+        "attackDamageScale": 0.04,
+        "attackRange": 0.25,
+        "attackSpeed": 4,
+        "radius": 0.5,
+        "speed": 6,
+        "sight": 3
+      },
+      "abilities": [],
+      "sourceAbilityTooltipId": "SgtHammerSpiderMines"
+    }
+  ],
   "tooltipMarkup": {
     "GenericExecutionerTalent": "Attacking a Hero that is slowed, rooted, or stunned increases your Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Modification.DamageDealtFraction[Basic]*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Duration\"/></c> seconds.",
     "SgtHammerBluntForceGun": "Fire a missile across the battlefield, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,BluntForceGunDamage,Amount\"/> </c>damage to non-Structure enemies in its path.",

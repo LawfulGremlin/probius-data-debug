@@ -10301,12 +10301,12 @@
     "weapons": [
       {
         "nameId": "SgtHammerSpiderMinesWeapon",
-        "isDisabled": false,
+        "isDisabled": true,
         "range": 0.25,
         "minimumRange": 0,
-        "period": 0.8332,
-        "damage": 0,
-        "damageScale": 0
+        "period": 0.25,
+        "damage": 96,
+        "damageScale": 0.04
       }
     ],
     "radius": 0.5,
@@ -16558,7 +16558,7 @@
           "_hdp5LinkId": "VolskayaVehicleRocketFist|VolskayaVehicleRocketFist|W",
           "icon": "storm_ui_icon_volskayarobot_rocketfist.png",
           "name": "Rocket Fist",
-          "fullText": "Launch a Rocket Fist that deals <c val=\"bfd4fd\">200</c> damage to the first Hero or Structure in its path. The pushes away and stuns Heroes for <c val=\"bfd4fd\">1.5</c> seconds and disables Structures for <c val=\"bfd4fd\">4</c> seconds.<n/><n/>Instantly kills Minions in its path.",
+          "fullText": "Launch a Rocket Fist that deals <c val=\"bfd4fd\">200</c> damage to the first Hero or Structure in its path. The rocket pushes away and Stuns Heroes for <c val=\"bfd4fd\">1.5</c> seconds and disables Structures for <c val=\"bfd4fd\">4</c> seconds.<n/><n/>Instantly kills Minions in its path.",
           "cooldownText": "Cooldown: 14 seconds"
         },
         {
@@ -18440,6 +18440,23 @@
           "name": "Summon Mount",
           "fullText": "After Channeling for <c val=\"bfd4fd\">1</c> second, gain <s val=\"bfd4fd\">30%</s> Movement Speed.",
           "cooldownText": "Cooldown: 4 seconds"
+        }
+      ],
+      "activable": [
+        {
+          "nameId": "DVaMechPilotSelfDestruct",
+          "buttonId": "DVaMechSelfDestruct",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "DVaMechPilotSelfDestruct|DVaMechSelfDestruct|Active",
+          "charges": {
+            "countMax": 100,
+            "countUse": 100,
+            "isCountHidden": true
+          },
+          "icon": "storm_ui_icon_dva_selfdestruct.png",
+          "name": "Self-Destruct",
+          "fullText": "Eject from the Mech, setting it to self-destruct after <c val=\"bfd4fd\">4</c> seconds. Deals <c val=\"bfd4fd\">400</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">1100</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area, depending on distance from center. Deals <c val=\"bfd4fd\">50%</c> damage against Structures.<n/><n/><c val=\"FF8000\">Gain </c><c val=\"bfd4fd\">1%</c><c val=\"FF8000\"> Charge for every </c><c val=\"bfd4fd\">2</c><c val=\"FF8000\"> seconds spent Basic Attacking, and </c><c val=\"bfd4fd\">25%</c><c val=\"FF8000\"> Charge per </c><c val=\"bfd4fd\">100%</c><c val=\"FF8000\"> of Mech Health lost.</c>"
         }
       ]
     },

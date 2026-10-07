@@ -450,9 +450,12 @@
         "sort": 3,
         "isQuest": false,
         "abilityId": "Chogall|Passive",
-        "abilityLinks": [],
+        "abilityLinks": [
+          "Chogall|D1"
+        ],
         "abilityTalentLinkIds": [
-          "ChoOgreHidePassive"
+          "ChoOgreHidePassive",
+          "ChoOgreHide"
         ]
       },
       {

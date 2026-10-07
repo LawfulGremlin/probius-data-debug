@@ -453,7 +453,15 @@
         "type": "Passive",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Fenix|Passive"
+        "abilityId": "Fenix|Passive",
+        "abilityLinks": [
+          "Fenix|W1",
+          "Fenix|W2"
+        ],
+        "abilityTalentLinkIds": [
+          "FenixPhaseBomb",
+          "FenixRepeaterCannon"
+        ]
       }
     ],
     "20": [

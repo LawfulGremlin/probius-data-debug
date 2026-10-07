@@ -219,7 +219,13 @@
         "type": "Passive",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Falstad|Passive"
+        "abilityId": "Falstad|Passive",
+        "abilityLinks": [
+          "Falstad|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "FalstadTailwindCooldownDisplay"
+        ]
       }
     ],
     "7": [
@@ -499,7 +505,7 @@
     "FalstadFlight": "Instead of mounting, Falstad can fly a great distance over terrain.",
     "FalstadFlowRiderTalent": "While Tailwind is active, Falstad's Basic Abilities recharge <c val=\"#TooltipNumbers\">100%</c> faster.",
     "FalstadGatheringStormTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every time Hammerang hits a Hero increase its damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,FalstadHammerangGatheringStormDamageAccumulator,Scale *100\" precision=\"2\"/>%</c> and refund <c val=\"#TooltipNumbers\"><d ref=\"Effect,FalstadHammerangGatheringStormCreateManaHealer,RechargeVitalRate\"/></c> Mana.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FalstadHammerangGatheringStormQuestToken,ConditionalEvents[0].CompareValue\"/></c> Heroes with Hammerang, increase its damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,FalstadHammerangGatheringStormQuestMilestoneModifyQuestToken,Value * Accumulator,FalstadHammerangGatheringStormDamageAccumulator,Scale*100\"/>%</c>.",
-    "FalstadHammerGainsTalent": "Basic Attacks heal for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FalstadHammerGains,Modification.VitalDamageLeechArray[0].KindArray[1] * 100\"/>%</c> of the damage dealt to the primary target.",
+    "FalstadHammerGainsTalent": "Basic Attacks heal for <c val=\"#TooltipNumbers\"><d ref=\"Effect,FalstadWeaponDamage,LeechFraction[Life]*100\"/>%</c> of the damage dealt to the primary target.",
     "FalstadHammerang": "Throw out a Hammer that returns to Falstad, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,HammerangDamage,Amount\"/></c> damage and Slowing enemies hit by <c val=\"#TooltipNumbers\"><d ref=\"-100 * Behavior,HammerangSlow,Modification.UnifiedMoveSpeedFactor\" precision=\"2\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HammerangSlow,Duration\" player=\"0\" precision=\"2\"/></c> seconds. Reactive to explode the Hammer, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,FalstadHammerangBOOMerangDamage,Amount\"/></c> damage to nearby enemies.",
     "FalstadHammerangBOOMerangTalent": "Hammerang's explosion deals <c val=\"#TooltipNumbers\"><d ref=\"100 *Effect,FalstadHammerangBOOMerangDamage,MultiplicativeModifierArray[BOOMerang].Modifier\"/>%</c> additional damage, and hitting enemy Heroes reduces their Spell Armor by <c val=\"#TooltipNumbers\"><d ref=\"-1*Behavior,FalstadHammerangBOOMerangArmorDebuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FalstadHammerangBOOMerangArmorDebuff,Duration\"/></c> seconds.",
     "FalstadHammerangCripplingHammerTalent": "Increase Hammerang's Slow from <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,HammerangSlow,Modification.UnifiedMoveSpeedFactor\" player=\"0\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"-100*(Behavior,HammerangSlow,Modification.UnifiedMoveSpeedFactor+Talent,FalstadMasteryCripplingHammerHammerang,AbilityModificationArray[0].Modifications[0].Value)\" player=\"0\"/>%</c>, and Hammerang's explosion also Slows.",

@@ -316,7 +316,13 @@
         "type": "Passive",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "TheButcher|Passive"
+        "abilityId": "TheButcher|Passive",
+        "abilityLinks": [
+          "TheButcher|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherFreshMeatDummy"
+        ]
       },
       {
         "tooltipId": "ButcherRuthlessOnslaughtSavageChargeTalent",
@@ -391,7 +397,13 @@
         "type": "Passive",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "TheButcher|Passive"
+        "abilityId": "TheButcher|Passive",
+        "abilityLinks": [
+          "TheButcher|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherFreshMeatDummy"
+        ]
       }
     ],
     "20": [

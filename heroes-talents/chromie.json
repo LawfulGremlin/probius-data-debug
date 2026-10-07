@@ -439,7 +439,8 @@
           "Chromie|R3"
         ],
         "abilityTalentLinkIds": [
-          "ChromieSlowingSands"
+          "ChromieSlowingSands",
+          "ChromieSlowingSandsCancel"
         ],
         "prerequisiteTalentIds": [
           "ChromieHeroicAbilitySlowingSands"
@@ -493,11 +494,9 @@
         "cooldown": 30,
         "isQuest": false,
         "abilityId": "Chromie|Active",
-        "abilityLinks": [
-          "Chromie|D2"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
-          "ChromieTimewalkerTrait"
+          "ChromieBlessingOfTheBronze"
         ]
       }
     ]
