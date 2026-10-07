@@ -431,7 +431,7 @@
         "tooltipId": "GenericExecutionerTalent",
         "talentTreeId": "HeroGenericExecutionerPassive",
         "name": "Executioner",
-        "description": "Attacking a Hero that is slowed, rooted, or stunned increases your Basic Attack damage by 30% for 3 seconds.",
+        "description": "Attacking a Hero that is Slowed, Rooted, or Stunned increases your Basic Attack damage by 30% for 3 seconds.",
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 2,
@@ -534,7 +534,7 @@
     ]
   },
   "tooltipMarkup": {
-    "GenericExecutionerTalent": "Attacking a Hero that is slowed, rooted, or stunned increases your Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Modification.DamageDealtFraction[Basic]*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Duration\"/></c> seconds.",
+    "GenericExecutionerTalent": "Attacking a Hero that is Slowed, Rooted, or Stunned increases your Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Modification.DamageDealtFraction[Basic]*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Duration\"/></c> seconds.",
     "GreymaneAlphaKillerTalent": "<c val=\"#ColorViolet\">Worgen</c> Basic Attacks against Heroes deal bonus damage equal to <c val=\"#TooltipNumbers\"><d ref=\"Effect,GreymaneAlphaKillerDamage,VitalFractionMax[Life]*100\"/>%</c> of the Hero's maximum Health.",
     "GreymaneCursedBullet": "Greymane shapeshifts into a <c val=\"#ColorCreamYellow\">Human</c> and fires a bullet that hits the first enemy Hero in its path, dealing <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,GreymaneCursedBulletCurrentHealthAccumulator,Ratio*100\"/>%</c> of their current Health in damage.<n/><n/>Does not affect Vehicles.",
     "GreymaneCursedBulletGilneanRouletteTalent": "Cursed Bullet's damage is reduced to <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,GreymaneCursedBulletGilneanRouletteTalentCurrentHealthAccumulator,Ratio\"/>%</c> of current health but its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,GreymaneCursedBulletGilneanRoulette,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",

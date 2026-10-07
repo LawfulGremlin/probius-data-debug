@@ -63,7 +63,7 @@
       {
         "uid": "3569aa",
         "name": "Twisting Nether",
-        "description": "After 1 second, nearby enemies are slowed by 50% while Gall channels, up to 5 seconds. Activate to deal 353 (+5% per level) damage.",
+        "description": "After 1 second, nearby enemies are Slowed by 50% while Gall channels, up to 5 seconds. Activate to deal 353 (+5% per level) damage.",
         "hotkey": "R",
         "abilityId": "Gall|R1",
         "tooltipId": "GallTwistingNether",
@@ -302,7 +302,7 @@
         "tooltipId": "GallTwistingNether",
         "talentTreeId": "GallHeroicAbilityTwistingNether",
         "name": "Twisting Nether",
-        "description": "After 1 second, nearby enemies are slowed by 50% while Gall channels, up to 5 seconds. Activate to deal 353 (+5% per level) damage.",
+        "description": "After 1 second, nearby enemies are Slowed by 50% while Gall channels, up to 5 seconds. Activate to deal 353 (+5% per level) damage.",
         "icon": "storm_ui_icon_gall_twistingnether_a.png",
         "type": "Heroic",
         "sort": 2,
@@ -530,7 +530,7 @@
     "GallTheWillofGall": "Takedowns permanently increase the bonus of Ogre Rage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,GallTheWillofGallModifyTokenCount,Value*Effect,GallWillofGallModifyTokenPersistent,PeriodCount\"/>%</c>.",
     "GallTwilightFrenzy": "Activate to reduce the cooldowns of Shadowflame and Dread Orb to <c val=\"#TooltipNumbers\">2</c> seconds for the next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallTwilightFrenzyBuff,Duration\"/></c> seconds.",
     "GallTwilightNovaTalent": "After the first bounce of Dread Orb, <c val=\"#TooltipNumbers\">2</c> extra bombs bounce to the sides once.",
-    "GallTwistingNether": "After <c val=\"#TooltipNumbers\">1</c> second, nearby enemies are slowed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallTwistingNetherSlowBehavior,Modification.UnifiedMoveSpeedFactor*(-100)\"/>%</c> while Gall channels, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallTwistingNetherChannelingBehavior,Duration - Behavior,GallTwistingNetherFirstSecondLeadInBehavior,Duration\"/></c> seconds. Activate to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,GallTwistingNetherDamage,Amount\"/></c> damage.",
+    "GallTwistingNether": "After <c val=\"#TooltipNumbers\">1</c> second, nearby enemies are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallTwistingNetherSlowBehavior,Modification.UnifiedMoveSpeedFactor*(-100)\"/>%</c> while Gall channels, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GallTwistingNetherChannelingBehavior,Duration - Behavior,GallTwistingNetherFirstSecondLeadInBehavior,Duration\"/></c> seconds. Activate to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,GallTwistingNetherDamage,Amount\"/></c> damage.",
     "GallWeSeeYou": "Eye of Kilrogg's cooldown is decreased by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,GallWeSeeYou,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds, its range is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*(Talent,GallWeSeeYou,AbilityModificationArray[2].Modifications[0].Value/Abil,GallTalentEyeOfKilrogg,Range)\"/>%</c>, and the number of Basic Attacks required to kill it is increased by <c val=\"#TooltipNumbers\">1</c>."
   },
   "tooltipSimple": {

@@ -23,8 +23,8 @@
     "RoleAutoAttacker"
   ],
   "stats": {
-    "hp": 1896,
-    "hpRegen": 3.9492,
+    "hp": 1946,
+    "hpRegen": 4.0546,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -41,7 +41,7 @@
       {
         "uid": "3a5ec4",
         "name": "Chain Lightning",
-        "description": "Shock an enemy with lightning, dealing 162 (+4% per level) damage. The lightning then bounces 3 times to nearby enemies, dealing 81 (+4% per level) damage to each enemy hit.",
+        "description": "Shock an enemy with lightning, dealing 170 (+4% per level) damage. The lightning then bounces 3 times to nearby enemies, dealing 85 (+4% per level) damage to each enemy hit.",
         "hotkey": "Q",
         "abilityId": "Thrall|Q1",
         "tooltipId": "ThrallChainLightning",
@@ -57,7 +57,7 @@
         "hotkey": "W",
         "abilityId": "Thrall|W1",
         "tooltipId": "ThrallFeralSpirit",
-        "cooldown": 12,
+        "cooldown": 10,
         "manaCost": 40,
         "icon": "storm_ui_icon_thrall_feralspirit.png",
         "type": "basic"
@@ -101,7 +101,7 @@
       {
         "uid": "44240f",
         "name": "Frostwolf Resilience",
-        "description": "Dealing damage with Abilities grants 1 stack of Frostwolf Resilience. At 5 stacks, Thrall is instantly healed for 223 (+4% per level) Health.",
+        "description": "Dealing damage with Abilities grants 1 stack of Frostwolf Resilience. At 5 stacks, Thrall is instantly healed for 240 (+4% per level) Health.",
         "trait": true,
         "abilityId": "Thrall|D1",
         "tooltipId": "ThrallFrostwolfResilience",

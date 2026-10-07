@@ -456,7 +456,7 @@
         "tooltipId": "GuldanRainOfDestructionDeepImpact",
         "talentTreeId": "GuldanRainOfDestructionDeepImpact",
         "name": "Deep Impact",
-        "description": "Rain of Destruction slows enemies Movement Speed by 90% for 0.5 seconds.",
+        "description": "Rain of Destruction Slows enemies Movement Speed by 90% for 0.5 seconds.",
         "icon": "storm_ui_icon_guldan_rainoffire.png",
         "type": "Heroic",
         "sort": 2,
@@ -515,7 +515,7 @@
     "GuldanLifeTapHungerforPower": "Increases Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,GuldanLifeTapHungerforPowerBehavior,Modification.DamageDealtFraction[Ability]\" precision=\"2\"/>%</c> but reduces healing received from allies by <c val=\"#TooltipNumbers\">25%</c>.",
     "GuldanLifeTapImprovedLifeTap": "Increase the Mana restored by Life Tap to <c val=\"#TooltipNumbers\">40%</c>.",
     "GuldanRainOfDestruction": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,GuldanRainOfDestruction,CastIntroTime\"precision=\"1\"/></c> seconds, summon a rain of meteors in an area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanRainOfDestructionChannel,Duration\"/></c> seconds. Each meteor deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,GuldanRainOfDestructionDamage,Amount\"/></c> damage in a small area.",
-    "GuldanRainOfDestructionDeepImpact": "Rain of Destruction slows enemies Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,GuldanRainOfDestructionDeepImpactSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanRainOfDestructionDeepImpactSlow,Duration\" precision=\"1\"/></c> seconds."
+    "GuldanRainOfDestructionDeepImpact": "Rain of Destruction Slows enemies Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,GuldanRainOfDestructionDeepImpactSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanRainOfDestructionDeepImpactSlow,Duration\" precision=\"1\"/></c> seconds."
   },
   "tooltipSimple": {
     "GuldanChaoticEnergy": "<c val=\"#TooltipQuest\">Quest:</c> Gather Regen Globes to reduce Mana costs",

@@ -45,7 +45,7 @@
       {
         "uid": "eff167",
         "name": "Hamstring",
-        "description": "Deal 110 (+4% per level) damage and slow enemies by 50% fading over 2 seconds.  The Butcher's next Basic Attack will strike immediately.",
+        "description": "Deal 110 (+4% per level) damage and slow enemies by 50% fading over 2 seconds. The Butcher's next Basic Attack will strike immediately.",
         "hotkey": "Q",
         "abilityId": "TheButcher|Q1",
         "tooltipId": "ButcherHamstring",
@@ -486,7 +486,7 @@
     "ButcherFreshMeatVictualsTalent": "Every time a nearby enemy minion dies, The Butcher heals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherFreshMeatVictualsCreateHealer,RechargeVitalFraction*100\"/>%</c> of his maximum health.",
     "ButcherFurnaceBlast": "After a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherFurnaceBlast,Duration\" player=\"0\"/></c> second delay, fire explodes around The Butcher dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherFurnaceBlastDamage,Amount\"/></c> damage to enemies.<n/><n/>Can be cast while using Ruthless Onslaught.",
     "ButcherFurnaceBlastFiresofHellTalent": "Furnace Blast explodes a second time <c val=\"#TooltipNumbers\">3</c> seconds after the initial explosion.",
-    "ButcherHamstring": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,HamstringDamage,Amount\"/></c> damage and slow enemies by <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,ButcherHamstringSlow,Modification.UnifiedMoveSpeedFactor)*100*(Behavior,ButcherHamstringSlow,MaxStackCount)*(-1)\"/>%</c> fading over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherHamstringSlow,Duration\" player=\"0\"/></c> seconds.  The Butcher's next Basic Attack will strike immediately.",
+    "ButcherHamstring": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,HamstringDamage,Amount\"/></c> damage and slow enemies by <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,ButcherHamstringSlow,Modification.UnifiedMoveSpeedFactor)*100*(Behavior,ButcherHamstringSlow,MaxStackCount)*(-1)\"/>%</c> fading over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherHamstringSlow,Duration\" player=\"0\"/></c> seconds. The Butcher's next Basic Attack will strike immediately.",
     "ButcherHamstringBrutalStrikeTalent": "After using Hamstring, The Butcher's next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherHamstringBrutalStrikeTalentStack,MaxStackCount\"/></c> Basic Attacks within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherBrutalStrike,Duration\" player=\"0\"/></c> seconds deal an additional <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherBrutalStrike,Modification.DamageDealtFraction[Basic]*100\"/>%</c> damage.",
     "ButcherHamstringCheapShotTalent": "Hamstring does <c val=\"#TooltipNumbers\"><d ref=\"Effect,HamstringDamage,MultiplicativeModifierArray[ButcherHamstringCheapShot].Modifier*100\" precision=\"2\"/>%</c> more damage to targets affected by a Slow, Root, or Stun.",
     "ButcherHamstringChopMeatTalent": "Increases Hamstring damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,HamstringDamage,MultiplicativeModifierArray[ButcherHamstringChopMeat].Modifier*100\"/>%</c> to Minions, Mercenaries, and Monsters.",

@@ -215,7 +215,7 @@
         "tooltipId": "NovaCovertMissionTalent",
         "talentTreeId": "NovaCovertMission",
         "name": "Covert Mission",
-        "description": "Enemy Minions killed near Nova grant a stack of Bribe. Hero Takedowns grant 10 stacks of Bribe. Use 25 stacks to bribe a Mercenary, instantly defeating them.  Does not work on Elite Mercenaries.  Maximum of 100 stacks. If a camp is defeated entirely with Bribe, the camp respawns 50% faster.",
+        "description": "Enemy Minions killed near Nova grant a stack of Bribe. Hero Takedowns grant 10 stacks of Bribe. Use 25 stacks to bribe a Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum of 100 stacks. If a camp is defeated entirely with Bribe, the camp respawns 50% faster.",
         "icon": "storm_ui_icon_talent_bribe.png",
         "type": "Active",
         "sort": 3,
@@ -503,7 +503,7 @@
   "tooltipMarkup": {
     "GenericRewindHotbar": "Activate to reset the cooldowns of your Basic Abilities.",
     "NovaAntiArmorShellsTalent": "Nova's Basic Attacks deal <c val=\"#TooltipNumbers\">250%</c> damage and decrease the Physical Armor of Heroic targets by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NovaAntiArmorShellsArmorDebuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaAntiArmorShellsArmorDebuff,Duration\"/></c> seconds, but her Attack Speed is proportionally slower.",
-    "NovaCovertMissionTalent": "Enemy Minions killed near Nova grant a stack of Bribe. Hero Takedowns grant <c val=\"#TooltipNumbers\">10 </c>stacks of Bribe. Use <c val=\"#TooltipNumbers\"><d ref=\"-Effect,NovaCovertMissionRemove20Token,Value\"/></c> stacks to bribe a Mercenary, instantly defeating them.  Does not work on Elite Mercenaries.  Maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaCovertMissionTokenCounter,Max\"/></c> stacks. If a camp is defeated entirely with Bribe, the camp respawns <c val=\"#TooltipNumbers\">50%</c> faster.",
+    "NovaCovertMissionTalent": "Enemy Minions killed near Nova grant a stack of Bribe. Hero Takedowns grant <c val=\"#TooltipNumbers\">10 </c>stacks of Bribe. Use <c val=\"#TooltipNumbers\"><d ref=\"-Effect,NovaCovertMissionRemove20Token,Value\"/></c> stacks to bribe a Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaCovertMissionTokenCounter,Max\"/></c> stacks. If a camp is defeated entirely with Bribe, the camp respawns <c val=\"#TooltipNumbers\">50%</c> faster.",
     "NovaCovertOpsTalent": "After being Stealthed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaPinningShotCovertOpsTimer,Duration\"/></c> seconds, Pinning Shot's Slow is increased to <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NovaPinningShotCovertOpsSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> and costs no Mana. Bonus is lost after losing Stealth for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaPinningShotCovertOpsActiveTimed,Duration\"/></c> second.",
     "NovaGhostProtocol": "Activate to instantly grant Stealth to Nova and spawn a Holo Decoy at her location. Nova is Unrevealable for the first <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaGhostProtocolUnrevealableCloak,Duration\"precision=\"2\"/></c> seconds when Stealthed by Ghost Protocol.",
     "NovaGhostProtocolApolloSuitTalent": "Reduce the cooldown of Permanent Cloak by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,NovaApolloSuit,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
