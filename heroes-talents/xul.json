@@ -25,14 +25,14 @@
     "WaveClearer"
   ],
   "stats": {
-    "hp": 2000,
-    "hpRegen": 4.168,
+    "hp": 2200,
+    "hpRegen": 4.582,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
     "resourceType": "Mana",
     "resourceRegen": 3,
-    "attackDamage": 110,
+    "attackDamage": 100,
     "attackDamageScale": 0.04,
     "attackRange": 1.5,
     "attackSpeed": 1.2002,
@@ -48,7 +48,7 @@
       {
         "uid": "88b979",
         "name": "Spectral Scythe",
-        "description": "Summon a scythe that travels to Xul after 1 second, dealing 240 (+4% per level) damage to enemies.",
+        "description": "Summon a scythe that travels to Xul after 1 second, dealing 210 (+4% per level) damage to enemies and spawning a Skeletal Warrior when hitting enemy Heroes.  These do not count towards Xul's Raise Skeleton maximum.",
         "hotkey": "Q",
         "abilityId": "Xul|Q1",
         "tooltipId": "NecromancerSpectralScythe",
@@ -96,7 +96,7 @@
       {
         "uid": "c9f8ee",
         "name": "Poison Nova",
-        "description": "After 0.5 seconds, release poisonous missiles that deal 570 (+4% per level) damage to all enemies hit over 10 seconds.",
+        "description": "After 0.5 seconds, release poisonous missiles that deal 630 (+4% per level) damage to all enemies hit over 10 seconds.",
         "hotkey": "R",
         "abilityId": "Xul|R2",
         "tooltipId": "NecromancerPoisonNova",
@@ -108,7 +108,7 @@
       {
         "uid": "6ca7a4",
         "name": "Raise Skeleton",
-        "description": "When a nearby enemy Minion dies, it becomes a Skeletal Warrior with 225 (+4% per level) Health that attacks for 21 (+4% per level) damage and last up to 15 seconds. Up to 4 Skeletal Warriors can be active at once.",
+        "description": "When a nearby enemy Minion dies, it becomes a Skeletal Warrior with 240 (+4% per level) Health that attacks for 21 (+4% per level) damage and lasts up to 12 seconds. Upon death, Skeletal Warriors deal 50 (+4% per level) damage to nearby enemies.  Up to 3 Skeletal Warriors can be active at once when spawned in this way.",
         "trait": true,
         "abilityId": "Xul|D1",
         "tooltipId": "NecromancerRaiseSkeleton",
@@ -172,7 +172,7 @@
         "tooltipId": "NecromancerBoneArmorShade",
         "talentTreeId": "NecromancerTalentBoneArmorShade",
         "name": "Shade",
-        "description": "While Bone Armor is active, Xul evades all Basic Attacks, but increases the cooldown of Bone Armor by 20 seconds.",
+        "description": "While Bone Armor is active, Xul evades all Basic Attacks, but increases the cooldown of Bone Armor by 10 seconds.",
         "icon": "storm_ui_icon_necromancer_bonearmor.png",
         "type": "Passive",
         "sort": 3,
@@ -193,11 +193,11 @@
         "tooltipId": "NecromancerReapersTollTalent",
         "talentTreeId": "NecromancerTalentReapersToll",
         "name": "Reaper's Toll",
-        "description": "Quest: Hit 16 Heroes with Spectral Scythe.  Reward: Reduce the cooldown of Spectral Scythe by 3 seconds and its Mana cost by 20.",
+        "description": "Reduce the cooldown of Spectral Scythe by 2 seconds and its Mana cost by 15.",
         "icon": "storm_ui_icon_necromancer_reap.png",
         "type": "Q",
         "sort": 1,
-        "isQuest": true,
+        "isQuest": false,
         "abilityId": "Xul|Q1",
         "abilityLinks": [
           "Xul|Q1"
@@ -210,7 +210,7 @@
         "tooltipId": "NecromancerCursedStrikesGrimScythe",
         "talentTreeId": "NecromancerTalentGrimScythe",
         "name": "Grim Scythe",
-        "description": "Each enemy hit by Cursed Strikes reduces its cooldown by 1 second, up to 12 seconds.",
+        "description": "Increase Xul's Basic Attack damage by 15%.  Each enemy hit by Cursed Strikes reduces its cooldown by 1 second, up to 12 seconds.",
         "icon": "storm_ui_icon_necromancer_cursedstrikes_off.png",
         "type": "W",
         "sort": 2,
@@ -262,31 +262,13 @@
         ]
       },
       {
-        "tooltipId": "NecromancerWeaken",
-        "talentTreeId": "NecromancerTalentWeaken",
-        "name": "Weaken",
-        "description": "Increase the Attack Speed reduction of Cursed Strikes by 35% and the duration by 1 second.",
-        "icon": "storm_ui_icon_necromancer_cursedstrikes_b.png",
-        "type": "W",
-        "sort": 2,
-        "isQuest": false,
-        "abilityId": "Xul|W1",
-        "abilityLinks": [
-          "Xul|W1"
-        ],
-        "abilityTalentLinkIds": [
-          "NecromancerCursedStrikesPassive",
-          "NecromancerCursedStrikes"
-        ]
-      },
-      {
         "tooltipId": "NecromancerTragOulsEssence",
         "talentTreeId": "NecromancerTalentTragOulsEssence",
         "name": "Trag'Oul's Essence",
         "description": "Every time a Skeletal Warrior attacks an enemy, restore 0.5% of Xul's maximum Health and 0.2% of his maximum Mana.",
         "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
         "type": "Trait",
-        "sort": 3,
+        "sort": 2,
         "isQuest": false,
         "abilityId": "Xul|D1",
         "abilityLinks": [
@@ -295,6 +277,25 @@
         "abilityTalentLinkIds": [
           "NecromancerRaiseSkeletonDisplayAbility"
         ]
+      },
+      {
+        "tooltipId": "NecromancerWallOfBonesBoneArmorTalent",
+        "talentTreeId": "NecromancerBoneArmorWallOfBonesTalent",
+        "name": "Wall Of Bones",
+        "description": "Increase the Shield amount of Bone Armor to 35% of Xul's maximum Health, and Xul gains 20 Spell Armor for its duration.",
+        "icon": "storm_ui_icon_necromancer_bonearmor.png",
+        "type": "Passive",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Xul|Passive",
+        "abilityLinks": [
+          "Xul|11"
+        ],
+        "abilityTalentLinkIds": [
+          "NecromancerBoneArmor",
+          "NecromancerBoneArmor",
+          "NecromancerBoneArmor"
+        ]
       }
     ],
     "10": [
@@ -302,7 +303,7 @@
         "tooltipId": "NecromancerPoisonNovaTalent",
         "talentTreeId": "NecromancerHeroicAbilityPoisonNova",
         "name": "Poison Nova",
-        "description": "After 0.5 seconds, release poisonous missiles that deal 570 (+4% per level) damage to all enemies hit over 10 seconds.",
+        "description": "After 0.5 seconds, release poisonous missiles that deal 630 (+4% per level) damage to all enemies hit over 10 seconds.",
         "icon": "storm_ui_icon_necromancer_poisonnova.png",
         "type": "Heroic",
         "sort": 1,
@@ -372,26 +373,13 @@
         ]
       },
       {
-        "tooltipId": "GenericExecutionerTalent",
-        "talentTreeId": "HeroGenericExecutionerPassive",
-        "name": "Executioner",
-        "description": "Attacking a Hero that is slowed, rooted, or stunned increases your Basic Attack damage by 30% for 3 seconds.",
-        "icon": "storm_ui_icon_talent_autoattack_damage.png",
-        "type": "Passive",
-        "sort": 3,
-        "isQuest": false,
-        "abilityId": "Xul|Passive"
-      }
-    ],
-    "16": [
-      {
         "tooltipId": "NecromancerAmplifyDamage",
         "talentTreeId": "NecromancerTalentAmplifyDamage",
         "name": "Amplify Damage",
-        "description": "Enemies Rooted by Bone Prison lose 25 Armor for 1.75 seconds.",
+        "description": "Increase the Root duration of Bone Prison by 0.25 seconds.  Enemies Rooted by Bone Prison lose 25 Armor for 2 seconds.",
         "icon": "storm_ui_icon_necromancer_boneprison.png",
         "type": "E",
-        "sort": 1,
+        "sort": 3,
         "isQuest": false,
         "abilityId": "Xul|E1",
         "abilityLinks": [
@@ -400,15 +388,17 @@
         "abilityTalentLinkIds": [
           "NecromancerBonePrison"
         ]
-      },
+      }
+    ],
+    "16": [
       {
-        "tooltipId": "NecromancerTalentCorpseExplosion",
-        "talentTreeId": "NecromancerTalentCorpseExplosion",
-        "name": "Corpse Explosion",
-        "description": "When Skeletal Warriors die they explode for 55 (+4% per level) damage in a small area. Deals 100% increased damage to non-Heroic enemies.",
-        "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
-        "type": "Trait",
-        "sort": 2,
+        "tooltipId": "NecromancerDecrepifyTalent",
+        "talentTreeId": "NecromancerTalentDecrepify",
+        "name": "Decrepify",
+        "description": "Enemy Heroes that are damaged by Spectral Scythe or Skeletal Warriors are Slowed by 40% for 2.5 seconds.",
+        "icon": "storm_ui_icon_necromancer_reap.png",
+        "type": "Q",
+        "sort": 1,
         "isQuest": false,
         "abilityId": "Xul|D1",
         "abilityLinks": [
@@ -416,6 +406,24 @@
         ],
         "abilityTalentLinkIds": [
           "NecromancerRaiseSkeletonDisplayAbility"
+        ]
+      },
+      {
+        "tooltipId": "NecromancerWeaken",
+        "talentTreeId": "NecromancerTalentWeaken",
+        "name": "Weaken",
+        "description": "Enemy Heroes who are damaged by Cursed Strikes or Skeletal Warriors deal 40% less damage for 3 seconds.",
+        "icon": "storm_ui_icon_necromancer_cursedstrikes_off.png",
+        "type": "W",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Xul|W1",
+        "abilityLinks": [
+          "Xul|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "NecromancerCursedStrikesPassive",
+          "NecromancerCursedStrikes"
         ]
       },
       {
@@ -440,7 +448,7 @@
         "tooltipId": "NecromancerAndarielsVisage",
         "talentTreeId": "NecromancerTalentAndarielsVisage",
         "name": "Andariel's Visage",
-        "description": "Poison Nova heals for 50% of the damage dealt.  Passive: Skeletal Warriors deal 50% increased damage.",
+        "description": "Poison Nova heals for 50% of the damage dealt and its duration is increased by 50%.",
         "icon": "storm_ui_icon_necromancer_poisonnova.png",
         "type": "Heroic",
         "sort": 1,
@@ -460,7 +468,7 @@
         "tooltipId": "NecromancerColdHandOfDeath",
         "talentTreeId": "NecromancerTalentColdHandOfDeath",
         "name": "Cold Hand of Death",
-        "description": "Increase the Slow of Frost Mages by 20%.  Passive: Skeletal Warrior attacks Slow enemies by 30% for 2 seconds.",
+        "description": "Increase the Slow of Frost Mages by 20%.   Every 5th Spectral Scythe that hits enemy Heroes spawns a Frost Mage instead of a Skeletal Warrior at their location.",
         "icon": "storm_ui_icon_necromancer_skeletalmages.png",
         "type": "Heroic",
         "sort": 2,
@@ -497,7 +505,7 @@
         "tooltipId": "NecromancerTalentKalansEdict",
         "talentTreeId": "NecromancerTalentKalansEdict",
         "name": "Kalan's Edict",
-        "description": "Skeletal Warrior attacks reduce the cooldown of Xul's Heroic Ability by 1%.",
+        "description": "Each time Skeletal Warriors deal damage, reduce the cooldown of Bone Armor and Xul's Heroic Ability by 1.5%.",
         "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
         "type": "Trait",
         "sort": 4,
@@ -518,8 +526,8 @@
       "name": "NecromancerRaiseSkeleton",
       "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
       "stats": {
-        "hp": 225,
-        "hpRegen": -15,
+        "hp": 240,
+        "hpRegen": -20,
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "attackDamage": 21,
@@ -538,8 +546,8 @@
       "name": "NecromancerRaiseSkeletonBonePrisonTalentJailor",
       "icon": "storm_ui_icon_necromancer_boneprison.png",
       "stats": {
-        "hp": 225,
-        "hpRegen": -15,
+        "hp": 240,
+        "hpRegen": -20,
         "hpScale": 0.04,
         "hpRegenScale": 0.04,
         "attackDamage": 21,
@@ -575,48 +583,48 @@
     }
   ],
   "tooltipMarkup": {
-    "GenericExecutionerTalent": "Attacking a Hero that is slowed, rooted, or stunned increases your Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Modification.DamageDealtFraction[Basic]*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Duration\"/></c> seconds.",
-    "NecromancerAmplifyDamage": "Enemies Rooted by Bone Prison lose <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBonePrisonAmplifyDamageArmorDecrease,ArmorModification.AllArmorBonus*(-1)\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBonePrisonAmplifyDamageArmorDecrease,Duration\"Precision=\"2\"/></c> seconds.",
-    "NecromancerAndarielsVisage": "Poison Nova heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerPoisonNovaDamage,LeechFraction[Life]*100\"/>%</c> of the damage dealt.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Skeletal Warriors deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerRaiseSkeletonDamage,MultiplicativeModifierArray[PoisonSkeleton].Modifier*100\"/>%</c> increased damage.",
-    "NecromancerBoneArmor": "Activate to gain a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NecromancerBoneArmorShield,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]\"player=\"0\"/>%</c> of Xul's maximum Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBoneArmorShield,Duration\"/></c> seconds.",
+    "NecromancerAmplifyDamage": "Increase the Root duration of Bone Prison by <c val=\"#TooltipNumbers\"><d ref=\"Talent,NecromancerTalentAmplifyDamage,AbilityModificationArray[0].Modifications[0].Value\"Precision=\"2\"/></c> seconds.  Enemies Rooted by Bone Prison lose <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBonePrisonAmplifyDamageArmorDecrease,ArmorModification.AllArmorBonus*(-1)\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBonePrisonAmplifyDamageArmorDecrease,Duration\"Precision=\"2\"/></c> seconds.",
+    "NecromancerAndarielsVisage": "Poison Nova heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerPoisonNovaDamage,LeechFraction[Life]*100\"/>%</c> of the damage dealt and its duration is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,NecromancerTalentAndarielsVisage,AbilityModificationArray[0].Modifications[0].Value/Behavior,NecromancerPoisonNovaDamage,Duration\"Player=\"0\"/>%</c>.",
+    "NecromancerBoneArmor": "Activate to gain a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NecromancerBoneArmorShield,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]\"Player=\"0\"/>%</c> of Xul's maximum Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBoneArmorShield,Duration\"Player=\"0\"/></c> seconds.",
     "NecromancerBoneArmorBacklash": "When Bone Armor expires, nearby enemy Heroes take damage equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,NecromancerBoneArmorBacklashMasteryDamage,VitalFractionMax[Life]\"/>%</c> of their maximum Health.",
     "NecromancerBoneArmorShackler": "While Bone Armor is active, nearby enemies are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NecromancerBoneArmorMasteryShackleSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBoneArmorMasteryShackleSlow,Duration\"/></c> second. Basic Attacks against Heroes that are Stunned, Rooted, or Slowed reduce the cooldown of Bone Armor by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,NecromancerShacklerCooldownReductionModifyPlayer,Cost.Cooldown.TimeUse\"/></c> seconds.",
     "NecromancerBoneArmorShade": "While Bone Armor is active, Xul evades all Basic Attacks, but increases the cooldown of Bone Armor by <c val=\"#TooltipNumbers\"><d ref=\"Talent,NecromancerTalentBoneArmorShade,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
     "NecromancerBonePrison": "After a <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerBonePrisonCreateDelayPersistent,PeriodicPeriodArray[0]*Effect,NecromancerBonePrisonCreateDelayPersistent,PeriodCount\"/></c> second delay, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerBonePrisonDamage,Amount\"/></c> damage and Root the target enemy Hero for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBonePrisonRoot,Duration\" precision=\"2\"/></c> seconds.  All nearby Skeletal Warriors will fixate on the target for their duration.",
     "NecromancerBoneSpear": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerBoneSpearDamage,Amount\"/></c> damage to enemies in a line.",
-    "NecromancerColdHandOfDeath": "Increase the Slow of Frost Mages by <c val=\"#TooltipNumbers\"><d ref=\"(-100 * Talent,NecromancerTalentColdHandOfDeath,AbilityModificationArray[0].Modifications[0].Value)\" player=\"0\"/>%</c>.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Skeletal Warrior attacks Slow enemies by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NecromancerRaiseSkeletonColdHandOfDeathFrostSkeletonSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerRaiseSkeletonColdHandOfDeathFrostSkeletonSlow,Duration\" precision=\"2\" player=\"0\"/></c> seconds.",
+    "NecromancerColdHandOfDeath": "Increase the Slow of Frost Mages by <c val=\"#TooltipNumbers\"><d ref=\"(-100 * Talent,NecromancerTalentColdHandOfDeath,AbilityModificationArray[0].Modifications[0].Value)\" player=\"0\"/>%</c>.  <n/><n/>Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerSkeletalMagesColdHandOfDeathSpectralScytheTokenCount,Max\"/>th</c> Spectral Scythe that hits enemy Heroes spawns a Frost Mage instead of a Skeletal Warrior at their location.",
     "NecromancerCursedStrikes": "Xul's Basic Attacks deal damage in a wide area and reduce the Attack Speed of Heroes and Summons by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NecromancerCursedStrikesAttackSpeedSlow,Modification.AdditiveAttackSpeedFactor\"player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerCursedStrikesAttackSpeedSlow,Duration\"player=\"0\"/></c> seconds. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerCursedStrikesActive,Duration\"player=\"0\"/></c> seconds once triggered.",
-    "NecromancerCursedStrikesGrimScythe": "Each enemy hit by Cursed Strikes reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,NecromancerCursedStrikesGrimScytheModifyCooldown,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> second, up to <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NecromancerCursedStrikesGrimScytheTokenCounter,Max*Effect,NecromancerCursedStrikesGrimScytheModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "NecromancerCursedStrikesGrimScythe": "Increase Xul's Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,NecromancerHeroWeaponDamage,MultiplicativeModifierArray[GrimScythe].Modifier\"/>%</c>.  Each enemy hit by Cursed Strikes reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,NecromancerCursedStrikesGrimScytheModifyCooldown,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> second, up to <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NecromancerCursedStrikesGrimScytheTokenCounter,Max*Effect,NecromancerCursedStrikesGrimScytheModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "NecromancerCursedStrikesRapidHarvest": "Gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerCursedStrikesRapidHarvestAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerCursedStrikesRapidHarvestAttackSpeedBuff,Duration\"/></c> seconds each time Cursed Strikes hits an enemy, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerCursedStrikesRapidHarvestAttackSpeedBuff,MaxStackCount*Behavior,NecromancerCursedStrikesRapidHarvestAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor*100\"/>%</c>.",
+    "NecromancerDecrepifyTalent": "Enemy Heroes that are damaged by Spectral Scythe or Skeletal Warriors are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NecromancerRaiseSkeletonDecrepifySlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerRaiseSkeletonDecrepifySlow,Duration\"Precision=\"2\"/></c> seconds.",
     "NecromancerEchoesOfDeathTalent": "Spectral Scythe spawns <c val=\"#TooltipNumbers\"><d ref=\"Talent,NecromancerTalentEchoesOfDeath,AbilityModificationArray[0].Modifications[0].Value\"/></c> additional scythes next to the first after <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerSpectralScytheEchoesOfDeathDelayPersistentLeft,InitialDelay\" precision=\"1\"/></c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"1+Effect,NecromancerSpectralScytheDamage,MultiplicativeModifierArray[EchoesOfDeath].Modifier*100\"/>%</c> damage.",
     "NecromancerHarvestVitality": "Cursed Strikes heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerCursedStrikesDamage,LeechFraction[Life]*100\"/>%</c> of the damage dealt to Heroes.",
     "NecromancerJailors": "Bone Prison spawns <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerBonePrisonJailorsTalentOffsetPersistent,PeriodCount\"/></c> Skeletal Warriors.  These do not count towards Xul's Raise Skeleton maximum.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Spawn <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBonePrisonJailorsQuestTokenBehavior,Max\"/></c> Skeletal Warriors.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> While fixating on an enemy, Skeletal Warriors gain <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerBonePrisonJailorsQuestCompleteModifyPlayer,CatalogModifications[0].Value*100\"/>%</c> Movement and Attack Speed.",
     "NecromancerMortalWound": "Enemy Heroes hit by Spectral Scythe receive <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NecromancerSpectralScytheMasteryMortalWoundDebuff,Modification.HealTakenAdditiveMultiplier[Life]\"/>%</C> less healing for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerSpectralScytheMasteryMortalWoundDebuff,Duration\"/></c> seconds.",
     "NecromancerPoisonNova": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,NecromancerPoisonNovaInstant,CastIntroTime\" precision=\"1\"/></c> seconds, release poisonous missiles that deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerPoisonNovaDamage,Amount*10\"/></c> damage to all enemies hit over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerPoisonNovaDamage,Duration\"/></c> seconds.",
     "NecromancerPoisonNovaTalent": "After a short delay, release poisonous missiles that deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerPoisonNovaDamage,Amount*10\"/></c> damage to all enemies hit over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerPoisonNovaDamage,Duration\"/></c> seconds.",
-    "NecromancerRaiseSkeleton": "When a nearby enemy Minion dies, it becomes a Skeletal Warrior with <c val=\"#TooltipNumbers\"><d ref=\"Unit,NecromancerRaiseSkeleton,LifeMax\"/></c> Health that attacks for <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerRaiseSkeletonDamage,Amount\"/></c> damage and last up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerRaiseSkeletonTimedLife,Duration\"/></c> seconds. Up to <c val=\"#TooltipNumbers\">4</c> Skeletal Warriors can be active at once.",
-    "NecromancerReapersTollTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerSpectralScytheReapersTollQuestTokenBehavior,Max\"/></c> Heroes with Spectral Scythe.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Reduce the cooldown of Spectral Scythe by <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerSpectralScytheReapersTollQuestCompleteReward,CatalogModifications[0].Value\"/></c> seconds and its Mana cost by <c val=\"#TooltipNumbers\"><d ref=\"-(Effect,NercromancerSpectralSyctheReapersTollQuestCompleteRewardModifyPlayerMana,EffectArray[0].Value-Abil,NecromancerSpectralScythe,Cost.Vital[Energy])\"player=\"0\"/>.",
+    "NecromancerRaiseSkeleton": "When a nearby enemy Minion dies, it becomes a Skeletal Warrior with <c val=\"#TooltipNumbers\"><d ref=\"Unit,NecromancerRaiseSkeleton,LifeMax\"/></c> Health that attacks for <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerRaiseSkeletonDamage,Amount\"/></c> damage and lasts up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerRaiseSkeletonTimedLife,Duration\"/></c> seconds. Upon death, Skeletal Warriors deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerRaiseSkeletonCorpseExplosionTalentDamage,Amount\"/></c> damage to nearby enemies.  Up to <c val=\"#TooltipNumbers\">3</c> Skeletal Warriors can be active at once when spawned in this way.",
+    "NecromancerReapersTollTalent": "Reduce the cooldown of Spectral Scythe by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,NecromancerTalentReapersToll,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds and its Mana cost by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,NecromancerTalentReapersToll,AbilityModificationArray[0].Modifications[1].Value\"Player=\"0\"/></c>.",
     "NecromancerSkeletalMages": "<c val=\"#TooltipNumbers\">Vector Targeting</c></n>Summon <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerSkeletalMagesOffsetPersistent,PeriodCount\" player=\"0\"/></c> Frost Mages in a line that attack nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerSkeletalMagesDamage,Amount\"/></c> damage a second and Slow them by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NecromancerSkeletalMagesSlow,Modification.UnifiedMoveSpeedFactor\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerSkeletalMagesSlow,Duration\"/></c> seconds. Last up to <c val=\"#TooltipNumbers\">15</c> seconds.",
-    "NecromancerSpectralScythe": "Summon a scythe that travels to Xul after <c val=\"#TooltipNumbers\">1</c> second, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerSpectralScytheDamage,Amount\"/></c> damage to enemies.",
-    "NecromancerTalentCorpseExplosion": "When Skeletal Warriors die they explode for <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerRaiseSkeletonCorpseExplosionTalentDamage,Amount\"/></c> damage in a small area. Deals <c val=\"#TooltipNumbers\">100%</c> increased damage to non-Heroic enemies.",
-    "NecromancerTalentKalansEdict": "Skeletal Warrior attacks reduce the cooldown of Xul's Heroic Ability by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,NecromancerRaiseSkeletonKalansEdictModifyCooldown,Cost[0].Fraction.Cooldown*100\"/>%</c>.",
+    "NecromancerSpectralScythe": "Summon a scythe that travels to Xul after <c val=\"#TooltipNumbers\">1</c> second, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerSpectralScytheDamage,Amount\"/></c> damage to enemies and spawning a Skeletal Warrior when hitting enemy Heroes.  These do not count towards Xul's Raise Skeleton maximum.",
+    "NecromancerTalentKalansEdict": "Each time Skeletal Warriors deal damage, reduce the cooldown of Bone Armor and Xul's Heroic Ability by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,NecromancerKalansEdictSkeletalWarriorAttackModifyCooldown,Cost[0].Fraction.Cooldown*100\"Precision=\"2\"/>%</c>.",
     "NecromancerTragOulsEssence": "Every time a Skeletal Warrior attacks an enemy, restore <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerRaiseSkeletonTragOulsEssenceCreateHealerHealth,RechargeVitalFraction*100\" precision=\"2\"/>%</c> of Xul's maximum Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerRaiseSkeletonTragOulsEssenceCreateHealerMana,RechargeVitalFraction*100\" precision=\"2\"/>%</c> of his maximum Mana.",
-    "NecromancerWeaken": "Increase the Attack Speed reduction of Cursed Strikes by <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,NecromancerCursedStrikesAttackSpeedSlowWeakenTalent,Modification.AdditiveAttackSpeedFactor)*(-100) - (-100*Behavior,NecromancerCursedStrikesAttackSpeedSlow,Modification.AdditiveAttackSpeedFactor)\" player=\"0\"/>%</c> and the duration by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerCursedStrikesAttackSpeedSlowWeakenTalent,Duration - Behavior,NecromancerCursedStrikesAttackSpeedSlow,Duration\"/></c> second."
+    "NecromancerWallOfBonesBoneArmorTalent": "Increase the Shield amount of Bone Armor to <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,NecromancerBoneArmorShield,DamageResponse.ModifyLimitVitalMaxFractionArray[Life])+(100*Talent,NecromancerBoneArmorWallOfBonesTalent,AbilityModificationArray[0].Modifications[0].Value)\"Player=\"0\"/>%</c> of Xul's maximum Health, and Xul gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBoneArmorWallOfBonesSpellArmorBuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor for its duration.",
+    "NecromancerWeaken": "Enemy Heroes who are damaged by Cursed Strikes or Skeletal Warriors deal <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NecromancerCursedStrikesWeakenDamageReduction,Modification.DamageDealtFraction[Ability]\"/>%</c> less damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerCursedStrikesWeakenDamageReduction,Duration\"/></c> seconds."
   },
   "tooltipSimple": {
-    "GenericExecutionerTalent": "Attacking disabled Heroes increases damage",
     "NecromancerAmplifyDamage": "Bone Prison lowers Armor",
-    "NecromancerAndarielsVisage": "Poison Nova heals, increase Skeleton damage",
+    "NecromancerAndarielsVisage": "Increase Poison Nova duration, now heals",
     "NecromancerBoneArmor": "Activate to gain a Shield",
     "NecromancerBoneArmorBacklash": "Bone Armor explodes for damage",
     "NecromancerBoneArmorShackler": "Bone Armor Slows, can reduce cooldown",
     "NecromancerBoneArmorShade": "Bone Armor evades Basic Attacks",
     "NecromancerBonePrison": "Root an enemy in place",
     "NecromancerBoneSpear": "Damage enemies in a line",
-    "NecromancerColdHandOfDeath": "Increase Skeletal Mages Slow, Skeleton attacks Slow",
+    "NecromancerColdHandOfDeath": "Spectral Scythe spawns Skeletal Mages",
     "NecromancerCursedStrikes": "Basic Attacks deal damage in an area and reduce Attack Speed",
     "NecromancerCursedStrikesGrimScythe": "Reduce Cursed Strikes cooldown",
     "NecromancerCursedStrikesRapidHarvest": "Cursed Strikes increases Attack Speed",
+    "NecromancerDecrepifyTalent": "Spectral Scythe, Skeletal Warriors Slow",
     "NecromancerEchoesOfDeathTalent": "Spectral Scythe spawns additional scythes",
     "NecromancerHarvestVitality": "Cursed Strikes against Heroes heals",
     "NecromancerJailors": "<c val=\"#TooltipQuest\">Quest:</c> Bone Prison spawns Skeletal Warriors",
@@ -624,16 +632,15 @@
     "NecromancerPoisonNova": "Poison enemies in a large area",
     "NecromancerPoisonNovaTalent": "Poison nearby enemies",
     "NecromancerRaiseSkeleton": "Spawn Skeletal Warriors from Minions",
-    "NecromancerReapersTollTalent": "<c val=\"#TooltipQuest\">Quest:</c> Lower Spectral Scythe cooldown",
+    "NecromancerReapersTollTalent": "Lower Spectral Scythe cooldown, Mana cost",
     "NecromancerSkeletalMages": "Summon Frost Mages to damage and Slow enemies",
     "NecromancerSpectralScythe": "Throw a scythe that damages enemies as it returns to Xul",
-    "NecromancerTalentCorpseExplosion": "Skeletal Warriors explode on death",
-    "NecromancerTalentKalansEdict": "Skeletal Warrior attacks reduce Heroic cooldown",
+    "NecromancerTalentKalansEdict": "Skeletal Warriors reduce Heroic cooldown",
     "NecromancerTragOulsEssence": "Skeletal Warrior attacks restore Health, Mana",
-    "NecromancerWeaken": "Increase Cursed Strikes Attack Speed reduction"
+    "NecromancerWallOfBonesBoneArmorTalent": "Increase Bone Armor Shield Amount",
+    "NecromancerWeaken": "Cursed Strikes, Skeletal Warriors reduce damage dealt"
   },
   "tooltipColors": {
-    "AbilityPassive": "00FF90",
     "TooltipNumbers": "BFD4FD",
     "TooltipQuest": "E4B800"
   }

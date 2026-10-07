@@ -30,7 +30,7 @@
     "resource": 500,
     "resourceType": "Mana",
     "resourceRegen": 3,
-    "attackDamage": 125,
+    "attackDamage": 134,
     "attackDamageScale": 0.04,
     "attackRange": 1.5,
     "attackSpeed": 0.8696,
@@ -39,8 +39,8 @@
   "heroUnits": {
     "RexxarMisha": {
       "stats": {
-        "hp": 1620,
-        "hpRegen": 3.375,
+        "hp": 1520,
+        "hpRegen": 3.1718,
         "hpScale": 0.0475,
         "hpRegenScale": 0.0475,
         "attackDamage": 50,
@@ -88,7 +88,7 @@
         "abilityId": "Rexxar|E1",
         "tooltipId": "RexxarMendPet",
         "cooldown": 10,
-        "manaCost": 60,
+        "manaCost": 70,
         "icon": "storm_ui_icon_rexxar_mendpet.png",
         "type": "basic"
       },
@@ -478,8 +478,8 @@
       "unitId": "RexxarMisha",
       "name": "RexxarMisha",
       "stats": {
-        "hp": 1620,
-        "hpRegen": 3.375,
+        "hp": 1520,
+        "hpRegen": 3.1718,
         "hpScale": 0.0475,
         "hpRegenScale": 0.0475,
         "attackDamage": 50,
