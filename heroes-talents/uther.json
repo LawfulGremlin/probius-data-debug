@@ -24,8 +24,8 @@
     "SelfHealer"
   ],
   "stats": {
-    "hp": 2000,
-    "hpRegen": 4.168,
+    "hp": 1975,
+    "hpRegen": 4.1093,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -54,12 +54,12 @@
       {
         "uid": "ec3cb3",
         "name": "Holy Radiance",
-        "description": "Heal all allied Heroes and Minions in a line for 177 (+4% per level) Health, dealing 177 (+4% per level) damage to enemies.",
+        "description": "Heal all allied Heroes and Minions in a line for 194 (+4% per level) Health, dealing 177 (+4% per level) damage to enemies.",
         "hotkey": "W",
         "abilityId": "Uther|W1",
         "tooltipId": "UtherHolyRadiance",
-        "cooldown": 12,
-        "manaCost": 70,
+        "cooldown": 10,
+        "manaCost": 55,
         "icon": "storm_ui_icon_uther_holyradiance.png",
         "type": "basic"
       },
@@ -158,7 +158,7 @@
         "tooltipId": "UtherHolyRadianceWaveofLightTalent",
         "talentTreeId": "UtherMasteryWaveofLightHolyRadiance",
         "name": "Wave of Light",
-        "description": "Quest: Damage or heal Heroes 60 times with Holy Radiance.  Reward: Increase the duration of Devotion by 0.5 seconds.  Passive: Damaging or healing Heroes with Holy Radiance refunds 5 Mana and reduces its cooldown by 1 second.",
+        "description": "Quest: Damage or heal Heroes 60 times with Holy Radiance.  Reward: Increase the duration of Devotion by 0.5 seconds.  Passive: Damaging or healing Heroes with Holy Radiance refunds 5 Mana and reduces its cooldown by 0.75 seconds.",
         "icon": "storm_ui_icon_uther_holyradiance.png",
         "type": "W",
         "sort": 2,
@@ -387,7 +387,7 @@
         "tooltipId": "UtherBeaconOfLight",
         "talentTreeId": "UtherBeaconOfLight",
         "name": "Beacon of Light",
-        "description": "While below 50% Health, Uther receives 200% more self-healing when healing others with Holy Light.",
+        "description": "Uther receives 100% bonus self-healing when targeting others with Holy Light.  This bonus is increased to 200% while he is below 50% Health.",
         "icon": "storm_ui_icon_uther_holylight.png",
         "type": "Q",
         "sort": 1,
@@ -405,7 +405,7 @@
         "tooltipId": "UtherHolyRadianceTyrsDeliveranceTalent",
         "talentTreeId": "UtherHolyRadianceTyrsDeliverance",
         "name": "Tyr's Deliverance",
-        "description": "Allies healed by Holy Radiance receive 40% increased healing from all sources for 6 seconds.",
+        "description": "Increase the damage and healing of Holy Radiance by 10%. Basic Attacks against enemy Heroes cause Uther's next cast of Holy Radiance to have its damage and healing increased by an additional 10%, stacking up to 4 times.",
         "icon": "storm_ui_icon_uther_holyradiance.png",
         "type": "W",
         "sort": 2,
@@ -515,7 +515,7 @@
   "tooltipMarkup": {
     "GenericSpellShieldItemDisabled": "Spell Shield is disabled and will not trigger.<n/><n/>Click this button to enable Spell Shield.",
     "GenericSpellShieldTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldCooldown,Duration\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor against the next enemy Ability and subsequent Abilities for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,Duration\" precision=\"1\"/></c> seconds, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.<n/><n/>Can be toggled to allow or prevent this talent from triggering automatically.",
-    "UtherBeaconOfLight": "While below <c val=\"#TooltipNumbers\"><d ref=\"Validator,CasterLifeLT50Percent,Value*100\"/>%</c> Health, Uther receives <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier*100\"/>%</c> more self-healing when healing others with Holy Light.",
+    "UtherBeaconOfLight": "Uther receives <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier*100\"/>%</c> bonus self-healing when targeting others with Holy Light.  This bonus is increased to <c val=\"#TooltipNumbers\"><d ref=\"(Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier+Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier)*100\"/>%</c> while he is below <c val=\"#TooltipNumbers\"><d ref=\"Validator,CasterLifeLT50Percent,Value*100\"/>%</c> Health.",
     "UtherBenedictionHotbar": "Activate to reduce the Mana cost of Uther's next Basic Ability by <c val=\"#TooltipNumbers\">50 </c>and its cooldown by <c val=\"#TooltipNumbers\">10</c> seconds.",
     "UtherDivineShield": "Make an allied Hero Invulnerable and increase their Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherDivineInterventionMovementSpeed,Modification.UnifiedMoveSpeedFactor *100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DivineInterventionInvulnerable,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
     "UtherDivineShieldBulwarkOfLightTalent": "Divine Shield is also applied to all nearby allied Heroes and lasts <c val=\"#TooltipNumbers\"><d ref=\"Talent,UtherMasteryBulwarkOfLightDivineShield,AbilityModificationArray[0].Modifications[0].Value\"/></c> second longer.",
@@ -537,8 +537,8 @@
     "UtherHolyLightHolyShockTalent": "Holy Light can be used on an enemy to do <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyShockDamage,Amount/Effect,HolyLightCreateHealer,RechargeVitalRate*100\"/>%</c> of its healing amount as damage. When used this way, Uther receives its self-healing benefits, its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,HolyShockModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds, and it refunds <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyLightHolyShockManaReturn,RechargeVitalRate\"/></c> Mana.",
     "UtherHolyLightSilverTouch": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Reduce damage from Heroic sources with Devotion.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After reducing damage <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyLightSilverTouchArmor,ConditionalEvents[0].CompareValue\"/></c> times, Holy Light's Mana cost is reduced from <c val=\"#TooltipNumbers\"><d ref=\"Abil,UtherHolyLight,Cost.Vital[Energy]\" player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Abil,UtherHolyLight,Cost.Vital[Energy]  + Effect,UtherHolyLightSilverTouchModifyCost,CatalogModifications[0].Value\" player=\"0\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After reducing damage <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyLightSilverTouchArmor,Max\"/></c> times, Holy Light's Mana cost is reduced to <c val=\"#TooltipNumbers\"><d ref=\"Abil,UtherHolyLight,Cost.Vital[Energy] + (Effect,UtherHolyLightSilverTouchModifyCost,CatalogModifications[0].Value * 2)\" player=\"0\"/></c>, and its range is increased by <c val=\"#TooltipNumbers\"><d ref=\"((Abil,UtherHolyLight,Range+Effect,UtherHolyLightSilverTouchModifyRange,CatalogModifications[0].Value)/Abil,UtherHolyLight,Range-1)*100\" player=\"0\"/>%</c>.",
     "UtherHolyRadiance": "Heal all allied Heroes and Minions in a line for <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyRadianceCreateHealer,RechargeVitalRate\"/></c> Health, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyRadianceEnemyDamage,Amount\"/></c> damage to enemies.",
-    "UtherHolyRadianceTyrsDeliveranceTalent": "Allies healed by Holy Radiance receive <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyRadianceTyrsDeliveranceAmplifiedHealing,Modification.HealTakenAdditiveMultiplier[Life]*100\"/>%</c> increased healing from all sources for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyRadianceTyrsDeliveranceAmplifiedHealing,Duration\"/></c> seconds.",
-    "UtherHolyRadianceWaveofLightTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Damage or heal Heroes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyRadianceWaveofLightQuestTokenBehavior,Max\"/></c> times with Holy Radiance.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Increase the duration of Devotion by <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherHolyRadianceSilverTouchArmorDurationIncreaseModifyCatalog,CatalogModifications[0].Value - Behavior,UtherEternalDevotionDivineProtectionArmor,Duration\" precision=\"1\" player=\"0\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Damaging or healing Heroes with Holy Radiance refunds <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherWaveofLightRestoreMana,RechargeVitalRate\"/></c> Mana and reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,WaveofLightModifyUnit,Cost[0].CooldownTimeUse\" precision=\"1\"/></c> second.",
+    "UtherHolyRadianceTyrsDeliveranceTalent": "Increase the damage and healing of Holy Radiance by <c val=\"#TooltipNumbers\">10%</c>. Basic Attacks against enemy Heroes cause Uther's next cast of Holy Radiance to have its damage and healing increased by an additional <c val=\"#TooltipNumbers\">10%</c>, stacking up to <c val=\"#TooltipNumbers\">4</c> times.",
+    "UtherHolyRadianceWaveofLightTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Damage or heal Heroes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyRadianceWaveofLightQuestTokenBehavior,Max\"/></c> times with Holy Radiance.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Increase the duration of Devotion by <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherHolyRadianceSilverTouchArmorDurationIncreaseModifyCatalog,CatalogModifications[0].Value - Behavior,UtherEternalDevotionDivineProtectionArmor,Duration\" precision=\"1\" player=\"0\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Damaging or healing Heroes with Holy Radiance refunds <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherWaveofLightRestoreMana,RechargeVitalRate\"/></c> Mana and reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,WaveofLightModifyUnit,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.",
     "UtherRedemptionTalent": "After Eternal Vanguard ends, Uther revives at the spirit's location with <c val=\"#TooltipNumbers\"><d ref=\"1+Effect,RedemptionSetHealth,VitalArray[Life].ChangeFraction*100\"/>%</c> of his maximum Health.<n/><n/>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RedemptionCooldown,Duration\" player=\"0\"/></c> second cooldown."
   },
   "tooltipSimple": {
@@ -566,7 +566,7 @@
     "UtherHolyLightHolyShockTalent": "Holy Light can deal damage",
     "UtherHolyLightSilverTouch": "<c val=\"#TooltipQuest\">Quest:</c> Mitigate damage to improve Holy Light",
     "UtherHolyRadiance": "Heal allies and damage enemies in a line",
-    "UtherHolyRadianceTyrsDeliveranceTalent": "Holy Radiance increases healing received",
+    "UtherHolyRadianceTyrsDeliveranceTalent": "Increased Holy Radiance healing and damage",
     "UtherHolyRadianceWaveofLightTalent": "<c val=\"#TooltipQuest\">Quest:</c> Holy Radiance increases Devotion duration",
     "UtherRedemptionTalent": "Resurrect after Eternal Vanguard ends"
   },

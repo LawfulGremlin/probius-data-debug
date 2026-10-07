@@ -133,7 +133,7 @@
         "tooltipId": "ArthasFrostPresenceHowlingBlastTalent",
         "talentTreeId": "ArthasMasteryFrostPresenceHowlingBlast",
         "name": "Frost Presence",
-        "description": "Quest: Root enemy Heroes with Howling Blast.  Reward: After Rooting 5 Heroes, Howling Blast's cooldown is reduced by 2 seconds.  Reward: After Rooting 10 Heroes, Howling Blast's range is increased by 30%.  Reward: After Rooting 20 Heroes, Howling Blast also Roots enemies in its path.",
+        "description": "Quest: Root enemy Heroes with Howling Blast.  Reward: After Rooting 5 Heroes, Howling Blast's cooldown is reduced by 2 seconds.  Reward: After Rooting 10 Heroes, Howling Blast's range is increased by 20%.  Reward: After Rooting 20 Heroes, Howling Blast also Roots enemies in its path.",
         "icon": "storm_ui_icon_arthas_howlingblast.png",
         "type": "W",
         "sort": 1,
@@ -471,16 +471,17 @@
         "tooltipId": "ArthasDeathsAdvanceTalent",
         "talentTreeId": "ArthasDeathsAdvance",
         "name": "Death's Advance",
-        "description": "Activate to increase Movement Speed by 30% for 5 seconds.  Passive: Increases Movement Speed by 10%.",
-        "icon": "storm_ui_icon_talent_deaths_advance.png",
-        "type": "Active",
+        "description": "Increases Movement Speed by 10%. Frozen Tempest's maximum Movement Speed Slow and Attack Speed Slow increased from 40% to 60%",
+        "icon": "storm_ui_icon_arthas_frosentempest.png",
+        "type": "E",
         "sort": 3,
-        "cooldown": 50,
         "isQuest": false,
-        "abilityId": "Arthas|Active",
-        "abilityLinks": [],
+        "abilityId": "Arthas|E1",
+        "abilityLinks": [
+          "Arthas|E1"
+        ],
         "abilityTalentLinkIds": [
-          "ArthasDeathsAdvance"
+          "ArthasFrozenTempest"
         ]
       },
       {
@@ -531,14 +532,14 @@
     "ArthasBitingColdFrozenTempestTalent": "Each second an enemy is damaged by Frozen Tempest, it deals <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,Scale*2\"Precision=\"2\"/>%</c> bonus damage, up to a <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ArthasFrozenTempestBitingColdTalentAccumulator,MaxAccumulation\"/>%</c> bonus.",
     "ArthasDeathCoil": "Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasDeathCoilDamage,Amount\"/></c> damage to target enemy.<n/><n/>Can be self-cast to heal for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasDeathCoilSelfCastCreateHealer,RechargeVitalRate\"/></c> Health.",
     "ArthasDeathlord": "Increase the range of Death Coil by <c val=\"#TooltipNumbers\"><d ref=\"-100*(1-Talent,ArthasDeathlord,AbilityModificationArray[0].Modifications[1].Value)\"/>%</c>, reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Talent,ArthasDeathlord,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds, and if Death Coil is used on an enemy Hero, its Mana cost is refunded.",
-    "ArthasDeathsAdvanceTalent": "Activate to increase Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasDeathsAdvanceActivated,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasDeathsAdvanceActivated,Duration\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increases Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasDeathsAdvancePassive,Modification.UnifiedMoveSpeedFactor*100\"/>%</c>.",
+    "ArthasDeathsAdvanceTalent": "Increases Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasDeathsAdvancePassive,Modification.UnifiedMoveSpeedFactor*100\"/>%</c>. Frozen Tempest's maximum Movement Speed Slow and Attack Speed Slow increased from <c val=\"#TooltipNumbers\">40%</c> to <c val=\"#TooltipNumbers\">60%</c>",
     "ArthasEmbraceDeathDeathCoilTalent": "Death Coil deals more damage and heals more the lower Arthas's current Health is, to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ArthasEmbraceDeathVitalAccumulator,MaxAccumulation\"/>%</c> bonus damage and healing.",
     "ArthasEternalHungerFrostmourneHungersTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Use Frostmourne Hungers on an enemy Hero.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Increases the Mana it restores by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ArthasFrostmourneHungersEternalHungerManaAccumulator,Scale\"/></c>, to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ArthasFrostmourneHungersEternalHungerManaAccumulator,MaxAccumulation\"/></c>, and its damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ArthasFrostmourneHungersEternalHungerDamageAccumulator,Scale\"/></c>.",
-    "ArthasFrostPresenceHowlingBlastTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Root enemy Heroes with Howling Blast.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Rooting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrostPresenceTokenCounter,ConditionalEvents[0].CompareValue\"/></c> Heroes, Howling Blast's cooldown is reduced by <c val=\"#TooltipNumbers\">2</c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Rooting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrostPresenceTokenCounter,ConditionalEvents[1].CompareValue\"/></c> Heroes, Howling Blast's range is increased by <c val=\"#TooltipNumbers\">30%.</c><n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Rooting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrostPresenceTokenCounter,Max\"/></c> Heroes, Howling Blast also Roots enemies in its path.",
+    "ArthasFrostPresenceHowlingBlastTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Root enemy Heroes with Howling Blast.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Rooting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrostPresenceTokenCounter,ConditionalEvents[0].CompareValue\"/></c> Heroes, Howling Blast's cooldown is reduced by <c val=\"#TooltipNumbers\">2</c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Rooting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrostPresenceTokenCounter,ConditionalEvents[1].CompareValue\"/></c> Heroes, Howling Blast's range is increased by <c val=\"#TooltipNumbers\">20%.</c><n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Rooting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrostPresenceTokenCounter,Max\"/></c> Heroes, Howling Blast also Roots enemies in its path.",
     "ArthasFrostStrikeFrostmourneHungersTalent": "Reduces Frostmourne Hungers' cooldown by <c val=\"#TooltipNumbers\">2</c> seconds. Frostmourne Hungers also Slows the enemy by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ArthasFrostmourneHungersFrostStrikeSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrostmourneHungersFrostStrikeSlow,Duration\" precision=\"1\"/></c> seconds.",
     "ArthasFrostmourneFeedsFrostmourneHungersTalents": "Increases the amount of Basic Attacks empowered by Frostmourne Hungers to <c val=\"#TooltipNumbers\">2</c>.",
     "ArthasFrostmourneHungers": "Activate to make Arthas's next Basic Attack strike immediately and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasFrostmourneHungersDamage,FlatModifierArray[0].Modifier \"/></c> increased damage. Dealing damage restores <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasFrostmourneHungersCreateManaHealer,RechargeVitalRate\" player=\"0\"/></c> Mana.",
-    "ArthasFrozenTempest": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasFrozenTempestDamage,Amount*2\"/></c> damage per second to nearby enemies and Slow their Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-1*Behavior,ArthasFrozenTempestSlow,Modification.UnifiedMoveSpeedFactor*100*2\"/>%</c> per second, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ArthasFrozenTempestSlow,MaxStackCount*Behavior,ArthasFrozenTempestSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>. Heroes hit also have their Attack Speed Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ArthasFrozenTempestAttackSpeedSlow,Modification.AdditiveAttackSpeedFactor * 100 * 2\"/>%</c> per second, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ArthasFrozenTempestAttackSpeedSlow,Modification.AdditiveAttackSpeedFactor * 100 * Behavior,ArthasFrozenTempestAttackSpeedSlow,MaxStackCount\"/>%</c>. Frozen Tempest's effects last for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrozenTempestSlow,Duration\" precision=\"1\" player=\"0\"/></c> seconds.",
+    "ArthasFrozenTempest": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasFrozenTempestDamage,Amount*2\"/></c> damage per second to nearby enemies and Slow their Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-1*Behavior,ArthasFrozenTempestSlow,Modification.UnifiedMoveSpeedFactor*100*2\" player=\"0\"/>%</c> per second, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ArthasFrozenTempestSlow,MaxStackCount*Behavior,ArthasFrozenTempestSlow,Modification.UnifiedMoveSpeedFactor\" player=\"0\"/>%</c>. Heroes hit also have their Attack Speed Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ArthasFrozenTempestAttackSpeedSlow,Modification.AdditiveAttackSpeedFactor * 100 * 2\" player=\"0\"/>%</c> per second, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ArthasFrozenTempestAttackSpeedSlow,Modification.AdditiveAttackSpeedFactor * 100 * Behavior,ArthasFrozenTempestAttackSpeedSlow,MaxStackCount\" player=\"0\"/>%</c>. Frozen Tempest's effects last for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasFrozenTempestSlow,Duration\" precision=\"1\" player=\"0\"/></c> seconds.",
     "ArthasFrozenWastesFrozenTempestTalent": "Frozen Tempest Mana cost reduced by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ArthasMasteryFrozenWastesFrozenTempest,AbilityModificationArray[0].Modifications[0].Value\"/></c> per second.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Damage enemy Heroes with Frozen Tempest.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After damaging enemy Heroes <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ArthasFrozenWastesTokenAccumulator,MaxAccumulation\"/></c> times with Frozen Tempest, the Movement and Attack Speed Slows of Frozen Tempest last an extra <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasFrozenTempestFrozenWastesModifyPlayer,EffectArray[0].Value-Behavior,ArthasFrozenTempestSlow,Duration\" precision=\"2\"player=\"0\"/></c> seconds against enemy Heroes.",
     "ArthasHowlingBlast": "Root enemies within the target area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasHowlingBlastRoot,Duration\" player=\"0\" precision=\"2\"/></c> seconds and deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasHowlingBlastDamage,Amount\"/></c> damage.",
     "ArthasIceboundFortitudeTalent": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasIceboundFortitudeCasterBehavior,ArmorModification.AllArmorBonus\"/></c> Armor, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,Resistant25,ArmorModification.AllArmorBonus\"/>%</c>, and reduce the duration of Stuns, Slows, and Roots against Arthas by <c val=\"#TooltipNumbers\">75%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasIceboundFortitudeCasterBehavior,Duration\" precision=\"1\"/></c> seconds.",
@@ -559,7 +560,7 @@
     "ArthasBitingColdFrozenTempestTalent": "Frozen Tempest damage increased",
     "ArthasDeathCoil": "Deals damage to a target or heal Arthas",
     "ArthasDeathlord": "Reduce Death Coil cooldown, refund Mana cost",
-    "ArthasDeathsAdvanceTalent": "Activate to increase Movement Speed",
+    "ArthasDeathsAdvanceTalent": "Increase Movement Speed, empower Frozen Tempest Slows",
     "ArthasEmbraceDeathDeathCoilTalent": "Death Coil deals more damage when missing Health",
     "ArthasEternalHungerFrostmourneHungersTalent": "<c val=\"#TooltipQuest\">Quest:</c> Empower Frostmourne Hungers",
     "ArthasFrostPresenceHowlingBlastTalent": "<c val=\"#TooltipQuest\">Quest:</c> Root Heroes to empower Howling Blast",
@@ -580,7 +581,6 @@
     "ArthasSummonSindragosa": "Disables enemies and Structures"
   },
   "tooltipColors": {
-    "AbilityPassive": "00FF90",
     "TooltipNumbers": "BFD4FD",
     "TooltipQuest": "E4B800"
   }
