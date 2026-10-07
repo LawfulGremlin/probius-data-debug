@@ -4124,6 +4124,20 @@
     "sight": 0,
     "speed": 0
   },
+  "GPUTest": {
+    "unitId": "GPUTest",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "GraveGolemEntanglingRootsMissile": {
     "unitId": "GraveGolemEntanglingRootsMissile",
     "portraits": {},
@@ -6218,7 +6232,7 @@
     "unitId": "LongboatRaidBoat",
     "portraits": {},
     "life": {
-      "amount": 685,
+      "amount": 750,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0,
@@ -12719,7 +12733,7 @@
         "damage": 75,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": 0.5,
+          "Heroic": 0.4,
           "MapCreature": 1,
           "Merc": 1,
           "Minion": 1,
@@ -12767,6 +12781,7 @@
         "damage": 250,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -12808,6 +12823,7 @@
         "damage": 250,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -12849,6 +12865,7 @@
         "damage": 330,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -12890,6 +12907,7 @@
         "damage": 330,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -13802,6 +13820,7 @@
         "damage": 375,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -13843,6 +13862,7 @@
         "damage": 440,
         "damageScale": 0,
         "damageFactors": {
+          "Heroic": -0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -18253,7 +18273,7 @@
           "_hdp5LinkId": "LostVikingsSpinToWin|LostVikingsSpinToWin|Q",
           "icon": "storm_ui_icon_lostvikings_spintowin.png",
           "name": "Spin To Win!",
-          "fullText": "Activate to have each Viking deal <c val=\"bfd4fd\">101</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.",
+          "fullText": "Activate to have each Viking deal <c val=\"bfd4fd\">85</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.  Deals <c val=\"bfd4fd\">100%</c> bonus damage to enemy Heroes.",
           "cooldownText": "Cooldown: 10 seconds"
         },
         {
@@ -18265,7 +18285,7 @@
           "icon": "storm_ui_icon_lostvikings_norseforce.png",
           "name": "Norse Force!",
           "fullText": "All Vikings gain a <c val=\"bfd4fd\">130</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">260</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield, increasing in strength for each Viking alive. Lasts <c val=\"bfd4fd\">4</c> seconds.",
-          "cooldownText": "Cooldown: 30 seconds"
+          "cooldownText": "Cooldown: 15 seconds"
         },
         {
           "nameId": "LostVikingsPressA",
@@ -18286,7 +18306,7 @@
           "_hdp5LinkId": "LostVikingsNordicAttackSquad|LostVikingsNordicAttackSquad|W",
           "icon": "storm_ui_icon_talent_autoattack_damage.png",
           "name": "Nordic Attack Squad",
-          "fullText": "Activate to have all Viking Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> of a Hero's maximum Health for <c val=\"bfd4fd\">5</c> seconds.",
+          "fullText": "While Olaf, Baleog, and Erik are near each of the other two Vikings, their Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> maximum Health to enemy Heroes.",
           "cooldownText": "Cooldown: 20 seconds"
         },
         {
@@ -18302,7 +18322,7 @@
           },
           "icon": "storm_ui_icon_talent_bribe.png",
           "name": "Viking Bribery",
-          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>. If a camp is defeated entirely with Bribe, the camp respawns <c val=\"bfd4fd\">50%</c> faster.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: </c><c val=\"bfd4fd\">0</c>"
+          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: </c><c val=\"bfd4fd\">0</c>"
         }
       ],
       "heroic": [
@@ -18315,7 +18335,7 @@
           "icon": "storm_ui_icon_lostvikings_playagain.png",
           "name": "Play Again!",
           "fullText": "Summon, fully heal, and revive all Lost Vikings at target location after a Viking channels for <c val=\"bfd4fd\">2</c> seconds. <n/><n/><c val=\"ffff8a\">Only one Viking may attempt to summon at a time.</c>",
-          "cooldownText": "Cooldown: 80 seconds"
+          "cooldownText": "Cooldown: 100 seconds"
         },
         {
           "nameId": "LostVikingsLongboatRaidNewer",
@@ -18444,7 +18464,7 @@
           "_hdp5LinkId": "LostVikingsSpinToWin|LostVikingsSpinToWin|Q",
           "icon": "storm_ui_icon_lostvikings_spintowin.png",
           "name": "Spin To Win!",
-          "fullText": "Activate to have each Viking deal <c val=\"bfd4fd\">101</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.",
+          "fullText": "Activate to have each Viking deal <c val=\"bfd4fd\">85</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.  Deals <c val=\"bfd4fd\">100%</c> bonus damage to enemy Heroes.",
           "cooldownText": "Cooldown: 10 seconds"
         },
         {
@@ -18456,7 +18476,7 @@
           "icon": "storm_ui_icon_lostvikings_norseforce.png",
           "name": "Norse Force!",
           "fullText": "All Vikings gain a <c val=\"bfd4fd\">130</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">260</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield, increasing in strength for each Viking alive. Lasts <c val=\"bfd4fd\">4</c> seconds.",
-          "cooldownText": "Cooldown: 30 seconds"
+          "cooldownText": "Cooldown: 15 seconds"
         },
         {
           "nameId": "LostVikingsPressA",
@@ -18477,7 +18497,7 @@
           "_hdp5LinkId": "LostVikingsNordicAttackSquad|LostVikingsNordicAttackSquad|W",
           "icon": "storm_ui_icon_talent_autoattack_damage.png",
           "name": "Nordic Attack Squad",
-          "fullText": "Activate to have all Viking Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> of a Hero's maximum Health for <c val=\"bfd4fd\">5</c> seconds.",
+          "fullText": "While Olaf, Baleog, and Erik are near each of the other two Vikings, their Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> maximum Health to enemy Heroes.",
           "cooldownText": "Cooldown: 20 seconds"
         },
         {
@@ -18493,7 +18513,7 @@
           },
           "icon": "storm_ui_icon_talent_bribe.png",
           "name": "Viking Bribery",
-          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>. If a camp is defeated entirely with Bribe, the camp respawns <c val=\"bfd4fd\">50%</c> faster.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: </c><c val=\"bfd4fd\">0</c>"
+          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: </c><c val=\"bfd4fd\">0</c>"
         }
       ],
       "heroic": [
@@ -18506,7 +18526,7 @@
           "icon": "storm_ui_icon_lostvikings_playagain.png",
           "name": "Play Again!",
           "fullText": "Summon, fully heal, and revive all Lost Vikings at target location after a Viking channels for <c val=\"bfd4fd\">2</c> seconds. <n/><n/><c val=\"ffff8a\">Only one Viking may attempt to summon at a time.</c>",
-          "cooldownText": "Cooldown: 80 seconds"
+          "cooldownText": "Cooldown: 100 seconds"
         },
         {
           "nameId": "LostVikingsLongboatRaidNewer",
@@ -18635,7 +18655,7 @@
           "_hdp5LinkId": "LostVikingsSpinToWin|LostVikingsSpinToWin|Q",
           "icon": "storm_ui_icon_lostvikings_spintowin.png",
           "name": "Spin To Win!",
-          "fullText": "Activate to have each Viking deal <c val=\"bfd4fd\">101</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.",
+          "fullText": "Activate to have each Viking deal <c val=\"bfd4fd\">85</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.  Deals <c val=\"bfd4fd\">100%</c> bonus damage to enemy Heroes.",
           "cooldownText": "Cooldown: 10 seconds"
         },
         {
@@ -18647,7 +18667,7 @@
           "icon": "storm_ui_icon_lostvikings_norseforce.png",
           "name": "Norse Force!",
           "fullText": "All Vikings gain a <c val=\"bfd4fd\">130</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">260</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield, increasing in strength for each Viking alive. Lasts <c val=\"bfd4fd\">4</c> seconds.",
-          "cooldownText": "Cooldown: 30 seconds"
+          "cooldownText": "Cooldown: 15 seconds"
         },
         {
           "nameId": "LostVikingsPressA",
@@ -18668,7 +18688,7 @@
           "_hdp5LinkId": "LostVikingsNordicAttackSquad|LostVikingsNordicAttackSquad|W",
           "icon": "storm_ui_icon_talent_autoattack_damage.png",
           "name": "Nordic Attack Squad",
-          "fullText": "Activate to have all Viking Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> of a Hero's maximum Health for <c val=\"bfd4fd\">5</c> seconds.",
+          "fullText": "While Olaf, Baleog, and Erik are near each of the other two Vikings, their Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> maximum Health to enemy Heroes.",
           "cooldownText": "Cooldown: 20 seconds"
         },
         {
@@ -18684,7 +18704,7 @@
           },
           "icon": "storm_ui_icon_talent_bribe.png",
           "name": "Viking Bribery",
-          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>. If a camp is defeated entirely with Bribe, the camp respawns <c val=\"bfd4fd\">50%</c> faster.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: </c><c val=\"bfd4fd\">0</c>"
+          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: </c><c val=\"bfd4fd\">0</c>"
         }
       ],
       "heroic": [
@@ -18697,7 +18717,7 @@
           "icon": "storm_ui_icon_lostvikings_playagain.png",
           "name": "Play Again!",
           "fullText": "Summon, fully heal, and revive all Lost Vikings at target location after a Viking channels for <c val=\"bfd4fd\">2</c> seconds. <n/><n/><c val=\"ffff8a\">Only one Viking may attempt to summon at a time.</c>",
-          "cooldownText": "Cooldown: 80 seconds"
+          "cooldownText": "Cooldown: 100 seconds"
         },
         {
           "nameId": "LostVikingsLongboatRaidNewer",
@@ -18990,7 +19010,7 @@
           "icon": "storm_ui_icon_ragnaros_sulfurassmash.png",
           "name": "Sulfuras Smash",
           "fullText": "Hurl Sulfuras at the target area, landing after <c val=\"bfd4fd\">0.75</c> seconds, dealing <c val=\"bfd4fd\">250</c><c val=\"a7a7a7\">~~0.04~~</c> damage. Enemies in the center take <c val=\"bfd4fd\">594</c><c val=\"a7a7a7\">~~0.04~~</c> damage instead and are Stunned for <c val=\"bfd4fd\">0.5</c> seconds.",
-          "cooldownText": "Cooldown: 80 seconds"
+          "cooldownText": "Cooldown: 60 seconds"
         },
         {
           "nameId": "RagnarosLavaWaveTargetPoint",

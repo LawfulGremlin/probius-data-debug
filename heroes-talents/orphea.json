@@ -43,7 +43,7 @@
       {
         "uid": "88e5d4",
         "name": "Shadow Waltz",
-        "description": "After 0.5 seconds, deal 165 (+4% per level) damage to enemies in a line.  Hitting a Hero with Shadow Waltz sets its cooldown to 2 seconds, refunds 40 Mana, and causes Orphea to dash a short distance upon moving.",
+        "description": "After 0.5 seconds, deal 165 (+4% per level) damage to enemies in a line.  Hitting a Hero with Shadow Waltz sets its cooldown to 2 seconds, refunds 35 Mana, and causes Orphea to dash a short distance upon moving.",
         "hotkey": "Q",
         "abilityId": "Orphea|Q1",
         "tooltipId": "OrpheaShadowWaltz",
@@ -544,7 +544,7 @@
     "OrpheaEngulfingOblivion": "Crushing Jaws lowers Armor, reduces cooldown",
     "OrpheaEternalFeast": "Damage enemies in an area repeatedly",
     "OrpheaFinalToccata": "Shadow Waltz cooldown resets after dashing",
-    "OrpheaGrowingNightmare": "Empower Dread eruption",
+    "OrpheaGrowingNightmare": "<c val=\"#TooltipQuest\">Quest:</c> Empower Dread eruption",
     "OrpheaInsatiable": "Hitting a Hero reduces Chomp's cooldown",
     "OrpheaInvasiveMiasma": "Activate Overflowing Chaos to damage, heal",
     "OrpheaLurkingTerror": "Activate to cast Chomp from Dread's eruption",

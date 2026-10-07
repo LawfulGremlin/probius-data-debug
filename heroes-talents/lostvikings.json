@@ -91,7 +91,7 @@
         "hotkey": "R",
         "abilityId": "LostVikings|R2",
         "tooltipId": "LostVikingsPlayAgain",
-        "cooldown": 80,
+        "cooldown": 100,
         "icon": "storm_ui_icon_lostvikings_playagain.png",
         "type": "heroic"
       },
@@ -161,7 +161,7 @@
       {
         "uid": "39ea12",
         "name": "Spin To Win!",
-        "description": "Activate to have each Viking deal 101 (+4% per level) damage to nearby enemies.",
+        "description": "Activate to have each Viking deal 85 (+4% per level) damage to nearby enemies.  Deals 100% bonus damage to enemy Heroes.",
         "hotkey": "Q",
         "abilityId": "LostVikings|Q1",
         "tooltipId": "LostVikingsSpinToWin",
@@ -183,7 +183,7 @@
       {
         "uid": "86ef1a",
         "name": "Viking Bribery",
-        "description": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. If a camp is defeated entirely with Bribe, the camp respawns 50% faster.  Current number of Bribe stacks: 0",
+        "description": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.  Current number of Bribe stacks: 0",
         "hotkey": "E",
         "abilityId": "LostVikings|E1",
         "tooltipId": "LostVikingsVikingBribery",
@@ -197,14 +197,14 @@
         "hotkey": "Q",
         "abilityId": "LostVikings|Q2",
         "tooltipId": "LostVikingsNorseForce",
-        "cooldown": 30,
+        "cooldown": 15,
         "icon": "storm_ui_icon_lostvikings_norseforce.png",
         "type": "basic"
       },
       {
         "uid": "c2cd44",
         "name": "Nordic Attack Squad",
-        "description": "Activate to have all Viking Basic Attacks deal bonus damage equal to 1.25% of a Hero's maximum Health for 5 seconds.",
+        "description": "While Olaf, Baleog, and Erik are near each of the other two Vikings, their Basic Attacks deal bonus damage equal to 1.25% maximum Health to enemy Heroes.",
         "hotkey": "W",
         "abilityId": "LostVikings|W2",
         "tooltipId": "LostVikingsNordicAttackSquad",
@@ -231,7 +231,7 @@
         "tooltipId": "LostVikingsOlafTheStoutTalent",
         "talentTreeId": "LostVikingsMasteryOlafTheStout",
         "name": "Olaf the Stout",
-        "description": "Every 5 seconds, Olaf gains 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.  Stores up to 2 charges.",
+        "description": "Passive: Olaf gains 20% bonus maximum Health.  Every 5 seconds, Olaf gains 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.  Stores up to 2 charges.",
         "icon": "storm_ui_icon_lostvikings_selectolaf.png",
         "type": "Passive",
         "sort": 1,
@@ -248,7 +248,7 @@
         "tooltipId": "LostVikingsSpyGamesTalent",
         "talentTreeId": "LostVikingsMasterySpyGames",
         "name": "Spy Games",
-        "description": "After standing still for 3 seconds, Erik gains Stealth and his Sight Radius is increased by 75%. The Stealth persists for 3 seconds after moving.",
+        "description": "After standing still for 3 seconds, Erik gains Stealth and his Sight Radius is increased by 75%. The Stealth persists for 3 seconds after moving and once removed, Erik gains 75% bonus Basic Attack damage for 6 seconds.",
         "icon": "storm_ui_icon_lostvikings_selecterik.png",
         "type": "Passive",
         "sort": 2,
@@ -282,7 +282,7 @@
         "tooltipId": "LostVikingsVikingBribery",
         "talentTreeId": "LostVikingsMasteryVikingBribery",
         "name": "Viking Bribery",
-        "description": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200. If a camp is defeated entirely with Bribe, the camp respawns 50% faster.  Current number of Bribe stacks: 0",
+        "description": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use 40 stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: 200.  Current number of Bribe stacks: 0",
         "icon": "storm_ui_icon_talent_bribe.png",
         "type": "E",
         "sort": 4,
@@ -358,7 +358,7 @@
         "tooltipId": "LostVikingsBaleogTheFierceTalent",
         "talentTreeId": "LostVikingsMasteryBaleogTheFierce",
         "name": "Baleog the Fierce",
-        "description": "Baleog's Basic Attacks increase his Attack Speed by 8%, stacking up to 5 times. After 3 seconds of not attacking, these stacks will rapidly decay.",
+        "description": "Increase Baleog's attack range by 2.5.  While near Olaf and Erik, he becomes inspired by the power of teamwork and his Attack Speed is increased by 50%.",
         "icon": "storm_ui_icon_lostvikings_selectbaleog.png",
         "type": "Passive",
         "sort": 1,
@@ -375,7 +375,7 @@
         "tooltipId": "LostVikingsSpinToWin",
         "talentTreeId": "LostVikingsMasterySpinToWin",
         "name": "Spin To Win!",
-        "description": "Activate to have each Viking deal 101 (+4% per level) damage to nearby enemies.",
+        "description": "Activate to have each Viking deal 85 (+4% per level) damage to nearby enemies.  Deals 100% bonus damage to enemy Heroes.",
         "icon": "storm_ui_icon_lostvikings_spintowin.png",
         "type": "Q",
         "sort": 2,
@@ -390,7 +390,7 @@
         "icon": "storm_ui_icon_lostvikings_norseforce.png",
         "type": "Q",
         "sort": 3,
-        "cooldown": 30,
+        "cooldown": 15,
         "isQuest": false
       }
     ],
@@ -414,7 +414,7 @@
         "icon": "storm_ui_icon_lostvikings_playagain.png",
         "type": "Heroic",
         "sort": 2,
-        "cooldown": 80,
+        "cooldown": 100,
         "isQuest": false
       }
     ],
@@ -451,12 +451,12 @@
         "tooltipId": "LostVikingsNordicAttackSquad",
         "talentTreeId": "LostVikingsMasteryNordicAttackSquad",
         "name": "Nordic Attack Squad",
-        "description": "Activate to have all Viking Basic Attacks deal bonus damage equal to 1.25% of a Hero's maximum Health for 5 seconds.",
+        "description": "While Olaf, Baleog, and Erik are near each of the other two Vikings, their Basic Attacks deal bonus damage equal to 1.25% maximum Health to enemy Heroes.",
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
-        "type": "W",
+        "type": "Passive",
         "sort": 3,
-        "cooldown": 20,
-        "isQuest": false
+        "isQuest": false,
+        "abilityId": "LostVikings|Passive"
       }
     ],
     "16": [
@@ -594,7 +594,7 @@
       "name": "LongboatRaidBoat",
       "icon": "storm_ui_icon_lostvikings_longboatraid.png",
       "stats": {
-        "hp": 685,
+        "hp": 750,
         "hpRegen": 0,
         "hpScale": 0.04,
         "hpRegenScale": 0,
@@ -626,7 +626,7 @@
     "LostVikingSelectBaleog": "Baleog's Basic Attacks deal <c val=\"#TooltipNumbers\">50%</c> splash damage to enemies behind his attack target.",
     "LostVikingSelectErik": "Erik moves faster than the other Vikings and has increased Basic Attack range.",
     "LostVikingSelectOlaf": "Olaf can charge enemies and slow their Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,LostVikingsOlafChargeSlow,Modification.UnifiedMoveSpeedFactor*100\" precision=\"2\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsOlafChargeSlow,Duration\" player=\"0\"/></c> seconds by right-clicking on them. <c val=\"#TooltipNumbers\"><d ref=\"Abil,LostVikingsLargeAndInChargeCharge,Cost[0].Cooldown.TimeUse\" precision=\"1\"/></c> second cooldown. <n/><n/>Olaf gains increased Health Regeneration when out of combat for <c val=\"#TooltipNumbers\"><d ref=\"Validator,CasterNotInCombat4,Value\"/></c> seconds.",
-    "LostVikingsBaleogTheFierceTalent": "Baleog's Basic Attacks increase his Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,LostVikingsBaleogTheFierceStack,Modification.AdditiveAttackSpeedFactor\"/>%</c>, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsBaleogTheFierceStack,MaxStackCount\"/></c> times. After <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsBaleogTheFierceCooldownDecayDelay,Duration\" player=\"0\"/></c> seconds of not attacking, these stacks will rapidly decay.",
+    "LostVikingsBaleogTheFierceTalent": "Increase Baleog's attack range by <c val=\"#TooltipNumbers\"><d ref=\"Talent,LostVikingsMasteryBaleogTheFierce,AbilityModificationArray[0].Modifications[0].Value\"Precision=\"2\"/></c>.  While near Olaf and Erik, he becomes inspired by the power of teamwork and his Attack Speed is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,LostVikingsBaleogtheFierceBonusAttackSpeed,Modification.AdditiveAttackSpeedFactor\"/>%</c>.",
     "LostVikingsCheckpointReachedTalent": "<c val=\"#TooltipNumbers\">10</c> seconds after using Play Again!, any dead Vikings are revived and summoned again, and all are healed to full.",
     "LostVikingsErikTheSwiftTalent": "Permanently increases Erik's base Movement Speed by <c val=\"#TooltipNumbers\">10%</c>, and as long as Erik is moving he heals <c val=\"#TooltipNumbers\"><d ref=\"Effect,LostVikingsErikTheSwiftCreateHealer,RechargeVitalRate\"/></c> Health per second.",
     "LostVikingsExplosiveAttacksTalent": "Increases Baleog's splash damage against non-Heroes to <c val=\"#TooltipNumbers\"><d ref=\"Effect,BaleogBowWeaponSplashDamage,MultiplicativeModifierArray[ExplosiveAttacks].Modifier*100\"/>%</c>.",
@@ -640,15 +640,15 @@
     "LostVikingsLargeAndInChargeTalent": "When Olaf charges enemies, they are stunned for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsLargeAndInCharge,Duration\" player=\"0\"/></c> second.",
     "LostVikingsLongboatRaid": "Hop into an Unstoppable Longboat that fires at nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Effect,LostVikingsLongboatRaidWeaponDamage,Amount*(1/Weapon,LongboatRaidWeapon,Period)\"/></c> damage per second and can fire a mortar that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,LostVikingsLongboatRaidMortarDamage,Amount\"/></c> damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LongboatRaidDeathStun,Duration\" precision=\"1\"/></c> second. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsLongboatRaidController,Duration\" player=\"0\" precision=\"1\"/></c> seconds.<n/><n/><c val=\"ffff8a\">Requires all surviving Vikings to be nearby.</c>",
     "LostVikingsMortar": "Fires a mortar at the targeted location, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,LostVikingsLongboatRaidMortarDamage,Amount\"/></c> damage in a large area.",
-    "LostVikingsNordicAttackSquad": "Activate to have all Viking Basic Attacks deal bonus damage equal to <c val=\"#TooltipNumbers\">1.25%</c> of a Hero's maximum Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsNordicAttackSquadBuff,Duration\"/></c> seconds.",
+    "LostVikingsNordicAttackSquad": "While Olaf, Baleog, and Erik are near each of the other two Vikings, their Basic Attacks deal bonus damage equal to <c val=\"#TooltipNumbers\">1.25%</c> maximum Health to enemy Heroes.",
     "LostVikingsNorseForce": "All Vikings gain a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsNorseForce1Stack,DamageResponse.ModifyLimit\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsNorseForce3Stack,DamageResponse.ModifyLimit\"/></c> point Shield, increasing in strength for each Viking alive. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsNorseForce3Stack,Duration\" player=\"0\"/></c> seconds.",
-    "LostVikingsOlafTheStoutTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockCharged,DamageResponse.Cost.Charge.TimeUse\"/></c> seconds, Olaf gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlock,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlock,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockCharged,DamageResponse.Cost.Charge.CountMax\"/></c> charges.",
+    "LostVikingsOlafTheStoutTalent": "<c val=\"#AbilityPassive\">Passive:</c> Olaf gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,LostVikingsOlafTheStoutBonusHealthBehavior,Modification.VitalMaxFractionArray[Life]\"/>%</c> bonus maximum Health.<n/><n/>Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockCharged,DamageResponse.Cost.Charge.TimeUse\"/></c> seconds, Olaf gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlock,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlock,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockCharged,DamageResponse.Cost.Charge.CountMax\"/></c> charges.",
     "LostVikingsPainDontHurtTalent": "Baleog's Basic Attacks and splash damage heal for <c val=\"#TooltipNumbers\"><d ref=\"Effect,BaleogSwordWeaponDamage,LeechFraction[Life]*100\"/>%</c> of the damage dealt. Healing is doubled against Heroes.",
     "LostVikingsPlayAgain": "Summon, fully heal, and revive all Lost Vikings at target location after a Viking channels for <c val=\"#TooltipNumbers\">2</c> seconds. <n/><n/><c val=\"ffff8a\">Only one Viking may attempt to summon at a time.</c>",
-    "LostVikingsSpinToWin": "Activate to have each Viking deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,LostVikingsSpinToWinDamage,Amount\"/></c> damage to nearby enemies.",
-    "LostVikingsSpyGamesTalent": "After standing still for <c val=\"#TooltipNumbers\">3</c> seconds, Erik gains Stealth and his Sight Radius is increased by <c val=\"#TooltipNumbers\">75%</c>. The Stealth persists for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpyGamesCooldown,Duration\" player=\"0\"/></c> seconds after moving.",
+    "LostVikingsSpinToWin": "Activate to have each Viking deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,LostVikingsSpinToWinDamage,Amount\"/></c> damage to nearby enemies.  Deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,LostVikingsSpinToWinDamage,MultiplicativeModifierArray[SpinToWinBonusHeroDamage].Modifier\"/>%</c> bonus damage to enemy Heroes.",
+    "LostVikingsSpyGamesTalent": "After standing still for <c val=\"#TooltipNumbers\">3</c> seconds, Erik gains Stealth and his Sight Radius is increased by <c val=\"#TooltipNumbers\">75%</c>. The Stealth persists for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpyGamesCooldown,Duration\" player=\"0\"/></c> seconds after moving and once removed, Erik gains <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ErikWeaponDamage,MultiplicativeModifierArray[SpyGamesBonusDamage].Modifier\"/>%</c> bonus Basic Attack damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsSpyGamesErikBonusAttackDamageBehavior,Duration\"/></c> seconds.",
     "LostVikingsTheSequelTalent": "Reduces the Lost Vikings's death timer by <c val=\"#TooltipNumbers\">50%</c>.",
-    "LostVikingsVikingBribery": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"#TooltipNumbers\"><d ref=\"Effect,LostVikingsVikingBriberyRemoveStackBehavior,Count\"/></c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsVikingBriberyStacks,MaxStackCount\"/></c>. If a camp is defeated entirely with Bribe, the camp respawns <c val=\"#TooltipNumbers\">50%</c> faster.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: <c val=\"#TooltipNumbers\"><d score=\"LostVikingsVikingBriberyStackScore\"/></c></c>",
+    "LostVikingsVikingBribery": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"#TooltipNumbers\"><d ref=\"Effect,LostVikingsVikingBriberyRemoveStackBehavior,Count\"/></c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsVikingBriberyStacks,MaxStackCount\"/></c>.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: <c val=\"#TooltipNumbers\"><d score=\"LostVikingsVikingBriberyStackScore\"/></c></c>",
     "LostVikingsVikingHoardTalent": "Gathering a Regeneration Globe with a Viking permanently increases all their Health Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,LostVikingsVikingHoardAccumulator,Scale\" precision=\"2\"/></c> per second.<n/><n/>Current Bonus: <c val=\"#TooltipNumbers\"><d ref=\"$BehaviorStackCount:LostVikingsVikingHoardTokenCounter$ * Accumulator,LostVikingsVikingHoardAccumulator,Scale\" precision=\"2\"/></c> Regen per second",
     "LostVikingsWereOnABoatTalent": "The Longboat can attack two targets at once and the range of its Mortar is increased by <c val=\"#TooltipNumbers\">100%</c>."
   },
@@ -658,7 +658,7 @@
     "LostVikingSelectBaleog": "<c val=\"#TooltipNumbers\">Baleog</c> deals splash damage to enemies behind his attack target",
     "LostVikingSelectErik": "<c val=\"#TooltipNumbers\">Erik</c> moves faster than the other Vikings and has a longer attack range",
     "LostVikingSelectOlaf": "<c val=\"#TooltipNumbers\">Olaf</c> has lots of health, regenerates health quickly, and charges to slow enemies",
-    "LostVikingsBaleogTheFierceTalent": "Baleog's attacks increase his Attack Speed",
+    "LostVikingsBaleogTheFierceTalent": "Baleog gains Attack Speed, Range",
     "LostVikingsCheckpointReachedTalent": "Additional revive and heal",
     "LostVikingsErikTheSwiftTalent": "Increases Erik's Move Speed and heal while running",
     "LostVikingsExplosiveAttacksTalent": "Increases Baleog splash to non-Heroic enemies",
@@ -671,9 +671,9 @@
     "LostVikingsJump": "Grants temporary Invulnerability",
     "LostVikingsLargeAndInChargeTalent": "Charge stuns enemies",
     "LostVikingsLongboatRaid": "Load into a Longboat to attack enemies",
-    "LostVikingsNordicAttackSquad": "Increases Viking Basic Attacks to Heroes",
+    "LostVikingsNordicAttackSquad": "Vikings deal bonus damage when together",
     "LostVikingsNorseForce": "All Vikings gain a Shield",
-    "LostVikingsOlafTheStoutTalent": "Olaf gains Physical Armor",
+    "LostVikingsOlafTheStoutTalent": "Olaf gains Health, Physical Armor",
     "LostVikingsPainDontHurtTalent": "Baleog's attacks heal himself",
     "LostVikingsPlayAgain": "Revive and summon Vikings",
     "LostVikingsSpinToWin": "Deals damage around each Viking",
@@ -684,6 +684,7 @@
     "LostVikingsWereOnABoatTalent": "Increased combat prowess"
   },
   "tooltipColors": {
+    "AbilityPassive": "00FF90",
     "TooltipNumbers": "BFD4FD"
   }
 }

@@ -23,8 +23,8 @@
     "RoleTank"
   ],
   "stats": {
-    "hp": 3060,
-    "hpRegen": 6.375,
+    "hp": 3150,
+    "hpRegen": 6.5625,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -215,7 +215,7 @@
         "tooltipId": "StitchesChopChop",
         "talentTreeId": "StitchesChopChop",
         "name": "Chop Chop",
-        "description": "Hitting an enemy Hero with the inner impact area of Slam grants 50% increased Attack Speed for 6 seconds.",
+        "description": "Hitting an enemy Hero with Slam grants 25% increased Attack Speed for 3 seconds.  Double the Attack Speed bonus and duration if they are hit by Slam's inner impact area.",
         "icon": "storm_ui_icon_stitches_slam_b.png",
         "type": "W",
         "sort": 3,
@@ -512,7 +512,7 @@
   "tooltipMarkup": {
     "StitchesBlight": "Activate to apply Vile Gas to all nearby enemies. Enemy Heroes hit receive <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,StitchesVileGasBlightTalentDebuff,Modification.HealTakenAdditiveMultiplier[Life]\"/>%</c> less healing for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StitchesVileGasBlightTalentDebuff,Duration\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Vile Gas heals Stitches for <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,StitchesBlight,AbilityModificationArray[0].Modifications[1].Value\"/>%</c> of the damage dealt.",
     "StitchesCannibalize": "Hitting Heroes with Basic Attacks or the inner impact area of Slam heals Stitches for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,StitchesHeroWeaponCannibalizeTalentCreateHealer,RechargeVitalFraction\"precision=\"2\"/>%</c> of his maximum Health.",
-    "StitchesChopChop": "Hitting an enemy Hero with the inner impact area of Slam grants <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,StitchesSlamChopChopTalentActiveBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> increased Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StitchesSlamChopChopTalentActiveBuff,Duration\"/></c> seconds.",
+    "StitchesChopChop": "Hitting an enemy Hero with Slam grants <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,StitchesSlamChopChopTalentOuterActiveBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> increased Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StitchesSlamChopChopTalentOuterActiveBuff,Duration\"/></c> seconds.  Double the Attack Speed bonus and duration if they are hit by Slam's inner impact area.",
     "StitchesDevour": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,StitchesDevourCreepDamage,Amount\"/></c> damage to non-Heroic units, or <c val=\"#TooltipNumbers\"><d ref=\"Effect,StitchesDevourHeroDamage,Amount\"/></c> damage to Heroes. Restores <c val=\"#TooltipNumbers\"><d ref=\"Effect,StitchesDevourCreateHealer,RechargeVitalFraction * 100\"/>%</c> of Stitches's maximum Health.",
     "StitchesDevourSavorTheFlavorTalent": "When Devour hits a Hero, Stitches heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,StitchesDevourSavorTheFlavorTalentHoTHealer,RechargeVitalFraction*Behavior,StitchesDevourSavorTheFlavorTalentHoT,PeriodCount\"/>%</c> of his maximum Health and Mana over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StitchesDevourSavorTheFlavorTalentHoT,Duration\"/></c> seconds. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hitting enemy Heroes with Devour increases Stitches's Health Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,StitchesSavorTheFlavorHealthRegenAccumulator,Scale\"precision=\"1\"/></c>.",
     "StitchesDigestiveJuices": "Hitting an enemy Hero with Devour reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,StitchesDevourDigestiveJuicesModifyCooldown,Cost[0].ChargeTimeUse\"Player=\"0\"/></c> seconds and causes the Hero hit to deal <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,StitchesDevourDigestiveJuicesTalentDebuff,Modification.DamageDealtFraction[Ability]\"/>%</c> reduced damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StitchesDevourDigestiveJuicesTalentDebuff,Duration\"/></c> seconds.",

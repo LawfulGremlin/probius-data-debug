@@ -435,35 +435,38 @@
         ]
       },
       {
-        "tooltipId": "ZeratulGiftoftheXelNaga",
-        "talentTreeId": "ZeratulGiftoftheXelNaga",
-        "name": "Gift of the Xel'Naga",
-        "description": "Allies are no longer affected by Void Prison, and enemies are slowed by 50% for 3 seconds once Void Prison ends.",
-        "icon": "storm_ui_icon_zeratul_voidprison.png",
-        "type": "Heroic",
+        "tooltipId": "ZeratulUnwaveringPressure",
+        "talentTreeId": "ZeratulUnwaveringPressure",
+        "name": "Unwavering Pressure",
+        "description": "Basic Attacks against enemy Heroes who are marked or Slowed by Singularity Spike reduce its cooldown by 1.25 seconds.",
+        "icon": "storm_ui_icon_zeratul_singularityspike.png",
+        "type": "W",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Zeratul|R2",
+        "abilityId": "Zeratul|W1",
         "abilityLinks": [
-          "Zeratul|R2"
+          "Zeratul|W1"
         ],
         "abilityTalentLinkIds": [
-          "ZeratulVoidPrison"
-        ],
-        "prerequisiteTalentIds": [
-          "ZeratulHeroicAbilityVoidPrison"
+          "ZeratulSingularitySpike"
         ]
       },
       {
-        "tooltipId": "NexusBladesTalent",
-        "talentTreeId": "GenericTalentNexusBlades",
-        "name": "Nexus Blades",
-        "description": "Basic Attacks deal 20% more damage and Slow enemy Movement Speed by 20% for 1 second.",
-        "icon": "storm_ui_icon_talent_autoattack_slow.png",
+        "tooltipId": "ZeratulShadowStrideTalent",
+        "talentTreeId": "ZeratulShadowStrideTalent",
+        "name": "Shadow Stride",
+        "description": "Reduce the cooldown of Vorpal Blade by 10 seconds.",
+        "icon": "storm_ui_icon_zeratul_vorpalblade.png",
         "type": "Passive",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Zeratul|Passive"
+        "abilityId": "Zeratul|Passive",
+        "abilityLinks": [
+          "Zeratul|11"
+        ],
+        "abilityTalentLinkIds": [
+          "VorpalBladeBlink"
+        ]
       },
       {
         "tooltipId": "ZeratulShadowMending",
@@ -480,13 +483,11 @@
   },
   "tooltipMarkup": {
     "GenericSpellShieldTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldCooldown,Duration\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor against the next enemy Ability and subsequent Abilities for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,Duration\" precision=\"1\"/></c> seconds, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.<n/><n/>Can be toggled to allow or prevent this talent from triggering automatically.",
-    "NexusBladesTalent": "Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NexusBladesCarryBehavior,Modification.DamageDealtFraction[Basic]\"/>%</c> more damage and Slow enemy Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NexusBladesSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusBladesSlow,Duration\" player=\"0\"/></c> second.",
     "ZeratulBlink": "Teleport to the target location.<n/><n/>Using this Ability does not break Stealth.",
     "ZeratulCleave": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZeratulCleaveDamage,Amount\"/> </c>damage to nearby enemies.",
     "ZeratulCleaveGreaterCleaveTalent": "Increases the radius of Cleave by <c val=\"#TooltipNumbers\">33%</c>.",
     "ZeratulCleaveRendingCleaveTalent": "Cleave deals an additional <c val=\"#TooltipNumbers\">40%</c> damage over <c val=\"#TooltipNumbers\">3</c> seconds.",
     "ZeratulDarknessDescends": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ZeratulDarknessDescendsAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulDarknessDescendsAttackSpeedBuff,Duration\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulDarknessDescendsPassiveAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> Attack Speed.",
-    "ZeratulGiftoftheXelNaga": "Allies are no longer affected by Void Prison, and enemies are slowed by <c val=\"#TooltipNumbers\"><d ref=\"-1*Behavior,ZeratulGiftoftheXelNagaSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulGiftoftheXelNagaSlow,Duration\"/></c> seconds once Void Prison ends.",
     "ZeratulMasterWarpBlade": "Every third consecutive Basic Attack against the same target deals <c val=\"#TooltipNumbers\">125%</c> bonus damage.",
     "ZeratulMendingStrikes": "Basic Attacks heal for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulMendingStrikesCarry,Modification.VitalDamageLeechArray[Life].KindArray[Basic]*100\"/>%</c> of the damage dealt.",
     "ZeratulMightOfTheNerazimPassive": "",
@@ -497,9 +498,11 @@
     "ZeratulSentencedtoDeath": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZeratulCleaveDamage,MultiplicativeModifierArray[ZeratulSentencedToDeath].Modifier*100\"/>%</c> increased damage to enemies while they are marked or Slowed by Singularity Spike.",
     "ZeratulShadowHunter": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gather Regeneration Globes to lower the Mana cost of Blink by <c val=\"#TooltipNumbers\"><d ref=\"-Accumulator,ZeratulShadowHunterAccumulator,Scale\"/></c>, up to <c val=\"#TooltipNumbers\"><d ref=\"-Accumulator,ZeratulShadowHunterAccumulator,Scale*Behavior,ZeratulShadowHunterTalentTokenCounter,Max\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Upon gathering <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulShadowHunterTalentTokenCounter,Max\"/></c> Regeneration Globes, Basic Attacks reduce the cooldown of Blink by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ZeratulBlinkShadowHunterTalentModifyCooldown,Cost[0].ChargeTimeUse\"Precision=\"2\"/></c> seconds.",
     "ZeratulShadowMending": "Heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ZeratulCleaveDamage,LeechFraction[Life]\"/>%</c> of Spell Damage dealt to Heroes.",
+    "ZeratulShadowStrideTalent": "Reduce the cooldown of Vorpal Blade by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,ZeratulShadowStrideTalent,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
     "ZeratulShroudofAdun": "Zeratul gains a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulShroudofAdun,MaxStackCount*Behavior,ZeratulShroudofAdun,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]*100\"/>%</c> of his Maximum Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulShroudofAdun,MaxStackCount*Behavior,ZeratulPermanentCloak,Period\"/></c> seconds while under Permanent Cloak.",
     "ZeratulSingularitySpike": "Flings a Singularity Spike that sticks to the first enemy hit. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZeratulSingularitySpikeDamage,Amount\"/></c> damage after <c val=\"#TooltipNumbers\">1</c> second and Slows the enemy by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ZeratulSingularitySpikeSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulSingularitySpikeSlow,Duration\" player=\"0\"/></c> seconds.",
     "ZeratulTwilightFalls": "Might of the Nerazim resets the cooldown of all Basic Abilities.",
+    "ZeratulUnwaveringPressure": "Basic Attacks against enemy Heroes who are marked or Slowed by Singularity Spike reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ZeratulSingularitySpikeUnwaveringPressureModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds.",
     "ZeratulVoidPrison": "Slows time in an area to a near standstill, placing allies and enemies in Time Stop for <c val=\"#TooltipNumbers\"><d ref=\"[d ref='Behavior,VoidPrisonDomeBehavior,PeriodCount' player='0'/] * Behavior,VoidPrisonDomeBehavior,Period\" precision=\"2\"/></c> seconds. Zeratul is not affected.",
     "ZeratulVoidSlashTalent": "If Cleave hits more than one enemy Hero, it deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ZeratulCleaveDamage,MultiplicativeModifierArray[ZeratulVoidSlash].Modifier\"/>%</c> increased damage and its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ZeratulCleaveVoidSlashTalentModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "ZeratulVorpalBladeHotbar": "Activate to teleport to Zeratul's last non-structure Basic Attack target within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,VorpalBladeDebuff,Duration\" player=\"0\"/></c> seconds. The target is revealed during these <c val=\"#TooltipNumbers\"><d ref=\"Behavior,VorpalBladeDebuff,Duration\" player=\"0\"/></c> seconds.",
@@ -508,13 +511,11 @@
   },
   "tooltipSimple": {
     "GenericSpellShieldTalent": "Periodically gain temporary Spell Armor",
-    "NexusBladesTalent": "Basic Attacks deal more damage and Slow",
     "ZeratulBlink": "Teleport to a location. Ability does not break cloak",
     "ZeratulCleave": "Damage nearby enemies",
     "ZeratulCleaveGreaterCleaveTalent": "Increases radius of Cleave",
     "ZeratulCleaveRendingCleaveTalent": "Cleave deals additional damage over time",
     "ZeratulDarknessDescends": "Activate to gain Attack Speed",
-    "ZeratulGiftoftheXelNaga": "Allies unaffected by Void Prison, enemies slowed",
     "ZeratulMasterWarpBlade": "Bonus damage every third Basic Attack",
     "ZeratulMendingStrikes": "Basic Attacks heal",
     "ZeratulMoveUnseen": "Gain Stealth faster and Move Speed while Stealthed",
@@ -523,9 +524,11 @@
     "ZeratulSentencedtoDeath": "Deal bonus damage to marked targets",
     "ZeratulShadowHunter": "<c val=\"#TooltipQuest\">Quest:</c> Gather Regen Globes to empower Blink",
     "ZeratulShadowMending": "Spell Damage dealt to Heroes heals",
+    "ZeratulShadowStrideTalent": "Reduce Vorpal Blade's cooldown",
     "ZeratulShroudofAdun": "Gain a shield while under Permanent Cloak",
     "ZeratulSingularitySpike": "Slow and damage the first enemy hit",
     "ZeratulTwilightFalls": "Might of the Nerazim resets cooldowns",
+    "ZeratulUnwaveringPressure": "Basic Attacks reduce Singularity Spike cooldown",
     "ZeratulVoidPrison": "Time Stop targets in an area",
     "ZeratulVoidSlashTalent": "Cleave empowered against multiple Heroes",
     "ZeratulVorpalBladeHotbar": "Teleport to last attacked enemy",
