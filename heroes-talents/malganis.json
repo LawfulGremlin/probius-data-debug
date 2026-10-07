@@ -23,8 +23,8 @@
     "SelfHealer"
   ],
   "stats": {
-    "hp": 2700,
-    "hpRegen": 5.625,
+    "hp": 2600,
+    "hpRegen": 5.414,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -58,7 +58,7 @@
         "abilityId": "MalGanis|W1",
         "tooltipId": "MalGanisNecroticEmbrace",
         "cooldown": 8,
-        "manaCost": 30,
+        "manaCost": 35,
         "icon": "storm_ui_icon_malganis_necrotic.png",
         "type": "basic"
       },

@@ -29,10 +29,10 @@
     "resource": 500,
     "resourceType": "Mana",
     "resourceRegen": 3,
-    "attackDamage": 45,
+    "attackDamage": 60,
     "attackDamageScale": 0.04,
     "attackRange": 5.5,
-    "attackSpeed": 1.3333,
+    "attackSpeed": 1.1765,
     "radius": 0.625
   },
   "abilities": {
@@ -62,7 +62,7 @@
       {
         "uid": "68420a",
         "name": "Searing Lash",
-        "description": "After 0.5 seconds, smite enemies in a straight line for 78 (+4% per level) damage.  If the first strike hits an enemy Hero, a second strike will occur after a short delay.",
+        "description": "After 0.5 seconds, smite enemies in a straight line for 82 (+4% per level) damage.  If the first strike hits an enemy Hero, a second strike will occur after a short delay.",
         "hotkey": "E",
         "abilityId": "Whitemane|E1",
         "tooltipId": "WhitemaneSearingLash",
@@ -323,7 +323,7 @@
         "tooltipId": "WhitemaneDesperatePleaSelfRighteous",
         "talentTreeId": "WhitemaneDesperatePleaSelfRighteous",
         "name": "Self-Righteous",
-        "description": "Casting Desperate Plea on an ally heals Whitemane for 125 (+4% per level). Does not grant Zeal.",
+        "description": "Casting Desperate Plea on an ally heals Whitemane for 135 (+4% per level). Does not grant Zeal.",
         "icon": "storm_ui_icon_whitemane_desperation.png",
         "type": "Q",
         "sort": 1,
