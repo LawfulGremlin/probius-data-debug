@@ -113,13 +113,30 @@
   "talents": {
     "1": [
       {
+        "tooltipId": "AlarakOverwhelmingPower",
+        "talentTreeId": "AlarakOverwhelmingPowerDiscordStrike",
+        "name": "Overwhelming Power",
+        "description": "Hitting an enemy Hero with Discord Strike grants 40% Attack Speed and causes Basic Attacks to heal for 50% of the damage dealt for 4 seconds.",
+        "icon": "storm_ui_icon_alarak_discordstrike.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Alarak|Q1",
+        "abilityLinks": [
+          "Alarak|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "AlarakDiscordStrike"
+        ]
+      },
+      {
         "tooltipId": "AlarakRuthlessMomentum",
         "talentTreeId": "AlarakRuthlessMomentum",
         "name": "Ruthless Momentum",
         "description": "Reduce the Mana cost of Telekinesis from 30 to 20.  Telekinesis's cooldown recharges 75% faster while above 80% Health.",
         "icon": "storm_ui_icon_alarak_telekinesis.png",
         "type": "W",
-        "sort": 1,
+        "sort": 2,
         "isQuest": false,
         "abilityId": "Alarak|W1",
         "abilityLinks": [
@@ -129,24 +146,6 @@
           "AlarakTelekinesis",
           "AlarakCounterStrikeTargeted2ndHeroic",
           "AlarakDeadlyChargeActivate2ndHeroic"
-        ]
-      },
-      {
-        "tooltipId": "AlarakSustainingPower",
-        "talentTreeId": "AlarakSustainingPower",
-        "name": "Sustaining Power",
-        "description": "Increase the healing received from damaging Heroes with Lightning Surge by 40%.",
-        "icon": "storm_ui_icon_alarak_lightningsurge_a.png",
-        "type": "E",
-        "sort": 2,
-        "isQuest": false,
-        "abilityId": "Alarak|E1",
-        "abilityLinks": [
-          "Alarak|E1"
-        ],
-        "abilityTalentLinkIds": [
-          "AlarakLightningSurge",
-          "AlarakLightningSurgeLightningBarrage"
         ]
       },
       {
@@ -246,7 +245,7 @@
         "tooltipId": "AlarakHinderedMotion",
         "talentTreeId": "AlarakHinderedMotion",
         "name": "Hindered Motion",
-        "description": "Telekinesis Slows enemies by 25% for 3 seconds.",
+        "description": "Telekinesis Slows enemies by 30% for 3 seconds.",
         "icon": "storm_ui_icon_alarak_telekinesis_a.png",
         "type": "W",
         "sort": 2,
@@ -521,12 +520,12 @@
     "AlarakLightningSurge": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakLightningSurgeTargetDamage,Amount\"/></c> damage to an enemy and an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,AlarakLightningSurgeDamage,MultiplicativeModifierArray[Base].Modifier\"player=\"0\"/>%</c> damage to enemies between Alarak and the target. Restore <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakLightningSurgeHeroTargetCreateHealer,RechargeVitalRate\"/></c> health for each Hero hit.",
     "AlarakMockingStrikes": "Basic Attacks against Stunned, Silenced, Slowed, or Rooted Heroes reduce the cooldown of Alarak's Basic Abilities by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,AlarakHeroWeaponMockingStrikesTalentModifyUnit,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds.",
     "AlarakNegativelyCharged": "Increase the Lightning Surge damage bonus to enemies between Alarak and his victim to <c val=\"#TooltipNumbers\"><d ref=\"100*(Effect,AlarakLightningSurgeHeroDamage,MultiplicativeModifierArray[Base].Modifier+Talent,AlarakNegativelyCharged,AbilityModificationArray[0].Modifications[1].Value)\"player=\"0\"/>%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Repeatable Quest:</c> Each Hero hit by the center of Lightning Surge permanently increases the damage bonus by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,AlarakNegativelyChargedDamageAccumulator,Scale\"/>%</c>.",
+    "AlarakOverwhelmingPower": "Hitting an enemy Hero with Discord Strike grants <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,AlarakOverwhelmingPowerDiscordStrikeBuffBehavior,Modification.AdditiveAttackSpeedFactor\"/>%</c> Attack Speed and causes Basic Attacks to heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,AlarakHeroWeaponDamage,LeechFraction[Life]\"/>%</c> of the damage dealt for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AlarakOverwhelmingPowerDiscordStrikeBuffBehavior,Duration\"/></c> seconds.",
     "AlarakPureMalice": "Increase Sadism by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AlarakSadismPureMaliceAccumulator,Scale*100\" precision=\"2\"/>%</c> any time an allied Hero dies, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AlarakSadismPureMaliceQuestToken,Max*Accumulator,AlarakSadismPureMaliceAccumulator,Scale*100\" precision=\"2\"/>%</c>.<n/><n/>Sadism gained from Pure Malice is lost on death.",
     "AlarakRiteofRakShir": "Activate to mark an enemy Hero for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AlarakSadismRiteofRakShirTalentDebuff,Duration\"/></c> seconds.<n/><n/>Hitting the marked Hero with Discord Strike increases Sadism by <c val=\"#TooltipNumbers\">3%</c>. Killing the marked Hero increases Sadism by <c val=\"#TooltipNumbers\">5%</c> and lowers the cooldown of Rite of Rak'Shir to <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakSadismRiteofRakShirTalentResetPlayerCooldown,Cost.Cooldown.TimeUse\"/></c> seconds.<n/><n/>Sadism gained from Rite of Rak'Shir is lost on death.",
     "AlarakRuthlessMomentum": "Reduce the Mana cost of Telekinesis from <c val=\"#TooltipNumbers\"><d ref=\"Abil,AlarakTelekinesis,Cost.Vital[Energy]\"Player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"-(-Abil,AlarakTelekinesis,Cost.Vital[Energy]-Talent,AlarakRuthlessMomentum,AbilityModificationArray[0].Modifications[0].Value)\"Player=\"0\"/>.</c>  Telekinesis's cooldown recharges <c val=\"#TooltipNumbers\"><d ref=\"-100*Effect,AlarakRuthlessMomentumModifyCooldowns,Cost[0].CooldownTimeUse/Behavior,AlarakRuthlessMomentumCarry,Period\"/>%</c> faster while above <c val=\"#TooltipNumbers\">80%</c> Health.",
     "AlarakSadism": "Alarak's Ability damage and self-healing are increased by <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,AlarakSadismToken,Init*Accumulator,AlarakSadismAccumulator,Scale)\"/>%</c> against enemy Heroes.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Repeatable Quest:</c> Takedowns increase Sadism by <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakSadismTakedownAddTokens,Value\"/>%</c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AlarakSadismTakedownIncreaseTokenCounter,Max*Effect,AlarakSadismTakedownAddTokens,Value\"/>%</c>. Sadism gained from Takedowns is lost on death.",
     "AlarakShowofForce": "Heroes hit with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AlarakSadismShowofForceTalentStack,MaxStackCount+1\"/></c> of Alarak's Abilities within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AlarakSadismShowofForceTalentStack,Duration\"/></c> seconds take an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakSadismShowofForceTalentDamage,Amount\"/></c> damage and increase Sadism by <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakSadismAdd2TokensShowOfForceTalent,Value\"/>%</c>, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakSadismAdd2TokensShowOfForceTalent,Value*Behavior,AlarakShowofForceSadismTalentStack,MaxStackCount\"/>%</c>.  <n/><n/>Sadism gained from Show of Force is lost on death.",
-    "AlarakSustainingPower": "Increase the healing received from damaging Heroes with Lightning Surge by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,AlarakLightningSurgeHeroDamageCreateHealer,MultiplicativeModifierArray[SustainingPower].Modifier\"/>%</c>.",
     "AlarakTelekinesis": "<c val=\"#TooltipNumbers\">Vector Targeting</c></n>Create a force, pushing Alarak and all enemies hit from the targeted point towards the targeted direction. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakTelekinesisDamage,Amount\"/></c> damage to enemies."
   },
   "tooltipSimple": {
@@ -547,12 +546,12 @@
     "AlarakLightningSurge": "Damage enemies in a line",
     "AlarakMockingStrikes": "Reduce cooldowns against disabled Heroes",
     "AlarakNegativelyCharged": "<c val=\"#TooltipQuest\">Quest:</c> Increase Lightning Surge center damage",
+    "AlarakOverwhelmingPower": "Discord Strike grants Attack Speed, Lifesteal",
     "AlarakPureMalice": "Allied deaths increase Sadism",
     "AlarakRiteofRakShir": "Mark and damage Hero to increase Sadism",
     "AlarakRuthlessMomentum": "Reduce cooldown at high Health",
     "AlarakSadism": "Each point of Sadism increases Alarak's Ability damage and self-healing against enemy Heroes by <c val=\"#TooltipNumbers\"><d ref=\"100*(Accumulator,AlarakSadismAccumulator,Scale)\"/>%</c><n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Repeatable Quest:</c> Takedowns increase Sadism by <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakSadismTakedownAddTokens,Value\"/>%</c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AlarakSadismTakedownIncreaseTokenCounter,Max*Effect,AlarakSadismTakedownAddTokens,Value\"/>%</c>. Sadism gained from Takedowns is lost on death.",
     "AlarakShowofForce": "Ability combos deal bonus damage, grant Sadism",
-    "AlarakSustainingPower": "Increase Lightning Surge healing",
     "AlarakTelekinesis": "Push enemies towards a location"
   },
   "tooltipColors": {

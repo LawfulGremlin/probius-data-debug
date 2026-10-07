@@ -2178,9 +2178,9 @@
     "unitId": "DeathwingDragonflightUnit",
     "portraits": {},
     "life": {
-      "amount": 2850,
+      "amount": 2750,
       "scale": 0.04,
-      "regenRate": 5.9375,
+      "regenRate": 5.7304,
       "regenScale": 0.04,
       "type": "Health"
     },
@@ -2276,7 +2276,7 @@
           },
           "icon": "storm_ui_icon_deathwing_skyfall.png",
           "name": "Skyfall",
-          "fullText": "After <c val=\"bfd4fd\">0.8</c> seconds, a meteor falls from the sky, dealing <c val=\"bfd4fd\">58</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the area.<n/><n/>If a Hero is hit, Deathwing heals for <c val=\"bfd4fd\">2.5%</c> of his maximum Health and reduces his landing cooldowns by <c val=\"bfd4fd\">1</c> seconds.",
+          "fullText": "After <c val=\"bfd4fd\">0.8</c> seconds, a meteor falls from the sky, dealing <c val=\"bfd4fd\">58</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the area.<n/><n/>If a Hero is hit, Deathwing heals for <c val=\"bfd4fd\">3%</c> of his maximum Health.",
           "cooldownText": "Charge Cooldown: 10 seconds"
         },
         {
@@ -2322,7 +2322,7 @@
           "_hdp5LinkId": "DeathwingCataclysm|DeathwingCataclysm|Heroic",
           "icon": "storm_ui_icon_deathwing_cataclysm.png",
           "name": "Cataclysm",
-          "fullText": "After <c val=\"bfd4fd\">2</c> seconds, Deathwing flies in the targeted direction, dealing <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact and leaving scorched ground that deals <c val=\"bfd4fd\">40</c><c val=\"a7a7a7\">~~0.04~~</c> damage a second. Lasts <c val=\"bfd4fd\">6</c> seconds.",
+          "fullText": "After <c val=\"bfd4fd\">2</c> seconds, Deathwing flies in the targeted direction, dealing <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact and leaving scorched ground that deals <c val=\"bfd4fd\">36</c><c val=\"a7a7a7\">~~0.04~~</c> damage a second. Lasts <c val=\"bfd4fd\">6</c> seconds.",
           "cooldownText": "Cooldown: 90 seconds"
         }
       ],
@@ -11619,7 +11619,7 @@
           "_hdp5LinkId": "FaerieDragonPolymorph|BrightwingPolymorph|Z",
           "icon": "storm_ui_icon_brightwing_polymorph.png",
           "name": "Polymorph",
-          "fullText": "Polymorph a target for <c val=\"bfd4fd\">1.5</c> seconds, Slowing their Movement Speed by <c val=\"bfd4fd\">25%</c> and Silencing them. Targets are not able to attack while Polymorphed.",
+          "fullText": "Polymorph a target for <c val=\"bfd4fd\">1.5</c> seconds, Slowing their Movement Speed by <c val=\"bfd4fd\">30%</c> and Silencing them. Targets are not able to attack while Polymorphed.",
           "cooldownText": "Cooldown: 12 seconds"
         }
       ]
@@ -12719,7 +12719,7 @@
         "damage": 75,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": 0.6,
+          "Heroic": 0.5,
           "MapCreature": 1,
           "Merc": 1,
           "Minion": 1,
@@ -12767,7 +12767,6 @@
         "damage": 250,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -12809,7 +12808,6 @@
         "damage": 250,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -12851,7 +12849,6 @@
         "damage": 330,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -12893,7 +12890,6 @@
         "damage": 330,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -13806,7 +13802,6 @@
         "damage": 375,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -13848,7 +13843,6 @@
         "damage": 440,
         "damageScale": 0,
         "damageFactors": {
-          "Heroic": 0.1,
           "Structure": 1,
           "Summoned": -0.5
         }
@@ -18995,7 +18989,7 @@
           "_hdp5LinkId": "RagnarosBigRagSulfurasSmash|RagnarosSulfurasSmash|Heroic",
           "icon": "storm_ui_icon_ragnaros_sulfurassmash.png",
           "name": "Sulfuras Smash",
-          "fullText": "Hurl Sulfuras at the target area, landing after <c val=\"bfd4fd\">0.75</c> seconds, dealing <c val=\"bfd4fd\">198</c><c val=\"a7a7a7\">~~0.04~~</c> damage. Enemies in the center take <c val=\"bfd4fd\">594</c><c val=\"a7a7a7\">~~0.04~~</c> damage instead and are Stunned for <c val=\"bfd4fd\">0.5</c> seconds.",
+          "fullText": "Hurl Sulfuras at the target area, landing after <c val=\"bfd4fd\">0.75</c> seconds, dealing <c val=\"bfd4fd\">250</c><c val=\"a7a7a7\">~~0.04~~</c> damage. Enemies in the center take <c val=\"bfd4fd\">594</c><c val=\"a7a7a7\">~~0.04~~</c> damage instead and are Stunned for <c val=\"bfd4fd\">0.5</c> seconds.",
           "cooldownText": "Cooldown: 80 seconds"
         },
         {

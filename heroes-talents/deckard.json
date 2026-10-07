@@ -23,8 +23,8 @@
     "SelfHealer"
   ],
   "stats": {
-    "hp": 1700,
-    "hpRegen": 3.543,
+    "hp": 1780,
+    "hpRegen": 3.707,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -96,8 +96,8 @@
         "hotkey": "R",
         "abilityId": "Deckard|R3",
         "tooltipId": "DeckardLorenado",
-        "cooldown": 40,
-        "manaCost": 40,
+        "cooldown": 30,
+        "manaCost": 35,
         "icon": "storm_ui_icon_deckard_lorenado.png",
         "type": "heroic"
       },
@@ -119,7 +119,7 @@
         "tooltipId": "DeckardScrollOfIdentify",
         "talentTreeId": "DeckardScrollOfIdentify",
         "name": "Scroll of Identify",
-        "description": "Quest: Hitting an enemy Hero with Scroll of Sealing reveals them for 8 seconds.  Reward: After hitting 16 Heroes, Scroll of Sealing also reduces Armor of Heroes hit by 15 for 4 seconds and the reveal duration is doubled.",
+        "description": "Quest: Hitting an enemy Hero with Scroll of Sealing reveals them for 8 seconds.  Reward: After hitting 14 Heroes, Scroll of Sealing also reduces Armor of Heroes hit by 15 for 4 seconds and the reveal duration is doubled.",
         "icon": "storm_ui_icon_deckard_scroll_of_sealing.png",
         "type": "E",
         "sort": 1,
@@ -211,7 +211,7 @@
         "icon": "storm_ui_icon_deckard_ruby.png",
         "type": "Active",
         "sort": 3,
-        "cooldown": 20,
+        "cooldown": 10,
         "isQuest": false,
         "abilityId": "Deckard|Active",
         "abilityLinks": [
@@ -303,7 +303,7 @@
         "icon": "storm_ui_icon_deckard_lorenado.png",
         "type": "Heroic",
         "sort": 2,
-        "cooldown": 40,
+        "cooldown": 30,
         "isQuest": false,
         "abilityId": "Deckard|R3",
         "abilityLinks": [

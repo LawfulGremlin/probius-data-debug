@@ -88,12 +88,12 @@
       {
         "uid": "a636e9",
         "name": "Sulfuras Smash",
-        "description": "Hurl Sulfuras at the target area, landing after 0.75 seconds, dealing 198 (+4% per level) damage. Enemies in the center take 594 (+4% per level) damage instead and are Stunned for 0.5 seconds.",
+        "description": "Hurl Sulfuras at the target area, landing after 0.75 seconds, dealing 250 (+4% per level) damage. Enemies in the center take 594 (+4% per level) damage instead and are Stunned for 0.5 seconds.",
         "hotkey": "R",
         "abilityId": "Ragnaros|R1",
         "tooltipId": "RagnarosSulfurasSmash",
-        "cooldown": 80,
-        "manaCost": 75,
+        "cooldown": 60,
+        "manaCost": 70,
         "icon": "storm_ui_icon_ragnaros_sulfurassmash.png",
         "type": "heroic"
       },
@@ -126,7 +126,7 @@
       {
         "uid": "2a388b",
         "name": "Sulfuras Smash",
-        "description": "Hurl Sulfuras at the target area, landing after 0.75 seconds, dealing 198 (+4% per level) damage. Enemies in the center take 594 (+4% per level) damage instead and are Stunned for 0.5 seconds.",
+        "description": "Hurl Sulfuras at the target area, landing after 0.75 seconds, dealing 250 (+4% per level) damage. Enemies in the center take 594 (+4% per level) damage instead and are Stunned for 0.5 seconds.",
         "hotkey": "R",
         "abilityId": "Ragnaros|R3",
         "tooltipId": "RagnarosSulfurasSmash",
@@ -339,11 +339,11 @@
         "tooltipId": "RagnarosSulfurasSmash",
         "talentTreeId": "RagnarosSulfurasSmash",
         "name": "Sulfuras Smash",
-        "description": "Hurl Sulfuras at the target area, landing after 0.75 seconds, dealing 198 (+4% per level) damage. Enemies in the center take 594 (+4% per level) damage instead and are Stunned for 0.5 seconds.",
+        "description": "Hurl Sulfuras at the target area, landing after 0.75 seconds, dealing 250 (+4% per level) damage. Enemies in the center take 594 (+4% per level) damage instead and are Stunned for 0.5 seconds.",
         "icon": "storm_ui_icon_ragnaros_sulfurassmash.png",
         "type": "Heroic",
         "sort": 1,
-        "cooldown": 80,
+        "cooldown": 60,
         "isQuest": false,
         "abilityId": "Ragnaros|R1",
         "abilityLinks": [

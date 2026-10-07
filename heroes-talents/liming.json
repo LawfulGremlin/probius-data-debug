@@ -80,7 +80,7 @@
         "hotkey": "R",
         "abilityId": "LiMing|R1",
         "tooltipId": "WizardDisintegrate",
-        "cooldown": 30,
+        "cooldown": 20,
         "manaCost": 80,
         "icon": "storm_ui_icon_wizard_disintegrate.png",
         "type": "heroic"
@@ -92,7 +92,7 @@
         "hotkey": "R",
         "abilityId": "LiMing|R2",
         "tooltipId": "WizardWaveOfForce",
-        "cooldown": 20,
+        "cooldown": 30,
         "manaCost": 80,
         "icon": "storm_ui_icon_wizard_waveofforce.png",
         "type": "heroic"
@@ -278,7 +278,7 @@
         "icon": "storm_ui_icon_wizard_disintegrate.png",
         "type": "Heroic",
         "sort": 1,
-        "cooldown": 30,
+        "cooldown": 20,
         "isQuest": false,
         "abilityId": "LiMing|R1",
         "abilityLinks": [
@@ -296,7 +296,7 @@
         "icon": "storm_ui_icon_wizard_waveofforce.png",
         "type": "Heroic",
         "sort": 2,
-        "cooldown": 20,
+        "cooldown": 30,
         "isQuest": false,
         "abilityId": "LiMing|R2",
         "abilityLinks": [
