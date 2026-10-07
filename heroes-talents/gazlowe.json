@@ -85,8 +85,8 @@
         "hotkey": "R",
         "abilityId": "Gazlowe|R1",
         "tooltipId": "TinkerGravOBomb3000",
-        "cooldown": 110,
-        "manaCost": 100,
+        "cooldown": 90,
+        "manaCost": 80,
         "icon": "storm_ui_icon_gazlowe_gravobomb.png",
         "type": "heroic"
       },
@@ -332,7 +332,7 @@
         "icon": "storm_ui_icon_gazlowe_gravobomb.png",
         "type": "Heroic",
         "sort": 2,
-        "cooldown": 110,
+        "cooldown": 90,
         "isQuest": false,
         "abilityId": "Gazlowe|R1",
         "abilityLinks": [
@@ -515,7 +515,7 @@
         "icon": "storm_ui_icon_gazlowe_itsrainingscrap.png",
         "type": "Active",
         "sort": 4,
-        "cooldown": 60,
+        "cooldown": 30,
         "isQuest": false,
         "abilityId": "Gazlowe|Active",
         "abilityLinks": [],

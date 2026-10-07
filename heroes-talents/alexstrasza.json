@@ -73,7 +73,7 @@
         "hotkey": "W",
         "abilityId": "Alexstrasza|W1",
         "tooltipId": "AlexstraszaAbundance",
-        "cooldown": 16,
+        "cooldown": 14,
         "manaCost": 75,
         "icon": "storm_ui_icon_alexstrasza_abundance.png",
         "type": "basic"
@@ -98,7 +98,7 @@
         "abilityId": "Alexstrasza|R1",
         "tooltipId": "AlexstraszaLifebinder",
         "cooldown": 60,
-        "manaCost": 80,
+        "manaCost": 60,
         "icon": "storm_ui_icon_alexstrasza_life_binder.png",
         "type": "heroic"
       },
@@ -375,7 +375,7 @@
         "tooltipId": "AlexstraszaDragonScales",
         "talentTreeId": "AlexstraszaDragonScales",
         "name": "Dragon Scales",
-        "description": "Gain 30 Armor while Stunned, Rooted, or Silenced, and for 2 seconds after. Can only trigger once every 10 seconds.",
+        "description": "Gain 40 Armor while Stunned, Rooted, or Silenced, and for 2 seconds after. Can only trigger once every 10 seconds.",
         "icon": "storm_ui_icon_alexstrasza_dragon_scales.png",
         "type": "Passive",
         "sort": 1,

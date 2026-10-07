@@ -166,7 +166,7 @@
         "tooltipId": "WizardAetherWalkerTalent",
         "talentTreeId": "WizardAetherWalker",
         "name": "Aether Walker",
-        "description": "If Li-Ming hasn't taken damage in the last 4 seconds, Teleport costs no mana and its cooldown is decreased by 2 seconds.",
+        "description": "If Li-Ming hasn't taken damage in the last 3 seconds, Teleport costs no mana and its cooldown is decreased by 2 seconds.",
         "icon": "storm_ui_icon_wizard_teleport.png",
         "type": "E",
         "sort": 4,
@@ -433,7 +433,7 @@
         "tooltipId": "WizardTeleportDiamondSkinTalent",
         "talentTreeId": "WizardTeleportDiamondSkin",
         "name": "Diamond Skin",
-        "description": "Teleport grants a Shield equal to 20% of Li-Ming's maximum Health for 4 seconds.",
+        "description": "Teleport grants a Shield equal to 25% of Li-Ming's maximum Health for 4 seconds.",
         "icon": "storm_ui_icon_wizard_teleport.png",
         "type": "E",
         "sort": 4,
@@ -519,7 +519,7 @@
     ]
   },
   "tooltipMarkup": {
-    "WizardAetherWalkerTalent": "If Li-Ming hasn't taken damage in the last <c val=\"#TooltipNumbers\">4</c> seconds, Teleport costs no mana and its cooldown is decreased by <c val=\"#TooltipNumbers\">2</c> seconds.",
+    "WizardAetherWalkerTalent": "If Li-Ming hasn't taken damage in the last <c val=\"#TooltipNumbers\">3</c> seconds, Teleport costs no mana and its cooldown is decreased by <c val=\"#TooltipNumbers\">2</c> seconds.",
     "WizardArcaneOrb": "Fire an Orb that powers up as it travels, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,WizardArcaneOrbTooltipDamage,Amount\"/></c> damage to the first enemy hit. Damage is increased the further it travels, up to <c val=\"#TooltipNumbers\"><d ref=\"16*Accumulator,WizardArcaneOrbAccumulator,MultiplierPerStep\"/></c> more damage.",
     "WizardArcaneOrbArcaneOrbitTalent": "Arcane Orb travels <c val=\"#TooltipNumbers\">25%</c> farther, increasing its maximum distance damage bonus from <c val=\"#TooltipNumbers\"><d ref=\"16*Accumulator,WizardArcaneOrbAccumulator,MultiplierPerStep\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"(16+Talent,WizardArcaneOrbArcaneOrbit,AbilityModificationArray[0].Modifications[4].Value)*Accumulator,WizardArcaneOrbAccumulator,MultiplierPerStep\"/></c>.",
     "WizardArcaneOrbTriumvirateTalent": "If Arcane Orb hits an enemy Hero after traveling at least <c val=\"#TooltipNumbers\">50%</c> of its base range, the cooldown is reduced by <c val=\"#TooltipNumbers\">50%</c>.",

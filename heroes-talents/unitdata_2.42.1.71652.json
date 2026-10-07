@@ -4304,7 +4304,7 @@
           "_hdp5LinkId": "JainaWaterElementalFrostbolt|JainaFrostbolt|Q",
           "icon": "storm_ui_icon_jaina_frostbolt.png",
           "name": "Frostbolt",
-          "fullText": "Deal <c val=\"bfd4fd\">190</c><c val=\"a7a7a7\">~~0.04~~</c> damage and Chill the target."
+          "fullText": "Deal <c val=\"bfd4fd\">184</c><c val=\"a7a7a7\">~~0.04~~</c> damage and Chill the target."
         },
         {
           "nameId": "JainaWaterElementalBlizzard",
@@ -4324,7 +4324,7 @@
           "_hdp5LinkId": "JainaWaterElementalConeOfCold|JainaConeOfCold|E",
           "icon": "storm_ui_icon_jaina_coneofcold.png",
           "name": "Cone of Cold",
-          "fullText": "Deal <c val=\"bfd4fd\">230</c><c val=\"a7a7a7\">~~0.04~~</c> damage and Chill targets."
+          "fullText": "Deal <c val=\"bfd4fd\">220</c><c val=\"a7a7a7\">~~0.04~~</c> damage and Chill targets."
         }
       ],
       "heroic": [
@@ -6170,7 +6170,7 @@
         "range": 1,
         "minimumRange": 0,
         "period": 1,
-        "damage": 65,
+        "damage": 58,
         "damageScale": 0
       }
     ],
@@ -11069,7 +11069,7 @@
           "icon": "storm_ui_icon_stitches_cannibalize.png",
           "name": "Gorge",
           "fullText": "Consume an enemy Hero, trapping them for <c val=\"bfd4fd\">4</c> seconds. When Gorge ends, the enemy Hero takes <c val=\"bfd4fd\">274</c><c val=\"a7a7a7\">~~0.04~~</c> damage. The trapped Hero cannot move or act and doesn't take damage from other sources.",
-          "cooldownText": "Cooldown: 70 seconds"
+          "cooldownText": "Cooldown: 65 seconds"
         }
       ],
       "trait": [
@@ -17486,7 +17486,7 @@
           "_hdp5LinkId": "LostVikingsNorseForce|LostVikingsNorseForce|Q",
           "icon": "storm_ui_icon_lostvikings_norseforce.png",
           "name": "Norse Force!",
-          "fullText": "All Vikings gain a <c val=\"bfd4fd\">110</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">220</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield, increasing in strength for each Viking alive. Lasts <c val=\"bfd4fd\">4</c> seconds.",
+          "fullText": "All Vikings gain a <c val=\"bfd4fd\">130</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">260</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield, increasing in strength for each Viking alive. Lasts <c val=\"bfd4fd\">4</c> seconds.",
           "cooldownText": "Cooldown: 30 seconds"
         },
         {
@@ -17508,8 +17508,8 @@
           "_hdp5LinkId": "LostVikingsNordicAttackSquad|LostVikingsNordicAttackSquad|W",
           "icon": "storm_ui_icon_talent_autoattack_damage.png",
           "name": "Nordic Attack Squad",
-          "fullText": "Activate to have all Viking Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1%</c> of a Hero's maximum Health for <c val=\"bfd4fd\">5</c> seconds.",
-          "cooldownText": "Cooldown: 30 seconds"
+          "fullText": "Activate to have all Viking Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> of a Hero's maximum Health for <c val=\"bfd4fd\">5</c> seconds.",
+          "cooldownText": "Cooldown: 20 seconds"
         },
         {
           "nameId": "LostVikingsVikingBribery",
@@ -17677,7 +17677,7 @@
           "_hdp5LinkId": "LostVikingsNorseForce|LostVikingsNorseForce|Q",
           "icon": "storm_ui_icon_lostvikings_norseforce.png",
           "name": "Norse Force!",
-          "fullText": "All Vikings gain a <c val=\"bfd4fd\">110</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">220</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield, increasing in strength for each Viking alive. Lasts <c val=\"bfd4fd\">4</c> seconds.",
+          "fullText": "All Vikings gain a <c val=\"bfd4fd\">130</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">260</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield, increasing in strength for each Viking alive. Lasts <c val=\"bfd4fd\">4</c> seconds.",
           "cooldownText": "Cooldown: 30 seconds"
         },
         {
@@ -17699,8 +17699,8 @@
           "_hdp5LinkId": "LostVikingsNordicAttackSquad|LostVikingsNordicAttackSquad|W",
           "icon": "storm_ui_icon_talent_autoattack_damage.png",
           "name": "Nordic Attack Squad",
-          "fullText": "Activate to have all Viking Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1%</c> of a Hero's maximum Health for <c val=\"bfd4fd\">5</c> seconds.",
-          "cooldownText": "Cooldown: 30 seconds"
+          "fullText": "Activate to have all Viking Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> of a Hero's maximum Health for <c val=\"bfd4fd\">5</c> seconds.",
+          "cooldownText": "Cooldown: 20 seconds"
         },
         {
           "nameId": "LostVikingsVikingBribery",
@@ -17868,7 +17868,7 @@
           "_hdp5LinkId": "LostVikingsNorseForce|LostVikingsNorseForce|Q",
           "icon": "storm_ui_icon_lostvikings_norseforce.png",
           "name": "Norse Force!",
-          "fullText": "All Vikings gain a <c val=\"bfd4fd\">110</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">220</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield, increasing in strength for each Viking alive. Lasts <c val=\"bfd4fd\">4</c> seconds.",
+          "fullText": "All Vikings gain a <c val=\"bfd4fd\">130</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">260</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield, increasing in strength for each Viking alive. Lasts <c val=\"bfd4fd\">4</c> seconds.",
           "cooldownText": "Cooldown: 30 seconds"
         },
         {
@@ -17890,8 +17890,8 @@
           "_hdp5LinkId": "LostVikingsNordicAttackSquad|LostVikingsNordicAttackSquad|W",
           "icon": "storm_ui_icon_talent_autoattack_damage.png",
           "name": "Nordic Attack Squad",
-          "fullText": "Activate to have all Viking Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1%</c> of a Hero's maximum Health for <c val=\"bfd4fd\">5</c> seconds.",
-          "cooldownText": "Cooldown: 30 seconds"
+          "fullText": "Activate to have all Viking Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> of a Hero's maximum Health for <c val=\"bfd4fd\">5</c> seconds.",
+          "cooldownText": "Cooldown: 20 seconds"
         },
         {
           "nameId": "LostVikingsVikingBribery",

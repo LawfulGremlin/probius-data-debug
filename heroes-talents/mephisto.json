@@ -60,7 +60,7 @@
         "abilityId": "Mephisto|W1",
         "tooltipId": "MephistoLightningNova",
         "cooldown": 14,
-        "manaCost": 55,
+        "manaCost": 50,
         "icon": "storm_ui_icon_mephisto_lightning.png",
         "type": "basic"
       },
@@ -72,7 +72,7 @@
         "abilityId": "Mephisto|E1",
         "tooltipId": "MephistoShadeOfMephisto",
         "cooldown": 18,
-        "manaCost": 40,
+        "manaCost": 35,
         "icon": "storm_ui_icon_mephisto_shade.png",
         "type": "basic"
       },
@@ -95,8 +95,8 @@
         "hotkey": "R",
         "abilityId": "Mephisto|R2",
         "tooltipId": "MephistoDuranceOfHate",
-        "cooldown": 60,
-        "manaCost": 60,
+        "cooldown": 50,
+        "manaCost": 50,
         "icon": "storm_ui_icon_mephisto_durance.png",
         "type": "heroic"
       },
@@ -316,7 +316,7 @@
         "icon": "storm_ui_icon_mephisto_durance.png",
         "type": "Heroic",
         "sort": 2,
-        "cooldown": 60,
+        "cooldown": 50,
         "isQuest": false,
         "abilityId": "Mephisto|R2",
         "abilityLinks": [

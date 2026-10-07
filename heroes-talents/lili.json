@@ -60,7 +60,7 @@
         "hotkey": "W",
         "abilityId": "LiLi|W1",
         "tooltipId": "LiLiCloudSerpent",
-        "cooldown": 10,
+        "cooldown": 11,
         "manaCost": 35,
         "icon": "storm_ui_icon_lili_cloudserpent.png",
         "type": "basic"
@@ -153,7 +153,7 @@
         "tooltipId": "LiLiEagerAdventurer",
         "talentTreeId": "LiLiEagerAdventurer",
         "name": "Eager Adventurer",
-        "description": "Increase Fast Feet's duration by 100% and increase Mana regeneration by 100% while Fast Feet is active.",
+        "description": "Increase Fast Feet's duration by 125% and increase Mana regeneration by 100% while Fast Feet is active.",
         "icon": "storm_ui_icon_lili_fastfeet.png",
         "type": "Trait",
         "sort": 3,
@@ -211,7 +211,7 @@
         "icon": "storm_ui_icon_lili_fastfeet.png",
         "type": "Trait",
         "sort": 3,
-        "cooldown": 30,
+        "cooldown": 25,
         "isQuest": false,
         "abilityId": "LiLi|D1",
         "abilityLinks": [
