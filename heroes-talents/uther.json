@@ -24,8 +24,8 @@
     "SelfHealer"
   ],
   "stats": {
-    "hp": 2075,
-    "hpRegen": 4.3164,
+    "hp": 2000,
+    "hpRegen": 4.168,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -70,7 +70,7 @@
         "hotkey": "E",
         "abilityId": "Uther|E1",
         "tooltipId": "UtherHammerofJustice",
-        "cooldown": 8,
+        "cooldown": 10,
         "manaCost": 40,
         "icon": "storm_ui_icon_uther_hammerofjustice.png",
         "type": "basic"
@@ -194,7 +194,7 @@
         "tooltipId": "UtherHolyLightHolyShockTalent",
         "talentTreeId": "UtherMasteryHolyShock",
         "name": "Holy Shock",
-        "description": "Holy Light can be used on an enemy to do 50% of its healing amount as damage. When used this way, Uther receives its self-healing benefits, its cooldown is reduced by 6 seconds, and it refunds 45 Mana.",
+        "description": "Holy Light can be used on an enemy to do 40% of its healing amount as damage. When used this way, Uther receives its self-healing benefits, its cooldown is reduced by 6 seconds, and it refunds 45 Mana.",
         "icon": "storm_ui_icon_uther_holylight.png",
         "type": "Q",
         "sort": 1,

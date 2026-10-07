@@ -183,9 +183,9 @@
     "4": [
       {
         "tooltipId": "SgtHammerConcussiveBlastBarricadeTalent",
-        "talentTreeId": "SgtHammerMasteryFlakCannons",
+        "talentTreeId": "SgtHammerBarricade",
         "name": "Barricade",
-        "description": "Reduce Concussive Blast's cooldown by 3 seconds and it creates an impassable wall in front of Sgt. Hammer for 4 seconds.",
+        "description": "Reduce Concussive Blast's cooldown by 3 seconds, its Mana cost by 40, and when cast create an impassable wall in front of Sgt. Hammer for 4 seconds.",
         "icon": "storm_ui_icon_sgthammer_concussiveblast.png",
         "type": "W",
         "sort": 1,
@@ -504,7 +504,7 @@
     "SgtHammerBluntForceGun": "Fire a missile across the battlefield, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,BluntForceGunDamage,Amount\"/> </c>damage to non-Structure enemies in its path.",
     "SgtHammerBluntForceGunOrbitalBFGTalent": "Blunt Force Gun's missile orbits the planet every <c val=\"#TooltipNumbers\">5</c> seconds. Only the last missile fired orbits.",
     "SgtHammerConcussiveBlast": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ConcussiveBlastDamage,Amount\"/></c> damage to enemies in front of Sgt. Hammer and knock them back.<n/><n/><c val=\"ffff8a\">Siege Mode:</c> Radius increased by <c val=\"#TooltipNumbers\"><d ref=\"((Effect,SgtHammerConcussiveBlastEnterSiegeModeModifyPlayer,EffectArray[0].Value-Effect,SgtHammerConcussiveBlastExitSiegeModeModifyPlayer,EffectArray[0].Value)/Effect,SgtHammerConcussiveBlastExitSiegeModeModifyPlayer,EffectArray[0].Value)*100\" player=\"0\"/>%</c>.",
-    "SgtHammerConcussiveBlastBarricadeTalent": "Reduce Concussive Blast's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,SgtHammerMasteryFlakCannons,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds and it creates an impassable wall in front of Sgt. Hammer for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ConcussiveBlastScrapTimedLife,Duration\" player=\"0\"/></c> seconds.",
+    "SgtHammerConcussiveBlastBarricadeTalent": "Reduce Concussive Blast's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,SgtHammerBarricade,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds, its Mana cost by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,SgtHammerBarricade,AbilityModificationArray[0].Modifications[2].Value\"/></c>, and when cast create an impassable wall in front of Sgt. Hammer for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ConcussiveBlastScrapTimedLife,Duration\" player=\"0\"/></c> seconds.",
     "SgtHammerConcussiveBlastEntrenchedTalent": "While in Siege Mode, Concussive Blasts's damage and knockback distance are increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ConcussiveBlastDamage,MultiplicativeModifierArray[Entrenched].Modifier*100\"/>%</c>.",
     "SgtHammerGiantKiller": "Basic Attacks against enemy Heroes deal bonus damage equal to <c val=\"#TooltipNumbers\"><d ref=\"Effect,TalentBucketGiantKillerDamage,VitalFractionMax[Life]*100\" precision=\"2\"/>%</c> of the Hero's maximum Health.",
     "SgtHammerNapalmStrike": "Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,NapalmStrikeInitialDamage,Amount\"/></c> damage on impact, and leaves a napalm area that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,NapalmStrikeFireDamage,Amount\"/></c> damage per second. Lasts for <c val=\"#TooltipNumbers\"><d ref=\"Effect,NapalmStrikeCreatePersistent,PeriodCount * Effect,NapalmStrikeCreatePersistent,PeriodicPeriodArray[0]\"/></c> seconds.",

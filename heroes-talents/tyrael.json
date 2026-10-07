@@ -103,7 +103,7 @@
       {
         "uid": "ffd447",
         "name": "Archangel's Wrath",
-        "description": "Upon dying, become Invulnerable and explode for 550 (+4% per level) damage after 3.5 seconds.",
+        "description": "Upon dying, become Invulnerable and explode for 550 (+4% per level) damage after 3.5 seconds. Each enemy Hero hit by this effect reduces Tyrael's death timer by 10%.",
         "trait": true,
         "abilityId": "Tyrael|D1",
         "tooltipId": "TyraelArchangelsWrath",
@@ -152,7 +152,7 @@
         "tooltipId": "TyraelArdentRestoration",
         "talentTreeId": "TyraelArdentRestoration",
         "name": "Ardent Restoration",
-        "description": "Dealing damage to a Hero heals Tyrael for 18 (+4% per level) Health over 5 seconds. Dealing damage resets this timer, and the heal amount stacks up to 10 times.",
+        "description": "Dealing damage to a Hero heals Tyrael for 20 (+4% per level) Health over 5 seconds. Dealing damage resets this timer, and the heal amount stacks up to 10 times.",
         "icon": "storm_ui_icon_talent_regenerationmaster.png",
         "type": "Passive",
         "sort": 3,
@@ -460,13 +460,24 @@
         ]
       },
       {
+        "tooltipId": "TyraelSealofElDruin",
+        "talentTreeId": "TyraelSealOfElDruin",
+        "name": "Seal of El'druin",
+        "description": "Using a Basic Ability grants 50% Attack Speed for 3 seconds.",
+        "icon": "storm_ui_icon_talent_autoattack_speed.png",
+        "type": "Passive",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Tyrael|Passive"
+      },
+      {
         "tooltipId": "TyraelDefenseOfTheAngels",
         "talentTreeId": "TyraelDefenseOfTheAngels",
         "name": "Defense of the Angels",
-        "description": "Activate to gain 50 Armor for 5 seconds.  Each time Righteousness's Shield absorbs damage, Defense of the Angel's cooldown is reduced by 3 seconds.",
+        "description": "Activate to gain 50 Armor for 5 seconds.  Each time Tyrael damages an enemy Hero with a Basic Attack or Basic Ability, increase the duration of this Armor bonus by 0.5 seconds.",
         "icon": "storm_ui_icon_talent_hardenedshield.png",
         "type": "Active",
-        "sort": 3,
+        "sort": 4,
         "cooldown": 120,
         "isQuest": false,
         "abilityId": "Tyrael|Active",
@@ -474,25 +485,14 @@
         "abilityTalentLinkIds": [
           "TyraelDefenseOfTheAngels"
         ]
-      },
-      {
-        "tooltipId": "TyraelSealofElDruin",
-        "talentTreeId": "TyraelSealOfElDruin",
-        "name": "Seal of El'druin",
-        "description": "Using a Basic Ability grants 50% Attack Speed for 3 seconds.",
-        "icon": "storm_ui_icon_talent_autoattack_speed.png",
-        "type": "Passive",
-        "sort": 4,
-        "isQuest": false,
-        "abilityId": "Tyrael|Passive"
       }
     ]
   },
   "tooltipMarkup": {
-    "TyraelArchangelsWrath": "Upon dying, become Invulnerable and explode for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArchangelsWrathDamage,Amount\"/></c> damage after <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelArchangelsWrathDeathActiveBuff,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
+    "TyraelArchangelsWrath": "Upon dying, become Invulnerable and explode for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArchangelsWrathDamage,Amount\"/></c> damage after <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelArchangelsWrathDeathActiveBuff,Duration\" player=\"0\" precision=\"2\"/></c> seconds. Each enemy Hero hit by this effect reduces Tyrael's death timer by <c val=\"#TooltipNumbers\">10%</c>.",
     "TyraelArdentRestoration": "Dealing damage to a Hero heals Tyrael for <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TyraelArdentRestorationAccumulator,Scale*Behavior,TyraelArdentRestorationHeal,Duration\"/></c> Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelArdentRestorationHeal,Duration\"/></c> seconds. Dealing damage resets this timer, and the heal amount stacks up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelArdentRestorationTokenCounter,Max\"/></c> times.",
     "TyraelBurningHalo": "Both Tyrael and El'druin deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,TyraelBurningHaloDamage,Amount\"/></c> damage per second to nearby enemies. Teleporting increases this damage from Tyrael by <c val=\"#TooltipNumbers\"><d ref=\"Effect,TyraelBurningHaloDamage,MultiplicativeModifierArray[BurningHalo].Modifier*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelEldruinsMightBurningHaloBonusDamageCarryBehavior,Duration\"/></c> seconds.",
-    "TyraelDefenseOfTheAngels": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelDefenseOfTheAngels,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelDefenseOfTheAngels,Duration\"/></c> seconds.<n/><n/>Each time Righteousness's Shield absorbs damage, Defense of the Angel's cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,TyraelDefenseOfTheAngelsModifyPlayerCooldown,Cost.Cooldown.TimeUse\"/></c> seconds.",
+    "TyraelDefenseOfTheAngels": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelDefenseOfTheAngels,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelDefenseOfTheAngels,Duration\"/></c> seconds.<n/><n/>Each time Tyrael damages an enemy Hero with a Basic Attack or Basic Ability, increase the duration of this Armor bonus by <c val=\"#TooltipNumbers\"><d ref=\"Effect,TyraelDefenseoftheAngelsModifyDuration,Value\"precision=\"1\"/></c> seconds.",
     "TyraelDivineVigor": "If Smite hits an enemy, Tyrael's Basic Attacks within the next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelSmiteDivineVigorTalentProcBuff,Duration\"/></c> seconds heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,TyraelSmiteDivineVigorTalentProcBuff,Modification.VitalDamageLeechArray[Life].KindArray[Basic]\"/>%</c> of the damage dealt.",
     "TyraelElDruinsMight": "Throw El'druin to the target area, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ElDruinsMightDamage,Amount + (Effect,ElDruinsMightDamage,Amount * Effect,ElDruinsMightDamage,AttributeFactor[Structure])\"/></c> damage to nearby enemies and Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-100* Behavior,ElDruinsMightSlow,Modification.UnifiedMoveSpeedFactor\" precision=\"2\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ElDruinsMightSlow,Duration\" precision=\"1\"/></c> seconds. It can be reactivated within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ElDruinsMightSwordTimedLife,Duration\"/></c> seconds to teleport Tyrael to El'druin and Slow nearby enemies again.",
     "TyraelElDruinsMightBoundByLawTalent": "Increase El'druin's Might's Slow by <c val=\"#TooltipNumbers\"><d ref=\"-(Talent,TyraelElDruinsMightBoundByLaw,AbilityModificationArray[0].Modifications[3].Value)*100\" player=\"0\"/>%</c>. Tyrael's Basic Attacks against enemies Slowed by El'druin's Might increase the Slow duration by <c val=\"#TooltipNumbers\"><d ref=\"Effect,TyraelBoundByLawIncreaseEldruinsMightSlowDuration,Value\"/></c> second, up to <c val=\"#TooltipNumbers\"><d ref=\"Effect,TyraelBoundByLawIncreaseEldruinsMightSlowDuration,Value*Behavior,TyraelEldruinsMightBoundByLawTokenCounter,Max\"/></c> seconds.",

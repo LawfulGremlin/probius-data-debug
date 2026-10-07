@@ -182,7 +182,7 @@
           "_hdp5LinkId": "AbathurSpawnLocusts|AbathurLocustStrain|Q",
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "name": "Locust Strain",
-          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">50%</c> bonus damage to enemy Structures.",
+          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
           "cooldownText": "Cooldown: 15 seconds"
         }
       ]
@@ -221,7 +221,7 @@
           "_hdp5LinkId": "AbathurSpawnLocusts|AbathurLocustStrain|Q",
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "name": "Locust Strain",
-          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">50%</c> bonus damage to enemy Structures.",
+          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
           "cooldownText": "Cooldown: 15 seconds"
         }
       ]
@@ -2258,7 +2258,7 @@
           "_hdp5LinkId": "DeathwingIncinerate|DeathwingIncinerate|W",
           "icon": "storm_ui_icon_deathwing_incinerate.png",
           "name": "Incinerate",
-          "fullText": "After <c val=\"bfd4fd\">0.75</c> seconds, Deathwing flaps his wings, dealing <c val=\"bfd4fd\">75</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Lava Burst</c><n/>Create a lava pool that damages and Slows",
+          "fullText": "After <c val=\"bfd4fd\">0.75</c> seconds, Deathwing flaps his wings, dealing <c val=\"bfd4fd\">70</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Lava Burst</c><n/>Create a lava pool that damages and Slows",
           "cooldownText": "Cooldown: 4 seconds"
         },
         {
@@ -2276,7 +2276,7 @@
           },
           "icon": "storm_ui_icon_deathwing_skyfall.png",
           "name": "Skyfall",
-          "fullText": "After <c val=\"bfd4fd\">0.8</c> seconds, a meteor falls from the sky, dealing <c val=\"bfd4fd\">58</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the area.<n/><n/>If a Hero is hit, Deathwing heals for <c val=\"bfd4fd\">3%</c> of his maximum Health and reduces his landing cooldowns by <c val=\"bfd4fd\">1</c> seconds.",
+          "fullText": "After <c val=\"bfd4fd\">0.8</c> seconds, a meteor falls from the sky, dealing <c val=\"bfd4fd\">58</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the area.<n/><n/>If a Hero is hit, Deathwing heals for <c val=\"bfd4fd\">2.5%</c> of his maximum Health and reduces his landing cooldowns by <c val=\"bfd4fd\">1</c> seconds.",
           "cooldownText": "Charge Cooldown: 10 seconds"
         },
         {
@@ -2322,7 +2322,7 @@
           "_hdp5LinkId": "DeathwingCataclysm|DeathwingCataclysm|Heroic",
           "icon": "storm_ui_icon_deathwing_cataclysm.png",
           "name": "Cataclysm",
-          "fullText": "After <c val=\"bfd4fd\">2</c> seconds, Deathwing flies in the targeted direction, dealing <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact and leaving scorched ground that deals <c val=\"bfd4fd\">44</c><c val=\"a7a7a7\">~~0.04~~</c> damage a second. Lasts <c val=\"bfd4fd\">6</c> seconds.",
+          "fullText": "After <c val=\"bfd4fd\">2</c> seconds, Deathwing flies in the targeted direction, dealing <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact and leaving scorched ground that deals <c val=\"bfd4fd\">40</c><c val=\"a7a7a7\">~~0.04~~</c> damage a second. Lasts <c val=\"bfd4fd\">6</c> seconds.",
           "cooldownText": "Cooldown: 90 seconds"
         }
       ],

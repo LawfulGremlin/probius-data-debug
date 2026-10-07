@@ -66,7 +66,7 @@
       {
         "uid": "ad5596",
         "name": "Dwarf Toss",
-        "description": "Leap to target location, dealing 59 (+4% per level) damage to enemies on landing. Upon leaping, gain 25 Armor for 2 seconds, reducing damage taken by 25%.",
+        "description": "Leap to target location, dealing 59 (+4% per level) damage to enemies on landing. Upon leaping, gain 30 Armor for 2 seconds, reducing damage taken by 30%.",
         "hotkey": "E",
         "abilityId": "Muradin|E1",
         "tooltipId": "MuradinDwarfToss",
@@ -131,13 +131,30 @@
         ]
       },
       {
+        "tooltipId": "MuradinDwarfBlock",
+        "talentTreeId": "MuradinDwarfBlock",
+        "name": "Dwarf Block",
+        "description": "Casting Dwarf Toss grants 4 charges of Block.  Each Block charge grants 75 Physical Armor against a single enemy Hero Basic Attack, reducing the damage taken by 75%. These Block charges last for 10 seconds.",
+        "icon": "storm_ui_icon_muradin_dwarftoss.png",
+        "type": "E",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Muradin|E1",
+        "abilityLinks": [
+          "Muradin|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "MuradinDwarfToss"
+        ]
+      },
+      {
         "tooltipId": "MuradinSecondWindThirdWindTalent",
         "talentTreeId": "MuradinCombatStyleThirdWind",
         "name": "Third Wind",
         "description": "Increases Health Restoration rate to 90 (+4% per level) per second, and raises Health threshold to 60% Health for improved 180 (+4% per level) per second Restoration.",
         "icon": "storm_ui_icon_muradin_secondwind.png",
         "type": "Trait",
-        "sort": 2,
+        "sort": 3,
         "isQuest": false,
         "abilityId": "Muradin|D1",
         "abilityLinks": [
@@ -147,17 +164,6 @@
           "MuradinSecondWind",
           "Stoneform"
         ]
-      },
-      {
-        "tooltipId": "GenericBlockTalent",
-        "talentTreeId": "GenericTalentBlock",
-        "name": "Block",
-        "description": "Every 5 seconds, gain 75 Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by 75%.  Stores up to 2 charges.",
-        "icon": "storm_ui_icon_talent_block.png",
-        "type": "Passive",
-        "sort": 3,
-        "isQuest": false,
-        "abilityId": "Muradin|Passive"
       }
     ],
     "4": [
@@ -218,7 +224,7 @@
         "tooltipId": "MuradinDwarfTossHeavyImpactTalent",
         "talentTreeId": "MuradinMasteryDwarfTossHeavyImpact",
         "name": "Heavy Impact",
-        "description": "Enemies hit by Dwarf Toss are Slowed by 80% for 1.25 seconds.",
+        "description": "Enemies hit by Dwarf Toss are Slowed by 80% for 1.5 seconds.",
         "icon": "storm_ui_icon_muradin_dwarftoss.png",
         "type": "E",
         "sort": 1,
@@ -482,13 +488,13 @@
     ]
   },
   "tooltipMarkup": {
-    "GenericBlockTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockCharged,DamageResponse.Cost.Charge.TimeUse\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockCharged,DamageResponse.Cost.Charge.CountMax\"/></c> charges.",
     "GenericImposingPresenceTalent": "Activate to reduce the Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceActivatedDebuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> and Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceActivatedDebuffSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> of nearby Heroes and Summons for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentImposingPresenceActivatedDebuffSlow,Duration\"precision=\"2\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Heroes and Summons that attack your Hero have their Attack Speed Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceDamageResponseDebuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentImposingPresenceDamageResponseDebuff,Duration\"precision=\"2\"/> </c>seconds.",
     "GenericRewindHotbar": "Activate to reset the cooldowns of your Basic Abilities.",
     "HardenedShieldTalent": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HardenedShield,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HardenedShield,Duration\"/></c> seconds, taking <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HardenedShield,ArmorModification.AllArmorBonus\"/>%</c> less damage.",
     "MuradinAvatar": "Transform for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MuradinAvatarHealthBuff,Duration\" player=\"0\" precision=\"2\"/></c> seconds, gaining <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MuradinAvatar,Modification.VitalMaxArray[0]\"/></c> Health.",
     "MuradinAvatarUnstoppableForceTalent": "While active, Avatar grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MuradinAvatarUnstoppableForceTalentArmorBuff,ArmorModification.AllArmorBonus\"/></c> Armor and causes Muradin's Basic Attacks to reduce the cooldowns of Thunder Clap and Dwarf Toss by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,MuradinAvatarUnstoppableForceTalentBasicAttackModifyCooldowns,Cost[0].CooldownTimeUse\"precision=\"2\"/></c> seconds.",
     "MuradinBronzebeardRage": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,MuradinBronzebeardRageDamage,Amount\"/></c> damage per second to nearby enemies and heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MuradinBronzebeardRageDamage,LeechFraction[Life]\"/>%</c> of the damage dealt this way. Basic Attacks against a Hero that is Stunned, Rooted, or Slowed increase this damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MuradinBronzebeardRageDamage,MultiplicativeModifierArray[0].Modifier\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MuradinBronzebeardRageCCDamageBoost,Duration\"/></c> seconds.",
+    "MuradinDwarfBlock": "Casting Dwarf Toss grants <c val=\"#TooltipNumbers\"><d ref=\"Effect,MuradinDwarfTossDwarfBlockTalentApplyBehavior,Count\"/></c> charges of Block.  Each Block charge grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against a single enemy Hero Basic Attack, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>. These Block charges last for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MuradinDwarfTossDwarfBlockTalentApplyBehavior,Duration\"/></c> seconds.",
     "MuradinDwarfToss": "Leap to target location, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,MuradinDwarfTossDamage,Amount\"/></c> damage to enemies on landing. Upon leaping, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MuradinDwarfTossArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MuradinDwarfTossArmorIncrease,Duration\"Player=\"0\"/></c> seconds, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MuradinDwarfTossArmorIncrease,ArmorModification.AllArmorBonus\"/>%</c>.",
     "MuradinDwarfTossDwarfLaunchTalent": "Increase the range of Dwarf Toss by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MuradinMasteryDwarfTossDwarfLaunch,AbilityModificationArray[0].Modifications[1].Value/Abil,MuradinDwarfToss,Range*100\" player=\"0\" precision=\"2\"/>%</c>. Hitting an enemy Hero with Dwarf Toss reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,MuradinDwarfTossDwarfLaunchTalentModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "MuradinDwarfTossHeavyImpactTalent": "Enemies hit by Dwarf Toss are Slowed by<c val=\"#TooltipNumbers\"> <d ref=\"-100*Behavior,MuradinDwarfTossHeavyImpactSlow,Modification.UnifiedMoveSpeedFactor\"Precision=\"2\"/>% </c>for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MuradinDwarfTossHeavyImpactSlow,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
@@ -509,13 +515,13 @@
     "MuradinThunderclapThunderstrikeTalent": "Thunder Clap deals <c val=\"#TooltipNumbers\">300%</c> damage if only one target is hit.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increase the duration of Dwarf Toss's Armor by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MuradinMasteryThunderclapThunderstrike,AbilityModificationArray[0].Modifications[0].Value\"Player=\"0\"/></c> seconds."
   },
   "tooltipSimple": {
-    "GenericBlockTalent": "Periodically gain Physical Armor",
     "GenericImposingPresenceTalent": "Activate to Slow enemy Basic Attacks and Move Speed",
     "GenericRewindHotbar": "Activate to reset cooldowns",
     "HardenedShieldTalent": "Activate to gain massive Armor",
     "MuradinAvatar": "Temporary Health boost",
     "MuradinAvatarUnstoppableForceTalent": "Avatar grants additional bonuses",
     "MuradinBronzebeardRage": "Deals damage to nearby enemies",
+    "MuradinDwarfBlock": "Dwarf Toss grants Physical Armor",
     "MuradinDwarfToss": "Leap to an area, dealing damage to nearby enemies",
     "MuradinDwarfTossDwarfLaunchTalent": "Increase Dwarf Toss range",
     "MuradinDwarfTossHeavyImpactTalent": "Dwarf Toss briefly Slows enemies hit",

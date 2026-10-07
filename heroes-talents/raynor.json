@@ -113,7 +113,7 @@
         "tooltipId": "RaynorVeteranMarksman",
         "talentTreeId": "RaynorVeteranMarksman",
         "name": "Veteran Marksman",
-        "description": "Quest: Every time the primary target of Give 'Em Some Pepper is a Hero, permanently increase its damage bonus by 0.75%.",
+        "description": "Quest: Every time the primary target of Give 'Em Some Pepper is a Hero, permanently increase its damage bonus by 1%.",
         "icon": "storm_ui_icon_raynor_acquireweakspot.png",
         "type": "Trait",
         "sort": 1,
@@ -131,7 +131,7 @@
         "tooltipId": "RaynorAceInTheHole",
         "talentTreeId": "RaynorAceInTheHole",
         "name": "Ace In The Hole",
-        "description": "Deal 15% more damage to Stunned or Slowed Heroes.",
+        "description": "Passive: Deal 15% more damage to Stunned or Slowed Heroes.  Enemy Heroes hit by Give 'Em Some Pepper are Slowed by 10% for 2.5 seconds.",
         "icon": "storm_ui_icon_raynor_acardtoplay.png",
         "type": "Passive",
         "sort": 2,
@@ -149,7 +149,7 @@
         "tooltipId": "RaynorExterminator",
         "talentTreeId": "RaynorGiveEmSomePepperExterminator",
         "name": "Exterminator",
-        "description": "Basic Attacks deal 50% more damage to Minions, Mercenaries, and Monsters. This is increased to 100% while Inspire is active.",
+        "description": "Basic Attacks deal 75% more damage to Minions, Mercenaries, and Monsters. This is increased to 125% while Inspire is active.",
         "icon": "storm_ui_icon_talent_autoattack_building.png",
         "type": "Passive",
         "sort": 3,
@@ -243,7 +243,7 @@
         "tooltipId": "RaynorGiveEmSomePepperUnstableCompound",
         "talentTreeId": "RaynorGiveEmSomePepperUnstableCompound",
         "name": "Unstable Compound",
-        "description": "Increase the area of Give 'Em Some Pepper by 15%, and enemies hit by it are Slowed by 10% for 2.5 seconds.",
+        "description": "Increase the area of Give 'Em Some Pepper by 15%. Each enemy Hero hit by Give 'Em Some Pepper grants Raynor 10 Mana and reduces the cooldown of Penetrating Round and Inspire by 1 second.",
         "icon": "storm_ui_icon_raynor_acquireweakspot.png",
         "type": "Trait",
         "sort": 2,
@@ -530,7 +530,7 @@
     }
   ],
   "tooltipMarkup": {
-    "RaynorAceInTheHole": "Deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,RaynorHeroWeaponDamage,MultiplicativeModifierArray[AceInTheHole].Modifier\"/>%</c> more damage to Stunned or Slowed Heroes.",
+    "RaynorAceInTheHole": "<c val=\"#AbilityPassive\">Passive: </c>Deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,RaynorHeroWeaponDamage,MultiplicativeModifierArray[AceInTheHole].Modifier\"/>%</c> more damage to Stunned or Slowed Heroes. <n/><n/>Enemy Heroes hit by Give 'Em Some Pepper are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,RaynorGiveEmSomePepperAceintheHoleTalentSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorGiveEmSomePepperAceintheHoleTalentSlow,Duration\"precision=\"2\"/></c> seconds.",
     "RaynorAdrenalineRushFightOrFlightTalent": "Reduce Adrenaline Rush's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,RaynorMasteryFightorFlightAdrenalineRush,AbilityModificationArray[0].Modifications[1].Value\"player=\"0\"/></c> seconds. Casting Adrenaline Rush grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorInspireFightOrFlightArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorInspireFightOrFlightArmorIncrease,Duration\"/></c> seconds.",
     "RaynorAdrenalineRushGiveMeMoreTalent": "Increase Adrenaline Rush healing by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,RaynorMasteryGiveMeMoreAdrenalineRush,AbilityModificationArray[0].Modifications[1].Value\"/>%</c>. While Inspire is active, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorGiveMeMoreAttackRangeCarryBehavior,Modification.WeaponRange\"/></c> Basic Attack range.",
     "RaynorBasicAttackExecute": "Increase Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RaynorExecuteAttackSpeed,Modification.UnifiedAttackSpeedFactor\"/>%</c>. Basic Attack damage is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,RaynorHeroWeaponDamage,MultiplicativeModifierArray[Execute].Modifier\"/>%</c> against targets below <c val=\"#TooltipNumbers\">50%</c> Health.",
@@ -539,7 +539,7 @@
     "RaynorBountyHunter": "If Give 'Em Some Pepper's target is a Hero, it deals an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,RaynorBountyHunterDamage,VitalFractionMax[Life]\"precision=\"2\"/>%</c> of their maximum Health as damage and grants Raynor <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorBountyHunterArmorBehavior,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorBountyHunterArmorBehavior,Duration\"/></c> seconds. <n/><n/>Activate Give 'Em Some Pepper to apply it to Raynor's next Basic Attack.",
     "RaynorExterminator": "Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*(Effect,RaynorHeroWeaponDamage,MultiplicativeModifierArray[Exterminator].Modifier)\"/>%</c> more damage to Minions, Mercenaries, and Monsters. This is increased to <c val=\"#TooltipNumbers\"><d ref=\"100*(Effect,RaynorHeroWeaponDamage,MultiplicativeModifierArray[Exterminator].Modifier+Effect,RaynorHeroWeaponDamage,MultiplicativeModifierArray[ExterminatorInspire].Modifier)\"/>%</c> while Inspire is active.",
     "RaynorGiveEmSomePepper": "Every <c val=\"#TooltipNumbers\"><d ref=\"1+Behavior,RaynorGiveEmSomePepperAttackToken,ConditionalEvents[0].CompareValue\"/>th</c> Basic Attack splashes in a small area and deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,RaynorHeroWeaponDamage,MultiplicativeModifierArray[GiveEmSomePepper].Modifier\"/>%</c> more damage to the main target.",
-    "RaynorGiveEmSomePepperUnstableCompound": "Increase the area of Give 'Em Some Pepper by <c val=\"#TooltipNumbers\"><d ref=\"(100*Talent,RaynorGiveEmSomePepperUnstableCompound,AbilityModificationArray[0].Modifications[0].Value)-100\"/>%</c>, and enemies hit by it are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,RaynorGiveEmSomePepperUnstableCompoundSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorGiveEmSomePepperUnstableCompoundSlow,Duration\"precision=\"2\"/></c> seconds.",
+    "RaynorGiveEmSomePepperUnstableCompound": "Increase the area of Give 'Em Some Pepper by <c val=\"#TooltipNumbers\"><d ref=\"(100*Talent,RaynorGiveEmSomePepperUnstableCompound,AbilityModificationArray[0].Modifications[0].Value)-100\"/>%</c>. Each enemy Hero hit by Give 'Em Some Pepper grants Raynor <c val=\"#TooltipNumbers\"><d ref=\"Effect,RaynorGiveEmSomePepperUnstableCompoundTalentModifyUnit,VitalArray[Energy].Change\"/></c> Mana and reduces the cooldown of Penetrating Round and Inspire by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,RaynorGiveEmSomePepperUnstableCompoundTalentModifyUnit,Cost[0].CooldownTimeUse\"/></c> second.",
     "RaynorGiveEmSomePepperWeakSpotAcquired": "Enemy Heroes that are the primary target of Give 'Em Some Pepper have their Armor reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,RaynorGiveEmSomePepperWeakSpotAcquiredArmorDebuff,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorGiveEmSomePepperWeakSpotAcquiredArmorDebuff,Duration\"/></c> seconds.",
     "RaynorHyperion": "Order the Hyperion to make a strafing run for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HyperionMissileScan,Duration\" player=\"0\"/></c> seconds, hitting up to <c val=\"#TooltipNumbers\"><d ref=\"Effect,HyperionWeaponPersistent,PeriodCount\" player=\"0\"/></c> enemies for <c val=\"#TooltipNumbers\"><d ref=\"Effect,HyperionWeaponDamage,Amount\"/></c> damage every second. Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorHyperionYamatoMissileScan,Period\"/></c> seconds, it can fire its Yamato Cannon at a Structure, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,RaynorHyperionYamatoDamage,Amount\"/></c> damage.",
     "RaynorHyperionIndomitableResolve": "Give 'Em Some Pepper lowers the cooldown of Hyperion by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,RaynorHyperionIndomitableResolveModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds if the primary target is a Hero. Inspire grants Raynor Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorHyperionIndomitableResolveUnstoppable,Duration\"/></c> seconds.",
@@ -567,7 +567,7 @@
     "RaynorBountyHunter": "Empowers Give 'Em Some Pepper, grants Armor",
     "RaynorExterminator": "Increased Attack damage to non-Heroes",
     "RaynorGiveEmSomePepper": "Periodically empower Basic Attacks",
-    "RaynorGiveEmSomePepperUnstableCompound": "Give 'Em Some Pepper area increased, Slows",
+    "RaynorGiveEmSomePepperUnstableCompound": "Give 'Em Some Pepper area increased, reduces cooldowns",
     "RaynorGiveEmSomePepperWeakSpotAcquired": "Give 'Em Some Pepper reduces Armor",
     "RaynorHyperion": "Call down a strafing Battlecruiser",
     "RaynorHyperionIndomitableResolve": "Empower Hyperion, Inspire grants Unstoppable",
@@ -585,6 +585,7 @@
     "RaynorVeteranMarksman": "<c val=\"#TooltipQuest\">Quest:</c> Empower Give 'Em Some Pepper"
   },
   "tooltipColors": {
+    "AbilityPassive": "00FF90",
     "TooltipNumbers": "BFD4FD",
     "TooltipQuest": "E4B800"
   }
