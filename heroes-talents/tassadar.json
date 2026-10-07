@@ -119,16 +119,6 @@
         "manaCost": 75,
         "icon": "storm_ui_icon_tassadar_dimensionalshift.png",
         "type": "basic"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Tassadar|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -507,7 +497,6 @@
     ]
   },
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "TassadarAdunsWisdom": "While Oracle is active, Basic Abilities cooldown <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,TassadarOracleAdunsWisdomTalentModifyUnit,Cost[0].CooldownTimeUse/Behavior,TassadarOracleAdunsWisdomTalentCarry,Period*100\"/>%</c> faster.",
     "TassadarArchon": "Tassadar transforms into an Archon and gains a Plasma Shield. His Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,TassadarArchonWeaponDamage,Amount\"/></c> damage, slow the target by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TassadarArchonSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TassadarArchonSlow,Duration\"/></c> second and splash for <c val=\"#TooltipNumbers\"><d ref=\"Effect,TassadarArchonSplashDamage,Amount\"/></c> damage to enemies within <c val=\"#TooltipNumbers\"><d ref=\"Effect,TassadarArchonSplashDamageSearchArea,AreaArray[0].Radius\" precision=\"1\"/></c> range. Lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TassadarArchonShield,Duration\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Archon refreshes the cooldown of Dimensional Shift.",
     "TassadarArchonTwilightArchonTalent": "Basic Attacks while in Archon form increase its duration by <c val=\"#TooltipNumbers\"><d ref=\"Effect,TassadarArchonTwilightArchonTalentModifyBehaviorDuration,Value\"/></c> seconds.",

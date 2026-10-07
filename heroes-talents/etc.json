@@ -109,16 +109,6 @@
         "tooltipId": "L90ETCRockstar",
         "icon": "storm_ui_icon_etc_rockstar.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "ETC|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -543,8 +533,7 @@
     "L90ETCPowerslide": "Slide to a location dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,PowerSlideDamage,Amount + (Effect,PowerSlideDamage,Amount * Effect,PowerSlideDamage,AttributeFactor[Heroic])\"/></c> damage and stunning enemies hit for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,PowerslideStun,Duration\" player=\"0\" precision=\"2\"/></c> second.",
     "L90ETCRockstar": "After E.T.C. uses a Basic or Heroic ability, he gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ETCRockstarArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ETCRockstarArmor,Duration\" player=\"0\"/></c> seconds.  This effect does not stack with itself.",
     "L90ETCRockstarEchoPedalTalent": "Using a Basic or Heroic Ability releases two pulses of <c val=\"#TooltipNumbers\"><d ref=\"Effect,L90ETCPassiveEchoPedalDamage,Amount\"/></c> damage.  This deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,L90ETCPassiveEchoPedalDamage,AttributeFactor[Minion]\"/>%</c> bonus damage to Minions, Mercenaries, and Monsters. The first occurs instantly, the second occurs <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCPassiveEchoPedal,Duration\" player=\"0\"/></c> seconds later.",
-    "L90ETCStageDive": "Leap to target location, landing after <c val=\"#TooltipNumbers\">2.75</c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,StageDiveDamage,Amount + (Effect,StageDiveDamage,Amount * Effect,StageDiveDamage,AttributeFactor[Heroic])\"/></c> damage to enemies in the area, and slowing them by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StageDiveSlow,Modification.UnifiedMoveSpeedFactor*(-100)\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StageDiveSlow,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "L90ETCStageDive": "Leap to target location, landing after <c val=\"#TooltipNumbers\">2.75</c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,StageDiveDamage,Amount + (Effect,StageDiveDamage,Amount * Effect,StageDiveDamage,AttributeFactor[Heroic])\"/></c> damage to enemies in the area, and slowing them by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StageDiveSlow,Modification.UnifiedMoveSpeedFactor*(-100)\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StageDiveSlow,Duration\" player=\"0\" precision=\"2\"/></c> seconds."
   },
   "tooltipSimple": {
     "ETCBlockParty": "Rockstar grants allies Physical Armor",

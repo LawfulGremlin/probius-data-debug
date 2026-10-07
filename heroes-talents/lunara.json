@@ -119,16 +119,6 @@
         "tooltipId": "DryadDryadsSwiftness",
         "icon": "storm_ui_icon_lunara_mount.png",
         "type": "mount"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Lunara|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -574,8 +564,7 @@
     "DryadThornwoodVine": "Send forth vines that deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,DryadThornwoodVineDamage,Amount\"/></c> damage to all enemies in a line.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,DryadThornwoodVine,Cost[0].Charge.CountMax\"/></c> charges.",
     "DryadUnfairAdvantageTalent": "Nature's Toxin deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,DryadNaturesToxinDamage,MultiplicativeModifierArray[UnfairAdvantageModifier].Modifier\"/>%</c> more damage to Heroes that are Slowed, Rooted, or Stunned.",
     "DryadWildVigorTalent": "Using Crippling Spores increases the damage of Lunara's next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DryadWildVigorActive,MaxStackCount\"/></c> Basic Attacks by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DryadWildVigorDamageBuff,Modification.DamageDealtFraction[Basic]\"/>%</c>.",
-    "DryadWisp": "Spawn a Wisp to scout an area. Can be redirected once active. When the Wisp is in a bush for more <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DryadWispBrushBonusVisionCountdownBehavior,Duration\"/></c> seconds, its vision radius is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DryadWispBrushBonusVision,Modification.SightBonus/Unit,DryadWispUnit,Sight\"Player=\"0\"/>%.</c>  Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DryadWispTimedLife,Duration\" player=\"0\"/></c> seconds.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "DryadWisp": "Spawn a Wisp to scout an area. Can be redirected once active. When the Wisp is in a bush for more <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DryadWispBrushBonusVisionCountdownBehavior,Duration\"/></c> seconds, its vision radius is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DryadWispBrushBonusVision,Modification.SightBonus/Unit,DryadWispUnit,Sight\"Player=\"0\"/>%.</c>  Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DryadWispTimedLife,Duration\" player=\"0\"/></c> seconds."
   },
   "tooltipSimple": {
     "DryadAbolishMagicHotbar": "Remove crowd control from a target and Lunara",

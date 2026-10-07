@@ -117,16 +117,6 @@
         "cooldown": 18,
         "icon": "storm_ui_icon_zagara_creep.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Zagara|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -559,7 +549,6 @@
   "tooltipMarkup": {
     "FuryoftheStormTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FuryoftheStormAoECooldown,Duration\" player=\"0\"/></c> seconds, your next Basic Attack will deal an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,FuryoftheStormImpactDamage,Amount\"/></c> damage to the target, and <c val=\"#TooltipNumbers\"><d ref=\"Effect,FuryoftheStormAoEDamage,Amount\"/></c> damage to all nearby Minions, Mercenaries, and Monsters.",
     "GenericSpellShieldTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldCooldown,Duration\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor against the next enemy Ability and subsequent Abilities for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,Duration\" precision=\"1\"/></c> seconds, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.<n/><n/>Can be toggled to allow or prevent this talent from triggering automatically.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "ZagaraBanelingBarrage": "Launch <c val=\"#TooltipNumbers\"><d ref=\"Effect,SummonBanelingsPersistent,PeriodCount\" player=\"0\"/> </c>Baneling that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZagaraBanelingExplodeDamage,Amount\"/></c> damage to enemies it hits.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,ZagaraBanelingBarrage,Cost.Charge.CountMax\" player=\"0\"/></c> charges.",
     "ZagaraBanelingBarrageBanelingMassacreTalent": "Gain <c val=\"#TooltipNumbers\">2</c> additional charges of Banelings.",
     "ZagaraBanelingBarrageVolatileAcidTalent": "Banelings can travel <c val=\"#TooltipNumbers\">50%</c> further before exploding and their damage to non-Heroes is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,ZagaraMasteryVolatileAcid,AbilityModificationArray[0].Modifications[0].Value\"/>%</c>.",

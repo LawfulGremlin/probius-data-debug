@@ -119,16 +119,6 @@
         "cooldown": 8,
         "icon": "storm_ui_icon_valeera_vanish.png",
         "type": "trait"
-      },
-      {
-        "uid": "8a4e67",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health.",
-        "hotkey": "B",
-        "abilityId": "Valeera|B1",
-        "tooltipId": "PortBackToBaseNoMana",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "ValeeraStealth": [
@@ -577,7 +567,6 @@
     ]
   },
   "tooltipMarkup": {
-    "PortBackToBaseNoMana": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health.",
     "ValeeraAdrenalineRush": "While in the Smoke Bomb, Valeera regenerates an additional <c val=\"#TooltipNumbers\"><d ref=\"Talent,ValeeraSmokeBombAdrenalineRush,AbilityModificationArray[0].Modifications[0].Value\"/></c> Energy per second.",
     "ValeeraAmbush": "Ambush an enemy, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ValeeraAmbushDamage,Amount\"/></c> damage and reducing their Armor by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ValeeraAmbushReduceArmorArmorDecrease,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ValeeraAmbushReduceArmorArmorDecrease,Duration\"/></c> seconds.<n/><n/><c val=\"#GlowColorRed\">Awards 1 Combo Point</c>.<n/><n/><c val=\"#ColorViolet\">Unstealth: Sinister Strike<n/></c>Dash forward, damaging enemies.",
     "ValeeraAssassinate": "Ambush deals <c val=\"#TooltipNumbers\"><d ref=\"-1+Behavior,ValeeraAssassinationTarget,DamageResponse.ModifyFraction*100\"/>%</c> additional damage and reduces the target's Armor by an additional <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ValeeraAmbushAssassinateReduceArmorArmorDecrease,ArmorModification.AllArmorBonus+Behavior,ValeeraAmbushReduceArmorArmorDecrease,ArmorModification.AllArmorBonus\"/></c> if no other enemy Heroes are within <c val=\"#TooltipNumbers\"><d ref=\"Validator,ValeeraAssassinateTargetNotNearAllies,AreaArray[0].Radius\"/></c> range of the victim.",

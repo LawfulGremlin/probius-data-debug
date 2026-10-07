@@ -110,16 +110,6 @@
         "tooltipId": "LiLiFastFeet",
         "icon": "storm_ui_icon_lili_fastfeet.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "LiLi|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -531,8 +521,7 @@
     "LiLiSurgingWindsTalent": "If Blinding Wind hits <c val=\"#TooltipNumbers\">2</c> Heroes, its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,LiLiBlindingWindSurgingWindsTalentModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds and Li Li gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,LiLiBlindingWindSurgingWindsAbilityPower,Modification.DamageDealtFraction[Ability]\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LiLiBlindingWindSurgingWindsAbilityPower,Duration\"/></c> seconds.",
     "LiLiWaterDragon": "Li Li channels for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WaterDragonCreatePersistentCasting,PeriodicPeriodArray[0]*Effect,WaterDragonCreatePersistentCasting,PeriodCount\"/></c> seconds, summoning a Water Dragon that hits the nearest enemy Hero within <c val=\"#TooltipNumbers\"><d ref=\"Effect,WaterDragonSearchAreaApplyMarker,AreaArray[0].Radius\"/></c> range and all enemies near them, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,WaterDragonDamage,Amount\"/></c> damage and slowing their Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"- (Behavior,WaterDragonSlow,Modification.UnifiedMoveSpeedFactor*100)\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WaterDragonSlow,Duration\" player=\"0\"/></c> seconds.",
     "LiLiWaterDragonDoubleDragonTalent": "After hitting a target with Water Dragon, another Water Dragon is summoned at the point of impact.",
-    "LiLiWindSerpent": "Casting Cloud Serpent also launches a Blinding Wind at the nearest enemy to the target (prioritizing Heroes).",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "LiLiWindSerpent": "Casting Cloud Serpent also launches a Blinding Wind at the nearest enemy to the target (prioritizing Heroes)."
   },
   "tooltipSimple": {
     "LiLiBlessingsOfYulon": "Increase Cloud Serpent healing",

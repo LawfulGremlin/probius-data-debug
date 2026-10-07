@@ -111,16 +111,6 @@
         "cooldown": 12,
         "icon": "storm_ui_icon_tychus_minigun.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Tychus|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "TychusOdinNoHealth": [
@@ -562,7 +552,6 @@
     }
   ],
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "TychusCombatTactician": "Basic Attacks reduce the cooldown of Run and Gun by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,TychusRunAndGunCombatTacticianTalentModifyUnit,Cost[0].ChargeTimeUse\"precision=\"2\"/></c> seconds.",
     "TychusCommandeerOdin": "Call down an Odin to pilot. The Odin deals increased Damage, has <c val=\"#TooltipNumbers\"><d ref=\"(Weapon,TychusOdin,Range/Weapon,TychusMiniGunRampingSpeedWeapon,Range-1)*100\" player=\"0\" precision=\"1\"/>%</c> increased Basic Attack range, and uses different Abilities. The Odin has <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusOdin,ArmorModification.AllArmorBonus\"/></c> Armor and lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusOdin,Duration\" player=\"0\"/></c> seconds.",
     "TychusCommandeerOdinAnnihilate": "Fire the Odin's cannons in a straight line, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusOdinAnnihilateDamage,Amount\"/></c> damage to everything in the path.",

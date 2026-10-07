@@ -155,16 +155,6 @@
         "tooltipId": "LostVikingSelectAll",
         "icon": "storm_ui_ingame_heroselect_btn_lostvikings.png",
         "type": "activable"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "LostVikings|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "LostVikingsLongboatRaidNewer": [
@@ -221,16 +211,6 @@
         "cooldown": 30,
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "basic"
-      },
-      {
-        "uid": "8a4e67",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health.",
-        "hotkey": "B",
-        "abilityId": "LostVikings|B2",
-        "tooltipId": "PortBackToBaseNoMana",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       },
       {
         "uid": "a40d9c",
@@ -670,9 +650,7 @@
     "LostVikingsTheSequelTalent": "Reduces the Lost Vikings's death timer by <c val=\"#TooltipNumbers\">50%</c>.",
     "LostVikingsVikingBribery": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"#TooltipNumbers\"><d ref=\"Effect,LostVikingsVikingBriberyRemoveStackBehavior,Count\"/></c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LostVikingsVikingBriberyStacks,MaxStackCount\"/></c>. If a camp is defeated entirely with Bribe, the camp respawns <c val=\"#TooltipNumbers\">50%</c> faster.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: <c val=\"#TooltipNumbers\"><d score=\"LostVikingsVikingBriberyStackScore\"/></c></c>",
     "LostVikingsVikingHoardTalent": "Gathering a Regeneration Globe with a Viking permanently increases all their Health Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,LostVikingsVikingHoardAccumulator,Scale\" precision=\"2\"/></c> per second.<n/><n/>Current Bonus: <c val=\"#TooltipNumbers\"><d ref=\"$BehaviorStackCount:LostVikingsVikingHoardTokenCounter$ * Accumulator,LostVikingsVikingHoardAccumulator,Scale\" precision=\"2\"/></c> Regen per second",
-    "LostVikingsWereOnABoatTalent": "The Longboat can attack two targets at once and the range of its Mortar is increased by <c val=\"#TooltipNumbers\">100%</c>.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
-    "PortBackToBaseNoMana": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health."
+    "LostVikingsWereOnABoatTalent": "The Longboat can attack two targets at once and the range of its Mortar is increased by <c val=\"#TooltipNumbers\">100%</c>."
   },
   "tooltipSimple": {
     "GenericExecutionerTalent": "Attacking disabled Heroes increases damage",

@@ -3,7 +3,7 @@
     "unitId": "AbathurEvolvedMonstrosity",
     "portraits": {},
     "life": {
-      "amount": 1000,
+      "amount": 1350,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
@@ -15,7 +15,7 @@
         "range": 2,
         "minimumRange": 0.5,
         "period": 1,
-        "damage": 73,
+        "damage": 85,
         "damageScale": 0.04
       },
       {
@@ -24,7 +24,7 @@
         "range": 0.5,
         "minimumRange": 0,
         "period": 1,
-        "damage": 73,
+        "damage": 85,
         "damageScale": 0.04
       }
     ],
@@ -2691,14 +2691,14 @@
     "abilities": {
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBase",
+          "nameId": "Hearthstone",
+          "buttonId": "Hearthstone",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBase|B",
+          "_hdp5LinkId": "Hearthstone|Hearthstone|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
         }
       ],
       "spray": [
@@ -3704,6 +3704,20 @@
     "sight": 0,
     "speed": 0
   },
+  "HallOfStormsLocationUnit": {
+    "unitId": "HallOfStormsLocationUnit",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "HangingSharkBreakable": {
     "unitId": "HangingSharkBreakable",
     "portraits": {},
@@ -3914,20 +3928,6 @@
     "sight": 0,
     "speed": 0
   },
-  "HealingPadSearchUnit": {
-    "unitId": "HealingPadSearchUnit",
-    "portraits": {},
-    "life": {
-      "amount": 1,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0.5,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
   "HealSign": {
     "unitId": "HealSign",
     "portraits": {},
@@ -4011,6 +4011,75 @@
     "innerRadius": 0,
     "sight": 0,
     "speed": 0
+  },
+  "ImperiusAngelicArmamentsHeavenlyHostMissile": {
+    "unitId": "ImperiusAngelicArmamentsHeavenlyHostMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "ImperiusAngelicArmamentsMissile": {
+    "unitId": "ImperiusAngelicArmamentsMissile",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "ImperiusSolarionsFireMissileUnit": {
+    "unitId": "ImperiusSolarionsFireMissileUnit",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 2,
+    "speed": 0
+  },
+  "ImperiusWrathOfTheAngirisCursorUnit": {
+    "unitId": "ImperiusWrathOfTheAngirisCursorUnit",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.8125,
+    "innerRadius": 0.8125,
+    "sight": 2,
+    "speed": 5,
+    "abilities": {
+      "hearth": [
+        {
+          "nameId": "move",
+          "buttonId": "MovePatrol",
+          "abilityType": "B",
+          "isPassive": false,
+          "_hdp5LinkId": "move|MovePatrol|B",
+          "icon": "btn-command-patrol.png",
+          "name": "Move Patrol"
+        }
+      ]
+    }
   },
   "IntroVOInteractor": {
     "unitId": "IntroVOInteractor",
@@ -8926,48 +8995,6 @@
     "sight": 7,
     "speed": 0
   },
-  "RepulsorField": {
-    "unitId": "RepulsorField",
-    "portraits": {},
-    "life": {
-      "amount": 1,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0.5,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "RepulsorField2clicks": {
-    "unitId": "RepulsorField2clicks",
-    "portraits": {},
-    "life": {
-      "amount": 1,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0.5,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "RepulsorField3clicks": {
-    "unitId": "RepulsorField3clicks",
-    "portraits": {},
-    "life": {
-      "amount": 1,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0.5,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
   "RexxarFlareMissile": {
     "unitId": "RexxarFlareMissile",
     "portraits": {},
@@ -11376,14 +11403,14 @@
       ],
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBase",
+          "nameId": "Hearthstone",
+          "buttonId": "Hearthstone",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBase|B",
+          "_hdp5LinkId": "Hearthstone|Hearthstone|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
         }
       ],
       "mount": [
@@ -11481,14 +11508,14 @@
       ],
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBase",
+          "nameId": "Hearthstone",
+          "buttonId": "Hearthstone",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBase|B",
+          "_hdp5LinkId": "Hearthstone|Hearthstone|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
         }
       ],
       "mount": [
@@ -11586,14 +11613,14 @@
       ],
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBase",
+          "nameId": "Hearthstone",
+          "buttonId": "Hearthstone",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBase|B",
+          "_hdp5LinkId": "Hearthstone|Hearthstone|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
         }
       ],
       "mount": [
@@ -11691,14 +11718,14 @@
       ],
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBase",
+          "nameId": "Hearthstone",
+          "buttonId": "Hearthstone",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBase|B",
+          "_hdp5LinkId": "Hearthstone|Hearthstone|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
         }
       ],
       "mount": [
@@ -15192,7 +15219,7 @@
     "radius": 1.5,
     "innerRadius": 0.75,
     "sight": 12,
-    "speed": 4.3984,
+    "speed": 4,
     "abilities": {
       "basic": [
         {
@@ -15381,7 +15408,7 @@
     "radius": 1.5,
     "innerRadius": 0,
     "sight": 12,
-    "speed": 4.3984,
+    "speed": 4,
     "abilities": {
       "basic": [
         {
@@ -16866,14 +16893,14 @@
       ],
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBase",
+          "nameId": "Hearthstone",
+          "buttonId": "Hearthstone",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBase|B",
+          "_hdp5LinkId": "Hearthstone|Hearthstone|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
         }
       ],
       "mount": [
@@ -16952,14 +16979,14 @@
     "abilities": {
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBaseNoMana",
+          "nameId": "Hearthstone",
+          "buttonId": "HearthstoneNoMana",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBaseNoMana|B",
+          "_hdp5LinkId": "Hearthstone|HearthstoneNoMana|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
         }
       ],
       "mount": [
@@ -17038,14 +17065,14 @@
     "abilities": {
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBaseNoMana",
+          "nameId": "Hearthstone",
+          "buttonId": "HearthstoneNoMana",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBaseNoMana|B",
+          "_hdp5LinkId": "Hearthstone|HearthstoneNoMana|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
         }
       ],
       "mount": [
@@ -17124,14 +17151,14 @@
     "abilities": {
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBaseNoMana",
+          "nameId": "Hearthstone",
+          "buttonId": "HearthstoneNoMana",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBaseNoMana|B",
+          "_hdp5LinkId": "Hearthstone|HearthstoneNoMana|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
         }
       ],
       "mount": [
@@ -17307,14 +17334,14 @@
       ],
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBase",
+          "nameId": "Hearthstone",
+          "buttonId": "Hearthstone",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBase|B",
+          "_hdp5LinkId": "Hearthstone|Hearthstone|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
         }
       ],
       "mount": [
@@ -17538,14 +17565,14 @@
       ],
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBaseNoMana",
+          "nameId": "Hearthstone",
+          "buttonId": "HearthstoneNoMana",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBaseNoMana|B",
+          "_hdp5LinkId": "Hearthstone|HearthstoneNoMana|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
         }
       ],
       "mount": [
@@ -17729,14 +17756,14 @@
       ],
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBaseNoMana",
+          "nameId": "Hearthstone",
+          "buttonId": "HearthstoneNoMana",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBaseNoMana|B",
+          "_hdp5LinkId": "Hearthstone|HearthstoneNoMana|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
         }
       ],
       "mount": [
@@ -17920,14 +17947,14 @@
       ],
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBaseNoMana",
+          "nameId": "Hearthstone",
+          "buttonId": "HearthstoneNoMana",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBaseNoMana|B",
+          "_hdp5LinkId": "Hearthstone|HearthstoneNoMana|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health."
         }
       ],
       "mount": [
@@ -18114,14 +18141,14 @@
       ],
       "hearth": [
         {
-          "nameId": "PortBackToBase",
-          "buttonId": "PortBackToBase",
+          "nameId": "Hearthstone",
+          "buttonId": "Hearthstone",
           "abilityType": "B",
           "isPassive": false,
-          "_hdp5LinkId": "PortBackToBase|PortBackToBase|B",
+          "_hdp5LinkId": "Hearthstone|Hearthstone|B",
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
-          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Altar, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
         }
       ],
       "mount": [

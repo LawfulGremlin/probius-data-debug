@@ -90,16 +90,6 @@
         "cooldown": 1,
         "icon": "storm_ui_icon_tracer_reload.png",
         "type": "trait"
-      },
-      {
-        "uid": "8a4e67",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health.",
-        "hotkey": "B",
-        "abilityId": "Tracer|B1",
-        "tooltipId": "PortBackToBaseNoMana",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -447,7 +437,6 @@
     ]
   },
   "tooltipMarkup": {
-    "PortBackToBaseNoMana": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health.",
     "TracerBlink": "Dash towards an area.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,TracerBlink,Cost[0].Charge.CountMax\" player=\"0\"/></c> charges.",
     "TracerBulletSprayMelee": "Increases Melee's radius by <c val=\"#TooltipNumbers\"><d ref=\"Effect,TracerMeleeBulletSpraySearch,AreaArray[0].Radius / Effect,TracerMeleeSearch,AreaArray[0].Radius - 1 * 100\"/>%</c>, and causes it to damage all enemies in range.",
     "TracerBulletTime": "Basic Attacks lower the cooldown of Blink by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,TracerBlinkBulletTimeMasteryModifyUnit,Cost[0].ChargeTimeUse\"precision=\"2\"/></c> seconds.",

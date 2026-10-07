@@ -109,16 +109,6 @@
         "tooltipId": "LeoricUndyingTrait",
         "icon": "storm_ui_icon_leoric_trait.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Leoric|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "LeoricUndyingTrait": [
@@ -584,8 +574,7 @@
     "LeoricUndyingTrait": "Leoric becomes a ghost when he dies, and resurrects upon reaching full Health. Leoric deals no damage while dead.<n/><n/><s val=\"StandardTooltipHeader\">Wrath Of The Bone King</s><n/><n/>Leoric's first two Basic Attacks cleave for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,LeoricWeaponDamageWrathOfTheBoneKing,Amount/Effect,LeoricWeaponDamage,Amount\"player=\"0\"/>%</c> damage, and his third Basic Attack deals <c val=\"#TooltipNumbers\"><d ref=\"100* (Effect,LeoricWeaponDamage,MultiplicativeModifierArray[WrathOfTheBoneKing].Modifier + 1)\"/>%</c> damage to a single target.",
     "LeoricUnyieldingDespairTalent": "Drain Hope's cooldown is reduced by <c val=\"#TooltipNumbers\">0.5</c> seconds for every <c val=\"#TooltipNumbers\">1</c> second it is active. If Drain Hope lasts its full duration, its cooldown is reduced by an additional <c val=\"#TooltipNumbers\"><d ref=\"-Effect,LeoricDrainHopeUnyieldingDespairModifyUnit,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "LeoricWillingVesselTalent": "Increase the healing from Drain Hope to <c val=\"#TooltipNumbers\">25%</c> of Leoric's maximum Health. If Drain Hope lasts its full duration, Leoric instantly heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,LeoricDrainHopeWillingVesselCreateHealer,RechargeVitalFraction\"/>%</c> of his maximum Health.",
-    "LeoricWraithWalk": "Leoric separates from his body, becoming Unstoppable and gaining Movement Speed accelerating up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LeoricWraithWalkBurstOfSpeed,MaxStackCount*Behavior,LeoricWraithWalkBurstOfSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LeoricWraithWalkCasterBehavior,Duration\" player=\"0\" precision=\"2\"/></c> seconds. When Wraith Walk ends or is canceled, his body jumps to his wraith.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "LeoricWraithWalk": "Leoric separates from his body, becoming Unstoppable and gaining Movement Speed accelerating up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LeoricWraithWalkBurstOfSpeed,MaxStackCount*Behavior,LeoricWraithWalkBurstOfSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LeoricWraithWalkCasterBehavior,Duration\" player=\"0\" precision=\"2\"/></c> seconds. When Wraith Walk ends or is canceled, his body jumps to his wraith."
   },
   "tooltipSimple": {
     "LeoricBuriedAliveTalent": "Entomb damages and Silences",

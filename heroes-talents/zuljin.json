@@ -127,16 +127,6 @@
         "tooltipId": "ZuljinBerserker",
         "icon": "storm_ui_icon_zuljin_berzerker.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Zuljin|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -494,7 +484,6 @@
     ]
   },
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "Zul'jinAmaniRageAmaniHide": "Lower the cooldown of Amani Rage by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,Zul'jinAmaniRageAmaniHide,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds and gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinAmaniRageArmorBehavior,ArmorModification.AllArmorBonus\"/></c> Armor while regenerating Health from it.",
     "ZuljinAmaniRageTalent": "Activate to cause Zul'jin to instantly lose <c val=\"#TooltipNumbers\">50%</c> of his current Health and heal for that amount over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZuljinAmaniRageHealBuff,Duration\"/></c> seconds.",
     "ZuljinAmaniResilience": "Increase Taz'dingo's duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ZuljinAmaniResilience,AbilityModificationArray[0].Modifications[1].Value\"/></c> second. Upon expiring, Zul'jin heals for <c val=\"#TooltipNumbers\">50%</c> of the damage he dealt during Taz'dingo.",

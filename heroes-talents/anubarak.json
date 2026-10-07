@@ -123,16 +123,6 @@
         "tooltipId": "AnubarakScarabHostTrait",
         "icon": "storm_ui_icon_anubarak_scarabhost.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Anubarak|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -570,8 +560,7 @@
     "GenericBurningRageTalent": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,BurningRageDamage1,Amount\"/></c> damage per second to nearby enemies.",
     "GenericRegenerationMasterTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gathering a Regeneration Globe increases your Health Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,HeroGenericRegenerationMasterAccumulator,Scale\"/></c> per second, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,HeroGenericRegenerationMasterAccumulator,MaxAccumulation\"/></c>. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gathering <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericRegenerationMasterQuestToken,Max\"/></c> Regeneration Globes, you also gain <c val=\"#TooltipNumbers\"><d ref=\"Effect,HeroGenericRegenerationMasterCompleteModifyPlayer,EffectArray[0].Value\"/></c> Health.",
     "GenericRewindHotbar": "Activate to reset the cooldowns of your Basic Abilities.",
-    "HardenedShieldTalent": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HardenedShield,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HardenedShield,Duration\"/></c> seconds, taking <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HardenedShield,ArmorModification.AllArmorBonus\"/>%</c> less damage.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "HardenedShieldTalent": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HardenedShield,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HardenedShield,Duration\"/></c> seconds, taking <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HardenedShield,ArmorModification.AllArmorBonus\"/>%</c> less damage."
   },
   "tooltipSimple": {
     "AnubarakAcidDrenchedMandibles": "Attacking disabled Heroes increases damage",

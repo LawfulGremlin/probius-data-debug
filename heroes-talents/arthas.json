@@ -104,7 +104,7 @@
       {
         "uid": "f397dc",
         "name": "Summon Sindragosa",
-        "description": "Deals 230 (+4% per level) damage and Slows enemies by 60% for 4 seconds.  Also disables non-Heroic enemies and Structures for 20 seconds.",
+        "description": "Deals 230 (+4% per level) damage and Slows enemies by 60% for 4 seconds.  Also disables Minions, Mercenaries, Monsters and Structures for 20 seconds.",
         "hotkey": "R",
         "abilityId": "Arthas|R3",
         "tooltipId": "ArthasSummonSindragosa",
@@ -124,16 +124,6 @@
         "cooldown": 10,
         "icon": "storm_ui_icon_arthas_frostmournehungers_off.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Arthas|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -309,7 +299,7 @@
         "tooltipId": "ArthasSummonSindragosa",
         "talentTreeId": "ArthasHeroicAbilitySummonSindragosa",
         "name": "Summon Sindragosa",
-        "description": "Deals 230 (+4% per level) damage and Slows enemies by 60% for 4 seconds.  Also disables non-Heroic enemies and Structures for 20 seconds.",
+        "description": "Deals 230 (+4% per level) damage and Slows enemies by 60% for 4 seconds.  Also disables Minions, Mercenaries, Monsters and Structures for 20 seconds.",
         "icon": "storm_ui_icon_arthas_summonsindragosa.png",
         "type": "Heroic",
         "sort": 2,
@@ -559,8 +549,7 @@
     "ArthasRime": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasRimeCharged,DamageResponse.Cost.Charge.TimeUse\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasRimeChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasRimeChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>. Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasRimeCharged,DamageResponse.Cost.Charge.CountMax\"/></c> charges.",
     "ArthasRuneTapTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasRuneTapStacks,MaxStackCount\"/>rd</c> Basic Attack heals Arthas for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasRuneTapHealer,RechargeVitalFraction*100\"/>%</c> of his max Health.",
     "ArthasShatteredArmor": "Enemy Heroes hit by Howling Blast have their Armor reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ArthasHowlingBlastShatteredArmor,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasHowlingBlastShatteredArmor,Duration\"/></c> seconds.",
-    "ArthasSummonSindragosa": "Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasSummonSindragosaDamage,Amount\"/></c> damage and Slows enemies by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ArthasSummonSindragosaSlow,Modification.UnifiedMoveSpeedFactor*100\" precision=\"1\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaHeroSlow,Duration\" player=\"0\" precision=\"1\"/></c> seconds.  Also disables non-Heroic enemies and Structures for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaStructureDebuff,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "ArthasSummonSindragosa": "Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArthasSummonSindragosaDamage,Amount\"/></c> damage and Slows enemies by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,ArthasSummonSindragosaSlow,Modification.UnifiedMoveSpeedFactor*100\" precision=\"1\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaHeroOrSummonSlow,Duration\" player=\"0\" precision=\"1\"/></c> seconds.  Also disables Minions, Mercenaries, Monsters and Structures for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ArthasSummonSindragosaStructureDebuff,Duration\" player=\"0\" precision=\"2\"/></c> seconds."
   },
   "tooltipSimple": {
     "ArthasAbsoluteZeroSummonSindragosaTalent": "Increases Sindragosa range and disable duration",

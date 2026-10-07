@@ -107,16 +107,6 @@
         "tooltipId": "DiabloBlackSoulstone",
         "icon": "storm_ui_icon_diablo_blacksoulstone_var1.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Diablo|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -162,7 +152,7 @@
         "tooltipId": "DiabloSoulShield",
         "talentTreeId": "DiabloSoulShield",
         "name": "Soul Shield",
-        "description": "Activate to gain 25 plus 50% of Diablo's current Souls as Spell Armor for 4 seconds.  Every time Diablo damages an enemy Hero, reduce this cooldown by 1 second.",
+        "description": "Activate to gain 25 plus 50% of Diablo's current Souls as Spell Armor for 4 seconds. Every time Diablo damages an enemy Hero, reduce this cooldown by 1 second.",
         "icon": "storm_ui_icon_talent_spellshield.png",
         "type": "Active",
         "sort": 3,
@@ -529,8 +519,7 @@
     "DiabloShadowChargeOverpowerCruelty": "Stunning an enemy Hero with Shadow Charge or Overpower increases Diablo's Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeOverpowerCrueltyAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeOverpowerCrueltyAttackSpeedBuff,Duration\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeOverpowerCrueltyAttackSpeedBuff,MaxStackCount*Behavior,DiabloShadowChargeOverpowerCrueltyAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor*100\"/>%</c>.",
     "DiabloShadowChargeOverpowerEternalFlames": "When Diablo Stuns an enemy Hero with Shadow Charge or Overpower, reset the cooldown of Fire Stomp.",
     "DiabloShadowChargeSacrificialSoul": "Stunning a Hero with Shadow Charge grants <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloBlackSoulstoneAdd5TokenCount,Value\"/></c> Souls and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeSacrificialSoulArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeSacrificialSoulArmorIncrease,Duration\"/></c> seconds. While at <c val=\"#TooltipNumbers\"><d ref=\"Validator,DiabloHasGTE100SoulstoneStacks,Value\"/></c> Souls, increase this Armor to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeSacrificialSoulImprovedArmorIncrease,ArmorModification.AllArmorBonus\"/></c>.",
-    "DiabloSoulShield": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloSoulShieldBaseSpellArmor,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> plus <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloSoulShieldSpellArmor,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]*100\" player=\"0\"/>%</c> of Diablo's current Souls as Spell Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloBlackSoulstoneSoulShieldActiveCarryBehavior,Duration\"/></c> seconds.  Every time Diablo damages an enemy Hero, reduce this cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,DiabloBlackSoulstoneSoulShieldModifyPlayerCooldown,Cost.Cooldown.TimeUse\"/></c> second.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "DiabloSoulShield": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloSoulShieldSpellArmor,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> plus <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DiabloBlackSoulstoneSoulShieldTalentAccumulator,Scale*100\"/>%</c> of Diablo's current Souls as Spell Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloSoulShieldSpellArmor,Duration\"/></c> seconds. Every time Diablo damages an enemy Hero, reduce this cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,DiabloBlackSoulstoneSoulShieldModifyPlayerCooldown,Cost.Cooldown.TimeUse\"/></c> second."
   },
   "tooltipSimple": {
     "DiabloApocalypse": "Stun all enemy Heroes",

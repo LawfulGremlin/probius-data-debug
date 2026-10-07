@@ -113,16 +113,6 @@
         "tooltipId": "WitchDoctorVoodooRitualTrait",
         "icon": "storm_ui_icon_nazeebo_voodooritual.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Nazeebo|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "WitchDoctorGargantuan": [
@@ -593,7 +583,6 @@
     "FuryoftheStormTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FuryoftheStormAoECooldown,Duration\" player=\"0\"/></c> seconds, your next Basic Attack will deal an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,FuryoftheStormImpactDamage,Amount\"/></c> damage to the target, and <c val=\"#TooltipNumbers\"><d ref=\"Effect,FuryoftheStormAoEDamage,Amount\"/></c> damage to all nearby Minions, Mercenaries, and Monsters.",
     "GenericIceBlockCancel": "<n/><s val=\"StandardTooltip\">Cancel Ice Block early, removing the Stasis and Invulnerability.</s>",
     "GenericIceBlockTalent": "Activate to place yourself in Stasis and gain Invulnerability for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketIceBlock,Duration\" player=\"0\"/></c> seconds.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "WitchDoctorBigVoodoo": "Increases the Health and Mana bonuses from Voodoo Ritual by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,WitchDoctorBigVoodooHealthAccumulator,Scale/Accumulator,WitchDoctorVoodooRitualHealthAccumulator,Scale*100\"/>%</c>.",
     "WitchDoctorCorpseSpiders": "Hurl a jar of spiders that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,WitchDoctorCorpseSpidersJarDamage,Amount\"/></c> damage. If it hits at least one enemy, create <c val=\"#TooltipNumbers\"><d ref=\"Effect,NazeeboCorpseSpidersSpawnSpiderSearch,MaxCount\"/> </c>Corpse Spiders that attack for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WitchDoctorCorpseSpidersWeaponDamage,Amount\"/></c> damage. Spiders last for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WitchDoctorCorpseSpidersTimedLife,Duration\" player=\"0\"/></c> seconds.",
     "WitchDoctorGargantuan": "Summon a Gargantuan to guard an area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WitchDoctorGargantuanTimedLife,Duration\"/></c> seconds. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,WitchDoctorGargantuanInitialImpactDamage,Amount\"/></c> damage when summoned, attacks for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WitchDoctorGargantuanDamage,Amount\"/></c> damage, and can be ordered to stomp nearby enemies.",

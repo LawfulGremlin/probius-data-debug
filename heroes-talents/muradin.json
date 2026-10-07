@@ -108,16 +108,6 @@
         "tooltipId": "MuradinSecondWind",
         "icon": "storm_ui_icon_muradin_secondwind.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Muradin|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -516,8 +506,7 @@
     "MuradinThunderclapHealingStaticTalent": "Muradin heals for <c val=\"#TooltipNumbers\">5%</c> of his Max Health for each Hero hit by Thunder Clap.",
     "MuradinThunderclapReverberationTalent": "Increases the Attack Speed slow from <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,MuradinThunderclapAttackSpeedDebuff,Modification.AdditiveAttackSpeedFactor\"Player=\"0\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"(-100*Talent,MuradinMasteryThunderclapReverberation,AbilityModificationArray[0].Modifications[0].Value)-(100*Behavior,MuradinThunderclapAttackSpeedDebuff,Modification.AdditiveAttackSpeedFactor)\"Player=\"0\"/>%</c> and the duration from <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MuradinThunderclapAttackSpeedDebuff,Duration\"Precision=\"2\"Player=\"0\"/></c> seconds to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MuradinThunderclapAttackSpeedDebuff,Duration+Talent,MuradinMasteryThunderclapReverberation,AbilityModificationArray[0].Modifications[2].Value\"Precision=\"2\"Player=\"0\"/></c> seconds.",
     "MuradinThunderclapThunderburnTalent": "Hitting an enemy Hero with Thunder Clap triggers a second explosion <c val=\"#TooltipNumbers\"><d ref=\"Effect,MuradinThunderclapThunderburnTalentCreatePersistent,PeriodicPeriodArray[0]\" precision=\"1\"/></c> seconds later in the same location that deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MuradinThunderclapThunderburnTalentDamage,Amount/Effect,ThunderclapDamage,Amount\"Precision=\"2\"/>%</c> damage.",
-    "MuradinThunderclapThunderstrikeTalent": "Thunder Clap deals <c val=\"#TooltipNumbers\">300%</c> damage if only one target is hit.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "MuradinThunderclapThunderstrikeTalent": "Thunder Clap deals <c val=\"#TooltipNumbers\">300%</c> damage if only one target is hit."
   },
   "tooltipSimple": {
     "GenericBlockTalent": "Periodically gain Physical Armor",

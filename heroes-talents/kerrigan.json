@@ -110,16 +110,6 @@
         "tooltipId": "KerriganAssimilation",
         "icon": "storm_ui_icon_kerrigan_assimilation.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Kerrigan|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -559,8 +549,7 @@
     "KerriganSummonUltralisk": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,KerriganUltraliskCharge,CastIntroTime\" precision=\"2\"/></c> seconds, summon an Ultralisk that rushes forward upon spawning, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,KerriganUltraliskChargeDamage,Amount\"/></c> damage to the first enemy Hero hit and Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KerriganUltraliskStun,Duration\" precision=\"2\"/></c> seconds.<n/><n/>The Ultralisk's Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,KerriganUltraliskWeaponSplashDamage,Amount/Effect,KerriganUltraliskWeaponDamage,Amount*100\"/>%</c> of their damage in an area around their target. Reactivate to retarget the Ultralisk.",
     "KerriganSummonUltraliskTorrasqueTalent": "The Ultralisk morphs into an egg when it dies. If the egg isn't killed within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KerriganUltraliskTorrasqueEggTimedLife,Duration\" player=\"0\"/></c> seconds, a new Ultralisk is born.",
     "KerriganUltraliskCharge": "Charge at an enemy.",
-    "KerriganUnbridledEnergy": "Damaging a Hero with a Heroic Ability grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KerriganUnbridledEnergyIncreasedDamage,Modification.DamageDealtFraction[Ability]*(100)\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KerriganUnbridledEnergyIncreasedDamage,Duration\"/></c> seconds.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "KerriganUnbridledEnergy": "Damaging a Hero with a Heroic Ability grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KerriganUnbridledEnergyIncreasedDamage,Modification.DamageDealtFraction[Ability]*(100)\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KerriganUnbridledEnergyIncreasedDamage,Duration\"/></c> seconds."
   },
   "tooltipSimple": {
     "KerriganAssimilation": "Gain a temporary Shield by attacking enemies",

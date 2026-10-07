@@ -118,16 +118,6 @@
         "cooldown": 18,
         "icon": "storm_ui_icon_varian_heroicstrike.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Varian|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -518,7 +508,6 @@
     ]
   },
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "VarianBannerOfDalaran": "Activate to place a Banner that grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,VarianBannerOfDalaranAbilityPowerBuff,Modification.DamageDealtFraction[Ability]*100\"/>%</c> increased Spell Power to nearby allied Heroes. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,VarianBannerOfDalaranTimedLife,Duration\"/></c> seconds.",
     "VarianBannerOfIronforge": "Activate to place a Banner that grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,VarianBannerOfIronforgeResistantBuff,ArmorModification.AllArmorBonus\"/></c> Armor to nearby allied Heroes, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,VarianBannerOfIronforgeResistantBuff,ArmorModification.AllArmorBonus\"/>%</c>. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,VarianBannerOfIronforgeTimedLife,Duration\"/></c> seconds.",
     "VarianBannerOfStormwind": "Activate to place a Banner that grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,VarianBannerOfStormwindMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> increased Movement Speed to nearby allied Heroes. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,VarianBannerOfStormwindTimedLife,Duration\"/></c> seconds.",

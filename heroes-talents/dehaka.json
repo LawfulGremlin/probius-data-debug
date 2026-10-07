@@ -132,16 +132,6 @@
         "manaCost": 65,
         "icon": "storm_ui_icon_dehaka_burrow.png",
         "type": "basic"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Dehaka|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -555,8 +545,7 @@
     "DehakaIsolationTalentContagion": "Isolation hits all Heroes near the first target.",
     "DehakaPrimalRage": "Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,DehakaPrimalRageTalentDamageAccumulator,Scale\"/>%</c> increased Attack Damage per Essence stored.",
     "DehakaPrimalSwarm": "Dark Swarm causes enemies hit to lose <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DehakaDarkSwarmPrimalSwarmTalentDebuff,ArmorModification.AllArmorBonus * (-1)\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DehakaDarkSwarmPrimalSwarmTalentDebuff,Duration\"precision=\"2\"/></c> seconds, causing them to take <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,DehakaDarkSwarmPrimalSwarmTalentDebuff,ArmorModification.AllArmorBonus\"/>%</c> extra damage.",
-    "DehakaTunnelingClaws": "Dehaka can move while Burrowed.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "DehakaTunnelingClaws": "Dehaka can move while Burrowed."
   },
   "tooltipSimple": {
     "DehakaAdaptation": "Heal back damage taken",

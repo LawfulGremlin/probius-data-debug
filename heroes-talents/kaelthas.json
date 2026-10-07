@@ -112,16 +112,6 @@
         "cooldown": 6,
         "icon": "storm_ui_icon_kaelthas_verdantspheres.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Kaelthas|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -529,8 +519,7 @@
     "KaelthasSunfireEnchantmentTalent": "Activating Verdant Spheres causes Kael'thas's next <c val=\"#TooltipNumbers\"><d ref=\"Effect,VerdantSpheresApplySunfireEnchantmentMasteryBuff,Count\"/></c> Basic Attacks to instead deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,KaelthasSunfireEnchantmentDamage,Amount\"/></c> Spell Damage.  If both of these Attacks hit enemy Heroes, gain<c val=\"#TooltipNumbers\"> <d ref=\"100*Behavior,KaelthasVerdantSpheresSunfireEnchantmentAbilityPowerBuff,Modification.DamageDealtFraction\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KaelthasVerdantSpheresSunfireEnchantmentAbilityPowerBuff,Duration\"/></c> seconds.",
     "KaelthasVerdantSpheres": "Activate to make Kael'thas's next Basic Ability more powerful.",
     "KaelthasVerdantSpheresFelInfusionTalent": "Increases Kael'thas's Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KaelthasFelInfusion,Modification.DamageDealtFraction[Ability]*100\"/>%</c>. Kael'thas heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,KaelthasVerdantSpheresFelInfusionCreateHealer,RechargeVitalRate\"/></c> Health when activating Verdant Spheres.",
-    "KaelthasVerdantSpheresTwinSpheresTalent": "Verdant Spheres gains a second charge.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "KaelthasVerdantSpheresTwinSpheresTalent": "Verdant Spheres gains a second charge."
   },
   "tooltipSimple": {
     "KaelthasBurnedFleshTalent": "Empower Flamestrike against multiple Heroes",

@@ -120,16 +120,6 @@
         "tooltipId": "LucioSkateMode",
         "icon": "storm_ui_icon_lucio_mount.png",
         "type": "mount"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Lucio|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "LucioCrossfade": [
@@ -593,8 +583,7 @@
     "LucioWallRideAccelerando": "Wall Ride's Movement Speed bonus gradually increases to <c val=\"#TooltipNumbers\"><d ref=\"(Accumulator,LucioWallRideAccelerandoTokenAccumulator,MaxAccumulation/Unit,HeroLucio,Speed)+(Behavior,LucioWallRideSpeed,Modification.MoveSpeedBonus/Unit,HeroLucio,Speed)*100\" player=\"0\"/>%</c> over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideAccelerandoToken,Max*Behavior,LucioWallRideSpeed,Period\"/></c> seconds while Lúcio maintains its effect.",
     "LucioWallRideCantStopWontStop": "While Wall Ride's Movement Speed bonus is active, Lúcio is immune to all enemy Slow and Root effects.",
     "LucioWallRideHardStyle": "Gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideHardStyleArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor while Wall Ride's Movement Speed bonus is active, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideHardStyleArmorIncrease,ArmorModification.AllArmorBonus\"/>%</c>.",
-    "LucioWallRideSlip": "Passing through or near an enemy Hero during Wall Ride's effect increases its Movement Speed bonus to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSlip,Modification.MoveSpeedBonus+Behavior,LucioWallRideSpeed,Modification.MoveSpeedBonus/Unit,HeroLucio,Speed*100\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSlip,Duration\"/></c> second.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "LucioWallRideSlip": "Passing through or near an enemy Hero during Wall Ride's effect increases its Movement Speed bonus to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSlip,Modification.MoveSpeedBonus+Behavior,LucioWallRideSpeed,Modification.MoveSpeedBonus/Unit,HeroLucio,Speed*100\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LucioWallRideSlip,Duration\"/></c> second."
   },
   "tooltipSimple": {
     "LucioAmpItUp": "Boost the effect of Lúcio's Crossfade track",

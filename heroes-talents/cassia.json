@@ -109,16 +109,6 @@
         "tooltipId": "AmazonAvoidance",
         "icon": "storm_ui_icon_cassia_avoidance.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Cassia|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -245,7 +235,7 @@
         "tooltipId": "AmazonAvoidanceWarTraveler",
         "talentTreeId": "AmazonWarTraveler",
         "name": "War Traveler",
-        "description": "Cassia gains 4% Movement Speed every 0.5 seconds while Avoidance is active, up to 20%.  This bonus is reset when Cassia stops moving or uses an Ability.",
+        "description": "Cassia gains 8% Movement Speed every 1 second while Avoidance is active, up to 20%.  This bonus is reset when Cassia stops moving or uses an Ability.",
         "icon": "storm_ui_icon_cassia_avoidance.png",
         "type": "Trait",
         "sort": 2,
@@ -475,7 +465,7 @@
     "AmazonAvoidanceChargedStrikes": "Activate to increase Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonHeroWeaponDamage,MultiplicativeModifierArray[TalentChargedStrikesActive].Modifier * 100\"/>%</c> and cause Basic Attacks against non-Structures to bounce to nearby enemy Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonHeroWeaponChargedStrikesActive,Duration\"/></c> seconds.",
     "AmazonAvoidancePlateoftheWhale": "Regenerate <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonPlateoftheWhaleRegenHealer,RechargeVitalRate\"/></c> Health per second while Avoidance is active.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> For every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonPlateoftheWhaleStackCounter,DeltaEvents[0].Delta\"/></c> Basic Attacks absorbed with Avoidance, it regenerates an additional <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AmazonPlateoftheWhaleRegenAccumulator,Scale\"/></c> Health per second.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After absorbing <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonPlateoftheWhaleStackCounter,Max\"/></c> Basic Attacks, increase Cassia's maximum Health by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonPlateoftheWhaleQuestCompleteVitalIncrease,Modification.VitalMaxFractionArray[Life] * 100\"/>%</c>.",
     "AmazonAvoidanceSurgeOfLight": "After taking <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonAvoidanceSurgeOfLightDummyMaximumCharge,Amount\"/></c> damage with Avoidance active, Cassia can activate Avoidance to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonAvoidanceSurgeOfLightDamage,Amount\"/></c> damage to enemies around her.",
-    "AmazonAvoidanceWarTraveler": "Cassia gains <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,AmazonAvoidanceWarTravelerMovementBonus,Modification.UnifiedMoveSpeedFactor) * 100\"/>%</c> Movement Speed every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonAvoidanceDamageReduction,Period\" precision=\"2\"/></c> seconds while Avoidance is active, up to <c val=\"#TooltipNumbers\"><d ref=\"((Behavior,AmazonAvoidanceWarTravelerMovementBonus,Modification.UnifiedMoveSpeedFactor) * 100) * Behavior,AmazonAvoidanceWarTravelerMovementBonus,MaxStackCount\"/>%</c>.  This bonus is reset when Cassia stops moving or uses an Ability.",
+    "AmazonAvoidanceWarTraveler": "Cassia gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,AmazonAvoidanceWarTravelerMovementBonus,Modification.UnifiedMoveSpeedFactor*(1/Behavior,AmazonAvoidanceDamageReduction,Period)\"/>%</c> Movement Speed every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonAvoidanceMovementCheck,Period*16\"/></c> second while Avoidance is active, up to <c val=\"#TooltipNumbers\"><d ref=\"((Behavior,AmazonAvoidanceWarTravelerMovementBonus,Modification.UnifiedMoveSpeedFactor) * 100) * Behavior,AmazonAvoidanceWarTravelerMovementBonus,MaxStackCount\"/>%</c>.  This bonus is reset when Cassia stops moving or uses an Ability.",
     "AmazonBallLightning": "Throw a ball of lightning at an enemy Hero that bounces up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonBallLightningBounceTokenCounter,Max\"/></c> times between nearby enemy Heroes and Cassia, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonBallLightningBounceToEnemyDamage,Amount\"/></c> damage to enemies hit.",
     "AmazonBallLightningInfiniteLightning": "Ball Lightning can now bounce indefinitely, and its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,AmazonBallLightningInfiniteLightningReduceCooldown,Cost[0].CooldownTimeUse\"/></c> seconds every time an enemy Hero is hit.",
     "AmazonBlindingLight": "After <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonBlindingLightDelayPersistent,InitialDelay\" precision=\"1\"/></c> seconds, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonBlindingLightDamage,Amount\"/></c> damage and Blind enemies in the target area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonBlindingLightBlindDebuff,Duration\" player=\"0\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Cassia deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonHeroWeaponDamage,MultiplicativeModifierArray[TargetBlinded].Modifier * 100\"/>%</c> increased damage to Blinded targets.",
@@ -494,8 +484,7 @@
     "AmazonRingoftheLeech": "Cassia heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonHeroWeaponDamage,LeechFraction[Life] * 100\"/>%</c> of the damage she deals to Blinded enemies.",
     "AmazonTitansRevenge": "Cassia's Basic Attacks now ignore Armor, and her Basic Attack range is increased by <c val=\"#TooltipNumbers\"><d ref=\"Talent,AmazonTitansRevenge,AbilityModificationArray[0].Modifications[0].Value\" precision=\"1\"/></c>.",
     "AmazonValkyrie": "Summon a Valkyrie that rushes to Cassia after <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonValkyrieDelayPersistent,PeriodicPeriodArray[1]\" precision=\"2\"/></c> seconds, pulling the first enemy Hero hit, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonValkyrieImpaleDamage,Amount\"/></c> damage and Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonValkyrieImpaleFinalStun,Duration\" precision=\"2\"/></c> seconds at the end of her path. The Valkyrie knocks back all other enemy Heroes in her way.",
-    "AmazonValkyrieImprisoningLight": "Upon impaling a Hero, Cassia's Valkyrie creates a wave of light that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonValkyrieImprisoningLightDamage,Amount\"/></c> damage to nearby enemies and Roots them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonValkyrieImprisoningLightRoot,Duration\"/></c> seconds.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "AmazonValkyrieImprisoningLight": "Upon impaling a Hero, Cassia's Valkyrie creates a wave of light that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonValkyrieImprisoningLightDamage,Amount\"/></c> damage to nearby enemies and Roots them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonValkyrieImprisoningLightRoot,Duration\"/></c> seconds."
   },
   "tooltipSimple": {
     "AmazonAvoidance": "Gain Physical Armor while moving",

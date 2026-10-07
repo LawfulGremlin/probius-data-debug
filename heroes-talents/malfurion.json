@@ -112,16 +112,6 @@
         "cooldown": 30,
         "icon": "storm_ui_icon_malfurion_innerrvate.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Malfurion|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -560,8 +550,7 @@
     "MalfurionTranquilitySerenityTalent": "Each enemy Hero hit by Moonfire reduces the cooldown of Tranquility by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,MalfurionTranquilitySerenityModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds. Increase Tranquility's healing by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MalfurionSerenityAccumulater,Scale\"/>%</c> per ally affected by Regrowth.",
     "MalfurionTwilightDream": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,MalfurionTwilightDream,CastIntroTime\"  precision=\"2\"/></c> seconds, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,TwilightDreamDamage,Amount[0]\"/></c> damage in a large area around Malfurion, Silencing enemies making them unable to use Abilities for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TwilightDreamSilence,Duration\" player=\"0\"/> </c>seconds.",
     "MalfurionTwilightDreamAstralCommunionTalent": "Activate to Channel for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MalfurionAstralCommunionPrepareDelayPersistent,PeriodCount*Effect,MalfurionAstralCommunionPrepareDelayPersistent,PeriodicPeriodArray[0]\"/></c> second, and then instantly teleport and cast Twilight Dream at the targeted location.  Cooldown is shared with Twilight Dream.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increase Twilight Dream's Silence duration to <c val=\"#TooltipNumbers\">4</c> seconds.",
-    "MalfurionYserasGift": "While Malfurion is above <c val=\"#TooltipNumbers\"><d ref=\"100*Validator,CasterLifeGT75Percent,Value\"/>%</c> Health, Regrowth's healing-over-time is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,RegrowthHeal,MultiplicativeModifierArray[YserasGift].Modifier\"/>%</c>.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "MalfurionYserasGift": "While Malfurion is above <c val=\"#TooltipNumbers\"><d ref=\"100*Validator,CasterLifeGT75Percent,Value\"/>%</c> Health, Regrowth's healing-over-time is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,RegrowthHeal,MultiplicativeModifierArray[YserasGift].Modifier\"/>%</c>."
   },
   "tooltipSimple": {
     "MalfurionEntanglingRoots": "Root and damage Heroes in an area",

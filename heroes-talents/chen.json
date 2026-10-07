@@ -156,16 +156,6 @@
         "cooldown": 5,
         "icon": "storm_ui_icon_chen_fortifyingbrew.png",
         "type": "trait"
-      },
-      {
-        "uid": "dac1b8",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Brew.",
-        "hotkey": "B",
-        "abilityId": "Chen|B1",
-        "tooltipId": "PortBackToBaseBrew",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "ChenStormEarthFire": [
@@ -213,16 +203,6 @@
         "cooldown": 12,
         "icon": "storm_temp_war3_btnmarkoffire.png",
         "type": "basic"
-      },
-      {
-        "uid": "8a4e67",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health.",
-        "hotkey": "B",
-        "abilityId": "Chen|B2",
-        "tooltipId": "PortBackToBaseNoMana",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -371,7 +351,7 @@
         "tooltipId": "ChenPurifyingBrew",
         "talentTreeId": "ChenPurifyingBrew",
         "name": "Purifying Brew",
-        "description": "The next Stun or Silence used against Chen has its duration reduced by 75% and resets the cooldown of Fortifying Brew. Can only trigger once every 15 seconds. While channeling Fortifying Brew gain 40 Spell Armor, reducing Ability Damage taken by 40%.",
+        "description": "The next Stun or Silence used against Chen has its duration reduced by 75% and resets the cooldown of Fortifying Brew. Can only trigger once every 15 seconds. While Chen has an active Shield from Fortifying Brew, gain 40 Spell Armor, reducing Ability Damage taken by 40%.",
         "icon": "storm_ui_icon_chen_fortifyingbrew_b.png",
         "type": "Trait",
         "sort": 3,
@@ -611,16 +591,14 @@
     "ChenKegSmash": "Smash Chen's keg, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenKegSmashDamage,Amount\"/></c> damage and drenching affected enemies in Brew, slowing them by <c val=\"#TooltipNumbers\"><d ref=\"- Behavior,ChenKegSmashSlow,Modification[0].UnifiedMoveSpeedFactor[0] * 100\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenKegSmashSlow,Duration\" player=\"0\" precision=\"1\"/></c> seconds.",
     "ChenKegSmashATouchOfHoneyTalent": "Increase the slow from Keg Smash to <c val=\"#TooltipNumbers\">40%</c>.",
     "ChenKegSmashKegTossTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every time Keg Smash hits a Hero, increase its damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ChenKegTossAccumulator,Scale\"/></c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ChenKegTossAccumulator,MaxAccumulation\"/></c>. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,ChenKegTossAccumulator,MaxAccumulation / Accumulator,ChenKegTossAccumulator,Scale\"/></c> Heroes, increase its range by <c val=\"#TooltipNumbers\">125%</c> and gain an additional charge.",
-    "ChenPurifyingBrew": "The next Stun or Silence used against Chen has its duration reduced by <c val=\"#TooltipNumbers\">75%</c> and resets the cooldown of Fortifying Brew. Can only trigger once every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenPurifyingBrewCooldown,Duration\"/></c> seconds. While channeling Fortifying Brew gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFortifyingBrewGroundingBrew,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor, reducing Ability Damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFortifyingBrewGroundingBrew,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.",
+    "ChenPurifyingBrew": "The next Stun or Silence used against Chen has its duration reduced by <c val=\"#TooltipNumbers\">75%</c> and resets the cooldown of Fortifying Brew. Can only trigger once every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenPurifyingBrewCooldown,Duration\"/></c> seconds. While Chen has an active Shield from Fortifying Brew, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFortifyingBrewGroundingBrew,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor, reducing Ability Damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFortifyingBrewGroundingBrew,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.",
     "ChenStorm": "Increase the Movement Speed of the spirits by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChenStormBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenStormBuff,Duration\"/></c> seconds.",
     "ChenStormEarthFire": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,ChenStormEarthFire,CastIntroTime\"/></c> second, Chen splits into three elemental spirits for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StormEarthFireCasterBehavior,Duration[0]\"/></c> seconds, each with <c val=\"#TooltipNumbers\">75%</c> of Chen's maximum Health and a unique ability. If all three spirits are killed, Chen will die as well.<n/><n/><c val=\"00ffff\">Storm</c> can grant the spirits Movement Speed. <n/><c val=\"00ff00\">Earth</c> can leap to an area and slow enemies. <n/><c val=\"ff6600\">Fire</c> can grant the spirits Attack Speed.",
     "ChenStormEarthFireElementalConduitTalent": "Increases the spirits' Health to <c val=\"#TooltipNumbers\">100%</c> of Chen's maximum Health and empowers their abilities.<n/><n/><c val=\"00ffff\">Storm</c> can grant the spirits Unstoppable. <n/><c val=\"00ff00\">Earth</c>'s leap cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,ChenElementalConduit,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds. <n/><c val=\"ff6600\">Fire</c> grants Attack Speed as long as it is alive.",
     "ChenStormstoutSecretRecipe": "Heal for <c val=\"#TooltipNumbers\">1.5%</c> of Chen's maximum Health every time his Basic Abilities hit an enemy Hero.",
     "ChenWanderingKeg": "Roll around inside an Unstoppable barrel with <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,ChenWanderingKegCasterBuff,Modification.MoveSpeedMultiplier-1)*100\" player=\"0\"/>%</c> increased Movement Speed, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenWanderingKegDamage,Amount[0]\"/></c> damage to enemies in the way and knocking them back. Lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenWanderingKegCasterBuff,Duration[0]\"/></c> seconds.",
     "ChenWanderingKegUntappedPotentialTalent": "Wandering Keg increases Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"((Behavior,ChenWanderingKegCasterBuff,Modification.MoveSpeedMultiplier-1)+Talent,ChenMasteryWanderingKegUntappedPotential,AbilityModificationArray[0].Modifications[1].Value)*100\" player=\"0\"/>%</c> and grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenWanderingKegUntappedPotentialTalentDamageBuff,ArmorModification.AllArmorBonus\"/></c> Armor, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenWanderingKegUntappedPotentialTalentDamageBuff,ArmorModification.AllArmorBonus\"/>%</c>.",
-    "ChenWitheringFlames": "Setting an enemy Hero on fire reduces their Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChenBreathofFireWitheringFlamesTalentDebuff,Modification.DamageDealtFraction[Ability]\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenBreathofFireWitheringFlamesTalentDebuff,Duration\"/></c> seconds.",
-    "PortBackToBaseBrew": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Brew.",
-    "PortBackToBaseNoMana": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health."
+    "ChenWitheringFlames": "Setting an enemy Hero on fire reduces their Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChenBreathofFireWitheringFlamesTalentDebuff,Modification.DamageDealtFraction[Ability]\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenBreathofFireWitheringFlamesTalentDebuff,Duration\"/></c> seconds."
   },
   "tooltipSimple": {
     "ChenAccumulatingFlame": "<c val=\"#TooltipQuest\">Quest:</c> Ignite Heroes to empower Breath of Fire",

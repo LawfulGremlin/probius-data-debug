@@ -115,23 +115,13 @@
       {
         "uid": "87fc4b",
         "name": "Thrusters",
-        "description": "Increase Movement Speed by 60% for 4 seconds. Thrusters are always active while at the Altar. Activating Thrusters cancels Siege Mode.",
+        "description": "Increase Movement Speed by 60% for 4 seconds. Thrusters are always active while at the Hall of Storms. Activating Thrusters cancels Siege Mode.",
         "hotkey": "Z",
         "abilityId": "SgtHammer|Z1",
         "tooltipId": "SgtHammerThrusters",
         "cooldown": 30,
         "icon": "storm_ui_icon_sgthammer_mount.png",
         "type": "mount"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "SgtHammer|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -511,7 +501,6 @@
   },
   "tooltipMarkup": {
     "GenericExecutionerTalent": "Attacking a Hero that is slowed, rooted, or stunned increases your Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Modification.DamageDealtFraction[Basic]*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericExecutioner30DamageBuff,Duration\"/></c> seconds.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "SgtHammerBluntForceGun": "Fire a missile across the battlefield, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,BluntForceGunDamage,Amount\"/> </c>damage to non-Structure enemies in its path.",
     "SgtHammerBluntForceGunOrbitalBFGTalent": "Blunt Force Gun's missile orbits the planet every <c val=\"#TooltipNumbers\">5</c> seconds. Only the last missile fired orbits.",
     "SgtHammerConcussiveBlast": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ConcussiveBlastDamage,Amount\"/></c> damage to enemies in front of Sgt. Hammer and knock them back.<n/><n/><c val=\"ffff8a\">Siege Mode:</c> Radius increased by <c val=\"#TooltipNumbers\"><d ref=\"((Effect,SgtHammerConcussiveBlastEnterSiegeModeModifyPlayer,EffectArray[0].Value-Effect,SgtHammerConcussiveBlastExitSiegeModeModifyPlayer,EffectArray[0].Value)/Effect,SgtHammerConcussiveBlastExitSiegeModeModifyPlayer,EffectArray[0].Value)*100\" player=\"0\"/>%</c>.",
@@ -535,7 +524,7 @@
     "SgtHammerSpiderMinesPulseDetonationCoreTalent": "Spider Mines detonate <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSpiderMinesPulseDetonationCore,Duration/Behavior,SgtHammerSpiderMinesPulseDetonationCore,Period+1\"/></c> times over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSpiderMinesPulseDetonationCore,Duration\"/></c> seconds.",
     "SgtHammerSpiderMinesShrapnelMines": "Upon detonating, Spider Mines reduce the armor of enemy Heroes hit by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,SgtHammerSpiderMinesShrapnelMinesArmorDebuff,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSpiderMinesShrapnelMinesArmorDebuff,Duration\"/></c> seconds.",
     "SgtHammerSpiderMinesTacticalMineDeployment": "Moving while Thrusters is active leaves a trail of up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSpiderMinesTacticalMineDeploymentActiveBehavior,Duration/Behavior,SgtHammerSpiderMinesTacticalMineDeploymentActiveBehavior,Period+1\"/></c> Spider Mines. Additionally, increase the Slow of Spider Mines by <c val=\"#TooltipNumbers\"><d ref=\"-100*Talent,SgtHammerSpiderMinesTacticalMineDeployment,AbilityModificationArray[0].Modifications[0].Value\" player=\"0\"/>%</c>.",
-    "SgtHammerThrusters": "Increase Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"100* Behavior,SgtHammerThrusters,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerThrusters,Duration\" player=\"0\"/></c> seconds. Thrusters are always active while at the Altar. Activating Thrusters cancels Siege Mode.",
+    "SgtHammerThrusters": "Increase Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"100* Behavior,SgtHammerThrusters,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerThrusters,Duration\" player=\"0\"/></c> seconds. Thrusters are always active while at the Hall of Storms. Activating Thrusters cancels Siege Mode.",
     "SgtHammerThrustersHyperCoolingEnginesTalent": "While in Siege Mode, hitting Heroes with Basic Attacks reduces the cooldown of Thrusters by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,SgtHammerThrustersHyperCoolingEnginesModifyUnit,Cost[0].CooldownTimeUse\"/></c> seconds."
   },
   "tooltipSimple": {

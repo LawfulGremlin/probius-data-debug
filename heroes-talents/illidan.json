@@ -102,16 +102,6 @@
         "cooldown": 20,
         "icon": "storm_ui_icon_illidan_betrayersthirst.png",
         "type": "trait"
-      },
-      {
-        "uid": "8a4e67",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health.",
-        "hotkey": "B",
-        "abilityId": "Illidan|B1",
-        "tooltipId": "PortBackToBaseNoMana",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -500,8 +490,7 @@
     "IllidanTheHunt": "Charge to target unit, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,IllidanTheHuntDamage,Amount\"/></c> damage on impact and stunning for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,IllidanTheHuntStun,Duration\" player=\"0\"/></c> second.",
     "IllidanTheHuntNowhereToHideTalent": "The Hunt gains unlimited range. Illidan passively reveals enemy Heroes below <c val=\"#TooltipNumbers\">25%</c> Health anywhere on the Battleground.",
     "IllidanUnendingHatredTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Minion kills grant <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,IllidanUnendingHatredAccumulator,Scale*Effect,IllidanUnendingHatredMinionKillIncreaseQuestToken,Value\" precision=\"1\"/></c> Basic Attack Damage. Hero Takedowns grant <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,IllidanUnendingHatredAccumulator,Scale*Effect,IllidanUnendingHatredHeroKillIncreaseQuestToken,Value\"/></c> Basic Attack Damage.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gaining <c val=\"#TooltipNumbers\"><d ref=\"Talent,IllidanUnendingHatredPassive,QuestData.TargetCount\"/></c> increased Basic Attack Damage, receive an additional <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,IllidanUnendingHatredAccumulator,Scale*Effect,IllidanUnendingHatredQuestCompleteIncreaseQuestToken,Value\"/></c> Basic Attack Damage.",
-    "NexusBladesTalent": "Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NexusBladesCarryBehavior,Modification.DamageDealtFraction[Basic]\"/>%</c> more damage and Slow enemy Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NexusBladesSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusBladesSlow,Duration\" player=\"0\"/></c> second.",
-    "PortBackToBaseNoMana": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health."
+    "NexusBladesTalent": "Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NexusBladesCarryBehavior,Modification.DamageDealtFraction[Basic]\"/>%</c> more damage and Slow enemy Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NexusBladesSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusBladesSlow,Duration\" player=\"0\"/></c> second."
   },
   "tooltipSimple": {
     "GenericBoltoftheStormTalent": "Activate to teleport a short distance",

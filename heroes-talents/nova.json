@@ -117,16 +117,6 @@
         "cooldown": 3,
         "icon": "storm_ui_icon_nova_personalcloaking.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Nova|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -447,7 +437,7 @@
         "tooltipId": "NovaPrecisionStrikePrecisionBarrageTalent",
         "talentTreeId": "NovaMasteryPrecisionBarrage",
         "name": "Precision Barrage",
-        "description": "Precision Strike gains a 2nd charge and its coodown is reduced by 30 seconds.",
+        "description": "Precision Strike gains a 2nd charge and its cooldown is reduced by 30 seconds.",
         "icon": "storm_ui_icon_nova_orbitalstrike.png",
         "type": "Heroic",
         "sort": 2,
@@ -520,13 +510,12 @@
     "NovaPinningShotDoubleTapTalent": "Pinning Shot now has <c val=\"#TooltipNumbers\">2</c> charges, but its cooldown is increased by <c val=\"#TooltipNumbers\"><d ref=\"Talent,NovaMasteryDoubleTap,AbilityModificationArray[0].Modifications[2].Value\"/></c> seconds.",
     "NovaPinningShotLongshotTalent": "Increases the cast range of Pinning Shot by <c val=\"#TooltipNumbers\">30%</c>. Pinning Shot also increases the range of Nova's next Basic Attack by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaLongshotRangeBuff,Modification.WeaponRange\"/></c>.",
     "NovaPrecisionStrike": "After a <c val=\"#TooltipNumbers\"><d ref=\"Effect,PrecisionStrikeWarningCreatePersistent,ExpireDelay\" precision=\"1\"/></c> second delay, deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,PrecisionStrikeDamage,Amount\"/></c> damage to enemies within an area. Unlimited range.",
-    "NovaPrecisionStrikePrecisionBarrageTalent": "Precision Strike gains a <c val=\"#TooltipNumbers\">2nd</c> charge and its coodown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,NovaMasteryPrecisionBarrage,AbilityModificationArray[0].Modifications[2].Value\"/></c> seconds.",
+    "NovaPrecisionStrikePrecisionBarrageTalent": "Precision Strike gains a <c val=\"#TooltipNumbers\">2nd</c> charge and its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,NovaMasteryPrecisionBarrage,AbilityModificationArray[0].Modifications[2].Value\"/></c> seconds.",
     "NovaSnipe": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,StormSnipeDamage,Amount\"/></c> damage to the first enemy hit.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Hitting an enemy Hero with Snipe permanently increases the damage of Snipe by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,NovaPrecisionSniperAccumulator,Scale\"/>%</c>, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,NovaPrecisionSniperAccumulator,MaxAccumulation\"/>%</c>. Gain an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,StormSnipeDamage,MultiplicativeModifierArray[PrecisionSniperMax].Modifier\"/>%</c> damage bonus at maximum stacks. All stacks are lost if Snipe fails to hit an enemy.",
     "NovaSnipeExplosiveRoundTalent": "Snipe also deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SnipeExplosiveDamage,Amount/Effect,StormSnipeDamage,Amount\" precision=\"1\"player=\"0\"/>%</c> damage to enemies near the impact.",
     "NovaSnipePsionicEfficiencyTalent": "Snipe's range is increased by <c val=\"#TooltipNumbers\">15%</c> and hitting a Hero grants an additional stack of Precision Sniper.",
     "NovaTripleTap": "Locks in on the target Hero, then fires <c val=\"#TooltipNumbers\"><d ref=\"[d ref='Effect,TripleTapLaunchPersistent,PeriodCount' player='0'/]\"/></c> shots that hit the first Hero or Structure they come in contact with for <c val=\"#TooltipNumbers\"><d ref=\"Effect,TripleTapMissileDamage,Amount\"/></c> damage each.",
-    "NovaTripleTapFastReloadTalent": "Triple Tap's cooldown is reset if it kills an enemy Hero.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "NovaTripleTapFastReloadTalent": "Triple Tap's cooldown is reset if it kills an enemy Hero."
   },
   "tooltipSimple": {
     "GenericRewindHotbar": "Activate to reset cooldowns",

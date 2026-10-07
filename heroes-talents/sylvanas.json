@@ -111,16 +111,6 @@
         "cooldown": 40,
         "icon": "storm_ui_icon_sylvanas_blackarrows.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Sylvanas|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -499,7 +489,6 @@
   },
   "tooltipMarkup": {
     "GenericBoltoftheStormTalent": "Activate to teleport to a nearby location.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "SylvanasBlackArrows": "Activate to cause all Basic Attacks and Abilities to Stun Minions, non-Elite Mercenaries, and Structures for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsMercMinionOrStructureStunBehavior,Duration\"Precision=\"2\"/></c> seconds. Lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsActiveSelfDurationBuff,Duration\"/> </c>seconds.  <s val=\"StandardTooltipHeader\"><n/><n/>Banshee's Curse</s><n/><n/>Basic Attacks infect enemies with Banshee's Curse for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,Duration\"Precision=\"2\"Player=\"0\"/></c> seconds, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> times. Deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasShadowDaggerDoTDamage,MultiplicativeModifierArray[BlackArrowsBonusDamage].Modifier\"/>%</c> more damage to enemies with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks.",
     "SylvanasBlackArrowsFesteringWounds": "Increase Haunting Wave's damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasHauntingWaveDamage,MultiplicativeModifierArray[FesteringWoundsBonusDamage].Modifier\"/>%</c>. Haunting Wave applies <c val=\"#TooltipNumbers\"><d ref=\"Effect,HauntingWaveFesteringWoundsApplies3StacksOfBlackArrowsApplyBehavior,Count\"/></c> stacks of Banshee's Curse.",
     "SylvanasBlackArrowsLifeDrainTalent": "Heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasWeaponDamage,LeechFraction[Life]\"/>%</c> of damage dealt by Sylvanas to enemies with <c val=\"#TooltipNumbers\"><d ref=\"Validator,SylvanasTargetHas3StacksOfBlackArrowsStackingBehavior,Value\"/></c> stacks of Banshee's Curse. Healing is doubled against Heroes.",

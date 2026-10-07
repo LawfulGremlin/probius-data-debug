@@ -107,16 +107,6 @@
         "tooltipId": "ThrallFrostwolfResilience",
         "icon": "storm_ui_icon_thrall_frostwolfresilience.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Thrall|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -487,7 +477,6 @@
   "tooltipMarkup": {
     "GenericFollowThroughTalent": "After using an Ability, your next Basic Attack within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketFollowThrough,Duration\" player=\"0\"/></c> seconds deals <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,TalentBucketFollowThrough,Modification.DamageDealtFraction[Basic]\"/>%</c> additional damage.",
     "NexusBladesTalent": "Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NexusBladesCarryBehavior,Modification.DamageDealtFraction[Basic]\"/>%</c> more damage and Slow enemy Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NexusBladesSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusBladesSlow,Duration\" player=\"0\"/></c> second.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "Sundering": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,ThrallSundering,FinishTime\" precision=\"1\"/></c> seconds, sunder the earth in a long line, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,SunderingDamage,Amount\"/></c> damage and shoving enemies to the side, Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallSunderingStun,Duration\" player=\"0\" precision=\"2\"/></c> second.",
     "ThrallAlphaWolf": "For <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallFeralSpiritAlphaWolfTalentMarker,Duration\"/></c> seconds after a Hero is hit by Feral Spirit, Thrall's Basic Attacks against them deal an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ThrallFeralSpiritAlphaWolfTalentDamage,VitalFractionMax[Life]\"/>%</c> of the target's maximum Health as damage.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increase the duration of Feral Spirit's Root to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallFeralSpiritRoot,Duration+Talent,ThrallAlphaWolf,AbilityModificationArray[0].Modifications[0].Value\"precision=\"1\"player=\"0\"/></c> seconds.",
     "ThrallAncestralWrath": "Activate to consume <c val=\"#TooltipNumbers\"><d ref=\"Abil,ThrallAncestralWrath,Cost.Charge.CountUse\"/></c> stacks of Ancestral Wrath, damaging a target enemy Hero for <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,ThrallAncestralWrathDebuff,PeriodCount+1)*(100*Effect,ThrallAncestralWrathDamage,VitalFractionMax[Life])\"/>%</c> of their maximum Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallAncestralWrathDebuff,Duration\"/></c> seconds, and healing Thrall for <c val=\"#TooltipNumbers\">150%</c> of the damage dealt.<n/><n/>Gain <c val=\"#TooltipNumbers\">1</c> stack of Ancestral Wrath every time Frostwolf Resilience activates.",

@@ -110,16 +110,6 @@
         "tooltipId": "DeckardFortitudeOfTheFaithful",
         "icon": "storm_ui_icon_deckard_protectors_of_cain.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Deckard|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -529,8 +519,7 @@
     "DeckardScrollOfSealing": "Unfurl an enchanted scroll over <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeckardScrollOfSealingCreatePersistent,ExpireDelay\" precision=\"2\" player=\"0\"/></c> seconds, forming a triangle that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeckardScrollOfSealingDamage,Amount\"/></c> damage to enemies inside and Roots them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DeckardScrollOfSealingRootBehavior,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
     "DeckardScrollOfStoneCurse": "Scroll of Sealing deals <c val=\"#TooltipNumbers\">200%</c> more damage when hitting at least <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DeckardScrollOfStoneCurseCaster,MaxStackCount\"/></c> Heroes.",
     "DeckardStayAWhileAndListen": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,DeckardStayAWhileAndListen,CastIntroTime\" player=\"0\" precision=\"2\"/></c> second, Channel for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DeckardStayAWhileAndListenCasterBehavior,Duration\" player=\"0\" precision=\"2\"/></c> seconds, putting enemy Heroes in front of Deckard to Sleep while Channeling, and for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DeckardStayAWhileAndListenFinalSleepBehavior,Duration\" player=\"0\" precision=\"2\"/></c> seconds after.<n/><n/>Enemies can only be put to Sleep once per cast, and Sleep's effects end instantly if they take damage.",
-    "DeckardSuperHealingPotion": "If a Healing Potion isn't picked up for at least <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DeckardSuperHealingPotionTimer,Duration\"/></c> seconds, it heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeckardSuperHealingPotionCreateHealer,MultiplicativeModifierArray[SuperHealingPotion].Modifier * 100\"/>%</c> more.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "DeckardSuperHealingPotion": "If a Healing Potion isn't picked up for at least <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DeckardSuperHealingPotionTimer,Duration\"/></c> seconds, it heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,DeckardSuperHealingPotionCreateHealer,MultiplicativeModifierArray[SuperHealingPotion].Modifier * 100\"/>%</c> more."
   },
   "tooltipSimple": {
     "DeckardAncientBlessings": "Activate Fortitude to empower ally Attacks",

@@ -101,16 +101,6 @@
         "tooltipId": "WhitemaneTraitZeal",
         "icon": "storm_ui_icon_whitemane_zeal.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Whitemane|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -511,7 +501,6 @@
     ]
   },
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "WhitemaneDesperatePlea": "Heal an allied Hero for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneDesperatePleaCreateHealer,RechargeVitalRate\"/></c> and gain <c val=\"#WhitemaneDesperation\">Desperation</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneDesperatePleaDesperation,Duration\"/></c> seconds.<n/><n/><c val=\"#WhitemaneDesperation\">Desperation</c> increases Desperate Plea's Mana cost by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,WhitemaneDesperatePleaCostAccumulator,Scale\"/></c>, and stacks up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneDesperatePleaDesperationTokenCounter,Max\"/></c> times.<n/><n/><c val=\"ffff8a\">Current Mana Cost:</c> <c val=\"#TooltipNumbers\"><d ref=\"Abil,WhitemaneDesperatePlea,Cost[0].Vital[Energy]\"/></c>",
     "WhitemaneDesperatePleaMartyrdom": "Each stack of <c val=\"#WhitemaneDesperation\">Desperation</c> increases Desperate Plea's healing by <c val=\"#TooltipNumbers\"><d ref=\"100 * Accumulator,WhitemaneDesperatePleaMartyrdomHealAccumulator,Scale\"/>%</c>.",
     "WhitemaneDesperatePleaRadiance": "Upon reaching <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneDesperatePleaDesperationTokenCounter,ConditionalEvents[0].CompareValue\"/></c> stacks of <c val=\"#WhitemaneDesperation\">Desperation</c>, all allies with <c val=\"#WhitemaneZeal\">Zeal</c> are healed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneDesperatePleaRadianceCreateHealer,RechargeVitalRate\"/></c>.",

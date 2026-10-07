@@ -108,16 +108,6 @@
         "tooltipId": "GreymaneWorgenForm",
         "icon": "storm_ui_icon_greymane_curseoftheworgen.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Greymane|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "GreymaneWorgenForm": [
@@ -571,8 +561,7 @@
     "GreymaneToothAndClawTalent": "<c val=\"#ColorViolet\">Worgen</c> Basic Attacks cleave for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ToothAndClawCarryBehavior,DamageResponse.ModifyFraction*100\"/>%</c> damage.",
     "GreymaneUnleashed": "If the free cast of Go for the Throat kills its target, another free cast is provided that deals <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,GreymaneGoForTheThroatUnleashedAccumulator,Scale*100\"/>%</c> more damage, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,GreymaneGoForTheThroatUnleashedAccumulator,MaxAccumulation*100\"/>%</c>.",
     "GreymaneWizenedDuelistTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GreymaneWizenedDuelistTokenCounter,ConditionalEvents[0].CompareValue\"/></c> <c val=\"#ColorCreamYellow\">Human</c> Basic Attacks against Heroes increase Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,GreymaneWizenedDuelistAccumulator,Scale*100\"/>%</c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,GreymaneWizenedDuelistAccumulator,MaxAccumulation*100\"/>%</c>. <c val=\"#ColorViolet\">Worgen</c> Basic Attacks grant credit for <c val=\"#TooltipNumbers\"><d ref=\"Effect,GreymaneWizenedDuelistIncrementTokenCounterWorgen,Value\"/></c> Basic Attacks. Half of this bonus is lost upon death.",
-    "GreymaneWorgenForm": "Greymane can use certain Abilities to shapeshift between a <c val=\"#ColorCreamYellow\">Human</c> and a <c val=\"#ColorViolet\">Worgen</c>.<n/><n/>While <c val=\"#ColorCreamYellow\">Human</c>, Greymane's Basic Attacks are ranged.<n/><n/>While <c val=\"#ColorViolet\">Worgen</c>, Greymane gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GreymaneWorgenForm,ArmorModification.AllArmorBonus\"/></c> Armor, and his Basic Attacks become melee but deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,HeroGreymaneWorgenWeaponDamage,Amount/Effect,HeroGreymaneWeaponDamage,Amount-1*100\"/>%</c> more damage.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "GreymaneWorgenForm": "Greymane can use certain Abilities to shapeshift between a <c val=\"#ColorCreamYellow\">Human</c> and a <c val=\"#ColorViolet\">Worgen</c>.<n/><n/>While <c val=\"#ColorCreamYellow\">Human</c>, Greymane's Basic Attacks are ranged.<n/><n/>While <c val=\"#ColorViolet\">Worgen</c>, Greymane gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GreymaneWorgenForm,ArmorModification.AllArmorBonus\"/></c> Armor, and his Basic Attacks become melee but deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,HeroGreymaneWorgenWeaponDamage,Amount/Effect,HeroGreymaneWeaponDamage,Amount-1*100\"/>%</c> more damage."
   },
   "tooltipSimple": {
     "GenericExecutionerTalent": "Attacking disabled Heroes increases damage",

@@ -104,16 +104,6 @@
         "tooltipId": "RaynorGiveEmSomePepper",
         "icon": "storm_ui_icon_raynor_acquireweakspot.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Raynor|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -540,7 +530,6 @@
     }
   ],
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "RaynorAceInTheHole": "Deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,RaynorHeroWeaponDamage,MultiplicativeModifierArray[AceInTheHole].Modifier\"/>%</c> more damage to Stunned or Slowed Heroes.",
     "RaynorAdrenalineRushFightOrFlightTalent": "Reduce Adrenaline Rush's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,RaynorMasteryFightorFlightAdrenalineRush,AbilityModificationArray[0].Modifications[1].Value\"player=\"0\"/></c> seconds. Casting Adrenaline Rush grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorInspireFightOrFlightArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorInspireFightOrFlightArmorIncrease,Duration\"/></c> seconds.",
     "RaynorAdrenalineRushGiveMeMoreTalent": "Increase Adrenaline Rush healing by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,RaynorMasteryGiveMeMoreAdrenalineRush,AbilityModificationArray[0].Modifications[1].Value\"/>%</c>. While Inspire is active, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RaynorGiveMeMoreAttackRangeCarryBehavior,Modification.WeaponRange\"/></c> Basic Attack range.",

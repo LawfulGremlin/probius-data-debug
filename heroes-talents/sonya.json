@@ -106,16 +106,6 @@
         "tooltipId": "BarbarianFury",
         "icon": "storm_ui_icon_sonya_fury.png",
         "type": "trait"
-      },
-      {
-        "uid": "8a4e67",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health.",
-        "hotkey": "B",
-        "abilityId": "Sonya|B1",
-        "tooltipId": "PortBackToBaseNoMana",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -514,8 +504,7 @@
     "BarbarianToughAsNails": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BarbarianToughAsNailsCharged,DamageResponse.Cost.Charge.TimeUse\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BarbarianToughAsNailsChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BarbarianToughAsNailsChargedArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BarbarianToughAsNailsCharged,DamageResponse.Cost.Charge.CountMax\"/></c> charges. Charges refresh <c val=\"#TooltipNumbers\">200%</c> faster while Fury's Movement Speed bonus is active.",
     "BarbarianWhirlwind": "Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,BarbarianWhirlwindDamage,Amount*2\"/></c> damage a second to nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BarbarianWhirlwindChannel,Duration\" player=\"0\"/></c> seconds, healing for <c val=\"#TooltipNumbers\"><d ref=\"Effect,BarbarianWhirlwindDamage,LeechFraction[Life]*100\" player=\"0\"/>%</c> of damage dealt. Healing tripled versus Heroes.",
     "BarbarianWhirlwindLifeFunnelTalent": "Increases the healing of Whirlwind to <c val=\"#TooltipNumbers\"><d ref=\"100*(Effect,BarbarianWhirlwindDamage,LeechFraction[Life]+Talent,BarbarianLifeFunnel,AbilityModificationArray[0].Modifications[1].Value)\" player=\"0\"/>%</c> of damage dealt.",
-    "BarbarianWrathoftheBerserker": "Increase damage dealt by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BarbarianWrathoftheBerserkerBase,Modification.DamageDealtFraction[Ability] * 100\"/>%</c>. Reduce the duration of Stuns, Roots, and Slows against Sonya by <c val=\"#TooltipNumbers\">50%</c>. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BarbarianWrathoftheBerserkerBase,Duration\" player=\"0\"/></c> seconds, and extends by <c val=\"#TooltipNumbers\">1</c> second for every <c val=\"#TooltipNumbers\">10</c> Fury gained.",
-    "PortBackToBaseNoMana": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health."
+    "BarbarianWrathoftheBerserker": "Increase damage dealt by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BarbarianWrathoftheBerserkerBase,Modification.DamageDealtFraction[Ability] * 100\"/>%</c>. Reduce the duration of Stuns, Roots, and Slows against Sonya by <c val=\"#TooltipNumbers\">50%</c>. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BarbarianWrathoftheBerserkerBase,Duration\" player=\"0\"/></c> seconds, and extends by <c val=\"#TooltipNumbers\">1</c> second for every <c val=\"#TooltipNumbers\">10</c> Fury gained."
   },
   "tooltipSimple": {
     "BarbarianAncientSpear": "Throw a spear and pull self to the first enemy hit, stunning and dealing damage",

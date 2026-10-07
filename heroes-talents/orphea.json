@@ -91,7 +91,7 @@
       {
         "uid": "6001f6",
         "name": "Eternal Feast",
-        "description": "After 1.5 seconds, deal 210 (+4% per level) damage in an area. Eternal Feast repeats every 1 second as long as it hits an enemy Hero.",
+        "description": "After 1.5 seconds, deal 210 (+4% per level) damage in an area. Eternal Feast repeats every 0 second as long as it hits an enemy Hero.",
         "hotkey": "R",
         "abilityId": "Orphea|R2",
         "tooltipId": "OrpheaEternalFeast",
@@ -109,16 +109,6 @@
         "tooltipId": "OrpheaOverflowingChaos",
         "icon": "storm_ui_icon_orphea_trait.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Orphea|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -288,7 +278,7 @@
         "tooltipId": "OrpheaEternalFeast",
         "talentTreeId": "OrpheaEternalFeast",
         "name": "Eternal Feast",
-        "description": "After 1.5 seconds, deal 210 (+4% per level) damage in an area. Eternal Feast repeats every 1 second as long as it hits an enemy Hero.",
+        "description": "After 1.5 seconds, deal 210 (+4% per level) damage in an area. Eternal Feast repeats every 0 second as long as it hits an enemy Hero.",
         "icon": "storm_ui_icon_orphea_ult_darkfall.png",
         "type": "Heroic",
         "sort": 1,
@@ -326,7 +316,7 @@
         "tooltipId": "OrpheaDetermination",
         "talentTreeId": "OrpheaDetermination",
         "name": "Determination",
-        "description": "After dashing with Shadow Waltz, Orphea gains 50 Spell Armor, stacking up to 2 times. While Orphea has Determination, her Physical damage is increased by 15%.",
+        "description": "After dashing with Shadow Waltz, Orphea gains 50 Spell Armor against the next enemy Ability, stacking up to 2 times. While Orphea has Determination, her Physical damage is increased by 15%.",
         "icon": "storm_ui_icon_orphea_q.png",
         "type": "Q",
         "sort": 1,
@@ -518,7 +508,7 @@
     "OrpheaChomp": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,OrpheaChomp,CastIntroTime\" precision=\"3\"/></c> seconds, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaChompDamage,Amount\"/></c> damage to nearby enemies in front of Orphea.",
     "OrpheaCrushingJaws": "After <C val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaCrushingJawsCreateSearchPersistent,InitialDelay\" precision=\"2\"/></c> seconds, pull enemies in an area towards the center, dealing <C val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaCrushingJawsDamage,Amount\"/></c> damage and Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,OrpheaCrushingJawsStun,Duration\" precision=\"2\"/></c> seconds.",
     "OrpheaDeadMagic": "Basic Attacks that consume Chaos ignore Armor and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaDeadMagicDamage,Amount\"/></c> Spell Damage to all enemies around the target.",
-    "OrpheaDetermination": "After dashing with Shadow Waltz, Orphea gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,OrpheaDeterminationArmor,ArmorModification.ArmorSet.ArmorMitigationTable\"/></c> Spell Armor, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,OrpheaDeterminationArmor,MaxStackCount\"/></c> times. While Orphea has Determination, her Physical damage is increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaWeaponDamage,MultiplicativeModifierArray[Determination].Modifier*100\" precision=\"2\" player=\"0\"/>%</c>.",
+    "OrpheaDetermination": "After dashing with Shadow Waltz, Orphea gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,OrpheaDeterminationArmor,ArmorModification.ArmorSet.ArmorMitigationTable\"/></c> Spell Armor against the next enemy Ability, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,OrpheaDeterminationArmor,MaxStackCount\"/></c> times. While Orphea has Determination, her Physical damage is increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaWeaponDamage,MultiplicativeModifierArray[Determination].Modifier*100\" precision=\"2\" player=\"0\"/>%</c>.",
     "OrpheaDread": "Release a wave of dread that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaDreadLineDamage,Amount\"/></c> damage to enemies hit. Dread erupts <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaDreadCreateSearchPersistent,ExpireDelay\" precision=\"2\"/></c> seconds after reaching the end of its path, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaDreadFinalDamage,Amount\"/></c> damage and Slowing enemies in the area by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,OrpheaDreadFinalSlow,Modification[0].UnifiedMoveSpeedFactor * 100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,OrpheaDreadFinalSlow,Duration\" precision=\"2\"/></c> seconds.",
     "OrpheaEldritchConduit": "Each Chaos consumed increases Orphea's Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,OrpheaEldritchConduit,Modification.DamageDealtFraction[Ability] * 100\"/>%</c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,OrpheaEldritchConduit,MaxStackCount * Behavior,OrpheaEldritchConduit,Modification.DamageDealtFraction[Ability] * 100\"/>%</c>. After reaching the maximum bonus, the Spell Power is increased by an additional <C val=\"#TooltipNumbers\"><d ref=\"100*Behavior,OrpheaEldritchConduitEmpowered,Modification.DamageDealtFraction[Ability]\"player=\"0\"/>%</c>. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,OrpheaEldritchConduit,Duration\"/></c> seconds.",
     "OrpheaEnPointe": "Shadow Waltz deals an increased <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaEnPointeDamage,MultiplicativeModifierArray[0].Modifier * 100\" precision=\"2\"/>%</c> damage to enemies hit by its end.",
@@ -534,8 +524,7 @@
     "OrpheaMonsterWithin": "Eternal Feast grants <c val=\"#TooltipNumbers\">1</c> Chaos each time it hits a Hero. While Eternal Feast is active, Orphea's Attack Speed is increased by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,OrpheaMonsterWithinAttackSpeed,Modification.AdditiveAttackSpeedFactor * 100\"/>%</c>.",
     "OrpheaOverflowingChaos": "Hitting an enemy Hero with a Basic Ability grants <c val=\"#TooltipNumbers\">1</c> Chaos. Chaos can stack up to <c val=\"#TooltipNumbers\">3</c> times.<n/><n/>While Orphea has Chaos, her Basic Attacks against Heroes consume all Chaos, dealing <c val=\"#TooltipNumbers\">50%</c> increased damage per stack, and healing for <c val=\"#TooltipNumbers\">100%</c> of the damage dealt.",
     "OrpheaRavenousHunger": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Minions that die within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,OrpheaRavenousHungerDeathChecker,Duration\" precision=\"1\"/></c> seconds of being hit by Chomp permanently increase its damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,OrpheaRavenousHungerDamageAccumulator,Scale\"/></c> and heal Orphea for <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaRavenousHungerHeal,RechargeVitalRate\"/></c>. <n/><n/>Heroes that die increase its damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,OrpheaRavenousHungerDamageAccumulator,Scale * Effect,OrpheaRavenousHungerHeroModifyToken,Value\"/></c> and heal Orphea for <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaRavenousHungerHeroHeal,RechargeVitalFraction * 100\" precision=\"2\"/>%</c> of her maximum Health.",
-    "OrpheaShadowWaltz": "After <C val=\"#TooltipNumbers\"><d ref=\"Abil,OrpheaShadowWaltz,CastIntroTime\" precision=\"3\"/></c> seconds, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaShadowWaltzDamage,Amount\"/></c> damage to enemies in a line. <n/><n/>Hitting a Hero with Shadow Waltz sets its cooldown to <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaShadowWaltzHeroHitModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds, refunds <C val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaShadowWaltzRefundMana,RechargeVitalRate\"/></c> Mana, and causes Orphea to dash a short distance upon moving.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "OrpheaShadowWaltz": "After <C val=\"#TooltipNumbers\"><d ref=\"Abil,OrpheaShadowWaltz,CastIntroTime\" precision=\"3\"/></c> seconds, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaShadowWaltzDamage,Amount\"/></c> damage to enemies in a line. <n/><n/>Hitting a Hero with Shadow Waltz sets its cooldown to <c val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaShadowWaltzHeroHitModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds, refunds <C val=\"#TooltipNumbers\"><d ref=\"Effect,OrpheaShadowWaltzRefundMana,RechargeVitalRate\"/></c> Mana, and causes Orphea to dash a short distance upon moving."
   },
   "tooltipSimple": {
     "OrpheaAbyssalSymbiosis": "Chomp hitting Heroes grants more Chaos",

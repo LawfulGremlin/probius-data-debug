@@ -120,16 +120,6 @@
         "cooldown": 40,
         "icon": "storm_ui_icon_jaina_improvediceblock_new_active.png",
         "type": "activable"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Jaina|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "JainaTraitFrostbite": [
@@ -607,8 +597,7 @@
     "JainaRingOfFrostColdSnapTalent": "The center area of Ring of Frost deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,JainaRingOfFrostImpactDamage,Amount\"/></c> damage and Roots enemies after the outer ring expires. Each enemy Hero hit reduces its cooldown by <c val=\"#TooltipNumbers\">10</c> seconds.",
     "JainaSummonWaterElemental": "Summon a Water Elemental at target location. The Water Elemental's Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,JainaWaterElementalWeaponDamage,Amount\"/></c> damage, splash for <c val=\"#TooltipNumbers\">25%</c> damage and Chill. The Ability can be reactivated to retarget the Water Elemental.  Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaWaterElementalTimedLife,Duration\" player=\"0\"/></c> seconds.",
     "JainaSummonWaterElementalWintermuteTalent": "Increases the cast range of Water Elemental by <c val=\"#TooltipNumbers\">50%</c>, and the Water Elemental will now mimic Jaina's Basic Abilities for <c val=\"#TooltipNumbers\">50%</c> damage.",
-    "JainaTraitFrostbite": "Jaina's Abilities Chill targets, Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,JainaChilledSlow,Modification.UnifiedMoveSpeedFactor\" player=\"0\"/>%</c> and amplifying damage taken from her Abilities by <c val=\"#TooltipNumbers\">50%</c>. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaChilledSlow,Duration\" player=\"0\"/></c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Deal <c val=\"#TooltipNumbers\">15,000</c> Ability damage to Chilled Heroes.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Unlock the Improved Ice Block Ability, allowing Jaina to become temporarily Invulnerable.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "JainaTraitFrostbite": "Jaina's Abilities Chill targets, Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,JainaChilledSlow,Modification.UnifiedMoveSpeedFactor\" player=\"0\"/>%</c> and amplifying damage taken from her Abilities by <c val=\"#TooltipNumbers\">50%</c>. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,JainaChilledSlow,Duration\" player=\"0\"/></c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Deal <c val=\"#TooltipNumbers\">15,000</c> Ability damage to Chilled Heroes.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Unlock the Improved Ice Block Ability, allowing Jaina to become temporarily Invulnerable."
   },
   "tooltipSimple": {
     "JainaBlizzard": "Creates a storm of ice at target location, damaging and slowing enemies",

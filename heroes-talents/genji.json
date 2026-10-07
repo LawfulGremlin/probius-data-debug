@@ -113,16 +113,6 @@
         "cooldown": 15,
         "icon": "storm_ui_icon_genji_cyberagility.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Genji|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -546,8 +536,7 @@
     "GenjiSwiftStrikeStrikeAtTheHeart": "Enemies hit by the end of Swift Strike take an additional <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GenjiSwiftStrikeStrikeAtTheHeart,PeriodCount * Effect,GenjiSwiftStrikeStrikeAtTheHeartDamage,Amount\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GenjiSwiftStrikeStrikeAtTheHeart,PeriodCount * Behavior,GenjiSwiftStrikeStrikeAtTheHeart,Period\"/></c> seconds.",
     "GenjiSwiftStrikeSwiftAsTheWind": "Hitting an enemy Hero with Swift Strike increases Genji's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GenjiSwiftStrikeSwiftAsTheWind,Modification.UnifiedMoveSpeedFactor * 100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GenjiSwiftStrikeSwiftAsTheWind,Duration\"/></c> seconds.",
     "GenjiXStrike": "Perform two slashes dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,GenjiXStrikeLegDamage,Amount\"/></c> damage. The slashes detonate after <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GenjiXStrikeStasis,Duration\" precision=\"2\"/></c> seconds causing an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,GenjiXStrikeFinalDamage,Amount\"/></c> damage to enemies in their area.",
-    "GenjiXStrikeLivingWeapon": "Each enemy Hero hit by X-Strike reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,GenjiXStrikeLivingWeaponCooldownRefund,Cost[0].CooldownTimeUse\"/></c> seconds.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "GenjiXStrikeLivingWeapon": "Each enemy Hero hit by X-Strike reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,GenjiXStrikeLivingWeaponCooldownRefund,Cost[0].CooldownTimeUse\"/></c> seconds."
   },
   "tooltipSimple": {
     "GenjiCyberAgility": "Jump over terrain",

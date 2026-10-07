@@ -107,16 +107,6 @@
         "tooltipId": "MalGanisVampiricTouch",
         "icon": "storm_ui_icon_malganis_trait.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "MalGanis|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -549,8 +539,7 @@
     "MalGanisVampiricTouchBloodRush": "When Mal'Ganis is healed by a Hero, he gains <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,MalGanisVampiricTouchBloodRushMoveSpeedAccumulator,Scale*100\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MalGanisVampiricTouchBloodRushMoveSpeed,Duration\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,MalGanisVampiricTouchBloodRushMoveSpeedAccumulator,MaxAccumulation*100\"/>%</c>.",
     "MalGanisVampiricTouchFrenziedAssault": "Basic Attacks against Heroes with a higher Health percentage grant <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MalGanisVampiricTouchFrenziedAssaultBehavior,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> Attack Speed and <c val=\"#TooltipNumbers\"><d ref=\"Effect,MalGanisWeaponDamage,MultiplicativeModifierArray[FrenziedAssault].Modifier*100\"/>%</c> increased Physical Damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MalGanisVampiricTouchFrenziedAssaultBehavior,Duration\"/></c> seconds.",
     "MalGanisVampiricTouchTimeToFeed": "Mal'Ganis heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MalGanisVampiricTouchTimeToFeedHeal,RechargeVitalRate\"/></c> when damaging a nearby enemy Hero. This can occur once every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MalGanisVampiricTouchTimeToFeedCooldownBehavior,Duration\"/></c> seconds against each enemy Hero.",
-    "MalGanisVampiricTouchVampiricAura": "Mal'Ganis and nearby allied Heroes heal for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MalGanisVampiricTouchVampiricAuraLeechBehavior,Modification.VitalDamageLeechArray[Life].KindArray[Basic]*100\"/>%</c> of Physical Damage dealt.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "MalGanisVampiricTouchVampiricAura": "Mal'Ganis and nearby allied Heroes heal for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MalGanisVampiricTouchVampiricAuraLeechBehavior,Modification.VitalDamageLeechArray[Life].KindArray[Basic]*100\"/>%</c> of Physical Damage dealt."
   },
   "tooltipSimple": {
     "MalGanisCarrionSwarm": "Disperse and deal damage in an area",

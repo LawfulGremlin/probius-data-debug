@@ -112,16 +112,6 @@
         "cooldown": 30,
         "icon": "storm_ui_icon_hanzo_wallvault.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Hanzo|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -533,8 +523,7 @@
     "HanzoStormBow": "Activate to charge an arrow that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,HanzoStormBowDamage,Amount\"/></c> damage to the first enemy hit. Storm Bow's range increases the longer it is Channeled.",
     "HanzoTargetPractice": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit every enemy Hero with Storm Bow.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting every enemy Hero once with Storm Bow, its range is increased by <c val=\"#TooltipNumbers\">30%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting every enemy Hero <c val=\"#TooltipNumbers\">3</c> times with Storm Bow, its damage is increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,HanzoStormBowDamage,FlatModifierArray[TargetPracticeTalentFlatDamage].Modifier\"/></c>.",
     "HanzoTheDragonAwakens": "Hitting a Hero with Storm Bow, Scatter Arrow, or Basic Attacks reduces the cooldown of Dragonstrike by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,HanzoTheDragonAwakensReduceDragonstrikeCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
-    "HanzoTheDragonHungers": "Hitting a Hero with Storm Bow grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HanzoTheDragonHungers,Modification.DamageDealtFraction[Ability] * 100\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HanzoTheDragonHungers,Duration\"/></c> seconds, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HanzoTheDragonHungers,Modification.DamageDealtFraction[Ability] * Behavior,HanzoTheDragonHungers,MaxStackCount * 100\"/>%</c>.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "HanzoTheDragonHungers": "Hitting a Hero with Storm Bow grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HanzoTheDragonHungers,Modification.DamageDealtFraction[Ability] * 100\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HanzoTheDragonHungers,Duration\"/></c> seconds, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HanzoTheDragonHungers,Modification.DamageDealtFraction[Ability] * Behavior,HanzoTheDragonHungers,MaxStackCount * 100\"/>%</c>."
   },
   "tooltipSimple": {
     "HanzoBullseye": "Sonic Arrow travels faster, Stuns",

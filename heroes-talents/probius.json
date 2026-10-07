@@ -122,16 +122,6 @@
         "cooldown": 30,
         "icon": "storm_ui_icon_probius_mount.png",
         "type": "mount"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Probius|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -572,7 +562,6 @@
     }
   ],
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "ProbiusConstructAdditionalPylonsPylonOverchargeTalent": "Probius can now have up to <c val=\"#TooltipNumbers\">3</c> active Pylons, and increase the damage of Pylon Overcharge by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ProbiusPylonOverchargeConstructAdditionalPylonsWeaponDamage,AttributeFactor[Heroic] * 100\"/>%</c>.",
     "ProbiusDisruptionPulse": "Fire a burst of energy forward, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ProbiusDisruptionPulseDamage,Amount\"/></c> damage to all enemies it passes through.<n/><n/>Hitting the center of a Warp Rift will cause it to explode, dealing additional damage.",
     "ProbiusEchoPulseDisruptionPulseTalent": "Disruption Pulse now returns to Probius <c val=\"#TooltipNumbers\"><d ref=\"Effect,ProbiusDisruptionPulseEchoPulseReturnPersistent,ExpireDelay\" precision=\"2\"/></c> seconds after reaching its target, dealing <c val=\"#TooltipNumbers\"><d ref=\"1 + Effect,ProbiusDisruptionPulseDamage,MultiplicativeModifierArray[1].Modifier * 100\"/>%</c> damage on the return trip.",

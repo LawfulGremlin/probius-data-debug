@@ -126,16 +126,6 @@
         "tooltipId": "RexxarMishaFocus",
         "icon": "storm_ui_icon_rexxar_mishafixate.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Rexxar|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -512,7 +502,6 @@
     }
   ],
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "RexxarAnimalHusbandry": "Rexxar and Misha gain <c val=\"#TooltipNumbers\"><d ref=\"Effect,RexxarAnimalHusbandryModifyTokenCounter,Value*Accumulator,RexxarAnimalHusbandryHealthAccumulator,Scale\"/></c> Maximum Health every second Rexxar remains alive. These bonuses are lost on Rexxar's death.",
     "RexxarAspectOfTheHawkTalent": "When Spirit Swoop hits an enemy Hero, Rexxar gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarSpiritSwoopAspectOfTheHawk,Modification.UnifiedAttackSpeedFactor*100\"/>%</c> Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarSpiritSwoopAspectOfTheHawk,Duration\" player=\"0\"/></c> seconds. Misha's Basic Attacks increase the duration of this buff by <c val=\"#TooltipNumbers\"><d ref=\"Effect,RexxarSpiritSwoopAspectoftheHawkTalentModifyBehaviorDuration,Value\"precision=\"2\"/></c> seconds.",
     "RexxarAspectoftheBeastTalent": "Misha's Basic Attacks lower the cooldown of Misha, Charge! by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,RexxarMishaChargeAspectoftheBeastTalentModifyChargeCooldownCaster,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.",

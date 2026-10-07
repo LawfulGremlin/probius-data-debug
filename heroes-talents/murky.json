@@ -118,16 +118,6 @@
         "cooldown": 15,
         "icon": "storm_ui_icon_murky_trait_spawnegg.png",
         "type": "trait"
-      },
-      {
-        "uid": "8a4e67",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health.",
-        "hotkey": "B",
-        "abilityId": "Murky|B1",
-        "tooltipId": "PortBackToBaseNoMana",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -563,8 +553,7 @@
     "MurkySlimeTime": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Slime enemy Heroes that are already Slimed.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Sliming <c val=\"#TooltipNumbers\"><d ref=\"Validator,MurkyHasGTE15SlimeTimeTalentTokens,Value\"/></c> Heroes, increase Slime's bonus damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MurkySlimeBonusDamage,FlatModifierArray[0].Modifier\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After Sliming <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkySlimeTimeTokenCounter,Max\"/></c> Heroes, increase Slime's slow amount to <c val=\"#TooltipNumbers\"><d ref=\"-100*Effect,MurkySlimeSlimeTimeCompletionModifyPlayer,EffectArray[0].Value\"/>%</c>.",
     "MurkySpawnEgg": "Place an Egg at target location, revealing the nearby area. Upon dying, Murky respawns at the Egg after <c val=\"#TooltipNumbers\">8</c> seconds. Murky only grants <c val=\"#TooltipNumbers\">25%</c> of a real Hero's experience upon dying.<n/><n/>If Murky's Egg is killed, he is revealed to enemies for <c val=\"#TooltipNumbers\">15</c> seconds, and Spawn Egg is placed on cooldown.",
     "MurkyTimetoKrill": "Basic Attacks against Heroes deal an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,MurkyTimetoKrillDoTDamage,Amount\"/></c> damage a second and slow the target by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,MurkyTimetoKrillSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyTimetoKrillDoT,Duration\"/></c> seconds. This effect can stack up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MurkyTimetoKrillDoT,MaxStackCount\"/></c> times.",
-    "MurkyToxicBuildup": "Every <c val=\"#TooltipNumbers\">3rd </c>consecutive Basic Attack against an enemy Hero causes a free Slime to be cast upon them.",
-    "PortBackToBaseNoMana": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health."
+    "MurkyToxicBuildup": "Every <c val=\"#TooltipNumbers\">3rd </c>consecutive Basic Attack against an enemy Hero causes a free Slime to be cast upon them."
   },
   "tooltipSimple": {
     "MurkyAFishyDeal": "Kill Minions with Pufferfish to bribe Mercs",

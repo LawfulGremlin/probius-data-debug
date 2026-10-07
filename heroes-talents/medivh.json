@@ -121,16 +121,6 @@
         "cooldown": 4,
         "icon": "storm_ui_icon_medivh_mount.png",
         "type": "mount"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Medivh|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -609,8 +599,7 @@
     "MedivhTemporalFlux": "Basic Attacks reduce Medivh's Heroic Ability cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,MedivhTemporalFluxCooldownModifierAutoAttack,Cost[0].CooldownTimeUse\"/></c> second. Each enemy Hero hit by Arcane Rift reduces Medivh's Heroic Ability cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,MedivhTemporalFluxCooldownModifierArcaneRift,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "MedivhTransformRaven": "Transform into a raven, increasing Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedivhTransformRaven,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c>. While transformed, Medivh can see and fly over terrain and is immune to all effects.",
     "MedivhTransformRavenRavensIntellect": "Raven Form increases Medivh's Mana and Health Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MedivhTransformRavenRavensIntellect,AbilityModificationArray[0].Modifications[0].Value*100\"/>%</c>.",
-    "MedivhTransformRavenWindsOfCelerity": "Increases Raven Form's Movement Speed bonus by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MedivhTransformRavenWindsOfCelerity,AbilityModificationArray[0].Modifications[0].Value/Behavior,MedivhTransformRaven,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c>.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "MedivhTransformRavenWindsOfCelerity": "Increases Raven Form's Movement Speed bonus by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MedivhTransformRavenWindsOfCelerity,AbilityModificationArray[0].Modifications[0].Value/Behavior,MedivhTransformRaven,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c>."
   },
   "tooltipSimple": {
     "MedivhArcaneBrilliance": "Grant Spell Power and Mana to allies",

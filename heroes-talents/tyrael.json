@@ -109,16 +109,6 @@
         "tooltipId": "TyraelArchangelsWrath",
         "icon": "storm_ui_icon_tyrael_archangelswrath.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Tyrael|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -499,7 +489,6 @@
     ]
   },
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "TyraelArchangelsWrath": "Upon dying, become Invulnerable and explode for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ArchangelsWrathDamage,Amount\"/></c> damage after <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelArchangelsWrathDeathActiveBuff,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
     "TyraelArdentRestoration": "Dealing damage to a Hero heals Tyrael for <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TyraelArdentRestorationAccumulator,Scale*Behavior,TyraelArdentRestorationHeal,Duration\"/></c> Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelArdentRestorationHeal,Duration\"/></c> seconds. Dealing damage resets this timer, and the heal amount stacks up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelArdentRestorationTokenCounter,Max\"/></c> times.",
     "TyraelBurningHalo": "Both Tyrael and El'druin deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,TyraelBurningHaloDamage,Amount\"/></c> damage per second to nearby enemies. Teleporting increases this damage from Tyrael by <c val=\"#TooltipNumbers\"><d ref=\"Effect,TyraelBurningHaloDamage,MultiplicativeModifierArray[BurningHalo].Modifier*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyraelEldruinsMightBurningHaloBonusDamageCarryBehavior,Duration\"/></c> seconds.",

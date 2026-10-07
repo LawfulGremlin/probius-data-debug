@@ -131,16 +131,6 @@
         "tooltipId": "StitchesVileGasVileCleaver",
         "icon": "storm_ui_icon_stitches_acidcloud.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Stitches|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -520,7 +510,6 @@
     ]
   },
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "StitchesBlight": "Activate to apply Vile Gas to all nearby enemies. Enemy Heroes hit receive <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,StitchesVileGasBlightTalentDebuff,Modification.HealTakenAdditiveMultiplier[Life]\"/>%</c> less healing for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StitchesVileGasBlightTalentDebuff,Duration\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Vile Gas heals Stitches for <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,StitchesBlight,AbilityModificationArray[0].Modifications[1].Value\"/>%</c> of the damage dealt.",
     "StitchesCannibalize": "Hitting Heroes with Basic Attacks or the inner impact area of Slam heals Stitches for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,StitchesHeroWeaponCannibalizeTalentCreateHealer,RechargeVitalFraction\"precision=\"2\"/>%</c> of his maximum Health.",
     "StitchesChopChop": "Hitting an enemy Hero with the inner impact area of Slam grants <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,StitchesSlamChopChopTalentActiveBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> increased Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StitchesSlamChopChopTalentActiveBuff,Duration\"/></c> seconds.",

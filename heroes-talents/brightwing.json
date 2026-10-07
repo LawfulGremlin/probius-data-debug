@@ -122,16 +122,6 @@
         "cooldown": 60,
         "icon": "storm_ui_icon_brightwing_mount.png",
         "type": "mount"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Brightwing|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -516,13 +506,12 @@
     "BrightwingPixieDust": "Increase target Hero's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,BrightwingPixieDustMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor\"player=\"0\"/>%</c>, and grant them <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPixieDustSpellArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"player=\"0\"/></c> Spell Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPixieDustSpellArmorBehavior,Duration\" player=\"0\"/></c> seconds, reducing Spell damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPixieDustSpellArmorBehavior,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"player=\"0\"/>%</c>.",
     "BrightwingPixieDustPixiePower": "Reduce the cooldown of Pixie Dust by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,BrightwingPixieDustPixiePower,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds and increase the Spell Armor granted by <c val=\"#TooltipNumbers\"><d ref=\"Talent,BrightwingPixieDustPixiePower,AbilityModificationArray[0].Modifications[1].Value\"player=\"0\"/></c>.",
     "BrightwingPixieDustSafetyDust": "Increase Pixie Dust's duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,BrightwingPixieDustSafetyDust,AbilityModificationArray[0].Modifications[0].Value\"/></c> second. Brightwing heals allies with an active Pixie Dust for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,BrightwingSoothingMistCreateHealer,MultiplicativeModifierArray[SafetyDust].Modifier\"/>%</c> more.",
-    "BrightwingPolymorph": "Polymorph a target for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,Polymorph,Duration\" player=\"0\" precision=\"2\"/></c> seconds, Slowing their Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,Polymorph,Modification.UnifiedMoveSpeedFactor*(-100)\"player=\"0\"/>%</c> and Silencing them. Targets are not able to attack while Polymorphed.",
+    "BrightwingPolymorph": "Polymorph a target for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPolymorph,Duration\" player=\"0\" precision=\"2\"/></c> seconds, Slowing their Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPolymorph,Modification.UnifiedMoveSpeedFactor*(-100)\"player=\"0\"/>%</c> and Silencing them. Targets are not able to attack while Polymorphed.",
     "BrightwingPolymorphCritterizeTalent": "While Polymorphed, the target's Armor is reduced by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPolymorphCritterizeArmorDecrease,ArmorModification.AllArmorBonus*(-1)\"/></c>, increasing the damage they take by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingPolymorphCritterizeArmorDecrease,ArmorModification.AllArmorBonus*(-1)\"/>%</c>.",
     "BrightwingSoothingMistCalmingMist": "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Brightwing heals nearby allied Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Effect,BrightwingSoothingMistCreateHealer,RechargeVitalRate\"/></c> every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,BrightwingSoothingMistCooldown,Duration\" player=\"0\"/></c> seconds",
     "BrightwingSpeedyDragon": "Permanently gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,BrightwingSpeedyDragonMoveSpeedBehavior,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed.",
     "BrightwingUnstableAnomalyTalent": "Increase Polymorph's Slow by <c val=\"#TooltipNumbers\"><d ref=\"-100*(Talent,BrightwingUnstableAnomalyPolymorph,AbilityModificationArray[0].Modifications[0].Value)\"player=\"0\"/>%</c>. Upon expiration, Polymorph deals damage to nearby enemy Heroes equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,BrightwingPolymorphUnstableAnomalyDamage,VitalFractionMax[Life]\"/>%</c> of their maximum Health.",
-    "FaerieDragonPixieCharmTalent": "Activate to consume <c val=\"#TooltipNumbers\"><d ref=\"Effect,FaerieDragonPixieCharmSubtractTokenCount,Value*(-1)\"/></c> stacks of Bribe to instantly defeat an uncaptured non-Elite Mercenary.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Gain <c val=\"#TooltipNumbers\">1</c> stack of Bribe when a nearby enemy Minion dies, and <c val=\"#TooltipNumbers\"><d ref=\"Effect,BrightwingPixieCharmAddHeroTokenCount,Value\"/></c> stacks when hitting an enemy Hero with Arcane Flare's center. Maximum <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FaerieDragonPixieCharm,Max\"/></c> stacks.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "FaerieDragonPixieCharmTalent": "Activate to consume <c val=\"#TooltipNumbers\"><d ref=\"Effect,FaerieDragonPixieCharmSubtractTokenCount,Value*(-1)\"/></c> stacks of Bribe to instantly defeat an uncaptured non-Elite Mercenary.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Gain <c val=\"#TooltipNumbers\">1</c> stack of Bribe when a nearby enemy Minion dies, and <c val=\"#TooltipNumbers\"><d ref=\"Effect,BrightwingPixieCharmAddHeroTokenCount,Value\"/></c> stacks when hitting an enemy Hero with Arcane Flare's center. Maximum <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FaerieDragonPixieCharm,Max\"/></c> stacks."
   },
   "tooltipSimple": {
     "BrightwingArcaneFlare": "Fire a damaging flare",

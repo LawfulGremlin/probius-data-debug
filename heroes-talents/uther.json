@@ -96,16 +96,6 @@
         "tooltipId": "UtherEternalDevotion",
         "icon": "storm_ui_icon_uther_eternaldevotion.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Uther|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "UtherEternalDevotion": [
@@ -501,7 +491,6 @@
   "tooltipMarkup": {
     "GenericSpellShieldItemDisabled": "Spell Shield is disabled and will not trigger.<n/><n/>Click this button to enable Spell Shield.",
     "GenericSpellShieldTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldCooldown,Duration\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor against the next enemy Ability and subsequent Abilities for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,Duration\" precision=\"1\"/></c> seconds, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.<n/><n/>Can be toggled to allow or prevent this talent from triggering automatically.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "UtherBeaconOfLight": "While below <c val=\"#TooltipNumbers\"><d ref=\"Validator,CasterLifeLT50Percent,Value*100\"/>%</c> Health, Uther receives <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier*100\"/>%</c> more self-healing when healing others with Holy Light.",
     "UtherBenedictionHotbar": "Activate to reduce the Mana cost of Uther's next Basic Ability by <c val=\"#TooltipNumbers\">50 </c>and its cooldown by <c val=\"#TooltipNumbers\">10</c> seconds.",
     "UtherDivineShield": "Make an allied Hero Invulnerable and increase their Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DivineIntervention,Modification.UnifiedMoveSpeedFactor *100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DivineIntervention,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",

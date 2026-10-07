@@ -106,16 +106,6 @@
         "tooltipId": "MedicCaduceusReactor",
         "icon": "storm_ui_icon_medic_caduceusreactor.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "LtMorales|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -459,7 +449,7 @@
         "tooltipId": "MedicReinforcements",
         "talentTreeId": "MedicReinforcements",
         "name": "Reinforcements",
-        "description": "Activate to call down a Medivac Dropship at your Altar for your allies. After 10 seconds, or when the Ability is activated again, the Medivac will travel to the original cast location to unload its passengers. Cooldown is shared with Medivac Dropship.  Passive: Reduce the cooldown of Medivac Dropship from 60 to 30 seconds.  Does not require the Medivac Dropship Talent.",
+        "description": "Activate to call down a Medivac Dropship at your Hall of Storms for your allies. After 10 seconds, or when the Ability is activated again, the Medivac will travel to the original cast location to unload its passengers. Cooldown is shared with Medivac Dropship.  Passive: Reduce the cooldown of Medivac Dropship from 60 to 30 seconds.  Does not require the Medivac Dropship Talent.",
         "icon": "storm_ui_icon_medic_medivacdropship_b.png",
         "type": "Active",
         "sort": 3,
@@ -536,7 +526,7 @@
     "MedicMedivacDropshipDepart": "Departs for the targeted location immediately.",
     "MedicPhysicalTherapy": "Safeguard removes all Slows from its target and its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,MedicPhysicalTherapy,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
     "MedicProlongedSafeguard": "Increase Safeguard's duration by <c val=\"#TooltipNumbers\"><d ref=\"-100*(1-Talent,MedicProlongedSafeguard,AbilityModificationArray[0].Modifications[0].Value)\"/>%</c>.",
-    "MedicReinforcements": "Activate to call down a Medivac Dropship at your Altar for your allies. After <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicMedivacDropshipAcceptingPassengers,Duration\"/></c> seconds, or when the Ability is activated again, the Medivac will travel to the original cast location to unload its passengers. Cooldown is shared with Medivac Dropship.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Reduce the cooldown of Medivac Dropship from <c val=\"#TooltipNumbers\"><d ref=\"Abil,MedicMedivacDropship,Cost.Cooldown.TimeUse\" player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"-Talent,MedicReinforcements,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.<n/><n/><c val=\"ffff8a\">Does not require the Medivac Dropship Talent.</c>",
+    "MedicReinforcements": "Activate to call down a Medivac Dropship at your Hall of Storms for your allies. After <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicMedivacDropshipAcceptingPassengers,Duration\"/></c> seconds, or when the Ability is activated again, the Medivac will travel to the original cast location to unload its passengers. Cooldown is shared with Medivac Dropship.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Reduce the cooldown of Medivac Dropship from <c val=\"#TooltipNumbers\"><d ref=\"Abil,MedicMedivacDropship,Cost.Cooldown.TimeUse\" player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"-Talent,MedicReinforcements,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.<n/><n/><c val=\"ffff8a\">Does not require the Medivac Dropship Talent.</c>",
     "MedicSafeZoneTalent": "After exiting the Medivac, allies are Protected from all damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicMedivacDropshipSafeZoneTalentProtectedBuff,Duration\"precision=\"1\"/></c> seconds.",
     "MedicSafeguard": "Grant target ally Hero <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicSafeguardBuff,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicSafeguardBuff,Duration\" player=\"0\"/></c> seconds.",
     "MedicSecondOpinion": "Hitting <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicDisplacementGrenadeSecondOpinionTalentSearch,MinCount\"/></c> or more Heroes with Displacement Grenade reduces its cooldown to <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicDisplacementGrenadeSecondOpinionTalentModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
@@ -544,8 +534,7 @@
     "MedicStimDrone": "Grant an allied Hero <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MedicStimDroneBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> Attack Speed and <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MedicStimDroneBuff,Modification.UnifiedMoveSpeedFactor\"player=\"0\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicStimDroneBuff,Duration\" player=\"0\"/></c> seconds.",
     "MedicSystemShockTalent": "Heroes hit by Displacement Grenade deal <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,MedicDisplacementGrenadeSystemShockTalentDebuff,Modification.DamageDealtFraction[Ability]\"/>%</c> less damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicDisplacementGrenadeSystemShockTalentDebuff,Duration\"/></c> seconds.",
     "MedicTraumaTriggerTalent": "Taking damage while below <c val=\"#TooltipNumbers\">40%</c> Health grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicTraumaTrigger,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicTraumaTrigger,Duration\"/></c> seconds.<n/><n/>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicTraumaTriggerCooldown,Duration\" player=\"0\"/></c> second cooldown.",
-    "MedicVanadiumPlating": "While an ally affected by Safeguard is Stunned or Rooted, Safeguard grants an additional <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,MedicSafeguardVanadiumPlatingTalentBuff,ArmorModification.AllArmorBonus)-(Behavior,MedicSafeguardBuff,ArmorModification.AllArmorBonus)\"/></c> Armor and its duration is paused.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "MedicVanadiumPlating": "While an ally affected by Safeguard is Stunned or Rooted, Safeguard grants an additional <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,MedicSafeguardVanadiumPlatingTalentBuff,ArmorModification.AllArmorBonus)-(Behavior,MedicSafeguardBuff,ArmorModification.AllArmorBonus)\"/></c> Armor and its duration is paused."
   },
   "tooltipSimple": {
     "MedicBlastShield": "Displacement Grenade grants Energy, Shield",
@@ -564,7 +553,7 @@
     "MedicMedivacDropship": "Transport allies across long distances",
     "MedicPhysicalTherapy": "Safeguard removes Slows",
     "MedicProlongedSafeguard": "Increase Safeguard duration",
-    "MedicReinforcements": "Medivac appears at Altar, reduce cooldown",
+    "MedicReinforcements": "Medivac appears at Hall of Storms",
     "MedicSafeZoneTalent": "Exiting Medivac grants Protected",
     "MedicSafeguard": "Grants Armor to the target",
     "MedicSecondOpinion": "Reduce Displacement Grenade cooldown",

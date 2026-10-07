@@ -114,16 +114,6 @@
         "tooltipId": "MonkBlankTrait",
         "icon": "storm_ui_icon_monk_trait1.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Kharazim|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -567,8 +557,7 @@
     "MonkSixthSense": "While Stunned or Rooted, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkSixthSenseBlockBuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against Hero Basic Attacks for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkSixthSenseBlockBuff,Duration\"/></c> seconds, reducing their damage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkSixthSenseBlockBuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.",
     "MonkSpiritAlly": "Place a Spirit Ally that heals allied Heroes in a large area around it for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkSpiritAllyCreateHealer,RechargeVitalFraction*100\"/>%</c> of their maximum Health every second. Has <c val=\"#TooltipNumbers\"><d ref=\"Unit,MonkSpiritAlly,LifeMax\"/></c> Health and lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkSpiritAllyTimedLife,Duration\" player=\"0\"/></c> seconds. Kharazim can Radiant Dash to Spirit Allies.",
     "MonkTranscendenceTalent": "Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack heals the lowest nearby allied Hero for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkComboWeaponTranscendenceCreateHealer,RechargeVitalRate\"/></c> and gives <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkIronFistMoveSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> increased Move Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MonkIronFistMoveSpeed,Duration\"/></c> seconds.",
-    "MonkWayoftheHundredFistsTalent": "Radiant Dashing to an enemy launches a rapid volley of <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkRadiantDashWayoftheHundredFistsPersistent,PeriodCount/2\"/></c> Basic Attacks dealing <c val=\"#TooltipNumbers\"><d ref=\"100+(Effect,MonkWeaponDamage,MultiplicativeModifierArray[MonkWayOfTheHundredFists].Modifier*100)\"player=\"0\"/>%</c> damage each.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "MonkWayoftheHundredFistsTalent": "Radiant Dashing to an enemy launches a rapid volley of <c val=\"#TooltipNumbers\"><d ref=\"Effect,MonkRadiantDashWayoftheHundredFistsPersistent,PeriodCount/2\"/></c> Basic Attacks dealing <c val=\"#TooltipNumbers\"><d ref=\"100+(Effect,MonkWeaponDamage,MultiplicativeModifierArray[MonkWayOfTheHundredFists].Modifier*100)\"player=\"0\"/>%</c> damage each."
   },
   "tooltipSimple": {
     "GenericSpellShieldTalent": "Periodically gain temporary Spell Armor",

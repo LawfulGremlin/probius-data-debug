@@ -114,16 +114,6 @@
         "cooldown": 60,
         "icon": "storm_ui_icon_azmodan_generalofhell.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Azmodan|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -599,8 +589,7 @@
     "AzmodanTideOfSinBlackPoolTalent": "Globes of Annihilation empowered by Tide of Sin also leave a Black Pool at their impact location for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AzmodanTideOfSinBlackPoolTalentTimedLife,Duration\"/></c> seconds. Enemies within the pool lose <c val=\"#TooltipNumbers\"><d ref=\"-(1/Effect,AzmodanBlackPoolPersistent,PeriodicPeriodArray[0])*Behavior,AzmodanTideOfSinBlackPoolTalentArmorDebuffStack,ArmorModification.AllArmorBonus\"/></c> Armor per second, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AzmodanTideOfSinBlackPoolTalentArmorDebuffStack,ArmorModification.StackCount\"/></c>, and take <c val=\"#TooltipNumbers\"><d ref=\"Effect,AzmodanTideOfSinBlackPoolTalentDamage,Amount*4\"/></c> damage per second.",
     "AzmodanTotalAnnihilation": "Globe of Annihilation damages Heroes for an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,AzmodanGlobeOfAnnihilationTotalAnnihilationTalentDamage,VitalFractionMax[Life]\"/>%</c> of their maximum Health.",
     "AzmodanTrample": "Activate to charge a short distance, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,AzmodanTrampleDamage,Amount\"/></c> damage and Slowing enemies caught in the path by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,AzmodanTrampleSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AzmodanTrampleSlow,Duration\" precision=\"2\"/></c> second.",
-    "AzmodanWrath": "Basic Attacks against Heroes under <c val=\"#TooltipNumbers\">75%</c> Health grant <c val=\"#TooltipNumbers\"><d ref=\"Effect,AzmodanHeroWeaponWrathTalentModifyTokenCount,Value\"/></c> Annihilation. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> After gaining <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AzmodanGlobeOfAnnihilationWrathTalentTokenCounter,Max\"/></c> Annihilation, hitting a Hero with Globe of Annihilation increases the damage of Azmodan's next Basic Attack against them within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AzmodanGlobeOfAnnihilationWrathTalentMarker,Duration\"/></c> seconds by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,AzmodanWrathDamageAccumulator,Scale\"/>%</c> the amount of Annihilation he has.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "AzmodanWrath": "Basic Attacks against Heroes under <c val=\"#TooltipNumbers\">75%</c> Health grant <c val=\"#TooltipNumbers\"><d ref=\"Effect,AzmodanHeroWeaponWrathTalentModifyTokenCount,Value\"/></c> Annihilation. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> After gaining <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AzmodanGlobeOfAnnihilationWrathTalentTokenCounter,Max\"/></c> Annihilation, hitting a Hero with Globe of Annihilation increases the damage of Azmodan's next Basic Attack against them within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AzmodanGlobeOfAnnihilationWrathTalentMarker,Duration\"/></c> seconds by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,AzmodanWrathDamageAccumulator,Scale\"/>%</c> the amount of Annihilation he has."
   },
   "tooltipSimple": {
     "AzmodanAllShallBurn": "Channel a beam of death on an enemy",

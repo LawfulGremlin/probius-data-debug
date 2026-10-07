@@ -107,16 +107,6 @@
         "tooltipId": "DemonHunterHatred",
         "icon": "storm_ui_icon_valla_hatred.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Valla|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -515,8 +505,7 @@
     "DemonHunterStrafeDeathSiphonTalent": "Strafe also fires penetrating bolts in a line for <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterStrafeDeathSiphonDamage,Amount\"/></c> damage every <c val=\"#TooltipNumbers\">0.25</c> seconds. <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,DemonHunterStrafeDeathSiphonDamage,LeechFraction[Life]\"/>% </c>of the damage dealt with Strafe is returned as Health.",
     "DemonHunterVault": "Dash to the target area. Valla's next Basic Attack within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterVaultDamageBoost,Duration\"/></c> seconds deals <c val=\"#TooltipNumbers\">6%</c> increased damage per stack of Hatred.",
     "DemonHunterVaultCaltropsTalent": "Drop <c val=\"#TooltipNumbers\">3</c> Caltrops while Vaulting. Caltrops do <c val=\"#TooltipNumbers\"><d ref=\"Effect,CaltropsDamage,Amount\"/></c> damage and slow enemies by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,CaltropTargetSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CaltropTargetSlow,Duration\" player=\"0\"/></c> second.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Spend <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterCaltropsTokenCounter,Max\"/></c> seconds at <c val=\"#TooltipNumbers\">10</c> stacks of Hatred.<n/><n/><img  path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Vault cooldown is reduced by <c val=\"#TooltipNumbers\">5</c> seconds.",
-    "DemonHunterVaultRepeatingArrowTalent": "The cooldown for Hungering Arrow is reset when Vault is used.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "DemonHunterVaultRepeatingArrowTalent": "The cooldown for Hungering Arrow is reset when Vault is used."
   },
   "tooltipSimple": {
     "DemonHunterCreedoftheHunter": "Increases Attack Speed<n/><c val=\"#TooltipQuest\">Quest:</c> Attacking Heroes empowers Hatred",

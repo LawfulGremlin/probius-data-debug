@@ -97,16 +97,6 @@
         "tooltipId": "FenixShieldCapacitor",
         "icon": "storm_ui_icon_fenix_shield_1.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Fenix|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "FenixPhaseBomb": [
@@ -551,8 +541,7 @@
     "FenixTargetAcquired": "Basic Attacks against Slowed Heroes with Repeater Cannon active grant <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,FenixTargetAcquiredSpeedBehavior,Modification.UnifiedMoveSpeedFactor\" precision=\"2\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\">4</c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,FenixTargetAcquiredSpeedBehavior,Modification.UnifiedMoveSpeedFactor*Behavior,FenixTargetAcquiredSpeedBehavior,MaxStackCount\"/>%</c>.",
     "FenixUnconqueredSpirit": "Upon taking fatal damage, Shield Capacitor regains <c val=\"#TooltipNumbers\"><d ref=\"Effect,FenixUnconqueredSpiritShieldHealer,RechargeVitalRate\"/></c> Shields. This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderIndestructibleCooldown,Duration\" player=\"0\"/></c> second cooldown.",
     "FenixWarp": "Warp to a targeted location, phasing out after <c val=\"#TooltipNumbers\"><d ref=\"Abil,FenixWarp,CastIntroTime\" precision=\"2\"/></c> seconds, and arriving <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FenixWarpWarpingIn,Duration\" precision=\"2\"/></c> seconds later.",
-    "FenixWarpWarfare": "After arriving with Warp, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FenixWarpWarfareAttackSpeedBehavior,Modification.AdditiveAttackSpeedFactor*100\" precision=\"2\"/>%</c> Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FenixWarpWarfareAttackSpeedBehavior,Duration\"/></c> seconds while in Repeater Cannon mode. Hero Takedowns reset Warp's cooldown.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "FenixWarpWarfare": "After arriving with Warp, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FenixWarpWarfareAttackSpeedBehavior,Modification.AdditiveAttackSpeedFactor*100\" precision=\"2\"/>%</c> Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FenixWarpWarfareAttackSpeedBehavior,Duration\"/></c> seconds while in Repeater Cannon mode. Hero Takedowns reset Warp's cooldown."
   },
   "tooltipSimple": {
     "FenixAdaniumShell": "Warp grants Armor",

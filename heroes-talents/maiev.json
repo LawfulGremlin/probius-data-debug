@@ -103,16 +103,6 @@
         "cooldown": 13,
         "icon": "storm_ui_icon_maiev_trait.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Maiev|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -495,8 +485,7 @@
     "MaievUmbralBindCruelChain": "Umbral Bind grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindCruelChainMoveSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindCruelChainMoveSpeed,Duration\" precision=\"2\"/></c> seconds. In addition, each time Maiev deals damage to tethered targets, Umbral Bind's pull damage to all targets is increased by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,MaievUmbralBindCruelChainDamageAccumulator,Scale*100\"/>%</c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,MaievUmbralBindCruelChainDamageAccumulator,Scale*Behavior,MaievUmbralBindCruelChainToken,Max*100\"/>%</c>.",
     "MaievUmbralBindPursuitOfVengeance": "Each Hero tethered by Umbral Bind reduces the cooldown of Spirit of Vengeance by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievUmbralBindPursuitOfVengeanceModifyCooldown,Cost[0].CooldownTimeUse*(-1)\" precision=\"2\"/></c> seconds.",
     "MaievVaultOfTheWardens": "Leap into the air, becoming immune to all hostile effects for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievVaultOfTheWardensAirborneStasis,Duration\" precision=\"2\"/></c> seconds.",
-    "MaievWardensCage": "Summon <c val=\"#TooltipNumbers\">8</c> Warden Avatars as a cage around Maiev. After <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievWardensCageSpawnDelayPersistent,InitialDelay\" precision=\"1\"/></c> seconds, enemy Heroes that come in contact with an Avatar consume it and are knocked to the center of the cage. Warden Avatars last <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievWardensCageSpawnDelayPersistent,PeriodCount*Effect,MaievWardensCageSpawnDelayPersistent,PeriodicPeriodArray[0]\"/></c> seconds.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "MaievWardensCage": "Summon <c val=\"#TooltipNumbers\">8</c> Warden Avatars as a cage around Maiev. After <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievWardensCageSpawnDelayPersistent,InitialDelay\" precision=\"1\"/></c> seconds, enemy Heroes that come in contact with an Avatar consume it and are knocked to the center of the cage. Warden Avatars last <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievWardensCageSpawnDelayPersistent,PeriodCount*Effect,MaievWardensCageSpawnDelayPersistent,PeriodicPeriodArray[0]\"/></c> seconds."
   },
   "tooltipSimple": {
     "MaievArmoredAssault": "Armor increases Physical Damage dealt",

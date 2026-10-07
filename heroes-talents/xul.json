@@ -123,16 +123,6 @@
         "tooltipId": "NecromancerSpectralScythe",
         "icon": "storm_ui_icon_necromancer_reap.png",
         "type": "basic"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Xul|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -608,8 +598,7 @@
     "NecromancerTalentCorpseExplosion": "When Skeletal Warriors die they explode for <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerRaiseSkeletonCorpseExplosionTalentDamage,Amount\"/></c> damage in a small area. Deals <c val=\"#TooltipNumbers\">100%</c> increased damage to non-Heroic enemies.",
     "NecromancerTalentKalansEdict": "Skeletal Warrior attacks reduce the cooldown of Xul's Heroic Ability by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,NecromancerRaiseSkeletonKalansEdictModifyCooldown,Cost[0].Fraction.Cooldown*100\"/>%</c>.",
     "NecromancerTragOulsEssence": "Every time a Skeletal Warrior attacks an enemy, restore <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerRaiseSkeletonTragOulsEssenceCreateHealerHealth,RechargeVitalFraction*100\" precision=\"2\"/>%</c> of Xul's maximum Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerRaiseSkeletonTragOulsEssenceCreateHealerMana,RechargeVitalFraction*100\" precision=\"2\"/>%</c> of his maximum Mana.",
-    "NecromancerWeaken": "Increase the Attack Speed reduction of Cursed Strikes by <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,NecromancerCursedStrikesAttackSpeedSlowWeakenTalent,Modification.AdditiveAttackSpeedFactor)*(-100) - (-100*Behavior,NecromancerCursedStrikesAttackSpeedSlow,Modification.AdditiveAttackSpeedFactor)\" player=\"0\"/>%</c> and the duration by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerCursedStrikesAttackSpeedSlowWeakenTalent,Duration - Behavior,NecromancerCursedStrikesAttackSpeedSlow,Duration\"/></c> second.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "NecromancerWeaken": "Increase the Attack Speed reduction of Cursed Strikes by <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,NecromancerCursedStrikesAttackSpeedSlowWeakenTalent,Modification.AdditiveAttackSpeedFactor)*(-100) - (-100*Behavior,NecromancerCursedStrikesAttackSpeedSlow,Modification.AdditiveAttackSpeedFactor)\" player=\"0\"/>%</c> and the duration by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerCursedStrikesAttackSpeedSlowWeakenTalent,Duration - Behavior,NecromancerCursedStrikesAttackSpeedSlow,Duration\"/></c> second."
   },
   "tooltipSimple": {
     "GenericExecutionerTalent": "Attacking disabled Heroes increases damage",

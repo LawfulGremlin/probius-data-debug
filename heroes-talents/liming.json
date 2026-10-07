@@ -106,16 +106,6 @@
         "tooltipId": "WizardTraitCriticalMass",
         "icon": "storm_ui_icon_wizard_criticalmass.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "LiMing|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -529,7 +519,6 @@
     ]
   },
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "WizardAetherWalkerTalent": "If Li-Ming hasn't taken damage in the last <c val=\"#TooltipNumbers\">4</c> seconds, Teleport costs no mana and its cooldown is decreased by <c val=\"#TooltipNumbers\">2</c> seconds.",
     "WizardArcaneOrb": "Fire an Orb that powers up as it travels, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,WizardArcaneOrbTooltipDamage,Amount\"/></c> damage to the first enemy hit. Damage is increased the further it travels, up to <c val=\"#TooltipNumbers\"><d ref=\"16*Accumulator,WizardArcaneOrbAccumulator,MultiplierPerStep\"/></c> more damage.",
     "WizardArcaneOrbArcaneOrbitTalent": "Arcane Orb travels <c val=\"#TooltipNumbers\">25%</c> farther, increasing its maximum distance damage bonus from <c val=\"#TooltipNumbers\"><d ref=\"16*Accumulator,WizardArcaneOrbAccumulator,MultiplierPerStep\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"(16+Talent,WizardArcaneOrbArcaneOrbit,AbilityModificationArray[0].Modifications[4].Value)*Accumulator,WizardArcaneOrbAccumulator,MultiplierPerStep\"/></c>.",

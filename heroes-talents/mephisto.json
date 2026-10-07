@@ -109,16 +109,6 @@
         "tooltipId": "MephistoLordOfHatred",
         "icon": "storm_ui_icon_mephisto_hatred.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Mephisto|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -540,8 +530,7 @@
     "MephistoSkullMissileHatefulMending": "Skull Missile heals Mephisto for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MephistoSkullMissileDamage,LeechFraction[Life]*100\"/>%</c> of the damage it deals to Heroes.",
     "MephistoSkullMissileLightningReaction": "Skull Missile explodes on contact with Lightning Nova, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,MephistoSkullMissileLightningReactionDamage,Amount\"/></c> damage to nearby enemies.",
     "MephistoSkullMissileUnyieldingPower": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit Heroes with Skull Missile.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MephistoSkullMissileUnyieldingPowerQuestToken,ConditionalEvents[0].CompareValue\"/></c> Heroes, increase Skull Missile's damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MephistoSkullMissileDamage,FlatModifierArray[UnyieldingPowerTalentFlatDamage].Modifier\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MephistoSkullMissileUnyieldingPowerQuestToken,Max\"/></c> Heroes, Skull Missile's cooldown is permanently reduced to <c val=\"#TooltipNumbers\"><d ref=\"Effect,MephistoSkullMissileUnyieldingPowerQuestCompleteModifyPlayer,EffectArray[0].Value\" precision=\"2\"/></c> seconds.",
-    "MephistoSpite": "Increase Regeneration Globe healing duration by <c val=\"#TooltipNumbers\"><d ref=\"((Behavior,RegenGlobePercentBuff,Duration) + (Talent,MephistoSpite,AbilityModificationArray[0].Modifications[0].Value) / Behavior,RegenGlobePercentBuff,Duration - 1) * 100 \" player=\"0\"/>%</c>. Every tick of Regeneration Globe healing activates Lord of Hatred, reducing Basic Ability cooldowns by <c val=\"#TooltipNumbers\"><d ref=\"-1 * Effect,MephistoSpiteCDR,Cost[0].CooldownTimeUse\" precision=\"1\"/></c> seconds.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "MephistoSpite": "Increase Regeneration Globe healing duration by <c val=\"#TooltipNumbers\"><d ref=\"((Behavior,RegenGlobePercentBuff,Duration) + (Talent,MephistoSpite,AbilityModificationArray[0].Modifications[0].Value) / Behavior,RegenGlobePercentBuff,Duration - 1) * 100 \" player=\"0\"/>%</c>. Every tick of Regeneration Globe healing activates Lord of Hatred, reducing Basic Ability cooldowns by <c val=\"#TooltipNumbers\"><d ref=\"-1 * Effect,MephistoSpiteCDR,Cost[0].CooldownTimeUse\" precision=\"1\"/></c> seconds."
   },
   "tooltipSimple": {
     "MephistoAnimosity": "Activate to extend Lightning Nova",

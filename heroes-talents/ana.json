@@ -120,16 +120,6 @@
         "tooltipId": "AnaTraitShrikeSniper",
         "icon": "storm_ui_icon_ana_shrike.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Ana|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -579,8 +569,7 @@
     "AnaSleepDart": "Fire a dart that puts the first enemy Hero hit to Sleep, Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnaSleepDart,Duration\" player=\"0\" precision=\"2\"/></c> seconds. Sleep's effects end instantly if the target takes damage after the first <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SleepBreakPrevent,Duration\" precision=\"2\"/></c> seconds.<n/><n/><c val=\"ffff8a\">Cannot be used on Vehicles.</c>",
     "AnaSleepingDartTemporaryBlindness": "After Sleep Dart's effects wear off, targets are Blinded for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnaSleepingDartTemporaryBlindness,Duration\"/></c> seconds.",
     "AnaSomnolentDoses": "Upon stacking <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnaShrikeDotDamageToken,Max+1\"/></c> Doses, Heroes are put to Sleep for <c val=\"#TooltipNumbers\">2</c> seconds.",
-    "AnaTraitShrikeSniper": "Basic Attacks apply a Dose to enemies, dealing an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,AnaShrikeDotDamage,Amount*Behavior,AnaShrike,PeriodCount\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnaShrike,Duration\"/></c> seconds, and stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnaShrikeDotDamageToken,Max+1\"/></c> times.<n/><n/>Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnaShrike,Period\" precision=\"1\"/></c> seconds, Ana is healed for <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AnaShrikeSelfHealPoisonTraitHealToken,Scale*100\"/>%</c> of the damage dealt by Shrike.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "AnaTraitShrikeSniper": "Basic Attacks apply a Dose to enemies, dealing an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,AnaShrikeDotDamage,Amount*Behavior,AnaShrike,PeriodCount\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnaShrike,Duration\"/></c> seconds, and stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnaShrikeDotDamageToken,Max+1\"/></c> times.<n/><n/>Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnaShrike,Period\" precision=\"1\"/></c> seconds, Ana is healed for <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AnaShrikeSelfHealPoisonTraitHealToken,Scale*100\"/>%</c> of the damage dealt by Shrike."
   },
   "tooltipSimple": {
     "AnaAimDownSights": "Activate Shrike to increase vision, range",

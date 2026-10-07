@@ -103,16 +103,6 @@
         "cooldown": 5,
         "icon": "storm_ui_icon_cho_ogrehide.png",
         "type": "trait"
-      },
-      {
-        "uid": "8a4e67",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health.",
-        "hotkey": "B",
-        "abilityId": "Chogall|B1",
-        "tooltipId": "PortBackToBaseNoMana",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -506,8 +496,7 @@
     "ChoTheWillofCho": "Takedowns permanently increase the Armor granted by Ogre Hide by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoWillofChoModifyToken,Value*Effect,ChoWillofChoModifyTokenPersistent,PeriodCount\"/></c>, to a max of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoWillofChoTokenCounter,Max\"/></c> extra Armor.",
     "ChoTwilightVeilTalent": "Activate to increase the Armor bonus of Ogre Hide by <c val=\"#TooltipNumbers\"><d ref=\"100*(Effect,ChoTwilightVeilModifyPlayer,EffectArray[0].Value-2)\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoOgreHideTwilightVeilTalentArmorBuff,Duration\"/></c> seconds. If cast while Ogre Rage is active, it instantly swaps to Ogre Hide.",
     "ChoUpheaval": "After <c val=\"#TooltipNumbers\">1</c> second, pull enemies towards Cho'gall, slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChoUpheavalSlowBehavior,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChoUpheavalSlowBehavior,Duration\"/></c> seconds and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChoUpheavalDamage,Amount\"/></c> damage.",
-    "ChoUppercut": "Surging Fist deals additional damage to Heroes equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChoSurgingFistUppercutTalentDamage,VitalFractionMax[Life]\"/>%</c> of their max Health.",
-    "PortBackToBaseNoMana": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health."
+    "ChoUppercut": "Surging Fist deals additional damage to Heroes equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChoSurgingFistUppercutTalentDamage,VitalFractionMax[Life]\"/>%</c> of their max Health."
   },
   "tooltipSimple": {
     "ChoCallousedHide": "Ogre Hide increases healing received",

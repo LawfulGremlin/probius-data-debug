@@ -107,16 +107,6 @@
         "tooltipId": "AlarakSadism",
         "icon": "storm_ui_icon_alarak_sadism.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Alarak|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -537,8 +527,7 @@
     "AlarakSadism": "Alarak's Ability damage and self-healing are increased by <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,AlarakSadismToken,Init*Accumulator,AlarakSadismAccumulator,Scale)\"/>%</c> against enemy Heroes.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Repeatable Quest:</c> Takedowns increase Sadism by <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakSadismTakedownAddTokens,Value\"/>%</c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AlarakSadismTakedownIncreaseTokenCounter,Max*Effect,AlarakSadismTakedownAddTokens,Value\"/>%</c>. Sadism gained from Takedowns is lost on death.",
     "AlarakShowofForce": "Heroes hit with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AlarakSadismShowofForceTalentStack,MaxStackCount+1\"/></c> of Alarak's Abilities within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AlarakSadismShowofForceTalentStack,Duration\"/></c> seconds take an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakSadismShowofForceTalentDamage,Amount\"/></c> damage.",
     "AlarakSustainingPower": "Increase the healing received from damaging Heroes with Lightning Surge by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,AlarakLightningSurgeHeroDamageCreateHealer,MultiplicativeModifierArray[SustainingPower].Modifier\"/>%</c>.",
-    "AlarakTelekinesis": "<c val=\"#TooltipNumbers\">Vector Targeting</c></n>Create a force, pushing Alarak and all enemies hit from the targeted point towards the targeted direction. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakTelekinesisDamage,Amount\"/></c> damage to enemies.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "AlarakTelekinesis": "<c val=\"#TooltipNumbers\">Vector Targeting</c></n>Create a force, pushing Alarak and all enemies hit from the targeted point towards the targeted direction. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,AlarakTelekinesisDamage,Amount\"/></c> damage to enemies."
   },
   "tooltipSimple": {
     "AlarakAppliedForce": "Reduce Sadism, increase Telekinesis distance, range",

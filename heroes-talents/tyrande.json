@@ -111,16 +111,6 @@
         "cooldown": 20,
         "icon": "storm_ui_icon_tyrande_huntersmark.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Tyrande|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -509,7 +499,6 @@
     ]
   },
   "tooltipMarkup": {
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
     "TyrandeDarnassianArchery": "Basic Attacks against enemy Heroes grant a stacking <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,TyrandeDarnassianArcheryTalentDamageAccumulator,Scale\"/>%</c> increased Attack Damage bonus for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyrandeDarnassianArcheryDamageBuff,Duration\"/></c> seconds. This bonus is lost when Basic Attacking non-Heroes.",
     "TyrandeElunesChosen": "Activate to make Tyrande's Basic Attacks heal target allied Hero for <c val=\"#TooltipNumbers\">200%</c> of the damage dealt. Lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyrandeElunesChosenAllyBuff,Duration\"/></c> seconds.",
     "TyrandeEyesOfTheHuntress": "Shadowstalk reveals all enemy Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TyrandeShadowstalkEyesOfTheHuntressTalentRevealer,Duration\"/></c> seconds and heals allies below <c val=\"#TooltipNumbers\">50%</c> Health for <c val=\"#TooltipNumbers\">50%</c> more.",

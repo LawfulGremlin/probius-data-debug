@@ -119,16 +119,6 @@
         "cooldown": 75,
         "icon": "storm_ui_icon_falstad_mount.png",
         "type": "mount"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Falstad|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -515,8 +505,7 @@
     "FalstadWingmanHotbarTalent": "Enemy Minions killed near Falstad grant a stack of Bribe. Falstad can use <c val=\"#TooltipNumbers\"><d ref=\"-Effect,FalstadWingmanRemove20Token,Value\"/></c> stacks to bribe a Mercenary, instantly defeating them and permanently increasing the damage of Lightning Rod by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,FalstadWingmanAccumulator,Scale\"/>%</c>.<n/><n/>Does not work on Elite Mercenaries. Maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FalstadWingmanTokenCounter,Max\"/></c> stacks.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Reduce Lightning Rod's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,FalstadWingman,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
     "GenericGiantKiller": "Basic Attacks against enemy Heroes deal bonus damage equal to <c val=\"#TooltipNumbers\"><d ref=\"Effect,TalentBucketGiantKillerDamage,VitalFractionMax[Life]*100\" precision=\"2\"/>%</c> of the Hero's maximum Health.",
     "GenericSeasonedMarksmanTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every Minion killed near you grants <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TalentSeasonedMarksmanAccumulator,Scale*Effect,TalentSeasonedMarksmanAdd2TokenCount,Value\"precision=\"2\"/></c> Attack Damage, and Takedowns grant <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TalentSeasonedMarksmanAccumulator,Scale*Effect,TalentSeasonedMarksmanAdd5TokenCount,Value\"precision=\"2\"/></c> Attack Damage.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Upon gaining <c val=\"#TooltipNumbers\"><d ref=\"Talent,GenericTalentSeasonedMarksman,QuestData.TargetCount*Accumulator,TalentSeasonedMarksmanAccumulator,Scale\"/></c> bonus Attack Damage, you can also activate Seasoned Marksman to increase your Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SeasonedMarksmanAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SeasonedMarksmanAttackSpeedBuff,Duration\"/></c> seconds. <c val=\"#TooltipNumbers\"><d ref=\"Abil,SeasonedMarksmanActivatable,Cost[0].Cooldown.TimeUse\"/></c> second cooldown.",
-    "NexusFrenzyTalent": "Increases Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NexusFrenzyCarryBehavior,Modification.AdditiveAttackSpeedFactor\"/>%</c> and Attack Range by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusFrenzyCarryBehavior,Modification.WeaponRange\" precision=\"2\"/></c>.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "NexusFrenzyTalent": "Increases Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NexusFrenzyCarryBehavior,Modification.AdditiveAttackSpeedFactor\"/>%</c> and Attack Range by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusFrenzyCarryBehavior,Modification.WeaponRange\" precision=\"2\"/></c>."
   },
   "tooltipSimple": {
     "FalstadBarrelRoll": "Dash to a location and gain a temporary shield",

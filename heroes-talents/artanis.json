@@ -109,16 +109,6 @@
         "cooldown": 24,
         "icon": "storm_ui_icon_artanis_shieldoverload.png",
         "type": "trait"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Artanis|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -557,8 +547,7 @@
     "ArtanisTwinBladesTripleStrikeTalent": "Increases Twin Blades's number of Basic Attacks to <c val=\"#TooltipNumbers\">3</c>, but increase its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ArtanisTwinBladesTripleStrike,AbilityModificationArray[0].Modifications[2].Value\"/></c> second.",
     "ArtanisTwinBladesZealotChargeTalent": "Increase Twin Blades' charge distance by <c val=\"#TooltipNumbers\">100%</c>.",
     "GenericFollowThroughTalent": "After using an Ability, your next Basic Attack within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketFollowThrough,Duration\" player=\"0\"/></c> seconds deals <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,TalentBucketFollowThrough,Modification.DamageDealtFraction[Basic]\"/>%</c> additional damage.",
-    "GenericSeasonedMarksmanTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every Minion killed near you grants <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TalentSeasonedMarksmanAccumulator,Scale*Effect,TalentSeasonedMarksmanAdd2TokenCount,Value\"precision=\"2\"/></c> Attack Damage, and Takedowns grant <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TalentSeasonedMarksmanAccumulator,Scale*Effect,TalentSeasonedMarksmanAdd5TokenCount,Value\"precision=\"2\"/></c> Attack Damage.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Upon gaining <c val=\"#TooltipNumbers\"><d ref=\"Talent,GenericTalentSeasonedMarksman,QuestData.TargetCount*Accumulator,TalentSeasonedMarksmanAccumulator,Scale\"/></c> bonus Attack Damage, you can also activate Seasoned Marksman to increase your Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SeasonedMarksmanAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SeasonedMarksmanAttackSpeedBuff,Duration\"/></c> seconds. <c val=\"#TooltipNumbers\"><d ref=\"Abil,SeasonedMarksmanActivatable,Cost[0].Cooldown.TimeUse\"/></c> second cooldown.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "GenericSeasonedMarksmanTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every Minion killed near you grants <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TalentSeasonedMarksmanAccumulator,Scale*Effect,TalentSeasonedMarksmanAdd2TokenCount,Value\"precision=\"2\"/></c> Attack Damage, and Takedowns grant <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TalentSeasonedMarksmanAccumulator,Scale*Effect,TalentSeasonedMarksmanAdd5TokenCount,Value\"precision=\"2\"/></c> Attack Damage.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Upon gaining <c val=\"#TooltipNumbers\"><d ref=\"Talent,GenericTalentSeasonedMarksman,QuestData.TargetCount*Accumulator,TalentSeasonedMarksmanAccumulator,Scale\"/></c> bonus Attack Damage, you can also activate Seasoned Marksman to increase your Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SeasonedMarksmanAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SeasonedMarksmanAttackSpeedBuff,Duration\"/></c> seconds. <c val=\"#TooltipNumbers\"><d ref=\"Abil,SeasonedMarksmanActivatable,Cost[0].Cooldown.TimeUse\"/></c> second cooldown."
   },
   "tooltipSimple": {
     "ArtanisBladeDash": "Dash forward then back again, damaging enemies along the way",

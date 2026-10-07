@@ -81,7 +81,7 @@
       {
         "uid": "36124c",
         "name": "Evolve Monstrosity",
-        "description": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 5% Health and 5% Basic Attack damage, stacking up to 40 times.  The Monstrosity takes 50% less damage from non-Heroic enemies.  Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
+        "description": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 2% Health and 2% Basic Attack damage, stacking up to 40 times.  The Monstrosity takes 50% less damage from non-Heroic enemies.  Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
         "hotkey": "R",
         "abilityId": "Abathur|R1",
         "tooltipId": "AbathurEvolveMonstrosityHotbar",
@@ -121,16 +121,6 @@
         "cooldown": 30,
         "icon": "storm_ui_icon_abathur_mount.png",
         "type": "mount"
-      },
-      {
-        "uid": "8a4e67",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health.",
-        "hotkey": "B",
-        "abilityId": "Abathur|B1",
-        "tooltipId": "PortBackToBaseNoMana",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ],
     "AbathurSymbiote": [
@@ -412,7 +402,7 @@
         "tooltipId": "AbathurEvolveMonstrosityHotbar",
         "talentTreeId": "AbathurHeroicAbilityEvolveMonstrosity",
         "name": "Evolve Monstrosity",
-        "description": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 5% Health and 5% Basic Attack damage, stacking up to 40 times.  The Monstrosity takes 50% less damage from non-Heroic enemies.  Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
+        "description": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains 2% Health and 2% Basic Attack damage, stacking up to 40 times.  The Monstrosity takes 50% less damage from non-Heroic enemies.  Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
         "icon": "storm_ui_icon_abathur_evolvemonstrosity.png",
         "type": "Heroic",
         "sort": 2,
@@ -658,11 +648,11 @@
       "name": "AbathurEvolvedMonstrosity",
       "icon": "storm_ui_icon_abathur_evolvemonstrosity.png",
       "stats": {
-        "hp": 1000,
+        "hp": 1350,
         "hpRegen": 0,
         "hpScale": 0.04,
         "hpRegenScale": 0,
-        "attackDamage": 73,
+        "attackDamage": 85,
         "attackDamageScale": 0.04,
         "attackRange": 2,
         "attackSpeed": 1,
@@ -761,7 +751,7 @@
   ],
   "tooltipMarkup": {
     "AbathurDeepTunnel": "Quickly tunnel to a visible location",
-    "AbathurEvolveMonstrosityHotbar": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains <c val=\"#TooltipNumbers\">5%</c> Health and <c val=\"#TooltipNumbers\">5%</c> Basic Attack damage, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AbathurEvolveMonstrosityAbathurStack,MaxStackCount\"/></c> times.  The Monstrosity takes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AbathurEvolveMonstrosityDamageReduction50,ArmorModification.ArmorSet[Minion].ArmorMitigationTable[Basic]\"/>%</c> less damage from non-Heroic enemies.<n/><n/>Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
+    "AbathurEvolveMonstrosityHotbar": "Turn an allied Minion or Locust into a Monstrosity. When enemy Minions near the Monstrosity die, it gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,AbathurEvolveMonstrosityHealthStack,Modification.VitalMaxArray[Life]/Unit,AbathurEvolvedMonstrosity,LifeStart\"/>%</c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AbathurEvolveMonstrosityMinionAbsorbedAccumulator,Scale*100\"/>%</c> Basic Attack damage, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AbathurEvolveMonstrosityAbathurStack,MaxStackCount\"/></c> times.  The Monstrosity takes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AbathurEvolveMonstrosityDamageReduction50,ArmorModification.ArmorSet[Minion].ArmorMitigationTable[Basic]\"/>%</c> less damage from non-Heroic enemies.<n/><n/>Using Symbiote on the Monstrosity allows Abathur to control it, in addition to Symbiote's normal benefits.  This Ability can be reactivated to automatically cast Symbiote on his Monstrosity.",
     "AbathurLocustMasterHotbar": "Activate to create a nest that periodically spawns Locusts. Only one Locust Nest can be active at a time.",
     "AbathurLocustStrain": "Spawns a Locust to attack down the nearest lane every <c val=\"#TooltipNumbers\"><d ref=\"Abil,AbathurSpawnLocusts,Cost[0].Cooldown.TimeUse\" player=\"0\" precision=\"1\"/></c> seconds. Locusts last for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LocustTimedLife,Duration\" player=\"0\"/></c> seconds, have <c val=\"#TooltipNumbers\"><d ref=\"Unit,AbathurLocustNormal,LifeMax\"/></c> health and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,AbathurLocustWeaponDamage,Amount\"/></c> damage with each Basic Attack.",
     "AbathurLocustStrainAssaultStrainTalent": "Locust Basic Attacks cleave for <c val=\"#TooltipNumbers\"><d ref=\"Effect,AbathurLocustAssaultWeaponCleaveDamage,Amount/Effect,AbathurLocustAssaultWeaponDamage,Amount*100\"/>%</c> damage, and explode on death for <c val=\"#TooltipNumbers\"><d ref=\"Effect,AbathurLocustAssaultExplodeDamage,Amount\"/></c> damage.",
@@ -792,8 +782,7 @@
     "AbathurUltimateEvolution": "Clone target allied Hero and control it for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UltimateEvolutionTimedLife,Duration\" player=\"0\" precision=\"2\"/></c> seconds. Abathur has perfected the clone, granting it <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UltimateEvolutionBuff,Modification.DamageDealtFraction[Ability]*100\"/>%</c> Spell Power, <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UltimateEvolutionBuff,Modification.DamageDealtFraction[Basic]*100\"/>%</c> bonus Attack Damage, and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UltimateEvolutionBuff,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> bonus Movement Speed. Cannot use their Heroic Ability.",
     "AbathurUltimateEvolutionEvolutionaryLinkTalent": "As long as the Ultimate Evolution is alive, the original target of the clone gains a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,AbathurUltimateEvolutionEvolutionaryLinkShield,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]\" precision=\"2\"/>%</c> of their maximum Health.  Refreshes every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UltimateEvolutionTimedLife,Period\"/></c> seconds.",
     "AbathurVolatileMutationTalent": "Ultimate Evolution clones and Monstrosities deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,AbathurVolatileMutationDamage,Amount\"/></c> damage to nearby enemies every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AbathurVolatileMutation,Period\" precision=\"2\"/></c> seconds and when they die.",
-    "GenericCalldownMule": "Activate to calldown a Mule that repairs Structures, one at a time, near target point for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CalldownMULETimedLife,Duration\" player=\"0\"/></c> seconds, healing for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MULERepairHealth,VitalArray[Life].Change\"/></c> Health every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MULERepairTargetHealth,Period\"/></c> second.",
-    "PortBackToBaseNoMana": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health."
+    "GenericCalldownMule": "Activate to calldown a Mule that repairs Structures, one at a time, near target point for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CalldownMULETimedLife,Duration\" player=\"0\"/></c> seconds, healing for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MULERepairHealth,VitalArray[Life].Change\"/></c> Health every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MULERepairTargetHealth,Period\"/></c> second."
   },
   "tooltipSimple": {
     "AbathurDeepTunnel": "Tunnel to a location.",

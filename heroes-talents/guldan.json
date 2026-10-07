@@ -105,16 +105,6 @@
         "cooldown": 10,
         "icon": "storm_ui_icon_guldan_healthfunnel.png",
         "type": "basic"
-      },
-      {
-        "uid": "45d5f1",
-        "name": "Hearthstone",
-        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
-        "hotkey": "B",
-        "abilityId": "Guldan|B1",
-        "tooltipId": "PortBackToBase",
-        "icon": "storm_ui_icon_miscrune_1.png",
-        "type": "hearth"
       }
     ]
   },
@@ -521,8 +511,7 @@
     "GuldanLifeTapHungerforPower": "Increases Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,GuldanLifeTapHungerforPowerBehavior,Modification.DamageDealtFraction[Ability]\" precision=\"2\"/>%</c> but reduces healing received from allies by <c val=\"#TooltipNumbers\">25%</c>.",
     "GuldanLifeTapImprovedLifeTap": "Increase the Mana restored by Life Tap to <c val=\"#TooltipNumbers\">35%</c>.",
     "GuldanRainOfDestruction": "Channel to summon a rain of meteors in an area over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanRainOfDestructionChannel,Duration\"/></c> seconds. Each meteor deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,GuldanRainOfDestructionDamage,Amount\"/></c> damage in a small area.",
-    "GuldanRainOfDestructionDeepImpact": "Rain of Destruction slows enemies Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,GuldanRainOfDestructionDeepImpactSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanRainOfDestructionDeepImpactSlow,Duration\" precision=\"1\"/></c> seconds.",
-    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+    "GuldanRainOfDestructionDeepImpact": "Rain of Destruction slows enemies Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,GuldanRainOfDestructionDeepImpactSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GuldanRainOfDestructionDeepImpactSlow,Duration\" precision=\"1\"/></c> seconds."
   },
   "tooltipSimple": {
     "GuldanChaoticEnergy": "<c val=\"#TooltipQuest\">Quest:</c> Gather Regen Globes to reduce Mana costs",
