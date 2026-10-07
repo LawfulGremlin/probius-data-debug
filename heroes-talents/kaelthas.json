@@ -402,16 +402,20 @@
         "tooltipId": "KaelthasVerdantSpheresTwinSpheresTalent",
         "talentTreeId": "KaelthasTwinSpheres",
         "name": "Twin Spheres",
-        "description": "Verdant Spheres gains a second charge.",
+        "description": "Verdant Spheres gains a second charge.  Passive: Kael'thas benefits from all of his level 7 talents.",
         "icon": "storm_ui_icon_kaelthas_verdantspheres.png",
         "type": "Trait",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Kaelthas|D1",
+        "abilityId": "Kaelthas|Q1",
         "abilityLinks": [
-          "Kaelthas|D1"
+          "Kaelthas|D1",
+          "Kaelthas|Q1",
+          "Kaelthas|W1"
         ],
         "abilityTalentLinkIds": [
+          "KaelthasFlamestrike",
+          "KaelthasLivingBomb",
           "KaelthasVerdantSpheresActive",
           "KaelthasVerdantSpheres"
         ]
@@ -519,7 +523,7 @@
     "KaelthasSunfireEnchantmentTalent": "Activating Verdant Spheres causes Kael'thas's next <c val=\"#TooltipNumbers\"><d ref=\"Effect,VerdantSpheresApplySunfireEnchantmentMasteryBuff,Count\"/></c> Basic Attacks to instead deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,KaelthasSunfireEnchantmentDamage,Amount\"/></c> Spell Damage.  If both of these Attacks hit enemy Heroes, gain<c val=\"#TooltipNumbers\"> <d ref=\"100*Behavior,KaelthasVerdantSpheresSunfireEnchantmentAbilityPowerBuff,Modification.DamageDealtFraction\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KaelthasVerdantSpheresSunfireEnchantmentAbilityPowerBuff,Duration\"/></c> seconds.",
     "KaelthasVerdantSpheres": "Activate to make Kael'thas's next Basic Ability more powerful.",
     "KaelthasVerdantSpheresFelInfusionTalent": "Increases Kael'thas's Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,KaelthasFelInfusion,Modification.DamageDealtFraction[Ability]*100\"/>%</c>. Kael'thas heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,KaelthasVerdantSpheresFelInfusionCreateHealer,RechargeVitalRate\"/></c> Health when activating Verdant Spheres.",
-    "KaelthasVerdantSpheresTwinSpheresTalent": "Verdant Spheres gains a second charge."
+    "KaelthasVerdantSpheresTwinSpheresTalent": "Verdant Spheres gains a second charge.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Kael'thas benefits from all of his level <c val=\"#TooltipNumbers\">7</c> talents."
   },
   "tooltipSimple": {
     "KaelthasBurnedFleshTalent": "Empower Flamestrike against multiple Heroes",
@@ -545,9 +549,10 @@
     "KaelthasSunfireEnchantmentTalent": "Special attack on Verdant Spheres",
     "KaelthasVerdantSpheres": "Make Kael'thas's next Basic Ability more powerful",
     "KaelthasVerdantSpheresFelInfusionTalent": "Increases Spell Power, Verdant Spheres heals",
-    "KaelthasVerdantSpheresTwinSpheresTalent": "Verdant Spheres gains a second charge"
+    "KaelthasVerdantSpheresTwinSpheresTalent": "Gain level 7 talents, Verdant Spheres charge"
   },
   "tooltipColors": {
+    "AbilityPassive": "00FF90",
     "TooltipNumbers": "BFD4FD",
     "TooltipQuest": "E4B800"
   }
