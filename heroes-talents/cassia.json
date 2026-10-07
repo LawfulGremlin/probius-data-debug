@@ -1,0 +1,531 @@
+{
+  "id": 65,
+  "shortName": "cassia",
+  "hyperlinkId": "Cassia",
+  "attributeId": "Amaz",
+  "cHeroId": "Amazon",
+  "cUnitId": "HeroAmazon",
+  "name": "Cassia",
+  "icon": "cassia.png",
+  "role": "Assassin",
+  "expandedRole": "Assassin",
+  "type": "Ranged",
+  "description": "An Assassin who specializes against Physical Attackers.",
+  "title": "Amazon Warmatron",
+  "info": "After shattering the Worldstone, the young Amazon Cassia had changed. She had seen hatred, terror, and destruction firsthand. If the Askari were to survive the coming darkness, they needed an army. She would begin their training immediately.",
+  "releaseDate": "2017-04-04",
+  "releasePatch": "1.24.4.52124",
+  "tags": [
+    "EnergyImportant",
+    "Ganker",
+    "RoleAutoAttacker",
+    "RoleCaster"
+  ],
+  "stats": {
+    "hp": 1840,
+    "hpRegen": 3.8281,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 500,
+    "resourceType": "Mana",
+    "resourceRegen": 3,
+    "attackDamage": 130,
+    "attackDamageScale": 0.04,
+    "attackRange": 2,
+    "attackSpeed": 1.3333,
+    "radius": 0.6875
+  },
+  "unitIds": [
+    "AmazonBallLightningController"
+  ],
+  "abilities": {
+    "Cassia": [
+      {
+        "uid": "af4e3f",
+        "name": "Lightning Fury",
+        "description": "Hurl a lightning javelin that deals 175 (+4% per level) damage to the first enemy hit and splits into two lightning bolts that deal 175 (+4% per level) damage to enemies in their path.",
+        "hotkey": "Q",
+        "abilityId": "Cassia|Q1",
+        "tooltipId": "AmazonLightningFury",
+        "cooldown": 4,
+        "manaCost": 30,
+        "icon": "storm_ui_icon_cassia_lightningfury.png",
+        "type": "basic"
+      },
+      {
+        "uid": "03b6ab",
+        "name": "Blinding Light",
+        "description": "After 0.5 seconds, deal 50 (+4% per level) damage and Blind enemies in the target area for 2 seconds.  Passive: Cassia deals 20% increased damage to Blinded targets.",
+        "hotkey": "W",
+        "abilityId": "Cassia|W1",
+        "tooltipId": "AmazonBlindingLight",
+        "cooldown": 15,
+        "manaCost": 70,
+        "icon": "storm_ui_icon_cassia_blindinglight.png",
+        "type": "basic"
+      },
+      {
+        "uid": "9bd841",
+        "name": "Fend",
+        "description": "Charge at an enemy, and upon arriving channel for up to 1.5 seconds, dealing 78 (+4% per level) damage to enemies in front of Cassia every 0.25 seconds. Deals 50% reduced damage to non-Heroes.",
+        "hotkey": "E",
+        "abilityId": "Cassia|E1",
+        "tooltipId": "AmazonFend",
+        "cooldown": 8,
+        "manaCost": 40,
+        "icon": "storm_ui_icon_cassia_fend.png",
+        "type": "basic"
+      },
+      {
+        "uid": "792bee",
+        "name": "Ball Lightning",
+        "description": "Throw a ball of lightning at an enemy Hero that bounces up to 6 times between nearby enemy Heroes and Cassia, dealing 180 (+4% per level) damage to enemies hit.",
+        "hotkey": "R",
+        "abilityId": "Cassia|R1",
+        "tooltipId": "AmazonBallLightning",
+        "cooldown": 60,
+        "manaCost": 60,
+        "icon": "storm_ui_icon_cassia_balllightning.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "bf4642",
+        "name": "Valkyrie",
+        "description": "Summon a Valkyrie that rushes to Cassia after 0.75 seconds, pulling the first enemy Hero hit, dealing 225 (+4% per level) damage and Stunning them for 0.5 seconds at the end of her path. The Valkyrie knocks back all other enemy Heroes in her way.",
+        "hotkey": "R",
+        "abilityId": "Cassia|R2",
+        "tooltipId": "AmazonValkyrie",
+        "cooldown": 60,
+        "manaCost": 60,
+        "icon": "storm_ui_icon_cassia_valkrie.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "0c204e",
+        "name": "Avoidance",
+        "description": "While moving unmounted, Cassia gains 40 Physical Armor against Heroic Basic Attacks, reducing the damage taken by 40%.",
+        "trait": true,
+        "abilityId": "Cassia|D1",
+        "tooltipId": "AmazonAvoidance",
+        "icon": "storm_ui_icon_cassia_avoidance.png",
+        "type": "trait"
+      },
+      {
+        "uid": "45d5f1",
+        "name": "Hearthstone",
+        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
+        "hotkey": "B",
+        "abilityId": "Cassia|B1",
+        "tooltipId": "PortBackToBase",
+        "icon": "storm_ui_icon_miscrune_1.png",
+        "type": "hearth"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "AmazonLightningFuryThunderstroke",
+        "talentTreeId": "AmazonThunderstroke",
+        "name": "Thunderstroke",
+        "description": "Quest: Hit Heroes with Lightning Fury.  Reward: After hitting 20 Heroes, increase Lightning Fury's damage by 100.  Reward: After hitting 40 Heroes, Lightning Fury gains a 2nd charge and its Mana cost is reduced from 30 to 15.",
+        "icon": "storm_ui_icon_cassia_lightningfury.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": true,
+        "abilityId": "Cassia|Q1",
+        "abilityLinks": [
+          "Cassia|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonLightningFury"
+        ]
+      },
+      {
+        "tooltipId": "AmazonBlindingLightSeraphsHymn",
+        "talentTreeId": "AmazonSeraphsHymn",
+        "name": "Seraph's Hymn",
+        "description": "Reduce the cooldown and Mana cost of Blinding Light by 33%. Basic Attacks against Blinded enemies deal 100% more damage.",
+        "icon": "storm_ui_icon_cassia_blindinglight.png",
+        "type": "W",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Cassia|W1",
+        "abilityLinks": [
+          "Cassia|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonBlindingLight"
+        ]
+      },
+      {
+        "tooltipId": "AmazonAvoidanceChargedStrikes",
+        "talentTreeId": "AmazonChargedStrikes",
+        "name": "Charged Strikes",
+        "description": "Activate to increase Basic Attack damage by 20% and cause Basic Attacks against non-Structures to bounce to nearby enemy Heroes for 8 seconds.",
+        "icon": "storm_ui_icon_cassia_chargedstrikes.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 20,
+        "isQuest": false,
+        "abilityId": "Cassia|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "AmazonChargedStrikes"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "AmazonBlindingLightInnerLight",
+        "talentTreeId": "AmazonInnerLight",
+        "name": "Inner Light",
+        "description": "Whenever Cassia is Stunned or Rooted, Blinding Light is cast at her location.  This effect has a 6 second cooldown.  Passive: Blinding Light's radius is increased by 25%.",
+        "icon": "storm_ui_icon_cassia_innerlight.png",
+        "type": "W",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Cassia|W1",
+        "abilityLinks": [
+          "Cassia|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonBlindingLight"
+        ]
+      },
+      {
+        "tooltipId": "AmazonRingoftheLeech",
+        "talentTreeId": "AmazonRingoftheLeech",
+        "name": "Ring of the Leech",
+        "description": "Cassia heals for 25% of the damage she deals to Blinded enemies.",
+        "icon": "storm_ui_icon_cassia_ringoftheleech.png",
+        "type": "Passive",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Cassia|Passive"
+      },
+      {
+        "tooltipId": "AmazonAvoidancePlateoftheWhale",
+        "talentTreeId": "AmazonPlateoftheWhale",
+        "name": "Plate of the Whale",
+        "description": "Regenerate 5 Health per second while Avoidance is active.  Quest: For every 5 Basic Attacks absorbed with Avoidance, it regenerates an additional 1 Health per second.  Reward: After absorbing 75 Basic Attacks, increase Cassia's maximum Health by 10%.",
+        "icon": "storm_ui_icon_cassia_avoidance.png",
+        "type": "Trait",
+        "sort": 3,
+        "isQuest": true,
+        "abilityId": "Cassia|D1",
+        "abilityLinks": [
+          "Cassia|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonAvoidance",
+          "AmazonSurgeOfLight"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "AmazonFendImpale",
+        "talentTreeId": "AmazonImpale",
+        "name": "Impale",
+        "description": "Enemies below 60% Health take 50% increased damage from Fend.",
+        "icon": "storm_ui_icon_cassia_fend.png",
+        "type": "E",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Cassia|E1",
+        "abilityLinks": [
+          "Cassia|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonFend"
+        ]
+      },
+      {
+        "tooltipId": "AmazonAvoidanceWarTraveler",
+        "talentTreeId": "AmazonWarTraveler",
+        "name": "War Traveler",
+        "description": "Cassia gains 4% Movement Speed every 0.5 seconds while Avoidance is active, up to 20%.  This bonus is reset when Cassia stops moving or uses an Ability.",
+        "icon": "storm_ui_icon_cassia_avoidance.png",
+        "type": "Trait",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Cassia|D1",
+        "abilityLinks": [
+          "Cassia|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonAvoidance",
+          "AmazonSurgeOfLight"
+        ]
+      },
+      {
+        "tooltipId": "AmazonAvoidanceSurgeOfLight",
+        "talentTreeId": "AmazonSurgeOfLight",
+        "name": "Surge of Light",
+        "description": "After taking 500 (+4% per level) damage with Avoidance active, Cassia can activate Avoidance to deal 210 (+4% per level) damage to enemies around her.",
+        "icon": "storm_ui_icon_cassia_avoidance_a.png",
+        "type": "Trait",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Cassia|D1",
+        "abilityLinks": [
+          "Cassia|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonAvoidance",
+          "AmazonSurgeOfLight"
+        ]
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "AmazonBallLightning",
+        "talentTreeId": "AmazonBallLightning",
+        "name": "Ball Lightning",
+        "description": "Throw a ball of lightning at an enemy Hero that bounces up to 6 times between nearby enemy Heroes and Cassia, dealing 180 (+4% per level) damage to enemies hit.",
+        "icon": "storm_ui_icon_cassia_balllightning.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 60,
+        "isQuest": false,
+        "abilityId": "Cassia|R1",
+        "abilityLinks": [
+          "Cassia|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonBallLightning"
+        ]
+      },
+      {
+        "tooltipId": "AmazonValkyrie",
+        "talentTreeId": "AmazonValkyrie",
+        "name": "Valkyrie",
+        "description": "Summon a Valkyrie that rushes to Cassia after 0.75 seconds, pulling the first enemy Hero hit, dealing 225 (+4% per level) damage and Stunning them for 0.5 seconds at the end of her path. The Valkyrie knocks back all other enemy Heroes in her way.",
+        "icon": "storm_ui_icon_cassia_valkrie.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 60,
+        "isQuest": false,
+        "abilityId": "Cassia|R2",
+        "abilityLinks": [
+          "Cassia|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonValkyrie"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "AmazonLightningFuryGroundingBolt",
+        "talentTreeId": "AmazonGroundingBolt",
+        "name": "Grounding Bolt",
+        "description": "Lightning Fury Slows enemies hit by 20% for 1.5 seconds.",
+        "icon": "storm_ui_icon_cassia_lightningfury.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Cassia|Q1",
+        "abilityLinks": [
+          "Cassia|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonLightningFury"
+        ]
+      },
+      {
+        "tooltipId": "AmazonLightningFuryThundergodsVigor",
+        "talentTreeId": "AmazonThundergodsVigor",
+        "name": "Thundergod's Vigor",
+        "description": "Enemy Heroes hit by the primary missile of Lightning Fury reduce its cooldown by 1 second.",
+        "icon": "storm_ui_icon_cassia_lightningfury_a.png",
+        "type": "Q",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Cassia|Q1",
+        "abilityLinks": [
+          "Cassia|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonLightningFury"
+        ]
+      },
+      {
+        "tooltipId": "AmazonFendLungingStrike",
+        "talentTreeId": "AmazonLungingStrike",
+        "name": "Lunging Strike",
+        "description": "Increase Fend's range and area by 20%, and its duration by 0.5 seconds.",
+        "icon": "storm_ui_icon_cassia_fend.png",
+        "type": "E",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Cassia|E1",
+        "abilityLinks": [
+          "Cassia|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonFend"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "AmazonLightningFuryPierce",
+        "talentTreeId": "AmazonPierce",
+        "name": "Pierce",
+        "description": "The primary missile of Lightning Fury now pierces, but splits only when hitting Heroes.",
+        "icon": "storm_ui_icon_cassia_lightningfury.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Cassia|Q1",
+        "abilityLinks": [
+          "Cassia|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonLightningFury"
+        ]
+      },
+      {
+        "tooltipId": "AmazonFendPenetrate",
+        "talentTreeId": "AmazonPenetrate",
+        "name": "Penetrate",
+        "description": "Enemies take 3% increased damage from Fend each consecutive hit.",
+        "icon": "storm_ui_icon_cassia_fend.png",
+        "type": "E",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Cassia|E1",
+        "abilityLinks": [
+          "Cassia|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonFend"
+        ]
+      },
+      {
+        "tooltipId": "AmazonMartialLaw",
+        "talentTreeId": "AmazonMartialLaw",
+        "name": "Martial Law",
+        "description": "Basic Attacks against Stunned, Rooted, or Slowed enemy Heroes deal bonus damage equal to 3% of the Hero's maximum Health.",
+        "icon": "storm_ui_icon_talent_autoattack_damage.png",
+        "type": "Passive",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Cassia|Passive"
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "AmazonBallLightningInfiniteLightning",
+        "talentTreeId": "AmazonInfiniteLightning",
+        "name": "Infinite Lightning",
+        "description": "Ball Lightning can now bounce indefinitely, and its cooldown is reduced by 3 seconds every time an enemy Hero is hit.",
+        "icon": "storm_ui_icon_cassia_balllightning_a.png",
+        "type": "Heroic",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Cassia|R1",
+        "abilityLinks": [
+          "Cassia|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonBallLightning"
+        ],
+        "prerequisiteTalentIds": [
+          "AmazonBallLightning"
+        ]
+      },
+      {
+        "tooltipId": "AmazonValkyrieImprisoningLight",
+        "talentTreeId": "AmazonImprisoningLight",
+        "name": "Imprisoning Light",
+        "description": "Upon impaling a Hero, Cassia's Valkyrie creates a wave of light that deals 200 (+4% per level) damage to nearby enemies and Roots them for 3 seconds.",
+        "icon": "storm_ui_icon_cassia_valkrie_a.png",
+        "type": "Heroic",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Cassia|R2",
+        "abilityLinks": [
+          "Cassia|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "AmazonValkyrie"
+        ],
+        "prerequisiteTalentIds": [
+          "AmazonValkyrie"
+        ]
+      },
+      {
+        "tooltipId": "AmazonTitansRevenge",
+        "talentTreeId": "AmazonTitansRevenge",
+        "name": "Titan's Revenge",
+        "description": "Cassia's Basic Attacks now ignore Armor, and her Basic Attack range is increased by 2.",
+        "icon": "storm_ui_icon_talent_autoattack_range.png",
+        "type": "Passive",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Cassia|Passive"
+      }
+    ]
+  },
+  "tooltipMarkup": {
+    "AmazonAvoidance": "While moving unmounted, Cassia gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonAvoidanceDamageReduction,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against Heroic Basic Attacks, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonAvoidanceDamageReduction,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.",
+    "AmazonAvoidanceChargedStrikes": "Activate to increase Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonHeroWeaponDamage,MultiplicativeModifierArray[TalentChargedStrikesActive].Modifier * 100\"/>%</c> and cause Basic Attacks against non-Structures to bounce to nearby enemy Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonHeroWeaponChargedStrikesActive,Duration\"/></c> seconds.",
+    "AmazonAvoidancePlateoftheWhale": "Regenerate <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonPlateoftheWhaleRegenHealer,RechargeVitalRate\"/></c> Health per second while Avoidance is active.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> For every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonPlateoftheWhaleStackCounter,DeltaEvents[0].Delta\"/></c> Basic Attacks absorbed with Avoidance, it regenerates an additional <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AmazonPlateoftheWhaleRegenAccumulator,Scale\"/></c> Health per second.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After absorbing <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonPlateoftheWhaleStackCounter,Max\"/></c> Basic Attacks, increase Cassia's maximum Health by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonPlateoftheWhaleQuestCompleteVitalIncrease,Modification.VitalMaxFractionArray[Life] * 100\"/>%</c>.",
+    "AmazonAvoidanceSurgeOfLight": "After taking <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonAvoidanceSurgeOfLightDummyMaximumCharge,Amount\"/></c> damage with Avoidance active, Cassia can activate Avoidance to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonAvoidanceSurgeOfLightDamage,Amount\"/></c> damage to enemies around her.",
+    "AmazonAvoidanceWarTraveler": "Cassia gains <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,AmazonAvoidanceWarTravelerMovementBonus,Modification.UnifiedMoveSpeedFactor) * 100\"/>%</c> Movement Speed every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonAvoidanceDamageReduction,Period\" precision=\"2\"/></c> seconds while Avoidance is active, up to <c val=\"#TooltipNumbers\"><d ref=\"((Behavior,AmazonAvoidanceWarTravelerMovementBonus,Modification.UnifiedMoveSpeedFactor) * 100) * Behavior,AmazonAvoidanceWarTravelerMovementBonus,MaxStackCount\"/>%</c>.  This bonus is reset when Cassia stops moving or uses an Ability.",
+    "AmazonBallLightning": "Throw a ball of lightning at an enemy Hero that bounces up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonBallLightningBounceTokenCounter,Max\"/></c> times between nearby enemy Heroes and Cassia, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonBallLightningBounceToEnemyDamage,Amount\"/></c> damage to enemies hit.",
+    "AmazonBallLightningInfiniteLightning": "Ball Lightning can now bounce indefinitely, and its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,AmazonBallLightningInfiniteLightningReduceCooldown,Cost[0].CooldownTimeUse\"/></c> seconds every time an enemy Hero is hit.",
+    "AmazonBlindingLight": "After <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonBlindingLightDelayPersistent,InitialDelay\" precision=\"1\"/></c> seconds, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonBlindingLightDamage,Amount\"/></c> damage and Blind enemies in the target area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonBlindingLightBlindDebuff,Duration\" player=\"0\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Cassia deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonHeroWeaponDamage,MultiplicativeModifierArray[TargetBlinded].Modifier * 100\"/>%</c> increased damage to Blinded targets.",
+    "AmazonBlindingLightInnerLight": "Whenever Cassia is Stunned or Rooted, Blinding Light is cast at her location.</n></n>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonBlindingLightInnerLightCooldown,Duration\"/></c> second cooldown.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Blinding Light's radius is increased by <c val=\"#TooltipNumbers\"><d ref=\"(Talent,AmazonInnerLight,AbilityModificationArray[0].Modifications[0].Value / Effect,AmazonBlindingLightTargetSearch,AreaArray[0].Radius) * 100\" player=\"0\"/>%</c>.",
+    "AmazonBlindingLightSeraphsHymn": "Reduce the cooldown and Mana cost of Blinding Light by <c val=\"#TooltipNumbers\"><d ref=\"-100*Talent,AmazonSeraphsHymn,AbilityModificationArray[0].Modifications[1].Value/Abil,AmazonBlindingLight,Cost.Cooldown.TimeUse\"player=\"0\"/>%</c>. Basic Attacks against Blinded enemies deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,AmazonHeroWeaponDamage,MultiplicativeModifierArray[SeraphsHymn].Modifier\" precision=\"2\"/>%</c> more damage.",
+    "AmazonFend": "Charge at an enemy, and upon arriving channel for up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonFendChanneling,Duration\" precision=\"1\" player=\"0\"/></c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonFendChannelDamage,Amount*2\"/></c> damage to enemies in front of Cassia every <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonFendChannelCreatePersistent,PeriodicPeriodArray[0]*2\" precision=\"3\"/></c> seconds. Deals <c val=\"#TooltipNumbers\"><d ref=\"-Effect,AmazonFendChannelDamage,MultiplicativeModifierArray[TargetNotHero].Modifier * 100\"/>%</c> reduced damage to non-Heroes.",
+    "AmazonFendImpale": "Enemies below <c val=\"#TooltipNumbers\"><d ref=\"Validator,AmazonFendImpaleTargetIsLowHealth,Value * 100\"/>%</c> Health take <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonFendChannelDamage,MultiplicativeModifierArray[TargetLowHealthTalentImpale].Modifier * 100\"/>%</c> increased damage from Fend.",
+    "AmazonFendLungingStrike": "Increase Fend's range and area by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,AmazonLungingStrike,AbilityModificationArray[0].Modifications[0].Value-100\"/>%</c>, and its duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,AmazonLungingStrike,AbilityModificationArray[0].Modifications[4].Value\"precision=\"2\"/></c> seconds.",
+    "AmazonFendPenetrate": "Enemies take <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,AmazonFendPenetratePercentDamageAccumulator,Scale * 100\" precision=\"1\"/>%</c> increased damage from Fend each consecutive hit.",
+    "AmazonLightningFury": "Hurl a lightning javelin that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonLightningFuryDamage,Amount\"/></c> damage to the first enemy hit and splits into two lightning bolts that deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonLightningFuryDamage,Amount\"/></c> damage to enemies in their path.",
+    "AmazonLightningFuryGroundingBolt": "Lightning Fury Slows enemies hit by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,AmazonLightningFuryGroundingBoltSlow,Modification[0].UnifiedMoveSpeedFactor * 100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonLightningFuryGroundingBoltSlow,Duration\" precision=\"2\"/></c> seconds.",
+    "AmazonLightningFuryPierce": "The primary missile of Lightning Fury now pierces, but splits only when hitting Heroes.",
+    "AmazonLightningFuryThundergodsVigor": "Enemy Heroes hit by the primary missile of Lightning Fury reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,AmazonLightningFuryThundergodsVigorCooldownReduction,Cost[0].ChargeTimeUse\" precision=\"2\"/></c> second.",
+    "AmazonLightningFuryThunderstroke": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit Heroes with Lightning Fury.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonLightningFuryThunderstrokeQuestToken,ConditionalEvents[0].CompareValue\"/></c> Heroes, increase Lightning Fury's damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonLightningFuryThunderstrokeModifyDamage,EffectArray[0].Value\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonLightningFuryThunderstrokeQuestToken,Max\"/></c> Heroes, Lightning Fury gains a 2nd charge and its Mana cost is reduced from <c val=\"#TooltipNumbers\"><d ref=\"Abil,AmazonLightningFury,Cost.Vital[Energy]\" player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Abil,AmazonLightningFury,Cost.Vital[Energy] - Effect,AmazonLightningFuryThunderstrokeModifyChargeCount,EffectArray[2].Value\" player=\"0\"/></c>.",
+    "AmazonMartialLaw": "Basic Attacks against Stunned, Rooted, or Slowed enemy Heroes deal bonus damage equal to <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonMartialLawDamage,VitalFractionMax[Life] * 100\" precision=\"1\"/>%</c> of the Hero's maximum Health.",
+    "AmazonRingoftheLeech": "Cassia heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonHeroWeaponDamage,LeechFraction[Life] * 100\"/>%</c> of the damage she deals to Blinded enemies.",
+    "AmazonTitansRevenge": "Cassia's Basic Attacks now ignore Armor, and her Basic Attack range is increased by <c val=\"#TooltipNumbers\"><d ref=\"Talent,AmazonTitansRevenge,AbilityModificationArray[0].Modifications[0].Value\" precision=\"1\"/></c>.",
+    "AmazonValkyrie": "Summon a Valkyrie that rushes to Cassia after <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonValkyrieDelayPersistent,PeriodicPeriodArray[1]\" precision=\"2\"/></c> seconds, pulling the first enemy Hero hit, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonValkyrieImpaleDamage,Amount\"/></c> damage and Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonValkyrieImpaleFinalStun,Duration\" precision=\"2\"/></c> seconds at the end of her path. The Valkyrie knocks back all other enemy Heroes in her way.",
+    "AmazonValkyrieImprisoningLight": "Upon impaling a Hero, Cassia's Valkyrie creates a wave of light that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,AmazonValkyrieImprisoningLightDamage,Amount\"/></c> damage to nearby enemies and Roots them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AmazonValkyrieImprisoningLightRoot,Duration\"/></c> seconds.",
+    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+  },
+  "tooltipSimple": {
+    "AmazonAvoidance": "Gain Physical Armor while moving",
+    "AmazonAvoidanceChargedStrikes": "Activate to empower Basic Attacks",
+    "AmazonAvoidancePlateoftheWhale": "<c val=\"#TooltipQuest\">Quest:</c> Avoidance regenerates Health",
+    "AmazonAvoidanceSurgeOfLight": "Activate Avoidance to deal damage",
+    "AmazonAvoidanceWarTraveler": "Avoidance grants Movement Speed",
+    "AmazonBallLightning": "Throw a bouncing lightning ball",
+    "AmazonBallLightningInfiniteLightning": "Ball Lightning bounces indefinitely",
+    "AmazonBlindingLight": "Blind enemies in an area",
+    "AmazonBlindingLightInnerLight": "Emit Blinding Light when Stunned or Rooted",
+    "AmazonBlindingLightSeraphsHymn": "Empower Blinding Light, Basic Attacks",
+    "AmazonFend": "Charge at a target and rapidly attack nearby enemies",
+    "AmazonFendImpale": "Increase Fend damage",
+    "AmazonFendLungingStrike": "Increase Fend area, duration",
+    "AmazonFendPenetrate": "Consecutive Fend hits deal increased damage",
+    "AmazonLightningFury": "Hurl a lightning javelin that splits upon impact",
+    "AmazonLightningFuryGroundingBolt": "Lightning Fury Slows",
+    "AmazonLightningFuryPierce": "Lightning Fury pierces",
+    "AmazonLightningFuryThundergodsVigor": "Reduce Lightning Fury cooldown",
+    "AmazonLightningFuryThunderstroke": "<c val=\"#TooltipQuest\">Quest:</c> Empower Lightning Fury",
+    "AmazonMartialLaw": "Disabled Heroes take additional damage",
+    "AmazonRingoftheLeech": "Damaging Blinded targets heals",
+    "AmazonTitansRevenge": "Basic Attacks ignore Armor",
+    "AmazonValkyrie": "Summon a Valkyrie to impale enemies",
+    "AmazonValkyrieImprisoningLight": "Valkyrie Roots enemies"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}

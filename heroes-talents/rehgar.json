@@ -1,0 +1,584 @@
+{
+  "id": 28,
+  "shortName": "rehgar",
+  "hyperlinkId": "Rehgar",
+  "attributeId": "Rehg",
+  "cHeroId": "Rehgar",
+  "cUnitId": "HeroRehgar",
+  "name": "Rehgar",
+  "icon": "rehgar.png",
+  "role": "Support",
+  "expandedRole": "Support",
+  "type": "Melee",
+  "description": "A well-rounded Healer that pairs well with Melee allies.",
+  "title": "Shaman of the Earthen Ring",
+  "info": "Rehgar Earthfury has seen his share of combat, both as a gladiator, and a master of his own team. Now, having put that life aside, he serves as a simple shaman of the Earthen Ring, earning his redemption by healing the lands of Azeroth.",
+  "releaseDate": "2014-07-22",
+  "releasePatch": "0.2.5.31360",
+  "tags": [
+    "AllyHealer",
+    "EnergyImportant",
+    "Escaper",
+    "Helper",
+    "Overconfident",
+    "RoleSupport",
+    "SelfHealer"
+  ],
+  "stats": {
+    "hp": 2049,
+    "hpRegen": 4.2695,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 500,
+    "resourceType": "Mana",
+    "resourceRegen": 3,
+    "attackDamage": 113,
+    "attackDamageScale": 0.04,
+    "attackRange": 1.5,
+    "attackSpeed": 1.25,
+    "radius": 0.75
+  },
+  "unitIds": [
+    "TalentHealingWard"
+  ],
+  "abilities": {
+    "Rehgar": [
+      {
+        "uid": "773536",
+        "name": "Chain Heal",
+        "description": "Heal an ally with a wave of healing for 260 (+4% per level) Health. The wave then bounces 2 times to nearby allies within 7 range, restoring 260 (+4% per level) Health to them.",
+        "hotkey": "Q",
+        "abilityId": "Rehgar|Q1",
+        "tooltipId": "RehgarChainHeal",
+        "cooldown": 8,
+        "manaCost": 55,
+        "icon": "storm_ui_icon_rehgar_chainheal.png",
+        "type": "basic"
+      },
+      {
+        "uid": "659151",
+        "name": "Lightning Shield",
+        "description": "Imbue an ally with lightning dealing 64 (+4% per level) damage a second to nearby enemies. Lasts 5 seconds.",
+        "hotkey": "W",
+        "abilityId": "Rehgar|W1",
+        "tooltipId": "RehgarLightningShield",
+        "cooldown": 8,
+        "manaCost": 60,
+        "icon": "storm_ui_icon_rehgar_lightningshield.png",
+        "type": "basic"
+      },
+      {
+        "uid": "0e1193",
+        "name": "Bloodlust",
+        "description": "Grant nearby allied Heroes 40% Attack Speed and 25% Movement Speed and causes them to heal for 30% of the Basic Attack damage to their primary target. Lasts for 8 seconds.",
+        "hotkey": "R",
+        "abilityId": "Rehgar|R1",
+        "tooltipId": "RehgarBloodlust",
+        "cooldown": 90,
+        "manaCost": 70,
+        "icon": "storm_ui_icon_rehgar_bloodlust.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "bd69ac",
+        "name": "Ancestral Healing",
+        "description": "After 1 second, heal an allied Hero for 1180 (+4% per level) Health.  Cannot be used on Rehgar.",
+        "hotkey": "R",
+        "abilityId": "Rehgar|R2",
+        "tooltipId": "RehgarAncestralHealing",
+        "cooldown": 100,
+        "manaCost": 80,
+        "icon": "storm_ui_icon_rehgar_ancestralhealing.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "4a70e4",
+        "name": "Ghost Wolf",
+        "description": "Instead of using a mount, Rehgar transforms into a Ghost Wolf with 20% increased Movement Speed. Basic Attacks in Ghost Wolf form cause him to lunge at his target and deal 75% bonus damage. Dealing damage, using Abilities, and channeling cancels Ghost Wolf form.",
+        "trait": true,
+        "abilityId": "Rehgar|D1",
+        "tooltipId": "RehgarGhostWolf",
+        "icon": "storm_ui_icon_rehgar_ghostwolf.png",
+        "type": "trait"
+      },
+      {
+        "uid": "f6d67e",
+        "name": "Ghost Wolf",
+        "description": "Increases Movement Speed by 20%.",
+        "hotkey": "Z",
+        "abilityId": "Rehgar|Z1",
+        "tooltipId": "RehgarGhostWolfActivate",
+        "cooldown": 4,
+        "icon": "storm_ui_icon_rehgar_mount.png",
+        "type": "mount"
+      },
+      {
+        "uid": "45d5f1",
+        "name": "Hearthstone",
+        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
+        "hotkey": "B",
+        "abilityId": "Rehgar|B1",
+        "tooltipId": "PortBackToBase",
+        "icon": "storm_ui_icon_miscrune_1.png",
+        "type": "hearth"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "RehgarEarthbindTotemColossalTotem",
+        "talentTreeId": "RehgarEarthbindTotemColossalTotem",
+        "name": "Colossal Totem",
+        "description": "Increases the area and range of Earthbind Totem by 50%.",
+        "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
+        "type": "Passive",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Rehgar|Passive"
+      },
+      {
+        "tooltipId": "RehgarLightningShieldElectricCharge",
+        "talentTreeId": "RehgarLightningShieldElectricCharge",
+        "name": "Electric Charge",
+        "description": "Increases the radius of Lightning Shield by 25%.",
+        "icon": "storm_ui_icon_rehgar_lightningshield.png",
+        "type": "W",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Rehgar|W1",
+        "abilityLinks": [
+          "Rehgar|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarLightningShield"
+        ]
+      },
+      {
+        "tooltipId": "RehgarGhostWolfWolfRunTalent",
+        "talentTreeId": "RehgarWolfRun",
+        "name": "Wolf Run",
+        "description": "Increases the Movement Speed of Ghost Wolf from 20% to 30%.",
+        "icon": "storm_ui_icon_rehgar_ghostwolf.png",
+        "type": "Z",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Rehgar|D1",
+        "abilityLinks": [
+          "Rehgar|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarGhostWolf",
+          "RehgarGhostWolfLunge"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "RehgarChainHealSpiritwalkersGraceTalent",
+        "talentTreeId": "RehgarMasterySpiritwalkersGrace",
+        "name": "Spiritwalker's Grace",
+        "description": "Reduces Chain Heal's Mana cost from 55 to 40.",
+        "icon": "storm_ui_icon_rehgar_chainheal.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Rehgar|Q1",
+        "abilityLinks": [
+          "Rehgar|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarChainHeal"
+        ]
+      },
+      {
+        "tooltipId": "RehgarGhostWolfFeralHeartTalent",
+        "talentTreeId": "RehgarFeralHeart",
+        "name": "Feral Heart",
+        "description": "Increases Health and Mana Regeneration by 75% while in Ghost Wolf form.",
+        "icon": "storm_ui_icon_rehgar_ghostwolf.png",
+        "type": "Z",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Rehgar|D1",
+        "abilityLinks": [
+          "Rehgar|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarGhostWolf",
+          "RehgarGhostWolfLunge"
+        ]
+      },
+      {
+        "tooltipId": "RehgarLightningShieldStormcaller",
+        "talentTreeId": "RehgarLightningShieldStormcaller",
+        "name": "Stormcaller",
+        "description": "When Lightning Shield damages an enemy it restores 4 Mana, up to 100.",
+        "icon": "storm_ui_icon_rehgar_lightningshield.png",
+        "type": "W",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Rehgar|W1",
+        "abilityLinks": [
+          "Rehgar|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarLightningShield"
+        ]
+      },
+      {
+        "tooltipId": "RehgarHealingTotem",
+        "talentTreeId": "RehgarHealingTotem",
+        "name": "Healing Totem",
+        "description": "Activate to place a Totem that heals allied Heroes in an area for 2% of their maximum Health every second for 10 seconds.",
+        "icon": "storm_ui_icon_talent_healingward.png",
+        "type": "Active",
+        "sort": 4,
+        "cooldown": 30,
+        "isQuest": false,
+        "abilityId": "Rehgar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "RehgarHealingTotem"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "RehgarBloodAndThunder",
+        "talentTreeId": "RehgarBloodAndThunder",
+        "name": "Blood and Thunder",
+        "description": "Ghost Wolf attacks reduce Basic Ability cooldowns by 2 seconds.",
+        "icon": "storm_ui_icon_rehgar_ghostwolf.png",
+        "type": "Z",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Rehgar|D1",
+        "abilityLinks": [
+          "Rehgar|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarGhostWolf",
+          "RehgarGhostWolfLunge"
+        ]
+      },
+      {
+        "tooltipId": "RehgarFarsight",
+        "talentTreeId": "RehgarFarsight",
+        "name": "Farsight",
+        "description": "Activate to reveal an area for 5 seconds. Enemies in the area are revealed for 3 seconds.",
+        "icon": "storm_ui_icon_rehgar_farsight.png",
+        "type": "Active",
+        "sort": 2,
+        "cooldown": 16,
+        "isQuest": false,
+        "abilityId": "Rehgar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "RehgarFarsight"
+        ]
+      },
+      {
+        "tooltipId": "GenericCleanse",
+        "talentTreeId": "GenericTalentCleanse",
+        "name": "Cleanse",
+        "description": "Activate to make target ally Unstoppable for 1 second. Cannot be cast on yourself.",
+        "icon": "storm_ui_icon_talent_cleanse.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 60,
+        "isQuest": false,
+        "abilityId": "Rehgar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TalentCleanse"
+        ]
+      },
+      {
+        "tooltipId": "RehgarTotemicProjectionTalent",
+        "talentTreeId": "RehgarTotemicProjection",
+        "name": "Totemic Projection",
+        "description": "Increases Earthbind Totem's duration from 8 to 12 seconds, and it can be reactivated to move an existing totem to a new location once.",
+        "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
+        "type": "Passive",
+        "sort": 4,
+        "isQuest": false,
+        "abilityId": "Rehgar|Passive"
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "RehgarAncestralHealing",
+        "talentTreeId": "RehgarAncestralHealing",
+        "name": "Ancestral Healing",
+        "description": "After 1 second, heal an allied Hero for 1180 (+4% per level) Health.  Cannot be used on Rehgar.",
+        "icon": "storm_ui_icon_rehgar_ancestralhealing.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 100,
+        "isQuest": false,
+        "abilityId": "Rehgar|R2",
+        "abilityLinks": [
+          "Rehgar|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarAncestralHealing"
+        ]
+      },
+      {
+        "tooltipId": "RehgarBloodlust",
+        "talentTreeId": "RehgarBloodlust",
+        "name": "Bloodlust",
+        "description": "Grant nearby allied Heroes 40% Attack Speed and 25% Movement Speed and causes them to heal for 30% of the Basic Attack damage to their primary target. Lasts for 8 seconds.",
+        "icon": "storm_ui_icon_rehgar_bloodlust.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 90,
+        "isQuest": false,
+        "abilityId": "Rehgar|R1",
+        "abilityLinks": [
+          "Rehgar|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarBloodlust"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "RehgarLightningShieldEarthShield",
+        "talentTreeId": "RehgarLightningShieldEarthShield",
+        "name": "Earth Shield",
+        "description": "Lightning Shield gives Heroes a Shield that absorbs damage equal to 12% of their maximum Health for 3 seconds.",
+        "icon": "storm_ui_icon_rehgar_lightningshield.png",
+        "type": "W",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Rehgar|W1",
+        "abilityLinks": [
+          "Rehgar|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarLightningShield"
+        ]
+      },
+      {
+        "tooltipId": "RehgarChainHealTidalWavesTalent",
+        "talentTreeId": "RehgarMasteryTidalWaves",
+        "name": "Tidal Waves",
+        "description": "Reduces Chain Heal's cooldown by 0.75 seconds for each Hero healed.",
+        "icon": "storm_ui_icon_rehgar_chainheal.png",
+        "type": "Q",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Rehgar|Q1",
+        "abilityLinks": [
+          "Rehgar|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarChainHeal"
+        ]
+      },
+      {
+        "tooltipId": "RehgarEarthlivingEnchant",
+        "talentTreeId": "RehgarEarthlivingEnchant",
+        "name": "Earthliving Enchant",
+        "description": "When Chain Heal heals a Hero below 50% Health, they are healed an additional 225 (+4% per level) Health over 5 seconds.",
+        "icon": "storm_ui_icon_rehgar_chainheal_a.png",
+        "type": "Q",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Rehgar|Q1",
+        "abilityLinks": [
+          "Rehgar|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarChainHeal"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "RehgarEarthbindTotemEarthgraspTotem",
+        "talentTreeId": "RehgarEarthbindTotemEarthgraspTotem",
+        "name": "Earthgrasp Totem",
+        "description": "When Earthbind Totem is first cast, it slows nearby enemies by 90% for 1 second.",
+        "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
+        "type": "Passive",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Rehgar|Passive"
+      },
+      {
+        "tooltipId": "RehgarHungeroftheWolf",
+        "talentTreeId": "RehgarHungerOfTheWolf",
+        "name": "Hunger of the Wolf",
+        "description": "Ghost Wolf attacks against Heroes deal an additional 5% of the target's maximum Health and heal Rehgar for 5% of his maximum Health.",
+        "icon": "storm_ui_icon_rehgar_ghostwolf.png",
+        "type": "Z",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Rehgar|D1",
+        "abilityLinks": [
+          "Rehgar|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarGhostWolf",
+          "RehgarGhostWolfLunge"
+        ]
+      },
+      {
+        "tooltipId": "RehgarLightningShieldRisingStorm",
+        "talentTreeId": "RehgarLightningShieldRisingStorm",
+        "name": "Rising Storm",
+        "description": "Every time Lighting Shield damages an enemy Hero, increase that Lightning Shield's damage by 15%. Stacks up to 15 times.",
+        "icon": "storm_ui_icon_rehgar_lightningshield.png",
+        "type": "W",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Rehgar|W1",
+        "abilityLinks": [
+          "Rehgar|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarLightningShield"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "RehgarAncestralHealingFarseersBlessing",
+        "talentTreeId": "RehgarAncestralHealingFarseersBlessing",
+        "name": "Farseer's Blessing",
+        "description": "Increases healing amount by 75%. Allies near the target are healed for 75% of the amount of Health regained.",
+        "icon": "storm_ui_icon_rehgar_ancestralhealing.png",
+        "type": "Heroic",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Rehgar|R2",
+        "abilityLinks": [
+          "Rehgar|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarAncestralHealing"
+        ],
+        "prerequisiteTalentIds": [
+          "RehgarAncestralHealing"
+        ]
+      },
+      {
+        "tooltipId": "RehgarBloodlustGladiatorsWarShout",
+        "talentTreeId": "RehgarGladiatorsWarShout",
+        "name": "Gladiator's War Shout",
+        "description": "Increases Bloodlust's healing from 30% to 60% of Basic Attack damage done.",
+        "icon": "storm_ui_icon_rehgar_bloodlust.png",
+        "type": "Heroic",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Rehgar|R1",
+        "abilityLinks": [
+          "Rehgar|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarBloodlust"
+        ],
+        "prerequisiteTalentIds": [
+          "RehgarBloodlust"
+        ]
+      },
+      {
+        "tooltipId": "GenericRewindHotbar",
+        "talentTreeId": "GenericTalentRewind",
+        "name": "Rewind",
+        "description": "Activate to reset the cooldowns of your Basic Abilities.",
+        "icon": "storm_ui_icon_talent_rewind.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 60,
+        "isQuest": false,
+        "abilityId": "Rehgar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TalentRewind"
+        ]
+      },
+      {
+        "tooltipId": "GenericStormShield",
+        "talentTreeId": "GenericTalentStormShield",
+        "name": "Storm Shield",
+        "description": "Activate to give all nearby allied Heroes a Shield for 20% of their max Health for 3 seconds.",
+        "icon": "storm_ui_icon_talent_stormshield.png",
+        "type": "Active",
+        "sort": 4,
+        "cooldown": 45,
+        "isQuest": false,
+        "abilityId": "Rehgar|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TalentBucketStormShield"
+        ]
+      }
+    ]
+  },
+  "tooltipMarkup": {
+    "GenericCleanse": "Activate to make target ally Unstoppable for <c val=\"#TooltipNumbers\">1</c> second. Cannot be cast on yourself.",
+    "GenericRewindHotbar": "Activate to reset the cooldowns of your Basic Abilities.",
+    "GenericStormShield": "Activate to give all nearby allied Heroes a Shield for <c val=\"#TooltipNumbers\">20%</c> of their max Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketStormShield,Duration\" player=\"0\"/></c> seconds.",
+    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana.",
+    "RehgarAncestralHealing": "After <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarAncestralHealingCreatePersistent,PeriodCount*Effect,RehgarAncestralHealingCreatePersistent,PeriodicPeriodArray[0]\" precision=\"2\" player=\"0\"/></c> second, heal an allied Hero for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarAncestralHealingCreateHealer,RechargeVitalRate\"/></c> Health.<n/><n/><c val=\"ffff8a\">Cannot be used on Rehgar.</c>",
+    "RehgarAncestralHealingFarseersBlessing": "Increases healing amount by <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarAncestralHealingCreateHealer,MultiplicativeModifierArray[0].Modifier*100\" precision=\"2\" player=\"0\"/>%</c>. Allies near the target are healed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarAncestralHealingFarseersBlessingCreateHealer,RechargeVitalRate*100\" precision=\"2\" player=\"0\"/>%</c> of the amount of Health regained.",
+    "RehgarBloodAndThunder": "Ghost Wolf attacks reduce Basic Ability cooldowns by <c val=\"#TooltipNumbers\">2</c> seconds.",
+    "RehgarBloodlust": "Grant nearby allied Heroes <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RehgarBloodlustBuff,Modification.AdditiveAttackSpeedFactor\" precision=\"2\" player=\"0\"/>%</c> Attack Speed and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarBloodlustBuff,Modification.UnifiedMoveSpeedFactor*100\" precision=\"2\" player=\"0\"/>%</c> Movement Speed and causes them to heal for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarBloodlustBuff,Modification.VitalDamageLeechArray[Life].KindArray[Basic]*100\" precision=\"2\" player=\"0\"/>%</c> of the Basic Attack damage to their primary target. Lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarBloodlustBuff,Duration\" precision=\"2\" player=\"0\"/></c> seconds.",
+    "RehgarBloodlustGladiatorsWarShout": "Increases Bloodlust's healing from <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarBloodlustBuff,Modification.VitalDamageLeechArray[Life].KindArray[Basic]*100\"player=\"0\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarBloodlustBuff,Modification.VitalDamageLeechArray[Life].KindArray[Basic]+Talent,RehgarGladiatorsWarShout,AbilityModificationArray[0].Modifications[0].Value*100\"player=\"0\"/>%</c> of Basic Attack damage done.",
+    "RehgarChainHeal": "Heal an ally with a wave of healing for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarChainHealPrimaryHeal,RechargeVitalRate\"/></c> Health. The wave then bounces <c val=\"#TooltipNumbers\">2</c> times to nearby allies within <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarChainHeal1SearchForNewTarget,AreaArray[0].Radius\"/></c> range, restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarChainHealSecondaryHeal,RechargeVitalRate\"/></c> Health to them.",
+    "RehgarChainHealSpiritwalkersGraceTalent": "Reduces Chain Heal's Mana cost from <c val=\"#TooltipNumbers\"><d ref=\"Abil,RehgarChainHeal,Cost[0].Vital[Energy]\" player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Abil,RehgarChainHeal,Cost[0].Vital[Energy]+Talent,RehgarMasterySpiritwalkersGrace,AbilityModificationArray[0].Modifications[0].Value\" player=\"0\"/></c>.",
+    "RehgarChainHealTidalWavesTalent": "Reduces Chain Heal's cooldown by <c val=\"#TooltipNumbers\">0.75</c> seconds for each Hero healed.",
+    "RehgarEarthbindTotemColossalTotem": "Increases the area and range of Earthbind Totem by <c val=\"#TooltipNumbers\"><d ref=\"((Talent,RehgarEarthbindTotemColossalTotem,AbilityModificationArray[0].Modifications[0].Value+Effect,RehgarEarthbindTotemSearch,AreaArray[0].Radius)/Effect,RehgarEarthbindTotemSearch,AreaArray[0].Radius-1)*100\" player=\"0\" precision=\"2\"/>%</c>.",
+    "RehgarEarthbindTotemEarthgraspTotem": "When Earthbind Totem is first cast, it slows nearby enemies by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,RehgarEarthbindTotemEarthgraspTotemSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarEarthbindTotemEarthgraspTotemSlow,Duration\" precision=\"1\" player=\"0\"/></c> second.",
+    "RehgarEarthlivingEnchant": "When Chain Heal heals a Hero below <c val=\"#TooltipNumbers\">50%</c> Health, they are healed an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarChainHealEarthlivingEnchantHealer,RechargeVitalRate*Behavior,RehgarChainHealEarthlivingEnchantHeal,Duration\"/></c> Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarChainHealEarthlivingEnchantHeal,Duration\"/></c> seconds.",
+    "RehgarFarsight": "Activate to reveal an area for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarFarsightRevealPersistent,PeriodCount*Effect,RehgarFarsightRevealPersistent,PeriodicPeriodArray[0]\" precision=\"2\" player=\"0\"/></c> seconds. Enemies in the area are revealed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarFarsightReveal,Duration\" precision=\"2\" player=\"0\"/></c> seconds.",
+    "RehgarGhostWolf": "Instead of using a mount, Rehgar transforms into a Ghost Wolf with <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RehgarGhostWolfBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> increased Movement Speed. Basic Attacks in Ghost Wolf form cause him to lunge at his target and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarWeaponDamage,MultiplicativeModifierArray[0].Modifier*100\" player=\"0\" precision=\"2\"/>%</c> bonus damage. Dealing damage, using Abilities, and channeling cancels Ghost Wolf form.",
+    "RehgarGhostWolfActivate": "Increases Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RehgarGhostWolfBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c>.",
+    "RehgarGhostWolfFeralHeartTalent": "Increases Health and Mana Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RehgarGhostWolfFeralHeartBuff,Modification.VitalRegenMultiplier[Life]\"/>%</c> while in Ghost Wolf form.",
+    "RehgarGhostWolfWolfRunTalent": "Increases the Movement Speed of Ghost Wolf from <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarGhostWolfBuff,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,RehgarGhostWolfBuff,Modification.UnifiedMoveSpeedFactor+Talent,RehgarWolfRun,AbilityModificationArray[0].Modifications[0].Value)*100\" player=\"0\"/>%</c>.",
+    "RehgarHealingTotem": "Activate to place a Totem that heals allied Heroes in an area for <c val=\"#TooltipNumbers\"><d ref=\"Effect,HealingWardHeal,RechargeVitalFraction*100\"/>%</c> of their maximum Health every second for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HealingWardTimedLife,Duration\" player=\"0\"/></c> seconds.",
+    "RehgarHungeroftheWolf": "Ghost Wolf attacks against Heroes deal an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarGhostWolfHungerOfTheWolfDamage,VitalFractionMax[Life]*100\"/>%</c> of the target's maximum Health and heal Rehgar for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarGhostWolfHungerOfTheWolfCasterHealer,RechargeVitalFraction*100\"/>%</c> of his maximum Health.",
+    "RehgarLightningShield": "Imbue an ally with lightning dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarLightningShieldDamage,Amount/Behavior,RehgarLightningShieldBuff,Period\"/></c> damage a second to nearby enemies. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarLightningShieldBuff,Duration\" player=\"0\"/></c> seconds.",
+    "RehgarLightningShieldEarthShield": "Lightning Shield gives Heroes a Shield that absorbs damage equal to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarLightningShieldEarthShieldBuff,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]*100\" player=\"0\"/>%</c> of their maximum Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarLightningShieldEarthShieldBuff,Duration\" player=\"0\"/></c> seconds.",
+    "RehgarLightningShieldElectricCharge": "Increases the radius of Lightning Shield by <c val=\"#TooltipNumbers\"><d ref=\"Talent,RehgarLightningShieldElectricCharge,AbilityModificationArray[0].Modifications[0].Value/Effect,RehgarLightningShieldSearch,AreaArray[0].Radius*100\" player=\"0\"/>%</c>.",
+    "RehgarLightningShieldRisingStorm": "Every time Lighting Shield damages an enemy Hero, increase that Lightning Shield's damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,RehgarLightningShieldLightningStormDamageAccumulator,Scale*100\"/>%</c>. Stacks up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarLightningShieldRisingStormTokenCounter,Max\"/></c> times.",
+    "RehgarLightningShieldStormcaller": "When Lightning Shield damages an enemy it restores <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarLightningShieldStormcallerManaRestore,RechargeVitalRate\"/></c> Mana, up to <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarLightningShieldStormcallerManaRestore,RechargeVitalRate*(Behavior,RehgarLightningShieldStormcallerRefundStack,MaxStackCount)\"/></c>.",
+    "RehgarTotemicProjectionTalent": "Increases Earthbind Totem's duration from <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarEarthbindTotemTimedLife,Duration\" player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarEarthbindTotemTimedLife,Duration+Talent,RehgarTotemicProjection,AbilityModificationArray[0].Modifications[1].Value\" player=\"0\"/></c> seconds, and it can be reactivated to move an existing totem to a new location once."
+  },
+  "tooltipSimple": {
+    "GenericCleanse": "Makes target ally Unstoppable",
+    "GenericRewindHotbar": "Activate to reset cooldowns",
+    "GenericStormShield": "Activate to grant Shields to all nearby allies",
+    "RehgarAncestralHealing": "Significantly heal allied Hero",
+    "RehgarAncestralHealingFarseersBlessing": "Increases heal and heals in area",
+    "RehgarBloodAndThunder": "Ghost Wolf attacks reduce Basic Ability cooldowns",
+    "RehgarBloodlust": "Give allied Heroes Movement Speed, Attack Speed, and Life Steal",
+    "RehgarBloodlustGladiatorsWarShout": "Increases Bloodlust Life Steal",
+    "RehgarChainHeal": "Create a healing wave that jumps between allies",
+    "RehgarChainHealSpiritwalkersGraceTalent": "Reduces Chain Heal Mana cost",
+    "RehgarChainHealTidalWavesTalent": "Reduces Chain Heal cooldown",
+    "RehgarEarthbindTotemColossalTotem": "Increases Earthbind Totem area and range",
+    "RehgarEarthbindTotemEarthgraspTotem": "Increases Earthbind Totem initial slow",
+    "RehgarEarthlivingEnchant": "Empowers Chain Heal on low Health Heroes",
+    "RehgarFarsight": "Activate to reveal target area and nearby enemies",
+    "RehgarGhostWolf": "Transform into a Ghost Wolf",
+    "RehgarGhostWolfActivate": "Transform into a Ghost Wolf",
+    "RehgarGhostWolfFeralHeartTalent": "Increases Health and Mana Regen in Ghost Wolf",
+    "RehgarGhostWolfWolfRunTalent": "Increases Ghost Wolf Move Speed",
+    "RehgarHealingTotem": "Activate to place a ward which heals in an area",
+    "RehgarLightningShield": "Imbue target ally with lightning, causing damage to nearby enemies",
+    "RehgarLightningShieldEarthShield": "Lightning Shield gives a Shield",
+    "RehgarLightningShieldElectricCharge": "Increases Lightning Shield radius",
+    "RehgarLightningShieldRisingStorm": "Increases Lightning Shield damage with each hit",
+    "RehgarLightningShieldStormcaller": "Lightning Shield returns Mana",
+    "RehgarTotemicProjectionTalent": "Earthbind Totem can be moved"
+  },
+  "tooltipColors": {
+    "TooltipNumbers": "BFD4FD"
+  }
+}

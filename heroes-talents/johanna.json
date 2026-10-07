@@ -1,0 +1,544 @@
+{
+  "id": 37,
+  "shortName": "johanna",
+  "hyperlinkId": "Johanna",
+  "attributeId": "Crus",
+  "cHeroId": "Crusader",
+  "cUnitId": "HeroCrusader",
+  "name": "Johanna",
+  "icon": "johanna.png",
+  "role": "Warrior",
+  "expandedRole": "Warrior",
+  "type": "Melee",
+  "description": "A Tank who shines against Physical Attackers and can effectively clear groups of minions.",
+  "title": "Crusader of Zakarum",
+  "info": "There have been many women who have borne the name Johanna in service of the crusade, and each has given her life to purify her faith. Johanna carries on their legacy as she searches the kingdom of Khanduras for the fallen star.",
+  "releaseDate": "2015-06-02",
+  "releasePatch": "1.11.1.35702",
+  "tags": [
+    "BodyBlocker",
+    "Overconfident",
+    "RoleTank",
+    "WaveClearer"
+  ],
+  "stats": {
+    "hp": 2700,
+    "hpRegen": 5.625,
+    "hpScale": 0.04,
+    "hpRegenScale": 0.04,
+    "resource": 500,
+    "resourceType": "Mana",
+    "resourceRegen": 3,
+    "attackDamage": 99,
+    "attackDamageScale": 0.04,
+    "attackRange": 1.5,
+    "attackSpeed": 0.9091,
+    "radius": 0.75
+  },
+  "abilities": {
+    "Johanna": [
+      {
+        "uid": "fa7805",
+        "name": "Punish",
+        "description": "Step forward dealing 113 (+4% per level) damage and Slowing enemies by 60% decaying over 2 seconds.",
+        "hotkey": "Q",
+        "abilityId": "Johanna|Q1",
+        "tooltipId": "CrusaderPunish",
+        "cooldown": 8,
+        "manaCost": 40,
+        "icon": "storm_ui_icon_johanna_punish.png",
+        "type": "basic"
+      },
+      {
+        "uid": "cf15e0",
+        "name": "Condemn",
+        "description": "After 1 second, Johanna pulls nearby enemies toward her, stunning them for 0.25 seconds and dealing 55 (+4% per level) damage. Deals 200% increased damage to Minions and Mercenaries.",
+        "hotkey": "W",
+        "abilityId": "Johanna|W1",
+        "tooltipId": "CrusaderCondemn",
+        "cooldown": 10,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_johanna_condemn.png",
+        "type": "basic"
+      },
+      {
+        "uid": "df98e2",
+        "name": "Shield Glare",
+        "description": "Deal 59 (+4% per level) damage to enemies and Blind them for 1.5 seconds.",
+        "hotkey": "E",
+        "abilityId": "Johanna|E1",
+        "tooltipId": "CrusaderShieldGlare",
+        "cooldown": 12,
+        "manaCost": 45,
+        "icon": "storm_ui_icon_johanna_shield_glare.png",
+        "type": "basic"
+      },
+      {
+        "uid": "a8f0a2",
+        "name": "Falling Sword",
+        "description": "Johanna leaps towards an area.  While in the air, she can steer the landing location by moving.  After 2 seconds Johanna lands, dealing 183 (+4% per level) damage to nearby enemies, Stunning them for 0.2 seconds, and Slowing them by 50% for 3 seconds.",
+        "hotkey": "R",
+        "abilityId": "Johanna|R1",
+        "tooltipId": "CrusaderFallingSword",
+        "cooldown": 60,
+        "manaCost": 90,
+        "icon": "storm_ui_icon_johanna_falling_sword.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "953b44",
+        "name": "Blessed Shield",
+        "description": "Deal 114 (+4% per level) damage and Stun the first enemy hit for 1.5 seconds. Blessed Shield then bounces to 2 nearby enemies, dealing 57 (+4% per level) damage and Stunning them for 0.75 seconds.",
+        "hotkey": "R",
+        "abilityId": "Johanna|R2",
+        "tooltipId": "CrusaderBlessedShield",
+        "cooldown": 60,
+        "manaCost": 90,
+        "icon": "storm_ui_icon_johanna_blessed_shield.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "98a8c3",
+        "name": "Iron Skin",
+        "description": "Activate to grant Johanna a Shield that absorbs 674 (+4% per level) damage for 4 seconds. While this Shield is active, Johanna is Unstoppable.",
+        "hotkey": "D",
+        "trait": true,
+        "abilityId": "Johanna|D1",
+        "tooltipId": "CrusaderIronSkin",
+        "cooldown": 20,
+        "icon": "storm_ui_icon_johanna_iron_skin.png",
+        "type": "trait"
+      },
+      {
+        "uid": "45d5f1",
+        "name": "Hearthstone",
+        "description": "After Channeling for 6 seconds, teleport back to the Altar, instantly restoring 1125 Health and 150 Mana.",
+        "hotkey": "B",
+        "abilityId": "Johanna|B1",
+        "tooltipId": "PortBackToBase",
+        "icon": "storm_ui_icon_miscrune_1.png",
+        "type": "hearth"
+      }
+    ]
+  },
+  "talents": {
+    "1": [
+      {
+        "tooltipId": "CrusaderIronSkinReinforceTalent",
+        "talentTreeId": "CrusaderMasteryIronSkinReinforce",
+        "name": "Reinforce",
+        "description": "Using a Basic Ability grants 75 Physical Armor against the next enemy Hero Basic Attack, reducing damage taken by 75%.  Stores up to 2 charges.",
+        "icon": "storm_ui_icon_talent_block.png",
+        "type": "Passive",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Johanna|Passive",
+        "abilityLinks": [
+          "Johanna|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderIronSkin"
+        ]
+      },
+      {
+        "tooltipId": "CrusaderIronSkinHoldYourGroundTalent",
+        "talentTreeId": "CrusaderMasteryIronSkinHoldYourGround",
+        "name": "Hold Your Ground",
+        "description": "Increases Iron Skin's Shield by 30% and its cooldown is reduced by 4 seconds.",
+        "icon": "storm_ui_icon_johanna_iron_skin.png",
+        "type": "Trait",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Johanna|D1",
+        "abilityLinks": [
+          "Johanna|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderIronSkin"
+        ]
+      },
+      {
+        "tooltipId": "CrusaderLawsOfHope",
+        "talentTreeId": "CrusaderMasteryLawsOfHope",
+        "name": "Laws of Hope",
+        "description": "Activate to heal 30% of Johanna's max Health over 4 seconds.  Passive: Regenerate 1.5 (+4% per level) Health per second.",
+        "icon": "storm_ui_icon_johanna_lawsofhope.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 40,
+        "isQuest": false,
+        "abilityId": "Johanna|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "CrusaderLawsOfHope"
+        ]
+      }
+    ],
+    "4": [
+      {
+        "tooltipId": "CrusaderEternalRetaliationTalent",
+        "talentTreeId": "CrusaderMasteryCondemnEternalRetaliation",
+        "name": "Eternal Retaliation",
+        "description": "Lower the cooldown of Condemn by 0.5 seconds and refund 2.5 Mana for every enemy hit. Maximum of 10 targets.",
+        "icon": "storm_ui_icon_johanna_condemn.png",
+        "type": "W",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Johanna|W1",
+        "abilityLinks": [
+          "Johanna|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderCondemn"
+        ]
+      },
+      {
+        "tooltipId": "CrusaderCondemnConvictionTalent",
+        "talentTreeId": "CrusaderMasteryCondemnConviction",
+        "name": "Conviction",
+        "description": "Movement Speed is increased by 25% while Condemn is charging up.",
+        "icon": "storm_ui_icon_johanna_condemn_var1.png",
+        "type": "W",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Johanna|W1",
+        "abilityLinks": [
+          "Johanna|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderCondemn"
+        ]
+      },
+      {
+        "tooltipId": "CrusaderShieldGlareSinsExposedTalent",
+        "talentTreeId": "CrusaderMasteryShieldGlareSinsExposed",
+        "name": "Sins Exposed",
+        "description": "Shield Glare marks enemies for 4 seconds. The next time any ally damages them, they take 90 (+4% per level) extra damage and the mark is removed.",
+        "icon": "storm_ui_icon_johanna_shield_glare.png",
+        "type": "E",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Johanna|E1",
+        "abilityLinks": [
+          "Johanna|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderShieldGlare"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "CrusaderSubdueTalent",
+        "talentTreeId": "CrusaderMasteryPunishSubdue",
+        "name": "Subdue",
+        "description": "Hitting 2 or more Heroes at the same time with Punish increases the Slow to 80% and the Slow amount does not decay.  Quest: Hit 4 or more Heroes at the same time with Punish.  Reward: Punish always Slows by 80% and the Slow amount no longer decays.",
+        "icon": "storm_ui_icon_johanna_punish.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": true,
+        "abilityId": "Johanna|Q1",
+        "abilityLinks": [
+          "Johanna|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderPunish"
+        ]
+      },
+      {
+        "tooltipId": "CrusaderZealousGlare",
+        "talentTreeId": "CrusaderZealousGlare",
+        "name": "Zealous Glare",
+        "description": "Increase the Blind duration of Shield Glare by 0.5 seconds. Johanna's Basic Attacks against Heroes with Shield Glare extend its duration by 1 second, up to a maximum of 3 seconds.",
+        "icon": "storm_ui_icon_johanna_shield_glare.png",
+        "type": "E",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Johanna|E1",
+        "abilityLinks": [
+          "Johanna|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderShieldGlare"
+        ]
+      },
+      {
+        "tooltipId": "JohannaBlessedMomentum",
+        "talentTreeId": "BattleMomentumCrusader",
+        "name": "Blessed Momentum",
+        "description": "Basic Attacks reduce Johanna's Basic Ability cooldowns by 0.5 seconds.",
+        "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
+        "type": "Passive",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Johanna|Passive"
+      }
+    ],
+    "10": [
+      {
+        "tooltipId": "CrusaderFallingSword",
+        "talentTreeId": "CrusaderHeroicAbilityFallingSword",
+        "name": "Falling Sword",
+        "description": "Johanna leaps towards an area.  While in the air, she can steer the landing location by moving.  After 2 seconds Johanna lands, dealing 183 (+4% per level) damage to nearby enemies, Stunning them for 0.2 seconds, and Slowing them by 50% for 3 seconds.",
+        "icon": "storm_ui_icon_johanna_falling_sword.png",
+        "type": "Heroic",
+        "sort": 1,
+        "cooldown": 60,
+        "isQuest": false,
+        "abilityId": "Johanna|R1",
+        "abilityLinks": [
+          "Johanna|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderFallingSword"
+        ]
+      },
+      {
+        "tooltipId": "CrusaderBlessedShield",
+        "talentTreeId": "CrusaderHeroicAbilityBlessedShield",
+        "name": "Blessed Shield",
+        "description": "Deal 114 (+4% per level) damage and Stun the first enemy hit for 1.5 seconds. Blessed Shield then bounces to 2 nearby enemies, dealing 57 (+4% per level) damage and Stunning them for 0.75 seconds.",
+        "icon": "storm_ui_icon_johanna_blessed_shield.png",
+        "type": "Heroic",
+        "sort": 2,
+        "cooldown": 60,
+        "isQuest": false,
+        "abilityId": "Johanna|R2",
+        "abilityLinks": [
+          "Johanna|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderBlessedShield"
+        ]
+      }
+    ],
+    "13": [
+      {
+        "tooltipId": "CrusaderRoarTalent",
+        "talentTreeId": "CrusaderMasteryPunishRoar",
+        "name": "Roar",
+        "description": "Increase Punish's damage by 25%. This bonus is increased to 150% whenever Punish hits 2 or more Heroes.",
+        "icon": "storm_ui_icon_johanna_punish.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Johanna|Q1",
+        "abilityLinks": [
+          "Johanna|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderPunish"
+        ]
+      },
+      {
+        "tooltipId": "CrusaderHolyFury",
+        "talentTreeId": "CrusaderHolyFury",
+        "name": "Holy Fury",
+        "description": "Deal 12 (+4% per level) damage per second to nearby enemies. Each Hero hit by Condemn increases this damage by 40% for 5 seconds.",
+        "icon": "storm_ui_icon_talent_burningrage.png",
+        "type": "Passive",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Johanna|Passive"
+      },
+      {
+        "tooltipId": "CrusaderCondemnBlessedHammerTalent",
+        "talentTreeId": "CrusaderBlessedHammer",
+        "name": "Blessed Hammer",
+        "description": "Activate to create 2 hammers that spiral outward from Johanna, dealing 84 (+4% per level) damage to enemies hit.  Hitting Heroes with Shield Glare reduces the cooldown of this Ability by 8 seconds.",
+        "icon": "storm_btn_d3ros_crusader_blessedhammer.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 30,
+        "isQuest": false,
+        "abilityId": "Johanna|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "CrusaderBlessedHammer"
+        ]
+      }
+    ],
+    "16": [
+      {
+        "tooltipId": "CrusaderShieldGlareHolyRenewalTalent",
+        "talentTreeId": "CrusaderMasteryShieldGlareHolyRenewal",
+        "name": "Holy Renewal",
+        "description": "Every enemy Hero affected by Shield Glare restores 114 (+4% per level) health.",
+        "icon": "storm_ui_icon_johanna_shield_glare.png",
+        "type": "E",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Johanna|E1",
+        "abilityLinks": [
+          "Johanna|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderShieldGlare"
+        ]
+      },
+      {
+        "tooltipId": "CrusaderIronSkinFanaticismTalent",
+        "talentTreeId": "CrusaderMasteryIronSkinFanaticism",
+        "name": "Fanaticism",
+        "description": "Increase the duration of Iron Skin by 2 seconds. While Iron Skin is active, Johanna gains 8% Movement Speed each time she takes damage, up to 40%.",
+        "icon": "storm_ui_icon_johanna_iron_skin.png",
+        "type": "Trait",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Johanna|D1",
+        "abilityLinks": [
+          "Johanna|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderIronSkin"
+        ]
+      },
+      {
+        "tooltipId": "GenericImposingPresenceTalent",
+        "talentTreeId": "GenericTalentImposingPresence",
+        "name": "Imposing Presence",
+        "description": "Activate to slow the Attack Speed by 50% and Movement Speed by 20% of nearby Heroes and Summons for 2.5 seconds.  Passive: Heroes and Summons that attack your Hero have their Attack Speed slowed by 20% for 2.5 seconds.",
+        "icon": "storm_ui_icon_talent_imposingpresence.png",
+        "type": "Active",
+        "sort": 3,
+        "cooldown": 20,
+        "isQuest": false,
+        "abilityId": "Johanna|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "TalentImposingPresence"
+        ]
+      }
+    ],
+    "20": [
+      {
+        "tooltipId": "CrusaderFallingSwordHeavensFuryTalent",
+        "talentTreeId": "CrusaderMasteryFallingSwordHeavensFury",
+        "name": "Heaven's Fury",
+        "description": "While in the air, holy bolts rain down on enemies dealing 75 (+4% per level) damage and reducing the cooldown of Falling Sword by 3 seconds for each enemy hit.",
+        "icon": "storm_ui_icon_johanna_falling_sword.png",
+        "type": "Heroic",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Johanna|R1",
+        "abilityLinks": [
+          "Johanna|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderFallingSword",
+          "CrusaderBlindedByTheLight"
+        ],
+        "prerequisiteTalentIds": [
+          "CrusaderHeroicAbilityFallingSword"
+        ]
+      },
+      {
+        "tooltipId": "CrusaderBlessedShieldRadiatingFaithTalent",
+        "talentTreeId": "CrusaderMasteryBlessedShieldRadiatingFaith",
+        "name": "Radiating Faith",
+        "description": "Increases Blessed Shield's Stun duration by 33% and maximum enemies hit by 2.",
+        "icon": "storm_ui_icon_johanna_blessed_shield.png",
+        "type": "Heroic",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Johanna|R2",
+        "abilityLinks": [
+          "Johanna|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "CrusaderBlessedShield"
+        ],
+        "prerequisiteTalentIds": [
+          "CrusaderHeroicAbilityBlessedShield"
+        ]
+      },
+      {
+        "tooltipId": "CrusaderIndestructableTalent",
+        "talentTreeId": "CrusaderHeroicMasteryIndestructable",
+        "name": "Indestructible",
+        "description": "Upon taking fatal damage, Johanna gains a Shield equal to her maximum Health for 4 seconds. This effect has a 120 second cooldown.",
+        "icon": "storm_ui_icon_johanna_indestructible.png",
+        "type": "Passive",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Johanna|Passive"
+      },
+      {
+        "tooltipId": "CrusaderBlindedByTheLight",
+        "talentTreeId": "CrusaderBlindedByTheLight",
+        "name": "Blinded By The Light",
+        "description": "Activate to grant nearby allied Heroes a Shield equal to 25% of their maximum Health for 3 seconds.  Hitting Heroes with Shield Glare reduces the cooldown of this Ability by 8 seconds.",
+        "icon": "storm_ui_icon_talent_stormshield.png",
+        "type": "Active",
+        "sort": 4,
+        "cooldown": 60,
+        "isQuest": false,
+        "abilityId": "Johanna|Active",
+        "abilityLinks": [],
+        "abilityTalentLinkIds": [
+          "CrusaderBlindedByTheLight"
+        ]
+      }
+    ]
+  },
+  "tooltipMarkup": {
+    "CrusaderBlessedShield": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderBlessedShieldDamage,Amount\"/></c> damage and Stun the first enemy hit for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderBlessedShieldStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds. Blessed Shield then bounces to <c val=\"#TooltipNumbers\">2</c> nearby enemies, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderBlessedShieldBounce1Damage,Amount\"/></c> damage and Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderBlessedShieldBounceStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
+    "CrusaderBlessedShieldRadiatingFaithTalent": "Increases Blessed Shield's Stun duration by <c val=\"#TooltipNumbers\">33%</c> and maximum enemies hit by <c val=\"#TooltipNumbers\">2</c>.",
+    "CrusaderBlindedByTheLight": "Activate to grant nearby allied Heroes a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,CrusaderBlindedByTheLightShield,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]\"/>%</c> of their maximum Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderBlindedByTheLightShield,Duration\"/></c> seconds.<n/><n/>Hitting Heroes with Shield Glare reduces the cooldown of this Ability by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,CrusaderBlindedByTheLightModifyPlayer,Cost.Cooldown.TimeUse\"/></c> seconds.",
+    "CrusaderCondemn": "After <c val=\"#TooltipNumbers\">1</c> second, Johanna pulls nearby enemies toward her, stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderCondemnPostPullStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderCondemnDamage,Amount\"/></c> damage. Deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,CrusaderCondemnDamage,AttributeFactor[Minion]\"/>%</c> increased damage to Minions and Mercenaries.",
+    "CrusaderCondemnBlessedHammerTalent": "Activate to create <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderBlessedHammerCreateUnitPersistent,PeriodCount\"/></c> hammers that spiral outward from Johanna, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderBlessedHammerDamage,Amount\"/></c> damage to enemies hit.<n/><n/>Hitting Heroes with Shield Glare reduces the cooldown of this Ability by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,CrusaderShieldGlareBlessedHammerTalentModifyPlayerCooldown,Cost.Cooldown.TimeUse\"/></c> seconds.",
+    "CrusaderCondemnConvictionTalent": "Movement Speed is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,CrusaderCondemnConviction,Modification.UnifiedMoveSpeedFactor\" precision=\"2\"/>%</c> while Condemn is charging up.",
+    "CrusaderEternalRetaliationTalent": "Lower the cooldown of Condemn by <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderCondemnModifyCooldown,Cost[0].CooldownTimeUse*(-1)\" precision=\"2\"/></c> seconds and refund <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderCondemnEternalRetaliationCreateManaHealer,RechargeVitalRate\"precision=\"2\"/></c> Mana for every enemy hit. Maximum of <c val=\"#TooltipNumbers\"><d ref=\"Effect,CondemnEternalRetaliationSearchArea,AreaArray[0].MaxCount\" precision=\"2\"/></c> targets.",
+    "CrusaderFallingSword": "Johanna leaps towards an area.  While in the air, she can steer the landing location by moving. <n/><n/>After <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderFallingSword,Duration\" player=\"0\"/></c> seconds Johanna lands, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderFallingSwordDamage,Amount\"/></c> damage to nearby enemies, Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderFallingSwordKnockup,Duration\" precision=\"1\"/></c> seconds, and Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,CrusaderFallingSwordSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderFallingSwordSlow,Duration\"Precision=\"2\"/></c> seconds.",
+    "CrusaderFallingSwordHeavensFuryTalent": "While in the air, holy bolts rain down on enemies dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderFallingSwordHeavensFuryDamage,Amount\"/></c> damage and reducing the cooldown of Falling Sword by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,CrusaderFallingSwordHeavensFuryCooldownReduction,Cost[0].CooldownTimeUse\"/></c> seconds for each enemy hit.",
+    "CrusaderHolyFury": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderHolyFuryDamage,Amount\"/></c> damage per second to nearby enemies. Each Hero hit by Condemn increases this damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,CrusaderHolyFuryDamageAccumulator,Scale\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderHolyFuryDuration,Duration\"/></c> seconds.",
+    "CrusaderIndestructableTalent": "Upon taking fatal damage, Johanna gains a Shield equal to her maximum Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderIndestructibleShield,Duration\" player=\"0\"/></c> seconds. This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderIndestructibleCooldown,Duration\" player=\"0\"/></c> second cooldown.",
+    "CrusaderIronSkin": "Activate to grant Johanna a Shield that absorbs <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderIronSkin,DamageResponse.ModifyLimit\"/></c> damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderIronSkin,Duration\" player=\"0\"/></c> seconds. While this Shield is active, Johanna is Unstoppable.",
+    "CrusaderIronSkinFanaticismTalent": "Increase the duration of Iron Skin by <c val=\"#TooltipNumbers\"><d ref=\"Talent,CrusaderMasteryIronSkinFanaticism,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds. While Iron Skin is active, Johanna gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderIronSkinFanaticism,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> Movement Speed each time she takes damage, up to <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,CrusaderIronSkinFanaticism,Modification.UnifiedMoveSpeedFactor*100) * Behavior,CrusaderIronSkinFanaticism,MaxStackCount\"/>%</c>.",
+    "CrusaderIronSkinHoldYourGroundTalent": "Increases Iron Skin's Shield by <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,CrusaderIronSkinHoldYourGroundImproved,DamageResponse.ModifyLimit-Behavior,CrusaderIronSkin,DamageResponse.ModifyLimit)/Behavior,CrusaderIronSkin,DamageResponse.ModifyLimit\"player=\"0\"/>%</c> and its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,CrusaderMasteryIronSkinHoldYourGround,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
+    "CrusaderIronSkinReinforceTalent": "Using a Basic Ability grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderReinforceArmorBuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next enemy Hero Basic Attack, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderReinforceArmorBuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderReinforceArmorBuff,MaxStackCount\"/></c> charges.",
+    "CrusaderLawsOfHope": "Activate to heal <c val=\"#TooltipNumbers\"><d ref=\"500*Effect,CrusaderLawsOfHopeCreateHealer,RechargeVitalFraction\"Precision=\"2\"/>%</c> of Johanna's max Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderLawsOfHopeActive,Duration\" player=\"0\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Regenerate <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderLawsOfHopePassive,Modification.VitalRegenArray[Life]\"Precision=\"1\"/></c> Health per second.",
+    "CrusaderPunish": "Step forward dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderPunishDamage,Amount\"/></c> damage and Slowing enemies by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderPunishStackingSlow,Modification.UnifiedMoveSpeedFactor*(-100)*6\"/>%</c> decaying over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderPunishStackingSlow,Duration\" precision=\"2\"/></c> seconds.",
+    "CrusaderRoarTalent": "Increase Punish's damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,CrusaderPunishDamage,MultiplicativeModifierArray[PunishBase].Modifier\"/>%</c>. This bonus is increased to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,CrusaderPunishDamage,MultiplicativeModifierArray[PunishProc].Modifier+(100*Effect,CrusaderPunishDamage,MultiplicativeModifierArray[PunishBase].Modifier)\"/>%</c> whenever Punish hits <c val=\"#TooltipNumbers\">2</c> or more Heroes.",
+    "CrusaderShieldGlare": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderShieldGlareDamage,Amount\"/></c> damage to enemies and Blind them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ShieldGlare,Duration\" player=\"0\" precision=\"1\"/></c> seconds.",
+    "CrusaderShieldGlareHolyRenewalTalent": "Every enemy Hero affected by Shield Glare restores <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusadserShieldGlareHolyRenewalCreateHealer,RechargeVitalRate\"/></c> health.",
+    "CrusaderShieldGlareSinsExposedTalent": "Shield Glare marks enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderShieldGlareSinsExposed,Duration\" player=\"0\"/></c> seconds. The next time any ally damages them, they take <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderShieldGlareSinsExposedDamage,Amount\"/></c> extra damage and the mark is removed.",
+    "CrusaderSubdueTalent": "Hitting <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderPunishSubdueTalentSearchArea,MinCount\"/></c> or more Heroes at the same time with Punish increases the Slow to <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,CrusaderPunishStackingSlow,Modification.UnifiedMoveSpeedFactor*100*8\"/>%</c> and the Slow amount does not decay.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderPunishSubdueTalentTokenCounter,Max\"/></c> or more Heroes at the same time with Punish.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Punish always Slows by <c val=\"#TooltipNumbers\"><c val=\"#TooltipNumbers\"><d ref=\"-Behavior,CrusaderPunishStackingSlow,Modification.UnifiedMoveSpeedFactor*100*8\"/></c>%</c> and the Slow amount no longer decays.",
+    "CrusaderZealousGlare": "Increase the Blind duration of Shield Glare by <c val=\"#TooltipNumbers\"><d ref=\"Talent,CrusaderZealousGlare,AbilityModificationArray[0].Modifications[0].Value\"precision=\"1\"/></c> seconds. Johanna's Basic Attacks against Heroes with Shield Glare extend its duration by <c val=\"#TooltipNumbers\"><d ref=\"Effect,CrusaderHeroWeaponZealousGlareTalentAddShieldGlareDuration,Value\"/></c> second, up to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CrusaderShieldGlareZealousGlareTalentStack,MaxStackCountPerCaster*Effect,CrusaderHeroWeaponZealousGlareTalentAddShieldGlareDuration,Value\"/></c> seconds.",
+    "GenericImposingPresenceTalent": "Activate to slow the Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceActivatedDebuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> and Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceActivatedDebuffSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> of nearby Heroes and Summons for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentImposingPresenceActivatedDebuffSlow,Duration\"precision=\"2\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Heroes and Summons that attack your Hero have their Attack Speed slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceDamageResponseDebuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentImposingPresenceDamageResponseDebuff,Duration\"precision=\"2\"/> </c>seconds.",
+    "JohannaBlessedMomentum": "Basic Attacks reduce Johanna's Basic Ability cooldowns by <c val=\"#TooltipNumbers\"><d ref=\"Effect,BattleMomentumModifyCooldownsCrusader,Cost[0].CooldownTimeUse*(-1)\" precision=\"2\"/></c> seconds.",
+    "PortBackToBase": "After Channeling for <c val=\"#TooltipNumbers\"><d ref=\"Abil,PortBackToBase,CastIntroTime\" player=\"0\" precision=\"2\"/></c> seconds, teleport back to the Altar, instantly restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseHealthRestore,RechargeVitalRate\"/></c> Health and <c val=\"#TooltipNumbers\"><d ref=\"Effect,PortBackToBaseManaRestore,RechargeVitalRate\"/></c> Mana."
+  },
+  "tooltipSimple": {
+    "CrusaderBlessedShield": "Throw a bouncing shield that Stuns",
+    "CrusaderBlessedShieldRadiatingFaithTalent": "Increase Blessed Shield Stun duration, max targets",
+    "CrusaderBlindedByTheLight": "Activate to Shield nearby allies",
+    "CrusaderCondemn": "Pulls and damages nearby enemies",
+    "CrusaderCondemnBlessedHammerTalent": "Activate to create spinning hammers",
+    "CrusaderCondemnConvictionTalent": "Condemn increases Movement Speed",
+    "CrusaderEternalRetaliationTalent": "Empower Condemn",
+    "CrusaderFallingSword": "Jump to area, damaging and Slowing enemies",
+    "CrusaderFallingSwordHeavensFuryTalent": "Falling Sword bombards enemies with holy bolts",
+    "CrusaderHolyFury": "Deals damage to nearby enemies",
+    "CrusaderIndestructableTalent": "Gain a Shield instead of dying",
+    "CrusaderIronSkin": "Becomes Unstoppable and gains a Shield",
+    "CrusaderIronSkinFanaticismTalent": "Damage taken during Iron Skin grants Move Speed",
+    "CrusaderIronSkinHoldYourGroundTalent": "Increases Iron Skin Shield, reduced cooldown",
+    "CrusaderIronSkinReinforceTalent": "Basic Abilities grant Physical Armor",
+    "CrusaderLawsOfHope": "Increases Health Regen, activate to burst heal",
+    "CrusaderPunish": "Damage and slow enemies",
+    "CrusaderRoarTalent": "Increase Punish damage",
+    "CrusaderShieldGlare": "Damages and blinds enemies in a cone",
+    "CrusaderShieldGlareHolyRenewalTalent": "Shield Glare heals for each Hero hit",
+    "CrusaderShieldGlareSinsExposedTalent": "Shield Glare makes enemies take bonus damage",
+    "CrusaderSubdueTalent": "<c val=\"#TooltipQuest\">Quest:</c> Increase Punish Slow",
+    "CrusaderZealousGlare": "Increase Shield Glare duration",
+    "GenericImposingPresenceTalent": "Activate to slow enemy Basic Attacks and Move Speed",
+    "JohannaBlessedMomentum": "Basic Attacks reduce Ability cooldowns"
+  },
+  "tooltipColors": {
+    "AbilityPassive": "00FF90",
+    "TooltipNumbers": "BFD4FD",
+    "TooltipQuest": "E4B800"
+  }
+}
