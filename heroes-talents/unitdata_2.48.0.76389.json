@@ -3328,6 +3328,8 @@
         "damage": 20,
         "damageScale": 0,
         "damageFactors": {
+          "MapCreature": -0.75,
+          "Merc": -0.75,
           "Minion": -0.75,
           "Structure": 2
         }
@@ -4870,7 +4872,7 @@
     "radius": 0,
     "innerRadius": 0,
     "sight": 5,
-    "speed": 5.5,
+    "speed": 6,
     "abilities": {
       "hearth": [
         {
@@ -5422,6 +5424,8 @@
         "damage": 220,
         "damageScale": 0,
         "damageFactors": {
+          "MapCreature": 1,
+          "Merc": 1,
           "Minion": 1,
           "Structure": 1,
           "Summoned": 1
@@ -5563,7 +5567,7 @@
     "radius": 0.875,
     "innerRadius": 0.875,
     "sight": 12,
-    "speed": 4.3984,
+    "speed": 4.8398,
     "abilities": {}
   },
   "LiLiBlindingWindMissile": {
@@ -8867,6 +8871,8 @@
         "damage": 40,
         "damageScale": 0,
         "damageFactors": {
+          "MapCreature": 0.8,
+          "Merc": 0.8,
           "Minion": 0.8,
           "Structure": 2
         }
@@ -12224,6 +12230,8 @@
         "damageScale": 0,
         "damageFactors": {
           "Heroic": 0.5,
+          "MapCreature": 1,
+          "Merc": 1,
           "Minion": 1,
           "Structure": 1
         }
@@ -15089,6 +15097,8 @@
         "damage": 30,
         "damageScale": 0,
         "damageFactors": {
+          "MapCreature": 1,
+          "Merc": 1,
           "Minion": 1,
           "Structure": 1
         }
@@ -15131,6 +15141,8 @@
         "damage": 30,
         "damageScale": 0,
         "damageFactors": {
+          "MapCreature": 1,
+          "Merc": 1,
           "Minion": 1,
           "Structure": 2
         }
@@ -15393,6 +15405,8 @@
         "damage": 180,
         "damageScale": 0,
         "damageFactors": {
+          "MapCreature": 1,
+          "Merc": 1,
           "Minion": 1,
           "Structure": 1
         }
@@ -16180,6 +16194,8 @@
         "damage": 17,
         "damageScale": 0,
         "damageFactors": {
+          "MapCreature": 1,
+          "Merc": 1,
           "Minion": 1,
           "Structure": 2
         }
