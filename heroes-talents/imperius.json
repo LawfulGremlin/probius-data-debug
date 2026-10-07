@@ -89,7 +89,7 @@
       {
         "uid": "1014e2",
         "name": "Wrath of the Angiris",
-        "description": "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving.  After 2 seconds, slam the target into the ground, dealing 375 (+4% per level) damage and Stunning them for 1 second.",
+        "description": "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving.  After 2 seconds, slam the target into the ground, dealing 250 (+4% per level) damage to them, increased by 20% for each Valorous Brand on the target when landing, and Stunning them for 1 second.",
         "hotkey": "R",
         "abilityId": "Imperius|R2",
         "tooltipId": "ImperiusWrathOfTheAngiris",
@@ -292,7 +292,7 @@
         "tooltipId": "ImperiusWrathOfTheAngiris",
         "talentTreeId": "ImperiusWrathOfTheAngiris",
         "name": "Wrath of the Angiris",
-        "description": "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving.  After 2 seconds, slam the target into the ground, dealing 375 (+4% per level) damage and Stunning them for 1 second.",
+        "description": "After 0.75 seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving.  After 2 seconds, slam the target into the ground, dealing 250 (+4% per level) damage to them, increased by 20% for each Valorous Brand on the target when landing, and Stunning them for 1 second.",
         "icon": "storm_ui_icon_imperius_r2.png",
         "type": "Heroic",
         "sort": 2,
@@ -512,7 +512,7 @@
     "ImperiusValorousBrandBrandOfSolarion": "Reduce the duration of Valorous Brand to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ImperiusValorousBrandCelestialChargeComboPointBehavior,Duration+Talent,ImperiusValorousBrandBrandOfSolarion,AbilityModificationArray[0].Modifications[0].Value\" precision=\"2\" player=\"0\"/></c> seconds, but it is no longer consumed when triggered.",
     "ImperiusValorousBrandBurnTheImpure": "Consuming a Valorous Brand mark deals bonus damage equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ImperiusValorousBrandBurnTheImpureDamage,VitalFractionMax[Life]\" precision=\"2\"/>%</c> of the Hero's maximum Health.",
     "ImperiusValorousPursuit": "Activate to teleport to an enemy that has been marked by Valorous Brand and gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ImperiusValorousPursuitArmorBuff,ArmorModification.AllArmorBonus\" precision=\"2\" player=\"0\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ImperiusValorousPursuitArmorBuff,Duration\"/></c> seconds.",
-    "ImperiusWrathOfTheAngiris": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,ImperiusWrathOfTheAngiris,CastIntroTime\" precision=\"2\" player=\"0\"/></c> seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving.<n/><n/>After <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ImperiusWrathOfTheAngirisCasterRemovedStasis,Duration\" precision=\"2\" player=\"0\"/></c> seconds, slam the target into the ground, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ImperiusWrathOfTheAngirisDamage,Amount\"/></c> damage and Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ImperiusWrathOfTheAngirisStun,Duration\"/></c> second.",
+    "ImperiusWrathOfTheAngiris": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,ImperiusWrathOfTheAngiris,CastIntroTime\" precision=\"2\" player=\"0\"/></c> seconds, charge in the target direction, lifting the first enemy Hero hit into the Heavens. While in the air, Imperius can steer the landing location by moving.<n/><n/>After <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ImperiusWrathOfTheAngirisCasterRemovedStasis,Duration\" precision=\"2\" player=\"0\"/></c> seconds, slam the target into the ground, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ImperiusWrathOfTheAngirisDamage,Amount\"/></c> damage to them, increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ImperiusWrathOfTheAngirisDamage,MultiplicativeModifierArray[ValorousBrandCelestialCharge].Modifier*100\"/>%</c> for each Valorous Brand on the target when landing, and Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ImperiusWrathOfTheAngirisStun,Duration\"/></c> second.",
     "ImperiusWrathOfTheAngirisUnrelentingDescent": "Descending from the Heavens restores <c val=\"#TooltipNumbers\"><d ref=\"Effect,ImperiusWrathOfTheAngirisUnrelentingDescentCreateHealer,RechargeVitalFraction *100\"/>%</c> of Imperius' maximum Health and Mana. Consuming a Valorous Brand reduces the cooldown of Wrath of the Angiris by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ImperiusWrathOfTheAngirisUnrelentingDescentCooldownModifyUnit,Cost[0].CooldownTimeUse*(-1)\" precision=\"3\" player=\"0\"/></c> seconds."
   },
   "tooltipSimple": {

@@ -19252,8 +19252,55 @@
           "name": "Hearthstone",
           "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
         }
+      ],
+      "mount": [
+        {
+          "nameId": "MedivhTransformRaven",
+          "buttonId": "MedivhTransformRaven",
+          "abilityType": "Z",
+          "isPassive": false,
+          "_hdp5LinkId": "MedivhTransformRaven|MedivhTransformRaven|Z",
+          "icon": "storm_ui_icon_medivh_mount.png",
+          "name": "Raven Form",
+          "fullText": "Transform into a raven, increasing Movement Speed by <c val=\"bfd4fd\">20%</c>. While transformed, Medivh can see and fly over terrain and is immune to all effects.",
+          "cooldownText": "Cooldown: 4 seconds"
+        }
       ]
-    }
+    },
+    "subAbilities": [
+      {
+        "MedivhPolyBomb|MedivhPolyBomb|Heroic": {
+          "heroic": [
+            {
+              "nameId": "MedivhPolyBombGlyphOfPolyBomb",
+              "buttonId": "MedivhPolyBomb",
+              "abilityType": "Heroic",
+              "isPassive": false,
+              "_hdp5LinkId": "MedivhPolyBombGlyphOfPolyBomb|MedivhPolyBomb|Heroic",
+              "icon": "storm_ui_icon_medivh_polybomb.png",
+              "name": "Poly Bomb",
+              "fullText": "Polymorph an enemy Hero for <c val=\"bfd4fd\">2</c> seconds, Silencing them and making them unable to attack. On expiration, Poly Bomb spreads to other nearby enemy Heroes.",
+              "cooldownText": "Cooldown: 40 seconds"
+            }
+          ]
+        },
+        "MedivhTransformRaven|MedivhTransformRaven|Z": {
+          "mount": [
+            {
+              "nameId": "MedivhTransformRavenLand",
+              "buttonId": "MedivhTransformRavenLand",
+              "abilityType": "Z",
+              "isPassive": false,
+              "_hdp5LinkId": "MedivhTransformRavenLand|MedivhTransformRavenLand|Z",
+              "toggleCooldown": 0.0625,
+              "icon": "storm_ui_icon_medivh_cancel_mount.png",
+              "name": "Cancel Raven Form",
+              "fullText": "Cancel Raven Form."
+            }
+          ]
+        }
+      }
+    ]
   },
   "RagnarosBigRag": {
     "unitId": "RagnarosBigRag",
