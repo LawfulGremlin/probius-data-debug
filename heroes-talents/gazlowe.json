@@ -45,7 +45,7 @@
       {
         "uid": "c31436",
         "name": "Rock-It! Turret",
-        "description": "Create a turret that deals 36 (+4% per level) damage. Loses Health over 17 seconds.  Turrets prioritize the nearest enemy Hero when first created.",
+        "description": "Create a turret that deals 36 (+4% per level) damage. Loses Health over 20 seconds.  Turrets prioritize the nearest enemy Hero when first created.",
         "hotkey": "Q",
         "abilityId": "Gazlowe|Q1",
         "tooltipId": "TinkerRockItTurret",
@@ -78,7 +78,7 @@
       {
         "uid": "5a140f",
         "name": "Robo-Goblin",
-        "description": "Activate to become Unstoppable for 1.5 seconds.  Passive: Basic Attacks deal 90 (+4% per level) bonus damage over 5 seconds, stacking up to 3 times.",
+        "description": "Activate to become Unstoppable for 1.5 seconds.  Passive: Basic Attacks deal 100 (+4% per level) bonus damage over 5 seconds, stacking up to 3 times.",
         "hotkey": "R",
         "abilityId": "Gazlowe|R1",
         "tooltipId": "TinkerRoboGoblinPassive",
@@ -289,7 +289,7 @@
         "tooltipId": "TinkerRoboGoblinPassive",
         "talentTreeId": "TinkerHeroicAbilityRoboGoblin",
         "name": "Robo-Goblin",
-        "description": "Activate to become Unstoppable for 1.5 seconds.  Passive: Basic Attacks deal 90 (+4% per level) bonus damage over 5 seconds, stacking up to 3 times.",
+        "description": "Activate to become Unstoppable for 1.5 seconds.  Passive: Basic Attacks deal 100 (+4% per level) bonus damage over 5 seconds, stacking up to 3 times.",
         "icon": "storm_ui_icon_gazlowe_robogoblin.png",
         "type": "Heroic",
         "sort": 1,
@@ -511,7 +511,7 @@
       "name": "TinkerRockItTurret",
       "icon": "storm_ui_icon_gazlowe_rockitturret.png",
       "stats": {
-        "hp": 510,
+        "hp": 600,
         "hpRegen": -30,
         "hpScale": 0.05,
         "hpRegenScale": 0.05,
