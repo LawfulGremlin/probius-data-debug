@@ -8212,6 +8212,62 @@
     "sight": 0,
     "speed": 0
   },
+  "NexusHunterFinalStrikeMissile": {
+    "unitId": "NexusHunterFinalStrikeMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "NexusHunterGrapplingHookMissile": {
+    "unitId": "NexusHunterGrapplingHookMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "NexusHunterRevolvingSweepMissile": {
+    "unitId": "NexusHunterRevolvingSweepMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "NexusHunterWeaponMissile": {
+    "unitId": "NexusHunterWeaponMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "NodeTurretWeapon": {
     "unitId": "NodeTurretWeapon",
     "portraits": {},
@@ -17389,7 +17445,7 @@
           "toggleCooldown": 0.0625,
           "icon": "storm_ui_icon_dva_boosters.png",
           "name": "Boosters",
-          "fullText": "Increase D.Va's Movement Speed by <c val=\"bfd4fd\">104%</c> for <c val=\"bfd4fd\">2</c> seconds. Enemies that are hit take <c val=\"bfd4fd\">135</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are knocked away. <n/><n/>D.Va cannot be Slowed while Boosters are active, and each enemy can only be hit once per use.",
+          "fullText": "Increase D.Va's Movement Speed by <c val=\"bfd4fd\">125%</c> for <c val=\"bfd4fd\">2</c> seconds. Enemies that are hit take <c val=\"bfd4fd\">135</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are knocked away. <n/><n/>D.Va cannot be Slowed while Boosters are active, and each enemy can only be hit once per use.",
           "cooldownText": "Cooldown: 9 Seconds"
         },
         {
@@ -17777,7 +17833,7 @@
     "radius": 0.5,
     "innerRadius": 0.5,
     "sight": 13,
-    "speed": 5,
+    "speed": 5.5664,
     "abilities": {
       "basic": [
         {
@@ -18456,7 +18512,7 @@
     "radius": 0.9375,
     "innerRadius": 0.9375,
     "sight": 7,
-    "speed": 4.3984,
+    "speed": 4.8398,
     "abilities": {
       "basic": [
         {

@@ -12,3 +12,4 @@ Chronological log of every extracted build (live + PTR), oldest first.
 * `2.45.1.74238` — Live — `96cfe804acb6` — history
 * `2.46.0.74739` — Live — `f3dbe6473cdd` — history
 * `2.46.1.75132` — Live — `afe9810af4aa` — history
+* `2.47.0.75589` — Live — `eb235f380f29` — history
