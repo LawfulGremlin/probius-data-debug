@@ -187,10 +187,10 @@
         ]
       },
       {
-        "tooltipId": "LiLiHinderingWinds",
-        "talentTreeId": "LiLiHinderingWinds",
-        "name": "Hindering Winds",
-        "description": "Blinding Wind Slows enemy Hero Movement Speed by 25% for 1.5 seconds.",
+        "tooltipId": "LiLiSurgingWindsTalent",
+        "talentTreeId": "LiLiMasteryBlindingWindSurgingWinds",
+        "name": "Surging Winds",
+        "description": "If Blinding Wind hits 2 Heroes, its cooldown is reduced by 2 seconds and Li Li gains 10% Spell Power for 10 seconds.",
         "icon": "storm_ui_icon_lili_blindingwind.png",
         "type": "E",
         "sort": 2,
@@ -332,10 +332,10 @@
         ]
       },
       {
-        "tooltipId": "LiLiSurgingWindsTalent",
-        "talentTreeId": "LiLiMasteryBlindingWindSurgingWinds",
-        "name": "Surging Winds",
-        "description": "If Blinding Wind hits 2 Heroes, its cooldown is reduced by 3 seconds and Li Li gains 10% Spell Power for 10 seconds.",
+        "tooltipId": "LiLiHinderingWinds",
+        "talentTreeId": "LiLiHinderingWinds",
+        "name": "Hindering Winds",
+        "description": "Blinding Wind Slows enemy Hero Movement Speed by 25% for 2 seconds.",
         "icon": "storm_ui_icon_lili_blindingwind_a.png",
         "type": "E",
         "sort": 2,

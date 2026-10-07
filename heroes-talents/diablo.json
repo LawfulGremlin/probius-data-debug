@@ -23,8 +23,8 @@
     "RoleTank"
   ],
   "stats": {
-    "hp": 2670,
-    "hpRegen": 5.5625,
+    "hp": 2825,
+    "hpRegen": 5.8867,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -82,7 +82,7 @@
         "abilityId": "Diablo|R1",
         "tooltipId": "DiabloApocalypse",
         "cooldown": 90,
-        "manaCost": 100,
+        "manaCost": 50,
         "icon": "storm_ui_icon_diablo_apocalypse.png",
         "type": "heroic"
       },
@@ -101,7 +101,7 @@
       {
         "uid": "5ed7f3",
         "name": "Black Soulstone",
-        "description": "Repeatable Quest: Gain 10 Souls per Hero killed and 1 Soul per Minion, up to 100. For each Soul, gain 0.4% maximum Health. If Diablo has 100 Souls upon dying, he will resurrect in 5 seconds but lose 100 Souls.",
+        "description": "Repeatable Quest: Gain 10 Souls per Hero killed and 1 Soul per Minion, up to 100. For each Soul, gain 0.3% maximum Health. If Diablo has 100 Souls upon dying, he will resurrect in 5 seconds but lose 100 Souls.",
         "trait": true,
         "abilityId": "Diablo|D1",
         "tooltipId": "DiabloBlackSoulstone",
