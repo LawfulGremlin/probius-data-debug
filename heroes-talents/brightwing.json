@@ -25,8 +25,8 @@
     "SoloLaner"
   ],
   "stats": {
-    "hp": 1450,
-    "hpRegen": 3.0195,
+    "hp": 1425,
+    "hpRegen": 2.9687,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -103,12 +103,12 @@
       {
         "uid": "83eccc",
         "name": "Soothing Mist",
-        "description": "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes.  Passive: Brightwing heals nearby allied Heroes for 115 (+4% per level) every 4 seconds",
+        "description": "Activate to remove all Stun, Root, Slow, and Silence effects from nearby allied Heroes.  Passive: Brightwing heals nearby allied Heroes for 110 (+4% per level) every 4 seconds",
         "hotkey": "D",
         "trait": true,
         "abilityId": "Brightwing|D1",
         "tooltipId": "BrightwingSoothingMistCalmingMist",
-        "cooldown": 90,
+        "cooldown": 75,
         "icon": "storm_ui_icon_brightwing_soothingmist.png",
         "type": "trait"
       },

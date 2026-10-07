@@ -23,8 +23,8 @@
     "WaveClearer"
   ],
   "stats": {
-    "hp": 1500,
-    "hpRegen": 3.125,
+    "hp": 1550,
+    "hpRegen": 3.2304,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -444,7 +444,7 @@
         "tooltipId": "ZagaraBroodmother",
         "talentTreeId": "ZagaraBroodmother",
         "name": "Broodmother",
-        "description": "Every 3rd Basic Attack also launches a Baneling towards the target.",
+        "description": "Every 3rd Basic Attack also launches a Baneling towards the target.  Passive: Gain 20% bonus Attack Speed.",
         "icon": "storm_ui_icon_zagara_banelingbarrage.png",
         "type": "Q",
         "sort": 3,
@@ -574,7 +574,7 @@
     "ZagaraBanelingBarrage": "Launch <c val=\"#TooltipNumbers\"><d ref=\"Effect,SummonBanelingsPersistent,PeriodCount\" player=\"0\"/> </c>Banelings that deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZagaraBanelingExplodeDamage,Amount\"/></c> damage to enemies they hit.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,ZagaraBanelingBarrage,Cost.Charge.CountMax\" player=\"0\"/></c> charges.",
     "ZagaraBanelingBarrageBanelingMassacreTalent": "Gain <c val=\"#TooltipNumbers\">2</c> additional charges of Banelings Barrage, but increase its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ZagaraMasteryBanelingMassacre,AbilityModificationArray[0].Modifications[1].Value\"Precision=\"2\"/></c> seconds.",
     "ZagaraBanelingBarrageVolatileAcidTalent": "Banelings can travel <c val=\"#TooltipNumbers\">50%</c> further before exploding.",
-    "ZagaraBroodmother": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraBanelingBarrageBroodmotherTalentTokenCounter,Max\"/>rd</c> Basic Attack also launches a Baneling towards the target.",
+    "ZagaraBroodmother": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraBanelingBarrageBroodmotherTalentTokenCounter,Max\"/>rd</c> Basic Attack also launches a Baneling towards the target.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Gain <c val=\"#TooltipNumbers\">20%</c> bonus Attack Speed.",
     "ZagaraCorrosiveSalivaHunterKillerTalent": "When attacking Heroes, Hunter Killers and Roachlings deal additional damage equal to <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZagaraHunterKillerBileDropCorrosiveSalivaPercentDamage,VitalFractionMax[Life]*100\"Precision=\"2\"/>%</c> of their maximum Health.",
     "ZagaraCreepTumor": "Lay a Creep Tumor that generates Creep. While on Creep, Zagara moves <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraOnCreepSpeedBuff,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c> faster and her summons move <c val=\"#TooltipNumbers\"><d ref=\"100*(Unit,ZagaraHydralisk,SpeedMultiplierCreep)-100\"/>%</c> faster. Tumors last <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraCreepTumorTimedLife,Duration\" player=\"0\"/></c> seconds and reveal the surrounding area while active.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,ZagaraSummonCreepTumor,Cost.Charge.CountMax\"/></c> charges.",
     "ZagaraCreepTumorEndlessCreepTalent": "The cast range for Creep Tumor is increased by <c val=\"#TooltipNumbers\">2000%</c>. Creep Tumors now last <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraCreepTumorEndlessCreepLife,Duration\"/></c> seconds. While on Creep, Zagara gains an additional <c val=\"#TooltipNumbers\"><d ref=\"Talent,ZagaraMasteryEndlessCreep,AbilityModificationArray[0].Modifications[0].Value*100\" precision=\"1\"/>%</c> Movement Speed.",
