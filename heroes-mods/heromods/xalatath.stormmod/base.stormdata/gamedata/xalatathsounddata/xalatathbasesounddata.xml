@@ -8,7 +8,7 @@
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Attack_Impact05.wav" FacialGroup="" />
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Attack_Impact06.wav" FacialGroup="" />
     <Pitch value="0.000000,1.000000" />
-    <Volume value="-5.000000,-5.000000" />
+    <Volume value="-10.000000,-10.000000" />
     <CategoryDuckingLocal value="" />
   </CSound>
   <CSound id="Xalatath_Attack_Launch" parent="_FX_Hero_Attack_Launch">
@@ -18,7 +18,7 @@
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Attack_Launch04.wav" FacialGroup="" />
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Attack_Launch05.wav" FacialGroup="" />
     <DupeDestroyCount value="5" />
-    <Volume value="-4.000000,-4.000000" />
+    <Volume value="-8.000000,-8.000000" />
     <CategoryDuckingLocal value="" />
   </CSound>
   <CSound id="Xalatath_VoidVolley_Charge_Active" parent="_FX_Hero_Spell_Secondary">
@@ -59,13 +59,13 @@
     <CategoryDuckingLocal value="" />
   </CSound>
   <CSound id="Xalatath_VoidVolley_Launch" parent="_FX_Hero_Spell_Launch">
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Base_VoidVolley_Cast01.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Base_VoidVolley_Cast02.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Base_VoidVolley_Cast03.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Base_VoidVolley_Cast04.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Base_VoidVolley_Cast05.wav" FacialGroup="" />
-    <DupeDestroyCount value="1" />
-    <Volume value="-4.000000,-4.000000" />
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Storm_Effect_Xalatath_Base_VoidVolley_Cast01.wav" FacialGroup="" />
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Storm_Effect_Xalatath_Base_VoidVolley_Cast02.wav" FacialGroup="" />
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Storm_Effect_Xalatath_Base_VoidVolley_Cast03.wav" FacialGroup="" />
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Storm_Effect_Xalatath_Base_VoidVolley_Cast04.wav" FacialGroup="" />
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Storm_Effect_Xalatath_Base_VoidVolley_Cast05.wav" FacialGroup="" />
+    <DupeDestroyCount value="5" />
+    <Volume value="-8.000000,-8.000000" />
     <CategoryDuckingLocal value="" />
   </CSound>
   <CSound id="Xalatath_VoidStep_Teleport_Sound_Out" parent="_FX_Hero_Spell_Launch">
@@ -102,14 +102,6 @@
     <OffsetFadeIn Time="3822" />
     <PanLevel value="0.600000" />
     <Volume value="-7.000000,-5.000000" />
-  </CSound>
-  <CSound id="Xalatath_VoidStep_Open" parent="_FX_Hero_Spell_Impact">
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Open01.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Open02.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Open03.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Open04.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Open05.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Open06.wav" FacialGroup="" />
   </CSound>
   <CSound id="Xalatath_VoidStep_Loop" parent="_FX_Breakables">
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Loop01.wav" FacialGroup="" />
@@ -152,7 +144,7 @@
     <VolumeRolloffPoints index="1" removed="1" />
     <Pitch value="-1.000000,1.000000" />
   </CSound>
-  <CSound id="Xalatath_VoidStep_Search" parent="_FX_Hero_Spell_Loop">
+  <CSound id="Xalatath_VoidStep_Search" parent="_FX_Hero_Spell_Impact">
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Cast01.wav" FacialGroup="" />
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Cast02.wav" FacialGroup="" />
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Cast03.wav" FacialGroup="" />
@@ -166,6 +158,7 @@
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Impact04.wav" FacialGroup="" />
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Event_VoidStep_Lamb_Impact05.wav" FacialGroup="" />
     <CategoryDuckingLocal value="" />
+    <StopActionArray Sound="Xalatath_VoidStep_Launch" UseSustainFadeTime="0" FadeTime="800" />
     <VolumeRolloffPoints index="1" Distance="30.000000" Volume="-96.000000" />
     <DupeMuteCount value="2" />
     <Pitch value="-1.000000,2.000000" />
@@ -175,13 +168,13 @@
     <Volume value="-6.000000,-2.000000" />
   </CSound>
   <CSound id="Xalatath_ShadowMark_Launch" parent="_FX_Hero_Spell_Launch">
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Base_ShadowMark_Cast01.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Base_ShadowMark_Cast02.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Base_ShadowMark_Cast03.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Base_ShadowMark_Cast04.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_Base_ShadowMark_Cast05.wav" FacialGroup="" />
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Storm_Effect_Xalatath_Base_ShadowMark_Cast01.wav" FacialGroup="" />
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Storm_Effect_Xalatath_Base_ShadowMark_Cast02.wav" Pitch="1.000000,1.000000" FacialGroup="" />
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Storm_Effect_Xalatath_Base_ShadowMark_Cast03.wav" FacialGroup="" />
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Storm_Effect_Xalatath_Base_ShadowMark_Cast04.wav" FacialGroup="" />
+    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Storm_Effect_Xalatath_Base_ShadowMark_Cast05.wav" FacialGroup="" />
     <Pitch value="-3.000000,1.000000" />
-    <Volume value="-1.000000,-1.000000" />
+    <Volume value="-5.000000,-5.000000" />
     <Flags index="Ignorable" value="1" />
     <PanLevel value="0.800000" />
     <PanLevelNonLocal value="-1.000000" />
@@ -269,7 +262,7 @@
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_ShadowMark_MarkApply03.wav" FacialGroup="" />
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_ShadowMark_MarkApply04.wav" FacialGroup="" />
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_ShadowMark_MarkApply05.wav" FacialGroup="" />
-    <Volume value="2.000000,2.000000" />
+    <Volume value="-5.000000,-4.000000" />
     <Pitch value="4.000000,4.000000" />
   </CSound>
   <CSound id="Xalatath_ShadowMark_MarkExpire" parent="_FX_Hero_Spell_End">
@@ -479,7 +472,6 @@
   </CSound>
   <CSound id="Xalatath_VoidEruption_Detonation" parent="_FX_Hero_Ult_Impact">
     <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Explo01.wav" FacialGroup="" />
-    <AssetArray File="Assets\Sounds\Heroes\Xalatath_Base\Xalatath_VoidEruption_Explo02.wav" FacialGroup="" />
     <Volume value="2.000000,2.000000" />
     <CategoryDuckingLocal value="" />
     <CategoryDuckingLocalAlly value="" />

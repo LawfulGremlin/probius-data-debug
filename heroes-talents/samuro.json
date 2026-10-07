@@ -101,6 +101,26 @@
         "cooldown": 14,
         "icon": "storm_ui_icon_samuro_flowingstrikes.png",
         "type": "trait"
+      },
+      {
+        "uid": "c04626",
+        "name": "Select Samuro",
+        "description": "Select Samuro  Issue orders to Samuro only.",
+        "hotkey": "1",
+        "abilityId": "Samuro|11",
+        "tooltipId": "SamuroSelectSamuroPrime",
+        "icon": "storm_temp_war3_btnheroblademaster.png",
+        "type": "activable"
+      },
+      {
+        "uid": "2293e5",
+        "name": "Select All",
+        "description": "Select All  Issue orders to Samuro and all Mirror Images.",
+        "hotkey": "2",
+        "abilityId": "Samuro|21",
+        "tooltipId": "SamuroSelectAll",
+        "icon": "storm_ui_ingame_heroselect_btn_lostvikings.png",
+        "type": "activable"
       }
     ]
   },
@@ -497,6 +517,8 @@
     "SamuroOverpoweringBlow": "Samuro's Basic Attacks against enemy Heroes reduce Critical Strike's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,SamuroCriticalStrikeCrushingBlowTalentModifyCooldown,Cost[0].ChargeTimeUse\" precision=\"2\"/></c> seconds.<n/><n/>Critical Strikes against enemy Heroes increase Samuro's Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,SamuroCrushingBlowsAccumulator,Scale*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroCrushingBlowsTimerBuff,Duration\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,SamuroCrushingBlowsAccumulator,MaxAccumulation*100\"/>%</c>.",
     "SamuroPhantomsStrikeTalent": "Samuro's Critical Strikes against enemy Heroes reduce Image Transmission's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,SamuroPhantomPainTalentModifyCooldown,Cost[0].Cooldown.TimeUse\"/></c> second, and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,SamuroWeaponDamage,MultiplicativeModifierArray[PhantomPain1].Modifier*100\"/>%</c> more damage for each active Mirror Image.",
     "SamuroPressTheAttack": "Basic Attacks from Samuro or his Mirror Images against enemy Heroes or while Advancing Strikes is active increases their Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,SamuroPressTheAttackAccumulator,Scale*100\" precision=\"2\"/>%</c>, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,SamuroPressTheAttackAccumulator,MaxAccumulation*100\"/>%</c>.<n/><n/>These bonuses are lost when losing Advancing Strikes.",
+    "SamuroSelectAll": "<s val=\"StandardTooltipHeader\">Select All</s><n/><n/>Issue orders to Samuro and all Mirror Images.",
+    "SamuroSelectSamuroPrime": "<s val=\"StandardTooltipHeader\">Select Samuro</s><n/><n/>Issue orders to Samuro only.",
     "SamuroShukuchiTalent": "Wind Walk teleports Samuro a short distance in the direction he's currently facing.",
     "SamuroThreeBladeStyleTalent": "Samuro's Mirror Images only deal half of the damage they take to themselves, effectively increasing their Health by <c val=\"#TooltipNumbers\">25%</c>, and their duration is increased to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroMirrorImageTimedLife,Duration+Talent,SamuroThreeBladeStyle,AbilityModificationArray[0].Modifications[0].Value\" player=\"0\"/></c> seconds.",
     "SamuroWayOfIllusion": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\"> Quest:</c> Every time a Mirror Image Critically Strikes a Hero, Samuro gains <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,SamuroMirrorImageWayOfIllusionAttackDamageAccumulator,Scale\" precision=\"2\" Player=\"0\"/></c> Attack Damage, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroMirrorImageWayOfIllusionQuestToken,Max*Accumulator,SamuroMirrorImageWayOfIllusionAttackDamageAccumulator,Scale\"Player=\"0\"/></c>.<n/></n><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroMirrorImageWayOfIllusionQuestToken,Max\"/></c> Heroes, Samuro gains an additional <c val=\"#TooltipNumbers\"><d ref=\"(Behavior,SamuroMirrorImageWayOfIllusionQuestTokenMirrorImage,Max*Effect,SamuroMirrorImageWayOfIllusionQuestCompleteModifyPlayer,EffectArray[1].Value)-(Behavior,SamuroMirrorImageWayOfIllusionQuestTokenMirrorImage,Max*Accumulator,SamuroMirrorImageWayOfIllusionAttackDamageAccumulator,Scale)\"Player=\"0\"/></c> Attack Damage.",
@@ -524,6 +546,8 @@
     "SamuroOverpoweringBlow": "Critical Strikes increase Basic Attack damage",
     "SamuroPhantomsStrikeTalent": "Critical Strikes reduce Image Transmission cooldown",
     "SamuroPressTheAttack": "Advancing Strikes increases Attack Speed",
+    "SamuroSelectAll": "Select All",
+    "SamuroSelectSamuroPrime": "Select Samuro",
     "SamuroShukuchiTalent": "Wind Walk teleports a short distance",
     "SamuroThreeBladeStyleTalent": "Images have increased Health and Duration",
     "SamuroWayOfIllusion": "<c val=\"#TooltipQuest\">Quest:</c> Image Critical Strikes empower Basic Attacks",

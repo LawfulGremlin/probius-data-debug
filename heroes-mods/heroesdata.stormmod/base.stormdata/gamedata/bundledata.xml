@@ -1042,7 +1042,7 @@
     <Flags index="ShowDynamicProductContent" value="1" />
     <Universe value="Heroes" />
     <TileTexture value="Assets\Textures\storm_ui_Bundles_H53_WinterVeilClassic.dds" />
-    <ReleaseDate Month="12" Year="2020" />
+    <ReleaseDate Month="12" Day="1" Year="2020" />
   </CBundle>
   <CBundle id="WinterVeil2016Bundle">
     <ProductId value="22806" />
@@ -2750,6 +2750,7 @@
     <ProductId value="66030" />
     <EventName value="LTO" />
     <TileTexture value="@UI/Storm_UI_Boost_Purchase_Dialog_2" />
+    <Flags index="ShowDynamicProductContent" value="0" />
   </CBundle>
   <CBundle id="MobsterBundle">
     <ReleaseDate Month="9" Day="24" Year="2019" />
@@ -3041,8 +3042,7 @@
   <CBundle id="XalatathLaunchBundle">
     <ProductId value="2121975" />
     <Flags index="ShowDynamicProductContent" value="1" />
-    <TileTexture value="Assets\Textures\storm_ui_bundle_h57_xalatath.dds" />
-    <ReleaseDate Month="9" Day="28" Year="2026" />
-    <Universe value="Warcraft" />
+    <TileTexture value="Assets\Textures\storm_ui_Bundles_H57_XalatathLaunch.dds" />
+    <ReleaseDate Month="2" Day="2" Year="2025" />
   </CBundle>
 </Catalog>
