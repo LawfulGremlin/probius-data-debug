@@ -25,7 +25,7 @@
   ],
   "stats": {
     "hp": 1975,
-    "hpRegen": 4.1093,
+    "hpRegen": 4.1146,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -150,8 +150,7 @@
           "Uther|Q1"
         ],
         "abilityTalentLinkIds": [
-          "UtherHolyLight",
-          "UtherHolyShock"
+          "UtherHolyLight"
         ]
       },
       {
@@ -194,17 +193,15 @@
         "tooltipId": "UtherHolyLightHolyShockTalent",
         "talentTreeId": "UtherMasteryHolyShock",
         "name": "Holy Shock",
-        "description": "Holy Light can be used on an enemy to do 40% of its healing amount as damage. When used this way, Uther receives its self-healing benefits, its cooldown is reduced by 6 seconds, and it refunds 45 Mana.",
-        "icon": "storm_ui_icon_uther_holylight.png",
-        "type": "Q",
+        "description": "Activate to deal 145 (+4% per level) damage to the target enemy, and gain the self-healing benefits of Holy Light. Shares a cooldown with Holy Light.",
+        "icon": "storm_ui_icon_uther_holyshock.png",
+        "type": "Active",
         "sort": 1,
+        "cooldown": 6,
         "isQuest": false,
-        "abilityId": "Uther|Q1",
-        "abilityLinks": [
-          "Uther|Q1"
-        ],
+        "abilityId": "Uther|Active",
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
-          "UtherHolyLight",
           "UtherHolyShock"
         ]
       },
@@ -258,8 +255,7 @@
           "Uther|Q1"
         ],
         "abilityTalentLinkIds": [
-          "UtherHolyLight",
-          "UtherHolyShock"
+          "UtherHolyLight"
         ]
       },
       {
@@ -283,7 +279,7 @@
         "tooltipId": "UtherHandOfProtection",
         "talentTreeId": "UtherHandOfProtection",
         "name": "Hand of Protection",
-        "description": "Activate to make target ally Unstoppable for 1 second. Cannot be cast on Uther. Basic Attacks reduce Hand of Protection's cooldown by 5 seconds.",
+        "description": "Activate to make target ally Unstoppable for 1 second. Cannot be cast on Uther. Basic Attacks reduce Hand of Protection's cooldown by -0 seconds.",
         "icon": "storm_ui_icon_talent_cleanse.png",
         "type": "Active",
         "sort": 3,
@@ -349,8 +345,7 @@
           "Uther|Q1"
         ],
         "abilityTalentLinkIds": [
-          "UtherHolyLight",
-          "UtherHolyShock"
+          "UtherHolyLight"
         ]
       },
       {
@@ -387,7 +382,7 @@
         "tooltipId": "UtherBeaconOfLight",
         "talentTreeId": "UtherBeaconOfLight",
         "name": "Beacon of Light",
-        "description": "Uther receives 125% bonus self-healing when targeting others with Holy Light.  This bonus is increased to 250% while he is below 50% Health.",
+        "description": "Uther receives 125% bonus self-healing when targeting others with Holy Light. This bonus is increased to 250% while he is below 50% Health.",
         "icon": "storm_ui_icon_uther_holylight.png",
         "type": "Q",
         "sort": 1,
@@ -397,8 +392,7 @@
           "Uther|Q1"
         ],
         "abilityTalentLinkIds": [
-          "UtherHolyLight",
-          "UtherHolyShock"
+          "UtherHolyLight"
         ]
       },
       {
@@ -426,7 +420,7 @@
         "icon": "storm_ui_icon_uther_benediction.png",
         "type": "Active",
         "sort": 3,
-        "cooldown": 60,
+        "cooldown": 0,
         "isQuest": false,
         "abilityId": "Uther|Active",
         "abilityLinks": [],
@@ -515,30 +509,30 @@
   "tooltipMarkup": {
     "GenericSpellShieldItemDisabled": "Spell Shield is disabled and will not trigger.<n/><n/>Click this button to enable Spell Shield.",
     "GenericSpellShieldTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldCooldown,Duration\"/></c> seconds, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor against the next enemy Ability and subsequent Abilities for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,Duration\" precision=\"1\"/></c> seconds, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpellShieldActive,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.<n/><n/>Can be toggled to allow or prevent this talent from triggering automatically.",
-    "UtherBeaconOfLight": "Uther receives <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier*100\"/>%</c> bonus self-healing when targeting others with Holy Light.  This bonus is increased to <c val=\"#TooltipNumbers\"><d ref=\"(Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier+Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier)*100\"/>%</c> while he is below <c val=\"#TooltipNumbers\"><d ref=\"Validator,CasterLifeLT50Percent,Value*100\"/>%</c> Health.",
-    "UtherBenedictionHotbar": "Activate to reduce the Mana cost of Uther's next Basic Ability by <c val=\"#TooltipNumbers\">50 </c>and its cooldown by <c val=\"#TooltipNumbers\">10</c> seconds.",
+    "UtherBeaconOfLight": "Uther receives <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier*100\"/>%</c> bonus self-healing when targeting others with Holy Light. This bonus is increased to <c val=\"#TooltipNumbers\"><d ref=\"(Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier+Effect,HolyLightCreateSelfHealer,MultiplicativeModifierArray[BeaconOfLight].Modifier)*100\"/>%</c> while he is below <c val=\"#TooltipNumbers\"><d ref=\"Validator,UtherBeaconOfLifeLTThreshold,Value*100\"/>%</c> Health.",
+    "UtherBenedictionHotbar": "Activate to reduce the Mana cost of Uther's next Basic Ability by <c val=\"#TooltipNumbers\"><d const=\"$UtherBenedictionManaCostReduction\"/></c> and its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,UtherBenedictionHolyLightCooldownRefund,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "UtherDivineShield": "Make an allied Hero Invulnerable and increase their Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherDivineInterventionMovementSpeed,Modification.UnifiedMoveSpeedFactor *100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DivineInterventionInvulnerable,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
     "UtherDivineShieldBulwarkOfLightTalent": "Divine Shield is also applied to all nearby allied Heroes and lasts <c val=\"#TooltipNumbers\"><d ref=\"Talent,UtherMasteryBulwarkOfLightDivineShield,AbilityModificationArray[0].Modifications[0].Value\"/></c> second longer.",
     "UtherDivineStorm": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,DivineStormStunDamage,Amount[0]\"/></c> damage and Stun nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DivineStormStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
-    "UtherDivineStormDivineHurricaneTalent": "Divine Storm's radius is increased by <c val=\"#TooltipNumbers\">50%</c> and its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,UtherMasteryDivineHurricaneDivineStorm,AbilityModificationArray[0].Modifications[4].Value\"/></c> seconds.",
-    "UtherEternalDevotion": "Uther's Basic Abilities grant <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherEternalDevotionArmor,ArmorModification.AllArmorBonus\" player=\"0\"/></c> Armor to allied Heroes, and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherEternalDevotionSelfArmor,ArmorModification.AllArmorBonus\" player=\"0\"/></c> to Uther, for <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherDevotionApplyTargetArmorBuff,Duration\" player=\"0\"/></c> seconds.<n/><n/><s val=\"StandardTooltipHeader\">Eternal Vanguard</s><n/><n/>Upon dying, Uther becomes an Invulnerable spirit for up to <c val=\"#TooltipNumbers\">8</c> seconds. While in spirit form, Uther can heal allies with Flash of Light for <c val=\"#TooltipNumbers\"><d ref=\"Effect,FlashofLightCreateHealer,RechargeVitalRate\"/></c>.",
-    "UtherEternalDevotionArmorOfFaithTalent": "Being Stunned, Rooted, or Silenced grants Uther <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherHolyLightArmorOfFaithManaRestoration,RechargeVitalRate\"/></c> Mana and causes Holy Light's cooldown to recharge <c val=\"#TooltipNumbers\"><d ref=\"-(Effect,UtherHolyLightArmorOfFaithModifyUnit,Cost[0].CooldownTimeUse/Behavior,UtherHolyLightArmorOfFaithCooldownBuff,Period)*100\" precision=\"3\"/>%</c> faster for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyLightArmorOfFaithCooldownBuff,Duration\" precision=\"1\"/></c> seconds. This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyLightArmorOfFaithCooldown,Duration\"/></c> second cooldown.",
-    "UtherEternalDevotionBlessedChampionTalent": "For the next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherBlessedChampion,Duration\"/></c> seconds after using Holy Light, Uther's Basic Attacks heal him and nearby allied Heroes for <c val=\"#TooltipNumbers\">15%</c> of the total amount healed by Holy Light.",
-    "UtherEternalDevotionDivineProtectionTalent": "Increase Devotion Armor to <c val=\"#TooltipNumbers\"><d ref=\"Talent,UtherEternalDevotionDivineProtection,AbilityModificationArray[0].Modifications[1].Value+Behavior,UtherEternalDevotionArmor,ArmorModification.AllArmorBonus\"player=\"0\"/></c> and its duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,UtherEternalDevotionDivineProtection,AbilityModificationArray[0].Modifications[0].Value\" precision=\"2\"/></c> seconds.",
+    "UtherDivineStormDivineHurricaneTalent": "Divine Storm's radius is increased by <c val=\"#TooltipNumbers\"><d ref=\"(Talent,UtherMasteryDivineHurricaneDivineStorm,AbilityModificationArray[0].Modifications[0].Value)/(Effect,DivineStormStunSearch,AreaArray[0].Radius)*100\" player=\"0\"/>%</c> and its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,UtherMasteryDivineHurricaneDivineStorm,AbilityModificationArray[0].Modifications[4].Value\" /></c> seconds.",
+    "UtherEternalDevotion": "Uther's Basic Abilities grant <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherEternalDevotionArmor,ArmorModification.AllArmorBonus\" player=\"0\"/></c> Armor to allied Heroes, and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherEternalDevotionSelfArmor,ArmorModification.AllArmorBonus\" player=\"0\"/></c> to Uther, for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherEternalDevotionArmor,Duration\" player=\"0\"/></c> seconds.<n/><n/><s val=\"StandardTooltipHeader\">Eternal Vanguard</s><n/><n/>Upon dying, Uther becomes an Invulnerable spirit for up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SpiritOfRedemptionSpiritFormBuff,Duration\" player=\"0\"/></c> seconds. While in spirit form, Uther can heal allies with Flash of Light for <c val=\"#TooltipNumbers\"><d ref=\"Effect,FlashofLightCreateHealer,RechargeVitalRate\"/></c>.",
+    "UtherEternalDevotionArmorOfFaithTalent": "Being Stunned, Rooted, or Silenced grants Uther <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherHolyLightArmorOfFaithManaRestoration,RechargeVitalRate\"/></c> Mana and causes Holy Light's cooldown to recharge <c val=\"#TooltipNumbers\"><d ref=\"-(Effect,UtherHolyLightArmorOfFaithModifyUnit,Cost[0].CooldownTimeUse/Behavior,UtherHolyLightArmorOfFaithCooldownBuff,Period)*100\" precision=\"3\"/>%</c> faster for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyLightArmorOfFaithCooldownBuff,Duration\" precision=\"1\"/></c> seconds. This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Abil,UtherHolyLightArmorOfFaithCooldownDisplay,Cost[0].Cooldown.TimeUse\" player=\"0\"/></c> second cooldown.",
+    "UtherEternalDevotionBlessedChampionTalent": "For the next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherBlessedChampion,Duration\"/></c> seconds after using Holy Light, Uther's Basic Attacks heal him and nearby allied Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherBlessedChampionHealRatio,XP*100\"/>%</c> of the total amount healed by Holy Light.",
+    "UtherEternalDevotionDivineProtectionTalent": "Increase Devotion Armor to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherEternalDevotionArmor,ArmorModification.AllArmorBonus+Talent,UtherEternalDevotionDivineProtection,AbilityModificationArray[0].Modifications[0].Value\" player=\"0\"/></c> and its duration by <c val=\"#TooltipNumbers\"><d const=\"$UtherDivineProtectionArmorDurationBonus\" precision=\"1\"/></c> seconds.",
     "UtherEternalDevotionGuardianOfAncientKingsTalent": "Healing a Hero with a Basic Ability that is Stunned, Rooted, or Silenced grants them <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherEternalDevotionGuardianOfAncientKingsArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherEternalDevotionGuardianOfAncientKingsArmor,Duration\"/></c> seconds.",
     "UtherEternalDevotionHammerOfTheLightbringerTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Basic Attack enemies <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHammerOfTheLightbringerQuestTokenBehavior,Max\"/></c> times.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Basic Attacks reduce the cooldown of Hammer of Justice by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,UtherHammerOfJusticeHammerOfTheLightbringerModifyCooldown,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Basic Attacks restore <c val=\"#TooltipNumbers\"><d ref=\"Effect,HammerOfTheLightbringerModifyUnit,RechargeVitalFraction*100\" precision=\"2\"/>%</c> of Uther's maximum Mana.",
     "UtherFlashofLight": "Heal an ally for <c val=\"#TooltipNumbers\"><d ref=\"Effect,FlashofLightCreateHealer,RechargeVitalRate\"/></c> Health.",
     "UtherHammerOfJusticePursuitOfJusticeTalent": "Hammer of Justice increases Uther's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHammerOfJusticePursuitOfJusticeMovementSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHammerOfJusticePursuitOfJusticeMovementSpeed,Duration\"/></c> seconds.",
     "UtherHammerOfJusticeWellMetTalent": "When used against Heroes, Hammer of Justice reduces the target's Movement Speed and damage dealt by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,UtherHammerOfJusticeWellMetSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHammerOfJusticeWellMetSlow,Duration\"/></c> seconds.",
     "UtherHammerofJustice": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,HammerOfJusticeDamage,Amount\"/></c> damage and Stun the target for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HammerOfJustice,Duration\" player=\"0\" precision=\"2\"/></c> second.",
-    "UtherHandOfProtection": "Activate to make target ally Unstoppable for <c val=\"#TooltipNumbers\">1</c> second. Cannot be cast on Uther. Basic Attacks reduce Hand of Protection's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,UtherHandOfProtectionModifyPlayer,Cost.Cooldown.TimeUse\"/></c> seconds.",
+    "UtherHandOfProtection": "Activate to make target ally Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHandOfProtectionBuff,Duration\"/></c> second. Cannot be cast on Uther. Basic Attacks reduce Hand of Protection's cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,UtherHandOfProtectionModifyUnit,CooldownTimeUse\"/></c> seconds.",
     "UtherHolyFireTalent": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyFireDamage,Amount\"/></c> damage per second to nearby enemies. Basic Attacks against enemy Heroes increase this damage by<c val=\"#TooltipNumbers\"> 20%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyFireStack,Duration\"/></c> seconds. This can stack up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyFireToken,Max\"/></c> times.",
     "UtherHolyLight": "Heal target allied Hero for <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyLightCreateHealer,RechargeVitalRate\"/></c> Health. When used on a target other than Uther, also heal Uther for <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyLightCreateSelfHealer,RechargeVitalRate\"/></c> Health.",
-    "UtherHolyLightHolyShockTalent": "Holy Light can be used on an enemy to do <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyShockDamage,Amount/Effect,HolyLightCreateHealer,RechargeVitalRate*100\"/>%</c> of its healing amount as damage. When used this way, Uther receives its self-healing benefits, its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,HolyShockModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds, and it refunds <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyLightHolyShockManaReturn,RechargeVitalRate\"/></c> Mana.",
-    "UtherHolyLightSilverTouch": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Reduce damage from Heroic sources with Devotion.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After reducing damage <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyLightSilverTouchArmor,ConditionalEvents[0].CompareValue\"/></c> times, Holy Light's Mana cost is reduced from <c val=\"#TooltipNumbers\"><d ref=\"Abil,UtherHolyLight,Cost.Vital[Energy]\" player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Abil,UtherHolyLight,Cost.Vital[Energy] + Effect,UtherHolyLightSilverTouchModifyCost,CatalogModifications[0].Value\" player=\"0\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After reducing damage <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyLightSilverTouchArmor,Max\"/></c> times, Holy Light's Mana cost is reduced to <c val=\"#TooltipNumbers\"><d ref=\"Abil,UtherHolyLight,Cost.Vital[Energy] + (Effect,UtherHolyLightSilverTouchModifyCost,CatalogModifications[0].Value * 2)\" player=\"0\"/></c>, and its range is increased by <c val=\"#TooltipNumbers\"><d ref=\"((Abil,UtherHolyLight,Range+Effect,UtherHolyLightSilverTouchModifyRange,CatalogModifications[0].Value)/Abil,UtherHolyLight,Range-1)*100\" player=\"0\"/>%</c>.",
+    "UtherHolyLightHolyShockTalent": "Activate to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyShockDamage,Amount\"/></c> damage to the target enemy, and gain the self-healing benefits of Holy Light. Shares a cooldown with Holy Light.",
+    "UtherHolyLightSilverTouch": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Reduce damage from Heroic sources with Devotion.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After reducing damage <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyLightSilverTouchArmor,ConditionalEvents[0].CompareValue\"/></c> times, Holy Light's Mana cost is reduced from <c val=\"#TooltipNumbers\"><d ref=\"Abil,UtherHolyLight,Cost[0].Vital[Energy]\" player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherHolyLightSilverTouchFirstMilestoneModifyNoBenediction,CatalogModifications[0].Value\" player=\"0\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After reducing damage <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyLightSilverTouchArmor,Max\"/></c> times, Holy Light's Mana cost is reduced to <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherHolyLightSilverTouchQuestCompleteModifyNoBenediction,CatalogModifications[0].Value\" player=\"0\"/></c>, and its range is increased by <c val=\"#TooltipNumbers\"><d ref=\"((Effect,UtherHolyLightSilverTouchModifyRange,CatalogModifications[0].Value-Abil,UtherHolyLight,Range)/Abil,UtherHolyLight,Range)*100\" player=\"0\"/>%</c>.",
     "UtherHolyRadiance": "Heal all allied Heroes and Minions in a line for <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyRadianceCreateHealer,RechargeVitalRate\"/></c> Health, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,HolyRadianceEnemyDamage,Amount\"/></c> damage to enemies.",
-    "UtherHolyRadianceTyrsDeliveranceTalent": "Increase the damage and healing of Holy Radiance by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,UtherTyrsDeliveranceAccumulator,Offset\"/>%</c>. Basic Attacks against enemy Heroes cause Uther's next cast of Holy Radiance to have its damage and healing increased by an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,UtherTyrsDeliveranceAccumulator,Offset\"/>%</c>, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherTyrsDeliveranceTokenCounter,Max\"/></c> times.",
-    "UtherHolyRadianceWaveofLightTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Damage or heal Heroes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyRadianceWaveofLightQuestTokenBehavior,Max\"/></c> times with Holy Radiance.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Increase the duration of Devotion by <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherHolyRadianceSilverTouchArmorDurationIncreaseModifyCatalog,CatalogModifications[0].Value - Behavior,UtherEternalDevotionDivineProtectionArmor,Duration\" precision=\"1\" player=\"0\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Damaging or healing Heroes with Holy Radiance refunds <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherWaveofLightRestoreMana,RechargeVitalRate\"/></c> Mana and reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,WaveofLightModifyUnit,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.",
+    "UtherHolyRadianceTyrsDeliveranceTalent": "Increase the damage and healing of Holy Radiance by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,UtherTyrsDeliveranceAccumulator,Offset\"/>%</c>. Basic Attacks against enemy Heroes cause Uther's next cast of Holy Radiance to have its damage and healing increased by an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,UtherTyrsDeliveranceAccumulator,Scale\"/>%</c>, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherTyrsDeliveranceTokenCounter,Max\"/></c> times.",
+    "UtherHolyRadianceWaveofLightTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Damage or heal Heroes <c val=\"#TooltipNumbers\"><d ref=\"Behavior,UtherHolyRadianceWaveofLightQuestTokenBehavior,Max\"/></c> times with Holy Radiance.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Increase the duration of Devotion by <c val=\"#TooltipNumbers\"><d const=\"$UtherWaveofLightQuestCompleteDevotionDurationBonus\" precision=\"1\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Damaging or healing Heroes with Holy Radiance refunds <c val=\"#TooltipNumbers\"><d ref=\"Effect,UtherWaveofLightRestoreMana,RechargeVitalRate\"/></c> Mana and reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,WaveofLightModifyUnit,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> seconds.",
     "UtherRedemptionTalent": "After Eternal Vanguard ends, Uther revives at the spirit's location with <c val=\"#TooltipNumbers\"><d ref=\"1+Effect,RedemptionSetHealth,VitalArray[Life].ChangeFraction*100\"/>%</c> of his maximum Health.<n/><n/>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RedemptionCooldown,Duration\" player=\"0\"/></c> second cooldown."
   },
   "tooltipSimple": {
@@ -563,7 +557,7 @@
     "UtherHandOfProtection": "Make an ally Unstoppable",
     "UtherHolyFireTalent": "Deals damage to nearby enemies",
     "UtherHolyLight": "Heal an allied Hero and Uther",
-    "UtherHolyLightHolyShockTalent": "Holy Light can deal damage",
+    "UtherHolyLightHolyShockTalent": "Cast Holy Light on an enemy, dealing damage",
     "UtherHolyLightSilverTouch": "<c val=\"#TooltipQuest\">Quest:</c> Mitigate damage to improve Holy Light",
     "UtherHolyRadiance": "Heal allies and damage enemies in a line",
     "UtherHolyRadianceTyrsDeliveranceTalent": "Increased Holy Radiance healing and damage",

@@ -90,7 +90,7 @@
         "range": 0.5,
         "minimumRange": 0,
         "period": 1,
-        "damage": 34,
+        "damage": 43,
         "damageScale": 0.04
       }
     ],
@@ -130,7 +130,7 @@
         "range": 7,
         "minimumRange": 3,
         "period": 1,
-        "damage": 46,
+        "damage": 58,
         "damageScale": 0.04
       },
       {
@@ -182,7 +182,7 @@
           "_hdp5LinkId": "AbathurSpawnLocusts|AbathurLocustStrain|Q",
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "name": "Locust Strain",
-          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
+          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">58</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
           "cooldownText": "Cooldown: 15 seconds"
         }
       ]
@@ -221,7 +221,7 @@
           "_hdp5LinkId": "AbathurSpawnLocusts|AbathurLocustStrain|Q",
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "name": "Locust Strain",
-          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
+          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">58</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">25%</c> bonus damage to enemy Structures.",
           "cooldownText": "Cooldown: 15 seconds"
         }
       ]
@@ -243,7 +243,7 @@
         "range": 1.5,
         "minimumRange": 0,
         "period": 1,
-        "damage": 46,
+        "damage": 58,
         "damageScale": 0.04
       }
     ],
@@ -4020,21 +4020,7 @@
     "innerRadius": 0,
     "sight": 0,
     "speed": 0,
-    "abilities": {
-      "basic": [
-        {
-          "nameId": "GazloweDethLazorFirinMahLazorz",
-          "buttonId": "GazloweDethLazorFirinMahLazorz",
-          "abilityType": "Q",
-          "isPassive": false,
-          "_hdp5LinkId": "GazloweDethLazorFirinMahLazorz|GazloweDethLazorFirinMahLazorz|Q",
-          "toggleCooldown": 0.25,
-          "icon": "storm_ui_icon_gazlowe_dethlazor.png",
-          "name": "Firin' Mah Lazorz",
-          "fullText": "Firing Deth Lazor causes all of Gazlowe's Rock-It! Turrets to fire a Deth Lazor of their own that deals <c val=\"bfd4fd\">125</c><c val=\"a7a7a7\">~~0.04~~</c> damage."
-        }
-      ]
-    }
+    "abilities": {}
   },
   "GenjiDeflectMissile": {
     "unitId": "GenjiDeflectMissile",
@@ -6480,7 +6466,7 @@
     "radius": 1,
     "innerRadius": 0,
     "sight": 12,
-    "speed": 3.6298,
+    "speed": 4.8398,
     "abilities": {
       "basic": [
         {
@@ -12932,21 +12918,7 @@
     "innerRadius": 0,
     "sight": 8,
     "speed": 3.25,
-    "abilities": {
-      "basic": [
-        {
-          "nameId": "GazloweDethLazorFirinMahLazorz",
-          "buttonId": "GazloweDethLazorFirinMahLazorz",
-          "abilityType": "Q",
-          "isPassive": false,
-          "_hdp5LinkId": "GazloweDethLazorFirinMahLazorz|GazloweDethLazorFirinMahLazorz|Q",
-          "toggleCooldown": 0.25,
-          "icon": "storm_ui_icon_gazlowe_dethlazor.png",
-          "name": "Firin' Mah Lazorz",
-          "fullText": "Firing Deth Lazor causes all of Gazlowe's Rock-It! Turrets to fire a Deth Lazor of their own that deals <c val=\"bfd4fd\">125</c><c val=\"a7a7a7\">~~0.04~~</c> damage."
-        }
-      ]
-    }
+    "abilities": {}
   },
   "TinkerRockItTurretPlaceholderDummy": {
     "unitId": "TinkerRockItTurretPlaceholderDummy",
@@ -13059,7 +13031,7 @@
     "unitId": "TownCannonTower",
     "portraits": {},
     "life": {
-      "amount": 2500,
+      "amount": 2800,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13107,7 +13079,7 @@
     "unitId": "TownCannonTowerL2",
     "portraits": {},
     "life": {
-      "amount": 4300,
+      "amount": 4850,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13148,7 +13120,7 @@
     "unitId": "TownCannonTowerL2Standalone",
     "portraits": {},
     "life": {
-      "amount": 4300,
+      "amount": 4850,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13189,7 +13161,7 @@
     "unitId": "TownCannonTowerL3",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13230,7 +13202,7 @@
     "unitId": "TownCannonTowerL3Standalone",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13327,7 +13299,7 @@
     "unitId": "TownGateL1BLUR",
     "portraits": {},
     "life": {
-      "amount": 2000,
+      "amount": 2250,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13341,7 +13313,7 @@
     "unitId": "TownGateL1BRUL",
     "portraits": {},
     "life": {
-      "amount": 2000,
+      "amount": 2250,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13355,7 +13327,7 @@
     "unitId": "TownGateL1Horizontal",
     "portraits": {},
     "life": {
-      "amount": 2000,
+      "amount": 2250,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13369,7 +13341,7 @@
     "unitId": "TownGateL1Vertical",
     "portraits": {},
     "life": {
-      "amount": 2000,
+      "amount": 2250,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13383,7 +13355,7 @@
     "unitId": "TownGateL215BLUR",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13397,7 +13369,7 @@
     "unitId": "TownGateL215BLURBRVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13411,7 +13383,7 @@
     "unitId": "TownGateL215BLURTLVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13425,7 +13397,7 @@
     "unitId": "TownGateL215BRUL",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13439,7 +13411,7 @@
     "unitId": "TownGateL215BRULBLVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13453,7 +13425,7 @@
     "unitId": "TownGateL215BRULTRVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13467,7 +13439,7 @@
     "unitId": "TownGateL2BLUR",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13481,7 +13453,7 @@
     "unitId": "TownGateL2BLURBRVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13495,7 +13467,7 @@
     "unitId": "TownGateL2BLURTLVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13509,7 +13481,7 @@
     "unitId": "TownGateL2BRUL",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13523,7 +13495,7 @@
     "unitId": "TownGateL2BRULBLVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13537,7 +13509,7 @@
     "unitId": "TownGateL2BRULTRVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13551,7 +13523,7 @@
     "unitId": "TownGateL2Horizontal",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13565,7 +13537,7 @@
     "unitId": "TownGateL2HorizontalBotVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13579,7 +13551,7 @@
     "unitId": "TownGateL2HorizontalTopVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13593,7 +13565,7 @@
     "unitId": "TownGateL2Vertical",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13607,7 +13579,7 @@
     "unitId": "TownGateL2VerticalLeftVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13621,7 +13593,7 @@
     "unitId": "TownGateL2VerticalRightVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 5300,
+      "amount": 6000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13635,7 +13607,7 @@
     "unitId": "TownGateL315BLUR",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13649,7 +13621,7 @@
     "unitId": "TownGateL315BLURBRVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13663,7 +13635,7 @@
     "unitId": "TownGateL315BLURGarden",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13677,7 +13649,7 @@
     "unitId": "TownGateL315BLURTLVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13691,7 +13663,7 @@
     "unitId": "TownGateL315BRUL",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13705,7 +13677,7 @@
     "unitId": "TownGateL315BRULBLVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13719,7 +13691,7 @@
     "unitId": "TownGateL315BRULGarden",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13733,7 +13705,7 @@
     "unitId": "TownGateL315BRULTRVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13747,7 +13719,7 @@
     "unitId": "TownGateL3BLUR",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13761,7 +13733,7 @@
     "unitId": "TownGateL3BLURBRVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13775,7 +13747,7 @@
     "unitId": "TownGateL3BLURTLVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13789,7 +13761,7 @@
     "unitId": "TownGateL3BRUL",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13803,7 +13775,7 @@
     "unitId": "TownGateL3BRULBLVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13817,7 +13789,7 @@
     "unitId": "TownGateL3BRULTRVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13831,7 +13803,7 @@
     "unitId": "TownGateL3Horizontal",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13845,7 +13817,7 @@
     "unitId": "TownGateL3HorizontalBotVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13859,7 +13831,7 @@
     "unitId": "TownGateL3HorizontalTopVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13873,7 +13845,7 @@
     "unitId": "TownGateL3Vertical",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13887,7 +13859,7 @@
     "unitId": "TownGateL3VerticalLeftVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -13901,7 +13873,7 @@
     "unitId": "TownGateL3VerticalRightVisionBlocked",
     "portraits": {},
     "life": {
-      "amount": 6150,
+      "amount": 7000,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -14142,7 +14114,7 @@
     "unitId": "TownTownHallL2",
     "portraits": {},
     "life": {
-      "amount": 15450,
+      "amount": 17380,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -14183,7 +14155,7 @@
     "unitId": "TownTownHallL3",
     "portraits": {},
     "life": {
-      "amount": 20050,
+      "amount": 22550,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -18714,7 +18686,7 @@
           "_hdp5LinkId": ":PASSIVE:|LostVikingSelectBaleog|Active",
           "icon": "storm_ui_icon_lostvikings_selectbaleog.png",
           "name": "Select Baleog",
-          "fullText": "Baleog's Basic Attacks deal <c val=\"bfd4fd\">50%</c> splash damage to enemies behind his attack target."
+          "fullText": "Baleog's Basic Attacks deal <c val=\"bfd4fd\">50%</c> damage to enemies behind his attack target."
         },
         {
           "nameId": "LostVikingSelectAll",
@@ -18772,7 +18744,7 @@
     "radius": 0.5,
     "innerRadius": 0.5,
     "sight": 13,
-    "speed": 5.5658,
+    "speed": 4.8398,
     "abilities": {
       "basic": [
         {

@@ -252,10 +252,10 @@
         ]
       },
       {
-        "tooltipId": "GenericFollowThroughTalent",
-        "talentTreeId": "GenericTalentFollowThrough",
-        "name": "Follow Through",
-        "description": "After using an Ability, your next Basic Attack within 6 seconds deals 40% additional damage.",
+        "tooltipId": "ThrallElementalAssault",
+        "talentTreeId": "ThrallElementalAssault",
+        "name": "Elemental Assault",
+        "description": "After using an Ability, Thrall's next Basic Attack within 4 seconds deals 45% more damage.",
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
@@ -486,7 +486,6 @@
     ]
   },
   "tooltipMarkup": {
-    "GenericFollowThroughTalent": "After using an Ability, your next Basic Attack within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketFollowThrough,Duration\" player=\"0\"/></c> seconds deals <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,TalentBucketFollowThrough,Modification.DamageDealtFraction[Basic]\"/>%</c> additional damage.",
     "NexusBladesTalent": "Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NexusBladesCarryBehavior,Modification.DamageDealtFraction[Basic]\"/>%</c> more damage and Slow enemy Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NexusBladesSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusBladesSlow,Duration\" player=\"0\"/></c> second.",
     "Sundering": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,ThrallSundering,FinishTime\" precision=\"1\"/></c> seconds, sunder the earth in a long line, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,SunderingDamage,Amount\"/></c> damage and shoving enemies to the side, Stunning them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallSunderingStun,Duration\" player=\"0\" precision=\"2\"/></c> second.",
     "ThrallAlphaWolf": "For <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallFeralSpiritAlphaWolfTalentMarker,Duration\"/></c> seconds after a Hero is hit by Feral Spirit, Thrall's Basic Attacks against them deal an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ThrallFeralSpiritAlphaWolfTalentDamage,VitalFractionMax[Life]\"/>%</c> of the target's maximum Health as damage.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increase the duration of Feral Spirit's Root to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallFeralSpiritRoot,Duration+Talent,ThrallAlphaWolf,AbilityModificationArray[0].Modifications[0].Value\"precision=\"1\"player=\"0\"/></c> seconds.",
@@ -496,6 +495,7 @@
     "ThrallEarthenShieldsTalent": "Allies within the Earthquake area gain a Shield equal to <c val=\"#TooltipNumbers\">15%</c> of their maximum Health each pulse. This shield lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallEarthenShield,Duration\" player=\"0\"/></c> seconds.",
     "ThrallEarthquake": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,ThrallEarthquake,FinishTime\" precision=\"1\"/></c> seconds, summon a massive Earthquake that pulses every <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallEarthquakeInitialPersistent,PeriodicPeriodArray[1]\"/></c> seconds. Each pulse lasts <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallEarthquakePeriodicPersistent,PeriodCount*Effect,ThrallEarthquakePeriodicPersistent,PeriodicPeriodArray[0]\"/></c> seconds, Slowing all enemies in the area by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ThrallEarthquakeSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>, and deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallEarthquakeHeroDamage,Amount\"/></c> damage to enemy Heroes. Does <c val=\"#TooltipNumbers\">3 </c>pulses.",
     "ThrallEchooftheElements": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Kill Minions or Heroes within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallChainLightningEchooftheElementsTalentDebuff,Duration\" precision=\"1\"/></c> seconds of hitting them with Chain Lightning.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After killing <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallEchooftheElementsTokenCounter,ConditionalEvents[0].CompareValue\"/></c> enemies, reduce the Mana cost of Chain Lightning from <c val=\"#TooltipNumbers\"><d ref=\"Abil,ThrallChainLightning,Cost.Vital[Energy]\"player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallChainLightningEchooftheElementsTalent1stQuestModifyPlayer,EffectArray[0].Value\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After killing <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallEchooftheElementsTokenCounter,Max\"/></c> enemies, gain a second charge of Chain Lightning.",
+    "ThrallElementalAssault": "After using an Ability, Thrall's next Basic Attack within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallElementalAssaultBuff,Duration\" player=\"0\"/></c> seconds deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallWeaponAttackDamage,MultiplicativeModifierArray[ElementalAssault].Modifier*100\"/>%</c> more damage.",
     "ThrallElementalMomentum": "Basic Attacks reduce Thrall's Basic and Heroic Ability cooldowns by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,ThrallElementalMomentumModifyCooldowns,Cost[0].ChargeTimeUse\" precision =\"2\"/></c> seconds, tripled against Heroes.",
     "ThrallFeralResilience": "Heroes damaged by Feral Spirit grant <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallFrostwolfResilience4StackPersistent,PeriodCount\"/></c> stacks of Frostwolf Resilience and <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallFeralSpiritFeralResilienceTalentApplyBlockBehavior,Count\"/></c> stacks of Feral Resilience, granting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ThrallFeralResilience,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next incoming Hero Basic Attack.<n/><n/>Stacks are consumed on the next cast of Feral Spirit.",
     "ThrallFeralSpirit": "Unleash a Feral Spirit that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,ThrallFeralSpiritDamage,Amount\"/></c> damage to enemies in its path and Roots Heroes hit for <c val=\"#TooltipNumbers\">1</c> second. Each Hero hit increases the distance traveled by <c val=\"#TooltipNumbers\">25%</c>.",
@@ -514,7 +514,6 @@
     "Windfury": "Increase Thrall's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,WindfurySpeedBuff,Modification.UnifiedMoveSpeedFactor\"player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WindfurySpeedBuff,Duration\" player=\"0\"/></c> seconds. His next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WindfuryStack,MaxStackCount\"/> </c>Basic Attacks occur <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,WindfuryStacksEnabledBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> faster and generate stacks of Frostwolf Resilience."
   },
   "tooltipSimple": {
-    "GenericFollowThroughTalent": "Abilities increase Basic Attack damage",
     "NexusBladesTalent": "Basic Attacks deal more damage and Slow",
     "Sundering": "Damages, pushes, and Stuns enemies in a line",
     "ThrallAlphaWolf": "Feral Spirit has longer Root, empowers Attacks",
@@ -524,6 +523,7 @@
     "ThrallEarthenShieldsTalent": "Grants allies Shields in area",
     "ThrallEarthquake": "Slows enemies in a massive area",
     "ThrallEchooftheElements": "<c val=\"#TooltipQuest\">Quest:</c> Killing enemies grants Chain Lightning charge",
+    "ThrallElementalAssault": "Abilities increase Basic Attack damage",
     "ThrallElementalMomentum": "Basic Attacks reduce Ability cooldowns",
     "ThrallFeralResilience": "Feral Spirit grants Physical Armor, Frostwolf Resilience",
     "ThrallFeralSpirit": "Unleash a wolf spirit to burn enemies and Root Heroes",
