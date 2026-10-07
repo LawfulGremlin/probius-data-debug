@@ -119,6 +119,17 @@
         "cooldown": 75,
         "icon": "storm_ui_icon_falstad_mount.png",
         "type": "mount"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Falstad|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ]
   },

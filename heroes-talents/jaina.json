@@ -120,6 +120,17 @@
         "cooldown": 40,
         "icon": "storm_ui_icon_jaina_improvediceblock_new_active.png",
         "type": "activable"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "2",
+        "abilityId": "Jaina|21",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ],
     "JainaTraitFrostbite": [
@@ -127,8 +138,8 @@
         "uid": "9d5c50",
         "name": "Cancel Improved Ice Block",
         "description": "Cancel Improved Ice Block, removing the Stasis and Invulnerability and Chilling nearby enemies.",
-        "hotkey": "2",
-        "abilityId": "Jaina|21",
+        "hotkey": "3",
+        "abilityId": "Jaina|31",
         "tooltipId": "JainaImprovedIceBlockCancel",
         "cooldown": 40,
         "icon": "hud_btn_bg_ability_cancel.png",

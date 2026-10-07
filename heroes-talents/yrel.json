@@ -114,6 +114,17 @@
         "cooldown": 8,
         "icon": "storm_ui_icon_yrel_divine_purpose.png",
         "type": "trait"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Yrel|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ]
   },
@@ -141,7 +152,7 @@
         "tooltipId": "YrelDauntless",
         "talentTreeId": "YrelDauntless",
         "name": "Dauntless",
-        "description": "Casting a Basic Ability grants Yrel 40 Physical Armor for 2.5 seconds.",
+        "description": "Casting a Basic Ability grants Yrel 35 Physical Armor for 2.5 seconds.",
         "icon": "storm_ui_icon_talent_abilitytalent_armor.png",
         "type": "Passive",
         "sort": 2,

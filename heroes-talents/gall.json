@@ -106,11 +106,22 @@
         "type": "mount"
       },
       {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Gall|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
+      },
+      {
         "uid": "a130e8",
         "name": "Eye of Kilrogg",
         "description": "Place an eye, granting vision of a large area around it for 45 seconds. The eye can be killed by enemies with 2 Basic Attacks. Stores up to 2 charges.",
-        "hotkey": "1",
-        "abilityId": "Gall|11",
+        "hotkey": "2",
+        "abilityId": "Gall|21",
         "tooltipId": "GallEyeofKilroggHotbar",
         "cooldown": 45,
         "icon": "storm_ui_icon_gall_eyeofkilrogg.png",
@@ -165,7 +176,7 @@
         "isQuest": false,
         "abilityId": "Gall|Passive",
         "abilityLinks": [
-          "Gall|11"
+          "Gall|21"
         ],
         "abilityTalentLinkIds": [
           "GallTalentEyeOfKilrogg"

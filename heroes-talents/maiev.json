@@ -103,6 +103,17 @@
         "cooldown": 13,
         "icon": "storm_ui_icon_maiev_trait.png",
         "type": "trait"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Maiev|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ]
   },
@@ -369,7 +380,7 @@
         "tooltipId": "MaievSpiritOfVengeanceVengefulKnives",
         "talentTreeId": "MaievSpiritOfVengeanceVengefulKnives",
         "name": "Vengeful Knives",
-        "description": "Dealing damage to enemy Heores causes the next cast of Fan of Knives that hits enemy Heroes to deal 1% maximum Health as bonus damage, up to 5%.",
+        "description": "Dealing damage to enemy Heroes causes the next cast of Fan of Knives that hits enemy Heroes to deal 1% maximum Health as bonus damage, up to 5%.",
         "icon": "storm_ui_icon_maiev_knives.png",
         "type": "Q",
         "sort": 1,
@@ -476,7 +487,7 @@
     "MaievSpiritOfVengeanceShadowArmor": "Blink grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievSpiritOfVengeanceShadowArmorArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievSpiritOfVengeanceShadowArmorArmor,Duration\"precision=\"2\"/></c> seconds. Maiev's Basic Attacks against enemy Heroes refresh this duration.",
     "MaievSpiritOfVengeanceShadowOrbVengeance": "Activate to reset the cooldown of Spirit of Vengeance.<n/><n/>Recharge Shadow Orb by damaging enemy Heroes with Spirit of Vengeance <c val=\"#TooltipNumbers\"><d ref=\"Abil,MaievSpiritOfVengeanceShadowOrbVengeance,Cost.Charge.CountMax\"/></c> times.",
     "MaievSpiritOfVengeanceSuddenVengeance": "After blinking with Spirit of Vengeance, the shadow explodes, damaging all nearby enemy Heroes for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievSpiritOfVengeanceSuddenVengeanceDamage,VitalFractionMax[Life]*100\"/>%</c> of their maximum Health.",
-    "MaievSpiritOfVengeanceVengefulKnives": "Dealing damage to enemy Heores causes the next cast of Fan of Knives that hits enemy Heroes to deal <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MaievSpiritofVengeanceVengefulKnivesTalentDamageAccumulator,Scale\"Precision=\"2\"/>%</c> maximum Health as bonus damage, up to <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MaievSpiritofVengeanceVengefulKnivesTalentDamageAccumulator,MaxAccumulation\"Precision=\"2\"/>%</c>.",
+    "MaievSpiritOfVengeanceVengefulKnives": "Dealing damage to enemy Heroes causes the next cast of Fan of Knives that hits enemy Heroes to deal <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MaievSpiritofVengeanceVengefulKnivesTalentDamageAccumulator,Scale\"Precision=\"2\"/>%</c> maximum Health as bonus damage, up to <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MaievSpiritofVengeanceVengefulKnivesTalentDamageAccumulator,MaxAccumulation\"Precision=\"2\"/>%</c>.",
     "MaievUmbralBind": "Maiev's next Basic Attack cleaves and applies a tether to enemy Heroes hit for <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievUmbralBindTetherPersistent,ExpireDelay\" precision=\"1\"/></c> seconds. If a tethered Hero moves too far from Maiev, they are pulled toward her, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievUmbralBindPullDamage,Amount\"/></c> damage and breaking the tether.",
     "MaievUmbralBindBondsOfCorruption": "Enemy Heroes pulled by Umbral Bind have their Armor reduced by <c val=\"#TooltipNumbers\"><d ref=\"-1*Behavior,MaievUmbralBindBondsOfCorruptionArmorDecrease,ArmorModification.AllArmorBonus\"/></c> and are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,MaievUmbralBindBondsOfCorruptionSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindBondsOfCorruptionArmorDecrease,Duration\"/></c> seconds",
     "MaievUmbralBindBondsOfJustice": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Each tether applied to a secondary target of Umbral Bind permanently increases Umbral Bind's pull damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievUmbralBindBondsOfJusticeDamageIncreaseTokenCount,Value\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After applying <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindBondsOfJusticeQuestToken,ConditionalEvents[0].CompareValue\"/></c> tethers to secondary targets, increase Umbral Bind's pull damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievUmbralBindBondsOfJusticeQuestMinorMilestoneIncreaseTokenCount,Value\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After applying <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MaievUmbralBindBondsOfJusticeQuestToken,ConditionalEvents[1].CompareValue\"/></c> tethers to secondary targets, increase Umbral Bind's cleave damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MaievWeaponUmbralBindDamage,MultiplicativeModifierArray[MaievBondsOfJustice].Modifier*100\"/>%</c>.",

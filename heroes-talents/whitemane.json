@@ -105,11 +105,22 @@
         "type": "trait"
       },
       {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Whitemane|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
+      },
+      {
         "uid": "c5b7e1",
         "name": "Clemency",
         "description": "Activate to cast Inquisition on an allied Hero, healing them for up to 329 (+4% per level) over 3 seconds while Channeling. Removes a stack of Desperation  Shares a cooldown with Inquisition.",
-        "hotkey": "1",
-        "abilityId": "Whitemane|11",
+        "hotkey": "2",
+        "abilityId": "Whitemane|21",
         "tooltipId": "WhitemaneInquisitionClemency",
         "cooldown": 12,
         "icon": "storm_ui_icon_whitemane_clemency.png",

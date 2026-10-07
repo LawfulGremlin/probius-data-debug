@@ -126,6 +126,17 @@
         "tooltipId": "RexxarMishaFocus",
         "icon": "storm_ui_icon_rexxar_mishafixate.png",
         "type": "trait"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Rexxar|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ]
   },
@@ -192,7 +203,7 @@
         "tooltipId": "RexxarHunterGathererTalent",
         "talentTreeId": "RexxarHunterGatherer",
         "name": "Hunter-Gatherer",
-        "description": "Quest: Gathering a Regeneration Globe increases Rexxar's Health Regeneration by 1 per second, up to 25 per second.  Reward: After gathering 25 Globes, Rexxar and Misha gain 15 Armor.",
+        "description": "Quest: Gathering a Regeneration Globe increases Rexxar and Misha's Health Regeneration by 1 per second, up to 25 per second.  Reward: After gathering 25 Globes, Rexxar and Misha gain 15 Armor.",
         "icon": "storm_ui_icon_talent_regenerationmaster.png",
         "type": "Passive",
         "sort": 2,
@@ -513,7 +524,7 @@
     "RexxarFrenzyofKalimdorTalent": "Rexxar's Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RexxarFrenzyofKalimdor,Modification.DamageDealtFraction[Basic]\"/>%</c> more damage, and Misha's Basic Attacks slow the target by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,RexxarFrenzyofKalimdorSlowDebuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarFrenzyofKalimdorSlowDebuff,Duration\" precision=\"2\"/></c> seconds.",
     "RexxarHardenedSkin": "Rexxar and Misha gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarHardenedSkinBuff,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarHardenedSkinBuff,Duration\" player=\"0\"/></c> seconds, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarHardenedSkinBuff,ArmorModification.AllArmorBonus\"/>%</c>.",
     "RexxarHungryBearTalent": "Misha's Basic Attacks heal her for <c val=\"#TooltipNumbers\">4.5%</c> of her maximum Health.",
-    "RexxarHunterGathererTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gathering a Regeneration Globe increases Rexxar's Health Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,RexxarHunterGathererHealthAccumulator,Scale\"precision=\"2\"/></c> per second, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,RexxarHunterGathererHealthAccumulator,MaxAccumulation\"/></c> per second. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gathering <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarHunterGathererRexxarTokenCounter,Max\"/></c> Globes, Rexxar and Misha gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarHunterGathererQuestCompleteCarry,ArmorModification.AllArmorBonus\"/></c> Armor.",
+    "RexxarHunterGathererTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gathering a Regeneration Globe increases Rexxar and Misha's Health Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,RexxarHunterGathererHealthAccumulator,Scale\"precision=\"2\"/></c> per second, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,RexxarHunterGathererHealthAccumulator,MaxAccumulation\"/></c> per second. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gathering <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarHunterGathererRexxarTokenCounter,Max\"/></c> Globes, Rexxar and Misha gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarHunterGathererQuestCompleteCarry,ArmorModification.AllArmorBonus\"/></c> Armor.",
     "RexxarMendPet": "Heal Misha for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RexxarMendPetCreateHealer,RechargeVitalRate * [d ref='Behavior,RexxarMendPet,Duration+1' player='0'/]\"/></c> Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarMendPet,Duration\" player=\"0\"/></c> seconds.",
     "RexxarMishaChargeRedirect": "Misha charges in a line, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,RexxarMishaChargeDamage,Amount\"/></c> damage and stunning enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarMishaChargeStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
     "RexxarMishaFocus": "Passive: Misha gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RexxarMishaPassiveMoveSpeed,Modification.UnifiedMoveSpeedFactor\"/>%</c> move speed. <n/><n/>Command Misha to attack a specific enemy or move to a point and wait.<n/><n/>Targeting Rexxar commands Misha to retreat to his position, gaining <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RexxarMishaFollowFollow,Modification.UnifiedMoveSpeedFactor\"/>%</c> move speed until she reaches Rexxar.<n/><n/>Targeting Misha commands her to hold her current position.",

@@ -112,11 +112,22 @@
         "type": "mount"
       },
       {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Deathwing|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
+      },
+      {
         "uid": "7a7861",
         "name": "Form Switch",
         "description": "Switches Deathwing between Destroyer and World Breaker forms, each granting access to two unique Basic Abilities.  Incinerate damages enemies around Deathwing and Onslaught allows him to lunge at enemies.  Lava Burst creates a Slowing area and Earth Shatter Stuns enemies in two lines.",
-        "hotkey": "1",
-        "abilityId": "Deathwing|11",
+        "hotkey": "2",
+        "abilityId": "Deathwing|21",
         "tooltipId": "DeathwingFormSwitch",
         "cooldown": 20,
         "icon": "storm_ui_icon_deathwing_deathdrop.png",

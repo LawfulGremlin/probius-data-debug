@@ -110,6 +110,17 @@
         "tooltipId": "DeckardFortitudeOfTheFaithful",
         "icon": "storm_ui_icon_deckard_protectors_of_cain.png",
         "type": "trait"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Deckard|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ]
   },
@@ -211,7 +222,7 @@
         "icon": "storm_ui_icon_deckard_ruby.png",
         "type": "Active",
         "sort": 3,
-        "cooldown": 10,
+        "cooldown": 20,
         "isQuest": false,
         "abilityId": "Deckard|Active",
         "abilityLinks": [

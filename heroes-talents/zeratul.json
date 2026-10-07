@@ -116,11 +116,22 @@
         "type": "trait"
       },
       {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Zeratul|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
+      },
+      {
         "uid": "f2f9e4",
         "name": "Vorpal Blade",
         "description": "Activate to teleport to Zeratul's last non-structure Basic Attack target within 3 seconds. The target is revealed during these 3 seconds.",
-        "hotkey": "1",
-        "abilityId": "Zeratul|11",
+        "hotkey": "2",
+        "abilityId": "Zeratul|21",
         "tooltipId": "ZeratulVorpalBladeHotbar",
         "cooldown": 15,
         "icon": "storm_ui_icon_zeratul_vorpalblade.png",
@@ -274,7 +285,7 @@
         "isQuest": false,
         "abilityId": "Zeratul|Passive",
         "abilityLinks": [
-          "Zeratul|11"
+          "Zeratul|21"
         ],
         "abilityTalentLinkIds": [
           "VorpalBladeBlink"
@@ -462,7 +473,7 @@
         "isQuest": false,
         "abilityId": "Zeratul|Passive",
         "abilityLinks": [
-          "Zeratul|11"
+          "Zeratul|21"
         ],
         "abilityTalentLinkIds": [
           "VorpalBladeBlink"

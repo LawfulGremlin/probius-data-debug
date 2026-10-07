@@ -108,11 +108,22 @@
         "type": "trait"
       },
       {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Nova|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
+      },
+      {
         "uid": "7294e0",
         "name": "Ghost Protocol",
         "description": "Activate to instantly grant Stealth to Nova and spawn a Holo Decoy at her location. Nova is Unrevealable for the first 0.5 seconds when Stealthed by Ghost Protocol.",
-        "hotkey": "1",
-        "abilityId": "Nova|11",
+        "hotkey": "2",
+        "abilityId": "Nova|21",
         "tooltipId": "NovaGhostProtocol",
         "cooldown": 60,
         "icon": "storm_ui_icon_nova_personalcloaking.png",

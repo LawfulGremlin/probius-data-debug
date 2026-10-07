@@ -109,6 +109,17 @@
         "tooltipId": "L90ETCRockstar",
         "icon": "storm_ui_icon_etc_rockstar.png",
         "type": "trait"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "ETC|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ]
   },
@@ -332,7 +343,7 @@
         "tooltipId": "ETCEncoreTalent",
         "talentTreeId": "ETCMasteryEncore",
         "name": "Encore",
-        "description": "Face Melt leaves an Amp behind, which will knock enemies away again 2 seconds later.  Passive: Each enemy Hero hit by Face Melt or the Amp reduces your Heroic Ability cooldown by 8%.",
+        "description": "Face Melt leaves an Amp behind, which will knock enemies away again 2 seconds later.  Passive: Each enemy Hero hit by Face Melt or the Amp reduces your Heroic Ability cooldown by 6%.",
         "icon": "storm_ui_icon_etc_facemelt_a.png",
         "type": "W",
         "sort": 2,

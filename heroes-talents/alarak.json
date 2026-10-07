@@ -23,8 +23,8 @@
     "SoloLaner"
   ],
   "stats": {
-    "hp": 1900,
-    "hpRegen": 3.957,
+    "hp": 1950,
+    "hpRegen": 4.0585,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -107,6 +107,17 @@
         "tooltipId": "AlarakSadism",
         "icon": "storm_ui_icon_alarak_sadism.png",
         "type": "trait"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Alarak|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ]
   },
@@ -189,7 +200,7 @@
         "tooltipId": "AlarakNegativelyCharged",
         "talentTreeId": "AlarakNegativelyCharged",
         "name": "Negatively Charged",
-        "description": "Increase the Lightning Surge damage bonus to enemies between Alarak and his victim to 150%.  Repeatable Quest: Each Hero hit by the center of Lightning Surge permanently increases the damage bonus by 4%.",
+        "description": "Increase the Lightning Surge damage bonus to enemies between Alarak and his victim to 175%.  Repeatable Quest: Each Hero hit by the center of Lightning Surge permanently increases the damage bonus by 4%.",
         "icon": "storm_ui_icon_alarak_lightningsurge.png",
         "type": "E",
         "sort": 2,

@@ -108,6 +108,17 @@
         "tooltipId": "UtherEternalDevotion",
         "icon": "storm_ui_icon_uther_eternaldevotion.png",
         "type": "trait"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Uther|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ],
     "UtherEternalDevotion": [
@@ -115,8 +126,8 @@
         "uid": "c15c4d",
         "name": "Spell Shield - Disabled",
         "description": "Spell Shield is disabled and will not trigger.  Click this button to enable Spell Shield.",
-        "hotkey": "1",
-        "abilityId": "Uther|11",
+        "hotkey": "2",
+        "abilityId": "Uther|21",
         "tooltipId": "GenericSpellShieldItemDisabled",
         "icon": "storm_ui_icon_talent_spellshield.png",
         "type": "activable"

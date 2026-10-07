@@ -122,6 +122,17 @@
         "type": "mount"
       },
       {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Dehaka|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
+      },
+      {
         "uid": "45fd30",
         "name": "Burrow",
         "description": "Burrow into the ground, entering Stasis and becoming Invulnerable for 2 seconds.",

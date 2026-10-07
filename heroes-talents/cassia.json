@@ -109,6 +109,17 @@
         "tooltipId": "AmazonAvoidance",
         "icon": "storm_ui_icon_cassia_avoidance_b.png",
         "type": "trait"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Cassia|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ]
   },
@@ -250,7 +261,7 @@
         "tooltipId": "AmazonAvoidanceSurgeOfLight",
         "talentTreeId": "AmazonSurgeOfLight",
         "name": "Surge of Light",
-        "description": "After taking 500 (+4% per level) damage with Avoidance active, Cassia can activate Avoidance to deal 250 (+4% per level) damage to enemies around her.",
+        "description": "After taking 650 (+4% per level) damage with Avoidance active, Cassia can activate Avoidance to deal 240 (+4% per level) damage to enemies around her.",
         "icon": "storm_ui_icon_cassia_avoidance_b.png",
         "type": "Trait",
         "sort": 3,

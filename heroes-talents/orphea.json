@@ -109,6 +109,17 @@
         "tooltipId": "OrpheaOverflowingChaos",
         "icon": "storm_ui_icon_orphea_trait.png",
         "type": "trait"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Orphea|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ]
   },
@@ -152,7 +163,7 @@
         "tooltipId": "OrpheaAncestralStrength",
         "talentTreeId": "OrpheaAncestralStrength",
         "name": "Ancestral Strength",
-        "description": "Non-Heroic Abilities deal 20% more damage to Stunned, Rooted, Silenced or Slowed enemies. Enemy Heroes who are hit with Overflowing Chaos are Slowed by 20% for 2.5 seconds.",
+        "description": "Non-Heroic Abilities deal 15% more damage to Stunned, Rooted, Silenced or Slowed enemies. Enemy Heroes who are hit with Overflowing Chaos are Slowed by 20% for 2.5 seconds.",
         "icon": "storm_ui_icon_orphea_trait.png",
         "type": "Trait",
         "sort": 3,
@@ -260,7 +271,7 @@
         "tooltipId": "OrpheaMindDevourer",
         "talentTreeId": "OrpheaMindDevourer",
         "name": "Mind Devourer",
-        "description": "Quest: Hitting Heroes with Dread increases its damage by 4, up to 160.  Reward: After hitting 40 Heroes, hitting an enemy Hero with Dread's eruption sets its cooldown to 6 seconds and refunds 50 Mana.",
+        "description": "Quest: Hitting Heroes with Dread increases its damage by 5, up to 150.  Reward: After hitting 30 Heroes, hitting an enemy Hero with Dread's eruption sets its cooldown to 6 seconds and refunds 50 Mana.",
         "icon": "storm_ui_icon_orphea_e.png",
         "type": "E",
         "sort": 3,
@@ -334,7 +345,7 @@
         "tooltipId": "OrpheaAbyssalSymbiosis",
         "talentTreeId": "OrpheaAbyssalSymbiosis",
         "name": "Abyssal Symbiosis",
-        "description": "Hitting a Hero with Chomp instantly grants Orphea maximum Chaos and a 180 (+4% per level) Shield for 3 seconds.",
+        "description": "Hitting a Hero with Chomp instantly grants Orphea maximum Chaos and a 170 (+4% per level) Shield for 3 seconds.",
         "icon": "storm_ui_icon_orphea_w.png",
         "type": "W",
         "sort": 2,
@@ -388,7 +399,7 @@
         "tooltipId": "OrpheaDeadMagic",
         "talentTreeId": "OrpheaDeadMagic",
         "name": "Dead Magic",
-        "description": "Basic Attacks that consume Chaos ignore Armor and deal 95 (+4% per level) Spell Damage to the target and all enemies around them.",
+        "description": "Basic Attacks that consume Chaos ignore Armor and deal 90 (+4% per level) Spell Damage to the target and all enemies around them.",
         "icon": "storm_ui_icon_orphea_trait.png",
         "type": "Trait",
         "sort": 2,

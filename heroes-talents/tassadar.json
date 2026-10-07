@@ -78,7 +78,7 @@
       {
         "uid": "642f46",
         "name": "Archon",
-        "description": "Tassadar transforms into an Archon, gaining a Shield equal to 30% of his maximum Health and empowering Resonance Beam. Lasts for 12 seconds.  Resonance Beam: Deals 150 (+4% per level) damage to the target and splashes 75 (+4% per level) damage to nearby enemies. Heroes hit have their Spell Armor reduced by 20 for 2 seconds. Resonance Beam is fully charged while Archon is active.",
+        "description": "Tassadar transforms into an Archon, gaining a Shield equal to 25% of his maximum Health and empowering Resonance Beam. Lasts for 12 seconds.  Resonance Beam: Deals 140 (+4% per level) damage to the target and splashes 70 (+4% per level) damage to nearby enemies. Heroes hit have their Spell Armor reduced by 20 for 2 seconds. Resonance Beam is fully charged while Archon is active.",
         "hotkey": "R",
         "abilityId": "Tassadar|R1",
         "tooltipId": "TassadarArchon",
@@ -108,6 +108,17 @@
         "tooltipId": "TassadarResonanceBeam",
         "icon": "storm_ui_icon_tassadar_rework_trait.png",
         "type": "trait"
+      },
+      {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Tassadar|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
       }
     ]
   },
@@ -117,7 +128,7 @@
         "tooltipId": "TassadarStaticCharge",
         "talentTreeId": "TassadarStaticCharge",
         "name": "Static Charge",
-        "description": "Quest: Heroes hit by Shock Ray permanently increases its damage by 5 and grants 33% Resonance Beam charge.  Maximum of 250 bonus damage.",
+        "description": "Quest: Heroes hit by Shock Ray permanently increases its damage by 5 and grants 33% Resonance Beam charge.  Maximum of 200 bonus damage.",
         "icon": "storm_ui_icon_tassadar_rework_q_ray.png",
         "type": "Q",
         "sort": 1,
@@ -281,7 +292,7 @@
         "tooltipId": "TassadarArchon",
         "talentTreeId": "TassadarHeroicAbilityArchon",
         "name": "Archon",
-        "description": "Tassadar transforms into an Archon, gaining a Shield equal to 30% of his maximum Health and empowering Resonance Beam. Lasts for 12 seconds.  Resonance Beam: Deals 150 (+4% per level) damage to the target and splashes 75 (+4% per level) damage to nearby enemies. Heroes hit have their Spell Armor reduced by 20 for 2 seconds. Resonance Beam is fully charged while Archon is active.",
+        "description": "Tassadar transforms into an Archon, gaining a Shield equal to 25% of his maximum Health and empowering Resonance Beam. Lasts for 12 seconds.  Resonance Beam: Deals 140 (+4% per level) damage to the target and splashes 70 (+4% per level) damage to nearby enemies. Heroes hit have their Spell Armor reduced by 20 for 2 seconds. Resonance Beam is fully charged while Archon is active.",
         "icon": "storm_ui_icon_tassadar_archon.png",
         "type": "Heroic",
         "sort": 1,

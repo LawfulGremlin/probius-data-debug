@@ -2365,6 +2365,17 @@
       ],
       "activable": [
         {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
+        },
+        {
           "nameId": "DeathwingFormSwitch",
           "buttonId": "DeathwingFormSwitch",
           "abilityType": "Active",
@@ -3139,13 +3150,11 @@
       "amount": 1,
       "scale": 0,
       "regenRate": 0,
-      "regenScale": 0,
-      "type": "Health"
+      "regenScale": 0
     },
     "energy": {
       "amount": 100,
-      "regenRate": 0,
-      "type": "Mana"
+      "regenRate": 0
     },
     "radius": 0,
     "innerRadius": 1,
@@ -3162,6 +3171,19 @@
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
           "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
+        }
+      ],
+      "activable": [
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
         }
       ],
       "spray": [
@@ -3191,6 +3213,20 @@
         }
       ]
     }
+  },
+  "DVaMicroMissilesMissile": {
+    "unitId": "DVaMicroMissilesMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
   },
   "DVaPilotWeaponAttackMissile": {
     "unitId": "DVaPilotWeaponAttackMissile",
@@ -3983,6 +4019,46 @@
     "innerRadius": 0,
     "sight": 0,
     "speed": 0
+  },
+  "GazloweXplodiumChargeArkReaktorRockItTurret": {
+    "unitId": "GazloweXplodiumChargeArkReaktorRockItTurret",
+    "portraits": {},
+    "life": {
+      "amount": 510,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "weapons": [
+      {
+        "nameId": "GazloweXplodiumChargeArkReaktorRockItTurretWeapon",
+        "isDisabled": false,
+        "range": 6,
+        "minimumRange": 0,
+        "period": 1,
+        "damage": 36,
+        "damageScale": 0.04
+      }
+    ],
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0,
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "GazloweDethLazorFirinMahLazorz",
+          "buttonId": "GazloweDethLazorFirinMahLazorz",
+          "abilityType": "Q",
+          "isPassive": false,
+          "_hdp5LinkId": "GazloweDethLazorFirinMahLazorz|GazloweDethLazorFirinMahLazorz|Q",
+          "toggleCooldown": 0.25,
+          "icon": "storm_ui_icon_gazlowe_dethlazor.png",
+          "name": "Firin' Mah Lazorz",
+          "fullText": "Firing Deth Lazor causes all of Gazlowe's Rock-It! Turrets to fire a Deth Lazor of their own that deals <c val=\"bfd4fd\">125</c><c val=\"a7a7a7\">~~0.04~~</c> damage."
+        }
+      ]
+    }
   },
   "GenjiDeflectMissile": {
     "unitId": "GenjiDeflectMissile",
@@ -12193,6 +12269,19 @@
           "name": "Unsummon Mount",
           "fullText": "Dismounts you."
         }
+      ],
+      "activable": [
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
+        }
       ]
     }
   },
@@ -12297,6 +12386,19 @@
           "icon": "storm_ui_icon_generic_cancel_mount.png",
           "name": "Unsummon Mount",
           "fullText": "Dismounts you."
+        }
+      ],
+      "activable": [
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
         }
       ]
     }
@@ -12403,6 +12505,19 @@
           "name": "Unsummon Mount",
           "fullText": "Dismounts you."
         }
+      ],
+      "activable": [
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
+        }
       ]
     }
   },
@@ -12507,6 +12622,19 @@
           "icon": "storm_ui_icon_generic_cancel_mount.png",
           "name": "Unsummon Mount",
           "fullText": "Dismounts you."
+        }
+      ],
+      "activable": [
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
         }
       ]
     }
@@ -12655,8 +12783,8 @@
     "unitId": "TinkerRockItTurret",
     "portraits": {},
     "life": {
-      "amount": 593,
-      "scale": 0.04,
+      "amount": 510,
+      "scale": 0.05,
       "regenRate": 0,
       "regenScale": 0
     },
@@ -12664,10 +12792,10 @@
       {
         "nameId": "RockItTurret",
         "isDisabled": false,
-        "range": 7,
+        "range": 6,
         "minimumRange": 0,
         "period": 1,
-        "damage": 62,
+        "damage": 36,
         "damageScale": 0.04
       }
     ],
@@ -12675,13 +12803,27 @@
     "innerRadius": 0,
     "sight": 8,
     "speed": 3.25,
-    "abilities": {}
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "GazloweDethLazorFirinMahLazorz",
+          "buttonId": "GazloweDethLazorFirinMahLazorz",
+          "abilityType": "Q",
+          "isPassive": false,
+          "_hdp5LinkId": "GazloweDethLazorFirinMahLazorz|GazloweDethLazorFirinMahLazorz|Q",
+          "toggleCooldown": 0.25,
+          "icon": "storm_ui_icon_gazlowe_dethlazor.png",
+          "name": "Firin' Mah Lazorz",
+          "fullText": "Firing Deth Lazor causes all of Gazlowe's Rock-It! Turrets to fire a Deth Lazor of their own that deals <c val=\"bfd4fd\">125</c><c val=\"a7a7a7\">~~0.04~~</c> damage."
+        }
+      ]
+    }
   },
   "TinkerRockItTurretPlaceholderDummy": {
     "unitId": "TinkerRockItTurretPlaceholderDummy",
     "portraits": {},
     "life": {
-      "amount": 593,
+      "amount": 510,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -12690,10 +12832,10 @@
       {
         "nameId": "RockItTurret",
         "isDisabled": false,
-        "range": 7,
+        "range": 6,
         "minimumRange": 0,
         "period": 1,
-        "damage": 62,
+        "damage": 36,
         "damageScale": 0.04
       }
     ],
@@ -12730,14 +12872,14 @@
       {
         "nameId": "TinkerSalvageWeapon",
         "isDisabled": false,
-        "range": 1.25,
+        "range": 1.5,
         "minimumRange": 0,
         "period": 2,
         "damage": 0,
         "damageScale": 0
       }
     ],
-    "radius": 0.125,
+    "radius": 0.25,
     "innerRadius": 0,
     "sight": 0,
     "speed": 0,
@@ -16485,6 +16627,20 @@
     "sight": 0,
     "speed": 0
   },
+  "WeatherUnit": {
+    "unitId": "WeatherUnit",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "WhitemaneWeaponMissile": {
     "unitId": "WhitemaneWeaponMissile",
     "portraits": {},
@@ -17796,6 +17952,19 @@
           "fullText": "After Channeling for <c val=\"bfd4fd\">1</c> second, gain <s val=\"bfd4fd\">30%</s> Movement Speed.",
           "cooldownText": "Cooldown: 4 seconds"
         }
+      ],
+      "activable": [
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
+        }
       ]
     },
     "subAbilities": [
@@ -17881,6 +18050,19 @@
           "name": "Summon Mount",
           "fullText": "After Channeling for <c val=\"bfd4fd\">1</c> second, gain <s val=\"bfd4fd\">30%</s> Movement Speed.",
           "cooldownText": "Cooldown: 4 seconds"
+        }
+      ],
+      "activable": [
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
         }
       ]
     },
@@ -17968,6 +18150,19 @@
           "fullText": "After Channeling for <c val=\"bfd4fd\">1</c> second, gain <s val=\"bfd4fd\">30%</s> Movement Speed.",
           "cooldownText": "Cooldown: 4 seconds"
         }
+      ],
+      "activable": [
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
+        }
       ]
     },
     "subAbilities": [
@@ -18054,6 +18249,19 @@
           "fullText": "After Channeling for <c val=\"bfd4fd\">1</c> second, gain <s val=\"bfd4fd\">30%</s> Movement Speed.",
           "cooldownText": "Cooldown: 4 seconds"
         }
+      ],
+      "activable": [
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
+        }
       ]
     },
     "subAbilities": [
@@ -18109,26 +18317,6 @@
     "abilities": {
       "basic": [
         {
-          "nameId": "DVaPilotRemoteBoostersOff",
-          "buttonId": "DVaMechCancelBoosters",
-          "abilityType": "Q",
-          "isPassive": false,
-          "_hdp5LinkId": "DVaPilotRemoteBoostersOff|DVaMechCancelBoosters|Q",
-          "icon": "hud_btn_bg_ability_cancel.png",
-          "name": "Cancel Boosters",
-          "fullText": "Cancel Boosters"
-        },
-        {
-          "nameId": "DVaLockedAbilityQ",
-          "buttonId": "DVaLockedAbilityQ",
-          "abilityType": "Q",
-          "isPassive": true,
-          "_hdp5LinkId": ":PASSIVE:|DVaLockedAbilityQ|Q",
-          "icon": "hud_btn_bg_ability_locked.png",
-          "name": "Locked Ability",
-          "fullText": "<c val=\"bfd4fd\">Torpedo Dash can be unlocked through a Talent at Level 16.</c>"
-        },
-        {
           "nameId": "DVaPilotTorpedoDash",
           "buttonId": "DVaPilotTorpedoDashAbility",
           "abilityType": "Q",
@@ -18137,30 +18325,18 @@
           "icon": "storm_ui_icon_dva_jetpackattack.png",
           "name": "Torpedo Dash",
           "fullText": "Dash towards the target location, passing through enemies along the way.",
-          "cooldownText": "Cooldown: 12 seconds"
+          "cooldownText": "Cooldown: 10 seconds"
         },
         {
-          "nameId": "DVaBoostersOn",
-          "buttonId": "DVaMechBoosters",
-          "abilityType": "Q",
+          "nameId": "DVaPilotConcussivePulse",
+          "buttonId": "DVaPilotConcussivePulseAbility",
+          "abilityType": "W",
           "isPassive": false,
-          "_hdp5LinkId": "DVaBoostersOn|DVaMechBoosters|Q",
-          "toggleCooldown": 0.0625,
-          "icon": "storm_ui_icon_dva_boosters.png",
-          "name": "Boosters",
-          "fullText": "Increase D.Va's Movement Speed by <c val=\"bfd4fd\">125%</c> for <c val=\"bfd4fd\">2</c> seconds. Enemies that are hit take <c val=\"bfd4fd\">135</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are knocked away. <n/><n/>D.Va cannot be Slowed while Boosters are active, and each enemy can only be hit once per use.",
-          "cooldownText": "Cooldown: 9 Seconds"
-        },
-        {
-          "nameId": "DVaPilotCallMechMEKAfall",
-          "buttonId": "DVaPilotCallMech",
-          "abilityType": "E",
-          "isPassive": false,
-          "_hdp5LinkId": "DVaPilotCallMechMEKAfall|DVaPilotCallMech|E",
-          "icon": "storm_ui_icon_dva_callmech.png",
-          "name": "Call Mech",
-          "fullText": "Call a new Mech and enter Mech Mode.<n/><n/>Basic Attacks lower this cooldown by <c val=\"bfd4fd\">0.5</c> seconds each.",
-          "cooldownText": "Cooldown: 45 seconds"
+          "_hdp5LinkId": "DVaPilotConcussivePulse|DVaPilotConcussivePulseAbility|W",
+          "icon": "storm_ui_icon_dva_concussivecharge.png",
+          "name": "Concussive Pulse",
+          "fullText": "Deal <c val=\"bfd4fd\">120</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in a cone and knock them back.",
+          "cooldownText": "Cooldown: 10 seconds"
         },
         {
           "nameId": "DVaPilotCallMech",
@@ -18172,21 +18348,6 @@
           "name": "Call Mech",
           "fullText": "Call a new Mech and enter Mech Mode.<n/><n/>Basic Attacks lower this cooldown by <c val=\"bfd4fd\">0.5</c> seconds each.",
           "cooldownText": "Cooldown: 45 seconds"
-        },
-        {
-          "nameId": "DVaMechSelfDestruct",
-          "buttonId": "DVaMechSelfDestruct",
-          "abilityType": "E",
-          "isPassive": false,
-          "_hdp5LinkId": "DVaMechSelfDestruct|DVaMechSelfDestruct|E",
-          "charges": {
-            "countMax": 100,
-            "countUse": 100,
-            "isCountHidden": true
-          },
-          "icon": "storm_ui_icon_dva_selfdestruct.png",
-          "name": "Self-Destruct",
-          "fullText": "Eject from the Mech, setting it to self-destruct after <c val=\"bfd4fd\">4</c> seconds. Deals <c val=\"bfd4fd\">1200</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">400</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area, depending on distance from center. Only deals <c val=\"bfd4fd\">50%</c> damage against Structures.<n/><n/><c val=\"FF8000\">Gain </c><c val=\"bfd4fd\">1%</c><c val=\"FF8000\"> Charge for every </c><c val=\"bfd4fd\">2</c><c val=\"FF8000\"> seconds spent Basic Attacking, and </c><c val=\"bfd4fd\">30%</c><c val=\"FF8000\"> Charge per </c><c val=\"bfd4fd\">100%</c><c val=\"FF8000\"> of Mech Health lost.</c>"
         }
       ],
       "heroic": [
@@ -18198,8 +18359,8 @@
           "_hdp5LinkId": "DVaPilotBigShot|DVaPilotBigShot|Heroic",
           "icon": "storm_ui_icon_dva_bigshot.png",
           "name": "Big Shot",
-          "fullText": "Deal <c val=\"bfd4fd\">250</c><c val=\"a7a7a7\">~~0.04~~</c> damage to all enemies in a line. The cooldown of Call Mech is reduced by <c val=\"bfd4fd\">8</c> seconds for each enemy Hero hit.<n/><n/>Requires Pilot Mode.",
-          "cooldownText": "Cooldown: 4 seconds"
+          "fullText": "Deal <c val=\"bfd4fd\">150</c><c val=\"a7a7a7\">~~0.04~~</c> damage to all enemies in a line. Heroes hit have their Movement Speed Slowed by <c val=\"bfd4fd\">25%</c> for <c val=\"bfd4fd\">1.5</c> seconds. The cooldown of Call Mech is reduced by <c val=\"bfd4fd\">5</c> seconds for each enemy Hero hit.<n/><n/>Requires Pilot Mode.",
+          "cooldownText": "Cooldown: 6 seconds"
         }
       ],
       "trait": [
@@ -18237,6 +18398,19 @@
           "name": "Summon Mount",
           "fullText": "After Channeling for <c val=\"bfd4fd\">1</c> second, gain <s val=\"bfd4fd\">30%</s> Movement Speed.",
           "cooldownText": "Cooldown: 4 seconds"
+        }
+      ],
+      "activable": [
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
         }
       ]
     },
@@ -18490,6 +18664,17 @@
           "icon": "storm_ui_ingame_heroselect_btn_lostvikings.png",
           "name": "Select All Vikings",
           "fullText": "The Lost Vikings can be controlled individually or as a group. Each Viking has particular strengths."
+        },
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
         }
       ]
     },
@@ -18681,6 +18866,17 @@
           "icon": "storm_ui_ingame_heroselect_btn_lostvikings.png",
           "name": "Select All Vikings",
           "fullText": "The Lost Vikings can be controlled individually or as a group. Each Viking has particular strengths."
+        },
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
         }
       ]
     },
@@ -18872,6 +19068,17 @@
           "icon": "storm_ui_ingame_heroselect_btn_lostvikings.png",
           "name": "Select All Vikings",
           "fullText": "The Lost Vikings can be controlled individually or as a group. Each Viking has particular strengths."
+        },
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
         }
       ]
     },
@@ -19031,6 +19238,19 @@
           "icon": "storm_ui_icon_miscrune_1.png",
           "name": "Hearthstone",
           "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
+        }
+      ],
+      "activable": [
+        {
+          "nameId": "GladiatorsMedallion",
+          "buttonId": "GladiatorsMedallion",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "GladiatorsMedallion|GladiatorsMedallion|Active",
+          "icon": "storm_ui_icon_trinket_medallion.png",
+          "name": "Gladiator's Medallion",
+          "fullText": "Activate to become Unstoppable for <c val=\"bfd4fd\">1</c> second.<n/><n/><s val=\"255,175,175,175\">\"Arena Rating increase not guaranteed.\"</s>",
+          "cooldownText": "Cooldown: 300 seconds"
         }
       ]
     }

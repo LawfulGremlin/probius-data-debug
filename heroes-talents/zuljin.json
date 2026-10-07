@@ -108,11 +108,22 @@
         "type": "trait"
       },
       {
+        "uid": "66c6cc",
+        "name": "Gladiator's Medallion",
+        "description": "Activate to become Unstoppable for 1 second.  \"Arena Rating increase not guaranteed.\"",
+        "hotkey": "1",
+        "abilityId": "Zuljin|11",
+        "tooltipId": "GladiatorsMedallion",
+        "cooldown": 300,
+        "icon": "storm_ui_icon_trinket_medallion.png",
+        "type": "activable"
+      },
+      {
         "uid": "09987f",
         "name": "Amani Rage",
         "description": "Activate to cause Zul'jin to instantly lose 50% of his current Health and heal for that amount over 10 seconds.",
-        "hotkey": "1",
-        "abilityId": "Zuljin|11",
+        "hotkey": "2",
+        "abilityId": "Zuljin|21",
         "tooltipId": "ZuljinAmaniRageTalent",
         "cooldown": 30,
         "icon": "storm_ui_icon_zuljin_davoodooshuffle.png",
@@ -229,7 +240,7 @@
         "isQuest": false,
         "abilityId": "Zuljin|Active",
         "abilityLinks": [
-          "Zuljin|11"
+          "Zuljin|21"
         ],
         "abilityTalentLinkIds": [
           "ZuljinAmaniRage"
