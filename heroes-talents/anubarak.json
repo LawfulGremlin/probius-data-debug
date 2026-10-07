@@ -107,7 +107,7 @@
       {
         "uid": "9f9721",
         "name": "Scarab Host",
-        "description": "Using an Ability spawns a Beetle which lasts for 8 seconds, attacking nearby enemies for 20 (+4% per level) damage.",
+        "description": "Using an Ability spawns a Beetle which loses Health over 10 seconds, attacking nearby enemies for 20 (+4% per level) damage.",
         "trait": true,
         "abilityId": "Anubarak|D1",
         "tooltipId": "AnubarakScarabHostTrait",
@@ -485,9 +485,9 @@
       "icon": "storm_ui_icon_anubarak_scarabhost.png",
       "stats": {
         "hp": 285,
-        "hpRegen": 0,
+        "hpRegen": -28.5,
         "hpScale": 0.04,
-        "hpRegenScale": 0,
+        "hpRegenScale": 0.04,
         "attackDamage": 20,
         "attackDamageScale": 0.04,
         "attackRange": 0.75,
@@ -497,7 +497,7 @@
         "sight": 8
       },
       "abilities": [],
-      "sourceAbilityTooltipId": "AnubarakBeetleSpitBeetleJuiceTalent"
+      "sourceAbilityTooltipId": "AnubarakScarabHostTrait"
     }
   ],
   "tooltipMarkup": {
@@ -521,7 +521,7 @@
     "AnubarakNerubianArmor": "Increase Harden Carapace's Spell Armor by <c val=\"#TooltipNumbers\"><d ref=\"Talent,AnubarakNerubianArmor,AbilityModificationArray[0].Modifications[0].Value\"/></c>.",
     "AnubarakRegeneratingCarapaceChitinousPlatingTalent": "While Harden Carapace is active, taking damage from enemy Abilities reduces its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,AnubarakHardenCarapaceChitinousPlatingModifyCooldown,Cost[0].CooldownTimeUse\"/></c> second, up to <c val=\"#TooltipNumbers\">3</c> seconds.",
     "AnubarakRegeneratingCarapaceShedExoskeletonTalent": "<s val=\"StandardTooltipHeader\">Shed Exoskeleton</s><s val=\"StandardTooltip\"><n/><n/>Gain <s val=\"StandardTooltipDetails\"><d ref=\"Behavior,ShedExoskeleton,Modification.UnifiedMoveSpeedFactor * 100\" />%</s> increased Move Speed for <s val=\"StandardTooltipDetails\"><d ref=\"Behavior,ShedExoskeleton,Duration\" /></s> seconds.",
-    "AnubarakScarabHostTrait": "Using an Ability spawns a Beetle which lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnubarakBeetleSpitBeetleTimedLifeAndDamageResponse,Duration\" player=\"0\" precision=\"2\"/></c> seconds, attacking nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Effect,AnubarakBeetleSpitBeetleDamage,Amount\"/></c> damage.",
+    "AnubarakScarabHostTrait": "Using an Ability spawns a Beetle which loses Health over <c val=\"#TooltipNumbers\"><d ref=\"-Unit,AnubarakBeetleSpitBeetle,LifeMax/Unit,AnubarakBeetleSpitBeetle,LifeRegenRate\"/></c> seconds, attacking nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Effect,AnubarakBeetleSpitBeetleDamage,Amount\"/></c> damage.",
     "AnubarakSubterraneanShield": "Burrow Charge also grants a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnubarakBurrowChargeSubterraneanShieldTalentShield,DamageResponse.ModifyLimit\"/></c> point Shield for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnubarakBurrowChargeSubterraneanShieldTalentShield,Duration\"/></c> seconds.",
     "AnubarakTheTraitorKing": "Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,AnubarakTheTraitorKingPassiveBuff,Modification.VitalMaxFractionArray[Life]\"/>%</c> bonus maximum Health and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnubarakTheTraitorKingPassiveBuff,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor.<n/><n/>Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnubarakTheTraitorKingBuff,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,AnubarakTheTraitorKingBuff,Duration\"/></c> seconds.",
     "GenericRegenerationMasterTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gathering a Regeneration Globe increases your Health Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,HeroGenericRegenerationMasterAccumulator,Scale\"/></c> per second, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,HeroGenericRegenerationMasterAccumulator,MaxAccumulation\"/></c>. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gathering <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HeroGenericRegenerationMasterQuestToken,ConditionalEvents[0].CompareValue\"/></c> Regeneration Globes, you also gain <c val=\"#TooltipNumbers\"><d ref=\"Effect,HeroGenericRegenerationMasterCompleteModifyPlayer,EffectArray[0].Value\"/></c> Health.",

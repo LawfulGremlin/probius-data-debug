@@ -704,8 +704,8 @@
     "life": {
       "amount": 285,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -28.5,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -1012,10 +1012,10 @@
     "unitId": "ArthasArmyOfTheDeadGhoul",
     "portraits": {},
     "life": {
-      "amount": 1060,
+      "amount": 1200,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -60,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -1216,8 +1216,8 @@
     "life": {
       "amount": 593,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -28.2381,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -1226,7 +1226,7 @@
         "range": 2,
         "minimumRange": 0,
         "period": 1,
-        "damage": 41,
+        "damage": 52,
         "damageScale": 0.04
       }
     ],
@@ -1254,8 +1254,8 @@
     "life": {
       "amount": 435,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -25.5882,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -1264,7 +1264,7 @@
         "range": 1,
         "minimumRange": 0,
         "period": 1,
-        "damage": 35,
+        "damage": 53,
         "damageScale": 0.04
       }
     ],
@@ -2201,7 +2201,7 @@
           "toggleCooldown": 0.75,
           "icon": "hud_btn_bg_ability_cancel.png",
           "name": "Cancel",
-          "fullText": "After <c val=\"bfd4fd\">1.5</c> seconds, Deathwing breathes a stream of flame, dealing <c val=\"bfd4fd\">21</c><c val=\"a7a7a7\">~~0.04~~</c> damage every <c val=\"bfd4fd\">0.125</c> seconds. Drains <c val=\"bfd4fd\">30</c> Energy per second. "
+          "fullText": "After <c val=\"bfd4fd\">1.5</c> seconds, Deathwing breathes a stream of flame, dealing <c val=\"bfd4fd\">19</c><c val=\"a7a7a7\">~~0.04~~</c> damage every <c val=\"bfd4fd\">0.125</c> seconds. Drains <c val=\"bfd4fd\">30</c> Energy per second. "
         },
         {
           "nameId": "DeathwingMoltenFlame",
@@ -2211,7 +2211,7 @@
           "_hdp5LinkId": "DeathwingMoltenFlame|DeathwingMoltenFlame|Q",
           "icon": "storm_ui_icon_deathwing_molten_flame.png",
           "name": "Molten Flame",
-          "fullText": "After <c val=\"bfd4fd\">1.5</c> seconds, Deathwing breathes a stream of flame, dealing <c val=\"bfd4fd\">21</c><c val=\"a7a7a7\">~~0.04~~</c> damage every <c val=\"bfd4fd\">0.125</c> seconds. Drains <c val=\"bfd4fd\">30</c> Energy per second. ",
+          "fullText": "After <c val=\"bfd4fd\">1.5</c> seconds, Deathwing breathes a stream of flame, dealing <c val=\"bfd4fd\">19</c><c val=\"a7a7a7\">~~0.04~~</c> damage every <c val=\"bfd4fd\">0.125</c> seconds. Drains <c val=\"bfd4fd\">30</c> Energy per second. ",
           "cooldownText": "Cooldown: 3 seconds"
         },
         {
@@ -2244,8 +2244,8 @@
           "_hdp5LinkId": "DeathwingIncinerate|DeathwingIncinerate|W",
           "icon": "storm_ui_icon_deathwing_incinerate.png",
           "name": "Incinerate",
-          "fullText": "After <c val=\"bfd4fd\">0.75</c> seconds, Deathwing flaps his wings, dealing <c val=\"bfd4fd\">65</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Lava Burst</c><n/>Create a lava pool that damages and Slows",
-          "cooldownText": "Cooldown: 4 seconds"
+          "fullText": "After <c val=\"bfd4fd\">0.75</c> seconds, Deathwing flaps his wings, dealing <c val=\"bfd4fd\">100</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Lava Burst</c><n/>Create a lava pool that damages and Slows",
+          "cooldownText": "Cooldown: 6 seconds"
         },
         {
           "nameId": "DeathwingSkyfall",
@@ -2273,7 +2273,7 @@
           "_hdp5LinkId": "DeathwingOnslaught|DeathwingOnslaught|E",
           "icon": "storm_ui_icon_deathwing_onslaught.png",
           "name": "Onslaught",
-          "fullText": "After <c val=\"bfd4fd\">0.5</c> seconds, Deathwing lunges in a direction dealing <c val=\"bfd4fd\">38</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies and Slowing them by <c val=\"bfd4fd\">35%</c> for <c val=\"bfd4fd\">2</c> seconds. Deathwing bites enemies at the end of the lunge, dealing an additional <c val=\"bfd4fd\">72</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Earth Shatter</c><n/>Damage and Stun enemies in two lines",
+          "fullText": "After <c val=\"bfd4fd\">0.5</c> seconds, Deathwing lunges in a direction dealing <c val=\"bfd4fd\">60</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies and Slowing them by <c val=\"bfd4fd\">35%</c> for <c val=\"bfd4fd\">2</c> seconds. Deathwing bites enemies at the end of the lunge, dealing an additional <c val=\"bfd4fd\">120</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Earth Shatter</c><n/>Damage and Stun enemies in two lines",
           "cooldownText": "Cooldown: 5 seconds"
         },
         {
@@ -2308,7 +2308,7 @@
           "_hdp5LinkId": "DeathwingCataclysm|DeathwingCataclysm|Heroic",
           "icon": "storm_ui_icon_deathwing_cataclysm.png",
           "name": "Cataclysm",
-          "fullText": "After <c val=\"bfd4fd\">2</c> seconds, Deathwing flies in the targeted direction, dealing <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact and leaving scorched ground that deals <c val=\"bfd4fd\">36</c><c val=\"a7a7a7\">~~0.04~~</c> damage a second. Lasts <c val=\"bfd4fd\">6</c> seconds.",
+          "fullText": "After <c val=\"bfd4fd\">2</c> seconds, Deathwing flies in the targeted direction, dealing <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact and leaving scorched ground that deals <c val=\"bfd4fd\">36</c><c val=\"a7a7a7\">~~0.04~~</c> damage a second. Lasts <c val=\"bfd4fd\">6</c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit Heroes with Molten Flame to grant <c val=\"bfd4fd\">1</c> stack.<n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Score Takedowns to grant <c val=\"bfd4fd\">50</c> stacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward:</c> After reaching <c val=\"bfd4fd\">2000</c> stacks, Deathwing brings on the Hour of Twilight. Cataclysm's periodic damage to Structures is increased by <c val=\"bfd4fd\">2500%</c>.",
           "cooldownText": "Cooldown: 90 seconds"
         }
       ],
@@ -2345,21 +2345,8 @@
           "_hdp5LinkId": "DeathwingDragonflight|DeathwingDragonflight|Z",
           "icon": "storm_ui_icon_deathwing_mount.png",
           "name": "Dragonflight",
-          "fullText": "After <c val=\"bfd4fd\">3</c> seconds, fly into the sky, becoming Immune to all effects and gaining <c val=\"bfd4fd\">2.5%</c> Health per second. Once cast, this ability cannot be interrupted. Cannot be cast for <c val=\"bfd4fd\">4</c> seconds after taking damage, Basic Attacking or casting an Ability.",
-          "cooldownText": "Cooldown: 45 seconds"
-        }
-      ],
-      "activable": [
-        {
-          "nameId": "DeathwingFormSwitch",
-          "buttonId": "DeathwingFormSwitch",
-          "abilityType": "Active",
-          "isPassive": false,
-          "_hdp5LinkId": "DeathwingFormSwitch|DeathwingFormSwitch|Active",
-          "icon": "storm_ui_icon_deathwing_deathdrop.png",
-          "name": "Form Switch",
-          "fullText": "Switches Deathwing between <c val=\"ef6e28-ad231e\">Destroyer</c> and <c val=\"d8ab80-87564b\">World Breaker</c> forms, each granting access to two unique Basic Abilities.<n/><n/><c val=\"ef6e28-ad231e\">Incinerate</c> damages enemies around Deathwing and <c val=\"ef6e28-ad231e\">Onslaught</c> allows him to lunge at enemies.<n/><n/><c val=\"d8ab80-87564b\">Lava Burst</c> creates a Slowing area and <c val=\"d8ab80-87564b\">Earth Shatter</c> Stuns enemies in two lines.",
-          "cooldownText": "Cooldown: 20 seconds"
+          "fullText": "After <c val=\"bfd4fd\">3</c> seconds, fly into the sky, becoming Immune to all effects and gaining <c val=\"bfd4fd\">2.5%</c> Health per second. Once cast, this ability cannot be interrupted. Cannot be cast for <c val=\"bfd4fd\">6</c> seconds after taking damage, Basic Attacking or casting an Ability.",
+          "cooldownText": "Cooldown: 15 seconds"
         }
       ],
       "spray": [
@@ -3766,7 +3753,8 @@
           "MapCreature": -0.75,
           "Merc": -0.75,
           "Minion": -0.75,
-          "Structure": 2
+          "Structure": 2,
+          "Summoned": -0.75
         }
       }
     ],
@@ -4002,7 +3990,7 @@
     "life": {
       "amount": 510,
       "scale": 0,
-      "regenRate": 0,
+      "regenRate": -30,
       "regenScale": 0
     },
     "weapons": [
@@ -5030,42 +5018,14 @@
     "sight": 0,
     "speed": 0
   },
-  "JainaFrostboltRefactorMissile": {
-    "unitId": "JainaFrostboltRefactorMissile",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
-  "JainaFrostboltWintersReachMissile": {
-    "unitId": "JainaFrostboltWintersReachMissile",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
   "JainaWaterElemental": {
     "unitId": "JainaWaterElemental",
     "portraits": {},
     "life": {
       "amount": 958,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -29.9375,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -5987,8 +5947,8 @@
     "life": {
       "amount": 1369,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -45,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -6959,10 +6919,10 @@
     "unitId": "MalfurionEntanglingRootsVengefulRootsTreant",
     "portraits": {},
     "life": {
-      "amount": 450,
+      "amount": 550,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -50,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -8657,9 +8617,9 @@
     "unitId": "MurkyDummyPlacementEgg",
     "portraits": {},
     "life": {
-      "amount": 110,
+      "amount": 420,
       "scale": 0,
-      "regenRate": 0,
+      "regenRate": 42,
       "regenScale": 0
     },
     "radius": 0.5,
@@ -8672,9 +8632,9 @@
     "unitId": "MurkyEggHuntEgg",
     "portraits": {},
     "life": {
-      "amount": 84,
+      "amount": 420,
       "scale": 0.04,
-      "regenRate": 0,
+      "regenRate": 42,
       "regenScale": 0
     },
     "radius": 0.5,
@@ -8729,10 +8689,10 @@
     "unitId": "MurkyRespawnEgg",
     "portraits": {},
     "life": {
-      "amount": 84,
+      "amount": 420,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": 42,
+      "regenScale": 0.04
     },
     "radius": 0.5,
     "innerRadius": 0.5,
@@ -9635,7 +9595,8 @@
           "MapCreature": 0.8,
           "Merc": 0.8,
           "Minion": 0.8,
-          "Structure": 2
+          "Structure": 2,
+          "Summoned": 0.8
         }
       }
     ],
@@ -11865,7 +11826,7 @@
           "_hdp5LinkId": "MuradinStormBolt|MuradinStormbolt|Q",
           "icon": "storm_ui_icon_muradin_stormbolt.png",
           "name": "Storm Bolt",
-          "fullText": "Throw a hammer, dealing <c val=\"bfd4fd\">110</c><c val=\"a7a7a7\">~~0.04~~</c> damage to the first enemy hit and Stunning them for <c val=\"bfd4fd\">1.25</c> seconds.<n/><n/>After reaching level <c val=\"bfd4fd\">10</c>, Storm Bolt pierces to hit an additional target. Muradin's Basic Attacks reduce the cooldown of Storm Bolt by <c val=\"bfd4fd\">1</c> second and restore <c val=\"bfd4fd\">3</c> Mana.",
+          "fullText": "Throw a hammer, dealing <c val=\"bfd4fd\">110</c><c val=\"a7a7a7\">~~0.04~~</c> damage to the first enemy hit and Stunning them for <c val=\"bfd4fd\">1.25</c> seconds<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Basic Attack enemies affected by Stuns, Slows, or Roots. Slowed or Rooted enemies grant <c val=\"bfd4fd\">1</c> stack. Stunned enemies provide <c val=\"bfd4fd\">2</c> stacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Upon hitting <c val=\"bfd4fd\">50</c> targets, Storm Bolt pierces to hit an additional target, and Muradin's Basic Attacks reduce the cooldown of Storm Bolt by <c val=\"bfd4fd\">0.5</c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward:</c> Upon hitting <c val=\"bfd4fd\">200</c> targets, Storm Bolt's range is increased by <c val=\"bfd4fd\">50%</c>, width increased by <c val=\"bfd4fd\">100%</c>, and now pierces all targets.",
           "cooldownText": "Cooldown: 10 seconds"
         },
         {
@@ -12900,8 +12861,8 @@
     "life": {
       "amount": 510,
       "scale": 0.05,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -30,
+      "regenScale": 0.05
     },
     "weapons": [
       {
@@ -12926,7 +12887,7 @@
     "life": {
       "amount": 510,
       "scale": 0,
-      "regenRate": 0,
+      "regenRate": -30,
       "regenScale": 0
     },
     "weapons": [
@@ -13094,8 +13055,7 @@
         "damage": 250,
         "damageScale": 0,
         "damageFactors": {
-          "Structure": 1,
-          "Summoned": -0.5
+          "Structure": 1
         }
       }
     ],
@@ -13135,8 +13095,7 @@
         "damage": 250,
         "damageScale": 0,
         "damageFactors": {
-          "Structure": 1,
-          "Summoned": -0.5
+          "Structure": 1
         }
       }
     ],
@@ -13176,8 +13135,7 @@
         "damage": 330,
         "damageScale": 0,
         "damageFactors": {
-          "Structure": 1,
-          "Summoned": -0.5
+          "Structure": 1
         }
       }
     ],
@@ -13217,8 +13175,7 @@
         "damage": 330,
         "damageScale": 0,
         "damageFactors": {
-          "Structure": 1,
-          "Summoned": -0.5
+          "Structure": 1
         }
       }
     ],
@@ -16810,8 +16767,8 @@
     "life": {
       "amount": 2000,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -68.9655,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -16915,10 +16872,10 @@
     "unitId": "WitchDoctorZombieWallDeadRushTalentUnit",
     "portraits": {},
     "life": {
-      "amount": 225,
+      "amount": 300,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -100,
+      "regenScale": 0.04
     },
     "weapons": [
       {
@@ -17121,7 +17078,8 @@
           "MapCreature": 1,
           "Merc": 1,
           "Minion": 1,
-          "Structure": 2
+          "Structure": 2,
+          "Summoned": 1
         }
       }
     ],
@@ -17260,10 +17218,10 @@
     "unitId": "ZagaraCreepTumor",
     "portraits": {},
     "life": {
-      "amount": 125,
+      "amount": 250,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -1,
+      "regenScale": 0.04
     },
     "radius": 1,
     "innerRadius": 0.5,
@@ -17275,10 +17233,10 @@
     "unitId": "ZagaraCreepTumorBurrowed",
     "portraits": {},
     "life": {
-      "amount": 125,
+      "amount": 250,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -1,
+      "regenScale": 0.04
     },
     "radius": 0.5,
     "innerRadius": 0.5,
@@ -17318,8 +17276,8 @@
     "life": {
       "amount": 450,
       "scale": 0.045,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -45,
+      "regenScale": 0.045
     },
     "weapons": [
       {
@@ -17421,8 +17379,8 @@
     "life": {
       "amount": 420,
       "scale": 0.045,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -10,
+      "regenScale": 0.045
     },
     "weapons": [
       {
@@ -17530,8 +17488,8 @@
     "life": {
       "amount": 328,
       "scale": 0.04,
-      "regenRate": 0,
-      "regenScale": 0
+      "regenRate": -32.8,
+      "regenScale": 0.04
     },
     "weapons": [
       {

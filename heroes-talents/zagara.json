@@ -61,7 +61,7 @@
       {
         "uid": "daa2e2",
         "name": "Hunter Killer",
-        "description": "Summon a Hydralisk to attack a single target, dealing 71 (+5% per level) damage per second. The Hydralisk lasts 8 seconds, and has 450 (+4.5% per level) Health.",
+        "description": "Summon a Hydralisk to attack a single target, dealing 71 (+5% per level) damage per second. The Hydralisk loses Health over 10 seconds, and has 450 (+4.5% per level) Health.",
         "hotkey": "W",
         "abilityId": "Zagara|W1",
         "tooltipId": "ZagaraHunterKiller",
@@ -73,7 +73,7 @@
       {
         "uid": "340714",
         "name": "Infested Drop",
-        "description": "Bombard target area with a Zerg Drop Pod for 140 (+4% per level) damage.  The pod spawns 2 Roachlings that deal 30 (+4% per level) damage per second and last for 8 seconds.",
+        "description": "Bombard target area with a Zerg Drop Pod for 140 (+4% per level) damage.  The pod spawns 2 Roachlings that deal 30 (+4% per level) damage per second and lose Health over 10 seconds.",
         "hotkey": "E",
         "abilityId": "Zagara|E1",
         "tooltipId": "ZagaraInfestedDrop",
@@ -109,7 +109,7 @@
       {
         "uid": "d4b96a",
         "name": "Creep Tumor",
-        "description": "Lay a Creep Tumor that generates Creep. While on Creep, Zagara moves 20% faster and her summons move 30% faster. Tumors last 240 seconds and reveal the surrounding area while active.  Stores up to 3 charges.",
+        "description": "Lay a Creep Tumor that generates Creep. While on Creep, Zagara moves 20% faster and her summons move 30% faster. Tumors lose Health over 250 seconds and reveal the surrounding area while active.  Stores up to 3 charges.",
         "hotkey": "D",
         "trait": true,
         "abilityId": "Zagara|D1",
@@ -368,7 +368,7 @@
         "tooltipId": "ZagaraHunterKillerMutaliskTalent",
         "talentTreeId": "ZagaraMasteryMutalisk",
         "name": "Mutalisk",
-        "description": "Reduce the cooldown of Hunter Killer by 4 seconds. Hunter Killer now spawns a Mutalisk. Mutalisks have a bounce attack, last for 30 seconds, and have 420 (+4.5% per level) Health.",
+        "description": "Reduce the cooldown of Hunter Killer by 4 seconds. Hunter Killer now spawns a Mutalisk. Mutalisks have a bounce attack, lose Health over 42 seconds, and have 420 (+4.5% per level) Health.",
         "icon": "storm_ui_icon_zagara_hunterkillermuta.png",
         "type": "W",
         "sort": 2,
@@ -482,10 +482,10 @@
       "name": "ZagaraCreepTumor",
       "icon": "storm_ui_icon_zagara_creep.png",
       "stats": {
-        "hp": 125,
-        "hpRegen": 0,
+        "hp": 250,
+        "hpRegen": -1,
         "hpScale": 0.04,
-        "hpRegenScale": 0,
+        "hpRegenScale": 0.04,
         "radius": 1,
         "speed": 0,
         "sight": 7
@@ -499,9 +499,9 @@
       "icon": "storm_ui_icon_zagara_hunterkiller.png",
       "stats": {
         "hp": 450,
-        "hpRegen": 0,
+        "hpRegen": -45,
         "hpScale": 0.045,
-        "hpRegenScale": 0,
+        "hpRegenScale": 0.045,
         "attackDamage": 71,
         "attackDamageScale": 0.05,
         "attackRange": 0.5,
@@ -519,9 +519,9 @@
       "icon": "storm_ui_icon_zagara_hunterkillermuta.png",
       "stats": {
         "hp": 420,
-        "hpRegen": 0,
+        "hpRegen": -10,
         "hpScale": 0.045,
-        "hpRegenScale": 0,
+        "hpRegenScale": 0.045,
         "attackDamage": 71,
         "attackDamageScale": 0.05,
         "attackRange": 5.5,
@@ -552,11 +552,12 @@
     {
       "unitId": "ZagaraRoach",
       "name": "ZagaraRoach",
+      "icon": "storm_ui_icon_zagara_infesteddrop.png",
       "stats": {
         "hp": 328,
-        "hpRegen": 0,
+        "hpRegen": -32.8,
         "hpScale": 0.04,
-        "hpRegenScale": 0,
+        "hpRegenScale": 0.04,
         "attackDamage": 30,
         "attackDamageScale": 0.04,
         "attackRange": 1.25,
@@ -566,7 +567,7 @@
         "sight": 9
       },
       "abilities": [],
-      "sourceAbilityTooltipId": ""
+      "sourceAbilityTooltipId": "ZagaraInfestedDrop"
     }
   ],
   "tooltipMarkup": {
@@ -576,18 +577,18 @@
     "ZagaraBanelingBarrageVolatileAcidTalent": "Banelings can travel <c val=\"#TooltipNumbers\">50%</c> further before exploding.",
     "ZagaraBroodmother": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraBanelingBarrageBroodmotherTalentTokenCounter,Max\"/>rd</c> Basic Attack also launches a Baneling towards the target.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Gain <c val=\"#TooltipNumbers\">20%</c> bonus Attack Speed.",
     "ZagaraCorrosiveSalivaHunterKillerTalent": "When attacking Heroes, Hunter Killers and Roachlings deal additional damage equal to <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZagaraHunterKillerBileDropCorrosiveSalivaPercentDamage,VitalFractionMax[Life]*100\"Precision=\"2\"/>%</c> of their maximum Health.",
-    "ZagaraCreepTumor": "Lay a Creep Tumor that generates Creep. While on Creep, Zagara moves <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraOnCreepSpeedBuff,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c> faster and her summons move <c val=\"#TooltipNumbers\"><d ref=\"100*(Unit,ZagaraHydralisk,SpeedMultiplierCreep)-100\"/>%</c> faster. Tumors last <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraCreepTumorTimedLife,Duration\" player=\"0\"/></c> seconds and reveal the surrounding area while active.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,ZagaraSummonCreepTumor,Cost.Charge.CountMax\"/></c> charges.",
+    "ZagaraCreepTumor": "Lay a Creep Tumor that generates Creep. While on Creep, Zagara moves <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraOnCreepSpeedBuff,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c> faster and her summons move <c val=\"#TooltipNumbers\"><d ref=\"100*(Unit,ZagaraHydralisk,SpeedMultiplierCreep)-100\"/>%</c> faster. Tumors lose Health over <c val=\"#TooltipNumbers\"><d ref=\"-Unit,ZagaraCreepTumor,LifeMax/Unit,ZagaraCreepTumor,LifeRegenRate\" player=\"0\"/></c> seconds and reveal the surrounding area while active.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,ZagaraSummonCreepTumor,Cost.Charge.CountMax\"/></c> charges.",
     "ZagaraCreepTumorEndlessCreepTalent": "Increase Creep Tumor's cast range from <c val=\"#TooltipNumbers\"><d ref=\"Abil,ZagaraSummonCreepTumor,Range\" player=\"0\" precision=\"1\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Talent,ZagaraMasteryEndlessCreep,AbilityModificationArray[0].Modifications[2].Value+Abil,ZagaraSummonCreepTumor,Range\" player=\"0\"/></c>. Creep Tumors now last <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraCreepTumorEndlessCreepLife,Duration\"/></c> seconds. While on Creep, Zagara gains an additional <c val=\"#TooltipNumbers\"><d ref=\"Talent,ZagaraMasteryEndlessCreep,AbilityModificationArray[0].Modifications[0].Value*100\" precision=\"1\"/>%</c> Movement Speed.",
     "ZagaraCreepTumorJaggedBarbs": "While on Creep, Zagara gains <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ZagaraWeaponDamage,MultiplicativeModifierArray[JaggedBarbs].Modifier\"/>%</c> more Basic Attack damage and her attack range is increased by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ZagaraJaggedBarbsTalent,AbilityModificationArray[0].Modifications[0].Value\"precision=\"1\"/></c>.",
     "ZagaraCreepTumorProtectiveCoating": "While on Creep, Zagara gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraProtectiveCoatingCarry,ArmorModification.AllArmorBonus\"/></c> Armor, taking <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraProtectiveCoatingCarry,ArmorModification.AllArmorBonus\"/>%</c> less damage.",
     "ZagaraDevouringMaw": "Summon a Devouring Maw that devours enemies for <c val=\"#TooltipNumbers\">4</c> seconds. Devoured enemies cannot fight and take <c val=\"#TooltipNumbers\"><d ref=\"Effect,DevouringMawSustainedDamage,Amount\"/></c> damage per second.<n/><n/><c val=\"ffff8a\">Usable on Unstoppable enemies.</c>",
     "ZagaraDevouringMawTyrantMawTalent": "Devouring Maw deals <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,ZagaraMasteryTyrantMaw,AbilityModificationArray[0].Modifications[0].Value\"/>%</c> more damage. Takedowns reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,DevouringMawTyrantMawMasteryModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "ZagaraEnvenomedSpinesTalent": "Activate to have Zagara's next Basic Attack apply <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZagaraWeaponEnvenomedSpinesPeriodicDamage,Amount*5\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraEnvenomedSpinesDebuff,Duration\"/></c> seconds.",
-    "ZagaraHunterKiller": "Summon a Hydralisk to attack a single target, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZagaraHydraliskRangedDamage,Amount\"/></c> damage per second. The Hydralisk lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraHydraliskTimedLife,Duration\" player=\"0\"/></c> seconds, and has <c val=\"#TooltipNumbers\"><d ref=\"Unit,ZagaraHydralisk,LifeMax\"/></c> Health.",
-    "ZagaraHunterKillerMutaliskTalent": "Reduce the cooldown of Hunter Killer by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,ZagaraMasteryMutalisk,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds. Hunter Killer now spawns a Mutalisk. Mutalisks have a bounce attack, last for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraHydraliskTimedLife,Duration+Talent,ZagaraMasteryMutalisk,AbilityModificationArray[0].Modifications[0].Value\"player=\"0\"/></c> seconds, and have <c val=\"#TooltipNumbers\"><d ref=\"Unit,ZagaraMutalisk,LifeMax\"/></c> Health.",
+    "ZagaraHunterKiller": "Summon a Hydralisk to attack a single target, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZagaraHydraliskRangedDamage,Amount\"/></c> damage per second. The Hydralisk loses Health over <c val=\"#TooltipNumbers\"><d ref=\"-Unit,ZagaraHydralisk,LifeMax/Unit,ZagaraHydralisk,LifeRegenRate\" player=\"0\"/></c> seconds, and has <c val=\"#TooltipNumbers\"><d ref=\"Unit,ZagaraHydralisk,LifeMax\"/></c> Health.",
+    "ZagaraHunterKillerMutaliskTalent": "Reduce the cooldown of Hunter Killer by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,ZagaraMasteryMutalisk,AbilityModificationArray[0].Modifications[1].Value\"/></c> seconds. Hunter Killer now spawns a Mutalisk. Mutalisks have a bounce attack, lose Health over <c val=\"#TooltipNumbers\"><c val=\"#TooltipNumbers\"><d ref=\"-Unit,ZagaraMutalisk,LifeMax/Unit,ZagaraMutalisk,LifeRegenRate\" player=\"0\"/></c></c> seconds, and have <c val=\"#TooltipNumbers\"><d ref=\"Unit,ZagaraMutalisk,LifeMax\"/></c> Health.",
     "ZagaraHydraliskTransfusionTalent": "Zagara is healed for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ZagaraHunterKillerHydraliskTransfusionCreateHealer,RechargeVitalRate/Effect,ZagaraHydraliskRangedDamage,Amount\"player=\"0\"/>%</c> of the damage dealt by Hunter Killers' Basic Attacks to Heroes.",
     "ZagaraInfest": "Nearby Ranged Minions deal an additional <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraInfestBuff,Modification.DamageDealtFraction[Basic]*100\"Player=\"0\"/>%</c> damage, plus an additional<c val=\"#TooltipNumbers\"> 1%</c> per <c val=\"#TooltipNumbers\">1000</c> Siege damage Zagara has dealt. Can be toggled on or off.",
-    "ZagaraInfestedDrop": "Bombard target area with a Zerg Drop Pod for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZagaraInfestedDropDamage,Amount\"/></c> damage. <n/><n/>The pod spawns <c val=\"#TooltipNumbers\"><d ref=\"Effect,InfestedDropCreateSpawnPersistent,PeriodCount\" player=\"0\"/></c> Roachlings that deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZagaraRoachAttackDamage,Amount\"/></c> damage per second and last for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraRoachTimedLife,Duration\" player=\"0\"/></c> seconds.",
+    "ZagaraInfestedDrop": "Bombard target area with a Zerg Drop Pod for <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZagaraInfestedDropDamage,Amount\"/></c> damage. <n/><n/>The pod spawns <c val=\"#TooltipNumbers\"><d ref=\"Effect,InfestedDropCreateSpawnPersistent,PeriodCount\" player=\"0\"/></c> Roachlings that deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZagaraRoachAttackDamage,Amount\"/></c> damage per second and lose Health over <c val=\"#TooltipNumbers\"><d ref=\"-Unit,ZagaraRoach,LifeMax/Unit,ZagaraRoach,LifeRegenRate\" player=\"0\"/></c> seconds.",
     "ZagaraInfestedDropBileDropTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Passively increases the radius of Infested Drop by <c val=\"#TooltipNumbers\">20%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZagaraInfestedDropBileDropQuestToken,Max\"/></c> Heroes with Infested Drop, it spawns an additional Roachling.",
     "ZagaraInfestedDropCorpseFeedersTalent": "Reduces the cooldown of Infested Drop by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,ZagaraMasteryCorpseFeeders,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds and Roachlings have <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ZagaraInfestedDropCorpseFeedersRoachHealthBuff,Modification.VitalMaxFractionArray[Life]\"/>%</c> more Health.",
     "ZagaraMedusaBladesTalent": "Basic Attacks deal <c val=\"#TooltipNumbers\">33%</c> damage to three nearby targets.",
