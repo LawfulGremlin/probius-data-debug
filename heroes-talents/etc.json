@@ -25,8 +25,8 @@
     "SelfHealer"
   ],
   "stats": {
-    "hp": 2250,
-    "hpRegen": 4.6875,
+    "hp": 2280,
+    "hpRegen": 4.75,
     "hpScale": 0.04,
     "hpRegenScale": 0.04,
     "resource": 500,
@@ -43,7 +43,7 @@
       {
         "uid": "0288ab",
         "name": "Powerslide",
-        "description": "Slide to a location dealing 91 (+4% per level) damage and stunning enemies hit for 1.25 second.",
+        "description": "Slide to a location dealing 105 (+4% per level) damage and Stunning enemies hit for 1.25 seconds.",
         "hotkey": "Q",
         "abilityId": "ETC|Q1",
         "tooltipId": "L90ETCPowerslide",
@@ -530,7 +530,7 @@
     "L90ETCGuitarSoloGuitarHeroTalent": "While Guitar Solo is active, E.T.C. heals for <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,ETCMasteryGuitarHero,AbilityModificationArray[0].Modifications[0].Value\"/>%</c> of his damage dealt by Basic Attacks.  Basic Attacks increase the duration of Guitar Solo by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ETCGuiltarSoloGuitarHeroModifyBuffDuration,Value\"Precision=\"2\"/></c> seconds.",
     "L90ETCMoshPit": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,L90ETCMoshPit,CastIntroTime[0]\" precision=\"2\"/></c> seconds, channel to stun nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCMoshPitStun,Duration*8\" precision=\"2\"/></c> seconds.",
     "L90ETCMoshPitTourBusTalent": "Channeling Mosh Pit refreshes Powerslide's cooldown, and it can be cast to increase Mosh Pit's duration by <c val=\"#TooltipNumbers\">2</c> seconds.",
-    "L90ETCPowerslide": "Slide to a location dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,PowerSlideDamage,Amount + (Effect,PowerSlideDamage,Amount * Effect,PowerSlideDamage,AttributeFactor[Heroic])\"/></c> damage and stunning enemies hit for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,PowerslideStun,Duration\" player=\"0\" precision=\"2\"/></c> second.",
+    "L90ETCPowerslide": "Slide to a location dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,PowerSlideDamage,Amount + (Effect,PowerSlideDamage,Amount * Effect,PowerSlideDamage,AttributeFactor[Heroic])\"/></c> damage and Stunning enemies hit for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,PowerslideStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
     "L90ETCRockstar": "Using a Basic Ability grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ETCRockstarArmor,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ETCRockstarArmor,Duration\" player=\"0\"/></c> seconds. Heroic Abilities grant <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ETCHeroicRockstarArmor,ArmorModification.AllArmorBonus\"/></c> Armor.",
     "L90ETCRockstarEchoPedalTalent": "Using a Basic or Heroic Ability releases two pulses of <c val=\"#TooltipNumbers\"><d ref=\"Effect,L90ETCPassiveEchoPedalDamage,Amount\"/></c> damage.  This deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,L90ETCPassiveEchoPedalDamage,MultiplicativeModifierArray[MinionOrMercOrMonster].Modifier*100\"/>%</c> bonus damage to Minions, Mercenaries, and Monsters. The first occurs instantly, the second occurs <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCPassiveEchoPedal,Duration\" player=\"0\"/></c> seconds later.",
     "L90ETCStageDive": "Leap to target location, landing after <c val=\"#TooltipNumbers\">2.75</c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,StageDiveDamage,Amount + (Effect,StageDiveDamage,Amount * Effect,StageDiveDamage,AttributeFactor[Heroic])\"/></c> damage to enemies in the area, and slowing them by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StageDiveSlow,Modification.UnifiedMoveSpeedFactor*(-100)\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StageDiveSlow,Duration\" player=\"0\" precision=\"2\"/></c> seconds."
@@ -558,7 +558,7 @@
     "L90ETCGuitarSoloGuitarHeroTalent": "Basic Attacks add duration, heal during Guitar Solo",
     "L90ETCMoshPit": "Nearby enemies must dance",
     "L90ETCMoshPitTourBusTalent": "Cast Powerslide during Mosh Pit",
-    "L90ETCPowerslide": "Dash to an area, stunning and damaging enemies hit",
+    "L90ETCPowerslide": "Dash to an area, Stunning and damaging enemies hit",
     "L90ETCRockstar": "After using an ability, E.T.C. gains Armor",
     "L90ETCRockstarEchoPedalTalent": "Abilities cause area damage",
     "L90ETCStageDive": "Dive to a location and deal damage"
