@@ -164,10 +164,11 @@
         "name": "Frequent Flyer",
         "description": "Activate Frequent Flyer to gain 40% Attack Speed and Tailwind for 5 seconds.  Quest: Minion kills grant 0.2 Basic Attack Damage. Hero Takedowns grant 0.5 Basic Attack Damage.",
         "icon": "storm_ui_icon_falstad_tailwind_a.png",
-        "type": "Passive",
+        "type": "Active",
         "sort": 3,
+        "cooldown": 45,
         "isQuest": true,
-        "abilityId": "Falstad|Passive",
+        "abilityId": "Falstad|Active",
         "abilityLinks": [],
         "abilityTalentLinkIds": [
           "FalstadFrequentFlyerActive"
