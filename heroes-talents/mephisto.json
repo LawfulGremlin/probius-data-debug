@@ -152,7 +152,7 @@
         "tooltipId": "MephistoShadeOfMephistoMaliciousIntent",
         "talentTreeId": "MephistoShadeOfMephistoMaliciousIntent",
         "name": "Malicious Intent",
-        "description": "Shade of Mephisto grants 20% Spell Power while active and for 2.5 seconds after ending.  If Mephisto hits enemy Heroes at least 20 times with his Basic Abilities while Shade of Mephisto is active, then increase the duration of the Spell Power bonus to 10 seconds after it ends.",
+        "description": "Shade of Mephisto grants 25% Spell Power while active and for 2.5 seconds after ending.  If Mephisto hits enemy Heroes at least 20 times with his Basic Abilities while Shade of Mephisto is active, then increase the duration of the Spell Power bonus to 10 seconds after it ends.",
         "icon": "storm_ui_icon_mephisto_shade.png",
         "type": "E",
         "sort": 3,
@@ -396,7 +396,7 @@
         "tooltipId": "MephistoAnimosity",
         "talentTreeId": "MephistoAnimosity",
         "name": "Animosity",
-        "description": "Increase the duration of Lightning Nova by 0.5 seconds.  Basic Attacks against enemy Heroes while Lightning Nova is active increase its duration by 0.25 seconds.",
+        "description": "Increase the duration of Lightning Nova by 1 second and the maximum amount of bonus damage it can deal from 30% to 36%.",
         "icon": "storm_ui_icon_mephisto_lightning_b.png",
         "type": "W",
         "sort": 3,
@@ -489,7 +489,7 @@
     ]
   },
   "tooltipMarkup": {
-    "MephistoAnimosity": "Increase the duration of Lightning Nova by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MephistoAnimosity,AbilityModificationArray[0].Modifications[0].Value\"Precision=\"2\"/></c> seconds.  Basic Attacks against enemy Heroes while Lightning Nova is active increase its duration by <c val=\"#TooltipNumbers\"><d ref=\"Effect,MephistoLightningNovaAnimosityModifyLightningNovaDuration,Value\"Precision=\"2\"/></c> seconds.",
+    "MephistoAnimosity": "Increase the duration of Lightning Nova by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MephistoAnimosity,AbilityModificationArray[0].Modifications[0].Value\"Precision=\"2\"/></c> second and the maximum amount of bonus damage it can deal from <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MephistoLightningNovaAccumulator,Scale*Behavior,MephistoLightningNovaDamageTokenCounter,Max\" player=\"0\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,MephistoLightningNovaAccumulator,Scale*Behavior,MephistoLightningNovaDamageTokenCounter,Max+(Talent,MephistoAnimosity,AbilityModificationArray[0].Modifications[1].Value*100*Accumulator,MephistoLightningNovaAccumulator,Scale)\" player=\"0\"/>%</c>.",
     "MephistoConsumeSouls": "Channel for <c val=\"#TooltipNumbers\"><d ref=\"Abil,MephistoConsumeSouls,CastIntroTime\" player=\"0\" precision=\"1\"/></c> seconds, revealing all enemy Heroes. After the Channel completes, all enemy Heroes take <c val=\"#TooltipNumbers\"><d ref=\"Effect,MephistoConsumeSoulsDamage,Amount\"/></c> damage and are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,MephistoConsumeSoulsSlow,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MephistoConsumeSoulsSlow,Duration\" player=\"0\" precision=\"1\"/></c> seconds.",
     "MephistoConsumeSoulsConsumedByHatred": "Consume Souls deals bonus damage equal to <c val=\"#TooltipNumbers\"><d ref=\"100 * Accumulator,MephistoConsumeSoulsConsumedByHatredMissingHealthAccumulator,Ratio\"/>%</c> of the target's missing Health. If Consume Souls initial cast kills a Hero it will cast <c val=\"#TooltipNumbers\">1</c> additional time.",
     "MephistoDuranceOfHate": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,MephistoDuranceOfHate,CastIntroTime\" player=\"0\" precision=\"2\"/></c> second, unleash a wave of evil spirits that Root the first enemy Hero hit for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MephistoDuranceOfHateDoTBehavior,Duration\" player =\"0\" precision=\"1\"/></c> seconds and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,MephistoDuranceOfHateDoTDamage,Amount * (Behavior,MephistoDuranceOfHateDoTBehavior,Duration / Behavior,MephistoDuranceOfHateDoTBehavior,Period)\"/></c> damage to them over the same duration.<n/><n/>Durance of Hate spreads outwards from its initial target, Rooting and damaging additional nearby enemy Heroes.",
@@ -516,7 +516,7 @@
     "MephistoSpite": "Increase Regeneration Globe healing duration by <c val=\"#TooltipNumbers\"><d ref=\"((Behavior,RegenGlobePercentBuff,Duration) + (Talent,MephistoSpite,AbilityModificationArray[0].Modifications[0].Value) / Behavior,RegenGlobePercentBuff,Duration - 1) * 100 \" player=\"0\"/>%</c>. Every tick of Regeneration Globe healing activates Lord of Hatred, reducing Basic Ability cooldowns by <c val=\"#TooltipNumbers\"><d ref=\"-1 * Effect,MephistoSpiteCDR,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> second."
   },
   "tooltipSimple": {
-    "MephistoAnimosity": "Increase duration of Lightning Nova",
+    "MephistoAnimosity": "Increase duration, damage of Lightning Nova",
     "MephistoConsumeSouls": "Damage and Slow all enemy Heroes",
     "MephistoConsumeSoulsConsumedByHatred": "Consume Souls recasts upon Takedown",
     "MephistoDuranceOfHate": "Unleash spirits that spread Roots",

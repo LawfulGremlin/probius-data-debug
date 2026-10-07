@@ -63,7 +63,7 @@
     "unitId": "AbathurLocust",
     "portraits": {},
     "life": {
-      "amount": 316,
+      "amount": 350,
       "scale": 0,
       "regenRate": 0,
       "regenScale": 0
@@ -78,7 +78,7 @@
     "unitId": "AbathurLocustAssaultStrain",
     "portraits": {},
     "life": {
-      "amount": 316,
+      "amount": 350,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
@@ -118,7 +118,7 @@
     "unitId": "AbathurLocustBombardStrain",
     "portraits": {},
     "life": {
-      "amount": 316,
+      "amount": 350,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
@@ -182,7 +182,7 @@
           "_hdp5LinkId": "AbathurSpawnLocusts|AbathurLocustStrain|Q",
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "name": "Locust Strain",
-          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">316</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack.",
+          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">50%</c> bonus damage to enemy Structures.",
           "cooldownText": "Cooldown: 15 seconds"
         }
       ]
@@ -221,7 +221,7 @@
           "_hdp5LinkId": "AbathurSpawnLocusts|AbathurLocustStrain|Q",
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "name": "Locust Strain",
-          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">316</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack.",
+          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">350</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack, dealing <c val=\"bfd4fd\">50%</c> bonus damage to enemy Structures.",
           "cooldownText": "Cooldown: 15 seconds"
         }
       ]
@@ -231,7 +231,7 @@
     "unitId": "AbathurLocustNormal",
     "portraits": {},
     "life": {
-      "amount": 316,
+      "amount": 350,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
@@ -1278,7 +1278,7 @@
         "range": 1,
         "minimumRange": 0,
         "period": 1,
-        "damage": 30,
+        "damage": 35,
         "damageScale": 0.04
       }
     ],
@@ -2258,7 +2258,7 @@
           "_hdp5LinkId": "DeathwingIncinerate|DeathwingIncinerate|W",
           "icon": "storm_ui_icon_deathwing_incinerate.png",
           "name": "Incinerate",
-          "fullText": "After <c val=\"bfd4fd\">0.75</c> seconds, Deathwing flaps his wings, dealing <c val=\"bfd4fd\">80</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Lava Burst</c><n/>Create a lava pool that damages and Slows",
+          "fullText": "After <c val=\"bfd4fd\">0.75</c> seconds, Deathwing flaps his wings, dealing <c val=\"bfd4fd\">75</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Lava Burst</c><n/>Create a lava pool that damages and Slows",
           "cooldownText": "Cooldown: 4 seconds"
         },
         {
@@ -2276,7 +2276,7 @@
           },
           "icon": "storm_ui_icon_deathwing_skyfall.png",
           "name": "Skyfall",
-          "fullText": "After <c val=\"bfd4fd\">0.8</c> seconds, a meteor falls from the sky, dealing <c val=\"bfd4fd\">58</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the area.<n/><n/>If a Hero is hit, Deathwing heals for <c val=\"bfd4fd\">3%</c> of his maximum Health and reduces his landing cooldowns by <c val=\"bfd4fd\">1.5</c> seconds.",
+          "fullText": "After <c val=\"bfd4fd\">0.8</c> seconds, a meteor falls from the sky, dealing <c val=\"bfd4fd\">58</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the area.<n/><n/>If a Hero is hit, Deathwing heals for <c val=\"bfd4fd\">3%</c> of his maximum Health and reduces his landing cooldowns by <c val=\"bfd4fd\">1</c> seconds.",
           "cooldownText": "Charge Cooldown: 10 seconds"
         },
         {
@@ -2287,7 +2287,7 @@
           "_hdp5LinkId": "DeathwingOnslaught|DeathwingOnslaught|E",
           "icon": "storm_ui_icon_deathwing_onslaught.png",
           "name": "Onslaught",
-          "fullText": "After <c val=\"bfd4fd\">0.5</c> seconds, Deathwing lunges in a direction dealing <c val=\"bfd4fd\">40</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies and Slowing them by <c val=\"bfd4fd\">35%</c> for <c val=\"bfd4fd\">2</c> seconds. Deathwing bites enemies at the end of the lunge, dealing an additional <c val=\"bfd4fd\">75</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Earth Shatter</c><n/>Damage and Stun enemies in two lines",
+          "fullText": "After <c val=\"bfd4fd\">0.5</c> seconds, Deathwing lunges in a direction dealing <c val=\"bfd4fd\">38</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies and Slowing them by <c val=\"bfd4fd\">35%</c> for <c val=\"bfd4fd\">2</c> seconds. Deathwing bites enemies at the end of the lunge, dealing an additional <c val=\"bfd4fd\">72</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Earth Shatter</c><n/>Damage and Stun enemies in two lines",
           "cooldownText": "Cooldown: 5 seconds"
         },
         {
@@ -2298,7 +2298,7 @@
           "_hdp5LinkId": "DeathwingEarthShatter|DeathwingEarthShatter|E",
           "icon": "storm_ui_icon_deathwing_earth_shatter.png",
           "name": "Earth Shatter",
-          "fullText": "Create a fissure of earth that deals <c val=\"bfd4fd\">80</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit and Stuns them for <c val=\"bfd4fd\">0.75</c> seconds.<n/><n/><c val=\"ef6e28-ad231e\">Destroyer: Onslaught</c><n/>Lunge in a direction",
+          "fullText": "Create a fissure of earth that deals <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit and Stuns them for <c val=\"bfd4fd\">0.75</c> seconds.<n/><n/><c val=\"ef6e28-ad231e\">Destroyer: Onslaught</c><n/>Lunge in a direction",
           "cooldownText": "Cooldown: 12 seconds"
         },
         {
@@ -2309,7 +2309,7 @@
           "_hdp5LinkId": "DeathwingEarthShatter|DeathwingEarthShatter|E",
           "icon": "storm_ui_icon_deathwing_earth_shatter.png",
           "name": "Earth Shatter",
-          "fullText": "Create a fissure of earth that deals <c val=\"bfd4fd\">80</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit and Stuns them for <c val=\"bfd4fd\">0.75</c> seconds.<n/><n/><c val=\"ef6e28-ad231e\">Destroyer: Onslaught</c><n/>Lunge in a direction",
+          "fullText": "Create a fissure of earth that deals <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit and Stuns them for <c val=\"bfd4fd\">0.75</c> seconds.<n/><n/><c val=\"ef6e28-ad231e\">Destroyer: Onslaught</c><n/>Lunge in a direction",
           "cooldownText": "Cooldown: 12 seconds"
         }
       ],
@@ -8222,7 +8222,7 @@
     "unitId": "MonkAirAlly",
     "portraits": {},
     "life": {
-      "amount": 75,
+      "amount": 200,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
