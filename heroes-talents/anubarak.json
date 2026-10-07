@@ -223,7 +223,7 @@
         "talentTreeId": "AnubarakCombatStyleChitinousPlating",
         "name": "Chitinous Plating",
         "description": "While Harden Carapace is active, taking damage from enemy Abilities reduces its cooldown by 1 second, up to 3 seconds.",
-        "icon": "storm_ui_icon_anubarak_hardencarapace_var2.png",
+        "icon": "storm_ui_icon_anubarak_hardencarapace_var1.png",
         "type": "W",
         "sort": 1,
         "isQuest": false,
@@ -332,10 +332,9 @@
         "name": "Burning Beetles",
         "description": "Deal 21 (+4% per level) damage per second to nearby enemies. Beetles deal 6 (+4% per level) damage per second to nearby enemies.",
         "icon": "storm_ui_icon_talent_burningrage.png",
-        "type": "Passive",
+        "type": "Trait",
         "sort": 2,
-        "isQuest": false,
-        "abilityId": "Anubarak|Passive"
+        "isQuest": false
       },
       {
         "tooltipId": "AnubarakAcidDrenchedMandibles",

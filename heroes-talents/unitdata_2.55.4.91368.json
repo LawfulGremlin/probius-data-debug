@@ -2100,7 +2100,7 @@
     },
     "radius": 0.125,
     "innerRadius": 0,
-    "sight": 2,
+    "sight": 0,
     "speed": 10,
     "abilities": {}
   },
@@ -2869,7 +2869,7 @@
     },
     "radius": 0,
     "innerRadius": 0,
-    "sight": 3,
+    "sight": 0,
     "speed": 0
   },
   "DiabloFireStompReturnMissile": {
@@ -3713,7 +3713,7 @@
     },
     "radius": 1.5,
     "innerRadius": 1.5,
-    "sight": 7,
+    "sight": 1.5,
     "speed": 0
   },
   "FirebatOilSpillMissile": {
@@ -4012,7 +4012,7 @@
         "range": 6,
         "minimumRange": 0,
         "period": 1,
-        "damage": 38,
+        "damage": 36,
         "damageScale": 0.04
       }
     ],
@@ -5032,6 +5032,20 @@
   },
   "JainaFrostboltMissile": {
     "unitId": "JainaFrostboltMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "JainaFrostboltRefactorMissile": {
+    "unitId": "JainaFrostboltRefactorMissile",
     "portraits": {},
     "life": {
       "amount": 10,
@@ -18577,7 +18591,7 @@
           "abilityType": "W",
           "isPassive": false,
           "_hdp5LinkId": "LostVikingsNordicAttackSquad|LostVikingsNordicAttackSquad|W",
-          "icon": "storm_ui_icon_talent_autoattack_damage.png",
+          "icon": "storm_ui_icon_talent_autoattack_searing.png",
           "name": "Nordic Attack Squad",
           "fullText": "While Olaf, Baleog, and Erik are near each of the other two Vikings, their Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> maximum Health to enemy Heroes.",
           "cooldownText": "Cooldown: 20 seconds"
@@ -18595,7 +18609,7 @@
           },
           "icon": "storm_ui_icon_talent_bribe.png",
           "name": "Viking Bribery",
-          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: </c><c val=\"bfd4fd\">0</c>"
+          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>."
         }
       ],
       "heroic": [
@@ -18768,7 +18782,7 @@
           "abilityType": "W",
           "isPassive": false,
           "_hdp5LinkId": "LostVikingsNordicAttackSquad|LostVikingsNordicAttackSquad|W",
-          "icon": "storm_ui_icon_talent_autoattack_damage.png",
+          "icon": "storm_ui_icon_talent_autoattack_searing.png",
           "name": "Nordic Attack Squad",
           "fullText": "While Olaf, Baleog, and Erik are near each of the other two Vikings, their Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> maximum Health to enemy Heroes.",
           "cooldownText": "Cooldown: 20 seconds"
@@ -18786,7 +18800,7 @@
           },
           "icon": "storm_ui_icon_talent_bribe.png",
           "name": "Viking Bribery",
-          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: </c><c val=\"bfd4fd\">0</c>"
+          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>."
         }
       ],
       "heroic": [
@@ -18959,7 +18973,7 @@
           "abilityType": "W",
           "isPassive": false,
           "_hdp5LinkId": "LostVikingsNordicAttackSquad|LostVikingsNordicAttackSquad|W",
-          "icon": "storm_ui_icon_talent_autoattack_damage.png",
+          "icon": "storm_ui_icon_talent_autoattack_searing.png",
           "name": "Nordic Attack Squad",
           "fullText": "While Olaf, Baleog, and Erik are near each of the other two Vikings, their Basic Attacks deal bonus damage equal to <c val=\"bfd4fd\">1.25%</c> maximum Health to enemy Heroes.",
           "cooldownText": "Cooldown: 20 seconds"
@@ -18977,7 +18991,7 @@
           },
           "icon": "storm_ui_icon_talent_bribe.png",
           "name": "Viking Bribery",
-          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>.<n/><n/><c val=\"ffff8a\">Current number of Bribe stacks: </c><c val=\"bfd4fd\">0</c>"
+          "fullText": "Enemy Minions or captured Mercenaries killed near The Lost Vikings grant stacks of Bribe. Use <c val=\"bfd4fd\">40</c> stacks to bribe target Mercenary, instantly defeating them. Does not work on Elite Mercenaries. Maximum stacks available: <c val=\"bfd4fd\">200</c>."
         }
       ],
       "heroic": [

@@ -343,7 +343,7 @@
         "tooltipId": "MedicBedsideManner",
         "talentTreeId": "MedicBedsideManner",
         "name": "Bedside Manner",
-        "description": "Heroes hit by Displacement Grenade will take an additional 6% of maximum Health as damage from Lt. Morales' next Basic Attack against them.  Passive: Basic Attacks against Heroes deal an additional 1% of maximum Health as damage.",
+        "description": "Heroes hit by Displacement Grenade will take an additional 6% of maximum Health as damage from Lt. Morales's next Basic Attack against them.  Passive: Basic Attacks against Heroes deal an additional 1% of maximum Health as damage.",
         "icon": "storm_ui_icon_medic_displacementgrenade_c.png",
         "type": "E",
         "sort": 3,
@@ -516,7 +516,7 @@
     }
   ],
   "tooltipMarkup": {
-    "MedicBedsideManner": "Heroes hit by Displacement Grenade will take an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MedicDisplacementGrenadeBedsideMannerTalentProcDamage,VitalFractionMax[Life]\"/>%</c> of maximum Health as damage from Lt. Morales' next Basic Attack against them.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Basic Attacks against Heroes deal an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MedicHeroWeaponBedsideMannerTalentDamage,VitalFractionMax[Life]\"/>%</c> of maximum Health as damage.",
+    "MedicBedsideManner": "Heroes hit by Displacement Grenade will take an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MedicDisplacementGrenadeBedsideMannerTalentProcDamage,VitalFractionMax[Life]\"/>%</c> of maximum Health as damage from Lt. Morales's next Basic Attack against them.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Basic Attacks against Heroes deal an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MedicHeroWeaponBedsideMannerTalentDamage,VitalFractionMax[Life]\"/>%</c> of maximum Health as damage.",
     "MedicBlastShield": "Enemy Heroes hit by Displacement Grenade are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,MedicDisplacementGrenadeBlastShieldTalentSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicDisplacementGrenadeBlastShieldTalentSlow,Duration\"/></c> second after being knocked away and grant Lt. Morales a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,MedicDisplacementGrenadeBlastShieldTalentShield,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]\"/>%</c> of her maximum Health. This shield stacks up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicDisplacementGrenadeBlastShieldTalentShield,MaxStackCount\"/></c> times.",
     "MedicCaduceusFeedbackTalent": "Increases Attack Range by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedicCaduceusFeedbackCarryBehavior,Modification.WeaponRange\"precision=\"1\"/></c> and Basic Attacks against Heroes generate <c val=\"#TooltipNumbers\"><d ref=\"Effect,MedicHeroWeaponCaduceusFeedbackTalentHeroModifyMana,RechargeVitalRate\"/></c> Energy.",
     "MedicCaduceusReactor": "While channeling Healing Beam, Lt. Morales regenerates <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,MedicCaduceusReactorCreateHealer,RechargeVitalFraction\"player=\"0\"/>%</c> of her maximum Health per second.",

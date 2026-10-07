@@ -44,7 +44,7 @@
       {
         "uid": "1b962d",
         "name": "Healing Brew",
-        "description": "Heal lowest Health ally (prioritizing Heroes) within 6 range for 175 (+4% per level) Health.",
+        "description": "Heal the lowest Health allied Hero within 6 range for 175 (+4% per level) Health.",
         "hotkey": "Q",
         "abilityId": "LiLi|Q1",
         "tooltipId": "LiLiHealingBrew",
@@ -506,7 +506,7 @@
     "LiLiEagerAdventurer": "Increase Fast Feet's duration by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,LiLiEagerAdventurer,AbilityModificationArray[0].Modifications[1].Value\"/>%</c> and increase Mana regeneration by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,LiLiEagerAdventurer,AbilityModificationArray[0].Modifications[0].Value\"/>%</c> while Fast Feet is active.",
     "LiLiFastFeet": "Upon taking damage, your Basic Ability cooldowns refresh <c val=\"#TooltipNumbers\"><d ref=\"-100*Effect,LiLiFastFeetModifyCooldowns,Cost[0].CooldownTimeUse/Behavior,LiLiFastFeetBoost,Period\"/>%</c></c> faster and you gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LiLiFastFeetBoost,Modification.UnifiedMoveSpeedFactor*100\"player=\"0\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LiLiFastFeetBoost,Duration\" player=\"0\"/></c> second.",
     "LiLiFreeDrinks": "Healing Brew's cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,LiLiHealingBrewFreeDrinksTalentCooldownModifyUnit,Cost[0].CooldownTimeUse\"precision=\"1\"/></c> second and its Mana cost is refunded if it heals a Hero under <c val=\"#TooltipNumbers\"><d ref=\"100*Validator,LiLiFreeDrinksTalentVitalThreshold,Value\"/>%</c> Health.",
-    "LiLiHealingBrew": "Heal lowest Health ally (prioritizing Heroes) within <c val=\"#TooltipNumbers\"><d ref=\"Effect,HealingBrewSearchArea,AreaArray[0].Radius\"/></c> range for <c val=\"#TooltipNumbers\"><d ref=\"Effect,LiLiHealingBrewCreateHealer,RechargeVitalRate\"/></c> Health.",
+    "LiLiHealingBrew": "Heal the lowest Health allied Hero within <c val=\"#TooltipNumbers\"><d ref=\"Effect,HealingBrewSearchArea,AreaArray[0].Radius\"/></c> range for <c val=\"#TooltipNumbers\"><d ref=\"Effect,LiLiHealingBrewCreateHealer,RechargeVitalRate\"/></c> Health.",
     "LiLiHealingBrewTheGoodStuffTalent": "Healing Brew heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,LiLiHealingBrewTheGoodStuffTalentCreateHealer,RechargeVitalRate*(Behavior,LiLiHealingBrewTheGoodStuff,Duration/Behavior,LiLiHealingBrewTheGoodStuff,Period)\"/></c> over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LiLiHealingBrewTheGoodStuff,Duration\"/></c> seconds. While Fast Feet is active, this heal amount is increased by <c val=\"#TooltipNumbers\">100%</c>.",
     "LiLiHealingBrewTwoForOneTalent": "Increases the number of allies healed by Healing Brew to <c val=\"#TooltipNumbers\">2</c>, but increases the cooldown by <c val=\"#TooltipNumbers\"><d ref=\"Talent,LiLiMasteryHealingBrewTwoForOne,AbilityModificationArray[0].Modifications[2].Value\"/></c> second.",
     "LiLiHinderingWinds": "Increase Blinding Wind's Slow amount to <c val=\"#TooltipNumbers\"><d ref=\"-100*(Behavior,LiLiBlindingWindSlow,Modification.UnifiedMoveSpeedFactor+Talent,LiLiHinderingWinds,AbilityModificationArray[0].Modifications[0].Value)\"player=\"0\"/>%</c> and its duration to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LiLiBlindingWindSlow,Duration+Talent,LiLiHinderingWinds,AbilityModificationArray[0].Modifications[1].Value\"precision=\"1\"player=\"0\"/></c> seconds.",
