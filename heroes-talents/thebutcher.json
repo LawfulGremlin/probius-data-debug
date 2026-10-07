@@ -8,7 +8,7 @@
   "name": "The Butcher",
   "icon": "thebutcher.png",
   "role": "Assassin",
-  "expandedRole": "Assassin",
+  "expandedRole": "Melee Assassin",
   "type": "Melee",
   "description": "An Assassin who starts slow, but deals extreme damage after collecting enough Meat.",
   "title": "Flesh Carver",
@@ -52,6 +52,18 @@
         "cooldown": 4,
         "manaCost": 40,
         "icon": "storm_ui_icon_butcher_hamstring.png",
+        "type": "basic"
+      },
+      {
+        "uid": "945d96",
+        "name": "Butcher's Brand",
+        "description": "Deal 37 (+4% per level) damage to an enemy and Brand them for 4 seconds. The Butcher's Basic Attacks against the Branded target heal him for 75% of the damage done.  Basic Attacks against Branded Heroes heal for double and extend the duration of the Brand by 0.5 seconds.",
+        "hotkey": "W",
+        "abilityId": "TheButcher|W1",
+        "tooltipId": "ButcherButchersBrand",
+        "cooldown": 14,
+        "manaCost": 60,
+        "icon": "storm_ui_icon_butcher_tenderize.png",
         "type": "basic"
       },
       {
@@ -210,10 +222,16 @@
         "name": "Insatiable Blade",
         "description": "While facing a branded enemy, The Butcher's Movement Speed is increased by 25%.",
         "icon": "storm_ui_icon_butcher_tenderize.png",
-        "type": "Passive",
+        "type": "W",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "TheButcher|Passive"
+        "abilityId": "TheButcher|W1",
+        "abilityLinks": [
+          "TheButcher|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "ButcherButchersBrand"
+        ]
       },
       {
         "tooltipId": "ButcherFreshMeatVictualsTalent",
@@ -447,6 +465,7 @@
     ]
   },
   "tooltipMarkup": {
+    "ButcherButchersBrand": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButchersBrandDamage,Amount\"/></c> damage to an enemy and Brand them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButchersBrand,Duration\" player=\"0\"/></c> seconds. The Butcher's Basic Attacks against the Branded target heal him for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButchersBrandLifestealBehavior,Modification.VitalDamageLeechArray[Life].KindArray[Basic]*100\" player=\"0\"/>%</c> of the damage done.<n/><n/>Basic Attacks against Branded Heroes heal for double and extend the duration of the Brand by <c val=\"#TooltipNumbers\">0.5</c> seconds.",
     "ButcherButchersBrandInsatiableBladeTalent": "While facing a branded enemy, The Butcher's Movement Speed is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ButcherButchersBrandInsatiableBladeTalentBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c>.",
     "ButcherCleaver": "Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*(1+Effect,ButcherHeroWeaponCleaverTalentDamage,AttributeFactor[Heroic])\"/>%</c> of The Butcher's Basic Attack Damage in an area around the target.",
     "ButcherEnragedTalent": "While below <c val=\"#TooltipNumbers\">50%</c> of his maximum Health, taking damage causes The Butcher to become Enraged for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,EnragedActive,Duration\" player=\"0\"/></c> seconds, gaining <c val=\"#TooltipNumbers\"><d ref=\"Behavior,EnragedActive,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> Attack Speed and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherEnragedArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ButcherEnragedArmorIncrease,ArmorModification.AllArmorBonus\"/>%</c>.<n/><n/>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Effect,ButcherEnragedModifyDummyCooldown,Cost.Cooldown.TimeUse\"/></c> second cooldown.",
@@ -473,6 +492,7 @@
     "NexusBladesTalent": "Basic Attacks deal <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NexusBladesCarryBehavior,Modification.DamageDealtFraction[Basic]\"/>%</c> more damage and Slow enemy Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NexusBladesSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NexusBladesSlow,Duration\" player=\"0\"/></c> second."
   },
   "tooltipSimple": {
+    "ButcherButchersBrand": "Brand an enemy, granting Life Steal against them",
     "ButcherButchersBrandInsatiableBladeTalent": "Increases Move Speed while enemies are branded",
     "ButcherCleaver": "Basic Attacks deal area damage",
     "ButcherEnragedTalent": "Gain Attack Speed and Armor at low Health",

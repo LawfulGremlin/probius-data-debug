@@ -8,7 +8,7 @@
   "name": "Rehgar",
   "icon": "rehgar.png",
   "role": "Support",
-  "expandedRole": "Support",
+  "expandedRole": "Healer",
   "type": "Melee",
   "description": "A well-rounded Healer that pairs well with Melee allies.",
   "title": "Shaman of the Earthen Ring",
@@ -65,6 +65,18 @@
         "cooldown": 8,
         "manaCost": 60,
         "icon": "storm_ui_icon_rehgar_lightningshield.png",
+        "type": "basic"
+      },
+      {
+        "uid": "dac29d",
+        "name": "Earthbind Totem",
+        "description": "Create a totem that Slows nearby enemies by 35%. The totem has 217 (+4% per level) Health and lasts for 8 seconds.",
+        "hotkey": "E",
+        "abilityId": "Rehgar|E1",
+        "tooltipId": "RehgarEarthbindTotem",
+        "cooldown": 15,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
         "type": "basic"
       },
       {
@@ -139,10 +151,16 @@
         "name": "Colossal Totem",
         "description": "Increases the area and range of Earthbind Totem by 50% and it can be reactivated to move an existing totem to a new location once.",
         "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
-        "type": "Passive",
+        "type": "E",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Rehgar|Passive"
+        "abilityId": "Rehgar|E1",
+        "abilityLinks": [
+          "Rehgar|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarEarthbindTotem"
+        ]
       },
       {
         "tooltipId": "RehgarGhostWolfWolfRunTalent",
@@ -158,8 +176,7 @@
           "Rehgar|D1"
         ],
         "abilityTalentLinkIds": [
-          "RehgarGhostWolf",
-          "RehgarGhostWolfLunge"
+          "RehgarGhostWolf"
         ]
       }
     ],
@@ -195,8 +212,7 @@
           "Rehgar|D1"
         ],
         "abilityTalentLinkIds": [
-          "RehgarGhostWolf",
-          "RehgarGhostWolfLunge"
+          "RehgarGhostWolf"
         ]
       },
       {
@@ -223,10 +239,16 @@
         "name": "Grounded Totem",
         "description": "Increase the Health of Earthbind Totem by 100%.  Enemy Heroes who are Slowed by Earthbind Totem also have their Attack Speed Slowed by 40%.",
         "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
-        "type": "Passive",
+        "type": "E",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Rehgar|Passive"
+        "abilityId": "Rehgar|E1",
+        "abilityLinks": [
+          "Rehgar|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarEarthbindTotem"
+        ]
       },
       {
         "tooltipId": "RehgarBloodAndThunder",
@@ -242,8 +264,7 @@
           "Rehgar|D1"
         ],
         "abilityTalentLinkIds": [
-          "RehgarGhostWolf",
-          "RehgarGhostWolfLunge"
+          "RehgarGhostWolf"
         ]
       },
       {
@@ -376,12 +397,18 @@
         "tooltipId": "RehgarEarthbindTotemEarthgraspTotem",
         "talentTreeId": "RehgarEarthbindTotemEarthgraspTotem",
         "name": "Earthgrasp Totem",
-        "description": "When Earthbind Totem is first cast, it slows nearby enemies by 90% for 1 second.",
+        "description": "When Earthbind Totem is first cast, it Slows nearby enemies by 90% for 1 second.",
         "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
-        "type": "Passive",
+        "type": "E",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Rehgar|Passive"
+        "abilityId": "Rehgar|E1",
+        "abilityLinks": [
+          "Rehgar|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "RehgarEarthbindTotem"
+        ]
       },
       {
         "tooltipId": "RehgarHungeroftheWolf",
@@ -397,8 +424,7 @@
           "Rehgar|D1"
         ],
         "abilityTalentLinkIds": [
-          "RehgarGhostWolf",
-          "RehgarGhostWolfLunge"
+          "RehgarGhostWolf"
         ]
       }
     ],
@@ -477,6 +503,24 @@
       }
     ]
   },
+  "summonUnits": [
+    {
+      "unitId": "RehgarEarthbindTotem",
+      "name": "RehgarEarthbindTotem",
+      "icon": "storm_ui_icon_rehgar_earthbindtotem.png",
+      "stats": {
+        "hp": 217,
+        "hpRegen": 0,
+        "hpScale": 0.04,
+        "hpRegenScale": 0,
+        "radius": 0.125,
+        "speed": 0,
+        "sight": 7
+      },
+      "abilities": [],
+      "sourceAbilityTooltipId": "RehgarEarthbindTotem"
+    }
+  ],
   "tooltipMarkup": {
     "GenericCleanse": "Activate to make target ally Unstoppable for <c val=\"#TooltipNumbers\">1</c> second. Cannot be cast on yourself.",
     "GenericRewindHotbar": "Activate to reset the cooldowns of your Basic Abilities.",
@@ -488,8 +532,9 @@
     "RehgarBloodlustGladiatorsWarShout": "Increases Bloodlust's healing from <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarBloodlustBasicAttackBuff,Modification.VitalDamageLeechArray[Life].KindArray[Basic]*100\"player=\"0\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarBloodlustBasicAttackBuff,Modification.VitalDamageLeechArray[Life].KindArray[Basic]+Talent,RehgarGladiatorsWarShout,AbilityModificationArray[0].Modifications[0].Value*100\"player=\"0\"/>%</c> of Basic Attack damage done.",
     "RehgarChainHeal": "Heal an ally with a wave of healing for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarChainHealPrimaryHeal,RechargeVitalRate\"/></c> Health. The wave then bounces <c val=\"#TooltipNumbers\">2</c> times to nearby allies within <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarChainHeal1SearchForNewTarget,AreaArray[0].Radius\"/></c> range, restoring <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarChainHealSecondaryHeal,RechargeVitalRate\"/></c> Health to them.",
     "RehgarChainHealTidalWavesTalent": "Reduces Chain Heal's cooldown by <c val=\"#TooltipNumbers\">0.75</c> seconds for each Hero healed, and reduces its Mana cost from <c val=\"#TooltipNumbers\"><d ref=\"Abil,RehgarChainHeal,Cost[0].Vital[Energy]\" player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Abil,RehgarChainHeal,Cost[0].Vital[Energy]+Talent,RehgarMasteryTidalWaves,AbilityModificationArray[0].Modifications[1].Value\" player=\"0\"/></c>.",
+    "RehgarEarthbindTotem": "Create a totem that Slows nearby enemies by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,RehgarEarthbindTotemSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>. The totem has <c val=\"#TooltipNumbers\"><d ref=\"Unit,RehgarEarthbindTotem,LifeMax\"/></c> Health and lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarEarthbindTotemTimedLife,Duration\" player=\"0\"/></c> seconds.",
     "RehgarEarthbindTotemColossalTotem": "Increases the area and range of Earthbind Totem by <c val=\"#TooltipNumbers\"><d ref=\"((Talent,RehgarEarthbindTotemColossalTotem,AbilityModificationArray[0].Modifications[0].Value+Effect,RehgarEarthbindTotemSearch,AreaArray[0].Radius)/Effect,RehgarEarthbindTotemSearch,AreaArray[0].Radius-1)*100\" player=\"0\" precision=\"2\"/>%</c> and it can be reactivated to move an existing totem to a new location once.",
-    "RehgarEarthbindTotemEarthgraspTotem": "When Earthbind Totem is first cast, it slows nearby enemies by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,RehgarEarthbindTotemEarthgraspTotemSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarEarthbindTotemEarthgraspTotemSlow,Duration\" precision=\"1\" player=\"0\"/></c> second.",
+    "RehgarEarthbindTotemEarthgraspTotem": "When Earthbind Totem is first cast, it Slows nearby enemies by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,RehgarEarthbindTotemEarthgraspTotemSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarEarthbindTotemEarthgraspTotemSlow,Duration\" precision=\"1\" player=\"0\"/></c> second.",
     "RehgarEarthbindTotemGroundedTotem": "Increase the Health of Earthbind Totem by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RehgarEarthbindTotemGroundedTotemBonusHealthBehavior,Modification.VitalMaxFractionArray[Life]\"/>%</c>.  Enemy Heroes who are Slowed by Earthbind Totem also have their Attack Speed Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,RehgarEarthbindTotemGroundedTotemAttackSpeedDebuff,Modification.AdditiveAttackSpeedFactor\"/>%</c>.",
     "RehgarEarthlivingEnchant": "When Chain Heal heals a Hero below <c val=\"#TooltipNumbers\">50%</c> Health, they are healed an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarChainHealEarthlivingEnchantHealer,RechargeVitalRate*Behavior,RehgarChainHealEarthlivingEnchantHeal,Duration\"/></c> Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RehgarChainHealEarthlivingEnchantHeal,Duration\"/></c> seconds.",
     "RehgarGhostWolf": "Instead of using a mount, Rehgar transforms into a Ghost Wolf with <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RehgarGhostWolfBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> increased Movement Speed. Basic Attacks in Ghost Wolf form cause him to lunge at his target and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,RehgarWeaponDamage,MultiplicativeModifierArray[0].Modifier*100\" player=\"0\" precision=\"2\"/>%</c> bonus damage. Dealing damage, using Abilities, and channeling cancels Ghost Wolf form.",
@@ -515,8 +560,9 @@
     "RehgarBloodlustGladiatorsWarShout": "Increases Bloodlust Life Steal",
     "RehgarChainHeal": "Create a healing wave that jumps between allies",
     "RehgarChainHealTidalWavesTalent": "Reduces Chain Heal cooldown, Mana cost",
+    "RehgarEarthbindTotem": "Creates a totem that Slows nearby enemies",
     "RehgarEarthbindTotemColossalTotem": "Increases Earthbind Totem area and range, reactivatable",
-    "RehgarEarthbindTotemEarthgraspTotem": "Increases Earthbind Totem initial slow",
+    "RehgarEarthbindTotemEarthgraspTotem": "Increases Earthbind Totem initial Slow",
     "RehgarEarthbindTotemGroundedTotem": "Increase Totem Health, lower Attack Speed",
     "RehgarEarthlivingEnchant": "Empowers Chain Heal on low Health Heroes",
     "RehgarGhostWolf": "Transform into a Ghost Wolf",

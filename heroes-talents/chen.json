@@ -8,7 +8,7 @@
   "name": "Chen",
   "icon": "chen.png",
   "role": "Warrior",
-  "expandedRole": "Warrior",
+  "expandedRole": "Bruiser",
   "type": "Melee",
   "description": "A potent Bruiser that wears downs enemies and is resistant to burst damage.",
   "title": "Legendary Brewmaster",
@@ -171,6 +171,16 @@
       }
     ],
     "ChenStormEarthFire": [
+      {
+        "uid": "eee284",
+        "name": "Storm",
+        "description": "The spirits gain a Shield for 400 (+4% per level) over 3 seconds.  If this is the final Ability cast, the shield amount is increased to 750 (+4% per level) with no limited duration, and the duration of Storm, Earth, Fire is increased by 5 seconds.",
+        "hotkey": "Q",
+        "abilityId": "Chen|Q2",
+        "tooltipId": "ChenStorm",
+        "icon": "storm_temp_war3_btntornado.png",
+        "type": "basic"
+      },
       {
         "uid": "48b037",
         "name": "Fire",
@@ -553,13 +563,15 @@
         "type": "Heroic",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Chen|W3",
+        "abilityId": "Chen|Q2",
         "abilityLinks": [
           "Chen|E2",
+          "Chen|Q2",
           "Chen|R1",
           "Chen|W3"
         ],
         "abilityTalentLinkIds": [
+          "ChenStorm",
           "ChenEarth",
           "ChenFire",
           "ChenStormEarthFire"
@@ -628,6 +640,7 @@
     "ChenKegSmashATouchOfHoneyTalent": "Increase the Slows from Keg Smash by <c val=\"#TooltipNumbers\"><d ref=\"-100*Talent,ChenMasteryKegSmashATouchOfHoney,AbilityModificationArray[0].Modifications[0].Value\"/>%</c> and its duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,ChenMasteryKegSmashATouchOfHoney,AbilityModificationArray[0].Modifications[3].Value\"Precision=\"2\"/></c> seconds.",
     "ChenPurifyingBrew": "Casting Fortifying Brew grants Chen Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenPurifyingBrewUnstoppableBuff,Duration\"Precision=\"2\"/></c> seconds.",
     "ChenStagger": "Damage taken over the next <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenStaggerProtectedBuff,Duration\"Player=\"0\"/></c> seconds is prevented.  Once this effect ends, Chen receives <c val=\"#TooltipNumbers\">75%</c> of the damage taken over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenStaggerDoT,Duration\"Player=\"0\"/></c> seconds.  This damage cannot be modified.",
+    "ChenStorm": "The spirits gain a Shield for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenStormShieldBuff,DamageResponse.ModifyLimit\"/></c> over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenStormShieldBuff,Duration\"/></c> seconds.<n/><n/>If this is the final Ability cast, the shield amount is increased to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenStormEmpoweredShieldBuff,DamageResponse.ModifyLimit\"/></c> with no limited duration, and the duration of Storm, Earth, Fire is increased by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenStormStormEarthFireEmpoweredCastModifyTimedLife,Value\"/></c> seconds.",
     "ChenStormEarthFire": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,ChenStormEarthFire,CastIntroTime\"/></c> second, Chen splits into three elemental spirits for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StormEarthFireCasterBehavior,Duration[0]\"/></c> seconds, each with <c val=\"#TooltipNumbers\">70%</c> of Chen's maximum Health and a unique Ability.  The last spirit Ability that is cast is empowered. If all three spirits are killed, Chen will die as well.<n/><n/><c val=\"00ffff\">Storm</c> can grant the spirits a Shield. <n/><c val=\"00ff00\">Earth</c> can leap to an area and Slow enemies. <n/><c val=\"ff6600\">Fire</c> can grant the spirits Attack Speed, damage.",
     "ChenStormEarthFireElementalConduitTalent": "Increase the spirits' Health to <c val=\"#TooltipNumbers\">100%</c> of Chen's maximum Health and all of their Abilities are empowered.",
     "ChenStormstoutSecretRecipe": "Chen heals for <c val=\"#TooltipNumbers\"><d ref=\"(100*Effect,ChenStormstoutSecretRecipeCreateHealer,RechargeVitalFraction)+.01\"Precision=\"1\"/>%</c> of his maximum Health when his Basic Abilities hit an enemy Hero.",
@@ -659,6 +672,7 @@
     "ChenKegSmashATouchOfHoneyTalent": "Increase Keg Smash Slow amount, duration",
     "ChenPurifyingBrew": "Fortifying Brew grants Unstoppable",
     "ChenStagger": "Become immune to damage, then convert it to damage over time",
+    "ChenStorm": "Gain a Shield",
     "ChenStormEarthFire": "Split into three elemental spirits",
     "ChenStormEarthFireElementalConduitTalent": "All Storm, Earth, Fire Abilities are empowered",
     "ChenStormstoutSecretRecipe": "Basic Abilities heal Chen",

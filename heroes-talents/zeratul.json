@@ -8,7 +8,7 @@
   "name": "Zeratul",
   "icon": "zeratul.png",
   "role": "Assassin",
-  "expandedRole": "Assassin",
+  "expandedRole": "Melee Assassin",
   "type": "Melee",
   "description": "A stealthed Assassin who can dart around his enemies.",
   "title": "Dark Prelate",
@@ -94,15 +94,15 @@
         "type": "heroic"
       },
       {
-        "uid": "7aa71c",
-        "name": "Shadow Assault",
-        "description": "Basic Attacks cause Zeratul to charge at enemies and have 20% increased Attack Speed. Lasts for 4 seconds.",
+        "uid": "6e5ef5",
+        "name": "Void Prison",
+        "description": "Slows time in an area to a near standstill, placing allies and enemies in Time Stop for 5 seconds. Zeratul is not affected.",
         "hotkey": "R",
         "abilityId": "Zeratul|R2",
-        "tooltipId": "ZeratulShadowAssault",
-        "cooldown": 45,
-        "manaCost": 50,
-        "icon": "storm_ui_icon_zeratul_shadowassault.png",
+        "tooltipId": "ZeratulVoidPrison",
+        "cooldown": 100,
+        "manaCost": 80,
+        "icon": "storm_ui_icon_zeratul_voidprison.png",
         "type": "heroic"
       },
       {
@@ -125,18 +125,6 @@
         "cooldown": 15,
         "icon": "storm_ui_icon_zeratul_vorpalblade.png",
         "type": "activable"
-      },
-      {
-        "uid": "367d51",
-        "name": "Permanent Cloak",
-        "description": "Gain Stealth when out of combat for 3 seconds. Taking damage, attacking, using Abilities, or Channeling ends Stealth. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.",
-        "hotkey": "D",
-        "trait": true,
-        "abilityId": "Zeratul|D2",
-        "tooltipId": "ZeratulPermanentCloak",
-        "cooldown": 3,
-        "icon": "storm_ui_icon_zeratul_cloak.png",
-        "type": "trait"
       }
     ]
   },
@@ -187,12 +175,10 @@
         "isQuest": false,
         "abilityId": "Zeratul|D1",
         "abilityLinks": [
-          "Zeratul|D1",
-          "Zeratul|D2"
+          "Zeratul|D1"
         ],
         "abilityTalentLinkIds": [
-          "ZeratulPermanentCloak",
-          "ZeratulCloakCooldownDisplay"
+          "ZeratulPermanentCloak"
         ]
       }
     ],
@@ -320,11 +306,17 @@
         "name": "Void Prison",
         "description": "Slows time in an area to a near standstill, placing allies and enemies in Time Stop for 5 seconds. Zeratul is not affected.",
         "icon": "storm_ui_icon_zeratul_voidprison.png",
-        "type": "Active",
+        "type": "Heroic",
         "sort": 2,
         "cooldown": 100,
         "isQuest": false,
-        "abilityId": "Zeratul|Active"
+        "abilityId": "Zeratul|R2",
+        "abilityLinks": [
+          "Zeratul|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ZeratulVoidPrison"
+        ]
       }
     ],
     "13": [
@@ -339,12 +331,10 @@
         "isQuest": false,
         "abilityId": "Zeratul|D1",
         "abilityLinks": [
-          "Zeratul|D1",
-          "Zeratul|D2"
+          "Zeratul|D1"
         ],
         "abilityTalentLinkIds": [
-          "ZeratulPermanentCloak",
-          "ZeratulCloakCooldownDisplay"
+          "ZeratulPermanentCloak"
         ]
       },
       {
@@ -382,12 +372,10 @@
         "isQuest": false,
         "abilityId": "Zeratul|Passive",
         "abilityLinks": [
-          "Zeratul|D1",
-          "Zeratul|D2"
+          "Zeratul|D1"
         ],
         "abilityTalentLinkIds": [
-          "ZeratulPermanentCloak",
-          "ZeratulCloakCooldownDisplay"
+          "ZeratulPermanentCloak"
         ]
       },
       {
@@ -437,12 +425,10 @@
         "isQuest": false,
         "abilityId": "Zeratul|R1",
         "abilityLinks": [
-          "Zeratul|R1",
-          "Zeratul|R2"
+          "Zeratul|R1"
         ],
         "abilityTalentLinkIds": [
-          "ZeratulMightOfTheNerazimDummy",
-          "ZeratulShadowAssault"
+          "ZeratulMightOfTheNerazimDummy"
         ],
         "prerequisiteTalentIds": [
           "ZeratulMightOfTheNerazim"
@@ -454,10 +440,16 @@
         "name": "Gift of the Xel'Naga",
         "description": "Allies are no longer affected by Void Prison, and enemies are slowed by 50% for 3 seconds once Void Prison ends.",
         "icon": "storm_ui_icon_zeratul_voidprison.png",
-        "type": "Passive",
+        "type": "Heroic",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Zeratul|Passive",
+        "abilityId": "Zeratul|R2",
+        "abilityLinks": [
+          "Zeratul|R2"
+        ],
+        "abilityTalentLinkIds": [
+          "ZeratulVoidPrison"
+        ],
         "prerequisiteTalentIds": [
           "ZeratulHeroicAbilityVoidPrison"
         ]
@@ -503,7 +495,6 @@
     "ZeratulPsionicStrength": "Dealing damage to enemy Heroes increases all damage dealt by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,ZeratulPsionicStrengthAccumulator,Scale\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulPsionicStrengthDamageBonus,Duration\"/></c> seconds, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulPsionicStrengthTokenBehavior,Max * (100 * Accumulator,ZeratulPsionicStrengthAccumulator,Scale)\"/>%</c>.",
     "ZeratulSeekerInTheDark": "Singularity Spike takes <c val=\"#TooltipNumbers\"><d ref=\"Talent,ZeratulSeekerInTheDark,AbilityModificationArray[0].Modifications[0].Value/Effect,ZeratulSingularitySpikeMissileImpactPersistent,PeriodCount*100\"Player=\"0\"/>%</c> longer to explode. It can be reactivated to teleport to the target, granting <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ZeratulSingularitySpikeSeekerInTheDarkTalentMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> increased Move Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulSingularitySpikeSeekerInTheDarkTalentMoveSpeedBuff,Duration\"/></c> seconds.",
     "ZeratulSentencedtoDeath": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,ZeratulCleaveDamage,MultiplicativeModifierArray[ZeratulSentencedToDeath].Modifier*100\"/>%</c> increased damage to enemies while they are marked or Slowed by Singularity Spike.",
-    "ZeratulShadowAssault": "Basic Attacks cause Zeratul to charge at enemies and have <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ShadowAssault,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> increased Attack Speed. Lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ShadowAssault,Duration\" player=\"0\"/></c> seconds.",
     "ZeratulShadowHunter": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gather Regeneration Globes to lower the Mana cost of Blink by <c val=\"#TooltipNumbers\"><d ref=\"-Accumulator,ZeratulShadowHunterAccumulator,Scale\"/></c>, up to <c val=\"#TooltipNumbers\"><d ref=\"-Accumulator,ZeratulShadowHunterAccumulator,Scale*Behavior,ZeratulShadowHunterTalentTokenCounter,Max\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Upon gathering <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulShadowHunterTalentTokenCounter,Max\"/></c> Regeneration Globes, Basic Attacks reduce the cooldown of Blink by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ZeratulBlinkShadowHunterTalentModifyCooldown,Cost[0].ChargeTimeUse\"Precision=\"2\"/></c> seconds.",
     "ZeratulShadowMending": "Heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ZeratulCleaveDamage,LeechFraction[Life]\"/>%</c> of Spell Damage dealt to Heroes.",
     "ZeratulShroudofAdun": "Zeratul gains a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulShroudofAdun,MaxStackCount*Behavior,ZeratulShroudofAdun,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]*100\"/>%</c> of his Maximum Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ZeratulShroudofAdun,MaxStackCount*Behavior,ZeratulPermanentCloak,Period\"/></c> seconds while under Permanent Cloak.",
@@ -530,7 +521,6 @@
     "ZeratulPermanentCloak": "Become Stealthed while not attacking, using Abilities, or taking damage",
     "ZeratulSeekerInTheDark": "Teleport to Singularity Spike target",
     "ZeratulSentencedtoDeath": "Deal bonus damage to marked targets",
-    "ZeratulShadowAssault": "Basic Attacks teleport to enemies",
     "ZeratulShadowHunter": "<c val=\"#TooltipQuest\">Quest:</c> Gather Regen Globes to empower Blink",
     "ZeratulShadowMending": "Spell Damage dealt to Heroes heals",
     "ZeratulShroudofAdun": "Gain a shield while under Permanent Cloak",

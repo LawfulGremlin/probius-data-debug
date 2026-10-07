@@ -8,7 +8,7 @@
   "name": "Illidan",
   "icon": "illidan.png",
   "role": "Assassin",
-  "expandedRole": "Assassin",
+  "expandedRole": "Melee Assassin",
   "type": "Melee",
   "description": "A mobile, sustained damage Assassin who pairs well with Heroes that can enable him.",
   "title": "The Betrayer",
@@ -92,14 +92,12 @@
         "type": "heroic"
       },
       {
-        "uid": "578889",
+        "uid": "a5b5be",
         "name": "Betrayer's Thirst",
-        "description": "Basic Attacks heal for 30% of damage dealt and reduce Illidan's Ability cooldowns by 1 second.",
-        "hotkey": "D",
+        "description": "Basic Attacks heal for 30% of damage dealt and reduce Ability cooldowns by 1 second.",
         "trait": true,
         "abilityId": "Illidan|D1",
-        "tooltipId": "IllidanBetrayersThirstThrillOfBattle",
-        "cooldown": 20,
+        "tooltipId": "IllidanBetrayersThirst",
         "icon": "storm_ui_icon_illidan_betrayersthirst.png",
         "type": "trait"
       }
@@ -238,7 +236,7 @@
           "Illidan|D1"
         ],
         "abilityTalentLinkIds": [
-          "IllidanThrillOfBattle"
+          "IllidanBetrayersThirst"
         ]
       },
       {
@@ -255,7 +253,7 @@
           "Illidan|D1"
         ],
         "abilityTalentLinkIds": [
-          "IllidanThrillOfBattle"
+          "IllidanBetrayersThirst"
         ]
       }
     ],
@@ -467,9 +465,9 @@
   },
   "tooltipMarkup": {
     "GenericBoltoftheStormTalent": "Activate to teleport to a nearby location.",
+    "IllidanBetrayersThirst": "Basic Attacks heal for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,IllidanBetrayersThirstLifesteal,Modification.VitalDamageLeechArray[Life].KindArray[Basic]*100\"/>%</c> of damage dealt and reduce Ability cooldowns by <c val=\"#TooltipNumbers\">1</c> second.",
     "IllidanBetrayersThirstHuntersOnslaughtTalent": "Basic Abilities heal for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,IllidanHuntersOnslaughtLifeLeech,Modification.VitalDamageLeechArray[Life].KindArray[Ability]*100\" precision=\"2\"/>%</c> of the damage they deal. This bonus is doubled versus Heroes.",
     "IllidanBetrayersThirstThirstingBladeTalent": "Betrayer's Thirst's healing from Basic Attacks is increased from <c val=\"#TooltipNumbers\"><d ref=\"Behavior,IllidanBetrayersThirstLifesteal,Modification.VitalDamageLeechArray[Life].KindArray[Basic]*100\"/>%</c> to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,IllidanBetrayersThirstThirstingBladeTalent,Modification.VitalDamageLeechArray[Life].KindArray[Basic]*100\"/>%</c> while Sweeping Strike's damage bonus is active.",
-    "IllidanBetrayersThirstThrillOfBattle": "Basic Attacks heal for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,IllidanBetrayersThirstLifesteal,Modification.VitalDamageLeechArray[Life].KindArray[Basic]*100\"/>%</c> of damage dealt and reduce Illidan's Ability cooldowns by <c val=\"#TooltipNumbers\">1</c> second.",
     "IllidanBladesOfAzzinoth": "Hitting <c val=\"#TooltipNumbers\">5</c> Heroes with Sweeping Strike allows Blades of Azzinoth to be activated, increasing Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,IllidanBladesOfAzzinoth,Modification.DamageDealtFraction[Basic]\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,IllidanBladesOfAzzinoth,Duration\"/></c> seconds.",
     "IllidanDive": "Dive at the target, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,IllidanDiveDamage,Amount\"/></c> damage and flipping to the other side of the target.",
     "IllidanDiveFriendOrFoeTalent": "Increases the range of Dive by <c val=\"#TooltipNumbers\">20%</c> and allows it to be used to dive to allied Heroes.",
@@ -494,6 +492,7 @@
   },
   "tooltipSimple": {
     "GenericBoltoftheStormTalent": "Activate to teleport a short distance",
+    "IllidanBetrayersThirst": "Basic Attacks heal for part of the damage dealt and reduce Ability cooldowns",
     "IllidanBetrayersThirstHuntersOnslaughtTalent": "Damage from Basic Abilities heals",
     "IllidanBetrayersThirstThirstingBladeTalent": "Sweeping Strike grants more Lifesteal",
     "IllidanBladesOfAzzinoth": "Activate to increase Basic Attack damage",

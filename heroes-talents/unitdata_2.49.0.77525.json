@@ -2146,6 +2146,334 @@
     "sight": 0,
     "speed": 0
   },
+  "DeathwingBrimstoneMissile": {
+    "unitId": "DeathwingBrimstoneMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "DeathwingBrimstonePathingBlockerUnit": {
+    "unitId": "DeathwingBrimstonePathingBlockerUnit",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.875,
+    "innerRadius": 0.0625,
+    "sight": 2,
+    "speed": 0
+  },
+  "DeathwingDragonflightUnit": {
+    "unitId": "DeathwingDragonflightUnit",
+    "portraits": {},
+    "life": {
+      "amount": 3200,
+      "scale": 0.04,
+      "regenRate": 6.668,
+      "regenScale": 0.04,
+      "type": "Health"
+    },
+    "energy": {
+      "amount": 100,
+      "regenRate": 5,
+      "type": "Mana"
+    },
+    "radius": 1.25,
+    "innerRadius": 1,
+    "sight": 0,
+    "speed": 0,
+    "abilities": {
+      "basic": [
+        {
+          "nameId": "DeathwingDestroyerForm",
+          "buttonId": "DeathwingDestroyer",
+          "abilityType": "Q",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingDestroyerForm|DeathwingDestroyer|Q",
+          "icon": "storm_ui_icon_deathwing_destroyer.png",
+          "name": "Destroyer",
+          "fullText": "After <c val=\"bfd4fd\">1.75</c> seconds, Deathwing slams down to the ground, dealing <c val=\"bfd4fd\">50</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the area and landing in <c val=\"ef6e28-ad231e\">Destroyer</c> form. Deathwing can begin to cast Abilities <c val=\"bfd4fd\">3</c> seconds after landing.",
+          "cooldownText": "Cooldown: 8 seconds"
+        },
+        {
+          "nameId": "DeathwingMoltenFlameCancel",
+          "buttonId": "DeathwingMoltenFlameCancel",
+          "abilityType": "Q",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingMoltenFlameCancel|DeathwingMoltenFlameCancel|Q",
+          "toggleCooldown": 0.75,
+          "icon": "hud_btn_bg_ability_cancel.png",
+          "name": "Cancel",
+          "fullText": "After <c val=\"bfd4fd\">1.5</c> seconds, Deathwing breathes a stream of flame, dealing <c val=\"bfd4fd\">21</c><c val=\"a7a7a7\">~~0.04~~</c> damage every <c val=\"bfd4fd\">0.125</c> seconds. Drains <c val=\"bfd4fd\">30</c> Energy per second. "
+        },
+        {
+          "nameId": "DeathwingMoltenFlame",
+          "buttonId": "DeathwingMoltenFlame",
+          "abilityType": "Q",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingMoltenFlame|DeathwingMoltenFlame|Q",
+          "icon": "storm_ui_icon_deathwing_molten_flame.png",
+          "name": "Molten Flame",
+          "fullText": "After <c val=\"bfd4fd\">1.5</c> seconds, Deathwing breathes a stream of flame, dealing <c val=\"bfd4fd\">21</c><c val=\"a7a7a7\">~~0.04~~</c> damage every <c val=\"bfd4fd\">0.125</c> seconds. Drains <c val=\"bfd4fd\">30</c> Energy per second. ",
+          "cooldownText": "Cooldown: 3 seconds"
+        },
+        {
+          "nameId": "DeathwingWorldbreakerForm",
+          "buttonId": "DeathwingWorldbreaker",
+          "abilityType": "W",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingWorldbreakerForm|DeathwingWorldbreaker|W",
+          "icon": "storm_ui_icon_deathwing_world_breaker.png",
+          "name": "World Breaker",
+          "fullText": "After <c val=\"bfd4fd\">1.75</c> seconds, Deathwing slams down to the ground, dealing <c val=\"bfd4fd\">50</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the area and landing in <c val=\"d8ab80-87564b\">World Breaker</c> form. Deathwing can begin to cast Abilities <c val=\"bfd4fd\">3</c> seconds after landing.",
+          "cooldownText": "Cooldown: 8 seconds"
+        },
+        {
+          "nameId": "DeathwingWorldbreakerForm",
+          "buttonId": "DeathwingWorldbreaker",
+          "abilityType": "W",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingWorldbreakerForm|DeathwingWorldbreaker|W",
+          "icon": "storm_ui_icon_deathwing_world_breaker.png",
+          "name": "World Breaker",
+          "fullText": "After <c val=\"bfd4fd\">1.75</c> seconds, Deathwing slams down to the ground, dealing <c val=\"bfd4fd\">50</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the area and landing in <c val=\"d8ab80-87564b\">World Breaker</c> form. Deathwing can begin to cast Abilities <c val=\"bfd4fd\">3</c> seconds after landing.",
+          "cooldownText": "Cooldown: 8 seconds"
+        },
+        {
+          "nameId": "DeathwingIncinerate",
+          "buttonId": "DeathwingIncinerate",
+          "abilityType": "W",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingIncinerate|DeathwingIncinerate|W",
+          "icon": "storm_ui_icon_deathwing_incinerate.png",
+          "name": "Incinerate",
+          "fullText": "After <c val=\"bfd4fd\">0.75</c> seconds, Deathwing flaps his wings, dealing <c val=\"bfd4fd\">85</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Lava Burst</c><n/>Create a lava pool that damages and Slows",
+          "cooldownText": "Cooldown: 4 seconds"
+        },
+        {
+          "nameId": "DeathwingSkyfall",
+          "buttonId": "DeathwingSkyfallActive",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingSkyfall|DeathwingSkyfallActive|E",
+          "charges": {
+            "countMax": 3,
+            "countStart": 3,
+            "countUse": 1,
+            "recastCooldown": 0.5,
+            "isCountHidden": false
+          },
+          "icon": "storm_ui_icon_deathwing_skyfall.png",
+          "name": "Skyfall",
+          "fullText": "After <c val=\"bfd4fd\">0.8</c> seconds, a meteor falls from the sky, dealing <c val=\"bfd4fd\">58</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the area.<n/><n/>If a Hero is hit, Deathwing heals for <c val=\"bfd4fd\">5%</c> of his maximum Health and reduces his landing cooldowns by <c val=\"bfd4fd\">1.5</c> seconds.",
+          "cooldownText": "Charge Cooldown: 10 seconds"
+        },
+        {
+          "nameId": "DeathwingOnslaught",
+          "buttonId": "DeathwingOnslaught",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingOnslaught|DeathwingOnslaught|E",
+          "icon": "storm_ui_icon_deathwing_onslaught.png",
+          "name": "Onslaught",
+          "fullText": "After <c val=\"bfd4fd\">0.5</c> seconds, Deathwing lunges in a direction dealing <c val=\"bfd4fd\">42</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies and Slowing them by <c val=\"bfd4fd\">35%</c> for <c val=\"bfd4fd\">2</c> seconds. Deathwing bites enemies at the end of the lunge, dealing an additional <c val=\"bfd4fd\">80</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/><c val=\"d8ab80-87564b\">World Breaker: Earth Shatter</c><n/>Damage and Stun enemies in two lines",
+          "cooldownText": "Cooldown: 5 seconds"
+        },
+        {
+          "nameId": "DeathwingEarthShatter",
+          "buttonId": "DeathwingEarthShatter",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingEarthShatter|DeathwingEarthShatter|E",
+          "icon": "storm_ui_icon_deathwing_earth_shatter.png",
+          "name": "Earth Shatter",
+          "fullText": "Create a fissure of earth that deals <c val=\"bfd4fd\">80</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit and Stuns them for <c val=\"bfd4fd\">0.75</c> seconds.<n/><n/><c val=\"ef6e28-ad231e\">Destroyer: Onslaught</c><n/>Lunge in a direction",
+          "cooldownText": "Cooldown: 12 seconds"
+        },
+        {
+          "nameId": "DeathwingEarthShatter",
+          "buttonId": "DeathwingEarthShatter",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingEarthShatter|DeathwingEarthShatter|E",
+          "icon": "storm_ui_icon_deathwing_earth_shatter.png",
+          "name": "Earth Shatter",
+          "fullText": "Create a fissure of earth that deals <c val=\"bfd4fd\">80</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit and Stuns them for <c val=\"bfd4fd\">0.75</c> seconds.<n/><n/><c val=\"ef6e28-ad231e\">Destroyer: Onslaught</c><n/>Lunge in a direction",
+          "cooldownText": "Cooldown: 12 seconds"
+        }
+      ],
+      "heroic": [
+        {
+          "nameId": "DeathwingCataclysm",
+          "buttonId": "DeathwingCataclysm",
+          "abilityType": "Heroic",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingCataclysm|DeathwingCataclysm|Heroic",
+          "icon": "storm_ui_icon_deathwing_cataclysm.png",
+          "name": "Cataclysm",
+          "fullText": "After <c val=\"bfd4fd\">2</c> seconds, Deathwing flies in the targeted direction, dealing <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact and leaving scorched ground that deals <c val=\"bfd4fd\">48</c><c val=\"a7a7a7\">~~0.04~~</c> damage a second. Lasts <c val=\"bfd4fd\">6</c> seconds.",
+          "cooldownText": "Cooldown: 90 seconds"
+        }
+      ],
+      "trait": [
+        {
+          "nameId": "DeathwingAspectOfDeath",
+          "buttonId": "DeathwingAspectOfDeath",
+          "abilityType": "Trait",
+          "isPassive": true,
+          "_hdp5LinkId": ":PASSIVE:|DeathwingAspectOfDeath|Trait",
+          "icon": "storm_ui_icon_deathwing_aspect_of_death.png",
+          "name": "Aspect of Death",
+          "fullText": "Deathwing is fitted with <c val=\"bfd4fd\">4</c> Armor Plates which grant <c val=\"bfd4fd\">10</c> Armor each. Every <c val=\"bfd4fd\">25%</c> Health lost causes Deathwing to lose a plate. Plates are only restored when Dragonflight is used, based on the amount of Health Deathwing has when landing.<n/><n/>Deathwing is also a mighty Dragon Aspect who is permanently Unstoppable and deals <c val=\"bfd4fd\">100%</c> additional Spell Damage to Heroes, but views his allies with contempt and ignores any of their friendly effects."
+        }
+      ],
+      "hearth": [
+        {
+          "nameId": "Hearthstone",
+          "buttonId": "DeathwingHearthstone",
+          "abilityType": "B",
+          "isPassive": false,
+          "_hdp5LinkId": "Hearthstone|DeathwingHearthstone|B",
+          "icon": "storm_ui_icon_miscrune_1.png",
+          "name": "Hearthstone",
+          "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms."
+        }
+      ],
+      "mount": [
+        {
+          "nameId": "DeathwingDragonflight",
+          "buttonId": "DeathwingDragonflight",
+          "abilityType": "Z",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingDragonflight|DeathwingDragonflight|Z",
+          "icon": "storm_ui_icon_deathwing_mount.png",
+          "name": "Dragonflight",
+          "fullText": "After <c val=\"bfd4fd\">3</c> seconds, fly into the sky, becoming Immune to all effects and gaining <c val=\"bfd4fd\">2.5%</c> Health per second. Once cast, this ability cannot be interrupted. Cannot be cast for <c val=\"bfd4fd\">4</c> seconds after taking damage, Basic Attacking or casting an Ability.",
+          "cooldownText": "Cooldown: 45 seconds"
+        }
+      ],
+      "activable": [
+        {
+          "nameId": "DeathwingFormSwitch",
+          "buttonId": "DeathwingFormSwitch",
+          "abilityType": "Active",
+          "isPassive": false,
+          "_hdp5LinkId": "DeathwingFormSwitch|DeathwingFormSwitch|Active",
+          "icon": "storm_ui_icon_deathwing_deathdrop.png",
+          "name": "Form Switch",
+          "fullText": "Switches Deathwing between <c val=\"ef6e28-ad231e\">Destroyer</c> and <c val=\"d8ab80-87564b\">World Breaker</c> forms, each granting access to two unique Basic Abilities.<n/><n/><c val=\"ef6e28-ad231e\">Incinerate</c> damages enemies around Deathwing and <c val=\"ef6e28-ad231e\">Onslaught</c> allows him to lunge at enemies.<n/><n/><c val=\"d8ab80-87564b\">Lava Burst</c> creates a Slowing area and <c val=\"d8ab80-87564b\">Earth Shatter</c> Stuns enemies in two lines.",
+          "cooldownText": "Cooldown: 20 seconds"
+        }
+      ],
+      "spray": [
+        {
+          "nameId": "LootSpray",
+          "buttonId": "LootSpray",
+          "abilityType": "Spray",
+          "isPassive": false,
+          "_hdp5LinkId": "LootSpray|LootSpray|Spray",
+          "icon": "storm_temp_war3_btnhealingspray.png",
+          "name": "Quick Spray Expression",
+          "fullText": "Express yourself to other players by marking the ground with your selected spray.",
+          "cooldownText": "Cooldown: 3 seconds"
+        }
+      ],
+      "voice": [
+        {
+          "nameId": "LootYellVoiceLine",
+          "buttonId": "LootYellVoiceLine",
+          "abilityType": "Voice",
+          "isPassive": false,
+          "_hdp5LinkId": "LootYellVoiceLine|LootYellVoiceLine|Voice",
+          "icon": "storm_btn_d3_barbarian_threateningshout.png",
+          "name": "Quick Voice Line Expression",
+          "fullText": "Express yourself to other players by playing your selected Voice Line.",
+          "cooldownText": "Cooldown: 7 seconds"
+        }
+      ]
+    }
+  },
+  "DeathwingDragonFuryUnit": {
+    "unitId": "DeathwingDragonFuryUnit",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.375,
+    "innerRadius": 0.375,
+    "sight": 0,
+    "speed": 0
+  },
+  "DeathwingEarthShatterLeftMissile": {
+    "unitId": "DeathwingEarthShatterLeftMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "DeathwingEarthShatterRightMissile": {
+    "unitId": "DeathwingEarthShatterRightMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "DeathwingFireBombMissile": {
+    "unitId": "DeathwingFireBombMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "DeathwingRuin": {
+    "unitId": "DeathwingRuin",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 2,
+    "innerRadius": 0.0625,
+    "sight": 0,
+    "speed": 0
+  },
   "DebilitatingDartDebilitatingDartMissile": {
     "unitId": "DebilitatingDartDebilitatingDartMissile",
     "portraits": {},
@@ -2930,6 +3258,101 @@
       "regenScale": 0
     },
     "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "ExperienceGlobeL2Tower": {
+    "unitId": "ExperienceGlobeL2Tower",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.125,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 20,
+    "abilities": {
+      "hearth": [
+        {
+          "nameId": "move",
+          "buttonId": "MovePatrol",
+          "abilityType": "B",
+          "isPassive": false,
+          "_hdp5LinkId": "move|MovePatrol|B",
+          "icon": "btn-command-patrol.png",
+          "name": "Move Patrol"
+        }
+      ]
+    }
+  },
+  "ExperienceGlobeL3Tower": {
+    "unitId": "ExperienceGlobeL3Tower",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.125,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 20,
+    "abilities": {
+      "hearth": [
+        {
+          "nameId": "move",
+          "buttonId": "MovePatrol",
+          "abilityType": "B",
+          "isPassive": false,
+          "_hdp5LinkId": "move|MovePatrol|B",
+          "icon": "btn-command-patrol.png",
+          "name": "Move Patrol"
+        }
+      ]
+    }
+  },
+  "ExperienceGlobeMinion": {
+    "unitId": "ExperienceGlobeMinion",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.125,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 20,
+    "abilities": {
+      "hearth": [
+        {
+          "nameId": "move",
+          "buttonId": "MovePatrol",
+          "abilityType": "B",
+          "isPassive": false,
+          "_hdp5LinkId": "move|MovePatrol|B",
+          "icon": "btn-command-patrol.png",
+          "name": "Move Patrol"
+        }
+      ]
+    }
+  },
+  "ExperienceGlobeMissile": {
+    "unitId": "ExperienceGlobeMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
     "innerRadius": 0,
     "sight": 0,
     "speed": 0
@@ -5815,7 +6238,7 @@
           "_hdp5LinkId": "LostVikingsLongboatRaidMortar|LostVikingsMortar|Q",
           "icon": "storm_ui_icon_lostvikings_mortar.png",
           "name": "Mortar",
-          "fullText": "Fires a mortar at the targeted location, dealing <c val=\"bfd4fd\">205</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area.",
+          "fullText": "Fires a mortar at the targeted location, dealing <c val=\"bfd4fd\">228</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area.",
           "cooldownText": "Cooldown: 3 seconds"
         }
       ]
@@ -17465,14 +17888,15 @@
           "cooldownText": "Cooldown: 9 Seconds"
         },
         {
-          "nameId": "DVaLockedAbilityW",
-          "buttonId": "DVaLockedAbilityW",
-          "abilityType": "W",
-          "isPassive": true,
-          "_hdp5LinkId": ":PASSIVE:|DVaLockedAbilityW|W",
-          "icon": "hud_btn_bg_ability_locked.png",
-          "name": "Locked Ability",
-          "fullText": "<c val=\"bfd4fd\">Concussive Pulse can be unlocked through a Talent at Level 20.</c>"
+          "nameId": "DVaPilotCallMechMEKAfall",
+          "buttonId": "DVaPilotCallMech",
+          "abilityType": "E",
+          "isPassive": false,
+          "_hdp5LinkId": "DVaPilotCallMechMEKAfall|DVaPilotCallMech|E",
+          "icon": "storm_ui_icon_dva_callmech.png",
+          "name": "Call Mech",
+          "fullText": "Call a new Mech and enter Mech Mode.<n/><n/>Basic Attacks lower this cooldown by <c val=\"bfd4fd\">0.5</c> seconds each.",
+          "cooldownText": "Cooldown: 45 seconds"
         },
         {
           "nameId": "DVaPilotCallMech",
@@ -17503,27 +17927,27 @@
       ],
       "heroic": [
         {
-          "nameId": "DVaMechBunnyHopHeroic",
-          "buttonId": "DVaBunnyHopOn",
+          "nameId": "DVaPilotBigShot",
+          "buttonId": "DVaPilotBigShot",
           "abilityType": "Heroic",
           "isPassive": false,
-          "_hdp5LinkId": "DVaMechBunnyHopHeroic|DVaBunnyHopOn|Heroic",
-          "icon": "storm_ui_icon_dva_bunnyhop.png",
-          "name": "Bunny Hop",
-          "fullText": "D.Va's Mech becomes Unstoppable and stomps every <c val=\"bfd4fd\">0.5</c> seconds, dealing <c val=\"bfd4fd\">60</c><c val=\"a7a7a7\">~~0.04~~</c> damage and Slowing enemies by <c val=\"bfd4fd\">40%</c>. Lasts <c val=\"bfd4fd\">4</c> seconds.<n/><n/>Requires Mech Mode.",
-          "cooldownText": "Cooldown: 100 Seconds"
+          "_hdp5LinkId": "DVaPilotBigShot|DVaPilotBigShot|Heroic",
+          "icon": "storm_ui_icon_dva_bigshot.png",
+          "name": "Big Shot",
+          "fullText": "Deal <c val=\"bfd4fd\">250</c><c val=\"a7a7a7\">~~0.04~~</c> damage to all enemies in a line. The cooldown of Call Mech is reduced by <c val=\"bfd4fd\">8</c> seconds for each enemy Hero hit.<n/><n/>Requires Pilot Mode.",
+          "cooldownText": "Cooldown: 4 seconds"
         }
       ],
       "trait": [
         {
-          "nameId": "DVaMechMechMode",
-          "buttonId": "DVaMechMechMode",
+          "nameId": "DVaPilotPilotMode",
+          "buttonId": "DVaPilotPilotMode",
           "abilityType": "Trait",
           "isPassive": true,
-          "_hdp5LinkId": ":PASSIVE:|DVaMechMechMode|Trait",
-          "icon": "storm_ui_icon_dva_mechmode.png",
-          "name": "Mech Mode",
-          "fullText": "When D.Va's Mech dies, she is ejected out after <c val=\"bfd4fd\">0.75</c> seconds and can continue to fight. D.Va's Mech only awards <c val=\"bfd4fd\">50%</c> of a normal Hero's experience upon dying."
+          "_hdp5LinkId": ":PASSIVE:|DVaPilotPilotMode|Trait",
+          "icon": "storm_ui_icon_dva_pilotmode.png",
+          "name": "Pilot Mode",
+          "fullText": "Basic Attacks reduce the cooldown of Call Mech by <c val=\"bfd4fd\">0.5</c> seconds. As a Pilot, D.Va only awards <c val=\"bfd4fd\">50%</c> of a normal Hero's experience upon dying."
         }
       ],
       "hearth": [
@@ -17629,9 +18053,9 @@
     "unitId": "HeroBaleog",
     "portraits": {},
     "life": {
-      "amount": 1095,
+      "amount": 1180,
       "scale": 0.04,
-      "regenRate": 2.2812,
+      "regenRate": 2.457,
       "regenScale": 0.04,
       "type": "Health"
     },
@@ -17642,7 +18066,7 @@
         "range": 1.25,
         "minimumRange": 0,
         "period": 0.9,
-        "damage": 73,
+        "damage": 78,
         "damageScale": 0.04
       },
       {
@@ -17651,7 +18075,7 @@
         "range": 4,
         "minimumRange": 0,
         "period": 0.9,
-        "damage": 73,
+        "damage": 78,
         "damageScale": 0.04
       }
     ],
@@ -17741,7 +18165,7 @@
           "_hdp5LinkId": "LostVikingsLongboatRaidNewer|LostVikingsLongboatRaid|Heroic",
           "icon": "storm_ui_icon_lostvikings_longboatraid.png",
           "name": "Longboat Raid!",
-          "fullText": "Hop into an Unstoppable Longboat that fires at nearby enemies for <c val=\"bfd4fd\">112</c><c val=\"a7a7a7\">~~0.04~~</c> damage per second and can fire a mortar that deals <c val=\"bfd4fd\">205</c><c val=\"a7a7a7\">~~0.04~~</c> damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are stunned for <c val=\"bfd4fd\">1.5</c> seconds. Lasts <c val=\"bfd4fd\">15</c> seconds.<n/><n/><c val=\"ffff8a\">Requires all surviving Vikings to be nearby.</c>",
+          "fullText": "Hop into an Unstoppable Longboat that fires at nearby enemies for <c val=\"bfd4fd\">112</c><c val=\"a7a7a7\">~~0.04~~</c> damage per second and can fire a mortar that deals <c val=\"bfd4fd\">228</c><c val=\"a7a7a7\">~~0.04~~</c> damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for <c val=\"bfd4fd\">1</c> second. Lasts <c val=\"bfd4fd\">15</c> seconds.<n/><n/><c val=\"ffff8a\">Requires all surviving Vikings to be nearby.</c>",
           "cooldownText": "Cooldown: 90 seconds"
         }
       ],
@@ -17817,7 +18241,7 @@
               "_hdp5LinkId": "LostVikingsLongboatRaidMortar|LostVikingsMortar|Q",
               "icon": "storm_ui_icon_lostvikings_mortar.png",
               "name": "Mortar",
-              "fullText": "Fires a mortar at the targeted location, dealing <c val=\"bfd4fd\">205</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area.",
+              "fullText": "Fires a mortar at the targeted location, dealing <c val=\"bfd4fd\">228</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area.",
               "cooldownText": "Cooldown: 3 seconds"
             }
           ]
@@ -17829,9 +18253,9 @@
     "unitId": "HeroErik",
     "portraits": {},
     "life": {
-      "amount": 767,
+      "amount": 840,
       "scale": 0.04,
-      "regenRate": 1.5976,
+      "regenRate": 1.75,
       "regenScale": 0.04,
       "type": "Health"
     },
@@ -17842,7 +18266,7 @@
         "range": 6.5,
         "minimumRange": 0,
         "period": 0.7,
-        "damage": 60,
+        "damage": 65,
         "damageScale": 0.04
       }
     ],
@@ -17932,7 +18356,7 @@
           "_hdp5LinkId": "LostVikingsLongboatRaidNewer|LostVikingsLongboatRaid|Heroic",
           "icon": "storm_ui_icon_lostvikings_longboatraid.png",
           "name": "Longboat Raid!",
-          "fullText": "Hop into an Unstoppable Longboat that fires at nearby enemies for <c val=\"bfd4fd\">112</c><c val=\"a7a7a7\">~~0.04~~</c> damage per second and can fire a mortar that deals <c val=\"bfd4fd\">205</c><c val=\"a7a7a7\">~~0.04~~</c> damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are stunned for <c val=\"bfd4fd\">1.5</c> seconds. Lasts <c val=\"bfd4fd\">15</c> seconds.<n/><n/><c val=\"ffff8a\">Requires all surviving Vikings to be nearby.</c>",
+          "fullText": "Hop into an Unstoppable Longboat that fires at nearby enemies for <c val=\"bfd4fd\">112</c><c val=\"a7a7a7\">~~0.04~~</c> damage per second and can fire a mortar that deals <c val=\"bfd4fd\">228</c><c val=\"a7a7a7\">~~0.04~~</c> damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for <c val=\"bfd4fd\">1</c> second. Lasts <c val=\"bfd4fd\">15</c> seconds.<n/><n/><c val=\"ffff8a\">Requires all surviving Vikings to be nearby.</c>",
           "cooldownText": "Cooldown: 90 seconds"
         }
       ],
@@ -18008,7 +18432,7 @@
               "_hdp5LinkId": "LostVikingsLongboatRaidMortar|LostVikingsMortar|Q",
               "icon": "storm_ui_icon_lostvikings_mortar.png",
               "name": "Mortar",
-              "fullText": "Fires a mortar at the targeted location, dealing <c val=\"bfd4fd\">205</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area.",
+              "fullText": "Fires a mortar at the targeted location, dealing <c val=\"bfd4fd\">228</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area.",
               "cooldownText": "Cooldown: 3 seconds"
             }
           ]
@@ -18020,9 +18444,9 @@
     "unitId": "HeroOlaf",
     "portraits": {},
     "life": {
-      "amount": 1424,
+      "amount": 1540,
       "scale": 0.04,
-      "regenRate": 2.9648,
+      "regenRate": 3.207,
       "regenScale": 0.04,
       "type": "Health"
     },
@@ -18033,7 +18457,7 @@
         "range": 1.25,
         "minimumRange": 0,
         "period": 1,
-        "damage": 52,
+        "damage": 57,
         "damageScale": 0.04
       }
     ],
@@ -18123,7 +18547,7 @@
           "_hdp5LinkId": "LostVikingsLongboatRaidNewer|LostVikingsLongboatRaid|Heroic",
           "icon": "storm_ui_icon_lostvikings_longboatraid.png",
           "name": "Longboat Raid!",
-          "fullText": "Hop into an Unstoppable Longboat that fires at nearby enemies for <c val=\"bfd4fd\">112</c><c val=\"a7a7a7\">~~0.04~~</c> damage per second and can fire a mortar that deals <c val=\"bfd4fd\">205</c><c val=\"a7a7a7\">~~0.04~~</c> damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are stunned for <c val=\"bfd4fd\">1.5</c> seconds. Lasts <c val=\"bfd4fd\">15</c> seconds.<n/><n/><c val=\"ffff8a\">Requires all surviving Vikings to be nearby.</c>",
+          "fullText": "Hop into an Unstoppable Longboat that fires at nearby enemies for <c val=\"bfd4fd\">112</c><c val=\"a7a7a7\">~~0.04~~</c> damage per second and can fire a mortar that deals <c val=\"bfd4fd\">228</c><c val=\"a7a7a7\">~~0.04~~</c> damage in an area.  The boat has increased Health for each Viking inside. If the boat is destroyed by enemies, all Vikings are Stunned for <c val=\"bfd4fd\">1</c> second. Lasts <c val=\"bfd4fd\">15</c> seconds.<n/><n/><c val=\"ffff8a\">Requires all surviving Vikings to be nearby.</c>",
           "cooldownText": "Cooldown: 90 seconds"
         }
       ],
@@ -18199,7 +18623,7 @@
               "_hdp5LinkId": "LostVikingsLongboatRaidMortar|LostVikingsMortar|Q",
               "icon": "storm_ui_icon_lostvikings_mortar.png",
               "name": "Mortar",
-              "fullText": "Fires a mortar at the targeted location, dealing <c val=\"bfd4fd\">205</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area.",
+              "fullText": "Fires a mortar at the targeted location, dealing <c val=\"bfd4fd\">228</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area.",
               "cooldownText": "Cooldown: 3 seconds"
             }
           ]
@@ -18344,51 +18768,8 @@
           "name": "Hearthstone",
           "fullText": "After Channeling for <c val=\"bfd4fd\">6</c> seconds, teleport back to the Hall of Storms, instantly restoring <c val=\"bfd4fd\">1125</c> Health and <c val=\"bfd4fd\">150</c> Mana."
         }
-      ],
-      "mount": [
-        {
-          "nameId": "MedivhTransformRaven",
-          "buttonId": "MedivhTransformRaven",
-          "abilityType": "Z",
-          "isPassive": false,
-          "_hdp5LinkId": "MedivhTransformRaven|MedivhTransformRaven|Z",
-          "icon": "storm_ui_icon_medivh_mount.png",
-          "name": "Raven Form",
-          "fullText": "Transform into a raven, increasing Movement Speed by <c val=\"bfd4fd\">20%</c>. While transformed, Medivh can see and fly over terrain and is immune to all effects.",
-          "cooldownText": "Cooldown: 4 seconds"
-        }
       ]
-    },
-    "subAbilities": [
-      {
-        "MedivhTransformRaven|MedivhTransformRaven|Z": {
-          "mount": [
-            {
-              "nameId": "MedivhTransformRavenLand",
-              "buttonId": "MedivhTransformRavenLand",
-              "abilityType": "Z",
-              "isPassive": false,
-              "_hdp5LinkId": "MedivhTransformRavenLand|MedivhTransformRavenLand|Z",
-              "toggleCooldown": 0.0625,
-              "icon": "storm_ui_icon_medivh_cancel_mount.png",
-              "name": "Cancel Raven Form",
-              "fullText": "Cancel Raven Form."
-            },
-            {
-              "nameId": "MedivhTransformRavenFountain",
-              "buttonId": "MedivhTransformRaven",
-              "abilityType": "Z",
-              "isPassive": false,
-              "_hdp5LinkId": "MedivhTransformRavenFountain|MedivhTransformRaven|Z",
-              "icon": "storm_ui_icon_medivh_mount.png",
-              "name": "Raven Form",
-              "fullText": "Transform into a raven, increasing Movement Speed by <c val=\"bfd4fd\">20%</c>. While transformed, Medivh can see and fly over terrain and is immune to all effects.",
-              "cooldownText": "Cooldown: 4 seconds"
-            }
-          ]
-        }
-      }
-    ]
+    }
   },
   "RagnarosBigRag": {
     "unitId": "RagnarosBigRag",

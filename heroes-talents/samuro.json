@@ -8,7 +8,7 @@
   "name": "Samuro",
   "icon": "samuro.png",
   "role": "Assassin",
-  "expandedRole": "Assassin",
+  "expandedRole": "Melee Assassin",
   "type": "Melee",
   "description": "A stealthed Assassin that's great at capturing Mercenary camps and is difficult to kill.",
   "title": "The Blademaster",
@@ -36,6 +36,17 @@
   },
   "abilities": {
     "Samuro": [
+      {
+        "uid": "12473b",
+        "name": "Mirror Image",
+        "description": "Teleport a short distance in the direction of the mouse cursor, creating 2 Mirror Images for 18 seconds with 100% of Samuro's current Health that Basic Attack enemies for 9 (+4% per level) damage. Whenever an Image takes damage, it deals that amount of damage to itself, effectively doubling the damage it takes.  Maximum 2 Mirror Images can be active at at time. Using Mirror Image removes most negative effects from Samuro.",
+        "hotkey": "Q",
+        "abilityId": "Samuro|Q1",
+        "tooltipId": "SamuroMirrorImage",
+        "cooldown": 18,
+        "icon": "storm_ui_icon_samuro_mirrorimage.png",
+        "type": "basic"
+      },
       {
         "uid": "89c988",
         "name": "Critical Strike",
@@ -70,24 +81,13 @@
         "type": "heroic"
       },
       {
-        "uid": "ca46c2",
-        "name": "Illusion Master",
-        "description": "Mirror Images can be controlled individually or as a group and their damage is increased by 100%.  Passive: Image Transmission's cooldown is reduced to 10 seconds.",
-        "hotkey": "R",
-        "abilityId": "Samuro|R3",
-        "tooltipId": "SamuroIllusionMaster",
-        "cooldown": 10,
-        "icon": "storm_ui_icon_samuro_illusiondancer.png",
-        "type": "heroic"
-      },
-      {
-        "uid": "2aeacd",
+        "uid": "b972f8",
         "name": "Image Transmission",
         "description": "Activate to switch places with a target Mirror Image, removing most negative effects from Samuro and the Mirror Image.  Advancing Strikes  Basic Attacks against enemy Heroes increase Samuro's Movement Speed by 25% for 2 seconds.",
         "hotkey": "D",
         "trait": true,
         "abilityId": "Samuro|D1",
-        "tooltipId": "SamuroAdvancingStrikes",
+        "tooltipId": "SamuroImageTransmissionDummyShopAbility",
         "cooldown": 25,
         "icon": "storm_ui_icon_samuro_flowingstrikes.png",
         "type": "trait"
@@ -133,10 +133,16 @@
         "name": "Way of Illusion",
         "description": "Quest: Every time a Mirror Image Critically Strikes a Hero, Samuro gains 0.25 Attack Damage, up to 10.  Reward: After hitting 40 Heroes, Samuro gains an additional 20 Attack Damage.",
         "icon": "storm_ui_icon_samuro_mirrorimage.png",
-        "type": "Passive",
+        "type": "Q",
         "sort": 1,
         "isQuest": true,
-        "abilityId": "Samuro|Passive"
+        "abilityId": "Samuro|Q1",
+        "abilityLinks": [
+          "Samuro|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "SamuroMirrorImageTargeted"
+        ]
       },
       {
         "tooltipId": "SamuroWayoftheBlade",
@@ -182,10 +188,16 @@
         "name": "Mirage",
         "description": "Mirror Image grants Samuro and his Images 40 Spell Armor against the next 2 sources of Spell damage, reducing their damage by 40%.",
         "icon": "storm_ui_icon_samuro_mirrorimage.png",
-        "type": "Passive",
+        "type": "Q",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Samuro|Passive"
+        "abilityId": "Samuro|Q1",
+        "abilityLinks": [
+          "Samuro|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "SamuroMirrorImageTargeted"
+        ]
       },
       {
         "tooltipId": "SamuroOneWithTheWindTalent",
@@ -218,7 +230,7 @@
           "Samuro|D1"
         ],
         "abilityTalentLinkIds": [
-          "SamuroIllusionMaster"
+          "SamuroIllusionMasterDummyShopAbility"
         ]
       }
     ],
@@ -306,10 +318,11 @@
         "name": "Illusion Master",
         "description": "Mirror Images can be controlled individually or as a group and their damage is increased by 100%.  Passive: Image Transmission's cooldown is reduced to 10 seconds.",
         "icon": "storm_ui_icon_samuro_illusiondancer.png",
-        "type": "Heroic",
+        "type": "Active",
         "sort": 2,
         "cooldown": 10,
-        "isQuest": false
+        "isQuest": false,
+        "abilityId": "Samuro|Active"
       }
     ],
     "13": [
@@ -319,10 +332,16 @@
         "name": "Mirrored Steel",
         "description": "Samuro's Basic Attacks against Heroes reduce the cooldown of Mirror Image by 1 second.",
         "icon": "storm_ui_icon_samuro_mirrorimage.png",
-        "type": "Passive",
+        "type": "Q",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Samuro|Passive"
+        "abilityId": "Samuro|Q1",
+        "abilityLinks": [
+          "Samuro|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "SamuroMirrorImageTargeted"
+        ]
       },
       {
         "tooltipId": "WindwalkKawarimiTalent",
@@ -410,7 +429,7 @@
           "Samuro|D1"
         ],
         "abilityTalentLinkIds": [
-          "SamuroIllusionMaster"
+          "SamuroIllusionMasterDummyShopAbility"
         ]
       }
     ],
@@ -421,10 +440,10 @@
         "name": "Dance Of Death",
         "description": "Mirror Images use Bladestorm when Samuro does, but for 25% damage.",
         "icon": "storm_ui_icon_samuro_bladestorm.png",
-        "type": "Heroic",
+        "type": "Passive",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Samuro|R2",
+        "abilityId": "Samuro|Passive",
         "abilityLinks": [
           "Samuro|R2"
         ],
@@ -441,16 +460,10 @@
         "name": "Three Blade Style",
         "description": "Samuro's Mirror Images no longer take additional damage, effecively increasing their health by 50% and their duration is increased to 36 seconds.",
         "icon": "storm_ui_icon_samuro_illusiondancer.png",
-        "type": "Heroic",
+        "type": "Passive",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Samuro|R3",
-        "abilityLinks": [
-          "Samuro|R3"
-        ],
-        "abilityTalentLinkIds": [
-          "SamuroIllusionMaster"
-        ],
+        "abilityId": "Samuro|Passive",
         "prerequisiteTalentIds": [
           "SamuroHeroicAbilityIllusionMaster"
         ]
@@ -486,13 +499,12 @@
           "Samuro|D1"
         ],
         "abilityTalentLinkIds": [
-          "SamuroIllusionMaster"
+          "SamuroIllusionMasterDummyShopAbility"
         ]
       }
     ]
   },
   "tooltipMarkup": {
-    "SamuroAdvancingStrikes": "Activate to switch places with a target Mirror Image, removing most negative effects from Samuro and the Mirror Image.<n/><n/><s val=\"StandardTooltipHeader\">Advancing Strikes</s><n/><n/>Basic Attacks against enemy Heroes increase Samuro's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroAdvancingStrikesMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor*100\" precision=\"2\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroAdvancingStrikesMoveSpeedBuff,Duration\"player=\"0\"/></c> seconds.",
     "SamuroBlademastersPursuitTalent": "Advancing Strikes grants an additional <c val=\"#TooltipNumbers\"><d ref=\"Talent,SamuroBlademastersPursuit,AbilityModificationArray[0].Modifications[0].Value*100\" precision=\"2\" player=\"0\"/>%</c> Movement Speed for Samuro and his Mirror Images, and its duration is increased by <c val=\"#TooltipNumbers\"><d ref=\"Talent,SamuroBlademastersPursuit,AbilityModificationArray[0].Modifications[1].Value\" precision=\"2\" player=\"0\"/></c> seconds.",
     "SamuroBladestorm": "Cause a Bladestorm of destructive force around Samuro for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroBladestorm,Duration\" player=\"0\"/></c> seconds, making him Unstoppable and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,SamuroBladestormDamage,Amount*5\"/></c> damage per second to nearby enemies.",
     "SamuroBurningBlade": "Critical Strikes from Samuro and Mirror Images deal an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,SamuroCriticalStrikeBurningBladeSplashDamage,Amount / Effect,SamuroWeaponDamage,Amount * 100\"/>%</c> of their Basic Attack damage as Spell Damage to the target and nearby enemies.",
@@ -500,10 +512,11 @@
     "SamuroDanceOfDeathTalent": "Mirror Images use Bladestorm when Samuro does, but for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SamuroBladestormMirrorImageDamage,Amount/Effect,SamuroBladestormDamage,Amount\"/>%</c> damage.",
     "SamuroDeflectionTalent": "Advancing Strikes grants Samuro and his Mirror Images <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroAdvancingStrikesDeflectionBlock,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor.",
     "SamuroHarshWinds": "Attacking a Hero during Wind Walk causes them to take <c val=\"#TooltipNumbers\"><d ref=\"100 * Behavior,SamuroWindwalkHarshWindsVulnerabilityBehavior,DamageResponse.ModifyFraction - 100\" precision=\"1\"/>%</c> increased damage from Samuro for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroWindwalkHarshWindsVulnerabilityBehavior,Duration\" precision=\"1\"/></c> seconds.",
-    "SamuroIllusionMaster": "",
     "SamuroIllusionMasterTalent": "Mirror Images can be controlled individually or as a group and their damage is increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SamuroMirrorImageWeaponDamage,MultiplicativeModifierArray[IllusionMaster].Modifier\"/>%</c>. <n/><n/><c val=\"#AbilityPassive\">Passive:</c> Image Transmission's cooldown is reduced to <c val=\"#TooltipNumbers\"><d ref=\"Abil,SamuroIllusionMaster,Cost.Cooldown.TimeUse+Talent,SamuroHeroicAbilityIllusionMaster,AbilityModificationArray[0].Modifications[0].Value\"player=\"0\"/></c> seconds.",
+    "SamuroImageTransmissionDummyShopAbility": "Activate to switch places with a target Mirror Image, removing most negative effects from Samuro and the Mirror Image.<n/><n/><s val=\"StandardTooltipHeader\">Advancing Strikes</s><n/><n/>Basic Attacks against enemy Heroes increase Samuro's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroAdvancingStrikesMoveSpeedBuff,Modification.UnifiedMoveSpeedFactor*100\" precision=\"2\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroAdvancingStrikesMoveSpeedBuff,Duration\"player=\"0\"/></c> seconds.",
     "SamuroMercilessStrikes": "Samuro's Basic Attacks against Stunned, Rooted, or Slowed enemies are always Critical Strikes.",
     "SamuroMirage": "Mirror Image grants Samuro and his Images <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroMirrorImageMirageSpellBlock,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor against the next <c val=\"#TooltipNumbers\"><d ref=\"Effect,SamuroMirrorImageMirageSpellBlockApplyCaster,Count\"/></c> sources of Spell damage, reducing their damage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroMirrorImageMirageSpellBlock,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.",
+    "SamuroMirrorImage": "Teleport a short distance in the direction of the mouse cursor, creating <c val=\"#TooltipNumbers\">2</c> Mirror Images for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroMirrorImageTimedLife,Duration\" player=\"0\"/></c> seconds with <c val=\"#TooltipNumbers\">100%</c> of Samuro's current Health that Basic Attack enemies for <c val=\"#TooltipNumbers\"><d ref=\"Effect,SamuroMirrorImageWeaponDamage,Amount\"/></c> damage. Whenever an Image takes damage, it deals that amount of damage to itself, effectively doubling the damage it takes.<n/><n/>Maximum <c val=\"#TooltipNumbers\">2</c> Mirror Images can be active at at time. Using Mirror Image removes most negative effects from Samuro.",
     "SamuroMirroredSteelTalent": "Samuro's Basic Attacks against Heroes reduce the cooldown of Mirror Image by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,SamuroMirrorImageMirroredSteelWeaponImpactReduceCooldown,Cost[0].CooldownTimeUse\" precision=\"2\"/></c> second.",
     "SamuroOneWithTheWindTalent": "While Samuro has Wind Walk and for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroWindwalkOneWithTheWindPostStealthBuff,Duration\"/></c> seconds after breaking it, both he and his Mirror Images gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroWindwalkOneWithTheWindBlock,ArmorModification.AllArmorBonus\"/></c> Armor, taking <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SamuroWindwalkOneWithTheWindBlock,ArmorModification.AllArmorBonus\"/>%</c> reduced damage from all sources.",
     "SamuroOverpoweringBlow": "Critical Strike now has <c val=\"#TooltipNumbers\">2</c> charges. Samuro's Basic Attacks against Heroes reduce the cooldown of Critical Strike by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,SamuroCriticalStrikeCrushingBlowTalentModifyCooldown,Cost[0].ChargeTimeUse\" precision=\"2\"/></c> seconds.",
@@ -521,7 +534,6 @@
     "WindwalkKawarimiTalent": "Wind Walk creates a Mirror Image at Samuro's location that will continue whatever he was doing."
   },
   "tooltipSimple": {
-    "SamuroAdvancingStrikes": "Increase Movement Speed when attacking Heroes",
     "SamuroBlademastersPursuitTalent": "Increase Advancing Strikes Move Speed, duration",
     "SamuroBladestorm": "Cause a Bladestorm of destructive force",
     "SamuroBurningBlade": "Critical Strike deals area damage",
@@ -530,8 +542,10 @@
     "SamuroDeflectionTalent": "Advancing Strikes grants Physical Armor",
     "SamuroHarshWinds": "Attacks from Wind Walk increase damage",
     "SamuroIllusionMasterTalent": "Mirror Images can be controlled",
+    "SamuroImageTransmissionDummyShopAbility": "Increase Movement Speed when attacking Heroes",
     "SamuroMercilessStrikes": "Critically Strike always happens on disabled targets",
     "SamuroMirage": "Mirror Image grants Spell Armor",
+    "SamuroMirrorImage": "Create Mirror Images to confuse and attack enemies",
     "SamuroMirroredSteelTalent": "Basic Attacks reduce Mirror Image cooldown",
     "SamuroOneWithTheWindTalent": "Gain Armor during Wind Walk",
     "SamuroOverpoweringBlow": "Critical Strike gains an additional charge",

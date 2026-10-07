@@ -8,7 +8,7 @@
   "name": "Imperius",
   "icon": "imperius.png",
   "role": "Warrior",
-  "expandedRole": "Warrior",
+  "expandedRole": "Bruiser",
   "type": "Melee",
   "description": "An all-in Bruiser that leads the charge with strong initiation and single target damage.",
   "title": "Archangel of Valor",
@@ -75,14 +75,15 @@
         "type": "basic"
       },
       {
-        "uid": "fa6fad",
+        "uid": "527325",
         "name": "Angelic Armaments",
         "description": "Summon a ring of blazing swords that grants 1000 (+4% per level) Shield for 3 seconds.  If the Shield lasts the full duration, this ability can be reactivated within 5 seconds to launch 6 swords toward an area, each dealing 140 (+4% per level) damage to the first enemy hit.",
         "hotkey": "R",
         "abilityId": "Imperius|R1",
-        "tooltipId": "ImperiusAngelicArmamentsLaunchMissiles",
+        "tooltipId": "ImperiusAngelicArmaments",
         "cooldown": 70,
-        "icon": "storm_ui_icon_imperius_r1_activate.png",
+        "manaCost": 70,
+        "icon": "storm_ui_icon_imperius_r1.png",
         "type": "heroic"
       },
       {
@@ -275,11 +276,17 @@
         "name": "Angelic Armaments",
         "description": "Summon a ring of blazing swords that grants 1000 (+4% per level) Shield for 3 seconds.  If the Shield lasts the full duration, this ability can be reactivated within 5 seconds to launch 6 swords toward an area, each dealing 140 (+4% per level) damage to the first enemy hit.",
         "icon": "storm_ui_icon_imperius_r1.png",
-        "type": "Active",
+        "type": "Heroic",
         "sort": 1,
         "cooldown": 70,
         "isQuest": false,
-        "abilityId": "Imperius|Active"
+        "abilityId": "Imperius|R1",
+        "abilityLinks": [
+          "Imperius|R1"
+        ],
+        "abilityTalentLinkIds": [
+          "ImperiusAngelicArmaments"
+        ]
       },
       {
         "tooltipId": "ImperiusWrathOfTheAngiris",
@@ -412,15 +419,15 @@
         "name": "Heavenly Host",
         "description": "Nearby allied Heroes gain 600 (+4% per level) Shield for 3 seconds.  If the Shield lasts the full duration, fire a sword at the nearest enemy Hero, dealing 140 (+4% per level) damage.",
         "icon": "storm_ui_icon_imperius_r1.png",
-        "type": "Passive",
+        "type": "Heroic",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Imperius|Passive",
+        "abilityId": "Imperius|R1",
         "abilityLinks": [
           "Imperius|R1"
         ],
         "abilityTalentLinkIds": [
-          "ImperiusAngelicArmamentsLaunchMissiles"
+          "ImperiusAngelicArmaments"
         ],
         "prerequisiteTalentIds": [
           "ImperiusAngelicArmaments"

@@ -8,7 +8,7 @@
   "name": "Medivh",
   "icon": "medivh.png",
   "role": "Specialist",
-  "expandedRole": "Specialist",
+  "expandedRole": "Support",
   "type": "Ranged",
   "description": "A Support who can negate burst damage and allow his allies to teleport.",
   "title": "The Last Guardian",
@@ -110,17 +110,6 @@
         "tooltipId": "MedivhRavenForm",
         "icon": "storm_ui_icon_medivh_ravenform.png",
         "type": "trait"
-      },
-      {
-        "uid": "2fb729",
-        "name": "Raven Form",
-        "description": "Transform into a raven, increasing Movement Speed by 20%. While transformed, Medivh can see and fly over terrain and is immune to all effects.",
-        "hotkey": "Z",
-        "abilityId": "Medivh|Z1",
-        "tooltipId": "MedivhTransformRaven",
-        "cooldown": 4,
-        "icon": "storm_ui_icon_medivh_mount.png",
-        "type": "mount"
       }
     ]
   },
@@ -132,10 +121,10 @@
         "name": "Winds of Celerity",
         "description": "Increases Raven Form's Movement Speed bonus by 50%.",
         "icon": "storm_ui_icon_medivh_ravenform.png",
-        "type": "Z",
+        "type": "Passive",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Medivh|D1",
+        "abilityId": "Medivh|Passive",
         "abilityLinks": [
           "Medivh|D1"
         ],
@@ -149,10 +138,10 @@
         "name": "Raven's Intellect",
         "description": "Raven Form increases Medivh's Mana and Health Regeneration by 75%.",
         "icon": "storm_ui_icon_medivh_ravenform_b.png",
-        "type": "Z",
+        "type": "Passive",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Medivh|D1",
+        "abilityId": "Medivh|Passive",
         "abilityLinks": [
           "Medivh|D1"
         ],
@@ -597,7 +586,6 @@
     "MedivhPortalStablePortal": "Decrease Portal cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-100*Talent,MedivhPortalStablePortal,AbilityModificationArray[0].Modifications[3].Value/Abil,MedivhPortalInstant,Cost.Cooldown.TimeUse\"precision=\"2\"player=\"0\"/>%</c> and increase Portal duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MedivhPortalStablePortal,AbilityModificationArray[0].Modifications[0].Value/Behavior,MedivhPortalTimedLife,Duration*100\" player=\"0\"/>%</c>.",
     "MedivhRavenForm": "Instead of mounting, Medivh can transform into a raven, increasing Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedivhTransformRaven,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c>. While transformed, Medivh can see and fly over all terrain and is immune to all effects.",
     "MedivhTemporalFlux": "Basic Attacks reduce Medivh's Heroic Ability cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-100*Effect,MedivhTemporalFluxCooldownModifierAutoAttack,Cost[0].Fraction.Cooldown\"/>%</c>. Each enemy Hero hit by Arcane Rift reduces Medivh's Heroic Ability cooldown by <c val=\"#TooltipNumbers\"><d ref=\"--100*Effect,MedivhTemporalFluxCooldownModifierArcaneRift,Cost[0].Fraction.Cooldown\"/>%</c>.",
-    "MedivhTransformRaven": "Transform into a raven, increasing Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,MedivhTransformRaven,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c>. While transformed, Medivh can see and fly over terrain and is immune to all effects.",
     "MedivhTransformRavenRavensIntellect": "Raven Form increases Medivh's Mana and Health Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MedivhTransformRavenRavensIntellect,AbilityModificationArray[0].Modifications[0].Value*100\"/>%</c>.",
     "MedivhTransformRavenWindsOfCelerity": "Increases Raven Form's Movement Speed bonus by <c val=\"#TooltipNumbers\"><d ref=\"Talent,MedivhTransformRavenWindsOfCelerity,AbilityModificationArray[0].Modifications[0].Value/Behavior,MedivhTransformRaven,Modification.UnifiedMoveSpeedFactor*100\" player=\"0\"/>%</c>."
   },
@@ -626,7 +614,6 @@
     "MedivhPortalStablePortal": "Increases Portal uptime",
     "MedivhRavenForm": "Transform into a raven",
     "MedivhTemporalFlux": "Arcane Rift reduces Heroic cooldown",
-    "MedivhTransformRaven": "Transform into a raven",
     "MedivhTransformRavenRavensIntellect": "Raven Form increases Health and Mana Regen",
     "MedivhTransformRavenWindsOfCelerity": "Increases Raven Form Movement Speed"
   },

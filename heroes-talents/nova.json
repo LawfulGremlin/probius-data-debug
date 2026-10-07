@@ -8,7 +8,7 @@
   "name": "Nova",
   "icon": "nova.png",
   "role": "Assassin",
-  "expandedRole": "Assassin",
+  "expandedRole": "Ranged Assassin",
   "type": "Ranged",
   "description": "A burst damage Mage who can ambush enemies from Stealth.",
   "title": "Dominion Ghost",
@@ -62,6 +62,18 @@
         "type": "basic"
       },
       {
+        "uid": "9a5566",
+        "name": "Holo Decoy",
+        "description": "Create a Decoy for 5 seconds with 100% of Nova's current Health that attacks enemies, dealing 10% of Nova's base damage. Whenever a Decoy takes damage, it deals that amount of damage to itself, effectively doubling the damage it takes.  Using this Ability does not break Stealth.",
+        "hotkey": "E",
+        "abilityId": "Nova|E1",
+        "tooltipId": "NovaHoloDecoy",
+        "cooldown": 15,
+        "manaCost": 50,
+        "icon": "storm_ui_icon_nova_holodecoy.png",
+        "type": "basic"
+      },
+      {
         "uid": "b7a5b6",
         "name": "Triple Tap",
         "description": "Locks in on the target Hero, then fires 3 shots that hit the first Hero or Structure they come in contact with for 372 (+4% per level) damage each.",
@@ -105,18 +117,6 @@
         "cooldown": 60,
         "icon": "storm_ui_icon_nova_personalcloaking.png",
         "type": "activable"
-      },
-      {
-        "uid": "af04ac",
-        "name": "Permanent Cloak",
-        "description": "Gain Stealth when out of combat for 3 seconds. Taking damage, attacking, using Abilities, or Channeling ends Stealth. Remaining stationary for at least 1.5 seconds while Stealthed grants Invisible.  Passive: Gain 15% Movement Speed while Stealthed.",
-        "hotkey": "D",
-        "trait": true,
-        "abilityId": "Nova|D2",
-        "tooltipId": "NovaPermanentCloak",
-        "cooldown": 3,
-        "icon": "storm_ui_icon_nova_personalcloaking.png",
-        "type": "trait"
       }
     ]
   },
@@ -167,12 +167,10 @@
         "isQuest": false,
         "abilityId": "Nova|D1",
         "abilityLinks": [
-          "Nova|D1",
-          "Nova|D2"
+          "Nova|D1"
         ],
         "abilityTalentLinkIds": [
-          "NovaPermanentCloak",
-          "NovaCloakCooldownDisplay"
+          "NovaPermanentCloak"
         ]
       }
     ],
@@ -183,10 +181,16 @@
         "name": "Rapid Projection",
         "description": "Reduces Holo Decoy's cooldown and Mana cost by 50%.",
         "icon": "storm_ui_icon_nova_holodecoy_var1.png",
-        "type": "Passive",
+        "type": "E",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Nova|Passive"
+        "abilityId": "Nova|E1",
+        "abilityLinks": [
+          "Nova|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "NovaHoloDecoy"
+        ]
       },
       {
         "tooltipId": "NovaHoloDecoyHoloStabilityTalent",
@@ -194,10 +198,16 @@
         "name": "Holo Stability",
         "description": "Increase the cast range of Holo Decoy by 100% and its duration by 120%.",
         "icon": "storm_ui_icon_nova_holodecoy_var2.png",
-        "type": "Passive",
+        "type": "E",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Nova|Passive"
+        "abilityId": "Nova|E1",
+        "abilityLinks": [
+          "Nova|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "NovaHoloDecoy"
+        ]
       },
       {
         "tooltipId": "NovaCovertMissionTalent",
@@ -244,12 +254,10 @@
         "isQuest": false,
         "abilityId": "Nova|Passive",
         "abilityLinks": [
-          "Nova|D1",
-          "Nova|D2"
+          "Nova|D1"
         ],
         "abilityTalentLinkIds": [
-          "NovaPermanentCloak",
-          "NovaCloakCooldownDisplay"
+          "NovaPermanentCloak"
         ]
       },
       {
@@ -263,12 +271,10 @@
         "isQuest": false,
         "abilityId": "Nova|Passive",
         "abilityLinks": [
-          "Nova|D1",
-          "Nova|D2"
+          "Nova|D1"
         ],
         "abilityTalentLinkIds": [
-          "NovaPermanentCloak",
-          "NovaCloakCooldownDisplay"
+          "NovaPermanentCloak"
         ]
       }
     ],
@@ -356,12 +362,10 @@
         "isQuest": false,
         "abilityId": "Nova|D1",
         "abilityLinks": [
-          "Nova|D1",
-          "Nova|D2"
+          "Nova|D1"
         ],
         "abilityTalentLinkIds": [
-          "NovaPermanentCloak",
-          "NovaCloakCooldownDisplay"
+          "NovaPermanentCloak"
         ]
       }
     ],
@@ -406,10 +410,16 @@
         "name": "Lethal Decoy",
         "description": "Increases the damage Holo Decoy deals to 30% of Nova's damage.",
         "icon": "storm_ui_icon_nova_holodecoy.png",
-        "type": "Passive",
+        "type": "E",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Nova|Passive"
+        "abilityId": "Nova|E1",
+        "abilityLinks": [
+          "Nova|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "NovaHoloDecoy"
+        ]
       }
     ],
     "20": [
@@ -464,12 +474,10 @@
         "isQuest": false,
         "abilityId": "Nova|D1",
         "abilityLinks": [
-          "Nova|D1",
-          "Nova|D2"
+          "Nova|D1"
         ],
         "abilityTalentLinkIds": [
-          "NovaPermanentCloak",
-          "NovaCloakCooldownDisplay"
+          "NovaPermanentCloak"
         ]
       },
       {
@@ -497,8 +505,9 @@
     "NovaCovertOpsTalent": "After being Stealthed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaPinningShotCovertOpsTimer,Duration\"/></c> seconds, Pinning Shot's Slow is increased to <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NovaPinningShotCovertOpsSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> and costs no Mana. Bonus is lost after losing Stealth for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaPinningShotCovertOpsActiveTimed,Duration\"/></c> second.",
     "NovaGhostProtocol": "Activate to instantly grant Stealth to Nova and spawn a Holo Decoy at her location. Nova is Unrevealable for the first <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaGhostProtocolUnrevealableCloak,Duration\"precision=\"2\"/></c> seconds when Stealthed by Ghost Protocol.",
     "NovaGhostProtocolApolloSuitTalent": "Reduce the cooldown of Permanent Cloak by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,NovaApolloSuit,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
+    "NovaHoloDecoy": "Create a Decoy for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaHoloDecoyTimedLife,Duration\" player=\"0\"/></c> seconds with <c val=\"#TooltipNumbers\">100%</c> of Nova's current Health that attacks enemies, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,StormSnipeDamage,Amount/Effect,NovaHoloDecoySnipeDamage,Amount\"player=\"0\" precision=\"1\"/>%</c> of Nova's base damage. Whenever a Decoy takes damage, it deals that amount of damage to itself, effectively doubling the damage it takes.<n/><n/>Using this Ability does not break Stealth.",
     "NovaHoloDecoyHoloStabilityTalent": "Increase the cast range of Holo Decoy by <c val=\"#TooltipNumbers\"><d ref=\"100*Abil,NovaHoloDecoy,Range/Talent,NovaHoloStability,AbilityModificationArray[0].Modifications[1].Value\" precision=\"1\" player=\"0\"/>%</c> and its duration by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,NovaHoloStability,AbilityModificationArray[0].Modifications[0].Value/Behavior,NovaHoloDecoyTimedLife,Duration\"/>%</c>.",
-    "NovaHoloDecoyLethalDecoyTalent": "Increases the damage Holo Decoy deals to <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,NovaHoloDecoyTimedLife,DamageResponse.ModifyFraction+Talent,NovaMasteryLethalDecoy,AbilityModificationArray[0].Modifications[0].Value)\" precision=\"1\"player=\"0\"/>%</c> of Nova's damage.",
+    "NovaHoloDecoyLethalDecoyTalent": "Increases the damage Holo Decoy deals to <c val=\"#TooltipNumbers\"><d ref=\"10*(1+Effect,NovaHoloDecoySnipeDamage,MultiplicativeModifierArray[LethalDecoy].Modifier)\" precision=\"1\"player=\"0\"/>%</c> of Nova's damage.",
     "NovaHoloDecoyRapidProjectionTalent": "Reduces Holo Decoy's cooldown and Mana cost by <c val=\"#TooltipNumbers\">50%</c>.",
     "NovaIonicForceFieldTalent": "Gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaIonicForceFieldArmorBuff,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaIonicForceFieldArmorBuff,Duration\"/></c> seconds after losing Stealth.",
     "NovaOneintheChamberTalent": "After using an Ability, Nova's next Basic Attack within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NovaOneintheChamber,Duration\" player=\"0\"/></c> seconds deals <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NovaOneintheChamber,Modification.DamageDealtFraction[Basic]\"/>%</c> additional damage.",
@@ -524,6 +533,7 @@
     "NovaCovertOpsTalent": "Stealth enhances Pinning Shot slow and cost",
     "NovaGhostProtocol": "Instantly Stealth and spawn a Holo Decoy at your location",
     "NovaGhostProtocolApolloSuitTalent": "Reduce Permanent Cloak cooldown",
+    "NovaHoloDecoy": "Create a hologram decoy of Nova",
     "NovaHoloDecoyHoloStabilityTalent": "Increase Holo Decoy range, duration",
     "NovaHoloDecoyLethalDecoyTalent": "Holo Decoy deals more damage",
     "NovaHoloDecoyRapidProjectionTalent": "Reduces Holo Decoy cooldown and Mana cost",

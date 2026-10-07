@@ -8,7 +8,7 @@
   "name": "Lúcio",
   "icon": "lucio.png",
   "role": "Support",
-  "expandedRole": "Support",
+  "expandedRole": "Healer",
   "type": "Ranged",
   "description": "A sustained Healer who gives his team mobility and peels enemies off allies.",
   "title": "Freedom Fighting DJ",
@@ -114,7 +114,7 @@
         "type": "trait"
       },
       {
-        "uid": "169f23",
+        "uid": "ef8b50",
         "name": "Wall Ride",
         "description": "When moving alongside terrain, Lúcio begins to Wall Ride for 2 seconds. While Wall Ride is active, Lúcio can walk through units and gains 20% Movement Speed that stacks with other bonuses.",
         "hotkey": "Z",
@@ -164,10 +164,10 @@
         "name": "Accelerando",
         "description": "Wall Ride's Movement Speed bonus gradually increases to 40% over 4 seconds while Lúcio maintains its effect.",
         "icon": "storm_ui_icon_lucio_wallride.png",
-        "type": "Passive",
+        "type": "Z",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Lucio|Passive",
+        "abilityId": "Lucio|Z1",
         "abilityLinks": [
           "Lucio|Z1"
         ],
@@ -181,10 +181,10 @@
         "name": "Smooth Moves",
         "description": "While Wall Ride is active, Basic Attacks heal for 30% of the damage dealt and restore 0.5 Mana.  Passive: Increase Wall Ride duration by 1 second.",
         "icon": "storm_ui_icon_lucio_wallride_a.png",
-        "type": "Passive",
+        "type": "Z",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Lucio|Passive",
+        "abilityId": "Lucio|Z1",
         "abilityLinks": [
           "Lucio|Z1"
         ],
@@ -381,10 +381,10 @@
         "name": "Slip",
         "description": "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to 40% for 1 second.  Passive: Wall Ride grants 20 Armor.",
         "icon": "storm_ui_icon_lucio_wallride.png",
-        "type": "Passive",
+        "type": "Z",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Lucio|Passive",
+        "abilityId": "Lucio|Z1",
         "abilityLinks": [
           "Lucio|Z1"
         ],

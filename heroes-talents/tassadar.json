@@ -8,7 +8,7 @@
   "name": "Tassadar",
   "icon": "tassadar.png",
   "role": "Specialist",
-  "expandedRole": "Specialist",
+  "expandedRole": "Support",
   "type": "Ranged",
   "description": "A Support who can enable damage dealers who like to dive the enemy team.",
   "title": "Savior of the Templar",
@@ -73,11 +73,21 @@
         "type": "basic"
       },
       {
-        "uid": "642f46",
+        "uid": "f39cec",
         "name": "Archon",
         "description": "Tassadar transforms into an Archon and gains a Plasma Shield. His Basic Attacks deal 158 (+4% per level) damage, slow the target by 30% for 1 second and splash for 79 (+4% per level) damage to enemies within 2.5 range. Lasts for 10 seconds.  Passive: Archon refreshes the cooldown of Dimensional Shift.",
         "hotkey": "R",
         "abilityId": "Tassadar|R1",
+        "tooltipId": "TassadarArchon",
+        "icon": "storm_ui_icon_tassadar_archon.png",
+        "type": "heroic"
+      },
+      {
+        "uid": "642f46",
+        "name": "Archon",
+        "description": "Tassadar transforms into an Archon and gains a Plasma Shield. His Basic Attacks deal 158 (+4% per level) damage, slow the target by 30% for 1 second and splash for 79 (+4% per level) damage to enemies within 2.5 range. Lasts for 10 seconds.  Passive: Archon refreshes the cooldown of Dimensional Shift.",
+        "hotkey": "R",
+        "abilityId": "Tassadar|R2",
         "tooltipId": "TassadarArchon",
         "cooldown": 100,
         "manaCost": 80,
@@ -89,7 +99,7 @@
         "name": "Force Wall",
         "description": "Create a wall that blocks all units from moving through it for 2 seconds.  Passive: Increases the slow amount of Distortion Beam to 35%.",
         "hotkey": "R",
-        "abilityId": "Tassadar|R2",
+        "abilityId": "Tassadar|R3",
         "tooltipId": "TassadarForceWall",
         "cooldown": 8,
         "manaCost": 25,
@@ -251,7 +261,7 @@
         "tooltipId": "TassadarPsionicStormResonationTalent",
         "talentTreeId": "TassadarResonation",
         "name": "Resonation",
-        "description": "Distortion Beam slows enemies affected by Psionic Storm by 60%.",
+        "description": "Distortion Beam Slows enemies affected by Psionic Storm by 60%.",
         "icon": "storm_ui_icon_tassadar_psionicstorm.png",
         "type": "W",
         "sort": 2,
@@ -293,9 +303,9 @@
         "sort": 1,
         "cooldown": 100,
         "isQuest": false,
-        "abilityId": "Tassadar|R1",
+        "abilityId": "Tassadar|R2",
         "abilityLinks": [
-          "Tassadar|R1"
+          "Tassadar|R2"
         ],
         "abilityTalentLinkIds": [
           "TassadarArchon"
@@ -311,9 +321,9 @@
         "sort": 2,
         "cooldown": 8,
         "isQuest": false,
-        "abilityId": "Tassadar|R2",
+        "abilityId": "Tassadar|R3",
         "abilityLinks": [
-          "Tassadar|R2"
+          "Tassadar|R3"
         ],
         "abilityTalentLinkIds": [
           "TassadarForceWall"
@@ -437,7 +447,8 @@
         "isQuest": false,
         "abilityId": "Tassadar|R1",
         "abilityLinks": [
-          "Tassadar|R1"
+          "Tassadar|R1",
+          "Tassadar|R2"
         ],
         "abilityTalentLinkIds": [
           "TassadarArchon",
@@ -456,9 +467,9 @@
         "type": "Heroic",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Tassadar|R2",
+        "abilityId": "Tassadar|R3",
         "abilityLinks": [
-          "Tassadar|R2"
+          "Tassadar|R3"
         ],
         "abilityTalentLinkIds": [
           "TassadarForceWall"
@@ -476,7 +487,13 @@
         "type": "Passive",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Tassadar|Passive"
+        "abilityId": "Tassadar|Passive",
+        "abilityLinks": [
+          "Tassadar|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "TassadarOracle"
+        ]
       },
       {
         "tooltipId": "TassadarShieldBattery",
@@ -521,7 +538,7 @@
     "TassadarPsionicProjection": "Increases the cast range of Plasma Shield and Psionic Storm by <c val=\"#TooltipNumbers\">40%</c>.",
     "TassadarPsionicStorm": "Deal <c val=\"#TooltipNumbers\"><d ref=\"2*Effect,TassadarPsionicStormDummyTooltipDamage,Amount\"/></c> damage per second to enemies in target area for <c val=\"#TooltipNumbers\"><d ref=\"Effect,TassadarPsionicStormCreatePersistent,PeriodCount * Effect,TassadarPsionicStormCreatePersistent,PeriodicPeriodArray[0]+.5\"/></c> seconds. Damage increases by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,TassadarPsionicEchoDamageAccumulator,Scale\"/>%</c> for each consecutive instance of damage, up to <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TassadarPsionicEchoDamageAccumulator,MaxAccumulation * 100\"/>%</c>.",
     "TassadarPsionicStormPsiInfusionTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gain <c val=\"#TooltipNumbers\"><d ref=\"Effect,TassadarPsionicStormPsiInfusionTalentManaReturn,RechargeVitalRate\"/></c> Mana for every non-Structure enemy hit by Psionic Storm.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TassadarPsionicStormPsiInfusionTokenCounter,ConditionalEvents[0].CompareValue\"/></c> enemies, increase the size of Psionic Storm by <c val=\"#TooltipNumbers\"><d ref=\"Effect,TassadarPsionicStormPsiInfusionTalent1stTierCompletionModifyPlayer,EffectArray[0].Value-1*100\"/>%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After hitting <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TassadarPsionicStormPsiInfusionTokenCounter,Max\"/></c> enemies, increase the damage of Psionic Storm by <c val=\"#TooltipNumbers\"><d ref=\"Effect,TassadarPsionicStormPsiInfusionTalent2ndTierCompletionModifyPlayer,EffectArray[0].Value-1*100\" precision=\"2\"/>%</c>",
-    "TassadarPsionicStormResonationTalent": "Distortion Beam slows enemies affected by Psionic Storm by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TassadarDistortionBeamResonationSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>.",
+    "TassadarPsionicStormResonationTalent": "Distortion Beam Slows enemies affected by Psionic Storm by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TassadarDistortionBeamResonationSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>.",
     "TassadarShieldBattery": "Activate to give all nearby allied Heroes an untalented Plasma Shield."
   },
   "tooltipSimple": {

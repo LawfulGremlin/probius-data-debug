@@ -8,7 +8,7 @@
   "name": "Xul",
   "icon": "xul.png",
   "role": "Specialist",
-  "expandedRole": "Specialist",
+  "expandedRole": "Bruiser",
   "type": "Melee",
   "description": "A Summoner who can push multiple lanes with ease.",
   "title": "Cryptic Necromancer",
@@ -70,6 +70,18 @@
         "type": "basic"
       },
       {
+        "uid": "aff545",
+        "name": "Bone Prison",
+        "description": "After a 2 second delay, deal 80 (+4% per level) damage and Root the target enemy Hero for 1.75 seconds.  All nearby Skeletal Warriors will fixate on the target for their duration.",
+        "hotkey": "E",
+        "abilityId": "Xul|E1",
+        "tooltipId": "NecromancerBonePrison",
+        "cooldown": 10,
+        "manaCost": 70,
+        "icon": "storm_ui_icon_necromancer_boneprison.png",
+        "type": "basic"
+      },
+      {
         "uid": "5cbead",
         "name": "Skeletal Mages",
         "description": "Vector Targeting Summon 4 Frost Mages in a line that attack nearby enemies for 47 (+4% per level) damage a second and Slow them by 30% for 2 seconds. Last up to 15 seconds.",
@@ -113,16 +125,6 @@
         "cooldown": 30,
         "icon": "storm_ui_icon_necromancer_bonearmor.png",
         "type": "activable"
-      },
-      {
-        "uid": "42abdb",
-        "name": "Spectral Scythe",
-        "description": "Summon a scythe that travels to Xul after 1 second, dealing 240 (+4% per level) damage to enemies.",
-        "hotkey": "Q",
-        "abilityId": "Xul|Q2",
-        "tooltipId": "NecromancerSpectralScythe",
-        "icon": "storm_ui_icon_necromancer_reap.png",
-        "type": "basic"
       }
     ]
   },
@@ -196,13 +198,11 @@
         "type": "Q",
         "sort": 1,
         "isQuest": true,
-        "abilityId": "Xul|Q2",
+        "abilityId": "Xul|Q1",
         "abilityLinks": [
-          "Xul|Q1",
-          "Xul|Q2"
+          "Xul|Q1"
         ],
         "abilityTalentLinkIds": [
-          "NecromancerSpectralScythe",
           "NecromancerSpectralScythe"
         ]
       },
@@ -345,13 +345,11 @@
         "type": "Q",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Xul|Q2",
+        "abilityId": "Xul|Q1",
         "abilityLinks": [
-          "Xul|Q1",
-          "Xul|Q2"
+          "Xul|Q1"
         ],
         "abilityTalentLinkIds": [
-          "NecromancerSpectralScythe",
           "NecromancerSpectralScythe"
         ]
       },
@@ -392,10 +390,16 @@
         "name": "Amplify Damage",
         "description": "Enemies Rooted by Bone Prison lose 25 Armor for 1.75 seconds.",
         "icon": "storm_ui_icon_necromancer_boneprison.png",
-        "type": "Passive",
+        "type": "E",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "Xul|Passive"
+        "abilityId": "Xul|E1",
+        "abilityLinks": [
+          "Xul|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "NecromancerBonePrison"
+        ]
       },
       {
         "tooltipId": "NecromancerTalentCorpseExplosion",
@@ -481,13 +485,11 @@
         "type": "Q",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Xul|Q2",
+        "abilityId": "Xul|Q1",
         "abilityLinks": [
-          "Xul|Q1",
-          "Xul|Q2"
+          "Xul|Q1"
         ],
         "abilityTalentLinkIds": [
-          "NecromancerSpectralScythe",
           "NecromancerSpectralScythe"
         ]
       },
@@ -534,7 +536,7 @@
     {
       "unitId": "NecromancerRaiseSkeletonBonePrisonTalentJailor",
       "name": "NecromancerRaiseSkeletonBonePrisonTalentJailor",
-      "icon": "storm_ui_icon_necromancer_raiseskeleton.png",
+      "icon": "storm_ui_icon_necromancer_boneprison.png",
       "stats": {
         "hp": 225,
         "hpRegen": -15,
@@ -549,7 +551,7 @@
         "sight": 8
       },
       "abilities": [],
-      "sourceAbilityTooltipId": "NecromancerRaiseSkeleton"
+      "sourceAbilityTooltipId": "NecromancerBonePrison"
     },
     {
       "unitId": "NecromancerSkeletalMage",
@@ -580,6 +582,7 @@
     "NecromancerBoneArmorBacklash": "When Bone Armor expires, nearby enemy Heroes take damage equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,NecromancerBoneArmorBacklashMasteryDamage,VitalFractionMax[Life]\"/>%</c> of their maximum Health.",
     "NecromancerBoneArmorShackler": "While Bone Armor is active, nearby enemies are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NecromancerBoneArmorMasteryShackleSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBoneArmorMasteryShackleSlow,Duration\"/></c> second. Basic Attacks against Heroes that are Stunned, Rooted, or Slowed reduce the cooldown of Bone Armor by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,NecromancerShacklerCooldownReductionModifyPlayer,Cost.Cooldown.TimeUse\"/></c> seconds.",
     "NecromancerBoneArmorShade": "While Bone Armor is active, Xul evades all Basic Attacks, but increases the cooldown of Bone Armor by <c val=\"#TooltipNumbers\"><d ref=\"Talent,NecromancerTalentBoneArmorShade,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
+    "NecromancerBonePrison": "After a <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerBonePrisonCreateDelayPersistent,PeriodicPeriodArray[0]*Effect,NecromancerBonePrisonCreateDelayPersistent,PeriodCount\"/></c> second delay, deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerBonePrisonDamage,Amount\"/></c> damage and Root the target enemy Hero for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerBonePrisonRoot,Duration\" precision=\"2\"/></c> seconds.  All nearby Skeletal Warriors will fixate on the target for their duration.",
     "NecromancerBoneSpear": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,NecromancerBoneSpearDamage,Amount\"/></c> damage to enemies in a line.",
     "NecromancerColdHandOfDeath": "Increase the Slow of Frost Mages by <c val=\"#TooltipNumbers\"><d ref=\"(-100 * Talent,NecromancerTalentColdHandOfDeath,AbilityModificationArray[0].Modifications[0].Value)\" player=\"0\"/>%</c>.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Skeletal Warrior attacks Slow enemies by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,NecromancerRaiseSkeletonColdHandOfDeathFrostSkeletonSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerRaiseSkeletonColdHandOfDeathFrostSkeletonSlow,Duration\" precision=\"2\" player=\"0\"/></c> seconds.",
     "NecromancerCursedStrikes": "Xul's Basic Attacks deal damage in a wide area and reduce the Attack Speed of Heroes and Summons by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,NecromancerCursedStrikesAttackSpeedSlow,Modification.AdditiveAttackSpeedFactor\"player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerCursedStrikesAttackSpeedSlow,Duration\"player=\"0\"/></c> seconds. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NecromancerCursedStrikesActive,Duration\"player=\"0\"/></c> seconds once triggered.",
@@ -608,6 +611,7 @@
     "NecromancerBoneArmorBacklash": "Bone Armor explodes for damage",
     "NecromancerBoneArmorShackler": "Bone Armor Slows, can reduce cooldown",
     "NecromancerBoneArmorShade": "Bone Armor evades Basic Attacks",
+    "NecromancerBonePrison": "Root an enemy in place",
     "NecromancerBoneSpear": "Damage enemies in a line",
     "NecromancerColdHandOfDeath": "Increase Skeletal Mages Slow, Skeleton attacks Slow",
     "NecromancerCursedStrikes": "Basic Attacks deal damage in an area and reduce Attack Speed",

@@ -8,7 +8,7 @@
   "name": "D.Va",
   "icon": "dva.png",
   "role": "Warrior",
-  "expandedRole": "Warrior",
+  "expandedRole": "Bruiser",
   "type": "Ranged",
   "description": "A hard-to-kill Bruiser that can peel enemies away from her allies with high disruption.",
   "title": "MEKA Pilot",
@@ -132,7 +132,7 @@
     ],
     "D.VaPilot": [
       {
-        "uid": "64f1f0",
+        "uid": "65869a",
         "name": "Call Mech",
         "description": "Call a new Mech and enter Mech Mode.  Basic Attacks lower this cooldown by 0.5 seconds each.",
         "hotkey": "E",
@@ -141,6 +141,16 @@
         "cooldown": 45,
         "icon": "storm_ui_icon_dva_callmech.png",
         "type": "basic"
+      },
+      {
+        "uid": "c2a7b9",
+        "name": "Pilot Mode",
+        "description": "Basic Attacks reduce the cooldown of Call Mech by 0.5 seconds. As a Pilot, D.Va only awards 50% of a normal Hero's experience upon dying.",
+        "trait": true,
+        "abilityId": "DVa|D2",
+        "tooltipId": "DVaPilotPilotMode",
+        "icon": "storm_ui_icon_dva_pilotmode.png",
+        "type": "trait"
       },
       {
         "uid": "8561cc",
@@ -164,13 +174,14 @@
         "type": "basic"
       },
       {
-        "uid": "fd906e",
-        "name": "Locked Ability",
-        "description": "Concussive Pulse can be unlocked through a Talent at Level 20.",
-        "hotkey": "W",
-        "abilityId": "DVa|W3",
-        "tooltipId": "DVaLockedAbilityW",
-        "icon": "hud_btn_bg_ability_locked.png",
+        "uid": "64f1f0",
+        "name": "Call Mech",
+        "description": "Call a new Mech and enter Mech Mode.  Basic Attacks lower this cooldown by 0.5 seconds each.",
+        "hotkey": "E",
+        "abilityId": "DVa|E3",
+        "tooltipId": "DVaPilotCallMech",
+        "cooldown": 45,
+        "icon": "storm_ui_icon_dva_callmech.png",
         "type": "basic"
       }
     ]
@@ -407,14 +418,7 @@
         "type": "Heroic",
         "sort": 2,
         "cooldown": 4,
-        "isQuest": false,
-        "abilityId": "DVa|R1",
-        "abilityLinks": [
-          "DVa|R1"
-        ],
-        "abilityTalentLinkIds": [
-          "DVaPilotBigShot"
-        ]
+        "isQuest": false
       }
     ],
     "13": [
@@ -427,13 +431,15 @@
         "type": "E",
         "sort": 1,
         "isQuest": false,
-        "abilityId": "DVa|E2",
+        "abilityId": "DVa|E3",
         "abilityLinks": [
           "DVa|D1",
-          "DVa|E2"
+          "DVa|E2",
+          "DVa|E3"
         ],
         "abilityTalentLinkIds": [
           "DVaPilotCallMech",
+          "DVaPilotCallMechMEKAfall",
           "DVaMechMechMode"
         ]
       },
@@ -499,7 +505,14 @@
         "icon": "storm_ui_icon_dva_pilotmode.png",
         "type": "Trait",
         "sort": 2,
-        "isQuest": false
+        "isQuest": false,
+        "abilityId": "DVa|D2",
+        "abilityLinks": [
+          "DVa|D2"
+        ],
+        "abilityTalentLinkIds": [
+          "DVaPilotPilotMode"
+        ]
       },
       {
         "tooltipId": "DVaPilotNanoweaveSuit",
@@ -509,7 +522,14 @@
         "icon": "storm_ui_icon_dva_pilotmode_a.png",
         "type": "Trait",
         "sort": 3,
-        "isQuest": false
+        "isQuest": false,
+        "abilityId": "DVa|D2",
+        "abilityLinks": [
+          "DVa|D2"
+        ],
+        "abilityTalentLinkIds": [
+          "DVaPilotPilotMode"
+        ]
       },
       {
         "tooltipId": "DVaPilotSuppressingFire",
@@ -519,7 +539,14 @@
         "icon": "storm_ui_icon_dva_pilotmode_b.png",
         "type": "Trait",
         "sort": 4,
-        "isQuest": false
+        "isQuest": false,
+        "abilityId": "DVa|D2",
+        "abilityLinks": [
+          "DVa|D2"
+        ],
+        "abilityTalentLinkIds": [
+          "DVaPilotPilotMode"
+        ]
       }
     ],
     "20": [
@@ -581,16 +608,18 @@
         "name": "MEKAfall",
         "description": "Call Mech is instant and can target a location. Upon landing, the Mech deals 202 (+4% per level) damage to enemies in the impact area.",
         "icon": "storm_ui_icon_dva_callmech.png",
-        "type": "Active",
+        "type": "E",
         "sort": 4,
         "cooldown": 45,
         "isQuest": false,
-        "abilityId": "DVa|Active",
+        "abilityId": "DVa|E3",
         "abilityLinks": [
-          "DVa|E2"
+          "DVa|E2",
+          "DVa|E3"
         ],
         "abilityTalentLinkIds": [
-          "DVaPilotCallMech"
+          "DVaPilotCallMech",
+          "DVaPilotCallMechMEKAfall"
         ]
       }
     ]
@@ -648,11 +677,12 @@
           "tooltipId": "DVaMechBoosters"
         },
         {
-          "name": "Locked Ability",
-          "hotkey": "W",
-          "icon": "hud_btn_bg_ability_locked.png",
-          "description": "Concussive Pulse can be unlocked through a Talent at Level 20.",
-          "tooltipId": "DVaLockedAbilityW"
+          "name": "Call Mech",
+          "hotkey": "E",
+          "icon": "storm_ui_icon_dva_callmech.png",
+          "description": "Call a new Mech and enter Mech Mode.\n\nBasic Attacks lower this cooldown by 0.5 seconds each.",
+          "cooldown": 45,
+          "tooltipId": "DVaPilotCallMech"
         },
         {
           "name": "Call Mech",
@@ -670,12 +700,12 @@
           "tooltipId": "DVaMechSelfDestruct"
         },
         {
-          "name": "Bunny Hop",
+          "name": "Big Shot",
           "hotkey": "Heroic",
-          "icon": "storm_ui_icon_dva_bunnyhop.png",
-          "description": "D.Va's Mech becomes Unstoppable and stomps every 0.5 seconds, dealing 60 damage and Slowing enemies by 40%. Lasts 4 seconds.\n\nRequires Mech Mode.",
-          "cooldown": 100,
-          "tooltipId": "DVaBunnyHopOn"
+          "icon": "storm_ui_icon_dva_bigshot.png",
+          "description": "Deal 250 damage to all enemies in a line. The cooldown of Call Mech is reduced by 8 seconds for each enemy Hero hit.\n\nRequires Pilot Mode.",
+          "cooldown": 4,
+          "tooltipId": "DVaPilotBigShot"
         }
       ],
       "sourceAbilityTooltipId": "DVaMechanizedWalker"
@@ -695,7 +725,6 @@
     "DVaDefenseMatrixFusionGenerator": "Every time an enemy Hero deals damage while inside Defense Matrix, D.Va's Self-Destruct Charge increases by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DVaMechDefenseMatrixFusionGeneratorAddChargetoCaster,Cost[0].ChargeCountUse*(-1)\" precision=\"2\"/>%</c>.<n/><n/>Max of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DVaDefenseMatrixFusionGeneratorCounterToken,Max\"/>%</c> Charge gained per use.",
     "DVaDefenseMatrixGetThroughThis": "Increase the duration of Defense Matrix by <c val=\"#TooltipNumbers\"><d ref=\"Talent,DVaDefenseMatrixGetThroughThis,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
     "DVaLockedAbilityQ": "<c val=\"#TooltipNumbers\">Torpedo Dash can be unlocked through a Talent at Level 16.",
-    "DVaLockedAbilityW": "<c val=\"#TooltipNumbers\">Concussive Pulse can be unlocked through a Talent at Level 20.",
     "DVaMechAblativeArmor": "Damage against D.Va's Mech that would deal <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DVaMechAblativeArmorDamageResponseCarry,DamageResponse.Maximum/Unit,HeroDVaMech,LifeMax*(100)\"/>%</c> or less of its maximum Health is reduced by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DVaMechAblativeArmorDamageResponseCarry,DamageResponse.ModifyFraction*100\"/>%</c>.<n/><n/>This does not decrease the amount of Self-Destruct Charge gained.",
     "DVaMechBoosters": "Increase D.Va's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DVaBoostersMoveSpeedActive,Modification.MoveSpeedMaximum/Unit,HeroDVaMech,Speed-1*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DVaBoostersActive,Duration\" precision=\"2\"/></c> seconds. Enemies that are hit take <c val=\"#TooltipNumbers\"><d ref=\"Effect,DVaBoostersImpactDamage,Amount\"/></c> damage and are knocked away. <n/><n/>D.Va cannot be Slowed while Boosters are active, and each enemy can only be hit once per use.",
     "DVaMechCancelBoosters": "Cancel Boosters",
@@ -712,6 +741,7 @@
     "DVaPilotConcussivePulseTalent": "D.Va gains the Concussive Pulse ability, allowing her to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,DVaPilotConcussivePulseDamage,Amount\"/></c> damage to enemies in a cone and knock them back.<n/><n/>Requires Pilot Mode.",
     "DVaPilotGGWP": "Increase Pilot Mode Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DVaPilotWeaponDamage,MultiplicativeModifierArray[0].Modifier*100\"/>%</c>. Participating in a Takedown while in Pilot Mode instantly refreshes the cooldown of Call Mech.",
     "DVaPilotNanoweaveSuit": "For <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DVaPilotNanoweaveSuitBuff,Duration\"/></c> seconds after ejecting from her Mech, D.Va gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DVaPilotNanoweaveSuitBuff,ArmorModification.AllArmorBonus\"/></c> Armor and her Basic Attacks grant <c val=\"#TooltipNumbers\"><d ref=\"Effect,DVaPilotNanoweaveSuitWeaponCallMechCooldownReduction,Cost.Cooldown.TimeUse/Effect,DVaPilotWeaponCallMechCooldownReduction,Cost.Cooldown.TimeUse-1*100\" precision=\"2\"/>%</c> more cooldown reduction towards Call Mech.",
+    "DVaPilotPilotMode": "Basic Attacks reduce the cooldown of Call Mech by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DVaPilotWeaponCallMechCooldownReduction,Cost.Cooldown.TimeUse*(-1)\" precision=\"2\" player=\"0\"/></c> seconds. As a Pilot, D.Va only awards <c val=\"#TooltipNumbers\">50%</c> of a normal Hero's experience upon dying.",
     "DVaPilotSuppressingFire": "Pilot Mode Basic Attacks have <c val=\"#TooltipNumbers\">20%</c> increased range and Slow enemy Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DVaPilotSuppressingFireSlow,Modification.UnifiedMoveSpeedFactor*(-100)\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DVaPilotSuppressingFireSlow,Duration\" precision=\"2\"/></c> seconds.",
     "DVaPilotTorpedoDashAbility": "Dash towards the target location, passing through enemies along the way.",
     "DVaPilotTorpedoDashTalent": "D.Va gains the Torpedo Dash ability, allowing her to dash forward and pass through enemies.<n/><n/>Requires Pilot Mode.",
