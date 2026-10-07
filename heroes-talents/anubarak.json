@@ -113,16 +113,6 @@
         "tooltipId": "AnubarakScarabHostTrait",
         "icon": "storm_ui_icon_anubarak_scarabhost.png",
         "type": "trait"
-      },
-      {
-        "uid": "7e9935",
-        "name": "Scarab Host",
-        "description": "Using an Ability spawns a Beetle which lasts for 8 seconds, attacking nearby enemies for 20 (+4% per level) damage.",
-        "trait": true,
-        "abilityId": "Anubarak|D2",
-        "tooltipId": "AnubarakScarabHostTrait",
-        "icon": "storm_ui_icon_anubarak_scarabhost.png",
-        "type": "trait"
       }
     ]
   },
@@ -154,13 +144,11 @@
         "type": "Trait",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Anubarak|D2",
+        "abilityId": "Anubarak|D1",
         "abilityLinks": [
-          "Anubarak|D1",
-          "Anubarak|D2"
+          "Anubarak|D1"
         ],
         "abilityTalentLinkIds": [
-          "AnubarakLegionOfBeetles",
           "AnubarakLegionOfBeetlesVisual"
         ]
       },
@@ -273,13 +261,11 @@
         "type": "Trait",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Anubarak|D2",
+        "abilityId": "Anubarak|D1",
         "abilityLinks": [
-          "Anubarak|D1",
-          "Anubarak|D2"
+          "Anubarak|D1"
         ],
         "abilityTalentLinkIds": [
-          "AnubarakLegionOfBeetles",
           "AnubarakLegionOfBeetlesVisual"
         ]
       }
@@ -409,11 +395,9 @@
         "isQuest": false,
         "abilityId": "Anubarak|Passive",
         "abilityLinks": [
-          "Anubarak|D1",
-          "Anubarak|D2"
+          "Anubarak|D1"
         ],
         "abilityTalentLinkIds": [
-          "AnubarakLegionOfBeetles",
           "AnubarakLegionOfBeetlesVisual"
         ]
       }
