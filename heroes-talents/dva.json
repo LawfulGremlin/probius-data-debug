@@ -133,21 +133,10 @@
     ],
     "D.VaPilot": [
       {
-        "uid": "a9bbf2",
-        "name": "Liquid Cooling",
-        "description": "Activate to gain the effects of Healing Fountain. Requires Mech Mode.  Passive: While in Mech Mode, Healing Fountain's cooldown is reduced to 50 seconds and its effects last 50% longer.",
-        "hotkey": "1",
-        "abilityId": "DVa|11",
-        "tooltipId": "DVaLiquidCooling",
-        "cooldown": 50,
-        "icon": "storm_ui_icon_dva_mechmode_b.png",
-        "type": "activable"
-      },
-      {
         "uid": "d090e0",
         "name": "Self-Destruct",
         "description": "Eject from the Mech, setting it to self-destruct after 4 seconds. Deals 400 (+4% per level) to 1100 (+4% per level) damage in a large area, depending on distance from center. Deals 50% damage against Structures.  Gain 1% Charge for every 2 seconds spent Basic Attacking, and 25% Charge per 100% of Mech Health lost.",
-        "hotkey": "2",
+        "hotkey": "1",
         "abilityId": "DVa|21",
         "tooltipId": "DVaMechSelfDestruct",
         "icon": "storm_ui_icon_dva_selfdestruct.png",

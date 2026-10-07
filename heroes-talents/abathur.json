@@ -136,39 +136,6 @@
         "type": "basic"
       },
       {
-        "uid": "1ed3be",
-        "name": "Locust Brood",
-        "description": "Activate to spawn 3 Locusts at a nearby location.",
-        "hotkey": "1",
-        "abilityId": "Abathur|11",
-        "tooltipId": "AbathurLocustSwarm",
-        "cooldown": 75,
-        "icon": "storm_ui_icon_abathur_spawnlocust.png",
-        "type": "activable"
-      },
-      {
-        "uid": "ffc6aa",
-        "name": "Calldown: MULE",
-        "description": "Activate to calldown a Mule that repairs Structures, one at a time, near target point for 40 seconds, healing for 90 Health every 1 second.",
-        "hotkey": "2",
-        "abilityId": "Abathur|21",
-        "tooltipId": "GenericCalldownMule",
-        "cooldown": 60,
-        "icon": "storm_ui_icon_talent_mule.png",
-        "type": "activable"
-      },
-      {
-        "uid": "3d269f",
-        "name": "Locust Nest",
-        "description": "Activate to create a nest that periodically spawns Locusts. Only one Locust Nest can be active at a time.",
-        "hotkey": "3",
-        "abilityId": "Abathur|31",
-        "tooltipId": "AbathurLocustMasterHotbar",
-        "cooldown": 45,
-        "icon": "storm_ui_icon_abathur_locustnest.png",
-        "type": "activable"
-      },
-      {
         "uid": "f10324",
         "name": "Stab",
         "description": "Shoots a spike towards target area that deals 119 (+4% per level) damage to the first enemy it contacts.",
@@ -271,9 +238,7 @@
         "cooldown": 75,
         "isQuest": false,
         "abilityId": "Abathur|Active",
-        "abilityLinks": [
-          "Abathur|11"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "AbathurLocustSwarm"
         ]
@@ -399,9 +364,7 @@
         "cooldown": 60,
         "isQuest": false,
         "abilityId": "Abathur|Active",
-        "abilityLinks": [
-          "Abathur|21"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "TalentBucketCalldownMule"
         ]
@@ -647,9 +610,7 @@
         "cooldown": 45,
         "isQuest": false,
         "abilityId": "Abathur|Active",
-        "abilityLinks": [
-          "Abathur|31"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "AbathurLocustNest"
         ]

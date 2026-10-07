@@ -131,28 +131,6 @@
         "tooltipId": "JainaImprovedIceBlockCancel",
         "icon": "hud_btn_bg_ability_cancel.png",
         "type": "activable"
-      },
-      {
-        "uid": "592303",
-        "name": "Icy Veins",
-        "description": "Activate to make Jaina's Basic Abilities' cooldowns recharge 200% faster and reduce their Mana cost by 50% for 5 seconds.",
-        "hotkey": "3",
-        "abilityId": "Jaina|31",
-        "tooltipId": "JainaIcyVeinsHotbar",
-        "cooldown": 60,
-        "icon": "storm_ui_icon_jaina_icyveins.png",
-        "type": "activable"
-      },
-      {
-        "uid": "8e9ecd",
-        "name": "Ice Blink",
-        "description": "Activate to teleport a short distance and Chill all nearby enemies.",
-        "hotkey": "4",
-        "abilityId": "Jaina|41",
-        "tooltipId": "JainaFrigidTransmission",
-        "cooldown": 60,
-        "icon": "storm_ui_icon_talent_boltofthestorm.png",
-        "type": "activable"
       }
     ]
   },
@@ -394,9 +372,7 @@
         "cooldown": 60,
         "isQuest": false,
         "abilityId": "Jaina|Active",
-        "abilityLinks": [
-          "Jaina|31"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "IcyVeins"
         ]
@@ -507,9 +483,7 @@
         "cooldown": 60,
         "isQuest": false,
         "abilityId": "Jaina|Active",
-        "abilityLinks": [
-          "Jaina|41"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "JainaFrigidTransmission"
         ]

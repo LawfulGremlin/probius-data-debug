@@ -116,17 +116,6 @@
     ],
     "TychusOdinNoHealth": [
       {
-        "uid": "1511f2",
-        "name": "Neosteel Coating",
-        "description": "Activate to gain 75 Spell Armor for 4 seconds, reducing Ability Damage taken by 75%.",
-        "hotkey": "1",
-        "abilityId": "Tychus|11",
-        "tooltipId": "TychusNeosteelCoatingTalent",
-        "cooldown": 30,
-        "icon": "storm_temp_btn-upgrade-terran-neosteelframe.png",
-        "type": "activable"
-      },
-      {
         "uid": "bdd102",
         "name": "Ragnarok Missiles",
         "description": "Launches a volley of missiles at target area, dealing 132 (+4% per level) damage and slowing enemy Movement Speed by 30% for 2 seconds.",
@@ -406,9 +395,7 @@
         "cooldown": 30,
         "isQuest": false,
         "abilityId": "Tychus|Active",
-        "abilityLinks": [
-          "Tychus|11"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "TychusNeosteelCoating"
         ]
