@@ -30,7 +30,7 @@
     "resource": 500,
     "resourceType": "Mana",
     "resourceRegen": 3,
-    "attackDamage": 75,
+    "attackDamage": 70,
     "attackDamageScale": 0.04,
     "attackRange": 5.5,
     "attackSpeed": 1.6667,
@@ -53,7 +53,7 @@
       {
         "uid": "512f24",
         "name": "Multishot",
-        "description": "Deal 172 (+4% per level) damage to enemies within the target area.",
+        "description": "Deal 165 (+4% per level) damage to enemies within the target area.",
         "hotkey": "W",
         "abilityId": "Valla|W1",
         "tooltipId": "DemonHunterMultishot",
@@ -89,7 +89,7 @@
       {
         "uid": "4462d4",
         "name": "Rain of Vengeance",
-        "description": "Launch a wave of Shadow Beasts that deals 250 (+4% per level) damage and stuns enemies in the target area for 0.5 seconds.  Stores up to 2 charges.",
+        "description": "Launch a wave of Shadow Beasts that deals 250 (+4% per level) damage and Stuns enemies in the target area for 0.5 seconds.  Stores up to 2 charges.",
         "hotkey": "R",
         "abilityId": "Valla|R2",
         "tooltipId": "DemonHunterRainOfVengeance",
@@ -113,63 +113,10 @@
   "talents": {
     "1": [
       {
-        "tooltipId": "DemonHunterHungeringArrowMonsterHunterTalent",
-        "talentTreeId": "DemonHunterMasteryMonsterHunterHungeringArrow",
-        "name": "Monster Hunter",
-        "description": "Reduces the Mana cost of Hungering Arrow by 40 and increases the damage it deals to Minions, Mercenaries, and Monsters by 150%.",
-        "icon": "storm_ui_icon_valla_hungeringarrow.png",
-        "type": "Q",
-        "sort": 1,
-        "isQuest": false,
-        "abilityId": "Valla|Q1",
-        "abilityLinks": [
-          "Valla|Q1"
-        ],
-        "abilityTalentLinkIds": [
-          "DemonHunterHungeringArrow"
-        ]
-      },
-      {
-        "tooltipId": "DemonHunterVaultCaltropsTalent",
-        "talentTreeId": "DemonHunterMasteryCaltrops",
-        "name": "Caltrops",
-        "description": "Drop 3 Caltrops while Vaulting. Caltrops do 60 (+4% per level) damage and Slow enemies by 40% for 1 second.  Quest: Spend 160 seconds at 10 stacks of Hatred.  Reward: Vault cooldown is reduced by 5 seconds and its Mana cost is reduced from 50 to 25.",
-        "icon": "storm_ui_icon_valla_vault.png",
-        "type": "E",
-        "sort": 2,
-        "isQuest": true,
-        "abilityId": "Valla|E1",
-        "abilityLinks": [
-          "Valla|E1"
-        ],
-        "abilityTalentLinkIds": [
-          "DemonHunterVault"
-        ]
-      },
-      {
-        "tooltipId": "DemonHunterHatredHotPursuitTalent",
-        "talentTreeId": "DemonHunterCombatStyleHotPursuit",
-        "name": "Hot Pursuit",
-        "description": "When at 10 stacks of Hatred, the Movement Speed bonus increases to 20% total and Valla gains 4 Mana per second.",
-        "icon": "storm_ui_icon_valla_hatred.png",
-        "type": "Trait",
-        "sort": 3,
-        "isQuest": false,
-        "abilityId": "Valla|D1",
-        "abilityLinks": [
-          "Valla|D1"
-        ],
-        "abilityTalentLinkIds": [
-          "DemonHunterHatred"
-        ]
-      }
-    ],
-    "4": [
-      {
         "tooltipId": "DemonHunterHungeringArrowPuncturingArrowTalent",
         "talentTreeId": "DemonHunterMasteryPuncturingArrow",
         "name": "Puncturing Arrow",
-        "description": "Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow increases its damage by 5, up to a maximum of 100.  Reward: After gaining 100 bonus damage, gain an additional 75 bonus damage and Hungering Arrow also bounces 1 additional time.",
+        "description": "Increase the number of Hungering Arrow bounces by 1.  Quest: Hitting an enemy Hero with the initial impact of Hungering Arrow refunds 40 Mana and permanently increases the damage of its initial impact by 6.",
         "icon": "storm_ui_icon_valla_hungeringarrow.png",
         "type": "Q",
         "sort": 1,
@@ -183,14 +130,14 @@
         ]
       },
       {
-        "tooltipId": "DemonHunterHatredPunishmentTalent",
-        "talentTreeId": "DemonHunterPunishment",
-        "name": "Punishment",
-        "description": "Each stack of Hatred increases the damage of Multishot by 4%.",
+        "tooltipId": "DemonHunterMultishotFireAtWill",
+        "talentTreeId": "DemonHunterMultishotFireAtWill",
+        "name": "Fire At Will",
+        "description": "Quest: Hitting a Hero with Multishot grants 2 Hatred and permanently increases its damage by 4.",
         "icon": "storm_ui_icon_valla_multishot.png",
         "type": "W",
         "sort": 2,
-        "isQuest": false,
+        "isQuest": true,
         "abilityId": "Valla|W1",
         "abilityLinks": [
           "Valla|W1"
@@ -203,7 +150,7 @@
         "tooltipId": "DemonHunterCreedoftheHunter",
         "talentTreeId": "DemonHunterCreedoftheHunter",
         "name": "Creed of the Hunter",
-        "description": "Increases Attack Speed by 10%.  Quest: Use 100 Basic Attacks against Heroes.  Reward: Hatred grants an additional 2% Basic Attack Damage per stack.",
+        "description": "Loan: Gain 20% bonus Attack Speed. Every death reduces this bonus by 5%.  Quest: Every 50 Basic Attacks against Heroes increases Hatred's damage bonus per stack by 1%, up to 5%.",
         "icon": "storm_ui_icon_valla_hatred.png",
         "type": "Trait",
         "sort": 3,
@@ -217,12 +164,12 @@
         ]
       }
     ],
-    "7": [
+    "4": [
       {
         "tooltipId": "DemonHunterMultishotArsenalTalent",
         "talentTreeId": "DemonHunterMasteryArsenal",
         "name": "Arsenal",
-        "description": "Multishot also fires 3 grenades which deal 120 (+4% per level) damage. Each enemy Hero hit by a grenade reduces the cooldown of Multishot by 2 seconds.",
+        "description": "Increase the range of Multishot by 20%. Multishot also fires 3 grenades that deal 120 (+4% per level) damage and refund 25 Mana after hitting enemy Heroes.",
         "icon": "storm_ui_icon_valla_multishot.png",
         "type": "W",
         "sort": 1,
@@ -239,7 +186,7 @@
         "tooltipId": "DemonHunterDeathDealer",
         "talentTreeId": "DemonHunterDeathDealer",
         "name": "Death Dealer",
-        "description": "Increases Vault Basic Attack damage bonus from 6% to 14% per stack of Hatred. If this attack kills its victim, the Mana cost and cooldown of Vault are refunded.",
+        "description": "Increase Vaults Basic Attack damage bonus from 6% to 15% per stack of Hatred. If this attack kills its victim within 1.5 seconds, the Mana cost and cooldown of Vault are refunded.  Passive: Reduce the cooldown of Vault by 5 seconds.",
         "icon": "storm_ui_icon_valla_vault.png",
         "type": "E",
         "sort": 2,
@@ -256,8 +203,8 @@
         "tooltipId": "DemonHunterVaultRepeatingArrowTalent",
         "talentTreeId": "DemonHunterMasteryRepeatingArrowVault",
         "name": "Repeating Arrow",
-        "description": "The cooldown for Hungering Arrow is reset when Vault is used.",
-        "icon": "storm_ui_icon_valla_vault_a.png",
+        "description": "Vault no longer has a Mana cost. Casting Vault resets the cooldown of Hungering Arrow.",
+        "icon": "storm_ui_icon_valla_repeatingarrow.png",
         "type": "E",
         "sort": 3,
         "isQuest": false,
@@ -267,6 +214,61 @@
         ],
         "abilityTalentLinkIds": [
           "DemonHunterVault"
+        ]
+      }
+    ],
+    "7": [
+      {
+        "tooltipId": "DemonHunterHungeringArrowMonsterHunterTalent",
+        "talentTreeId": "DemonHunterMasteryMonsterHunterHungeringArrow",
+        "name": "Monster Hunter",
+        "description": "Hungering Arrow deals 150% additional damage to Minions, Mercenaries, and Monsters.",
+        "icon": "storm_ui_icon_valla_hungeringarrow.png",
+        "type": "Q",
+        "sort": 1,
+        "isQuest": false,
+        "abilityId": "Valla|Q1",
+        "abilityLinks": [
+          "Valla|Q1"
+        ],
+        "abilityTalentLinkIds": [
+          "DemonHunterHungeringArrow"
+        ]
+      },
+      {
+        "tooltipId": "DemonHunterHungeringArrowFrostShotTalent",
+        "talentTreeId": "DemonHunterMasteryFrostShot",
+        "name": "Frost Shot",
+        "description": "Multishot Slows enemies by 20% for 2.5 seconds. Hungering Arrows deals 25% more damage to Slowed enemies.",
+        "icon": "storm_ui_icon_valla_siphoningarrow.png",
+        "type": "Q",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Valla|Q1",
+        "abilityLinks": [
+          "Valla|Q1",
+          "Valla|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "DemonHunterHungeringArrow",
+          "DemonHunterMultishot"
+        ]
+      },
+      {
+        "tooltipId": "DemonHunterHatredHotPursuitTalent",
+        "talentTreeId": "DemonHunterCombatStyleHotPursuit",
+        "name": "Hot Pursuit",
+        "description": "Increase the Movement Speed bonus of each stack of Hatred to 2.5%.",
+        "icon": "storm_ui_icon_valla_hatred.png",
+        "type": "Trait",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Valla|D1",
+        "abilityLinks": [
+          "Valla|D1"
+        ],
+        "abilityTalentLinkIds": [
+          "DemonHunterHatred"
         ]
       }
     ],
@@ -293,7 +295,7 @@
         "tooltipId": "DemonHunterRainOfVengeance",
         "talentTreeId": "DemonHunterHeroicAbilityRainofVengeance",
         "name": "Rain of Vengeance",
-        "description": "Launch a wave of Shadow Beasts that deals 250 (+4% per level) damage and stuns enemies in the target area for 0.5 seconds.  Stores up to 2 charges.",
+        "description": "Launch a wave of Shadow Beasts that deals 250 (+4% per level) damage and Stuns enemies in the target area for 0.5 seconds.  Stores up to 2 charges.",
         "icon": "storm_ui_icon_valla_rainofvengeance.png",
         "type": "Heroic",
         "sort": 2,
@@ -312,25 +314,27 @@
       {
         "tooltipId": "DemonHunterHungeringArrowSiphoningArrowTalent",
         "talentTreeId": "DemonHunterMasterySiphoningArrow",
-        "name": "Siphoning Arrow",
-        "description": "Valla heals for 75% of the damage dealt to Heroes by Hungering Arrow.",
-        "icon": "storm_ui_icon_valla_hungeringarrow.png",
+        "name": "Siphoning Arrows",
+        "description": "Hitting a Hero with Hungering Arrow heals Valla for 4% of her maximum Health, and Multishot heals for 2%.",
+        "icon": "storm_ui_icon_valla_siphoningarrow.png",
         "type": "Q",
         "sort": 1,
         "isQuest": false,
         "abilityId": "Valla|Q1",
         "abilityLinks": [
-          "Valla|Q1"
+          "Valla|Q1",
+          "Valla|W1"
         ],
         "abilityTalentLinkIds": [
-          "DemonHunterHungeringArrow"
+          "DemonHunterHungeringArrow",
+          "DemonHunterMultishot"
         ]
       },
       {
         "tooltipId": "DemonHunterHatredTemperedByDisciplineTalent",
         "talentTreeId": "DemonHunterCombatStyleTemperedByDiscipline",
         "name": "Tempered by Discipline",
-        "description": "While at 10 stacks of Hatred, Basic Attacks heal for 25% of the damage dealt.",
+        "description": "Basic Attacks heal for 10% of the damage dealt, increased by 2% per Hatred stack.",
         "icon": "storm_ui_icon_valla_hatred.png",
         "type": "Trait",
         "sort": 2,
@@ -347,7 +351,7 @@
         "tooltipId": "DemonHunterGloom",
         "talentTreeId": "DemonHunterGloom",
         "name": "Gloom",
-        "description": "Activate to consume all Hatred, granting 3 Spell Armor per Hatred consumed for 5 seconds.  Passive: Permanently gain 20 Spell Armor, reducing Ability Damage taken by 20%.",
+        "description": "Activate to consume all Hatred, granting 3 Spell Armor per Hatred consumed for 5 seconds.  Passive: Gain 20 Spell Armor, and each stack of Hatred heals for 2.5 Health per second.",
         "icon": "storm_ui_icon_valla_hatred_var1.png",
         "type": "Active",
         "sort": 3,
@@ -364,10 +368,10 @@
     ],
     "16": [
       {
-        "tooltipId": "DemonHunterMultishotFrostShotTalent",
-        "talentTreeId": "DemonHunterMasteryFrostShot",
-        "name": "Frost Shot",
-        "description": "Increases the range of Multishot by 20% and it also slows by 25% for 1.5 seconds.",
+        "tooltipId": "DemonHunterHatredPunishmentTalent",
+        "talentTreeId": "DemonHunterPunishment",
+        "name": "Punishment",
+        "description": "While at max Hatred, Multishot's cooldown recharges 50% faster.",
         "icon": "storm_ui_icon_valla_multishot.png",
         "type": "W",
         "sort": 1,
@@ -384,7 +388,7 @@
         "tooltipId": "DemonHunterSeethingHatred",
         "talentTreeId": "DemonHunterSeethingHatred",
         "name": "Seething Hatred",
-        "description": "While at 10 stacks of Hatred, gain 15% Spell Power. Basic Attacks now grant 2 stacks of Hatred.",
+        "description": "While at max Hatred, increase all damage dealt by 10%.",
         "icon": "storm_ui_icon_valla_hatred.png",
         "type": "Trait",
         "sort": 2,
@@ -401,7 +405,7 @@
         "tooltipId": "DemonHunterManticore",
         "talentTreeId": "DemonHunterManticore",
         "name": "Manticore",
-        "description": "Every 3rd Basic Attack against the same Heroic target deals an additional 5% of their maximum Health as damage.",
+        "description": "Every 3rd Basic Attack against the same Hero deals an additional 5% of their maximum Health as damage.",
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 3,
@@ -414,7 +418,7 @@
         "tooltipId": "DemonHunterStrafeDeathSiphonTalent",
         "talentTreeId": "DemonHunterMasteryDeathSiphon",
         "name": "Death Siphon",
-        "description": "Strafe also fires penetrating bolts in a line for 34 (+4% per level) damage every 0.25 seconds. 25% of the damage dealt with Strafe is returned as Health.",
+        "description": "Hitting an enemy Hero with Strafe increases its duration by 0.125 seconds. Strafe also fires penetrating bolts in a line for 34 (+4% per level) damage every 0.25 seconds that heal for 25% of their damage dealt.",
         "icon": "storm_ui_icon_valla_strafe.png",
         "type": "Heroic",
         "sort": 1,
@@ -434,7 +438,7 @@
         "tooltipId": "DemonHunterRainOfVengeanceStormOfVengeanceTalent",
         "talentTreeId": "DemonHunterMasteryStormofVengeance",
         "name": "Storm of Vengeance",
-        "description": "Basic Attacks reduce the charge cooldown of Rain of Vengeance by 5 seconds.",
+        "description": "Basic Attacks against Heroes reduce the cooldown of Rain of Vengeance by 5 seconds.  Passive: Each stack of Hatred increases your Attack Speed by 2%. While at max Hatred, gain an additional 30% Attack Speed.",
         "icon": "storm_ui_icon_valla_rainofvengeance.png",
         "type": "Heroic",
         "sort": 2,
@@ -451,13 +455,30 @@
         ]
       },
       {
-        "tooltipId": "DemonHunterHatredRancorTalent",
-        "talentTreeId": "DemonHunterCombatStyleRancor",
-        "name": "Rancor",
-        "description": "Each stack of Hatred also increases Attack Speed by 2%. While at 10 stacks of Hatred, gain an additional 30% Attack Speed.",
+        "tooltipId": "DemonHunterVaultAcrobat",
+        "talentTreeId": "DemonHunterVaultAcrobat",
+        "name": "Acrobat",
+        "description": "Gain 2 additional charges of Vault. Drop 3 Caltrops while Vaulting that deal 60 (+4% per level) damage and Slow enemies by 40% for 1 second.",
+        "icon": "storm_ui_icon_valla_vault.png",
+        "type": "E",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Valla|E1",
+        "abilityLinks": [
+          "Valla|E1"
+        ],
+        "abilityTalentLinkIds": [
+          "DemonHunterVault"
+        ]
+      },
+      {
+        "tooltipId": "DemonHunterFarflightQuiver",
+        "talentTreeId": "DemonHunterFarflightQuiver",
+        "name": "Farflight Quiver",
+        "description": "Gain 20% Basic Attack range. While at max Hatred, gain an additional 30% Basic Attack range.",
         "icon": "storm_ui_icon_valla_hatred.png",
         "type": "Trait",
-        "sort": 3,
+        "sort": 4,
         "isQuest": false,
         "abilityId": "Valla|D1",
         "abilityLinks": [
@@ -466,72 +487,61 @@
         "abilityTalentLinkIds": [
           "DemonHunterHatred"
         ]
-      },
-      {
-        "tooltipId": "DemonHunterFarflightQuiver",
-        "talentTreeId": "DemonHunterFarflightQuiver",
-        "name": "Farflight Quiver",
-        "description": "Increases Valla's Basic Attack range by 2.2.",
-        "icon": "storm_ui_icon_talent_autoattack_range.png",
-        "type": "Passive",
-        "sort": 4,
-        "isQuest": false,
-        "abilityId": "Valla|Passive"
       }
     ]
   },
   "tooltipMarkup": {
-    "DemonHunterCreedoftheHunter": "Increases Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DemonHunterHatredCreedoftheHunterTalentCarry,Modification.AdditiveAttackSpeedFactor\"/>%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Use <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterCreedoftheHunterTokenCounter,Max\"/></c> Basic Attacks against Heroes.<n/><n/><img  path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Hatred grants an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterHeroWeaponCreedoftheHunterTalentModifyPlayer,EffectArray[0].Value*100\"/>%</c> Basic Attack Damage per stack.",
-    "DemonHunterDeathDealer": "Increases Vault Basic Attack damage bonus from <c val=\"#TooltipNumbers\">6%</c> to <c val=\"#TooltipNumbers\">14%</c> per stack of Hatred. If this attack kills its victim, the Mana cost and cooldown of Vault are refunded.",
-    "DemonHunterFarflightQuiver": "Increases Valla's Basic Attack range by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterFarflightQuiver,Modification.WeaponRange\" precision=\"2\"/></c>.",
-    "DemonHunterGloom": "Activate to consume all Hatred, granting <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DemonHunterGloomSpellArmorAccumulator,Scale\"/></c> Spell Armor per Hatred consumed for <c val=\"#TooltipNumbers\"><d ref=\"Abil,DemonHunterGloom,Cost.Cooldown.TimeUse\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Permanently gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterHatredTalentGloomCarry,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor, reducing Ability Damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterHatredTalentGloomCarry,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/>%</c>.",
+    "DemonHunterCreedoftheHunter": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Loan:</c> Gain <c val=\"#TooltipNumbers\">20%</c> bonus Attack Speed. Every death reduces this bonus by <c val=\"#TooltipNumbers\">5%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterCreedoftheHunterTokenCounter,DeltaEvents[1].Delta\"/></c> Basic Attacks against Heroes increases Hatred's damage bonus per stack by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterHeroWeaponCreedoftheHunterTalentModifyPlayer,EffectArray[0].Value*100\"/>%</c>, up to <c val=\"#TooltipNumbers\">5%</c>.",
+    "DemonHunterDeathDealer": "Increase Vaults Basic Attack damage bonus from <c val=\"#TooltipNumbers\">6%</c> to <c val=\"#TooltipNumbers\">15%</c> per stack of Hatred. If this attack kills its victim within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterVaultTalentDeathDealerDeathResponse,Duration\"Precision=\"2\"/></c> seconds, the Mana cost and cooldown of Vault are refunded.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Reduce the cooldown of Vault by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,DemonHunterDeathDealer,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
+    "DemonHunterFarflightQuiver": "Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DemonHunterFarflightQuiverBaseRangeIncrease,Modification.WeaponRange/Weapon,HeroDemonHunter,Range\"/>%</c> Basic Attack range. While at max Hatred, gain an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DemonHunterFarflightQuiverMaxRangeIncrease,Modification.WeaponRange/Weapon,HeroDemonHunter,Range\"/>%</c> Basic Attack range.",
+    "DemonHunterGloom": "Activate to consume all Hatred, granting <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DemonHunterGloomActiveSpellArmorAccumulator,Scale\"/></c> Spell Armor per Hatred consumed for <c val=\"#TooltipNumbers\"><d ref=\"Abil,DemonHunterGloom,Cost.Cooldown.TimeUse\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterHatredTalentGloomCarry,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> Spell Armor, and each stack of Hatred heals for <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DemonHunterGloomHPSAccumulator,Scale\"Precision=\"2\"Player=\"0\"/></c> Health per second.",
     "DemonHunterHatred": "Basic Attacks grant a stack of Hatred, up to <c val=\"#TooltipNumbers\">10</c>. Each Hatred stack increases Basic Attack damage by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NewHatredStack,Modification.DamageDealtFraction[Basic]*100\"player=\"0\"/>%</c> and Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,NewHatredStack,Modification.UnifiedMoveSpeedFactor\"player=\"0\"/>%</c>. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NewHatredDurationController,Duration\"player=\"0\"/></c> seconds.",
-    "DemonHunterHatredHotPursuitTalent": "When at <c val=\"#TooltipNumbers\">10</c> stacks of Hatred, the Movement Speed bonus increases to <c val=\"#TooltipNumbers\">20%</c> total and Valla gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,HotPursuit,Modification.VitalRegenArray[Energy]\"/></c> Mana per second.",
-    "DemonHunterHatredPunishmentTalent": "Each stack of Hatred increases the damage of Multishot by <c val=\"#TooltipNumbers\">4%</c>.",
-    "DemonHunterHatredRancorTalent": "Each stack of Hatred also increases Attack Speed by <c val=\"#TooltipNumbers\">2%</c>. While at <c val=\"#TooltipNumbers\">10</c> stacks of Hatred, gain an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DemonHunterHatredTalentRancorCarry,Modification.AdditiveAttackSpeedFactor\"/>%</c> Attack Speed.",
-    "DemonHunterHatredTemperedByDisciplineTalent": "While at <c val=\"#TooltipNumbers\">10</c> stacks of Hatred, Basic Attacks heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DemonHunterHatredTemperedDisciplineCarry,Modification.VitalDamageLeechArray[Life].KindArray[Basic]\"/>%</c> of the damage dealt.",
+    "DemonHunterHatredHotPursuitTalent": "Increase the Movement Speed bonus of each stack of Hatred to <c val=\"#TooltipNumbers\">2.5%</c>.",
+    "DemonHunterHatredPunishmentTalent": "While at max Hatred, Multishot's cooldown recharges <c val=\"#TooltipNumbers\">50%</c> faster.",
+    "DemonHunterHatredTemperedByDisciplineTalent": "Basic Attacks heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,DemonHunterHeroWeaponDamage,LeechFraction[Life]\"/>%</c> of the damage dealt, increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,DemonHunterTemperedByDisciplineAccumulator,Scale\"/>%</c> per Hatred stack.",
     "DemonHunterHungeringArrow": "Fire an arrow that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,HungeringArrowDamage1,Amount\"/></c> damage to the first target hit, then seeks up to <c val=\"#TooltipNumbers\">2</c> additional enemies, prioritizing Heroes, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,HungeringArrowDamage2,Amount\"/></c> damage. Can hit an enemy multiple times.",
-    "DemonHunterHungeringArrowMonsterHunterTalent": "Reduces the Mana cost of Hungering Arrow by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,DemonHunterMasteryMonsterHunterHungeringArrow,AbilityModificationArray[0].Modifications[0].Value\"/></c> and increases the damage it deals to Minions, Mercenaries, and Monsters by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,DemonHunterMasteryMonsterHunterHungeringArrow,AbilityModificationArray[0].Modifications[1].Value\"/>%</c>.",
-    "DemonHunterHungeringArrowPuncturingArrowTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hitting an enemy Hero with the initial impact of Hungering Arrow increases its damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DemonHunterHungeringArrowPuncturingArrowTalentAccumulator,Scale\"/></c>, up to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterPuncturingArrowTalentQuestTokenCounter,Max*Accumulator,DemonHunterHungeringArrowPuncturingArrowTalentAccumulator,Scale\"/></c>.<n/><n/><img  path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gaining <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterPuncturingArrowTalentQuestTokenCounter,Max*Accumulator,DemonHunterHungeringArrowPuncturingArrowTalentAccumulator,Scale\"/> </c>bonus damage, gain an additional <c val=\"#TooltipNumbers\">75 </c>bonus damage and Hungering Arrow also bounces <c val=\"#TooltipNumbers\">1</c> additional time.",
-    "DemonHunterHungeringArrowSiphoningArrowTalent": "Valla heals for <c val=\"#TooltipNumbers\"><d ref=\"Talent,DemonHunterMasterySiphoningArrow,AbilityModificationArray[0].Modifications[0].Value*100\"/>%</c> of the damage dealt to Heroes by Hungering Arrow.",
-    "DemonHunterManticore": "Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack against the same Heroic target deals an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,DemonHunterHeroWeaponManticoreTalentProcDamage,VitalFractionMax[Life]\"/>%</c> of their maximum Health as damage.",
+    "DemonHunterHungeringArrowFrostShotTalent": "Multishot Slows enemies by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,DemonHunterFrostShotSlowBehavior,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterFrostShotSlowBehavior,Duration\"Precision=\"2\"/></c> seconds. Hungering Arrows deals <c val=\"#TooltipNumbers\">25%</c> more damage to Slowed enemies.",
+    "DemonHunterHungeringArrowMonsterHunterTalent": "Hungering Arrow deals <c val=\"#TooltipNumbers\">150%</c> additional damage to Minions, Mercenaries, and Monsters.",
+    "DemonHunterHungeringArrowPuncturingArrowTalent": "Increase the number of Hungering Arrow bounces by <c val=\"#TooltipNumbers\">1</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hitting an enemy Hero with the initial impact of Hungering Arrow refunds <c val=\"#TooltipNumbers\">40</c> Mana and permanently increases the damage of its initial impact by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DemonHunterHungeringArrowPuncturingArrowTalentAccumulator,Scale\"/></c>.",
+    "DemonHunterHungeringArrowSiphoningArrowTalent": "Hitting a Hero with Hungering Arrow heals Valla for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,DemonHunterHungeringArrowSiphoningArrowHungeringArrowCreateHealer,RechargeVitalFraction\"/>%</c> of her maximum Health, and Multishot heals for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,DemonHunterHungeringArrowSiphoningArrowMultishotCreateHealer,RechargeVitalFraction\"/>%</c>.",
+    "DemonHunterManticore": "Every <c val=\"#TooltipNumbers\">3rd</c> Basic Attack against the same Hero deals an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,DemonHunterHeroWeaponManticoreTalentProcDamage,VitalFractionMax[Life]\"/>%</c> of their maximum Health as damage.",
     "DemonHunterMultishot": "Deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,MultishotDamage,AmountArray\"/></c> damage to enemies within the target area.",
-    "DemonHunterMultishotArsenalTalent": "Multishot also fires <c val=\"#TooltipNumbers\">3</c> grenades which deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,MultishotArsenalGrenadeDamage,Amount\"/></c> damage. Each enemy Hero hit by a grenade reduces the cooldown of Multishot by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,DemonHunterMultishotArsenalTalentModifyCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
-    "DemonHunterMultishotFrostShotTalent": "Increases the range of Multishot by <c val=\"#TooltipNumbers\">20%</c> and it also slows by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,FrostShotSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,FrostShotSlow,Duration\" player=\"0\"precision=\"2\"/></c> seconds.",
-    "DemonHunterRainOfVengeance": "Launch a wave of Shadow Beasts that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,RainOfVengeanceDamage,Amount\"/></c> damage and stuns enemies in the target area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RainOfVengeanceStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,DemonHunterRainOfVengeance,Cost.Charge.CountMax\"/></c> charges.",
-    "DemonHunterRainOfVengeanceStormOfVengeanceTalent": "Basic Attacks reduce the charge cooldown of Rain of Vengeance by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,DemonHunterRainofVengeanceStormofVengeanceTalentModifyCooldown,Cost[0].ChargeTimeUse\"/></c> seconds.",
-    "DemonHunterSeethingHatred": "While at <c val=\"#TooltipNumbers\"><d ref=\"Behavior,NewHatredStack,MaxStackCount\"/></c> stacks of Hatred, gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterHatredSeethingHatredTalentCarry,Modification.DamageDealtFraction[Ability] *100\" precision =\"2\"/>%</c> Spell Power. Basic Attacks now grant <c val=\"#TooltipNumbers\"><d ref=\"Talent,DemonHunterSeethingHatred,AbilityModificationArray[0].Modifications[0].Value + Effect,NewHatredAttackStackApplyBehavior,Count\" player =\"0\"/></c> stacks of Hatred.",
+    "DemonHunterMultishotArsenalTalent": "Increase the range of Multishot by <c val=\"#TooltipNumbers\">20%</c>. Multishot also fires <c val=\"#TooltipNumbers\"><d ref=\"Effect,MultishotArsenalGrenadeMissileScan,MaxCount\"/></c> grenades that deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,MultishotArsenalGrenadeDamage,Amount\"/></c> damage and refund <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterMultishotArsenalCreateManaHealer,RechargeVitalRate\"/></c> Mana after hitting enemy Heroes.",
+    "DemonHunterMultishotFireAtWill": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hitting a Hero with Multishot grants <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterMultishotFireAtWillAddHatredBehaviorCount,Count\"/></c> Hatred and permanently increases its damage by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DemonHunterMultishotFireAtWillQuestAccumulator,Scale\"Precision =\"2\"/></c>.",
+    "DemonHunterRainOfVengeance": "Launch a wave of Shadow Beasts that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,RainOfVengeanceDamage,Amount\"/></c> damage and Stuns enemies in the target area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RainOfVengeanceStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,DemonHunterRainOfVengeance,Cost.Charge.CountMax\"/></c> charges.",
+    "DemonHunterRainOfVengeanceStormOfVengeanceTalent": "Basic Attacks against Heroes reduce the cooldown of Rain of Vengeance by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,DemonHunterStormOfVengeanceModifyHeroicCooldown,Cost[0].ChargeTimeUse\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Each stack of Hatred increases your Attack Speed by <c val=\"#TooltipNumbers\">2%</c>. While at max Hatred, gain an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DemonHunterRainOfVengeanceStormOfVengeanceCarryBehavior,Modification.AdditiveAttackSpeedFactor\"/>%</c> Attack Speed.",
+    "DemonHunterSeethingHatred": "While at max Hatred, increase all damage dealt by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterHatredSeethingHatredTalentCarry,Modification.DamageDealtFraction[Ability] *100\" precision =\"2\"/>%</c>.",
     "DemonHunterStrafe": "Rapidly attack enemies within <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterStrafeWeaponSearch,AreaArray[0].Radius\"/></c> range for <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterStrafeBasicWeaponDamage,Amount + (Effect,DemonHunterStrafeBasicWeaponDamage,Amount * Effect,DemonHunterStrafeBasicWeaponDamage,AttributeFactor[Heroic])\"/></c> damage per hit, prioritizing Heroes over Minions. Valla is able to move and use Vault while strafing. Lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,Strafe,Duration\" player=\"0\" precision=\"1\"/></c> seconds.",
-    "DemonHunterStrafeDeathSiphonTalent": "Strafe also fires penetrating bolts in a line for <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterStrafeDeathSiphonDamage,Amount\"/></c> damage every <c val=\"#TooltipNumbers\">0.25</c> seconds. <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,DemonHunterStrafeDeathSiphonDamage,LeechFraction[Life]\"/>% </c>of the damage dealt with Strafe is returned as Health.",
+    "DemonHunterStrafeDeathSiphonTalent": "Hitting an enemy Hero with Strafe increases its duration by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterStrafeDeathSiphonAddBuffDuration,Value\"Precision=\"3\"/></c> seconds. Strafe also fires penetrating bolts in a line for <c val=\"#TooltipNumbers\"><d ref=\"Effect,DemonHunterStrafeDeathSiphonDamage,Amount\"/></c> damage every <c val=\"#TooltipNumbers\">0.25</c> seconds that heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,DemonHunterStrafeDeathSiphonDamage,LeechFraction[Life]\"/>%</c> of their damage dealt.",
     "DemonHunterVault": "Dash to the target area. Valla's next Basic Attack within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterVaultDamageBoost,Duration\"/></c> seconds deals <c val=\"#TooltipNumbers\">6%</c> increased damage per stack of Hatred.",
-    "DemonHunterVaultCaltropsTalent": "Drop <c val=\"#TooltipNumbers\">3</c> Caltrops while Vaulting. Caltrops do <c val=\"#TooltipNumbers\"><d ref=\"Effect,CaltropsDamage,Amount\"/></c> damage and Slow enemies by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,CaltropTargetSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CaltropTargetSlow,Duration\" player=\"0\"/></c> second.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Spend <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DemonHunterCaltropsTokenCounter,Max\"/></c> seconds at <c val=\"#TooltipNumbers\">10</c> stacks of Hatred.<n/><n/><img  path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Vault cooldown is reduced by <c val=\"#TooltipNumbers\">5</c> seconds and its Mana cost is reduced from <c val=\"#TooltipNumbers\"><d ref=\"Abil,DemonHunterVault,Cost.Vital[Energy]\"Player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Abil,DemonHunterVault,Cost.Vital[Energy]-Effect,DemonHunterVaultCaltropsTalentManaCostReductionModifyPlayer,EffectArray[0].Value\"Player=\"0\"/></c>.",
-    "DemonHunterVaultRepeatingArrowTalent": "The cooldown for Hungering Arrow is reset when Vault is used."
+    "DemonHunterVaultAcrobat": "Gain <c val=\"#TooltipNumbers\"><d ref=\"Talent,DemonHunterVaultAcrobat,AbilityModificationArray[0].Modifications[1].Value\"/></c> additional charges of Vault. Drop <c val=\"#TooltipNumbers\">3</c> Caltrops while Vaulting that deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,CaltropsDamage,Amount\"/></c> damage and Slow enemies by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,CaltropTargetSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,CaltropTargetSlow,Duration\" player=\"0\"/></c> second.",
+    "DemonHunterVaultRepeatingArrowTalent": "Vault no longer has a Mana cost. Casting Vault resets the cooldown of Hungering Arrow."
   },
   "tooltipSimple": {
-    "DemonHunterCreedoftheHunter": "Increases Attack Speed<n/><c val=\"#TooltipQuest\">Quest:</c> Attacking Heroes empowers Hatred",
-    "DemonHunterDeathDealer": "Increases Vault Basic Attack damage bonus",
-    "DemonHunterFarflightQuiver": "Increases Basic Attack range",
+    "DemonHunterCreedoftheHunter": "<c val=\"#TooltipQuest\">Loan:</c> Gain Attack Speed<n/><c val=\"#TooltipQuest\">Quest:</c> Increase Hatred Basic Attack bonus",
+    "DemonHunterDeathDealer": "Increases Vault damage bonus, reduce cooldown",
+    "DemonHunterFarflightQuiver": "Gain Basic Attack range, increased by Hatred",
     "DemonHunterGloom": "Consume Hatred to gain Spell Armor",
     "DemonHunterHatred": "Basic Attacks grant bonus Attack Damage and Move Speed temporarily",
-    "DemonHunterHatredHotPursuitTalent": "Max Hatred increases Movement Speed and Mana Regen",
-    "DemonHunterHatredPunishmentTalent": "Hatred increases Multishot damage",
-    "DemonHunterHatredRancorTalent": "Hatred increases Attack Speed",
-    "DemonHunterHatredTemperedByDisciplineTalent": "Max Hatred grants healing on Basic Attacks",
+    "DemonHunterHatredHotPursuitTalent": "Increase Hatred Move Speed bonus",
+    "DemonHunterHatredPunishmentTalent": "Reduce Multishot cooldown at max Hatred",
+    "DemonHunterHatredTemperedByDisciplineTalent": "Basic Attacks heal, increased by Hatred",
     "DemonHunterHungeringArrow": "Fire an arrow which seeks out and strikes multiple targets",
-    "DemonHunterHungeringArrowMonsterHunterTalent": "Reduces Hungering Arrow Mana cost and increases non-Hero damage",
-    "DemonHunterHungeringArrowPuncturingArrowTalent": "<c val=\"#TooltipQuest\">Quest:</c> Hitting Heroes empowers Hungering Arrow",
-    "DemonHunterHungeringArrowSiphoningArrowTalent": "Hungering Arrow returns damage as Health",
-    "DemonHunterManticore": "Consecutive Basic Attacks against Heroes are empowered",
+    "DemonHunterHungeringArrowFrostShotTalent": "Gain Multishot Slow, Hungering Arrow damage",
+    "DemonHunterHungeringArrowMonsterHunterTalent": "Increase Hungering Arrow non-Hero damage",
+    "DemonHunterHungeringArrowPuncturingArrowTalent": "<c val=\"#TooltipQuest\">Quest:</c> Gain Hungering Arrow bounce, damage",
+    "DemonHunterHungeringArrowSiphoningArrowTalent": "Hungering Arrow and Multishot heal",
+    "DemonHunterManticore": "Increase Basic Attacks against Heroes",
     "DemonHunterMultishot": "Damage enemies in an area",
-    "DemonHunterMultishotArsenalTalent": "Multishot launches grenades",
-    "DemonHunterMultishotFrostShotTalent": "Multishot slows enemies and has increased range",
-    "DemonHunterRainOfVengeance": "Area attack that stuns enemies",
-    "DemonHunterRainOfVengeanceStormOfVengeanceTalent": "Basic Attacks reduce Cooldown",
-    "DemonHunterSeethingHatred": "Max Hatred grants Spell Power, gain Hatred faster",
+    "DemonHunterMultishotArsenalTalent": "Increase Multishot range, launch grenades",
+    "DemonHunterMultishotFireAtWill": "<c val=\"#TooltipQuest\">Quest:</c> Gain Multishot damage, Hatred",
+    "DemonHunterRainOfVengeance": "Area attack that Stuns enemies",
+    "DemonHunterRainOfVengeanceStormOfVengeanceTalent": "Reduce cooldown, gain Attack Speed",
+    "DemonHunterSeethingHatred": "Increase all damage at max Hatred",
     "DemonHunterStrafe": "Unleashes a flurry of arrows at enemies",
-    "DemonHunterStrafeDeathSiphonTalent": "Fires penetrating bolts and heals",
+    "DemonHunterStrafeDeathSiphonTalent": "Strafe lasts longer, fires leeching bolts",
     "DemonHunterVault": "Dash to a location",
-    "DemonHunterVaultCaltropsTalent": "Drop Caltrops while Vaulting <n/><c val=\"#TooltipQuest\">Quest:</c> Maintain Hatred to empower Vault",
+    "DemonHunterVaultAcrobat": "Gain Vault charges, drop Caltrops",
     "DemonHunterVaultRepeatingArrowTalent": "Vault refreshes Hungering Arrow"
   },
   "tooltipColors": {
