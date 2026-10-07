@@ -5957,7 +5957,7 @@
     "unitId": "KerriganChrysalis",
     "portraits": {},
     "life": {
-      "amount": 750,
+      "amount": 650,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
@@ -15787,6 +15787,20 @@
     "sight": 0,
     "speed": 0
   },
+  "TychusOverkillTargetDummy": {
+    "unitId": "TychusOverkillTargetDummy",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "TychusRangedMissile": {
     "unitId": "TychusRangedMissile",
     "portraits": {},
@@ -17982,7 +17996,7 @@
           "_hdp5LinkId": "AlexstraszaLifebinder|AlexstraszaLifebinder|Heroic",
           "icon": "storm_ui_icon_alexstrasza_life_binder.png",
           "name": "Life-Binder",
-          "fullText": "Bind Alexstrasza's life force with an allied Hero. Both her and her target are healed for <c val=\"bfd4fd\">480</c><c val=\"a7a7a7\">~~0.04~~</c> Health over <c val=\"bfd4fd\">2</c> seconds. Afterwards, the Hero with a lower percentage of Health is healed to the same Health percentage as the other Hero.<n/><n/><c val=\"D65CFF\">Dragonqueen:</c> Cast range increased by <c val=\"bfd4fd\">50%</c>.",
+          "fullText": "Bind Alexstrasza's life force with an allied Hero. Both her and her target are healed for <c val=\"bfd4fd\">480</c><c val=\"a7a7a7\">~~0.04~~</c> Health over <c val=\"bfd4fd\">2</c> seconds. Afterwards, the Hero with a lower percentage of Health is healed to the same Health percentage as the other Hero.<n/><n/><c val=\"D65CFF\">Dragonqueen:</c> Cast range increased by <c val=\"bfd4fd\">45%</c>.",
           "cooldownText": "Cooldown: 50 seconds"
         },
         {

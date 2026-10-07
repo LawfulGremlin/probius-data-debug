@@ -155,7 +155,7 @@
         "tooltipId": "StukovReactiveBallistosporesTalent",
         "talentTreeId": "StukovWeightedPustuleReactiveBallistospores",
         "name": "Reactive Ballistospores",
-        "description": "While below 50% Health, the cooldown of Bio-Kill Switch refreshes 100% faster.  Activate to instantly spread a Weighted Pustule to all nearby enemy Heroes and reset the cooldown of Bio-Kill Switch.  This effect has a 75 second cooldown.",
+        "description": "Activate to instantly spread a Weighted Pustule to all nearby enemy Heroes and reset the cooldown of Bio-Kill Switch.  Passive: While below 50% Health, the cooldown of Bio-Kill Switch refreshes 100% faster.",
         "icon": "storm_ui_icon_stukov_bio-killswitch.png",
         "type": "Active",
         "sort": 3,
@@ -515,7 +515,7 @@
     "StukovPoppinPustulesTalent": "Detonating Weighted Pustule with Bio-Kill Switch within <c val=\"#TooltipNumbers\"><d ref=\"Validator,StukovWeightedPustuleDurationLessThan15SecondsPoppinPustules,Value\"Precision=\"2\"/></c> seconds of its expiration increases its damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,StukovWeightedPustuleDamage,MultiplicativeModifierArray[PoppinPustules].Modifier\"/>%</c> and applies its damage and Slow in an area. Enemy Heroes hit have a Weighted Pustule applied to them.",
     "StukovPoxPopuliTalent": "Bio-Kill Switch no longer removes Healing Pathogen but instead sets its duration to <c val=\"#TooltipNumbers\"><d ref=\"Effect,StukovBioKillSwitchPoxPopuliIncreaseHealerDuration,Value\"/></c> seconds.",
     "StukovPushComesToShoveTalent": "Massive Shove Slows its target by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,StukovPushComestoShoveSlowBehavior,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StukovPushComestoShoveSlowBehavior,Duration\"/></c> seconds upon colliding with terrain. If Massive Shove pushes a target for more than <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StukovMassiveShoveShovingBehavior,Period\"precision=\"2\"/></c> seconds, its cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,StukovMassiveShovePushComesToShoveSubtractCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
-    "StukovReactiveBallistosporesTalent": "While below <c val=\"#TooltipNumbers\">50%</c> Health, the cooldown of Bio-Kill Switch refreshes <c val=\"#TooltipNumbers\">100%</c> faster. <n/><n/>Activate to instantly spread a Weighted Pustule to all nearby enemy Heroes and reset the cooldown of Bio-Kill Switch.<n/><n/>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,StukovWeightedPustuleReactiveBallistosporesCooldownBehavior,Duration\"/></c> second cooldown.",
+    "StukovReactiveBallistosporesTalent": "Activate to instantly spread a Weighted Pustule to all nearby enemy Heroes and reset the cooldown of Bio-Kill Switch.<n/><n/><c val=\"#AbilityPassive\">Passive</c>: While below <c val=\"#TooltipNumbers\">50%</c> Health, the cooldown of Bio-Kill Switch refreshes <c val=\"#TooltipNumbers\">100%</c> faster.",
     "StukovSuperstrainTalent": "Whenever an ally with Healing Pathogen is Stunned or Rooted, they are instantly healed for <c val=\"#TooltipNumbers\"><d ref=\"Effect,StukovHealingPathogenSuperstrainHealer,RechargeVitalRate\"/></c> Health.",
     "StukovTargetedExcisionTalent": "Detonating exactly <c val=\"#TooltipNumbers\">1</c> Weighted Pustule (but any number of Healing Pathogens) with Bio-Kill Switch reduces the cooldown of Bio-Kill Switch to <c val=\"#TooltipNumbers\"><d ref=\"Effect,StukovBioKillSwitchTargetedExcisionSubtractCooldown,Cost[0].CooldownTimeUse\"/></c> seconds and other Basic Abilities by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,StukovBioKillSwitchTargetedExcisionTalentModifyCooldowns,Cost[0].CooldownTimeUse\"precision=\"1\"/></c> seconds.",
     "StukovTopOffTalent": "Healing Pathogen's heal over time is increased by <c val=\"#TooltipNumbers\"><d ref=\"(100*Effect,StukovHealingPathogenHealer,MultiplicativeModifierArray[0].Modifier)\"/>%</c> while its target is above <c val=\"#TooltipNumbers\"><d ref=\"Validator,StukovHealingPathogenTopOffTargetHealthThreshold,Value*100\"/>%</c> Health.",
@@ -542,7 +542,7 @@
     "StukovPoppinPustulesTalent": "Weighted Pustule can detonate in an area",
     "StukovPoxPopuliTalent": "Bio-Kill Switch no longer removes Healing Pathogen",
     "StukovPushComesToShoveTalent": "Massive Shove Slows, can reduce cooldown",
-    "StukovReactiveBallistosporesTalent": "Radiate Weighted Pustule at low Health",
+    "StukovReactiveBallistosporesTalent": "Radiate Weighted Pustule",
     "StukovSuperstrainTalent": "Healing Pathogen heals when Stunned, Rooted",
     "StukovTargetedExcisionTalent": "Detonate single Weighted Pustule to reduce cooldowns",
     "StukovTopOffTalent": "Healing Pathogen stronger at high Health",
@@ -552,6 +552,7 @@
     "StukovWeightedPustule": "Damage enemies and infest them with a Slowing Virus"
   },
   "tooltipColors": {
+    "AbilityPassive": "00FF90",
     "TooltipNumbers": "BFD4FD",
     "TooltipQuest": "E4B800"
   }

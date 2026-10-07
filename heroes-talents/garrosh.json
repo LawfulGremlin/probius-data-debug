@@ -144,7 +144,7 @@
         "tooltipId": "GarroshWreckingBallUnrivaledStrength",
         "talentTreeId": "GarroshWreckingBallUnrivaledStrength",
         "name": "Unrivaled Strength",
-        "description": "Increase Wrecking Ball's throw range by 25% and its damage by 125%.",
+        "description": "Increase Wrecking Ball's throw range by 20% and its damage by 125%.",
         "icon": "storm_ui_icon_garrosh_wrecking_ball.png",
         "type": "E",
         "sort": 2,
@@ -531,7 +531,7 @@
     "GarroshWreckingBallEarthshaker": "Wrecking Ball Stuns enemies near the impact area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallStun,Duration\" precision=\"2\"/></c> seconds.",
     "GarroshWreckingBallIntotheFray": "Activate to throw a nearby ally and grant them <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallIntotheFrayArmor,ArmorModification.AllArmorBonus\" player=\"0\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallIntotheFrayArmor,Duration\" precision=\"1\"/></c> seconds. Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshWreckingBallDamage,Amount\"/></c> damage to nearby enemies upon impact and Slows them by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,GarroshWreckingBallSlow,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,GarroshWreckingBallSlow,Duration\" precision=\"2\"/></c> seconds.<n/><n/>While in flight, allied Heroes are Unstoppable.",
     "GarroshWreckingBallTitanicMight": "Wrecking Ball now throws the <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshWreckingBallSearchAreaMarker,AreaArray[0].MaxCount+Talent,GarroshWreckingBallTitanicMight,AbilityModificationArray[0].Modifications[0].Value\" player=\"0\"/></c> closest enemies.",
-    "GarroshWreckingBallUnrivaledStrength": "Increase Wrecking Ball's throw range by <c val=\"#TooltipNumbers\"><d ref=\"(100*Talent,GarroshWreckingBallUnrivaledStrength,AbilityModificationArray[0].Modifications[0].Value)-100\"/>%</c> and its damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshWreckingBallUnrivaledStrengthDamage,MultiplicativeModifierArray[UnrivalStrength].Modifier*100\"/>%</c>."
+    "GarroshWreckingBallUnrivaledStrength": "Increase Wrecking Ball's throw range by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,GarroshWreckingBallUnrivaledStrength,AbilityModificationArray[0].Modifications[0].Value/Abil,GarroshWreckingBall,Range\"player=\"0\"precision=\"0\"/>%</c> and its damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,GarroshWreckingBallUnrivaledStrengthDamage,MultiplicativeModifierArray[UnrivalStrength].Modifier*100\"/>%</c>."
   },
   "tooltipSimple": {
     "GarroshArmorUp": "Gain Armor as Health gets lower",

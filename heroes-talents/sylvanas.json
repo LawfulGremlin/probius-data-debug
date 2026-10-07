@@ -91,7 +91,7 @@
       {
         "uid": "8aee91",
         "name": "Mind Control",
-        "description": "After 0.25 seconds, fire a missile that Mind Controls the first enemy Hero hit. Heroes hit are Silenced, Slowed by 30%, have 3 stacks of Banshee's Curse applied to them, and are forced to walk towards Sylvanas for 1.75 seconds.",
+        "description": "After 0.25 seconds, fire a missile that Mind Controls the first enemy Hero hit. Heroes hit are Silenced, Slowed by 30%, have 3 stacks of Black Arrows applied to them, and are forced to walk towards Sylvanas for 1.75 seconds.",
         "hotkey": "R",
         "abilityId": "Sylvanas|R2",
         "tooltipId": "SylvanasMindControlMissile",
@@ -103,12 +103,33 @@
       {
         "uid": "019b21",
         "name": "Black Arrows",
-        "description": "Activate to cause all Basic Attacks and Abilities to Stun Minions, non-Elite Mercenaries, and Structures for 3 seconds. Lasts for 10 seconds.  Banshee's Curse  Basic Attacks infect enemies with Banshee's Curse for 3 seconds, stacking up to 3 times. Deal 25% more damage to enemies with 3 stacks.",
+        "description": "Basic Attacks infect enemies with Black Arrows for 3 seconds, stacking up to 3 times. Sylvanas deals 15% more damage to enemies with 3 stacks.  Quest: Damage Heroes and Structures with 3 stacks of Black Arrows.  Reward: Upon damaging enemies 250 times, increase the damage bonus provided by Black Arrows to 50%.  Pinnacle Reward: Upon damaging enemies 400 times, Black Arrows now heals Sylvanas for 25% of damage dealt at 3 stacks, doubled against Heroes.",
         "hotkey": "D",
         "trait": true,
         "abilityId": "Sylvanas|D1",
         "tooltipId": "SylvanasBlackArrows",
-        "cooldown": 40,
+        "cooldown": 90,
+        "icon": "storm_ui_icon_sylvanas_blackarrows.png",
+        "type": "trait"
+      },
+      {
+        "uid": "b1682a",
+        "name": "Possession",
+        "description": "Activate to force an enemy Minion to fight for Sylvanas's team. Catapults require 4 charges. Stores up to 4 charges.",
+        "hotkey": "1",
+        "abilityId": "Sylvanas|11",
+        "tooltipId": "SylvanasPossession",
+        "cooldown": 25,
+        "icon": "storm_ui_icon_sylvanas_possession.png",
+        "type": "activable"
+      },
+      {
+        "uid": "80876b",
+        "name": "Black Arrows",
+        "description": "Basic Attacks infect enemies with Black Arrows for 3 seconds, stacking up to 3 times. Sylvanas deals 15% more damage to enemies with 3 stacks.  Quest: Damage Heroes and Structures with 3 stacks of Black Arrows.  Reward: Upon damaging enemies 250 times, increase the damage bonus provided by Black Arrows to 50%.  Pinnacle Reward: Upon damaging enemies 400 times, Black Arrows now heals Sylvanas for 25% of damage dealt at 3 stacks, doubled against Heroes.",
+        "trait": true,
+        "abilityId": "Sylvanas|D2",
+        "tooltipId": "SylvanasBlackArrowsPassive",
         "icon": "storm_ui_icon_sylvanas_blackarrows.png",
         "type": "trait"
       }
@@ -136,12 +157,12 @@
       {
         "tooltipId": "SylvanasShadowDaggerUnfurlingShadows",
         "talentTreeId": "SylvanasUnfurlingShadowsShadowDagger",
-        "name": "Unfurling Shadows",
-        "description": "Quest: Each time an enemy Hero with 3 stacks of Banshee's Curse is hit by Shadow Dagger, its damage is permanently increased by 0.5%.",
+        "name": "Unrelenting Torment",
+        "description": "Increase the damage of Shadow Dagger by 20% and increase its duration by 1 second.",
         "icon": "storm_ui_icon_sylvanas_shadowdagger.png",
         "type": "W",
         "sort": 2,
-        "isQuest": true,
+        "isQuest": false,
         "abilityId": "Sylvanas|W1",
         "abilityLinks": [
           "Sylvanas|W1"
@@ -154,16 +175,18 @@
         "tooltipId": "SylvanasBlackArrowsOverwhelmingAfflictionTalent",
         "talentTreeId": "SylvanasTalentOverwhelmingAffliction",
         "name": "Overwhelming Affliction",
-        "description": "Enemy Heroes with 3 stacks of Banshee's Curse are Slowed by 15%. Sylvanas's Basic Attacks against Slowed enemy Heroes deal 1% of their maximum Health as damage.",
+        "description": "Enemy Heroes with 3 stacks of Black Arrows are Slowed by 15%. Sylvanas's Basic Attacks against Slowed enemy Heroes deal 1% of their maximum Health as damage.",
         "icon": "storm_ui_icon_sylvanas_blackarrows.png",
         "type": "Trait",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Sylvanas|D1",
+        "abilityId": "Sylvanas|D2",
         "abilityLinks": [
-          "Sylvanas|D1"
+          "Sylvanas|D1",
+          "Sylvanas|D2"
         ],
         "abilityTalentLinkIds": [
+          "SylvanasBlackArrowsPassive",
           "SylvanasBlackArrowsActive"
         ]
       }
@@ -190,33 +213,39 @@
         "tooltipId": "SylvanasMercenaryQueenTalent",
         "talentTreeId": "SylvanasTalentMercenaryQueen",
         "name": "Mercenary Queen",
-        "description": "Friendly non-Elite Mercenaries near Sylvanas deal 60% more damage. Sylvanas Stuns and deals 30% additional damage to Mercenaries with 3 stacks of Banshee's Curse.",
+        "description": "Friendly non-Elite Mercenaries near Sylvanas deal 60% more damage. Sylvanas Stuns and deals 30% additional damage to Mercenaries with 3 stacks of Black Arrows.",
         "icon": "storm_ui_icon_sylvanas_blackarrows.png",
         "type": "Trait",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Sylvanas|D1",
+        "abilityId": "Sylvanas|D2",
         "abilityLinks": [
-          "Sylvanas|D1"
+          "Sylvanas|D1",
+          "Sylvanas|D2"
         ],
         "abilityTalentLinkIds": [
+          "SylvanasBlackArrowsPassive",
           "SylvanasBlackArrowsActive"
         ]
       },
       {
-        "tooltipId": "SylvanasPossession",
-        "talentTreeId": "SylvanasHeroicAbilityPossession",
-        "name": "Possession",
-        "description": "Activate to force an enemy Minion to fight for Sylvanas's team. Catapults require 3 charges. Stores up to 3 charges.",
-        "icon": "storm_ui_icon_sylvanas_possession.png",
-        "type": "Active",
+        "tooltipId": "SylvanasBlackArrowsHauntingArrowsTalent",
+        "talentTreeId": "SylvanasHauntingArrows",
+        "name": "Haunting Arrows",
+        "description": "Black Arrows can now be activated to cause all Basic Attacks and Abilities to Stun Minions, non-Elite Mercenaries, and Structures for 3 seconds. Lasts for 10 seconds. Basic Attacks against Structures reduce this cooldown by 3 seconds.",
+        "icon": "storm_ui_icon_sylvanas_blackarrows_b.png",
+        "type": "Trait",
         "sort": 3,
-        "cooldown": 12,
+        "cooldown": 90,
         "isQuest": false,
-        "abilityId": "Sylvanas|Active",
-        "abilityLinks": [],
+        "abilityId": "Sylvanas|D2",
+        "abilityLinks": [
+          "Sylvanas|D1",
+          "Sylvanas|D2"
+        ],
         "abilityTalentLinkIds": [
-          "SylvanasPossession"
+          "SylvanasBlackArrowsPassive",
+          "SylvanasBlackArrowsActive"
         ]
       }
     ],
@@ -225,7 +254,7 @@
         "tooltipId": "SylvanasWitheringFireBarbedShotTalent",
         "talentTreeId": "SylvanasTalentWitheringFireBarbedShot",
         "name": "Barbed Shot",
-        "description": "Hitting the same enemy with 5 shots of Withering Fire causes the 5th shot to deal 350% bonus damage.",
+        "description": "Hitting the same enemy with 5 shots of Withering Fire causes the 5th shot to deal 400% bonus damage.",
         "icon": "storm_ui_icon_sylvanas_witheringfire.png",
         "type": "Q",
         "sort": 1,
@@ -242,7 +271,7 @@
         "tooltipId": "SylvanasShadowDaggerLostSoulTalent",
         "talentTreeId": "SylvanasTalentLostSoul",
         "name": "Lost Soul",
-        "description": "Increase Shadow Dagger's damage by 10%. Basic Attacks against Heroes with 3 stacks of Banshee's Curse reduce the cooldown of Shadow Dagger by 1.75 seconds.",
+        "description": "Basic Attacks against Heroes and Structures with 3 stacks of Black Arrows reduce the cooldown of Shadow Dagger by 0.75 seconds, doubled against Heroes.  Passive: Shadow Dagger deals 10% more damage.",
         "icon": "storm_ui_icon_sylvanas_shadowdagger.png",
         "type": "W",
         "sort": 2,
@@ -259,7 +288,7 @@
         "tooltipId": "SylvanasBlackArrowsFesteringWounds",
         "talentTreeId": "SylvanasTalentFesteringWounds",
         "name": "Festering Wounds",
-        "description": "Increase Haunting Wave's damage by 15%. Haunting Wave applies 3 stacks of Banshee's Curse.",
+        "description": "Increase Haunting Wave's damage by 15%. Haunting Wave applies 3 stacks of Black Arrows.",
         "icon": "storm_ui_icon_sylvanas_hauntingwave.png",
         "type": "E",
         "sort": 3,
@@ -296,7 +325,7 @@
         "tooltipId": "SylvanasMindControlMissile",
         "talentTreeId": "SylvanasMindControl",
         "name": "Mind Control",
-        "description": "After 0.25 seconds, fire a missile that Mind Controls the first enemy Hero hit. Heroes hit are Silenced, Slowed by 30%, have 3 stacks of Banshee's Curse applied to them, and are forced to walk towards Sylvanas for 1.75 seconds.",
+        "description": "After 0.25 seconds, fire a missile that Mind Controls the first enemy Hero hit. Heroes hit are Silenced, Slowed by 30%, have 3 stacks of Black Arrows applied to them, and are forced to walk towards Sylvanas for 1.75 seconds.",
         "icon": "storm_ui_icon_sylvanas_mindcontrol.png",
         "type": "Heroic",
         "sort": 2,
@@ -333,7 +362,7 @@
         "tooltipId": "SylvanasHauntingWaveWindrunnerTalent",
         "talentTreeId": "SylvanasTalentWindrunnerHauntingWave",
         "name": "Windrunner",
-        "description": "Haunting Wave can be cast a second time for free within 5 seconds after teleporting. Teleporting with Haunting Wave resets the cooldown of Withering Fire.",
+        "description": "Haunting Wave can be cast a second time for free within 4 seconds after teleporting. Teleporting with Haunting Wave resets the cooldown of Withering Fire.",
         "icon": "storm_ui_icon_sylvanas_hauntingwave.png",
         "type": "E",
         "sort": 2,
@@ -351,11 +380,20 @@
         "tooltipId": "SylvanasRemorselessTalent",
         "talentTreeId": "SylvanasTalentRemorseless",
         "name": "Remorseless",
-        "description": "Increase Sylvanas's Basic Attack range by 1. Sylvanas's Basic Attacks against enemy Heroes with 3 stacks of Banshee's Curse shoot an untalented shot of Withering Fire. This shot of Withering Fire applies Banshee's Curse.",
+        "description": "Sylvanas's Basic Attacks against enemy Heroes with 3 stacks of Black Arrows shoot an untalented shot of Withering Fire. This shot of Withering Fire applies Black Arrows.  Increase Sylvanas's Basic Attack range by 1.",
         "icon": "storm_ui_icon_sylvanas_blackarrows.png",
         "type": "Trait",
         "sort": 3,
-        "isQuest": false
+        "isQuest": false,
+        "abilityId": "Sylvanas|D2",
+        "abilityLinks": [
+          "Sylvanas|D1",
+          "Sylvanas|D2"
+        ],
+        "abilityTalentLinkIds": [
+          "SylvanasBlackArrowsPassive",
+          "SylvanasBlackArrowsActive"
+        ]
       }
     ],
     "16": [
@@ -380,16 +418,18 @@
         "tooltipId": "SylvanasBlackArrowsLifeDrainTalent",
         "talentTreeId": "SylvanasTalentLifeDrain",
         "name": "Life Drain",
-        "description": "Heal for 15% of damage dealt by Sylvanas to enemies with 3 stacks of Banshee's Curse. Healing is doubled against Heroes.",
+        "description": "Heal for 15% of damage dealt by Sylvanas to enemies with 3 stacks of Black Arrows. Healing is doubled against Heroes.",
         "icon": "storm_ui_icon_sylvanas_blackarrows.png",
         "type": "Trait",
         "sort": 2,
         "isQuest": false,
-        "abilityId": "Sylvanas|D1",
+        "abilityId": "Sylvanas|D2",
         "abilityLinks": [
-          "Sylvanas|D1"
+          "Sylvanas|D1",
+          "Sylvanas|D2"
         ],
         "abilityTalentLinkIds": [
+          "SylvanasBlackArrowsPassive",
           "SylvanasBlackArrowsActive"
         ]
       },
@@ -455,7 +495,7 @@
         "tooltipId": "SylvanasWitheringFireWitheringBarrage",
         "talentTreeId": "SylvanasTalentWitheringBarrage",
         "name": "Withering Barrage",
-        "description": "Withering Fire applies Banshee's Curse, and Heroes hit by Withering Fire reduce its cooldown by 0.75 seconds.",
+        "description": "Withering Fire applies Black Arrows, and Heroes hit by Withering Fire reduce its cooldown by 0.75 seconds.",
         "icon": "storm_ui_icon_sylvanas_witheringfire.png",
         "type": "Q",
         "sort": 3,
@@ -488,37 +528,41 @@
   },
   "tooltipMarkup": {
     "GenericBoltoftheStormTalent": "Activate to teleport to a nearby location.",
-    "SylvanasBlackArrows": "Activate to cause all Basic Attacks and Abilities to Stun Minions, non-Elite Mercenaries, and Structures for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsMercMinionOrStructureStunBehavior,Duration\"Precision=\"2\"/></c> seconds. Lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsActiveSelfDurationBuff,Duration\"/> </c>seconds. <s val=\"StandardTooltipHeader\"><n/><n/>Banshee's Curse</s><n/><n/>Basic Attacks infect enemies with Banshee's Curse for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,Duration\"Precision=\"2\"Player=\"0\"/></c> seconds, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> times. Deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasShadowDaggerDoTDamage,MultiplicativeModifierArray[BlackArrowsBonusDamage].Modifier\"/>%</c> more damage to enemies with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks.",
-    "SylvanasBlackArrowsFesteringWounds": "Increase Haunting Wave's damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasHauntingWaveDamage,MultiplicativeModifierArray[FesteringWoundsBonusDamage].Modifier\"/>%</c>. Haunting Wave applies <c val=\"#TooltipNumbers\"><d ref=\"Effect,HauntingWaveFesteringWoundsApplies3StacksOfBlackArrowsApplyBehavior,Count\"/></c> stacks of Banshee's Curse.",
-    "SylvanasBlackArrowsLifeDrainTalent": "Heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasWeaponDamage,LeechFraction[Life]\"/>%</c> of damage dealt by Sylvanas to enemies with <c val=\"#TooltipNumbers\"><d ref=\"Validator,SylvanasTargetHas3StacksOfBlackArrowsStackingBehavior,Value\"/></c> stacks of Banshee's Curse. Healing is doubled against Heroes.",
-    "SylvanasBlackArrowsOverwhelmingAfflictionTalent": "Enemy Heroes with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks of Banshee's Curse are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,SylvanasBlackArrowsOverwhelmingAfflictionSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>. Sylvanas's Basic Attacks against Slowed enemy Heroes deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasBlackArrowsWeaponDamageOverwhelmingAfflictionPercentBonusDamage,VitalFractionMax[Life]\"Precision=\"2\"/>%</c> of their maximum Health as damage.",
+    "SylvanasBlackArrows": "Basic Attacks infect enemies with Black Arrows for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,Duration\"Precision=\"2\"Player=\"0\"/></c> seconds, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> times. Sylvanas deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasShadowDaggerDoTDamage,MultiplicativeModifierArray[BlackArrowsBonusDamage].Modifier\"/>%</c> more damage to enemies with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Damage Heroes and Structures with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks of Black Arrows.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Upon damaging enemies <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasShadowDaggerUnfurlingShadowsQuestToken,ConditionalEvents[0].CompareValue\"/></c> times, increase the damage bonus provided by Black Arrows to <c val=\"#TooltipNumbers\"><d ref=\"(Effect,SylvanasWeaponDamage,MultiplicativeModifierArray[BlackArrowsBonusDamage].Modifier+Effect,SylvanasWeaponDamage,MultiplicativeModifierArray[BlackArrowBonusDamageQuestMilestone].Modifier)*100\"/>%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Pinnacle Reward:</c> Upon damaging enemies <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasShadowDaggerUnfurlingShadowsQuestToken,Max\"/></c> times, Black Arrows now heals Sylvanas for <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasBlackArrowsLeechModifierReference,XP*100\"/>%</c> of damage dealt at <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks, doubled against Heroes.",
+    "SylvanasBlackArrowsFesteringWounds": "Increase Haunting Wave's damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasHauntingWaveDamage,MultiplicativeModifierArray[FesteringWoundsBonusDamage].Modifier\"/>%</c>. Haunting Wave applies <c val=\"#TooltipNumbers\"><d ref=\"Effect,HauntingWaveFesteringWoundsApplies3StacksOfBlackArrowsApplyBehavior,Count\"/></c> stacks of Black Arrows.",
+    "SylvanasBlackArrowsHauntingArrowsTalent": "Black Arrows can now be activated to cause all Basic Attacks and Abilities to Stun Minions, non-Elite Mercenaries, and Structures for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsMercMinionOrStructureStunBehavior,Duration\"Precision=\"2\"/></c> seconds. Lasts for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsActiveSelfDurationBuff,Duration\"/></c> seconds. Basic Attacks against Structures reduce this cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,BlackArrowsAttackReduceCooldown,Cost[0].CooldownTimeUse\"/></c> seconds.",
+    "SylvanasBlackArrowsLifeDrainTalent": "Heal for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasLifeDrainLeechModifierReference,XP\"/>%</c> of damage dealt by Sylvanas to enemies with <c val=\"#TooltipNumbers\"><d ref=\"Validator,SylvanasTargetHas3StacksOfBlackArrowsStackingBehavior,Value\"/></c> stacks of Black Arrows. Healing is doubled against Heroes.",
+    "SylvanasBlackArrowsOverwhelmingAfflictionTalent": "Enemy Heroes with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks of Black Arrows are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,SylvanasBlackArrowsOverwhelmingAfflictionSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>. Sylvanas's Basic Attacks against Slowed enemy Heroes deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasBlackArrowsWeaponDamageOverwhelmingAfflictionPercentBonusDamage,VitalFractionMax[Life]\"Precision=\"2\"/>%</c> of their maximum Health as damage.",
+    "SylvanasBlackArrowsPassive": "Basic Attacks infect enemies with Black Arrows for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,Duration\"Precision=\"2\"Player=\"0\"/></c> seconds, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> times. Sylvanas deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasShadowDaggerDoTDamage,MultiplicativeModifierArray[BlackArrowsBonusDamage].Modifier\"/>%</c> more damage to enemies with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Damage Heroes and Structures with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks of Black Arrows.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Upon damaging enemies <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasShadowDaggerUnfurlingShadowsQuestToken,ConditionalEvents[0].CompareValue\"/></c> times, increase the damage bonus provided by Black Arrows to <c val=\"#TooltipNumbers\"><d ref=\"(Effect,SylvanasWeaponDamage,MultiplicativeModifierArray[BlackArrowsBonusDamage].Modifier+Effect,SylvanasWeaponDamage,MultiplicativeModifierArray[BlackArrowBonusDamageQuestMilestone].Modifier)*100\"/>%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Pinnacle Reward:</c> Upon damaging enemies <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasShadowDaggerUnfurlingShadowsQuestToken,Max\"/></c> times, Black Arrows now heals Sylvanas for <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasBlackArrowsLeechModifierReference,XP*100\"/>%</c> of damage dealt at <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks, doubled against Heroes.",
     "SylvanasBlackArrowsUnstablePoisonTalent": "Minions that die under the effects of Shadow Dagger or Sylvanas's Traits explode, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasBlackArrowUnstablePoisonTalentDamage,Amount\"/></c> damage to nearby Minions, Mercenaries, and Summons.",
     "SylvanasDarkLadysCallMindControlTalent": "Heroes hit by Mind Control have their vision radius greatly reduced for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasMindControlDarkLadysCallVisionReduction,Duration\"/></c> seconds. Mind Control's cooldown is reduced by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,SylvanasDarkLadysCall,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds.",
     "SylvanasHauntingWave": "Send forth a wave of banshees dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasHauntingWaveDamage,Amount\"/></c> damage to all targets. Reactivate to teleport to the banshees' location.",
     "SylvanasHauntingWaveWindrunnerTalent": "Haunting Wave can be cast a second time for free within <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasFreeHauntingWaveWindrunnerTalent,Duration\"/></c> seconds after teleporting. Teleporting with Haunting Wave resets the cooldown of Withering Fire.",
-    "SylvanasMercenaryQueenTalent": "Friendly non-Elite Mercenaries near Sylvanas deal <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,TalentMercenaryLordDamageBuff,Modification.DamageDealtFraction[Basic]+Talent,SylvanasTalentMercenaryQueen,AbilityModificationArray[0].Modifications[0].Value)\"player=\"0\"/>%</c> more damage. Sylvanas Stuns and deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasShadowDaggerDoTDamage,MultiplicativeModifierArray[MercenaryQueenBonusDamage].Modifier\"/>%</c> additional damage to Mercenaries with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks of Banshee's Curse.",
+    "SylvanasMercenaryQueenTalent": "Friendly non-Elite Mercenaries near Sylvanas deal <c val=\"#TooltipNumbers\"><d ref=\"100*(Behavior,TalentMercenaryLordDamageBuff,Modification.DamageDealtFraction[Basic]+Talent,SylvanasTalentMercenaryQueen,AbilityModificationArray[0].Modifications[0].Value)\"player=\"0\"/>%</c> more damage. Sylvanas Stuns and deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasShadowDaggerDoTDamage,MultiplicativeModifierArray[MercenaryQueenBonusDamage].Modifier\"/>%</c> additional damage to Mercenaries with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks of Black Arrows.",
     "SylvanasMightOfTheBansheeQueenWitheringFireTalent": "Hitting an enemy Hero with Withering Fire increases Sylvanas's Attack Speed and Spell Power by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,SylvanasMightOfTheBansheeQueenWitheringFireAttackSpeedAndAbilityPowerBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasMightOfTheBansheeQueenWitheringFireAttackSpeedAndAbilityPowerBuff,Duration\"/></c> seconds, stacking up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasMightOfTheBansheeQueenWitheringFireAttackSpeedAndAbilityPowerBuff,MaxStackCount\"/></c> times.",
-    "SylvanasMindControlMissile": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,SylvanasMindControlMissile,CastIntroTime\"precision=\"2\"/></c> seconds, fire a missile that Mind Controls the first enemy Hero hit. Heroes hit are Silenced, Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,SylvanasMindControlSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>, have <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasMindControlApply3StacksOfBlackArrowsApplyBehavior,Count\"/></c> stacks of Banshee's Curse applied to them, and are forced to walk towards Sylvanas for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasMindControlMissileSilence,Duration\"precision=\"2\"/></c> seconds.",
+    "SylvanasMindControlMissile": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,SylvanasMindControlMissile,CastIntroTime\"precision=\"2\"/></c> seconds, fire a missile that Mind Controls the first enemy Hero hit. Heroes hit are Silenced, Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,SylvanasMindControlSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>, have <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasMindControlApply3StacksOfBlackArrowsApplyBehavior,Count\"/></c> stacks of Black Arrows applied to them, and are forced to walk towards Sylvanas for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasMindControlMissileSilence,Duration\"precision=\"2\"/></c> seconds.",
     "SylvanasPossession": "Activate to force an enemy Minion to fight for Sylvanas's team. Catapults require <c val=\"#TooltipNumbers\"><d ref=\"Abil,SylvanasPossession,Cost.Charge.CountMax\"/></c> charges. Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Abil,SylvanasPossession,Cost.Charge.CountMax\"/></c> charges.",
-    "SylvanasRemorselessTalent": "Increase Sylvanas's Basic Attack range by <c val=\"#TooltipNumbers\"><d ref=\"Talent,SylvanasTalentRemorseless,AbilityModificationArray[0].Modifications[0].Value\"/></c>. Sylvanas's Basic Attacks against enemy Heroes with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks of Banshee's Curse shoot an untalented shot of Withering Fire. This shot of Withering Fire applies Banshee's Curse.",
+    "SylvanasRemorselessTalent": "Sylvanas's Basic Attacks against enemy Heroes with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks of Black Arrows shoot an untalented shot of Withering Fire. This shot of Withering Fire applies Black Arrows.<n/><n/> Increase Sylvanas's Basic Attack range by <c val=\"#TooltipNumbers\"><d ref=\"Talent,SylvanasTalentRemorseless,AbilityModificationArray[0].Modifications[0].Value\"/></c>.",
     "SylvanasShadowDagger": "Throw a dagger at a target enemy that deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasShadowDaggerDoTDamage,Amount\"/></c> damage and an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasShadowDaggerDoTDamage,Amount*Behavior,SylvanasShadowDaggerTargetEnemyDamage,Duration/Behavior,SylvanasShadowDaggerTargetEnemyDamage,Period\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasShadowDaggerTargetEnemyDamage,Duration\" player=\"0\"Precision=\"2\"/></c> seconds. Damage dealt by Sylvanas to the initial target spreads Shadow Dagger to all nearby enemies.",
     "SylvanasShadowDaggerColdEmbraceTalent": "Shadow Dagger reduces the Armor of the initial target by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasShadowDaggerColdEmbraceArmorDecrease,ArmorModification.AllArmorBonus*(-1)\"/></c> and any enemy it spreads to by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,SylvanasShadowDaggerColdEmbraceArmorSpreadDecrease,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasShadowDaggerColdEmbraceArmorDecrease,Duration\"Precision=\"2\"/></c> seconds.",
-    "SylvanasShadowDaggerLostSoulTalent": "Increase Shadow Dagger's damage by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasShadowDaggerDoTDamage,MultiplicativeModifierArray[LostSoul].Modifier\"/>%</c>. Basic Attacks against Heroes with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks of Banshee's Curse reduce the cooldown of Shadow Dagger by <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasShadowDaggerLostSoulModifyCooldown,Cost[0].CooldownTimeUse*(-1)\"Precision=\"2\"/></c> seconds.",
-    "SylvanasShadowDaggerUnfurlingShadows": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Each time an enemy Hero with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks of Banshee's Curse is hit by Shadow Dagger, its damage is permanently increased by <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,SylvanasShadowDaggerUnfurlingShadowsAccumulator,Scale\"Precision=\"2\"/>%</c>.",
+    "SylvanasShadowDaggerLostSoulTalent": "Basic Attacks against Heroes and Structures with <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasBlackArrowsStackingBehavior,MaxStackCount\"/></c> stacks of Black Arrows reduce the cooldown of Shadow Dagger by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,SylvanasShadowDaggerLostSoulModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds, doubled against Heroes.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Shadow Dagger deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasShadowDaggerDoTDamage,MultiplicativeModifierArray[LostSoul].Modifier\"/>%</c> more damage.",
+    "SylvanasShadowDaggerUnfurlingShadows": "Increase the damage of Shadow Dagger by <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasShadowDaggerDoTDamage,MultiplicativeModifierArray[UnrelentingTorment].Modifier*100\"/>%</c> and increase its duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,SylvanasUnfurlingShadowsShadowDagger,AbilityModificationArray[0].Modifications[0].Value\"/></c> second.",
     "SylvanasWailingArrow": "Shoot an arrow that can be reactivated to deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasWailingArrowDamage,Amount\"/></c> damage and Silence enemies in an area for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasWailingArrowTarget,Duration\" player=\"0\" precision=\"1\"/></c> seconds. The arrow detonates automatically if it reaches maximum range.",
     "SylvanasWailingArrowDeafeningBlastTalent": "Enemies at the center of Wailing Arrow's explosion take <c val=\"#TooltipNumbers\">50%</c> more damage and are Silenced for twice as long.",
     "SylvanasWillOfTheForsaken": "Activate to become Unstoppable and gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,SylvanasWillOfTheForsakenBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasWillOfTheForsakenBuff,Duration\"/></c> seconds.",
     "SylvanasWitheringFire": "Shoot the closest enemy up to <c val=\"#TooltipNumbers\"><d ref=\"1+Effect,SylvanasWitheringFireConsumeAllCharges,PeriodCount\"/></c> times over <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasWitheringFireConsumeAllCharges,PeriodCount * Effect,SylvanasWitheringFireConsumeAllCharges,PeriodicPeriodArray[0]\" precision=\"2\"/></c> seconds for <c val=\"#TooltipNumbers\"><d ref=\"Effect,SylvanasWitheringFireDamage,Amount\"/></c> damage, prioritizing Heroes. Cooldown is reset on getting a Takedown.",
     "SylvanasWitheringFireBarbedShotTalent": "Hitting the same enemy with <c val=\"#TooltipNumbers\">5</c> shots of Withering Fire causes the <c val=\"#TooltipNumbers\">5th</c> shot to deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,SylvanasWitheringFireDamage,MultiplicativeModifierArray[BarbedShotBonusDamage].Modifier\"/>%</c> bonus damage.",
     "SylvanasWitheringFireEvasiveFireTalent": "Hitting an enemy with Withering Fire grants <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,SylvanasWitheringFireEvasiveFireSpeedup,Modification.UnifiedMoveSpeedFactor\" precision=\"2\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SylvanasWitheringFireEvasiveFireSpeedup,Duration\" player=\"0\"Precision=\"2\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,SylvanasWitheringFireEvasiveFireSpeedup,Modification.UnifiedMoveSpeedFactor*Behavior,SylvanasWitheringFireEvasiveFireSpeedup,MaxStackCount\" precision=\"2\"/>%</c>. Basic Attacks refresh this duration.",
-    "SylvanasWitheringFireWitheringBarrage": "Withering Fire applies Banshee's Curse, and Heroes hit by Withering Fire reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,SylvanasWitheringFireWitheringBarrageModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds."
+    "SylvanasWitheringFireWitheringBarrage": "Withering Fire applies Black Arrows, and Heroes hit by Withering Fire reduce its cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,SylvanasWitheringFireWitheringBarrageModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds."
   },
   "tooltipSimple": {
     "GenericBoltoftheStormTalent": "Activate to teleport a short distance",
-    "SylvanasBlackArrows": "Basic Attacks apply Banshee's Curse, activate to disable enemies",
-    "SylvanasBlackArrowsFesteringWounds": "Haunting Wave applies Banshee's Curse",
+    "SylvanasBlackArrows": "Basic Attacks apply Black Arrows, increasing Sylvanas's damage",
+    "SylvanasBlackArrowsFesteringWounds": "Haunting Wave applies Black Arrows",
+    "SylvanasBlackArrowsHauntingArrowsTalent": "Activate Black Arrows to disable enemies",
     "SylvanasBlackArrowsLifeDrainTalent": "Sylvanas heals for damage dealt",
-    "SylvanasBlackArrowsOverwhelmingAfflictionTalent": "Banshee's Curse Slows, bonus damage to Heroes",
+    "SylvanasBlackArrowsOverwhelmingAfflictionTalent": "Black Arrows Slow, bonus damage to Heroes",
+    "SylvanasBlackArrowsPassive": "Basic Attacks apply Black Arrows, increasing Sylvanas's damage",
     "SylvanasBlackArrowsUnstablePoisonTalent": "Enemy Minions can explode on death",
     "SylvanasDarkLadysCallMindControlTalent": "Mind Control reduces enemy vision",
     "SylvanasHauntingWave": "Deals damage and allows teleportation",
@@ -531,16 +575,17 @@
     "SylvanasShadowDagger": "Damage an enemy over time, spreading after hit",
     "SylvanasShadowDaggerColdEmbraceTalent": "Shadow Dagger lowers Armor",
     "SylvanasShadowDaggerLostSoulTalent": "Basic Attacks reduce Shadow Dagger cooldown",
-    "SylvanasShadowDaggerUnfurlingShadows": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Increase Shadow Dagger damage",
+    "SylvanasShadowDaggerUnfurlingShadows": "Increase Shadow Dagger damage and duration",
     "SylvanasWailingArrow": "Fire arrow that damages and Silences",
     "SylvanasWailingArrowDeafeningBlastTalent": "Increases power of Wailing Arrow center",
     "SylvanasWillOfTheForsaken": "Activate to gain Unstoppable and Move Speed",
     "SylvanasWitheringFire": "Shoot arrows at the closest enemy. Cooldown is reset on Takedown.",
     "SylvanasWitheringFireBarbedShotTalent": "Withering Fire deals bonus damage",
     "SylvanasWitheringFireEvasiveFireTalent": "Withering Fire grants Move Speed",
-    "SylvanasWitheringFireWitheringBarrage": "Withering Fire applies Banshee's Curse"
+    "SylvanasWitheringFireWitheringBarrage": "Withering Fire applies Black Arrows"
   },
   "tooltipColors": {
+    "AbilityPassive": "00FF90",
     "TooltipNumbers": "BFD4FD",
     "TooltipQuest": "E4B800"
   }

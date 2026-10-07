@@ -67,7 +67,7 @@
       {
         "uid": "d10411",
         "name": "Guitar Solo",
-        "description": "Regenerate 66 Health per second for 4 seconds.",
+        "description": "Regenerate 66 (+4% per level) Health per second for 4 seconds.",
         "hotkey": "E",
         "abilityId": "ETC|E1",
         "tooltipId": "L90ETCGuitarSolo",
@@ -524,7 +524,7 @@
     "L90ETCFaceMelt": "Deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,FaceMeltDamage,Amount\"/></c> damage to nearby enemies, knocking them back.",
     "L90ETCFaceMeltFaceSmeltTalent": "Face Melt Slows enemies by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,L90ETCFaceSmeltSlow,Modification.UnifiedMoveSpeedFactor*100\" precision=\"0\"/>%</c>, decaying over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCFaceSmeltSlow,Duration\" player=\"0\"/></c> seconds.",
     "L90ETCFaceMeltLoudSpeakersTalent": "Increases Face Melt range and knockback by <c val=\"#TooltipNumbers\"><d ref=\"(Talent,L90ETCMasteryFaceMeltLoudSpeakers,AbilityModificationArray[0].Modifications[0].Value*100)-100\" precision=\"2\"/>%</c>.",
-    "L90ETCGuitarSolo": "Regenerate <c val=\"#TooltipNumbers\"><d ref=\"Effect,L90ETCGuitarSoloHeroHealDummy,RechargeVitalRate\"/></c> Health per second for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCGuitarSoloHeroHeal,Duration\" player=\"0\"/></c> seconds.",
+    "L90ETCGuitarSolo": "Regenerate <c val=\"#TooltipNumbers\"><d ref=\"Effect,L90ETCGuitarSoloHeroHeal,RechargeVitalRate\"/></c> Health per second for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCGuitarSoloHeroHeal,Duration\" player=\"0\"/></c> seconds.",
     "L90ETCGuitarSoloGuitarHeroTalent": "While Guitar Solo is active, E.T.C. heals for <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,ETCMasteryGuitarHero,AbilityModificationArray[0].Modifications[0].Value\"/>%</c> of his damage dealt by Basic Attacks. Basic Attacks increase the duration of Guitar Solo by <c val=\"#TooltipNumbers\"><d ref=\"Effect,ETCGuiltarSoloGuitarHeroModifyBuffDuration,Value\"Precision=\"2\"/></c> seconds.",
     "L90ETCMoshPit": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,L90ETCMoshPit,CastIntroTime[0]\" precision=\"2\"/></c> seconds, channel to stun nearby enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,L90ETCMoshPitStun,Duration*8\" precision=\"2\"/></c> seconds.",
     "L90ETCMoshPitTourBusTalent": "Channeling Mosh Pit refreshes Powerslide's cooldown, and it can be cast to increase Mosh Pit's duration by <c val=\"#TooltipNumbers\">2</c> seconds.",

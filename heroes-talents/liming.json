@@ -455,7 +455,7 @@
         "tooltipId": "WizardWaveOfForceRepulsionTalent",
         "talentTreeId": "WizardWaveOfForceRepulsion",
         "name": "Repulsion",
-        "description": "Increases Wave of Force knockback distance by 175% and increases its cast range by 100%.",
+        "description": "Increases Wave of Force knockback distance by 175% and increases its cast range by 95%.",
         "icon": "storm_ui_icon_wizard_waveofforce.png",
         "type": "Heroic",
         "sort": 2,
@@ -524,10 +524,10 @@
     "WizardTeleport": "Teleport a short distance instantly.",
     "WizardTeleportCalamityTalent": "Teleport does <c val=\"#TooltipNumbers\"><d ref=\"Effect,WizardTeleportCalamityDamage,Amount\"/></c> damage to enemy Heroes near the destination.",
     "WizardTeleportDiamondSkinTalent": "Teleport grants a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WizardTeleportDiamondSkinBuff,DamageResponse.ModifyLimitVitalMaxFractionArray[Life]*100\" precision=\"2\"/>%</c> of Li-Ming's maximum Health for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WizardTeleportDiamondSkinBuff,Duration\"/></c> seconds.",
-    "WizardTeleportIllusionistTalent": "If Li-Ming loses more than <c val=\"#TooltipNumbers\">20%</c> of her Health at once, its cooldown is instantly refreshed. <n/><n/>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WizardIllusionistCooldown,Duration\"/></c> second cooldown.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increases Teleport range by <c val=\"#TooltipNumbers\">50%</c>",
+    "WizardTeleportIllusionistTalent": "If Li-Ming loses more than <c val=\"#TooltipNumbers\">20%</c> of her Health at once, its cooldown is instantly refreshed. <n/><n/>This effect has a <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WizardIllusionistCooldown,Duration\"/></c> second cooldown.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Increases Teleport range by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,WizardTeleportIllusionist,AbilityModificationArray[0].Modifications[0].Value/Abil,WizardTeleport,Range\"player=\"0\"precision=\"2\"/>%</c>",
     "WizardTraitCriticalMass": "Getting a Takedown will refresh the cooldown on all of Li-Ming's Abilities.",
     "WizardWaveOfForce": "Knock away all enemies from an area and deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,WizardWaveOfForceDamage,Amount\"/></c> damage.",
-    "WizardWaveOfForceRepulsionTalent": "Increases Wave of Force knockback distance by <c val=\"#TooltipNumbers\">175%</c> and increases its cast range by <c val=\"#TooltipNumbers\">100%</c>."
+    "WizardWaveOfForceRepulsionTalent": "Increases Wave of Force knockback distance by <c val=\"#TooltipNumbers\">175%</c> and increases its cast range by <c val=\"#TooltipNumbers\"><d ref=\"100*Talent,WizardWaveOfForceRepulsion,AbilityModificationArray[0].Modifications[3].Value/Abil,WizardWaveOfForce,Range\"player=\"0\"precision=\"0\"/>%</c>."
   },
   "tooltipSimple": {
     "WizardAetherWalkerTalent": "Reduce Teleport's cooldown when out of combat",
