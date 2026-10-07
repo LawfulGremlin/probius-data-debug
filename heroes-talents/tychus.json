@@ -155,7 +155,7 @@
         "tooltipId": "TychusPressTheAdvantage",
         "talentTreeId": "TychusPressTheAdvantage",
         "name": "Press the Advantage",
-        "description": "Run and Gun increases Tychus's Basic Attack range by 1.5 for 3 seconds.",
+        "description": "Run and Gun increases Tychus's Basic Attack range by 1.5 for 5 seconds.",
         "icon": "storm_ui_icon_tychus_runandgun.png",
         "type": "E",
         "sort": 1,
@@ -173,11 +173,11 @@
         "tooltipId": "TychusRunandGunDashTalent",
         "talentTreeId": "TychusMasteryRunandGunDash",
         "name": "Dash",
-        "description": "Quest: Run and Gun increases Tychus's Movement Speed by 1% for each Regeneration Globe gathered, up to 25%. Lasts 2 seconds.  Reward: Once 25 Regeneration Globes have been gathered, the range of Run and Gun is increased by 50%.",
+        "description": "Increase the range of Run and Gun by 50%. When cast, increase Tychus's Movement Speed by 20% for 2.5 seconds.",
         "icon": "storm_ui_icon_tychus_runandgun_a.png",
         "type": "E",
         "sort": 2,
-        "isQuest": true,
+        "isQuest": false,
         "abilityId": "Tychus|E1",
         "abilityLinks": [
           "Tychus|E1"
@@ -191,7 +191,7 @@
         "tooltipId": "TychusCombatTactician",
         "talentTreeId": "TychusCombatTactician",
         "name": "Combat Tactician",
-        "description": "Basic Attacks reduce the cooldown of Run and Gun by 0.8 seconds.",
+        "description": "Casting Run And Gun reduces the cooldown of Minigun by 8 seconds.",
         "icon": "storm_ui_icon_tychus_runandgun_b.png",
         "type": "E",
         "sort": 3,
@@ -552,7 +552,7 @@
     }
   ],
   "tooltipMarkup": {
-    "TychusCombatTactician": "Basic Attacks reduce the cooldown of Run and Gun by <c val=\"#TooltipNumbers\"><d ref=\"-1*Effect,TychusRunAndGunCombatTacticianTalentModifyUnit,Cost[0].ChargeTimeUse\"precision=\"2\"/></c> seconds.",
+    "TychusCombatTactician": "Casting Run And Gun reduces the cooldown of Minigun by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,TychusRunAndGunCombatTacticianTalentModifyUnit,Cost[0].CooldownTimeUse\"/></c> seconds.",
     "TychusCommandeerOdin": "Call down an Odin to pilot. The Odin deals increased Damage, has <c val=\"#TooltipNumbers\"><d ref=\"(Weapon,TychusOdin,Range/Weapon,TychusMiniGunRampingSpeedWeapon,Range-1)*100\" player=\"0\" precision=\"1\"/>%</c> increased Basic Attack range, and uses different Abilities. The Odin has <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusOdin,ArmorModification.AllArmorBonus\"/></c> Armor and lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusOdin,Duration\" player=\"0\"/></c> seconds.",
     "TychusCommandeerOdinAnnihilate": "Fire the Odin's cannons in a straight line, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusOdinAnnihilateDamage,Amount\"/></c> damage to everything in the path.",
     "TychusCommandeerOdinBigRedButtonTalent": "Odin lasts <c val=\"#TooltipNumbers\"><d ref=\"(Talent,TychusMasteryOdinBigRedButton,AbilityModificationArray[0].Modifications[0].Value* 100)-100\"/>%</c> longer and Ragnarok Missiles also launches a Nuclear Missile which lands <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusOdinRagnarokMissilesNuclearBlastCreatePersistent,PeriodicPeriodArray[0]\" precision=\"1\"/></c> seconds later, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusOdinNuclearBlastDamage,Amount\"/></c> damage in its area.",
@@ -576,13 +576,13 @@
     "TychusRelentlessSoldierTalent": "Being Stunned or Rooted grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusRelentlessSoldierArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusRelentlessSoldierArmorIncrease,Duration\"/></c> seconds, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusRelentlessSoldierArmorIncrease,ArmorModification.AllArmorBonus\"/>%</c>.",
     "TychusRunAndGunBobAndWeaveTalent": "Increases Tychus's Basic Attack range by <c val=\"#TooltipNumbers\"><d ref=\"Talent,TychusRunAndGunBobAndWeave,AbilityModificationArray[0].Modifications[8].Value\"Precision=\"2\"/></c>.  Run and Gun and Odin's Thrusters gain <c val=\"#TooltipNumbers\">2</c> additional charges and reduces Run and Gun's Mana cost from <c val=\"#TooltipNumbers\"><d ref=\"Abil,TychusRunAndGun,Cost[0].Vital[Energy]\" player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Abil,TychusRunAndGun,Cost[0].Vital[Energy]+Talent,TychusRunAndGunBobAndWeave,AbilityModificationArray[0].Modifications[6].Value\" player=\"0\"/></c>.",
     "TychusRunandGun": "Dash a short distance.",
-    "TychusRunandGunDashTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Run and Gun increases Tychus's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,TychusRunAndGunDashMovementSpeedAccumulator,Scale*100\"/>%</c> for each Regeneration Globe gathered, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusRunAndGunDashQuestToken,Max\"/>%</c>. Lasts <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusRunAndGunDashMovementSpeedBuff,Duration\"/></c> seconds. <n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Once <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusRunAndGunDashQuestToken,Max\"/></c> Regeneration Globes have been gathered, the range of Run and Gun is increased by <c val=\"#TooltipNumbers\">50%</c>.",
+    "TychusRunandGunDashTalent": "Increase the range of Run and Gun by <c val=\"#TooltipNumbers\">50%</c>. When cast, increase Tychus's Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,TychusRunAndGunDashMovementSpeedBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TychusRunAndGunDashMovementSpeedBuff,Duration\"Precision=\"2\"/></c> seconds.",
     "TychusSizzlinAttacks": "Basic Attacks deal bonus damage to Heroes equal to <c val=\"#TooltipNumbers\">1%</c> of their maximum Health. Stacks with Minigun.",
     "TychusThatsTheStuff": "Minigun heals Tychus for <c val=\"#TooltipNumbers\">100%</c> of the bonus damage dealt after it expires.",
     "TychusTheBiggerTheyAre": "Lower the cooldown of Minigun by <c val=\"#TooltipNumbers\"><d ref=\"-Talent,TychusTheBiggerTheyAre,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds. Increase the damage bonus to <c val=\"#TooltipNumbers\"><d ref=\"Effect,TychusMinigunTheBiggerTheyAreDamage,VitalFractionMax[Life]*100\"/>%</c> while enemy Heroes are above <c val=\"#TooltipNumbers\">35%</c> Health, but Minigun no longer has any effect on targets below <c val=\"#TooltipNumbers\">35%</c>."
   },
   "tooltipSimple": {
-    "TychusCombatTactician": "Basic Attacks reduce Run and Gun cooldown",
+    "TychusCombatTactician": "Run and Gun reduces Minigun cooldown",
     "TychusCommandeerOdin": "Call down an Odin to pilot",
     "TychusCommandeerOdinAnnihilate": "Deals damage in a line",
     "TychusCommandeerOdinBigRedButtonTalent": "Increases Odin duration and fires Nukes",
@@ -605,7 +605,7 @@
     "TychusRelentlessSoldierTalent": "Stuns and Roots grant Armor",
     "TychusRunAndGunBobAndWeaveTalent": "Adds Run and Gun charges and reduces Mana cost",
     "TychusRunandGun": "Dash a short distance",
-    "TychusRunandGunDashTalent": "<c val=\"#TooltipQuest\">Quest:</c> Regen Globes empower Run and Gun",
+    "TychusRunandGunDashTalent": "Incrase Run and Gun Range, Movement Speed",
     "TychusSizzlinAttacks": "Basic Attacks deal more damage to Heroes",
     "TychusThatsTheStuff": "Minigun damage heals Tychus",
     "TychusTheBiggerTheyAre": "Lowers cooldown and increases damage of Minigun"

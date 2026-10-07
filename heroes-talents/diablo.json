@@ -223,7 +223,7 @@
         "tooltipId": "DiabloShadowChargeOverpowerEternalFlames",
         "talentTreeId": "DiabloShadowChargeOverpowerEternalFlames",
         "name": "Eternal Flames",
-        "description": "When Diablo Stuns an enemy Hero with Shadow Charge or Overpower, reset the cooldown of Fire Stomp.",
+        "description": "When Diablo Stuns an enemy Hero with Shadow Charge or Overpower, reset the cooldown of Fire Stomp and Diablo gains 35 Mana.",
         "icon": "storm_ui_icon_diablo_firestomp.png",
         "type": "W",
         "sort": 1,
@@ -257,7 +257,7 @@
         "tooltipId": "DiabloDiabolicalMomentum",
         "talentTreeId": "DiabloDiabolicalMomentum",
         "name": "Diabolical Momentum",
-        "description": "When Diablo's Basic Attacks damage enemies, reduce the cooldown of his Basic Abilities by 1 second.",
+        "description": "When Diablo's Basic Attacks damage enemies, reduce the cooldown of his Basic Abilities by 1.25 seconds.",
         "icon": "storm_ui_icon_talent_autoattack_cooldown.png",
         "type": "Passive",
         "sort": 3,
@@ -314,7 +314,7 @@
         "tooltipId": "DiabloDevastatingCharge",
         "talentTreeId": "DiabloDevastatingCharge",
         "name": "Devastating Charge",
-        "description": "Increase Shadow Charge's terrain collision damage by 80%.  Quest: Each time an enemy Hero takes terrain collision damage, increase this bonus by 20%, to a maximum of 120%.",
+        "description": "Increase Shadow Charge's terrain collision damage by 50%.  Quest: Hit an enemy Hero against terrain 5 times.  Reward: Hitting enemy Heroes against terrain reduces their Armor by 15 for 4 seconds.",
         "icon": "storm_ui_icon_diablo_shadowcharge_var1.png",
         "type": "Q",
         "sort": 1,
@@ -328,13 +328,30 @@
         ]
       },
       {
+        "tooltipId": "DiabloHellfire",
+        "talentTreeId": "DiabloHellfire",
+        "name": "Hellfire",
+        "description": "Each enemy Hero hit by Fire Stomp grants 2% Spell Power for 10 seconds, up to 30%.  While at maximum stacks, Diablo deals 15 (+4% per level) damage per second to nearby enemies.",
+        "icon": "storm_ui_icon_diablo_firestomp.png",
+        "type": "W",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Diablo|W1",
+        "abilityLinks": [
+          "Diablo|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "DiabloFireStomp"
+        ]
+      },
+      {
         "tooltipId": "DiabloShadowChargeOverpowerCruelty",
         "talentTreeId": "DiabloShadowChargeOverpowerCruelty",
         "name": "Cruelty",
         "description": "Stunning an enemy Hero with Shadow Charge or Overpower increases Diablo's Attack Speed by 50% for 7 seconds, up to 100%.",
         "icon": "storm_ui_icon_diablo_combo_1.png",
         "type": "Passive",
-        "sort": 2,
+        "sort": 3,
         "isQuest": false,
         "abilityId": "Diablo|Passive",
         "abilityLinks": [
@@ -344,23 +361,6 @@
         "abilityTalentLinkIds": [
           "DiabloShadowCharge",
           "DiabloOverpower"
-        ]
-      },
-      {
-        "tooltipId": "DiabloHellfire",
-        "talentTreeId": "DiabloHellfire",
-        "name": "Hellfire",
-        "description": "Each enemy Hero hit by Fire Stomp grants 2% Spell Power for 10 seconds, up to 30%.",
-        "icon": "storm_ui_icon_diablo_firestomp.png",
-        "type": "W",
-        "sort": 3,
-        "isQuest": false,
-        "abilityId": "Diablo|W1",
-        "abilityLinks": [
-          "Diablo|W1"
-        ],
-        "abilityTalentLinkIds": [
-          "DiabloFireStomp"
         ]
       }
     ],
@@ -501,11 +501,11 @@
     "DiabloBlackSoulstoneDevilsDueTalent": "Black Soulstone increases the effects of Regen Globes and Healing Fountains by <c val=\"#TooltipNumbers\">2.25% </c>per Soul.",
     "DiabloBlackSoulstoneFeastOnFearTalent": "Stunning an enemy Hero with Shadow Charge or Overpower heals Diablo for <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloBlackSoulstoneFeastOnFearCreateHealer,RechargeVitalFraction*Behavior,DiabloBlackSoulstoneFeastOnFearPeriodicHealer,Duration*Behavior,DiabloBlackSoulstoneFeastOnFearPeriodicHealer,Period*100\"/>%</c> of his maximum Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloBlackSoulstoneFeastOnFearPeriodicHealer,Duration\"/></c> seconds.",
     "DiabloDebilitatingFlames": "Enemy Heroes hit by Fire Stomp are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,DiabloFireStompDebilitatingFlamesTalentSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloFireStompDebilitatingFlamesTalentSlow,Duration\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloFireStompDebilitatingFlamesTalentSlow,MaxStackCount * (-100)*Behavior,DiabloFireStompDebilitatingFlamesTalentSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c>. Heroes Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,DiabloFireStompDebilitatingFlamesTalentSlow,Modification.UnifiedMoveSpeedFactor*Validator,DiabloTargetHasGTE5StacksofDebilitatingFlamesSlow,Value*100\"/>%</c> or more by Debilitating Flames deal <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,DiabloFireStompDebilitatingFlamesDamageReduction,Modification.DamageDealtFraction[Ability]*100\"/>%</c> less damage.",
-    "DiabloDevastatingCharge": "Increase Shadow Charge's terrain collision damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloShadowChargeTerrainImpactDamage,MultiplicativeModifierArray[DevastatingCharge].Modifier*100\"/>%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Each time an enemy Hero takes terrain collision damage, increase this bonus by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DiabloShadowChargeDevastatingCharge,Scale*100\"/>%</c>, to a maximum of <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeDevastatingChargeTalentTokenCounter,Max*Accumulator,DiabloShadowChargeDevastatingCharge,Scale*100\"/>%</c>.",
-    "DiabloDiabolicalMomentum": "When Diablo's Basic Attacks damage enemies, reduce the cooldown of his Basic Abilities by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloHeroWeaponDiabolicalMomentumTalentModifyCooldowns,Cost[0].CooldownTimeUse*(-1)\" precision=\"2\"/></c> second.",
+    "DiabloDevastatingCharge": "Increase Shadow Charge's terrain collision damage by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloShadowChargeTerrainImpactDamage,MultiplicativeModifierArray[DevastatingCharge].Modifier*100\"/>%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Hit an enemy Hero against terrain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeDevastatingChargeTalentTokenCounter,Max\"/></c> times.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> Hitting enemy Heroes against terrain reduces their Armor by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,DiabloShadowChargeDevastatingChargeArmorDebuff,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeDevastatingChargeArmorDebuff,Duration\"/></c> seconds.",
+    "DiabloDiabolicalMomentum": "When Diablo's Basic Attacks damage enemies, reduce the cooldown of his Basic Abilities by <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloHeroWeaponDiabolicalMomentumTalentModifyCooldowns,Cost[0].CooldownTimeUse*(-1)\" precision=\"2\"/></c> seconds.",
     "DiabloFireStomp": "Unleashes fire waves toward the targeted area that deal <c val=\"#TooltipNumbers\"><d ref=\"Effect,FireStompDamage,Amount\"/></c> damage each. Once they reach maximum range they return, dealing an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,FireStompReturnDamage,Amount\"/></c> damage. Diablo heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,FireStompDamage,LeechFraction[Life]*100\"/>%</c> of the damage dealt to Heroes.",
     "DiabloFireStompSoulsToTheFlame": "Fire Stomp grants <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloBlackSoulstoneAddTokenCount,Value\"/></c> Soul every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloFireStompSoulsToTheFlameTokenCounter,Max\"/></c> times it damages an enemy Hero, and heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,FireStompDamage,LeechFraction[Life]*Accumulator,DiabloBlackSoulstoneSoulstotheFlameAccumulator,Scale*100\" precision=\"2\"/>%</c> of its damage dealt per Soul.",
-    "DiabloHellfire": "Each enemy Hero hit by Fire Stomp grants <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DiabloFireStompHellfireSpellPower,Scale*100\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloFireStompHellfireSpellPower,Duration\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloFireStompHellfireTalentTokenCounter,Max*Accumulator,DiabloFireStompHellfireSpellPower,Scale*100\"/>%</c>.",
+    "DiabloHellfire": "Each enemy Hero hit by Fire Stomp grants <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DiabloFireStompHellfireSpellPower,Scale*100\"/>%</c> Spell Power for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloFireStompHellfireSpellPower,Duration\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloFireStompHellfireTalentTokenCounter,Max*Accumulator,DiabloFireStompHellfireSpellPower,Scale*100\"/>%</c>.  While at maximum stacks, Diablo deals <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloFireStompHellfireDamage,Amount\"/></c> damage per second to nearby enemies.",
     "DiabloHellgateTalent": "Teleport and place a demonic rune at target location. After <c val=\"#TooltipNumbers\"><d ref=\"Effect,ApocalypseCreatePersistent,ExpireDelay\" precision=\"2\"/></c> seconds the rune explodes dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ApocalypseDamage,Amount\"/></c> damage and stunning enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ApocalypseStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
     "DiabloLifeLeechTalent": "Diablo gains <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloBlackSoulstoneAddTokenCount,Value\"/></c> Soul and heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloLifeLeechCreateHealer,RechargeVitalFraction*100\" precision=\"1\"/>%</c> of his maximum Health when Basic Attacking an enemy Hero. While at <c val=\"#TooltipNumbers\"><d ref=\"Validator,DiabloHasGTE100BlackSoulstoneTokens,Value\"/></c> Souls, increase this healing to <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloLifeLeechImprovedCreateHealer,RechargeVitalFraction*100\" precision=\"1\"/>%</c> of his maximum Health.",
     "DiabloLightningBreath": "After <c val=\"#TooltipNumbers\">0.5</c> seconds, become Unstoppable and Channel for up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloLightningBreathController,Duration\" player=\"0\"/></c> seconds, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloLightningBreathDamage,Amount\"/></c> damage every <c val=\"#TooltipNumbers\">0.25</c> seconds to enemies in front of Diablo. Enemies affected are Slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,DiabloLightningBreathSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloLightningBreathSlow,Duration\" player=\"0\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,DiabloLightningBreathSlow,Modification.UnifiedMoveSpeedFactor*Behavior,DiabloLightningBreathSlow,MaxStackCount\"/>%</c>. <n/><n/>Lightning Breath's direction changes with your mouse cursor position.",
@@ -517,7 +517,7 @@
     "DiabloOverpowerOverpoweringNightmareTalent": "Gain <c val=\"#TooltipNumbers\"><d ref=\"Talent,DiabloOverpowerOverpoweringNightmare,AbilityModificationArray[0].Modifications[0].Value\"/></c> additional charges of Overpower, with a <c val=\"#TooltipNumbers\"><d ref=\"Abil,DiabloOverpower,Cost.Cooldown.TimeUse\"/></c> second cooldown between uses.",
     "DiabloShadowCharge": "Charge an enemy, knocking them back, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloShadowChargeUnitImpactDamage,Amount\"/></c> damage and gaining <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,DiabloShadowChargeSelfMovementSpeedBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeSelfMovementSpeedBuff,Duration\"/></c> seconds. If the enemy hits terrain, they are Stunned for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeTerrainImpactStun,Duration\" player=\"0\" precision=\"2\"/></c> second and take an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloShadowChargeTerrainImpactDamage,Amount\"/></c> damage.",
     "DiabloShadowChargeOverpowerCruelty": "Stunning an enemy Hero with Shadow Charge or Overpower increases Diablo's Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeOverpowerCrueltyAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeOverpowerCrueltyAttackSpeedBuff,Duration\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeOverpowerCrueltyAttackSpeedBuff,MaxStackCount*Behavior,DiabloShadowChargeOverpowerCrueltyAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor*100\"/>%</c>.",
-    "DiabloShadowChargeOverpowerEternalFlames": "When Diablo Stuns an enemy Hero with Shadow Charge or Overpower, reset the cooldown of Fire Stomp.",
+    "DiabloShadowChargeOverpowerEternalFlames": "When Diablo Stuns an enemy Hero with Shadow Charge or Overpower, reset the cooldown of Fire Stomp and Diablo gains <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloFireStompEternalFlamesManaRestore,RechargeVitalRate\"/></c> Mana.",
     "DiabloShadowChargeSacrificialSoul": "Stunning a Hero with Shadow Charge grants <c val=\"#TooltipNumbers\"><d ref=\"Effect,DiabloBlackSoulstoneAdd5TokenCount,Value\"/></c> Souls and <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeSacrificialSoulArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeSacrificialSoulArmorIncrease,Duration\"/></c> seconds. While at <c val=\"#TooltipNumbers\"><d ref=\"Validator,DiabloHasGTE100SoulstoneStacks,Value\"/></c> Souls, increase this Armor to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloShadowChargeSacrificialSoulImprovedArmorIncrease,ArmorModification.AllArmorBonus\"/></c>.",
     "DiabloSoulShield": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloSoulShieldSpellArmor,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]\"/></c> plus <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,DiabloBlackSoulstoneSoulShieldTalentAccumulator,Scale*100\"/>%</c> of Diablo's current Souls as Spell Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,DiabloSoulShieldSpellArmor,Duration\"/></c> seconds. Every time Diablo damages an enemy Hero, reduce this cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,DiabloBlackSoulstoneSoulShieldModifyPlayerCooldown,Cost.Cooldown.TimeUse\"/></c> second."
   },
@@ -528,7 +528,7 @@
     "DiabloBlackSoulstoneDevilsDueTalent": "Souls empower Regen Globes, Healing Fountains",
     "DiabloBlackSoulstoneFeastOnFearTalent": "Shadow Charge, Overpower heal",
     "DiabloDebilitatingFlames": "Fire Stomp weakens enemy Heroes",
-    "DiabloDevastatingCharge": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Increase Shadow Charge damage",
+    "DiabloDevastatingCharge": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Shadow Charge reduces Armor",
     "DiabloDiabolicalMomentum": "Basic Attacks reduce Ability cooldowns",
     "DiabloFireStomp": "Unleash fire waves in a direction",
     "DiabloFireStompSoulsToTheFlame": "Fire Stomp grants Souls and heals more",
