@@ -405,7 +405,7 @@
         "tooltipId": "LiLiBlessingsOfYulon",
         "talentTreeId": "LiLiBlessingsOfYulon",
         "name": "Blessings Of Yu'lon",
-        "description": "Cloud Serpent heals its bearer for 1% of their maximum Health each time it attacks.",
+        "description": "Cloud Serpent heals its bearer for an additional 1% of their maximum Health each time it attacks.",
         "icon": "storm_ui_icon_lili_cloudserpent.png",
         "type": "W",
         "sort": 3,
@@ -497,7 +497,7 @@
     ]
   },
   "tooltipMarkup": {
-    "LiLiBlessingsOfYulon": "Cloud Serpent heals its bearer for <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,LiLiCloudSerpentBlessingsOfYulonTalentCreateHealer,RechargeVitalFraction+.01\"/>%</c> of their maximum Health each time it attacks.",
+    "LiLiBlessingsOfYulon": "Cloud Serpent heals its bearer for an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,LiLiCloudSerpentBlessingsOfYulonTalentCreateHealer,RechargeVitalFraction+.01\"/>%</c> of their maximum Health each time it attacks.",
     "LiLiBlindingWind": "Throw a cloud of wind at the <c val=\"#TooltipNumbers\"><d ref=\"Effect,BlindingWindSearchArea,AreaArray[0].MaxCount\"player=\"0\"/></c> nearest enemies (prioritizing Heroes), dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,LiLiBlindingWindDamage,Amount\"/></c> damage. Affected targets are Blinded for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,LiLiBlindingWindBlindBuff,Duration\" player=\"0\" precision=\"1\"/></c> seconds, causing their Basic Attacks to miss and deal no damage.",
     "LiLiBlindingWindGaleForceTalent": "Increase Blinding Wind's duration by <c val=\"#TooltipNumbers\"><d ref=\"Talent,LiLiMasteryBlindingWindGaleForce,AbilityModificationArray[0].Modifications[0].Value\"player=\"0\"precision=\"2\"/></c> seconds. Li Li's Basic Attacks against Blinded Heroes deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,LiLiHeroWeaponDamage,MultiplicativeModifierArray[GaleForce].Modifier\"/>%</c> increased damage.",
     "LiLiBlindingWindMassVortexTalent": "Increase the number of enemies hit by Blinding Wind from <c val=\"#TooltipNumbers\"><d ref=\"Effect,BlindingWindSearchArea,AreaArray[0].MaxCount\"player=\"0\"/></c> to <c val=\"#TooltipNumbers\"><d ref=\"Effect,LiLiBlindingWindMassVortexTalentSearchArea,MinCount\"player=\"0\"/></c>. Blinding Wind deals <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,LiLiBlindingWindDamage,MultiplicativeModifierArray[MassVortex].Modifier\"/>%</c> additional damage if all <c val=\"#TooltipNumbers\"><d ref=\"Effect,LiLiBlindingWindMassVortexTalentSearchArea,MinCount\"/></c> enemies hit are Heroes.",

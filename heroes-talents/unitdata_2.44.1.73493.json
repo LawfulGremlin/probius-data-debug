@@ -130,7 +130,7 @@
         "range": 7,
         "minimumRange": 3,
         "period": 1,
-        "damage": 40,
+        "damage": 46,
         "damageScale": 0.04
       },
       {
@@ -139,7 +139,7 @@
         "range": 3,
         "minimumRange": 0,
         "period": 1,
-        "damage": 40,
+        "damage": 46,
         "damageScale": 0.04
       }
     ],
@@ -182,7 +182,7 @@
           "_hdp5LinkId": "AbathurSpawnLocusts|AbathurLocustStrain|Q",
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "name": "Locust Strain",
-          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">316</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">40</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack.",
+          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">316</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack.",
           "cooldownText": "Cooldown: 15 seconds"
         }
       ]
@@ -221,7 +221,7 @@
           "_hdp5LinkId": "AbathurSpawnLocusts|AbathurLocustStrain|Q",
           "icon": "storm_ui_icon_abathur_spawnlocust.png",
           "name": "Locust Strain",
-          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">316</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">40</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack.",
+          "fullText": "Spawns a Locust to attack down the nearest lane every <c val=\"bfd4fd\">15</c> seconds. Locusts last for <c val=\"bfd4fd\">16</c> seconds, have <c val=\"bfd4fd\">316</c><c val=\"a7a7a7\">~~0.04~~</c> health and deal <c val=\"bfd4fd\">46</c><c val=\"a7a7a7\">~~0.04~~</c> damage with each Basic Attack.",
           "cooldownText": "Cooldown: 15 seconds"
         }
       ]
@@ -243,7 +243,7 @@
         "range": 1.5,
         "minimumRange": 0,
         "period": 1,
-        "damage": 40,
+        "damage": 46,
         "damageScale": 0.04
       }
     ],
@@ -1811,20 +1811,6 @@
     "sight": 3,
     "speed": 0
   },
-  "ChromieHeroWeaponBronzeTalonsMissile": {
-    "unitId": "ChromieHeroWeaponBronzeTalonsMissile",
-    "portraits": {},
-    "life": {
-      "amount": 10,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 0,
-    "innerRadius": 0,
-    "sight": 0,
-    "speed": 0
-  },
   "ChromieHeroWeaponMissile": {
     "unitId": "ChromieHeroWeaponMissile",
     "portraits": {},
@@ -1862,10 +1848,6 @@
       "regenRate": 0,
       "regenScale": 0
     },
-    "energy": {
-      "amount": 20,
-      "regenRate": 0
-    },
     "radius": 0.5,
     "innerRadius": 0,
     "sight": 0,
@@ -1878,10 +1860,10 @@
           "abilityType": "Q",
           "isPassive": false,
           "_hdp5LinkId": "ChromiePastAndFutureMeSandBlast|ChromieSandBlast|Q",
+          "toggleCooldown": 0.5,
           "icon": "storm_ui_icon_chromie_aethercannon.png",
           "name": "Sand Blast",
-          "fullText": "After <c val=\"bfd4fd\">0.8</c> seconds, fire a missile that deals <c val=\"bfd4fd\">315</c><c val=\"a7a7a7\">~~0.04~~</c> damage to the first enemy Hero hit.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit <c val=\"bfd4fd\">50</c> Heroes with Sand Blast. Consecutive hits without missing count as hitting <c val=\"bfd4fd\">2</c> Heroes.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After hitting <c val=\"bfd4fd\">50</c> Heroes, casting Sand Blast leaves an Echo behind.  The next time Sand Blast is cast, the Echo also casts an untalented Sand Blast that deals <c val=\"bfd4fd\">40%</c> damage.",
-          "cooldownText": "Cooldown: 2.5 seconds"
+          "fullText": "After <c val=\"bfd4fd\">0.5</c> seconds, fire a missile that deals <c val=\"bfd4fd\">305</c><c val=\"a7a7a7\">~~0.04~~</c> damage to the first enemy hit. Deals <c val=\"bfd4fd\">50%</c> damage to Structures.<n/><n/>Casting Sand Blast leaves an Echo behind that mimics Chromie's Sand Blast and Basic Attack, dealing <c val=\"bfd4fd\">40%</c> damage. Maximum of <c val=\"bfd4fd\">1</c> Echo active at a time."
         }
       ]
     }
@@ -1900,11 +1882,39 @@
     "sight": 0,
     "speed": 0
   },
+  "ChromieSandEchoBasicAttackMissile": {
+    "unitId": "ChromieSandEchoBasicAttackMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "ChromieSandEchoPlaceUnit": {
+    "unitId": "ChromieSandEchoPlaceUnit",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "ChromieTimeTrap": {
     "unitId": "ChromieTimeTrap",
     "portraits": {},
     "life": {
-      "amount": 300,
+      "amount": 500,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
@@ -5825,7 +5835,7 @@
     "unitId": "LucioBoombox",
     "portraits": {},
     "life": {
-      "amount": 217,
+      "amount": 350,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
@@ -11069,7 +11079,7 @@
           "icon": "storm_ui_icon_anubarak_webblast.png",
           "name": "Cocoon",
           "fullText": "Wraps target enemy Hero in a cocoon, rendering them unable to act or be targeted for <c val=\"bfd4fd\">8</c> seconds. Allies of the Hero can attack the cocoon to break it and free them early.",
-          "cooldownText": "Cooldown: 60 seconds"
+          "cooldownText": "Cooldown: 70 seconds"
         }
       ],
       "heroic": [
@@ -16783,7 +16793,7 @@
           "_hdp5LinkId": "AbathurSymbioteCarapace|AbathurSymbioteCarapace|E",
           "icon": "storm_ui_icon_abathur_carapace.png",
           "name": "Carapace",
-          "fullText": "Shields the assisted ally for <c val=\"bfd4fd\">157</c><c val=\"a7a7a7\">~~0.04~~</c>. Allied Heroes are healed for <c val=\"bfd4fd\">22</c><c val=\"a7a7a7\">~~0.04~~</c> Health per second while the Shield is active. Lasts for <c val=\"bfd4fd\">6</c> seconds.",
+          "fullText": "Shields the assisted ally for <c val=\"bfd4fd\">150</c><c val=\"a7a7a7\">~~0.04~~</c>. Allied Heroes are healed for <c val=\"bfd4fd\">22</c><c val=\"a7a7a7\">~~0.04~~</c> Health per second while the Shield is active. Lasts for <c val=\"bfd4fd\">6</c> seconds.",
           "cooldownText": "Cooldown: 6 seconds"
         }
       ],
@@ -17330,7 +17340,7 @@
           },
           "icon": "storm_ui_icon_dva_selfdestruct.png",
           "name": "Self-Destruct",
-          "fullText": "Eject from the Mech, setting it to self-destruct after <c val=\"bfd4fd\">4</c> seconds. Deals <c val=\"bfd4fd\">400</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">1200</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area, depending on distance from center. Only deals <c val=\"bfd4fd\">50%</c> damage against Structures.<n/><n/><c val=\"FF8000\">Gain </c><c val=\"bfd4fd\">1%</c><c val=\"FF8000\"> Charge for every </c><c val=\"bfd4fd\">2</c><c val=\"FF8000\"> seconds spent Basic Attacking, and </c><c val=\"bfd4fd\">30%</c><c val=\"FF8000\"> Charge per </c><c val=\"bfd4fd\">100%</c><c val=\"FF8000\"> of Mech Health lost.</c>"
+          "fullText": "Eject from the Mech, setting it to self-destruct after <c val=\"bfd4fd\">4</c> seconds. Deals <c val=\"bfd4fd\">1200</c><c val=\"a7a7a7\">~~0.04~~</c> to <c val=\"bfd4fd\">400</c><c val=\"a7a7a7\">~~0.04~~</c> damage in a large area, depending on distance from center. Only deals <c val=\"bfd4fd\">50%</c> damage against Structures.<n/><n/><c val=\"FF8000\">Gain </c><c val=\"bfd4fd\">1%</c><c val=\"FF8000\"> Charge for every </c><c val=\"bfd4fd\">2</c><c val=\"FF8000\"> seconds spent Basic Attacking, and </c><c val=\"bfd4fd\">30%</c><c val=\"FF8000\"> Charge per </c><c val=\"bfd4fd\">100%</c><c val=\"FF8000\"> of Mech Health lost.</c>"
         }
       ],
       "heroic": [

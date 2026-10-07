@@ -132,24 +132,13 @@
   "talents": {
     "1": [
       {
-        "tooltipId": "RexxarSpiritBondEasyPreyTalent",
-        "talentTreeId": "RexxarSpiritBondEasyPrey",
-        "name": "Easy Prey",
-        "description": "Increases Misha's damage to Minions and Mercenaries by 150%, and Misha gains 50 Armor against Minions and Mercenaries, reducing damage taken by 50%.",
-        "icon": "storm_ui_icon_rexxar_heremishaactive.png",
-        "type": "Passive",
-        "sort": 1,
-        "isQuest": false,
-        "abilityId": "Rexxar|Passive"
-      },
-      {
         "tooltipId": "RexxarSpiritSwoopBirdOfPreyTalent",
         "talentTreeId": "RexxarSpiritSwoopBirdOfPrey",
         "name": "Bird of Prey",
         "description": "Increases Spirit Swoop's damage by 150% to Minions.",
         "icon": "storm_ui_icon_rexxar_spiritswoop.png",
         "type": "Q",
-        "sort": 2,
+        "sort": 1,
         "isQuest": false,
         "abilityId": "Rexxar|Q1",
         "abilityLinks": [
@@ -158,6 +147,17 @@
         "abilityTalentLinkIds": [
           "RexxarSpiritSwoop"
         ]
+      },
+      {
+        "tooltipId": "RexxarSpiritBondEasyPreyTalent",
+        "talentTreeId": "RexxarSpiritBondEasyPrey",
+        "name": "Easy Prey",
+        "description": "Increases Misha's basic attack damage to Minions and Mercenaries by 200%, and Misha gains 50 Armor against Minions and Mercenaries, reducing damage taken by 50%.",
+        "icon": "storm_ui_icon_rexxar_heremishaactive.png",
+        "type": "Passive",
+        "sort": 2,
+        "isQuest": false,
+        "abilityId": "Rexxar|Passive"
       },
       {
         "tooltipId": "RexxarFlare",
@@ -224,31 +224,13 @@
     ],
     "7": [
       {
-        "tooltipId": "RexxarAspectoftheBeastTalent",
-        "talentTreeId": "RexxarAspectoftheBeastCharge",
-        "name": "Aspect of the Beast",
-        "description": "Misha's Basic Attacks lower the cooldown of Misha, Charge! by 1 second.",
-        "icon": "storm_ui_icon_rexxar_mishacharge.png",
-        "type": "W",
-        "sort": 1,
-        "isQuest": false,
-        "abilityId": "Rexxar|W1",
-        "abilityLinks": [
-          "Rexxar|W1"
-        ],
-        "abilityTalentLinkIds": [
-          "RexxarMishaCharge",
-          "RexxarMishaChargeRedirect"
-        ]
-      },
-      {
         "tooltipId": "RexxarCripplingTalonsTalent",
         "talentTreeId": "RexxarSpiritSwoopCripplingTalons",
         "name": "Crippling Talons",
         "description": "Increases Spirit Swoop's slow amount to 50% and its duration to 3.5 seconds.",
         "icon": "storm_ui_icon_rexxar_spiritswoop.png",
         "type": "Q",
-        "sort": 2,
+        "sort": 1,
         "isQuest": false,
         "abilityId": "Rexxar|Q1",
         "abilityLinks": [
@@ -265,7 +247,7 @@
         "description": "Increases Spirit Swoop's range by 20%. If Spirit Swoop hits an enemy Hero, the Mana cost is refunded and its cooldown is reduced by 2 seconds.",
         "icon": "storm_ui_icon_rexxar_spiritswoop_var1.png",
         "type": "Q",
-        "sort": 3,
+        "sort": 2,
         "isQuest": false,
         "abilityId": "Rexxar|Q1",
         "abilityLinks": [
@@ -273,6 +255,24 @@
         ],
         "abilityTalentLinkIds": [
           "RexxarSpiritSwoop"
+        ]
+      },
+      {
+        "tooltipId": "RexxarAspectoftheBeastTalent",
+        "talentTreeId": "RexxarAspectoftheBeastCharge",
+        "name": "Aspect of the Beast",
+        "description": "Misha's Basic Attacks lower the cooldown of Misha, Charge! by 1 second.",
+        "icon": "storm_ui_icon_rexxar_mishacharge.png",
+        "type": "W",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Rexxar|W1",
+        "abilityLinks": [
+          "Rexxar|W1"
+        ],
+        "abilityTalentLinkIds": [
+          "RexxarMishaCharge",
+          "RexxarMishaChargeRedirect"
         ]
       }
     ],
@@ -316,24 +316,13 @@
     ],
     "13": [
       {
-        "tooltipId": "RexxarSpiritBondWildfireBearTalent",
-        "talentTreeId": "RexxarSpiritBondWildfireBear",
-        "name": "Wildfire Bear",
-        "description": "Misha deals 28 (+4% per level) damage per second to nearby enemies.",
-        "icon": "storm_ui_icon_talent_burningrage.png",
-        "type": "Passive",
-        "sort": 1,
-        "isQuest": false,
-        "abilityId": "Rexxar|Passive"
-      },
-      {
         "tooltipId": "RexxarAspectOfTheHawkTalent",
         "talentTreeId": "RexxarAspectOfTheHawkSpiritSwoop",
         "name": "Aspect of the Hawk",
         "description": "When Spirit Swoop hits an enemy Hero, Rexxar gains 125% Attack Speed for 4 seconds. Misha's Basic Attacks increase the duration of this buff by 0.75 seconds.",
         "icon": "storm_ui_icon_rexxar_spiritswoop.png",
         "type": "Q",
-        "sort": 2,
+        "sort": 1,
         "isQuest": false,
         "abilityId": "Rexxar|Q1",
         "abilityLinks": [
@@ -350,7 +339,7 @@
         "description": "Rexxar and Misha's Basic Attacks increase the damage of the next Misha, Charge! by 15%, stacking up to a 150% bonus.",
         "icon": "storm_ui_icon_rexxar_mishacharge.png",
         "type": "W",
-        "sort": 3,
+        "sort": 2,
         "isQuest": false,
         "abilityId": "Rexxar|W1",
         "abilityLinks": [
@@ -360,6 +349,17 @@
           "RexxarMishaCharge",
           "RexxarMishaChargeRedirect"
         ]
+      },
+      {
+        "tooltipId": "RexxarSpiritBondWildfireBearTalent",
+        "talentTreeId": "RexxarSpiritBondWildfireBear",
+        "name": "Wildfire Bear",
+        "description": "Misha deals 28 (+4% per level) damage per second to nearby enemies.",
+        "icon": "storm_ui_icon_talent_burningrage.png",
+        "type": "Passive",
+        "sort": 3,
+        "isQuest": false,
+        "abilityId": "Rexxar|Passive"
       }
     ],
     "16": [
@@ -517,7 +517,7 @@
     "RexxarMendPet": "Heal Misha for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RexxarMendPetCreateHealer,RechargeVitalRate * [d ref='Behavior,RexxarMendPet,Duration+1' player='0'/]\"/></c> Health over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarMendPet,Duration\" player=\"0\"/></c> seconds.",
     "RexxarMishaChargeRedirect": "Misha charges in a line, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,RexxarMishaChargeDamage,Amount\"/></c> damage and stunning enemies for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarMishaChargeStun,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
     "RexxarMishaFocus": "Passive: Misha gains <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RexxarMishaPassiveMoveSpeed,Modification.UnifiedMoveSpeedFactor\"/>%</c> move speed. <n/><n/>Command Misha to attack a specific enemy or move to a point and wait.<n/><n/>Targeting Rexxar commands Misha to retreat to his position, gaining <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RexxarMishaFollowFollow,Modification.UnifiedMoveSpeedFactor\"/>%</c> move speed until she reaches Rexxar.<n/><n/>Targeting Misha commands her to hold her current position.",
-    "RexxarSpiritBondEasyPreyTalent": "Increases Misha's damage to Minions and Mercenaries by <c val=\"#TooltipNumbers\"><d ref=\"Talent,RexxarSpiritBondEasyPrey,AbilityModificationArray[0].Modifications[0].Value*100\"/>%</c>, and Misha gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarMishaEasyPreyDamageReduction,ArmorModification.ArmorSet[Minion].ArmorMitigationTable[Basic]\"/></c> Armor against Minions and Mercenaries, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarMishaEasyPreyDamageReduction,ArmorModification.ArmorSet[Minion].ArmorMitigationTable[Basic]\"/>%</c>.",
+    "RexxarSpiritBondEasyPreyTalent": "Increases Misha's basic attack damage to Minions and Mercenaries by <c val=\"#TooltipNumbers\"><d ref=\"Talent,RexxarSpiritBondEasyPrey,AbilityModificationArray[0].Modifications[0].Value*100\"/>%</c>, and Misha gains <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarMishaEasyPreyDamageReduction,ArmorModification.ArmorSet[Minion].ArmorMitigationTable[Basic]\"/></c> Armor against Minions and Mercenaries, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RexxarMishaEasyPreyDamageReduction,ArmorModification.ArmorSet[Minion].ArmorMitigationTable[Basic]\"/>%</c>.",
     "RexxarSpiritBondGrizzledFortitudeTalent": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockCharged,DamageResponse.Cost.Charge.TimeUse+Talent,RexxarSpiritBondGrizzledFortitude,AbilityModificationArray[0].Modifications[0].Value\"/></c> seconds, Rexxar and Misha gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockChargedArmorBehaviorTarget,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/></c> Physical Armor against the next enemy Hero Basic Attack, reducing the damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockChargedArmorBehaviorTarget,ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Basic]\"/>%</c>.<n/><n/>Stores up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentBucketBlockCharged,DamageResponse.Cost.Charge.CountMax\"/></c> charges. Both Rexxar and Misha have their own charges.",
     "RexxarSpiritBondPrimalIntimidationTalent": "Activate to slow the Attack Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceActivatedDebuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> and Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceActivatedDebuffSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> of Heroes and Summons near Rexxar and Misha for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentImposingPresenceActivatedDebuffSlow,Duration\"precision=\"2\"/></c> seconds.<n/><n/><c val=\"#AbilityPassive\">Passive:</c> Heroes and Summons that attack Rexxar or Misha have their Attack Speed slowed by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,TalentImposingPresenceDamageResponseDebuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentImposingPresenceDamageResponseDebuff,Duration\"precision=\"2\"/> </c>seconds.",
     "RexxarSpiritBondTalent": "Increases the duration of Bestial Wrath by<c val=\"#TooltipNumbers\"> 50%</c> and Misha's Basic Attacks heal Rexxar for <c val=\"#TooltipNumbers\">50%</c> of her damage dealt during Bestial Wrath.",

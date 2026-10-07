@@ -31,7 +31,7 @@
     "resource": 500,
     "resourceType": "Mana",
     "resourceRegen": 3,
-    "attackDamage": 85,
+    "attackDamage": 81,
     "attackDamageScale": 0.04,
     "attackRange": 1.5,
     "attackSpeed": 1,
@@ -47,7 +47,7 @@
       {
         "uid": "a326d7",
         "name": "Impale",
-        "description": "Deals 95 (+4% per level) damage. Stuns for 1 second.",
+        "description": "Deals 90 (+4% per level) damage. Stuns for 1 second.",
         "hotkey": "Q",
         "abilityId": "Anubarak|Q1",
         "tooltipId": "AnubarakImpale",
@@ -71,7 +71,7 @@
       {
         "uid": "231bd0",
         "name": "Burrow Charge",
-        "description": "Burrow to the target location, dealing 96 (+4% per level) damage and briefly stunning enemies in a small area upon surfacing, slowing them by 25% for 2.5 seconds.  Burrow Charge can be reactivated to surface early.",
+        "description": "Burrow to the target location, dealing 91 (+4% per level) damage and briefly stunning enemies in a small area upon surfacing, slowing them by 25% for 2.5 seconds.  Burrow Charge can be reactivated to surface early.",
         "hotkey": "E",
         "abilityId": "Anubarak|E1",
         "tooltipId": "AnubarakBurrowCharge",
@@ -99,7 +99,7 @@
         "hotkey": "R",
         "abilityId": "Anubarak|R2",
         "tooltipId": "AnubarakCocoon",
-        "cooldown": 60,
+        "cooldown": 70,
         "manaCost": 70,
         "icon": "storm_ui_icon_anubarak_webblast.png",
         "type": "heroic"
@@ -149,7 +149,7 @@
         "tooltipId": "AnubarakLegionOfBeetlesTalent",
         "talentTreeId": "AnubarakCombatStyleLegionOfBeetles",
         "name": "Legion of Beetles",
-        "description": "Beetles have 40 Spell Armor. Automatically spawn a Beetle every 8 seconds. Can be toggled on and off.",
+        "description": "Beetles have 30 Spell Armor. Automatically spawn a Beetle every 8 seconds. Can be toggled on and off.",
         "icon": "storm_ui_icon_anubarak_scarabhost.png",
         "type": "Trait",
         "sort": 2,
@@ -311,7 +311,7 @@
         "icon": "storm_ui_icon_anubarak_webblast.png",
         "type": "Heroic",
         "sort": 2,
-        "cooldown": 60,
+        "cooldown": 70,
         "isQuest": false,
         "abilityId": "Anubarak|R2",
         "abilityLinks": [

@@ -51,7 +51,7 @@
         "abilityId": "Azmodan|Q1",
         "tooltipId": "AzmodanGlobeOfAnnihilation",
         "cooldown": 10,
-        "manaCost": 60,
+        "manaCost": 70,
         "icon": "storm_ui_icon_azmodan_globeofannihilation.png",
         "type": "basic"
       },
@@ -63,7 +63,7 @@
         "abilityId": "Azmodan|W1",
         "tooltipId": "AzmodanSummonDemonWarrior",
         "cooldown": 10,
-        "manaCost": 30,
+        "manaCost": 25,
         "icon": "storm_ui_icon_azmodan_summondemonwarrior.png",
         "type": "basic"
       },
@@ -75,7 +75,7 @@
         "abilityId": "Azmodan|E1",
         "tooltipId": "AzmodanAllShallBurn",
         "cooldown": 6,
-        "manaCost": 40,
+        "manaCost": 30,
         "icon": "storm_ui_icon_azmodan_allshallburn.png",
         "type": "basic"
       },
@@ -233,7 +233,7 @@
         "tooltipId": "AzmodanArtOfChaos",
         "talentTreeId": "AzmodanArtOfChaos",
         "name": "Art of Chaos",
-        "description": "If Globe of Annihilation hits 2 or more Heroes, restore 30 Mana and gain an extra 4 Annihilation.",
+        "description": "If Globe of Annihilation hits 2 or more Heroes, restore 40 Mana and gain an extra 4 Annihilation.",
         "icon": "storm_ui_icon_azmodan_globeofannihilation.png",
         "type": "Q",
         "sort": 1,

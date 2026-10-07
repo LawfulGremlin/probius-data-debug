@@ -48,7 +48,7 @@
         "abilityId": "SgtHammer|Q1",
         "tooltipId": "SgtHammerSpiderMines",
         "cooldown": 14,
-        "manaCost": 45,
+        "manaCost": 50,
         "icon": "storm_ui_icon_sgthammer_spidermines.png",
         "type": "basic"
       },
@@ -60,7 +60,7 @@
         "abilityId": "SgtHammer|W1",
         "tooltipId": "SgtHammerConcussiveBlast",
         "cooldown": 12,
-        "manaCost": 60,
+        "manaCost": 80,
         "icon": "storm_ui_icon_sgthammer_concussiveblast.png",
         "type": "basic"
       },
@@ -72,7 +72,7 @@
         "abilityId": "SgtHammer|E1",
         "tooltipId": "SgtHammerNeosteelPlating",
         "cooldown": 16,
-        "manaCost": 30,
+        "manaCost": 60,
         "icon": "storm_ui_icon_sgthammer_neosteelplating.png",
         "type": "basic"
       },
@@ -466,7 +466,7 @@
         "tooltipId": "SgtHammerSpiderMinesShrapnelMines",
         "talentTreeId": "SgtHammerSpiderMinesShrapnelMines",
         "name": "Shrapnel Mines",
-        "description": "Upon detonating, Spider Mines reduce the armor of enemy Heroes hit by 10 for 4 seconds.",
+        "description": "Upon detonating, Spider Mines reduce the armor of enemy Heroes hit by 10, up to 30, for 4 seconds.",
         "icon": "storm_ui_icon_sgthammer_spidermines.png",
         "type": "Q",
         "sort": 3,
@@ -522,7 +522,7 @@
     "SgtHammerSiegeModeUltraCapacitors": "Hitting enemy Heroes with Basic Attacks while in Siege Mode grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSiegeModeUltraCapacitorsAttackSpeed,Modification.AdditiveAttackSpeedFactor*100\"/>%</c> Attack Speed for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSiegeModeUltraCapacitorsAttackSpeed,Duration\"/></c> seconds, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSiegeModeUltraCapacitorsAttackSpeed,Modification.AdditiveAttackSpeedFactor*Behavior,SgtHammerSiegeModeUltraCapacitorsAttackSpeed,MaxStackCount*100\"/>%</c>.",
     "SgtHammerSpiderMines": "Create <c val=\"#TooltipNumbers\"><d ref=\"([d ref='Effect,SgtHammerSpiderMinesInitialPersistent,PeriodCount' player='0'/] - 1) + Effect,SgtHammerSpiderMinesCreateUnitExtraMine,Chance\"/></c> mines that arm after <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSpiderMinesArming,Duration\" precision=\"2\"/></c> seconds. Mines detonate when an enemy comes in range, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,SgtHammerSpiderMinesDamage,Amount\"/></c> damage to nearby enemies and Slowing them by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,SgtHammerSpiderMinesSlowDebuff,Modification.UnifiedMoveSpeedFactor\" player=\"0\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSpiderMinesSlowDebuff,Duration\" precision=\"2\" player=\"0\"/></c> seconds.<n/><n/><c val=\"ffff8a\">Siege Mode:</c> Cast range increased by <c val=\"#TooltipNumbers\"><d ref=\"((Abil,SgtHammerSpiderMinesSiegeMode,Range-Abil,SgtHammerSpiderMines,Range)/Abil,SgtHammerSpiderMines,Range)*100\" player=\"0\"/>%</c>.",
     "SgtHammerSpiderMinesPulseDetonationCoreTalent": "Spider Mines detonate <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSpiderMinesPulseDetonationCore,Duration/Behavior,SgtHammerSpiderMinesPulseDetonationCore,Period+1\"/></c> times over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSpiderMinesPulseDetonationCore,Duration\"/></c> seconds.",
-    "SgtHammerSpiderMinesShrapnelMines": "Upon detonating, Spider Mines reduce the armor of enemy Heroes hit by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,SgtHammerSpiderMinesShrapnelMinesArmorDebuff,ArmorModification.AllArmorBonus\"/></c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSpiderMinesShrapnelMinesArmorDebuff,Duration\"/></c> seconds.",
+    "SgtHammerSpiderMinesShrapnelMines": "Upon detonating, Spider Mines reduce the armor of enemy Heroes hit by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,SgtHammerSpiderMinesShrapnelMinesArmorDebuff,ArmorModification.AllArmorBonus\"/></c>, up to <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,SgtHammerSpiderMinesShrapnelMinesArmorDebuff,ArmorModification.StackCount*Behavior,SgtHammerSpiderMinesShrapnelMinesArmorDebuff,ArmorModification.AllArmorBonus\"/></c>, for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSpiderMinesShrapnelMinesArmorDebuff,Duration\"/></c> seconds.",
     "SgtHammerSpiderMinesTacticalMineDeployment": "Moving while Thrusters is active leaves a trail of up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerSpiderMinesTacticalMineDeploymentActiveBehavior,Duration/Behavior,SgtHammerSpiderMinesTacticalMineDeploymentActiveBehavior,Period+1\"/></c> Spider Mines. Additionally, increase the Slow of Spider Mines by <c val=\"#TooltipNumbers\"><d ref=\"-100*Talent,SgtHammerSpiderMinesTacticalMineDeployment,AbilityModificationArray[0].Modifications[0].Value\" player=\"0\"/>%</c>.",
     "SgtHammerThrusters": "Increase Movement Speed by <c val=\"#TooltipNumbers\"><d ref=\"100* Behavior,SgtHammerThrusters,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,SgtHammerThrusters,Duration\" player=\"0\"/></c> seconds. Thrusters are always active while at the Hall of Storms. Activating Thrusters cancels Siege Mode.",
     "SgtHammerThrustersHyperCoolingEnginesTalent": "While in Siege Mode, hitting Heroes with Basic Attacks reduces the cooldown of Thrusters by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,SgtHammerThrustersHyperCoolingEnginesModifyUnit,Cost[0].CooldownTimeUse\"/></c> seconds."
