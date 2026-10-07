@@ -51,11 +51,11 @@
       {
         "uid": "56560e",
         "name": "Inquisition",
-        "description": "Channel on an enemy Hero for up to 3 seconds, dealing 47 (+4% per level) damage every 0.5 seconds and Slowing them by 30%. Removes a stack of Desperation.  Shares a cooldown with Clemency.",
+        "description": "Channel on an enemy Hero for up to 3 seconds, dealing 50 (+4% per level) damage every 0.5 seconds and Slowing them by 30%. Removes a stack of Desperation.  Shares a cooldown with Clemency.",
         "hotkey": "W",
         "abilityId": "Whitemane|W1",
         "tooltipId": "WhitemaneInquisition",
-        "cooldown": 14,
+        "cooldown": 12,
         "icon": "storm_ui_icon_whitemane_inquisition.png",
         "type": "basic"
       },
@@ -77,7 +77,7 @@
         "hotkey": "R",
         "abilityId": "Whitemane|R1",
         "tooltipId": "WhitemaneScarletAegis",
-        "cooldown": 90,
+        "cooldown": 60,
         "icon": "storm_ui_icon_whitemane_aegis.png",
         "type": "heroic"
       },
@@ -100,7 +100,7 @@
         "trait": true,
         "abilityId": "Whitemane|D1",
         "tooltipId": "WhitemaneTraitZeal",
-        "cooldown": 60,
+        "cooldown": 40,
         "icon": "storm_ui_icon_whitemane_zeal.png",
         "type": "trait"
       },
@@ -123,7 +123,7 @@
         "tooltipId": "WhitemaneZealPityTheFrail",
         "talentTreeId": "WhitemaneZealPityTheFrail",
         "name": "Pity the Frail",
-        "description": "For every Hero hit with Searing Lash, lower the cooldown of Inquisition by 1 second. Allies below 30% Health receive 25% more healing from Whitemane.",
+        "description": "For every Hero hit with Searing Lash, lower the cooldown of Inquisition by 1.5 seconds. Allies below 30% Health receive 25% more healing from Whitemane.",
         "icon": "storm_ui_icon_whitemane_inquisition_lash.png",
         "type": "W",
         "sort": 1,
@@ -193,7 +193,7 @@
         "tooltipId": "WhitemaneDesperatePleaMartyrdom",
         "talentTreeId": "WhitemaneDesperatePleaMartyrdom",
         "name": "Martyrdom",
-        "description": "Desperate Plea's healing is increased by 20%. Increase this by an additional 10% for each active Zeal.",
+        "description": "Desperate Plea's healing is increased by 30%. Increase this by an additional 10% for each active Zeal.",
         "icon": "storm_ui_icon_whitemane_desperation_alt_1.png",
         "type": "Q",
         "sort": 2,
@@ -211,16 +211,16 @@
         "talentTreeId": "WhitemaneZealIndulgence",
         "name": "Indulgence",
         "description": "Gain 5% Movement Speed. Increase this by an additional 5% for each active Zeal.",
-        "icon": "storm_ui_icon_whitemane_desperation_alt_2.png",
-        "type": "Q",
+        "icon": "storm_ui_icon_whitemane_zeal.png",
+        "type": "Trait",
         "sort": 3,
         "isQuest": false,
-        "abilityId": "Whitemane|Q1",
+        "abilityId": "Whitemane|D1",
         "abilityLinks": [
-          "Whitemane|Q1"
+          "Whitemane|D1"
         ],
         "abilityTalentLinkIds": [
-          "WhitemaneDesperatePlea"
+          "WhitemaneFanaticalPower"
         ]
       }
     ],
@@ -285,7 +285,7 @@
         "icon": "storm_ui_icon_whitemane_aegis.png",
         "type": "Heroic",
         "sort": 1,
-        "cooldown": 90,
+        "cooldown": 60,
         "isQuest": false,
         "abilityId": "Whitemane|R1",
         "abilityLinks": [
@@ -425,7 +425,7 @@
         "tooltipId": "WhitemaneScarletAegisScarletCrusade",
         "talentTreeId": "WhitemaneScarletAegisScarletCrusade",
         "name": "Scarlet Crusade",
-        "description": "Scarlet Aegis heals for 50% more and makes affected allies Unstoppable for 1 second.",
+        "description": "Scarlet Aegis heals for 50% more and makes affected allies Unstoppable for 2 seconds.",
         "icon": "storm_ui_icon_whitemane_aegis.png",
         "type": "Heroic",
         "sort": 1,
@@ -515,14 +515,14 @@
     "WhitemanePurgeTheWicked": "Activate to blast an enemy Hero with holy fire, reducing their Armor by <c val=\"#TooltipNumbers\"><d ref=\"-1 * Behavior,WhitemanePurgeTheWickedArmorDebuff,ArmorModification.AllArmorBonus\"/></c> and dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemanePurgeTheWickedDamage,Amount * (1 + Behavior,WhitemanePurgeTheWickedDoT,PeriodCount)\"/></c> damage over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemanePurgeTheWickedDoT,Period * Behavior,WhitemanePurgeTheWickedDoT,PeriodCount\"/></c> seconds.",
     "WhitemaneSaintlyGreatstaff": "Enemy Heroes hit by Searing Lash are marked for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneSearingLashSaintlyGreatstaffMarkedBehavior,Duration\"/></c> seconds. Basic Attacks against them deal an additional <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneSearingLashSaintlyGreatstaffDamage,Amount\"/></c> Spell damage and remove the mark.",
     "WhitemaneScarletAegis": "Bolster the spirits of nearby allied Heroes, healing them for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneScarletAegisCreateHealer,RechargeVitalRate\"/></c> and granting them <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneScarletAegisArmor,ArmorModification.AllArmorBonus\" player=\"0\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneScarletAegisArmor,Duration\" player=\"0\" precision=\"2\"/></c> seconds.",
-    "WhitemaneScarletAegisScarletCrusade": "Scarlet Aegis heals for <c val=\"#TooltipNumbers\"><d ref=\"100 * Effect,WhitemaneScarletAegisCreateHealer,MultiplicativeModifierArray[0].Modifier\"/>%</c> more and makes affected allies Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,TalentCleanseBuff,Duration\" precision=\"2\"/></c> second.",
+    "WhitemaneScarletAegisScarletCrusade": "Scarlet Aegis heals for <c val=\"#TooltipNumbers\"><d ref=\"100 * Effect,WhitemaneScarletAegisCreateHealer,MultiplicativeModifierArray[0].Modifier\"/>%</c> more and makes affected allies Unstoppable for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneScarletAegisScarletCrusadeCleanseBuff,Duration\"/></c> seconds.",
     "WhitemaneSearingLash": "After <c val=\"#TooltipNumbers\"><d ref=\"Abil,WhitemaneSearingLash,CastIntroTime + Effect,WhitemaneSearingLashInitialDelay,InitialDelay\" player=\"0\" precision=\"3\"/></c> seconds, smite enemies in a straight line for <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneSearingLashDamage,Amount\"/></c> damage.<n/><n/>If the first strike hits an enemy Hero, a second strike will occur after a short delay.",
     "WhitemaneSearingLashHarshDiscipline": "Hitting a Hero with Searing Lash while they are being targeted by Inquisition Roots them for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneSearingLashHarshDisciplineRoot,Duration\" precision=\"2\"/></c> seconds.",
     "WhitemaneSearingLashLashingOut": "If Searing Lash's second strike hits an enemy Hero, reduce its cooldown to <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneSearingLashLashingOutCooldownRefund,Cost[0].CooldownTimeUse\" player=\"0\" precision=\"2\"/></c> second.",
     "WhitemaneSearingLashRighteousFlame": "Searing Lash deals <c val=\"#TooltipNumbers\"><d ref=\"100 * Effect,WhitemaneSearingLashDamage,MultiplicativeModifierArray[RighteousFlame].Modifier\"/>%</c> more damage to enemies. This is increased to <c val=\"#TooltipNumbers\"><d ref=\"100 * (Effect,WhitemaneSearingLashDamage,MultiplicativeModifierArray[RighteousFlameCC].Modifier+ Effect,WhitemaneSearingLashDamage,MultiplicativeModifierArray[RighteousFlame].Modifier)\"/>%</c> against those who are Stunned, Rooted, Silenced or Slowed.",
     "WhitemaneTraitZeal": "Whitemane's healing Abilities apply <c val=\"#WhitemaneZeal\">Zeal</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneZealBuff,Duration\" player=\"0\"/></c> seconds. Allies with <c val=\"#WhitemaneZeal\">Zeal</c> are healed for <c val=\"#TooltipNumbers\"><d ref=\"100 * (1 + Effect,WhitemaneZealCreateHealer,MultiplicativeModifierArray[ZealBase].Modifier)\" player=\"0\"/>%</c> of the damage Whitemane deals to Heroes.<n/><n/>Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,WhitemaneFanaticalBuff,Modification.DamageDealtFraction\"/>%</c> Spell Power and lose <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,WhitemaneFanaticalBuff,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,WhitemaneFanaticalBuff,Duration\"/></c> seconds.",
     "WhitemaneZealIndulgence": "Gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,WhitemaneZealIndulgenceMoveSpeedBehavior,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed. Increase this by an additional <c val=\"#TooltipNumbers\"><d ref=\"100*Accumulator,WhitemaneZealIndulgenceAccumulator,Scale\"/>%</c> for each active <c val=\"#WhitemaneZeal\">Zeal</c>.",
-    "WhitemaneZealPityTheFrail": "For every Hero hit with Searing Lash, lower the cooldown of Inquisition by <c val=\"#TooltipNumbers\"><d ref=\"Talent,WhitemaneZealPityTheFrail,AbilityModificationArray[0].Modifications[0].Value\"/></c> second. Allies below <c val=\"#TooltipNumbers\"><d ref=\"100 * Validator,WhitemaneZealPityTheFrailTargetHealthLT30,Value\"/>%</c> Health receive <c val=\"#TooltipNumbers\"><d ref=\"100 * Effect,WhitemaneZealCreateHealer,MultiplicativeModifierArray[PityTheFrail].Modifier\"/>%</c> more healing from Whitemane.",
+    "WhitemaneZealPityTheFrail": "For every Hero hit with Searing Lash, lower the cooldown of Inquisition by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,WhitemaneSearingLashPityTheFrailModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds. Allies below <c val=\"#TooltipNumbers\"><d ref=\"100 * Validator,WhitemaneZealPityTheFrailTargetHealthLT30,Value\"/>%</c> Health receive <c val=\"#TooltipNumbers\"><d ref=\"100 * Effect,WhitemaneZealCreateHealer,MultiplicativeModifierArray[PityTheFrail].Modifier\"/>%</c> more healing from Whitemane.",
     "WhitemaneZealScarletWrath": "Basic Attacks against Heroes increase the duration of active <c val=\"#WhitemaneZeal\">Zeal</c> by <c val=\"#TooltipNumbers\"><d ref=\"Effect,WhitemaneZealScarletWrathModifyBehaviorDuration,Value\"precision=\"2\"/></c> seconds."
   },
   "tooltipSimple": {

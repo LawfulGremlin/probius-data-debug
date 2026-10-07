@@ -66,7 +66,7 @@
       {
         "uid": "ff8206",
         "name": "Whirlwind",
-        "description": "Deals 126 (+4% per level) damage a second to nearby enemies for 3 seconds, healing for 25% of damage dealt. Healing tripled versus Heroes.",
+        "description": "Deals 138 (+4% per level) damage a second to nearby enemies for 3 seconds, healing for 25% of damage dealt. Healing tripled versus Heroes.",
         "hotkey": "E",
         "abilityId": "Sonya|E1",
         "tooltipId": "BarbarianWhirlwind",
@@ -82,7 +82,7 @@
         "hotkey": "R",
         "abilityId": "Sonya|R1",
         "tooltipId": "BarbarianLeap",
-        "cooldown": 70,
+        "cooldown": 60,
         "icon": "storm_ui_icon_sonya_leap.png",
         "type": "heroic"
       },
@@ -274,7 +274,7 @@
         "icon": "storm_ui_icon_sonya_leap.png",
         "type": "Heroic",
         "sort": 1,
-        "cooldown": 70,
+        "cooldown": 60,
         "isQuest": false,
         "abilityId": "Sonya|R1",
         "abilityLinks": [
@@ -379,7 +379,7 @@
         "tooltipId": "BarbarianRampage",
         "talentTreeId": "BarbarianRampage",
         "name": "Rampage",
-        "description": "Increase Basic Attack damage by 25%. Basic Attacks reduce the cooldown of Ancient Spear by 0.5 seconds.",
+        "description": "Increase Basic Attack damage by 25%. Basic Attacks reduce the cooldown of Ancient Spear by 1.5 seconds.",
         "icon": "storm_ui_icon_talent_autoattack_damage.png",
         "type": "Passive",
         "sort": 2,
