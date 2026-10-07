@@ -126,28 +126,6 @@
     ],
     "LucioCrossfade": [
       {
-        "uid": "3f86e6",
-        "name": "Boombox",
-        "description": "Place a boombox that plays Lúcio's active Crossfade track. Its volume adjusts with Amp It Up. Allied Heroes near the boombox gain 5 Armor.  Crossfade tracks from Lúcio and the Boombox do not stack.",
-        "hotkey": "1",
-        "abilityId": "Lucio|11",
-        "tooltipId": "LucioBoomboxBoombox",
-        "cooldown": 20,
-        "icon": "storm_ui_icon_lucio_fineshrine.png",
-        "type": "activable"
-      },
-      {
-        "uid": "a2aa23",
-        "name": "Summer Anthem",
-        "description": "Activate for allies affected by Crossfade to become Unkillable for 1.5 seconds.",
-        "hotkey": "2",
-        "abilityId": "Lucio|21",
-        "tooltipId": "LucioItemSummerAnthem",
-        "cooldown": 60,
-        "icon": "storm_ui_icon_lucio_crossfade_a.png",
-        "type": "activable"
-      },
-      {
         "uid": "07a7bb",
         "name": "Crossfade",
         "description": "Currently playing Healing Boost, passively healing Lúcio and nearby allied Heroes for 15 (+4% per level) Health per second.  Toggle to play Speed Boost instead.",
@@ -316,9 +294,7 @@
         "cooldown": 20,
         "isQuest": false,
         "abilityId": "Lucio|Active",
-        "abilityLinks": [
-          "Lucio|11"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "LucioBoombox"
         ]

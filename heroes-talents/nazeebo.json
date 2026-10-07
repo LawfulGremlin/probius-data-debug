@@ -137,39 +137,6 @@
         "cooldown": 60,
         "icon": "hud_btn_bg_ability_cancel.png",
         "type": "activable"
-      },
-      {
-        "uid": "6aa74b",
-        "name": "Ice Block",
-        "description": "Activate to place yourself in Stasis and gain Invulnerability for 3 seconds.",
-        "hotkey": "2",
-        "abilityId": "Nazeebo|21",
-        "tooltipId": "GenericIceBlockTalent",
-        "cooldown": 60,
-        "icon": "storm_ui_icon_talent_iceblock.png",
-        "type": "activable"
-      },
-      {
-        "uid": "6d75a1",
-        "name": "Soul Harvest",
-        "description": "Activate to increase Nazeebo's Health and Spell Power by 7% for each nearby enemy, up to a maximum of 35%. Lasts 15 seconds.",
-        "hotkey": "3",
-        "abilityId": "Nazeebo|31",
-        "tooltipId": "WitchDoctorSoulHarvest",
-        "cooldown": 15,
-        "icon": "storm_ui_icon_nazeebo_soulharvest.png",
-        "type": "activable"
-      },
-      {
-        "uid": "77e5b2",
-        "name": "Bad Medicine",
-        "description": "Consume 5 stacks of Voodoo Ritual to become Unstoppable, gain 20% increased Movement Speed, and 50 Armor for 2 seconds.",
-        "hotkey": "4",
-        "abilityId": "Nazeebo|41",
-        "tooltipId": "WitchDoctorBadMedicine",
-        "cooldown": 30,
-        "icon": "storm_ui_icon_nazeebo_voodooritual_a.png",
-        "type": "activable"
       }
     ]
   },
@@ -459,9 +426,7 @@
         "cooldown": 15,
         "isQuest": false,
         "abilityId": "Nazeebo|Active",
-        "abilityLinks": [
-          "Nazeebo|31"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "WitchDoctorSoulHarvest"
         ]
@@ -536,9 +501,7 @@
         "cooldown": 30,
         "isQuest": false,
         "abilityId": "Nazeebo|Active",
-        "abilityLinks": [
-          "Nazeebo|41"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "WitchDoctorBadMedicine"
         ]

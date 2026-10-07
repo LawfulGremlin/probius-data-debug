@@ -146,28 +146,6 @@
         "type": "activable"
       },
       {
-        "uid": "7f42e0",
-        "name": "Catching Fire",
-        "description": "Activate to gain 25 Armor for 3 seconds, reducing damage taken by 25%.",
-        "hotkey": "2",
-        "abilityId": "Ragnaros|21",
-        "tooltipId": "RagnarosCatchingFireItem",
-        "cooldown": 30,
-        "icon": "storm_ui_icon_ragnaros_catchingfire.png",
-        "type": "activable"
-      },
-      {
-        "uid": "544c27",
-        "name": "Submerge",
-        "description": "Ragnaros submerges below, entering Stasis and healing for 600 (+4% per level) Health over 3 seconds.",
-        "hotkey": "3",
-        "abilityId": "Ragnaros|31",
-        "tooltipId": "RagnarosSubmerge",
-        "cooldown": 60,
-        "icon": "storm_ui_icon_ragnaros_submerge.png",
-        "type": "activable"
-      },
-      {
         "uid": "b06941",
         "name": "Explosive Rune",
         "description": "Create a rune that erupts after 1.5 and sets enemies on fire, dealing 22 (+4% per level) damage per second for 5 seconds.",
@@ -177,16 +155,6 @@
         "cooldown": 2.5,
         "icon": "storm_ui_icon_ragnaros_explosiverune.png",
         "type": "basic"
-      },
-      {
-        "uid": "f05405",
-        "name": "Resilient Flame",
-        "description": "When Ragnaros is Stunned, he gains 40 Armor for 3 seconds, reducing damage taken by 40%.  This effect has a 15 second cooldown.",
-        "abilityId": "Ragnaros|22",
-        "tooltipId": "RagnarosResilientFlame",
-        "cooldown": 15,
-        "icon": "storm_ui_icon_talent_resistance.png",
-        "type": "activable"
       },
       {
         "uid": "2539b7",
@@ -312,9 +280,7 @@
         "sort": 3,
         "isQuest": true,
         "abilityId": "Ragnaros|Active",
-        "abilityLinks": [
-          "Ragnaros|21"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "RagnarosCatchingFire"
         ]
@@ -585,7 +551,6 @@
     "RagnarosBlastWaveSlowBurn": "Blast Wave Slows enemies hit by <c val=\"#TooltipNumbers\"><d ref=\"-Behavior,RagnarosBlastWaveSlowBurn,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosBlastWaveSlowBurn,Duration\"/></c> seconds.",
     "RagnarosBlastWaveTemperedFlame": "When Blast Wave damages an enemy Hero, gain a Shield equal to <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,RagnarosBlastWaveDamage,LeechFraction[Shields]\"/>%</c> of the damage dealt for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosBlastWaveTemperedFlame,Duration\"/></c> seconds.",
     "RagnarosBlisteringAttacks": "Every <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosBlisteringAttacksCooldown,Duration\"/></c> seconds, Ragnaros's next Basic Attack against a Hero deals <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,RagnarosBlisteringAttacksDamageBuff,Modification.DamageDealtFraction[Basic]\"/>%</c> bonus damage. Hitting enemies with Basic Abilities reduces this cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,RagnarosBlisteringAttacksModifyCooldownDuration,Value\"/></c> second.",
-    "RagnarosCatchingFireItem": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,Duration\"/></c> seconds, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,ArmorModification.AllArmorBonus\"/>%</c>.",
     "RagnarosCatchingFireTalent": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Quest:</c> Gathering a Regeneration Globe increases Ragnaros' Health Regeneration by <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,RagnarosCatchingFireTalentAccumulator,Scale\"precision=\"2\"/></c> per second, up to <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireTokenCounter,Max * Accumulator,RagnarosCatchingFireTalentAccumulator,Scale\" precision=\"2\"/></c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"#TooltipQuest\">Reward:</c> After gathering <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireTokenCounter,Max\"/></c> Regeneration Globes, activate Catching Fire to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,Duration\"/></c> seconds, reducing damage taken by <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosCatchingFireArmorIncrease,ArmorModification.AllArmorBonus\"/>%</c>.",
     "RagnarosEmpowerSulfuras": "Ragnaros's next Basic Attack is instant, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,RagnarosEmpowerSulfurasHeroicSplashDamage,Amount\"/></c> Ability damage in an area, and heals for <c val=\"#TooltipNumbers\"><d ref=\"Effect,RagnarosEmpowerSulfurasNonHeroicSplashDamage,LeechFraction[Life] * 100\"/>%</c> of the damage dealt. Healing doubled versus Heroes.<n/><n/><c val=\"#ColorViolet\">Molten Core: Molten Swing</c><n/>Stun and damage nearby enemies.",
     "RagnarosEmpowerSulfurasCauterizeWounds": "Empower Sulfuras heals for an additional <c val=\"#TooltipNumbers\"><d ref=\"Accumulator,RagnarosCauterizeWoundsHealerAccumulator,Scale*100\"/>%</c> of damage dealt to Heroes over <c val=\"#TooltipNumbers\"><d ref=\"Behavior,RagnarosEmpowerSulfurasCauterizeWoundsHeal,Duration\"/></c> seconds.",
@@ -617,7 +582,6 @@
     "RagnarosBlastWaveSlowBurn": "Blast Wave slows enemies",
     "RagnarosBlastWaveTemperedFlame": "Blast Wave damage gives Shields",
     "RagnarosBlisteringAttacks": "Periodically empower Basic Attacks against Heroes",
-    "RagnarosCatchingFireItem": "Activate to gain Resistant for a short time",
     "RagnarosCatchingFireTalent": "<c val=\"#TooltipQuest\">Quest:</c> Regen Globes increase Health Regen",
     "RagnarosEmpowerSulfuras": "Deal damage in an area and heal Ragnaros",
     "RagnarosEmpowerSulfurasCauterizeWounds": "Empower Sulfuras healing increased",

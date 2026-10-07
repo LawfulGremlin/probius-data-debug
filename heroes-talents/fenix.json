@@ -101,17 +101,6 @@
     ],
     "FenixPhaseBomb": [
       {
-        "uid": "41f8ae",
-        "name": "Divert Power: Weapons",
-        "description": "Activate to gain 40% Basic Attack damage for 5 seconds. Basic Attacking a Hero refreshes this duration. Once Divert Power: Weapons ends, drain all of Shield Capacitor's Shields.",
-        "hotkey": "1",
-        "abilityId": "Fenix|11",
-        "tooltipId": "FenixDivertPowerWeapons",
-        "cooldown": 40,
-        "icon": "storm_ui_icon_fenix_w_2.png",
-        "type": "activable"
-      },
-      {
         "uid": "657fba",
         "name": "Weapon Mode: Phase Bomb",
         "description": "Basic Attacks have 1.25 increased range, deal 25% more damage, and splash to nearby enemies.  Activate to change to Weapon Mode: Repeater Cannon, increasing Basic Attack speed.",
@@ -132,16 +121,6 @@
         "cooldown": 5,
         "icon": "storm_ui_icon_fenix_shield_1.png",
         "type": "trait"
-      },
-      {
-        "uid": "bccb4f",
-        "name": "Unconquered Spirit",
-        "description": "Upon taking fatal damage, Shield Capacitor regains 800 (+4% per level) Shields. This effect has a 120 second cooldown.",
-        "abilityId": "Fenix|12",
-        "tooltipId": "FenixUnconqueredSpirit",
-        "cooldown": 120,
-        "icon": "storm_ui_icon_fenix_shield_1.png",
-        "type": "activable"
       }
     ]
   },

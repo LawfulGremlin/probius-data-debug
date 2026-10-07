@@ -171,17 +171,6 @@
     ],
     "ChenStormEarthFire": [
       {
-        "uid": "728f44",
-        "name": "Elusive Brawler",
-        "description": "Activate to gain 20% Movement Speed and Evade enemy Basic Attacks for 2 seconds. Chen's Basic Attacks reduce this cooldown by 2 seconds.",
-        "hotkey": "1",
-        "abilityId": "Chen|11",
-        "tooltipId": "ChenElusiveBrawlerHotbar",
-        "cooldown": 25,
-        "icon": "storm_ui_icon_chen_elusivebrew.png",
-        "type": "activable"
-      },
-      {
         "uid": "eee284",
         "name": "Storm",
         "description": "The spirits gain a Shield for 400 (+4% per level) over 3 seconds.  If this is the final Ability cast, the shield amount is increased to 750 (+4% per level) with no limited duration, and the duration of Storm, Earth, Fire is increased by 5 seconds.",
@@ -372,9 +361,7 @@
         "cooldown": 25,
         "isQuest": false,
         "abilityId": "Chen|Active",
-        "abilityLinks": [
-          "Chen|11"
-        ],
+        "abilityLinks": [],
         "abilityTalentLinkIds": [
           "ChenElusiveBrawler"
         ]
@@ -635,7 +622,6 @@
     "ChenCelerityStagger": "Basic Attacks against Stunned, Rooted, or Slowed enemy Heroes reduce the cooldown of Stagger by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChenCelerityStaggerModifyCooldown,Cost[0].CooldownTimeUse\"Precision=\"2\"/></c> seconds and grant Chen <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenCelerityStaggerArmorBuff,ArmorModification.AllArmorBonus\"/></c> Armor for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenCelerityStaggerArmorBuff,Duration\"/></c> seconds.",
     "ChenEarth": "Fire and Earth leap to the target location, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenEarthLeapDamage,Amount\"/></c> damage and Slowing enemies in a large area by <c val=\"#TooltipNumbers\"><d ref=\"-100*Behavior,ChenEarthLeapSlow,Modification.UnifiedMoveSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenEarthLeapSlow,Duration\"precision=\"1\"/></c> seconds.<n/><n/>If this is the final Ability cast, increase the damage dealt by <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChenEarthLeapDamage,MultiplicativeModifierArray[EarthEmpoweredDamageBuff].Modifier\"/>%</c> and instead of Slowing, the leap Roots enemy Heroes hit for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenEarthEmpoweredLeapRoot,Duration\"Precision=\"2\"/></c> seconds.",
     "ChenElusiveBrawler": "Activate to gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChenElusiveBrawlerMovementSpeedBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed and Evade enemy Basic Attacks for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenElusiveBrawler,Duration\"/></c> seconds. Chen's Basic Attacks reduce this cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChenElusiveBrawlerModifyPlayerCooldown,Cost.Cooldown.TimeUse\"/></c> seconds.",
-    "ChenElusiveBrawlerHotbar": "Activate to evade enemy Basic Attacks for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenElusiveBrawler,Duration\"/></c> seconds. Chen's Basic Attacks reduce this cooldown by <c val=\"#TooltipNumbers\"><d ref=\"-Effect,ChenElusiveBrawlerModifyPlayerCooldown,Cost.Cooldown.TimeUse\"/></c> seconds.",
     "ChenEyeOfTheTiger": "Basic Attacks against Brew-soaked enemy Heroes deal <c val=\"#TooltipNumbers\"><d ref=\"100*Effect,ChenHeroWeaponDamage,MultiplicativeModifierArray[EyeOfTheTiger].Modifier\"/>%</c> more damage and heal Chen for<c val=\"#TooltipNumbers\"> <d ref=\"100*Effect,ChenHeroWeaponDamage,LeechFraction[Life]\"/>%</c> of the damage done.",
     "ChenFire": "Increase the Attack Speed and Basic Attack damage of the spirits by <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChenFireStormEarthFireAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChenFireStormEarthFireAttackSpeedBuff,Duration\"/></c> seconds.<n/><n/>If this is the final Ability cast, the Attack Speed and damage bonus is increased to <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChenFireStormEarthFireEmpoweredAttackSpeedBuff,Modification.AdditiveAttackSpeedFactor\"/>%</c> and the spirits gain <c val=\"#TooltipNumbers\"><d ref=\"100*Behavior,ChenFireStormEarthFireEmpoweredMovementSpeedBuff,Modification.UnifiedMoveSpeedFactor\"/>%</c> Movement Speed for its duration.",
     "ChenFlyingKick": "Kick through target enemy, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChenFlyingKickDamage,Amount\"/></c> damage.",
@@ -668,7 +654,6 @@
     "ChenCelerityStagger": "Basic Attacks reduce Stagger cooldown, grant Armor",
     "ChenEarth": "Leap to a location, damaging and Rooting enemies",
     "ChenElusiveBrawler": "Activate to Evade Basic Attacks",
-    "ChenElusiveBrawlerHotbar": "Activate to evade all Basic Attacks",
     "ChenEyeOfTheTiger": "Basic Attacks deal bonus damage, heal",
     "ChenFire": "Increase Attack Speed, damage",
     "ChenFlyingKick": "Kick through target enemy",
