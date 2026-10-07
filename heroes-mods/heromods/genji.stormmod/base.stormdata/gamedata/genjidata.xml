@@ -4590,7 +4590,7 @@
   <CValidatorCombine id="GenjiWeaponCritCombine">
     <CombineArray value="CritAliasRangedDamage" />
     <CombineArray value="GenjiTargetHasShinganDamageBonusBehavior" />
-    <CombineArray value="GenjiWayOfTheShimadaCasterHasGT10Stacks" />
+    <CombineArray value="GenjiWayOfTheShimadaCasterHasMaxStacks" />
   </CValidatorCombine>
   <CValidatorUnitCompareTokenCount id="GenjiWayOfTheShimadaCasterHasGT10Stacks">
     <WhichUnit Value="Caster" />
