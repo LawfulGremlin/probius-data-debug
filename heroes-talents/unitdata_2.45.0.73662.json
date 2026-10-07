@@ -600,6 +600,118 @@
     "sight": 0,
     "speed": 0
   },
+  "AnduinChastiseDummyMissile": {
+    "unitId": "AnduinChastiseDummyMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "AnduinChastiseRootDummyMissile": {
+    "unitId": "AnduinChastiseRootDummyMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "AnduinDivineStarMissile": {
+    "unitId": "AnduinDivineStarMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0.75,
+    "speed": 0
+  },
+  "AnduinDivineStarReturnMissile": {
+    "unitId": "AnduinDivineStarReturnMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0.75,
+    "speed": 0
+  },
+  "AnduinLightwellCastMissile": {
+    "unitId": "AnduinLightwellCastMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "AnduinLightwellPlacementDummy": {
+    "unitId": "AnduinLightwellPlacementDummy",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "AnduinWeaponDivineStarMoralCompassMissile": {
+    "unitId": "AnduinWeaponDivineStarMoralCompassMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "AnduinWeaponMissile": {
+    "unitId": "AnduinWeaponMissile",
+    "portraits": {},
+    "life": {
+      "amount": 10,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "AnubarakBeetleSpitBeetle": {
     "unitId": "AnubarakBeetleSpitBeetle",
     "portraits": {},
@@ -1848,7 +1960,7 @@
       "regenRate": 0,
       "regenScale": 0
     },
-    "radius": 0.5,
+    "radius": 0.625,
     "innerRadius": 0,
     "sight": 0,
     "speed": 0,
@@ -15453,7 +15565,7 @@
           "_hdp5LinkId": "VolskayaVehicleRocketFist|VolskayaVehicleRocketFist|W",
           "icon": "storm_ui_icon_volskayarobot_rocketfist.png",
           "name": "Rocket Fist",
-          "fullText": "Launch a Rocket Fist that deals <c val=\"bfd4fd\">200</c> damage to the first Hero or Structure in its path. The fist roots Heroes for <c val=\"bfd4fd\">1</c> second and disables Structures for <c val=\"bfd4fd\">2</c> seconds.<n/><n/>Instantly kills Minions in its path.",
+          "fullText": "Launch a Rocket Fist that deals <c val=\"bfd4fd\">200</c> damage to the first Hero or Structure in its path. The pushes away and stuns Heroes for <c val=\"bfd4fd\">1.5</c> seconds and disables Structures for <c val=\"bfd4fd\">4</c> seconds.<n/><n/>Instantly kills Minions in its path.",
           "cooldownText": "Cooldown: 14 seconds"
         },
         {
@@ -15466,19 +15578,6 @@
           "name": "Shield Emitter",
           "fullText": "Gain <c val=\"bfd4fd\">25</c> Armor and Shield nearby allied Heroes for <c val=\"bfd4fd\">450</c>. Lasts <c val=\"bfd4fd\">3</c> seconds.",
           "cooldownText": "Cooldown: 16 seconds"
-        }
-      ],
-      "heroic": [
-        {
-          "nameId": "VehicleGenericSwapVehicle",
-          "buttonId": "VehicleGenericSwapVehicle",
-          "abilityType": "Heroic",
-          "isPassive": false,
-          "_hdp5LinkId": "VehicleGenericSwapVehicle|VehicleGenericSwapVehicle|Heroic",
-          "icon": "storm_ui_icon_volskayarobot_swap.png",
-          "name": "Swap Vehicle",
-          "fullText": "Swap between the Pilot and Gunner seats.",
-          "cooldownText": "Cooldown: 5 seconds"
         }
       ],
       "trait": [
@@ -15603,19 +15702,6 @@
           "name": "Scorching Laser",
           "fullText": "<c val=\"bfd4fd\">Vector Targeting</c><n/>Draw a line on the ground, dealing <c val=\"bfd4fd\">75</c> damage. After <c val=\"bfd4fd\">1</c> second, it explodes for <c val=\"bfd4fd\">500</c> damage.",
           "cooldownText": "Cooldown: 10 seconds"
-        }
-      ],
-      "heroic": [
-        {
-          "nameId": "VehicleGenericSwapVehicle",
-          "buttonId": "VehicleGenericSwapVehicle",
-          "abilityType": "Heroic",
-          "isPassive": false,
-          "_hdp5LinkId": "VehicleGenericSwapVehicle|VehicleGenericSwapVehicle|Heroic",
-          "icon": "storm_ui_icon_volskayarobot_swap.png",
-          "name": "Swap Vehicle",
-          "fullText": "Swap between the Pilot and Gunner seats.",
-          "cooldownText": "Cooldown: 5 seconds"
         }
       ],
       "trait": [

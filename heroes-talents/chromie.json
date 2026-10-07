@@ -273,7 +273,7 @@
         "tooltipId": "ChromieAProperGreeting",
         "talentTreeId": "ChromieAProperGreeting",
         "name": "A Proper Greeting",
-        "description": "Damaging a Stunned, Rooted or Slowed enemy Hero grants 25% additional damage for 5 seconds.",
+        "description": "Damaging a Stunned, Rooted, or Slowed enemy Hero grants 25% additional damage for 5 seconds.",
         "icon": "storm_ui_icon_talent_abilitytalent_damage.png",
         "type": "Passive",
         "sort": 3,
@@ -521,7 +521,7 @@
     }
   ],
   "tooltipMarkup": {
-    "ChromieAProperGreeting": "Damaging a Stunned, Rooted or Slowed enemy Hero grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieAProperGreetingDamageIncrease,Modification.DamageDealtFraction[Basic]*100\"/>%</c> additional damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieAProperGreetingDamageIncrease,Duration\"/></c> seconds.",
+    "ChromieAProperGreeting": "Damaging a Stunned, Rooted, or Slowed enemy Hero grants <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieAProperGreetingDamageIncrease,Modification.DamageDealtFraction[Basic]*100\"/>%</c> additional damage for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieAProperGreetingDamageIncrease,Duration\"/></c> seconds.",
     "ChromieBlessingOfTheBronze": "Activate to cause Chromie and all allied Heroes to gain <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieBlessingOfTheBronzeIncreasedMovementSpeed,Modification.UnifiedMoveSpeedFactor*100\"/>%</c> Movement Speed and their Basic Abilities recharge <c val=\"#TooltipNumbers\"><d ref=\"-(Effect,ChromieBlessingOfTheBronzeDummyCDRVariable,XP/Behavior,ChromieBlessingOfTheBronzeIncreasedMovementSpeed,Period)*100\"/>%</c> faster for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieBlessingOfTheBronzeIncreasedMovementSpeed,Duration\"/></c> seconds.",
     "ChromieDetonateTimeTrap": "Detonates active Time Traps, placing all nearby allied or enemy Heroes in Time Stop for <c val=\"#TooltipNumbers\"><d ref=\"Behavior,ChromieTimeTrapTargetBehavior,Duration\" precision=\"2\"/></c> seconds.",
     "ChromieDragonsBreath": "<c val=\"#TooltipNumbers\">Vector Targeting</c><n/>Launch <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieDragonsBreathInitialPersistent,PeriodCount-3\"/></c> blasts into the air that land every <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieDragonsBreathOffsetPersistent,PeriodicPeriodArray[1]+.0625\" precision=\"2\"/></c> seconds towards the targeted direction, dealing <c val=\"#TooltipNumbers\"><d ref=\"Effect,ChromieDragonsBreathDamage,Amount\"/></c> damage each.",
