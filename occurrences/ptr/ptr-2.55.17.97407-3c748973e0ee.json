@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "ptr-2.55.17.97407-3c748973e0ee",
+  "track": "ptr",
+  "kind": "release",
+  "parent": null,
+  "revisionType": null,
+  "before": {
+    "commit": "6e7641cc11576a72e5e518b820bd0a1f1fd584ad",
+    "committedAt": "2026-06-07T21:30:14Z",
+    "version": "2.55.16.96790",
+    "talentsTree": "6f9f96d63c0254de791610de6254513169299de8",
+    "modsTree": "0096760729765899f2d317c6ae41c396bcd08be7",
+    "modsVersion": "2.55.16.96790",
+    "modsConsistent": true,
+    "producer": null,
+    "generation": "",
+    "extraction": {
+      "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
+      "filePatternFlags": "i"
+    },
+    "contentSignature": "0d626600c3ab691831bfc07e4773af1a3ae6365b60a7fccf4506809ba1fbc439"
+  },
+  "after": {
+    "commit": "3c748973e0eea37b7ec78e417a64036cd5978518",
+    "committedAt": "2026-06-30T11:24:15Z",
+    "version": "2.55.17.97407",
+    "talentsTree": "e7dd9228badf6a3ec55b52699a658cf13489cd73",
+    "modsTree": "7c598d522c3dcb44a3484eeed5295ebf7bda5dc6",
+    "modsVersion": "2.55.17.97407",
+    "modsConsistent": true,
+    "producer": null,
+    "generation": "",
+    "extraction": {
+      "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
+      "filePatternFlags": "i"
+    },
+    "contentSignature": "6aad6219629b376383e36356b81b8187d01ec886ace1b8b3b9c05e9b50a5dd4a"
+  },
+  "publishedAt": "2026-06-30T11:24:15Z",
+  "pacificDate": "2026-06-30",
+  "continuity": {
+    "status": "unknown",
+    "missing": [],
+    "basis": "ledger"
+  },
+  "comparisonKey": "bcafa7191ef4c254f9793bcae0e93ad8ba3bd2644a13d25f6d8c61840a2060cc",
+  "announce": false,
+  "indexedAt": "2026-10-29T14:01:16Z"
+}

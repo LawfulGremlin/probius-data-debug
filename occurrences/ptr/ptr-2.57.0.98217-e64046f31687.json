@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "ptr-2.57.0.98217-e64046f31687",
+  "track": "ptr",
+  "kind": "release",
+  "parent": null,
+  "revisionType": null,
+  "before": {
+    "commit": "03496c06d19a8db66899eb9b6d1d80e50833df22",
+    "committedAt": "2026-09-19T22:21:50Z",
+    "version": "2.57.0.98182",
+    "talentsTree": "bdfc553f405064953e542c8c015fd6558d34f812",
+    "modsTree": "7e47ac9550dab297cb6074d35a673c5ba342b62e",
+    "modsVersion": "2.57.0.98182",
+    "modsConsistent": true,
+    "producer": {
+      "hdpVersion": "5.0.4",
+      "adapterSchemaVersion": 1,
+      "artifactSha256": "8ee8afaa4df6add6c3710e0527435558bcc94a6a14d60f783a0deb3948404850",
+      "configurationSha256": "6a2c6674cff17b6ad8faf079c4adb829eeef6114365ad1521cafd2b722c99d99"
+    },
+    "generation": "78e6189fdccbe2fb01202ae91e6d2270fb5b1d23ee830d93c37b37eebb57c5c4",
+    "extraction": {
+      "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
+      "filePatternFlags": "i"
+    },
+    "contentSignature": "a7335f69b5578163dc212d15a4e2332cd54b557e95851454513ed0e47d603bb5"
+  },
+  "after": {
+    "commit": "e64046f316877d7110d568ca5b77f7fceafc312a",
+    "committedAt": "2026-09-22T21:42:50Z",
+    "version": "2.57.0.98217",
+    "talentsTree": "1726cf7fbc0203223777e50c5e829b4aa31c52a2",
+    "modsTree": "7efb6734dfda0d41c71b449017e1ce34d1da3131",
+    "modsVersion": "2.57.0.98217",
+    "modsConsistent": true,
+    "producer": {
+      "hdpVersion": "5.0.4",
+      "adapterSchemaVersion": 1,
+      "artifactSha256": "8ee8afaa4df6add6c3710e0527435558bcc94a6a14d60f783a0deb3948404850",
+      "configurationSha256": "6a2c6674cff17b6ad8faf079c4adb829eeef6114365ad1521cafd2b722c99d99"
+    },
+    "generation": "b5484bbefc3a13ee7ff74e3f6d820ec9b3d6558d1582c10ffbdbce3beffca964",
+    "extraction": {
+      "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
+      "filePatternFlags": "i"
+    },
+    "contentSignature": "24d6e74a29acef01ea7ca6f91e1dd41a169fd74ca4bfb5377320fe65ad7c922d"
+  },
+  "publishedAt": "2026-09-22T21:42:50Z",
+  "pacificDate": "2026-09-22",
+  "continuity": {
+    "status": "unknown",
+    "missing": [],
+    "basis": "ledger"
+  },
+  "comparisonKey": "b300b7ba039a6c5c87947c96c0bd2fddabb850d2acec28e0f3191beb24cfe1bb",
+  "announce": false,
+  "indexedAt": "2026-10-29T14:01:16Z"
+}

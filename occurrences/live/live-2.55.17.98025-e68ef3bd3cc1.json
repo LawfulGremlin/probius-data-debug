@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "live-2.55.17.98025-e68ef3bd3cc1",
+  "track": "live",
+  "kind": "revision",
+  "parent": "live-2.55.17.98025-2f3313e21338",
+  "revisionType": "content",
+  "before": {
+    "commit": "0e2388252a1f6740f0759157411519610db7b697",
+    "committedAt": "2026-08-12T18:40:49Z",
+    "version": "2.55.17.97771",
+    "talentsTree": "30b3bad840094319f63fc2b420876fb974f3f7f7",
+    "modsTree": "9bfb56fd3b41e84f563e116d9b79454e993303d7",
+    "modsVersion": "2.55.17.97771",
+    "modsConsistent": true,
+    "producer": null,
+    "generation": "",
+    "extraction": {
+      "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
+      "filePatternFlags": "i"
+    },
+    "contentSignature": "0e498f0b48067cf4245ee59f5417fba13c59e917bab1969052f5ad4c8d355e00"
+  },
+  "after": {
+    "commit": "e68ef3bd3cc1c1447a0e13f858ca5d836542e375",
+    "committedAt": "2026-09-23T14:43:11Z",
+    "version": "2.55.17.98025",
+    "talentsTree": "307e18a3bcf223944b428f2a776845d096c28c20",
+    "modsTree": "f02154949384df56270b4f063674469f858a5a04",
+    "modsVersion": "2.55.17.98025",
+    "modsConsistent": true,
+    "producer": {
+      "hdpVersion": "5.0.4",
+      "adapterSchemaVersion": 1,
+      "artifactSha256": "8ee8afaa4df6add6c3710e0527435558bcc94a6a14d60f783a0deb3948404850",
+      "configurationSha256": "6a2c6674cff17b6ad8faf079c4adb829eeef6114365ad1521cafd2b722c99d99"
+    },
+    "generation": "ad183d8e622f18214cd0606ef4e947b82c6f77912dbfc3e48caf550fbaea8a6f",
+    "extraction": {
+      "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
+      "filePatternFlags": "i",
+      "localePackages": [
+        "base.stormdata",
+        "enus.stormdata",
+        "base.stormassets",
+        "enus.stormassets"
+      ]
+    },
+    "contentSignature": "ebe324c61ae26250a38cc826d5ca2c6abc3e15e405ed50f19abaea1183626b34"
+  },
+  "publishedAt": "2026-09-23T14:43:11Z",
+  "pacificDate": "2026-09-23",
+  "continuity": {
+    "status": "unknown",
+    "missing": [],
+    "basis": "ledger"
+  },
+  "comparisonKey": "499130152fbfb6dcf508d38e1ac0adb883a5a10eb6c628bd2a53fc30a89e03aa",
+  "announce": false,
+  "indexedAt": "2026-10-29T14:01:16Z"
+}

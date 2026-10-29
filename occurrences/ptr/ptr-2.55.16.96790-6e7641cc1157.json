@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "ptr-2.55.16.96790-6e7641cc1157",
+  "track": "ptr",
+  "kind": "baseline",
+  "parent": null,
+  "revisionType": null,
+  "before": null,
+  "after": {
+    "commit": "6e7641cc11576a72e5e518b820bd0a1f1fd584ad",
+    "committedAt": "2026-06-07T21:30:14Z",
+    "version": "2.55.16.96790",
+    "talentsTree": "6f9f96d63c0254de791610de6254513169299de8",
+    "modsTree": "0096760729765899f2d317c6ae41c396bcd08be7",
+    "modsVersion": "2.55.16.96790",
+    "modsConsistent": true,
+    "producer": null,
+    "generation": "",
+    "extraction": {
+      "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
+      "filePatternFlags": "i"
+    },
+    "contentSignature": "0d626600c3ab691831bfc07e4773af1a3ae6365b60a7fccf4506809ba1fbc439"
+  },
+  "publishedAt": "2026-06-07T21:30:14Z",
+  "pacificDate": "2026-06-07",
+  "continuity": {
+    "status": "unknown",
+    "missing": [],
+    "basis": "ledger"
+  },
+  "comparisonKey": null,
+  "announce": false,
+  "indexedAt": "2026-10-29T14:01:16Z"
+}

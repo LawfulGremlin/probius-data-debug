@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "ptr-2.57.0.98182-03496c06d19a",
+  "track": "ptr",
+  "kind": "release",
+  "parent": null,
+  "revisionType": null,
+  "before": {
+    "commit": "614cc5d034e6ae52ad94d3396a86b4766854cbfb",
+    "committedAt": "2026-07-02T18:25:29Z",
+    "version": "2.55.17.97449",
+    "talentsTree": "5012ead5b87234b7fff2357799534625a662de6b",
+    "modsTree": "ea808bcddcf5a71587eefe002b159b0c4b12df1a",
+    "modsVersion": "2.55.17.97449",
+    "modsConsistent": true,
+    "producer": null,
+    "generation": "",
+    "extraction": {
+      "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
+      "filePatternFlags": "i"
+    },
+    "contentSignature": "65edc734effe54eb350ee033dac14c16ed6d71a9c24330e8cf12b15a7a6b7b8a"
+  },
+  "after": {
+    "commit": "03496c06d19a8db66899eb9b6d1d80e50833df22",
+    "committedAt": "2026-09-19T22:21:50Z",
+    "version": "2.57.0.98182",
+    "talentsTree": "bdfc553f405064953e542c8c015fd6558d34f812",
+    "modsTree": "7e47ac9550dab297cb6074d35a673c5ba342b62e",
+    "modsVersion": "2.57.0.98182",
+    "modsConsistent": true,
+    "producer": {
+      "hdpVersion": "5.0.4",
+      "adapterSchemaVersion": 1,
+      "artifactSha256": "8ee8afaa4df6add6c3710e0527435558bcc94a6a14d60f783a0deb3948404850",
+      "configurationSha256": "6a2c6674cff17b6ad8faf079c4adb829eeef6114365ad1521cafd2b722c99d99"
+    },
+    "generation": "78e6189fdccbe2fb01202ae91e6d2270fb5b1d23ee830d93c37b37eebb57c5c4",
+    "extraction": {
+      "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
+      "filePatternFlags": "i"
+    },
+    "contentSignature": "a7335f69b5578163dc212d15a4e2332cd54b557e95851454513ed0e47d603bb5"
+  },
+  "publishedAt": "2026-09-19T22:21:50Z",
+  "pacificDate": "2026-09-19",
+  "continuity": {
+    "status": "unknown",
+    "missing": [],
+    "basis": "ledger"
+  },
+  "comparisonKey": "615800c35a26681ee408bd2b4d509f8aac5cab4229e904ab7c2c45bc543dc37a",
+  "announce": false,
+  "indexedAt": "2026-10-29T14:01:16Z"
+}
