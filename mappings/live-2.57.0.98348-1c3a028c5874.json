@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "occurrenceId": "live-2.57.0.98348-1c3a028c5874",
+  "decision": "mapped",
+  "articleKey": "news-24303007",
+  "sectionKey": "hotfix-2026-10-05",
+  "docSha": "e06ef9b0fee5ed16bce2d0d5686b442dee82ec3a53c75bb270f119f35518b689",
+  "rule": "exact-date",
+  "confidence": "anchored",
+  "anchors": [
+    {
+      "claimId": "c-93a40ae21c",
+      "bulletId": "b-8b719284ef"
+    },
+    {
+      "claimId": "c-b69de78572",
+      "bulletId": "b-a1e9ca42f5"
+    },
+    {
+      "claimId": "c-c7bd9c9bc1",
+      "bulletId": "b-819b6d4473"
+    },
+    {
+      "claimId": "c-d8355148e4",
+      "bulletId": "b-f4fc60ab49"
+    },
+    {
+      "claimId": "c-8cf970f5db",
+      "bulletId": "b-e7b4bf3cbe"
+    },
+    {
+      "claimId": "c-7115ba5a4e",
+      "bulletId": "b-a1e9ca42f5"
+    },
+    {
+      "claimId": "c-8774d6004c",
+      "bulletId": "b-819b6d4473"
+    },
+    {
+      "claimId": "c-4d522b8d5d",
+      "bulletId": "b-2a08874fef"
+    }
+  ],
+  "contradictions": [],
+  "competing": [],
+  "decidedAt": "2026-10-29T14:11:26Z",
+  "decidedBy": "auto",
+  "reason": "only occurrence on Pacific date 2026-10-05 for section dated 2026-10-05; 8 anchors"
+}

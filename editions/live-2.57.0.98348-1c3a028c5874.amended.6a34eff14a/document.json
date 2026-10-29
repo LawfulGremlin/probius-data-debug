@@ -1,0 +1,2745 @@
+{
+  "schemaVersion": 1,
+  "editionId": "live-2.57.0.98348-1c3a028c5874.amended.6a34eff14a",
+  "kind": "amended",
+  "occurrence": {
+    "id": "live-2.57.0.98348-1c3a028c5874",
+    "track": "live",
+    "before": "2.57.0.98304",
+    "after": "2.57.0.98348",
+    "publishedAt": "2026-10-05T17:17:31Z",
+    "continuity": "unknown"
+  },
+  "title": "Live 2.57.0.98348 — Hotfix - 10/5/2026, amended by Probius",
+  "subtitle": "from 2.57.0.98304",
+  "banner": {
+    "kind": "amended",
+    "lines": [
+      "Blizzard's official notes with Probius additions. Green text marks changes found in the game data that the official notes do not mention. Green means additional, not a buff.",
+      "Our next Heroes of the Storm patch is live! Read on for more information.",
+      "NOTE: Orange text indicates a change between PTR and Live notes.",
+      "Blizzard's original text colors are not available from the published page."
+    ]
+  },
+  "legend": [
+    {
+      "origin": "addition",
+      "label": "Probius addition — not in official notes"
+    },
+    {
+      "origin": "discrepancy",
+      "label": "Discrepancy — game data differs from the official notes"
+    },
+    {
+      "origin": "uncertain",
+      "label": "Coverage uncertain — may be missing from the official notes"
+    }
+  ],
+  "summary": {
+    "counts": {
+      "additions": 13,
+      "discrepancies": 0,
+      "uncertain": 6,
+      "covered": 6,
+      "officialOnly": 16,
+      "claims": 25
+    },
+    "highlights": [
+      {
+        "kind": "addition",
+        "heroName": "Xal'atath",
+        "text": "Void Eruption (R): Exact values: from 112 to 90"
+      },
+      {
+        "kind": "addition",
+        "heroName": "Xal'atath",
+        "text": "Void Eruption (R): Exact values: from 175 to 166"
+      },
+      {
+        "kind": "addition",
+        "heroName": "Whitemane",
+        "text": "Desperate Plea (Q): cost modification increased from 40 to 45 (game data)"
+      },
+      {
+        "kind": "addition",
+        "heroName": "Xal'atath",
+        "text": "Dark Heart Ritual (W): detonation range reduced from 4 to 3 (game data)"
+      },
+      {
+        "kind": "addition",
+        "heroName": "Xal'atath",
+        "text": "Dark Heart Ritual (W): duration increased from 0.125 seconds to 1.1 seconds (game data)"
+      }
+    ]
+  },
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Hotfix - 10/5/2026"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-dfe055b628",
+          "spans": [
+            {
+              "text": "Xal'atath Balance Updates\nAbilities",
+              "origin": "official"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b-89110a40d5",
+          "spans": [
+            {
+              "text": "Shadow Mark (Q)",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-5fa14df9b6",
+              "spans": [
+                {
+                  "text": "Void Orb speed slightly increased.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "b-2ce73bdb8a",
+          "spans": [
+            {
+              "text": "Void Step (E)",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-2a08874fef",
+              "spans": [
+                {
+                  "text": "Targeting range reduced from 5 to 2.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-e5a5a7f3ae",
+              "spans": [
+                {
+                  "text": "Distance between teleport points reduced from 7 to 6.5.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-e2d991c43f",
+              "spans": [
+                {
+                  "text": "Now prevented and interrupted by Immobilize.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "b-5a942d3e34",
+          "spans": [
+            {
+              "text": "Void Volley (D)",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-8b719284ef",
+              "spans": [
+                {
+                  "text": "Base damage per missile reduced from 90 to 72.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-ab0833b151",
+              "spans": [
+                {
+                  "text": "Now generates 1 charge for every Basic Attack against enemy Heroes and every 2 Basic Attacks against non-Heroes.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "c-3d3787e9b8",
+              "spans": [
+                {
+                  "origin": "uncertain",
+                  "label": true,
+                  "text": "Coverage uncertain"
+                },
+                {
+                  "origin": "uncertain",
+                  "text": "After attacking enemies with her Basic Attacks 5 times",
+                  "struck": true
+                },
+                {
+                  "origin": "uncertain",
+                  "text": " → Every basic attack against heroes, {+and every 2 basic attacks against non-heroes generate charge. Once fully charged+} Xal'atath can activate Void Volley to unleash a barrage of 6 Void Orbs at a target location, each dealing "
+                },
+                {
+                  "origin": "uncertain",
+                  "text": "90",
+                  "struck": true
+                },
+                {
+                  "origin": "uncertain",
+                  "text": " → 72 (+4% per level) damage on impact."
+                }
+              ],
+              "children": [],
+              "meta": {
+                "heroName": "Xal'atath",
+                "target": "Void Volley",
+                "tier": "T1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b-daac107fde",
+          "spans": [
+            {
+              "text": "Void Eruption (R)",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-a1e9ca42f5",
+              "spans": [
+                {
+                  "text": "Uncharged damage reduced by 20%.",
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "c-b69de78572",
+                  "spans": [
+                    {
+                      "origin": "addition",
+                      "label": true,
+                      "text": "Probius addition — not in official notes"
+                    },
+                    {
+                      "origin": "addition",
+                      "text": "Exact values: from 112 to 90"
+                    }
+                  ],
+                  "children": [],
+                  "meta": {
+                    "heroName": "Xal'atath",
+                    "target": "Void Eruption (R)",
+                    "tier": "T1"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "b-819b6d4473",
+              "spans": [
+                {
+                  "text": "Fully charged damage reduced by 5%.",
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "c-c7bd9c9bc1",
+                  "spans": [
+                    {
+                      "origin": "addition",
+                      "label": true,
+                      "text": "Probius addition — not in official notes"
+                    },
+                    {
+                      "origin": "addition",
+                      "text": "Exact values: from 175 to 166"
+                    }
+                  ],
+                  "children": [],
+                  "meta": {
+                    "heroName": "Xal'atath",
+                    "target": "Void Eruption (R)",
+                    "tier": "T1"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "c-e773f0c138",
+              "spans": [
+                {
+                  "origin": "uncertain",
+                  "label": true,
+                  "text": "Coverage uncertain"
+                },
+                {
+                  "origin": "uncertain",
+                  "text": "Void Eruption: flight damage per second tier 2 reduced from 2000 to 1700 (game data)"
+                }
+              ],
+              "children": [],
+              "meta": {
+                "heroName": "Xal'atath",
+                "target": "Void Eruption (R)",
+                "tier": "T2"
+              }
+            },
+            {
+              "id": "c-e2e89ad187",
+              "spans": [
+                {
+                  "origin": "uncertain",
+                  "label": true,
+                  "text": "Coverage uncertain"
+                },
+                {
+                  "origin": "uncertain",
+                  "text": "Void Eruption: flight damage per second tier 3 reduced from 2400 to 2160 (game data)"
+                }
+              ],
+              "children": [],
+              "meta": {
+                "heroName": "Xal'atath",
+                "target": "Void Eruption (R)",
+                "tier": "T2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-271aadd77b",
+          "spans": [
+            {
+              "text": "Talents",
+              "origin": "official"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b-ef4d61ee52",
+          "spans": [
+            {
+              "text": "Level 1",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-572cf20537",
+              "spans": [
+                {
+                  "text": "Anchored Core",
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-f4fc60ab49",
+                  "spans": [
+                    {
+                      "text": "Radius bonus reduced from 50% to 25%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-0b67be183a",
+          "spans": [
+            {
+              "text": "Level 4",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-6faa48eb74",
+              "spans": [
+                {
+                  "text": "Dark Barrier",
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-bd8d7a8396",
+                  "spans": [
+                    {
+                      "text": "Now only triggers when enemy Heroes are hit",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "c-7926f44276",
+                  "spans": [
+                    {
+                      "origin": "uncertain",
+                      "label": true,
+                      "text": "Coverage uncertain"
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": "Each time {+the+} Dark Heart damages an enemy {+Hero+}, Xal'atath gains a Shield equal to 2% of her maximum Health, up to 10%."
+                    }
+                  ],
+                  "children": [],
+                  "meta": {
+                    "heroName": "Xal'atath",
+                    "target": "Dark Barrier (Level 4)",
+                    "tier": "T1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-d7b9b8f625",
+          "spans": [
+            {
+              "text": "Level 7",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-72cdf53d91",
+              "spans": [
+                {
+                  "text": "Silence of the Lamb",
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-e7b4bf3cbe",
+                  "spans": [
+                    {
+                      "text": "Silence duration increased from 1 to 1.5 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-ee682bf9cc",
+          "spans": [
+            {
+              "text": "Level 13",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-b5385a2d16",
+              "spans": [
+                {
+                  "text": "Dark Heart's Protection",
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-6aebf1cd13",
+                  "spans": [
+                    {
+                      "text": "Detonating the Dark Heart on a target affected by Shadow Mark now Silences all enemies hit. Previously silenced on cast.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "c-5a15a25211",
+                  "spans": [
+                    {
+                      "origin": "uncertain",
+                      "label": true,
+                      "text": "Coverage uncertain"
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": "Casting",
+                      "struck": true
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": " → Detonating the Dark Heart "
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": "Ritual",
+                      "struck": true
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": " → now Silences enemies inside its radius for 1 second."
+                    }
+                  ],
+                  "children": [],
+                  "meta": {
+                    "heroName": "Xal'atath",
+                    "target": "Dark Heart's Protection (Level 13)",
+                    "tier": "T1"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-6935458b51",
+          "spans": [
+            {
+              "text": "Level 20",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-22ef0a375d",
+              "spans": [
+                {
+                  "text": "Rift Invasion",
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-c9e645a5a0",
+                  "spans": [
+                    {
+                      "text": "Portals now have non-lethal Health decay, stopping at 4 Health.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "c-3f8b19162b",
+                  "spans": [
+                    {
+                      "origin": "uncertain",
+                      "label": true,
+                      "text": "Coverage uncertain"
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": "Void Convergence's Void Portal {+self decay is+} no longer "
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": "has a life duration",
+                      "struck": true
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": " → lethal, raises the active Void Portal limit to 2, and can spawn and sustain up to 4 Void Minions."
+                    }
+                  ],
+                  "children": [],
+                  "meta": {
+                    "heroName": "Xal'atath",
+                    "target": "Rift Invasion (Level 20)",
+                    "tier": "T1"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-b742181711",
+          "spans": [
+            {
+              "text": "Xal'atath Bug Fixes",
+              "origin": "official"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b-59f60f6256",
+          "spans": [
+            {
+              "text": "General",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-a5b6d4d7e8",
+              "spans": [
+                {
+                  "text": "Orbiting orbs now pause during Time Stop and resume afterward.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-9c67f857e8",
+              "spans": [
+                {
+                  "text": "Fixed issues that prevented orbiting orbs from correctly following the missile or continuing to orbit after a release queued during Time Stop.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-565f949432",
+              "spans": [
+                {
+                  "text": "Fixed an issue where Xal'atath was appearing brighter than intended in the game.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "b-5a942d3e34-2",
+          "spans": [
+            {
+              "text": "Void Volley (D)",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-01e65f0e2f",
+              "spans": [
+                {
+                  "text": "Fixed an issue that caused impact visual effects to appear at the cursor location instead of where missiles hit.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-a66bb15cd1",
+              "spans": [
+                {
+                  "text": "Fixed an issue that prevented the charge indicator from immediately displaying 1 charge upon reaching the second milestone.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "b-daac107fde-2",
+          "spans": [
+            {
+              "text": "Void Eruption (R)",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-a6b11932cb",
+              "spans": [
+                {
+                  "text": "Can now be queued to cast or release during Time Stop.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-305bd2c172",
+              "spans": [
+                {
+                  "text": "Casting during Time Stop immediately enters targeting, with charging beginning when Time Stop ends.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-fb75375391",
+              "spans": [
+                {
+                  "text": "Releasing during Time Stop queues the release for when Time Stop ends. The Ability button becomes greyed out while a release is queued.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-e41c09b24c",
+              "spans": [
+                {
+                  "text": "Issuing another Ability, movement, or attack order during Time Stop cancels the pending cast or queued release.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-44d1a78934",
+              "spans": [
+                {
+                  "text": "Casting Void Eruption again during Time Stop clears earlier queued orders.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-988ffe5e08",
+              "spans": [
+                {
+                  "text": "Fixed issues that could allow an additional charge to begin while already charging or during Void Step.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-c347b52634",
+              "spans": [
+                {
+                  "text": "Orb growth and the flight damage timer now pause while Xal’atath is affected by Time Stop.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "b-5dfdca3a8e",
+          "spans": [
+            {
+              "text": "General Bug Fixes",
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-43f797c32b",
+              "spans": [
+                {
+                  "text": "Fixed an issue where certain Maskless skins were not appearing in the game.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Additional changes found by Probius"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Whitemane"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "c-d63f90ed2d",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Desperate Plea (Q): cost modification increased from 40 to 45 (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Whitemane",
+            "target": "Desperate Plea (Q)",
+            "tier": "T2"
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Xal'atath"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "c-ba32efb507",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Dark Heart Ritual (W): detonation range reduced from 4 to 3 (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Xal'atath",
+            "target": "Dark Heart Ritual (W)",
+            "tier": "T2"
+          }
+        },
+        {
+          "id": "c-6661f73e57",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Dark Heart Ritual (W): duration increased from 0.125 seconds to 1.1 seconds (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Xal'atath",
+            "target": "Dark Heart Ritual (W)",
+            "tier": "T2"
+          }
+        },
+        {
+          "id": "c-5f56aadd79",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Harbinger's Consumption (Level 20): damage tier 1 reduced from 400 to 320 (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Xal'atath",
+            "target": "Harbinger's Consumption (Level 20)",
+            "tier": "T2"
+          }
+        },
+        {
+          "id": "c-11b9a0e786",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Harbinger's Consumption (Level 20): damage tier 2 reduced from 500 to 425 (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Xal'atath",
+            "target": "Harbinger's Consumption (Level 20)",
+            "tier": "T2"
+          }
+        },
+        {
+          "id": "c-e2a59e217b",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Harbinger's Consumption (Level 20): damage tier 3 reduced from 600 to 540 (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Xal'atath",
+            "target": "Harbinger's Consumption (Level 20)",
+            "tier": "T2"
+          }
+        },
+        {
+          "id": "c-52efd8dde7",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Harbinger's Consumption (Level 20): damage tier 4 reduced from 700 to 665 (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Xal'atath",
+            "target": "Harbinger's Consumption (Level 20)",
+            "tier": "T2"
+          }
+        },
+        {
+          "id": "c-c62eb86600",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Harbinger's Consumption (Level 20): flight damage per second tier 1 reduced from 1800 to 1440 (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Xal'atath",
+            "target": "Harbinger's Consumption (Level 20)",
+            "tier": "T2"
+          }
+        },
+        {
+          "id": "c-79fbd401de",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Harbinger's Consumption (Level 20): flight damage per second tier 2 reduced from 2000 to 1700 (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Xal'atath",
+            "target": "Harbinger's Consumption (Level 20)",
+            "tier": "T2"
+          }
+        },
+        {
+          "id": "c-0d48f224f5",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Harbinger's Consumption (Level 20): flight damage per second tier 3 reduced from 2400 to 2160 (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Xal'atath",
+            "target": "Harbinger's Consumption (Level 20)",
+            "tier": "T2"
+          }
+        },
+        {
+          "id": "c-9c94538ab6",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Harbinger's Consumption (Level 20): flight damage per second tier 4 reduced from 2800 to 2660 (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Xal'atath",
+            "target": "Harbinger's Consumption (Level 20)",
+            "tier": "T2"
+          }
+        }
+      ]
+    }
+  ],
+  "appendix": {
+    "blocks": [
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Coverage of the official notes"
+      },
+      {
+        "type": "para",
+        "spans": [
+          {
+            "text": "25 game-data claims compared with the official section: covered 6, partly 2, uncertain 6, absent 11; 16 official bullets have no related claim.",
+            "origin": "generated"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Source-level changes not interpreted"
+      },
+      {
+        "type": "para",
+        "spans": [
+          {
+            "text": "273 changes in 1 group could not be tied to a player-facing statement.",
+            "origin": "generated"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-cb67d16c49",
+            "spans": [
+              {
+                "text": "Xal'atath (273)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-415e0c9edd",
+                "spans": [
+                  {
+                    "text": "Button/Tooltip/XalatathVoidConvergence (changed)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-cf7f6acaf7",
+                "spans": [
+                  {
+                    "text": "$XalatathAnchoredCoreLinkRangeIncrease: 1.5 → (none) (const removed)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-128e824c66",
+                "spans": [
+                  {
+                    "text": "Entry added: CBehaviorBuff#XalatathOrbitalEruptionOrbTimeStopBehaviorBuff",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-b752578010",
+                "spans": [
+                  {
+                    "text": "Entry added: CBehaviorBuff#XalatathVoidConvergenceCasterBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-af1826e000",
+                "spans": [
+                  {
+                    "text": "Entry added: CBehaviorBuff#XalatathVoidConvergenceRiftInvasionPortalDecayBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-089e383cec",
+                "spans": [
+                  {
+                    "text": "Entry added: CBehaviorBuff#XalatathVoidEruptionTimeStopEnterPendingBehaviorBuff",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-6cc7dcef30",
+                "spans": [
+                  {
+                    "text": "Entry added: CBehaviorBuff#XalatathVoidEruptionTimeStopEnterPendingOrderWatchBehaviorBuff",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-9bff4c150c",
+                "spans": [
+                  {
+                    "text": "Entry added: CBehaviorBuff#XalatathVoidEruptionTimeStopReleaseQueuedBehaviorBuff",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-75a9fd916d",
+                "spans": [
+                  {
+                    "text": "Entry added: CBehaviorBuff#XalatathVoidEruptionVisualGrowBehaviorBuff",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-1c64fe1f30",
+                "spans": [
+                  {
+                    "text": "Entry added: CBehaviorBuff#XalatathVoidEruptionVisualGrowControllerBehaviorBuff",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-29ff525466",
+                "spans": [
+                  {
+                    "text": "Entry added: CBehaviorBuff#XalatathVoidVolleyNonHeroChargeMarker",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-0768a8f0cf",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectApplyBehavior#XalatathOrbitalEruptionOrbTimeStopApplyBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-aa4ebbde06",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectApplyBehavior#XalatathVoidConvergenceApplyCasterBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-0e5a799a68",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectApplyBehavior#XalatathVoidEruptionTimeStopEnterPendingApplyBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-10ee3a0460",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectApplyBehavior#XalatathVoidEruptionTimeStopEnterPendingOrderWatchApplyBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-8d31cb475f",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectApplyBehavior#XalatathVoidEruptionTimeStopReleaseQueuedApplyBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-a2bd9d869f",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectApplyBehavior#XalatathVoidEruptionVisualGrowCasterApplyBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-70be673678",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectApplyBehavior#XalatathVoidEruptionVisualGrowControllerApplyBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-3262c7bbb5",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectApplyBehavior#XalatathVoidEruptionVisualGrowTargetApplyBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-c060e94b6f",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectApplyBehavior#XalatathVoidVolleyApplyNonHeroChargeMarker",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-bc94beaf31",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectCancelOrder#XalatathVoidEruptionQueuedReleaseCancelOrder",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-ed27e7a2b4",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectCancelOrder#XalatathVoidEruptionTimeStopEnterCancelOrders",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-1a8a321e48",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectCreatePersistent#XalatathVoidEruptionTimeStopDeferredReleaseCreatePersistent",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-19ac00e4d7",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectRemoveBehavior#XalatathVoidConvergenceRemoveCasterBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-37a8ea61e6",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectRemoveBehavior#XalatathVoidEruptionTimeStopEnterPendingRemoveBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-c4f2337568",
+                "spans": [
+                  {
+                    "text": "+248 more",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Tooltip text corrections"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-2828d9c2b2",
+            "spans": [
+              {
+                "text": "Xal'atath (2)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-7c2413460a",
+                "spans": [
+                  {
+                    "text": "Void Summoner: Activating Void Step summons a single Void Minion in ",
+                    "origin": "generated"
+                  },
+                  {
+                    "text": "Xalatath's",
+                    "struck": true,
+                    "origin": "generated"
+                  },
+                  {
+                    "text": " → Xal'atath's original postion. Void Minions are attracted to targets afflicted by Shadow Mark. Void Minions automatically choose a nearby lane to push. Void Minion Basi...",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-0a6c97ac1d",
+                "spans": [
+                  {
+                    "text": "Void Summoner: Activating Void Step summons a single Void Minion in ",
+                    "origin": "generated"
+                  },
+                  {
+                    "text": "Xalatath's",
+                    "struck": true,
+                    "origin": "generated"
+                  },
+                  {
+                    "text": " → Xal'atath's original postion.",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Collection and cosmetics"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-6c3365bbee",
+            "spans": [
+              {
+                "text": "Skin strings: 30 added; Maskless Peacekeeper Johanna, Maskless Gleaming Peacekeeper Johanna, Maskless Zealous Peacekeeper Johanna, Maskless Shadow Stalker Valla, Maskless Vibrant Shadow Stalker Valla, Maskless Alabaster Shadow Stalker Valla, Maskless Raynor 76, Maskless Enhanced Raynor 76, Maskless Elite Raynor 76",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-399ac35472",
+            "spans": [
+              {
+                "text": "crusaderowc20basedata.xml: 7 added; CSkin#CrusaderOWC20NoHelmetCommon",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-cd84cce516",
+            "spans": [
+              {
+                "text": "crusaderowc20var3data.xml: 2 added; CRewardSkin#CrusaderOWC20Var3, CSkin#CrusaderOWC20Var3",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-0ced67ff21",
+            "spans": [
+              {
+                "text": "crusaderowc20var4data.xml: 4 added; CRewardSkin#CrusaderOWC20Var4, CSkin#CrusaderOWC20Var4",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-4e374b51bc",
+            "spans": [
+              {
+                "text": "crusaderowc20var5data.xml: 4 added; CRewardSkin#CrusaderOWC20Var5, CSkin#CrusaderOWC20Var5",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-eef5762a08",
+            "spans": [
+              {
+                "text": "raynorowc20basedata.xml: 7 added; CSkin#RaynorOWC20NoMaskCommon",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-927ccf8029",
+            "spans": [
+              {
+                "text": "raynorowc20var3data.xml: 2 added; CRewardSkin#RaynorOWC20Var3, CSkin#RaynorOWC20Var3",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-d8bbd78408",
+            "spans": [
+              {
+                "text": "raynorowc20var4data.xml: 4 added; CRewardSkin#RaynorOWC20Var4, CSkin#RaynorOWC20Var4",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-9f1ff1cf27",
+            "spans": [
+              {
+                "text": "raynorowc20var5data.xml: 4 added; CRewardSkin#RaynorOWC20Var5, CSkin#RaynorOWC20Var5",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-f410c3d0da",
+            "spans": [
+              {
+                "text": "demonhunterowc20basedata.xml: 7 added; CSkin#DemonHunterOWC20NoMaskCommon",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-e1d3e02407",
+            "spans": [
+              {
+                "text": "demonhunterowc20var3data.xml: 2 added; CRewardSkin#DemonHunterOWC20Var3, CSkin#DemonHunterOWC20Var3",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-a5cb1f48a7",
+            "spans": [
+              {
+                "text": "demonhunterowc20var4data.xml: 4 added; CRewardSkin#DemonHunterOWC20Var4, CSkin#DemonHunterOWC20Var4",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-b1bce4a75e",
+            "spans": [
+              {
+                "text": "demonhunterowc20var5data.xml: 4 added; CRewardSkin#DemonHunterOWC20Var5, CSkin#DemonHunterOWC20Var5",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-8c9d2e7f24",
+            "spans": [
+              {
+                "text": "xalatathdata.xml: 1 added, 10 changed, 1 removed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-860eff66eb",
+            "spans": [
+              {
+                "text": "xalatathbasedata.xml: 4 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-17a7ab67a8",
+            "spans": [
+              {
+                "text": "xalatathvar1data.xml: 1 added, 2 changed; CSkin#XalatathVar1",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-6e61c2a210",
+            "spans": [
+              {
+                "text": "xalatathvar2data.xml: 1 added, 2 changed; CSkin#XalatathVar2",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-5553d173b0",
+            "spans": [
+              {
+                "text": "xalatathvar3data.xml: 1 added, 2 changed; CSkin#XalatathVar3",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-517ae630ee",
+            "spans": [
+              {
+                "text": "xalatathvar4data.xml: 1 added, 2 changed; CSkin#XalatathVar4",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-f99393ed61",
+            "spans": [
+              {
+                "text": "xalatathvoidflamebasedata.xml: 1 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-5efa271919",
+            "spans": [
+              {
+                "text": "xalatathvoidflamevar1data.xml: 1 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-93c70c0040",
+            "spans": [
+              {
+                "text": "xalatathvoidflamevar2data.xml: 1 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-06a73d84c6",
+            "spans": [
+              {
+                "text": "xalatathvoidflamevar3data.xml: 1 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-9f6a95d158",
+            "spans": [
+              {
+                "text": "xalatathvoidflamevar4data.xml: 1 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-aafdd37491",
+            "spans": [
+              {
+                "text": "xalatathvoideruptiondata.xml: 5 added, 7 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-6cba506fa6",
+            "spans": [
+              {
+                "text": "xalatathvoidvolley2data.xml: 6 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Assets"
+      },
+      {
+        "type": "para",
+        "spans": [
+          {
+            "text": "The asset index first appears in this build (200078 paths indexed).",
+            "origin": "generated"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-86eabf231e",
+            "spans": [
+              {
+                "text": "core.stormmod/base.stormassets: 1080 added, 0 changed, 0 removed (dds 775, lvl0 202, m3 100, db 1, m3h 1)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-e8390e7b2c",
+            "spans": [
+              {
+                "text": "core.stormmod/base.stormdata: 15 added, 0 changed, 0 removed (bin 6, ttf 5, otf 2, (none) 1, triggerlib 1)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-1d89479199",
+            "spans": [
+              {
+                "text": "core.stormmod/enus.stormassets: 1 added, 0 changed, 0 removed (db 1)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-38c71553cd",
+            "spans": [
+              {
+                "text": "gameplaymods/lootbox.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-2efbb6bea5",
+            "spans": [
+              {
+                "text": "gameplaymods/progression20.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-22c10af0b7",
+            "spans": [
+              {
+                "text": "heroes.stormmod/base.stormassets: 109550 added, 0 changed, 0 removed (dds 39131, wav 25264, lvl0 23146, m3 18370, ogg 2879)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-01322a5344",
+            "spans": [
+              {
+                "text": "heroes.stormmod/base.stormmaps: 107 added, 0 changed, 0 removed ((none) 85, dds 11, tga 5, ogg 3, wav 2)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-dcc3a3b92a",
+            "spans": [
+              {
+                "text": "heroes.stormmod/enus.stormassets: 88881 added, 0 changed, 0 removed (ogg 58927, fxe 28022, wav 1894, dds 18, lvl0 16)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-afe3f0b555",
+            "spans": [
+              {
+                "text": "heroesbrawlmods/arenamodemods: 21 added, 0 changed, 0 removed ((none) 21)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-69cb3a5133",
+            "spans": [
+              {
+                "text": "heroesbrawlmods/brawlmapmods: 119 added, 0 changed, 0 removed (dds 58, (none) 50, m3 10, png 1)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-57c86bd665",
+            "spans": [
+              {
+                "text": "heroesbrawlmods/heroesbrawl.stormmod: 3 added, 0 changed, 0 removed ((none) 3)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-35db30d5be",
+            "spans": [
+              {
+                "text": "heroesbrawlmods/heroselectionmods: 3 added, 0 changed, 0 removed ((none) 3)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-65f193af72",
+            "spans": [
+              {
+                "text": "heroesdata.stormmod/base.stormdata: 5 added, 0 changed, 0 removed ((none) 4, tga 1)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-70c9f144b3",
+            "spans": [
+              {
+                "text": "heroesmapmods/battlegroundmapmods: 106 added, 0 changed, 0 removed ((none) 89, lst 8, dds 6, m3 1, ogg 1)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-c18e992143",
+            "spans": [
+              {
+                "text": "heromods/alarak.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-081ddd0132",
+            "spans": [
+              {
+                "text": "heromods/alexstrasza.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-43b63407dd",
+            "spans": [
+              {
+                "text": "heromods/amazon.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-153337dc01",
+            "spans": [
+              {
+                "text": "heromods/ana.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-93b7f3712a",
+            "spans": [
+              {
+                "text": "heromods/anduin.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-ae81436cb8",
+            "spans": [
+              {
+                "text": "heromods/auriel.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-6f609cda7b",
+            "spans": [
+              {
+                "text": "heromods/chogall.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-125758cbea",
+            "spans": [
+              {
+                "text": "heromods/chromie.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-12cdfd0ecd",
+            "spans": [
+              {
+                "text": "heromods/deathwing.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-f4989178e8",
+            "spans": [
+              {
+                "text": "heromods/deckard.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-9a0088ca28",
+            "spans": [
+              {
+                "text": "heromods/dehaka.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-b04f9751cd",
+            "spans": [
+              {
+                "text": "heromods/dva.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-d340161b9f",
+            "spans": [
+              {
+                "text": "heromods/fenix.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-9a1fbd7752",
+            "spans": [
+              {
+                "text": "heromods/firebat.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-81a8e351f9",
+            "spans": [
+              {
+                "text": "heromods/garrosh.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-56817d88ec",
+            "spans": [
+              {
+                "text": "heromods/genji.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-7ea4f93e2c",
+            "spans": [
+              {
+                "text": "heromods/guldan.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-7c3973e480",
+            "spans": [
+              {
+                "text": "heromods/hanzo.stormmod: 3 added, 0 changed, 0 removed ((none) 3)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-0a49b8aed7",
+            "spans": [
+              {
+                "text": "heromods/herointeractions.stormmod: 2 added, 0 changed, 0 removed ((none) 2)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-4cd97723e9",
+            "spans": [
+              {
+                "text": "heromods/hogger.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-765883b64b",
+            "spans": [
+              {
+                "text": "heromods/imperius.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-e27378e8ba",
+            "spans": [
+              {
+                "text": "heromods/junkrat.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-86bee8e973",
+            "spans": [
+              {
+                "text": "heromods/kelthuzad.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-8c1dc683e2",
+            "spans": [
+              {
+                "text": "heromods/lucio.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-cf8bac7797",
+            "spans": [
+              {
+                "text": "heromods/maiev.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-36e91ec55d",
+            "spans": [
+              {
+                "text": "heromods/malganis.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-d5ae23db4e",
+            "spans": [
+              {
+                "text": "heromods/malthael.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-50f4416963",
+            "spans": [
+              {
+                "text": "heromods/medivh.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-d6f845eee5",
+            "spans": [
+              {
+                "text": "heromods/meiow.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-05431d7a76",
+            "spans": [
+              {
+                "text": "heromods/mephisto.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-4ecf0ef7fb",
+            "spans": [
+              {
+                "text": "heromods/nexushunter.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-d76d064dbf",
+            "spans": [
+              {
+                "text": "heromods/orphea.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-26adccfaf7",
+            "spans": [
+              {
+                "text": "heromods/probius.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-7b2194105f",
+            "spans": [
+              {
+                "text": "heromods/samuro.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-541a689d93",
+            "spans": [
+              {
+                "text": "heromods/stukov.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-85458acb27",
+            "spans": [
+              {
+                "text": "heromods/thefirelords.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-4f94a71005",
+            "spans": [
+              {
+                "text": "heromods/tracer.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-e9d76ef3db",
+            "spans": [
+              {
+                "text": "heromods/valeera.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-dd21e97989",
+            "spans": [
+              {
+                "text": "heromods/varian.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-af8500904b",
+            "spans": [
+              {
+                "text": "heromods/whitemane.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-8bfc3f0cdc",
+            "spans": [
+              {
+                "text": "heromods/xalatath.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-afd9507f5d",
+            "spans": [
+              {
+                "text": "heromods/yrel.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-78a71651f7",
+            "spans": [
+              {
+                "text": "heromods/zarya.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-c6b1293edb",
+            "spans": [
+              {
+                "text": "heromods/zuljin.stormmod: 4 added, 0 changed, 0 removed ((none) 4)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-a27762e9fd",
+            "spans": [
+              {
+                "text": "testmods/autopve.stormmod: 3 added, 0 changed, 0 removed ((none) 3)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-d284ecf3d4",
+            "spans": [
+              {
+                "text": "testmods/tilesettesting.stormmod: 3 added, 0 changed, 0 removed ((none) 3)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Coverage"
+      },
+      {
+        "type": "para",
+        "spans": [
+          {
+            "text": "1133 changed paths; claims: 9 player-facing, 16 from game data, 273 not interpreted, 100 excluded or duplicate.",
+            "origin": "generated"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-6406b979b5",
+            "spans": [
+              {
+                "text": "asset-index: 832 paths, 831 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-028a8195e0",
+            "spans": [
+              {
+                "text": "hero-structured: 1 path, 1 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-a8e0086b9e",
+            "spans": [
+              {
+                "text": "layout-ui: 1 path, 0 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-d1af89916a",
+            "spans": [
+              {
+                "text": "metadata: 264 paths, 0 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-23f3b77158",
+            "spans": [
+              {
+                "text": "other: 1 path, 0 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-3ae7777fdb",
+            "spans": [
+              {
+                "text": "strings: 2 paths, 2 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-299ce0248e",
+            "spans": [
+              {
+                "text": "tooltip-derived: 2 paths, 0 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-cf973cfeb3",
+            "spans": [
+              {
+                "text": "unit-structured: 2 paths, 0 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-69efd17167",
+            "spans": [
+              {
+                "text": "xml-catalog: 28 paths, 27 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": "para",
+        "spans": [
+          {
+            "text": "Changed paths without claims, by reason:",
+            "origin": "generated"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-3b9c94d95d",
+            "spans": [
+              {
+                "text": "tooltip-derived duplicate of hero JSON (2)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-62c4e708a9",
+                "spans": [
+                  {
+                    "text": "heroes-talents/.tooltip_markup.json",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-f6cc323a5e",
+                "spans": [
+                  {
+                    "text": "heroes-talents/.tooltip_simple.json",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-034b8e69a9",
+            "spans": [
+              {
+                "text": "version-renamed unit data, compared by content (2)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-4d9d806f14",
+                "spans": [
+                  {
+                    "text": "heroes-talents/unitdata_2.57.0.98304.json",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-e2cfad4a93",
+                "spans": [
+                  {
+                    "text": "heroes-talents/unitdata_2.57.0.98348.json",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-c9837c56e5",
+            "spans": [
+              {
+                "text": "asset index (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-80fce2e6cc",
+                "spans": [
+                  {
+                    "text": "heroes-mods/.files/_build.txt",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-6007681633",
+            "spans": [
+              {
+                "text": "include list (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-0b736eaa75",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heroesdata.stormmod/base.stormdata/gamedata.xml",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-4cc34ba5e5",
+            "spans": [
+              {
+                "text": "layout or interface file, not interpreted (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-4ab0a18246",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heromods/xalatath.stormmod/base.stormdata/ui/layout/xalatath.stormlayout",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-4a6942691c",
+            "spans": [
+              {
+                "text": "not interpreted (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-600e545aa8",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heromods/xalatath.stormmod/gamedata.version",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "coverage": {
+      "claims": {
+        "c-d63f90ed2d": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-93a40ae21c": {
+          "status": "covered",
+          "bulletId": "b-8b719284ef"
+        },
+        "c-b69de78572": {
+          "status": "partly",
+          "bulletId": "b-a1e9ca42f5",
+          "missingDetail": "from 112 to 90"
+        },
+        "c-c7bd9c9bc1": {
+          "status": "partly",
+          "bulletId": "b-819b6d4473",
+          "missingDetail": "from 175 to 166"
+        },
+        "c-3d3787e9b8": {
+          "status": "uncertain",
+          "bulletId": null
+        },
+        "c-d8355148e4": {
+          "status": "covered",
+          "bulletId": "b-f4fc60ab49"
+        },
+        "c-8cf970f5db": {
+          "status": "covered",
+          "bulletId": "b-e7b4bf3cbe"
+        },
+        "c-7926f44276": {
+          "status": "uncertain",
+          "bulletId": null
+        },
+        "c-5a15a25211": {
+          "status": "uncertain",
+          "bulletId": null
+        },
+        "c-3f8b19162b": {
+          "status": "uncertain",
+          "bulletId": null
+        },
+        "c-ba32efb507": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-5f56aadd79": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-11b9a0e786": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-e2a59e217b": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-52efd8dde7": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-c62eb86600": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-79fbd401de": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-0d48f224f5": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-9c94538ab6": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-7115ba5a4e": {
+          "status": "covered",
+          "bulletId": "b-a1e9ca42f5"
+        },
+        "c-e773f0c138": {
+          "status": "uncertain",
+          "bulletId": null
+        },
+        "c-e2e89ad187": {
+          "status": "uncertain",
+          "bulletId": null
+        },
+        "c-8774d6004c": {
+          "status": "covered",
+          "bulletId": "b-819b6d4473"
+        },
+        "c-4d522b8d5d": {
+          "status": "covered",
+          "bulletId": "b-2a08874fef"
+        },
+        "c-6661f73e57": {
+          "status": "absent",
+          "bulletId": null
+        }
+      },
+      "officialOnly": [
+        {
+          "bulletId": "b-5fa14df9b6",
+          "text": "Void Orb speed slightly increased."
+        },
+        {
+          "bulletId": "b-e5a5a7f3ae",
+          "text": "Distance between teleport points reduced from 7 to 6.5."
+        },
+        {
+          "bulletId": "b-e2d991c43f",
+          "text": "Now prevented and interrupted by Immobilize."
+        },
+        {
+          "bulletId": "b-a5b6d4d7e8",
+          "text": "Orbiting orbs now pause during Time Stop and resume afterward."
+        },
+        {
+          "bulletId": "b-9c67f857e8",
+          "text": "Fixed issues that prevented orbiting orbs from correctly following the missile or continuing to orbit after a release queued during Time Stop."
+        },
+        {
+          "bulletId": "b-565f949432",
+          "text": "Fixed an issue where Xal'atath was appearing brighter than intended in the game."
+        },
+        {
+          "bulletId": "b-01e65f0e2f",
+          "text": "Fixed an issue that caused impact visual effects to appear at the cursor location instead of where missiles hit."
+        },
+        {
+          "bulletId": "b-a66bb15cd1",
+          "text": "Fixed an issue that prevented the charge indicator from immediately displaying 1 charge upon reaching the second milestone."
+        },
+        {
+          "bulletId": "b-a6b11932cb",
+          "text": "Can now be queued to cast or release during Time Stop."
+        },
+        {
+          "bulletId": "b-305bd2c172",
+          "text": "Casting during Time Stop immediately enters targeting, with charging beginning when Time Stop ends."
+        },
+        {
+          "bulletId": "b-fb75375391",
+          "text": "Releasing during Time Stop queues the release for when Time Stop ends. The Ability button becomes greyed out while a release is queued."
+        },
+        {
+          "bulletId": "b-e41c09b24c",
+          "text": "Issuing another Ability, movement, or attack order during Time Stop cancels the pending cast or queued release."
+        },
+        {
+          "bulletId": "b-44d1a78934",
+          "text": "Casting Void Eruption again during Time Stop clears earlier queued orders."
+        },
+        {
+          "bulletId": "b-988ffe5e08",
+          "text": "Fixed issues that could allow an additional charge to begin while already charging or during Void Step."
+        },
+        {
+          "bulletId": "b-c347b52634",
+          "text": "Orb growth and the flight damage timer now pause while Xal’atath is affected by Time Stop."
+        },
+        {
+          "bulletId": "b-43f797c32b",
+          "text": "Fixed an issue where certain Maskless skins were not appearing in the game."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Blizzard: Heroes of the Storm Live Patch Notes - September 28, 2026, Hotfix - 10/5/2026",
+      "url": "https://news.blizzard.com/en-us/article/24303007/heroes-of-the-storm-live-patch-notes-september-28-2026",
+      "observedAt": "2026-10-29T14:08:59Z"
+    },
+    {
+      "label": "LawfulGremlin/probius-data-debug@1c3a028c (Live data commit)",
+      "url": "https://github.com/LawfulGremlin/probius-data-debug/commit/1c3a028c5874930f60e72bd0df388c1038bb63c5",
+      "observedAt": "2026-10-05T17:17:31Z"
+    }
+  ],
+  "generatedAt": "2026-10-29T14:11:26Z",
+  "generator": {
+    "comparator": 5,
+    "parser": 1,
+    "prompts": 1,
+    "render": 1
+  }
+}
