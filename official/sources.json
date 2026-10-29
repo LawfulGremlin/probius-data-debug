@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "listing": {
+    "url": "https://news.blizzard.com/en-us/feed/heroes-of-the-storm",
+    "etag": "\"zu3juvp4op1el7r\"",
+    "lastFetchedAt": "2026-10-29T14:08:59Z"
+  },
+  "forumTracker": {
+    "lastFetchedAt": "2026-10-29T14:08:59Z"
+  },
+  "articles": {
+    "news-24303007": {
+      "url": "https://news.blizzard.com/en-us/article/24303007/heroes-of-the-storm-live-patch-notes-september-28-2026",
+      "kind": "news",
+      "headline": "Heroes of the Storm Live Patch Notes - September 28, 2026",
+      "articleType": "live",
+      "datePublished": "2026-09-28T19:35:00Z",
+      "firstSeen": "2026-10-29T14:08:59Z",
+      "lastFetchedAt": "2026-10-29T14:08:59Z",
+      "etag": "\"6xbt9j9u4b7cue\"",
+      "acceptedDocSha": "e06ef9b0fee5ed16bce2d0d5686b442dee82ec3a53c75bb270f119f35518b689",
+      "acceptedAt": "2026-10-29T14:08:59Z",
+      "revisions": [
+        {
+          "docSha": "e06ef9b0fee5ed16bce2d0d5686b442dee82ec3a53c75bb270f119f35518b689",
+          "observedAt": "2026-10-29T14:08:59Z",
+          "accepted": true,
+          "reason": ""
+        }
+      ]
+    },
+    "news-24306095": {
+      "url": "https://news.blizzard.com/en-us/article/24306095/heroes-of-the-storm-ptr-patch-notes-september-14-2026",
+      "kind": "news",
+      "headline": "Heroes of the Storm PTR Patch Notes - September 14, 2026",
+      "articleType": "ptr",
+      "datePublished": "2026-09-14T17:45:00Z",
+      "firstSeen": "2026-10-29T14:08:59Z",
+      "lastFetchedAt": "2026-10-29T14:08:59Z",
+      "etag": "\"s0eeu52qyq6ubo\"",
+      "acceptedDocSha": "612bebdbae96b349b50395b99438a297d1879aad5860fcdffc607a8b37468b94",
+      "acceptedAt": "2026-10-29T14:08:59Z",
+      "revisions": [
+        {
+          "docSha": "612bebdbae96b349b50395b99438a297d1879aad5860fcdffc607a8b37468b94",
+          "observedAt": "2026-10-29T14:08:59Z",
+          "accepted": true,
+          "reason": ""
+        }
+      ]
+    },
+    "forum-67319": {
+      "url": "https://us.forums.blizzard.com/en/heroes/t/heroes-of-the-storm-live-patch-notes-september-28-2026/67319",
+      "kind": "forum",
+      "headline": "Heroes of the Storm Live Patch Notes - September 28, 2026",
+      "articleType": "live",
+      "datePublished": "2026-09-28T17:27:12.067Z",
+      "firstSeen": "2026-10-29T14:08:59Z",
+      "lastFetchedAt": "2026-10-29T14:08:59Z",
+      "etag": null,
+      "acceptedDocSha": null,
+      "acceptedAt": null,
+      "revisions": [],
+      "ignored": "stub",
+      "stubOf": "news-24303007"
+    },
+    "forum-67042": {
+      "url": "https://us.forums.blizzard.com/en/heroes/t/heroes-of-the-storm-ptr-patch-notes-september-14-2026/67042",
+      "kind": "forum",
+      "headline": "Heroes of the Storm PTR Patch Notes - September 14, 2026",
+      "articleType": "ptr",
+      "datePublished": "2026-09-14T18:06:04.406Z",
+      "firstSeen": "2026-10-29T14:08:59Z",
+      "lastFetchedAt": "2026-10-29T14:08:59Z",
+      "etag": null,
+      "acceptedDocSha": null,
+      "acceptedAt": null,
+      "revisions": [],
+      "ignored": "stub",
+      "stubOf": "news-24306095"
+    }
+  }
+}
