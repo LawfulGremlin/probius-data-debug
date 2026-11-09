@@ -2095,7 +2095,7 @@
   </CEffectModifyPlayer>
   <CEffectModifyPlayer id="GreymaneGilneanCocktailIncendiaryElixirQuestIncrementModification">
     <WhichPlayer Value="Caster" />
-    <EffectArray Reference="Effect,GreymaneGilneanCocktailSpreadDamage,AmountArray" Value="25" />
+    <EffectArray Reference="Effect,GreymaneGilneanCocktailSpreadDamage,AmountArray" Value="30" />
   </CEffectModifyPlayer>
   <CEffectCreatePersistent id="GreymaneRazorSwipePersistent">
     <ValidatorArray value="CasterNotRooted" />
