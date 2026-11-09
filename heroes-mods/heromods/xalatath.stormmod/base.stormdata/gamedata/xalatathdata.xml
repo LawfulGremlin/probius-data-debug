@@ -1387,35 +1387,15 @@
   <CBehaviorBuff id="XalatathAutoAcquireOrderGuard">
     <Duration value="$XalatathAutoAcquireGuardDuration" />
   </CBehaviorBuff>
-  <CBehaviorBuff id="XalatathCloakOfShadowsSpellArmorAndMoveSpeed" parent="StormArmor">
+  <CBehaviorBuff id="XalatathCloakOfShadowsMoveSpeed">
+    <Alignment value="Positive" />
     <BehaviorCategories index="Fast" value="1" />
+    <Duration value="$XalatathCloakOfShadowsSpellArmorAndMoveSpeedDuration" />
     <Modification>
       <UnifiedMoveSpeedFactor value="$XalatathCloakOfShadowsSpeedBonus" />
     </Modification>
-    <ArmorModification>
-      <ArmorSet index="Hero">
-        <ArmorMitigationTable index="Ability" value="$XalatathCloakOfShadowsSpellArmorBonus" />
-      </ArmorSet>
-      <ArmorSet index="Merc">
-        <ArmorMitigationTable index="Ability" value="$XalatathCloakOfShadowsSpellArmorBonus" />
-      </ArmorSet>
-      <ArmorSet index="Monster">
-        <ArmorMitigationTable index="Ability" value="$XalatathCloakOfShadowsSpellArmorBonus" />
-      </ArmorSet>
-      <ArmorSet index="Summon">
-        <ArmorMitigationTable index="Ability" value="$XalatathCloakOfShadowsSpellArmorBonus" />
-      </ArmorSet>
-      <ArmorSet index="Structure">
-        <ArmorMitigationTable index="Ability" value="$XalatathCloakOfShadowsSpellArmorBonus" />
-      </ArmorSet>
-      <ArmorSet index="Minion">
-        <ArmorMitigationTable index="Ability" value="$XalatathCloakOfShadowsSpellArmorBonus" />
-      </ArmorSet>
-    </ArmorModification>
-    <Duration value="$XalatathCloakOfShadowsSpellArmorAndMoveSpeedDuration" />
-    <Alignment value="Positive" />
   </CBehaviorBuff>
-  <CBehaviorBuff id="XalatathVoidStepCasterBehavior">
+  <CBehaviorBuff id="XalatathVoidStepCasterBehavior" parent="StormArmor">
     <BehaviorCategories index="PreventsMovement" value="1" />
     <RemoveValidatorArray value="XalatathVoidStepCasterInterruptValidatorCombine" />
     <CancelEffect value="XalatathVoidStepCastCanceledModifyUnit" />
