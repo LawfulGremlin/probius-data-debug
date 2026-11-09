@@ -1,0 +1,712 @@
+{
+  "schemaVersion": 1,
+  "genKey": "596de80c95477babfd3323d98eb0bae0890b042465c5e16eaa9fb91d77fdd60f",
+  "purpose": "initial",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "promptVersion": 1,
+  "outputSchema": 1,
+  "inputSha": "9d290f17c1bf36c646f41d534e4ae0aa6f7b2150fb4501df7ada53aa43025bff",
+  "output": {
+    "items": [
+      {
+        "evidenceIds": [
+          "c-f4f6def1d4",
+          "c-945beb42fe"
+        ],
+        "heroKey": "Xalatath",
+        "group": "base",
+        "heading": "Health",
+        "text": "Health increased from 1270 to 1330."
+      },
+      {
+        "evidenceIds": [
+          "c-45608b481e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "base",
+        "heading": "Health Regeneration",
+        "text": "Health regeneration increased from 2.6484 to 2.7708."
+      },
+      {
+        "evidenceIds": [
+          "c-7232acb964",
+          "c-25b922b5c6"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Now generates charge with every Basic Attack against enemy Heroes and every 2 Basic Attacks against non-Heroes, instead of after 5 Basic Attacks against enemies; charge still fully decays after 6 seconds without hitting an enemy with a Basic Attack."
+      },
+      {
+        "evidenceIds": [
+          "c-93a40ae21c"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Damage per Void Orb reduced from 90 (+4% per level) to 72 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-60123c6c27",
+          "c-dc3ccd61ca"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Basic Attack and Void Volley Damage bonus reduced from 50% to 35%."
+      },
+      {
+        "evidenceIds": [
+          "c-efacce312a",
+          "c-eb6cf59f88"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Duration increased from 0.15 seconds to 0.175 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-4a3cef0f76"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Now casts at maximum range when targeted farther away (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-90658fe6dd"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Cast range is no longer extended by the caster's radius (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-2792ef1b52"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Now deals 50% reduced damage to Structures (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-16696c9c9f"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Shadow Mark",
+        "text": "Damage to enemies hit reduced from 75 (+4% per level) to 60 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-3f63be04a0"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Shadow Mark",
+        "text": "Additional damage to enemies in the center reduced from 150 (+4% per level) to 120 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-6dd0408f6b"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Shadow Mark",
+        "text": "Inner impact range reduced from 1.55 to 1 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-59c66bb061"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Shadow Mark",
+        "text": "Range increased from 8 to 9 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-0555a6b413"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Shadow Mark",
+        "text": "Void Orb flight time reduced from 0.7 seconds to 0.65 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-f4c7e87050"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "Detonation damage to nearby enemies reduced from 305 (+4% per level) to 260 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-57bbfe6886"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "Additional damage to the Marked target reduced from 152 (+4% per level) to 65 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-98890798c0"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "Detonation bonus damage modifier reduced from 0.5 to 0.25 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-ba32efb507"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "Detonation range reduced from 4 to 3 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-280971128e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "No longer affects units that are not visible (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-8a0561a91d"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Step",
+        "text": "Removed the tooltip line: Weapon Bonus Damage caps at +30%."
+      },
+      {
+        "evidenceIds": [
+          "c-4d522b8d5d"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Step",
+        "text": "Range reduced from 5 to 2 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-84e5ab3c30"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Step",
+        "text": "Effect pattern spread from the target point reduced from 6.5192 to 5.3266 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-b69de78572"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Contact damage reduced from 112 (+4% per level) to 90 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-9eb2afd22c"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Explosion damage reduced from 400 (+4% per level) to 320 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-b6f776e244"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Maximum charged contact damage reduced from 175 (+4% per level) to 90 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-5d79b95f21"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Maximum charged explosion damage reduced from 700 (+4% per level) to 320 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-85a575993b"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 1 reduced from 1800 to 1300 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-b807305370"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 2 reduced from 2000 to 1530 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-c7f5a442a0"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 3 reduced from 2400 to 1940 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-d000a1eb63"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 4 reduced from 2800 to 2390 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-1e836c2ffd",
+          "c-da33056fc6",
+          "c-797f246f6d",
+          "c-4f3a7dbc04"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Missile speed for tiers 1 to 4 reduced from 7 to 6.3 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-9bbe303867"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Now disables movement (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-0a2d12bc03"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Now prevents stealth (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-1482b5518d",
+          "c-64fe6fe59e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Convergence",
+        "text": "Cooldown reduced from 90 seconds to 75 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-839ec00039"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Convergence",
+        "text": "Portal duration increased from 12 seconds to 20 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-05b398c4e8",
+          "c-104e2a8f3c"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Convergence",
+        "text": "Portal Health increased from 1200 to 1500 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-a8c62f5c4e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Convergence",
+        "text": "Portal Health regeneration reduced from 0 to -75 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-e13508bf34"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Convergence",
+        "text": "Portal unit radius increased from 0.75 to 1.5 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-a4de2a46cb"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Convergence",
+        "text": "Effect pattern spread from the target point reduced from 2.3125 to 0.5544 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-91c1d2572d",
+          "c-7480208910"
+        ],
+        "heroKey": "Xalatath",
+        "group": "units",
+        "heading": "Void Minion",
+        "text": "Health increased from 300 to 400."
+      },
+      {
+        "evidenceIds": [
+          "c-302c2f335f"
+        ],
+        "heroKey": "Xalatath",
+        "group": "units",
+        "heading": "Void Minion",
+        "text": "Health regeneration reduced from -25 to -33.3333."
+      },
+      {
+        "evidenceIds": [
+          "c-075e6d4fc1"
+        ],
+        "heroKey": "Xalatath",
+        "group": "units",
+        "heading": "Void Minion",
+        "text": "Can now be selected (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-ac9a17fc77"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Void Adept",
+        "text": "Shadow Mark and Dark Heart Ritual Detonation damage gained per successful detonation reduced from 25 to 20."
+      },
+      {
+        "evidenceIds": [
+          "c-ebebed5f8e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Void Adept",
+        "text": "Maximum number of increases reduced from 20 to 10."
+      },
+      {
+        "evidenceIds": [
+          "c-d10efbeb73"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Anchored Core",
+        "text": "Now grants +25% Dark Heart Ritual Radius, instead of +50% Radius and +25% Duration."
+      },
+      {
+        "evidenceIds": [
+          "c-463ad199e6"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Cloak of Shadows",
+        "text": "Activating Void Step now grants 25 Spell Armor while teleporting and 50% Movement Speed for 2 seconds afterwards, instead of 50% Movement Speed and 25 Spell Armor for 2 seconds that refreshed with each teleport."
+      },
+      {
+        "evidenceIds": [
+          "c-82c32bec56"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Cold Feet",
+        "text": "Shadow Mark Duration bonus increased from 1 second to 2 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-f4b959dbd2"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Void Acolyte",
+        "text": "Next Void Volley damage bonus reduced from 50% to 25%."
+      },
+      {
+        "evidenceIds": [
+          "c-7926f44276"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Dark Barrier",
+        "text": "Now grants the Shield each time the Dark Heart damages an enemy Hero, instead of any enemy."
+      },
+      {
+        "evidenceIds": [
+          "c-bd828850ea",
+          "c-e7f15e6478"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Toxic Mark",
+        "text": "Armor reduction reduced from 15 to 10."
+      },
+      {
+        "evidenceIds": [
+          "c-0859cb2dc6"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Toxic Mark",
+        "text": "No longer grants +1s Shadow Mark Duration."
+      },
+      {
+        "evidenceIds": [
+          "c-5a15a25211"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Dark Heart's Protection",
+        "text": "Now Silences enemies inside its radius for 1 second when the Dark Heart detonates, instead of when Dark Heart Ritual is cast."
+      },
+      {
+        "evidenceIds": [
+          "c-efb140fb17"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Fractured Reality",
+        "text": "Void Volley Projectile Damage bonus reduced from 25% to 15%."
+      },
+      {
+        "evidenceIds": [
+          "c-2ff389c6ea"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Marked Resilience",
+        "text": "Now only triggers on Basic Attacks against enemy Heroes afflicted by Shadow Mark, instead of any afflicted target."
+      },
+      {
+        "evidenceIds": [
+          "c-2d678efd3b"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Marked Resilience",
+        "text": "Shield increased from 160 (+4% per level) to 200 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-56ad239d82"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Relentless Whispers",
+        "text": "Now increases the Basic Attack damage bonus per teleport by 75%, instead of increasing Basic Attack Speed by 150% while Void Step is active."
+      },
+      {
+        "evidenceIds": [
+          "c-483212895f"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Relentless Whispers",
+        "text": "Attack speed modifier reduced from 1.5 to 0 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-a076093e6e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Void Eruption cooldown reduction per enemy Hero hit reduced from 14 seconds to 10 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-5f56aadd79"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Damage tier 1 reduced from 400 to 320 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-11b9a0e786"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Damage tier 2 reduced from 500 to 425 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-e2a59e217b"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Damage tier 3 reduced from 600 to 540 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-52efd8dde7"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Damage tier 4 reduced from 700 to 665 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-371205fbdf"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Flight damage per second tier 1 reduced from 1800 to 1300 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-85688b41f9"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Flight damage per second tier 2 reduced from 2000 to 1530 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-417f6b6fd4"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Flight damage per second tier 3 reduced from 2400 to 1940 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-55f1824960"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Flight damage per second tier 4 reduced from 2800 to 2390 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-27b9b50ec9"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Orbit revolution period increased from 1.75 to 5 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-1d0dde8a97"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Can now hit units in Stasis (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-0efedcaffb"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Paradox Loop",
+        "text": "Tooltip now states that bonus Basic Attack damage stacks up to 3 times."
+      },
+      {
+        "evidenceIds": [
+          "c-1d5cd405c0"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Paradox Loop",
+        "text": "Effect pattern spread from the target point reduced from 6.5192 to 5.3266 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-3f8b19162b"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Rift Invasion",
+        "text": "Now makes the self decay of the Void Convergence Void Portal no longer lethal, instead of removing its life duration."
+      },
+      {
+        "evidenceIds": [
+          "c-334161b4e2"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Unstable Core",
+        "text": "Now triggers whenever the Dark Heart expires or detonates, instead of only when it detonates on a target afflicted by Shadow Mark."
+      },
+      {
+        "evidenceIds": [
+          "c-334161b4e2"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Unstable Core",
+        "text": "Void flames duration increased from 5 seconds to 6 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-334161b4e2"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Unstable Core",
+        "text": "Now deals 75 (+4% per level) damage every 1 second, up to 450 (+4% per level), instead of 45 (+4% per level) damage over time."
+      }
+    ],
+    "omitted": []
+  },
+  "usage": {
+    "input_tokens": 23351,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7159,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 11383,
+    "output_tokens_details": {
+      "thinking_tokens": 4889
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.322496,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgssjNGhdsWG27qoA4m95",
+  "createdAt": "2026-11-09T19:03:38Z"
+}

@@ -3,7 +3,7 @@
   "target": "debug",
   "dataRepo": "LawfulGremlin/probius-data-debug",
   "bootstrapAt": "2026-10-29T14:01:16Z",
-  "updatedAt": "2026-11-09T19:00:46Z",
+  "updatedAt": "2026-11-09T19:03:38Z",
   "tracks": {
     "live": {
       "branch": "debug-live",
@@ -193,7 +193,7 @@
     },
     "ptr": {
       "branch": "debug-test",
-      "lastCoreCommit": "003dcd8725e3ae9d8696ecdb8a08c22fffb02910",
+      "lastCoreCommit": "1dbf0d169765fcaa84e78f597fe437b81d7d3e5a",
       "occurrences": [
         {
           "id": "ptr-2.55.16.96790-6e7641cc1157",
@@ -281,6 +281,28 @@
           "revisions": [
             "ptr-2.57.0.98217-003dcd8725e3"
           ]
+        },
+        {
+          "id": "ptr-2.57.1.98644-1dbf0d169765",
+          "kind": "release",
+          "before": "2.57.0.98217",
+          "after": "2.57.1.98644",
+          "publishedAt": "2026-11-09T18:37:23Z",
+          "continuity": "unknown",
+          "announce": true,
+          "state": "amended-ready",
+          "revision": 1,
+          "requestedInputsHash": "4a03ab7a06f8b41f4bedebc37b595e1c6eec15cac444224421543bc9d2a39505",
+          "initialEdition": "ptr-2.57.1.98644-1dbf0d169765.initial.cfbed74cfc",
+          "currentEdition": "ptr-2.57.1.98644-1dbf0d169765.amended.4a03ab7a06",
+          "currentKind": "amended",
+          "official": {
+            "articleKey": "news-24317084",
+            "sectionKey": "base",
+            "url": "https://news.blizzard.com/en-us/article/24317084/heroes-of-the-storm-ptr-patch-notes-november-9-2026"
+          },
+          "revisions": [],
+          "workKey": "0ed6d6274e6ee2de6b8fa6204914d863dfe792f7fc9de63abe52ef292321a88f"
         }
       ]
     }

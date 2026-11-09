@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "genKey": "816211ec8f333e6a73b128941f501ee6cba610a63fa55e8a46a20d0d449d4794",
+  "purpose": "interpret",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "promptVersion": 1,
+  "outputSchema": 1,
+  "inputSha": "028e8cd3223b1f849d1e1ee02bb9fe955d60811ea5076e2841233aaa51c1472f",
+  "output": {
+    "answers": [
+      {
+        "groupId": "i-51bbcee233",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-cc7add4d4e",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-639869ee4e",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-4974753293"
+        ],
+        "text": "Spell Power bonus increased from 10% to 15%."
+      },
+      {
+        "groupId": "i-fcf8efee2b",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-9235792f5c",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-4f749a2400",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-945deb2241"
+        ],
+        "text": "Sand Echo damage reduction with Once Again the First Time reduced from 50% to 45%."
+      },
+      {
+        "groupId": "i-96bc7a64d1",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-916120c44d"
+        ],
+        "text": "Damage increase per Hero hit increased from 0.5% to 0.6%."
+      },
+      {
+        "groupId": "i-134cfed96a",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-80b324b791"
+        ],
+        "text": "Spell Power bonus reduced from 15% to 12%."
+      },
+      {
+        "groupId": "i-086e80478c",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-b6e81a1287",
+          "c-f682aeff52",
+          "c-48632e7a53"
+        ],
+        "text": "No longer grants 1 additional maximum charge."
+      },
+      {
+        "groupId": "i-424c23047a",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-83d69b49c7",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-392c2f6c9a",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-e38efa5ade",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-b5e92d5a4d"
+        ],
+        "text": "Explosion damage gained per Hero hit increased from 25 to 30."
+      },
+      {
+        "groupId": "i-7a4669ea33",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-a3f7c81807",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-6eb0c83a74",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-7d5e674a83",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-dc4f3107e5",
+          "c-4a860fdff8"
+        ],
+        "text": "Crossfade radius after completing the Quest increased from 1.4 to 2.1."
+      },
+      {
+        "groupId": "i-e1ba25697f",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-5bdebb0a4f",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-335fbb90ce",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-2042c789f6"
+        ],
+        "text": "No longer grants a 1.75 Sight bonus."
+      },
+      {
+        "groupId": "i-993fb235fa",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-8f933cd39f",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-9790e6d24f"
+        ],
+        "text": "Mana and Health Regeneration bonus increased from 200% to 400%."
+      },
+      {
+        "groupId": "i-192c1c30d7",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-e34e0f24a9",
+          "c-d04e16833b"
+        ],
+        "text": "Now also reduces the cast time of Raven Form by 0.25 seconds."
+      },
+      {
+        "groupId": "i-f117e86a90",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-f6891271a8"
+        ],
+        "text": "Number of periodic searches reduced from 32 to 30."
+      },
+      {
+        "groupId": "i-1e12f16f29",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-b3a1fc5b47"
+        ],
+        "text": "Delay before the wall is created reduced from 0.75 seconds to 0.6875 seconds."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 7050,
+    "cache_creation_input_tokens": 7547,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 7547
+    },
+    "output_tokens": 2915,
+    "output_tokens_details": {
+      "thinking_tokens": 1472
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.146876,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgssqdasEYACEU9WFXw96",
+  "createdAt": "2026-11-09T19:03:38Z",
+  "validation": {
+    "accepted": [
+      {
+        "groupId": "i-639869ee4e",
+        "citedIds": [
+          "c-4974753293"
+        ],
+        "text": "Spell Power bonus increased from 10% to 15%."
+      },
+      {
+        "groupId": "i-4f749a2400",
+        "citedIds": [
+          "c-945deb2241"
+        ],
+        "text": "Sand Echo damage reduction with Once Again the First Time reduced from 50% to 45%."
+      },
+      {
+        "groupId": "i-96bc7a64d1",
+        "citedIds": [
+          "c-916120c44d"
+        ],
+        "text": "Damage increase per Hero hit increased from 0.5% to 0.6%."
+      },
+      {
+        "groupId": "i-134cfed96a",
+        "citedIds": [
+          "c-80b324b791"
+        ],
+        "text": "Spell Power bonus reduced from 15% to 12%."
+      },
+      {
+        "groupId": "i-086e80478c",
+        "citedIds": [
+          "c-b6e81a1287",
+          "c-f682aeff52",
+          "c-48632e7a53"
+        ],
+        "text": "No longer grants 1 additional maximum charge."
+      },
+      {
+        "groupId": "i-e38efa5ade",
+        "citedIds": [
+          "c-b5e92d5a4d"
+        ],
+        "text": "Explosion damage gained per Hero hit increased from 25 to 30."
+      },
+      {
+        "groupId": "i-7d5e674a83",
+        "citedIds": [
+          "c-dc4f3107e5",
+          "c-4a860fdff8"
+        ],
+        "text": "Crossfade radius after completing the Quest increased from 1.4 to 2.1."
+      },
+      {
+        "groupId": "i-335fbb90ce",
+        "citedIds": [
+          "c-2042c789f6"
+        ],
+        "text": "No longer grants a 1.75 Sight bonus."
+      },
+      {
+        "groupId": "i-8f933cd39f",
+        "citedIds": [
+          "c-9790e6d24f"
+        ],
+        "text": "Mana and Health Regeneration bonus increased from 200% to 400%."
+      },
+      {
+        "groupId": "i-192c1c30d7",
+        "citedIds": [
+          "c-e34e0f24a9",
+          "c-d04e16833b"
+        ],
+        "text": "Now also reduces the cast time of Raven Form by 0.25 seconds."
+      },
+      {
+        "groupId": "i-f117e86a90",
+        "citedIds": [
+          "c-f6891271a8"
+        ],
+        "text": "Number of periodic searches reduced from 32 to 30."
+      },
+      {
+        "groupId": "i-1e12f16f29",
+        "citedIds": [
+          "c-b3a1fc5b47"
+        ],
+        "text": "Delay before the wall is created reduced from 0.75 seconds to 0.6875 seconds."
+      }
+    ],
+    "rejected": [],
+    "unclear": [
+      "i-51bbcee233",
+      "i-cc7add4d4e",
+      "i-fcf8efee2b",
+      "i-9235792f5c",
+      "i-424c23047a",
+      "i-83d69b49c7",
+      "i-392c2f6c9a",
+      "i-7a4669ea33",
+      "i-a3f7c81807",
+      "i-6eb0c83a74",
+      "i-e1ba25697f",
+      "i-5bdebb0a4f",
+      "i-993fb235fa"
+    ],
+    "unanswered": []
+  }
+}

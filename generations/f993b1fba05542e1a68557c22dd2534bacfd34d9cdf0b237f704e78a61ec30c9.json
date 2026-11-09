@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "genKey": "f993b1fba05542e1a68557c22dd2534bacfd34d9cdf0b237f704e78a61ec30c9",
+  "purpose": "initial",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "promptVersion": 1,
+  "outputSchema": 1,
+  "inputSha": "62a215f7feb1d6abea0ba6f4339d7c868138890877d57d668df4688260983759",
+  "output": {
+    "items": [
+      {
+        "evidenceIds": [
+          "c-8147cbf7bd"
+        ],
+        "heroKey": "Chromie",
+        "group": "talents",
+        "heading": "Deep Breathing",
+        "text": "Quest: Damage bonus each time Dragon's Breath hits a Hero increased from 0.5% to 0.6%."
+      },
+      {
+        "evidenceIds": [
+          "c-c70bee039d"
+        ],
+        "heroKey": "Chromie",
+        "group": "talents",
+        "heading": "Timewalker's Pursuit",
+        "text": "Spell Power reduced from 15% to 12%."
+      },
+      {
+        "evidenceIds": [
+          "c-6a2a7ffb49"
+        ],
+        "heroKey": "Greymane",
+        "group": "talents",
+        "heading": "Incendiary Elixir",
+        "text": "Explosion damage bonus per enemy Hero hit increased from 25 to 30."
+      },
+      {
+        "evidenceIds": [
+          "c-4c13878c6a"
+        ],
+        "heroKey": "Greymane",
+        "group": "talents",
+        "heading": "Incendiary Elixir",
+        "text": "Maximum explosion damage bonus increased from 375 to 450."
+      },
+      {
+        "evidenceIds": [
+          "c-9f7865de0a"
+        ],
+        "heroKey": "Jaina",
+        "group": "abilities",
+        "heading": "Improved Ice Block",
+        "text": "Cooldown is now 40 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-72dcfcf814"
+        ],
+        "heroKey": "Jaina",
+        "group": "abilities",
+        "heading": "Ice Cold",
+        "text": "Cooldown is now 40 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-c9155c5f9b"
+        ],
+        "heroKey": "Jaina",
+        "group": "abilities",
+        "heading": "Ice Cold",
+        "text": "Now grants Jaina Protected and Unstoppable for 2.5 seconds when activated, and nearby enemies are Chilled when this effect expires. Previously canceled Improved Ice Block, removing the Stasis and Invulnerability and Chilling nearby enemies."
+      },
+      {
+        "evidenceIds": [
+          "c-52167229b2"
+        ],
+        "heroKey": "Lucio",
+        "group": "abilities",
+        "heading": "Sound Barrier",
+        "text": "Shield increased from 1296 (+4% per level) to 1488 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-3dcd31884b"
+        ],
+        "heroKey": "Lucio",
+        "group": "talents",
+        "heading": "Party Mix",
+        "text": "Reward: Crossfade radius bonus increased from 20% to 30%."
+      },
+      {
+        "evidenceIds": [
+          "c-773f237cb6"
+        ],
+        "heroKey": "Lucio",
+        "group": "talents",
+        "heading": "Summer Anthem",
+        "text": "Unkillable duration increased from 1.5 seconds to 2.5 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-b20a2fe234"
+        ],
+        "heroKey": "Lucio",
+        "group": "talents",
+        "heading": "Slip",
+        "text": "Movement Speed bonus and Armor duration increased from 1 second to 2 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-460c1722cf"
+        ],
+        "heroKey": "Lucio",
+        "group": "abilities",
+        "heading": "Soundwave",
+        "text": "Movement speed reduced from 10.7 to 10.6992 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-3f9ff6ede7"
+        ],
+        "heroKey": "Lucio",
+        "group": "abilities",
+        "heading": "Soundwave",
+        "text": "Movement speed reduced from 16.55 to 16.5468 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-1f69e774cb",
+          "c-642f858bdd"
+        ],
+        "heroKey": "Medivh",
+        "group": "abilities",
+        "heading": "Force of Will",
+        "text": "Cooldown reduced from 9 seconds to 8 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-e6352bd5ec"
+        ],
+        "heroKey": "Medivh",
+        "group": "abilities",
+        "heading": "Arcane Rift",
+        "text": "Damage increased from 170 (+4% per level) to 185 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-2a64fe2a1c",
+          "c-1224ac7d5a"
+        ],
+        "heroKey": "Medivh",
+        "group": "abilities",
+        "heading": "Portal",
+        "text": "Cooldown increased from 16 seconds to 20 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-05bf4a356f"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Stable Portal",
+        "text": "Portal cooldown reduction reduced from 25% to 20%."
+      },
+      {
+        "evidenceIds": [
+          "c-53a771eb4a"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Raven's Intellect",
+        "text": "Mana and Health Regeneration bonus increased from 200% to 400%."
+      },
+      {
+        "evidenceIds": [
+          "c-fc4901135a"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Dust of Appearance",
+        "text": "Passive: Portal no longer forces Medivh to leave Raven form, instead of increasing Medivh's sight range while in Raven Form by 25%."
+      },
+      {
+        "evidenceIds": [
+          "c-e9f8139100"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Dust of Appearance",
+        "text": "Cooldown reduced from 45 seconds to 40 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-f0d6db4876"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Portal Mastery",
+        "text": "Removed the effect that prevented Portal from breaking Raven Form."
+      },
+      {
+        "evidenceIds": [
+          "c-198bad403d"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Winds of Celerity",
+        "text": "Now also reduces the cast time by 0.25 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-6e1e35a48a",
+          "c-59b62653f7"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Avalanche",
+        "text": "Cooldown reduced from 90 seconds to 80 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-4a14a7b465"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Ice Wall",
+        "text": "Delay reduced from 0.75 seconds to 0.6875 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-3a294bd34c"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Blizzard",
+        "text": "Duration reduced from 2 seconds to 1.88 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-74acdae970"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Blizzard",
+        "text": "Damage when the Blizzard ends increased from 75 (+4% per level) to 80 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-bdd9c2788e"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Icing",
+        "text": "Cast time increased from 0.125 seconds to 0.5 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-3b3e4947af"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Icing",
+        "text": "Duration reduced from 0.9375 seconds to 0.875 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-ff960fa4a4"
+        ],
+        "heroKey": "MeiOW",
+        "group": "base",
+        "heading": "Base",
+        "text": "Icicle search width increased from 1 to 1.25 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-53d77e4862"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Static Barrier",
+        "text": "Shield increased from 40% to 50% of the damage dealt to Heroes."
+      },
+      {
+        "evidenceIds": [
+          "c-1ee13e8284"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Malicious Intent",
+        "text": "Spell Power increased from 25% to 30%."
+      },
+      {
+        "evidenceIds": [
+          "c-aac815050f"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Malicious Intent",
+        "text": "Duration after ending increased from 2.5 seconds to 3 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-2da5a25af3"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Hateful Mending",
+        "text": "Mana granted increased from 10 to 15."
+      },
+      {
+        "evidenceIds": [
+          "c-f0d5b1894d"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Hateful Mending",
+        "text": "Healing increased from 70% to 85% of the damage dealt to Heroes."
+      },
+      {
+        "evidenceIds": [
+          "c-c85b0de00e"
+        ],
+        "heroKey": "Ragnaros",
+        "group": "talents",
+        "heading": "Heroic Difficulty",
+        "text": "Molten Core cooldown reduction when used on a destroyed Fort or Keep increased from 90 seconds to 110 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-7fbb763ca7"
+        ],
+        "heroKey": "Stukov",
+        "group": "abilities",
+        "heading": "Flailing Swipe",
+        "text": "Damage increased from 48 (+4% per level) to 62 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-d8a7a13993",
+          "c-1030efc626"
+        ],
+        "heroKey": "Tinker",
+        "group": "abilities",
+        "heading": "Deth Lazor",
+        "text": "Healing increased from 25% to 30% of the damage dealt."
+      },
+      {
+        "evidenceIds": [
+          "c-725dd626e0",
+          "c-99357ababb"
+        ],
+        "heroKey": "Tinker",
+        "group": "base",
+        "heading": "Basic Attack damage",
+        "text": "Basic Attack damage increased from 100 to 105."
+      },
+      {
+        "evidenceIds": [
+          "c-72b7931478",
+          "c-b1d64b387a"
+        ],
+        "heroKey": "Tinker",
+        "group": "base",
+        "heading": "Health",
+        "text": "Health increased from 2275 to 2375."
+      },
+      {
+        "evidenceIds": [
+          "c-63882e4fc4",
+          "c-ca067ede02"
+        ],
+        "heroKey": "Tinker",
+        "group": "base",
+        "heading": "Health Regeneration",
+        "text": "Health Regeneration increased from 4.74 to 4.94."
+      },
+      {
+        "evidenceIds": [
+          "c-41bc1c2035"
+        ],
+        "heroKey": "Tinker",
+        "group": "talents",
+        "heading": "Bomb Toss",
+        "text": "No longer grants Xplodium Charge a 2nd charge with a 3 second cooldown between uses."
+      },
+      {
+        "evidenceIds": [
+          "c-d63f90ed2d"
+        ],
+        "heroKey": "Whitemane",
+        "group": "abilities",
+        "heading": "Desperate Plea",
+        "text": "Cost modification increased from 40 to 45 (game data)."
+      }
+    ],
+    "omitted": [
+      {
+        "evidenceId": "c-ef2cda9e79",
+        "reason": "The evidence only names an internal summon reference that was removed; its in-game meaning cannot be stated from the data."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 16869,
+    "cache_creation_input_tokens": 7159,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 7159
+    },
+    "output_tokens": 5981,
+    "output_tokens_details": {
+      "thinking_tokens": 2397
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.244368,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgssfzyTdm6i4yynSQ94c",
+  "createdAt": "2026-11-09T19:03:38Z"
+}

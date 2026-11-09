@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "genKey": "3c0ca1a22aea41c4481720706416b27e2c7f804a1d42596c52f48a49abaa3b46",
+  "purpose": "coverage",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "promptVersion": 1,
+  "outputSchema": 1,
+  "inputSha": "e8502147f10cd17f6f86b11e08d89c081ac7f64faa9953e9291708cd3ee47d2e",
+  "output": {
+    "proposals": [
+      {
+        "evidenceId": "c-41bc1c2035",
+        "bulletId": "b-feb1cd5f34",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state that Bomb Toss no longer grants an additional charge."
+      },
+      {
+        "evidenceId": "c-39fcc5739a",
+        "bulletId": "b-feb1cd5f34",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state that the additional charge was removed."
+      },
+      {
+        "evidenceId": "c-1030efc626",
+        "bulletId": "b-33ddc06c11",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "A leech amount of 0.25 to 0.3 matches Life Leech of 25% to 30%."
+      },
+      {
+        "evidenceId": "c-4c13878c6a",
+        "bulletId": "b-6258822e58",
+        "relation": "partly",
+        "missingDetail": "Maximum explosion damage bonus increased from 375 to 450.",
+        "reason": "The bullet states the per-stack increase but not the new maximum."
+      },
+      {
+        "evidenceId": "c-48df61449c",
+        "bulletId": "b-6258822e58",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the per-hit bonus increased from 25 to 30."
+      },
+      {
+        "evidenceId": "c-fc4901135a",
+        "bulletId": "b-c43de5976d",
+        "relation": "partly",
+        "missingDetail": "No longer increases sight range in Raven Form by 25%.",
+        "reason": "The bullet states the new Portal behavior but not the removed sight range bonus."
+      },
+      {
+        "evidenceId": "c-f0d6db4876",
+        "bulletId": "b-eb8842e283",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state that Portal no longer keeps Medivh in Raven Form."
+      },
+      {
+        "evidenceId": "c-198bad403d",
+        "bulletId": "b-d7054b842c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both add a 0.25 second cast time reduction."
+      },
+      {
+        "evidenceId": "c-f58dfcb6e6",
+        "bulletId": "b-d7054b842c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both add a 0.25 second cast time reduction."
+      },
+      {
+        "evidenceId": "c-091a672f19",
+        "bulletId": "b-2d8f74709d",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the bonus increased from 200% to 400%."
+      },
+      {
+        "evidenceId": "c-3a294bd34c",
+        "bulletId": "b-0e0d5a8bc9",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The tooltip value 1.88 seconds is the rounded value of 1.875 seconds."
+      },
+      {
+        "evidenceId": "c-bdd9c2788e",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "conflicts",
+        "missingDetail": "",
+        "reason": "The game data shows the cast time going from 0.125 seconds, while the bullet says it went from 0.625 seconds."
+      },
+      {
+        "evidenceId": "c-93a159d55b",
+        "bulletId": "b-63f434ce6f",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the delay was reduced from 0.75 seconds to 0.6875 seconds."
+      },
+      {
+        "evidenceId": "c-f4c7e87050",
+        "bulletId": "b-6873dbb474",
+        "relation": "conflicts",
+        "missingDetail": "",
+        "reason": "The game data shows detonation damage going from 305 to 260, while the bullet says it went from 245 to 260."
+      },
+      {
+        "evidenceId": "c-d10efbeb73",
+        "bulletId": "b-ddf6ca9713",
+        "relation": "partly",
+        "missingDetail": "Radius bonus reduced from 50% to 25%.",
+        "reason": "The bullet states only the removed duration bonus."
+      },
+      {
+        "evidenceId": "c-463ad199e6",
+        "bulletId": "b-566d477f7b",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state that Spell Armor applies only while teleporting."
+      },
+      {
+        "evidenceId": "c-f0c7d5d22d",
+        "bulletId": "b-566d477f7b",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state that Spell Armor is now tied to the teleport itself."
+      },
+      {
+        "evidenceId": "c-2ff389c6ea",
+        "bulletId": "b-9f6ac19343",
+        "relation": "partly",
+        "missingDetail": "Now only triggers from Basic Attacks against enemy Heroes.",
+        "reason": "The bullet states the shield change from 160 to 200 but not the target restriction."
+      },
+      {
+        "evidenceId": "c-56ad239d82",
+        "bulletId": "b-a3afe54d04",
+        "relation": "partly",
+        "missingDetail": "No longer increases Basic Attack Speed by 150%.",
+        "reason": "The bullet states only the new 75% damage bonus per teleport."
+      },
+      {
+        "evidenceId": "c-483212895f",
+        "bulletId": "b-ee0f95a4ec",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "An attack speed modifier set to 0 matches the removal of Attack Speed."
+      },
+      {
+        "evidenceId": "c-0859cb2dc6",
+        "bulletId": "b-4c9744c5e6",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the Shadow Mark duration bonus was removed."
+      },
+      {
+        "evidenceId": "c-dc87d3089c",
+        "bulletId": "b-4c9744c5e6",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the duration increase was removed."
+      },
+      {
+        "evidenceId": "c-334161b4e2",
+        "bulletId": "b-3694ebd99b",
+        "relation": "partly",
+        "missingDetail": "Duration increased from 5 seconds to 6 seconds, it no longer requires a target afflicted by Shadow Mark, and it deals up to 450 damage.",
+        "reason": "The bullet states only the damage change from 45 to 75."
+      },
+      {
+        "evidenceId": "c-27b9b50ec9",
+        "bulletId": "b-78802e2f3c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "A longer orbit period from 1.75 to 5 matches the orbs orbiting more slowly."
+      },
+      {
+        "evidenceId": "c-dc3ccd61ca",
+        "bulletId": "b-d799da8816",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "A modifier of 0.5 to 0.35 matches a bonus of 50% to 35%."
+      },
+      {
+        "evidenceId": "c-51c947b135",
+        "bulletId": "b-36c34d4340",
+        "relation": "partly",
+        "missingDetail": "The duration bonus is 2 seconds.",
+        "reason": "The bullet states the interaction with Cold Feet but not the 2 second value."
+      },
+      {
+        "evidenceId": "c-06e4bf3ee7",
+        "bulletId": "b-f29bd4af88",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the bonus increased from 25% to 30%."
+      },
+      {
+        "evidenceId": "c-440ae68a35",
+        "bulletId": "b-c0dcb2dc79",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the shield amount increased from 40% to 50%."
+      },
+      {
+        "evidenceId": "c-f7bcff706a",
+        "bulletId": "b-145faa0bc3",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the Mana restored increased from 10 to 15."
+      },
+      {
+        "evidenceId": "c-4d2ca4c70a",
+        "bulletId": "b-d4e726182c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the bonus was reduced from 15% to 12%."
+      },
+      {
+        "evidenceId": "c-9fa1e76699",
+        "bulletId": "b-9a4c9aa5bb",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the bonus per stack increased from 0.5% to 0.6%."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 27207,
+    "cache_creation_input_tokens": 7019,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 7019
+    },
+    "output_tokens": 5371,
+    "output_tokens_details": {
+      "thinking_tokens": 2777
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.2724,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgssxpDmwymEu4uzBcjQ7",
+  "createdAt": "2026-11-09T19:03:38Z"
+}

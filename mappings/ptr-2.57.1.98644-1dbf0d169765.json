@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+  "decision": "mapped",
+  "articleKey": "news-24317084",
+  "sectionKey": "base",
+  "docSha": "ea20284fc0a886f2242878f920985abb55672f8aa47bd3ab90905ec4686aac18",
+  "rule": "exact-date",
+  "confidence": "anchored",
+  "anchors": [
+    {
+      "claimId": "c-8147cbf7bd",
+      "bulletId": "b-9a4c9aa5bb"
+    },
+    {
+      "claimId": "c-c70bee039d",
+      "bulletId": "b-d4e726182c"
+    },
+    {
+      "claimId": "c-d8a7a13993",
+      "bulletId": "b-33ddc06c11"
+    },
+    {
+      "claimId": "c-725dd626e0",
+      "bulletId": "b-cf3b94e7f6"
+    },
+    {
+      "claimId": "c-72b7931478",
+      "bulletId": "b-af17585b17"
+    },
+    {
+      "claimId": "c-b1d64b387a",
+      "bulletId": "b-af17585b17"
+    },
+    {
+      "claimId": "c-99357ababb",
+      "bulletId": "b-cf3b94e7f6"
+    },
+    {
+      "claimId": "c-6a2a7ffb49",
+      "bulletId": "b-6258822e58"
+    },
+    {
+      "claimId": "c-3dcd31884b",
+      "bulletId": "b-84755cc3e0"
+    },
+    {
+      "claimId": "c-773f237cb6",
+      "bulletId": "b-eb23c54bfb"
+    },
+    {
+      "claimId": "c-b20a2fe234",
+      "bulletId": "b-3640e66833"
+    },
+    {
+      "claimId": "c-1f69e774cb",
+      "bulletId": "b-4519086b65"
+    },
+    {
+      "claimId": "c-e6352bd5ec",
+      "bulletId": "b-bc525a5b3a"
+    },
+    {
+      "claimId": "c-53a771eb4a",
+      "bulletId": "b-2d8f74709d"
+    },
+    {
+      "claimId": "c-e9f8139100",
+      "bulletId": "b-daabf689f7"
+    },
+    {
+      "claimId": "c-642f858bdd",
+      "bulletId": "b-4519086b65"
+    },
+    {
+      "claimId": "c-2a64fe2a1c",
+      "bulletId": "b-0fc01b2052"
+    },
+    {
+      "claimId": "c-1224ac7d5a",
+      "bulletId": "b-0fc01b2052"
+    },
+    {
+      "claimId": "c-6e1e35a48a",
+      "bulletId": "b-210ae5d155"
+    },
+    {
+      "claimId": "c-4a14a7b465",
+      "bulletId": "b-63f434ce6f"
+    },
+    {
+      "claimId": "c-74acdae970",
+      "bulletId": "b-4d6618d65d"
+    },
+    {
+      "claimId": "c-59b62653f7",
+      "bulletId": "b-210ae5d155"
+    },
+    {
+      "claimId": "c-53d77e4862",
+      "bulletId": "b-c0dcb2dc79"
+    },
+    {
+      "claimId": "c-1ee13e8284",
+      "bulletId": "b-f29bd4af88"
+    },
+    {
+      "claimId": "c-aac815050f",
+      "bulletId": "b-7559aa9d25"
+    },
+    {
+      "claimId": "c-2da5a25af3",
+      "bulletId": "b-145faa0bc3"
+    },
+    {
+      "claimId": "c-f0d5b1894d",
+      "bulletId": "b-6f681411f8"
+    },
+    {
+      "claimId": "c-7fbb763ca7",
+      "bulletId": "b-cb423cdc75"
+    },
+    {
+      "claimId": "c-60123c6c27",
+      "bulletId": "b-d799da8816"
+    },
+    {
+      "claimId": "c-efb140fb17",
+      "bulletId": "b-84fee14f24"
+    },
+    {
+      "claimId": "c-82c32bec56",
+      "bulletId": "b-e20643c202"
+    },
+    {
+      "claimId": "c-2d678efd3b",
+      "bulletId": "b-9f6ac19343"
+    },
+    {
+      "claimId": "c-a076093e6e",
+      "bulletId": "b-307452aa08"
+    },
+    {
+      "claimId": "c-59c66bb061",
+      "bulletId": "b-5040fd97b9"
+    },
+    {
+      "claimId": "c-1e836c2ffd",
+      "bulletId": "b-2258cfe003"
+    },
+    {
+      "claimId": "c-da33056fc6",
+      "bulletId": "b-2258cfe003"
+    },
+    {
+      "claimId": "c-797f246f6d",
+      "bulletId": "b-2258cfe003"
+    },
+    {
+      "claimId": "c-4f3a7dbc04",
+      "bulletId": "b-2258cfe003"
+    }
+  ],
+  "contradictions": [],
+  "competing": [],
+  "decidedAt": "2026-11-09T19:03:38Z",
+  "decidedBy": "auto",
+  "reason": "only occurrence on Pacific date 2026-11-09 for section dated 2026-11-09; 38 anchors"
+}

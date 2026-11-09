@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "id": "ptr-2.57.1.98644-1dbf0d169765",
+  "track": "ptr",
+  "kind": "release",
+  "parent": null,
+  "revisionType": null,
+  "before": {
+    "commit": "003dcd8725e3ae9d8696ecdb8a08c22fffb02910",
+    "committedAt": "2026-10-07T13:31:32Z",
+    "version": "2.57.0.98217",
+    "talentsTree": "7150a48ee9e5d88281499fe859aea542834ad040",
+    "modsTree": "a986ba468fba6ab70278e456d65e7aa134062953",
+    "modsVersion": "2.57.0.98217",
+    "modsConsistent": true,
+    "producer": {
+      "hdpVersion": "5.1.0",
+      "adapterSchemaVersion": 1,
+      "artifactSha256": "d5db68a8659456c287df3ed65d64c4786a6501e8f1c638008c81032e90da9f9d",
+      "configurationSha256": "792459a345ee5d81647135472aa1513580bf349b2a1581788e8b1829c554815e"
+    },
+    "generation": "8f813ffb57ef289d5a2ae5bd61ff614049ba64f80de8c0f2e07ef593aabfa462",
+    "extraction": {
+      "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
+      "filePatternFlags": "i",
+      "localePackages": [
+        "base.stormdata",
+        "enus.stormdata",
+        "base.stormassets",
+        "enus.stormassets"
+      ]
+    },
+    "contentSignature": "d9309c2bee0dd2ee2ffe1de358317fe5f839be8a7a8c613e600eb85e23763071"
+  },
+  "after": {
+    "commit": "1dbf0d169765fcaa84e78f597fe437b81d7d3e5a",
+    "committedAt": "2026-11-09T18:37:23Z",
+    "version": "2.57.1.98644",
+    "talentsTree": "397ffc85130812a52315c525690431f4af95fe1b",
+    "modsTree": "0afc0acfee78e1dc8ae600a62316675e7fba759a",
+    "modsVersion": "2.57.1.98644",
+    "modsConsistent": true,
+    "producer": {
+      "hdpVersion": "5.1.0",
+      "adapterSchemaVersion": 1,
+      "artifactSha256": "d5db68a8659456c287df3ed65d64c4786a6501e8f1c638008c81032e90da9f9d",
+      "configurationSha256": "a3f8f23a1dc6f74d2a1fd9268f871f9eca18a9f70ef59f1589427f084ae30086"
+    },
+    "generation": "ce7e1430b1743e1d8244dffe27a2a07dde6d28ceb47b7409fbb39051f419aaee",
+    "extraction": {
+      "filePattern": "^mods.*\\.(txt|xml|plist|strings|galaxy|fx|stormcomponents|stormcutscene|stormhotkeys|stormlayout|stormlocale|stormstyle|aitree|hash|version)$",
+      "filePatternFlags": "i",
+      "localePackages": [
+        "base.stormdata",
+        "enus.stormdata",
+        "base.stormassets",
+        "enus.stormassets"
+      ]
+    },
+    "contentSignature": "c18b0c27f680412960e9ee2cb31b7102ff489e537bfc0f362087988d0e7d6ff7"
+  },
+  "publishedAt": "2026-11-09T18:37:23Z",
+  "pacificDate": "2026-11-09",
+  "continuity": {
+    "status": "unknown",
+    "missing": [],
+    "basis": "ledger"
+  },
+  "comparisonKey": "ac19eae7eb2c9d58001286e901a631a52558b867fca03bd119c29f778caa6d71",
+  "announce": true,
+  "indexedAt": "2026-11-09T19:03:38Z"
+}

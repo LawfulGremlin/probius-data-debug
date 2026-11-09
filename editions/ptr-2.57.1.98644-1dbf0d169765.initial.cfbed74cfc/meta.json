@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "editionId": "ptr-2.57.1.98644-1dbf0d169765.initial.cfbed74cfc",
+  "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+  "kind": "initial",
+  "inputsHash": "cfbed74cfca05406b70eb53c241cbab152b1dda5e51fd13b12af334f7b4ce370",
+  "inputs": {
+    "comparisonKey": "ac19eae7eb2c9d58001286e901a631a52558b867fca03bd119c29f778caa6d71",
+    "evidenceSha": "08129b37e9398d67242ccd03d90886828d8a6aaf25b6e0b2f873590ba49d2fb2",
+    "official": null,
+    "versions": {
+      "comparator": 8,
+      "parser": 1,
+      "prompts": 1,
+      "render": 4
+    },
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "t2Green": true,
+    "displayScope": "section",
+    "claude": "12e1f5032d187ed743aa0b663a3190b853f9f6b71a14a82244911305cf0052ad"
+  },
+  "claude": {
+    "used": true,
+    "genKeys": [
+      "54e7942965d302837380b676dcb62c2e00fc2e41ab142347dd5db57110c4fd51",
+      "5604706bc0aa13f65991991f985357963e6d046ded4301b3b78717d5424c4258",
+      "596de80c95477babfd3323d98eb0bae0890b042465c5e16eaa9fb91d77fdd60f",
+      "816211ec8f333e6a73b128941f501ee6cba610a63fa55e8a46a20d0d449d4794",
+      "878e4ee20500224ff81216943b41b9284fcac33a8da907f588df94dcc1a43ebe",
+      "a57595158f87779197912096cebb150dee8ebb9a246f303ace397e02377f113b",
+      "f993b1fba05542e1a68557c22dd2534bacfd34d9cdf0b237f704e78a61ec30c9"
+    ],
+    "usd": 0.992556
+  },
+  "counts": {
+    "claims": 159,
+    "additions": 0,
+    "discrepancies": 0,
+    "uncertain": 0,
+    "appendix": 1289
+  },
+  "createdAt": "2026-11-09T19:03:38Z"
+}
