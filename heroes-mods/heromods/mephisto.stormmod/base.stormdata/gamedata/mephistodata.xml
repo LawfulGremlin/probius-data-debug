@@ -1911,7 +1911,7 @@
   </CEffectModifyUnit>
   <CEffectDamage id="MephistoSkullMissileDamage" parent="StormSpell">
     <Amount value="127" />
-    <LeechFraction index="Life" value="0.7" />
+    <LeechFraction index="Life" value="0.85" />
     <LeechValidator index="Life" value="MephistoSkullMissileHatefulMendingCombine" />
     <FlatModifierArray index="UnyieldingPowerTalentFlatDamage" Validator="MephistoSkullMissileUnyieldingPowerCasterHasDamageIncreaseBehavior" Modifier="100" />
     <SourceButtonFace value="MephistoSkullMissile" />
