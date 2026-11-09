@@ -4437,7 +4437,14 @@
         <Catalog value="Behavior" />
         <Entry value="XalatathShadowMarkDebuff" />
         <Field value="Duration" />
-        <Value value="1.000000" />
+        <Value value="2.000000" />
+      </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="XalatathToxicMarkArmorDebuff" />
+        <Field value="Duration" />
+        <Value value="2.000000" />
       </Modifications>
       <Modifications>
         <Type value="FlatModification" />
