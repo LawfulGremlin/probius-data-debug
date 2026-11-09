@@ -1427,9 +1427,6 @@
   </CBehaviorTokenCounter>
   <CBehaviorBuff id="MedivhDustOfAppearanceCarry" parent="CarryBehaviorParent">
     <DisableValidatorArray value="MedivhCasterHasTransformRaven" />
-    <Modification>
-      <SightBonus value="1.75" />
-    </Modification>
   </CBehaviorBuff>
   <CBehaviorBuff id="MedivhForceOfWillForceofMagicTalentStack" parent="StormDamageIncrease">
     <Aliases value="CritAliasSpellPower" />
