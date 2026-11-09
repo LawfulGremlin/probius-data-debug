@@ -1453,7 +1453,7 @@
   <CEffectCreateHealer id="MephistoSkullMissileHatefulMendingManaRestoration" parent="StormManaRestore">
     <ValidatorArray value="MephistoHasHatefulMendingTalentAndTargetIsHero" />
     <ImpactUnit Value="Caster" />
-    <RechargeVitalRate value="10" />
+    <RechargeVitalRate value="15" />
   </CEffectCreateHealer>
   <CEffectCreateHealer id="MephistoLordOfHatredHysteriaHealthRestoration" parent="StormSelfOnlyHealingSpellPercent">
     <ValidatorArray value="MephistoHasLordofHatredHysteriaTalent" />
