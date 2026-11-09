@@ -2765,17 +2765,17 @@
   </CEffectModifyTokenCount>
   <CEffectModifyPlayer id="LucioCrossfadePartyMixQuestCompleteModifyPlayer">
     <WhichPlayer Value="Caster" />
-    <EffectArray Reference="Effect,LucioCrossfadeSearchArea,AreaArray[0].Radius" Value="1.4" />
-    <EffectArray Reference="Actor,LucioCrossfadeHealingRange,Range" Value="1.400000" />
-    <EffectArray Reference="Actor,LucioCrossfadeSpeedRange,Range" Value="1.400000" />
-    <EffectArray Reference="Actor,LucioBoomboxCrossfadeHealingRange,Range" Value="1.400000" />
-    <EffectArray Reference="Actor,LucioBoomboxCrossfadeSpeedRange,Range" Value="1.400000" />
-    <EffectArray Operation="Multiply" Reference="Actor,LucioBoomboxTeamColor,Scale" Value="1.200000" />
-    <EffectArray Reference="Actor,LucioCrossfadeHoverRangeSplat,Scale" Value="1.400000" />
-    <EffectArray Reference="Actor,LucioCrossfadePulseHeal,Scale" Value="0.200000" />
-    <EffectArray Reference="Actor,LucioCrossfadePulseSpeed,Scale" Value="0.200000" />
+    <EffectArray Reference="Effect,LucioCrossfadeSearchArea,AreaArray[0].Radius" Value="2.1" />
+    <EffectArray Reference="Actor,LucioCrossfadeHealingRange,Range" Value="2.100000" />
+    <EffectArray Reference="Actor,LucioCrossfadeSpeedRange,Range" Value="2.100000" />
+    <EffectArray Reference="Actor,LucioBoomboxCrossfadeHealingRange,Range" Value="2.100000" />
+    <EffectArray Reference="Actor,LucioBoomboxCrossfadeSpeedRange,Range" Value="2.100000" />
+    <EffectArray Operation="Multiply" Reference="Actor,LucioBoomboxTeamColor,Scale" Value="1.300000" />
+    <EffectArray Reference="Actor,LucioCrossfadeHoverRangeSplat,Scale" Value="2.100000" />
+    <EffectArray Reference="Actor,LucioCrossfadePulseHeal,Scale" Value="0.300000" />
+    <EffectArray Reference="Actor,LucioCrossfadePulseSpeed,Scale" Value="0.300000" />
     <EffectArray Operation="Set" Reference="Effect,LucioCrossfadePartyMixModifyQuestToken,Chance" Value="0" />
-    <EffectArray Reference="Effect,LucioBoomboxArmorSearchArea,AreaArray[0].Radius" Value="1.4" />
+    <EffectArray Reference="Effect,LucioBoomboxArmorSearchArea,AreaArray[0].Radius" Value="2.1" />
   </CEffectModifyPlayer>
   <CEffectCreateHealer id="LucioAmpItUpCrossfadeHealingBoostHeal" parent="StormHealingSpell">
     <RechargeVitalRate value="14" />
