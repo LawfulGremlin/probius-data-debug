@@ -239,7 +239,7 @@
     <OrderArray index="0" Model="Assets\Units\Test\InvisibleUnit\InvisibleUnit.m3" LineTexture="Assets\Textures\Storm_WayPointLine.dds" />
     <Effect value="MedivhDustOfAppearanceCreatePersistent" />
     <Cost>
-      <Cooldown TimeUse="45" />
+      <Cooldown TimeUse="40" />
     </Cost>
     <PrepEffect value="DecloakCasterSet" />
     <ValidatedArray index="Approach" value="0" />
