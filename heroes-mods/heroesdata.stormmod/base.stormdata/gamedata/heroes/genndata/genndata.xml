@@ -2365,6 +2365,13 @@
     <WhichUnit Value="Caster" />
     <Behavior value="GreymaneDisengageEyesInTheDarkDecloakSafety" />
   </CEffectApplyBehavior>
+  <CEffectSet id="GreymaneDisengageEyeInTheDarkRemoveSet">
+    <EffectArray value="GreymaneDisengageEyesInTheDarkRemoveSafetyBehavior" />
+    <EffectArray value="RemoveHoldFireBehavior" />
+  </CEffectSet>
+  <CEffectRemoveBehavior id="GreymaneDisengageEyesInTheDarkRemoveSafetyBehavior">
+    <BehaviorLink value="GreymaneDisengageEyesInTheDarkDecloakSafety" />
+  </CEffectRemoveBehavior>
   <CEffectSet id="GreymaneGoForTheThroatFreeCastSetupSet">
     <EffectArray value="GreymaneGoForTheThroatModifyPlayerCooldown" />
     <EffectArray value="GreymaneGoForTheThroatResetFreeCastAbilityCooldown" />
