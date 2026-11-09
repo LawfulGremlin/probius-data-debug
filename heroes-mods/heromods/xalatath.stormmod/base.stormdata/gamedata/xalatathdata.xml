@@ -20,14 +20,13 @@
   <const id="$XalatathDarkHeartRitualLinkDamage" value="50" />
   <const id="$XalatathDarkHeartRitualThrowRange" value="7" />
   <const id="$XalatathDarkHeartRitualSecondaryLinkDamage" value="/($XalatathDarkHeartRitualLinkDamage 2)" evaluateAsExpression="1" />
-  <const id="$XalatathDarkHeartRitualDetonationDamage" value="245" />
+  <const id="$XalatathDarkHeartRitualDetonationDamage" value="260" />
   <const id="$XalatathDarkheartsProtectionSilenceDuration" value="1" />
   <const id="$XalatathDarkHeartRitualDetonationBonusDamageModifier" value="0.25" />
   <const id="$XalatathDarkHeartRitualDetonationBonusDamage" value="*($XalatathDarkHeartRitualDetonationDamage $XalatathDarkHeartRitualDetonationBonusDamageModifier)" evaluateAsExpression="1" />
   <const id="$XalatathVoidAdeptDetonationDamagePerStack" value="20" />
   <const id="$XalatathVoidAdeptDetonationDamageMax" value="*($XalatathVoidAdeptDetonationDamagePerStack $XalatathVoidAdeptQuestMaxStacks)" evaluateAsExpression="1" />
-  <const id="$XalatathUnstableCoreFireDOTDamage" value="45" />
-  <const id="$XalatathUnstableCoreFireDuration" value="5" />
+  <const id="$XalatathUnstableCoreDamage" value="75" />
   <const id="$XalatathVoidStepWeaponBonus" value="0.10" />
   <const id="$XalatathCloakOfShadowsSpeedBonus" value="0.5" />
   <const id="$XalatathCloakOfShadowsSpellArmorBonus" value="25" />
