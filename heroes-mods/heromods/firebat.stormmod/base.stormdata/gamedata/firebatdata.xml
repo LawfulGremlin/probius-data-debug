@@ -5251,6 +5251,11 @@
     <Value value="1" />
     <Behavior value="FirebatOilSpillAdhesivePetroleumAttackDamageBehavior" />
   </CValidatorUnitCompareBehaviorCount>
+  <CValidatorCombine id="FirebatWeaponAdhesivePetroleumCombine">
+    <CombineArray value="FirebatHasOilSpillAdhesivePetroleumTalent" />
+    <CombineArray value="FirebatTargetHasOilSpillAdhesivePetroleumAttackDamageBehavior" />
+    <Type value="And" />
+  </CValidatorCombine>
   <CValidatorCombine id="FirebatWeaponIncineratorGauntletsCombine">
     <CombineArray value="FirebatHasWeaponIncineratorGauntletsTalent" />
     <CombineArray value="TargetIsNotStructureOrHeroic" />
