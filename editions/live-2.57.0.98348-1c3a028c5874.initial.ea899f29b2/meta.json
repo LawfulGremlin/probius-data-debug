@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "editionId": "live-2.57.0.98348-1c3a028c5874.initial.ea899f29b2",
+  "occurrenceId": "live-2.57.0.98348-1c3a028c5874",
+  "kind": "initial",
+  "inputsHash": "ea899f29b2e6ad459b56c6b0a6a9bed3cb8d84b2b7f37b52a6f8c753728d3748",
+  "inputs": {
+    "comparisonKey": "ac26817de78dbf0feb372f3e900380b40d19e576b533e34ccc34d59624183004",
+    "evidenceSha": "5bab0107c5c04415125c3882db9f377c1c837f84074808ad754c5f5f1ecbc25b",
+    "official": null,
+    "versions": {
+      "comparator": 8,
+      "parser": 1,
+      "prompts": 1,
+      "render": 1
+    },
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "t2Green": true,
+    "displayScope": "section",
+    "claude": "57d20ee6151893182ea95ef96f37f7d64f7ba2cccf9711bb6758dd770f2eef9b"
+  },
+  "claude": {
+    "used": true,
+    "genKeys": [
+      "77129264c944edf9265a0c7a2fd39e61c86c7ed2f59a2958610183dd19645c71",
+      "8f2264d8cd81669cda7cdb09ec97a28add7f1fadf25ea4771673b84697d70a4f"
+    ],
+    "usd": 0.308256
+  },
+  "counts": {
+    "claims": 37,
+    "additions": 0,
+    "discrepancies": 0,
+    "uncertain": 0,
+    "appendix": 273
+  },
+  "createdAt": "2026-11-09T13:53:22Z"
+}
