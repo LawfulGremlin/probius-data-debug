@@ -3,7 +3,7 @@
   "target": "debug",
   "dataRepo": "LawfulGremlin/probius-data-debug",
   "bootstrapAt": "2026-10-29T14:01:16Z",
-  "updatedAt": "2026-11-09T14:04:07Z",
+  "updatedAt": "2026-11-09T14:13:47Z",
   "tracks": {
     "live": {
       "branch": "debug-live",
@@ -173,16 +173,21 @@
           "publishedAt": "2026-10-05T17:17:31Z",
           "continuity": "unknown",
           "announce": true,
-          "state": "evidence-pending",
-          "revision": 1,
-          "requestedInputsHash": null,
-          "initialEdition": null,
-          "currentEdition": null,
-          "currentKind": null,
-          "official": null,
+          "state": "amended-ready",
+          "revision": 2,
+          "requestedInputsHash": "da74d9549afa7224f317a679e7fc3f199d0386f107d93b4ccfbf0004b2d6595e",
+          "initialEdition": "live-2.57.0.98348-1c3a028c5874.initial.2aac2c81fe",
+          "currentEdition": "live-2.57.0.98348-1c3a028c5874.amended.da74d9549a",
+          "currentKind": "amended",
+          "official": {
+            "articleKey": "news-24303007",
+            "sectionKey": "hotfix-2026-10-05",
+            "url": "https://news.blizzard.com/en-us/article/24303007/heroes-of-the-storm-live-patch-notes-september-28-2026"
+          },
           "revisions": [
             "live-2.57.0.98348-f5a9df36f6b3"
-          ]
+          ],
+          "workKey": "ec8848c3e1eb3291cef755c039c7c4a5b4de1c227595b93c5b79bf11d3da7fde"
         }
       ]
     },
