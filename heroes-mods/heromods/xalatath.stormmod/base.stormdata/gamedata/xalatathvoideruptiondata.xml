@@ -88,7 +88,7 @@
   <const id="$XalatathVoidEruptionRadiusTier2" value="1.5" />
   <const id="$XalatathVoidEruptionRadiusTier3" value="2.5" />
   <const id="$XalatathVoidEruptionRadiusTier4" value="3.25" />
-  <const id="$XalatathOrbitalEruptionCooldownReductionPerHeroHit" value="14" />
+  <const id="$XalatathOrbitalEruptionCooldownReductionPerHeroHit" value="10" />
   <CAbilEffectTarget id="XalatathVoidEruption" DefaultButtonFace="XalatathVoidEruption" Requirements="Ultimate2Unlocked">
     <Activity value="Abil/XalatathVoidEruptionActivity" />
     <SharedFlags index="QuickCastOnReleaseOnly" value="1" />
