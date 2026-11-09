@@ -452,7 +452,7 @@
     <On Terms="Behavior.ArtanisShieldOverload.On" Send="Create" />
     <Sound value="Artanis_ShieldOverload_Activate" />
   </CActorSound>
-  <CActorQuad id="ArtanisPhasePrismGuide" parent="StormGuideVisualQuadDownClosestFantasy" abil="ArtanisPhasePrism">
+  <CActorQuad id="ArtanisPhasePrismGuide" parent="StormGuideVisualQuadDownClosestSciFi" abil="ArtanisPhasePrism">
     <Height value="7.800000" />
     <Width value="1.000000" />
   </CActorQuad>
@@ -603,7 +603,7 @@
   <CActorSound id="ArtanisTwinBladesChargeCastSound" parent="SoundOneShot">
     <Sound value="Artanis_TwinBladesCharge_Proc" />
   </CActorSound>
-  <CActorQuad id="ArtanisBladeDashGuide" parent="StormGuideVisualQuadDownFantasy" abil="ArtanisBladeDash">
+  <CActorQuad id="ArtanisBladeDashGuide" parent="StormGuideVisualQuadDownSciFi" abil="ArtanisBladeDash">
     <Height value="8.000000" />
     <Width value="3.000000" />
   </CActorQuad>
