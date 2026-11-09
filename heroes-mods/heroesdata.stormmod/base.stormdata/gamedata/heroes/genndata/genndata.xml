@@ -1429,8 +1429,7 @@
     <Chance value="0" />
   </CEffectModifyUnit>
   <CEffectDamage id="GreymaneCursedBulletDamagePercentDamage" parent="StormSpellPercentDamage">
-    <FlatModifierArray index="GreymaneCursedBullet" Validator="GreymaneDoesNotHaveCursedBulletGilneanRoulette" Accumulator="GreymaneCursedBulletCurrentHealthAccumulator" />
-    <FlatModifierArray index="GilneanRoulette" Validator="GreymaneHasCursedBulletGilneanRoulette" Accumulator="GreymaneCursedBulletGilneanRouletteTalentCurrentHealthAccumulator" />
+    <FlatModifierArray index="GreymaneCursedBullet" Accumulator="GreymaneCursedBulletCurrentHealthAccumulator" />
   </CEffectDamage>
   <CEffectRemoveBehavior id="GreymaneDarkflightThickSkinRemoveArmor">
     <WhichUnit Value="Source" />
