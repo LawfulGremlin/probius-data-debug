@@ -2507,7 +2507,7 @@
     <OffsetVectorEndLocation Effect="MeiOWIceWallInitialSet" Value="VectorPoint" />
     <InitialEffect value="MeiOWIceWallWarningPersistent" />
     <InitialOffset Y="-6" />
-    <ExpireDelay value="0.75" />
+    <ExpireDelay value="0.6875" />
     <FinalEffect value="MeiOWIceWallSearchCreatePersistent" />
   </CEffectCreatePersistent>
   <CEffectCreatePersistent id="MeiOWIceWallSearchCreatePersistent">
