@@ -2181,7 +2181,7 @@
   </CEffectSet>
   <CEffectSet id="MedivhPortalRemoveRavenSet">
     <ValidatorArray value="MedivhCasterHasTransformRaven" />
-    <ValidatorArray value="MedivhDoesNotHavePortalMasteryTalent" />
+    <ValidatorArray value="MedivhNotHasTransformRavenDustOfAppearanceTalent2" />
     <EffectArray value="MedivhTransformRavenGuardianMorphIssueOrder" />
     <EffectArray value="MedivhTransformRavenLandDummy" />
     <EffectArray value="MedivhTransformRavenRemove" />
