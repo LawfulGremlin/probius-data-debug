@@ -2901,7 +2901,7 @@
   </CEffectApplyBehavior>
   <CEffectModifyPlayer id="StukovWeightedPustuleFetidTouchQuestModification">
     <WhichPlayer Value="Caster" />
-    <EffectArray Operation="Subtract" Reference="Abil,StukovWeightedPustule,Cost[0].Cooldown.TimeUse" Value="5.000000" />
+    <EffectArray Operation="Subtract" Reference="Abil,StukovWeightedPustule,Cost[0].Cooldown.TimeUse" Value="6.000000" />
     <EffectArray Operation="Set" Reference="Effect,StukovWeightedPustuleFetidTouchQuestIncrement,Chance" Value="0" />
     <EffectArray Operation="Set" Reference="Abil,StukovWeightedPustule,Cost.Vital[Energy]" Value="0" />
   </CEffectModifyPlayer>
