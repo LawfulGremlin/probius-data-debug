@@ -3,7 +3,7 @@
   "target": "debug",
   "dataRepo": "LawfulGremlin/probius-data-debug",
   "bootstrapAt": "2026-10-29T14:01:16Z",
-  "updatedAt": "2026-10-29T14:01:16Z",
+  "updatedAt": "2026-11-09T14:04:07Z",
   "tracks": {
     "live": {
       "branch": "debug-live",
@@ -172,9 +172,9 @@
           "after": "2.57.0.98348",
           "publishedAt": "2026-10-05T17:17:31Z",
           "continuity": "unknown",
-          "announce": false,
-          "state": "indexed",
-          "revision": 0,
+          "announce": true,
+          "state": "evidence-pending",
+          "revision": 1,
           "requestedInputsHash": null,
           "initialEdition": null,
           "currentEdition": null,
