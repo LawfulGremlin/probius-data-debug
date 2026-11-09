@@ -43,7 +43,7 @@
   <const id="$GazloweDethLazorRange" value="10" />
   <const id="$GazloweDethLazorSearchWidth" value="2.5" />
   <const id="$GazloweDethLazorDamage" value="175" />
-  <const id="$GazloweDethLazorLeechAmount" value="0.25" />
+  <const id="$GazloweDethLazorLeechAmount" value="0.3" />
   <const id="$GazloweDethLazorEZPZHoTAmount" value="/(*(0.75 $GazloweDethLazorDamage) 4)" evaluateAsExpression="1" />
   <const id="$GazloweDethLazorLeechAmountHeroModifier" value="-(/(0.75 $GazloweDethLazorLeechAmount) 1)" evaluateAsExpression="1" />
   <const id="$GazloweDethLazorSearchMidPoint" value="*($GazloweDethLazorRange 0.5)" evaluateAsExpression="1" />
