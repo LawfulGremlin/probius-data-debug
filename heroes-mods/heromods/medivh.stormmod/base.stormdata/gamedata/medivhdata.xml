@@ -56,7 +56,7 @@
     <Effect value="MedivhForceOfWillInitialSet" />
     <Cost>
       <Vital index="Energy" value="60" />
-      <Cooldown TimeUse="9" />
+      <Cooldown TimeUse="8" />
     </Cost>
     <TargetFilters value="Heroic;Neutral,Enemy,Missile,Item,Stasis,Dead,Hidden" />
     <Range value="13" />
