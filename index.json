@@ -3,7 +3,7 @@
   "target": "debug",
   "dataRepo": "LawfulGremlin/probius-data-debug",
   "bootstrapAt": "2026-10-29T14:01:16Z",
-  "updatedAt": "2026-11-09T14:21:47Z",
+  "updatedAt": "2026-11-09T14:24:52Z",
   "tracks": {
     "live": {
       "branch": "debug-live",
@@ -174,10 +174,10 @@
           "continuity": "unknown",
           "announce": true,
           "state": "amended-ready",
-          "revision": 3,
-          "requestedInputsHash": "da74d9549afa7224f317a679e7fc3f199d0386f107d93b4ccfbf0004b2d6595e",
-          "initialEdition": "live-2.57.0.98348-1c3a028c5874.initial.2aac2c81fe",
-          "currentEdition": "live-2.57.0.98348-1c3a028c5874.amended.da74d9549a",
+          "revision": 4,
+          "requestedInputsHash": "ee9945b28732132b917eafcebcada0b5561f133dcd2d9f1bb7b27e1a73a4f124",
+          "initialEdition": "live-2.57.0.98348-1c3a028c5874.initial.ea899f29b2",
+          "currentEdition": "live-2.57.0.98348-1c3a028c5874.amended.ee9945b287",
           "currentKind": "amended",
           "official": {
             "articleKey": "news-24303007",
@@ -187,7 +187,7 @@
           "revisions": [
             "live-2.57.0.98348-f5a9df36f6b3"
           ],
-          "workKey": "ec8848c3e1eb3291cef755c039c7c4a5b4de1c227595b93c5b79bf11d3da7fde"
+          "workKey": "c0d8fbef7a103856a350c9c8e60a06d7b6f1369982dd236f969147a20f1588a7"
         }
       ]
     },
