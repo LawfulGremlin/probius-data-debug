@@ -2009,7 +2009,7 @@
   </CBehaviorTokenCounter>
   <CBehaviorBuff id="ChromieTimewalkersPursuitQuestCompleteAbilityPower" parent="CarryBehaviorParent">
     <Modification>
-      <DamageDealtFraction index="Ability" value="0.15" />
+      <DamageDealtFraction index="Ability" value="0.12" />
     </Modification>
   </CBehaviorBuff>
   <CBehaviorBuff id="ChromieQuantumOverdriveBuff" parent="StormDamageIncrease">
