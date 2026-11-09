@@ -35,13 +35,13 @@
   <const id="$XalatathSilenceOfTheLambDamage" value="250" />
   <const id="$XalatathVoidStepRange" value="2" />
   <const id="$XalatathVoidStepRangeScale" value="+($XalatathVoidStepRange 6.25)" evaluateAsExpression="1" />
-  <const id="$XalatathPummelingStepAttackSpeedModifer" value="1.5" />
+  <const id="$XalatathPummelingStepAttackSpeedModifer" value="0" />
   <const id="$XalatathVoidAdeptQuestMaxStacks" value="10" />
   <const id="$XalatathShadowMarkDebuffDuration" value="4" />
   <const id="$XalatathToxicMarkDamageLifeTotal" value="0.01" />
   <const id="$XalatathToxicMarkArmorDebuffDuration" value="4" />
   <const id="$XalatathToxicMarkArmorDebuff" value="-10" />
-  <const id="$XalatathShadowMarkRange" value="8" />
+  <const id="$XalatathShadowMarkRange" value="9" />
   <const id="$XalatathShadowMarkOuterImpactRange" value="2.5" />
   <const id="$XalatathShadowMarkInnerImpactRange" value="1" />
   <const id="$XalatathShadowMarkOuterDamage" value="/($XalatathShadowMarkInnerDamage 2)" evaluateAsExpression="1" />
