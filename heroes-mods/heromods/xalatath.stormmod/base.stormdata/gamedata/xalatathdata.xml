@@ -85,7 +85,7 @@
   <const id="$XalatathMarkedResilienceTotalShieldDuration" value="3" />
   <const id="$XalatathMarkedResilienceShieldFullHealthDuration" value="1" />
   <const id="$XalatathMarkedResilienceShieldDecayDuration" value="-($XalatathMarkedResilienceTotalShieldDuration $XalatathMarkedResilienceShieldFullHealthDuration)" evaluateAsExpression="1" />
-  <const id="$XalatathMarkedResilienceShieldTotalHealth" value="160" />
+  <const id="$XalatathMarkedResilienceShieldTotalHealth" value="200" />
   <const id="$XalatathMarkedResilienceShieldStackCount" value="round(/($XalatathMarkedResilienceShieldTotalHealth /($XalatathMarkedResilienceShieldDecayDuration 0.0625)))" evaluateAsExpression="1" />
   <const id="$XalatathMarkedResilienceShieldHealthPerStack" value="/($XalatathMarkedResilienceShieldTotalHealth $XalatathMarkedResilienceShieldStackCount)" evaluateAsExpression="1" />
   <CAbilAttack id="XalatathAttack" parent="attack">
