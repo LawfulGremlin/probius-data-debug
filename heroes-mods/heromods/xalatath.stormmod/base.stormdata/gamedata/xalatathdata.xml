@@ -4324,96 +4324,117 @@
         <Catalog value="Actor" />
         <Entry value="XalatathDarkHeartRitualRangeFXSplatAlly" />
         <Field value="Scale" />
-        <Value value="1.25" />
+        <Value value="1.250000" />
       </Modifications>
       <Modifications>
         <Type value="MultiplyLevelModification" />
         <Catalog value="Actor" />
         <Entry value="XalatathDarkHeartRitualRangeFXSplatEnemy" />
         <Field value="Scale" />
-        <Value value="1.25" />
+        <Value value="1.250000" />
       </Modifications>
       <Modifications>
         <Type value="MultiplyLevelModification" />
         <Catalog value="Actor" />
         <Entry value="XalatathDarkHeartRitualCursorSplat" />
         <Field value="Scale" />
-        <Value value="1.25" />
+        <Value value="1.250000" />
       </Modifications>
       <Modifications>
         <Type value="MultiplyLevelModification" />
         <Catalog value="Actor" />
         <Entry value="XalatathDarkHeartRitualRangeFX" />
         <Field value="Scale" />
-        <Value value="1.25" />
+        <Value value="1.250000" />
       </Modifications>
       <Modifications>
         <Type value="MultiplyLevelModification" />
         <Catalog value="Actor" />
         <Entry value="XalatathDarkHeartRitualPulse" />
         <Field value="Scale" />
-        <Value value="1.25" />
-      </Modifications>
-      <Modifications>
-        <Type value="MultiplyLevelModification" />
-        <Catalog value="Effect" />
-        <Entry value="XalatathDarkHeartRitualSelfRevealSearchArea" />
-        <Field value="AreaArray[0].Radius" />
-        <Value value="1.25" />
+        <Value value="1.250000" />
       </Modifications>
       <Modifications>
         <Type value="MultiplyLevelModification" />
         <Catalog value="Effect" />
         <Entry value="XalatathDarkHeartRitualDamageLinkPeriodicSearch" />
         <Field value="AreaArray[0].Radius" />
-        <Value value="1.25" />
+        <Value value="1.250000" />
       </Modifications>
       <Modifications>
         <Type value="MultiplyLevelModification" />
         <Catalog value="Effect" />
         <Entry value="XalatathDarkHeartsProtectionSearch" />
         <Field value="AreaArray[0].Radius" />
-        <Value value="1.25" />
+        <Value value="1.250000" />
       </Modifications>
       <Modifications>
         <Type value="MultiplyLevelModification" />
         <Catalog value="Effect" />
         <Entry value="XalatathDarkHeartRitualDetonateSearchArea" />
         <Field value="AreaArray[0].Radius" />
-        <Value value="1.25" />
+        <Value value="1.250000" />
       </Modifications>
       <Modifications>
         <Type value="MultiplyLevelModification" />
         <Catalog value="Effect" />
-        <Entry value="XalatathUnstableCoreFireSearchArea" />
+        <Entry value="XalatathUnstableCoreSearchArea" />
         <Field value="AreaArray[0].Radius" />
-        <Value value="1.25" />
-      </Modifications>
-      <Modifications>
-        <Type value="MultiplyLevelModification" />
-        <Catalog value="Behavior" />
-        <Entry value="XalatathDarkHeartRitualTimedLife" />
-        <Field value="Duration" />
-        <Value value="1.25" />
+        <Value value="1.250000" />
       </Modifications>
     </AbilityModificationArray>
   </CTalent>
   <CTalent id="XalatathCloakOfShadows">
     <Face value="XalatathCloakOfShadows" />
     <Abil value="XalatathVoidStep" />
-  </CTalent>
-  <CTalent id="XalatathToxicMark">
-    <Face value="XalatathToxicMark" />
-    <Abil value="XalatathShadowMark" />
     <AbilityModificationArray>
       <Modifications>
         <Type value="FlatModification" />
         <Catalog value="Behavior" />
-        <Entry value="XalatathShadowMarkDebuff" />
-        <Field value="Duration" />
-        <Value value="1.000000" />
+        <Entry value="XalatathVoidStepCasterBehavior" />
+        <Field value="ArmorModification.ArmorSet[Hero].ArmorMitigationTable[Ability]" />
+        <Value value="$XalatathCloakOfShadowsSpellArmorBonus" />
+      </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="XalatathVoidStepCasterBehavior" />
+        <Field value="ArmorModification.ArmorSet[Merc].ArmorMitigationTable[Ability]" />
+        <Value value="$XalatathCloakOfShadowsSpellArmorBonus" />
+      </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="XalatathVoidStepCasterBehavior" />
+        <Field value="ArmorModification.ArmorSet[Monster].ArmorMitigationTable[Ability]" />
+        <Value value="$XalatathCloakOfShadowsSpellArmorBonus" />
+      </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="XalatathVoidStepCasterBehavior" />
+        <Field value="ArmorModification.ArmorSet[Summon].ArmorMitigationTable[Ability]" />
+        <Value value="$XalatathCloakOfShadowsSpellArmorBonus" />
+      </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="XalatathVoidStepCasterBehavior" />
+        <Field value="ArmorModification.ArmorSet[Structure].ArmorMitigationTable[Ability]" />
+        <Value value="$XalatathCloakOfShadowsSpellArmorBonus" />
+      </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Catalog value="Behavior" />
+        <Entry value="XalatathVoidStepCasterBehavior" />
+        <Field value="ArmorModification.ArmorSet[Minion].ArmorMitigationTable[Ability]" />
+        <Value value="$XalatathCloakOfShadowsSpellArmorBonus" />
       </Modifications>
     </AbilityModificationArray>
+  </CTalent>
+  <CTalent id="XalatathToxicMark">
+    <Face value="XalatathToxicMark" />
+    <Abil value="XalatathShadowMark" />
   </CTalent>
   <CTalent id="XalatathDarkBarrier">
     <Face value="XalatathDarkBarrier" />
