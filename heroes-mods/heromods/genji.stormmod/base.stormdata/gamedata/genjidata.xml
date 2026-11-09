@@ -1712,6 +1712,13 @@
     <WhichUnit Value="Caster" />
     <BehaviorLink value="GenjiCyberAgilityPathfinderCloak" />
   </CEffectRemoveBehavior>
+  <CEffectSet id="GenjiCyberAgilityPathfinderCloakRemoveSet">
+    <EffectArray value="GenjiCyberAgilityPathfinderCloakRemoveSafetyBehavior" />
+    <EffectArray value="RemoveHoldFireBehavior" />
+  </CEffectSet>
+  <CEffectRemoveBehavior id="GenjiCyberAgilityPathfinderCloakRemoveSafetyBehavior">
+    <BehaviorLink value="GenjiCyberAgilityPathfinderCloakSafety" />
+  </CEffectRemoveBehavior>
   <CEffectSet id="GenjiCyberAgilityPathfinderSearchValidationSet">
     <ValidatorArray value="TargetUnitIsPathingBlocker" />
     <EffectArray value="GenjiCyberAgilityPathfinderProcApplyBehavior" />
