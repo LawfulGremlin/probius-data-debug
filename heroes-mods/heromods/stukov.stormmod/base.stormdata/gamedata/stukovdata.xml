@@ -2768,7 +2768,7 @@
     <ValidatorArray value="TargetNotUnstoppable" />
   </CEffectModifyUnit>
   <CEffectDamage id="StukovFlailingSwipeDamage" parent="StormSpell">
-    <Amount value="48" />
+    <Amount value="62" />
   </CEffectDamage>
   <CEffectSet id="StukovBioKillSwitchRemoveWeightedPustuleSet">
     <EffectArray value="StukovBioKillSwitchRemoveWeightedPustuleController" />
