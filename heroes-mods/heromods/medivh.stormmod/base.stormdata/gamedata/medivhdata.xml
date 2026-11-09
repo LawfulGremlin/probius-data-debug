@@ -3024,7 +3024,7 @@
     <RechargeVitalRate value="50" />
   </CEffectCreateHealer>
   <CEffectDamage id="MedivhArcaneRiftDamage" parent="StormSpell">
-    <Amount value="170" />
+    <Amount value="185" />
     <MultiplicativeModifierArray index="MedivhArcaneCharge" Validator="MedivhSourceHasArcaneRiftArcaneChargeMarker" Modifier="0.15" Crit="1" />
     <FlatModifierArray index="MastersTouchDamage" Validator="MedivhHasArcaneRiftTheMastersTouchQuestComplete" Modifier="75" />
   </CEffectDamage>
