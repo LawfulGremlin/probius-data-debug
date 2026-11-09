@@ -15755,8 +15755,8 @@
           "talent": false
         },
         {
-          "nativeLinkId": "XalatathVoidEruption|XalatathVoidEruption|Heroic",
-          "tuple": "XalatathVoidEruption|XalatathVoidEruption|Heroic|False",
+          "nativeLinkId": "XalatathVoidEruptionV2|XalatathVoidEruption|Heroic",
+          "tuple": "XalatathVoidEruptionV2|XalatathVoidEruption|Heroic|False",
           "talent": false
         },
         {
@@ -15892,6 +15892,11 @@
         {
           "nativeLinkId": "XalatathVoidStepCancel|XalatathVoidStepCancel|E",
           "tuple": "XalatathVoidStepCancel|XalatathVoidStepCancel|E|False",
+          "talent": false
+        },
+        {
+          "nativeLinkId": "XalatathVoidEruptionV2Cancel|XalatathVoidEruptionCancel|Heroic",
+          "tuple": "XalatathVoidEruptionV2Cancel|XalatathVoidEruptionCancel|Heroic|False",
           "talent": false
         },
         {
@@ -16869,6 +16874,6 @@
     }
   ],
   "provenance": {
-    "nativeHero": "native/hero/data/herodata_98348_enus.json"
+    "nativeHero": "native/hero/data/herodata_98644_enus.json"
   }
 }

@@ -17275,28 +17275,13 @@
     "unitId": "XalatathVoidConvergencePortalUnit",
     "portraits": {},
     "life": {
-      "amount": 1500,
-      "scale": 0.04,
-      "regenRate": -75,
-      "regenScale": 0.04
-    },
-    "radius": 1.5,
-    "innerRadius": 1.25,
-    "sight": 5,
-    "speed": 3.25,
-    "abilities": {}
-  },
-  "XalatathVoidConvergenceRiftInvasionPortalUnit": {
-    "unitId": "XalatathVoidConvergenceRiftInvasionPortalUnit",
-    "portraits": {},
-    "life": {
-      "amount": 1500,
+      "amount": 1200,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
     },
-    "radius": 1.5,
-    "innerRadius": 1.25,
+    "radius": 0.75,
+    "innerRadius": 0.25,
     "sight": 5,
     "speed": 3.25,
     "abilities": {}
@@ -17375,9 +17360,9 @@
     "unitId": "XalatathVoidMinion",
     "portraits": {},
     "life": {
-      "amount": 400,
+      "amount": 300,
       "scale": 0.04,
-      "regenRate": -33.3333,
+      "regenRate": -25,
       "regenScale": 0.04
     },
     "weapons": [

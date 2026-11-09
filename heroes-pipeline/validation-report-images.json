@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "component": "heroes-images",
-  "track": "live",
-  "version": "2.57.0.98348",
-  "sourceSha": "05f23b3e317650f3fb6f5b6002af16f60f2ed880",
+  "track": "ptr",
+  "version": "2.57.1.98644",
+  "sourceSha": "3ae8461c1e976c5af092b2bd69ddbfe992b9acb1",
   "status": "partial",
-  "generation": "14e84d0ed495bebc3de801c25fa588bd03520ce8fe653bcd9c42660e1514a803",
+  "generation": "7db4d7a650b43ead8fc9d9cc449ea7da0c576c98b30525b7e502b982ee743cae",
   "missing": [
     "btn-ability-protoss-prismaticbeam-color.dds",
     "btn-ability-protoss-psistorm-color.dds",
@@ -389,12 +389,13 @@
   ],
   "retained": [
     "heroes/rexxar/storm_ui_ingame_targetinfopanel_unit_hero_misha.png",
+    "portraits/storm_ui_ingame_heroselect_btn_misha.png",
     "shared/storm_ui_icon_lucio_crossfadespeed.png"
   ],
   "retention": {
-    "preserved": 7748,
-    "retained": 2,
-    "rewrittenIdentical": 7746,
+    "preserved": 7747,
+    "retained": 3,
+    "rewrittenIdentical": 7744,
     "replaced": 0,
     "missing": []
   },
@@ -7015,24 +7016,21 @@
       "status": "skipped",
       "reason": "sheets not available: no Battle.net .wafl cache"
     },
-    "overrides": {
-      "status": "ok",
-      "count": 1
-    }
+    "overrides": null
   },
   "publication": {
     "status": "published",
-    "commit": "7d2f02ae0906ef74d70a89c88108bab59cd0e87b",
-    "branch": "live",
-    "generation": "14e84d0ed495bebc3de801c25fa588bd03520ce8fe653bcd9c42660e1514a803",
-    "componentTree": "78501a2221ea4f63c78a501d2d595dc19aeb8636"
+    "commit": "3308209d857495f0ab4506315bde263ab143a688",
+    "branch": "test",
+    "generation": "7db4d7a650b43ead8fc9d9cc449ea7da0c576c98b30525b7e502b982ee743cae",
+    "componentTree": "4a6c82d95f97d4f5fd7fed363ac10a6b4d710ca7"
   },
   "baseline": {
-    "branch": "live",
-    "commit": "a51520e28b555e3eeccae8021a77a6f5e6efb223",
-    "componentTree": "1c7c3e615cfb99891cfb03f0acaf3e9a100e773f",
-    "version": "2.57.0.98304",
-    "generation": "c40ee70d51a4c32fcc3f8c49bf23cfd49c2ad1e68202fcf2509816867eae1f35"
+    "branch": "test",
+    "commit": "8658d99ecb65bdedc0b6a7bfc07b228e913f5639",
+    "componentTree": "042399282e803f7cac84fa5420d30eb3a60a5820",
+    "version": "2.57.0.98217",
+    "generation": "e7658d18d6393ba977856c8da8adc8c5063dbe5a7e6f0caffba6040433de7fcb"
   },
   "error": null
 }

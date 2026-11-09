@@ -1,6 +1,6 @@
 {
   "meta": {
-    "heroesVersion": "2.57.0.98348",
+    "heroesVersion": "2.57.1.98644_ptr",
     "hdpVersion": "5.0.4",
     "itemsType": "Data",
     "dataType": "HeroData",
@@ -10850,7 +10850,7 @@
             "abilityId": "ChromieDragonsBreath",
             "name": "Deep Breathing",
             "shortText": "<c val=\"e4b800\">Quest:</c> Hitting Heroes empowers Dragon's Breath",
-            "fullText": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Every time Dragon's Breath hits a Hero increase its damage by <c val=\"bfd4fd\">0.5%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After hitting <c val=\"bfd4fd\">20</c> Heroes, reduce the cooldown of Dragon's Breath by <c val=\"bfd4fd\">4</c> seconds and its Mana cost from <c val=\"bfd4fd\">65</c> to <c val=\"bfd4fd\">40</c>.",
+            "fullText": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Every time Dragon's Breath hits a Hero increase its damage by <c val=\"bfd4fd\">0.6%</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After hitting <c val=\"bfd4fd\">20</c> Heroes, reduce the cooldown of Dragon's Breath by <c val=\"bfd4fd\">4</c> seconds and its Mana cost from <c val=\"bfd4fd\">65</c> to <c val=\"bfd4fd\">40</c>.",
             "abilityType": "W",
             "isQuest": true,
             "upgradesAbilityType": false,
@@ -10868,7 +10868,7 @@
             "name": "Timewalker's Pursuit",
             "cooldownText": "Cooldown: 25 seconds",
             "shortText": "Increase Spell Power, Activate to reveal an area",
-            "fullText": "Gain <c val=\"bfd4fd\">15%</c> Spell Power and reduce the arming time of Time Traps by <c val=\"bfd4fd\">0.75</c> seconds. Activate to reveal the targeted area for <c val=\"bfd4fd\">4</c> seconds. Enemies seen are revealed for <c val=\"bfd4fd\">4</c> seconds.",
+            "fullText": "Gain <c val=\"bfd4fd\">12%</c> Spell Power and reduce the arming time of Time Traps by <c val=\"bfd4fd\">0.75</c> seconds. Activate to reveal the targeted area for <c val=\"bfd4fd\">4</c> seconds. Enemies seen are revealed for <c val=\"bfd4fd\">4</c> seconds.",
             "abilityType": "Active",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -21561,7 +21561,7 @@
             "abilityId": "GreymaneGilneanCocktail",
             "name": "Incendiary Elixir",
             "shortText": "<c val=\"e4b800\">Quest:</c> Increases Gilnean Cocktail damage",
-            "fullText": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Reduce the cooldown of Gilnean Cocktail by <c val=\"bfd4fd\">2</c> seconds. Every time Greymane hits an enemy Hero with the explosion damage from Gilnean Cocktail, increase its explosion damage by <c val=\"bfd4fd\">25</c>, up to <c val=\"bfd4fd\">375</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After hitting <c val=\"bfd4fd\">15</c> Heroes, the cooldown is reduced by an additional <c val=\"bfd4fd\">3</c> seconds.",
+            "fullText": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Reduce the cooldown of Gilnean Cocktail by <c val=\"bfd4fd\">2</c> seconds. Every time Greymane hits an enemy Hero with the explosion damage from Gilnean Cocktail, increase its explosion damage by <c val=\"bfd4fd\">30</c>, up to <c val=\"bfd4fd\">450</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After hitting <c val=\"bfd4fd\">15</c> Heroes, the cooldown is reduced by an additional <c val=\"bfd4fd\">3</c> seconds.",
             "abilityType": "Q",
             "isQuest": true,
             "upgradesAbilityType": false,
@@ -31551,7 +31551,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 100</s>",
             "cooldownText": "Cooldown: 80 seconds",
             "shortText": "Shield nearby allies",
-            "fullText": "After <c val=\"bfd4fd\">1</c> second, Lúcio and nearby allied Heroes gain a <c val=\"bfd4fd\">1296</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield that rapidly decays over <c val=\"bfd4fd\">6</c> seconds.",
+            "fullText": "After <c val=\"bfd4fd\">1</c> second, Lúcio and nearby allied Heroes gain a <c val=\"bfd4fd\">1488</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield that rapidly decays over <c val=\"bfd4fd\">6</c> seconds.",
             "abilityType": "Heroic"
           },
           {
@@ -31638,7 +31638,7 @@
               "name": "Summer Anthem",
               "cooldownText": "Cooldown: 60 seconds",
               "shortText": "Activate for Crossfade to grant Unkillable",
-              "fullText": "Activate for allies affected by Crossfade to become Unkillable for <c val=\"bfd4fd\">1.5</c> seconds.",
+              "fullText": "Activate for allies affected by Crossfade to become Unkillable for <c val=\"bfd4fd\">2.5</c> seconds.",
               "abilityType": "Active"
             }
           ]
@@ -31653,7 +31653,7 @@
             "abilityId": "LucioCrossfade",
             "name": "Party Mix",
             "shortText": "<c val=\"e4b800\">Quest:</c> Increase Crossfade radius, max Mana",
-            "fullText": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Play Lúcio's Crossfade tracks to nearby allies. Multiple allies provide additional time.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> For every <c val=\"bfd4fd\">1</c> Minute played, permanently increase Lúcio's maximum Mana by <c val=\"bfd4fd\">10</c>. <n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Once you have played for <c val=\"bfd4fd\">8</c> minutes or more, permanently increase Crossfade's radius by <c val=\"bfd4fd\">20%</c>.",
+            "fullText": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Play Lúcio's Crossfade tracks to nearby allies. Multiple allies provide additional time.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> For every <c val=\"bfd4fd\">1</c> Minute played, permanently increase Lúcio's maximum Mana by <c val=\"bfd4fd\">10</c>. <n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Once you have played for <c val=\"bfd4fd\">8</c> minutes or more, permanently increase Crossfade's radius by <c val=\"bfd4fd\">30%</c>.",
             "abilityType": "W",
             "isQuest": true,
             "upgradesAbilityType": false,
@@ -31688,7 +31688,7 @@
             "abilityId": "LucioWallRide",
             "name": "Smooth Moves",
             "shortText": "Wall Ride Basic Attacks heal",
-            "fullText": "While Wall Ride is active, Basic Attacks heal for <c val=\"bfd4fd\">30%</c> of the damage dealt and restore <c val=\"bfd4fd\">0.5</c> Mana.<n/><n/><c val=\"00ff90\">Passive:</c> Increase Wall Ride duration by <c val=\"bfd4fd\">1</c> second.",
+            "fullText": "While Wall Ride is active, Basic Attacks heal for <c val=\"bfd4fd\">30%</c> of the damage dealt and restore <c val=\"bfd4fd\">0.5</c> Mana.<n/><n/><c val=\"00ff90\">Passive:</c> Increase Wall Ride duration by <c val=\"bfd4fd\">1</c> seconds.",
             "abilityType": "Z",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -31815,7 +31815,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 100</s>",
             "cooldownText": "Cooldown: 80 seconds",
             "shortText": "Shield nearby allies",
-            "fullText": "After <c val=\"bfd4fd\">1</c> second, Lúcio and nearby allied Heroes gain a <c val=\"bfd4fd\">1296</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield that rapidly decays over <c val=\"bfd4fd\">6</c> seconds.",
+            "fullText": "After <c val=\"bfd4fd\">1</c> second, Lúcio and nearby allied Heroes gain a <c val=\"bfd4fd\">1488</c><c val=\"a7a7a7\">~~0.04~~</c> point Shield that rapidly decays over <c val=\"bfd4fd\">6</c> seconds.",
             "abilityType": "Heroic",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -31882,7 +31882,7 @@
             "abilityId": "LucioWallRide",
             "name": "Slip",
             "shortText": "Gain Armor, Move Speed during Wall Ride",
-            "fullText": "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to <c val=\"bfd4fd\">40%</c>, and grants <c val=\"bfd4fd\">15</c> Armor, for <c val=\"bfd4fd\">1</c> second.",
+            "fullText": "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to <c val=\"bfd4fd\">40%</c>, and grants <c val=\"bfd4fd\">15</c> Armor, for <c val=\"bfd4fd\">2</c> second.",
             "abilityType": "Z",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -32013,7 +32013,7 @@
             "name": "Summer Anthem",
             "cooldownText": "Cooldown: 60 seconds",
             "shortText": "Activate for Crossfade to grant Unkillable",
-            "fullText": "Activate for allies affected by Crossfade to become Unkillable for <c val=\"bfd4fd\">1.5</c> seconds.",
+            "fullText": "Activate for allies affected by Crossfade to become Unkillable for <c val=\"bfd4fd\">2.5</c> seconds.",
             "abilityType": "Active",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -35494,7 +35494,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 50</s>",
             "cooldownText": "Cooldown: 7 seconds",
             "shortText": "Launch an arcane bolt that damages enemies in a line",
-            "fullText": "Launch a rift that deals <c val=\"bfd4fd\">170</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by <c val=\"bfd4fd\">5</c> seconds and refund <c val=\"bfd4fd\">50</c> Mana.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit <c val=\"bfd4fd\">40</c> enemy Heroes with Arcane Rift without dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Permanently increase the damage dealt by <c val=\"bfd4fd\">75</c> and cooldown reduction for hitting a Hero by <c val=\"bfd4fd\">1</c> second.",
+            "fullText": "Launch a rift that deals <c val=\"bfd4fd\">185</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by <c val=\"bfd4fd\">5</c> seconds and refund <c val=\"bfd4fd\">50</c> Mana.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit <c val=\"bfd4fd\">40</c> enemy Heroes with Arcane Rift without dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Permanently increase the damage dealt by <c val=\"bfd4fd\">75</c> and cooldown reduction for hitting a Hero by <c val=\"bfd4fd\">1</c> second.",
             "abilityType": "Q"
           },
           {
@@ -35503,7 +35503,7 @@
             "buttonId": "MedivhForceOfWill",
             "name": "Force of Will",
             "energyText": "<s val=\"bfd4fd\">Mana: 60</s>",
-            "cooldownText": "Cooldown: 9 seconds",
+            "cooldownText": "Cooldown: 8 seconds",
             "shortText": "Protect an allied Hero from damage",
             "fullText": "Protect an allied Hero from all damage for <c val=\"bfd4fd\">1.5</c> seconds. Upon expiration, Force of Will heals the target for <c val=\"bfd4fd\">20%</c> of the damage it absorbed.",
             "abilityType": "W"
@@ -35653,9 +35653,9 @@
               "abilityId": "MedivhDustOfAppearance",
               "buttonId": "MedivhDustOfAppearance",
               "name": "Dust of Appearance",
-              "cooldownText": "Cooldown: 45 seconds",
+              "cooldownText": "Cooldown: 40 seconds",
               "shortText": "Activate to reveal nearby Heroes",
-              "fullText": "Activate to greatly increase sight range for <c val=\"bfd4fd\">5</c> seconds and reveal enemy Heroes in the area for <c val=\"bfd4fd\">8</c> seconds. Does not cancel Raven Form.<n/><n/><c val=\"00ff90\">Passive:</c> Increase Medivh's sight range while in Raven Form by <c val=\"bfd4fd\">25%</c>.",
+              "fullText": "Activate to greatly increase sight range for <c val=\"bfd4fd\">5</c> seconds and reveal enemy Heroes in the area for <c val=\"bfd4fd\">8</c> seconds. Does not cancel Raven Form.<n/><n/><c val=\"00ff90\">Passive:</c> Portal no longer forces Medivh to leave Raven form.",
               "abilityType": "Active"
             }
           ]
@@ -35716,8 +35716,8 @@
             "buttonId": "MedivhTransformRavenWindsOfCelerity",
             "abilityId": "MedivhTransformRaven",
             "name": "Winds of Celerity",
-            "shortText": "Increases Raven Form Movement Speed",
-            "fullText": "Increases Raven Form's Movement Speed bonus by <c val=\"bfd4fd\">100%</c>.",
+            "shortText": "Increases Raven Form Movement and Cast Speed",
+            "fullText": "Increases Raven Form's Movement Speed bonus by <c val=\"bfd4fd\">100%</c> and reduces the cast time by <c val=\"bfd4fd\">0.25</c> seconds.",
             "abilityType": "Z",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -35734,7 +35734,7 @@
             "abilityId": "MedivhTransformRaven",
             "name": "Raven’s Intellect",
             "shortText": "Raven Form increases Health and Mana Regen",
-            "fullText": "Raven Form increases Medivh's Mana and Health Regeneration by <c val=\"bfd4fd\">200%</c>.",
+            "fullText": "Raven Form increases Medivh's Mana and Health Regeneration by <c val=\"bfd4fd\">400%</c>.",
             "abilityType": "Z",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -35752,9 +35752,9 @@
             "name": "Portal Mastery",
             "toggleCooldown": 0.125,
             "energyText": "<s val=\"bfd4fd\">Mana: 65</s>",
-            "cooldownText": "Cooldown: 16 seconds",
+            "cooldownText": "Cooldown: 20 seconds",
             "shortText": "Place both Portal locations",
-            "fullText": "Medivh can manually place both Portal locations and it no longer breaks Raven Form. <n/><n/><c val=\"ffff80\">Activate Medivh's Trait to cancel an unlinked Portal</c>.",
+            "fullText": "Medivh can manually place both Portal locations. <n/><n/><c val=\"ffff80\">Activate Medivh's Trait to cancel an unlinked Portal</c>.",
             "abilityType": "Active",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -35809,9 +35809,9 @@
             "buttonId": "MedivhDustOfAppearance",
             "abilityId": "MedivhDustOfAppearance",
             "name": "Dust of Appearance",
-            "cooldownText": "Cooldown: 45 seconds",
+            "cooldownText": "Cooldown: 40 seconds",
             "shortText": "Activate to reveal nearby Heroes",
-            "fullText": "Activate to greatly increase sight range for <c val=\"bfd4fd\">5</c> seconds and reveal enemy Heroes in the area for <c val=\"bfd4fd\">8</c> seconds. Does not cancel Raven Form.<n/><n/><c val=\"00ff90\">Passive:</c> Increase Medivh's sight range while in Raven Form by <c val=\"bfd4fd\">25%</c>.",
+            "fullText": "Activate to greatly increase sight range for <c val=\"bfd4fd\">5</c> seconds and reveal enemy Heroes in the area for <c val=\"bfd4fd\">8</c> seconds. Does not cancel Raven Form.<n/><n/><c val=\"00ff90\">Passive:</c> Portal no longer forces Medivh to leave Raven form.",
             "abilityType": "Active",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -36001,7 +36001,7 @@
             "abilityId": "MedivhPortalInstant",
             "name": "Stable Portal",
             "shortText": "Increases Portal uptime",
-            "fullText": "Decrease Portal cooldown by <c val=\"bfd4fd\">25%</c> and increase Portal duration by <c val=\"bfd4fd\">50%</c>.",
+            "fullText": "Decrease Portal cooldown by <c val=\"bfd4fd\">20%</c> and increase Portal duration by <c val=\"bfd4fd\">50%</c>.",
             "abilityType": "E",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -36155,7 +36155,7 @@
                 "energyText": "<s val=\"bfd4fd\">Mana: 50</s>",
                 "cooldownText": "Cooldown: 7 seconds",
                 "shortText": "Launch an arcane bolt that damages enemies in a line",
-                "fullText": "Launch a rift that deals <c val=\"bfd4fd\">170</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by <c val=\"bfd4fd\">5</c> seconds and refund <c val=\"bfd4fd\">50</c> Mana.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit <c val=\"bfd4fd\">40</c> enemy Heroes with Arcane Rift without dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Permanently increase the damage dealt by <c val=\"bfd4fd\">75</c> and cooldown reduction for hitting a Hero by <c val=\"bfd4fd\">1</c> second.",
+                "fullText": "Launch a rift that deals <c val=\"bfd4fd\">185</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by <c val=\"bfd4fd\">5</c> seconds and refund <c val=\"bfd4fd\">50</c> Mana.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit <c val=\"bfd4fd\">40</c> enemy Heroes with Arcane Rift without dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Permanently increase the damage dealt by <c val=\"bfd4fd\">75</c> and cooldown reduction for hitting a Hero by <c val=\"bfd4fd\">1</c> second.",
                 "abilityType": "Q"
               },
               {
@@ -36164,7 +36164,7 @@
                 "buttonId": "MedivhForceOfWill",
                 "name": "Force of Will",
                 "energyText": "<s val=\"bfd4fd\">Mana: 60</s>",
-                "cooldownText": "Cooldown: 9 seconds",
+                "cooldownText": "Cooldown: 8 seconds",
                 "shortText": "Protect an allied Hero from damage",
                 "fullText": "Protect an allied Hero from all damage for <c val=\"bfd4fd\">1.5</c> seconds. Upon expiration, Force of Will heals the target for <c val=\"bfd4fd\">20%</c> of the damage it absorbed.",
                 "abilityType": "W"
@@ -36401,7 +36401,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 70</s>",
             "cooldownText": "Cooldown: 14 seconds",
             "shortText": "Freeze enemies in an area",
-            "fullText": "Command Snowball to create a Blizzard at the target location for <c val=\"bfd4fd\">2</c> seconds. Enemies within the blizzard take <c val=\"bfd4fd\">13</c><c val=\"a7a7a7\">~~0.04~~</c> damage every <c val=\"bfd4fd\">0.25</c> seconds and are Slowed by <c val=\"bfd4fd\">7%</c>, stacking up to <c val=\"bfd4fd\">35%</c>. When the Blizzard ends, enemies within its area take an additional <c val=\"bfd4fd\">75</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Stunned for <c val=\"bfd4fd\">1.25</c> seconds.",
+            "fullText": "Command Snowball to create a Blizzard at the target location for <c val=\"bfd4fd\">1.88</c> seconds. Enemies within the blizzard take <c val=\"bfd4fd\">13</c><c val=\"a7a7a7\">~~0.04~~</c> damage every <c val=\"bfd4fd\">0.25</c> seconds and are Slowed by <c val=\"bfd4fd\">7%</c>, stacking up to <c val=\"bfd4fd\">35%</c>. When the Blizzard ends, enemies within its area take an additional <c val=\"bfd4fd\">80</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Stunned for <c val=\"bfd4fd\">1.25</c> seconds.",
             "abilityType": "W"
           },
           {
@@ -36423,7 +36423,7 @@
             "buttonId": "MeiOWAvalanche",
             "name": "Avalanche",
             "energyText": "<s val=\"bfd4fd\">Mana: 80</s>",
-            "cooldownText": "Cooldown: 90 seconds",
+            "cooldownText": "Cooldown: 80 seconds",
             "shortText": "Consume Heroes in a massive snowball",
             "fullText": "After <c val=\"bfd4fd\">0.5</c> seconds, roll a massive snowball that consumes enemy Heroes in its path. At the end of its path, the snowball crumbles, releasing the consumed Heroes, dealing <c val=\"bfd4fd\">220</c><c val=\"a7a7a7\">~~0.04~~</c> damage and Stunning them for <c val=\"bfd4fd\">0.5</c> seconds per Hero consumed.",
             "abilityType": "Heroic"
@@ -36436,7 +36436,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 50</s>",
             "cooldownText": "Cooldown: 60 seconds",
             "shortText": "Trap enemies inside of a path blocking wall",
-            "fullText": "<c val=\"bfd4fd\">Vector Targeting</c><n/>After a <c val=\"bfd4fd\">0.75</c> second delay, create an impassable wall that traps enemy Heroes hit for <c val=\"bfd4fd\">2.5</c> seconds. When the wall expires, trapped Heroes are Slowed by <c val=\"bfd4fd\">75%</c>, decaying over <c val=\"bfd4fd\">3</c> seconds.",
+            "fullText": "<c val=\"bfd4fd\">Vector Targeting</c><n/>After a <c val=\"bfd4fd\">0.69</c> second delay, create an impassable wall that traps enemy Heroes hit for <c val=\"bfd4fd\">2.5</c> seconds. When the wall expires, trapped Heroes are Slowed by <c val=\"bfd4fd\">75%</c>, decaying over <c val=\"bfd4fd\">3</c> seconds.",
             "abilityType": "Heroic"
           }
         ],
@@ -36723,7 +36723,7 @@
             "abilityId": "MeiOWAvalanche",
             "name": "Avalanche",
             "energyText": "<s val=\"bfd4fd\">Mana: 80</s>",
-            "cooldownText": "Cooldown: 90 seconds",
+            "cooldownText": "Cooldown: 80 seconds",
             "shortText": "Consume Heroes in a massive snowball",
             "fullText": "After <c val=\"bfd4fd\">0.5</c> seconds, roll a massive snowball that consumes enemy Heroes in its path. At the end of its path, the snowball crumbles, releasing the consumed Heroes, dealing <c val=\"bfd4fd\">220</c><c val=\"a7a7a7\">~~0.04~~</c> damage and Stunning them for <c val=\"bfd4fd\">0.5</c> seconds per Hero consumed.",
             "abilityType": "Heroic",
@@ -36741,7 +36741,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 50</s>",
             "cooldownText": "Cooldown: 60 seconds",
             "shortText": "Trap enemies inside of a path blocking wall",
-            "fullText": "<c val=\"bfd4fd\">Vector Targeting</c><n/>After a <c val=\"bfd4fd\">0.75</c> second delay, create an impassable wall that traps enemy Heroes hit for <c val=\"bfd4fd\">2.5</c> seconds. When the wall expires, trapped Heroes are Slowed by <c val=\"bfd4fd\">75%</c>, decaying over <c val=\"bfd4fd\">3</c> seconds.",
+            "fullText": "<c val=\"bfd4fd\">Vector Targeting</c><n/>After a <c val=\"bfd4fd\">0.69</c> second delay, create an impassable wall that traps enemy Heroes hit for <c val=\"bfd4fd\">2.5</c> seconds. When the wall expires, trapped Heroes are Slowed by <c val=\"bfd4fd\">75%</c>, decaying over <c val=\"bfd4fd\">3</c> seconds.",
             "abilityType": "Heroic",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -37199,7 +37199,7 @@
             "abilityId": "MephistoShadeOfMephisto",
             "name": "Malicious Intent",
             "shortText": "Shade of Mephisto grants Spell Power",
-            "fullText": "Shade of Mephisto grants <c val=\"bfd4fd\">25%</c> Spell Power while active and for <c val=\"bfd4fd\">2.5</c> seconds after ending.<n/><n/>If Mephisto hits enemy Heroes at least <c val=\"bfd4fd\">18</c> times with his Basic Abilities while Shade of Mephisto is active, then increase the duration of the Spell Power bonus to <c val=\"bfd4fd\">10</c> seconds after it ends.",
+            "fullText": "Shade of Mephisto grants <c val=\"bfd4fd\">30%</c> Spell Power while active and for <c val=\"bfd4fd\">3</c> seconds after ending.<n/><n/>If Mephisto hits enemy Heroes at least <c val=\"bfd4fd\">18</c> times with his Basic Abilities while Shade of Mephisto is active, then increase the duration of the Spell Power bonus to <c val=\"bfd4fd\">10</c> seconds after it ends.",
             "abilityType": "E",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -37218,7 +37218,7 @@
             "abilityId": "MephistoSkullMissile",
             "name": "Hateful Mending",
             "shortText": "Skull Missile heals",
-            "fullText": "Skull Missile grants <c val=\"bfd4fd\">10</c> Mana and heals Mephisto for <c val=\"bfd4fd\">70%</c> of the damage it deals to Heroes.",
+            "fullText": "Skull Missile grants <c val=\"bfd4fd\">15</c> Mana and heals Mephisto for <c val=\"bfd4fd\">85%</c> of the damage it deals to Heroes.",
             "abilityType": "Q",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -37235,7 +37235,7 @@
             "abilityId": "MephistoLightningNova",
             "name": "Static Barrier",
             "shortText": "Lightning Nova grants a Shield",
-            "fullText": "At the end of its duration, Lightning Nova grants Mephisto a Shield equal to <c val=\"bfd4fd\">40%</c> of the damage it dealt to Heroes. Lasts <c val=\"bfd4fd\">5</c> seconds.",
+            "fullText": "At the end of its duration, Lightning Nova grants Mephisto a Shield equal to <c val=\"bfd4fd\">50%</c> of the damage it dealt to Heroes. Lasts <c val=\"bfd4fd\">5</c> seconds.",
             "abilityType": "W",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -47529,7 +47529,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 60</s>",
             "cooldownText": "Cooldown: 60 seconds",
             "shortText": "Knock back enemies in front of Stukov",
-            "fullText": "Swipe <c val=\"bfd4fd\">3</c> times in front of Stukov over <c val=\"bfd4fd\">1.75</c> seconds, dealing <c val=\"bfd4fd\">48</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit and knocking them away. Each swipe is larger than the previous.",
+            "fullText": "Swipe <c val=\"bfd4fd\">3</c> times in front of Stukov over <c val=\"bfd4fd\">1.75</c> seconds, dealing <c val=\"bfd4fd\">62</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit and knocking them away. Each swipe is larger than the previous.",
             "abilityType": "Heroic"
           }
         ],
@@ -47806,7 +47806,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 60</s>",
             "cooldownText": "Cooldown: 60 seconds",
             "shortText": "Knock back enemies in front of Stukov",
-            "fullText": "Swipe <c val=\"bfd4fd\">3</c> times in front of Stukov over <c val=\"bfd4fd\">1.75</c> seconds, dealing <c val=\"bfd4fd\">48</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit and knocking them away. Each swipe is larger than the previous.",
+            "fullText": "Swipe <c val=\"bfd4fd\">3</c> times in front of Stukov over <c val=\"bfd4fd\">1.75</c> seconds, dealing <c val=\"bfd4fd\">62</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit and knocking them away. Each swipe is larger than the previous.",
             "abilityType": "Heroic",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -50163,9 +50163,9 @@
       "description": "A Summoner that specializes in controlling key areas of the battleground.",
       "infoText": "Few would consider Gazlowe a fighter, but what he lacks in height, he makes up in mechanical know-how. Besides, you don't get to be boss of a \"boom\"-town like Ratchet with just a charming personality, if you know what I mean.",
       "life": {
-        "amount": 2275,
+        "amount": 2375,
         "scale": 0.04,
-        "regenRate": 4.74,
+        "regenRate": 4.94,
         "regenScale": 0.04,
         "type": "Health"
       },
@@ -50192,7 +50192,7 @@
           "range": 1.25,
           "minimumRange": 0,
           "period": 0.8,
-          "damage": 100,
+          "damage": 105,
           "damageScale": 0.04
         }
       ],
@@ -50248,7 +50248,7 @@
             },
             "cooldownText": "Cooldown: 8 seconds",
             "shortText": "Damage targets in a line",
-            "fullText": "After <c val=\"bfd4fd\">0.65</c> seconds, deal <c val=\"bfd4fd\">175</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in a line. Heal for <c val=\"bfd4fd\">25%</c> of the damage dealt, increased to <c val=\"bfd4fd\">75%</c> against enemy Heroes.",
+            "fullText": "After <c val=\"bfd4fd\">0.65</c> seconds, deal <c val=\"bfd4fd\">175</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in a line. Heal for <c val=\"bfd4fd\">30%</c> of the damage dealt, increased to <c val=\"bfd4fd\">75%</c> against enemy Heroes.",
             "abilityType": "W"
           },
           {
@@ -50728,7 +50728,7 @@
             "abilityId": "TinkerXplodiumBomb",
             "name": "Bomb Toss",
             "shortText": "Xplodium Charge releases more bombs",
-            "fullText": "Xplodium Charge gains a <c val=\"bfd4fd\">2nd</c> charge with a <c val=\"bfd4fd\">3</c> second cooldown between uses and launches <c val=\"bfd4fd\">2</c> more bombs when it detonates.",
+            "fullText": "Xplodium Charge launches <c val=\"bfd4fd\">2</c> more bombs when it detonates.",
             "abilityType": "E",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -57598,7 +57598,7 @@
       "life": {
         "amount": 1330,
         "scale": 0.04,
-        "regenRate": 2.6484,
+        "regenRate": 2.7708,
         "regenScale": 0.04,
         "type": "Health"
       },
@@ -57679,7 +57679,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 50</s>",
             "cooldownText": "Cooldown: 15 seconds",
             "shortText": "Summon the Dark Heart",
-            "fullText": "Summon the Dark Heart, which pulses for <c val=\"bfd4fd\">50</c><c val=\"a7a7a7\">~~0.04~~</c> damage per second to nearby enemies and lasts <c val=\"bfd4fd\">8</c> seconds.<n/><n/>The Dark Heart moves to Shadow Mark's impact location.<n/><n/>The Dark Heart will pursue targets afflicted by Shadow Mark and detonate on impact, dealing <c val=\"bfd4fd\">245</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies and <c val=\"bfd4fd\">61</c><c val=\"a7a7a7\">~~0.04~~</c> more damage to the Marked target.",
+            "fullText": "Summon the Dark Heart, which pulses for <c val=\"bfd4fd\">50</c><c val=\"a7a7a7\">~~0.04~~</c> damage per second to nearby enemies and lasts <c val=\"bfd4fd\">8</c> seconds.<n/><n/>The Dark Heart moves to Shadow Mark's impact location.<n/><n/>The Dark Heart will pursue targets afflicted by Shadow Mark and detonate on impact, dealing <c val=\"bfd4fd\">260</c><c val=\"a7a7a7\">~~0.04~~</c> damage to nearby enemies and <c val=\"bfd4fd\">65</c><c val=\"a7a7a7\">~~0.04~~</c> more damage to the Marked target.",
             "abilityType": "W"
           },
           {
@@ -57696,14 +57696,14 @@
         ],
         "Heroic": [
           {
-            "linkId": "XalatathVoidEruption|XalatathVoidEruption|Heroic",
-            "abilityId": "XalatathVoidEruption",
+            "linkId": "XalatathVoidEruptionV2|XalatathVoidEruption|Heroic",
+            "abilityId": "XalatathVoidEruptionV2",
             "buttonId": "XalatathVoidEruption",
             "name": "Void Eruption",
             "energyText": "<s val=\"bfd4fd\">Mana: 80</s>",
             "cooldownText": "Cooldown: 75 seconds",
             "shortText": "Channel a growing orb that deals damage in its path",
-            "fullText": "Channel a powerful Void Orb that grows over time until reaching maximum size after <c val=\"bfd4fd\">2</c> seconds. Recast to launch the Orb early.<n/><n/>Enemies that come into contact with the Orb take <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Blinded for <s val=\"bfd4fd\">1</s> second.<n/><n/>When the Orb reaches the end of its path, it detonates in a large explosion, dealing <c val=\"bfd4fd\">400</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/>Charging up this Ability increases its contact damage up to <c val=\"bfd4fd\">166</c><c val=\"a7a7a7\">~~0.04~~</c> and its explosion damage up to <c val=\"bfd4fd\">700</c><c val=\"a7a7a7\">~~0.04~~</c>.<n/><n/><s val=\"a7a7a7\">Contact damage is dealt every 0.25 seconds.</s>",
+            "fullText": "Channel a powerful Void Orb that grows over time until reaching maximum size after <c val=\"bfd4fd\">2</c> seconds. Recast to launch the Orb early.<n/><n/>Enemies that come into contact with the Orb take <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Blinded for <s val=\"bfd4fd\">1</s> second.<n/><n/>When the Orb reaches the end of its path, it detonates in a large explosion, dealing <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/>Charging up this Ability increases its contact damage up to <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> and its explosion damage up to <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c>.<n/><n/><s val=\"a7a7a7\">Contact damage is dealt every 0.25 seconds.</s>",
             "abilityType": "Heroic"
           },
           {
@@ -57726,7 +57726,7 @@
             "name": "Void Volley",
             "energyText": "<s val=\"bfd4fd\">Mana: 35</s>",
             "shortText": "Unleash a barrage of Void Missiles at a target location",
-            "fullText": "Every basic attack against heroes, and every <c val=\"bfd4fd\">2</c> basic attacks against non-heroes generate charge. Once fully charged Xal'atath can activate Void Volley to unleash a barrage of <c val=\"bfd4fd\">6</c> Void Orbs at a target location, each dealing <c val=\"bfd4fd\">72</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact.<n/><n/>Charge fully decays if Xal’atath does not hit an enemy with a Basic Attack after <c val=\"bfd4fd\">6</c> seconds.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit enemy Heroes with Void Volley to grant <c val=\"bfd4fd\">1</c> stack per hit and increases Void Volley's damage by <c val=\"bfd4fd\">1%</c>. Lose all stacks upon dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward (20 Stacks):</c><n/>   <c val=\"00ff90\">+2</c> Void Volley Range<n/>   Stack loss on death lowered to <c val=\"bfd4fd\">6</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward (60 Stacks):</c><n/>   <c val=\"00ff90\">-1</c> Basic Attack required to charge Void Volley.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward (100 Stacks):</c><n/>   <c val=\"00ff90\">+50%</c> Basic Attack and Void Volley Damage.<n/>   Void Volley projectiles Pierce all targets.<n/><n/><s val=\"a7a7a7\">Stack loss will never cause the Hero to fall below a quest reward threshold.</s>",
+            "fullText": "Every basic attack against heroes, and every <c val=\"bfd4fd\">2</c> basic attacks against non-heroes generate charge. Once fully charged Xal'atath can activate Void Volley to unleash a barrage of <c val=\"bfd4fd\">6</c> Void Orbs at a target location, each dealing <c val=\"bfd4fd\">72</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit enemy Heroes with Void Volley to grant <c val=\"bfd4fd\">1</c> stack per hit and increases Void Volley's damage by <c val=\"bfd4fd\">1%</c>. Lose all stacks upon dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward (20 Stacks):</c><n/>   <c val=\"00ff90\">+2</c> Void Volley Range<n/>   Stack loss on death lowered to <c val=\"bfd4fd\">6</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward (60 Stacks):</c><n/>   <c val=\"00ff90\">-1</c> Basic Attack required to charge Void Volley.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward (100 Stacks):</c><n/>   <c val=\"00ff90\">+35%</c> Basic Attack and Void Volley Damage.<n/>   Void Volley projectiles Pierce all targets.<n/><n/><s val=\"a7a7a7\">Stack loss will never cause the Hero to fall below a quest reward threshold.</s><n/><s val=\"a7a7a7\">Charge fully decays if Xal’atath does not hit an enemy with a Basic Attack after </s><c val=\"bfd4fd\">6</c><s val=\"a7a7a7\"> seconds.</s>",
             "abilityType": "Trait"
           }
         ],
@@ -57763,6 +57763,18 @@
               "toggleCooldown": 0.25,
               "fullText": "Cancel ability early to stop where you are.",
               "abilityType": "E"
+            }
+          ]
+        },
+        "XalatathVoidEruptionV2|XalatathVoidEruption|Heroic": {
+          "Heroic": [
+            {
+              "linkId": "XalatathVoidEruptionV2Cancel|XalatathVoidEruptionCancel|Heroic",
+              "abilityId": "XalatathVoidEruptionV2Cancel",
+              "buttonId": "XalatathVoidEruptionCancel",
+              "name": "Cancel Void Eruption",
+              "toggleCooldown": 0.5,
+              "abilityType": "Heroic"
             }
           ]
         },
@@ -57805,8 +57817,8 @@
             "buttonId": "XalatathAnchoredCore",
             "abilityId": "XalatathDarkHeartRitual",
             "name": "Anchored Core",
-            "shortText": "Increase duration and radius of the Dark Heart",
-            "fullText": "Dark Heart Ritual:<n/><c val=\"00ff90\">+25%</c> Radius<n/><c val=\"00ff90\">+25%</c> Duration<n/><n/>Dark Heart's damage bounces <c val=\"bfd4fd\">2</c> times from the primary target to nearby enemies, dealing <c val=\"bfd4fd\">25</c><c val=\"a7a7a7\">~~0.04~~</c> damage.",
+            "shortText": "Increase radius of the Dark Heart, damage chains",
+            "fullText": "<c val=\"00ff90\">+25%</c> Dark Heart Ritual Radius<n/><n/>Dark Heart's damage bounces <c val=\"bfd4fd\">2</c> times from the primary target to nearby enemies, dealing <c val=\"bfd4fd\">25</c><c val=\"a7a7a7\">~~0.04~~</c> damage.",
             "abilityType": "W",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -57823,7 +57835,7 @@
             "abilityId": "XalatathVoidStep",
             "name": "Cloak of Shadows",
             "shortText": "Void Step grants Spell Armor and Movement Speed",
-            "fullText": "Activating Void Step grants <s val=\"bfd4fd\">50%</s> Movement Speed and <c val=\"bfd4fd\">25</c> Spell Armor for <s val=\"bfd4fd\">2</s> seconds. This bonus refreshes each time Xal'atath teleports.",
+            "fullText": "Activating Void Step grants <c val=\"bfd4fd\">25</c> Spell Armor while teleporting and <s val=\"bfd4fd\">50%</s> Movement Speed for <c val=\"bfd4fd\">2</c> seconds afterwards.",
             "abilityType": "E",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -57842,7 +57854,7 @@
             "abilityId": "XalatathShadowMark",
             "name": "Cold Feet",
             "shortText": "Heroes afflicted by Shadow Mark are slowed, Mark duration is increased",
-            "fullText": "<c val=\"00ff90\">+1s</c> Shadow Mark Duration<n/><n/>Heroes afflicted by Shadow Mark have their Movement Speed reduced by <s val=\"bfd4fd\">25%</s>.",
+            "fullText": "<c val=\"00ff90\">+2s</c> Shadow Mark Duration<n/><n/>Heroes afflicted by Shadow Mark have their Movement Speed reduced by <s val=\"bfd4fd\">25%</s>.",
             "abilityType": "Q",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -57896,7 +57908,7 @@
             "abilityId": "XalatathShadowMark",
             "name": "Toxic Mark",
             "shortText": "Shadow Mark affliction deals damage over time",
-            "fullText": "<c val=\"00ff90\">+1s</c> Shadow Mark Duration<n/><n/>Heroes affliced with Shadow Mark have their Armor reduced by <s val=\"bfd4fd\">10</s> and take damage equal to <c val=\"bfd4fd\">1%</c> of their maximum Health every second.",
+            "fullText": "Heroes affliced with Shadow Mark have their Armor reduced by <s val=\"bfd4fd\">10</s> and take damage equal to <c val=\"bfd4fd\">1%</c> of their maximum Health every second.",
             "abilityType": "Q",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -57946,12 +57958,12 @@
             "linkId": "XalatathHeroicAbilityVoidEruption|XalatathVoidEruption|Heroic|Level10",
             "talentId": "XalatathHeroicAbilityVoidEruption",
             "buttonId": "XalatathVoidEruption",
-            "abilityId": "XalatathVoidEruption",
+            "abilityId": "XalatathVoidEruptionV2",
             "name": "Void Eruption",
             "energyText": "<s val=\"bfd4fd\">Mana: 80</s>",
             "cooldownText": "Cooldown: 75 seconds",
             "shortText": "Channel a growing orb that deals damage in its path",
-            "fullText": "Channel a powerful Void Orb that grows over time until reaching maximum size after <c val=\"bfd4fd\">2</c> seconds. Recast to launch the Orb early.<n/><n/>Enemies that come into contact with the Orb take <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Blinded for <s val=\"bfd4fd\">1</s> second.<n/><n/>When the Orb reaches the end of its path, it detonates in a large explosion, dealing <c val=\"bfd4fd\">400</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/>Charging up this Ability increases its contact damage up to <c val=\"bfd4fd\">166</c><c val=\"a7a7a7\">~~0.04~~</c> and its explosion damage up to <c val=\"bfd4fd\">700</c><c val=\"a7a7a7\">~~0.04~~</c>.<n/><n/><s val=\"a7a7a7\">Contact damage is dealt every 0.25 seconds.</s>",
+            "fullText": "Channel a powerful Void Orb that grows over time until reaching maximum size after <c val=\"bfd4fd\">2</c> seconds. Recast to launch the Orb early.<n/><n/>Enemies that come into contact with the Orb take <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Blinded for <s val=\"bfd4fd\">1</s> second.<n/><n/>When the Orb reaches the end of its path, it detonates in a large explosion, dealing <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/>Charging up this Ability increases its contact damage up to <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> and its explosion damage up to <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c>.<n/><n/><s val=\"a7a7a7\">Contact damage is dealt every 0.25 seconds.</s>",
             "abilityType": "Heroic",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -58053,7 +58065,7 @@
             "abilityId": "XalatathVoidStep",
             "name": "Relentless Whispers",
             "shortText": "While Void Step is active, increase Void Orb rate of fire",
-            "fullText": "While Void Step is active, Xal'atath's Basic Attack Speed is increased by <c val=\"bfd4fd\">150%</c>.",
+            "fullText": "Increases the Basic Attack damage bonus per teleport by <c val=\"bfd4fd\">75%</c>.",
             "abilityType": "E",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -58070,7 +58082,7 @@
             "abilityId": "XalatathVoidVolley",
             "name": "Fractured Reality",
             "shortText": "Void Volley leaves a trail of fire along its path",
-            "fullText": "<c val=\"00ff90\">+25%</c> Void Volley Projectile Damage<n/><n/>Void Volley's projectiles leave behind a trail of fire for <c val=\"bfd4fd\">3</c> seconds, constantly dealing <c val=\"bfd4fd\">9</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies. Damage is increased the longer a target stands in the flames.<n/><n/><s val=\"a7a7a7\">Damage is dealt every 0.1875 seconds.</s><n/><s val=\"a7a7a7\">Damage increases up to 300%.</s><n/><s val=\"a7a7a7\">Damage increase from multiple fires stack.</s>",
+            "fullText": "<c val=\"00ff90\">+15%</c> Void Volley Projectile Damage<n/><n/>Void Volley's projectiles leave behind a trail of fire for <c val=\"bfd4fd\">3</c> seconds, constantly dealing <c val=\"bfd4fd\">9</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies. Damage is increased the longer a target stands in the flames.<n/><n/><s val=\"a7a7a7\">Damage is dealt every 0.1875 seconds.</s><n/><s val=\"a7a7a7\">Damage increases up to 300%.</s><n/><s val=\"a7a7a7\">Damage increase from multiple fires stack.</s>",
             "abilityType": "Trait",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -58086,17 +58098,17 @@
             "linkId": "XalatathOrbitalEruption|XalatathOrbitalEruption|Heroic|Level20",
             "talentId": "XalatathOrbitalEruption",
             "buttonId": "XalatathOrbitalEruption",
-            "abilityId": "XalatathVoidEruption",
+            "abilityId": "XalatathVoidEruptionV2",
             "name": "Harbinger's Consumption",
             "shortText": "Grow and launch three Void Orbs",
-            "fullText": "Void Eruption splits into <c val=\"bfd4fd\">3</c> orbiting Void Orbs. Each enemy Hero hit by their explosions reduces Void Eruption's cooldown by <c val=\"bfd4fd\">14</c> seconds.",
+            "fullText": "Void Eruption splits into <c val=\"bfd4fd\">3</c> orbiting Void Orbs. Each enemy Hero hit by their explosions reduces Void Eruption's cooldown by <c val=\"bfd4fd\">10</c> seconds.",
             "abilityType": "Heroic",
             "isQuest": false,
             "upgradesAbilityType": true,
             "hasHotkey": true,
             "sort": 1,
             "tooltipAbilityLinkIds": [
-              "XalatathVoidEruption|XalatathVoidEruption|Heroic"
+              "XalatathVoidEruptionV2|XalatathVoidEruption|Heroic"
             ],
             "prerequisiteTalentIds": [
               "XalatathHeroicAbilityVoidEruption"
@@ -58146,7 +58158,7 @@
             "abilityId": "XalatathDarkHeartRitual",
             "name": "Unstable Core",
             "shortText": "Upon Dark Heart destruction, leave behind a pool of Void flames",
-            "fullText": "When the Dark Heart expires or detonates on a target afflicted by Shadow Mark, it leaves behind a pool of void flames for <c val=\"bfd4fd\">5</c> seconds. Enemies in the flames take <c val=\"bfd4fd\">45</c><c val=\"a7a7a7\">~~0.04~~</c> damage over time.<n/><n/><s val=\"a7a7a7\">The flames deal damage every 1 second.</s>",
+            "fullText": "When the Dark Heart expires or detonates, it leaves behind a pool of void flames for <c val=\"bfd4fd\">6</c> seconds, dealing up to <c val=\"bfd4fd\">450</c><c val=\"a7a7a7\">~~0.04~~</c> to enemies in the area.<n/><n/><s val=\"a7a7a7\">Deals 75</s><c val=\"a7a7a7\">~~0.04~~</c><s val=\"a7a7a7\"> damage every 1 second.</s>",
             "abilityType": "W",
             "isQuest": false,
             "upgradesAbilityType": true,

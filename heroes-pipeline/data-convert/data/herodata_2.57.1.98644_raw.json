@@ -45585,9 +45585,9 @@
       "targetInfo": ""
     },
     "life": {
-      "amount": 2275,
+      "amount": 2375,
       "scale": 0.04,
-      "regenRate": 4.74,
+      "regenRate": 4.94,
       "regenScale": 0.04,
       "type": "Health"
     },
@@ -45609,7 +45609,7 @@
         "range": 1.25,
         "minimumRange": 0,
         "period": 0.8,
-        "damage": 100,
+        "damage": 105,
         "damageScale": 0.04
       }
     ],
@@ -52336,7 +52336,7 @@
     "life": {
       "amount": 1330,
       "scale": 0.04,
-      "regenRate": 2.6484,
+      "regenRate": 2.7708,
       "regenScale": 0.04,
       "type": "Health"
     },
@@ -52414,11 +52414,11 @@
       ],
       "heroic": [
         {
-          "nameId": "XalatathVoidEruption",
+          "nameId": "XalatathVoidEruptionV2",
           "buttonId": "XalatathVoidEruption",
           "abilityType": "Heroic",
           "isPassive": false,
-          "_hdp5LinkId": "XalatathVoidEruption|XalatathVoidEruption|Heroic",
+          "_hdp5LinkId": "XalatathVoidEruptionV2|XalatathVoidEruption|Heroic",
           "icon": "storm_ui_icon_xalatath_r1_voideruption.png"
         },
         {
@@ -52625,10 +52625,10 @@
           "isQuest": false,
           "icon": "storm_ui_icon_xalatath_r1_voideruption.png",
           "_hdp5AbilityLinks": [
-            "XalatathVoidEruption|XalatathVoidEruption|Heroic"
+            "XalatathVoidEruptionV2|XalatathVoidEruption|Heroic"
           ],
           "abilityTalentLinkIds": [
-            "XalatathVoidEruption"
+            "XalatathVoidEruptionV2"
           ]
         },
         {
@@ -52762,10 +52762,10 @@
           ],
           "icon": "storm_ui_icon_xalatath_r1_voideruption_b.png",
           "_hdp5AbilityLinks": [
-            "XalatathVoidEruption|XalatathVoidEruption|Heroic"
+            "XalatathVoidEruptionV2|XalatathVoidEruption|Heroic"
           ],
           "abilityTalentLinkIds": [
-            "XalatathVoidEruption"
+            "XalatathVoidEruptionV2"
           ]
         },
         {
@@ -52848,6 +52848,19 @@
               "isPassive": false,
               "_hdp5LinkId": "XalatathVoidStepCancel|XalatathVoidStepCancel|E",
               "toggleCooldown": 0.25,
+              "icon": "hud_btn_bg_ability_cancel.png"
+            }
+          ]
+        },
+        "XalatathVoidEruptionV2|XalatathVoidEruption|Heroic": {
+          "heroic": [
+            {
+              "nameId": "XalatathVoidEruptionV2Cancel",
+              "buttonId": "XalatathVoidEruptionCancel",
+              "abilityType": "Heroic",
+              "isPassive": false,
+              "_hdp5LinkId": "XalatathVoidEruptionV2Cancel|XalatathVoidEruptionCancel|Heroic",
+              "toggleCooldown": 0.5,
               "icon": "hud_btn_bg_ability_cancel.png"
             }
           ]

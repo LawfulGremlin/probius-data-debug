@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "component": "heroes-talents",
-  "track": "live",
-  "product": "hero",
-  "version": "2.57.0.98348",
-  "buildId": "B98348",
-  "sourceSha": "05f23b3e317650f3fb6f5b6002af16f60f2ed880",
-  "generation": "434e65cf2da2708a102a17657bdf8c9151642fec0b4b29012bd68f7071f16949",
+  "track": "ptr",
+  "product": "herot",
+  "version": "2.57.1.98644",
+  "buildId": "B98644",
+  "sourceSha": "3ae8461c1e976c5af092b2bd69ddbfe992b9acb1",
+  "generation": "ee9441e279b7f5d8562b33548a45812986b5126930f72591b6e78ad93377eff3",
   "producer": {
     "hdpVersion": "5.0.4",
     "adapterSchemaVersion": 1,
@@ -26,7 +26,8 @@
         "releasePatch",
         "releaseDate"
       ]
-    }
+    },
+    "Medivh: differs from the previous publication: summonUnits disappeared"
   ],
   "missingCatalogs": [
     {
@@ -42,7 +43,7 @@
     "tooltipCount": 3448,
     "colorCount": 251,
     "enrichedCompanions": 1,
-    "enrichedSummons": 28,
+    "enrichedSummons": 27,
     "enrichedTooltips": 91,
     "enrichedSimple": 91,
     "enrichedColors": 91,
@@ -1099,6 +1100,9 @@
         "Mount",
         "SummonMount",
         "UnsummonMount",
+        "XalatathVoidEruptionCancel",
+        "XalatathVoidEruptionV2",
+        "XalatathVoidEruptionV2Cancel",
         "XalatathVoidStepCancel"
       ],
       "Necromancer": [
@@ -1202,22 +1206,26 @@
       ]
     },
     "unidentifiedAbilities": {},
-    "previousDeviations": {},
+    "previousDeviations": {
+      "Medivh": [
+        "summonUnits disappeared"
+      ]
+    },
     "buckets": []
   },
   "baseline": {
-    "version": "2.57.0.98304",
-    "generation": "28c5e9a255e8f57d59811bbff61b55818d50965196cf1c9ade20ada18d68ca70",
+    "version": "2.57.0.98217",
+    "generation": "b5484bbefc3a13ee7ff74e3f6d820ec9b3d6558d1582c10ffbdbce3beffca964",
     "legacyDerived": false,
     "heroes": 91
   },
   "publication": {
     "status": "published",
-    "commit": "1c3a028c5874930f60e72bd0df388c1038bb63c5",
-    "branch": "live",
-    "generation": "434e65cf2da2708a102a17657bdf8c9151642fec0b4b29012bd68f7071f16949",
-    "componentTree": "9a32b8fcb05143434b34cdf9ea9bff077dfc67f0"
+    "commit": "f03c8ee93581209c2f1304315561c534b9d12034",
+    "branch": "test",
+    "generation": "ee9441e279b7f5d8562b33548a45812986b5126930f72591b6e78ad93377eff3",
+    "componentTree": "7b26e200abbf363a2a6276171465f682f14fb7a1"
   },
   "imageStatus": "partial",
-  "imageReport": "live-2.57.0.98348-images.json"
+  "imageReport": "ptr-2.57.1.98644-images.json"
 }
