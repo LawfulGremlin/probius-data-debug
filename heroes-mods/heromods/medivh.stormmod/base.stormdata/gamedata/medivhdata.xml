@@ -1739,12 +1739,13 @@
     <BehaviorCategories index="Restorable" value="1" />
     <RemoveValidatorArray value="DoesNotHavePermanentCloak" />
     <Duration value="40" />
-    <InitialEffect value="MedivhDustofDisappearanceHoldFireApply" />
+    <InitialEffect value="" />
     <FinalEffect value="MedivhDustofDisappearanceHoldFireRemove" />
     <DamageResponse Chance="1" Handled="MedivhDustofDisappearanceCloakRemove" Priority="97" />
   </CBehaviorBuff>
   <CBehaviorBuff id="MedivhDustOfDisappearanceUnrevealableCloak" parent="StormUnrevealableCloak">
     <Duration value="0.5" />
+    <InitialEffect value="MedivhDustofDisappearanceHoldFireApply" />
     <FinalEffect value="MedivhDustofDisappearanceCloakApply" />
   </CBehaviorBuff>
   <CBehaviorBuff id="MedivhDustofDisappearanceHoldFire">
