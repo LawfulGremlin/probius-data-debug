@@ -2830,7 +2830,7 @@
   </CEffectSet>
   <CEffectDamage id="XalatathVoidVolleyDamage" parent="StormSpell">
     <Flags index="Crit" value="1" />
-    <MultiplicativeModifierArray index="XalatathFracturedReality" Validator="XalatathHasXalatathFracturedRealityTalent" Modifier="0.25" />
+    <MultiplicativeModifierArray index="XalatathFracturedReality" Validator="XalatathHasXalatathFracturedRealityTalent" Modifier="0.15" />
     <MultiplicativeModifierArray index="XalatathVoidAcolyte" Validator="XalatathSourceHasXalatathVoidAcolyteMissileMarker" Modifier="0.25" Crit="1" />
     <MultiplicativeModifierArray index="Quest" Validator="XalatathCompletedVoidVolleyQuest" Modifier="$XalatathVoidVolleyQuestCompleteDamageModifier" Crit="1" />
     <MultiplicativeModifierArray index="3" Accumulator="XalatathVoidVolleyTalentDamageAccumulator" />
