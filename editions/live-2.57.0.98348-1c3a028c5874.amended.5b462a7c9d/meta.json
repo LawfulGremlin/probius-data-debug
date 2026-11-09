@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "editionId": "live-2.57.0.98348-1c3a028c5874.amended.5b462a7c9d",
+  "occurrenceId": "live-2.57.0.98348-1c3a028c5874",
+  "kind": "amended",
+  "inputsHash": "5b462a7c9d80e57e05d48c950bec38dacdf24505b0275f03252980e26fae13db",
+  "inputs": {
+    "comparisonKey": "ac26817de78dbf0feb372f3e900380b40d19e576b533e34ccc34d59624183004",
+    "evidenceSha": "5bab0107c5c04415125c3882db9f377c1c837f84074808ad754c5f5f1ecbc25b",
+    "official": {
+      "articleKey": "news-24303007",
+      "sectionKey": "hotfix-2026-10-05",
+      "docSha": "e06ef9b0fee5ed16bce2d0d5686b442dee82ec3a53c75bb270f119f35518b689",
+      "mappingSha": "ab953415a9ea5463ff69c6c19ed1bae9c5620440dda70f5e2b7d7e0f3f56eb2a",
+      "coverageSha": "7f34f48d4ca08d93083a6830f1606765995a054dca73f1982a18c34fbcfef4cc"
+    },
+    "versions": {
+      "comparator": 8,
+      "parser": 1,
+      "prompts": 1,
+      "render": 3
+    },
+    "model": "claude-opus-5-5",
+    "effort": "medium",
+    "t2Green": true,
+    "displayScope": "section",
+    "claude": "46811724b06ff13d4129a5743d033635bda7cae1d32d055d71305471a2683a6d"
+  },
+  "claude": {
+    "used": true,
+    "genKeys": [
+      "15ee279dcffdba672553d35dad442fa359810f9cc39360ae6472cb64c9984bd0",
+      "77129264c944edf9265a0c7a2fd39e61c86c7ed2f59a2958610183dd19645c71",
+      "8f2264d8cd81669cda7cdb09ec97a28add7f1fadf25ea4771673b84697d70a4f"
+    ],
+    "usd": 0.409228
+  },
+  "counts": {
+    "claims": 37,
+    "additions": 25,
+    "discrepancies": 0,
+    "uncertain": 3,
+    "appendix": 273
+  },
+  "createdAt": "2026-11-09T16:59:49Z"
+}
