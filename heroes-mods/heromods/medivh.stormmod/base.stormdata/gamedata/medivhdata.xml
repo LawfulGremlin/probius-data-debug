@@ -56,7 +56,7 @@
     <Effect value="MedivhForceOfWillInitialSet" />
     <Cost>
       <Vital index="Energy" value="60" />
-      <Cooldown TimeUse="9" />
+      <Cooldown TimeUse="8" />
     </Cost>
     <TargetFilters value="Heroic;Neutral,Enemy,Missile,Item,Stasis,Dead,Hidden" />
     <Range value="13" />
@@ -115,7 +115,7 @@
     <Effect value="MedivhPortalCreateCreationUnit" />
     <Flags index="RequireTargetVision" value="0" />
     <Cost>
-      <Cooldown TimeUse="16" />
+      <Cooldown TimeUse="20" />
     </Cost>
     <Placeholder value="MedivhPortal" />
     <Range value="16" />
@@ -139,7 +139,7 @@
     <Flags index="RequireTargetVision" value="0" />
     <Cost>
       <Vital index="Energy" value="65" />
-      <Cooldown TimeUse="16" />
+      <Cooldown TimeUse="20" />
     </Cost>
     <Range value="16" />
     <Arc value="219.9902" />
@@ -239,7 +239,7 @@
     <OrderArray index="0" Model="Assets\Units\Test\InvisibleUnit\InvisibleUnit.m3" LineTexture="Assets\Textures\Storm_WayPointLine.dds" />
     <Effect value="MedivhDustOfAppearanceCreatePersistent" />
     <Cost>
-      <Cooldown TimeUse="45" />
+      <Cooldown TimeUse="40" />
     </Cost>
     <PrepEffect value="DecloakCasterSet" />
     <ValidatedArray index="Approach" value="0" />
@@ -829,6 +829,10 @@
   <CActorRange id="MedivhForceOfWillCastRange" parent="StormRangeAbilPlusSplat" abil="MedivhForceOfWill" />
   <CActorSplat id="MedivhForceOfWillCastRangeSplat" parent="StormRangeSplat">
     <Scale value="13.750000" />
+  </CActorSplat>
+  <CActorSplat id="MedivhForceOfWillCircleOfProtectionSplat" parent="StormGuideVisualCircle" abil="MedivhForceOfWill">
+    <On index="0" Terms="Abil.MedivhForceOfWill.Guide; ValidatePlayer MedivhHasMedivhForceOfWillCircleOfProtectionTalent" Send="Create" />
+    <Model value="MedivhForceOfWillCircleOfProtectionSplat" />
   </CActorSplat>
   <CActorForceSphere id="MedivhForceOfWillForce">
     <On Terms="Effect.MedivhForceOfWillApplyBuff.Start; At Effect" Send="Create" />
@@ -1427,9 +1431,6 @@
   </CBehaviorTokenCounter>
   <CBehaviorBuff id="MedivhDustOfAppearanceCarry" parent="CarryBehaviorParent">
     <DisableValidatorArray value="MedivhCasterHasTransformRaven" />
-    <Modification>
-      <SightBonus value="1.75" />
-    </Modification>
   </CBehaviorBuff>
   <CBehaviorBuff id="MedivhForceOfWillForceofMagicTalentStack" parent="StormDamageIncrease">
     <Aliases value="CritAliasSpellPower" />
@@ -1739,12 +1740,13 @@
     <BehaviorCategories index="Restorable" value="1" />
     <RemoveValidatorArray value="DoesNotHavePermanentCloak" />
     <Duration value="40" />
-    <InitialEffect value="MedivhDustofDisappearanceHoldFireApply" />
+    <InitialEffect value="" />
     <FinalEffect value="MedivhDustofDisappearanceHoldFireRemove" />
     <DamageResponse Chance="1" Handled="MedivhDustofDisappearanceCloakRemove" Priority="97" />
   </CBehaviorBuff>
   <CBehaviorBuff id="MedivhDustOfDisappearanceUnrevealableCloak" parent="StormUnrevealableCloak">
     <Duration value="0.5" />
+    <InitialEffect value="MedivhDustofDisappearanceHoldFireApply" />
     <FinalEffect value="MedivhDustofDisappearanceCloakApply" />
   </CBehaviorBuff>
   <CBehaviorBuff id="MedivhDustofDisappearanceHoldFire">
@@ -2181,7 +2183,7 @@
   </CEffectSet>
   <CEffectSet id="MedivhPortalRemoveRavenSet">
     <ValidatorArray value="MedivhCasterHasTransformRaven" />
-    <ValidatorArray value="MedivhDoesNotHavePortalMasteryTalent" />
+    <ValidatorArray value="MedivhNotHasTransformRavenDustOfAppearanceTalent2" />
     <EffectArray value="MedivhTransformRavenGuardianMorphIssueOrder" />
     <EffectArray value="MedivhTransformRavenLandDummy" />
     <EffectArray value="MedivhTransformRavenRemove" />
@@ -3024,7 +3026,7 @@
     <RechargeVitalRate value="50" />
   </CEffectCreateHealer>
   <CEffectDamage id="MedivhArcaneRiftDamage" parent="StormSpell">
-    <Amount value="170" />
+    <Amount value="185" />
     <MultiplicativeModifierArray index="MedivhArcaneCharge" Validator="MedivhSourceHasArcaneRiftArcaneChargeMarker" Modifier="0.15" Crit="1" />
     <FlatModifierArray index="MastersTouchDamage" Validator="MedivhHasArcaneRiftTheMastersTouchQuestComplete" Modifier="75" />
   </CEffectDamage>
@@ -3445,12 +3447,12 @@
       <TalentsArray value="MedivhLeyLineSealMedivhCheats" />
     </TalentAIBuildsArray>
     <TalentAIBuildsArray ChanceToPick="16">
-      <TalentsArray value="MedivhTransformRavenWindsOfCelerity" />
+      <TalentsArray value="MedivhPortalStablePortal" />
       <TalentsArray value="MedivhPortalRavenFamiliar" />
       <TalentsArray value="MedivhForceofMagic" />
       <TalentsArray value="MedivhPolyBomb" />
       <TalentsArray value="MedivhForceOfWillEnduringWill" />
-      <TalentsArray value="MedivhPortalStablePortal" />
+      <TalentsArray value="MedivhTemporalFlux" />
       <TalentsArray value="MedivhDustofDisappearance" />
     </TalentAIBuildsArray>
     <TalentAIBuildsArray ChanceToPick="16">
@@ -3459,16 +3461,16 @@
       <TalentsArray value="MedivhForceOfWillArcaneExplosion" />
       <TalentsArray value="MedivhPolyBomb" />
       <TalentsArray value="MedivhForceOfWillCircleOfProtection" />
-      <TalentsArray value="MedivhTemporalFlux" />
+      <TalentsArray value="MedivhArcaneRiftArcaneCharge" />
       <TalentsArray value="MedivhPolyBombGlyphOfPolyBomb" />
     </TalentAIBuildsArray>
     <TalentAIBuildsArray ChanceToPick="16">
-      <TalentsArray value="MedivhTransformRavenRavensIntellect" />
+      <TalentsArray value="MedivhPortalStablePortal" />
       <TalentsArray value="MedivhDustOfAppearance" />
       <TalentsArray value="MedivhMysticAssault" />
       <TalentsArray value="MedivhLeyLineSeal" />
       <TalentsArray value="MedivhForceOfWillReabsorption" />
-      <TalentsArray value="MedivhPortalStablePortal" />
+      <TalentsArray value="MedivhTemporalFlux" />
       <TalentsArray value="MedivhArcaneBrilliance" />
     </TalentAIBuildsArray>
     <TalentAIBuildsArray AIOnly="1" ChanceToPick="16">
@@ -3477,7 +3479,7 @@
       <TalentsArray value="MedivhForceOfWillArcaneExplosion" />
       <TalentsArray value="MedivhLeyLineSeal" />
       <TalentsArray value="MedivhForceOfWillCircleOfProtection" />
-      <TalentsArray value="MedivhPortalStablePortal" />
+      <TalentsArray value="MedivhTemporalFlux" />
       <TalentsArray value="MedivhArcaneRiftGuardianOfTirisfal" />
     </TalentAIBuildsArray>
     <TalentAIBuildsArray AIOnly="1" ChanceToPick="16">
@@ -4190,14 +4192,14 @@
         <Catalog value="Behavior" />
         <Entry value="MedivhTransformRaven" />
         <Field value="Modification.VitalRegenMultiplier[Energy]" />
-        <Value value="2.000000" />
+        <Value value="4.000000" />
       </Modifications>
       <Modifications>
         <Type value="FlatModification" />
         <Catalog value="Behavior" />
         <Entry value="MedivhTransformRaven" />
         <Field value="Modification.VitalRegenMultiplier[Life]" />
-        <Value value="2.000000" />
+        <Value value="4.000000" />
       </Modifications>
     </AbilityModificationArray>
   </CTalent>
@@ -4219,6 +4221,12 @@
         <Entry value="MedivhTransformRaven" />
         <Field value="Modification.UnifiedMoveSpeedFactor" />
         <Value value="0.200000" />
+      </Modifications>
+      <Modifications>
+        <Type value="FlatModification" />
+        <Entry value="MedivhTransformRaven" />
+        <Field value="CastIntroTime" />
+        <Value value="-0.250000" />
       </Modifications>
     </AbilityModificationArray>
     <Abil value="MedivhTransformRaven" />
@@ -4441,6 +4449,9 @@
     <Compare value="GT" />
     <Behavior value="MedivhMysticAssaultDamageBonus" />
   </CValidatorUnitCompareBehaviorCount>
+  <CValidatorPlayerTalent id="MedivhNotHasTransformRavenDustOfAppearanceTalent2">
+    <Value value="MedivhDustOfAppearance" />
+  </CValidatorPlayerTalent>
   <CValidatorUnitCompareBehaviorCount id="MedivhSourceHasMysticAssaultMarker">
     <WhichUnit Value="Source" />
     <Compare value="GT" />
