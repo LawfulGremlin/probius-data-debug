@@ -71,7 +71,7 @@
       <Cooldown TimeUse="$MeiOWIcingCooldown" />
     </Cost>
     <MoveLocation ProjectionDistanceScale="11" />
-    <CastIntroTime value="0.125" />
+    <CastIntroTime value="0.5" />
     <CursorEffect value="MeiOWIcingSearch" />
     <CmdButtonArray index="Execute" DefaultButtonFace="MeiOWIcing">
       <Flags index="AllowSelfCast" value="0" />
