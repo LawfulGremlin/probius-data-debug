@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "genKey": "6e7d07276d2fe802aed89387e38a34eabf08725fe0c594a45834aee683712ad6",
+  "purpose": "coverage",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "promptVersion": 1,
+  "outputSchema": 1,
+  "inputSha": "c11ff79c97f70508f64d8bbee0564d7da43575e4f8a19618acfb8f50346ad367",
+  "output": {
+    "proposals": [
+      {
+        "evidenceId": "c-41bc1c2035",
+        "bulletId": "b-feb1cd5f34",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state that Bomb Toss no longer grants Xplodium Charge an additional charge."
+      },
+      {
+        "evidenceId": "c-39fcc5739a",
+        "bulletId": "b-feb1cd5f34",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the removal of the extra Xplodium Charge charge."
+      },
+      {
+        "evidenceId": "c-1030efc626",
+        "bulletId": "b-33ddc06c11",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Leech 0.25 to 0.3 matches Life Leech 25% to 30%."
+      },
+      {
+        "evidenceId": "c-4c13878c6a",
+        "bulletId": "b-6258822e58",
+        "relation": "partly",
+        "missingDetail": "Maximum explosion damage bonus increased from 375 to 450.",
+        "reason": "The bullet states the per-stack increase but not the higher maximum."
+      },
+      {
+        "evidenceId": "c-48df61449c",
+        "bulletId": "b-6258822e58",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the per-Hero-hit bonus increased from 25 to 30."
+      },
+      {
+        "evidenceId": "c-fc4901135a",
+        "bulletId": "b-c43de5976d",
+        "relation": "partly",
+        "missingDetail": "No longer increases sight range in Raven Form by 25%.",
+        "reason": "The bullet states the new Portal behavior but not the removed sight bonus."
+      },
+      {
+        "evidenceId": "c-f0d6db4876",
+        "bulletId": "b-eb8842e283",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state Portal Mastery no longer keeps Medivh in Raven Form."
+      },
+      {
+        "evidenceId": "c-198bad403d",
+        "bulletId": "b-d7054b842c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both add a 0.25 second cast time reduction."
+      },
+      {
+        "evidenceId": "c-f58dfcb6e6",
+        "bulletId": "b-d7054b842c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both add a 0.25 second cast time reduction."
+      },
+      {
+        "evidenceId": "c-091a672f19",
+        "bulletId": "b-2d8f74709d",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Modifier 2 to 4 matches bonus 200% to 400%."
+      },
+      {
+        "evidenceId": "c-3a294bd34c",
+        "bulletId": "b-0e0d5a8bc9",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Tooltip 2 to 1.88 seconds matches the delay change to 1.875 seconds."
+      },
+      {
+        "evidenceId": "c-bdd9c2788e",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "conflicts",
+        "missingDetail": "",
+        "reason": "Game data shows cast time from 0.125 seconds while the bullet states from 0.625 seconds."
+      },
+      {
+        "evidenceId": "c-93a159d55b",
+        "bulletId": "b-63f434ce6f",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state 0.75 to 0.6875 seconds."
+      },
+      {
+        "evidenceId": "c-1246814cef",
+        "bulletId": "b-6873dbb474",
+        "relation": "partly",
+        "missingDetail": "Bonus damage to the Marked target increased from 61 to 65.",
+        "reason": "The bullet states only the main detonation damage change."
+      },
+      {
+        "evidenceId": "c-45608b481e",
+        "bulletId": "b-e55319885e",
+        "relation": "partly",
+        "missingDetail": "Health Regeneration increased from 2.6484 to 2.7708.",
+        "reason": "The bullet mentions a Health Regeneration fix without the values."
+      },
+      {
+        "evidenceId": "c-eefafcfe7a",
+        "bulletId": "b-ddf6ca9713",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the duration bonus was removed."
+      },
+      {
+        "evidenceId": "c-463ad199e6",
+        "bulletId": "b-566d477f7b",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state Spell Armor now applies only while teleporting."
+      },
+      {
+        "evidenceId": "c-56ad239d82",
+        "bulletId": "b-a3afe54d04",
+        "relation": "partly",
+        "missingDetail": "No longer increases Basic Attack Speed by 150% while Void Step is active.",
+        "reason": "The bullet states the new damage bonus but not the removed Attack Speed."
+      },
+      {
+        "evidenceId": "c-cc1e3f4dc0",
+        "bulletId": "b-a3afe54d04",
+        "relation": "partly",
+        "missingDetail": "No longer grants Attack Speed.",
+        "reason": "The bullet states the 75% damage bonus but not the Attack Speed removal."
+      },
+      {
+        "evidenceId": "c-483212895f",
+        "bulletId": "b-ee0f95a4ec",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the Attack Speed bonus was removed."
+      },
+      {
+        "evidenceId": "c-0859cb2dc6",
+        "bulletId": "b-4c9744c5e6",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the Shadow Mark duration bonus was removed."
+      },
+      {
+        "evidenceId": "c-dc87d3089c",
+        "bulletId": "b-4c9744c5e6",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the duration bonus was removed."
+      },
+      {
+        "evidenceId": "c-334161b4e2",
+        "bulletId": "b-3694ebd99b",
+        "relation": "partly",
+        "missingDetail": "Pool duration increased from 5 seconds to 6 seconds, no longer requires a target afflicted by Shadow Mark, and deals up to 450 (+4% per level).",
+        "reason": "The bullet states only the damage change from 45 to 75."
+      },
+      {
+        "evidenceId": "c-27b9b50ec9",
+        "bulletId": "b-78802e2f3c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "A longer orbit period matches the orbs orbiting more slowly."
+      },
+      {
+        "evidenceId": "c-dc3ccd61ca",
+        "bulletId": "b-d799da8816",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Modifier 0.5 to 0.35 matches 50% to 35%."
+      },
+      {
+        "evidenceId": "c-51c947b135",
+        "bulletId": "b-36c34d4340",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state Toxic Mark now benefits from Cold Feet's duration bonus."
+      },
+      {
+        "evidenceId": "c-06e4bf3ee7",
+        "bulletId": "b-f29bd4af88",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state 25% to 30%."
+      },
+      {
+        "evidenceId": "c-440ae68a35",
+        "bulletId": "b-c0dcb2dc79",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state 40% to 50%."
+      },
+      {
+        "evidenceId": "c-f7bcff706a",
+        "bulletId": "b-145faa0bc3",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state 10 to 15."
+      },
+      {
+        "evidenceId": "c-4d2ca4c70a",
+        "bulletId": "b-d4e726182c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the bonus reduced from 15% to 12%."
+      },
+      {
+        "evidenceId": "c-9fa1e76699",
+        "bulletId": "b-9a4c9aa5bb",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state 0.5% to 0.6% per stack."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 17923,
+    "cache_creation_input_tokens": 7019,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 7019
+    },
+    "output_tokens": 5022,
+    "output_tokens_details": {
+      "thinking_tokens": 2481
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.228284,
+  "stopReason": "end_turn",
+  "requestId": "msg_011Cgt5yGRWSBJ6vUZpFkNai",
+  "createdAt": "2026-11-09T21:42:53Z"
+}
