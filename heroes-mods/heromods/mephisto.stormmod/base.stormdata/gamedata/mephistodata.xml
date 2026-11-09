@@ -1279,11 +1279,11 @@
   <CBehaviorBuff id="MephistoShadeOfMephistoMaliciousIntentPostTeleportSpellPowerBuff" parent="StormDamageIncrease">
     <Alignment value="Positive" />
     <BehaviorCategories index="BuffAbilityPower" value="1" />
-    <Duration value="2.5" />
+    <Duration value="3" />
     <Modification>
-      <HealDealtAdditiveMultiplier index="Life" value="0.25" />
-      <HealDealtAdditiveMultiplier index="Shields" value="0.25" />
-      <DamageDealtFraction index="Ability" value="0.25" />
+      <HealDealtAdditiveMultiplier index="Life" value="0.3" />
+      <HealDealtAdditiveMultiplier index="Shields" value="0.3" />
+      <DamageDealtFraction index="Ability" value="0.3" />
     </Modification>
     <Face value="MephistoShadeOfMephistoMaliciousIntentSpellPowerBuff" />
     <InfoFlags index="Hidden" value="0" />
