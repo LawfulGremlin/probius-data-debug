@@ -4441,6 +4441,9 @@
     <Compare value="GT" />
     <Behavior value="MedivhMysticAssaultDamageBonus" />
   </CValidatorUnitCompareBehaviorCount>
+  <CValidatorPlayerTalent id="MedivhNotHasTransformRavenDustOfAppearanceTalent2">
+    <Value value="MedivhDustOfAppearance" />
+  </CValidatorPlayerTalent>
   <CValidatorUnitCompareBehaviorCount id="MedivhSourceHasMysticAssaultMarker">
     <WhichUnit Value="Source" />
     <Compare value="GT" />
