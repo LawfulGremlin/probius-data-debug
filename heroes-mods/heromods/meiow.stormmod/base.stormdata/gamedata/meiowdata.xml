@@ -2439,7 +2439,7 @@
   </CEffectLaunchMissileAdvanced>
   <CEffectDamage id="MeiOWBlizzardFinalExplosionDamage" parent="StormSpell">
     <MultiplicativeModifierArray index="MeiOWBlizzardIceStorm" Validator="MeiOWHasIceStormTalent" Modifier="1.5" Crit="1" />
-    <Amount value="75" />
+    <Amount value="80" />
   </CEffectDamage>
   <CEffectSet id="MeiOWAvalancheInitialSet">
     <EffectArray value="MeiOWAvalancheModifyCatalogNumeric" />
