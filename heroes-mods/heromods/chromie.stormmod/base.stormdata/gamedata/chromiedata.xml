@@ -3238,7 +3238,7 @@
   </CEffectEnumArea>
   <CEffectDamage id="ChromieSandEchoWeaponDamage" parent="ChromieHeroWeaponDamage">
     <MultiplicativeModifierArray index="PastandFutureMe" Validator="ChromieCreatorDoesNotHaveSandBlastOnceAgainTheFirstTimeQuestCompleteBehavior" Modifier="$ChromiePastAndFutureMeDamageModifier" />
-    <MultiplicativeModifierArray index="OnceAgainTheFirstTime" Validator="ChromieCreatorDoesHaveSandBlastOnceAgainTheFirstTimeQuestCompleteBehavior" Modifier="-0.5" />
+    <MultiplicativeModifierArray index="OnceAgainTheFirstTime" Validator="ChromieCreatorDoesHaveSandBlastOnceAgainTheFirstTimeQuestCompleteBehavior" Modifier="-0.45" />
     <Visibility value="Hidden" />
   </CEffectDamage>
   <CEffectSet id="ChromieTimeTrapTargetBehaviorExpireSet">
