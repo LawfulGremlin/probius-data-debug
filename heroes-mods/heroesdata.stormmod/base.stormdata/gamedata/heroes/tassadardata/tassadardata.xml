@@ -3540,6 +3540,22 @@
     <WhichUnit Value="Caster" />
     <Behavior value="TassadarShadowWalk" />
   </CEffectApplyBehavior>
+  <CEffectSet id="TassadarShadowWalkHoldFireRemoveSet">
+    <EffectArray value="TassadarShadowWalkRemoveHoldFire" />
+    <EffectArray value="TassadarShadowWalkRemoveHoldFireInitial" />
+  </CEffectSet>
+  <CEffectRemoveBehavior id="TassadarShadowWalkRemoveHoldFire">
+    <ValidatorArray value="CasterIsNotCloaked" />
+    <WhichUnit Value="Caster" />
+    <BehaviorLink value="HoldFire" />
+    <Count value="1" />
+  </CEffectRemoveBehavior>
+  <CEffectRemoveBehavior id="TassadarShadowWalkRemoveHoldFireInitial">
+    <ValidatorArray value="HoldFireRemovalValidatorCombine" />
+    <WhichUnit Value="Caster" />
+    <BehaviorLink value="HoldFireInitial" />
+    <Count value="1" />
+  </CEffectRemoveBehavior>
   <CEffectSet id="TassadarShadowWalkSet">
     <EffectArray value="TassadarShadowWalkApplyBehavior" />
     <EffectArray value="TassadarShadowWalkRemoveAttackReveal" />
