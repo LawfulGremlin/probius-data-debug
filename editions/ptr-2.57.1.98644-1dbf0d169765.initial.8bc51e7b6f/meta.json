@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "editionId": "ptr-2.57.1.98644-1dbf0d169765.initial.8bc51e7b6f",
+  "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+  "kind": "initial",
+  "inputsHash": "8bc51e7b6fe61eacf5312e34a0be0685d139feffd2ced3626ee89221f383942b",
+  "inputs": {
+    "comparisonKey": "5a3711bd2c249ab18e1dba7bfdbe35e7707f9b3bb49d7f1658d333197e6a279a",
+    "evidenceSha": "1e443f4a642a6c7dda91a42a6296920c96cff100e77613f6d5f259f8aa7026d3",
+    "official": null,
+    "versions": {
+      "comparator": 10,
+      "parser": 1,
+      "prompts": 3,
+      "render": 11
+    },
+    "model": "claude-haiku-5-5",
+    "effort": "high",
+    "t2Green": true,
+    "displayScope": "section",
+    "claude": "264f72f33470b79877692dcc778d239fc7edfe71dfbc1729a8d15ae85f5b5349"
+  },
+  "claude": {
+    "used": true,
+    "genKeys": [
+      "1d53eb078e28ffa1a5003e70b45f6cc454b59755c48dba5c2df519812e495e5f",
+      "cfdf73d2ec76a4ab24a15f7c755b4163efc8a64fcb34ba2675565e19a9d74bbd",
+      "eb069915e0b4b4d41c5bd206dabec895528d413f5698d9f617e2a8f82124dd66"
+    ],
+    "usd": 0.020391
+  },
+  "counts": {
+    "claims": 92,
+    "additions": 0,
+    "discrepancies": 0,
+    "uncertain": 0,
+    "appendix": 667
+  },
+  "createdAt": "2026-11-10T16:06:18Z"
+}

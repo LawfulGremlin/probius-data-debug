@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "genKey": "c496787baaaa0ccb9c546e496abdad0238d4a9272f61535a77534895f5b8635a",
+  "purpose": "coverage",
+  "model": "claude-haiku-5-5",
+  "effort": "high",
+  "promptVersion": 3,
+  "outputSchema": 1,
+  "inputSha": "7e44ccc21ca22c73d55b7815cdfbe8a08a8b712bfe1d60bef3e17d1a3bb8cb58",
+  "output": {
+    "proposals": [
+      {
+        "evidenceId": "c-41bc1c2035",
+        "bulletId": "b-feb1cd5f34",
+        "relation": "partly",
+        "missingDetail": "The 3 second cooldown between uses of the second charge.",
+        "reason": "The bullet states the removed extra charge but not the cooldown between uses."
+      },
+      {
+        "evidenceId": "c-4c13878c6a",
+        "bulletId": "b-6258822e58",
+        "relation": "partly",
+        "missingDetail": "Cap changed from 375 to 450.",
+        "reason": "The bullet states the per stack change from 25 to 30 but not the cap change."
+      },
+      {
+        "evidenceId": "c-52167229b2",
+        "bulletId": "b-6820005001",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet concerns the talent's per stack shield, not the Sound Barrier ability shield value."
+      },
+      {
+        "evidenceId": "c-a1d688dce8",
+        "bulletId": "b-84755cc3e0",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet concerns a quest completion radius bonus, not the Crossfade search radius."
+      },
+      {
+        "evidenceId": "c-fc4901135a",
+        "bulletId": "b-c43de5976d",
+        "relation": "partly",
+        "missingDetail": "Sight range increase of 25% in Raven Form is removed.",
+        "reason": "The bullet covers the Portal change but not the sight range removal."
+      },
+      {
+        "evidenceId": "c-f0d6db4876",
+        "bulletId": "b-eb8842e283",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that Portal no longer keeps Raven Form, which is the same change."
+      },
+      {
+        "evidenceId": "c-198bad403d",
+        "bulletId": "b-d7054b842c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the same 0.25 second cast time reduction."
+      },
+      {
+        "evidenceId": "c-091a672f19",
+        "bulletId": "b-2d8f74709d",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The raw value 2 to 4 is not clearly the same property as the 200% to 400% bonus."
+      },
+      {
+        "evidenceId": "c-3a294bd34c",
+        "bulletId": "b-0e0d5a8bc9",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet changes the detonation delay, while the claim changes the Blizzard duration."
+      },
+      {
+        "evidenceId": "c-bdd9c2788e",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "conflicts",
+        "missingDetail": "",
+        "reason": "Both concern Icing cast time, but the bullet gives 0.625 to 0.5 as a reduction while the claim gives 0.125 to 0.5."
+      },
+      {
+        "evidenceId": "c-3b3e4947af",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet concerns cast time, while the claim concerns Icing duration."
+      },
+      {
+        "evidenceId": "c-b8abef7d71",
+        "bulletId": "b-0e0d5a8bc9",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet concerns detonation delay, not the Blizzard search period count."
+      },
+      {
+        "evidenceId": "c-9eb2afd22c",
+        "bulletId": "b-2258cfe003",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet concerns damage per second, not the Void Eruption detonation damage."
+      },
+      {
+        "evidenceId": "c-76b7a61306",
+        "bulletId": "b-2258cfe003",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet concerns damage per second, not the Void Eruption contact damage."
+      },
+      {
+        "evidenceId": "c-5d79b95f21",
+        "bulletId": "b-2258cfe003",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet concerns damage per second, not the Void Eruption explosion damage."
+      },
+      {
+        "evidenceId": "c-1246814cef",
+        "bulletId": "b-6873dbb474",
+        "relation": "partly",
+        "missingDetail": "Bonus damage to the Marked target changed from 61 to 65.",
+        "reason": "The bullet states the 245 to 260 detonation damage but not the Marked target bonus."
+      },
+      {
+        "evidenceId": "c-45608b481e",
+        "bulletId": "b-e55319885e",
+        "relation": "partly",
+        "missingDetail": "Health Regeneration changed from 2.6484 to 2.7708.",
+        "reason": "The bullet names the Health Regeneration issue but does not state the value change."
+      },
+      {
+        "evidenceId": "c-eefafcfe7a",
+        "bulletId": "b-ddf6ca9713",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the duration increase is removed."
+      },
+      {
+        "evidenceId": "c-463ad199e6",
+        "bulletId": "b-566d477f7b",
+        "relation": "partly",
+        "missingDetail": "50% Movement Speed for 2 seconds afterwards.",
+        "reason": "The bullet covers the Spell Armor change but not the Movement Speed duration."
+      },
+      {
+        "evidenceId": "c-56ad239d82",
+        "bulletId": "b-a3afe54d04",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the 75% per teleport damage; the attack speed removal is stated by b-ee0f95a4ec."
+      },
+      {
+        "evidenceId": "c-0859cb2dc6",
+        "bulletId": "b-4c9744c5e6",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the debuff duration increase is removed."
+      },
+      {
+        "evidenceId": "c-334161b4e2",
+        "bulletId": "b-8264cd1823",
+        "relation": "partly",
+        "missingDetail": "Pool duration changed from 5 seconds to 6 seconds.",
+        "reason": "The bullet states the removed damage over time but not the pool duration change."
+      },
+      {
+        "evidenceId": "c-27b9b50ec9",
+        "bulletId": "b-78802e2f3c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states in words that the orbs orbit more slowly, matching the orbit period increase."
+      },
+      {
+        "evidenceId": "c-483212895f",
+        "bulletId": "b-ee0f95a4ec",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the attack speed increase is removed."
+      },
+      {
+        "evidenceId": "c-113b672eff",
+        "bulletId": "b-d799da8816",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet concerns a Mythic Reward damage bonus, not the Void Volley damage modifier."
+      },
+      {
+        "evidenceId": "c-191f15a2c6",
+        "bulletId": "b-307452aa08",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The claim names constants without values, so it does not show the cooldown reduction change."
+      },
+      {
+        "evidenceId": "c-51c947b135",
+        "bulletId": "b-e20643c202",
+        "relation": "partly",
+        "missingDetail": "Chance modification of 1.000000 on the Frozen Mark effect is replaced.",
+        "reason": "The bullet states the duration bonus change from 1 to 2 seconds but not the replaced chance modification."
+      },
+      {
+        "evidenceId": "c-a746fd85ea",
+        "bulletId": "b-3694ebd99b",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the impact damage change from 45 to 75; the removed damage over time is stated by b-8264cd1823."
+      },
+      {
+        "evidenceId": "c-c64e2b84a6",
+        "bulletId": "b-2258cfe003",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The claim concerns the heroic ability identifier, which the bullet does not mention."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 12515,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7192,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 12656,
+    "output_tokens_details": {
+      "thinking_tokens": 10097
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.007651,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CguYVedcJ4TB9qwfvycnP",
+  "createdAt": "2026-11-10T16:06:18Z"
+}

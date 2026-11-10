@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "genKey": "311e25bf9a42ac0d6b5a306e944c8f9f441524e1f90854f615ebaf197348dc8d",
+  "purpose": "initial",
+  "model": "claude-haiku-5-5",
+  "effort": "high",
+  "promptVersion": 3,
+  "outputSchema": 1,
+  "inputSha": "3b59b201eaed3177612cbade24b1b27c8f7b44e54ee4135dafc1fb0d0eba4af8",
+  "output": {
+    "items": [
+      {
+        "evidenceIds": [
+          "c-d63f90ed2d"
+        ],
+        "heroKey": "Whitemane",
+        "group": "abilities",
+        "heading": "Desperate Plea",
+        "text": "Cost modification increased from 40 to 45 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-93a40ae21c"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Damage per Void Orb reduced from 90 to 72 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-b69de78572"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Damage to enemies that come into contact with the Orb reduced from 112 to 90 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-c7bd9c9bc1"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Maximum contact damage from charging up reduced from 175 to 166 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-3d3787e9b8"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Now generates charge with every Basic Attack against Heroes and every 2 Basic Attacks against non-Heroes, instead of after 5 Basic Attacks against enemies."
+      },
+      {
+        "evidenceIds": [
+          "c-d8355148e4"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Anchored Core",
+        "text": "Radius bonus reduced from 50% to 25%."
+      },
+      {
+        "evidenceIds": [
+          "c-7926f44276"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Dark Barrier",
+        "text": "Now only triggers when the Dark Heart damages an enemy Hero."
+      },
+      {
+        "evidenceIds": [
+          "c-5a15a25211"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Dark Heart's Protection",
+        "text": "Detonating the Dark Heart now Silences enemies inside its radius for 1 second."
+      },
+      {
+        "evidenceIds": [
+          "c-3f8b19162b"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Rift Invasion",
+        "text": "Void Portal self decay is no longer lethal."
+      },
+      {
+        "evidenceIds": [
+          "c-ba32efb507"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "Detonation range reduced from 4 to 3 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-5f56aadd79"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Damage tier 1 reduced from 400 to 320 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-11b9a0e786"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Damage tier 2 reduced from 500 to 425 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-e2a59e217b"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Damage tier 3 reduced from 600 to 540 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-52efd8dde7"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Damage tier 4 reduced from 700 to 665 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-7115ba5a4e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 1 reduced from 1800 to 1440 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-e773f0c138"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 2 reduced from 2000 to 1700 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-e2e89ad187"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 3 reduced from 2400 to 2160 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-8774d6004c"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 4 reduced from 2800 to 2660 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-4d522b8d5d"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Step",
+        "text": "Range reduced from 5 to 2 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-6661f73e57"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "Duration increased from 0.125 seconds to 1.1 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-280971128e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "No longer affects units that are not visible (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-0cb04d9656"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "Can now hit hidden units (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-1d0dde8a97"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Can now hit units in stasis (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-4a3cef0f76"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Now casts at maximum range when targeted farther away (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-90658fe6dd"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Cast range is no longer extended by the caster's radius (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-48919e14a5"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "Now reveals the unit even while stealthed (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-2792ef1b52"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Deals 50% reduced damage to Structures (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-0555a6b413"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Shadow Mark",
+        "text": "Void Orb flight time reduced from 0.7 seconds to 0.65 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-3b78d811c9"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "Detonation now also applies a Silence behavior (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-8f4d7964b1"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Dark Barrier",
+        "text": "The effect that applies a stack now requires the target to be a Hero (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-f02b5058a3"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Step",
+        "text": "Initial effects now require that the caster is not Rooted (game data)."
+      }
+    ],
+    "omitted": [
+      {
+        "evidenceId": "c-8cf970f5db",
+        "reason": "Game data gives conflicting after-values for the Silence duration: the tooltip sentence says 2 seconds while the raw and deterministic values say 1.5 seconds."
+      },
+      {
+        "evidenceId": "c-1d5cd405c0",
+        "reason": "The effect pattern value has no tooltip sentence and its rounded range values do not match the raw values, so the change cannot be stated without guessing."
+      },
+      {
+        "evidenceId": "c-84e5ab3c30",
+        "reason": "The effect pattern value has no tooltip sentence and its rounded range values do not match the raw values, so the change cannot be stated without guessing."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 10061,
+    "cache_creation_input_tokens": 7332,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 7332
+    },
+    "output_tokens": 15718,
+    "output_tokens_details": {
+      "thinking_tokens": 12947
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.010332,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CguXyUeFix3DuGYHEKkfM",
+  "createdAt": "2026-11-10T16:06:18Z"
+}

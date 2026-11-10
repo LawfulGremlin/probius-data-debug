@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "genKey": "1d53eb078e28ffa1a5003e70b45f6cc454b59755c48dba5c2df519812e495e5f",
+  "purpose": "interpret",
+  "model": "claude-haiku-5-5",
+  "effort": "high",
+  "promptVersion": 3,
+  "outputSchema": 1,
+  "inputSha": "04af12508cd537bd14d4e740971da796eac1ead8bb4e8e534214c6939cd0bf41",
+  "output": {
+    "answers": [
+      {
+        "groupId": "i-1bfcab31a3",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-b3fa0d72ad"
+        ],
+        "text": "The ability link disabled by the caster behavior changes from XalatathVoidEruption to XalatathVoidEruptionV2."
+      },
+      {
+        "groupId": "i-264a44bf37",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-b1dab055a3"
+        ],
+        "text": "The multiplicative damage modifier at index XalatathFracturedReality of the Void Volley damage effect changes from 0.25 to 0.15."
+      },
+      {
+        "groupId": "i-0260acc572",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-8b59e23c7f",
+          "c-3b67638427",
+          "c-cc3cc70ff8",
+          "c-611ca88e45",
+          "c-19f640f683",
+          "c-c26efad63c",
+          "c-b6a1efede2",
+          "c-7ad5cafb9e"
+        ],
+        "text": "The XalatathVoidEruptionV2 ability is now flagged as affected by cooldown reduction and Overdrive, Heroic and shown in hero select, and the XalatathVoidEruption ability loses those flags."
+      },
+      {
+        "groupId": "i-55afb715ec",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-bca65f7270",
+          "c-5a2c4553d3",
+          "c-ef6839aea2",
+          "c-ee7d86a376"
+        ],
+        "text": "The talent no longer multiplies the radius of the XalatathUnstableCoreFireSearchArea area by 1.25."
+      },
+      {
+        "groupId": "i-935ae40896",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-63caff223c",
+          "c-6058cec852",
+          "c-01b57af953",
+          "c-63bcbcdde0",
+          "c-e713d57b72",
+          "c-2ece51c928",
+          "c-511a2f8ad6"
+        ],
+        "text": "The applied behavior changes from XalatathCloakOfShadowsSpellArmorAndMoveSpeed to XalatathCloakOfShadowsMoveSpeed, and a flat Hero ability armor modification of $XalatathCloakOfShadowsSpellArmorBonus is added."
+      },
+      {
+        "groupId": "i-323a2e2b4e",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-81f069dd4f",
+          "c-1795ef5be4",
+          "c-e7ba10423d",
+          "c-0fc82ce1f0"
+        ],
+        "text": "The Duration modification of the XalatathToxicMarkArmorDebuff behavior is set to 2.000000, replacing a Chance modification of 1.000000 on the XalatathShadowMarkApplyFrozenMarkBehavior effect."
+      },
+      {
+        "groupId": "i-a26d301791",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-53e1e157f4"
+        ],
+        "text": "The cooldown reduction per Hero hit used by the Void Eruption execute cost changes from XalatathOrbitalEruptionCooldownReductionPerHeroHit to XalatathVoidEruptionV2HarbingersConsumptionCooldownReductionPerHeroHit."
+      },
+      {
+        "groupId": "i-04a7f9a75f",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-a312a05595",
+          "c-0b09d0d965",
+          "c-24a31075cc",
+          "c-9c95cb6e7d",
+          "c-bb99bb1e17",
+          "c-e25ddc5f71"
+        ],
+        "text": "Basic Attack damage dealt gains a flat DamageDealtFraction modification of 0.750000 through the Void Step charge weapon behavior, and the XalatathPummelingStepCasterBehavior no longer has an additive attack speed factor of $XalatathPummelingStepAttackSpeedModifer."
+      },
+      {
+        "groupId": "i-4b00479ec5",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-9c8b34b1c4",
+          "c-5356ff7913",
+          "c-eaf50446cf",
+          "c-82e4ac9cc2",
+          "c-4cd5668d5a"
+        ],
+        "text": "The talent no longer applies a flat Duration modification of 1.000000 to the XalatathShadowMarkDebuff behavior."
+      },
+      {
+        "groupId": "i-ed14b823bd",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-24d371e2d2",
+          "c-ab888dc14e",
+          "c-1685b3e1b4"
+        ],
+        "text": "The XalatathUnstableCoreDamage constant is set to 75, while the XalatathUnstableCoreFireDOTDamage constant of 45 and the XalatathUnstableCoreFireDuration constant of 5 are removed."
+      },
+      {
+        "groupId": "i-cf7d4152de",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-34c661e88b"
+        ],
+        "text": "The heroic ability is changed from XalatathVoidEruption to XalatathVoidEruptionV2."
+      },
+      {
+        "groupId": "i-bd0342e1fc",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 10965,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7735,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 13476,
+    "output_tokens_details": {
+      "thinking_tokens": 11839
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.007912,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CguYCGPRkn65acirzHSY2",
+  "createdAt": "2026-11-10T16:06:18Z",
+  "validation": {
+    "accepted": [
+      {
+        "groupId": "i-1bfcab31a3",
+        "citedIds": [
+          "c-b3fa0d72ad"
+        ],
+        "text": "The ability link disabled by the caster behavior changes from XalatathVoidEruption to XalatathVoidEruptionV2."
+      },
+      {
+        "groupId": "i-264a44bf37",
+        "citedIds": [
+          "c-b1dab055a3"
+        ],
+        "text": "The multiplicative damage modifier at index XalatathFracturedReality of the Void Volley damage effect changes from 0.25 to 0.15."
+      },
+      {
+        "groupId": "i-55afb715ec",
+        "citedIds": [
+          "c-bca65f7270",
+          "c-5a2c4553d3",
+          "c-ef6839aea2",
+          "c-ee7d86a376"
+        ],
+        "text": "The talent no longer multiplies the radius of the XalatathUnstableCoreFireSearchArea area by 1.25."
+      },
+      {
+        "groupId": "i-935ae40896",
+        "citedIds": [
+          "c-63caff223c",
+          "c-6058cec852",
+          "c-01b57af953",
+          "c-63bcbcdde0",
+          "c-e713d57b72",
+          "c-2ece51c928",
+          "c-511a2f8ad6"
+        ],
+        "text": "The applied behavior changes from XalatathCloakOfShadowsSpellArmorAndMoveSpeed to XalatathCloakOfShadowsMoveSpeed, and a flat Hero ability armor modification of $XalatathCloakOfShadowsSpellArmorBonus is added."
+      },
+      {
+        "groupId": "i-323a2e2b4e",
+        "citedIds": [
+          "c-81f069dd4f",
+          "c-1795ef5be4",
+          "c-e7ba10423d",
+          "c-0fc82ce1f0"
+        ],
+        "text": "The Duration modification of the XalatathToxicMarkArmorDebuff behavior is set to 2.000000, replacing a Chance modification of 1.000000 on the XalatathShadowMarkApplyFrozenMarkBehavior effect."
+      },
+      {
+        "groupId": "i-a26d301791",
+        "citedIds": [
+          "c-53e1e157f4"
+        ],
+        "text": "The cooldown reduction per Hero hit used by the Void Eruption execute cost changes from XalatathOrbitalEruptionCooldownReductionPerHeroHit to XalatathVoidEruptionV2HarbingersConsumptionCooldownReductionPerHeroHit."
+      },
+      {
+        "groupId": "i-4b00479ec5",
+        "citedIds": [
+          "c-9c8b34b1c4",
+          "c-5356ff7913",
+          "c-eaf50446cf",
+          "c-82e4ac9cc2",
+          "c-4cd5668d5a"
+        ],
+        "text": "The talent no longer applies a flat Duration modification of 1.000000 to the XalatathShadowMarkDebuff behavior."
+      },
+      {
+        "groupId": "i-ed14b823bd",
+        "citedIds": [
+          "c-24d371e2d2",
+          "c-ab888dc14e",
+          "c-1685b3e1b4"
+        ],
+        "text": "The XalatathUnstableCoreDamage constant is set to 75, while the XalatathUnstableCoreFireDOTDamage constant of 45 and the XalatathUnstableCoreFireDuration constant of 5 are removed."
+      },
+      {
+        "groupId": "i-cf7d4152de",
+        "citedIds": [
+          "c-34c661e88b"
+        ],
+        "text": "The heroic ability is changed from XalatathVoidEruption to XalatathVoidEruptionV2."
+      }
+    ],
+    "rejected": [
+      {
+        "groupId": "i-0260acc572",
+        "reasons": [
+          "numbers not in the cited lines: 2"
+        ]
+      },
+      {
+        "groupId": "i-04a7f9a75f",
+        "reasons": [
+          "longer than 240 characters"
+        ]
+      }
+    ],
+    "unclear": [
+      "i-bd0342e1fc"
+    ],
+    "unanswered": []
+  }
+}

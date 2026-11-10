@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "genKey": "7094bfde7f30581c9c54ec9fdb7303f3b0b840464aa7999afb3461fd9d01305b",
+  "purpose": "coverage",
+  "model": "claude-haiku-5-5",
+  "effort": "high",
+  "promptVersion": 3,
+  "outputSchema": 1,
+  "inputSha": "390c8e04254a101fa0d475e943cf71ae414feecbe701a5b2dcf7bea8f0f4e53e",
+  "output": {
+    "proposals": [
+      {
+        "evidenceId": "c-3d3787e9b8",
+        "bulletId": "b-8b719284ef",
+        "relation": "partly",
+        "missingDetail": "Charge generation: every Basic Attack against heroes and every 2 Basic Attacks against non-heroes generate charge, and the 5 Basic Attacks activation requirement is not stated.",
+        "reason": "The bullet states the 90 to 72 base damage change but not the charge generation change in the same ability text."
+      },
+      {
+        "evidenceId": "c-7926f44276",
+        "bulletId": "b-bd8d7a8396",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the talent now triggers only when enemy Heroes are hit."
+      },
+      {
+        "evidenceId": "c-5a15a25211",
+        "bulletId": "b-6aebf1cd13",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the Silence moved from casting to detonating the Dark Heart."
+      },
+      {
+        "evidenceId": "c-3f8b19162b",
+        "bulletId": "b-c9e645a5a0",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that Portal Health decay is now non-lethal, which is the changed sentence."
+      },
+      {
+        "evidenceId": "c-e773f0c138",
+        "bulletId": "b-a1e9ca42f5",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The uncharged damage bullet does not clearly name the tier 2 flight damage per second value."
+      },
+      {
+        "evidenceId": "c-e2e89ad187",
+        "bulletId": "b-819b6d4473",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The fully charged damage bullet does not clearly name the tier 3 flight damage per second value."
+      },
+      {
+        "evidenceId": "c-84e5ab3c30",
+        "bulletId": "b-e5a5a7f3ae",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The teleport point distance bullet describes a different property than the Void Step effect pattern value."
+      },
+      {
+        "evidenceId": "c-8f4d7964b1",
+        "bulletId": "b-bd8d7a8396",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the effect now triggers only when enemy Heroes are hit, matching the interpreted Hero requirement."
+      },
+      {
+        "evidenceId": "c-f02b5058a3",
+        "bulletId": "b-e2d991c43f",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The Immobilize interaction bullet does not describe the caster Root requirement for initial effects."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 5250,
+    "cache_creation_input_tokens": 7192,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 7192
+    },
+    "output_tokens": 4302,
+    "output_tokens_details": {
+      "thinking_tokens": 3447
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.004114,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CguY3qcvkLV5tV8gG8wNb",
+  "createdAt": "2026-11-10T16:06:18Z"
+}

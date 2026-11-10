@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "genKey": "eb069915e0b4b4d41c5bd206dabec895528d413f5698d9f617e2a8f82124dd66",
+  "purpose": "interpret",
+  "model": "claude-haiku-5-5",
+  "effort": "high",
+  "promptVersion": 3,
+  "outputSchema": 1,
+  "inputSha": "bde0b5a06c07006b21678ac3204e3b8d88b8cfed67da811e817675656211b589",
+  "output": {
+    "answers": [
+      {
+        "groupId": "i-51bbcee233",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-cc7add4d4e",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-fcf8efee2b",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-9235792f5c",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-22f7902ff5"
+        ],
+        "text": "The inner radius set on Cho's unit changes from 1 to 0.9375."
+      },
+      {
+        "groupId": "i-4f749a2400",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-945deb2241"
+        ],
+        "text": "The modifier for Sand Echo's first-time weapon damage changes from -50% to -45%."
+      },
+      {
+        "groupId": "i-96bc7a64d1",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-916120c44d"
+        ],
+        "text": "The Dragon's Breath damage increase scale changes from 0.5% to 0.6%."
+      },
+      {
+        "groupId": "i-134cfed96a",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-80b324b791"
+        ],
+        "text": "The bonus to ability damage dealt changes from 15% to 12%."
+      },
+      {
+        "groupId": "i-86e80478c",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-b6e81a1287",
+          "c-f682aeff52",
+          "c-48632e7a53",
+          "c-1dc44f1433",
+          "c-207aaba7cb"
+        ],
+        "text": "The talent no longer applies a flat 1 to Cost.Charge.CountMax of TinkerXplodiumBomb and no longer applies -1 to Cost.Charge.HideCount."
+      },
+      {
+        "groupId": "i-424c23047a",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-83d69b49c7",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-392c2f6c9a",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-e38efa5ade",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-b5e92d5a4d"
+        ],
+        "text": "The amount added to Gilnean Cocktail spread damage changes from 25 to 30."
+      },
+      {
+        "groupId": "i-7a4669ea33",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-a3f7c81807",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-6eb0c83a74",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-7d5e674a83",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-dc4f3107e5",
+          "c-4a860fdff8"
+        ],
+        "text": "The radius of Crossfade's search areas changes from 1.4 to 2.1."
+      },
+      {
+        "groupId": "i-e1ba25697f",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-5bdebb0a4f",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-335fbb90ce",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-2042c789f6"
+        ],
+        "text": "The carry effect no longer applies a sight bonus of 1.75."
+      },
+      {
+        "groupId": "i-993fb235fa",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-8f933cd39f",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-9790e6d24f"
+        ],
+        "text": "The Raven Form modification value changes from 2 to 4."
+      },
+      {
+        "groupId": "i-192c1c30d7",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-e34e0f24a9",
+          "c-d04e16833b"
+        ],
+        "text": "The talent adds a -0.25 modification to the cast intro time of Raven Form."
+      },
+      {
+        "groupId": "i-f117e86a90",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-f6891271a8"
+        ],
+        "text": "The period count of the Blizzard search effect changes from 32 to 30."
+      },
+      {
+        "groupId": "i-1e12f16f29",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-b3a1fc5b47"
+        ],
+        "text": "The expire delay of Ice Wall's initial persistent changes from 0.75 to 0.6875."
+      },
+      {
+        "groupId": "i-2eb26712af",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-35d3d6df54"
+        ],
+        "text": "The Life leech fraction of Skull Missile's damage changes from 70% to 85%."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 6999,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7735,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 15874,
+    "output_tokens_details": {
+      "thinking_tokens": 14301
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.008714,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CguY5e2ULpVoXVCAPwxCP",
+  "createdAt": "2026-11-10T16:06:18Z",
+  "validation": {
+    "accepted": [
+      {
+        "groupId": "i-9235792f5c",
+        "citedIds": [
+          "c-22f7902ff5"
+        ],
+        "text": "The inner radius set on Cho's unit changes from 1 to 0.9375."
+      },
+      {
+        "groupId": "i-4f749a2400",
+        "citedIds": [
+          "c-945deb2241"
+        ],
+        "text": "The modifier for Sand Echo's first-time weapon damage changes from -50% to -45%."
+      },
+      {
+        "groupId": "i-96bc7a64d1",
+        "citedIds": [
+          "c-916120c44d"
+        ],
+        "text": "The Dragon's Breath damage increase scale changes from 0.5% to 0.6%."
+      },
+      {
+        "groupId": "i-134cfed96a",
+        "citedIds": [
+          "c-80b324b791"
+        ],
+        "text": "The bonus to ability damage dealt changes from 15% to 12%."
+      },
+      {
+        "groupId": "i-e38efa5ade",
+        "citedIds": [
+          "c-b5e92d5a4d"
+        ],
+        "text": "The amount added to Gilnean Cocktail spread damage changes from 25 to 30."
+      },
+      {
+        "groupId": "i-7d5e674a83",
+        "citedIds": [
+          "c-dc4f3107e5",
+          "c-4a860fdff8"
+        ],
+        "text": "The radius of Crossfade's search areas changes from 1.4 to 2.1."
+      },
+      {
+        "groupId": "i-335fbb90ce",
+        "citedIds": [
+          "c-2042c789f6"
+        ],
+        "text": "The carry effect no longer applies a sight bonus of 1.75."
+      },
+      {
+        "groupId": "i-8f933cd39f",
+        "citedIds": [
+          "c-9790e6d24f"
+        ],
+        "text": "The Raven Form modification value changes from 2 to 4."
+      },
+      {
+        "groupId": "i-192c1c30d7",
+        "citedIds": [
+          "c-e34e0f24a9",
+          "c-d04e16833b"
+        ],
+        "text": "The talent adds a -0.25 modification to the cast intro time of Raven Form."
+      },
+      {
+        "groupId": "i-f117e86a90",
+        "citedIds": [
+          "c-f6891271a8"
+        ],
+        "text": "The period count of the Blizzard search effect changes from 32 to 30."
+      },
+      {
+        "groupId": "i-1e12f16f29",
+        "citedIds": [
+          "c-b3a1fc5b47"
+        ],
+        "text": "The expire delay of Ice Wall's initial persistent changes from 0.75 to 0.6875."
+      },
+      {
+        "groupId": "i-2eb26712af",
+        "citedIds": [
+          "c-35d3d6df54"
+        ],
+        "text": "The Life leech fraction of Skull Missile's damage changes from 70% to 85%."
+      }
+    ],
+    "rejected": [
+      {
+        "groupId": "i-86e80478c",
+        "reasons": [
+          "unknown group i-86e80478c"
+        ]
+      }
+    ],
+    "unclear": [
+      "i-51bbcee233",
+      "i-cc7add4d4e",
+      "i-fcf8efee2b",
+      "i-424c23047a",
+      "i-83d69b49c7",
+      "i-392c2f6c9a",
+      "i-7a4669ea33",
+      "i-a3f7c81807",
+      "i-6eb0c83a74",
+      "i-e1ba25697f",
+      "i-5bdebb0a4f",
+      "i-993fb235fa"
+    ],
+    "unanswered": [
+      "i-086e80478c"
+    ]
+  }
+}

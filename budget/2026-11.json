@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "month": "2026-11",
-  "spentUsd": 5.654143,
+  "spentUsd": 5.731313,
   "calls": [
     {
       "at": "2026-11-09T13:53:22Z",
@@ -977,6 +977,258 @@
       },
       "usd": 0.130754,
       "genKey": "95074affa4da657baf2de39b536fd0f45339d6fec56a8aa5b5f054e228e9e54f"
+    },
+    {
+      "at": "2026-11-10T16:06:18Z",
+      "occurrenceId": "live-2.57.0.98348-1c3a028c5874",
+      "stage": "interpreted",
+      "model": "claude-haiku-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 7860,
+        "cache_creation_input_tokens": 7735,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 7735
+        },
+        "output_tokens": 6972,
+        "output_tokens_details": {
+          "thinking_tokens": 6396
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.005819,
+      "genKey": "d51c967d8adc5fd5b58f1a8bf6f357fb7a5ff3dae5b3f5209f071582aae96205"
+    },
+    {
+      "at": "2026-11-10T16:06:18Z",
+      "occurrenceId": "live-2.57.0.98348-1c3a028c5874",
+      "stage": "initial",
+      "model": "claude-haiku-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 10061,
+        "cache_creation_input_tokens": 7332,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 7332
+        },
+        "output_tokens": 15718,
+        "output_tokens_details": {
+          "thinking_tokens": 12947
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.010332,
+      "genKey": "311e25bf9a42ac0d6b5a306e944c8f9f441524e1f90854f615ebaf197348dc8d"
+    },
+    {
+      "at": "2026-11-10T16:06:18Z",
+      "occurrenceId": "live-2.57.0.98348-1c3a028c5874",
+      "stage": "amended",
+      "model": "claude-haiku-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 5250,
+        "cache_creation_input_tokens": 7192,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 7192
+        },
+        "output_tokens": 4302,
+        "output_tokens_details": {
+          "thinking_tokens": 3447
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.004114,
+      "genKey": "7094bfde7f30581c9c54ec9fdb7303f3b0b840464aa7999afb3461fd9d01305b"
+    },
+    {
+      "at": "2026-11-10T16:06:18Z",
+      "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+      "stage": "interpreted",
+      "model": "claude-haiku-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 6999,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 7735,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 15874,
+        "output_tokens_details": {
+          "thinking_tokens": 14301
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.008714,
+      "genKey": "eb069915e0b4b4d41c5bd206dabec895528d413f5698d9f617e2a8f82124dd66"
+    },
+    {
+      "at": "2026-11-10T16:06:18Z",
+      "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+      "stage": "interpreted",
+      "model": "claude-haiku-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 7970,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 7735,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 5781,
+        "output_tokens_details": {
+          "thinking_tokens": 5181
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.003765,
+      "genKey": "cfdf73d2ec76a4ab24a15f7c755b4163efc8a64fcb34ba2675565e19a9d74bbd"
+    },
+    {
+      "at": "2026-11-10T16:06:18Z",
+      "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+      "stage": "interpreted",
+      "model": "claude-haiku-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 10965,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 7735,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 13476,
+        "output_tokens_details": {
+          "thinking_tokens": 11839
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.007912,
+      "genKey": "1d53eb078e28ffa1a5003e70b45f6cc454b59755c48dba5c2df519812e495e5f"
+    },
+    {
+      "at": "2026-11-10T16:06:18Z",
+      "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+      "stage": "initial",
+      "model": "claude-haiku-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 28852,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 7332,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 16000,
+        "output_tokens_details": {
+          "thinking_tokens": 16000
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.010959,
+      "genKey": "354c3917720e2d30bd3ed27976659fc7053a7cfdd4e0f3105d13b967d1d2105f",
+      "outcome": "ClaudeTruncated"
+    },
+    {
+      "at": "2026-11-10T16:06:18Z",
+      "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+      "stage": "initial",
+      "model": "claude-haiku-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 9158,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 7332,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 13731,
+        "output_tokens_details": {
+          "thinking_tokens": 11457
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.007855,
+      "genKey": "ff5ff0f370892d30f0a76314daf3338040b8480d1cdf3578b365d2d05b22025b"
+    },
+    {
+      "at": "2026-11-10T16:06:18Z",
+      "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+      "stage": "initial",
+      "model": "claude-haiku-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 19756,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 7332,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 16000,
+        "output_tokens_details": {
+          "thinking_tokens": 16000
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.010049,
+      "genKey": "efc43f90a0f1eb1c9b8053b5501c9255ecb6a79e5d4bb4b03a25104c88478702",
+      "outcome": "ClaudeTruncated"
+    },
+    {
+      "at": "2026-11-10T16:06:18Z",
+      "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+      "stage": "amended",
+      "model": "claude-haiku-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 12515,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 7192,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 12656,
+        "output_tokens_details": {
+          "thinking_tokens": 10097
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.007651,
+      "genKey": "c496787baaaa0ccb9c546e496abdad0238d4a9272f61535a77534895f5b8635a"
     }
   ]
 }
