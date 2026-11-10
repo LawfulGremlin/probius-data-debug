@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "month": "2026-11",
-  "spentUsd": 5.985667,
+  "spentUsd": 6.060457,
   "calls": [
     {
       "at": "2026-11-09T13:53:22Z",
@@ -1329,6 +1329,31 @@
       },
       "usd": 0.141418,
       "genKey": "769c1f9133297caab08af12f9f8c869b74cc4748ca4423a461bbd904c7726e98"
+    },
+    {
+      "at": "2026-11-10T19:12:01Z",
+      "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+      "stage": "amended",
+      "model": "claude-sonnet-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 12441,
+        "cache_creation_input_tokens": 7192,
+        "cache_read_input_tokens": 0,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 7192
+        },
+        "output_tokens": 2114,
+        "output_tokens_details": {
+          "thinking_tokens": 0
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.07479,
+      "genKey": "a664478cf62d91efcd7859cda99d8f6a909f378471b74c7e07b5c94e3d0d3311"
     }
   ]
 }
