@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "genKey": "0abe3cc11c96693b80713e1fa32b66b77c2e7d930e708e98e80bfa308d0712ca",
+  "purpose": "coverage",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "promptVersion": 2,
+  "outputSchema": 1,
+  "inputSha": "7d231bc3f230d59196a0efce00a30a7be77140ee4302d8b00631aa0efcb4f9cd",
+  "output": {
+    "proposals": [
+      {
+        "evidenceId": "c-41bc1c2035",
+        "bulletId": "b-feb1cd5f34",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the second charge was removed."
+      },
+      {
+        "evidenceId": "c-4c13878c6a",
+        "bulletId": "b-6258822e58",
+        "relation": "partly",
+        "missingDetail": "Maximum explosion damage increased from 375 to 450.",
+        "reason": "The bullet states the per-stack increase but not the higher cap."
+      },
+      {
+        "evidenceId": "c-48df61449c",
+        "bulletId": "b-6258822e58",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same per-hit damage gain from 25 to 30."
+      },
+      {
+        "evidenceId": "c-52167229b2",
+        "bulletId": "b-6820005001",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet states per-stack values that do not match the base Shield amount."
+      },
+      {
+        "evidenceId": "c-a1d688dce8",
+        "bulletId": "b-84755cc3e0",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The Quest completion radius bonus increase matches proportionally (1.4 to 2.1 equals 20% to 30%)."
+      },
+      {
+        "evidenceId": "c-fc4901135a",
+        "bulletId": "b-c43de5976d",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that Portal can be cast in Raven Form without dismounting."
+      },
+      {
+        "evidenceId": "c-f0d6db4876",
+        "bulletId": "b-eb8842e283",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that Portal Mastery no longer keeps Raven Form."
+      },
+      {
+        "evidenceId": "c-198bad403d",
+        "bulletId": "b-d7054b842c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the added 0.25 seconds cast time reduction."
+      },
+      {
+        "evidenceId": "c-091a672f19",
+        "bulletId": "b-2d8f74709d",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same bonus increase from 200% to 400%."
+      },
+      {
+        "evidenceId": "c-3a294bd34c",
+        "bulletId": "b-0e0d5a8bc9",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The 2 to 1.88 seconds tooltip value matches the 1.875 seconds detonation delay."
+      },
+      {
+        "evidenceId": "c-bdd9c2788e",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "conflicts",
+        "missingDetail": "",
+        "reason": "The bullet gives a previous cast time of 0.625 instead of 0.125 seconds."
+      },
+      {
+        "evidenceId": "c-3b3e4947af",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "No bullet states an Icing duration change."
+      },
+      {
+        "evidenceId": "c-93a159d55b",
+        "bulletId": "b-63f434ce6f",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same value change from 0.75 to 0.6875 seconds."
+      },
+      {
+        "evidenceId": "c-b8abef7d71",
+        "bulletId": "b-0e0d5a8bc9",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "No bullet states the pulse count."
+      },
+      {
+        "evidenceId": "c-9eb2afd22c",
+        "bulletId": "b-2258cfe003",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet does not state the explosion damage values."
+      },
+      {
+        "evidenceId": "c-76b7a61306",
+        "bulletId": "b-2258cfe003",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet does not state the contact damage values."
+      },
+      {
+        "evidenceId": "c-5d79b95f21",
+        "bulletId": "b-2258cfe003",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet does not state the maximum explosion damage values."
+      },
+      {
+        "evidenceId": "c-1246814cef",
+        "bulletId": "b-6873dbb474",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet states the area damage, not the extra damage to the Marked target."
+      },
+      {
+        "evidenceId": "c-45608b481e",
+        "bulletId": "b-e55319885e",
+        "relation": "partly",
+        "missingDetail": "Health Regeneration increased from 2.6484 to 2.7708.",
+        "reason": "The bullet mentions Health Regeneration but not the values."
+      },
+      {
+        "evidenceId": "c-eefafcfe7a",
+        "bulletId": "b-ddf6ca9713",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the duration bonus was removed."
+      },
+      {
+        "evidenceId": "c-463ad199e6",
+        "bulletId": "b-566d477f7b",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that Spell Armor now applies only while teleporting."
+      },
+      {
+        "evidenceId": "c-56ad239d82",
+        "bulletId": "b-a3afe54d04",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the new 75% Basic Attack damage per teleport."
+      },
+      {
+        "evidenceId": "c-0859cb2dc6",
+        "bulletId": "b-4c9744c5e6",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the duration bonus was removed."
+      },
+      {
+        "evidenceId": "c-334161b4e2",
+        "bulletId": "b-3694ebd99b",
+        "relation": "partly",
+        "missingDetail": "Duration increased from 5 to 6 seconds, total damage up to 450, and Shadow Mark is no longer required.",
+        "reason": "The bullets state the damage change but not the duration or trigger changes."
+      },
+      {
+        "evidenceId": "c-27b9b50ec9",
+        "bulletId": "b-78802e2f3c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states in words that the orbs orbit more slowly."
+      },
+      {
+        "evidenceId": "c-483212895f",
+        "bulletId": "b-ee0f95a4ec",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that Attack Speed is no longer increased."
+      },
+      {
+        "evidenceId": "c-51c947b135",
+        "bulletId": "b-e20643c202",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The duration bonus increased to 2 seconds."
+      },
+      {
+        "evidenceId": "c-06e4bf3ee7",
+        "bulletId": "b-f29bd4af88",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same Spell Power increase from 25% to 30%."
+      },
+      {
+        "evidenceId": "c-440ae68a35",
+        "bulletId": "b-c0dcb2dc79",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same Shield amount increase from 40% to 50%."
+      },
+      {
+        "evidenceId": "c-f7bcff706a",
+        "bulletId": "b-145faa0bc3",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same Mana increase from 10 to 15."
+      },
+      {
+        "evidenceId": "c-4d2ca4c70a",
+        "bulletId": "b-d4e726182c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same bonus reduction from 15% to 12%."
+      },
+      {
+        "evidenceId": "c-9fa1e76699",
+        "bulletId": "b-9a4c9aa5bb",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same per-stack increase from 0.5% to 0.6%."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 13560,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7168,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 3831,
+    "output_tokens_details": {
+      "thinking_tokens": 1336
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.132294,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgtoikbeLtyG6EAKfHyrX",
+  "createdAt": "2026-11-10T06:52:45Z"
+}

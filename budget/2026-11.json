@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "month": "2026-11",
-  "spentUsd": 4.350583,
+  "spentUsd": 4.482877,
   "calls": [
     {
       "at": "2026-11-09T13:53:22Z",
@@ -702,6 +702,31 @@
       },
       "usd": 0.055794,
       "genKey": "17b0084b3bec02c3d7ff71c47f5ed76d86555e4b14ca3d08e9f5ba54196845f2"
+    },
+    {
+      "at": "2026-11-10T06:52:45Z",
+      "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+      "stage": "amended",
+      "model": "claude-opus-5-5",
+      "batch": false,
+      "usage": {
+        "input_tokens": 13560,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 7168,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 0
+        },
+        "output_tokens": 3831,
+        "output_tokens_details": {
+          "thinking_tokens": 1336
+        },
+        "service_tier": "standard",
+        "inference_geo": "global",
+        "speed": "standard"
+      },
+      "usd": 0.132294,
+      "genKey": "0abe3cc11c96693b80713e1fa32b66b77c2e7d930e708e98e80bfa308d0712ca"
     }
   ]
 }
