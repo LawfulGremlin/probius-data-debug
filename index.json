@@ -3,7 +3,7 @@
   "target": "debug",
   "dataRepo": "LawfulGremlin/probius-data-debug",
   "bootstrapAt": "2026-10-29T14:01:16Z",
-  "updatedAt": "2026-11-10T09:42:50Z",
+  "updatedAt": "2026-11-10T09:55:46Z",
   "tracks": {
     "live": {
       "branch": "debug-live",
@@ -174,10 +174,10 @@
           "continuity": "unknown",
           "announce": true,
           "state": "amended-ready",
-          "revision": 24,
-          "requestedInputsHash": "931e9e0403ad8f16a3ea5bae7c6fce7e239601bcc4997823ca065dc969e629be",
-          "initialEdition": "live-2.57.0.98348-1c3a028c5874.initial.9ad91cb0c0",
-          "currentEdition": "live-2.57.0.98348-1c3a028c5874.amended.931e9e0403",
+          "revision": 25,
+          "requestedInputsHash": "d88009fdf0b79cc27e3616cdbc7475ed0053b5aa816ed970d68373bc05e10cd5",
+          "initialEdition": "live-2.57.0.98348-1c3a028c5874.initial.83b0e09a60",
+          "currentEdition": "live-2.57.0.98348-1c3a028c5874.amended.d88009fdf0",
           "currentKind": "amended",
           "official": {
             "articleKey": "news-24303007",
@@ -187,7 +187,7 @@
           "revisions": [
             "live-2.57.0.98348-f5a9df36f6b3"
           ],
-          "workKey": "fe090fd7142f8da7d5f01e5e87b4a60943532ce08783f929429af41e82fe5bb0"
+          "workKey": "aab988952750028c5c8d493d23f775aaaacdc216f1e2d77392b7e4e1998143cb"
         }
       ]
     },
@@ -291,10 +291,10 @@
           "continuity": "unknown",
           "announce": true,
           "state": "amended-ready",
-          "revision": 15,
-          "requestedInputsHash": "73f8382ee3e0259c489316cc153900219c105d3332ce494fe12cf0bd73d30be5",
-          "initialEdition": "ptr-2.57.1.98644-1dbf0d169765.initial.8aef7dd085",
-          "currentEdition": "ptr-2.57.1.98644-1dbf0d169765.amended.73f8382ee3",
+          "revision": 16,
+          "requestedInputsHash": "6bb8ec0b49e111d195a6a268a8df2a7b4d8862ff38f3b6a77c9b655fca4d4c84",
+          "initialEdition": "ptr-2.57.1.98644-1dbf0d169765.initial.62a20d4f9d",
+          "currentEdition": "ptr-2.57.1.98644-1dbf0d169765.amended.6bb8ec0b49",
           "currentKind": "amended",
           "official": {
             "articleKey": "news-24317084",
@@ -302,7 +302,7 @@
             "url": "https://news.blizzard.com/en-us/article/24317084/heroes-of-the-storm-ptr-patch-notes-november-9-2026"
           },
           "revisions": [],
-          "workKey": "a57e9ced83edb8b5fc34ac4dfe0880240dd37ecfa125e79234cadcc3a2061f6e"
+          "workKey": "e648a203d778b7ac739b3e75339c82eb222841185b045a943b464ff37f5a5271"
         }
       ]
     }
