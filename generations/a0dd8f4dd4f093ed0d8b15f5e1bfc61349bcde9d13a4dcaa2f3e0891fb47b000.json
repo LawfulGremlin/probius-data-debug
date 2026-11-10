@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "genKey": "a0dd8f4dd4f093ed0d8b15f5e1bfc61349bcde9d13a4dcaa2f3e0891fb47b000",
+  "purpose": "interpret",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "promptVersion": 3,
+  "outputSchema": 1,
+  "inputSha": "c2c7961f8cc6fe002879814833f73146a80ec62bc4ceb75369b4c4cecd0aec87",
+  "output": {
+    "answers": [
+      {
+        "groupId": "i-cd7fe8cc02",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-954429b575"
+        ],
+        "text": "The Mana restored by the talent's healer effect changed from 10 to 15.}"
+      },
+      {
+        "groupId": "i-13c7af13db",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-c90c860162",
+          "c-d9088c32db",
+          "c-898b4ecab2",
+          "c-58b73b3827",
+          "c-f436e82526",
+          "c-5390a420f5",
+          "c-53e4835b49",
+          "c-09e85f7804",
+          "c-05dc56f0b1"
+        ],
+        "text": "The Spell Power buff's ability damage and healing/shield bonuses changed from 25% to 30%."
+      },
+      {
+        "groupId": "i-4634e127c5",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-80776ec0b1",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-8034a40c0d"
+        ],
+        "text": "A cooldown value used by the ability's quest modification changed from 5 to 6."
+      },
+      {
+        "groupId": "i-5559cbe65f",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-3e72887ee8",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-82f4ca890f",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-b6d0dd69c9",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-a6e93d42bd",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 7970,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7735,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 559,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.022304,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgumoGc4Xgn3hvnMqUK4a",
+  "createdAt": "2026-11-10T19:07:55Z",
+  "validation": {
+    "accepted": [
+      {
+        "groupId": "i-cd7fe8cc02",
+        "citedIds": [
+          "c-954429b575"
+        ],
+        "text": "The Mana restored by the talent's healer effect changed from 10 to 15.}."
+      },
+      {
+        "groupId": "i-80776ec0b1",
+        "citedIds": [
+          "c-8034a40c0d"
+        ],
+        "text": "A cooldown value used by the ability's quest modification changed from 5 to 6."
+      }
+    ],
+    "rejected": [
+      {
+        "groupId": "i-13c7af13db",
+        "reasons": [
+          "uses a word the style guide forbids"
+        ]
+      }
+    ],
+    "unclear": [
+      "i-4634e127c5",
+      "i-5559cbe65f",
+      "i-3e72887ee8",
+      "i-82f4ca890f",
+      "i-b6d0dd69c9",
+      "i-a6e93d42bd"
+    ],
+    "unanswered": []
+  }
+}

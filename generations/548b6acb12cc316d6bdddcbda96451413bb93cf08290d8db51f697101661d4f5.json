@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "genKey": "548b6acb12cc316d6bdddcbda96451413bb93cf08290d8db51f697101661d4f5",
+  "purpose": "interpret",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "promptVersion": 3,
+  "outputSchema": 1,
+  "inputSha": "04af12508cd537bd14d4e740971da796eac1ead8bb4e8e534214c6939cd0bf41",
+  "output": {
+    "answers": [
+      {
+        "groupId": "i-1bfcab31a3",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-264a44bf37",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-b1dab055a3"
+        ],
+        "text": "The damage modifier from Fractured Reality on Void Volley changed from 0.25 to 0.15."
+      },
+      {
+        "groupId": "i-0260acc572",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-55afb715ec",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-5b71bdb2e1",
+          "c-bca65f7270",
+          "c-5a2c4553d3",
+          "c-ee7d86a376"
+        ],
+        "text": "The 1.25 multiplier to the Unstable Core fire search area radius is no longer applied by this talent."
+      },
+      {
+        "groupId": "i-935ae40896",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-323a2e2b4e",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-81f069dd4f",
+          "c-1795ef5be4",
+          "c-e7ba10423d",
+          "c-0fc82ce1f0"
+        ],
+        "text": "The talent's modification of 1.000000 now applies as Duration 2.000000 to the Toxic Mark armor debuff instead of Chance on the Frozen Mark behavior."
+      },
+      {
+        "groupId": "i-a26d301791",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-04a7f9a75f",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-e25ddc5f71",
+          "c-9c95cb6e7d",
+          "c-0b09d0d965"
+        ],
+        "text": "No longer applies an Attack Speed modifier from Void Step's caster behavior and now adds 0.75 to the Basic Attack damage dealt fraction of the Void Step charge weapon behavior."
+      },
+      {
+        "groupId": "i-4b00479ec5",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-4cd5668d5a",
+          "c-9c8b34b1c4",
+          "c-5356ff7913",
+          "c-82e4ac9cc2"
+        ],
+        "text": "No longer adds 1.000000 to the Shadow Mark debuff Duration."
+      },
+      {
+        "groupId": "i-ed14b823bd",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-24d371e2d2",
+          "c-ab888dc14e",
+          "c-1685b3e1b4"
+        ],
+        "text": "The fire damage value of 45 and duration value of 5 were removed, and a new damage value of 75 was added."
+      },
+      {
+        "groupId": "i-cf7d4152de",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-bd0342e1fc",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 10965,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7735,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 944,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.032144,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgumoXq6hEEsxU2x8aNHM",
+  "createdAt": "2026-11-10T19:07:55Z",
+  "validation": {
+    "accepted": [
+      {
+        "groupId": "i-264a44bf37",
+        "citedIds": [
+          "c-b1dab055a3"
+        ],
+        "text": "The damage modifier from Fractured Reality on Void Volley changed from 0.25 to 0.15."
+      },
+      {
+        "groupId": "i-55afb715ec",
+        "citedIds": [
+          "c-5b71bdb2e1",
+          "c-bca65f7270",
+          "c-5a2c4553d3",
+          "c-ee7d86a376"
+        ],
+        "text": "The 1.25 multiplier to the Unstable Core fire search area radius is no longer applied by this talent."
+      },
+      {
+        "groupId": "i-323a2e2b4e",
+        "citedIds": [
+          "c-81f069dd4f",
+          "c-1795ef5be4",
+          "c-e7ba10423d",
+          "c-0fc82ce1f0"
+        ],
+        "text": "The talent's modification of 1.000000 now applies as Duration 2.000000 to the Toxic Mark armor debuff instead of Chance on the Frozen Mark behavior."
+      },
+      {
+        "groupId": "i-4b00479ec5",
+        "citedIds": [
+          "c-4cd5668d5a",
+          "c-9c8b34b1c4",
+          "c-5356ff7913",
+          "c-82e4ac9cc2"
+        ],
+        "text": "No longer adds 1.000000 to the Shadow Mark debuff Duration."
+      },
+      {
+        "groupId": "i-ed14b823bd",
+        "citedIds": [
+          "c-24d371e2d2",
+          "c-ab888dc14e",
+          "c-1685b3e1b4"
+        ],
+        "text": "The fire damage value of 45 and duration value of 5 were removed, and a new damage value of 75 was added."
+      }
+    ],
+    "rejected": [
+      {
+        "groupId": "i-04a7f9a75f",
+        "reasons": [
+          "names outside the group: Void Step"
+        ]
+      }
+    ],
+    "unclear": [
+      "i-1bfcab31a3",
+      "i-0260acc572",
+      "i-935ae40896",
+      "i-a26d301791",
+      "i-cf7d4152de",
+      "i-bd0342e1fc"
+    ],
+    "unanswered": []
+  }
+}
