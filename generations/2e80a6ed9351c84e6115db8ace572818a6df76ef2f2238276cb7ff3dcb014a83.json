@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "genKey": "2e80a6ed9351c84e6115db8ace572818a6df76ef2f2238276cb7ff3dcb014a83",
+  "purpose": "coverage",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "promptVersion": 3,
+  "outputSchema": 1,
+  "inputSha": "0056544a52854b09a9fa685ba3ad4b14d65eaa9c2f073fbcb34db879b0c2fe25",
+  "output": {
+    "proposals": [
+      {
+        "evidenceId": "c-41bc1c2035",
+        "bulletId": "b-feb1cd5f34",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the extra charge was removed, which is the change in the sentence."
+      },
+      {
+        "evidenceId": "c-4c13878c6a",
+        "bulletId": "b-6258822e58",
+        "relation": "partly",
+        "missingDetail": "The maximum explosion damage changed from 375 to 450.",
+        "reason": "The bullet states only the per-stack increase from 25 to 30."
+      },
+      {
+        "evidenceId": "c-52167229b2",
+        "bulletId": "b-6820005001",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet is about a Level 10 talent with different values, not the Sound Barrier shield value of 1296 to 1488."
+      },
+      {
+        "evidenceId": "c-fc4901135a",
+        "bulletId": "b-c43de5976d",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states Portal can be cast in Raven Form, matching the new sentence."
+      },
+      {
+        "evidenceId": "c-f0d6db4876",
+        "bulletId": "b-eb8842e283",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the Raven Form portal behavior was removed from this talent."
+      },
+      {
+        "evidenceId": "c-198bad403d",
+        "bulletId": "b-d7054b842c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the added 0.25 second cast time reduction."
+      },
+      {
+        "evidenceId": "c-3a294bd34c",
+        "bulletId": "b-0e0d5a8bc9",
+        "relation": "conflicts",
+        "missingDetail": "",
+        "reason": "The bullet gives a different duration value (1.875) than the claim's 1.88 seconds."
+      },
+      {
+        "evidenceId": "c-bdd9c2788e",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "conflicts",
+        "missingDetail": "",
+        "reason": "The bullet gives a cast time before value of 0.625, while the data says 0.125."
+      },
+      {
+        "evidenceId": "c-3b3e4947af",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet is about cast time, not duration."
+      },
+      {
+        "evidenceId": "c-1246814cef",
+        "bulletId": "b-6873dbb474",
+        "relation": "partly",
+        "missingDetail": "Damage to the Marked target changed from 61 to 65.",
+        "reason": "The bullet states only the nearby enemies damage change."
+      },
+      {
+        "evidenceId": "c-45608b481e",
+        "bulletId": "b-e55319885e",
+        "relation": "partly",
+        "missingDetail": "Health Regeneration changed from 2.6484 to 2.7708.",
+        "reason": "The bullet mentions a fix but gives no values."
+      },
+      {
+        "evidenceId": "c-eefafcfe7a",
+        "bulletId": "b-ddf6ca9713",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the duration bonus is removed."
+      },
+      {
+        "evidenceId": "c-463ad199e6",
+        "bulletId": "b-566d477f7b",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states Spell Armor applies only while blinking and the bonus no longer persists."
+      },
+      {
+        "evidenceId": "c-56ad239d82",
+        "bulletId": "b-a3afe54d04",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the added 75% Basic Attack damage per teleport."
+      },
+      {
+        "evidenceId": "c-0859cb2dc6",
+        "bulletId": "b-4c9744c5e6",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the duration bonus is removed."
+      },
+      {
+        "evidenceId": "c-334161b4e2",
+        "bulletId": "b-3694ebd99b",
+        "relation": "partly",
+        "missingDetail": "Flame duration changed from 5 seconds to 6 seconds, and it no longer requires a target afflicted by Shadow Mark.",
+        "reason": "The bullet states only the damage per tick change of 45 to 75."
+      },
+      {
+        "evidenceId": "c-27b9b50ec9",
+        "bulletId": "b-78802e2f3c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the orbs orbit more slowly, matching the longer orbit period."
+      },
+      {
+        "evidenceId": "c-483212895f",
+        "bulletId": "b-ee0f95a4ec",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states Attack Speed is no longer increased."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 9589,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7192,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1509,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.034987,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgunkdbQKwjpQQhH38aPD",
+  "createdAt": "2026-11-10T19:20:36Z"
+}
