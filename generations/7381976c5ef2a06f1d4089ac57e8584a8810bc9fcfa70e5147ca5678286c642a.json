@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "genKey": "7381976c5ef2a06f1d4089ac57e8584a8810bc9fcfa70e5147ca5678286c642a",
+  "purpose": "coverage",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "promptVersion": 2,
+  "outputSchema": 1,
+  "inputSha": "fb5b87f48b62af005737d278f3ea058fd361c5f940c9bdf63628405e71c29ca2",
+  "output": {
+    "proposals": [
+      {
+        "evidenceId": "c-41bc1c2035",
+        "bulletId": "b-feb1cd5f34",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the talent no longer grants the 2nd charge removed from the tooltip."
+      },
+      {
+        "evidenceId": "c-39fcc5739a",
+        "bulletId": "b-feb1cd5f34",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the additional charge was removed."
+      },
+      {
+        "evidenceId": "c-4c13878c6a",
+        "bulletId": "b-6258822e58",
+        "relation": "partly",
+        "missingDetail": "Maximum explosion damage increased from 375 to 450.",
+        "reason": "The bullet states the per-stack increase but not the higher cap."
+      },
+      {
+        "evidenceId": "c-48df61449c",
+        "bulletId": "b-6258822e58",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same per-hit damage bonus change from 25 to 30."
+      },
+      {
+        "evidenceId": "c-52167229b2",
+        "bulletId": "b-6820005001",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The per-stack shield increase from 27 to 31 matches the total shield change from 1296 to 1488."
+      },
+      {
+        "evidenceId": "c-a1d688dce8",
+        "bulletId": "b-84755cc3e0",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same Quest completion radius bonus change with a matching 50% relative increase."
+      },
+      {
+        "evidenceId": "c-fc4901135a",
+        "bulletId": "b-c43de5976d",
+        "relation": "partly",
+        "missingDetail": "No longer increases sight range in Raven Form by 25%.",
+        "reason": "The bullet states the new Portal behavior but not the removed sight bonus."
+      },
+      {
+        "evidenceId": "c-f0d6db4876",
+        "bulletId": "b-eb8842e283",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that Portal Mastery no longer keeps Raven Form."
+      },
+      {
+        "evidenceId": "c-198bad403d",
+        "bulletId": "b-d7054b842c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same added cast time reduction of 0.25 seconds."
+      },
+      {
+        "evidenceId": "c-091a672f19",
+        "bulletId": "b-2d8f74709d",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same bonus change from 200% to 400%."
+      },
+      {
+        "evidenceId": "c-85ed827812",
+        "bulletId": "b-c43de5976d",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "No bullet states the removed Sight bonus."
+      },
+      {
+        "evidenceId": "c-f58dfcb6e6",
+        "bulletId": "b-d7054b842c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same added cast time reduction of 0.25 seconds."
+      },
+      {
+        "evidenceId": "c-3a294bd34c",
+        "bulletId": "b-0e0d5a8bc9",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the same delay reduction from 2 seconds to 1.875 seconds, shown as 1.88 in the tooltip."
+      },
+      {
+        "evidenceId": "c-bdd9c2788e",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "conflicts",
+        "missingDetail": "",
+        "reason": "The bullet gives a cast time of 0.625 seconds before the change, while the data shows 0.125 seconds."
+      },
+      {
+        "evidenceId": "c-3b3e4947af",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "No bullet states the Icing duration change."
+      },
+      {
+        "evidenceId": "c-93a159d55b",
+        "bulletId": "b-63f434ce6f",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same delay reduction from 0.75 seconds to 0.6875 seconds."
+      },
+      {
+        "evidenceId": "c-b8abef7d71",
+        "bulletId": "b-0e0d5a8bc9",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "No bullet states the pulse count change."
+      },
+      {
+        "evidenceId": "c-9eb2afd22c",
+        "bulletId": "b-2258cfe003",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet's 10% reduction does not describe the explosion damage change from 400 to 320."
+      },
+      {
+        "evidenceId": "c-76b7a61306",
+        "bulletId": "b-2258cfe003",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "No bullet states the contact damage cap change."
+      },
+      {
+        "evidenceId": "c-5d79b95f21",
+        "bulletId": "b-2258cfe003",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "No bullet states the explosion damage cap change."
+      },
+      {
+        "evidenceId": "c-1246814cef",
+        "bulletId": "b-6873dbb474",
+        "relation": "partly",
+        "missingDetail": "Bonus damage to the Marked target increased from 61 to 65.",
+        "reason": "The bullet states only the main detonation damage increase."
+      },
+      {
+        "evidenceId": "c-45608b481e",
+        "bulletId": "b-e55319885e",
+        "relation": "partly",
+        "missingDetail": "Health Regeneration increased from 2.6484 to 2.7708.",
+        "reason": "The bullet mentions Health Regeneration without the values."
+      },
+      {
+        "evidenceId": "c-eefafcfe7a",
+        "bulletId": "b-ddf6ca9713",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the duration bonus was removed."
+      },
+      {
+        "evidenceId": "c-463ad199e6",
+        "bulletId": "b-566d477f7b",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that Spell Armor now applies only while teleporting."
+      },
+      {
+        "evidenceId": "c-56ad239d82",
+        "bulletId": "b-a3afe54d04",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The talent bullets state the new 75% damage bonus per teleport and the removed Attack Speed bonus."
+      },
+      {
+        "evidenceId": "c-0859cb2dc6",
+        "bulletId": "b-4c9744c5e6",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the duration bonus was removed."
+      },
+      {
+        "evidenceId": "c-334161b4e2",
+        "bulletId": "b-3694ebd99b",
+        "relation": "partly",
+        "missingDetail": "Duration increased from 5 seconds to 6 seconds, and the flames no longer require a target afflicted by Shadow Mark.",
+        "reason": "The bullets state the damage change but not the duration or trigger change."
+      },
+      {
+        "evidenceId": "c-27b9b50ec9",
+        "bulletId": "b-78802e2f3c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "A longer orbit period means the orbs orbit more slowly."
+      },
+      {
+        "evidenceId": "c-483212895f",
+        "bulletId": "b-ee0f95a4ec",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the Attack Speed bonus was removed."
+      },
+      {
+        "evidenceId": "c-113b672eff",
+        "bulletId": "b-d799da8816",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet's values differ, and it is unclear whether it describes the same modifier."
+      },
+      {
+        "evidenceId": "c-51c947b135",
+        "bulletId": "b-36c34d4340",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that Toxic Mark now benefits from Cold Feet's duration bonus."
+      },
+      {
+        "evidenceId": "c-a746fd85ea",
+        "bulletId": "b-3694ebd99b",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same damage change from 45 to 75."
+      },
+      {
+        "evidenceId": "c-dc87d3089c",
+        "bulletId": "b-4c9744c5e6",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that the duration bonus was removed."
+      },
+      {
+        "evidenceId": "c-f0c7d5d22d",
+        "bulletId": "b-566d477f7b",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states that Spell Armor applies only while teleporting."
+      },
+      {
+        "evidenceId": "c-06e4bf3ee7",
+        "bulletId": "b-f29bd4af88",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same Spell Power bonus change from 25% to 30%."
+      },
+      {
+        "evidenceId": "c-440ae68a35",
+        "bulletId": "b-c0dcb2dc79",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same shield amount change from 40% to 50%."
+      },
+      {
+        "evidenceId": "c-f7bcff706a",
+        "bulletId": "b-145faa0bc3",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same Mana change from 10 to 15."
+      },
+      {
+        "evidenceId": "c-4d2ca4c70a",
+        "bulletId": "b-d4e726182c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same bonus change from 15% to 12%."
+      },
+      {
+        "evidenceId": "c-9fa1e76699",
+        "bulletId": "b-9a4c9aa5bb",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Same per-stack change from 0.5% to 0.6%."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 15519,
+    "cache_creation_input_tokens": 7168,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 7168
+    },
+    "output_tokens": 5294,
+    "output_tokens_details": {
+      "thinking_tokens": 2187
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.2253,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgtnG9DJqLsYkkBgqBQLs",
+  "createdAt": "2026-11-10T06:31:11Z"
+}

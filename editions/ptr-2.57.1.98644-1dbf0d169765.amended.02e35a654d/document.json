@@ -1,0 +1,5539 @@
+{
+  "schemaVersion": 1,
+  "editionId": "ptr-2.57.1.98644-1dbf0d169765.amended.02e35a654d",
+  "kind": "amended",
+  "occurrence": {
+    "id": "ptr-2.57.1.98644-1dbf0d169765",
+    "track": "ptr",
+    "before": "2.57.0.98348",
+    "after": "2.57.1.98644",
+    "publishedAt": "2026-11-09T18:37:23Z",
+    "continuity": "unknown"
+  },
+  "title": "PTR 2.57.1.98644 — Heroes of the Storm PTR Patch Notes - November 9, 2026, amended by Probius",
+  "subtitle": "from 2.57.0.98348",
+  "banner": {
+    "kind": "amended",
+    "lines": [
+      "Blizzard's official notes with Probius additions. Green text marks changes found in the game data that the official notes do not mention. Green means additional, not a buff.",
+      "Our next Heroes of the Storm patch has just hit the Public Test Realm and will be available for playtesting. As always, if you encounter any bugs during your PTR play sessions, please stop by the PTR Bug Report forum to let us know about your experiences.",
+      "Balance Update",
+      "Bug Fixes"
+    ]
+  },
+  "legend": [
+    {
+      "origin": "addition",
+      "label": "Probius addition — not in official notes"
+    },
+    {
+      "origin": "discrepancy",
+      "label": "Discrepancy — game data differs from the official notes"
+    },
+    {
+      "origin": "uncertain",
+      "label": "Coverage uncertain — may be missing from the official notes"
+    }
+  ],
+  "summary": {
+    "counts": {
+      "additions": 17,
+      "discrepancies": 0,
+      "uncertain": 4,
+      "covered": 66,
+      "officialOnly": 25,
+      "claims": 87
+    },
+    "highlights": [
+      {
+        "kind": "addition",
+        "heroName": "Greymane",
+        "text": "Incendiary Elixir (Level 7): Maximum explosion damage increased from 375 to 450."
+      },
+      {
+        "kind": "addition",
+        "heroName": "Medivh",
+        "text": "Dust of Appearance (Level 4): No longer increases sight range in Raven Form by 25%."
+      },
+      {
+        "kind": "addition",
+        "heroName": "Xal'atath",
+        "text": "Dark Heart Ritual (W): Bonus damage to the Marked target increased from 61 to 65."
+      },
+      {
+        "kind": "addition",
+        "heroName": "Xal'atath",
+        "text": "Health Regeneration: Health Regeneration increased from 2.6484 to 2.7708."
+      },
+      {
+        "kind": "addition",
+        "heroName": "Xal'atath",
+        "text": "Unstable Core (Level 20): Duration increased from 5 seconds to 6 seconds, and the flames no longer require a target afflicted by Shadow M..."
+      }
+    ]
+  },
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Balance Update"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Heroes"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Chromie",
+      "hero": "Chromie"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Talents"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-887a544673",
+          "spans": [
+            {
+              "text": "Level 1",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-2820092238",
+              "spans": [
+                {
+                  "text": "Once Again the First Time",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-ed86e8dccd",
+                  "spans": [
+                    {
+                      "text": "Damage increased from 50% to 55%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "b-c5a0eb016e",
+              "spans": [
+                {
+                  "text": "Deep Breathing",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-9a4c9aa5bb",
+                  "spans": [
+                    {
+                      "text": "Damage bonus per stack increased from 0.5% to 0.6%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "b-f768d63411",
+              "spans": [
+                {
+                  "text": "Timewalker's Pursuit",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-d4e726182c",
+                  "spans": [
+                    {
+                      "text": "Damage bonus reduced from 15% to 12%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "c-8c083d0cc7",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Sand Echo weapon damage reduction with Once Again the First Time reduced from 50% to 45% (interpreted from game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Chromie",
+            "target": "Sand Echo weapon damage reduction with Once Again the First Time reduced from 50% to 45%.",
+            "tier": "T2",
+            "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-mods/heromods/chromie.stormmod/base.stormdata/gamedata/chromiedata.xml#L3240"
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Gazlowe",
+      "hero": "Gazlowe"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Base"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-cf3b94e7f6",
+          "spans": [
+            {
+              "text": "Basic Attack damage increased from 100 to 105.",
+              "origin": "official"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b-af17585b17",
+          "spans": [
+            {
+              "text": "Health increased from 2275 to 2375.",
+              "origin": "official"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b-0c97d62a98",
+          "spans": [
+            {
+              "text": "Deth Lazor [W]",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-33ddc06c11",
+              "spans": [
+                {
+                  "text": "Life Leech increased from 25% to 30%.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Talents"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-ea6d7eb140",
+          "spans": [
+            {
+              "text": "Level 20",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-12c54d4509",
+              "spans": [
+                {
+                  "text": "Bomb Toss",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-feb1cd5f34",
+                  "spans": [
+                    {
+                      "text": "No longer grants an additional charge.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Greymane",
+      "hero": "Greymane"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Talents"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-1b1f6f67c4",
+          "spans": [
+            {
+              "text": "Level 7",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-ecb2ff0558",
+              "spans": [
+                {
+                  "text": "Incendiary Elixir",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-6258822e58",
+                  "spans": [
+                    {
+                      "text": "Damage bonus per stack increased from 25 to 30.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "c-4c13878c6a",
+                      "spans": [
+                        {
+                          "origin": "addition",
+                          "label": true,
+                          "text": "Probius addition — not in official notes"
+                        },
+                        {
+                          "origin": "addition",
+                          "text": "Maximum explosion damage increased from 375 to 450."
+                        }
+                      ],
+                      "children": [],
+                      "meta": {
+                        "heroName": "Greymane",
+                        "target": "Incendiary Elixir (Level 7)",
+                        "tier": "T1",
+                        "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-talents/greymane.json#L284"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-71c78b5854",
+          "spans": [
+            {
+              "text": "Level 20",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-c4b0d2f109",
+              "spans": [
+                {
+                  "text": "Gilnean Roulette",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-c8891ea87f",
+                  "spans": [
+                    {
+                      "text": "No longer reduces the percentage based Health damage.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Lúcio",
+      "hero": "Lúcio"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Talents"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-dcf3d8ac06",
+          "spans": [
+            {
+              "text": "Level 1",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-2c3c043724",
+              "spans": [
+                {
+                  "text": "Party Mix",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-84755cc3e0",
+                  "spans": [
+                    {
+                      "text": "Quest completion radius bonus increased from 20% to 30%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-1c8266056b",
+          "spans": [
+            {
+              "text": "Level 10",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-465bb8a9f5",
+              "spans": [
+                {
+                  "text": "Sound Barrier",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-6820005001",
+                  "spans": [
+                    {
+                      "text": "Shield amount per stack increased from 27 to 31.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "c-52167229b2",
+                  "spans": [
+                    {
+                      "origin": "uncertain",
+                      "label": true,
+                      "text": "Coverage uncertain"
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": "After 1 second, Lúcio and nearby allied Heroes gain a "
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": "1296",
+                      "struck": true
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": " → 1488 (+4% per level) point Shield that rapidly decays over 6 seconds."
+                    }
+                  ],
+                  "children": [],
+                  "meta": {
+                    "heroName": "Lúcio",
+                    "target": "Sound Barrier (R)",
+                    "tier": "T1",
+                    "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-talents/lucio.json#L83"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-5669d5aafe",
+          "spans": [
+            {
+              "text": "Level 13",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-4867e4d87d",
+              "spans": [
+                {
+                  "text": "Slip",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-3640e66833",
+                  "spans": [
+                    {
+                      "text": "Lingering duration increased from 1 to 2 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-bb3b94f649",
+          "spans": [
+            {
+              "text": "Level 20",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-057aab0a0b",
+              "spans": [
+                {
+                  "text": "Summer Anthem",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-eb23c54bfb",
+                  "spans": [
+                    {
+                      "text": "Unkillable duration increased from 1.5 to 2.5 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Medivh",
+      "hero": "Medivh"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Base"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-a1ec5f3d01",
+          "spans": [
+            {
+              "text": "Arcane Rift [Q]",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-bc525a5b3a",
+              "spans": [
+                {
+                  "text": "Damage increased from 170 to 185.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "b-392925a98f",
+          "spans": [
+            {
+              "text": "Force of Will [W]",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-4519086b65",
+              "spans": [
+                {
+                  "text": "Cooldown reduced from 9 to 8 seconds.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "b-e125545b44",
+          "spans": [
+            {
+              "text": "Portal [E]",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-0fc01b2052",
+              "spans": [
+                {
+                  "text": "Cooldown increased from 16 to 20 seconds.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Talents"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-428f6bd648",
+          "spans": [
+            {
+              "text": "Level 1",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-13dd0c8508",
+              "spans": [
+                {
+                  "text": "Winds of Celerity",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-d7054b842c",
+                  "spans": [
+                    {
+                      "text": "Now also reduces cast time by 0.25 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "b-0b18c8f5ab",
+              "spans": [
+                {
+                  "text": "Raven's Intellect",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-2d8f74709d",
+                  "spans": [
+                    {
+                      "text": "Bonus increased from 200% to 400%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "b-8fba478211",
+              "spans": [
+                {
+                  "text": "Portal Mastery",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-eb8842e283",
+                  "spans": [
+                    {
+                      "text": "No longer allows Medivh to cast Portal in Raven Form without dismounting.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-386138b9e9",
+          "spans": [
+            {
+              "text": "Level 4",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-89ea6e8015",
+              "spans": [
+                {
+                  "text": "Dust of Appearance",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-daabf689f7",
+                  "spans": [
+                    {
+                      "text": "Cooldown reduced from 45 to 40 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "b-c43de5976d",
+                  "spans": [
+                    {
+                      "text": "Now allows Medivh to cast Portal in Raven Form without dismounting.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "c-fc4901135a",
+                      "spans": [
+                        {
+                          "origin": "addition",
+                          "label": true,
+                          "text": "Probius addition — not in official notes"
+                        },
+                        {
+                          "origin": "addition",
+                          "text": "No longer increases sight range in Raven Form by 25%."
+                        }
+                      ],
+                      "children": [],
+                      "meta": {
+                        "heroName": "Medivh",
+                        "target": "Dust of Appearance (Level 4)",
+                        "tier": "T1",
+                        "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-talents/medivh.json#L224"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "c-85ed827812",
+                  "spans": [
+                    {
+                      "origin": "addition",
+                      "label": true,
+                      "text": "Probius addition — not in official notes"
+                    },
+                    {
+                      "origin": "addition",
+                      "text": "No longer increases Sight by 1.75 (interpreted from game data)"
+                    }
+                  ],
+                  "children": [],
+                  "meta": {
+                    "heroName": "Medivh",
+                    "target": "Dust of Appearance (Level 4)",
+                    "tier": "T2",
+                    "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-mods/heromods/medivh.stormmod/base.stormdata/gamedata/medivhdata.xml#L1432"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "new-Medivh-level-16",
+          "spans": [
+            {
+              "origin": "generated",
+              "text": "Level 16"
+            }
+          ],
+          "children": [
+            {
+              "id": "new-Medivh-Stable Portal",
+              "spans": [
+                {
+                  "origin": "generated",
+                  "text": "Stable Portal"
+                }
+              ],
+              "children": [
+                {
+                  "id": "c-05bf4a356f",
+                  "spans": [
+                    {
+                      "origin": "addition",
+                      "label": true,
+                      "text": "Probius addition — not in official notes"
+                    },
+                    {
+                      "origin": "addition",
+                      "text": "Portal cooldown reduction reduced from 25% to 20%."
+                    }
+                  ],
+                  "children": [],
+                  "meta": {
+                    "heroName": "Medivh",
+                    "target": "Stable Portal (Level 16)",
+                    "tier": "T1",
+                    "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-talents/medivh.json#L406"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Mei",
+      "hero": "Mei"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Base"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-3095c576c3",
+          "spans": [
+            {
+              "text": "Blizzard [W]",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-0e0d5a8bc9",
+              "spans": [
+                {
+                  "text": "Detonation delay reduced from 2 to 1.875 seconds.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "b-4d6618d65d",
+              "spans": [
+                {
+                  "text": "Detonation damage increased from 75 to 80.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "c-3a294bd34c",
+              "spans": [
+                {
+                  "origin": "uncertain",
+                  "label": true,
+                  "text": "Coverage uncertain"
+                },
+                {
+                  "origin": "uncertain",
+                  "text": "Command Snowball to create a Blizzard at the target location for "
+                },
+                {
+                  "origin": "uncertain",
+                  "text": "2",
+                  "struck": true
+                },
+                {
+                  "origin": "uncertain",
+                  "text": " → 1.88 seconds."
+                }
+              ],
+              "children": [],
+              "meta": {
+                "heroName": "Mei",
+                "target": "Blizzard (W)",
+                "tier": "T1",
+                "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-talents/mei.json#L56"
+              }
+            },
+            {
+              "id": "c-b8abef7d71",
+              "spans": [
+                {
+                  "origin": "addition",
+                  "label": true,
+                  "text": "Probius addition — not in official notes"
+                },
+                {
+                  "origin": "addition",
+                  "text": "Number of periodic pulses reduced from 32 to 30 (interpreted from game data)"
+                }
+              ],
+              "children": [],
+              "meta": {
+                "heroName": "Mei",
+                "target": "Blizzard (W)",
+                "tier": "T2",
+                "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml#L2326"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b-940248f849",
+          "spans": [
+            {
+              "text": "Icing [E]",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-a30ca02bb5",
+              "spans": [
+                {
+                  "text": "Cast time reduced from 0.625 to 0.5 seconds.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "c-bdd9c2788e",
+              "spans": [
+                {
+                  "origin": "uncertain",
+                  "label": true,
+                  "text": "Coverage uncertain"
+                },
+                {
+                  "origin": "uncertain",
+                  "text": "Icing: cast time increased from 0.125 seconds to 0.5 seconds (game data)"
+                }
+              ],
+              "children": [],
+              "meta": {
+                "heroName": "Mei",
+                "target": "Icing (E)",
+                "tier": "T2",
+                "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml#L74"
+              }
+            },
+            {
+              "id": "c-3b3e4947af",
+              "spans": [
+                {
+                  "origin": "addition",
+                  "label": true,
+                  "text": "Probius addition — not in official notes"
+                },
+                {
+                  "origin": "addition",
+                  "text": "Duration reduced from 0.9375 seconds to 0.875 seconds (game data). (game data)"
+                }
+              ],
+              "children": [],
+              "meta": {
+                "heroName": "Mei",
+                "target": "Icing (E)",
+                "tier": "T2",
+                "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml#L1178"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "c-ff960fa4a4",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Icicle search width increased from 1 to 1.25 (game data). (game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Mei",
+            "target": "icicle search width",
+            "tier": "T2",
+            "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml#L9"
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Talents"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-6470f88b29",
+          "spans": [
+            {
+              "text": "Level 10",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-f69b031ccc",
+              "spans": [
+                {
+                  "text": "Avalanche",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-210ae5d155",
+                  "spans": [
+                    {
+                      "text": "Cooldown reduced from 90 to 80 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "b-d76e0bb285",
+              "spans": [
+                {
+                  "text": "Ice Wall",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-63f434ce6f",
+                  "spans": [
+                    {
+                      "text": "Cast time reduced from 0.75 to 0.6875 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Mephisto",
+      "hero": "Mephisto"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Talents"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-de5bceb487",
+          "spans": [
+            {
+              "text": "Level 1",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-4df8d83101",
+              "spans": [
+                {
+                  "text": "Malicious Intent",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-f29bd4af88",
+                  "spans": [
+                    {
+                      "text": "Spell Power bonus increased from 25% to 30%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "b-7559aa9d25",
+                  "spans": [
+                    {
+                      "text": "Duration increased from 2.5 to 3 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-35b4c3c6e5",
+          "spans": [
+            {
+              "text": "Level 4",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-e7e0cdba16",
+              "spans": [
+                {
+                  "text": "Hateful Mending",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-145faa0bc3",
+                  "spans": [
+                    {
+                      "text": "Mana restored increased from 10 to 15.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "b-6f681411f8",
+                  "spans": [
+                    {
+                      "text": "Healing increased from 70% to 85%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "b-37035c8e22",
+              "spans": [
+                {
+                  "text": "Static Barrier",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-c0dcb2dc79",
+                  "spans": [
+                    {
+                      "text": "Shield amount increased from 40% to 50%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "c-d0ec3a2eed",
+          "spans": [
+            {
+              "origin": "addition",
+              "label": true,
+              "text": "Probius addition — not in official notes"
+            },
+            {
+              "origin": "addition",
+              "text": "Skull Missile (Q): Healing from damage dealt increased from 70% to 85% (interpreted from game data)"
+            }
+          ],
+          "children": [],
+          "meta": {
+            "heroName": "Mephisto",
+            "target": "Skull Missile (Q)",
+            "tier": "T2",
+            "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-mods/heromods/mephisto.stormmod/base.stormdata/gamedata/mephistodata.xml#L1914"
+          }
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Stukov",
+      "hero": "Stukov"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Talents"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-d9fe1cc912",
+          "spans": [
+            {
+              "text": "Level 1",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-d48c3990e9",
+              "spans": [
+                {
+                  "text": "Fetid Touch",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-0f5774f2da",
+                  "spans": [
+                    {
+                      "text": "Cooldown reduction increased from 5 to 6 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-97916cab01",
+          "spans": [
+            {
+              "text": "Level 10",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-c9494c594c",
+              "spans": [
+                {
+                  "text": "Flailing Swipe",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-cb423cdc75",
+                  "spans": [
+                    {
+                      "text": "Damage increased from 48 to 62.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "text": "Xal'atath",
+      "hero": "Xal'atath"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Base"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-0951833ac8",
+          "spans": [
+            {
+              "text": "Shadow Mark [Q]",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-5040fd97b9",
+              "spans": [
+                {
+                  "text": "Range increased from 8 to 9.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "b-a02a9e4cc6",
+          "spans": [
+            {
+              "text": "Dark Heart Ritual [W]",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-6873dbb474",
+              "spans": [
+                {
+                  "text": "Detonation damage increased from 245 to 260.",
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "c-1246814cef",
+                  "spans": [
+                    {
+                      "origin": "addition",
+                      "label": true,
+                      "text": "Probius addition — not in official notes"
+                    },
+                    {
+                      "origin": "addition",
+                      "text": "Bonus damage to the Marked target increased from 61 to 65."
+                    }
+                  ],
+                  "children": [],
+                  "meta": {
+                    "heroName": "Xal'atath",
+                    "target": "Dark Heart Ritual (W)",
+                    "tier": "T1",
+                    "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-talents/xalatath.json#L57"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "new-Xalatath-Void Eruption",
+          "spans": [
+            {
+              "origin": "generated",
+              "text": "Void Eruption (R)"
+            }
+          ],
+          "children": [
+            {
+              "id": "c-9eb2afd22c",
+              "spans": [
+                {
+                  "origin": "addition",
+                  "label": true,
+                  "text": "Probius addition — not in official notes"
+                },
+                {
+                  "origin": "addition",
+                  "text": "Explosion damage reduced from 400 (+4% per level) to 320 (+4% per level)."
+                }
+              ],
+              "children": [],
+              "meta": {
+                "heroName": "Xal'atath",
+                "target": "Void Eruption (R)",
+                "tier": "T1",
+                "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-talents/xalatath.json#L81"
+              }
+            },
+            {
+              "id": "c-76b7a61306",
+              "spans": [
+                {
+                  "origin": "addition",
+                  "label": true,
+                  "text": "Probius addition — not in official notes"
+                },
+                {
+                  "origin": "addition",
+                  "text": "Maximum charged contact damage reduced from 166 (+4% per level) to 90 (+4% per level)."
+                }
+              ],
+              "children": [],
+              "meta": {
+                "heroName": "Xal'atath",
+                "target": "Void Eruption (R)",
+                "tier": "T1",
+                "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-talents/xalatath.json#L81"
+              }
+            },
+            {
+              "id": "c-5d79b95f21",
+              "spans": [
+                {
+                  "origin": "addition",
+                  "label": true,
+                  "text": "Probius addition — not in official notes"
+                },
+                {
+                  "origin": "addition",
+                  "text": "Maximum charged explosion damage reduced from 700 (+4% per level) to 320 (+4% per level)."
+                }
+              ],
+              "children": [],
+              "meta": {
+                "heroName": "Xal'atath",
+                "target": "Void Eruption (R)",
+                "tier": "T1",
+                "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-talents/xalatath.json#L81"
+              }
+            }
+          ]
+        },
+        {
+          "id": "b-d033f769ce",
+          "spans": [
+            {
+              "text": "Void Volley [D]",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-d799da8816",
+              "spans": [
+                {
+                  "text": "Mythic Reward damage bonus reduced from 50% to 35%.",
+                  "origin": "official"
+                }
+              ],
+              "children": []
+            },
+            {
+              "id": "c-113b672eff",
+              "spans": [
+                {
+                  "origin": "addition",
+                  "label": true,
+                  "text": "Probius addition — not in official notes"
+                },
+                {
+                  "origin": "addition",
+                  "text": "Damage modifier from Fractured Reality reduced from 25% to 15% (interpreted from game data)"
+                }
+              ],
+              "children": [],
+              "meta": {
+                "heroName": "Xal'atath",
+                "target": "Void Volley",
+                "tier": "T2",
+                "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml#L2769"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "text": "Talents"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-35fed25f1d",
+          "spans": [
+            {
+              "text": "Level 1",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-1e8297bd77",
+              "spans": [
+                {
+                  "text": "Anchored Core",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-ddf6ca9713",
+                  "spans": [
+                    {
+                      "text": "No longer increases duration.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "b-f877ef9e78",
+              "spans": [
+                {
+                  "text": "Cloak of Shadows",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-566d477f7b",
+                  "spans": [
+                    {
+                      "text": "Now grants Spell Armor only while actively blinking. The bonus no longer persists for 2 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-e48117e8f1",
+          "spans": [
+            {
+              "text": "Level 4",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-031fc05d0b",
+              "spans": [
+                {
+                  "text": "Cold Feet",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-e20643c202",
+                  "spans": [
+                    {
+                      "text": "Duration bonus increased from 1 to 2 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "c-51c947b135",
+                  "spans": [
+                    {
+                      "origin": "uncertain",
+                      "label": true,
+                      "text": "Coverage uncertain"
+                    },
+                    {
+                      "origin": "uncertain",
+                      "text": "Now also increases the duration of the Toxic Mark Armor reduction by 2 seconds (interpreted from game data)"
+                    }
+                  ],
+                  "children": [],
+                  "meta": {
+                    "heroName": "Xal'atath",
+                    "target": "Cold Feet (Level 4)",
+                    "tier": "T2",
+                    "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml#L4292"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-c29c45f770",
+          "spans": [
+            {
+              "text": "Level 7",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-76be2b2fe8",
+              "spans": [
+                {
+                  "text": "Toxic Mark",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-4c9744c5e6",
+                  "spans": [
+                    {
+                      "text": "No longer increases debuff duration.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "b-36c34d4340",
+                  "spans": [
+                    {
+                      "text": "Now benefits from Cold Feet's duration bonus.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-f2d53b7b52",
+          "spans": [
+            {
+              "text": "Level 10",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-2f4494cd85",
+              "spans": [
+                {
+                  "text": "Void Eruption",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-2258cfe003",
+                  "spans": [
+                    {
+                      "text": "Damage per second reduced by 10%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "c-9da301a258",
+                      "spans": [
+                        {
+                          "origin": "addition",
+                          "label": true,
+                          "text": "Probius addition — not in official notes"
+                        },
+                        {
+                          "origin": "addition",
+                          "text": "Damage per second: from 1440 to 1300 (game data)"
+                        }
+                      ],
+                      "children": [],
+                      "meta": {
+                        "heroName": "Xal'atath",
+                        "target": "Void Eruption (R)",
+                        "tier": "T2",
+                        "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathvoideruptiondata.xml#L47"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "b-e2cc65f4eb",
+                  "spans": [
+                    {
+                      "text": "Speed reduced by 10%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-86b6576af4",
+          "spans": [
+            {
+              "text": "Level 16",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-6bc5dbef29",
+              "spans": [
+                {
+                  "text": "Marked Resilience",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-9f6ac19343",
+                  "spans": [
+                    {
+                      "text": "Shield amount increased from 160 to 200.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "b-cf6b5cc2f4",
+              "spans": [
+                {
+                  "text": "Relentless Whispers",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-ee0f95a4ec",
+                  "spans": [
+                    {
+                      "text": "No longer increases Attack Speed.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "b-a3afe54d04",
+                  "spans": [
+                    {
+                      "text": "Now grants an additional 75% Basic Attack damage per teleport.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "b-9c85e1c111",
+              "spans": [
+                {
+                  "text": "Fractured Reality",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-84fee14f24",
+                  "spans": [
+                    {
+                      "text": "Damage bonus reduced from 25% to 15%.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "b-090e0c6939",
+          "spans": [
+            {
+              "text": "Level 20",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-562858f392",
+              "spans": [
+                {
+                  "text": "Harbinger's Consumption",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-307452aa08",
+                  "spans": [
+                    {
+                      "text": "Cooldown reduction per hit reduced from 14 to 10 seconds.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "b-78802e2f3c",
+                  "spans": [
+                    {
+                      "text": "The three orbs now orbit more slowly.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                }
+              ]
+            },
+            {
+              "id": "b-18e4a2ff07",
+              "spans": [
+                {
+                  "text": "Unstable Core",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-8264cd1823",
+                  "spans": [
+                    {
+                      "text": "No longer applies a damage over time to targets.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": []
+                },
+                {
+                  "id": "b-3694ebd99b",
+                  "spans": [
+                    {
+                      "text": "Impact damage increased from 45 to 75.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "c-334161b4e2",
+                      "spans": [
+                        {
+                          "origin": "addition",
+                          "label": true,
+                          "text": "Probius addition — not in official notes"
+                        },
+                        {
+                          "origin": "addition",
+                          "text": "Duration increased from 5 seconds to 6 seconds, and the flames no longer require a target afflicted by Shadow Mark."
+                        }
+                      ],
+                      "children": [],
+                      "meta": {
+                        "heroName": "Xal'atath",
+                        "target": "Unstable Core (Level 20)",
+                        "tier": "T1",
+                        "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-talents/xalatath.json#L483"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Bug Fixes"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "General"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-4ab842b07a",
+          "spans": [
+            {
+              "text": "Fixed an issue with the death icon at certain resolutions. Begone pesky pixel!",
+              "origin": "official"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b-13fcedf4ec",
+          "spans": [
+            {
+              "text": "Spell Power no longer increases the Health restored by activating Hearthstone (B).",
+              "origin": "official"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b-35e3ddb887",
+          "spans": [
+            {
+              "text": "Fixed an issue with allied pings on the Party Frame.",
+              "origin": "official"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Maps"
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-298c6e53f1",
+          "spans": [
+            {
+              "text": "Fixed an issue that caused Sapper attacks to instantly hit nearby targets.",
+              "origin": "official"
+            }
+          ],
+          "children": []
+        },
+        {
+          "id": "b-c761e97fad",
+          "spans": [
+            {
+              "text": "Fixed an issue that caused Sapper warning areas to persist indefinitely.",
+              "origin": "official"
+            }
+          ],
+          "children": []
+        }
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        {
+          "id": "b-417f288f7b",
+          "spans": [
+            {
+              "text": "Auriel",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-c2242acd88",
+              "spans": [
+                {
+                  "text": "Level 16",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-6a8dd52cc5",
+                  "spans": [
+                    {
+                      "text": "Wrath of Heaven",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-921065ee32",
+                      "spans": [
+                        {
+                          "text": "Fixed an issue that caused Wrath of Heaven's full Spell Power bonus to apply to healing.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "hero": "Auriel"
+          }
+        },
+        {
+          "id": "b-276b020bfa",
+          "spans": [
+            {
+              "text": "Blaze",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-2a5fb0fb72",
+              "spans": [
+                {
+                  "text": "Level 13",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-f72bcef657",
+                  "spans": [
+                    {
+                      "text": "Adhesive Petroleum",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-c8ae7e629b",
+                      "spans": [
+                        {
+                          "text": "Fixed an issue that caused Adhesive Petroleum to grant its Basic Attack damage bonus to other Blaze players who do not have the talent selected.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "hero": "Blaze"
+          }
+        },
+        {
+          "id": "b-d42d75a44a",
+          "spans": [
+            {
+              "text": "Genji",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-8801928be0",
+              "spans": [
+                {
+                  "text": "Level 1",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-323deca273",
+                  "spans": [
+                    {
+                      "text": "Pathfinder",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-fffcfb2b47",
+                      "spans": [
+                        {
+                          "text": "Fixed an issue that caused Genji to no longer automatically acquire nearby targets after Pathfinder expires.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "hero": "Genji"
+          }
+        },
+        {
+          "id": "b-5bba40dc31",
+          "spans": [
+            {
+              "text": "Greymane",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-68b6bae6e6",
+              "spans": [
+                {
+                  "text": "Level 4",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-5081f3dc6e",
+                  "spans": [
+                    {
+                      "text": "Eyes in the Dark",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-e133502b59",
+                      "spans": [
+                        {
+                          "text": "Fixed an issue that caused Genji to no longer automatically acquire nearby targets after Eyes in the Dark expires.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "hero": "Greymane"
+          }
+        },
+        {
+          "id": "b-9768004851",
+          "spans": [
+            {
+              "text": "Li Li",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-bcaba77860",
+              "spans": [
+                {
+                  "text": "Base",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-ebdb988810",
+                  "spans": [
+                    {
+                      "text": "Cloud Serpent [W]",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-83e6bd77ea",
+                      "spans": [
+                        {
+                          "text": "Fixed an issue that allowed Cloud Serpent casts on allied Heroes to become disjointed.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "hero": "Li Li"
+          }
+        },
+        {
+          "id": "b-5f017248a6",
+          "spans": [
+            {
+              "text": "Medivh",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-b2dfc6dc9a",
+              "spans": [
+                {
+                  "text": "Level 13",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-e0606d82f6",
+                  "spans": [
+                    {
+                      "text": "Circle of Protection",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-b8e7253dd2",
+                      "spans": [
+                        {
+                          "text": "Added a radius indicator to Force of Will's cast guide after selecting Circle of Protection.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b-95da5a830b",
+              "spans": [
+                {
+                  "text": "Level 20",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-11027ce308",
+                  "spans": [
+                    {
+                      "text": "Dust of Disappearance",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-c0320749d7",
+                      "spans": [
+                        {
+                          "text": "Fixed an issue that caused targeted allies to not automatically acquire nearby targets after Stealth expires.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "hero": "Medivh"
+          }
+        },
+        {
+          "id": "b-cf306097c1",
+          "spans": [
+            {
+              "text": "Tassadar",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-1ebf06d2de",
+              "spans": [
+                {
+                  "text": "Level 13",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-2a21880354",
+                  "spans": [
+                    {
+                      "text": "Shadow Walk",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-c0fd2f338a",
+                      "spans": [
+                        {
+                          "text": "Fixed an issue that caused Tassadar to no longer automatically acquire nearby targets after Shadow Walk expires.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "hero": "Tassadar"
+          }
+        },
+        {
+          "id": "b-fa76e7c03f",
+          "spans": [
+            {
+              "text": "Xal'atath",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-f23e3d21ad",
+              "spans": [
+                {
+                  "text": "Base",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-e55319885e",
+                  "spans": [
+                    {
+                      "text": "Fixed an issue with Xal'atath's Health Regeneration.",
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "c-45608b481e",
+                      "spans": [
+                        {
+                          "origin": "addition",
+                          "label": true,
+                          "text": "Probius addition — not in official notes"
+                        },
+                        {
+                          "origin": "addition",
+                          "text": "Health Regeneration increased from 2.6484 to 2.7708."
+                        }
+                      ],
+                      "children": [],
+                      "meta": {
+                        "heroName": "Xal'atath",
+                        "target": "Health Regeneration",
+                        "tier": "T1",
+                        "link": "https://github.com/LawfulGremlin/probius-data-debug/blob/1dbf0d169765/heroes-talents/xalatath.json#L24"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "id": "b-91b40adec5",
+                  "spans": [
+                    {
+                      "text": "Shadow Mark [Q]",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-875e4d0f31",
+                      "spans": [
+                        {
+                          "text": "Fixed issues that caused Structures to be marked by Shadow Mark in unintended situations.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "b-01bf8a7ee7",
+                  "spans": [
+                    {
+                      "text": "Dark Heart Ritual [W]",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-7adc94b5a0",
+                      "spans": [
+                        {
+                          "text": "Fixed issues related to Dark Heart Ritual's self reveal logic.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "id": "b-7809903e2c",
+                  "spans": [
+                    {
+                      "text": "Void Volley [D]",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-628ccfaa37",
+                      "spans": [
+                        {
+                          "text": "Fixed an issue that caused Void Volley to gain progress when attacking a target with 1 Evasion charge remaining.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b-116f8e310f",
+              "spans": [
+                {
+                  "text": "Level 4",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-955a6e487b",
+                  "spans": [
+                    {
+                      "text": "Void Acolyte",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-e6b8f1829a",
+                      "spans": [
+                        {
+                          "text": "Fixed an issue that caused Void Acolyte to not empower Void Volley.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "b-777e7067a1",
+              "spans": [
+                {
+                  "text": "Level 7",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-fc288dfbb9",
+                  "spans": [
+                    {
+                      "text": "Void Summoner",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-1ecff24595",
+                      "spans": [
+                        {
+                          "text": "Fixed an issue that caused Void Summoner to not spawn the Void Minion at Xal'atath's position at cast time.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "hero": "Xal'atath"
+          }
+        },
+        {
+          "id": "b-763698aa09",
+          "spans": [
+            {
+              "text": "Xul",
+              "strong": true,
+              "origin": "official"
+            }
+          ],
+          "children": [
+            {
+              "id": "b-eacb4581fe",
+              "spans": [
+                {
+                  "text": "Base",
+                  "strong": true,
+                  "origin": "official"
+                }
+              ],
+              "children": [
+                {
+                  "id": "b-95d32004fa",
+                  "spans": [
+                    {
+                      "text": "Bone Prison [E]",
+                      "strong": true,
+                      "origin": "official"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "b-576bc70cd3",
+                      "spans": [
+                        {
+                          "text": "Xul will no longer be revealed to the enemy if he is in the fog of war when Bone Prison activates.",
+                          "origin": "official"
+                        }
+                      ],
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "meta": {
+            "hero": "Xul"
+          }
+        }
+      ]
+    },
+    {
+      "type": "separator"
+    },
+    {
+      "type": "image",
+      "alt": ""
+    }
+  ],
+  "appendix": {
+    "blocks": [
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Coverage of the official notes"
+      },
+      {
+        "type": "para",
+        "spans": [
+          {
+            "text": "87 game-data claims compared with the official section: covered 66, partly 6, uncertain 4, absent 11; 25 official bullets have no related claim.",
+            "origin": "generated"
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Source-level changes not interpreted"
+      },
+      {
+        "type": "para",
+        "spans": [
+          {
+            "text": "595 changes in 19 groups could not be tied to a player-facing statement.",
+            "origin": "generated"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-f5114f1b10",
+            "spans": [
+              {
+                "text": "Abathur (6)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-1ccbd92704",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#AbathurLocustAssaultWeaponDamage LeechScoreArray[index=0]@removed: (none) → 1",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-5c3815d70f",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#AbathurLocustBombardWeaponCloseRangeDamage LeechScoreArray[index=0]@removed: (none) → 1",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-6a51477af0",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#AbathurLocustBombardWeaponDamage LeechScoreArray[index=0]@removed: (none) → 1",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-402166696c",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#AbathurLocustWeaponDamage LeechScoreArray[index=0]@removed: (none) → 1",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-351f2f88ff",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#AbathurVolatileMutationDamage LeechScoreArray[index=0]@Validator: (none) → SourceIsHero",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-ce390e4e45",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#AbathurVolatileMutationDamage LeechScoreArray[index=0]@Value: (none) → SelfHealing",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-9417df2c86",
+            "spans": [
+              {
+                "text": "Blaze (2)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-d7e08649a1",
+                "spans": [
+                  {
+                    "text": "Entry added: CValidatorCombine#FirebatWeaponAdhesivePetroleumCombine",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-15e4127ab4",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#FirebatWeaponDamage MultiplicativeModifierArray[index=1]@Validator: FirebatTargetHasOilSpillAdhesivePetroleumAttackDamageBehavior → FirebatWeaponAdhesivePetroleumCombine",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-55ced2a675",
+            "spans": [
+              {
+                "text": "Cho (3)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-7d4d13bd58",
+                "spans": [
+                  {
+                    "text": "Entry added: CAbilEffectTarget#ChoSurgingFistTrigger",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-3d185f5cf7",
+                "spans": [
+                  {
+                    "text": "Entry removed: CAbilEffectInstant#ChoSurgingFistTrigger",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-2739c55302",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#ChoSurgingFistResetUnitRadius EffectArray[Reference=Unit,HeroCho,InnerRadius]@Value: 1 → 0.9375",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-078e0a198a",
+            "spans": [
+              {
+                "text": "Chromie (3)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-a356730c68",
+                "spans": [
+                  {
+                    "text": "CAccumulatorToken#ChromieDragonsBreathDeepBreathingAccumulator Scale@value: 0.005 → 0.006",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-1830a7a854",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#ChromieTimewalkersPursuitQuestCompleteAbilityPower Modification/DamageDealtFraction[index=Ability]@value: 0.15 → 0.12",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-c89d68e77a",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#ChromieSandEchoWeaponDamage MultiplicativeModifierArray[index=OnceAgainTheFirstTime]@Modifier: -0.5 → -0.45",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-5a5aac77d4",
+            "spans": [
+              {
+                "text": "Gazlowe (8)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-77e8e6a7a1",
+                "spans": [
+                  {
+                    "text": "CTalent#GazloweXplodiumChargeBombToss AbilityModificationArray/Modifications[#1]/Entry@value: TinkerXplodiumBomb → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-e2e3454713",
+                "spans": [
+                  {
+                    "text": "CTalent#GazloweXplodiumChargeBombToss AbilityModificationArray/Modifications[#1]/Field@value: Cost.Charge.CountMax → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-2d34aab179",
+                "spans": [
+                  {
+                    "text": "CTalent#GazloweXplodiumChargeBombToss AbilityModificationArray/Modifications[#1]/Type@value: FlatModification → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-9ff6e1f40d",
+                "spans": [
+                  {
+                    "text": "CTalent#GazloweXplodiumChargeBombToss AbilityModificationArray/Modifications[#1]/Value@value: 1.000000 → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-cbb0ea0b6e",
+                "spans": [
+                  {
+                    "text": "CTalent#GazloweXplodiumChargeBombToss AbilityModificationArray/Modifications[#2]/Entry@value: TinkerXplodiumBomb → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-418f77c29e",
+                "spans": [
+                  {
+                    "text": "CTalent#GazloweXplodiumChargeBombToss AbilityModificationArray/Modifications[#2]/Field@value: Cost.Charge.HideCount → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-1abc4604d4",
+                "spans": [
+                  {
+                    "text": "CTalent#GazloweXplodiumChargeBombToss AbilityModificationArray/Modifications[#2]/Type@value: FlatModification → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-144299f3cf",
+                "spans": [
+                  {
+                    "text": "CTalent#GazloweXplodiumChargeBombToss AbilityModificationArray/Modifications[#2]/Value@value: -1.000000 → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-b160c994af",
+            "spans": [
+              {
+                "text": "Genji (3)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-070e084ccb",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectRemoveBehavior#GenjiCyberAgilityPathfinderCloakRemoveSafetyBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-1474da1ef9",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectSet#GenjiCyberAgilityPathfinderCloakRemoveSet",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-3e0fe2ec71",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#GenjiCyberAgilityPathfinderCloak FinalEffect@value: RemoveHoldFireBehavior → GenjiCyberAgilityPathfinderCloakRemoveSet",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-acfa9488b3",
+            "spans": [
+              {
+                "text": "Greymane (7)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-93839df34c",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectRemoveBehavior#GreymaneDisengageEyesInTheDarkRemoveSafetyBehavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-1882eb38cb",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectSet#GreymaneDisengageEyeInTheDarkRemoveSet",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-dc95f21497",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#GreymaneDisengageEyesInTheDark FinalEffect@value: RemoveHoldFireBehavior → GreymaneDisengageEyeInTheDarkRemoveSet",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-88f9a03c76",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#GreymaneCursedBulletDamagePercentDamage FlatModifierArray[index=GilneanRoulette]@Accumulator: GreymaneCursedBulletGilneanRouletteTalentCurrentHealthAccumulator → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-c4a113c467",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#GreymaneCursedBulletDamagePercentDamage FlatModifierArray[index=GilneanRoulette]@Validator: GreymaneHasCursedBulletGilneanRoulette → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-6b6843d1c0",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#GreymaneCursedBulletDamagePercentDamage FlatModifierArray[index=GreymaneCursedBullet]@Validator: GreymaneDoesNotHaveCursedBulletGilneanRoulette → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-c6f4e1505f",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#GreymaneGilneanCocktailIncendiaryElixirQuestIncrementModification EffectArray[Reference=Effect,GreymaneGilneanCocktailSpreadDamage,AmountArray]@Value: 25 → 30",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-bda5f0f310",
+            "spans": [
+              {
+                "text": "heroesdata.stormmod/base.stormdata/gamedata/effectdata.xml (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-4243915643",
+                "spans": [
+                  {
+                    "text": "CEffectCreateHealer#HearthstoneHealthCreateHealer Flags[index=IgnoreBehaviorDealtMultipliers]@value: (none) → 1 (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-bf997baba8",
+            "spans": [
+              {
+                "text": "heroesdata.stormmod/base.stormdata/gamedata/mercenaries/sapper.xml (21)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-9d27bc36ae",
+                "spans": [
+                  {
+                    "text": "CEffectCreatePersistent#MercDefenderGoblinSapperRangedWarningCreatePersistent Flags[index=PersistUntilDestroyed]@value: (none) → 1 (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-ee935e216f",
+                "spans": [
+                  {
+                    "text": "CEffectCreatePersistent#MercLanerGoblinSapperRangedWarningCreatePersistent Flags[index=PersistUntilDestroyed]@value: (none) → 1 (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-3fc0cb738c",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectLaunchMissile#MercDefenderGoblinSapperWeaponLaunchMissileOffset",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-2d2c386834",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectLaunchMissile#MercLanerGoblinSapperWeaponLaunchMissileOffset",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-27f845a927",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectSwitch#MercDefenderGoblinSapperWeaponLaunchMissileSwitch",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-5a83b14633",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectSwitch#MercLanerGoblinSapperWeaponLaunchMissileSwitch",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-7dd7dd5ee0",
+                "spans": [
+                  {
+                    "text": "Entry added: CValidatorLocationCompareRange#MercSapperWeaponMinimumDistanceCast",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-a1da921444",
+                "spans": [
+                  {
+                    "text": "CEffectCreatePersistent#MercDefenderGoblinSapperRangedWarningCreatePersistent ExpireDelay@value: 1.25 → 1.125",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-a2d6fd12c5",
+                "spans": [
+                  {
+                    "text": "CEffectCreatePersistent#MercDefenderGoblinSapperRangedWarningCreatePersistent PeriodicPeriodArray@value: (none) → 0.0625",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-5d65767d22",
+                "spans": [
+                  {
+                    "text": "CEffectCreatePersistent#MercDefenderGoblinSapperRangedWarningCreatePersistent PeriodicValidator@value: (none) → SourceNotDead",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-1047ce0e28",
+                "spans": [
+                  {
+                    "text": "CEffectCreatePersistent#MercLanerGoblinSapperRangedWarningCreatePersistent ExpireDelay@value: 1.25 → 1.125",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-8fa2c6ad73",
+                "spans": [
+                  {
+                    "text": "CEffectCreatePersistent#MercLanerGoblinSapperRangedWarningCreatePersistent PeriodicPeriodArray@value: (none) → 0.0625",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-e00da29494",
+                "spans": [
+                  {
+                    "text": "CEffectCreatePersistent#MercLanerGoblinSapperRangedWarningCreatePersistent PeriodicValidator@value: (none) → SourceNotDead",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-f8a8502a29",
+                "spans": [
+                  {
+                    "text": "CEffectLaunchMissile#MercDefenderGoblinSapperWeaponLaunchMissile LaunchEffect@value: (none) → MercDefenderGoblinSapperRangedWarningCreatePersistent",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-7892138550",
+                "spans": [
+                  {
+                    "text": "CEffectLaunchMissile#MercLanerGoblinSapperWeaponLaunchMissile LaunchEffect@value: (none) → MercLanerGoblinSapperRangedWarningCreatePersistent",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-6d89dba4cb",
+                "spans": [
+                  {
+                    "text": "CEffectSet#MercDefenderGoblinSapperWeaponLaunchSet EffectArray[#1]@value: MercDefenderGoblinSapperWeaponLaunchMissile → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-4ef1910605",
+                "spans": [
+                  {
+                    "text": "CEffectSet#MercDefenderGoblinSapperWeaponLaunchSet EffectArray[#2]@value: MercDefenderGoblinSapperRangedWarningCreatePersistent → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-ba6347aca9",
+                "spans": [
+                  {
+                    "text": "CEffectSet#MercDefenderGoblinSapperWeaponLaunchSet EffectArray@value: (none) → MercDefenderGoblinSapperWeaponLaunchMissileSwitch",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-eb56c542f6",
+                "spans": [
+                  {
+                    "text": "CEffectSet#MercLanerGoblinSapperWeaponLaunchSet EffectArray[#1]@value: MercLanerGoblinSapperWeaponLaunchMissile → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-a7ab5a0701",
+                "spans": [
+                  {
+                    "text": "CEffectSet#MercLanerGoblinSapperWeaponLaunchSet EffectArray[#2]@value: MercLanerGoblinSapperRangedWarningCreatePersistent → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-bce8d6656e",
+                "spans": [
+                  {
+                    "text": "CEffectSet#MercLanerGoblinSapperWeaponLaunchSet EffectArray@value: (none) → MercLanerGoblinSapperWeaponLaunchMissileSwitch",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-14c31a44a4",
+            "spans": [
+              {
+                "text": "heroesdata.stormmod/enus.stormdata/localizeddata/gamestrings.txt (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-69e331e403",
+                "spans": [
+                  {
+                    "text": "Reward/Description/MountDirewolf_Esport17EpicVar1 (added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-b82b7b6f39",
+            "spans": [
+              {
+                "text": "Li Li (2)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-6e56f4ba73",
+                "spans": [
+                  {
+                    "text": "CEffectLaunchMissile#CloudSerpentCastMissileLaunchInvisibletoOtherTeam SharedFlags[index=ValidateTeleport]@value: (none) → 0 (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-b562f0b8de",
+                "spans": [
+                  {
+                    "text": "CEffectLaunchMissile#LiLiCloudSerpentCastMissileLaunch SharedFlags[index=ValidateTeleport]@value: (none) → 0 (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-ceb2c685a0",
+            "spans": [
+              {
+                "text": "Lúcio (12)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-c821afa9da",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#LucioSoundBarrierShield DamageResponse@ModifyLimit: 27 → 31",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-815ff55f89",
+                "spans": [
+                  {
+                    "text": "CEffectDestroyPersistent#LucioPushOffHeavyCastersDestroySearchPersistent WhichLocation@Value: CasterUnit → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-ffabea445a",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#LucioCrossfadePartyMixQuestCompleteModifyPlayer EffectArray[Reference=Actor,LucioBoomboxCrossfadeHealingRange,Range]@Value: 1.4 → 2.1",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-bb54ab4e83",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#LucioCrossfadePartyMixQuestCompleteModifyPlayer EffectArray[Reference=Actor,LucioBoomboxCrossfadeSpeedRange,Range]@Value: 1.4 → 2.1",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-ec0492f8f4",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#LucioCrossfadePartyMixQuestCompleteModifyPlayer EffectArray[Reference=Actor,LucioBoomboxTeamColor,Scale]@Value: 1.2 → 1.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-cf27e0e523",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#LucioCrossfadePartyMixQuestCompleteModifyPlayer EffectArray[Reference=Actor,LucioCrossfadeHealingRange,Range]@Value: 1.4 → 2.1",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-2ce58fa9f3",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#LucioCrossfadePartyMixQuestCompleteModifyPlayer EffectArray[Reference=Actor,LucioCrossfadeHoverRangeSplat,Scale]@Value: 1.4 → 2.1",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-0340d80eb4",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#LucioCrossfadePartyMixQuestCompleteModifyPlayer EffectArray[Reference=Actor,LucioCrossfadePulseHeal,Scale]@Value: 0.2 → 0.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-f3d0a9985e",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#LucioCrossfadePartyMixQuestCompleteModifyPlayer EffectArray[Reference=Actor,LucioCrossfadePulseSpeed,Scale]@Value: 0.2 → 0.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-fb3ab79700",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#LucioCrossfadePartyMixQuestCompleteModifyPlayer EffectArray[Reference=Actor,LucioCrossfadeSpeedRange,Range]@Value: 1.4 → 2.1",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-897d69728e",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#LucioCrossfadePartyMixQuestCompleteModifyPlayer EffectArray[Reference=Effect,LucioBoomboxArmorSearchArea,AreaArray[0].Radius]@Value: 1.4 → 2.1",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-3cd34dcd04",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#LucioCrossfadePartyMixQuestCompleteModifyPlayer EffectArray[Reference=Effect,LucioCrossfadeSearchArea,AreaArray[0].Radius]@Value: 1.4 → 2.1",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-8ac4488177",
+            "spans": [
+              {
+                "text": "Medivh (28)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-98e2ec933b",
+                "spans": [
+                  {
+                    "text": "Abil/MedivhPortalMasteryCooldownOverride (changed)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-91d1b982b6",
+                "spans": [
+                  {
+                    "text": "Entry added: CValidatorPlayerTalent#MedivhNotHasTransformRavenDustOfAppearanceTalent2",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-7832a5e7f0",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MedivhDustOfAppearanceCarry Modification/SightBonus@value: 1.75 → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-cf821a63ba",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MedivhDustofDisappearanceCloak InitialEffect@value: MedivhDustofDisappearanceHoldFireApply → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-a3824dbc45",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MedivhDustOfDisappearanceUnrevealableCloak InitialEffect@value: (none) → MedivhDustofDisappearanceHoldFireApply",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-050a95c29b",
+                "spans": [
+                  {
+                    "text": "CEffectSet#MedivhPortalRemoveRavenSet ValidatorArray[#2]@value: MedivhDoesNotHavePortalMasteryTalent → MedivhNotHasTransformRavenDustOfAppearanceTalent2",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-09c45e454f",
+                "spans": [
+                  {
+                    "text": "CHero#Medivh TalentAIBuildsArray[#2]/TalentsArray[#1]@value: MedivhTransformRavenWindsOfCelerity → MedivhPortalStablePortal",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-0f21d6a212",
+                "spans": [
+                  {
+                    "text": "CHero#Medivh TalentAIBuildsArray[#2]/TalentsArray[#6]@value: MedivhPortalStablePortal → MedivhTemporalFlux",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-ce04432207",
+                "spans": [
+                  {
+                    "text": "CHero#Medivh TalentAIBuildsArray[#3]/TalentsArray[#6]@value: MedivhTemporalFlux → MedivhArcaneRiftArcaneCharge",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-55fb79e497",
+                "spans": [
+                  {
+                    "text": "CHero#Medivh TalentAIBuildsArray[#4]/TalentsArray[#1]@value: MedivhTransformRavenRavensIntellect → MedivhPortalStablePortal",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-bc80592880",
+                "spans": [
+                  {
+                    "text": "CHero#Medivh TalentAIBuildsArray[#4]/TalentsArray[#6]@value: MedivhPortalStablePortal → MedivhTemporalFlux",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-3cfffb9d76",
+                "spans": [
+                  {
+                    "text": "CHero#Medivh TalentAIBuildsArray[#5]/TalentsArray[#6]@value: MedivhPortalStablePortal → MedivhTemporalFlux",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-199e8f3b83",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenRavensIntellect AbilityModificationArray/Modifications[#1]/Value@value: 2 → 4",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-cd3ecbcad3",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenRavensIntellect AbilityModificationArray/Modifications[#2]/Value@value: 2 → 4",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-ad81f2a03e",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenWindsOfCelerity AbilityModificationArray/Modifications[#1]/Catalog@value: (none) → Behavior",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-4a15b8ac0a",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenWindsOfCelerity AbilityModificationArray/Modifications[#1]/Entry@value: (none) → MedivhTransformRaven",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-b68eafecb3",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenWindsOfCelerity AbilityModificationArray/Modifications[#1]/Field@value: (none) → Modification.UnifiedMoveSpeedFactor",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-65a46e7306",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenWindsOfCelerity AbilityModificationArray/Modifications[#1]/Type@value: (none) → FlatModification",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-d8c2fd011d",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenWindsOfCelerity AbilityModificationArray/Modifications[#1]/Value@value: (none) → 0.200000",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-3e7499e0f1",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenWindsOfCelerity AbilityModificationArray/Modifications[#2]/Entry@value: (none) → MedivhTransformRaven",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-dff5aeeb6b",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenWindsOfCelerity AbilityModificationArray/Modifications[#2]/Field@value: (none) → CastIntroTime",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-0ebbfe1393",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenWindsOfCelerity AbilityModificationArray/Modifications[#2]/Type@value: (none) → FlatModification",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-e41ccc27b5",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenWindsOfCelerity AbilityModificationArray/Modifications[#2]/Value@value: (none) → -0.250000",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-b78e3e1016",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenWindsOfCelerity AbilityModificationArray/Modifications/Catalog@value: Behavior → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-50a8da5c37",
+                "spans": [
+                  {
+                    "text": "CTalent#MedivhTransformRavenWindsOfCelerity AbilityModificationArray/Modifications/Entry@value: MedivhTransformRaven → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-7dd5eee613",
+                "spans": [
+                  {
+                    "text": "+3 more",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-90ba4afe8f",
+            "spans": [
+              {
+                "text": "Mei (4)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-bbe57e198b",
+                "spans": [
+                  {
+                    "text": "CEffectApplyBehavior#MeiOWIceWallTimeStopDebuffApplyUntimedBehavior Duration@value: -1 → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-647ebe22d2",
+                "spans": [
+                  {
+                    "text": "CEffectCreatePersistent#MeiOWBlizzardSearchPersistent PeriodCount@value: 32 → 30",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-c310b9a4d1",
+                "spans": [
+                  {
+                    "text": "CEffectCreatePersistent#MeiOWIceWallInitialCreatePersistent ExpireDelay@value: 0.75 → 0.6875",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-a8a90f49ba",
+                "spans": [
+                  {
+                    "text": "CEffectCreatePersistent#MeiOWIceWallTimeStopPrepPersistentHandler TimeScaleSource@Value: Global → (none)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-9b9d23506c",
+            "spans": [
+              {
+                "text": "Mephisto (12)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-7d49468bf4",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MephistoMaliciousIntentImprovedPostTeleportSpellPowerBuff Modification/DamageDealtFraction[index=Ability]@value: 0.25 → 0.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-8da620e91f",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MephistoMaliciousIntentImprovedPostTeleportSpellPowerBuff Modification/HealDealtAdditiveMultiplier[index=Life]@value: 0.25 → 0.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-b1cb4ce8bf",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MephistoMaliciousIntentImprovedPostTeleportSpellPowerBuff Modification/HealDealtAdditiveMultiplier[index=Shields]@value: 0.25 → 0.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-59f8e77069",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MephistoShadeOfMephistoMaliciousIntentPostTeleportSpellPowerBuff Modification/DamageDealtFraction[index=Ability]@value: 0.25 → 0.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-f9b6c5b8f7",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MephistoShadeOfMephistoMaliciousIntentPostTeleportSpellPowerBuff Modification/HealDealtAdditiveMultiplier[index=Life]@value: 0.25 → 0.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-9803a3bc27",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MephistoShadeOfMephistoMaliciousIntentPostTeleportSpellPowerBuff Modification/HealDealtAdditiveMultiplier[index=Shields]@value: 0.25 → 0.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-50aa8a5b91",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MephistoShadeOfMephistoMaliciousIntentSpellPowerBuff Modification/DamageDealtFraction[index=Ability]@value: 0.25 → 0.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-e1aace6460",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MephistoShadeOfMephistoMaliciousIntentSpellPowerBuff Modification/HealDealtAdditiveMultiplier[index=Life]@value: 0.25 → 0.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-a9e2131b67",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#MephistoShadeOfMephistoMaliciousIntentSpellPowerBuff Modification/HealDealtAdditiveMultiplier[index=Shields]@value: 0.25 → 0.3",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-4632861f27",
+                "spans": [
+                  {
+                    "text": "CEffectCreateHealer#MephistoSkullMissileHatefulMendingManaRestoration RechargeVitalRate@value: 10 → 15",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-cb8976225d",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#MephistoSkullMissileDamage LeechFraction[index=Life]@value: 0.7 → 0.85",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-e06ee986a0",
+                "spans": [
+                  {
+                    "text": "CEffectModifyUnit#MephistoLightningNovaStaticBarrierShieldFractionDummy XP@value: 0.4 → 0.5",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-e2e769ebaf",
+            "spans": [
+              {
+                "text": "Stukov (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-089eac6dd1",
+                "spans": [
+                  {
+                    "text": "CEffectModifyPlayer#StukovWeightedPustuleFetidTouchQuestModification EffectArray[Reference=Abil,StukovWeightedPustule,Cost[0].Cooldown.TimeUse]@Value: 5 → 6",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-7410ab641b",
+            "spans": [
+              {
+                "text": "Tassadar (4)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-1c1b0ff710",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectRemoveBehavior#TassadarShadowWalkRemoveHoldFire",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-4dbecf2b23",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectRemoveBehavior#TassadarShadowWalkRemoveHoldFireInitial",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-001abdf7d9",
+                "spans": [
+                  {
+                    "text": "Entry added: CEffectSet#TassadarShadowWalkHoldFireRemoveSet",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-ec6c6fa93d",
+                "spans": [
+                  {
+                    "text": "CBehaviorBuff#TassadarShadowWalk FinalEffect@value: (none) → TassadarShadowWalkHoldFireRemoveSet",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-cb67d16c49",
+            "spans": [
+              {
+                "text": "Xal'atath (476)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-415e0c9edd",
+                "spans": [
+                  {
+                    "text": "CHero#Xalatath HeroAbilArray[Abil=XalatathVoidEruption]/Flags[index=AffectedByCooldownReduction]@value: 1 → (none) (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-cf7f6acaf7",
+                "spans": [
+                  {
+                    "text": "CHero#Xalatath HeroAbilArray[Abil=XalatathVoidEruption]/Flags[index=AffectedByOverdrive]@value: 1 → (none) (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-128e824c66",
+                "spans": [
+                  {
+                    "text": "CHero#Xalatath HeroAbilArray[Abil=XalatathVoidEruption]/Flags[index=Heroic]@value: 1 → (none) (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-b752578010",
+                "spans": [
+                  {
+                    "text": "CHero#Xalatath HeroAbilArray[Abil=XalatathVoidEruption]/Flags[index=ShowInHeroSelect]@value: 1 → (none) (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-af1826e000",
+                "spans": [
+                  {
+                    "text": "CHero#Xalatath HeroAbilArray[Abil=XalatathVoidEruptionV2]/Flags[index=AffectedByCooldownReduction]@value: (none) → 1 (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-089e383cec",
+                "spans": [
+                  {
+                    "text": "CHero#Xalatath HeroAbilArray[Abil=XalatathVoidEruptionV2]/Flags[index=AffectedByOverdrive]@value: (none) → 1 (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-6cc7dcef30",
+                "spans": [
+                  {
+                    "text": "CHero#Xalatath HeroAbilArray[Abil=XalatathVoidEruptionV2]/Flags[index=Heroic]@value: (none) → 1 (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-9bff4c150c",
+                "spans": [
+                  {
+                    "text": "CHero#Xalatath HeroAbilArray[Abil=XalatathVoidEruptionV2]/Flags[index=ShowInHeroSelect]@value: (none) → 1 (flag candidate)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-75a9fd916d",
+                "spans": [
+                  {
+                    "text": "Behavior/Name/XalatathVoidEruptionV2CasterBehavior (added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-1c64fe1f30",
+                "spans": [
+                  {
+                    "text": "Unit added: XalatathVoidEruptionV2HarbingersConsumptionMissile",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-29ff525466",
+                "spans": [
+                  {
+                    "text": "Unit added: XalatathVoidEruptionV2HarbingersConsumptionOrbitMissile",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-0768a8f0cf",
+                "spans": [
+                  {
+                    "text": "Unit added: XalatathVoidEruptionV2Missile",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-aa4ebbde06",
+                "spans": [
+                  {
+                    "text": "Unit removed: XalatathUnstableCoreFireUnit",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-0e5a799a68",
+                "spans": [
+                  {
+                    "text": "$XalatathLifeRegen: (none) → /($XalatathLife 480) (const added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-10ee3a0460",
+                "spans": [
+                  {
+                    "text": "$XalatathUnstableCoreDamage: (none) → 75 (const added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-8d31cb475f",
+                "spans": [
+                  {
+                    "text": "$XalatathUnstableCoreFireDOTDamage: 45 → (none) (const removed)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-a2bd9d869f",
+                "spans": [
+                  {
+                    "text": "$XalatathUnstableCoreFireDuration: 5 → (none) (const removed)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-70be673678",
+                "spans": [
+                  {
+                    "text": "$XalatathVoidEruptionV2ChargeForwardOffset: (none) → 3.5 (const added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-3262c7bbb5",
+                "spans": [
+                  {
+                    "text": "$XalatathVoidEruptionV2ChargeMaximumDamageBonus: (none) → 1.1 (const added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-c060e94b6f",
+                "spans": [
+                  {
+                    "text": "$XalatathVoidEruptionV2ExplosionDamage: (none) → 320 (const added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-bc94beaf31",
+                "spans": [
+                  {
+                    "text": "$XalatathVoidEruptionV2ExplosionDamageTokenScale: (none) → /($XalatathVoidEruptionV2ChargeMaximumDamageBonus $XalatathVoidEruptionV2ExplosionTokenMaxCount) (const added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-ed27e7a2b4",
+                "spans": [
+                  {
+                    "text": "$XalatathVoidEruptionV2ExplosionMaximumReleaseWindow: (none) → -($XalatathVoidEruptionV2MaxActualChannelTime $XalatathVoidEruptionV2MinChannelTime) (const added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-1a8a321e48",
+                "spans": [
+                  {
+                    "text": "$XalatathVoidEruptionV2ExplosionMaxRadius: (none) → 4 (const added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-19ac00e4d7",
+                "spans": [
+                  {
+                    "text": "$XalatathVoidEruptionV2ExplosionMinRadius: (none) → +(1 /($XalatathVoidEruptionV2FlightRadiusTokenScale *($XalatathVoidEruptionV2MinChannelTime 16))) (const added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-37a8ea61e6",
+                "spans": [
+                  {
+                    "text": "$XalatathVoidEruptionV2ExplosionRadiusGrowth: (none) → -($XalatathVoidEruptionV2ExplosionMaxRadius $XalatathVoidEruptionV2ExplosionMinRadius) (const added)",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-c4f2337568",
+                "spans": [
+                  {
+                    "text": "+451 more",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-a66eb506a5",
+            "spans": [
+              {
+                "text": "Xul (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-fdbfa70cc5",
+                "spans": [
+                  {
+                    "text": "CEffectDamage#NecromancerBonePrisonDamage Visibility@value: (none) → Hidden",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Tooltip text corrections"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-0835f6d7e3",
+            "spans": [
+              {
+                "text": "Lúcio (2)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-2522683deb",
+                "spans": [
+                  {
+                    "text": "Smooth Moves: While Wall Ride is active, Basic Attacks heal for % of the damage dealt and restore Mana. Passive: Increase Wall Ride duration by ",
+                    "origin": "generated"
+                  },
+                  {
+                    "text": "second",
+                    "struck": true,
+                    "origin": "generated"
+                  },
+                  {
+                    "text": " → seconds.",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-a607ea49e1",
+                "spans": [
+                  {
+                    "text": "Smooth Moves: Passive: Increase Wall Ride duration by 1 ",
+                    "origin": "generated"
+                  },
+                  {
+                    "text": "second",
+                    "struck": true,
+                    "origin": "generated"
+                  },
+                  {
+                    "text": " → seconds.",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-2828d9c2b2",
+            "spans": [
+              {
+                "text": "Xal'atath (2)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-7c2413460a",
+                "spans": [
+                  {
+                    "text": "LootChest/Name/XalatathChest: ",
+                    "origin": "generated"
+                  },
+                  {
+                    "text": "Xalatath",
+                    "struck": true,
+                    "origin": "generated"
+                  },
+                  {
+                    "text": " → Xal'atath Chest",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-0a6c97ac1d",
+                "spans": [
+                  {
+                    "text": "Reward/Name/XalatathChestReward: ",
+                    "origin": "generated"
+                  },
+                  {
+                    "text": "Xalatath",
+                    "struck": true,
+                    "origin": "generated"
+                  },
+                  {
+                    "text": " → Xal'atath Chest",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Collection and cosmetics"
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-1c62add68a",
+            "spans": [
+              {
+                "text": "sapper.xml: 4 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-f420718095",
+            "spans": [
+              {
+                "text": "artanisdata.xml: 2 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-2f26d106bb",
+            "spans": [
+              {
+                "text": "jainadata.xml: 1 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-74da71670e",
+            "spans": [
+              {
+                "text": "dryaddata.xml: 5 changed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-f7af1ef449",
+            "spans": [
+              {
+                "text": "medivhdata.xml: 1 added",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-029674892b",
+            "spans": [
+              {
+                "text": "medivhbasedata.xml: 1 added",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-6c2af401a0",
+            "spans": [
+              {
+                "text": "xalatathdata.xml: 5 added, 13 changed, 2 removed",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-24adb32fd5",
+            "spans": [
+              {
+                "text": "xalatathbasedata.xml: 1 added",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-a4f16146c0",
+            "spans": [
+              {
+                "text": "xalatathvoideruptionv2data.xml: 47 added",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Assets"
+      },
+      {
+        "type": "para",
+        "spans": [
+          {
+            "text": "9 asset paths changed.",
+            "origin": "generated"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-e8390e7b2c",
+            "spans": [
+              {
+                "text": "core.stormmod/base.stormdata: 0 added, 2 changed, 0 removed (bin 2)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-22c10af0b7",
+            "spans": [
+              {
+                "text": "heroes.stormmod/base.stormassets: 0 added, 1 changed, 0 removed (m3 1)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-dcc3a3b92a",
+            "spans": [
+              {
+                "text": "heroes.stormmod/enus.stormassets: 0 added, 2 changed, 0 removed (fxe 2)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-6f609cda7b",
+            "spans": [
+              {
+                "text": "heromods/chogall.stormmod: 0 added, 2 changed, 0 removed ((none) 2)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-8bfc3f0cdc",
+            "spans": [
+              {
+                "text": "heromods/xalatath.stormmod: 0 added, 2 changed, 0 removed ((none) 2)",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "Coverage"
+      },
+      {
+        "type": "para",
+        "spans": [
+          {
+            "text": "75 changed paths; claims: 46 player-facing, 41 from game data, 595 not interpreted, 72 excluded or duplicate.",
+            "origin": "generated"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-6406b979b5",
+            "spans": [
+              {
+                "text": "asset-index: 9 paths, 8 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-028a8195e0",
+            "spans": [
+              {
+                "text": "hero-structured: 9 paths, 9 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-a8e0086b9e",
+            "spans": [
+              {
+                "text": "layout-ui: 1 path, 0 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-d1af89916a",
+            "spans": [
+              {
+                "text": "metadata: 8 paths, 0 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-23f3b77158",
+            "spans": [
+              {
+                "text": "other: 2 paths, 0 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-0f0edcc73d",
+            "spans": [
+              {
+                "text": "script: 4 paths, 0 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-3ae7777fdb",
+            "spans": [
+              {
+                "text": "strings: 5 paths, 5 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-299ce0248e",
+            "spans": [
+              {
+                "text": "tooltip-derived: 2 paths, 0 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-cf973cfeb3",
+            "spans": [
+              {
+                "text": "unit-structured: 2 paths, 1 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          },
+          {
+            "id": "g-69efd17167",
+            "spans": [
+              {
+                "text": "xml-catalog: 33 paths, 26 with claims",
+                "origin": "generated"
+              }
+            ],
+            "children": []
+          }
+        ]
+      },
+      {
+        "type": "para",
+        "spans": [
+          {
+            "text": "Changed paths without claims, by reason:",
+            "origin": "generated"
+          }
+        ]
+      },
+      {
+        "type": "list",
+        "items": [
+          {
+            "id": "g-ab7da1be98",
+            "spans": [
+              {
+                "text": "no semantic difference after flattening (6)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-aabf707273",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heroesdata.stormmod/base.stormdata/gamedata/heroes/chendata/chendata.xml",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-2b5bb2676c",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heroesdata.stormmod/base.stormdata/gamedata/heroes/tyrandedata/tyrandedata.xml",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-7359245ca9",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heroesdata.stormmod/base.stormdata/gamedata/heroes/utherdata/utherdata.xml",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-9d0c014016",
+            "spans": [
+              {
+                "text": "script, not interpreted (4)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-f7130a7b61",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heroesdata.stormmod/base.stormdata/triggerlibs/uilib.galaxy",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-a24a969c76",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heromods/chogall.stormmod/base.stormdata/libhcho.galaxy",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-2aa9562624",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heromods/xalatath.stormmod/base.stormdata/libhxal.galaxy",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-4a6942691c",
+            "spans": [
+              {
+                "text": "not interpreted (2)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-600e545aa8",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heromods/chogall.stormmod/triggers.version",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-b36af7623b",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heromods/xalatath.stormmod/triggers.version",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-3b9c94d95d",
+            "spans": [
+              {
+                "text": "tooltip-derived duplicate of hero JSON (2)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-62c4e708a9",
+                "spans": [
+                  {
+                    "text": "heroes-talents/.tooltip_markup.json",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              },
+              {
+                "id": "g-f6cc323a5e",
+                "spans": [
+                  {
+                    "text": "heroes-talents/.tooltip_simple.json",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-c9837c56e5",
+            "spans": [
+              {
+                "text": "asset index (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-80fce2e6cc",
+                "spans": [
+                  {
+                    "text": "heroes-mods/.files/_build.txt",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-6007681633",
+            "spans": [
+              {
+                "text": "include list (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-0b736eaa75",
+                "spans": [
+                  {
+                    "text": "heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata.xml",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-4cc34ba5e5",
+            "spans": [
+              {
+                "text": "layout or interface file, not interpreted (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-4ab0a18246",
+                "spans": [
+                  {
+                    "text": "heroes-mods/core.stormmod/base.stormdata/ui/layout/ui/channelbars.stormlayout",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": "g-034b8e69a9",
+            "spans": [
+              {
+                "text": "version-renamed unit data, compared by content (1)",
+                "origin": "generated"
+              }
+            ],
+            "children": [
+              {
+                "id": "g-4d9d806f14",
+                "spans": [
+                  {
+                    "text": "heroes-talents/unitdata_2.57.0.98348.json",
+                    "origin": "generated"
+                  }
+                ],
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "coverage": {
+      "claims": {
+        "c-8147cbf7bd": {
+          "status": "covered",
+          "bulletId": "b-9a4c9aa5bb"
+        },
+        "c-c70bee039d": {
+          "status": "covered",
+          "bulletId": "b-d4e726182c"
+        },
+        "c-d8a7a13993": {
+          "status": "covered",
+          "bulletId": "b-33ddc06c11"
+        },
+        "c-725dd626e0": {
+          "status": "covered",
+          "bulletId": "b-cf3b94e7f6"
+        },
+        "c-72b7931478": {
+          "status": "covered",
+          "bulletId": "b-af17585b17"
+        },
+        "c-63882e4fc4": {
+          "status": "covered",
+          "bulletId": "b-af17585b17",
+          "note": "follows Health"
+        },
+        "c-41bc1c2035": {
+          "status": "covered",
+          "bulletId": "b-feb1cd5f34",
+          "note": "claude"
+        },
+        "c-1030efc626": {
+          "status": "covered",
+          "bulletId": "b-33ddc06c11"
+        },
+        "c-6a2a7ffb49": {
+          "status": "covered",
+          "bulletId": "b-6258822e58"
+        },
+        "c-4c13878c6a": {
+          "status": "partly",
+          "bulletId": "b-6258822e58",
+          "missingDetail": "Maximum explosion damage increased from 375 to 450.",
+          "note": "claude"
+        },
+        "c-52167229b2": {
+          "status": "uncertain",
+          "bulletId": null
+        },
+        "c-3dcd31884b": {
+          "status": "covered",
+          "bulletId": "b-84755cc3e0"
+        },
+        "c-773f237cb6": {
+          "status": "covered",
+          "bulletId": "b-eb23c54bfb"
+        },
+        "c-b20a2fe234": {
+          "status": "covered",
+          "bulletId": "b-3640e66833"
+        },
+        "c-1f69e774cb": {
+          "status": "covered",
+          "bulletId": "b-4519086b65"
+        },
+        "c-e6352bd5ec": {
+          "status": "covered",
+          "bulletId": "b-bc525a5b3a"
+        },
+        "c-05bf4a356f": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-53a771eb4a": {
+          "status": "covered",
+          "bulletId": "b-2d8f74709d"
+        },
+        "c-fc4901135a": {
+          "status": "partly",
+          "bulletId": "b-c43de5976d",
+          "missingDetail": "No longer increases sight range in Raven Form by 25%.",
+          "note": "claude"
+        },
+        "c-f0d6db4876": {
+          "status": "covered",
+          "bulletId": "b-eb8842e283",
+          "note": "claude"
+        },
+        "c-198bad403d": {
+          "status": "covered",
+          "bulletId": "b-d7054b842c",
+          "note": "claude"
+        },
+        "c-e9f8139100": {
+          "status": "covered",
+          "bulletId": "b-daabf689f7"
+        },
+        "c-642f858bdd": {
+          "status": "covered",
+          "bulletId": "b-4519086b65"
+        },
+        "c-2a64fe2a1c": {
+          "status": "covered",
+          "bulletId": "b-0fc01b2052"
+        },
+        "c-1224ac7d5a": {
+          "status": "covered",
+          "bulletId": "b-0fc01b2052"
+        },
+        "c-6e1e35a48a": {
+          "status": "covered",
+          "bulletId": "b-210ae5d155"
+        },
+        "c-4a14a7b465": {
+          "status": "covered",
+          "bulletId": "b-63f434ce6f"
+        },
+        "c-3a294bd34c": {
+          "status": "uncertain",
+          "bulletId": null
+        },
+        "c-74acdae970": {
+          "status": "covered",
+          "bulletId": "b-4d6618d65d"
+        },
+        "c-ff960fa4a4": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-59b62653f7": {
+          "status": "covered",
+          "bulletId": "b-210ae5d155"
+        },
+        "c-bdd9c2788e": {
+          "status": "uncertain",
+          "bulletId": null
+        },
+        "c-3b3e4947af": {
+          "status": "absent",
+          "bulletId": null,
+          "note": "claude: no bullet covers it"
+        },
+        "c-53d77e4862": {
+          "status": "covered",
+          "bulletId": "b-c0dcb2dc79"
+        },
+        "c-1ee13e8284": {
+          "status": "covered",
+          "bulletId": "b-f29bd4af88"
+        },
+        "c-aac815050f": {
+          "status": "covered",
+          "bulletId": "b-7559aa9d25"
+        },
+        "c-2da5a25af3": {
+          "status": "covered",
+          "bulletId": "b-145faa0bc3"
+        },
+        "c-f0d5b1894d": {
+          "status": "covered",
+          "bulletId": "b-6f681411f8"
+        },
+        "c-7fbb763ca7": {
+          "status": "covered",
+          "bulletId": "b-cb423cdc75"
+        },
+        "c-60123c6c27": {
+          "status": "covered",
+          "bulletId": "b-d799da8816"
+        },
+        "c-9eb2afd22c": {
+          "status": "absent",
+          "bulletId": null,
+          "note": "claude: no bullet covers it"
+        },
+        "c-76b7a61306": {
+          "status": "absent",
+          "bulletId": null,
+          "note": "claude: no bullet covers it"
+        },
+        "c-5d79b95f21": {
+          "status": "absent",
+          "bulletId": null,
+          "note": "claude: no bullet covers it"
+        },
+        "c-ba607abe34": {
+          "status": "covered",
+          "bulletId": "b-6873dbb474"
+        },
+        "c-1246814cef": {
+          "status": "partly",
+          "bulletId": "b-6873dbb474",
+          "missingDetail": "Bonus damage to the Marked target increased from 61 to 65.",
+          "note": "claude"
+        },
+        "c-45608b481e": {
+          "status": "partly",
+          "bulletId": "b-e55319885e",
+          "missingDetail": "Health Regeneration increased from 2.6484 to 2.7708.",
+          "note": "claude"
+        },
+        "c-efb140fb17": {
+          "status": "covered",
+          "bulletId": "b-84fee14f24"
+        },
+        "c-82c32bec56": {
+          "status": "covered",
+          "bulletId": "b-e20643c202"
+        },
+        "c-2d678efd3b": {
+          "status": "covered",
+          "bulletId": "b-9f6ac19343"
+        },
+        "c-a076093e6e": {
+          "status": "covered",
+          "bulletId": "b-307452aa08"
+        },
+        "c-eefafcfe7a": {
+          "status": "covered",
+          "bulletId": "b-ddf6ca9713",
+          "note": "claude"
+        },
+        "c-463ad199e6": {
+          "status": "covered",
+          "bulletId": "b-566d477f7b",
+          "note": "claude"
+        },
+        "c-56ad239d82": {
+          "status": "covered",
+          "bulletId": "b-a3afe54d04",
+          "note": "claude"
+        },
+        "c-0859cb2dc6": {
+          "status": "covered",
+          "bulletId": "b-4c9744c5e6",
+          "note": "claude"
+        },
+        "c-334161b4e2": {
+          "status": "partly",
+          "bulletId": "b-3694ebd99b",
+          "missingDetail": "Duration increased from 5 seconds to 6 seconds, and the flames no longer require a target afflicted by Shadow Mark.",
+          "note": "claude"
+        },
+        "c-27b9b50ec9": {
+          "status": "covered",
+          "bulletId": "b-78802e2f3c",
+          "note": "claude"
+        },
+        "c-483212895f": {
+          "status": "covered",
+          "bulletId": "b-ee0f95a4ec",
+          "note": "claude"
+        },
+        "c-59c66bb061": {
+          "status": "covered",
+          "bulletId": "b-5040fd97b9"
+        },
+        "c-9da301a258": {
+          "status": "partly",
+          "bulletId": "b-2258cfe003",
+          "missingDetail": "from 1440 to 1300"
+        },
+        "c-c4b2bfed89": {
+          "status": "covered",
+          "bulletId": "b-2258cfe003"
+        },
+        "c-43bfb2bf2e": {
+          "status": "covered",
+          "bulletId": "b-2258cfe003"
+        },
+        "c-698941db4d": {
+          "status": "covered",
+          "bulletId": "b-2258cfe003"
+        },
+        "c-1e836c2ffd": {
+          "status": "covered",
+          "bulletId": "b-2258cfe003"
+        },
+        "c-da33056fc6": {
+          "status": "covered",
+          "bulletId": "b-2258cfe003"
+        },
+        "c-797f246f6d": {
+          "status": "covered",
+          "bulletId": "b-2258cfe003"
+        },
+        "c-4f3a7dbc04": {
+          "status": "covered",
+          "bulletId": "b-2258cfe003"
+        },
+        "c-dc3ccd61ca": {
+          "status": "covered",
+          "bulletId": "b-d799da8816"
+        },
+        "c-06e4bf3ee7": {
+          "status": "covered",
+          "bulletId": "b-f29bd4af88",
+          "note": "claude"
+        },
+        "c-091a672f19": {
+          "status": "covered",
+          "bulletId": "b-2d8f74709d",
+          "note": "claude"
+        },
+        "c-113b672eff": {
+          "status": "absent",
+          "bulletId": null,
+          "note": "claude: no bullet covers it"
+        },
+        "c-39fcc5739a": {
+          "status": "covered",
+          "bulletId": "b-feb1cd5f34",
+          "note": "claude"
+        },
+        "c-440ae68a35": {
+          "status": "covered",
+          "bulletId": "b-c0dcb2dc79",
+          "note": "claude"
+        },
+        "c-48df61449c": {
+          "status": "covered",
+          "bulletId": "b-6258822e58",
+          "note": "claude"
+        },
+        "c-4d2ca4c70a": {
+          "status": "covered",
+          "bulletId": "b-d4e726182c",
+          "note": "claude"
+        },
+        "c-51c947b135": {
+          "status": "uncertain",
+          "bulletId": null
+        },
+        "c-85ed827812": {
+          "status": "absent",
+          "bulletId": null,
+          "note": "claude: no bullet covers it"
+        },
+        "c-8c083d0cc7": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-93a159d55b": {
+          "status": "covered",
+          "bulletId": "b-63f434ce6f",
+          "note": "claude"
+        },
+        "c-9fa1e76699": {
+          "status": "covered",
+          "bulletId": "b-9a4c9aa5bb",
+          "note": "claude"
+        },
+        "c-a1d688dce8": {
+          "status": "covered",
+          "bulletId": "b-84755cc3e0",
+          "note": "claude"
+        },
+        "c-a746fd85ea": {
+          "status": "covered",
+          "bulletId": "b-3694ebd99b",
+          "note": "claude"
+        },
+        "c-b8abef7d71": {
+          "status": "absent",
+          "bulletId": null,
+          "note": "claude: no bullet covers it"
+        },
+        "c-d0ec3a2eed": {
+          "status": "absent",
+          "bulletId": null
+        },
+        "c-dc87d3089c": {
+          "status": "covered",
+          "bulletId": "b-4c9744c5e6",
+          "note": "claude"
+        },
+        "c-f0c7d5d22d": {
+          "status": "covered",
+          "bulletId": "b-566d477f7b",
+          "note": "claude"
+        },
+        "c-f58dfcb6e6": {
+          "status": "covered",
+          "bulletId": "b-d7054b842c",
+          "note": "claude"
+        },
+        "c-f7bcff706a": {
+          "status": "covered",
+          "bulletId": "b-145faa0bc3",
+          "note": "claude"
+        }
+      },
+      "officialOnly": [
+        {
+          "bulletId": "b-ed86e8dccd",
+          "text": "Damage increased from 50% to 55%."
+        },
+        {
+          "bulletId": "b-c8891ea87f",
+          "text": "No longer reduces the percentage based Health damage."
+        },
+        {
+          "bulletId": "b-0f5774f2da",
+          "text": "Cooldown reduction increased from 5 to 6 seconds."
+        },
+        {
+          "bulletId": "b-36c34d4340",
+          "text": "Now benefits from Cold Feet's duration bonus."
+        },
+        {
+          "bulletId": "b-e2cc65f4eb",
+          "text": "Speed reduced by 10%."
+        },
+        {
+          "bulletId": "b-8264cd1823",
+          "text": "No longer applies a damage over time to targets."
+        },
+        {
+          "bulletId": "b-4ab842b07a",
+          "text": "Fixed an issue with the death icon at certain resolutions. Begone pesky pixel!"
+        },
+        {
+          "bulletId": "b-13fcedf4ec",
+          "text": "Spell Power no longer increases the Health restored by activating Hearthstone (B)."
+        },
+        {
+          "bulletId": "b-35e3ddb887",
+          "text": "Fixed an issue with allied pings on the Party Frame."
+        },
+        {
+          "bulletId": "b-298c6e53f1",
+          "text": "Fixed an issue that caused Sapper attacks to instantly hit nearby targets."
+        },
+        {
+          "bulletId": "b-c761e97fad",
+          "text": "Fixed an issue that caused Sapper warning areas to persist indefinitely."
+        },
+        {
+          "bulletId": "b-921065ee32",
+          "text": "Fixed an issue that caused Wrath of Heaven's full Spell Power bonus to apply to healing."
+        },
+        {
+          "bulletId": "b-c8ae7e629b",
+          "text": "Fixed an issue that caused Adhesive Petroleum to grant its Basic Attack damage bonus to other Blaze players who do not have the talent selected."
+        },
+        {
+          "bulletId": "b-fffcfb2b47",
+          "text": "Fixed an issue that caused Genji to no longer automatically acquire nearby targets after Pathfinder expires."
+        },
+        {
+          "bulletId": "b-e133502b59",
+          "text": "Fixed an issue that caused Genji to no longer automatically acquire nearby targets after Eyes in the Dark expires."
+        },
+        {
+          "bulletId": "b-83e6bd77ea",
+          "text": "Fixed an issue that allowed Cloud Serpent casts on allied Heroes to become disjointed."
+        },
+        {
+          "bulletId": "b-b8e7253dd2",
+          "text": "Added a radius indicator to Force of Will's cast guide after selecting Circle of Protection."
+        },
+        {
+          "bulletId": "b-c0320749d7",
+          "text": "Fixed an issue that caused targeted allies to not automatically acquire nearby targets after Stealth expires."
+        },
+        {
+          "bulletId": "b-c0fd2f338a",
+          "text": "Fixed an issue that caused Tassadar to no longer automatically acquire nearby targets after Shadow Walk expires."
+        },
+        {
+          "bulletId": "b-875e4d0f31",
+          "text": "Fixed issues that caused Structures to be marked by Shadow Mark in unintended situations."
+        },
+        {
+          "bulletId": "b-7adc94b5a0",
+          "text": "Fixed issues related to Dark Heart Ritual's self reveal logic."
+        },
+        {
+          "bulletId": "b-628ccfaa37",
+          "text": "Fixed an issue that caused Void Volley to gain progress when attacking a target with 1 Evasion charge remaining."
+        },
+        {
+          "bulletId": "b-e6b8f1829a",
+          "text": "Fixed an issue that caused Void Acolyte to not empower Void Volley."
+        },
+        {
+          "bulletId": "b-1ecff24595",
+          "text": "Fixed an issue that caused Void Summoner to not spawn the Void Minion at Xal'atath's position at cast time."
+        },
+        {
+          "bulletId": "b-576bc70cd3",
+          "text": "Xul will no longer be revealed to the enemy if he is in the fog of war when Bone Prison activates."
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "label": "Blizzard: Heroes of the Storm PTR Patch Notes - November 9, 2026",
+      "url": "https://news.blizzard.com/en-us/article/24317084/heroes-of-the-storm-ptr-patch-notes-november-9-2026",
+      "observedAt": "2026-11-09T19:03:38Z"
+    },
+    {
+      "label": "LawfulGremlin/probius-data-debug@1dbf0d16 (PTR data commit)",
+      "url": "https://github.com/LawfulGremlin/probius-data-debug/commit/1dbf0d169765fcaa84e78f597fe437b81d7d3e5a",
+      "observedAt": "2026-11-09T18:37:23Z"
+    }
+  ],
+  "generatedAt": "2026-11-10T06:31:11Z",
+  "generator": {
+    "comparator": 10,
+    "parser": 1,
+    "prompts": 2,
+    "render": 5
+  }
+}

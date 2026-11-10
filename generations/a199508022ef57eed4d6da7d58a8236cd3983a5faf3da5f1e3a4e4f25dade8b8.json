@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "genKey": "a199508022ef57eed4d6da7d58a8236cd3983a5faf3da5f1e3a4e4f25dade8b8",
+  "purpose": "interpret",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "promptVersion": 2,
+  "outputSchema": 1,
+  "inputSha": "c2c7961f8cc6fe002879814833f73146a80ec62bc4ceb75369b4c4cecd0aec87",
+  "output": {
+    "answers": [
+      {
+        "groupId": "i-cd7fe8cc02",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-954429b575"
+        ],
+        "text": "Mana granted by Skull Missile increased from 10 to 15."
+      },
+      {
+        "groupId": "i-13c7af13db",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-c90c860162",
+          "c-d9088c32db",
+          "c-898b4ecab2",
+          "c-58b73b3827",
+          "c-f436e82526",
+          "c-5390a420f5",
+          "c-53e4835b49",
+          "c-09e85f7804",
+          "c-05dc56f0b1"
+        ],
+        "text": "Spell Power bonus increased from 25% to 30%."
+      },
+      {
+        "groupId": "i-4634e127c5",
+        "verdict": "sentence",
+        "evidenceIds": [
+          "c-6916fad919"
+        ],
+        "text": "Shield amount increased from 40% to 50% of the damage dealt to Heroes."
+      },
+      {
+        "groupId": "i-80776ec0b1",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-5559cbe65f",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-3e72887ee8",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-82f4ca890f",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-b6d0dd69c9",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      },
+      {
+        "groupId": "i-a6e93d42bd",
+        "verdict": "unclear",
+        "evidenceIds": [],
+        "text": ""
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 7970,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7696,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 1044,
+    "output_tokens_details": {
+      "thinking_tokens": 505
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.054299,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgtnDfVdp8dCAehP5KXDu",
+  "createdAt": "2026-11-10T06:31:11Z",
+  "validation": {
+    "accepted": [
+      {
+        "groupId": "i-cd7fe8cc02",
+        "citedIds": [
+          "c-954429b575"
+        ],
+        "text": "Mana granted by Skull Missile increased from 10 to 15."
+      },
+      {
+        "groupId": "i-13c7af13db",
+        "citedIds": [
+          "c-c90c860162",
+          "c-d9088c32db",
+          "c-898b4ecab2",
+          "c-58b73b3827",
+          "c-f436e82526",
+          "c-5390a420f5",
+          "c-53e4835b49",
+          "c-09e85f7804",
+          "c-05dc56f0b1"
+        ],
+        "text": "Spell Power bonus increased from 25% to 30%."
+      },
+      {
+        "groupId": "i-4634e127c5",
+        "citedIds": [
+          "c-6916fad919"
+        ],
+        "text": "Shield amount increased from 40% to 50% of the damage dealt to Heroes."
+      }
+    ],
+    "rejected": [],
+    "unclear": [
+      "i-80776ec0b1",
+      "i-5559cbe65f",
+      "i-3e72887ee8",
+      "i-82f4ca890f",
+      "i-b6d0dd69c9",
+      "i-a6e93d42bd"
+    ],
+    "unanswered": []
+  }
+}

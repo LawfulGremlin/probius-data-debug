@@ -1,0 +1,584 @@
+{
+  "schemaVersion": 1,
+  "genKey": "07a98b276510985a67c11c9892cbfd95c9ebe8f7f869ec7b3634197fee594608",
+  "purpose": "initial",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "promptVersion": 2,
+  "outputSchema": 1,
+  "inputSha": "112acf8aa003d1fff240d170d4b201b7199e2b0b77b76ca7aa51ae90af494195",
+  "output": {
+    "items": [
+      {
+        "evidenceIds": [
+          "c-8147cbf7bd"
+        ],
+        "heroKey": "Chromie",
+        "group": "talents",
+        "heading": "Deep Breathing",
+        "text": "Damage bonus per Dragon's Breath Hero hit increased from 0.5% to 0.6%."
+      },
+      {
+        "evidenceIds": [
+          "c-c70bee039d"
+        ],
+        "heroKey": "Chromie",
+        "group": "talents",
+        "heading": "Timewalker's Pursuit",
+        "text": "Spell Power reduced from 15% to 12%."
+      },
+      {
+        "evidenceIds": [
+          "c-6a2a7ffb49"
+        ],
+        "heroKey": "Greymane",
+        "group": "talents",
+        "heading": "Incendiary Elixir",
+        "text": "Explosion damage bonus per enemy Hero hit increased from 25 to 30."
+      },
+      {
+        "evidenceIds": [
+          "c-4c13878c6a"
+        ],
+        "heroKey": "Greymane",
+        "group": "talents",
+        "heading": "Incendiary Elixir",
+        "text": "Maximum explosion damage bonus increased from 375 to 450."
+      },
+      {
+        "evidenceIds": [
+          "c-52167229b2"
+        ],
+        "heroKey": "Lucio",
+        "group": "abilities",
+        "heading": "Sound Barrier",
+        "text": "Shield amount increased from 1296 (+4% per level) to 1488 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-3dcd31884b"
+        ],
+        "heroKey": "Lucio",
+        "group": "talents",
+        "heading": "Party Mix",
+        "text": "Reward Crossfade radius bonus increased from 20% to 30%."
+      },
+      {
+        "evidenceIds": [
+          "c-773f237cb6"
+        ],
+        "heroKey": "Lucio",
+        "group": "talents",
+        "heading": "Summer Anthem",
+        "text": "Unkillable duration increased from 1.5 seconds to 2.5 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-b20a2fe234"
+        ],
+        "heroKey": "Lucio",
+        "group": "talents",
+        "heading": "Slip",
+        "text": "Movement Speed and Armor duration increased from 1 second to 2 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-1f69e774cb",
+          "c-642f858bdd"
+        ],
+        "heroKey": "Medivh",
+        "group": "abilities",
+        "heading": "Force of Will",
+        "text": "Cooldown reduced from 9 seconds to 8 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-e6352bd5ec"
+        ],
+        "heroKey": "Medivh",
+        "group": "abilities",
+        "heading": "Arcane Rift",
+        "text": "Damage increased from 170 (+4% per level) to 185 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-2a64fe2a1c",
+          "c-1224ac7d5a"
+        ],
+        "heroKey": "Medivh",
+        "group": "abilities",
+        "heading": "Portal",
+        "text": "Cooldown increased from 16 seconds to 20 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-05bf4a356f"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Stable Portal",
+        "text": "Portal cooldown reduction reduced from 25% to 20%."
+      },
+      {
+        "evidenceIds": [
+          "c-53a771eb4a"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Raven's Intellect",
+        "text": "Mana and Health Regeneration bonus increased from 200% to 400%."
+      },
+      {
+        "evidenceIds": [
+          "c-fc4901135a"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Dust of Appearance",
+        "text": "Passive now prevents Portal from forcing Medivh to leave Raven Form, instead of increasing sight range in Raven Form by 25%."
+      },
+      {
+        "evidenceIds": [
+          "c-e9f8139100"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Dust of Appearance",
+        "text": "Cooldown reduced from 45 seconds to 40 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-f0d6db4876"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Portal Mastery",
+        "text": "No longer prevents Portal from breaking Raven Form."
+      },
+      {
+        "evidenceIds": [
+          "c-198bad403d"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Winds of Celerity",
+        "text": "Now also reduces the cast time by 0.25 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-6e1e35a48a",
+          "c-59b62653f7"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Avalanche",
+        "text": "Cooldown reduced from 90 seconds to 80 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-4a14a7b465"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Ice Wall",
+        "text": "Delay reduced from 0.75 seconds to 0.6875 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-3a294bd34c"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Blizzard",
+        "text": "Duration reduced from 2 seconds to 1.88 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-74acdae970"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Blizzard",
+        "text": "Damage at the end of the duration increased from 75 (+4% per level) to 80 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-bdd9c2788e"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Icing",
+        "text": "Cast time increased from 0.125 seconds to 0.5 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-3b3e4947af"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Icing",
+        "text": "Duration reduced from 0.9375 seconds to 0.875 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-ff960fa4a4"
+        ],
+        "heroKey": "MeiOW",
+        "group": "general",
+        "heading": "Mei",
+        "text": "Icicle search width increased from 1 to 1.25 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-53d77e4862"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Static Barrier",
+        "text": "Shield increased from 40% to 50% of the damage dealt to Heroes."
+      },
+      {
+        "evidenceIds": [
+          "c-1ee13e8284"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Malicious Intent",
+        "text": "Spell Power increased from 25% to 30%."
+      },
+      {
+        "evidenceIds": [
+          "c-aac815050f"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Malicious Intent",
+        "text": "Duration after Shade of Mephisto ends increased from 2.5 seconds to 3 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-2da5a25af3"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Hateful Mending",
+        "text": "Mana granted increased from 10 to 15."
+      },
+      {
+        "evidenceIds": [
+          "c-f0d5b1894d"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Hateful Mending",
+        "text": "Healing increased from 70% to 85% of the damage dealt to Heroes."
+      },
+      {
+        "evidenceIds": [
+          "c-7fbb763ca7"
+        ],
+        "heroKey": "Stukov",
+        "group": "abilities",
+        "heading": "Flailing Swipe",
+        "text": "Damage increased from 48 (+4% per level) to 62 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-725dd626e0"
+        ],
+        "heroKey": "Tinker",
+        "group": "stats",
+        "heading": "Basic Attack damage",
+        "text": "Basic Attack damage increased from 100 to 105."
+      },
+      {
+        "evidenceIds": [
+          "c-72b7931478"
+        ],
+        "heroKey": "Tinker",
+        "group": "stats",
+        "heading": "Health",
+        "text": "Health increased from 2275 to 2375."
+      },
+      {
+        "evidenceIds": [
+          "c-63882e4fc4"
+        ],
+        "heroKey": "Tinker",
+        "group": "stats",
+        "heading": "Health Regeneration",
+        "text": "Health Regeneration increased from 4.74 to 4.94."
+      },
+      {
+        "evidenceIds": [
+          "c-d8a7a13993",
+          "c-1030efc626"
+        ],
+        "heroKey": "Tinker",
+        "group": "abilities",
+        "heading": "Deth Lazor",
+        "text": "Healing increased from 25% to 30% of the damage dealt."
+      },
+      {
+        "evidenceIds": [
+          "c-41bc1c2035"
+        ],
+        "heroKey": "Tinker",
+        "group": "talents",
+        "heading": "Bomb Toss",
+        "text": "No longer grants Xplodium Charge a 2nd charge with a 3 second cooldown between uses."
+      },
+      {
+        "evidenceIds": [
+          "c-45608b481e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "stats",
+        "heading": "Health Regeneration",
+        "text": "Health Regeneration increased from 2.6484 to 2.7708."
+      },
+      {
+        "evidenceIds": [
+          "c-60123c6c27",
+          "c-dc3ccd61ca"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Basic Attack damage bonus reduced from 50% to 35%."
+      },
+      {
+        "evidenceIds": [
+          "c-9eb2afd22c"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Explosion damage reduced from 400 (+4% per level) to 320 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-76b7a61306"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Maximum charged contact damage reduced from 166 (+4% per level) to 90 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-5d79b95f21"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Maximum charged explosion damage reduced from 700 (+4% per level) to 320 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-9da301a258"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 1 reduced from 1440 to 1300 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-c4b2bfed89"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 2 reduced from 1700 to 1530 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-43bfb2bf2e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 3 reduced from 2160 to 1940 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-698941db4d"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Flight damage per second tier 4 reduced from 2660 to 2390 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-1e836c2ffd",
+          "c-da33056fc6",
+          "c-797f246f6d",
+          "c-4f3a7dbc04"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption",
+        "text": "Missile speed for tiers 1 to 4 reduced from 7 to 6.3 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-ba607abe34"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "Damage to nearby enemies increased from 245 (+4% per level) to 260 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-1246814cef"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual",
+        "text": "Bonus damage to the Marked target increased from 61 (+4% per level) to 65 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-59c66bb061"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Shadow Mark",
+        "text": "Range increased from 8 to 9 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-eefafcfe7a"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Anchored Core",
+        "text": "No longer increases Dark Heart Ritual duration by 25%."
+      },
+      {
+        "evidenceIds": [
+          "c-463ad199e6"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Cloak of Shadows",
+        "text": "Now grants 25 Spell Armor while teleporting and 50% Movement Speed for 2 seconds afterwards, instead of 50% Movement Speed and 25 Spell Armor for 2 seconds that refreshed each time Xal'atath teleports."
+      },
+      {
+        "evidenceIds": [
+          "c-82c32bec56"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Cold Feet",
+        "text": "Shadow Mark duration bonus increased from 1 second to 2 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-0859cb2dc6"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Toxic Mark",
+        "text": "No longer increases Shadow Mark duration by 1 second."
+      },
+      {
+        "evidenceIds": [
+          "c-efb140fb17"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Fractured Reality",
+        "text": "Void Volley Projectile damage bonus reduced from 25% to 15%."
+      },
+      {
+        "evidenceIds": [
+          "c-2d678efd3b"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Marked Resilience",
+        "text": "Shield amount increased from 160 (+4% per level) to 200 (+4% per level)."
+      },
+      {
+        "evidenceIds": [
+          "c-56ad239d82",
+          "c-483212895f"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Relentless Whispers",
+        "text": "Now increases the Basic Attack damage bonus per teleport by 75%, instead of increasing Basic Attack Speed by 150% while Void Step is active."
+      },
+      {
+        "evidenceIds": [
+          "c-a076093e6e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Void Eruption cooldown reduction per enemy Hero hit reduced from 14 seconds to 10 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-27b9b50ec9"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Orbit rev period increased from 1.75 to 5 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-334161b4e2"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Unstable Core",
+        "text": "Now leaves void flames whenever the Dark Heart expires or detonates, instead of only when it detonates on a target afflicted by Shadow Mark."
+      },
+      {
+        "evidenceIds": [
+          "c-334161b4e2"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Unstable Core",
+        "text": "Void flames duration increased from 5 seconds to 6 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-334161b4e2"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Unstable Core",
+        "text": "Void flames now deal 75 (+4% per level) damage every 1 second, up to 450 (+4% per level), instead of 45 (+4% per level) damage over time."
+      }
+    ],
+    "omitted": []
+  },
+  "usage": {
+    "input_tokens": 21609,
+    "cache_creation_input_tokens": 7308,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 7308
+    },
+    "output_tokens": 8918,
+    "output_tokens_details": {
+      "thinking_tokens": 3756
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.32326,
+  "stopReason": "end_turn",
+  "requestId": "msg_011Cgtn6hYD6HskXNqeC6uJP",
+  "createdAt": "2026-11-10T06:31:11Z"
+}
