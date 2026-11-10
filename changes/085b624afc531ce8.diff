@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98348)
++++ b/heroes-talents/xalatath.json (2.57.1.98644)
+@@ -45,25 +45,25 @@ /abilities/Xalatath/1/description
+         "description": "Shoot a Void Orb that deals 60 (+4% per level) damage to enemies hit, and an additional 120 (+4% per level) damage to enemies in the center.  If an enemy Hero or Structure is hit by the center, they are marked for 4 seconds.  Targets afflicted by Shadow Mark are Revealed and draw the Dark Heart and Void Minions towards them.",
+         "hotkey": "Q",
+         "abilityId": "Xalatath|Q1",
+         "tooltipId": "XalatathShadowMark",
+         "cooldown": 7,
+         "manaCost": 45,
+         "icon": "storm_ui_icon_xalatath_q_shadowmark.png",
+         "type": "basic"
+       },
+       {
+         "uid": "e94a3a",
+         "name": "Dark Heart Ritual",
+-        "description": "Summon the Dark Heart, which pulses for 50 (+4% per level) damage per second to nearby enemies and lasts 8 seconds.  The Dark Heart moves to Shadow Mark's impact location.  The Dark Heart will pursue targets afflicted by Shadow Mark and detonate on impact, dealing 245 (+4% per level) damage to nearby enemies and 61 (+4% per level) more damage to the Marked target.",
++        "description": "Summon the Dark Heart, which pulses for 50 (+4% per level) damage per second to nearby enemies and lasts 8 seconds.  The Dark Heart moves to Shadow Mark's impact location.  The Dark Heart will pursue targets afflicted by Shadow Mark and detonate on impact, dealing 260 (+4% per level) damage to nearby enemies and 65 (+4% per level) more damage to the Marked target.",
+         "hotkey": "W",
+         "abilityId": "Xalatath|W1",
+         "tooltipId": "XalatathDarkHeartRitual",
+         "cooldown": 15,
+         "manaCost": 50,
+         "icon": "storm_ui_icon_xalatath_e_darkheartritual.png",
+         "type": "basic"
+       },
+       {
+         "uid": "f1f0aa",
+         "name": "Void Step",
+         "description": "Cast to teleport Xal'atath 3 times in a triangular pattern.  Each time Xal'atath teleports, her Basic Attacks deal 10% more damage while the Ability is active.  Reactivate to end Void Step early and remain at your current location.",

@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98348)
++++ b/heroes-talents/xalatath.json (2.57.1.98644)
+@@ -395,25 +395,25 @@ /talents/16/2/description
+         "abilityId": "Xalatath|E1",
+         "abilityLinks": [
+           "Xalatath|E1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathVoidStep"
+         ]
+       },
+       {
+         "tooltipId": "XalatathFracturedReality",
+         "talentTreeId": "XalatathFracturedReality",
+         "name": "Fractured Reality",
+-        "description": "+25% Void Volley Projectile Damage  Void Volley's projectiles leave behind a trail of fire for 3 seconds, constantly dealing 9 (+4% per level) damage to enemies. Damage is increased the longer a target stands in the flames.  Damage is dealt every 0.1875 seconds. Damage increases up to 300%. Damage increase from multiple fires stack.",
++        "description": "+15% Void Volley Projectile Damage  Void Volley's projectiles leave behind a trail of fire for 3 seconds, constantly dealing 9 (+4% per level) damage to enemies. Damage is increased the longer a target stands in the flames.  Damage is dealt every 0.1875 seconds. Damage increases up to 300%. Damage increase from multiple fires stack.",
+         "icon": "storm_ui_icon_xalatath_trait.png",
+         "type": "Trait",
+         "sort": 3,
+         "isQuest": false,
+         "abilityId": "Xalatath|D1",
+         "abilityLinks": [
+           "Xalatath|D1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathVoidVolley"
+         ]
+       }

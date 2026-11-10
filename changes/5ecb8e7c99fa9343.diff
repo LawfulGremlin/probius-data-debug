@@ -1,0 +1,31 @@
+--- a/heroes-talents/gazlowe.json (2.57.0.98348)
++++ b/heroes-talents/gazlowe.json (2.57.1.98644)
+@@ -16,25 +16,25 @@ /stats/hpRegen
+   "releaseDate": "2014-03-13",
+   "releasePatch": "0.1.1.00000",
+   "tags": [
+     "EnergyImportant",
+     "MercKiller",
+     "RoleSpecialist",
+     "SoloLaner",
+     "TowerPusher",
+     "WaveClearer"
+   ],
+   "stats": {
+-    "hp": 2275,
+-    "hpRegen": 4.74,
++    "hp": 2375,
++    "hpRegen": 4.94,
+     "hpScale": 0.04,
+     "hpRegenScale": 0.04,
+     "resource": 10,
+     "resourceType": "Scrap",
+     "resourceRegen": 0,
+-    "attackDamage": 100,
++    "attackDamage": 105,
+     "attackDamageScale": 0.04,
+     "attackRange": 1.25,
+     "attackSpeed": 1.25,
+     "radius": 0.75
+   },
+   "unitIds": [

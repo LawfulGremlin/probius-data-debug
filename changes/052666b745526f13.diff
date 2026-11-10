@@ -1,0 +1,29 @@
+--- a/heroes-talents/lucio.json (2.57.0.98348)
++++ b/heroes-talents/lucio.json (2.57.1.98644)
+@@ -71,25 +71,25 @@ /abilities/Lucio/3/description
+         "description": "Raise Lúcio's Crossfade track volume for 3 seconds, amping Healing Boost to 112 (+4% per level) Health per second and Speed Boost to 30% increased Movement Speed.",
+         "hotkey": "E",
+         "abilityId": "Lucio|E1",
+         "tooltipId": "LucioAmpItUp",
+         "cooldown": 13,
+         "manaCost": 90,
+         "icon": "storm_ui_icon_lucio_ampitup.png",
+         "type": "basic"
+       },
+       {
+         "uid": "4d5292",
+         "name": "Sound Barrier",
+-        "description": "After 1 second, Lúcio and nearby allied Heroes gain a 1296 (+4% per level) point Shield that rapidly decays over 6 seconds.",
++        "description": "After 1 second, Lúcio and nearby allied Heroes gain a 1488 (+4% per level) point Shield that rapidly decays over 6 seconds.",
+         "hotkey": "R",
+         "abilityId": "Lucio|R1",
+         "tooltipId": "LucioSoundBarrier",
+         "cooldown": 80,
+         "manaCost": 100,
+         "icon": "storm_ui_icon_lucio_soundbarrier.png",
+         "type": "heroic"
+       },
+       {
+         "uid": "fb6e89",
+         "name": "High Five",
+         "description": "Quickly skate to an allied Hero. Upon arrival the ally is healed for 230 (+4% per level), Lúcio is healed for 80 (+4% per level), and both gain Unstoppable for 1 second.",

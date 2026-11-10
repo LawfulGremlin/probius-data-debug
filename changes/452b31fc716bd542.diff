@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98304)
++++ b/heroes-talents/xalatath.json (2.57.0.98348)
+@@ -325,25 +325,25 @@ /talents/13/1/description
+         "abilityId": "Xalatath|W1",
+         "abilityLinks": [
+           "Xalatath|W1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathDarkHeartRitual"
+         ]
+       },
+       {
+         "tooltipId": "XalatathDarkHeartsProtection",
+         "talentTreeId": "XalatathDarkHeartsProtection",
+         "name": "Dark Heart's Protection",
+-        "description": "Casting Dark Heart Ritual Silences enemies inside its radius for 1 second.  Xal'atath and allied Heroes gain 30 Spell Armor while inside the Dark Heart's radius.",
++        "description": "Detonating the Dark Heart now Silences enemies inside its radius for 1 second.  Xal'atath and allied Heroes gain 30 Spell Armor while inside the Dark Heart's radius.",
+         "icon": "storm_ui_icon_xalatath_e_darkheartritual_b.png",
+         "type": "W",
+         "sort": 2,
+         "isQuest": false,
+         "abilityId": "Xalatath|W1",
+         "abilityLinks": [
+           "Xalatath|W1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathDarkHeartRitual"
+         ]
+       },

@@ -1,0 +1,22 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98304)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98348)
+@@ -1978,15 +1982,15 @@ CEffectCreatePersistent#XalatathVoidStepPeriodicPersistent/PeriodicOffsetArray
+   <CEffectCreatePersistent id="XalatathVoidStepPeriodicPersistent">
+     <ValidatorArray value="CheckTeleportActive" />
+     <PeriodicValidator value="CheckTeleportActive" />
+     <PeriodCount value="3" />
+     <PeriodicEffectArray value="XalatathVoidStepPeriodicSet" />
+     <PeriodicEffectArray value="XalatathVoidStepLeg2HoldApplyBehavior" />
+     <PeriodicEffectArray value="XalatathVoidStepLeg3HoldApplyBehavior" />
+-    <PeriodicOffsetArray Y="-5.5" />
+-    <PeriodicOffsetArray X="5.5" Y="3.5" />
+-    <PeriodicOffsetArray X="-5.5" Y="3.5" />
+-    <PeriodicPeriodArray value="0.0625" />
++    <PeriodicOffsetArray Y="-4.5" />
++    <PeriodicOffsetArray X="4.5" Y="2.85" />
++    <PeriodicOffsetArray X="-4.5" Y="2.85" />
+     <PeriodicPeriodArray value="0" />
+     <PeriodicPeriodArray value="0" />
++    <PeriodicPeriodArray value="0" />
+     <OffsetVectorStartLocation Value="OriginPoint" />
+   </CEffectCreatePersistent>

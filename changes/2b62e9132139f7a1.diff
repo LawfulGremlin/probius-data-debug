@@ -1,0 +1,9 @@
+--- a/heroes-mods/heromods/chromie.stormmod/base.stormdata/gamedata/chromiedata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/chromie.stormmod/base.stormdata/gamedata/chromiedata.xml (2.57.1.98644)
+@@ -2010,5 +2010,5 @@ CBehaviorBuff#ChromieTimewalkersPursuitQuestCompleteAbilityPower/Modification/DamageDealtFraction[index=Ability]@value
+   <CBehaviorBuff id="ChromieTimewalkersPursuitQuestCompleteAbilityPower" parent="CarryBehaviorParent">
+     <Modification>
+-      <DamageDealtFraction index="Ability" value="0.15" />
++      <DamageDealtFraction index="Ability" value="0.12" />
+     </Modification>
+   </CBehaviorBuff>

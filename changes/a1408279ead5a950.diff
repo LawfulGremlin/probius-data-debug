@@ -1,0 +1,30 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98304)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98348)
+@@ -118,23 +117,25 @@ CAbilEffectTarget#XalatathVoidVolley/CursorRangeFlags[index=ClampMax]@value
+   <CAbilEffectTarget id="XalatathVoidVolley">
+     <Activity value="Abil/XalatathVoidVolley" />
+     <PrepEffect value="XalatathVoidVolley2PrepSet" />
+     <Effect value="XalatathVoidVolley2InitialSet" />
+     <Flags index="DeferCooldown" value="1" />
++    <Flags index="RangeUseCasterRadius" value="0" />
+     <Flags index="RequireTargetVision" value="0" />
+     <Range value="$XalatathVoidVolleyRange" />
+     <MinimumRange value="$XalatathVoidVolleyMinimumRange" />
+     <Arc value="360" />
+-    <ShowProgressArray index="Cast" value="1" />
+-    <CastIntroTime value="$XalatathVoidVolleyCastTime" />
+     <Cost>
+       <Vital index="Energy" value="$XalatathVoidVolleyManaCost" />
+     </Cost>
++    <ShowProgressArray index="Cast" value="1" />
++    <CastIntroTime value="$XalatathVoidVolleyCastTime" />
+     <UninterruptibleArray index="Cast" value="1" />
+     <UninterruptibleArray index="Channel" value="1" />
+     <InterruptArray index="Cast" value="1" />
+     <CmdButtonArray index="Execute" DefaultButtonFace="XalatathVoidVolley" UseValidator="XalatathVoidVolleyCanCastValidator">
+       <Flags index="AllowSelfCast" value="0" />
+     </CmdButtonArray>
+     <CursorRangeFlags index="ClampMin" value="1" />
++    <CursorRangeFlags index="ClampMax" value="1" />
+     <CursorEffect value="XalatathVoidVolley2MissileSearch" />
+   </CAbilEffectTarget>

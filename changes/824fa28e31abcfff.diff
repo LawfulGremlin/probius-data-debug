@@ -1,0 +1,19 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98304)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98348)
+@@ -2169,13 +2173,13 @@ CEffectCreatePersistent#XalatathParadoxLoopPeriodicPersistent/PeriodicOffsetArray
+   <CEffectCreatePersistent id="XalatathParadoxLoopPeriodicPersistent">
+     <ValidatorArray value="CheckTeleportActive" />
+     <PeriodicValidator value="CheckTeleportActive" />
+     <PeriodCount value="3" />
+     <PeriodicEffectArray value="XalatathParadoxLoopLeg1HoldApplyBehavior" />
+     <PeriodicEffectArray value="XalatathParadoxLoopLeg2HoldApplyBehavior" />
+     <PeriodicEffectArray value="XalatathParadoxLoopLeg3HoldApplyBehavior" />
+     <PeriodicEffectArray value="XalatathParadoxLoopLeg4HoldApplyBehavior" />
+-    <PeriodicOffsetArray X="5.5" Y="3.5" />
+-    <PeriodicOffsetArray Y="-5.5" />
+-    <PeriodicOffsetArray X="-5.5" Y="3.5" />
++    <PeriodicOffsetArray X="4.5" Y="2.85" />
++    <PeriodicOffsetArray Y="-4.5" />
++    <PeriodicOffsetArray X="-4.5" Y="2.85" />
+     <OffsetVectorStartLocation Value="OriginPoint" />
+   </CEffectCreatePersistent>

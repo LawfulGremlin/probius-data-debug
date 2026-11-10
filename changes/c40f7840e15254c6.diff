@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98348)
++++ b/heroes-talents/xalatath.json (2.57.1.98644)
+@@ -361,25 +361,25 @@ /talents/16/0/description
+           "Xalatath|D1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathVoidVolley"
+         ]
+       }
+     ],
+     "16": [
+       {
+         "tooltipId": "XalatathMarkedResilience",
+         "talentTreeId": "XalatathMarkedResilience",
+         "name": "Marked Resilience",
+-        "description": "Basic Attacks against enemy Heroes afflicted by Shadow Mark grant a 160 (+4% per level) point Shield that rapidly decays.  Shield starts decaying after 1 second, decays over 2 seconds.",
++        "description": "Basic Attacks against enemy Heroes afflicted by Shadow Mark grant a 200 (+4% per level) point Shield that rapidly decays.  Shield starts decaying after 1 second, decays over 2 seconds.",
+         "icon": "storm_ui_icon_xalatath_q_shadowmark.png",
+         "type": "Q",
+         "sort": 1,
+         "isQuest": false,
+         "abilityId": "Xalatath|Q1",
+         "abilityLinks": [
+           "Xalatath|Q1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathShadowMark"
+         ]
+       },

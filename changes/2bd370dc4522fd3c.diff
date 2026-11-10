@@ -1,0 +1,30 @@
+--- a/heroes-talents/mei.json (2.57.0.98348)
++++ b/heroes-talents/mei.json (2.57.1.98644)
+@@ -72,25 +72,25 @@ /abilities/Mei/3/cooldown
+         "cooldown": 14,
+         "manaCost": 70,
+         "icon": "storm_ui_icon_mei_e1_slide.png",
+         "type": "basic"
+       },
+       {
+         "uid": "710d7e",
+         "name": "Avalanche",
+         "description": "After 0.5 seconds, roll a massive snowball that consumes enemy Heroes in its path. At the end of its path, the snowball crumbles, releasing the consumed Heroes, dealing 220 (+4% per level) damage and Stunning them for 0.5 seconds per Hero consumed.",
+         "hotkey": "R",
+         "abilityId": "Mei|R1",
+         "tooltipId": "MeiOWAvalanche",
+-        "cooldown": 90,
++        "cooldown": 80,
+         "manaCost": 80,
+         "icon": "storm_ui_icon_mei_r1_avalanche.png",
+         "type": "heroic"
+       },
+       {
+         "uid": "570285",
+         "name": "Ice Wall",
+-        "description": "Vector Targeting After a 0.75 second delay, create an impassable wall that traps enemy Heroes hit for 2.5 seconds. When the wall expires, trapped Heroes are Slowed by 75%, decaying over 3 seconds.",
++        "description": "Vector Targeting After a 0.69 second delay, create an impassable wall that traps enemy Heroes hit for 2.5 seconds. When the wall expires, trapped Heroes are Slowed by 75%, decaying over 3 seconds.",
+         "hotkey": "R",
+         "abilityId": "Mei|R2",
+         "tooltipId": "MeiOWIceWall",
+         "cooldown": 60,

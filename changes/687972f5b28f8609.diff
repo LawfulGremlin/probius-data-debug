@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98304)
++++ b/heroes-talents/xalatath.json (2.57.0.98348)
+@@ -179,25 +179,25 @@ /talents/4/1/description
+         "abilityId": "Xalatath|Q1",
+         "abilityLinks": [
+           "Xalatath|Q1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathShadowMark"
+         ]
+       },
+       {
+         "tooltipId": "XalatathDarkBarrier",
+         "talentTreeId": "XalatathDarkBarrier",
+         "name": "Dark Barrier",
+-        "description": "Each time Dark Heart damages an enemy, Xal'atath gains a Shield equal to 2% of her maximum Health, up to 10%.",
++        "description": "Each time the Dark Heart damages an enemy Hero, Xal'atath gains a Shield equal to 2% of her maximum Health, up to 10%.",
+         "icon": "storm_ui_icon_xalatath_e_darkheartritual.png",
+         "type": "W",
+         "sort": 2,
+         "isQuest": false,
+         "abilityId": "Xalatath|W1",
+         "abilityLinks": [
+           "Xalatath|W1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathDarkHeartRitual"
+         ]
+       },

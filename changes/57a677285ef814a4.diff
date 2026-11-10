@@ -1,0 +1,29 @@
+--- a/heroes-talents/lucio.json (2.57.0.98348)
++++ b/heroes-talents/lucio.json (2.57.1.98644)
+@@ -370,25 +370,25 @@ /talents/13/2/description
+         "abilityId": "Lucio|D1",
+         "abilityLinks": [
+           "Lucio|D1"
+         ],
+         "abilityTalentLinkIds": [
+           "LucioPushOff"
+         ]
+       },
+       {
+         "tooltipId": "LucioWallRideSlip",
+         "talentTreeId": "LucioWallRideSlip",
+         "name": "Slip",
+-        "description": "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to 40%, and grants 15 Armor, for 1 second.",
++        "description": "While Wall Ride is active, passing near an enemy Hero increases its Movement Speed bonus to 40%, and grants 15 Armor, for 2 second.",
+         "icon": "storm_ui_icon_lucio_wallride.png",
+         "type": "Z",
+         "sort": 3,
+         "isQuest": false,
+         "abilityId": "Lucio|Z1",
+         "abilityLinks": [
+           "Lucio|Z1"
+         ],
+         "abilityTalentLinkIds": [
+           "LucioWallRide"
+         ]
+       }

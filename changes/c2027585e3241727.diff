@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98304)
++++ b/heroes-talents/xalatath.json (2.57.0.98348)
+@@ -234,25 +234,25 @@ /talents/7/1/description
+         "abilityId": "Xalatath|Q1",
+         "abilityLinks": [
+           "Xalatath|Q1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathShadowMark"
+         ]
+       },
+       {
+         "tooltipId": "XalatathSilenceOfTheLamb",
+         "talentTreeId": "XalatathSilenceOfTheLamb",
+         "name": "Silence of the Lamb",
+-        "description": "Activating Void Step summons a seal of void magic on the ground. When the seal completes, it deals 250 (+4% per level) damage to enemies inside and Silences them for 1 seconds.",
++        "description": "Activating Void Step summons a seal of void magic on the ground. When the seal completes, it deals 250 (+4% per level) damage to enemies inside and Silences them for 2 seconds.",
+         "icon": "storm_ui_icon_xalatath_w_voidstep_c.png",
+         "type": "E",
+         "sort": 2,
+         "isQuest": false,
+         "abilityId": "Xalatath|E1",
+         "abilityLinks": [
+           "Xalatath|E1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathVoidStep"
+         ]
+       },

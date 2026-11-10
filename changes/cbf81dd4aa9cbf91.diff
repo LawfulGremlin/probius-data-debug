@@ -1,0 +1,30 @@
+--- a/heroes-talents/medivh.json (2.57.0.98348)
++++ b/heroes-talents/medivh.json (2.57.1.98644)
+@@ -212,25 +212,25 @@ /talents/4/2/description
+         "abilityLinks": [
+           "Medivh|E1"
+         ],
+         "abilityTalentLinkIds": [
+           "MedivhPortal2",
+           "MedivhPortalInstant"
+         ]
+       },
+       {
+         "tooltipId": "MedivhDustOfAppearance",
+         "talentTreeId": "MedivhDustOfAppearance",
+         "name": "Dust of Appearance",
+-        "description": "Activate to greatly increase sight range for 5 seconds and reveal enemy Heroes in the area for 8 seconds. Does not cancel Raven Form.  Passive: Increase Medivh's sight range while in Raven Form by 25%.",
++        "description": "Activate to greatly increase sight range for 5 seconds and reveal enemy Heroes in the area for 8 seconds. Does not cancel Raven Form.  Passive: Portal no longer forces Medivh to leave Raven form.",
+         "icon": "storm_ui_icon_medivh_dustofappearance.png",
+         "type": "Active",
+         "sort": 3,
+-        "cooldown": 45,
++        "cooldown": 40,
+         "isQuest": false,
+         "abilityId": "Medivh|Active",
+         "abilityLinks": [],
+         "abilityTalentLinkIds": [
+           "MedivhDustOfAppearance"
+         ]
+       }
+     ],

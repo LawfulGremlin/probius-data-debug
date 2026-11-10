@@ -1,0 +1,26 @@
+--- a/heroes-mods/heromods/medivh.stormmod/base.stormdata/gamedata/medivhdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/medivh.stormmod/base.stormdata/gamedata/medivhdata.xml (2.57.1.98644)
+@@ -113,22 +113,22 @@ CAbilEffectTarget#MedivhPortal2/Cost/Cooldown@TimeUse
+   <CAbilEffectTarget id="MedivhPortal2">
+     <PrepEffect value="MedivhPortalDismountDecloakCasterSet" />
+     <Effect value="MedivhPortalCreateCreationUnit" />
+     <Flags index="RequireTargetVision" value="0" />
+     <Cost>
+-      <Cooldown TimeUse="16" />
++      <Cooldown TimeUse="20" />
+     </Cost>
+     <Placeholder value="MedivhPortal" />
+     <Range value="16" />
+     <Arc value="360" />
+     <ValidatedArray index="Approach" value="0" />
+     <ErrorAlert value="Error" />
+     <CmdButtonArray index="Execute" DefaultButtonFace="MedivhPortal2" Requirements="MedivhPortalMarkerActive">
+       <Flags index="AllowSelfCast" value="0" />
+       <Flags index="ToSelection" value="1" />
+     </CmdButtonArray>
+     <PlaceUnit value="MedivhPortalPlacementMarker" />
+     <MinimumRange value="7.5" />
+     <CursorRangeFlags index="ClampMin" value="1" />
+     <CursorRangeFlags index="ClampMax" value="1" />
+     <ParentAbil value="MedivhPortalInstant" />
+   </CAbilEffectTarget>

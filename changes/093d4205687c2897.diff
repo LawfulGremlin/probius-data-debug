@@ -1,0 +1,19 @@
+--- a/heroes-mods/heromods/mephisto.stormmod/base.stormdata/gamedata/mephistodata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/mephisto.stormmod/base.stormdata/gamedata/mephistodata.xml (2.57.1.98644)
+@@ -1017,13 +1017,13 @@ CBehaviorBuff#MephistoMaliciousIntentImprovedPostTeleportSpellPowerBuff/Modification/DamageDealtFraction[index=Ability]@value
+   <CBehaviorBuff id="MephistoMaliciousIntentImprovedPostTeleportSpellPowerBuff" parent="StormDamageIncrease">
+     <Face value="MephistoShadeOfMephistoMaliciousIntentSpellPowerBuff" />
+     <Alignment value="Positive" />
+     <InfoFlags index="Hidden" value="0" />
+     <BehaviorCategories index="BuffAbilityPower" value="1" />
+     <SortIndex value="100" />
+     <Duration value="10" />
+     <Modification>
+-      <HealDealtAdditiveMultiplier index="Life" value="0.25" />
+-      <HealDealtAdditiveMultiplier index="Shields" value="0.25" />
+-      <DamageDealtFraction index="Ability" value="0.25" />
++      <HealDealtAdditiveMultiplier index="Life" value="0.3" />
++      <HealDealtAdditiveMultiplier index="Shields" value="0.3" />
++      <DamageDealtFraction index="Ability" value="0.3" />
+     </Modification>
+   </CBehaviorBuff>

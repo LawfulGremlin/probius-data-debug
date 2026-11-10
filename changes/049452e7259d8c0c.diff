@@ -1,0 +1,29 @@
+--- a/heroes-talents/medivh.json (2.57.0.98348)
++++ b/heroes-talents/medivh.json (2.57.1.98644)
+@@ -51,25 +51,25 @@ /abilities/Medivh/1/cooldown
+         "cooldown": 7,
+         "manaCost": 50,
+         "icon": "storm_ui_icon_medivh_arcanemissile.png",
+         "type": "basic"
+       },
+       {
+         "uid": "20c9af",
+         "name": "Force of Will",
+         "description": "Protect an allied Hero from all damage for 1.5 seconds. Upon expiration, Force of Will heals the target for 20% of the damage it absorbed.",
+         "hotkey": "W",
+         "abilityId": "Medivh|W1",
+         "tooltipId": "MedivhForceOfWill",
+-        "cooldown": 9,
++        "cooldown": 8,
+         "manaCost": 60,
+         "icon": "storm_ui_icon_medivh_forceofwill.png",
+         "type": "basic"
+       },
+       {
+         "uid": "735d73",
+         "name": "Portal",
+         "description": "Create a set of portals between Medivh and the target location, allowing allies to teleport between both. The portals last 6 seconds.",
+         "hotkey": "E",
+         "abilityId": "Medivh|E1",
+         "tooltipId": "MedivhPortal",
+         "cooldown": 16,

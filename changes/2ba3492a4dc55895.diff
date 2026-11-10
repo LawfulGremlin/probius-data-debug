@@ -1,0 +1,20 @@
+--- a/heroes-mods/heromods/medivh.stormmod/base.stormdata/gamedata/medivhdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/medivh.stormmod/base.stormdata/gamedata/medivhdata.xml (2.57.1.98644)
+@@ -54,16 +54,16 @@ CAbilEffectTarget#MedivhForceOfWill/Cost/Cooldown@TimeUse
+   <CAbilEffectTarget id="MedivhForceOfWill">
+     <PrepEffect value="MedivhDismountDecloakCasterSet" />
+     <Effect value="MedivhForceOfWillInitialSet" />
+     <Cost>
+       <Vital index="Energy" value="60" />
+-      <Cooldown TimeUse="9" />
++      <Cooldown TimeUse="8" />
+     </Cost>
+     <TargetFilters value="Heroic;Neutral,Enemy,Missile,Item,Stasis,Dead,Hidden" />
+     <Range value="13" />
+     <Arc value="360" />
+     <UninterruptibleArray index="Cast" value="1" />
+     <UninterruptibleArray index="Channel" value="1" />
+     <UninterruptibleArray index="Finish" value="1" />
+     <ValidatedArray index="Approach" value="0" />
+     <CmdButtonArray index="Execute" DefaultButtonFace="MedivhForceOfWill" Requirements="MedivhAbilityCastLocationPathable" />
+   </CAbilEffectTarget>

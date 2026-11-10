@@ -1,0 +1,10 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98304)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98348)
+@@ -3133,6 +3191,6 @@ CEffectEnumArea#XalatathDarkHeartRitualSelfRevealSearchArea/SearchFilters@value
+   <CEffectEnumArea id="XalatathDarkHeartRitualSelfRevealSearchArea">
+-    <SearchFilters value="-;Player,Ally,ImmuneToAOE,Missile,Item,Stasis,Dead,Hidden,Invulnerable" />
++    <SearchFilters value="-;Player,Ally,ImmuneToAOE,Missile,Item,Stasis,Dead,Invulnerable" />
+     <AreaArray Effect="XalatathDarkHeartRitualApplyImpactSelfReveal">
+       <Radius value="$XalatathDarkHeartRitualLinkRadius" />
+     </AreaArray>
+   </CEffectEnumArea>

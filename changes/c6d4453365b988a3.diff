@@ -1,0 +1,14 @@
+--- a/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml (2.57.1.98644)
+@@ -2323,10 +2323,10 @@ CEffectCreatePersistent#MeiOWBlizzardSearchPersistent/PeriodCount@value
+   <CEffectCreatePersistent id="MeiOWBlizzardSearchPersistent">
+     <InitialEffect value="MeiOWBlizzardSearchArea" />
+     <FinalEffect value="MeiOWBlizzardFinalSet" />
+-    <PeriodCount value="32" />
++    <PeriodCount value="30" />
+     <PeriodicEffectArray value="MeiOWBlizzardSelfImpactTalentSearch" />
+     <PeriodicEffectArray value="MeiOWBlizzardSelfImpactTalentSearch" />
+     <PeriodicEffectArray value="MeiOWBlizzardSelfImpactTalentSearch" />
+     <PeriodicEffectArray value="MeiOWBlizzardSearchArea" />
+     <PeriodicPeriodArray value="0.0625" />
+   </CEffectCreatePersistent>

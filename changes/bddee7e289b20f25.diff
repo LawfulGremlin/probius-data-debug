@@ -1,0 +1,12 @@
+--- a/heroes-mods/heromods/mephisto.stormmod/base.stormdata/gamedata/mephistodata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/mephisto.stormmod/base.stormdata/gamedata/mephistodata.xml (2.57.1.98644)
+@@ -1912,8 +1912,8 @@ CEffectDamage#MephistoSkullMissileDamage/LeechFraction[index=Life]@value
+   <CEffectDamage id="MephistoSkullMissileDamage" parent="StormSpell">
+     <Amount value="127" />
+-    <LeechFraction index="Life" value="0.7" />
++    <LeechFraction index="Life" value="0.85" />
+     <LeechValidator index="Life" value="MephistoSkullMissileHatefulMendingCombine" />
+     <FlatModifierArray index="UnyieldingPowerTalentFlatDamage" Validator="MephistoSkullMissileUnyieldingPowerCasterHasDamageIncreaseBehavior" Modifier="100" />
+     <SourceButtonFace value="MephistoSkullMissile" />
+     <MultiplicativeModifierArray index="AbhorredSkull" Validator="MephistoAbhorredSkullProcCombine" Modifier="0.4" Crit="1" />
+   </CEffectDamage>

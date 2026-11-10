@@ -1,0 +1,32 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathvoideruptiondata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathvoideruptiondata.xml (2.57.1.98644)
+@@ -14,25 +14,25 @@ $XalatathVoidEruptionMissileSpeedTier2
+   <const id="$XalatathVoidEruptionMissileScaleGrowDuration" value="+($XalatathVoidEruptionMissileScaleBlendDuration 0.125)" evaluateAsExpression="1" />
+   <const id="$XalatathVoidEruptionEarlyReleaseWindow" value="*($XalatathVoidEruptionMinimumChargeDuration 2)" evaluateAsExpression="1" />
+   <const id="$XalatathVoidEruptionEarlyReleasePollCount" value="+(floor(/($XalatathVoidEruptionEarlyReleaseWindow $XalatathVoidEruptionLoopPeriod)) 1)" evaluateAsExpression="1" />
+   <const id="$XalatathVoidEruptionMissileScaleTier1" value="3.5" />
+   <const id="$XalatathVoidEruptionMissileScaleTier2" value="6.7" />
+   <const id="$XalatathVoidEruptionMissileScaleTier3" value="10" />
+   <const id="$XalatathVoidEruptionMissileScaleTier4" value="12" />
+   <const id="$XalatathVoidEruptionDamageTier1" value="400" />
+   <const id="$XalatathVoidEruptionDamageTier2" value="500" />
+   <const id="$XalatathVoidEruptionDamageTier3" value="600" />
+   <const id="$XalatathVoidEruptionDamageTier4" value="700" />
+-  <const id="$XalatathVoidEruptionMissileSpeedTier1" value="7" />
+-  <const id="$XalatathVoidEruptionMissileSpeedTier2" value="7" />
+-  <const id="$XalatathVoidEruptionMissileSpeedTier3" value="7" />
+-  <const id="$XalatathVoidEruptionMissileSpeedTier4" value="7" />
++  <const id="$XalatathVoidEruptionMissileSpeedTier1" value="6.3" />
++  <const id="$XalatathVoidEruptionMissileSpeedTier2" value="6.3" />
++  <const id="$XalatathVoidEruptionMissileSpeedTier3" value="6.3" />
++  <const id="$XalatathVoidEruptionMissileSpeedTier4" value="6.3" />
+   <const id="$XalatathVoidEruptionMissileRangeTier1" value="1" />
+   <const id="$XalatathVoidEruptionMissileRangeTier2" value="1" />
+   <const id="$XalatathVoidEruptionMissileRangeTier3" value="1" />
+   <const id="$XalatathVoidEruptionMissileRangeTier4" value="1" />
+   <const id="$XalatathVoidEruptionMissileTimeoutTier1" value="2" />
+   <const id="$XalatathVoidEruptionMissileTimeoutTier2" value="2" />
+   <const id="$XalatathVoidEruptionMissileTimeoutTier3" value="2" />
+   <const id="$XalatathVoidEruptionMissileTimeoutTier4" value="2" />
+   <const id="$XalatathVoidEruptionFinalAoERadiusTier1" value="2" />
+   <const id="$XalatathVoidEruptionFinalAoERadiusTier2" value="2" />

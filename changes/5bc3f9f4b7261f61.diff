@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98348)
++++ b/heroes-talents/xalatath.json (2.57.1.98644)
+@@ -471,25 +471,25 @@ /talents/20/3/description
+         "abilityId": "Xalatath|Q1",
+         "abilityLinks": [
+           "Xalatath|Q1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathShadowMark"
+         ]
+       },
+       {
+         "tooltipId": "XalatathUnstableCore",
+         "talentTreeId": "XalatathUnstableCore",
+         "name": "Unstable Core",
+-        "description": "When the Dark Heart expires or detonates on a target afflicted by Shadow Mark, it leaves behind a pool of void flames for 5 seconds. Enemies in the flames take 45 (+4% per level) damage over time.  The flames deal damage every 1 second.",
++        "description": "When the Dark Heart expires or detonates, it leaves behind a pool of void flames for 6 seconds, dealing up to 450 (+4% per level) to enemies in the area.  Deals 75 (+4% per level) damage every 1 second.",
+         "icon": "storm_ui_icon_xalatath_e_darkheartritual.png",
+         "type": "W",
+         "sort": 4,
+         "isQuest": false,
+         "abilityId": "Xalatath|W1",
+         "abilityLinks": [
+           "Xalatath|W1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathDarkHeartRitual"
+         ]
+       },

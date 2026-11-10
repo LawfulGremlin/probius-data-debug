@@ -1,0 +1,29 @@
+--- a/heroes-talents/medivh.json (2.57.0.98348)
++++ b/heroes-talents/medivh.json (2.57.1.98644)
+@@ -121,25 +121,25 @@ /talents/1/0/description
+         "cooldown": 4,
+         "icon": "storm_ui_icon_medivh_mount.png",
+         "type": "mount"
+       }
+     ]
+   },
+   "talents": {
+     "1": [
+       {
+         "tooltipId": "MedivhTransformRavenWindsOfCelerity",
+         "talentTreeId": "MedivhTransformRavenWindsOfCelerity",
+         "name": "Winds of Celerity",
+-        "description": "Increases Raven Form's Movement Speed bonus by 100%.",
++        "description": "Increases Raven Form's Movement Speed bonus by 100% and reduces the cast time by 0.25 seconds.",
+         "icon": "storm_ui_icon_medivh_ravenform.png",
+         "type": "Z",
+         "sort": 1,
+         "isQuest": false,
+         "abilityId": "Medivh|D1",
+         "abilityLinks": [
+           "Medivh|D1"
+         ],
+         "abilityTalentLinkIds": [
+           "MedivhRavenForm"
+         ]
+       },

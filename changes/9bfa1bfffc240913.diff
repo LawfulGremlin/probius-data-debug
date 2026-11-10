@@ -1,0 +1,14 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathvoideruptiondata.xml (2.57.0.98304)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathvoideruptiondata.xml (2.57.0.98348)
+@@ -1357,10 +1625,10 @@ CEffectEnumArea#XalatathOrbitalEruptionBindCenterMissileTier1EnumArea/SearchFilters@value
+   <CEffectEnumArea id="XalatathOrbitalEruptionBindCenterMissileTier1EnumArea">
+     <ImpactLocation Value="SourceUnit" />
+-    <SearchFilters value="-;Dead,Stasis" />
++    <SearchFilters value="-;Dead" />
+     <ExcludeArray Value="Source" />
+     <MaxCount value="1" />
+     <AreaArray Effect="XalatathOrbitalEruptionBindCenterMissileApplyTier1EffectSet">
+       <Radius value="1" />
+     </AreaArray>
+     <SearchFlags index="DoActorSearch" value="1" />
+   </CEffectEnumArea>

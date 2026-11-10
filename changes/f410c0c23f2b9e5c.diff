@@ -1,0 +1,30 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98348)
++++ b/heroes-talents/xalatath.json (2.57.1.98644)
+@@ -414,25 +414,25 @@ /talents/20/0/description
+           "Xalatath|D1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathVoidVolley"
+         ]
+       }
+     ],
+     "20": [
+       {
+         "tooltipId": "XalatathOrbitalEruption",
+         "talentTreeId": "XalatathOrbitalEruption",
+         "name": "Harbinger's Consumption",
+-        "description": "Void Eruption splits into 3 orbiting Void Orbs. Each enemy Hero hit by their explosions reduces Void Eruption's cooldown by 14 seconds.",
++        "description": "Void Eruption splits into 3 orbiting Void Orbs. Each enemy Hero hit by their explosions reduces Void Eruption's cooldown by 10 seconds.",
+         "icon": "storm_ui_icon_xalatath_r1_voideruption_b.png",
+         "type": "Heroic",
+         "sort": 1,
+         "isQuest": false,
+         "abilityId": "Xalatath|R1",
+         "abilityLinks": [
+           "Xalatath|R1"
+         ],
+         "abilityTalentLinkIds": [
+-          "XalatathVoidEruption"
++          "XalatathVoidEruptionV2"
+         ],
+         "prerequisiteTalentIds": [

@@ -1,0 +1,29 @@
+--- a/heroes-talents/stukov.json (2.57.0.98348)
++++ b/heroes-talents/stukov.json (2.57.1.98644)
+@@ -83,25 +83,25 @@ /abilities/Stukov/4/description
+         "description": "Extend Stukov's arm. If it hits an enemy Hero, they are rapidly shoved until they collide with terrain, dealing 190 (+4% per level) damage and Stunning them for 0.5 seconds. Stukov gains 50 Armor while shoving an enemy.",
+         "hotkey": "R",
+         "abilityId": "Stukov|R1",
+         "tooltipId": "StukovMassiveShove",
+         "cooldown": 20,
+         "manaCost": 50,
+         "icon": "storm_ui_icon_stukov_massiveshove.png",
+         "type": "heroic"
+       },
+       {
+         "uid": "33bf63",
+         "name": "Flailing Swipe",
+-        "description": "Swipe 3 times in front of Stukov over 1.75 seconds, dealing 48 (+4% per level) damage to enemies hit and knocking them away. Each swipe is larger than the previous.",
++        "description": "Swipe 3 times in front of Stukov over 1.75 seconds, dealing 62 (+4% per level) damage to enemies hit and knocking them away. Each swipe is larger than the previous.",
+         "hotkey": "R",
+         "abilityId": "Stukov|R2",
+         "tooltipId": "StukovFlailingSwipe",
+         "cooldown": 60,
+         "manaCost": 60,
+         "icon": "storm_ui_icon_stukov_flailingswipe.png",
+         "type": "heroic"
+       },
+       {
+         "uid": "f6d1f0",
+         "name": "Bio-Kill Switch",
+         "description": "Activate to detonate all of Stukov's Viruses. Each Healing Pathogen heals its target for 435 (+4% per level) Health, and each Weighted Pustule does 100 (+4% per level) damage and Slows its target by 70% for 2 seconds.  Can be cast while Channeling Lurking Arm.",

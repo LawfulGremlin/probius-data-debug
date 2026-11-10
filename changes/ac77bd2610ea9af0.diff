@@ -1,0 +1,29 @@
+--- a/heroes-talents/mephisto.json (2.57.0.98348)
++++ b/heroes-talents/mephisto.json (2.57.1.98644)
+@@ -143,25 +143,25 @@ /talents/1/2/description
+         "abilityId": "Mephisto|W1",
+         "abilityLinks": [
+           "Mephisto|W1"
+         ],
+         "abilityTalentLinkIds": [
+           "MephistoLightningNova"
+         ]
+       },
+       {
+         "tooltipId": "MephistoShadeOfMephistoMaliciousIntent",
+         "talentTreeId": "MephistoShadeOfMephistoMaliciousIntent",
+         "name": "Malicious Intent",
+-        "description": "Shade of Mephisto grants 25% Spell Power while active and for 2.5 seconds after ending.  If Mephisto hits enemy Heroes at least 18 times with his Basic Abilities while Shade of Mephisto is active, then increase the duration of the Spell Power bonus to 10 seconds after it ends.",
++        "description": "Shade of Mephisto grants 30% Spell Power while active and for 3 seconds after ending.  If Mephisto hits enemy Heroes at least 18 times with his Basic Abilities while Shade of Mephisto is active, then increase the duration of the Spell Power bonus to 10 seconds after it ends.",
+         "icon": "storm_ui_icon_mephisto_shade.png",
+         "type": "E",
+         "sort": 3,
+         "isQuest": false,
+         "abilityId": "Mephisto|E1",
+         "abilityLinks": [
+           "Mephisto|E1"
+         ],
+         "abilityTalentLinkIds": [
+           "MephistoShadeOfMephisto"
+         ]
+       }

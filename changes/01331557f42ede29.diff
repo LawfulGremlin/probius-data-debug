@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98348)
++++ b/heroes-talents/xalatath.json (2.57.1.98644)
+@@ -217,25 +217,25 @@ /talents/7/0/description
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathVoidStep",
+           "XalatathVoidVolley"
+         ]
+       }
+     ],
+     "7": [
+       {
+         "tooltipId": "XalatathToxicMark",
+         "talentTreeId": "XalatathToxicMark",
+         "name": "Toxic Mark",
+-        "description": "+1s Shadow Mark Duration  Heroes affliced with Shadow Mark have their Armor reduced by 10 and take damage equal to 1% of their maximum Health every second.",
++        "description": "Heroes affliced with Shadow Mark have their Armor reduced by 10 and take damage equal to 1% of their maximum Health every second.",
+         "icon": "storm_ui_icon_xalatath_q_shadowmark.png",
+         "type": "Q",
+         "sort": 1,
+         "isQuest": false,
+         "abilityId": "Xalatath|Q1",
+         "abilityLinks": [
+           "Xalatath|Q1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathShadowMark"
+         ]
+       },

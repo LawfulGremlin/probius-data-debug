@@ -1,0 +1,9 @@
+--- a/heroes-mods/heromods/chromie.stormmod/base.stormdata/gamedata/chromiedata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/chromie.stormmod/base.stormdata/gamedata/chromiedata.xml (2.57.1.98644)
+@@ -257,5 +257,5 @@ CAccumulatorToken#ChromieDragonsBreathDeepBreathingAccumulator/Scale@value
+   <CAccumulatorToken id="ChromieDragonsBreathDeepBreathingAccumulator" parent="BaseTokenAccumulator">
+-    <Scale value="0.005" />
++    <Scale value="0.006" />
+     <TokenId value="ChromieDragonsBreathDeepBreathingQuestToken" />
+     <ApplicationRule value="Add" />
+   </CAccumulatorToken>

@@ -1,0 +1,28 @@
+--- a/heroes-mods/heroesdata.stormmod/base.stormdata/gamedata/heroes/tinkerdata/tinkerdata.xml (2.57.0.98348)
++++ b/heroes-mods/heroesdata.stormmod/base.stormdata/gamedata/heroes/tinkerdata/tinkerdata.xml (2.57.1.98644)
+@@ -3624,25 +3629,25 @@ CTalent#GazloweXplodiumChargeBombToss/AbilityModificationArray/Modifications[#1]/Entry@value
+   </CShapeQuad>
+   <CShapeQuad id="TinkerDethLazorBeamAttack2VisibilityQuad">
+     <Quad value="-1,-17,1,1" />
+   </CShapeQuad>
+   <CShapeQuad id="TinkerDethLazorBeamAttack3VisibilityQuad">
+     <Quad value="-2.5,-17,2.5,1" />
+   </CShapeQuad>
+   <CShapeQuad id="TinkerDethLazorFirinMahLazorzTalentBeamVisibilityQuad">
+     <Quad value="-0.5,-17,0.5,0" />
+   </CShapeQuad>
+   <CTalent id="GazloweBigGameHunter">
+     <Face value="GazloweBigGameHunter" />
+     <AbilityModificationArray>
+       <Modifications>
+         <Type value="FlatModification" />
+         <Catalog value="Validator" />
+         <Entry value="GazloweHasFullEnergy" />
+         <Field value="Value" />
+         <Value value="2.000000" />
+       </Modifications>
+       <Modifications>
+         <Type value="FlatModification" />
+         <Catalog value="Validator" />
+         <Entry value="GazloweDoesNotHaveFullEnergy" />
+         <Field value="Value" />

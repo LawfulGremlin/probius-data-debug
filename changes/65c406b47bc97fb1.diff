@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98348)
++++ b/heroes-talents/xalatath.json (2.57.1.98644)
+@@ -143,25 +143,25 @@ /talents/1/2/description
+         "abilityId": "Xalatath|W1",
+         "abilityLinks": [
+           "Xalatath|W1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathDarkHeartRitual"
+         ]
+       },
+       {
+         "tooltipId": "XalatathCloakOfShadows",
+         "talentTreeId": "XalatathCloakOfShadows",
+         "name": "Cloak of Shadows",
+-        "description": "Activating Void Step grants 50% Movement Speed and 25 Spell Armor for 2 seconds. This bonus refreshes each time Xal'atath teleports.",
++        "description": "Activating Void Step grants 25 Spell Armor while teleporting and 50% Movement Speed for 2 seconds afterwards.",
+         "icon": "storm_ui_icon_xalatath_w_voidstep.png",
+         "type": "E",
+         "sort": 3,
+         "isQuest": false,
+         "abilityId": "Xalatath|E1",
+         "abilityLinks": [
+           "Xalatath|E1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathVoidStep"
+         ]
+       }

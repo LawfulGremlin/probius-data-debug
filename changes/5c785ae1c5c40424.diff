@@ -1,0 +1,11 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98304)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98348)
+@@ -1775,4 +1776,6 @@ CBehaviorBuff#XalatathDarkHeartRitualImpactSelfReveal/Duration@value
+   <CBehaviorBuff id="XalatathDarkHeartRitualImpactSelfReveal">
+-    <Duration value="0.125" />
+-    <RevealUnit Effect="XalatathDarkHeartRitualSelfRevealSearchArea" Value="Source" />
++    <Duration value="1.1" />
++    <Modification>
++      <ModifyFlags index="Detected" value="1" />
++    </Modification>
+   </CBehaviorBuff>

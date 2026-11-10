@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98348)
++++ b/heroes-talents/xalatath.json (2.57.1.98644)
+@@ -126,25 +126,25 @@ /talents/1/1/description
+         "abilityId": "Xalatath|Q1",
+         "abilityLinks": [
+           "Xalatath|Q1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathShadowMark"
+         ]
+       },
+       {
+         "tooltipId": "XalatathAnchoredCore",
+         "talentTreeId": "XalatathAnchoredCore",
+         "name": "Anchored Core",
+-        "description": "Dark Heart Ritual: +25% Radius +25% Duration  Dark Heart's damage bounces 2 times from the primary target to nearby enemies, dealing 25 (+4% per level) damage.",
++        "description": "+25% Dark Heart Ritual Radius  Dark Heart's damage bounces 2 times from the primary target to nearby enemies, dealing 25 (+4% per level) damage.",
+         "icon": "storm_ui_icon_xalatath_e_darkheartritual.png",
+         "type": "W",
+         "sort": 2,
+         "isQuest": false,
+         "abilityId": "Xalatath|W1",
+         "abilityLinks": [
+           "Xalatath|W1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathDarkHeartRitual"
+         ]
+       },

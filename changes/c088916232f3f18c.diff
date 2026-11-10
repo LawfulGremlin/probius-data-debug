@@ -1,0 +1,15 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98304)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98348)
+@@ -1963,11 +1966,12 @@ CEffectSet#XalatathVoidStepInitialSet/ValidatorArray@value
+   <CEffectSet id="XalatathVoidStepInitialSet">
+     <EffectArray value="XalatathVoidStepnModifyCancelCooldown" />
+     <EffectArray value="XalatathVoidStepPeriodicPersistent" />
+     <EffectArray value="XalatathVoidStepEndHoldApplyBehavior" />
+     <EffectArray value="XalatathPummelingStepApplyCasterBehavior" />
+     <EffectArray value="XalatathVoidStepSilenceOfTheLambHoldApplyBehavior" />
+     <EffectArray value="XalatathVoidStepAINotifyCP" />
+     <EffectArray value="XalatathVoidSummonerCastSet" />
+     <EffectArray value="XalatathVoidAcolyteResetTeleportCounter" />
++    <ValidatorArray value="CasterNotRooted" />
+     <TargetLocationType value="Point" />
+   </CEffectSet>

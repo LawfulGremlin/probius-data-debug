@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98348)
++++ b/heroes-talents/xalatath.json (2.57.1.98644)
+@@ -93,25 +93,25 @@ /abilities/Xalatath/5/description
+         "description": "After channeling for 2 seconds, summon a Void Portal that spawns up to 3 Void Minions to attack nearby enemies.  You can have up to 1 active Void Portal.  Enemies near the Void Portal are Slowed by 25%.  Void Minions are attracted to targets afflicted by Shadow Mark.  The Portal expires after 20 seconds. Void Minions automatically choose a nearby lane to push. Void Minion Basic Attacks deal 50 (+4% per level) damage per hit. Void Minions lose Health over 12 seconds.",
+         "hotkey": "R",
+         "abilityId": "Xalatath|R2",
+         "tooltipId": "XalatathVoidConvergence",
+         "cooldown": 75,
+         "manaCost": 75,
+         "icon": "storm_ui_icon_xalatath_r2_voidconvergence.png",
+         "type": "heroic"
+       },
+       {
+         "uid": "1815f7",
+         "name": "Void Volley",
+-        "description": "Every basic attack against heroes, and every 2 basic attacks against non-heroes generate charge. Once fully charged Xal'atath can activate Void Volley to unleash a barrage of 6 Void Orbs at a target location, each dealing 72 (+4% per level) damage on impact.  Charge fully decays if Xal'atath does not hit an enemy with a Basic Attack after 6 seconds.  Quest: Hit enemy Heroes with Void Volley to grant 1 stack per hit and increases Void Volley's damage by 1%. Lose all stacks upon dying.  Reward (20 Stacks):   +2 Void Volley Range   Stack loss on death lowered to 6.  Reward (60 Stacks):   -1 Basic Attack required to charge Void Volley.  Mythic Reward (100 Stacks):   +50% Basic Attack and Void Volley Damage.   Void Volley projectiles Pierce all targets.  Stack loss will never cause the Hero to fall below a quest reward threshold.",
++        "description": "Every basic attack against heroes, and every 2 basic attacks against non-heroes generate charge. Once fully charged Xal'atath can activate Void Volley to unleash a barrage of 6 Void Orbs at a target location, each dealing 72 (+4% per level) damage on impact.  Quest: Hit enemy Heroes with Void Volley to grant 1 stack per hit and increases Void Volley's damage by 1%. Lose all stacks upon dying.  Reward (20 Stacks):   +2 Void Volley Range   Stack loss on death lowered to 6.  Reward (60 Stacks):   -1 Basic Attack required to charge Void Volley.  Mythic Reward (100 Stacks):   +35% Basic Attack and Void Volley Damage.   Void Volley projectiles Pierce all targets.  Stack loss will never cause the Hero to fall below a quest reward threshold. Charge fully decays if Xal'atath does not hit an enemy with a Basic Attack after 6 seconds.",
+         "trait": true,
+         "abilityId": "Xalatath|D1",
+         "tooltipId": "XalatathVoidVolley",
+         "manaCost": 35,
+         "icon": "storm_ui_icon_xalatath_trait.png",
+         "type": "trait"
+       }
+     ]
+   },
+   "talents": {
+     "1": [
+       {

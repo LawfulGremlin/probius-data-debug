@@ -1,0 +1,31 @@
+--- a/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml (2.57.1.98644)
+@@ -119,27 +119,27 @@ CAbilEffectTarget#MeiOWAvalanche/Cost/Cooldown@TimeUse
+   <CAbilEffectTarget id="MeiOWAvalanche">
+     <Activity value="Button/Name/MeiOWAvalanche" />
+     <PrepEffect value="MeiOWAvalanchePrepSet" />
+     <Effect value="MeiOWAvalancheInitialSet" />
+     <Flags index="ClearLastMoveTarget" value="1" />
+     <Flags index="RequireTargetVision" value="0" />
+     <Cost>
+       <Vital index="Energy" value="80" />
+-      <Cooldown TimeUse="90" />
++      <Cooldown TimeUse="80" />
+     </Cost>
+     <InterruptArray index="Cast" value="1" />
+     <InterruptCost>
+       <Cooldown Operation="Set" TimeUse="10" />
+     </InterruptCost>
+     <Range value="500" />
+     <Arc value="360" />
+     <CastIntroTime value="0.4375" />
+     <ShowProgressArray index="Cast" value="1" />
+     <UninterruptibleArray index="Cast" value="1" />
+     <UninterruptibleArray index="Channel" value="1" />
+     <UninterruptibleArray index="Finish" value="1" />
+     <CursorEffect value="MeiOWAvalancheDummySearch" />
+     <CmdButtonArray index="Execute" DefaultButtonFace="MeiOWAvalanche" Requirements="Ultimate1Unlocked">
+       <Flags index="AllowSelfCast" value="0" />
+     </CmdButtonArray>
+     <CastOutroTime value="0.0625" />
+   </CAbilEffectTarget>

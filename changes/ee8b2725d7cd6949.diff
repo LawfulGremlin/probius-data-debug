@@ -1,0 +1,32 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.1.98644)
+@@ -26,25 +26,25 @@ $XalatathPummelingStepAttackSpeedModifer
++  <const id="$XalatathDarkHeartRitualDetonationBonusDamageModifier" value="0.25" />
+   <const id="$XalatathDarkHeartRitualDetonationBonusDamage" value="*($XalatathDarkHeartRitualDetonationDamage $XalatathDarkHeartRitualDetonationBonusDamageModifier)" evaluateAsExpression="1" />
+   <const id="$XalatathVoidAdeptDetonationDamagePerStack" value="20" />
+   <const id="$XalatathVoidAdeptDetonationDamageMax" value="*($XalatathVoidAdeptDetonationDamagePerStack $XalatathVoidAdeptQuestMaxStacks)" evaluateAsExpression="1" />
+-  <const id="$XalatathUnstableCoreFireDOTDamage" value="45" />
+-  <const id="$XalatathUnstableCoreFireDuration" value="5" />
++  <const id="$XalatathUnstableCoreDamage" value="75" />
+   <const id="$XalatathVoidStepWeaponBonus" value="0.10" />
+   <const id="$XalatathCloakOfShadowsSpeedBonus" value="0.5" />
+   <const id="$XalatathCloakOfShadowsSpellArmorBonus" value="25" />
+   <const id="$XalatathCloakOfShadowsSpellArmorAndMoveSpeedDuration" value="2" />
+   <const id="$XalatathSilenceOfTheLambDamage" value="250" />
+   <const id="$XalatathVoidStepRange" value="2" />
+   <const id="$XalatathVoidStepRangeScale" value="+($XalatathVoidStepRange 6.25)" evaluateAsExpression="1" />
+-  <const id="$XalatathPummelingStepAttackSpeedModifer" value="1.5" />
++  <const id="$XalatathPummelingStepAttackSpeedModifer" value="0" />
+   <const id="$XalatathVoidAdeptQuestMaxStacks" value="10" />
+   <const id="$XalatathShadowMarkDebuffDuration" value="4" />
+   <const id="$XalatathToxicMarkDamageLifeTotal" value="0.01" />
+   <const id="$XalatathToxicMarkArmorDebuffDuration" value="4" />
+   <const id="$XalatathToxicMarkArmorDebuff" value="-10" />
+-  <const id="$XalatathShadowMarkRange" value="8" />
++  <const id="$XalatathShadowMarkRange" value="9" />
+   <const id="$XalatathShadowMarkOuterImpactRange" value="2.5" />
+   <const id="$XalatathShadowMarkInnerImpactRange" value="1" />
+   <const id="$XalatathShadowMarkOuterDamage" value="/($XalatathShadowMarkInnerDamage 2)" evaluateAsExpression="1" />
+   <const id="$XalatathShadowMarkInnerDamage" value="120" />
+   <const id="$XalatathVoidVolleyCastTime" value="0.175" />
+   <const id="$XalatathVoidVolleyCastBuffer" value="+($XalatathVoidVolleyCastTime 0.125)" evaluateAsExpression="1" />

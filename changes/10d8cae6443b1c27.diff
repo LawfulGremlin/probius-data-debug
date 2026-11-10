@@ -1,0 +1,25 @@
+--- a/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml (2.57.1.98644)
+@@ -1,21 +1,21 @@ $MeiOWIcicleSearchWidth
+ <?xml version="1.0" encoding="us-ascii"?>
+ <Catalog>
+   <const id="$MeiOWSnowballCooldown" value="7" />
+   <const id="$MeiOWBlizzardCooldown" value="14" />
+   <const id="$MeiOWIcingCooldown" value="14" />
+   <const id="$MeiOWCryoFreezeShieldStackCount" value="24" />
+   <const id="$MeiOWCryoFreezeDuration" value="3" />
+   <const id="$MeiOWSnowBlindRange" value="9.75" />
+-  <const id="$MeiOWIcicleSearchWidth" value="1" />
++  <const id="$MeiOWIcicleSearchWidth" value="1.25" />
+   <const id="$MeiOWIcingSearchRadius" value="4" />
+   <const id="$MeiOWIcingSlowDuration" value="1.5" />
+   <const id="$MeiOWIcingSlowAmountPos" value="0.8" />
+   <const id="$MeiOWIcingSlowMultiplierPerStep" value="/($MeiOWIcingSlowAmountPos *($MeiOWIcingSlowDuration 16))" evaluateAsExpression="1" />
+   <const id="$MeiOWIcingSlowMultiplierPerStep50PercentCCReduction" value="/($MeiOWIcingSlowMultiplierPerStep 0.5)" evaluateAsExpression="1" />
+   <const id="$MeiOWIcingSlowMultiplierPerStep75PercentCCReduction" value="/($MeiOWIcingSlowMultiplierPerStep 0.25)" evaluateAsExpression="1" />
+   <const id="$MeiOWIcingSlowAmount" value="negate($MeiOWIcingSlowAmountPos)" evaluateAsExpression="1" />
+   <const id="$MeiOWAvalancheSearchWidth" value="2.5" />
+   <const id="$MeiOWAvalancheDistance" value="22" />
+   <const id="$MeiOWBlizzardRange" value="9" />
+   <const id="$MeiOWIceWallSearchRadius" value="1.5" />
+   <const id="$MeiOWIceWallRange" value="11" />

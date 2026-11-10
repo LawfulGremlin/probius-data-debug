@@ -1,0 +1,29 @@
+--- a/heroes-talents/medivh.json (2.57.0.98348)
++++ b/heroes-talents/medivh.json (2.57.1.98644)
+@@ -138,25 +138,25 @@ /talents/1/1/description
+         "abilityId": "Medivh|D1",
+         "abilityLinks": [
+           "Medivh|D1"
+         ],
+         "abilityTalentLinkIds": [
+           "MedivhRavenForm"
+         ]
+       },
+       {
+         "tooltipId": "MedivhTransformRavenRavensIntellect",
+         "talentTreeId": "MedivhTransformRavenRavensIntellect",
+         "name": "Raven's Intellect",
+-        "description": "Raven Form increases Medivh's Mana and Health Regeneration by 200%.",
++        "description": "Raven Form increases Medivh's Mana and Health Regeneration by 400%.",
+         "icon": "storm_ui_icon_medivh_ravenform_b.png",
+         "type": "Z",
+         "sort": 2,
+         "isQuest": false,
+         "abilityId": "Medivh|D1",
+         "abilityLinks": [
+           "Medivh|D1"
+         ],
+         "abilityTalentLinkIds": [
+           "MedivhRavenForm"
+         ]
+       },

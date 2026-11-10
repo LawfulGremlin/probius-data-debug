@@ -1,0 +1,32 @@
+--- a/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml (2.57.1.98644)
+@@ -1172,28 +1172,28 @@ CBehaviorBuff#MeiOWIcingDashBuff/Duration@value
+   <CBehaviorBuff id="MeiOWIcingDashBuff">
+     <Alignment value="Positive" />
+     <RemoveValidatorArray value="CasterNotDazedOrDeadOrFearedOrPolymorphedOrRootedOrStasisOrStunnedExceptTimeStop" />
+     <RemoveValidatorArray value="CasterNotRooted" />
+     <RemoveValidatorArray value="CasterNotSilenced" />
+     <RemoveValidatorArray value="CasterNotPushPull" />
+-    <Duration value="0.9375" />
++    <Duration value="0.875" />
+     <FinalEffect value="MeiOWIcingDashBuffFinalSet" />
+     <Modification AccelerationBonus="-975">
+       <StateFlags index="SuppressAttack" value="1" />
+       <StateFlags index="SuppressCollision" value="1" />
+       <StateFlags index="LineMovement" value="1" />
+       <MoveSpeedMaximum value="22" />
+       <MoveSpeedMinimum value="3" />
+       <MoveSpeedMultiplier value="7" />
+       <AbilClassDisableArray index="CAbilAttack" value="1" />
+       <AbilClassDisableArray index="CAbilEffectInstant" value="1" />
+       <AbilClassDisableArray index="CAbilEffectTarget" value="1" />
+       <AbilClassDisableArray index="CAbilMove" value="1" />
+       <AbilClassDisableArray index="CAbilStop" value="1" />
+       <AbilLinkEnableArray value="MeiOWIcing" />
+       <AbilLinkEnableArray value="MeiOWIcingCancel" />
+       <AbilLinkDisableArray value="move" />
+       <AbilLinkDisableArray value="stop" />
+     </Modification>
+     <Period value="0.125" />
+     <PeriodicEffect value="MeiOWIcingDashFXDummy" />
+   </CBehaviorBuff>

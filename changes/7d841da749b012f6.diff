@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98348)
++++ b/heroes-talents/xalatath.json (2.57.1.98644)
+@@ -378,25 +378,25 @@ /talents/16/1/description
+         "abilityId": "Xalatath|Q1",
+         "abilityLinks": [
+           "Xalatath|Q1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathShadowMark"
+         ]
+       },
+       {
+         "tooltipId": "XalatathPummelingStep",
+         "talentTreeId": "XalatathPummelingStep",
+         "name": "Relentless Whispers",
+-        "description": "While Void Step is active, Xal'atath's Basic Attack Speed is increased by 150%.",
++        "description": "Increases the Basic Attack damage bonus per teleport by 75%.",
+         "icon": "storm_ui_icon_xalatath_w_voidstep.png",
+         "type": "E",
+         "sort": 2,
+         "isQuest": false,
+         "abilityId": "Xalatath|E1",
+         "abilityLinks": [
+           "Xalatath|E1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathVoidStep"
+         ]
+       },

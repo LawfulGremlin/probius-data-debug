@@ -1,0 +1,29 @@
+--- a/heroes-talents/gazlowe.json (2.57.0.98348)
++++ b/heroes-talents/gazlowe.json (2.57.1.98644)
+@@ -47,25 +47,25 @@ /abilities/Gazlowe/1/description
+         "name": "Rock-It! Turret",
+         "description": "Create a turret that deals 43 (+4% per level) damage. Loses Health over 20 seconds.  Turrets prioritize the nearest enemy Hero when first created.",
+         "hotkey": "Q",
+         "abilityId": "Gazlowe|Q1",
+         "tooltipId": "TinkerRockItTurret",
+         "manaCost": 4,
+         "icon": "storm_ui_icon_gazlowe_rockitturret.png",
+         "type": "basic"
+       },
+       {
+         "uid": "3ba3a2",
+         "name": "Deth Lazor",
+-        "description": "After 0.65 seconds, deal 175 (+4% per level) damage to enemies in a line. Heal for 25% of the damage dealt, increased to 75% against enemy Heroes.",
++        "description": "After 0.65 seconds, deal 175 (+4% per level) damage to enemies in a line. Heal for 30% of the damage dealt, increased to 75% against enemy Heroes.",
+         "hotkey": "W",
+         "abilityId": "Gazlowe|W1",
+         "tooltipId": "GazloweDethLazor",
+         "cooldown": 8,
+         "icon": "storm_ui_icon_gazlowe_dethlazor.png",
+         "type": "basic"
+       },
+       {
+         "uid": "8f8fb4",
+         "name": "Xplodium Charge",
+         "description": "Place a bomb that deals 142 (+4% per level) damage to enemies within the target area after 1.25 seconds. Enemies hit are also Stunned for 1 second.",
+         "hotkey": "E",

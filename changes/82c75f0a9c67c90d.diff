@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98304)
++++ b/heroes-talents/xalatath.json (2.57.0.98348)
+@@ -434,25 +434,25 @@ /talents/20/1/description
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathVoidEruption"
+         ],
+         "prerequisiteTalentIds": [
+           "XalatathHeroicAbilityVoidEruption"
+         ]
+       },
+       {
+         "tooltipId": "XalatathRiftInvasion",
+         "talentTreeId": "XalatathRiftInvasion",
+         "name": "Rift Invasion",
+-        "description": "Void Convergence's Void Portal no longer has a life duration, raises the active Void Portal limit to 2, and can spawn and sustain up to 4 Void Minions.",
++        "description": "Void Convergence's Void Portal self decay is no longer lethal, raises the active Void Portal limit to 2, and can spawn and sustain up to 4 Void Minions.",
+         "icon": "storm_ui_icon_xalatath_r2_voidconvergence.png",
+         "type": "Heroic",
+         "sort": 2,
+         "isQuest": false,
+         "abilityId": "Xalatath|R2",
+         "abilityLinks": [
+           "Xalatath|R2"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathVoidConvergence"
+         ],
+         "prerequisiteTalentIds": [

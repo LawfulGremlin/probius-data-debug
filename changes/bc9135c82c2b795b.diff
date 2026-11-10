@@ -1,0 +1,32 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathvoideruptiondata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathvoideruptiondata.xml (2.57.1.98644)
+@@ -37,25 +37,25 @@ $XalatathVoidEruptionFlightDamagePerSecondTier3
+   <const id="$XalatathVoidEruptionFinalAoERadiusTier1" value="2" />
+   <const id="$XalatathVoidEruptionFinalAoERadiusTier2" value="2" />
+   <const id="$XalatathVoidEruptionFinalAoERadiusTier3" value="2.5" />
+   <const id="$XalatathVoidEruptionFinalAoERadiusTier4" value="4" />
+   <const id="$XalatathVoidEruptionFlightDamageRadiusTier1" value="1" />
+   <const id="$XalatathVoidEruptionFlightDamageRadiusTier2" value="2" />
+   <const id="$XalatathVoidEruptionFlightDamageRadiusTier3" value="3" />
+   <const id="$XalatathVoidEruptionFlightDamageRadiusTier4" value="4" />
+   <const id="$XalatathVoidEruptionFlightDamagePeriod" value="0.0625" />
+   <const id="$XalatathVoidEruptionFlightDamageCooldown" value="0.25" />
+-  <const id="$XalatathVoidEruptionFlightDamagePerSecondTier1" value="1440" />
+-  <const id="$XalatathVoidEruptionFlightDamagePerSecondTier2" value="1700" />
+-  <const id="$XalatathVoidEruptionFlightDamagePerSecondTier3" value="2160" />
+-  <const id="$XalatathVoidEruptionFlightDamagePerSecondTier4" value="2660" />
++  <const id="$XalatathVoidEruptionFlightDamagePerSecondTier1" value="1300" />
++  <const id="$XalatathVoidEruptionFlightDamagePerSecondTier2" value="1530" />
++  <const id="$XalatathVoidEruptionFlightDamagePerSecondTier3" value="1940" />
++  <const id="$XalatathVoidEruptionFlightDamagePerSecondTier4" value="2390" />
+   <const id="$XalatathVoidEruptionScanPeriodCountTier1" value="floor(/($XalatathVoidEruptionMissileTimeoutTier1 $XalatathVoidEruptionFlightDamagePeriod))" evaluateAsExpression="1" />
+   <const id="$XalatathVoidEruptionScanPeriodCountTier2" value="floor(/($XalatathVoidEruptionMissileTimeoutTier2 $XalatathVoidEruptionFlightDamagePeriod))" evaluateAsExpression="1" />
+   <const id="$XalatathVoidEruptionScanPeriodCountTier3" value="floor(/($XalatathVoidEruptionMissileTimeoutTier3 $XalatathVoidEruptionFlightDamagePeriod))" evaluateAsExpression="1" />
+   <const id="$XalatathVoidEruptionScanPeriodCountTier4" value="floor(/($XalatathVoidEruptionMissileTimeoutTier4 $XalatathVoidEruptionFlightDamagePeriod))" evaluateAsExpression="1" />
+   <const id="$XalatathVoidEruptionFlightDamagePerPeriodTier1" value="*($XalatathVoidEruptionFlightDamagePerSecondTier1 $XalatathVoidEruptionFlightDamagePeriod)" evaluateAsExpression="1" />
+   <const id="$XalatathVoidEruptionFlightDamagePerPeriodTier2" value="*($XalatathVoidEruptionFlightDamagePerSecondTier2 $XalatathVoidEruptionFlightDamagePeriod)" evaluateAsExpression="1" />
+   <const id="$XalatathVoidEruptionFlightDamagePerPeriodTier3" value="*($XalatathVoidEruptionFlightDamagePerSecondTier3 $XalatathVoidEruptionFlightDamagePeriod)" evaluateAsExpression="1" />
+   <const id="$XalatathVoidEruptionFlightDamagePerPeriodTier4" value="*($XalatathVoidEruptionFlightDamagePerSecondTier4 $XalatathVoidEruptionFlightDamagePeriod)" evaluateAsExpression="1" />
+   <const id="$XalatathOrbitalEruptionDamageTier1" value="320" />
+   <const id="$XalatathOrbitalEruptionDamageTier2" value="425" />
+   <const id="$XalatathOrbitalEruptionDamageTier3" value="540" />

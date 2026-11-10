@@ -1,0 +1,16 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98304)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98348)
+@@ -2956,12 +3012,12 @@ CEffectEnumArea#XalatathDarkHeartRitualDamageLinkPeriodicSearch/SearchFilters@value
+   <CEffectEnumArea id="XalatathDarkHeartRitualDamageLinkPeriodicSearch">
+-    <SearchFilters value="-;Player,Ally,ImmuneToAOE,Missile,Item,Stasis,Dead,Hidden,Invulnerable" />
++    <SearchFilters value="Visible;Player,Ally,ImmuneToAOE,Missile,Item,Stasis,Dead,Hidden,Invulnerable" />
+     <AreaArray MaxCount="15" Effect="XalatathDarkHeartRitualDamageLinkImpactSet">
+       <Radius value="$XalatathDarkHeartRitualLinkRadius" />
+     </AreaArray>
+     <TargetSorts>
+       <SortArray value="TSHeroic" />
+       <SortArray value="TSLifeFraction" />
+       <SortArray value="TSDistanceToTarget" />
+     </TargetSorts>
+     <MaxCount value="15" />
+   </CEffectEnumArea>

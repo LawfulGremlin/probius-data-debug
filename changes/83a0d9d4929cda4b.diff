@@ -1,0 +1,30 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.1.98644)
+@@ -44,25 +44,25 @@ $XalatathVoidVolleyQuestCompleteDamageModifier
+-  <const id="$XalatathShadowMarkRange" value="8" />
++  <const id="$XalatathShadowMarkRange" value="9" />
+   <const id="$XalatathShadowMarkOuterImpactRange" value="2.5" />
+   <const id="$XalatathShadowMarkInnerImpactRange" value="1" />
+   <const id="$XalatathShadowMarkOuterDamage" value="/($XalatathShadowMarkInnerDamage 2)" evaluateAsExpression="1" />
+   <const id="$XalatathShadowMarkInnerDamage" value="120" />
+   <const id="$XalatathVoidVolleyCastTime" value="0.175" />
+   <const id="$XalatathVoidVolleyCastBuffer" value="+($XalatathVoidVolleyCastTime 0.125)" evaluateAsExpression="1" />
+   <const id="$XalatathVoidVolleyRange" value="8" />
+   <const id="$XalatathVoidVolleyQuestCompleteRangeValue" value="10" />
+   <const id="$XalatathVoidVolleyChargeDuration" value="6" />
+   <const id="$XalatathAttacksToChargeVoidVolley" value="10" />
+   <const id="$XalatathAttacksToChargeVoidVolleyAfterQuestSecondMilestone" value="8" />
+-  <const id="$XalatathVoidVolleyQuestCompleteDamageModifier" value="0.5" />
++  <const id="$XalatathVoidVolleyQuestCompleteDamageModifier" value="0.35" />
+   <const id="$XalatathVoidVolleyDamage" value="72" />
+   <const id="$XalatathVoidVolleyQuestFirstMilestoneStacks" value="20" />
+   <const id="$XalatathVoidVolleyQuestSecondMilestoneStacks" value="60" />
+   <const id="$XalatathVoidVolleyQuestMaxStacks" value="100" />
+   <const id="$XalatathVoidVolleyTalentQuestDamageBonusPerStack" value="0.01" />
+   <const id="$XalatathVoidVolleyMinimumRange" value="3" />
+   <const id="$XalatathVoidVolleyRangeSplat" value="+($XalatathVoidVolleyRange $XalatathUnitRadius)" evaluateAsExpression="1" />
+   <const id="$XalatathVoidVolleyMinimumRangeSplat" value="+($XalatathVoidVolleyMinimumRange $XalatathUnitRadius)" evaluateAsExpression="1" />
+   <const id="$XalatathVoidVolleyQuestCompleteRangeValueSplat" value="+($XalatathVoidVolleyQuestCompleteRangeValue $XalatathUnitRadius)" evaluateAsExpression="1" />
+   <const id="$XalatathVoidVolleyManaCost" value="35" />
+   <const id="$XalatathVoidVolleyHoldFireDuration" value="1.5" />
+   <const id="$XalatathVoidConvergencePortalAreaRadius" value="3.5" />

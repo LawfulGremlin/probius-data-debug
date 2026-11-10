@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98348)
++++ b/heroes-talents/xalatath.json (2.57.1.98644)
+@@ -162,25 +162,25 @@ /talents/4/0/description
+           "Xalatath|E1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathVoidStep"
+         ]
+       }
+     ],
+     "4": [
+       {
+         "tooltipId": "XalatathFrozenMark",
+         "talentTreeId": "XalatathFrozenMark",
+         "name": "Cold Feet",
+-        "description": "+1s Shadow Mark Duration  Heroes afflicted by Shadow Mark have their Movement Speed reduced by 25%.",
++        "description": "+2s Shadow Mark Duration  Heroes afflicted by Shadow Mark have their Movement Speed reduced by 25%.",
+         "icon": "storm_ui_icon_xalatath_q_shadowmark.png",
+         "type": "Q",
+         "sort": 1,
+         "isQuest": false,
+         "abilityId": "Xalatath|Q1",
+         "abilityLinks": [
+           "Xalatath|Q1"
+         ],
+         "abilityTalentLinkIds": [
+           "XalatathShadowMark"
+         ]
+       },

@@ -1,0 +1,29 @@
+--- a/heroes-talents/xalatath.json (2.57.0.98304)
++++ b/heroes-talents/xalatath.json (2.57.0.98348)
+@@ -69,25 +69,25 @@ /abilities/Xalatath/3/description
+         "description": "Cast to teleport Xal'atath 3 times in a triangular pattern.  Each time Xal'atath teleports, her Basic Attacks deal 10% more damage while the Ability is active.  Reactivate to end Void Step early and remain at your current location.",
+         "hotkey": "E",
+         "abilityId": "Xalatath|E1",
+         "tooltipId": "XalatathVoidStep",
+         "cooldown": 15,
+         "manaCost": 50,
+         "icon": "storm_ui_icon_xalatath_w_voidstep.png",
+         "type": "basic"
+       },
+       {
+         "uid": "51c0e1",
+         "name": "Void Eruption",
+-        "description": "Channel a powerful Void Orb that grows over time until reaching maximum size after 2 seconds. Recast to launch the Orb early.  Enemies that come into contact with the Orb take 112 (+4% per level) damage and are Blinded for 1 second.  When the Orb reaches the end of its path, it detonates in a large explosion, dealing 400 (+4% per level) damage.  Charging up this Ability increases its contact damage up to 175 (+4% per level) and its explosion damage up to 700 (+4% per level).  Contact damage is dealt every 0.25 seconds.",
++        "description": "Channel a powerful Void Orb that grows over time until reaching maximum size after 2 seconds. Recast to launch the Orb early.  Enemies that come into contact with the Orb take 90 (+4% per level) damage and are Blinded for 1 second.  When the Orb reaches the end of its path, it detonates in a large explosion, dealing 400 (+4% per level) damage.  Charging up this Ability increases its contact damage up to 166 (+4% per level) and its explosion damage up to 700 (+4% per level).  Contact damage is dealt every 0.25 seconds.",
+         "hotkey": "R",
+         "abilityId": "Xalatath|R1",
+         "tooltipId": "XalatathVoidEruption",
+         "cooldown": 75,
+         "manaCost": 80,
+         "icon": "storm_ui_icon_xalatath_r1_voideruption.png",
+         "type": "heroic"
+       },
+       {
+         "uid": "9bb1a7",
+         "name": "Void Convergence",
+         "description": "After channeling for 2 seconds, summon a Void Portal that spawns up to 3 Void Minions to attack nearby enemies.  You can have up to 1 active Void Portal.  Enemies near the Void Portal are Slowed by 25%.  Void Minions are attracted to targets afflicted by Shadow Mark.  The Portal expires after 20 seconds. Void Minions automatically choose a nearby lane to push. Void Minion Basic Attacks deal 50 (+4% per level) damage per hit. Void Minions lose Health over 12 seconds.",

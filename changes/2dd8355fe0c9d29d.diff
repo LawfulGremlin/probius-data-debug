@@ -1,0 +1,8 @@
+--- a/heroes-mods/heroesdata.stormmod/base.stormdata/gamedata/heroes/genndata/genndata.xml (2.57.0.98348)
++++ b/heroes-mods/heroesdata.stormmod/base.stormdata/gamedata/heroes/genndata/genndata.xml (2.57.1.98644)
+@@ -2096,4 +2095,4 @@ CEffectModifyPlayer#GreymaneGilneanCocktailIncendiaryElixirQuestIncrementModification/EffectArray[Reference=Effect,GreymaneGilneanCocktailSpreadDamage,AmountArray]@Value
+   <CEffectModifyPlayer id="GreymaneGilneanCocktailIncendiaryElixirQuestIncrementModification">
+     <WhichPlayer Value="Caster" />
+-    <EffectArray Reference="Effect,GreymaneGilneanCocktailSpreadDamage,AmountArray" Value="25" />
++    <EffectArray Reference="Effect,GreymaneGilneanCocktailSpreadDamage,AmountArray" Value="30" />
+   </CEffectModifyPlayer>

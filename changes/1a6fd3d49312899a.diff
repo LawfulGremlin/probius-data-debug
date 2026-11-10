@@ -1,0 +1,29 @@
+--- a/heroes-talents/chromie.json (2.57.0.98348)
++++ b/heroes-talents/chromie.json (2.57.1.98644)
+@@ -126,25 +126,25 @@ /talents/1/1/description
+         "abilityId": "Chromie|Q1",
+         "abilityLinks": [
+           "Chromie|Q1"
+         ],
+         "abilityTalentLinkIds": [
+           "ChromieSandBlast"
+         ]
+       },
+       {
+         "tooltipId": "ChromieDragonsBreathDeepBreathing",
+         "talentTreeId": "ChromieDragonsBreathDeepBreathing",
+         "name": "Deep Breathing",
+-        "description": "Quest: Every time Dragon's Breath hits a Hero increase its damage by 0.5%.  Reward: After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40.",
++        "description": "Quest: Every time Dragon's Breath hits a Hero increase its damage by 0.6%.  Reward: After hitting 20 Heroes, reduce the cooldown of Dragon's Breath by 4 seconds and its Mana cost from 65 to 40.",
+         "icon": "storm_ui_icon_chromie_sandstrike.png",
+         "type": "W",
+         "sort": 2,
+         "isQuest": true,
+         "abilityId": "Chromie|W1",
+         "abilityLinks": [
+           "Chromie|W1"
+         ],
+         "abilityTalentLinkIds": [
+           "ChromieDragonsBreath"
+         ]
+       },

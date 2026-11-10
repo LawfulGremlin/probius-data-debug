@@ -1,0 +1,31 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.1.98644)
+@@ -4431,20 +4289,27 @@ CTalent#XalatathFrozenMark/AbilityModificationArray/Modifications[#2]/Value@value
+   <CTalent id="XalatathFrozenMark">
+     <Face value="XalatathFrozenMark" />
+     <Abil value="XalatathShadowMark" />
+     <AbilityModificationArray>
+       <Modifications>
+         <Type value="FlatModification" />
+         <Catalog value="Behavior" />
+         <Entry value="XalatathShadowMarkDebuff" />
+         <Field value="Duration" />
+-        <Value value="1.000000" />
++        <Value value="2.000000" />
+       </Modifications>
+       <Modifications>
+         <Type value="FlatModification" />
++        <Catalog value="Behavior" />
++        <Entry value="XalatathToxicMarkArmorDebuff" />
++        <Field value="Duration" />
++        <Value value="2.000000" />
++      </Modifications>
++      <Modifications>
++        <Type value="FlatModification" />
+         <Catalog value="Effect" />
+         <Entry value="XalatathShadowMarkApplyFrozenMarkBehavior" />
+         <Field value="Chance" />
+         <Value value="1.000000" />
+       </Modifications>
+     </AbilityModificationArray>
+   </CTalent>

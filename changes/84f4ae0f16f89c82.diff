@@ -1,0 +1,18 @@
+--- a/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/meiow.stormmod/base.stormdata/gamedata/meiowdata.xml (2.57.1.98644)
+@@ -66,14 +66,14 @@ CAbilEffectTarget#MeiOWIcing/CastIntroTime@value
+   <CAbilEffectTarget id="MeiOWIcing" parent="StormSkillshotDashParent">
+     <PrepEffect value="MeiOWIcingPrepSet" />
+     <Effect value="MeiOWIcingInitialSet" />
+     <Cost>
+       <Vital index="Energy" value="70" />
+       <Cooldown TimeUse="$MeiOWIcingCooldown" />
+     </Cost>
+     <MoveLocation ProjectionDistanceScale="11" />
+-    <CastIntroTime value="0.125" />
++    <CastIntroTime value="0.5" />
+     <CursorEffect value="MeiOWIcingSearch" />
+     <CmdButtonArray index="Execute" DefaultButtonFace="MeiOWIcing">
+       <Flags index="AllowSelfCast" value="0" />
+     </CmdButtonArray>
+   </CAbilEffectTarget>

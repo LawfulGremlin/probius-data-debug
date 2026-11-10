@@ -1,0 +1,29 @@
+--- a/heroes-talents/mei.json (2.57.0.98348)
++++ b/heroes-talents/mei.json (2.57.1.98644)
+@@ -44,25 +44,25 @@ /abilities/Mei/1/description
+         "description": "Throw a snowball that hits all enemies in an area. Enemies hit take 70 (+4% per level) damage, are Slowed by 35%, and are Blinded for 1.75 seconds.",
+         "hotkey": "Q",
+         "abilityId": "Mei|Q1",
+         "tooltipId": "MeiOWSnowBlind",
+         "cooldown": 10,
+         "manaCost": 35,
+         "icon": "storm_ui_icon_mei_q_snowblind.png",
+         "type": "basic"
+       },
+       {
+         "uid": "c6aade",
+         "name": "Blizzard",
+-        "description": "Command Snowball to create a Blizzard at the target location for 2 seconds. Enemies within the blizzard take 13 (+4% per level) damage every 0.25 seconds and are Slowed by 7%, stacking up to 35%. When the Blizzard ends, enemies within its area take an additional 75 (+4% per level) damage and are Stunned for 1.25 seconds.",
++        "description": "Command Snowball to create a Blizzard at the target location for 1.88 seconds. Enemies within the blizzard take 13 (+4% per level) damage every 0.25 seconds and are Slowed by 7%, stacking up to 35%. When the Blizzard ends, enemies within its area take an additional 80 (+4% per level) damage and are Stunned for 1.25 seconds.",
+         "hotkey": "W",
+         "abilityId": "Mei|W1",
+         "tooltipId": "MeiOWBlizzard",
+         "cooldown": 14,
+         "manaCost": 70,
+         "icon": "storm_ui_icon_mei_w_blizzard.png",
+         "type": "basic"
+       },
+       {
+         "uid": "a6da66",
+         "name": "Icing",
+         "description": "Slide quickly in the targeted direction. When this effect ends, enemies near Mei are knocked back, take 52 (+4% per level) damage, and are Slowed by 80%, rapidly decaying over 1.5 seconds.  Can be canceled during sliding.",

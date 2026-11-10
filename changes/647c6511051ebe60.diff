@@ -1,0 +1,10 @@
+--- a/heroes-mods/heromods/stukov.stormmod/base.stormdata/gamedata/stukovdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/stukov.stormmod/base.stormdata/gamedata/stukovdata.xml (2.57.1.98644)
+@@ -2902,6 +2902,6 @@ CEffectModifyPlayer#StukovWeightedPustuleFetidTouchQuestModification/EffectArray[Reference=Abil,StukovWeightedPustule,Cost[0].Cooldown.TimeUse]@Value
+   <CEffectModifyPlayer id="StukovWeightedPustuleFetidTouchQuestModification">
+     <WhichPlayer Value="Caster" />
+-    <EffectArray Operation="Subtract" Reference="Abil,StukovWeightedPustule,Cost[0].Cooldown.TimeUse" Value="5.000000" />
++    <EffectArray Operation="Subtract" Reference="Abil,StukovWeightedPustule,Cost[0].Cooldown.TimeUse" Value="6.000000" />
+     <EffectArray Operation="Set" Reference="Effect,StukovWeightedPustuleFetidTouchQuestIncrement,Chance" Value="0" />
+     <EffectArray Operation="Set" Reference="Abil,StukovWeightedPustule,Cost.Vital[Energy]" Value="0" />
+   </CEffectModifyPlayer>

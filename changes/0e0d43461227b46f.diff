@@ -1,0 +1,29 @@
+--- a/heroes-mods/heroesdata.stormmod/base.stormdata/gamedata/heroes/tinkerdata/tinkerdata.xml (2.57.0.98348)
++++ b/heroes-mods/heroesdata.stormmod/base.stormdata/gamedata/heroes/tinkerdata/tinkerdata.xml (2.57.1.98644)
+@@ -34,25 +34,25 @@ $GazloweDethLazorLeechAmount
+   <const id="$GazloweRockItTurretOverchargedCapacitorsDurationIncreaseValue" value="1.25" />
+   <const id="$GazloweMasterBlasterSlowDuration" value="3" />
+   <const id="$GazloweMasterBlasterSlowAmount" value="-0.35" />
+   <const id="$GazloweMasterBlasterSlowExtendAmount" value="0.5" />
+   <const id="$GazloweDethLazorCooldown" value="8" />
+   <const id="$GazloweDethLazorGCD" value="1" />
+   <const id="$GazloweDethLazorCastTime" value="0.65" />
+   <const id="$GazloweDethLazorCost" value="2" />
+   <const id="$GazloweDethLazorPBAoERadius" value="2" />
+   <const id="$GazloweDethLazorRange" value="10" />
+   <const id="$GazloweDethLazorSearchWidth" value="2.5" />
+   <const id="$GazloweDethLazorDamage" value="175" />
+-  <const id="$GazloweDethLazorLeechAmount" value="0.25" />
++  <const id="$GazloweDethLazorLeechAmount" value="0.3" />
+   <const id="$GazloweDethLazorEZPZHoTAmount" value="/(*(0.75 $GazloweDethLazorDamage) 4)" evaluateAsExpression="1" />
+   <const id="$GazloweDethLazorLeechAmountHeroModifier" value="-(/(0.75 $GazloweDethLazorLeechAmount) 1)" evaluateAsExpression="1" />
+   <const id="$GazloweDethLazorSearchMidPoint" value="*($GazloweDethLazorRange 0.5)" evaluateAsExpression="1" />
+   <const id="$GazloweDethLazorFirinMahLazorzDamage" value="125" />
+   <const id="$GazloweDethLazorFirinMahLazorzRange" value="12" />
+   <const id="$GazloweDethLazorFirinMahLazorzWarningRange" value="/($GazloweDethLazorFirinMahLazorzRange 32)" evaluateAsExpression="1" />
+   <const id="$GazloweDethLazorFirinMahLazorzSearchMidPoint" value="*($GazloweDethLazorFirinMahLazorzRange 0.5)" evaluateAsExpression="1" />
+   <const id="$GazloweDethLazorFirinMahLazorzSearchWidth" value="1" />
+   <const id="$GazloweDethLazorEZPZDimensionalRipperPBAoERadius" value="3.5" />
+   <const id="$GazloweXplodiumChargeMovementSpeedDuration" value="3" />
+   <const id="$GazloweXplodiumChargeAnimSpeed" value="1" />
+   <const id="$GazloweXplodiumChargeCost" value="3" />

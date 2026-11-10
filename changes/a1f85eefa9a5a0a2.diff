@@ -1,0 +1,29 @@
+--- a/heroes-talents/mephisto.json (2.57.0.98348)
++++ b/heroes-talents/mephisto.json (2.57.1.98644)
+@@ -179,25 +179,25 @@ /talents/4/1/description
+         "abilityId": "Mephisto|Q1",
+         "abilityLinks": [
+           "Mephisto|Q1"
+         ],
+         "abilityTalentLinkIds": [
+           "MephistoSkullMissile"
+         ]
+       },
+       {
+         "tooltipId": "MephistoLightningNovaStaticBarrier",
+         "talentTreeId": "MephistoLightningNovaStaticBarrier",
+         "name": "Static Barrier",
+-        "description": "At the end of its duration, Lightning Nova grants Mephisto a Shield equal to 40% of the damage it dealt to Heroes. Lasts 5 seconds.",
++        "description": "At the end of its duration, Lightning Nova grants Mephisto a Shield equal to 50% of the damage it dealt to Heroes. Lasts 5 seconds.",
+         "icon": "storm_ui_icon_mephisto_lightning.png",
+         "type": "W",
+         "sort": 2,
+         "isQuest": false,
+         "abilityId": "Mephisto|W1",
+         "abilityLinks": [
+           "Mephisto|W1"
+         ],
+         "abilityTalentLinkIds": [
+           "MephistoLightningNova"
+         ]
+       },

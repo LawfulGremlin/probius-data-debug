@@ -1,0 +1,8 @@
+--- a/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98304)
++++ b/heroes-mods/heromods/xalatath.stormmod/base.stormdata/gamedata/xalatathdata.xml (2.57.0.98348)
+@@ -3191,4 +3245,5 @@ CEffectApplyBehavior#XalatathDarkBarrierApplyStack/ValidatorArray@value
+   <CEffectApplyBehavior id="XalatathDarkBarrierApplyStack">
+     <WhichUnit Value="Caster" />
++    <ValidatorArray value="TargetIsHero" />
+     <Behavior value="XalatathDarkBarrier" />
+   </CEffectApplyBehavior>

@@ -1,0 +1,16 @@
+--- a/heroes-mods/heromods/medivh.stormmod/base.stormdata/gamedata/medivhdata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/medivh.stormmod/base.stormdata/gamedata/medivhdata.xml (2.57.1.98644)
+@@ -1881,13 +1883,13 @@ CTalent#MedivhTransformRavenWindsOfCelerity/AbilityModificationArray/Modifications[#1]/Entry@value
+   <CButton id="MedivhTransformRavenWindsOfCelerity" parent="StormButtonParent">
+     <Icon value="Assets\Textures\storm_ui_icon_medivh_ravenform.dds" />
+   </CButton>
+   <CButton id="MedivhRavenForm" parent="StormButtonParent">
+     <Icon value="Assets\Textures\storm_ui_icon_medivh_ravenform.dds" />
+     <TooltipAppender Validator="MedivhHasTransformRavenRavensIntellectTalent" Face="MedivhTransformRavenRavensIntellect" />
+     <TooltipAppender Validator="MedivhHasTransformRavenWindsOfCelerityTalent" Face="MedivhTransformRavenWindsOfCelerity" />
+     <TooltipFlags index="ShowCooldown" value="0" />
+   </CButton>
+   <CButton id="MedivhPortal" parent="StormButtonParent">
+     <TooltipAppender Validator="HasPregameSuppressionBehavior" Text="Button/TooltipAppender/LockedUntilGameStarts" />
+     <TooltipAppender Validator="MedivhHasPortalPortalMasteryTalent" Face="MedivhPortalPortalMasteryTalent" />
+     <TooltipAppender Validator="MedivhHasPortalMageArmorTalent" Face="MedivhPortalMageArmor" />

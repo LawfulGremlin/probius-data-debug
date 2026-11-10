@@ -1,0 +1,30 @@
+--- a/heroes-talents/medivh.json (2.57.0.98348)
++++ b/heroes-talents/medivh.json (2.57.1.98644)
+@@ -155,25 +155,25 @@ /talents/1/2/description
+         "abilityId": "Medivh|D1",
+         "abilityLinks": [
+           "Medivh|D1"
+         ],
+         "abilityTalentLinkIds": [
+           "MedivhRavenForm"
+         ]
+       },
+       {
+         "tooltipId": "MedivhPortalPortalMasteryTalent",
+         "talentTreeId": "MedivhPortalPortalMastery",
+         "name": "Portal Mastery",
+-        "description": "Medivh can manually place both Portal locations and it no longer breaks Raven Form.  Activate Medivh's Trait to cancel an unlinked Portal.",
++        "description": "Medivh can manually place both Portal locations.  Activate Medivh's Trait to cancel an unlinked Portal.",
+         "icon": "storm_ui_icon_medivh_portal.png",
+         "type": "Active",
+         "sort": 3,
+-        "cooldown": 16,
++        "cooldown": 20,
+         "isQuest": false,
+         "abilityId": "Medivh|Active",
+         "abilityLinks": [
+           "Medivh|E1"
+         ],
+         "abilityTalentLinkIds": [
+           "MedivhPortal2",
+           "MedivhPortalInstant"

@@ -1,0 +1,11 @@
+--- a/heroes-mods/heromods/whitemane.stormmod/base.stormdata/gamedata/whitemanedata.xml (2.57.0.98304)
++++ b/heroes-mods/heromods/whitemane.stormmod/base.stormdata/gamedata/whitemanedata.xml (2.57.0.98348)
+@@ -1636,7 +1636,7 @@ CEffectModifyCatalogNumeric#WhitemaneDesperatePleaUpdateCost/CatalogModifications[Reference=Abil,WhitemaneDesperatePlea,Cost.Vital[Energy]]/Value@value
+   <CEffectModifyCatalogNumeric id="WhitemaneDesperatePleaUpdateCost">
+     <CatalogModifications Operation="Set" Reference="Abil,WhitemaneDesperatePlea,Cost.Vital[Energy]">
+-      <Value value="40">
++      <Value value="45">
+         <AccumulatorArray value="WhitemaneDesperatePleaCostAccumulator" />
+       </Value>
+     </CatalogModifications>
+   </CEffectModifyCatalogNumeric>

@@ -1,0 +1,29 @@
+--- a/heroes-talents/medivh.json (2.57.0.98348)
++++ b/heroes-talents/medivh.json (2.57.1.98644)
+@@ -35,25 +35,25 @@ /abilities/Medivh/0/description
+     "attackRange": 5.5,
+     "attackSpeed": 1.1111,
+     "radius": 0.75
+   },
+   "unitIds": [
+     "MedivhPortalCreation"
+   ],
+   "abilities": {
+     "Medivh": [
+       {
+         "uid": "9aaf79",
+         "name": "Arcane Rift",
+-        "description": "Launch a rift that deals 170 (+4% per level) damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by 5 seconds and refund 50 Mana.  Quest: Hit 40 enemy Heroes with Arcane Rift without dying.  Reward: Permanently increase the damage dealt by 75 and cooldown reduction for hitting a Hero by 1 second.",
++        "description": "Launch a rift that deals 185 (+4% per level) damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by 5 seconds and refund 50 Mana.  Quest: Hit 40 enemy Heroes with Arcane Rift without dying.  Reward: Permanently increase the damage dealt by 75 and cooldown reduction for hitting a Hero by 1 second.",
+         "hotkey": "Q",
+         "abilityId": "Medivh|Q1",
+         "tooltipId": "MedivhArcaneRift",
+         "cooldown": 7,
+         "manaCost": 50,
+         "icon": "storm_ui_icon_medivh_arcanemissile.png",
+         "type": "basic"
+       },
+       {
+         "uid": "20c9af",
+         "name": "Force of Will",
+         "description": "Protect an allied Hero from all damage for 1.5 seconds. Upon expiration, Force of Will heals the target for 20% of the damage it absorbed.",

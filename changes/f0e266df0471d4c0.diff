@@ -1,0 +1,9 @@
+--- a/heroes-mods/heromods/chromie.stormmod/base.stormdata/gamedata/chromiedata.xml (2.57.0.98348)
++++ b/heroes-mods/heromods/chromie.stormmod/base.stormdata/gamedata/chromiedata.xml (2.57.1.98644)
+@@ -3239,5 +3239,5 @@ CEffectDamage#ChromieSandEchoWeaponDamage/MultiplicativeModifierArray[index=OnceAgainTheFirstTime]@Modifier
+   <CEffectDamage id="ChromieSandEchoWeaponDamage" parent="ChromieHeroWeaponDamage">
+     <MultiplicativeModifierArray index="PastandFutureMe" Validator="ChromieCreatorDoesNotHaveSandBlastOnceAgainTheFirstTimeQuestCompleteBehavior" Modifier="$ChromiePastAndFutureMeDamageModifier" />
+-    <MultiplicativeModifierArray index="OnceAgainTheFirstTime" Validator="ChromieCreatorDoesHaveSandBlastOnceAgainTheFirstTimeQuestCompleteBehavior" Modifier="-0.5" />
++    <MultiplicativeModifierArray index="OnceAgainTheFirstTime" Validator="ChromieCreatorDoesHaveSandBlastOnceAgainTheFirstTimeQuestCompleteBehavior" Modifier="-0.45" />
+     <Visibility value="Hidden" />
+   </CEffectDamage>

@@ -1,0 +1,29 @@
+--- a/heroes-talents/lucio.json (2.57.0.98348)
++++ b/heroes-talents/lucio.json (2.57.1.98644)
+@@ -134,25 +134,25 @@ /talents/1/0/description
+         "tooltipId": "LucioCrossfadeActivateSpeedBoost",
+         "icon": "storm_ui_icon_lucio_crossfadespeed.png",
+         "type": "basic"
+       }
+     ]
+   },
+   "talents": {
+     "1": [
+       {
+         "tooltipId": "LucioCrossfadePartyMix",
+         "talentTreeId": "LucioCrossfadePartyMixQuest",
+         "name": "Party Mix",
+-        "description": "Quest: Play Lúcio's Crossfade tracks to nearby allies. Multiple allies provide additional time.  Reward: For every 1 Minute played, permanently increase Lúcio's maximum Mana by 10.  Reward: Once you have played for 8 minutes or more, permanently increase Crossfade's radius by 20%.",
++        "description": "Quest: Play Lúcio's Crossfade tracks to nearby allies. Multiple allies provide additional time.  Reward: For every 1 Minute played, permanently increase Lúcio's maximum Mana by 10.  Reward: Once you have played for 8 minutes or more, permanently increase Crossfade's radius by 30%.",
+         "icon": "storm_ui_icon_lucio_crossfade_all.png",
+         "type": "W",
+         "sort": 1,
+         "isQuest": true,
+         "abilityId": "Lucio|W1",
+         "abilityLinks": [
+           "Lucio|W1",
+           "Lucio|W2"
+         ],
+         "abilityTalentLinkIds": [
+           "LucioCrossfade",
+           "LucioCrossfade"
