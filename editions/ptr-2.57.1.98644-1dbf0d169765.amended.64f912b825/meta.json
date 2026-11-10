@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "editionId": "ptr-2.57.1.98644-1dbf0d169765.amended.64f912b825",
+  "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
+  "kind": "amended",
+  "inputsHash": "64f912b8255cecf40c4bbdaf8c31d50c0bd6b1fea80e442621c4b6063fae5cb4",
+  "inputs": {
+    "comparisonKey": "22f6963995281e07aa95ce64644767bbe7552946f3ebe555e18f0238535cd834",
+    "evidenceSha": "5c1af531d78947ef5b00700857d1e3917cdb5132254f9bc3b4d659d8078b3626",
+    "official": {
+      "articleKey": "news-24317084",
+      "sectionKey": "base",
+      "docSha": "ea20284fc0a886f2242878f920985abb55672f8aa47bd3ab90905ec4686aac18",
+      "mappingSha": "b5a34e1bad72283e40eb0bf48b94fb7fa3c8f6fa7de1b51485f1ee40bf2483f5",
+      "coverageSha": "bfbab555b1700f2a2e4f0a5010f3bf2aff9cef7df1282e4db708c9ed0039625f"
+    },
+    "versions": {
+      "comparator": 11,
+      "parser": 1,
+      "prompts": 3,
+      "render": 12
+    },
+    "model": "claude-sonnet-5-5",
+    "effort": "medium",
+    "t2Green": true,
+    "displayScope": "section",
+    "claude": "70ff618bfd6fa0753cb86f55da738bb75119be1b7e93d34c9d30baabce5ac00b"
+  },
+  "claude": {
+    "used": true,
+    "genKeys": [
+      "06a4bf77c7068d0fe74d10755a75d422e4b656152836b46e69d470a6c2c09178"
+    ],
+    "usd": 0.036982
+  },
+  "counts": {
+    "claims": 37,
+    "additions": 4,
+    "discrepancies": 0,
+    "uncertain": 1,
+    "appendix": 697
+  },
+  "createdAt": "2026-11-10T21:32:35Z"
+}
