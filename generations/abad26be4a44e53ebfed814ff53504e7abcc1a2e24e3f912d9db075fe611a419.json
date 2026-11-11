@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "genKey": "abad26be4a44e53ebfed814ff53504e7abcc1a2e24e3f912d9db075fe611a419",
+  "purpose": "coverage",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "promptVersion": 3,
+  "outputSchema": 1,
+  "inputSha": "38b73afa220e5942a7123c690b52571ab1ac325ad115a2ae83d71447ed43b868",
+  "output": {
+    "proposals": [
+      {
+        "evidenceId": "c-bdd9c2788e",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "conflicts",
+        "missingDetail": "",
+        "reason": "The bullet gives cast time before as 0.625 seconds and a decrease, while the claim shows 0.125 seconds increased to 0.5 seconds."
+      },
+      {
+        "evidenceId": "c-3b3e4947af",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet is about cast time, not duration."
+      },
+      {
+        "evidenceId": "c-45608b481e",
+        "bulletId": "b-e55319885e",
+        "relation": "partly",
+        "missingDetail": "Health Regeneration increased from 2.6484 to 2.7708.",
+        "reason": "The bullet mentions an issue with Health Regeneration but not the values or direction."
+      },
+      {
+        "evidenceId": "c-27b9b50ec9",
+        "bulletId": "b-78802e2f3c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the orbs orbit more slowly, matching the longer orbit period."
+      },
+      {
+        "evidenceId": "c-483212895f",
+        "bulletId": "b-ee0f95a4ec",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The attack speed modifier going to 0 matches no longer increasing Attack Speed."
+      },
+      {
+        "evidenceId": "c-3100173e6a",
+        "bulletId": "b-ddf6ca9713",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet is about duration, while the claim concerns a search area radius multiplier."
+      },
+      {
+        "evidenceId": "c-51c947b135",
+        "bulletId": "b-e20643c202",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The duration bonus rising from 1 to 2 seconds matches the claim's duration value of 2."
+      },
+      {
+        "evidenceId": "c-a746fd85ea",
+        "bulletId": "b-3694ebd99b",
+        "relation": "partly",
+        "missingDetail": "The fire damage value of 45 and duration value of 5 were removed.",
+        "reason": "The bullet states the damage increase to 75 but not the removed fire damage and duration values."
+      },
+      {
+        "evidenceId": "c-dc87d3089c",
+        "bulletId": "b-4c9744c5e6",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states it no longer increases debuff duration, matching the removed duration addition."
+      },
+      {
+        "evidenceId": "c-48df61449c",
+        "bulletId": "b-6258822e58",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The bullet states the per-stack bonus rising from 25 to 30, the same as the quest damage per hit."
+      },
+      {
+        "evidenceId": "c-85ed827812",
+        "bulletId": "b-daabf689f7",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet is about cooldown, not the sight bonus."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 4462,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 7192,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 0
+    },
+    "output_tokens": 971,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.019353,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgvqdnBEmnDEXY7hRwQwf",
+  "createdAt": "2026-11-11T08:38:57Z"
+}
