@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Catalog>
+  <CButton id="XalatathVoidVolleyChargeButton" parent="StormButtonParentTrait">
+    <Tooltip value="Button/SimpleDisplayText/XalatathVoidVolleyChargeUITooltip" />
+  </CButton>
+  <CButton id="XalatathVoidVolleyDummy" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_trait.dds" />
+  </CButton>
+  <CButton id="XalatathVoidVolley" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_trait.dds" />
+    <TooltipAppender Validator="XalatathHasXalatathVoidAcolyteTalent" Face="XalatathVoidAcolyte" />
+    <TooltipAppender Validator="XalatathHasXalatathCrushingCascadeTalent" Face="XalatathCrushingCascade" />
+    <TooltipAppender Validator="XalatathHasXalatathFracturedRealityTalent" Face="XalatathFracturedReality" />
+  </CButton>
+  <CButton id="XalatathShadowMark" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_q_shadowmark.dds" />
+    <TooltipCooldownOverrideText value="XalatathShadowMarkCooldownOverride" />
+    <TooltipAppender Validator="XalatathHasXalatathToxicMarkTalent" Face="XalatathToxicMark" />
+    <TooltipAppender Validator="XalatathHasXalatathFrozenMarkTalent" Face="XalatathFrozenMark" />
+    <TooltipAppender Validator="XalatathHasXalatathVoidAdeptTalent" Face="XalatathVoidAdept" />
+    <TooltipAppender Validator="XalatathHasXalatathMarkedResilienceTalent" Face="XalatathMarkedResilience" />
+    <TooltipAppender Validator="XalatathHasXalatathDuelingOrbsTalent" Face="XalatathDuelingOrbs" />
+  </CButton>
+  <CButton id="XalatathDarkHeartRitual" parent="StormButtonParent">
+    <TooltipAppender Validator="XalatathHasXalatathAnchoredCoreTalent" Face="XalatathAnchoredCore" />
+    <TooltipAppender Validator="XalatathHasXalatathDarkBarrierTalent" Face="XalatathDarkBarrier" />
+    <TooltipAppender Validator="XalatathHasXalatathDarkHeartsProtectionTalent" Face="XalatathDarkHeartsProtection" />
+    <TooltipAppender Validator="XalatathHasXalatathPullOfTheDarkHeartTalent" Face="XalatathPullOfTheDarkHeart" />
+    <TooltipAppender Validator="XalatathHasXalatathUnstableCoreTalent" Face="XalatathUnstableCore" />
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_e_darkheartritual.dds" />
+  </CButton>
+  <CButton id="XalatathSmartTargeting">
+    <Icon value="Assets\Textures\btn-command-attack.dds" />
+  </CButton>
+  <CButton id="XalatathSmartTargetingRightClick">
+    <Icon value="Assets\Textures\btn-command-attack.dds" />
+  </CButton>
+  <CButton id="XalatathVoidVolleyChargeCounter" parent="StormButtonParentTrait">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_trait.dds" />
+    <TooltipAppender Validator="XalatathHas10VoidVolleyChargeTokens" Text="Button/TooltipAppender/XalatathHas10VoidVolleyChargeTokens" />
+  </CButton>
+  <CButton id="XalatathVoidStep" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_w_voidstep.dds" />
+    <TooltipAppender Validator="XalatathHasXalatathCloakOfShadowsTalent" Face="XalatathCloakOfShadows" />
+    <TooltipAppender Validator="XalatathHasXalatathVoidAcolyteTalent" Face="XalatathVoidAcolyte" />
+    <TooltipAppender Validator="XalatathHasXalatathVoidSummonerTalent" Face="XalatathVoidSummoner" />
+    <TooltipAppender Validator="XalatathHasXalatathSilenceOfTheLambTalent" Face="XalatathSilenceOfTheLamb" />
+    <TooltipAppender Validator="XalatathHasXalatathPummelingStepTalent" Face="XalatathPummelingStep" />
+    <TooltipAppender Validator="XalatathHasXalatathParadoxLoopTalent" Face="XalatathParadoxLoop" />
+  </CButton>
+  <CButton id="XalatathVoidStepCancel" parent="StormButtonParent">
+    <Icon value="Assets\Textures\hud_btn_bg_ability_cancel.dds" />
+  </CButton>
+  <CButton id="XalatathVoidEruption" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_r1_voideruption.dds" />
+    <TooltipAppender Validator="XalatathHasXalatathOrbitalEruptionTalent" Face="XalatathOrbitalEruption" />
+  </CButton>
+  <CButton id="XalatathVoidEruptionCancel" parent="StormButtonParent">
+    <Icon value="Assets\Textures\hud_btn_bg_ability_cancel.dds" />
+  </CButton>
+  <CButton id="XalatathVoidConvergence" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_r2_voidconvergence.dds" />
+    <TooltipAppender Validator="XalatathHasXalatathRiftInvasionTalent" Face="XalatathRiftInvasion" />
+  </CButton>
+  <CButton id="XalatathVoidVolleyQuestTokenButton" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_trait.dds" />
+    <SimpleDisplayText value="Button/SimpleDisplayText/XalatathVoidVolleyQuest" />
+  </CButton>
+  <CButton id="XalatathVoidAdeptChargeTokenButton" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_q_shadowmark.dds" />
+    <SimpleDisplayText value="Button/SimpleDisplayText/XalatathVoidAdeptQuest" />
+  </CButton>
+  <CButton id="XalatathAnchoredCore" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_e_darkheartritual.dds" />
+  </CButton>
+  <CButton id="XalatathCloakOfShadows" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_w_voidstep.dds" />
+  </CButton>
+  <CButton id="XalatathToxicMark" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_q_shadowmark.dds" />
+  </CButton>
+  <CButton id="XalatathDarkBarrier" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_e_darkheartritual.dds" />
+  </CButton>
+  <CButton id="XalatathVoidAcolyte" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_w_voidstep.dds" />
+  </CButton>
+  <CButton id="XalatathFrozenMark" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_q_shadowmark.dds" />
+  </CButton>
+  <CButton id="XalatathVoidSummoner" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_w_voidstep_b.dds" />
+  </CButton>
+  <CButton id="XalatathVoidAdept" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_q_shadowmark.dds" />
+  </CButton>
+  <CButton id="XalatathSilenceOfTheLamb" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_w_voidstep_c.dds" />
+  </CButton>
+  <CButton id="XalatathCrushingCascade" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_trait.dds" />
+  </CButton>
+  <CButton id="XalatathDarkHeartsProtection" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_e_darkheartritual_b.dds" />
+  </CButton>
+  <CButton id="XalatathPullOfTheDarkHeart" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_e_darkheartritual.dds" />
+  </CButton>
+  <CButton id="XalatathPummelingStep" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_w_voidstep.dds" />
+  </CButton>
+  <CButton id="XalatathMarkedResilience" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_q_shadowmark.dds" />
+  </CButton>
+  <CButton id="XalatathDuelingOrbs" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_q_shadowmark.dds" />
+  </CButton>
+  <CButton id="XalatathRiftInvasion" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_r2_voidconvergence.dds" />
+  </CButton>
+  <CButton id="XalatathOrbitalEruption" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_r1_voideruption_b.dds" />
+  </CButton>
+  <CButton id="XalatathFracturedReality" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_trait.dds" />
+  </CButton>
+  <CButton id="XalatathUnstableCore" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_e_darkheartritual.dds" />
+  </CButton>
+  <CButton id="XalatathParadoxLoop" parent="StormButtonParent">
+    <Icon value="Assets\Textures\storm_ui_icon_xalatath_w_voidstep.dds" />
+  </CButton>
+</Catalog>
