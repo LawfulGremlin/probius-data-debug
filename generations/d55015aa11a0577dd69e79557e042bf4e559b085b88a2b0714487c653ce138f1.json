@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "genKey": "d55015aa11a0577dd69e79557e042bf4e559b085b88a2b0714487c653ce138f1",
+  "purpose": "coverage",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "promptVersion": 3,
+  "outputSchema": 1,
+  "inputSha": "22f00bf71e9324901490635f6dc991f6f28a0394f81b67eddd7f22ff90a07f8a",
+  "output": {
+    "proposals": [
+      {
+        "evidenceId": "c-bdd9c2788e",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "conflicts",
+        "missingDetail": "",
+        "reason": "Both describe Icing cast time, but the bullet gives a before value of 0.625 while the data shows 0.125 seconds."
+      },
+      {
+        "evidenceId": "c-3b3e4947af",
+        "bulletId": "b-a30ca02bb5",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet covers cast time, not the duration value."
+      },
+      {
+        "evidenceId": "c-b8abef7d71",
+        "bulletId": "b-0e0d5a8bc9",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "A period count change is not stated by the detonation delay bullet."
+      },
+      {
+        "evidenceId": "c-45608b481e",
+        "bulletId": "b-e55319885e",
+        "relation": "partly",
+        "missingDetail": "Health Regeneration increased from 2.6484 to 2.7708.",
+        "reason": "The bullet mentions a fix to Health Regeneration without stating the values."
+      },
+      {
+        "evidenceId": "c-27b9b50ec9",
+        "bulletId": "b-78802e2f3c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Orbiting more slowly matches the longer orbit period."
+      },
+      {
+        "evidenceId": "c-483212895f",
+        "bulletId": "b-ee0f95a4ec",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The attack speed modifier going to 0 matches no longer increasing Attack Speed."
+      },
+      {
+        "evidenceId": "c-113b672eff",
+        "bulletId": "b-d799da8816",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The Fractured Reality damage modifier reduction on Void Volley matches the Mythic Reward damage bonus reduction."
+      },
+      {
+        "evidenceId": "c-3100173e6a",
+        "bulletId": "b-ddf6ca9713",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullet says duration no longer increases, not a search radius multiplier."
+      },
+      {
+        "evidenceId": "c-51c947b135",
+        "bulletId": "b-e20643c202",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Duration applied as 2 matches the duration bonus increase from 1 to 2 seconds."
+      },
+      {
+        "evidenceId": "c-a746fd85ea",
+        "bulletId": "b-3694ebd99b",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The new damage value of 75 replacing 45 matches the impact damage bullet, and the other bullet covers the removed duration."
+      },
+      {
+        "evidenceId": "c-dc87d3089c",
+        "bulletId": "b-4c9744c5e6",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "No longer adding to debuff duration matches the bullet."
+      },
+      {
+        "evidenceId": "c-091a672f19",
+        "bulletId": "b-2d8f74709d",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "The regeneration modification from 2 to 4 matches the bonus from 200% to 400%."
+      },
+      {
+        "evidenceId": "c-85ed827812",
+        "bulletId": "b-daabf689f7",
+        "relation": "unrelated",
+        "missingDetail": "",
+        "reason": "The bullets state cooldown and Portal changes, not the sight bonus removal."
+      },
+      {
+        "evidenceId": "c-48df61449c",
+        "bulletId": "b-6258822e58",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Both state the per-hit bonus rising from 25 to 30."
+      },
+      {
+        "evidenceId": "c-4d2ca4c70a",
+        "bulletId": "b-d4e726182c",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "0.15 to 0.12 equals 15% to 12%."
+      },
+      {
+        "evidenceId": "c-9fa1e76699",
+        "bulletId": "b-9a4c9aa5bb",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "0.005 to 0.006 equals 0.5% to 0.6% per stack."
+      },
+      {
+        "evidenceId": "c-a1d688dce8",
+        "bulletId": "b-84755cc3e0",
+        "relation": "covers",
+        "missingDetail": "",
+        "reason": "Radius from 1.4 to 2.1 is a 50% increase, but the bullet states 20% to 30% of a bonus, so the radius bonus change is the same property."
+      }
+    ]
+  },
+  "usage": {
+    "input_tokens": 6882,
+    "cache_creation_input_tokens": 7192,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 7192
+    },
+    "output_tokens": 1448,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.057012,
+  "stopReason": "end_turn",
+  "requestId": "msg_011CgvprB9pWi4543SJwKY3C",
+  "createdAt": "2026-11-11T08:28:19Z"
+}

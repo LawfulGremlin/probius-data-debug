@@ -1,0 +1,497 @@
+{
+  "schemaVersion": 1,
+  "genKey": "17e4a3f68b5b33ad9c01f4df6868e04bdcce4bb325aab47001b3c52619a26bb5",
+  "purpose": "initial",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "promptVersion": 3,
+  "outputSchema": 1,
+  "inputSha": "93c4e50d01870f54cc4b8da6b6e143afe96d53cd3c8836db63fdd34780067c04",
+  "output": {
+    "items": [
+      {
+        "evidenceIds": [
+          "c-4d2ca4c70a"
+        ],
+        "heroKey": "Chromie",
+        "group": "talents",
+        "heading": "Timewalker's Pursuit",
+        "text": "The Spell Power bonus from completing the Quest changed from 0.15 to 0.12 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-9fa1e76699"
+        ],
+        "heroKey": "Chromie",
+        "group": "talents",
+        "heading": "Deep Breathing",
+        "text": "The Quest's per-hit damage increase value changed from 0.005 to 0.006 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-48df61449c"
+        ],
+        "heroKey": "Greymane",
+        "group": "talents",
+        "heading": "Incendiary Elixir",
+        "text": "Each explosion hit now adds 30 explosion damage to the Quest, instead of 25 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-8dcbdfaeca"
+        ],
+        "heroKey": "Lucio",
+        "group": "talents",
+        "heading": "Summer Anthem",
+        "text": "Duration increased from 1.5 seconds to 2.5 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-946b1e2559"
+        ],
+        "heroKey": "Lucio",
+        "group": "talents",
+        "heading": "Slip",
+        "text": "Duration increased from 1 second to 2 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-4744b581a4"
+        ],
+        "heroKey": "Lucio",
+        "group": "abilities",
+        "heading": "Sound Barrier [R]",
+        "text": "The Shield's damage response modify limit changed from 27 to 31 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-a1d688dce8"
+        ],
+        "heroKey": "Lucio",
+        "group": "talents",
+        "heading": "Party Mix",
+        "text": "The reward's radius value for the search areas changed from 1.4 to 2.1 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-1f69e774cb",
+          "c-642f858bdd"
+        ],
+        "heroKey": "Medivh",
+        "group": "abilities",
+        "heading": "Force of Will [W]",
+        "text": "Cooldown reduced from 9 seconds to 8 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-e9f8139100"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Dust of Appearance",
+        "text": "Cooldown reduced from 45 seconds to 40 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-85ed827812"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Dust of Appearance",
+        "text": "The sight bonus of 1.75 has been removed (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-2a64fe2a1c",
+          "c-1224ac7d5a"
+        ],
+        "heroKey": "Medivh",
+        "group": "abilities",
+        "heading": "Portal [E]",
+        "text": "Cooldown increased from 16 seconds to 20 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-556518204c"
+        ],
+        "heroKey": "Medivh",
+        "group": "abilities",
+        "heading": "Arcane Rift [Q]",
+        "text": "Damage increased from 170 to 185 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-091a672f19"
+        ],
+        "heroKey": "Medivh",
+        "group": "talents",
+        "heading": "Raven's Intellect",
+        "text": "The regeneration modification value changed from 2 to 4 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-6e1e35a48a",
+          "c-59b62653f7"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Avalanche [R]",
+        "text": "Cooldown reduced from 90 seconds to 80 seconds."
+      },
+      {
+        "evidenceIds": [
+          "c-ff960fa4a4"
+        ],
+        "heroKey": "MeiOW",
+        "group": "base",
+        "heading": "Icicle",
+        "text": "Icicle search width increased from 1 to 1.25 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-bdd9c2788e"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Icing [E]",
+        "text": "Cast time increased from 0.125 seconds to 0.5 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-3b3e4947af"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Icing [E]",
+        "text": "Duration reduced from 0.9375 seconds to 0.875 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-0cbe376f54"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Blizzard [W]",
+        "text": "Damage increased from 75 to 80 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-93a159d55b"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Ice Wall [R]",
+        "text": "The wall's initial creation expire delay changed from 0.75 to 0.6875 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-b8abef7d71"
+        ],
+        "heroKey": "MeiOW",
+        "group": "abilities",
+        "heading": "Blizzard [W]",
+        "text": "The Blizzard's period count changed from 32 to 30 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-67ae822189"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Malicious Intent",
+        "text": "Duration increased from 2.5 seconds to 3 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-d0ec3a2eed"
+        ],
+        "heroKey": "Mephisto",
+        "group": "abilities",
+        "heading": "Skull Missile [Q]",
+        "text": "The life leech fraction on damage changed from 0.7 to 0.85 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-f7bcff706a"
+        ],
+        "heroKey": "Mephisto",
+        "group": "talents",
+        "heading": "Hateful Mending",
+        "text": "The Mana restored by the talent's healer effect changed from 10 to 15 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-06beac4ab0"
+        ],
+        "heroKey": "Stukov",
+        "group": "abilities",
+        "heading": "Flailing Swipe [R]",
+        "text": "Damage increased from 48 to 62 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-13fea42581"
+        ],
+        "heroKey": "Stukov",
+        "group": "abilities",
+        "heading": "Weighted Pustule [W]",
+        "text": "A cooldown value used by the ability's Quest modification changed from 5 to 6 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-725dd626e0"
+        ],
+        "heroKey": "Tinker",
+        "group": "stats",
+        "heading": "Basic Attack damage",
+        "text": "Basic Attack damage increased from 100 to 105."
+      },
+      {
+        "evidenceIds": [
+          "c-72b7931478"
+        ],
+        "heroKey": "Tinker",
+        "group": "stats",
+        "heading": "Health",
+        "text": "Health increased from 2275 to 2375."
+      },
+      {
+        "evidenceIds": [
+          "c-63882e4fc4"
+        ],
+        "heroKey": "Tinker",
+        "group": "stats",
+        "heading": "Health Regeneration",
+        "text": "Health regeneration increased from 4.74 to 4.94."
+      },
+      {
+        "evidenceIds": [
+          "c-1030efc626"
+        ],
+        "heroKey": "Tinker",
+        "group": "abilities",
+        "heading": "Deth Lazor [W]",
+        "text": "Leech amount increased from 0.25 to 0.3 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-45608b481e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "stats",
+        "heading": "Health Regeneration",
+        "text": "Health regeneration increased from 2.6484 to 2.7708."
+      },
+      {
+        "evidenceIds": [
+          "c-45be0e29eb"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Dark Heart Ritual [W]",
+        "text": "Detonation damage increased from 245 to 260 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-7eccd3238d"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Marked Resilience",
+        "text": "Shield total health increased from 160 to 200 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-2d72e7b5f9"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Cooldown reduction per hero hit reduced from 14 to 10 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-27b9b50ec9"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Harbinger's Consumption",
+        "text": "Orbit rev period increased from 1.75 to 5 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-483212895f"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Relentless Whispers",
+        "text": "Attack speed modifer reduced from 1.5 to 0 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-59c66bb061"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Shadow Mark [Q]",
+        "text": "Range increased from 8 to 9 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-9da301a258"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption [R]",
+        "text": "Flight damage per second tier 1 reduced from 1440 to 1300 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-c4b2bfed89"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption [R]",
+        "text": "Flight damage per second tier 2 reduced from 1700 to 1530 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-43bfb2bf2e"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption [R]",
+        "text": "Flight damage per second tier 3 reduced from 2160 to 1940 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-698941db4d"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption [R]",
+        "text": "Flight damage per second tier 4 reduced from 2660 to 2390 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-1e836c2ffd"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption [R]",
+        "text": "Missile speed tier 1 reduced from 7 to 6.3 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-da33056fc6"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption [R]",
+        "text": "Missile speed tier 2 reduced from 7 to 6.3 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-797f246f6d"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption [R]",
+        "text": "Missile speed tier 3 reduced from 7 to 6.3 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-4f3a7dbc04"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Eruption [R]",
+        "text": "Missile speed tier 4 reduced from 7 to 6.3 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-dc3ccd61ca"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "Quest complete damage modifier reduced from 0.5 to 0.35 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-113b672eff"
+        ],
+        "heroKey": "Xalatath",
+        "group": "abilities",
+        "heading": "Void Volley",
+        "text": "The damage modifier from Fractured Reality on Void Volley changed from 0.25 to 0.15 (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-16a789f6c2"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Cold Feet",
+        "text": "Shadow Mark duration changed from 1 second to 2 seconds (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-51c947b135"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Cold Feet",
+        "text": "The talent's modification of 1.000000 now applies as Duration 2.000000 to the Toxic Mark armor debuff instead of Chance on the Frozen Mark behavior (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-3100173e6a"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Anchored Core",
+        "text": "The 1.25 multiplier to the Unstable Core fire search area radius is no longer applied by this talent (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-a746fd85ea"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Unstable Core",
+        "text": "The fire damage value of 45 and duration value of 5 were removed, and a new damage value of 75 was added (game data)."
+      },
+      {
+        "evidenceIds": [
+          "c-dc87d3089c"
+        ],
+        "heroKey": "Xalatath",
+        "group": "talents",
+        "heading": "Toxic Mark",
+        "text": "No longer adds 1.000000 to the Shadow Mark debuff Duration (game data)."
+      }
+    ],
+    "omitted": []
+  },
+  "usage": {
+    "input_tokens": 15408,
+    "cache_creation_input_tokens": 7332,
+    "cache_read_input_tokens": 0,
+    "cache_creation": {
+      "ephemeral_5m_input_tokens": 0,
+      "ephemeral_1h_input_tokens": 7332
+    },
+    "output_tokens": 4334,
+    "output_tokens_details": {
+      "thinking_tokens": 0
+    },
+    "service_tier": "standard",
+    "inference_geo": "global",
+    "speed": "standard"
+  },
+  "usd": 0.103484,
+  "stopReason": "end_turn",
+  "requestId": "msg_011Cgvppa892qX7yogwhURPA",
+  "createdAt": "2026-11-11T08:28:19Z"
+}

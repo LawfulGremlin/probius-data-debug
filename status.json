@@ -1,21 +1,10 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-10T16:06:18Z",
+  "updatedAt": "2026-11-11T08:28:19Z",
   "official": {
     "cadence": "daily",
     "lastCheckAt": "2026-11-09T19:03:38Z",
     "nextCheckAt": "2026-11-10T19:03:38Z"
   },
-  "items": [
-    {
-      "occurrenceId": "ptr-2.57.1.98644-1dbf0d169765",
-      "stage": "initial",
-      "state": "held",
-      "reason": "validation-failed",
-      "detail": "the output reached max_tokens again after halving the request",
-      "attempts": 1,
-      "nextAttemptAfter": null,
-      "nextAction": "node extractor/notes/cli.js retry --target debug --occurrence ptr-2.57.1.98644-1dbf0d169765 --stage initial"
-    }
-  ]
+  "items": []
 }
