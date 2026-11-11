@@ -17257,31 +17257,32 @@
     "sight": 2,
     "speed": 0
   },
-  "XalatathUnstableCoreFireUnit": {
-    "unitId": "XalatathUnstableCoreFireUnit",
-    "portraits": {},
-    "life": {
-      "amount": 1,
-      "scale": 0,
-      "regenRate": 0,
-      "regenScale": 0
-    },
-    "radius": 1.5,
-    "innerRadius": 1.5,
-    "sight": 0,
-    "speed": 0
-  },
   "XalatathVoidConvergencePortalUnit": {
     "unitId": "XalatathVoidConvergencePortalUnit",
     "portraits": {},
     "life": {
-      "amount": 1200,
+      "amount": 1500,
+      "scale": 0.04,
+      "regenRate": -75,
+      "regenScale": 0.04
+    },
+    "radius": 1.5,
+    "innerRadius": 1.25,
+    "sight": 5,
+    "speed": 3.25,
+    "abilities": {}
+  },
+  "XalatathVoidConvergenceRiftInvasionPortalUnit": {
+    "unitId": "XalatathVoidConvergenceRiftInvasionPortalUnit",
+    "portraits": {},
+    "life": {
+      "amount": 1500,
       "scale": 0.04,
       "regenRate": 0,
       "regenScale": 0
     },
-    "radius": 0.75,
-    "innerRadius": 0.25,
+    "radius": 1.5,
+    "innerRadius": 1.25,
     "sight": 5,
     "speed": 3.25,
     "abilities": {}
@@ -17356,13 +17357,55 @@
     "sight": 0,
     "speed": 0
   },
+  "XalatathVoidEruptionV2HarbingersConsumptionMissile": {
+    "unitId": "XalatathVoidEruptionV2HarbingersConsumptionMissile",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "XalatathVoidEruptionV2HarbingersConsumptionOrbitMissile": {
+    "unitId": "XalatathVoidEruptionV2HarbingersConsumptionOrbitMissile",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
+  "XalatathVoidEruptionV2Missile": {
+    "unitId": "XalatathVoidEruptionV2Missile",
+    "portraits": {},
+    "life": {
+      "amount": 1,
+      "scale": 0,
+      "regenRate": 0,
+      "regenScale": 0
+    },
+    "radius": 0.5,
+    "innerRadius": 0,
+    "sight": 0,
+    "speed": 0
+  },
   "XalatathVoidMinion": {
     "unitId": "XalatathVoidMinion",
     "portraits": {},
     "life": {
-      "amount": 300,
+      "amount": 400,
       "scale": 0.04,
-      "regenRate": -25,
+      "regenRate": -33.3333,
       "regenScale": 0.04
     },
     "weapons": [
@@ -19538,7 +19581,7 @@
           "_hdp5LinkId": "MedivhArcaneRift|MedivhArcaneRift|Q",
           "icon": "storm_ui_icon_medivh_arcanemissile.png",
           "name": "Arcane Rift",
-          "fullText": "Launch a rift that deals <c val=\"bfd4fd\">170</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by <c val=\"bfd4fd\">5</c> seconds and refund <c val=\"bfd4fd\">50</c> Mana.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit <c val=\"bfd4fd\">40</c> enemy Heroes with Arcane Rift without dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Permanently increase the damage dealt by <c val=\"bfd4fd\">75</c> and cooldown reduction for hitting a Hero by <c val=\"bfd4fd\">1</c> second.",
+          "fullText": "Launch a rift that deals <c val=\"bfd4fd\">185</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in its path. If an enemy Hero is hit, reduce its cooldown by <c val=\"bfd4fd\">5</c> seconds and refund <c val=\"bfd4fd\">50</c> Mana.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit <c val=\"bfd4fd\">40</c> enemy Heroes with Arcane Rift without dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Permanently increase the damage dealt by <c val=\"bfd4fd\">75</c> and cooldown reduction for hitting a Hero by <c val=\"bfd4fd\">1</c> second.",
           "cooldownText": "Cooldown: 7 seconds"
         },
         {
@@ -19550,7 +19593,7 @@
           "icon": "storm_ui_icon_medivh_forceofwill.png",
           "name": "Force of Will",
           "fullText": "Protect an allied Hero from all damage for <c val=\"bfd4fd\">1.5</c> seconds. Upon expiration, Force of Will heals the target for <c val=\"bfd4fd\">20%</c> of the damage it absorbed.",
-          "cooldownText": "Cooldown: 9 seconds"
+          "cooldownText": "Cooldown: 8 seconds"
         },
         {
           "nameId": "MedivhPortalInstant",

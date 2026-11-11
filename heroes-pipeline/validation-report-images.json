@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "component": "heroes-images",
   "track": "ptr",
-  "version": "2.57.1.98644",
+  "version": "2.57.1.98674",
   "sourceSha": "3ae8461c1e976c5af092b2bd69ddbfe992b9acb1",
   "status": "partial",
-  "generation": "7db4d7a650b43ead8fc9d9cc449ea7da0c576c98b30525b7e502b982ee743cae",
+  "generation": "cba6f307c5cab047cf397a2080b1ecd7a65ed1b7a78c31ed0adda048207f3027",
   "missing": [
     "btn-ability-protoss-prismaticbeam-color.dds",
     "btn-ability-protoss-psistorm-color.dds",
@@ -393,9 +393,9 @@
     "shared/storm_ui_icon_lucio_crossfadespeed.png"
   ],
   "retention": {
-    "preserved": 7747,
+    "preserved": 7748,
     "retained": 3,
-    "rewrittenIdentical": 7744,
+    "rewrittenIdentical": 7745,
     "replaced": 0,
     "missing": []
   },
@@ -7020,17 +7020,17 @@
   },
   "publication": {
     "status": "published",
-    "commit": "3308209d857495f0ab4506315bde263ab143a688",
+    "commit": "c7d66c997a5e561c5cf6b47eb197d2a833600e6d",
     "branch": "test",
-    "generation": "7db4d7a650b43ead8fc9d9cc449ea7da0c576c98b30525b7e502b982ee743cae",
-    "componentTree": "4a6c82d95f97d4f5fd7fed363ac10a6b4d710ca7"
+    "generation": "cba6f307c5cab047cf397a2080b1ecd7a65ed1b7a78c31ed0adda048207f3027",
+    "componentTree": "e9da89932729a700ad4a83bfe3992e00b52784b2"
   },
   "baseline": {
     "branch": "test",
-    "commit": "8658d99ecb65bdedc0b6a7bfc07b228e913f5639",
-    "componentTree": "042399282e803f7cac84fa5420d30eb3a60a5820",
-    "version": "2.57.0.98217",
-    "generation": "e7658d18d6393ba977856c8da8adc8c5063dbe5a7e6f0caffba6040433de7fcb"
+    "commit": "3308209d857495f0ab4506315bde263ab143a688",
+    "componentTree": "4a6c82d95f97d4f5fd7fed363ac10a6b4d710ca7",
+    "version": "2.57.1.98644",
+    "generation": "7db4d7a650b43ead8fc9d9cc449ea7da0c576c98b30525b7e502b982ee743cae"
   },
   "error": null
 }

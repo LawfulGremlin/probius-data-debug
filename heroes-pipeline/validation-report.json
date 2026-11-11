@@ -3,10 +3,10 @@
   "component": "heroes-talents",
   "track": "ptr",
   "product": "herot",
-  "version": "2.57.1.98644",
-  "buildId": "B98644",
+  "version": "2.57.1.98674",
+  "buildId": "B98674",
   "sourceSha": "3ae8461c1e976c5af092b2bd69ddbfe992b9acb1",
-  "generation": "ee9441e279b7f5d8562b33548a45812986b5126930f72591b6e78ad93377eff3",
+  "generation": "4db3a11e31468d8823c0a6a6ae8a49f9215f3634332dd15395bc6ddc6beb8831",
   "producer": {
     "hdpVersion": "5.0.4",
     "adapterSchemaVersion": 1,
@@ -26,8 +26,7 @@
         "releasePatch",
         "releaseDate"
       ]
-    },
-    "Medivh: differs from the previous publication: summonUnits disappeared"
+    }
   ],
   "missingCatalogs": [
     {
@@ -1206,26 +1205,22 @@
       ]
     },
     "unidentifiedAbilities": {},
-    "previousDeviations": {
-      "Medivh": [
-        "summonUnits disappeared"
-      ]
-    },
+    "previousDeviations": {},
     "buckets": []
   },
   "baseline": {
-    "version": "2.57.0.98217",
-    "generation": "b5484bbefc3a13ee7ff74e3f6d820ec9b3d6558d1582c10ffbdbce3beffca964",
+    "version": "2.57.1.98644",
+    "generation": "ee9441e279b7f5d8562b33548a45812986b5126930f72591b6e78ad93377eff3",
     "legacyDerived": false,
     "heroes": 91
   },
   "publication": {
     "status": "published",
-    "commit": "f03c8ee93581209c2f1304315561c534b9d12034",
+    "commit": "a86684b5b300eeb1de80f9e1d82bc1820b964396",
     "branch": "test",
-    "generation": "ee9441e279b7f5d8562b33548a45812986b5126930f72591b6e78ad93377eff3",
-    "componentTree": "7b26e200abbf363a2a6276171465f682f14fb7a1"
+    "generation": "4db3a11e31468d8823c0a6a6ae8a49f9215f3634332dd15395bc6ddc6beb8831",
+    "componentTree": "0914ae036abf34e67cf1c7e0635e5077de0a770c"
   },
   "imageStatus": "partial",
-  "imageReport": "ptr-2.57.1.98644-images.json"
+  "imageReport": "ptr-2.57.1.98674-images.json"
 }

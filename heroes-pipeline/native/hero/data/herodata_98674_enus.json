@@ -1,6 +1,6 @@
 {
   "meta": {
-    "heroesVersion": "2.57.1.98644_ptr",
+    "heroesVersion": "2.57.1.98674_ptr",
     "hdpVersion": "5.0.4",
     "itemsType": "Data",
     "dataType": "HeroData",
@@ -10833,7 +10833,7 @@
             "abilityId": "ChromieSandBlast",
             "name": "Once Again the First Time",
             "shortText": "<c val=\"e4b800\">Quest:</c> Sand Blast gains another Echo",
-            "fullText": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit <c val=\"bfd4fd\">20</c> Heroes with Sand Blast from Chromie or her Echoes without dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Increase the maximum number of active Echoes to <c val=\"bfd4fd\">2</c>, and increase Echo damage to <c val=\"bfd4fd\">50%</c>.",
+            "fullText": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit <c val=\"bfd4fd\">20</c> Heroes with Sand Blast from Chromie or her Echoes without dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> Increase the maximum number of active Echoes to <c val=\"bfd4fd\">2</c>, and increase Echo damage to <c val=\"bfd4fd\">55%</c>.",
             "abilityType": "Q",
             "isQuest": true,
             "upgradesAbilityType": false,
@@ -21757,7 +21757,7 @@
             "abilityId": "GreymaneCursedBullet",
             "name": "Gilnean Roulette",
             "shortText": "Cursed Bullet deals less damage, lower cooldown",
-            "fullText": "Cursed Bullet's damage is reduced to <c val=\"bfd4fd\">30%</c> of current health but its cooldown is reduced by <c val=\"bfd4fd\">24</c> seconds.",
+            "fullText": "Cursed Bullet's cooldown is reduced by <c val=\"bfd4fd\">24</c> seconds.",
             "abilityType": "Heroic",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -36001,7 +36001,7 @@
             "abilityId": "MedivhPortalInstant",
             "name": "Stable Portal",
             "shortText": "Increases Portal uptime",
-            "fullText": "Decrease Portal cooldown by <c val=\"bfd4fd\">20%</c> and increase Portal duration by <c val=\"bfd4fd\">50%</c>.",
+            "fullText": "Decrease Portal cooldown by <c val=\"bfd4fd\">25%</c> and increase Portal duration by <c val=\"bfd4fd\">50%</c>.",
             "abilityType": "E",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -49712,7 +49712,7 @@
               "name": "Spirit Shield",
               "toggleCooldown": 0.75,
               "cooldownText": "Cooldown: 45 seconds",
-              "fullText": "Every <c val=\"bfd4fd\">45</c> seconds, gain <c val=\"bfd4fd\">70</c> Spell Armor against the next enemy Ability and subsequent Abilities for <c val=\"bfd4fd\">4</c> seconds. Frostwolf Resilience reduces this cooldown by <c val=\"bfd4fd\">10</c> seconds.<n/><n/>Can be toggled to allow or prevent this talent from triggering automatically.",
+              "fullText": "Every <c val=\"bfd4fd\">45</c> seconds, gain <c val=\"bfd4fd\">50</c> Spell Armor against the next enemy Ability and subsequent Abilities for <c val=\"bfd4fd\">4</c> seconds. Frostwolf Resilience reduces this cooldown by <c val=\"bfd4fd\">10</c> seconds.<n/><n/>Can be toggled to allow or prevent this talent from triggering automatically.",
               "abilityType": "Active"
             }
           ]
@@ -49741,7 +49741,7 @@
             "abilityId": "ThrallChainLightning",
             "name": "Echo of the Elements",
             "shortText": "<c val=\"e4b800\">Quest:</c> Killing enemies grant chain lightning charges, forks",
-            "fullText": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Kill Minions or Heroes within <c val=\"bfd4fd\">2</c> seconds of hitting them with Chain Lightning.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After killing <c val=\"bfd4fd\">20</c> enemies, reduce the Mana cost of Chain Lightning from <c val=\"bfd4fd\">40</c> to <c val=\"bfd4fd\">20</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After killing <c val=\"bfd4fd\">50</c> enemies, Chain Lightning gains an extra charge.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward:</c> After killing <c val=\"bfd4fd\">125</c> enemies, Chain Lightning can now strike the same target multiple times, and also strikes <c val=\"bfd4fd\">1</c> additional target per bounce.",
+            "fullText": "<img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Kill Minions or Heroes within <c val=\"bfd4fd\">2</c> seconds of hitting them with Chain Lightning. Upon dying, lose <c val=\"bfd4fd\">8</c> stacks. Gained rewards cannot be lost.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After killing <c val=\"bfd4fd\">20</c> enemies, reduce the Mana cost of Chain Lightning from <c val=\"bfd4fd\">40</c> to <c val=\"bfd4fd\">20</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward:</c> After killing <c val=\"bfd4fd\">50</c> enemies, Chain Lightning gains an extra charge.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward:</c> After killing <c val=\"bfd4fd\">125</c> enemies, Chain Lightning can now strike the same target multiple times, and also strikes <c val=\"bfd4fd\">1</c> additional target per bounce.",
             "abilityType": "Q",
             "isQuest": true,
             "upgradesAbilityType": false,
@@ -49967,7 +49967,7 @@
             "toggleCooldown": 0.75,
             "cooldownText": "Cooldown: 45 seconds",
             "shortText": "Periodically gain temporary Spell Armor",
-            "fullText": "Every <c val=\"bfd4fd\">45</c> seconds, gain <c val=\"bfd4fd\">70</c> Spell Armor against the next enemy Ability and subsequent Abilities for <c val=\"bfd4fd\">4</c> seconds. Frostwolf Resilience reduces this cooldown by <c val=\"bfd4fd\">10</c> seconds.<n/><n/>Can be toggled to allow or prevent this talent from triggering automatically.",
+            "fullText": "Every <c val=\"bfd4fd\">45</c> seconds, gain <c val=\"bfd4fd\">50</c> Spell Armor against the next enemy Ability and subsequent Abilities for <c val=\"bfd4fd\">4</c> seconds. Frostwolf Resilience reduces this cooldown by <c val=\"bfd4fd\">10</c> seconds.<n/><n/>Can be toggled to allow or prevent this talent from triggering automatically.",
             "abilityType": "Active",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -50728,7 +50728,7 @@
             "abilityId": "TinkerXplodiumBomb",
             "name": "Bomb Toss",
             "shortText": "Xplodium Charge releases more bombs",
-            "fullText": "Xplodium Charge launches <c val=\"bfd4fd\">2</c> more bombs when it detonates.",
+            "fullText": "Xplodium Charge cooldown is reduced by <c val=\"bfd4fd\">3</c> seconds and launches <c val=\"bfd4fd\">2</c> more bombs when it detonates.",
             "abilityType": "E",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -57668,7 +57668,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 45</s>",
             "cooldownText": "Cooldown: 7 seconds",
             "shortText": "Launch a single large Void Orb",
-            "fullText": "Shoot a Void Orb that deals <c val=\"bfd4fd\">60</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit, and an additional <c val=\"bfd4fd\">120</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the center.<n/><n/>If an enemy Hero or Structure is hit by the center, they are marked for <c val=\"bfd4fd\">4</c> seconds.<n/><n/>Targets afflicted by Shadow Mark are Revealed and draw the Dark Heart and Void Minions towards them.",
+            "fullText": "Shoot a Void Orb that deals <c val=\"bfd4fd\">65</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies hit, and an additional <c val=\"bfd4fd\">130</c><c val=\"a7a7a7\">~~0.04~~</c> damage to enemies in the center.<n/><n/>If an enemy Hero or Structure is hit by the center, they are marked for <c val=\"bfd4fd\">4</c> seconds.<n/><n/>Targets afflicted by Shadow Mark are Revealed and draw the Dark Heart and Void Minions towards them.",
             "abilityType": "Q"
           },
           {
@@ -57690,7 +57690,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 50</s>",
             "cooldownText": "Cooldown: 15 seconds",
             "shortText": "Cast to teleport Xal'atath around in a trianglular pattern",
-            "fullText": "Cast to teleport Xal'atath <c val=\"bfd4fd\">3</c> times in a triangular pattern.<n/><n/>Each time Xal'atath teleports, her Basic Attacks deal <s val=\"bfd4fd\">10%</s> more damage while the Ability is active.<n/><n/>Reactivate to end Void Step early and remain at your current location.",
+            "fullText": "Cast to teleport Xal'atath <c val=\"bfd4fd\">3</c> times in a triangular pattern.<n/><n/>Each time Xal'atath teleports, her Basic Attacks deal <s val=\"bfd4fd\">15%</s> more damage while the Ability is active.<n/><n/>Reactivate to end Void Step early and remain at your current location.",
             "abilityType": "E"
           }
         ],
@@ -57703,7 +57703,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 80</s>",
             "cooldownText": "Cooldown: 75 seconds",
             "shortText": "Channel a growing orb that deals damage in its path",
-            "fullText": "Channel a powerful Void Orb that grows over time until reaching maximum size after <c val=\"bfd4fd\">2</c> seconds. Recast to launch the Orb early.<n/><n/>Enemies that come into contact with the Orb take <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Blinded for <s val=\"bfd4fd\">1</s> second.<n/><n/>When the Orb reaches the end of its path, it detonates in a large explosion, dealing <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/>Charging up this Ability increases its contact damage up to <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> and its explosion damage up to <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c>.<n/><n/><s val=\"a7a7a7\">Contact damage is dealt every 0.25 seconds.</s>",
+            "fullText": "Channel a powerful Void Orb that grows over time until reaching maximum size after <c val=\"bfd4fd\">2</c> seconds. Recast to launch the Orb early.<n/><n/>Enemies that come into contact with the Orb take <c val=\"bfd4fd\">81</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Blinded for <s val=\"bfd4fd\">1</s> second.<n/><n/>When the Orb reaches the end of its path, it detonates in a large explosion, dealing <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/>Charging up this Ability increases its contact damage up to <c val=\"bfd4fd\">81</c><c val=\"a7a7a7\">~~0.04~~</c> and its explosion damage up to <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c>.<n/><n/><s val=\"a7a7a7\">Contact damage is dealt every 0.25 seconds.</s>",
             "abilityType": "Heroic"
           },
           {
@@ -57726,7 +57726,7 @@
             "name": "Void Volley",
             "energyText": "<s val=\"bfd4fd\">Mana: 35</s>",
             "shortText": "Unleash a barrage of Void Missiles at a target location",
-            "fullText": "Every basic attack against heroes, and every <c val=\"bfd4fd\">2</c> basic attacks against non-heroes generate charge. Once fully charged Xal'atath can activate Void Volley to unleash a barrage of <c val=\"bfd4fd\">6</c> Void Orbs at a target location, each dealing <c val=\"bfd4fd\">72</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit enemy Heroes with Void Volley to grant <c val=\"bfd4fd\">1</c> stack per hit and increases Void Volley's damage by <c val=\"bfd4fd\">1%</c>. Lose all stacks upon dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward (20 Stacks):</c><n/>   <c val=\"00ff90\">+2</c> Void Volley Range<n/>   Stack loss on death lowered to <c val=\"bfd4fd\">6</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward (60 Stacks):</c><n/>   <c val=\"00ff90\">-1</c> Basic Attack required to charge Void Volley.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward (100 Stacks):</c><n/>   <c val=\"00ff90\">+35%</c> Basic Attack and Void Volley Damage.<n/>   Void Volley projectiles Pierce all targets.<n/><n/><s val=\"a7a7a7\">Stack loss will never cause the Hero to fall below a quest reward threshold.</s><n/><s val=\"a7a7a7\">Charge fully decays if Xal’atath does not hit an enemy with a Basic Attack after </s><c val=\"bfd4fd\">6</c><s val=\"a7a7a7\"> seconds.</s>",
+            "fullText": "Every basic attack against heroes, and every <c val=\"bfd4fd\">2</c> basic attacks against non-heroes generate charge. Once fully charged Xal'atath can activate Void Volley to unleash a barrage of <c val=\"bfd4fd\">6</c> Void Orbs at a target location, each dealing <c val=\"bfd4fd\">72</c><c val=\"a7a7a7\">~~0.04~~</c> damage on impact.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Quest:</c> Hit enemy Heroes with Void Volley to grant <c val=\"bfd4fd\">1</c> stack per hit and increases Void Volley's damage by <c val=\"bfd4fd\">0.75%</c>. Lose all stacks upon dying.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward (20 Stacks):</c><n/>   <c val=\"00ff90\">+2</c> Void Volley Range<n/>   Stack loss on death lowered to <c val=\"bfd4fd\">6</c>.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Reward (60 Stacks):</c><n/>   <c val=\"00ff90\">-1</c> Basic Attack required to charge Void Volley.<n/><n/><img path=\"@UI/StormTalentInTextQuestIcon\" alignment=\"uppermiddle\" color=\"B48E4C\" width=\"20\" height=\"22\"/><c val=\"e4b800\">Mythic Reward (100 Stacks):</c><n/>   <c val=\"00ff90\">+35%</c> Basic Attack and Void Volley Damage.<n/>   Void Volley projectiles Pierce all targets.<n/><n/><s val=\"a7a7a7\">Stack loss will never cause the Hero to fall below a quest reward threshold.</s><n/><s val=\"a7a7a7\">Charge fully decays if Xal’atath does not hit an enemy with a Basic Attack after </s><c val=\"bfd4fd\">6</c><s val=\"a7a7a7\"> seconds.</s>",
             "abilityType": "Trait"
           }
         ],
@@ -57963,7 +57963,7 @@
             "energyText": "<s val=\"bfd4fd\">Mana: 80</s>",
             "cooldownText": "Cooldown: 75 seconds",
             "shortText": "Channel a growing orb that deals damage in its path",
-            "fullText": "Channel a powerful Void Orb that grows over time until reaching maximum size after <c val=\"bfd4fd\">2</c> seconds. Recast to launch the Orb early.<n/><n/>Enemies that come into contact with the Orb take <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Blinded for <s val=\"bfd4fd\">1</s> second.<n/><n/>When the Orb reaches the end of its path, it detonates in a large explosion, dealing <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/>Charging up this Ability increases its contact damage up to <c val=\"bfd4fd\">90</c><c val=\"a7a7a7\">~~0.04~~</c> and its explosion damage up to <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c>.<n/><n/><s val=\"a7a7a7\">Contact damage is dealt every 0.25 seconds.</s>",
+            "fullText": "Channel a powerful Void Orb that grows over time until reaching maximum size after <c val=\"bfd4fd\">2</c> seconds. Recast to launch the Orb early.<n/><n/>Enemies that come into contact with the Orb take <c val=\"bfd4fd\">81</c><c val=\"a7a7a7\">~~0.04~~</c> damage and are Blinded for <s val=\"bfd4fd\">1</s> second.<n/><n/>When the Orb reaches the end of its path, it detonates in a large explosion, dealing <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c> damage.<n/><n/>Charging up this Ability increases its contact damage up to <c val=\"bfd4fd\">81</c><c val=\"a7a7a7\">~~0.04~~</c> and its explosion damage up to <c val=\"bfd4fd\">320</c><c val=\"a7a7a7\">~~0.04~~</c>.<n/><n/><s val=\"a7a7a7\">Contact damage is dealt every 0.25 seconds.</s>",
             "abilityType": "Heroic",
             "isQuest": false,
             "upgradesAbilityType": false,
@@ -58560,7 +58560,7 @@
             "abilityId": "YrelVindication",
             "name": "Light of Karabor",
             "shortText": "Increase Vindication radius, healing",
-            "fullText": "Increase Vindication's radius by <c val=\"bfd4fd\">15%</c>. Hitting an enemy Hero increases Vindication's healing by <c val=\"bfd4fd\">40%</c>. If more than one Hero is hit, the bonus is increased to <c val=\"bfd4fd\">80%</c>.",
+            "fullText": "Increase Vindication's radius by <c val=\"bfd4fd\">15%</c>. Hitting an enemy Hero increases Vindication's healing by <c val=\"bfd4fd\">35%</c>. If more than one Hero is hit, the bonus is increased to <c val=\"bfd4fd\">70%</c>.",
             "abilityType": "Q",
             "isQuest": false,
             "upgradesAbilityType": true,
@@ -58700,7 +58700,7 @@
             "abilityId": "Mount",
             "name": "Divine Steed",
             "shortText": "Mounting is instant",
-            "fullText": "Mounting is instant and grants <c val=\"bfd4fd\">60%</c> Movement Speed that decays over <c val=\"bfd4fd\">3</c> seconds.",
+            "fullText": "Mounting is instant and grants <c val=\"bfd4fd\">60%</c> Movement Speed that decays over <c val=\"bfd4fd\">4</c> seconds.",
             "abilityType": "Z",
             "isQuest": false,
             "upgradesAbilityType": true,
