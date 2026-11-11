@@ -1496,8 +1496,8 @@
     <Duration value="0.25" />
     <Period value="0.0625" />
     <Modification>
-      <MoveSpeedMaximum value="10.6992" />
-      <MoveSpeedMinimum value="10.6992" />
+      <MoveSpeedMaximum value="10.7" />
+      <MoveSpeedMinimum value="10.7" />
     </Modification>
     <InitialEffect value="LucioSoundwaveKnockbackApplyForce" />
     <PeriodicEffect value="LucioSoundwaveKnockbackApplyForce" />
@@ -1505,8 +1505,8 @@
   <CBehaviorBuff id="LucioSoundwaveKnockbackSubwoofer" parent="LucioSoundwaveKnockback">
     <Duration value="0.3125" />
     <Modification>
-      <MoveSpeedMaximum value="16.5468" />
-      <MoveSpeedMinimum value="16.5468" />
+      <MoveSpeedMaximum value="16.55" />
+      <MoveSpeedMinimum value="16.55" />
     </Modification>
   </CBehaviorBuff>
   <CBehaviorTokenCounter id="LucioSoundwaveChaseTheBassQuestToken" parent="StormQuestToken">
@@ -1643,7 +1643,7 @@
     <DisplayDuration index="Ally" value="1" />
     <DisplayDuration index="Neutral" value="1" />
     <DisplayDuration index="Enemy" value="1" />
-    <Duration value="2.5" />
+    <Duration value="1.5" />
     <DamageResponse>
       <Chance value="1" />
       <Handled value="LucioSummerAnthemDummyFatalResponse" />
@@ -1702,7 +1702,7 @@
   <CBehaviorBuff id="LucioSoundBarrierShield" parent="StormShield">
     <MaxStackCount value="48" />
     <Duration value="6" />
-    <DamageResponse ModifyLimit="31" SuppressFloatersCausedByBehavior="1">
+    <DamageResponse ModifyLimit="27" SuppressFloatersCausedByBehavior="1">
       <ModifyScoreArray index="0" Value="Healing" />
     </DamageResponse>
     <BehaviorCategories index="BuffTempMaxHealth" value="0" />
@@ -1815,7 +1815,7 @@
   <CBehaviorBuff id="LucioWallRideSlip">
     <Alignment value="Positive" />
     <RemoveValidatorArray value="LucioHasWallRideSpeed" />
-    <Duration value="2" />
+    <Duration value="1" />
     <Modification>
       <MoveSpeedBonus value="$LucioWallrideSlipBonusMovespeed" />
     </Modification>
@@ -2386,6 +2386,7 @@
     <WhichUnit Value="Caster" />
   </CEffectRemoveBehavior>
   <CEffectDestroyPersistent id="LucioPushOffHeavyCastersDestroySearchPersistent">
+    <WhichLocation Value="CasterUnit" />
     <Effect value="LucioPushOffScanPersistent" />
     <Count value="1" />
     <Radius value="1.25" />
@@ -2552,9 +2553,8 @@
   </CEffectApplyBehavior>
   <CEffectApplyForce id="LucioSoundwaveKnockbackApplyForce">
     <WhichLocation>
-      <Effect value="LucioSoundwaveInitialSet" />
       <Value value="OriginPoint" />
-      <ProjectionAngle value="180" />
+      <Effect value="LucioSoundwaveInitialSet" />
       <ProjectionMultiplier value="1" />
       <ProjectionSourceEffect value="LucioSoundwaveOffsetPersistent" />
       <ProjectionSourceValue value="OriginPoint" />
@@ -2562,6 +2562,7 @@
       <ProjectionTargetValue value="TargetPoint" />
       <UsesLineDash value="1" />
       <LineDashType value="AllowedInUnpathable" />
+      <ProjectionAngle value="180" />
       <ProjectionDistanceScale value="2" />
     </WhichLocation>
     <WhichUnit Effect="LucioSoundwaveImpactSet" />
@@ -2636,7 +2637,7 @@
   </CEffectEnumArea>
   <CEffectEnumArea id="LucioCrossfadeSearchArea">
     <ImpactLocation Value="TargetUnit" />
-    <SearchFilters value="Heroic;Neutral,Enemy,Structure,ImmuneToFriendlyAbilities,Missile,Stasis,Dead,Hidden" />
+    <SearchFilters value="Heroic;Neutral,Enemy,Structure,ImmuneToFriendlyAbilities,Missile,Hidden,Stasis,Dead" />
     <AreaArray Effect="LucioCrossfadeUnitImpactSet">
       <Radius value="7" />
     </AreaArray>
@@ -2764,17 +2765,17 @@
   </CEffectModifyTokenCount>
   <CEffectModifyPlayer id="LucioCrossfadePartyMixQuestCompleteModifyPlayer">
     <WhichPlayer Value="Caster" />
-    <EffectArray Reference="Effect,LucioCrossfadeSearchArea,AreaArray[0].Radius" Value="2.1" />
-    <EffectArray Reference="Actor,LucioCrossfadeHealingRange,Range" Value="2.100000" />
-    <EffectArray Reference="Actor,LucioCrossfadeSpeedRange,Range" Value="2.100000" />
-    <EffectArray Reference="Actor,LucioBoomboxCrossfadeHealingRange,Range" Value="2.100000" />
-    <EffectArray Reference="Actor,LucioBoomboxCrossfadeSpeedRange,Range" Value="2.100000" />
-    <EffectArray Operation="Multiply" Reference="Actor,LucioBoomboxTeamColor,Scale" Value="1.300000" />
-    <EffectArray Reference="Actor,LucioCrossfadeHoverRangeSplat,Scale" Value="2.100000" />
-    <EffectArray Reference="Actor,LucioCrossfadePulseHeal,Scale" Value="0.300000" />
-    <EffectArray Reference="Actor,LucioCrossfadePulseSpeed,Scale" Value="0.300000" />
+    <EffectArray Reference="Effect,LucioCrossfadeSearchArea,AreaArray[0].Radius" Value="1.4" />
+    <EffectArray Reference="Actor,LucioCrossfadeHealingRange,Range" Value="1.400000" />
+    <EffectArray Reference="Actor,LucioCrossfadeSpeedRange,Range" Value="1.400000" />
+    <EffectArray Reference="Actor,LucioBoomboxCrossfadeHealingRange,Range" Value="1.400000" />
+    <EffectArray Reference="Actor,LucioBoomboxCrossfadeSpeedRange,Range" Value="1.400000" />
+    <EffectArray Operation="Multiply" Reference="Actor,LucioBoomboxTeamColor,Scale" Value="1.200000" />
+    <EffectArray Reference="Actor,LucioCrossfadeHoverRangeSplat,Scale" Value="1.400000" />
+    <EffectArray Reference="Actor,LucioCrossfadePulseHeal,Scale" Value="0.200000" />
+    <EffectArray Reference="Actor,LucioCrossfadePulseSpeed,Scale" Value="0.200000" />
     <EffectArray Operation="Set" Reference="Effect,LucioCrossfadePartyMixModifyQuestToken,Chance" Value="0" />
-    <EffectArray Reference="Effect,LucioBoomboxArmorSearchArea,AreaArray[0].Radius" Value="2.1" />
+    <EffectArray Reference="Effect,LucioBoomboxArmorSearchArea,AreaArray[0].Radius" Value="1.4" />
   </CEffectModifyPlayer>
   <CEffectCreateHealer id="LucioAmpItUpCrossfadeHealingBoostHeal" parent="StormHealingSpell">
     <RechargeVitalRate value="14" />

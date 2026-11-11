@@ -86,7 +86,6 @@
     <Model value="Invisible" />
   </CActorMissile>
   <CActorAction id="MercLanerGoblinSapperAttack" parent="RangedHeroAttackPoint" effectImpact="MercLanerGoblinSapperDamage" effectLaunch="MercLanerGoblinSapperWeaponLaunchMissile">
-    <On Terms="Effect.MercLanerGoblinSapperWeaponLaunchMissileOffset.Start; At Caster" Send="Create" />
     <LaunchAssets Model="" Sound="Merc_Sapper_Attack_Ranged_Launch" />
     <ImpactMap index="None" Model="MercGoblinSapperAttackImpact" Sound="Merc_Sapper_Attack_Ranged_Impact" />
   </CActorAction>
@@ -96,7 +95,6 @@
     <Missile value="MercLanerGoblinSapperMeleeAttackInvisibleMissile" />
   </CActorAction>
   <CActorAction id="MercDefenderGoblinSapperAttack" parent="RangedHeroAttackPoint" effectImpact="MercDefenderGoblinSapperDamage" effectLaunch="MercDefenderGoblinSapperWeaponLaunchMissile">
-    <On Terms="Effect.MercDefenderGoblinSapperWeaponLaunchMissileOffset.Start; At Caster" Send="Create" />
     <LaunchAssets Model="" Sound="Merc_Sapper_Attack_Ranged_Launch" />
     <ImpactMap index="None" Model="MercGoblinSapperAttackImpact" Sound="Merc_Sapper_Attack_Ranged_Impact" />
   </CActorAction>
@@ -111,7 +109,7 @@
     <Flags index="VisionTestCenterOnly" value="1" />
     <Inherits index="TeamColor" value="1" />
     <On Terms="Effect.MercLanerGoblinSapperRangedWarningCreatePersistent.Start" Send="Create" />
-    <On Terms="Effect.MercLanerGoblinSapperRangedWarningCreatePersistent.Stop; FromEffectTreeDescendant" Send="Destroy" />
+    <On Terms="Effect.MercLanerGoblinSapperDamage.Start" Send="Destroy" />
     <Filter index="All" value="1" />
     <VisibleTo index="Enemy" value="1" />
     <Model value="MercGoblinSapperAttackImpactWarning" />
@@ -120,7 +118,7 @@
     <Flags index="VisionTestCenterOnly" value="1" />
     <Inherits index="TeamColor" value="1" />
     <On Terms="Effect.MercDefenderGoblinSapperRangedWarningCreatePersistent.Start" Send="Create" />
-    <On Terms="Effect.MercDefenderGoblinSapperRangedWarningCreatePersistent.Stop; FromEffectTreeDescendant" Send="Destroy" />
+    <On Terms="Effect.MercDefenderGoblinSapperDamage.Start" Send="Destroy" />
     <Filter index="All" value="1" />
     <VisibleTo index="Enemy" value="1" />
     <Model value="MercGoblinSapperAttackImpactWarning" />
@@ -920,7 +918,8 @@
     <EffectArray value="MercGoblinSapperSuicideAddTrackedUnit" />
   </CEffectSet>
   <CEffectSet id="MercDefenderGoblinSapperWeaponLaunchSet">
-    <EffectArray value="MercDefenderGoblinSapperWeaponLaunchMissileSwitch" />
+    <EffectArray value="MercDefenderGoblinSapperWeaponLaunchMissile" />
+    <EffectArray value="MercDefenderGoblinSapperRangedWarningCreatePersistent" />
     <TargetLocationType value="Point" />
   </CEffectSet>
   <CEffectDamage id="MercDefenderGoblinSapperDamage" parent="StormWeapon">
@@ -1007,35 +1006,18 @@
     <AttributeFactor index="Merc" value="1" />
     <AttributeFactor index="Summoned" value="1" />
   </CEffectDamage>
-  <CEffectSwitch id="MercLanerGoblinSapperWeaponLaunchMissileSwitch">
-    <CaseArray Validator="MercSapperWeaponMinimumDistanceCast" Effect="MercLanerGoblinSapperWeaponLaunchMissileOffset" />
-    <CaseDefault value="MercLanerGoblinSapperWeaponLaunchMissile" />
-  </CEffectSwitch>
   <CEffectLaunchMissile id="MercLanerGoblinSapperWeaponLaunchMissile">
     <ImpactLocation Value="TargetPoint" />
-    <LaunchEffect value="MercLanerGoblinSapperRangedWarningCreatePersistent" />
     <ImpactEffect value="MercLanerGoblinSapperDamage" />
     <AmmoUnit value="MercLanerGoblinSapperAttackMissile" />
     <SharedFlags index="ValidateWeapon" value="0" />
     <Movers Link="MercGoblinSapperMissileClose" IfRangeLTE="3" />
     <Movers Link="MercGoblinSapperMissile" IfRangeLTE="500" />
   </CEffectLaunchMissile>
-  <CEffectLaunchMissile id="MercLanerGoblinSapperWeaponLaunchMissileOffset" parent="MercLanerGoblinSapperWeaponLaunchMissile">
-    <LaunchOffset Y="0.5" />
-  </CEffectLaunchMissile>
   <CEffectCreatePersistent id="MercLanerGoblinSapperRangedWarningCreatePersistent">
-    <WhichLocation Effect="MercLanerGoblinSapperWeaponLaunchSet" />
-    <Flags index="PersistUntilDestroyed" value="1" />
-    <PeriodicPeriodArray value="0.0625" />
-    <PeriodicValidator value="SourceNotDead" />
-    <ExpireDelay value="1.125" />
+    <ExpireDelay value="1.25" />
   </CEffectCreatePersistent>
-  <CEffectSwitch id="MercDefenderGoblinSapperWeaponLaunchMissileSwitch">
-    <CaseArray Validator="MercSapperWeaponMinimumDistanceCast" Effect="MercDefenderGoblinSapperWeaponLaunchMissileOffset" />
-    <CaseDefault value="MercDefenderGoblinSapperWeaponLaunchMissile" />
-  </CEffectSwitch>
   <CEffectLaunchMissile id="MercDefenderGoblinSapperWeaponLaunchMissile">
-    <LaunchEffect value="MercDefenderGoblinSapperRangedWarningCreatePersistent" />
     <ImpactEffect value="MercDefenderGoblinSapperDamage" />
     <AmmoUnit value="MercDefenderGoblinSapperAttackMissile" />
     <ImpactLocation Value="TargetPoint" />
@@ -1043,18 +1025,12 @@
     <Movers Link="MercGoblinSapperMissileClose" IfRangeLTE="3" />
     <Movers Link="MercGoblinSapperMissile" IfRangeLTE="500" />
   </CEffectLaunchMissile>
-  <CEffectLaunchMissile id="MercDefenderGoblinSapperWeaponLaunchMissileOffset" parent="MercDefenderGoblinSapperWeaponLaunchMissile">
-    <LaunchOffset Y="0.5" />
-  </CEffectLaunchMissile>
   <CEffectCreatePersistent id="MercDefenderGoblinSapperRangedWarningCreatePersistent">
-    <WhichLocation Effect="MercDefenderGoblinSapperWeaponLaunchSet" />
-    <Flags index="PersistUntilDestroyed" value="1" />
-    <PeriodicPeriodArray value="0.0625" />
-    <PeriodicValidator value="SourceNotDead" />
-    <ExpireDelay value="1.125" />
+    <ExpireDelay value="1.25" />
   </CEffectCreatePersistent>
   <CEffectSet id="MercLanerGoblinSapperWeaponLaunchSet">
-    <EffectArray value="MercLanerGoblinSapperWeaponLaunchMissileSwitch" />
+    <EffectArray value="MercLanerGoblinSapperWeaponLaunchMissile" />
+    <EffectArray value="MercLanerGoblinSapperRangedWarningCreatePersistent" />
     <TargetLocationType value="Point" />
   </CEffectSet>
   <CEffectLaunchMissile id="MercLanerGoblinSapperMeleeWeaponLaunchMissile">
@@ -1795,10 +1771,6 @@
     <WhichUnit Value="Caster" />
     <Behavior value="MercGoblinSapperChargeController" />
   </CValidatorUnitCompareBehaviorCount>
-  <CValidatorLocationCompareRange id="MercSapperWeaponMinimumDistanceCast">
-    <Compare value="LT" />
-    <Range value="0.5" />
-  </CValidatorLocationCompareRange>
   <CWeaponLegacy id="MercLanerGoblinSapperWeapon">
     <Icon value="Assets\Textures\storm_temp_btn-upgrade-terran-infantryweaponslevel0.dds" />
     <DisplayEffect value="MercLanerGoblinSapperDamage" />

@@ -1168,7 +1168,7 @@
   </CBehaviorBuff>
   <CBehaviorBuff id="GreymaneDisengageEyesInTheDark" parent="StormTempCloak">
     <Duration value="3" />
-    <FinalEffect value="GreymaneDisengageEyeInTheDarkRemoveSet" />
+    <FinalEffect value="RemoveHoldFireBehavior" />
     <DamageResponse Chance="1" Handled="GreymaneDisengageEyesInTheDarkRemoveBehavior" Priority="97">
       <ValidatorArray value="SourceNotUnrevealable" />
     </DamageResponse>
@@ -1429,7 +1429,8 @@
     <Chance value="0" />
   </CEffectModifyUnit>
   <CEffectDamage id="GreymaneCursedBulletDamagePercentDamage" parent="StormSpellPercentDamage">
-    <FlatModifierArray index="GreymaneCursedBullet" Accumulator="GreymaneCursedBulletCurrentHealthAccumulator" />
+    <FlatModifierArray index="GreymaneCursedBullet" Validator="GreymaneDoesNotHaveCursedBulletGilneanRoulette" Accumulator="GreymaneCursedBulletCurrentHealthAccumulator" />
+    <FlatModifierArray index="GilneanRoulette" Validator="GreymaneHasCursedBulletGilneanRoulette" Accumulator="GreymaneCursedBulletGilneanRouletteTalentCurrentHealthAccumulator" />
   </CEffectDamage>
   <CEffectRemoveBehavior id="GreymaneDarkflightThickSkinRemoveArmor">
     <WhichUnit Value="Source" />
@@ -2094,7 +2095,7 @@
   </CEffectModifyPlayer>
   <CEffectModifyPlayer id="GreymaneGilneanCocktailIncendiaryElixirQuestIncrementModification">
     <WhichPlayer Value="Caster" />
-    <EffectArray Reference="Effect,GreymaneGilneanCocktailSpreadDamage,AmountArray" Value="30" />
+    <EffectArray Reference="Effect,GreymaneGilneanCocktailSpreadDamage,AmountArray" Value="25" />
   </CEffectModifyPlayer>
   <CEffectCreatePersistent id="GreymaneRazorSwipePersistent">
     <ValidatorArray value="CasterNotRooted" />
@@ -2364,13 +2365,6 @@
     <WhichUnit Value="Caster" />
     <Behavior value="GreymaneDisengageEyesInTheDarkDecloakSafety" />
   </CEffectApplyBehavior>
-  <CEffectSet id="GreymaneDisengageEyeInTheDarkRemoveSet">
-    <EffectArray value="GreymaneDisengageEyesInTheDarkRemoveSafetyBehavior" />
-    <EffectArray value="RemoveHoldFireBehavior" />
-  </CEffectSet>
-  <CEffectRemoveBehavior id="GreymaneDisengageEyesInTheDarkRemoveSafetyBehavior">
-    <BehaviorLink value="GreymaneDisengageEyesInTheDarkDecloakSafety" />
-  </CEffectRemoveBehavior>
   <CEffectSet id="GreymaneGoForTheThroatFreeCastSetupSet">
     <EffectArray value="GreymaneGoForTheThroatModifyPlayerCooldown" />
     <EffectArray value="GreymaneGoForTheThroatResetFreeCastAbilityCooldown" />

@@ -53,7 +53,7 @@
       {
         "uid": "c6aade",
         "name": "Blizzard",
-        "description": "Command Snowball to create a Blizzard at the target location for 1.88 seconds. Enemies within the blizzard take 13 (+4% per level) damage every 0.25 seconds and are Slowed by 7%, stacking up to 35%. When the Blizzard ends, enemies within its area take an additional 80 (+4% per level) damage and are Stunned for 1.25 seconds.",
+        "description": "Command Snowball to create a Blizzard at the target location for 2 seconds. Enemies within the blizzard take 13 (+4% per level) damage every 0.25 seconds and are Slowed by 7%, stacking up to 35%. When the Blizzard ends, enemies within its area take an additional 75 (+4% per level) damage and are Stunned for 1.25 seconds.",
         "hotkey": "W",
         "abilityId": "Mei|W1",
         "tooltipId": "MeiOWBlizzard",
@@ -81,7 +81,7 @@
         "hotkey": "R",
         "abilityId": "Mei|R1",
         "tooltipId": "MeiOWAvalanche",
-        "cooldown": 80,
+        "cooldown": 90,
         "manaCost": 80,
         "icon": "storm_ui_icon_mei_r1_avalanche.png",
         "type": "heroic"
@@ -89,7 +89,7 @@
       {
         "uid": "570285",
         "name": "Ice Wall",
-        "description": "Vector Targeting After a 0.69 second delay, create an impassable wall that traps enemy Heroes hit for 2.5 seconds. When the wall expires, trapped Heroes are Slowed by 75%, decaying over 3 seconds.",
+        "description": "Vector Targeting After a 0.75 second delay, create an impassable wall that traps enemy Heroes hit for 2.5 seconds. When the wall expires, trapped Heroes are Slowed by 75%, decaying over 3 seconds.",
         "hotkey": "R",
         "abilityId": "Mei|R2",
         "tooltipId": "MeiOWIceWall",
@@ -274,7 +274,7 @@
         "icon": "storm_ui_icon_mei_r1_avalanche.png",
         "type": "Heroic",
         "sort": 1,
-        "cooldown": 80,
+        "cooldown": 90,
         "isQuest": false,
         "abilityId": "Mei|R1",
         "abilityLinks": [
@@ -288,7 +288,7 @@
         "tooltipId": "MeiOWIceWall",
         "talentTreeId": "MeiOWIceWall",
         "name": "Ice Wall",
-        "description": "Vector Targeting After a 0.69 second delay, create an impassable wall that traps enemy Heroes hit for 2.5 seconds. When the wall expires, trapped Heroes are Slowed by 75%, decaying over 3 seconds.",
+        "description": "Vector Targeting After a 0.75 second delay, create an impassable wall that traps enemy Heroes hit for 2.5 seconds. When the wall expires, trapped Heroes are Slowed by 75%, decaying over 3 seconds.",
         "icon": "storm_ui_icon_mei_r2_icewall.png",
         "type": "Heroic",
         "sort": 2,

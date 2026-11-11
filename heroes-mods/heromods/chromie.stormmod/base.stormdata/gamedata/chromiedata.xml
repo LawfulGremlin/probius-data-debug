@@ -255,7 +255,7 @@
     <Scale value="0.1" />
   </CAccumulatorToken>
   <CAccumulatorToken id="ChromieDragonsBreathDeepBreathingAccumulator" parent="BaseTokenAccumulator">
-    <Scale value="0.006" />
+    <Scale value="0.005" />
     <TokenId value="ChromieDragonsBreathDeepBreathingQuestToken" />
     <ApplicationRule value="Add" />
   </CAccumulatorToken>
@@ -2009,7 +2009,7 @@
   </CBehaviorTokenCounter>
   <CBehaviorBuff id="ChromieTimewalkersPursuitQuestCompleteAbilityPower" parent="CarryBehaviorParent">
     <Modification>
-      <DamageDealtFraction index="Ability" value="0.12" />
+      <DamageDealtFraction index="Ability" value="0.15" />
     </Modification>
   </CBehaviorBuff>
   <CBehaviorBuff id="ChromieQuantumOverdriveBuff" parent="StormDamageIncrease">
@@ -3238,7 +3238,7 @@
   </CEffectEnumArea>
   <CEffectDamage id="ChromieSandEchoWeaponDamage" parent="ChromieHeroWeaponDamage">
     <MultiplicativeModifierArray index="PastandFutureMe" Validator="ChromieCreatorDoesNotHaveSandBlastOnceAgainTheFirstTimeQuestCompleteBehavior" Modifier="$ChromiePastAndFutureMeDamageModifier" />
-    <MultiplicativeModifierArray index="OnceAgainTheFirstTime" Validator="ChromieCreatorDoesHaveSandBlastOnceAgainTheFirstTimeQuestCompleteBehavior" Modifier="-0.45" />
+    <MultiplicativeModifierArray index="OnceAgainTheFirstTime" Validator="ChromieCreatorDoesHaveSandBlastOnceAgainTheFirstTimeQuestCompleteBehavior" Modifier="-0.5" />
     <Visibility value="Hidden" />
   </CEffectDamage>
   <CEffectSet id="ChromieTimeTrapTargetBehaviorExpireSet">
